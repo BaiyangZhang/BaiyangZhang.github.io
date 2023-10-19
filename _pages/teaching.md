@@ -6,7 +6,5 @@ description: Materials for courses you taught. Replace this text with your descr
 nav: true
 nav_order: 5
 ---
+It's has been my pleasure to teach mathematical economics during the Fall semester, 2023 to international students from the school of economics, Henan University.
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
