@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/about_einstein.md",
+                "file": "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_pages/about_einstein.md",
+                "file": "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_pages/about_einstein.md",
+                "file": "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_pages/about_einstein.md"
+                "file": "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md"
               }
             }
           },
@@ -192,8 +192,26 @@
   },
   "active": "52cbb4ca59c2dc7e",
   "lastOpenFiles": [
-    "_pages/about_baiyang.md",
+    "Templates/DateNote.md",
+    "Templates/date.md",
+    "Templates",
+    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
+    "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "_posts/2023-2-2-Basic-Algebraic-Geometry-5.md",
+    "_posts/2023-2-1-Minkowski Space.md",
+    "_posts/2022-9-8-罗莎-卢森堡.md",
+    "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+    "_posts/2022-08-28-Three-Kinds-of-Integrals.md",
+    "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
+    "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
+    "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
+    "_posts/2022-09-22-HuiDiscussion1.md",
+    "_posts/2022-11-4-俄乌战争前普京的演讲.md",
+    "_posts/2022-9-2-The-Lie-Derivative.md",
+    "_posts/2022-08-09-回国之旅.md",
     "_pages/about_einstein.md",
+    "_pages/about_baiyang.md",
     "_posts/2020-09-28-github-metadata.md",
     "_posts/2020-09-28-twitter.md",
     "_posts/2018-12-22-distill.md",
@@ -201,26 +219,9 @@
     "_posts/2015-10-20-disqus-comments.md",
     "_posts/2015-07-15-code.md",
     "_pages/teaching.md",
-    "_pages/repositories.md",
-    "_pages/publications.md",
-    "_pages/projects.md",
-    "_pages/profiles.md",
-    "_pages/dropdown.md",
-    "_pages/cv.md",
     "img/prof_pic.jpg",
-    "_pages/about.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_posts/2023-09-26-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
-    "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
     "img/eom.png",
     "img/eom.pdf",
-    "_drafts/2023-10-13-Yang–Mills-Fields.md",
-    "_posts/2023-09-21-The-Dirac-Equation.md",
     "img/lib19.jpg.crdownload",
     "img/lib18.jpg.crdownload",
     "img/lib14.jpg.crdownload",
