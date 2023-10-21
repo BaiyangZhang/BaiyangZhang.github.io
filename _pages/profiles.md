@@ -11,18 +11,10 @@ profiles:
   # and create one content file for each profile inside _pages/
   - align: right
     image: prof_pic.jpg
-    content: about_einstein.md
+    content: about_baiyang.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>astris.dei@gmail.com</p>
       <p>School of Mathematics and Statistics</p>
       <p>Henan University, Henan, China</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Institute of Contemporary Mathematics</p>
-      <p>School of Mathematics and Statistics,</p>
-      <p>Henan University, Kaifeng, Henan 475004</p>
 ---
