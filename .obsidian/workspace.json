@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c941c15a12c3be08",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "d1aecae605d42eca",
             "type": "leaf",
             "state": {
@@ -174,8 +166,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c941c15a12c3be08",
+  "active": "d1aecae605d42eca",
   "lastOpenFiles": [
+    "_pages/profiles.md",
+    "_pages/dropdown.md",
+    "_pages/cv.md",
+    "assets/pdf/Baiyang_CV.pdf",
+    "_pages/about_einstein.md",
+    "_pages/about.md",
+    "backups/2015-05-15-images.md",
     "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "Templates/DateNote.md",
     "Templates/date.md",
@@ -194,15 +193,9 @@
     "_posts/2022-11-4-俄乌战争前普京的演讲.md",
     "_posts/2022-9-2-The-Lie-Derivative.md",
     "_posts/2022-08-09-回国之旅.md",
-    "_pages/about_einstein.md",
     "_pages/about_baiyang.md",
     "_posts/2020-09-28-github-metadata.md",
     "_posts/2020-09-28-twitter.md",
-    "_posts/2018-12-22-distill.md",
-    "_posts/2015-10-20-math.md",
-    "_posts/2015-10-20-disqus-comments.md",
-    "_posts/2015-07-15-code.md",
-    "_pages/teaching.md",
     "img/prof_pic.jpg",
     "img/eom.png",
     "img/eom.pdf",
