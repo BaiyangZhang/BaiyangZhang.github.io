@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "52cbb4ca59c2dc7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c941c15a12c3be08",
             "type": "leaf",
             "state": {
@@ -109,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md"
-              }
+              "state": {}
             }
           },
           {
@@ -190,14 +174,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52cbb4ca59c2dc7e",
+  "active": "c941c15a12c3be08",
   "lastOpenFiles": [
+    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "Templates/DateNote.md",
     "Templates/date.md",
     "Templates",
     "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
     "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "_posts/2023-2-2-Basic-Algebraic-Geometry-5.md",
     "_posts/2023-2-1-Minkowski Space.md",
     "_posts/2022-9-8-罗莎-卢森堡.md",
