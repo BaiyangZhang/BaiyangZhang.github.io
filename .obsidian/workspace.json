@@ -11,8 +11,12 @@
             "id": "d1aecae605d42eca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_pages/about.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_pages/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_pages/about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_pages/about.md"
+              }
             }
           },
           {
@@ -166,15 +174,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "957cfa2362e38596",
+  "active": "d1aecae605d42eca",
   "lastOpenFiles": [
-    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
-    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
-    "_posts/2023-09-26-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
     "_posts/2023-09-21-The-Dirac-Equation.md",
     "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry.md",
     "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
@@ -194,6 +195,13 @@
     "_posts/2023-07-03-The-Electromagnetic-Connection.md",
     "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
     "_posts/2023-06-21-The-Phase-Space.md",
+    "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
+    "_posts/2023-06-17-The-Workers-and-the-Fatherland.md",
+    "_posts/2023-06-16-Representables-in-Category-Theory.md",
+    "_posts/2023-06-16-Complex-Line-Bundle.md",
+    "_posts/2023-06-15-Complex-Vector-Space.md",
+    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
+    "_posts/2023-06-13-Connections-in-a-Vector-Bundle.md",
     "assets/pdf/Baiyang_CV.pdf",
     "Templates",
     "img/prof_pic.jpg",
