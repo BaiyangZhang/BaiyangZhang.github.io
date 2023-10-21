@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
+                "file": "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5,
-    "collapsed": true
+    "width": 283.5
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
+                "file": "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
+                "file": "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md"
+                "file": "_posts/2023-06-07-Fractal-Geometry-in-Physics.md"
               }
             }
           },
@@ -177,6 +176,14 @@
   },
   "active": "d1aecae605d42eca",
   "lastOpenFiles": [
+    "_posts/2023-04-01-Introduction-to-Resurgence-and-Transseries-Lecture-2.md",
+    "_posts/2023-3-24-Betti-Numbers.md",
+    "_posts/2023-3-23-Synges-Theorem.md",
+    "_posts/2023-3-22-Introduction-to-Resurgence-and-Transseries-Lecture-1.md",
+    "_posts/2023-3-21-Geodesics-and-Jacobi-Fields.md",
+    "_posts/2023-3-21-Montesquieu.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
+    "_posts/2023-03-21-tables.md",
     "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
     "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
@@ -195,14 +202,6 @@
     "_posts/2023-07-17-历史笔记若干.md",
     "_posts/2023-07-12-post-bibliography.md",
     "_posts/2023-07-12-Coset-Spaces.md",
-    "_posts/2023-07-09-Fiber-Bundles-and-Principal-Bundles.md",
-    "_posts/2023-07-07-Quartic-Time-Derivative.md",
-    "_posts/2023-07-05-Transseries-Lecture-I.md",
-    "_posts/2023-07-04-jupyter-notebook.md",
-    "_posts/2023-07-03-The-Electromagnetic-Connection.md",
-    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
-    "_posts/2023-06-21-The-Phase-Space.md",
-    "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
     "assets/pdf/Baiyang_CV.pdf",
     "Templates",
     "img/prof_pic.jpg",
