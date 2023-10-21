@@ -794,3 +794,13 @@ In economics, equilibrium is like a balanced seesaw, but instead of people and w
 
 For example, let's say you and your friends want to buy lemonade on a hot day. If there's a lot of lemonade available and not many people want to buy it, the price will likely be low. But if there's only a little lemonade and a lot of people want it, the price will be high. The point at which the amount of lemonade people want to buy is equal to the amount available, and everyone is happy with the price, is the equilibrium.
 
+- - -
+
+Calculus is a branch of mathematics that deals with the study of change (differential calculus) and accumulation (integral calculus). It provides us with the tools to analyze and understand dynamic processes and systems that change continuously. 
+
+When we talk about differential calculus, we are primarily concerned with the concept of a derivative, which represents the rate at which a function changes as its input changes. In simpler terms, derivatives help us find the slope of a curve at any given point. This is crucial in economics when we want to understand how one variable responds to changes in another variable, such as the relationship between price and quantity demanded in the market.
+
+On the other hand, integral calculus is concerned with the concept of an integral, which represents the accumulation of quantities. Integrals allow us to calculate areas under curves and can be used to find total cost, total revenue, or consumer surplus, given their respective density functions.
+
+Together, these concepts from calculus are fundamental tools in mathematical economics, helping us model and analyze the dynamic and complex relationships between different economic variables.
+
