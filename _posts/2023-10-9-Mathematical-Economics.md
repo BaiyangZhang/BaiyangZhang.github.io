@@ -788,3 +788,9 @@ In practice, real-world Input-Output tables are much larger and more complex, of
 
 ## Lecture 5
 
+Imagine you have a seesaw in a playground. When two people of the same weight sit on each end, the seesaw will be balanced and level. This is similar to equilibrium in economics.
+
+In economics, equilibrium is like a balanced seesaw, but instead of people and weight, we are balancing supply and demand. When the amount of goods people want to buy (demand) is equal to the amount of goods available for sale (supply), we have what is called a market equilibrium. This balance determines the price of the good.
+
+For example, let's say you and your friends want to buy lemonade on a hot day. If there's a lot of lemonade available and not many people want to buy it, the price will likely be low. But if there's only a little lemonade and a lot of people want it, the price will be high. The point at which the amount of lemonade people want to buy is equal to the amount available, and everyone is happy with the price, is the equilibrium.
+

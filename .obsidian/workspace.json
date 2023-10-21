@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "27ef9bc1cbc9386b",
+        "id": "6ac0aba406a11b67",
         "type": "tabs",
         "children": [
           {
-            "id": "d1aecae605d42eca",
+            "id": "9812f62f1c81439c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/cv.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_pages/cv.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_pages/cv.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_pages/cv.md"
+                "file": "_posts/2023-10-9-Mathematical-Economics.md"
               }
             }
           },
@@ -174,8 +175,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d1aecae605d42eca",
+  "active": "9812f62f1c81439c",
   "lastOpenFiles": [
+    "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
+    "_pages/cv.md",
     "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
     "_posts/2023-04-01-Introduction-to-Resurgence-and-Transseries-Lecture-2.md",
     "_posts/2023-3-24-Betti-Numbers.md",
@@ -185,9 +190,6 @@
     "_posts/2023-3-21-Montesquieu.md",
     "_posts/2023-10-9-Mathematical-Economics.md",
     "_posts/2023-03-21-tables.md",
-    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
-    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "_posts/2023-09-26-Introduction-to-Higher-Form-Symmetry.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
@@ -201,7 +203,6 @@
     "_posts/2023-07-20-Gauss-Bonnet-and-Index-Theorem.md",
     "_posts/2023-07-18-Mikhail-Bakunin.md",
     "_posts/2023-07-17-历史笔记若干.md",
-    "_posts/2023-07-12-post-bibliography.md",
     "assets/pdf/Baiyang_CV.pdf",
     "Templates",
     "img/prof_pic.jpg",
