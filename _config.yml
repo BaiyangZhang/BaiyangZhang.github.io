@@ -120,9 +120,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: For A Ruthless Criticism of Everything Existing # blog_name will be displayed in your blog page
+blog_name: Doubt Everything # blog_name will be displayed in your blog page
 blog_nav_title: Blogs # your blog must have a title for it to be displayed in the nav bar
-blog_description:  
+blog_description:  For A Ruthless Criticism of Everything Existing
 permalink: /blog/:year/:title/
 
 # Pagination
