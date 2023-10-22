@@ -11,12 +11,8 @@
             "id": "9812f62f1c81439c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md"
-              }
+              "state": {}
             }
           },
           {
@@ -177,42 +169,51 @@
   },
   "active": "9812f62f1c81439c",
   "lastOpenFiles": [
-    "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
-    "_pages/cv.md",
-    "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
-    "_posts/2023-04-01-Introduction-to-Resurgence-and-Transseries-Lecture-2.md",
+    "news.html",
+    "bin/entry_point.sh",
+    "bin/deploy",
+    "bin/cibuild",
+    "bin",
+    "backups/2022-02-01-redirect.md",
+    "backups/2021-07-04-diagrams.md",
+    "backups/2020-09-28-twitter.md",
+    "assets/jupyter/blog.ipynb",
+    "assets/jupyter",
+    "assets/css/main.scss",
+    "_sass/font-awesome/_variables.scss",
+    "_sass/font-awesome/_stacked.scss",
+    "_sass/font-awesome/_sizing.scss",
+    "_projects/6_project.md",
+    "_projects/5_project.md",
+    "_projects/4_project.md",
+    "_projects/3_project.md",
+    "_projects/2_project.md",
+    "_projects/1_project.md",
+    "_posts/2023-5-18-(Vector)-Fibre-Bundles.md",
     "_posts/2023-3-24-Betti-Numbers.md",
     "_posts/2023-3-23-Synges-Theorem.md",
     "_posts/2023-3-22-Introduction-to-Resurgence-and-Transseries-Lecture-1.md",
-    "_posts/2023-3-21-Geodesics-and-Jacobi-Fields.md",
+    "_posts/2023-3-22-Heuristics-of-Einstein's-Theory.md",
     "_posts/2023-3-21-Montesquieu.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-03-21-tables.md",
-    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
-    "_posts/2023-09-26-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
-    "_posts/2023-09-21-The-Dirac-Equation.md",
-    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
-    "_posts/2023-08-27-Associated-bundles.md",
-    "_posts/2023-08-23-Connection-in-Principal-Bundles.md",
-    "_posts/2023-08-19-韩非子.md",
-    "_posts/2023-07-28-Topological-Quantization.md",
-    "_posts/2023-07-20-Gauss-Bonnet-and-Index-Theorem.md",
-    "_posts/2023-07-18-Mikhail-Bakunin.md",
-    "_posts/2023-07-17-历史笔记若干.md",
-    "assets/pdf/Baiyang_CV.pdf",
-    "Templates",
-    "img/prof_pic.jpg",
-    "img/eom.png",
-    "img/eom.pdf",
-    "img/lib19.jpg.crdownload",
-    "img/lib18.jpg.crdownload",
-    "img/lib14.jpg.crdownload",
-    "img/lib12.jpg.crdownload",
-    "img/lib3.jpg.crdownload",
-    "img/lib11.jpg.crdownload"
+    "_posts/2023-3-21-Geodesics-and-Jacobi-Fields.md",
+    "_posts/2023-3-21-Confinement-in-Toy-Models-Lecture-1.md",
+    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
+    "_posts/2023-3-17-Riemanns-Theorem-and-the-Horizontal-Distribution.md",
+    "_posts/2023-3-16-Covariant-Differentiation-and-Curvature.md",
+    "_posts/2023-3-12-The-Geometry-of-Surfaces-in-R3.md",
+    "_posts/2023-2-8-Basic-Algebraic-Geometry-11.md",
+    "_posts/2023-2-7-Basic-Algebraic-Geometry-Class-10.md",
+    "_posts/2023-2-6-Basic-Algebraic-Geometry-Class-9.md",
+    "_posts/2023-2-6-Basic-Algebraic-Geometry-Class-8.md",
+    "assets/img/publications-screenshot-800.webp",
+    "assets/img/publications-screenshot-480.webp",
+    "assets/img/publications-screenshot-1400.webp",
+    "assets/img/projects-screenshot-800.webp",
+    "assets/img/projects-screenshot-480.webp",
+    "assets/img/projects-screenshot-1400.webp",
+    "assets/img/prof_pic-800.webp",
+    "assets/img/prof_pic-480.webp",
+    "assets/img/prof_pic-1400.webp",
+    "assets/img/photos-screenshot-800.webp"
   ]
 }
