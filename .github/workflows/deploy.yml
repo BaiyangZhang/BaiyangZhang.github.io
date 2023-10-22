@@ -34,12 +34,13 @@ jobs:
         propertyPath: 'giscus.repo'
         value: ${{ github.repository }}
     - name: Install and Build 🔧
+    # bundle exec jekyll build  --lsi
       run: |
         pip3 install --upgrade jupyter
         npm install -g mermaid.cli
         npm install -g purgecss
         export JEKYLL_ENV=production
-        bundle exec jekyll build --lsi
+        bundle exec jekyll build
         purgecss -c purgecss.config.js
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
