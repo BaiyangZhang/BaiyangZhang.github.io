@@ -13,7 +13,7 @@
   contents:
     - title: PhD
       institution: Lanzhou University, Gansu Province, China
-      year: 2007-2011
+      year: 2007 -- 2011
       description:
         - Description 1.
         - Description 2.
@@ -33,7 +33,7 @@
   contents:
     - title: Postdoctoral Researcher
       institution: HeNan University
-      year: 2022 - 
+      year: 2022 
       description:
         - Description 1.
         - Description 2.
