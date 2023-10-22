@@ -11,33 +11,27 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: Bs.C
       institution: Lanzhou University, Gansu Province, China
       year: 2007 -- 2011
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: 
-      institution: 
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+
+    - title: Ph.D
+      institution: Institute of Modern Physics, Chinese Academy of Sciences
+      year: 2012 -- 2018
+
 
 - title: Experience
   type: time_table
   contents:
     - title: Postdoctoral Researcher
       institution: HeNan University
-      year: 2022 
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+      year: 2022 -- now
+
+       - title: Postdoctoral Researcher
+      institution: University of Minnesota
+      year: 2019 -- 2022
+
+       - title: Postdoctoral Researcher
+      institution: Wigner Centre of Physics, Hungarian Academy of Sciences
+      year: 2018 -- 2019
+      
