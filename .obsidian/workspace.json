@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
+                "file": "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 283.5,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
+                "file": "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
+                "file": "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md"
+                "file": "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md"
               }
             }
           },
@@ -176,11 +177,11 @@
   },
   "active": "9812f62f1c81439c",
   "lastOpenFiles": [
+    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
     "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
     "_posts/2023-09-26-Introduction-to-Higher-Form-Symmetry.md",
     "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
     "_posts/2023-10-9-Mathematical-Economics.md",
     "news.html",
     "bin/entry_point.sh",
