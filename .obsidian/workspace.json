@@ -11,8 +11,12 @@
             "id": "9812f62f1c81439c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md"
+              }
             }
           },
           {
@@ -169,6 +177,12 @@
   },
   "active": "9812f62f1c81439c",
   "lastOpenFiles": [
+    "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-09-26-Introduction-to-Higher-Form-Symmetry.md",
+    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry.md",
+    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
+    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",
@@ -182,7 +196,6 @@
     "assets/css/main.scss",
     "_sass/font-awesome/_variables.scss",
     "_sass/font-awesome/_stacked.scss",
-    "_sass/font-awesome/_sizing.scss",
     "_projects/6_project.md",
     "_projects/5_project.md",
     "_projects/4_project.md",
@@ -200,11 +213,6 @@
     "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2023-3-17-Riemanns-Theorem-and-the-Horizontal-Distribution.md",
     "_posts/2023-3-16-Covariant-Differentiation-and-Curvature.md",
-    "_posts/2023-3-12-The-Geometry-of-Surfaces-in-R3.md",
-    "_posts/2023-2-8-Basic-Algebraic-Geometry-11.md",
-    "_posts/2023-2-7-Basic-Algebraic-Geometry-Class-10.md",
-    "_posts/2023-2-6-Basic-Algebraic-Geometry-Class-9.md",
-    "_posts/2023-2-6-Basic-Algebraic-Geometry-Class-8.md",
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp",
