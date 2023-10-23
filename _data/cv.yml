@@ -11,14 +11,13 @@
 - title: Education
   type: time_table
   contents:
-    - title: Bs.C
-      institution: Lanzhou University, Gansu Province, China
-      year: 2007 -- 2011
-
     - title: Ph.D
       institution: Institute of Modern Physics, Chinese Academy of Sciences
       year: 2012 -- 2018
-
+      
+    - title: Bs.C
+      institution: Lanzhou University, Gansu Province, China
+      year: 2007 -- 2011
 
 - title: Experience
   type: time_table
