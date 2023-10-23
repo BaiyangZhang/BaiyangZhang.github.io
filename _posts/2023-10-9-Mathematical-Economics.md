@@ -804,3 +804,6 @@ On the other hand, integral calculus is concerned with the concept of an integra
 
 Together, these concepts from calculus are fundamental tools in mathematical economics, helping us model and analyze the dynamic and complex relationships between different economic variables.
 
+- - -
+
+Review the concept of maps, functions. Then the concept of the slope (of the graph of a function). Then finite change and infinitesimal change. Then the derivative.
