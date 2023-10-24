@@ -2,7 +2,7 @@
 layout: post
 title: Yang–Mills Fields
 subtitle: 
-date: 2023-10-13
+date: 2023-10-23
 author: Baiyang Zhang
 header-img: img/background19.jpg
 catalog: true

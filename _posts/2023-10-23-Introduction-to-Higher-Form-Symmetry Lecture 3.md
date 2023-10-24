@@ -34,6 +34,13 @@ $$
 \delta S = \int_ {M^{(D)}} (\star J)\wedge d\epsilon,
 \tag{2}
 $$
-where $\star J$ is a $(D-1)$-form, $d \epsilon$ is a $1$-form (since $\epsilon$ is a zero form), hence their wedge product is a $D$-form, something can be integrated over $D$-dimensional manifold $M$, whose boundary is $\Sigma$, by the way. 
+where $\star J$ is a $(D-1)$-form, $d \epsilon$ is a $1$-form (since $\epsilon$ is a zero form), hence their wedge product is a $D$-form, something can be integrated over $D$-dimensional manifold $M$ (whose boundary is $\Sigma$). 
 
-The advantage of Eq. (2) is that it can be generalized to higher forms. 
+The advantage of Eq. (2) is that it can be generalized to higher forms. Assume $\epsilon$ is a 1-form now. Then $d \epsilon$ is a 2-form, as a result $\star J$ is a $(D-2)$-form and $J$ is a $2$-form. The conservation law becomes
+$$
+d \star J = 0 \to \partial_ {\mu} J^{\mu \nu}=0.
+$$
+Since $(D-2)$-form can be integrated over a $(D-2)$ manifold, we can define the charge operator as 
+$$
+Q(\Sigma_ {D-2}):= \int_ {\Sigma} \,  \star J.
+$$
