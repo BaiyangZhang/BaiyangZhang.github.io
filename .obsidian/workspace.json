@@ -11,15 +11,24 @@
             "id": "9812f62f1c81439c",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "c61f62b2cb75cbda",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_projects/1_project.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,8 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5,
-    "collapsed": true
+    "width": 283.5
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -94,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_projects/1_project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_projects/1_project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md"
+                "file": "_projects/1_project.md"
               }
             }
           },
@@ -175,29 +183,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9812f62f1c81439c",
+  "active": "c61f62b2cb75cbda",
   "lastOpenFiles": [
-    "_posts/2023-04-03-De-Rhams Theorem.md",
-    "_posts/2023-3-24-Betti-Numbers.md",
-    "_posts/2023-3-21-Geodesics-and-Jacobi-Fields.md",
-    "_posts/2023-1-13-Colemen-Weinberg-Potential.md",
-    "_posts/2022-12-29-Hobbes-Moral-and-Political-Philosophy.md",
-    "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
-    "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_drafts/2023-mm-dd-Theodore-Frankel.md",
-    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
-    "_drafts/2023-05-31-Analytic-Structure.md",
-    "_drafts/2023-06-02-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
-    "_drafts/2023-06-16-Representables-in-Category-Theory.md",
-    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
-    "_drafts/2023-mm-dd-Confinement-in-Toy-Models-Lecture-.md",
     "_posts/2023-10-23-Yang–Mills-Fields.md",
     "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
     "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
-    "_posts/2023-09-26-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
+    "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",
@@ -213,6 +204,23 @@
     "_sass/font-awesome/_stacked.scss",
     "_projects/6_project.md",
     "_projects/5_project.md",
+    "_projects/4_project.md",
+    "_projects/3_project.md",
+    "_projects/2_project.md",
+    "_projects/1_project.md",
+    "_posts/2023-5-18-(Vector)-Fibre-Bundles.md",
+    "_posts/2023-3-24-Betti-Numbers.md",
+    "_posts/2023-3-23-Synges-Theorem.md",
+    "_posts/2023-3-22-Introduction-to-Resurgence-and-Transseries-Lecture-1.md",
+    "_posts/2023-3-22-Heuristics-of-Einstein's-Theory.md",
+    "_posts/2023-3-21-Montesquieu.md",
+    "_posts/2023-3-21-Geodesics-and-Jacobi-Fields.md",
+    "_posts/2023-3-21-Confinement-in-Toy-Models-Lecture-1.md",
+    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
+    "_posts/2023-3-17-Riemanns-Theorem-and-the-Horizontal-Distribution.md",
+    "_posts/2023-3-16-Covariant-Differentiation-and-Curvature.md",
+    "_posts/2023-3-12-The-Geometry-of-Surfaces-in-R3.md",
+    "_posts/2023-2-8-Basic-Algebraic-Geometry-11.md",
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp",
