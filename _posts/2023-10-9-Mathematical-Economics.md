@@ -866,22 +866,17 @@ The chain rule is a fundamental principle in calculus that allows us to find the
 
 The Chain Rule:
 The chain rule states that if you have a composite function $f(g(x))$, and you want to find its derivative, you would do the following:
-
 $$
 \frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x)
 $$
-
 Here, $f'(g(x))$ is the derivative of $f$ with respect to $g(x)$, and $g'(x)$ is the derivative of $g$ with respect to $x$.
 
 Example 1:
 Let's consider an example to understand the application of the chain rule.
-
 $$
 h(x) = \sin(x^2)
 $$
-
 Here, we can consider $f(x) = \sin(x)$ and $g(x) = x^2$, so that $h(x) = f(g(x))$. Now, we want to find the derivative of $h(x)$.
-
 $$
 \begin{aligned}
 h'(x) &= \frac{d}{dx} \sin(x^2) \\
@@ -892,13 +887,10 @@ $$
 
 Example 2:
 Let's take another example.
-
 $$
 h(x) = \exp(\sin(x))
 $$
-
 Here, $f(x) = \exp(x)$ and $g(x) = \sin(x)$, so $h(x) = f(g(x))$. We want to find the derivative of $h(x)$.
-
 $$
 \begin{aligned}
 h'(x) &= \frac{d}{dx} \exp(\sin(x)) \\
@@ -907,5 +899,42 @@ h'(x) &= \frac{d}{dx} \exp(\sin(x)) \\
 \end{aligned}
 $$
 
-Conclusion:
 The chain rule is an essential tool in calculus that allows us to find the derivatives of composite functions. It provides a systematic way to break down complex functions into simpler parts, find their derivatives individually, and then multiply them together to get the desired result. As we have seen from the examples, the chain rule is applicable to a wide range of functions, making it a versatile and powerful tool in mathematics.
+
+Explain partial derivative, and gradient.
+
+Introduce the concept of implicit functions and discuss the implications of the Implicit Function Theorem.
+
+In calculus, we often deal with functions that are explicitly defined, where the dependent variable is isolated on one side of the equation. However, in some cases, the dependent variable cannot be easily isolated, and we have to work with implicit functions, where the dependent and independent variables are mixed together. The Implicit Function Theorem provides a way to handle such cases.
+
+**Implicit Function Theorem:**
+The Implicit Function Theorem states that if we have an equation in two or more variables, we can often solve for one variable as a function of the others, even if the equation doesn’t explicitly define it as such. In other words, it allows us to find the derivative of an implicitly defined function without explicitly solving for the function.
+
+**Example 1:**
+Consider the equation:
+
+$$x^2 + y^2 = 1$$
+
+This equation defines $y$ implicitly as a function of $x$. We can use the Implicit Function Theorem to find $\frac{dy}{dx}$:
+
+$$
+\begin{aligned}
+2x + 2y\frac{dy}{dx} &= 0 \\
+\frac{dy}{dx} &= -\frac{x}{y}
+\end{aligned}
+$$
+
+**Example 2:**
+Consider the equation:
+$$x^2 - 2xy + y^2 = 3.$$
+Again, this equation defines $y$ implicitly as a function of $x$. We can find $\frac{dy}{dx}$ by differentiating both sides of the equation with respect to $x$:
+$$
+\begin{aligned}
+2x - 2y - 2x\frac{dy}{dx} + 2y\frac{dy}{dx} &= 0 \\
+(2y - 2x)\frac{dy}{dx} &= 2y - 2x \\
+\frac{dy}{dx} &= \frac{y - x}{y - x} \\
+\frac{dy}{dx} &= 1
+\end{aligned}
+$$
+
+The Implicit Function Theorem is a powerful tool in calculus that allows us to find the derivatives of implicitly defined functions. It is useful in cases where isolating the dependent variable is difficult or impossible. By understanding the Implicit Function Theorem, we can better analyze and interpret complex relationships between variables in mathematics and other related fields.
