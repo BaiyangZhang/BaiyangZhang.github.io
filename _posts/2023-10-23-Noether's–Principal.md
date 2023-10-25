@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yang–Mills Fields
+title: Noether's Principal
 subtitle: 
 date: 2023-10-23
 author: Baiyang Zhang

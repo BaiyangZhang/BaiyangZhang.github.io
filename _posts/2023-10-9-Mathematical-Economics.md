@@ -807,3 +807,105 @@ Together, these concepts from calculus are fundamental tools in mathematical eco
 - - -
 
 Review the concept of maps, functions. Then the concept of the slope (of the graph of a function). Then finite change and infinitesimal change. Then the derivative.
+
+## Lecture 6
+
+**Euler's number $e$**
+
+The Euler constant $e$ is an irrational and `transcendental`(explain) number approximately equal to $2.71828$. It has a beautiful and interesting origin that can be traced back to compound interest.
+
+**Origin of $e$:**
+
+Imagine you invest \$1 at an interest rate of 100% per year. How much will you have at the end of one year?
+
+1. **No compounding (n = 0):**
+   - You would have \$2 at the end of the year.
+
+Now, consider the interest is compounded, meaning that the interest is added to the principal periodically and the new total then earns interest.
+
+2. **Compounded annually (n = 1):**
+   - You would have $1 \times \left(1 + \frac{1}{1}\right)^1 = \$2$.
+
+3. **Compounded semi-annually (n = 2):**
+   - You would have $1 \times \left(1 + \frac{1}{2}\right)^2 = \$2.25$.
+
+4. **Compounded quarterly (n = 4):**
+   - You would have $1 \times \left(1 + \frac{1}{4}\right)^4 \approx \$2.44$.
+
+As you increase the frequency of compounding ($n$), the total amount you would have at the end of the year approaches $e$. Mathematically, this is expressed as:
+
+$$
+\lim_ {n \to \infty} \left(1 + \frac{1}{n}\right)^n = e \approx 2.71828...
+$$
+
+This is the origin of Euler's number $e$ in the context of compound interest. The more frequently interest is compounded, the more money you end up with, and this approaches a limit as the compounding frequency goes to infinity, which is $e$.
+
+**Importance in Economics:**
+
+The number $e$ plays an important role in economics, particularly in financial mathematics. Here are some examples:
+
+1. Compound Interest:
+   - As we've seen in the example above, $e$ is crucial in calculating compound interest, which is foundational in economics and finance.
+
+2. Exponential Growth and Decay:
+   - Many economic processes, like population growth, inflation, and depreciation, can be modeled by exponential functions, and the base of these exponential functions is often $e$.
+
+3. Option Pricing:
+   - In the Black-Scholes model for option pricing, the exponential function with base $e$ is used to model the behavior of stock prices over time.
+
+4. Elasticity:
+   - In microeconomics, elasticity, which measures the responsiveness of demand or supply to changes in price or income, often involves exponential functions with base $e$.
+
+In summary, the number $e$ has a rich and intuitive origin in compound interest, and its applications in economics, particularly in financial mathematics and modeling, make it an essential constant in the field.
+
+**Understanding the Chain Rule in Calculus**
+
+To introduce the concept of the chain rule and its applications in finding the derivatives of composite functions.
+
+The chain rule is a fundamental principle in calculus that allows us to find the derivative of a composite function. A composite function is a function that combines two or more functions in a specific order. For example, if we have two functions, $f(x)$ and $g(x)$, then a composite function could be $f(g(x))$, where we first apply $g(x)$ and then apply $f(x)$ to the result.
+
+The Chain Rule:
+The chain rule states that if you have a composite function $f(g(x))$, and you want to find its derivative, you would do the following:
+
+$$
+\frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x)
+$$
+
+Here, $f'(g(x))$ is the derivative of $f$ with respect to $g(x)$, and $g'(x)$ is the derivative of $g$ with respect to $x$.
+
+Example 1:
+Let's consider an example to understand the application of the chain rule.
+
+$$
+h(x) = \sin(x^2)
+$$
+
+Here, we can consider $f(x) = \sin(x)$ and $g(x) = x^2$, so that $h(x) = f(g(x))$. Now, we want to find the derivative of $h(x)$.
+
+$$
+\begin{aligned}
+h'(x) &= \frac{d}{dx} \sin(x^2) \\
+&= \cos(x^2) \cdot \frac{d}{dx} x^2 \\
+&= 2x \cdot \cos(x^2)
+\end{aligned}
+$$
+
+Example 2:
+Let's take another example.
+
+$$
+h(x) = \exp(\sin(x))
+$$
+
+Here, $f(x) = \exp(x)$ and $g(x) = \sin(x)$, so $h(x) = f(g(x))$. We want to find the derivative of $h(x)$.
+
+$$
+\begin{aligned}
+h'(x) &= \frac{d}{dx} \exp(\sin(x)) \\
+&= \exp(\sin(x)) \cdot \frac{d}{dx} \sin(x) \\
+&= \exp(\sin(x)) \cdot \cos(x)
+\end{aligned}
+$$
+
+Conclusion:
+The chain rule is an essential tool in calculus that allows us to find the derivatives of composite functions. It provides a systematic way to break down complex functions into simpler parts, find their derivatives individually, and then multiply them together to get the desired result. As we have seen from the examples, the chain rule is applicable to a wide range of functions, making it a versatile and powerful tool in mathematics.
