@@ -2,7 +2,7 @@
 layout: post
 title: The Poincare Duality
 subtitle: 
-date: 2023-10-24
+date: 2023-10-26
 author: Baiyang Zhang
 header-img: img/mathArt14.jpg
 catalog: true
@@ -65,27 +65,27 @@ In homology theory, an induced homomorphism is a function between homology group
 The induced homomorphism has the following properties:
 
 1. **Functoriality:**
-   - If $f: X \to Y$ and $g: Y \to Z$ are continuous functions, then $(g \circ f)_  * = g_  * \circ f_ *$.
-   - If $id_ X: X \to X$ is the identity function, then $(id_ X)_ * = id_ {H_ n(X)}$.
+   - If $f: X \to Y$ and $g: Y \to Z$ are continuous functions, then $(g \circ f)_  \ast = g_  \ast \circ f_ \ast$.
+   - If $id_ X: X \to X$ is the identity function, then $(id_ X)_ \ast = id_ {H_ n(X)}$.
 
 2. **Preservation of Homologous Cycles:**
    - If two cycles are homologous in $X$, then their images under $f_ *$ will be homologous in $Y$.
 
 Mathematically, if $f: X \to Y$ is a continuous map, then for each non-negative integer $n$, there is an induced homomorphism:
 $$
-f_ *: H_ n(X) \to H_ n(Y)
+f_ \ast: H_ n(X) \to H_ n(Y)
 $$
 The induced homomorphism is defined by taking a homology class $[z]$ in $H_ n(X)$ and mapping it to the homology class $[f(z)]$ in $H_ n(Y)$, where $f(z)$ is the image of the cycle $z$ under the map $f$. This can be expressed as:
 $$
-f_ *([z]) = [f(z)]
+f_ \ast([z]) = [f(z)]
 $$
 The concept of induced homomorphisms allows us to study how the topological properties of spaces are related through continuous functions.
 
 **Relative homology groups**
 
-The notation $H_k(M, N; R)$ denotes the $k$-th relative homology group of a pair of topological spaces $(M, N)$ with coefficients in a ring $R$. Here, $M$ is a topological space, $N$ is a subspace of $M$, and $R$ is a ring (commonly $\mathbb{Z}$ for integer coefficients or $\mathbb{Q}$ for rational coefficients).
+The notation $H_ k(M, N; R)$ denotes the $k$-th relative homology group of a pair of topological spaces $(M, N)$ with coefficients in a ring $R$. Here, $M$ is a topological space, $N$ is a subspace of $M$, and $R$ is a ring (commonly $\mathbb{Z}$ for integer coefficients or $\mathbb{Q}$ for rational coefficients).
 
-Relative homology groups are a generalization of homology groups that allow us to study the topology of a space relative to a subspace. The $k$-th relative homology group $H_k(M, N; R)$ measures the $k$-dimensional holes in $M$ that are not in $N$, with the homology classes represented with coefficients in the ring $R$.
+Relative homology groups are a generalization of homology groups that allow us to study the topology of a space relative to a subspace. The $k$-th relative homology group $H_ k(M, N; R)$ measures the $k$-dimensional holes in $M$ that are not in $N$, with the homology classes represented with coefficients in the ring $R$.
 
 The definition of the $k$-th relative homology group involves the following steps:
 
@@ -93,12 +93,16 @@ The definition of the $k$-th relative homology group involves the following step
    Consider the chain complex of $M$ and the chain complex of $N$ with coefficients in $R$. These are sequences of $R$-modules and boundary homomorphisms that capture the $k$-dimensional simplices in $M$ and $N$, respectively.
 
 2. **Quotient Chain Complex:**
-   Form the quotient chain complex $C_k(M, N; R) = C_k(M; R) / C_k(N; R)$.
+   Form the quotient chain complex $C_ k(M, N; R) = C_ k(M; R) / C_ k(N; R)$.
 
 3. **Boundary Homomorphisms:**
-   Define boundary homomorphisms $\partial_k: C_k(M, N; R) \to C_{k-1}(M, N; R)$ on the quotient chain complex.
+   Define boundary homomorphisms $\partial_ k: C_ k(M, N; R) \to C_ {k-1}(M, N; R)$ on the quotient chain complex.
 
 4. **Homology Group:**
-   Finally, the $k$-th relative homology group $H_k(M, N; R)$ is the quotient group of cycles modulo boundaries in the quotient chain complex.
+   Finally, the $k$-th relative homology group $H_ k(M, N; R)$ is the quotient group of cycles modulo boundaries in the quotient chain complex.
 
-In summary, $H_k(M, N; R)$ represents the $k$-th relative homology group of the pair $(M, N)$ with coefficients in the ring $R$. This group captures the $k$-dimensional holes in $M$ that are not in $N$, providing a powerful tool for analyzing the topology of a space relative to a subspace.
+### Mikio Nakahara's approach
+
+In Nakahara's textbook, he approached Poincare duality (Chapter 6, *DE RHAM COHOMOLOGY GROUPS*) as the following. 
+
+First he defined the "standard" version of everything, a standard space is just an Euclidean space $\mathbb{R}^{n}$, a standard n-simplex is a generalization of a triangle to n-dimensional space, 
