@@ -34,7 +34,7 @@ In summary, a simplicial complex is a collection of simplices glued together in 
 
 ## Poincare's Duality
 
-### Summary
+### Introduction
 
 Poincaré duality is a fundamental and profound concept in algebraic topology, bridging homology and cohomology, two primary tools we use to probe the topological structure of a manifold. This relationship can provide a richer understanding of the manifold's geometry and topology. 
 
@@ -56,7 +56,7 @@ Poincare duality has profound implications for the study of manifolds. It tells 
 
 In our upcoming sections, we will explore the details.
 
-### Review of homology
+#### Review of homology
 
 *Induced homomorphism in homology*
 
@@ -118,5 +118,52 @@ Here are a few examples of standard simplices:
 - The standard 2-simplex is an equilateral triangle.
 - The standard 3-simplex is a regular tetrahedron.
 
-Then Nakahara goes on to define the integral of a n-form on a standard n-simplex. Here you don't need to worry about things such as orientation, volume element (without $\sqrt{ \left\lvert g \right\rvert }$ since is it trivial), nice and simple. 
+Then Nakahara goes on to define the integral of a n-form on a standard n-simplex. Here you don't need to worry about things such as orientation, volume element (without $\sqrt{ \left\lvert g \right\rvert }$ since is it trivial), nice and simple. He uses *singular* instead of *simplicial* complex to study the topology of a manifold $M$. After defining the *chains, cycles and boundaries* (the basic building blocks of homology), Nakahara defined what a homology group is. It is just the classes of cycles up to boundaries,
+$$
+B_ {r}(M;\mathbb{R}) :=  Z_ {r}(M;\mathbb{R}) / B(M;\mathbb{R})
+$$
+where $\mathbb{R}$ denotes the coefficient of the homology group, could be replaced by $\mathbb{Z}_ {2}$ or other groups. 
+
+Recall that Nakahara defined standard simplex $\overline{\sigma}$ and a generic, non-standard simplex $\sigma$ (without the bar) on $\mathbb{R}^{n}$. Mapping continuously a generic simplex $\mathbb{R}^{n}$ to $M$ you have the singular simplex on $M$, singular since the map might be without a inverse. Now we can do integral not only on r-simplexes on $\mathbb{R}^{n}$ but also on r-chains on the manifold $M$, by pulling back the form to be integrated on $M$ to $\mathbb{R}^{n}$, then make use of the linearity of integrals. By the end of the first section, Nakahara introduced the Stokes' theorem. 
+
+In the second section about de Rham cohomology, Nakahara first introduced counterparts of cycles and boundaries of differential forms, namely 
+$$
+\text{cycles} \longleftrightarrow \text{cocycyles = closed forms}
+$$
+and 
+$$
+\text{boundaries} \longleftrightarrow \text{coboundaries = exact forms.}
+$$
+
+The boundaries also form vector spaces with $\mathbb{R}$-coefficients. Then the de Rham cohomology group was introduced as the quotient 
+$$
+H^{r} (M; \mathbb{R}) = \text{Closed forms} / \text{Exact forms}.
+$$
+
+All this could be better illustrated using a complex chain maybe, but that's not Nakahara's approach, maybe considering the physics backgrounds of the readers. By the end of the section he introduced the de Rham's theorem, which we already covered in another note under the name "de Rham ...".
+
+In section 6.3, Nakahara introduces a lemma that can help to decide when is a closed form also exact, we have already covered this again in another note talking about Poincare's `potential`. Roughly speaking, on a patch $U\subset M$, if $U$ is contractible to a point, then a closed form defined on it is exact. *Any closed form is exact at least locally.* The de Rham cohomology group is regarded as an obstruction to the global exactness of closed forms.
+
+In section 6.4, Nakahara starts with Poincare duality, which is the topic of our note today. We will take more time to explain it here.
+
+- - -
+
+Let $M$ be a $m$-dimensional *compact* m-dimensional manifold and let $\omega \in H^{r}(M)$ and $\eta \in H^{m-r}$. Noting that $\omega \wedge \eta$ is a volume element, so we can construct an inner product
+$$
+\left\langle \omega,\eta \right\rangle := \int _ {M} \, \omega \wedge \eta.
+$$
+The inner product $\left\langle -,- \right\rangle$ is a map that takes an element from $H^{r}$ and $H^{m-r}$ to a number. This map is both linear (obviously) and non-singular, meaning that if $\omega \neq 0$ then $\left\langle \omega,\eta \right\rangle$ can't be zero for all $\eta$. That makes the relation between $H^{r}$ and $H^{m-r}$ a `duality`.
+
+According to Nakahara, this is called the `Poincare duality`. The problem is that, the Poincare duality defined here is between two cohomology groups, in the meanwhile the Poincare duality I read about from somewhere else is between homology and cohomology, between $H_ {r}$ and $H^{m-r}$. Maybe the missing connection between $H_ {r}$ and $H^{r}$ is given by the de Rham theorem? To answer this I'll keep reading Hatcher's textbook.
+
+- - -
+
+After introducing the Poincare duality, Nakahara introduces the cohomology ring where the role of production is played by wedge. Note that this is a ring regarding cohomology, not the differential forms themselves. This is one big difference between homology and cohomology, that we can define a sensible product for cohomology but not for homology. But I am not sure if this statement only applies to de Rham cohomology or to any cohomology.
+
+At the end of this chapter, Nakahara talked about Kunneth formula, which tells 
+
+
+
+
+
 
