@@ -168,7 +168,7 @@ $$
 However the computation takes a long time and yields a nonsensical result, 
 ![](/img/eom.png)
 
-which clearly doesn't make any sense. 
+which doesn't make any sense. 
 
 Maybe we can make it work by providing a super accurate initial condition? With this hope I try to solve the equation at the origin, namely $r=0$. Expand $f(r)$ about the origin we get
 $$

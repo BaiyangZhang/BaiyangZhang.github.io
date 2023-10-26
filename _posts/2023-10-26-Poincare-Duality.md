@@ -118,4 +118,5 @@ Here are a few examples of standard simplices:
 - The standard 2-simplex is an equilateral triangle.
 - The standard 3-simplex is a regular tetrahedron.
 
-Then Nakahara goes on to define the integral of a n-form on a standard n-simplex. Here you don't need to worry about things such as orientation, volume element (which is free from $\sqrt{ \left\lvert g \right\rvert }$ since is it trivial), nice and simple. 
+Then Nakahara goes on to define the integral of a n-form on a standard n-simplex. Here you don't need to worry about things such as orientation, volume element (without $\sqrt{ \left\lvert g \right\rvert }$ since is it trivial), nice and simple. 
+
