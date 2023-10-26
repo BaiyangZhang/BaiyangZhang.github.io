@@ -105,4 +105,17 @@ The definition of the $k$-th relative homology group involves the following step
 
 In Nakahara's textbook, he approached Poincare duality (Chapter 6, *DE RHAM COHOMOLOGY GROUPS*) as the following. 
 
-First he defined the "standard" version of everything, a standard space is just an Euclidean space $\mathbb{R}^{n}$, a standard n-simplex is a generalization of a triangle to n-dimensional space, 
+First he defined the "standard" version of everything, a standard space is just an Euclidean space $\mathbb{R}^{n}$, a standard n-simplex is a generalization of a triangle to n-dimensional space. To define it more formally, a standard $n$-simplex is a set of points $\{v_ 0, v_ 1, \ldots, v_ n\}$ in $\mathbb{R}^{n+1}$ such that:
+1. Each $v_ i$ is a standard basis vector. This means that it has a 1 in the $i$-th coordinate, and 0 in every other coordinate. For example, in $\mathbb{R}^3$, the second standard basis vector is $(0, 1, 0)$.
+2. The convex hull of these points is the standard $n$-simplex. Mathematically, this is defined as:
+$$
+\overline{\sigma}_ {r} := \left\{\sum_ {i=0}^n t_ i v_ i \,\mid \, \sum_ {i=0}^n t_ i = 1 \text{ and } 0 \leq t_ i \leq 1 \text{ for all } i\right\}.
+$$
+
+Here are a few examples of standard simplices:
+- The standard 0-simplex is a single point.
+- The standard 1-simplex is a line segment.
+- The standard 2-simplex is an equilateral triangle.
+- The standard 3-simplex is a regular tetrahedron.
+
+Then Nakahara goes on to define the integral of a n-form on a standard n-simplex. Here you don't need to worry about things such as orientation, volume element (which is free from $\sqrt{ \left\lvert g \right\rvert }$ since is it trivial), nice and simple. 
