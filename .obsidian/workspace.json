@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md"
+                "file": "_posts/2023-10-9-Mathematical-Economics.md"
               }
             }
           },
@@ -177,12 +177,16 @@
   },
   "active": "9812f62f1c81439c",
   "lastOpenFiles": [
+    "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
+    "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-10-23-Noether's–Principal.md",
+    "_posts/2023-10-26-Poincare-Duality.md",
+    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
     "Untitled.md",
-    "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
     "_drafts/2023-mm-dd-Theodore-Frankel.md",
     "_drafts/2023-10-26-Poincare-Duality.md",
-    "_posts/2023-10-26-Poincare-Duality.md",
-    "_posts/2023-10-23-Noether's–Principal.md",
     "_posts/2023-04-03-De-Rhams-Theorem.md",
     "_posts/2023-04-03-De-Rhams Theorem.md",
     "_posts/2023-3-24-Betti-Numbers.md",
@@ -197,12 +201,8 @@
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-mm-dd-Confinement-in-Toy-Models-Lecture-.md",
     "_posts/2023-10-23-Yang–Mills-Fields.md",
-    "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
     "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
-    "_posts/2023-09-26-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",

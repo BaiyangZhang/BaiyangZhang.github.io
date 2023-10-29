@@ -50,7 +50,7 @@ Additional review sessions may be scheduled in advance of exams.
 | 1  | Introduction and Basics of Analysis | CW, Ch. 1 and 2|
 | 2-4 | Linear Algebra  | CW, Ch. 4 and 5|
 | 5-6 | Derivatives | CW, Ch. 6,7 and 8|
-| 7 | Integrals | CW, Ch. 13|
+| 7 | Integrals | CW, Ch. 14|
 | 8-10 |Unconstrained Optimization | CW, Ch. 9, 10, and 11|
 | 11 | Constrained Optimization with Equality Constraints | CW, Ch. 12|
 | 12 | Probability Distributions and Combinatorics | GS, Ch. 1, 2 and 3|
