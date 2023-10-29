@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
+                "file": "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md"
+                "file": "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md"
               }
             }
           },
@@ -177,10 +177,11 @@
   },
   "active": "9812f62f1c81439c",
   "lastOpenFiles": [
+    "Untitled.md",
+    "_drafts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
     "_drafts/2023-mm-dd-Theodore-Frankel.md",
     "_drafts/2023-10-26-Poincare-Duality.md",
     "_posts/2023-10-26-Poincare-Duality.md",
-    "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
     "_posts/2023-10-23-Noether's–Principal.md",
     "_posts/2023-04-03-De-Rhams-Theorem.md",
     "_posts/2023-04-03-De-Rhams Theorem.md",
@@ -207,7 +208,6 @@
     "bin/deploy",
     "bin/cibuild",
     "bin",
-    "backups/2022-02-01-redirect.md",
     "assets/jupyter/blog.ipynb",
     "assets/jupyter",
     "assets/css/main.scss",
