@@ -938,3 +938,33 @@ $$
 $$
 
 The Implicit Function Theorem is a powerful tool in calculus that allows us to find the derivatives of implicitly defined functions. It is useful in cases where isolating the dependent variable is difficult or impossible. By understanding the Implicit Function Theorem, we can better analyze and interpret complex relationships between variables in mathematics and other related fields.
+
+### Lecture 7
+
+
+
+
+
+
+
+
+### Lecture 8
+
+
+### Lecture 9
+
+
+### Lecture 10
+
+
+### Lecture 11
+
+
+### Lecture 12
+
+
+### Lecture 13
+
+
+### Lecture 14 (Final)
+

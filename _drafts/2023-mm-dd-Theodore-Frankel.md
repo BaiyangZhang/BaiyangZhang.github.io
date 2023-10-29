@@ -11,6 +11,6 @@ tags:								#标签
     - Minkowski
     - Frankel
 ---
-柳州版"艳照门"
+
 *Disclaimer: Nothing in this note is original.*
 
