@@ -52,3 +52,17 @@ $$
 $$
 Cartan p-forms are scalar forms with very special properties, 1) they are bi-invariant hence closed, 2) $\Omega_ {2p}=0$ automatically. We will neglect the proof here. 
 
+The Cartan 3-form plays an especially important role. Since $\Omega(X)=X$ for all $X\in{\frak g}$, we have
+$$
+(\Omega \wedge \Omega)(X,Y) = \Omega(X)\otimes \Omega(Y) - \Omega(Y)\otimes \Omega(X)=[X,Y],
+$$
+When $G$ is compact we have
+$$
+\Omega^{3}(X,Y,Z) = 3\mathrm{Tr}\,([X,Y]Z).
+$$
+
+- - -
+
+**Bi-invariant Riemannian Metrics**
+
+Let $\left\langle -,- \right\rangle$ be the scalar product in ${\frak g}$ that is Ad invariant. The existence of an invariant scalar product is closely related to the concept of compactness for Lie groups. If a Lie group is compact, then it is possible to average any bilinear form on the Lie algebra over the group to obtain an invariant scalar product. This averaging process relies on the existence of a normalized Haar measure, which exists for compact groups. However, if the Lie group is not compact, such a Haar measure does not exist in general, and hence the averaging process cannot be carried out in the same way. As a result, there is no guarantee that a non-compact Lie group will have an invariant scalar product on its Lie algebra. That said, it is possible for non-compact Lie groups to have invariant scalar products on their Lie algebras, but this is not guaranteed, and it depends on the specific properties of the group and its algebra. 
