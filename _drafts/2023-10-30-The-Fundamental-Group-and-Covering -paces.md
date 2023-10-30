@@ -62,3 +62,11 @@ Let $M$ be a connected manifold. The universal covering manifold $\overline{M}$ 
 
 **The Orientable Covering**
 
+Let $\gamma,\gamma_ {1}$ be two paths form $p_ {0}$ to $p$. An orientable covering is such that if when we translate an orientation along the closed curve $\gamma\gamma ^{-1}$ we return with the original orientation. It is important that we are dealing with homotopy classes: if a closed curve $C$ preserves orientation, and if $C'$ is homotopic to $C$, then $C'$ will also preserve orientation.
+
+An orientable covering is in general smaller than the universal covering, but not necessarily.
+
+By the same arguments, it can be shown in general that the orientable cover of $M$ is either $M$ itself, if $M$ is orientable, or a 2-sheeted cover of $M$. As an example, a two-sheeted-orientable cover of the Klein bottle is the torus!
+
+
+
