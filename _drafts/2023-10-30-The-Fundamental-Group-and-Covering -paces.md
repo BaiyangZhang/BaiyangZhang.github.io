@@ -2,7 +2,7 @@
 layout: post
 title: The Fundamental Group and Covering Spaces
 subtitle: 
-date: 2023-10-29
+date: 2023-10-30
 author: Baiyang Zhang
 header-img: img/background11.jpg
 catalog: true
@@ -51,4 +51,14 @@ $$
 \pi: \overline{M} \to M,
 $$
 if each $x\in M$ has a neighborhood $U$ such that the preimage $\pi ^{-1}(U)$ consists of *disjoint open* subsets $\left\{ U_ {\alpha} \right\}$ of $\overline{M}$, each *diffeomorphic* under $\pi$.
+
+For example, we can cover $\mathbb{S}^{1}$ with $\mathbb{R}$ infinite times. 
+
+The notion of covering space can also be described in terms of fiber bundles as follows: 
+
+A covering space of a manifold $M$ is a connected space $\overline{M}$ that is a fiber bundle over $M$ with fiber $F$ a discrete set of points.
+
+Let $M$ be a connected manifold. The universal covering manifold $\overline{M}$ of $M$ is a covering space that has trivial fundamental group. 
+
+**The Orientable Covering**
 

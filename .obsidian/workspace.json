@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6ac0aba406a11b67",
+        "id": "f3c6301291cc24cf",
         "type": "tabs",
         "children": [
           {
-            "id": "9812f62f1c81439c",
+            "id": "a506e57999656a90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-10-29-The-Fundamental-Group-and-Covering -paces.md",
+                "file": "_drafts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-10-29-The-Fundamental-Group-and-Covering -paces.md",
+                "file": "_drafts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-10-29-The-Fundamental-Group-and-Covering -paces.md",
+                "file": "_drafts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-10-29-The-Fundamental-Group-and-Covering -paces.md"
+                "file": "_drafts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md"
               }
             }
           },
@@ -175,34 +175,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9812f62f1c81439c",
+  "active": "a506e57999656a90",
   "lastOpenFiles": [
-    "_drafts/2023-mm-dd-Theodore-Frankel.md",
-    "_drafts/2023-10-29-The-Fundamental-Group-and-Covering -paces.md",
-    "_drafts/2023mm-dd--Basic-Algebraic-Geometry-n.md",
-    "_drafts/君主论书摘.md",
-    "CONTRIBUTING.md",
+    "backups/2022-02-01-redirect.md",
+    "backups/2021-07-04-diagrams.md",
+    "backups/2020-09-28-twitter.md",
+    "backups/2020-09-28-github-metadata.md",
+    "backups/2018-12-22-distill.md",
+    "backups/2015-10-20-math.md",
+    "backups/2015-10-20-disqus-comments.md",
+    "backups/2015-07-15-code.md",
+    "backups/2015-05-15-images.md",
+    "backups/2015-03-15-formatting-and-links.md",
+    "_drafts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
     "_posts/2023-10-9-Mathematical-Economics.md",
-    "Untitled.md",
-    "Untitled 1.md",
-    "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
     "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_drafts/2023-mm-dd-Theodore-Frankel.md",
+    "_drafts/2023mm-dd--Basic-Algebraic-Geometry-n.md",
+    "_drafts/君主论书摘.md",
+    "CONTRIBUTING.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-10-23-Noether's–Principal.md",
     "_posts/2023-10-26-Poincare-Duality.md",
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_drafts/2023-10-26-Poincare-Duality.md",
-    "_posts/2023-04-03-De-Rhams-Theorem.md",
-    "_posts/2023-04-03-De-Rhams Theorem.md",
-    "_posts/2023-3-24-Betti-Numbers.md",
-    "_posts/2023-3-21-Geodesics-and-Jacobi-Fields.md",
-    "_posts/2023-1-13-Colemen-Weinberg-Potential.md",
-    "_posts/2022-12-29-Hobbes-Moral-and-Political-Philosophy.md",
-    "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
-    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
-    "_drafts/2023-05-31-Analytic-Structure.md",
-    "_drafts/2023-06-02-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",

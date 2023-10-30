@@ -432,13 +432,13 @@ Let's say you have two square matrices, both of size $2 \times 2$. When you mult
 
 **Definition**: 
 A linear equation is an equation of the form:
-$$a_1x_1 + a_2x_2 + ... + a_nx_n = b$$
-where $x_1, x_2, ... x_n$ are the variables, $a_1, a_2, ... a_n$ are constants (known as coefficients), and $b$ is another constant. 
+$$a_ 1x_ 1 + a_ 2x_ 2 + ... + a_ nx_ n = b$$
+where $x_ 1, x_ 2, ... x_ n$ are the variables, $a_ 1, a_ 2, ... a_ n$ are constants (known as coefficients), and $b$ is another constant. 
 
 **Key Features**:
 1. Each term consists of a variable multiplied by a constant.
 2. No term has a variable raised to a power higher than one.
-3. There are no products of variables (e.g., $x_1 \times x_2$).
+3. There are no products of variables (e.g., $x_ 1 \times x_ 2$).
 
 **Simple Example**: 
 Consider the equation $3x + 2y = 12$. Here, $x$ and $y$ are the variables, and the numbers 3 and 2 are their respective coefficients.
@@ -595,17 +595,17 @@ Of course! The Laplace Expansion is an important technique for calculating the d
    You can choose any row or column to expand upon. For the sake of simplicity, we often choose a row or column with the most zeros because it reduces the number of calculations we have to make (since any term multiplied by zero is zero).
 
 2. **Calculate Minors:**
-   For each element $a_{ij}$ of the matrix, remove the i-th row and the j-th column, and compute the determinant of the resulting $(n-1) \times (n-1)$ matrix. This determinant is called the "`minor`" of the element, often denoted $M_{ij}$.
+   For each element $a_ {ij}$ of the matrix, remove the i-th row and the j-th column, and compute the determinant of the resulting $(n-1) \times (n-1)$ matrix. This determinant is called the "`minor`" of the element, often denoted $M_ {ij}$.
 
 3. **Calculate Cofactors:**
-   Associated with each minor is a cofactor, which is defined as: $C_{ij} = (-1)^{i+j} \times M_{ij}$. This alternating sign pattern helps ensure the determinant computation is accurate.
+   Associated with each minor is a cofactor, which is defined as: $C_ {ij} = (-1)^{i+j} \times M_ {ij}$. This alternating sign pattern helps ensure the determinant computation is accurate.
 
 4. **Compute the Determinant:**
    The determinant of the matrix is the sum of the products of the elements of your chosen row or column with their respective cofactors. Mathematically, if you chose the i-th row, this can be written as:
-$$\text{det}(A) = \sum_{j=1}^{n} a_{ij} C_{ij} $$
+$$\text{det}(A) = \sum_ {j=1}^{n} a_ {ij} C_ {ij} $$
    
 Alternatively, if you chose the j-th column, it is:
-$$\text{det}(A) = \sum_{i=1}^{n} a_{ij} C_{ij} $$
+$$\text{det}(A) = \sum_ {i=1}^{n} a_ {ij} C_ {ij} $$
 
 **Example: Determinant of a $3 \times 3$ Matrix using Laplace Expansion:**
 
@@ -620,38 +620,38 @@ $$
 
 To compute its determinant, let's expand using the first row:
 
-1. For the element $a_{11} = 1$:
-   - Minor $M_{11}$ is the determinant of:
+1. For the element $a_ {11} = 1$:
+   - Minor $M_ {11}$ is the determinant of:
 $$
 \begin{pmatrix}
 1 & 3 \\
 2 & 1 \\
 \end{pmatrix}
 $$
-   - $M_{11} = 1 - 6 = -5$
-   - Cofactor $C_{11} = (-1)^{1+1} \times (-5) = 5$
+   - $M_ {11} = 1 - 6 = -5$
+   - Cofactor $C_ {11} = (-1)^{1+1} \times (-5) = 5$
 
-2. For the element $a_{12} = 3$:
-   - Minor $M_{12}$ is the determinant of:
+2. For the element $a_ {12} = 3$:
+   - Minor $M_ {12}$ is the determinant of:
 $$
 \begin{pmatrix}
 4 & 3 \\
 2 & 1 \\
 \end{pmatrix}
 $$
-   - $M_{12} = 4 - 6 = -2$
-   - Cofactor $C_{12} = (-1)^{1+2} \times (-2) = 2$
+   - $M_ {12} = 4 - 6 = -2$
+   - Cofactor $C_ {12} = (-1)^{1+2} \times (-2) = 2$
 
-3. For the element $a_{13} = 2$:
-   - Minor $M_{13}$ is the determinant of:
+3. For the element $a_ {13} = 2$:
+   - Minor $M_ {13}$ is the determinant of:
 $$
 \begin{pmatrix}
 4 & 1 \\
 2 & 2 \\
 \end{pmatrix}
 $$
-   - $M_{13} = 8 - 2 = 6$
-   - Cofactor $C_{13} = (-1)^{1+3} \times 6 = -6$
+   - $M_ {13} = 8 - 2 = 6$
+   - Cofactor $C_ {13} = (-1)^{1+3} \times 6 = -6$
 
 Combining the results, 
 $$\text{det}(A) = 1 \times 5 + 3 \times 2 + 2 \times (-6) = 5 + 6 - 12 = -1 $$
@@ -718,8 +718,8 @@ $$
 Calculate its determinant. This represents the scenario when we're focusing just on the bananas.
 
 4. **Solving for A and B**:
-   - The cost of an apple (A) is found by $A = D_A / D$
-   - The cost of a banana (B) is found by $B = D_B / D$
+   - The cost of an apple (A) is found by $A = D_ A / D$
+   - The cost of a banana (B) is found by $B = D_ B / D$
 
 This gives you the individual prices of apples and bananas!
 
@@ -835,7 +835,7 @@ Now, consider the interest is compounded, meaning that the interest is added to 
 As you increase the frequency of compounding ($n$), the total amount you would have at the end of the year approaches $e$. Mathematically, this is expressed as:
 
 $$
-\lim_ {n \to \infty} \left(1 + \frac{1}{n}\right)^n = e \approx 2.71828...
+\lim_  {n \to \infty} \left(1 + \frac{1}{n}\right)^n = e \approx 2.71828...
 $$
 
 This is the origin of Euler's number $e$ in the context of compound interest. The more frequently interest is compounded, the more money you end up with, and this approaches a limit as the compounding frequency goes to infinity, which is $e$.
@@ -941,14 +941,96 @@ The Implicit Function Theorem is a powerful tool in calculus that allows us to f
 
 ### Lecture 7
 
+Integral calculus is an essential mathematical tool in economics for several reasons:
 
+1. **Understanding Accumulation:** Integral calculus helps to model and analyze accumulated quantities, such as total revenue, cost, and profit, over a certain period.
 
+2. **Area Under Curves:** It is used to calculate areas under curves, which can represent total income, cost, or other economic variables over time or quantity.
 
+3. **Consumer and Producer Surplus:** In microeconomics, integral calculus is used to calculate consumer and producer surplus, which are areas between demand and supply curves.
 
+4. **Marginal Analysis:** Integrals can be used to find the total effect of a marginal change, like the total cost from a marginal cost function.
 
+5. **Economic Growth and Investment:** In macroeconomics, integral calculus is used to model economic growth and investment over time.
 
+6. **Optimization:** Integral calculus is often paired with differential calculus to find optimal solutions, like maximizing profit or minimizing cost.
+
+7. **Solving Differential Equations:** Many economic models are described by differential equations, and integral calculus is used to solve these equations.
+
+In summary, integral calculus is a powerful tool in economics that helps to analyze and solve complex problems related to accumulation, areas under curves, optimization, and differential equations. By understanding how quantities accumulate and how to find areas under curves, economists can gain valuable insights into various economic phenomena and make more informed decisions.
+
+- - -
+
+One of the classical models used to describe market growth is the logistic growth model. The logistic growth model is represented by the following differential equation:
+
+$$ \frac{dP}{dt} = rP\left(1 - \frac{P}{K}\right) $$
+
+Where:
+- $\frac{dP}{dt}$ represents the rate of change of the market size or population over time.
+- $P$ is the market size or population at time $t$.
+- $r$ is the growth rate of the market.
+- $K$ is the carrying capacity of the market, which is the maximum market size that can be sustained given the available resources.
+
+This model describes how the market growth rate is proportional to the current market size, but it also includes a term that slows down the growth rate as the market size approaches the carrying capacity.
+
+To use this model, you would need to:
+1. Determine the parameters $r$ and $K$ based on historical data or expert knowledge.
+2. Solve the differential equation to get the market size as a function of time, $P(t)$.
+3. Analyze the solution to make predictions about future market growth.
+
+For example, if you have a new product and you want to predict how its market will grow over time, you would collect data on the current market size, growth rate, and potential maximum market size. Then, you would use the logistic growth model to predict how the market will evolve over time. This can help you make informed decisions about production, marketing, and other strategic considerations.
+
+- - -
+
+Introduce the initial value problems.
+
+Introduce the indefinite integrals. The integral sign, the measure and the integrand. 
+
+Introduce the definite integrals. Explain the connection between definite and indefinite integrals. 
+
+Explain the power rule. The exponential rule and the logarithmic rule. Integrals are linear. 
+
+Introduce the substitution rule. For example, 
+$$
+\int dx \, 2x (x^{2}+1). 
+$$
+
+Integral by parts. 
+
+Explain the improper integrals.
 
 ### Lecture 8
+
+An economic equilibrium refers to a state where supply equals demand and all agents in the economy are optimizing their decisions given the constraints they face, and there are no tendencies for change. In other words, it is a state where all forces in an economy are balanced, and the economy is stable. There are different types of equilibria in economics, such as market equilibrium, general equilibrium, and Nash equilibrium, each referring to different contexts and conditions of balance and stability. 
+
+Optimization, meaning “the quest for the best.” For example, a business firm may seek to maximize profit $P$, that is, to maximize the difference between total revenue $R$ and total cost $C$. 
+
+- - -
+
+**output level**
+
+In economics, output level refers to the total quantity of goods or services produced by an individual, firm, industry, or entire economy within a specific period. It's an important indicator of economic activity and is often used to analyze the performance and health of an economy.
+
+For an individual firm or industry, the output level would be the total quantity of products or services produced. For an entire economy, the output level is typically represented by the Gross Domestic Product (GDP), which measures the total value of all goods and services produced within a country's borders over a specific period. Another related measure is the Gross National Product (GNP), which represents the total value of all goods and services produced by the residents of a country, regardless of where they are produced.
+
+Understanding output levels is crucial for economists and policymakers because it helps to:
+
+1. **Measure Economic Performance:** The output level indicates how efficiently an economy is using its resources to produce goods and services.
+
+2. **Analyze Business Cycles:** By observing changes in output levels over time, economists can identify trends and business cycles, including periods of economic growth and recession.
+
+3. **Formulate Economic Policy:** Policymakers use output levels to develop strategies to manage economic activity, such as monetary and fiscal policies.
+
+4. **Make Forecasts:** Economists use past output levels to make predictions about future economic activity and growth.
+
+In summary, the output level is a fundamental concept in economics that provides valuable insights into the health and performance of an economy. It is used to analyze trends, develop economic policy, and make forecasts about future economic activity.
+
+- - -
+
+**First-Derivative Test**
+
+
+
 
 
 ### Lecture 9
