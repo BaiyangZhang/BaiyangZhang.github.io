@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bcec3cd371ae231a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md"
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md"
               }
             }
           },
@@ -177,6 +189,16 @@
   },
   "active": "a506e57999656a90",
   "lastOpenFiles": [
+    "_posts/2023-10-9-Mathematical-Economics.md",
+    "img/relaxationMethod.jpg",
+    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
+    "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-10-23-Noether's–Principal.md",
+    "_posts/2023-10-26-Poincare-Duality.md",
+    "_drafts/2023-mm-dd-Theodore-Frankel.md",
+    "_drafts/2023mm-dd--Basic-Algebraic-Geometry-n.md",
+    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
     "backups/2022-02-01-redirect.md",
     "backups/2021-07-04-diagrams.md",
     "backups/2020-09-28-twitter.md",
@@ -187,22 +209,12 @@
     "backups/2015-07-15-code.md",
     "backups/2015-05-15-images.md",
     "backups/2015-03-15-formatting-and-links.md",
-    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
     "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
-    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
-    "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_drafts/2023-mm-dd-Theodore-Frankel.md",
-    "_drafts/2023mm-dd--Basic-Algebraic-Geometry-n.md",
     "_drafts/君主论书摘.md",
     "CONTRIBUTING.md",
     "Untitled.md",
     "Untitled 1.md",
     "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-10-23-Noether's–Principal.md",
-    "_posts/2023-10-26-Poincare-Duality.md",
-    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",
@@ -221,7 +233,6 @@
     "assets/img/projects-screenshot-1400.webp",
     "assets/img/prof_pic-800.webp",
     "assets/img/prof_pic-480.webp",
-    "assets/img/prof_pic-1400.webp",
-    "assets/img/photos-screenshot-800.webp"
+    "assets/img/prof_pic-1400.webp"
   ]
 }

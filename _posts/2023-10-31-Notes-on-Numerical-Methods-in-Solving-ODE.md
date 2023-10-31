@@ -2,14 +2,16 @@
 layout: post
 title: Note on Numerical Methods in Solving ODE
 subtitle: 
-date: 2023-10-17
+date: 2023-10-31
 author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
 tags:
 ---
 
-In my line of work I constantly need to solve unsolvable ODEs and PDEs, unsolvable in the sense that it is impossible to get an analytical solution. What we do is to turn to numerical methods for help. For instance, just recently I need to solve a modified version of the Skyrme equation (the equation of motion resulted from the Skyrme model). I thought it would be helpful to summarize what I've learnt here. 
+## Introduction
+
+In my line of work I sometimes need to solve unsolvable ODEs and PDEs, unsolvable in the sense that it is impossible to get an analytical solution. What we do is to turn to numerical methods for help. For instance, just recently I need to solve a modified version of the Skyrme equation (the equation of motion resulted from the Skyrme model). I thought it would be helpful to summarize what I've learnt here. 
 
 Various numerical methods have been developed to tackle different types of ODEs (initial value problems, boundary value problems, linear, nonlinear, etc.). Here are some of the most popular numerical methods for solving ODEs:
 
@@ -53,13 +55,13 @@ Various numerical methods have been developed to tackle different types of ODEs 
    - Iteratively refines an initial guess to the solution.
 
 11. **Finite Difference Method**:
-   - Converts differential equations into difference equations, which can then be solved algebraically.
+   - Converts differential equations into *difference* equations, which can then be solved algebraically.
    - Often used for both ODEs and PDEs.
 
 12. **Collocation Methods**:
    - This approach seeks an approximate solution by considering values at specific points (collocation points).
 
-13. Continuation method, which we will go to detail later.
+13. **Continuation method**, which we will go to detail later.
 
 
 - - -
@@ -76,7 +78,7 @@ Similarly, in the context of differential equations, there can be parts of the s
 
 To efficiently and accurately solve stiff differential equations, specialized numerical methods have been developed, known as "stiff solvers." These solvers are designed to adaptively handle the challenges posed by stiffness, allowing for stable and efficient computation.
 
-### numerical values of parameters
+## numerical values of parameters
 
 I collected the following values from the Adkins:Nappi:1984 paper[^1],  
 $$
@@ -98,7 +100,7 @@ m_ {2} &= 1.052.
 \end{align}
 $$
 
-### The shooting method
+## The shooting method
 
 The shooting method is a numerical technique used to solve boundary value problems (BVPs) for ordinary differential equations (ODEs). *It's especially useful for second-order ODEs, but can be applied to higher-order equations as well*.
 
@@ -148,7 +150,7 @@ shootingMethod = {"Shooting",
    "StartingInitialConditions" -> {f[0] == initialGuessY, 
    f'[0] == initialGuessYPrime}};
 
-solutionTest1 = Module[{\[Eta] = 1, m1 = 0.526`, m2 = 1.052`},
+solutionTest1 = Module[{$$Eta] = 1, m1 = 0.526`, m2 = 1.052`},
 	 shootingMethod = {"Shooting", 
     "StartingInitialConditions" -> {f[0] == Pi, f'[0] == -6}};
   NDSolve[{eom, bc1, bc2}, f, {r, 0, 50}, PrecisionGoal -> 7, 
@@ -164,6 +166,8 @@ $$
 &==0.
 \end{align}
 $$
+
+
 
 However the computation takes a long time and yields a nonsensical result, 
 ![](/img/eom.png)
@@ -190,7 +194,7 @@ Well let's move on to the next method.
 
 [^1]:Nuclear Physics B233 (1984) 109-115, doi: 10.1016/0550-3213(84)90172-x
 
-### The continuation (homotopy, embedding) method
+## The continuation (homotopy, embedding) method
 
 The core idea behind the "continuation method" is  that, instead of trying to solve a super-hard problem right away, we start with a simpler version of it that we can solve. Then, we "continue" from that solution, making small changes step by step, until we reach the solution of the original, harder problem.
 
@@ -212,3 +216,133 @@ H(x,t) = t\,F(x) + (1-t)\, G(x).
 $$
 $H(x,t)$ is the function we are trying to solve. Our job is to find $G(x)$ with known solution, then the PDE that $H(x,t)$ satisfies, offer the initial condition, then try to solve it. 
 
+Let's look at an example. Let's solve the following non-linear partial differential equation, which is a simplified version of the Ginzburg-Landau equation, a fundamental equation in superconductivity theory:
+$$
+\frac{\partial u}{\partial t} = \nabla^2 u + \lambda u - u^3
+$$
+
+Here, $u(x, y, t)$ is the field we want to solve for, $\nabla^2 u$ is the Laplacian operator, $\lambda$ is a parameter, and $t$ represents time.
+
+Let's consider a square domain $[0, L] \times [0, L]$ with periodic boundary conditions. We will solve this equation using the continuation method by gradually increasing the parameter $\lambda$ and using the solution from the previous value of $\lambda$ as the initial condition for the next one. 
+
+This following code defines the PDE and its boundary conditions, then solves it using `NDSolve` for a range of values of $\lambda$, starting from $\lambda = 0$ and going up to $\lambda = 1$. The solution for each value of $\lambda$ is used as the initial condition for the next one. Finally, it plots the solution for $\lambda = 1$.
+
+Here is the Mathematica code:
+
+```mathematica
+(* Define the domain size *)
+L = 10;
+
+(* Define the grid size *)
+nx = 50;
+ny = 50;
+
+(* Define the time step and final time *)
+dt = 0.01;
+tmax = 1;
+
+(* Define the initial condition *)
+u0[x_, y_] := Sin[(Pi*x)/L] Sin[(Pi*y)/L];
+
+(* Define the PDE *)
+pde = D[u[x, y, t], t] == D[u[x, y, t], {x, 2}] + D[u[x, y, t], {y, 2}] + λ*u[x, y, t] - u[x, y, t]^3;
+
+(* Solve the PDE using the continuation method *)
+λvalues = Range[0, 1, 0.1];
+usol = {};
+uinit = u0[x, y];
+For[i = 1, Length[λvalues], λ = λvalues[[i]];
+  sol = NDSolve[{pde, u[x, y, 0] == uinit, 
+    PeriodicBoundaryCondition[u[x, y, t], x == 0, TranslationTransform[{L, 0}]],
+    PeriodicBoundaryCondition[u[x, y, t], y == 0, TranslationTransform[{0, L}]]},
+   u, {x, 0, L}, {y, 0, L}, {t, 0, tmax}, 
+   Method -> {"MethodOfLines", "SpatialDiscretization" -> {"TensorProductGrid", "MaxPoints" -> {nx, ny}}}];
+  AppendTo[usol, sol];
+  uinit = u[x, y, tmax] /. sol;
+];
+
+(* Plot the solution for λ = 1 *)
+sol = usol[[-1]];
+Plot3D[Evaluate[u[x, y, tmax] /. sol], {x, 0, L}, {y, 0, L}, AxesLabel -> {"x", "y", "u"}]
+```
+
+
+But before getting our hands dirty let's consider another similar but different method, for reasons I'll explain later.
+
+## The relaxation method
+
+The term "relaxation" refers to the idea that an initial guess at the solution is iteratively refined or "relaxed" until it converges to the true solution.
+
+**Introduction to the Relaxation Method:**
+
+The relaxation method is often used for solving elliptic PDEs, such as Laplace's equation and Poisson's equation. The general approach of the relaxation method is as follows:
+
+1. Discretize the domain of the PDE into a grid or mesh.
+2. Make an initial guess for the solution at each grid point.
+3. Iteratively update the solution at each grid point using a numerical approximation of the PDE.
+4. Repeat step 3 until the solution converges to within a specified tolerance.
+
+Let's consider an example of solving Laplace's equation on a rectangular domain $[0, a] \times [0, b]$ with Dirichlet boundary conditions.
+
+Laplace's equation is given by:
+$$ \nabla^2 u(x, y) = 0 $$
+
+Where $u(x, y)$ is the function we are trying to solve for, and $\nabla^2$ is the Laplacian operator.
+
+For simplicity, let's consider the case where $a = b = 1$, and the boundary conditions are:
+$$ u(0, y) = 0, \quad u(1, y) = 0, \quad u(x, 0) = 0, \quad u(x, 1) = \sin(\pi x) $$
+
+
+![relaxation](/img/relaxationMethod.jpg)
+
+
+
+
+Here are the steps to solve this problem using the relaxation method in Mathematica:
+
+```mathematica
+(* Define the domain size *)
+a = 1;
+b = 1;
+
+(* Define the grid size *)
+nx = 10;
+ny = 10;
+
+(* Define the boundary conditions *)
+u = Table[0, {nx + 1}, {ny + 1}];
+Do[u[[1, j]] = 0, {j, ny + 1}];
+Do[u[[nx + 1, j]] = 0, {j, ny + 1}];
+Do[u[[i, 1]] = 0, {i, nx + 1}];
+Do[u[[i, ny + 1]] = Sin[Pi*(i - 1)/nx], {i, nx + 1}];
+
+(* Define the relaxation parameter *)
+omega = 1.5;
+
+(* Define the tolerance for convergence *)
+tol = 10^(-6);
+
+(* Perform the relaxation iteration *)
+iteration = 0;
+error = 1;
+While[error > tol,
+  error = 0;
+  For[i = 2, i <= nx, i++,
+    For[j = 2, j <= ny, j++,
+      old = u[[i, j]];
+      u[[i, j]] = (1 - omega)*u[[i, j]] + omega*0.25*(u[[i - 1, j]] + u[[i + 1, j]] + u[[i, j - 1]] + u[[i, j + 1]]);
+      error = Max[error, Abs[u[[i, j]] - old]];
+    ];
+  ];
+  iteration++;
+];
+
+(* Display the result *)
+u
+```
+
+The `u` matrix contains the approximate solution to the PDE at each grid point. The `While` loop continues iterating until the maximum change in the solution at any grid point is less than the specified tolerance `tol`.
+
+The relaxation method is a powerful and widely used numerical technique for solving PDEs. It is particularly well-suited for solving elliptic PDEs, such as Laplace's equation and Poisson's equation, which arise in various physical applications. The method is relatively simple to implement and can be easily adapted to different types of PDEs and boundary conditions.
+
+However, it's important to note that the convergence of the relaxation method can be sensitive to the choice of the relaxation parameter `omega` and the grid size. In some cases, it may be necessary to experiment with different values of these parameters to achieve a satisfactory solution.

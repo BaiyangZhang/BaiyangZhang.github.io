@@ -1029,6 +1029,13 @@ In summary, the output level is a fundamental concept in economics that provides
 
 **First-Derivative Test**
 
+How can be tell the local stationary point using first derivatives. What else is needed to tell if it is the local maximum or minimum?
+
+**Second derivative and higher derivatives.** Concave and convex functions. **Introduce the second derivative test**.
+
+Introduce the Taylor expansion.
+
+
 
 
 
