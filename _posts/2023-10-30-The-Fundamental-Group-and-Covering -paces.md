@@ -60,13 +60,36 @@ A covering space of a manifold $M$ is a connected space $\overline{M}$ that is a
 
 Let $M$ be a connected manifold. The universal covering manifold $\overline{M}$ of $M$ is a covering space that has trivial fundamental group. 
 
-**The Orientable Covering**
+- - -
 
 Let $\gamma,\gamma_ {1}$ be two paths form $p_ {0}$ to $p$. An orientable covering is such that if when we translate an orientation along the closed curve $\gamma\gamma ^{-1}$ we return with the original orientation. It is important that we are dealing with homotopy classes: if a closed curve $C$ preserves orientation, and if $C'$ is homotopic to $C$, then $C'$ will also preserve orientation.
 
 An orientable covering is in general smaller than the universal covering, but not necessarily.
 
 By the same arguments, it can be shown in general that the orientable cover of $M$ is either $M$ itself, if $M$ is orientable, or a 2-sheeted cover of $M$. As an example, a two-sheeted-orientable cover of the Klein bottle is the torus!
+
+**Lifting paths**
+
+Given a covering $\pi: \overline{M} \to M$, the lift of a path $\gamma$ in $M$ is roughly speaking a continuous path $\overline{\gamma}$ in $\overline{M}$ whose projection $\pi(\overline{M})$ is $\gamma$ itself.
+
+By definition of the universal cover, the points of the fiber $\pi ^{-1}(p_ {0}), p_ {0}\in M$ are in $1:1$ correspondence with the distinct homotopy classes of closed curves in $M$ starting at $p_ {0}$. Summarizing, 
+
+**Theorem.** The universal cover $\overline{M}$ of $M$ is simply connected and the number of sheets in the covering is equal to the number of elements (the `order`) of $\pi ^{-1}(p_ {0})$. 
+
+If a manifold is not orientable, there is some closed curve that reverses orientation. We have the following explanation of the terminology that we have been using:
+
+**Theorem.** The orientable cover of $M$ is always orientable. The number of sheets is $1$ if $M$ is orientable and $2$ if $M$ is not orientable.
+
+- - -
+
+In homotopy group $\pi_ {1}(M)$, there sometimes exists properties that can be used to define subgroups of $\pi_ {1}$. For example, if $M$ is not orientable, then two curves $\gamma,\gamma_ {1}$ in *different* homotopy class may preserve the orientation or not. $\gamma$ and $\gamma_ {1}$ may both preserve the orientation, then they belong to the same subgroup of $\pi_ {1}$ that is defined to be the loops that preserve the orientation. The identity of this subgroup is the equivalence class of all the loops that preserves the orientation, while the other element is the class of loops that flip the orientation, if you are in doubt just think of loops on a Mobius strip. 
+
+There is a relation between the subgroups of $\pi_ {1}$ and the covering space. Given any subgroup $G$ of $\pi_ {1}$, we may associate a covering space $M_ {G}$ of $M$ as follows: We again consider pairs $p\in M,\gamma$, and we identify $(p,\gamma)$ with $p,\gamma_ {1}$ iff the homotopy class of the loop $\gamma \gamma_ {1}^{-1}$ lies in the subgroup $G$.
+
+- - -
+
+What happens if we put universal covering space with Lie group? After all Lie groups are nothing but manifolds themselves. It is more or less intuitive that, for a Lie group $G$, its universal covering space is itself another Lie group $\overline{G}$. For example, $SO(3)\cong \mathbb{R}P^{3}$ is a Lie group, its universal covering space is $SU(2)\cong \mathbb{S}^{3}$, which is another Lie group. 
+
 
 
 
