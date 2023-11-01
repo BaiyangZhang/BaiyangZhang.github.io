@@ -13,6 +13,8 @@ tags:
 ---
 *Disclaimer: Nothing in this note is original.*
 
+## Bi-invariant Forms on Compact Groups
+
 Recall that a form or vector field on $G$ is said to be bi-invariant if it is both left and right invariant. 
 
 **Theorem.** if $\alpha$ is a bi-invariant $p$-form, then $p$ is closed,
@@ -107,3 +109,6 @@ $$
 $$
 is a non-trivial harmonic form. In particular $b_ {3}(G)\neq 0$. 
 
+## The Geometry of a Lie Group
+
+Let $G$ be a Lie group endowed with a bi-invariant metric (which exist on every compact Lie group)

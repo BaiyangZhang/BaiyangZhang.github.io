@@ -999,7 +999,7 @@ Integral by parts.
 
 Explain the improper integrals.
 
-### Lecture 8
+### Lecture 8 (Nov 1st)
 
 An economic equilibrium refers to a state where supply equals demand and all agents in the economy are optimizing their decisions given the constraints they face, and there are no tendencies for change. In other words, it is a state where all forces in an economy are balanced, and the economy is stable. There are different types of equilibria in economics, such as market equilibrium, general equilibrium, and Nash equilibrium, each referring to different contexts and conditions of balance and stability. 
 
