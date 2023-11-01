@@ -35,7 +35,7 @@ Hope everyone is ready for a dive into the world of mathematics! The following i
 
 **Course Objectives:**  This course will include the basics of analysis, derivatives and integration, linear algebra, optimization, and probability, with the goal of preparing students for further course work within the School of Economics.
 
-**Assessment Policy:** The assessments for this course will one final, in addition to several homeworks. Each item is scored on a percentage basis. The final score for the class is the weighted sum of the items’ scores.  The weights are as follows: final accounts for 70% of the final grade, and the homeworks account for the remaining 30% of the final grade.
+**Assessment Policy:** The assessments for this course will one final, in addition to several homework. Each item is scored on a percentage basis. The final score for the class is the weighted sum of the items’ scores.  The weights are as follows: final accounts for 70% of the final grade, and the homework account for the remaining 30% of the final grade.
 
 In general, the final grade is an A when the final score is 85% or better, a B when the final score is between 70% and 84.9%, a C when the final score is between 60% and 69.9%, a D when the final score is between 50% and 59.9%, and an F when the final score is below 50%.  Assessment and final grades, however, may be curved to the benefit of the students.
 

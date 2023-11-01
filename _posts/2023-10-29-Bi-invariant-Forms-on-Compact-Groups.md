@@ -111,4 +111,16 @@ is a non-trivial harmonic form. In particular $b_ {3}(G)\neq 0$.
 
 ## The Geometry of a Lie Group
 
-Let $G$ be a Lie group endowed with a bi-invariant metric (which exist on every compact Lie group)
+Let $G$ be a Lie group endowed with a bi-invariant metric (which exist on every compact Lie group). Let $\mathbf{X},\mathbf{Y},\mathbf{Z},\dots$ be left-invariant vector fields. In a compact Lie group, geodesics are also 1-parameter subgroups and vise versa, so 
+$$
+\nabla_ {\mathbf{X}}\mathbf{X}=0.
+$$
+Like wise, 
+$$
+\nabla_ {\mathbf{X}+\mathbf{Y}}(\mathbf{X}+\mathbf{Y}) \implies 2\nabla_ {\mathbf{X}}\mathbf{Y}=[\mathbf{X},\mathbf{Y}].
+$$
+
+The center of a Lie algebra ${\frak g}$ is defined to be the elements $\mathbf{X}$ of ${\frak g}$ such that $[\mathbf{X},\mathbf{Y}]=0$ for all $\mathbf{Y}\in{\frak g}$. 
+
+**Weyl’s Theorem.** Let $G$ be a compact Lie group with bi-invariant metric. Suppose that the center of $G$ is trivial, then $G$ is compact and has a finite fundamental group $\pi_ {1}(G)$. 
+
