@@ -174,7 +174,7 @@ However the computation takes a long time and yields a nonsensical result,
 
 which doesn't make any sense. 
 
-Maybe we can make it work by providing a super accurate initial condition? With this hope I try to solve the equation at the origin, namely $r=0$. Expand $f(r)$ about the origin we get
+Maybe we can make it work by providing a super accurate initial condition? With this hope I try to solve the equation at the origin, close to $r=0$. Expand $f(r)$ about the origin we get
 $$
 f(r) = f(0) + r f'(r) = \pi + rg(r),\quad  g(r) := f'(r)
 $$
@@ -291,9 +291,6 @@ Where $u(x, y)$ is the function we are trying to solve for, and $\nabla^2$ is th
 
 For simplicity, let's consider the case where $a = b = 1$, and the boundary conditions are:
 $$ u(0, y) = 0, \quad u(1, y) = 0, \quad u(x, 0) = 0, \quad u(x, 1) = \sin(\pi x) $$
-
-
-![relaxation](/img/relaxationMethod.jpg)
 
 
 

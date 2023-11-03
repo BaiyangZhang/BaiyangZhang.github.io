@@ -4,40 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "f3c6301291cc24cf",
+        "id": "6ac0aba406a11b67",
         "type": "tabs",
         "children": [
           {
-            "id": "a506e57999656a90",
+            "id": "766a0d39c8af9e1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "bcec3cd371ae231a",
+            "id": "ca5b0ce163654ee3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_news/announcement_2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18d80481c2dfa16b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
+                "file": "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5,
+    "width": 283.5,
     "collapsed": true
   },
   "right": {
@@ -118,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md"
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md"
               }
             }
           },
@@ -199,35 +187,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a506e57999656a90",
+  "active": "766a0d39c8af9e1e",
   "lastOpenFiles": [
-    "_drafts/2023-mm-dd-Theodore-Frankel.md",
-    "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
-    "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
-    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
-    "_drafts/2023-mm-dd-Confinement-in-Toy-Models-Lecture-.md",
-    "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
-    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
-    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_news/announcement_2.md",
-    "_news/announcement_1.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "img/relaxationMethod.jpg",
     "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
+    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
+    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
+    "_posts/2023-10-26-Poincare-Duality.md",
+    "_posts/2023-10-17-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "img/relaxationMethod.jpg",
+    "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
+    "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
     "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-10-23-Noether's–Principal.md",
-    "_posts/2023-10-26-Poincare-Duality.md",
-    "_drafts/2023mm-dd--Basic-Algebraic-Geometry-n.md",
-    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
-    "backups/2022-02-01-redirect.md",
-    "backups/2021-07-04-diagrams.md",
-    "backups/2020-09-28-twitter.md",
-    "backups/2020-09-28-github-metadata.md",
-    "backups/2018-12-22-distill.md",
-    "backups/2015-10-20-math.md",
-    "backups/2015-10-20-disqus-comments.md",
-    "backups/2015-07-15-code.md",
+    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
+    "_drafts/2023-10-24-Bi-invariant-Forms-on-Compact-Groups.md",
+    "_drafts/2023-mm-dd-Confinement-in-Toy-Models-Lecture-.md",
+    "_drafts/2023-10-24-Poincare-Duality.md",
+    "_posts/2023-10-12-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-2-8-Basic-Algebraic-Geometry-11.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_posts/2023-04-03-De-Rhams-Theorem.md",
+    "_posts/2023-04-04-Confinement-in-Toy-Models-Lecture-2.md",
+    "_posts/2023-04-29-Weihai-Travel-Plan.md",
+    "_posts/2023-04-25-Wigner-Weyl-Calculus.md",
+    "_posts/2023-04-24-Basic-Algebraic-Geometry-15.md",
+    "_posts/2023-04-20-Harmonic-Forms.md",
+    "_posts/2023-04-11-Confinement-in-Toy-Models-Lecture-3.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",

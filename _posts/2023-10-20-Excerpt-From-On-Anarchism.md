@@ -46,3 +46,34 @@ Here are some key aspects and outcomes of Occupy Wall Street:
 
 **Principal:** Power that isn't really justified by the will of the *governed* should be dismantled.
 
+The anarchist historian Rudolf Rocker (a German socialist, 1873-1953) said
+>For the Anarchist, freedom is not an abstract philosophical concept, but the vital concrete possibility for every human being to bring to full development all the powers, capacities, and talents with which nature has endowed him, and turn them to social account.
+
+First,  what is a syndicalist. A syndicalist is someone who supports or is involved in syndicalism, which is a type of economic and political theory that advocates for the control of industries and businesses by worker unions. The basic idea behind syndicalism is the belief that *workers, through their unions, should own and manage industries, rather than being controlled by private owners or the state*.
+
+Key aspects of syndicalism include:
+
+1. **Direct Action**: Syndicalists often believe in bypassing political systems and advocating for change through strikes, boycotts, and other forms of direct collective action.
+
+2. **Workers' Self-Management**: Workers should manage the workplaces, making decisions that affect them directly rather than having those decisions made by capitalists or distant bureaucrats.
+
+3. **Anti-Capitalism**: Syndicalism is inherently anti-capitalist as it opposes the private ownership of the means of production for profit.
+
+4. **Solidarity**: A strong emphasis on solidarity among workers, believing that all labor has a common interest against the exploitative nature of capitalist society.
+
+5. **Federalism**: Syndicalism promotes a federated structure of organization, from local to regional to national and international levels, with decision-making power remaining as local as possible.
+
+Syndicalism was particularly influential in the early 20th century and played a significant role in labor movements in Europe, notably in Italy, France, and Spain, where it was linked with large-scale social and political upheavals. It is less prominent today but still exists as a current in labor and leftist movements around the world.
+
+Rocker would take for granted that
+>the serious, final, complete liberation of the workers is possible only upon one condition: that of the appropriation of capital, that is, of raw material and all the tools of labor, including land, by the whole body of the workers.
+
+Anarcho-syndicalist are convinced that a Socialist economic order cannot be created by the decrees and statues of government, but only by the solidaric collaboration of the workers with hand and brain in each special branch of production; that is, through the taking over of the management of all plants by the producers themselves under such form that the separate groups, plants, and branches of industry are independent members of the general economic organism and systematically carry on production and the distribution of the products in the interest of the community on the basis of free mutual agreements.
+
+Such ideas had been put into practice in a dramatic way in the **Spanish Revolution**.
+
+The Spanish Revolution of `1936` was a profound social upheaval triggered by a military coup against the `Second Spanish Republic`, which had been grappling with deep political instability and socioeconomic unrest. This period, marked by an audacious experiment in social and economic transformation, arose in the context of a country deeply divided. On one side were the `Nationalists`, consisting of conservative elements like monarchists, large landowners, the Catholic Church, and the fascist *Falange*, led by General *Francisco Franco*. On the other, stood the `Republicans`, a heterogeneous group that included liberal bourgeoisie, socialists, communists, and anarchists. Years of escalating tensions between the wealthy elite and the working classes, a succession of failed political reforms, and the influence of rising European fascist movements had primed Spain for conflict. The attempted coup fractured the nation, with various regions holding out as strongholds of resistance, particularly Catalonia and Aragon, where anarchist and socialist groups were most influential. As the Republic scrambled to contain the rebellion, a vacuum of power enabled radical left-wing elements to assume control of cities like Barcelona, implementing far-reaching collectivization policies that saw factories, utilities, and farms taken over by workers’ collectives.
+
+This radical restructuring of society unfolded amidst a brutal civil war that would last until 1939. Workers, armed and organized into militias, not only fought on the front lines against the Nationalist forces but also transformed the rear guard into a laboratory of social innovation. Land was redistributed, industries were self-managed by employees, and many societal structures were reorganized according to libertarian socialist principles, particularly those championed by the Confederación Nacional del Trabajo (CNT) and the Federación Anarquista Ibérica (FAI). However, the revolution was marred by internal conflicts, as the diverse Republican factions had conflicting goals and ideologies. The Communist Party of Spain, backed by Soviet aid, sought to stabilize the Republic and undermine the anarchists' influence, leading to intra-Republican strife that culminated in the violent May Days of 1937 in Barcelona. Meanwhile, the Nationalists steadily gained ground, aided significantly by military support from Nazi Germany and Fascist Italy, while the policy of non-intervention adopted by democratic powers effectively isolated the Republican forces. The internal dissension, coupled with the steady advance of Franco’s forces, spelled doom for the Republican cause. By 1939, the Nationalist victory had snuffed out the revolution, and Franco established a dictatorship that would endure for decades, rolling back the revolution's reforms and ruthlessly suppressing any remnants of opposition.
+
+
