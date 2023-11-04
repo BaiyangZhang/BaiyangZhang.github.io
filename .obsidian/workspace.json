@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
+                "file": "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,17 +30,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ccbd82388345b0d1",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5,
+    "width": 525.5,
     "collapsed": true
   },
   "right": {
@@ -115,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,6 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +145,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md"
+              }
             }
           },
           {
@@ -192,8 +187,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ccbd82388345b0d1",
+  "active": "a506e57999656a90",
   "lastOpenFiles": [
+    "_posts/2023-10-9-Mathematical-Economics.md",
+    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
+    "_posts/2023-08-23-Connection-in-Principal-Bundles.md",
+    "_posts/2023-08-27-Associated-bundles.md",
+    "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
+    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
+    "_posts/2023-09-21-The-Dirac-Equation.md",
+    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
+    "_posts/2023-06-17-The-Workers-and-the-Fatherland.md",
+    "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
+    "_posts/2023-3-22-Heuristics-of-Einstein's-Theory.md",
     "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
     "assets/img/z.png",
     "_news/announcement_2.md",
@@ -205,22 +211,12 @@
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
     "_news/announcement_1.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
     "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "img/relaxationMethod.jpg",
     "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
     "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-10-23-Noether's–Principal.md",
     "_posts/2023-10-26-Poincare-Duality.md",
-    "_drafts/2023mm-dd--Basic-Algebraic-Geometry-n.md",
-    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
-    "backups/2022-02-01-redirect.md",
-    "backups/2021-07-04-diagrams.md",
-    "backups/2020-09-28-twitter.md",
-    "backups/2020-09-28-github-metadata.md",
-    "backups/2018-12-22-distill.md",
-    "backups/2015-10-20-math.md",
-    "backups/2015-10-20-disqus-comments.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",

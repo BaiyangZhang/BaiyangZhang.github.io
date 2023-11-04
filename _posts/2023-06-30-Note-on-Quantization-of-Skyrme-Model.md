@@ -14,7 +14,7 @@ tags:								#标签
 
 In his 1973 paper "A planar diagram theory for strong interactions", 't Hooft treated the parameter $N$ in the gauge group $SU(N)$ or $U(N)$ as a free parameter, and explained that in the $N\to \infty$ limit, the Feynman diagrams arrange into sets with different topological structure according to its contribution in powers of $1 / N$. For the sake of simplicity he didn't require the trace of the ${\frak g}$-valued gauge field $A$ to be traceless, thus instead of $SU(N)$ the gauge group is actually $U(N)$. As a result there will be an extra photon corresponding to the $U(1)$ component of $U(1)$, which will be discarded at the last step. 't Hooft introduced the double-line notation and each closed group index circle will generate a factor of $\delta^{i}_ {i}=N$, making it convenient to count the factor of $N$ of a given Feynman diagram. Based on this, 't Hooft made use of the Euler theorem saying that $\chi=2-2g$ where $\chi$ is the Euler characteristic and $g$ the genus of a manifold, and reached the conclusion that, if $g^{2}N$ is kept fixed at large $N$, then *the planar diagrams with genus zero and one  dominate*. That is, to treat the double-line Feynman diagrams as the boundary of a manifold, then we can talk about the genus of it. *Regarding non-planar diagrams, each "handle" pay a price $1 / N^{2}$*.
 
-Large $N$ really plays an important rule in SU($N$) gauge theory. Large $N$ limit turns out to be pretty helpful in understanding the nonperturbative and phenomenological aspect of field models. In large N limit, the coupling is made $N$-dependent in such a way that the large $N$ limit exists and is nontrivial, duh. 
+Large $N$ really plays an important rule in SU($N$) gauge theory. Large $N$ limit turns out to be pretty helpful in understanding the nonperturbative and phenomenological aspect of field models. In large $N$ limit, the coupling is made $N$-dependent in such a way that the large $N$ limit exists and is nontrivial, duh. 
 
 Speaking of QCD specifically, we have 
 $$
@@ -30,7 +30,7 @@ It is said that *counting rules suggest that baryons may emerge as solitons in l
 
 ## The Non-linear Sigma Model
 
-The non-linear sigma model, sometimes written as NL$\sigma$M or NLSM, is a scalar field theory where the target space (where the field takes value) is a non-linear manifold. It's called $\sigma$ model because originally Gell-Mann and Levy used $\Sigma$ to denote the scalar field. NLSM is a precursor of modern day QCD, even now it still serves as a good low-energy approximation, namely low energy effective theory of QCD, where quarks are negligible. NLSM is an effective of spin-zero scalar, in real world pions. 
+The non-linear sigma model, sometimes written as NL$\sigma$M or NLSM, is a scalar field theory where the target space (where the field takes value) is a non-linear manifold. It's called $\sigma$ model because originally Gell-Mann and Levy used $\Sigma$ to denote the scalar field. NLSM is a precursor of modern day QCD, even now it still serves as a good low-energy approximation, namely low energy effective theory of QCD, where quarks are negligible. NLSM is an effective model of spin-zero scalar, in real world pions. 
 
 There are three types of pions,
 $$
@@ -64,7 +64,7 @@ $$
 $$
 This form makes the symmetry of the Lagrangian manifest. 
 
-We also want the NLSM to adopt the chiral symmetry, that is the $SU(2)_ {L} \times SU(2)_ {R}$ global symmetry. Let $L,R\in SU(2)$ then the chiral symmetry acting on $U$ is 
+We also want the NLSM to adopt the chiral symmetry, that is $SU(2)_ {L} \times SU(2)_ {R}$ global symmetry. Let $L,R\in SU(2)$ then the chiral symmetry acting on $U$ is 
 $$
 U \to L U R^{\dagger}.
 $$
@@ -254,7 +254,7 @@ The normalization coefficient chosen such that, if you expand $U$ in terms of si
 $$
 \mathcal{L} = \frac{1}{2}\partial_ {\mu}\phi \partial^{\mu}\phi + \dots.
 $$
-Keep in mind that we are interested in a low energy effective theory, and in low energy the higher derivative terms are always suppressed since the momenta can't be too high, otherwise we wouldn't be talking about low energy. However, *we can use this fact to expand our Lagrangian terms in terms of momenta*, or so-called derivative expansion. At leading order of derivative expansion, except for the kinetic term, we also have
+Keep in mind that we are interested in a low energy effective theory, and at low energy the higher derivative terms are always suppressed since the momenta can't be too high, otherwise we wouldn't be talking about low energy. However, *we can use this fact to expand our Lagrangian terms in terms of momenta*, or so-called derivative expansion. At leading order of derivative expansion, except for the kinetic term, we also have
 $$
 \mathrm{Tr}\,(U^{\dagger}\partial_ {\mu}U)^{2},\quad (\mathrm{Tr}\,U^{\dagger}\partial_ {\mu}U)^{2}.
 $$
@@ -274,7 +274,7 @@ is that, albeit the resemblance, it is **not a free theory**. This is because th
 
 # Classical Skyrme Model
 
-Let $N_ {f}=2$. We already mentioned that at low energy, the more derivatives a term has, the less contribution it has. The chiral model has only second order derivatives, but it is poised by the fact that there is no stable soliton solution, something referred to as Derrick's theorem, as we will discuss below. But first, before we present the problem let me first present the solution, that is to introduce higher-derivative-order corrections. There are only two linearly independent terms like that, depending on *whether you take the contraction first than trace later or the other way around*,
+Let $N_ {f}=2$. We already mentioned that at low energy, the more derivatives a term has, the less contribution it has. The chiral model has only second order derivatives, but it is poisoned by the fact that there is no stable soliton solution in $4D$, due to Derrick's theorem, as we will discuss below. But first, before we present the problem let me first present the solution, that is to introduce higher-derivative-order corrections. There are only two linearly independent terms like that, depending on *whether you take the contraction first than trace later or the other way around*,
 $$
 (\mathrm{Tr}\,(\partial_ {\mu}U\partial^{\mu}U^{\dagger})) ^{2}\tag{term-I}
 $$
@@ -371,7 +371,7 @@ Now having the expression for $B$, we can write the static energy in terms of it
 $$
 E \geq  \frac{6\pi^{2}F_ {\pi}}{e}B.
 $$
-When the equality is taken, we say the solution saturates the Bogomolnyi condition, and corresponding solitons (with nontrivial topology, namely $B\neq 0$) are called `Skyrmions`.
+When the equality is taken, we say the solution saturates the Bogomolnyi condition.
 
 - - -
 
@@ -583,7 +583,7 @@ The iso-rotation is parametrized by three collective coordinates $\theta_ {1,2,3
 $$
 U_ {H}(r,t) = A(t)U_ {H}(r)A^{\dagger}(t)
 $$
-where $H$ for hedgehog, $A=\exp(i \theta_ {i}T^{i})$ and $T^{i}$ are the generators.
+where $H$ for hedgehog, $A=\exp(i \theta_ {i}(t)\,T^{i})$ and $T^{i}$ are the generators.
 
 Given $U(t)$ in terms of $A(t)$, in theory we can substitute it in the Lagrangian, obtaining a Lagrangian (Hamiltonian, whatever) in terms of $A(t)$. We can then try to diagonalize the Hamiltonian, find the eigenstates. We can then study the spin and isospin of these eigenstates by acting the corresponding operators on it. The eigenstates with proper spin and isospin will correspond to the nucleon and delta.
 
@@ -605,7 +605,7 @@ Recall the canonical quantization of quantum mechanics is to endow the generaliz
 
 We can write 
 $$
-A = a_ {0} + i \vec{a}\cdot \vec{\tau},\quad a_ {\mu}a_ {\mu}=1,\quad  \mu=0,1,2,3.
+A = a_ {0} + i \vec{a}\cdot \vec{\sigma},\quad a_ {\mu}a_ {\mu}=1,\quad  \mu=0,1,2,3.
 $$
 where the summation convention has been adopted. It is a general property for all $SU(2)$ matrices. In terms of $a$'s the Lagrangian becomes 
 $$

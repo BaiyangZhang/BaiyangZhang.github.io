@@ -1035,12 +1035,9 @@ How can be tell the local stationary point using first derivatives. What else is
 
 Introduce the Taylor expansion.
 
+### Lecture 9 (Nov 6th)
 
 
-
-
-
-### Lecture 9
 
 
 ### Lecture 10
