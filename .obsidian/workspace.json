@@ -30,8 +30,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ccbd82388345b0d1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +115,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +131,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,9 +152,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md"
-              }
+              "state": {}
             }
           },
           {
@@ -187,11 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a506e57999656a90",
+  "active": "ccbd82388345b0d1",
   "lastOpenFiles": [
+    "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
     "assets/img/z.png",
     "_news/announcement_2.md",
-    "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
     "_drafts/2023-mm-dd-Theodore-Frankel.md",
     "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
     "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
@@ -233,7 +238,6 @@
     "assets/img/projects-screenshot-480.webp",
     "assets/img/projects-screenshot-1400.webp",
     "assets/img/prof_pic-800.webp",
-    "assets/img/prof_pic-480.webp",
-    "assets/img/prof_pic-1400.webp"
+    "assets/img/prof_pic-480.webp"
   ]
 }
