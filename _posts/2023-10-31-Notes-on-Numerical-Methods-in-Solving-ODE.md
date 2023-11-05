@@ -166,15 +166,23 @@ $$
 &==0.
 \end{align}
 $$
-
-
-
 However the computation takes a long time and yields a nonsensical result, 
 ![](/img/eom.png)
 
 which doesn't make any sense. 
 
-Maybe we can make it work by providing a super accurate initial condition? With this hope I try to solve the equation at the origin, close to $r=0$. Expand $f(r)$ about the origin we get
+- - -
+
+For the following discussions, I found paper [arXiv:1309.1313](https://arxiv.org/abs/1309.1313) to be most helpful. Below are some approximation we can adopt at $r\to  0$,
+$$
+\frac{\sin(f(r))}{r} \to f'(0), \quad \frac{1}{4}-\frac{\sin^2(f(r))}{r^2} -(f'(r))^2 \to \frac{1}{4} 
+$$
+$$
+\frac{r^2}{4} + 2\sin^2(f(r)) = \frac{r^2}{4}\left( 1+8\frac{\sin^2(f(r))}{r^2} \right) \to \frac{r^2}{4}(1+8f'(0)).
+$$
+
+Maybe we can make it work by providing a super accurate initial condition? 
+With this hope I try to solve the equation at the origin, close to $r=0$. Expand $f(r)$ about the origin we get
 $$
 f(r) = f(0) + r f'(r) = \pi + rg(r),\quad  g(r) := f'(r)
 $$

@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a506e57999656a90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "18d80481c2dfa16b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md"
+                "file": "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md"
               }
             }
           },
@@ -187,11 +175,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a506e57999656a90",
+  "active": "18d80481c2dfa16b",
   "lastOpenFiles": [
+    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
+    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
+    "_posts/2023-07-28-Topological-Quantization.md",
+    "_posts/2023-07-07-Quartic-Time-Derivative.md",
+    "_posts/2023-07-12-Coset-Spaces.md",
     "_posts/2023-08-23-Connection-in-Principal-Bundles.md",
+    "_posts/2023-07-18-Mikhail-Bakunin.md",
+    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
     "_posts/2023-08-27-Associated-bundles.md",
     "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
     "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
@@ -210,13 +204,7 @@
     "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_news/announcement_1.md",
-    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "img/relaxationMethod.jpg",
-    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
-    "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-10-23-Noether's–Principal.md",
-    "_posts/2023-10-26-Poincare-Duality.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",
