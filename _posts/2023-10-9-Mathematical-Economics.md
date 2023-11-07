@@ -1037,10 +1037,16 @@ Introduce the Taylor expansion.
 
 ### Lecture 9 (Nov 6th)
 
+Introduce exponent and logarithmic functions. Talk about their derivatives and applications.
+
+One interesting and significant application of exponential functions in economics is in the concept of the "Multiplier Effect" associated with fiscal policy.
 
 
 
-### Lecture 10
+
+### Lecture 10 (Nov 8)
+
+
 
 
 ### Lecture 11
@@ -1049,8 +1055,8 @@ Introduce the Taylor expansion.
 ### Lecture 12
 
 
-### Lecture 13
+### Lecture 13 
 
 
-### Lecture 14 (Final)
+
 
