@@ -58,7 +58,7 @@ Since the $E_ {R}$'s do not vary, it is natural to define the
 $$
 d\phi := E_ {R}\otimes d\phi^{R}.
 $$
-The multiplication of two such ${\frak g}$-valued p-forms are not so clear. We want the so-defined multiplication still be a ${\frak g}$-valued p-form. Take ${\frak o}(n)$ for example, the Lie-algebra vectors are anti-symmetric matrices, but the product of two anti-symmetric matrices may not be anti-symmetric anymore, so we can't adopt the naïve matrix multiplication. The solution is to take the Lie bracket of the Lie algebras, namely the commutator and define
+The multiplication of two such ${\frak g}$-valued p-forms are not so clear. We want the multiplication still to be a ${\frak g}$-valued p-form. Take ${\frak o}(n)$ for example, the Lie-algebra vectors are anti-symmetric matrices, but the product of two anti-symmetric matrices may not be anti-symmetric anymore, so we can't adopt the naïve matrix multiplication. The solution is to take the Lie bracket of the Lie algebras, namely the commutator and define
 $$
 [\phi,\psi] = [E_ {R}\otimes \phi^{R},E_ {S}\otimes \psi^{S}] := [E_ {R},E_ {S}]\otimes \phi^{R}\wedge \psi^{S}.
 $$

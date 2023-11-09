@@ -1046,8 +1046,23 @@ One interesting and significant application of exponential functions in economic
 
 ### Lecture 10 (Nov 8)
 
+Consider a consumer with the simple utility (index) function
+$$
+U = x_ {1}x_ {2}+2x_ {1}.
+$$
+Without any constraints, it is impossible to optimize $U$. But with some budget constrain, for instance 
+$$
+x_ {1}+2x_ {2}=50,
+$$
+then we can optimize it. 
 
+Introduce the Lagrangian multiplier method. 
 
+Some examples for the Lagrange multiplier:
+
+Ex1. Find the extremum of $z=xy$ subject to $x+y=6$.
+
+Ex2. Find the extremum of $z=x_ {1}^{2}+x_ {2}^{2}$ subject to $x_ {1}+4x_ {2}=2$.
 
 ### Lecture 11
 
