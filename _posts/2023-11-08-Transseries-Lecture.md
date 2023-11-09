@@ -17,6 +17,20 @@ The modern theory of `resummation` was developed systematically by Stieltjes, Bo
 
 - - -
 
+Transseries have found significant applications in various areas of physics, particularly in high-energy physics. They are employed as algebraic tools to investigate self-consistent Dyson–Schwinger equations, which are integral equations that arise in the field of quantum field theory, specifically in Yukawa theory and quantum electrodynamics [1](https://www.sciencedirect.com/science/article/pii/S0003491616300793). These equations are pivotal in understanding the interactions of particles and fields at a fundamental level.
+
+In the realm of general relativity, transseries are applied to asymptotic analysis. General relativity stands as one of the cornerstones of modern physics, governing the laws of gravitation and the dynamics of large-scale structures in the universe . By applying transseries in this domain, researchers can gain insights into the asymptotic behavior of gravitational fields and the dynamics of spacetime.
+
+Furthermore, transseries are used in the *extraction of non-perturbative physics from perturbation theory through resurgence and alien calculus*. Perturbation theory is a fundamental tool in quantum mechanics and quantum field theory, allowing for the approximation of complex systems. The non-perturbative effects are those that cannot be captured by perturbation theory alone, and transseries help to identify and understand these effects [2](https://www.sciencedirect.com/science/article/pii/S0003491619301691)..
+
+Additionally, in the context of integrable, asymptotically free field theories, transseries have applications in studying the free energy of such systems when coupled to a conserved charge. These studies are significant in high-energy physics, particularly in understanding the thermodynamics and statistical mechanics of particle systems [3](https://link.springer.com/article/10.1007/JHEP08%282022%29279).
+
+These examples showcase the versatility and importance of transseries in advancing the understanding of fundamental physics, from the microscale of particle interactions to the macroscale of cosmic phenomena.
+
+I hope the information provided has sparked your interest in transseries. Now, let's delve into the subject itself.
+
+- - -
+
 Define a ordered group ${\frak G}$ (frak G) of transmonomials. Define a differential field $\mathbb{T}$ of `transseries`. Transmonomials are generalizations of monomials in polynomials, by including exponential and logarithmic. In this note and that follows, we will consider the limit where $x\to \infty$. 
 
 Let's start with exponents first.
@@ -69,9 +83,32 @@ A general transseries is obtained by substitution of some $\log_ {m}x$ for $x$ i
 
 *A lot of functions can now be regarded as a transseries*. For example, e hyperbolic sine is a two-term transseries.
 
-## 
+## Formal Constructions
 
+In mathematics, the move towards higher levels of formality entails adopting rigorous and precise language, definitions, and proofs, which brings clarity and precision, ensuring that mathematical concepts are universally understood and applied correctly. It allows for the development of solid, gap-free proofs, having a deeper understanding of mathematical structures and providing a robust foundation for complex theories. This precision in communication is critical in a global context, where scientists from different fields rely on universally recognized formalisms to understand each other effectively. 
 
+However, this precision comes at a cost. It can make the subject less accessible to beginners (like myself), potentially hindering educational and interdisciplinary work. A focus on stringent formalism might even inhibit creative thinking, as the rigidity of formal proofs could constrain the exploratory, intuitive processes that often drive mathematical discovery. Moreover, the lengthy and detailed nature of formal proofs can make mathematical work less efficient, both in terms of personal understanding and communication with others. There's also the risk of diminishing intuition, which is a crucial aspect of mathematical thought, particularly in the preliminary stages of research. It is definitely crucial to have a balance between concrete examples and general formalism, what is I hope to achieve in this note.
 
+- - -
 
+The set of monomials ${\frak G}$ form a field, which is also a group if we focus on multiplication alone. ${\frak G}$ is *not* finitely generated, to see this consider the finitely generated group with generator 
+$$
+\mu_ {1},\mu_ {2},\dots,\mu_ {n},
+$$
+the generated group has elements of form
+$$
+\left\{ \mu_ {1}^{k_ {1}}\times \mu_ {2}^{k_ {2}}\times \dots \times \mu_ {n}^{k_ {n}} \,\middle\vert\, k_ {1},\dots,k_ {n} \in \mathbb{Z} \right\} .
+$$
+Note that the exponents must be integers. 
+
+Let's use capital letters to denote a set of indices, for example define 
+$$
+K := (k_ {1},k_ {2},\dots,k_ {n})
+$$
+then 
+$$
+\mu_ {1}^{k_ {1}}\dots \mu_ {n}^{k_ {n}} =: \mu^{K}.
+$$
+
+This will save some writing. The problem is that $\mu^{K}$ can also be interpreted as $\mu^{k_ {1}k_ {1}\dots k_ {n}}$, but it should be clear from the context. 
 
