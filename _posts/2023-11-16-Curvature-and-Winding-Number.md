@@ -107,4 +107,15 @@ Thus justifies the definition shown in the last term in Eq. (1). Let's take a lo
 $$
 \bigwedge^{2}(v_ {i}\wedge v_ {j})
 $$
-as the component of the exterior power operator on basis $v_ {i}\wedge v_ {j}$. 
+as the component of the exterior power operator on basis $v_ {i}\wedge v_ {j}$. Then the trace of $\Lambda^{2}(A)$ is simply the sum total of all its components. We have
+$$
+\bigwedge^{2}(v_ {i}\wedge v_ {j}) = A_ {im} A_ {jn}(v_ {m} \wedge v_ {n} ) = (\lambda _ {i} \lambda _ {j})\, v_ {i} \wedge v_ {j} 
+$$
+where $i<j$ implicitly. Then the total sum is 
+$$
+\mathrm{Tr}\,\bigwedge^{2} A = \sum_ {i<j}\lambda _ {i} \lambda _ {j} .
+$$
+The rest follows in the same way. 
+
+- - -
+
