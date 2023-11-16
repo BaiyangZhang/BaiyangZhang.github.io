@@ -63,7 +63,7 @@ The exterior power space $\Lambda^k(V)$ provides the algebraic structure that un
 
 **Example. 1** 
 
-Considering the exterior powers of a three-dimensional complex vector space $V = \mathbb{C}^3$, with basis $\left\{ v_ {1},v_ {2},v_ {3} \right\}$. We explore the spaces formed by taking the exterior powers of $V$. These spaces are constructed using the wedge product as follows:
+Considering the exterior powers of a three-dimensional complex vector space $V = \mathbb{C}^3$, with basis $\{ v_ {1},v_ {2},v_ {3} \}$. We explore the spaces formed by taking the exterior powers of $V$. These spaces are constructed using the wedge product as follows:
 
 *Zeroth Exterior Power*, $\Lambda^0(V)$: This is the space of scalars. It is isomorphic to the field over which the vector space is defined, in this case, the complex numbers $\mathbb{C}$. The dimension of this space is one.
 
@@ -86,11 +86,11 @@ $$
 $$
 where $\lambda_ {1},\dots,\lambda_ {N}$ are the eigenvalues of $A$. Putting $\lambda=-1$ we have
 $$
-\begin{align}
+\begin{align*}
 \det(I+A) &= (1+\lambda_ {1})(1+\lambda_ {2})\dots(1+\lambda_ {N}) \\
 &= 1 + \sum_ {i}\lambda_ {i} + \sum_ {i<j} \lambda _ {i} \lambda _ {j} +\dots+\prod_ {i=1}^{N}\lambda_ {i} \\
 &= 1 + \mathrm{Tr}\,A + \mathrm{Tr}\, \bigwedge^{2}A +\dots+\mathrm{Tr}\,\bigwedge^{N}A
-\end{align}
+\end{align*}
 \tag{1}
 $$
 where the big wedges are called the `elementary symmetric functions` of he eigenvalues of $A$. The reason for this notation is as follows. Since
@@ -139,10 +139,10 @@ Now, let $E\to M$ be a complex $\mathbb{C}^{N}$ bundle with structure group $U(N
 
 Let's *formally* replace $A$ in Eq. (1) with $i\theta / 2\pi$, replace multiplication with wedge product. To be exact, we work with **polynomial expression** of $\Lambda^{p}A$, and perform these substitutions. Since $\theta$ is a $2$-form there will be no problem with ordering. Regarding $\theta$ as a matrix means that the $(\alpha,\beta)$-th entry of the matrix is $\theta^{\alpha}_ {\;\; \beta}$. Now similar to Eq. (1) we have
 $$
-\begin{align}
+\begin{align*}
 \det \left( I+\frac{i\theta}{2\pi} \right) &= I + \mathrm{Tr}\,\frac{i\theta}{2\pi} + \dots \\
 &= I + c_ {1}(E) + c_ {2}(E) + \dots 
-\end{align}
+\end{align*}
 $$
 where $c_ {1}(E)$ is a 2-form on $U\subset M$, $c_ {r}(E)$ is a $2r$-form on $U$. It's called the $r$-th `Chern form`.
 
@@ -156,6 +156,4 @@ c_ {2} = -\frac{1}{8\pi^{2}}[\mathrm{Tr}\,\theta \wedge \mathrm{Tr}\,\theta-\mat
 $$
 
 Suppose the bundle has $SU(N)$ structure group rather than $U(N)$. The Lie algebra ${\frak su}(N)$ are traceless, anti-hermitian (mathematical convention) matrices, we have $\mathrm{Tr}\,\theta=0$. 
-
-
 
