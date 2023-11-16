@@ -57,15 +57,30 @@ $$
 
 The topological significance of $\mathrm{Tr}\,(\theta \wedge\theta)$, generalizing Poincare’s theorem for closed surfaces (which says the sum of indices times multiplicity equal to the Euler characteristic), is developed by Chern. $\mathrm{Tr}\,(\theta \wedge\theta)$ is but one of a whole family of significant integrands, called the Chern forms. But before going into details, let's review what is `exterior power space` shortly.
 
-Given a vector space $V$ over a field $F$ (like the real numbers $\mathbb{R}$), the exterior algebra is an algebraic structure that extends the concept of scalars and vectors to higher-dimensional analogs. It is denoted as $\bigwedge V$. The $k$-th `exterior power` of $V$, denoted as $\Lambda^k(V)$ or $\wedge$, is a vector space that consists of all alternating $k$-linear forms on $V$. These are essentially objects that can be thought of as $k$-dimensional oriented volumes. For example, in $\Lambda^1(V)$, elements are just vectors (1-dimensional volumes), while in $\Lambda^2(V)$, elements can be interpreted as oriented areas, and so on.
+Given a vector space $V$ over a field $F$ (like the real numbers $\mathbb{R}$), the exterior algebra is an algebraic structure that extends the concept of scalars and vectors to higher-dimensional analogs. It is denoted as $\bigwedge V$. The $k$-th `exterior power` of $V$, denoted as $\Lambda^k(V)$ or $\bigwedge^{k} V$, is a vector space that consists of all alternating $k$-linear forms on $V$. For example, in $\Lambda^1(V)$, elements are just vectors. An exterior differential form of degree $k$ (or a $k$-form) on a differentiable manifold $M$ is a smooth section of the $k$-th exterior power of the cotangent bundle of $M$. In simpler terms, a $k$-form is a mathematical object that can be integrated over $k$-dimensional submanifolds of $M$. These forms are crucial in defining integrals over manifolds and in the formulation of Stokes' theorem. 
 
-3. **Exterior Differential Forms**: An exterior differential form of degree $k$ (or a $k$-form) on a differentiable manifold $M$ is a smooth section of the $k$-th exterior power of the cotangent bundle of $M$. In simpler terms, a $k$-form is a mathematical object that can be integrated over $k$-dimensional submanifolds of $M$. These forms are crucial in defining integrals over manifolds and in the formulation of Stokes' theorem.
+The exterior power space $\Lambda^k(V)$ provides the algebraic structure that underlies the concept of $k$-forms. When you consider a manifold $M$ with a tangent space at each point that is a vector space $V$, the exterior power $\Lambda^k(T^*M)$ (where $T^*M$ is the cotangent bundle of $M$) is the space in which exterior differential forms live. This means that each $k$-form is an element of $\Lambda^k(T^*M)$ at each point of $M$.
 
-4. **Relationship**: The exterior power space $\Lambda^k(V)$ provides the algebraic structure that underlies the concept of $k$-forms. When you consider a manifold $M$ with a tangent space at each point that is a vector space $V$, the exterior power $\Lambda^k(T^*M)$ (where $T^*M$ is the cotangent bundle of $M$) is the space in which exterior differential forms live. This means that each $k$-form is an element of $\Lambda^k(T^*M)$ at each point of $M$.
+**Example. 1** Considering the exterior powers of a three-dimensional complex vector space $V = \mathbb{C}^3$, with basis $\left\{ v_ {1},v_ {2},v_ {3} \right\}$. We explore the spaces formed by taking the exterior powers of $V$. These spaces are constructed using the wedge product as follows:
 
-5. **Applications**: Exterior differential forms and their associated exterior powers are used in various areas of mathematics and physics, including the formulation of Maxwell's equations in electromagnetism, the general theory of relativity, and in the study of symplectic manifolds in Hamiltonian mechanics.
+*Zeroth Exterior Power*, $\Lambda^0(V)$: This is the space of scalars. It is isomorphic to the field over which the vector space is defined, in this case, the complex numbers $\mathbb{C}$. The dimension of this space is one.
 
-In summary, the exterior power space provides the foundational algebraic structure for the study of exterior differential forms, which are key tools in differential geometry and related fields.
+*First Exterior Power, $\Lambda^1(V)$*:  This is just the vector space $V$ itself, with dimension three (since $V = \mathbb{C}^3$). The basis are simply $\left\{ v_ {1},v_ {2},v_ {3} \right\}$.
+
+*Second Exterior Power, $\Lambda^2(V)$*: This space consists of all skew-symmetric bilinear forms on $V$. It can be visualized as the space of oriented planes in $V$. It has dimension  $$
+ \binom{3}{2} = 3, \text{ since there are 3 ways to choose pairs from 3 elements.}
+ $$
+The basis are $\left\{ v_ {1}\wedge v_ {2},v_ {1}\wedge v_ {3},v_ {2}\wedge v_ {3} \right\}$.
+
+*Third Exterior Power, $\Lambda^3(V)$*: This is the space of 3-vectors in $V$. It represents the oriented volume elements in $V$. The dimension is $\binom{3}{3} = 1$ (there is only one way to choose triples from 3 elements). The basis is $v_ {1}\wedge v_ {2}\wedge v_ {3}$.
+
+*Higher Exterior Powers, $\Lambda^k(V)$ for $k > 3$*: For any $k$ greater than the dimension of $V$ (which is 3 in this case), the exterior power $\Lambda^k(V)$ is the trivial vector space {0}, as there are no non-zero $k$-vectors in a 3-dimensional space for $k > 3$.
+
+
+
+
+
+
 $$
 \bigwedge^k V 
 $$
