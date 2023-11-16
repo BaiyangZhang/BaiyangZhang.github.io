@@ -2,7 +2,7 @@
 layout: post
 title: Curvature and Winding Number
 subtitle: 
-date: 2023-11-15
+date: 2023-11-16
 author: Baiyang Zhang
 header-img: img/background11.jpg
 catalog: true
@@ -89,6 +89,7 @@ $$
 &= 1 + \sum_ {i}\lambda_ {i} + \sum_ {i<j} \lambda _ {i} \lambda _ {j} +\dots+\prod_ {i=1}^{N}\lambda_ {i} \\
 &= 1 + \mathrm{Tr}\,A + \mathrm{Tr}\, \bigwedge^{2}A +\dots+\mathrm{Tr}\,\bigwedge^{N}A
 \end{align}
+\tag{1}
 $$
 where the big wedges are called the `elementary symmetric functions` of he eigenvalues of $A$. The reason for this notation is as follows. Since
 $$
@@ -100,7 +101,10 @@ $$
 $$
 Let's take $p=N$ for example. $\Lambda^{N}(V)$ is one dimensional and 
 $$
-\left( \bigwedge^{N} \right)
+\left( \bigwedge^{N}A \right)(v_ {1}\wedge \dots \wedge v_ {n} ) = \det A\, (v_ {1}\wedge \dots \wedge v_ {n} ).
 $$
-
-
+Thus justifies the definition shown in the last term in Eq. (1). Let's take a look at other terms, for example, at $\Lambda^{2}A$. We treat $A$ as diagonal matrix $\text{diag}(\lambda_ {1},\dots,\lambda_ {N})$ to simplify the calculation, and we can consider 
+$$
+\bigwedge^{2}(v_ {i}\wedge v_ {j})
+$$
+as the component of the exterior power operator on basis $v_ {i}\wedge v_ {j}$. 

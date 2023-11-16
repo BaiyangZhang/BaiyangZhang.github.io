@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-11-15-Curvature-and-Winding-Number.md",
+                "file": "_posts/2023-11-16-Curvature-and-Winding-Number.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-11-15-Curvature-and-Winding-Number.md",
+                "file": "_posts/2023-11-16-Curvature-and-Winding-Number.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-11-15-Curvature-and-Winding-Number.md",
+                "file": "_posts/2023-11-16-Curvature-and-Winding-Number.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-11-15-Curvature-and-Winding-Number.md"
+                "file": "_posts/2023-11-16-Curvature-and-Winding-Number.md"
               }
             }
           },
@@ -178,7 +178,7 @@
   "active": "093c53a1e3343e37",
   "lastOpenFiles": [
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_drafts/2023-11-15-Curvature-and-Winding-Number.md",
+    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
     "_drafts/2023-11-13-Representables-in-Category-Theory.md",
     "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
     "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
