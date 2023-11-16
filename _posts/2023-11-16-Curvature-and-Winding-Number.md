@@ -59,9 +59,11 @@ The topological significance of $\mathrm{Tr}\,(\theta \wedge\theta)$, generalizi
 
 Given a vector space $V$ over a field $F$ (like the real numbers $\mathbb{R}$), the exterior algebra is an algebraic structure that extends the concept of scalars and vectors to higher-dimensional analogs. It is denoted as $\bigwedge V$. The $k$-th `exterior power` of $V$, denoted as $\Lambda^k(V)$ or $\bigwedge^{k} V$, is a vector space that consists of all alternating $k$-linear forms on $V$. For example, in $\Lambda^1(V)$, elements are just vectors. An exterior differential form of degree $k$ (or a $k$-form) on a differentiable manifold $M$ is a smooth section of the $k$-th exterior power of the cotangent bundle of $M$. In simpler terms, a $k$-form is a mathematical object that can be integrated over $k$-dimensional submanifolds of $M$. These forms are crucial in defining integrals over manifolds and in the formulation of Stokes' theorem. 
 
-The exterior power space $\Lambda^k(V)$ provides the algebraic structure that underlies the concept of $k$-forms. When you consider a manifold $M$ with a tangent space at each point that is a vector space $V$, the exterior power $\Lambda^k(T^*M)$ (where $T^*M$ is the cotangent bundle of $M$) is the space in which exterior differential forms live. This means that each $k$-form is an element of $\Lambda^k(T^*M)$ at each point of $M$.
+The exterior power space $\Lambda^k(V)$ provides the algebraic structure that underlies the concept of $k$-forms. When you consider a manifold $M$ with a tangent space at each point that is a vector space $V$, the exterior power $\Lambda^k(T^\ast M)$ (where $T^\star M$ is the cotangent bundle of $M$) is the space in which exterior differential forms live. This means that each $k$-form is an element of $\Lambda^k(T^\star M)$ at each point of $M$.
 
-**Example. 1** Considering the exterior powers of a three-dimensional complex vector space $V = \mathbb{C}^3$, with basis $\left\{ v_ {1},v_ {2},v_ {3} \right\}$. We explore the spaces formed by taking the exterior powers of $V$. These spaces are constructed using the wedge product as follows:
+**Example. 1** 
+
+Considering the exterior powers of a three-dimensional complex vector space $V = \mathbb{C}^3$, with basis $\left\{ v_ {1},v_ {2},v_ {3} \right\}$. We explore the spaces formed by taking the exterior powers of $V$. These spaces are constructed using the wedge product as follows:
 
 *Zeroth Exterior Power*, $\Lambda^0(V)$: This is the space of scalars. It is isomorphic to the field over which the vector space is defined, in this case, the complex numbers $\mathbb{C}$. The dimension of this space is one.
 
@@ -115,7 +117,45 @@ where $i<j$ implicitly. Then the total sum is
 $$
 \mathrm{Tr}\,\bigwedge^{2} A = \sum_ {i<j}\lambda _ {i} \lambda _ {j} .
 $$
-The rest follows in the same way. 
 
 - - -
+
+It turns out we can further simplify $\Lambda^{p}A$. Note that
+$$
+\lambda_ {1}^{p} + \lambda_ {2}^{p} + \dots + \lambda _ {N}^{p} = \mathrm{Tr}\,(A^{p}),\quad  
+A = \text{diag}(\lambda_ {1},\dots,\lambda_ {N}).
+$$
+
+Take $p=2$ for example, 
+$$
+\bigwedge^{2} A = \sum _ {i<j} \lambda _ {i} \lambda _ {j}  = \frac{1}{2} \sum_ {ij} \lambda _ {i} \lambda _ {j} - \frac{1}{2} \lambda _ {i} \lambda _ {i}  = \frac{1}{2}(\mathrm{Tr}\,A)^{2} - \frac{1}{2} \mathrm{Tr}\,A^{2}.
+$$
+
+Turns out all the exterior power operators can be expressed as a *polynomial* in terms of $\mathrm{Tr}\, A^{n}$ and $(\mathrm{Tr}\,A)^{m}$ for some $m$ and $n$. 
+
+- - -
+
+Now, let $E\to M$ be a complex $\mathbb{C}^{N}$ bundle with structure group $U(N)$. Let the connection be $\omega$. The corresponding $2$-form curvature is still denoted by $\theta$. 
+
+Let's *formally* replace $A$ in Eq. (1) with $i\theta / 2\pi$, replace multiplication with wedge product. To be exact, we work with **polynomial expression** of $\Lambda^{p}A$, and perform these substitutions. Since $\theta$ is a $2$-form there will be no problem with ordering. Regarding $\theta$ as a matrix means that the $(\alpha,\beta)$-th entry of the matrix is $\theta^{\alpha}_ {\;\; \beta}$. Now similar to Eq. (1) we have
+$$
+\begin{align}
+\det \left( I+\frac{i\theta}{2\pi} \right) &= I + \mathrm{Tr}\,\frac{i\theta}{2\pi} + \dots \\
+&= I + c_ {1}(E) + c_ {2}(E) + \dots 
+\end{align}
+$$
+where $c_ {1}(E)$ is a 2-form on $U\subset M$, $c_ {r}(E)$ is a $2r$-form on $U$. It's called the $r$-th `Chern form`.
+
+To be specific, the form $c_ {1}$ is 
+$$
+c_ {1} = \frac{i}{2\pi} \mathrm{Tr}\,\theta = \frac{i}{2\pi} \mathrm{Tr}\,\theta^{\alpha}_ {\;\; \alpha}.
+$$
+For $c_ {2}$ we have
+$$
+c_ {2} = -\frac{1}{8\pi^{2}}[\mathrm{Tr}\,\theta \wedge \mathrm{Tr}\,\theta-\mathrm{Tr}\,(\theta \wedge \theta)].
+$$
+
+Suppose the bundle has $SU(N)$ structure group rather than $U(N)$. The Lie algebra ${\frak su}(N)$ are traceless, anti-hermitian (mathematical convention) matrices, we have $\mathrm{Tr}\,\theta=0$. 
+
+
 
