@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "949fb283ee618e4a",
+        "id": "f3c6301291cc24cf",
         "type": "tabs",
         "children": [
           {
-            "id": "093c53a1e3343e37",
+            "id": "62cbb4839c0837de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-11-08-Transseries-Lecture.md",
+                "file": "_drafts/2023-11-15-Curvature-and-Winding-Number.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2bf85735bffd1d24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/2023-11-13-Representables-in-Category-Theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.5069465637207,
+    "width": 474.5,
     "collapsed": true
   },
   "right": {
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-11-08-Transseries-Lecture.md",
+                "file": "_drafts/2023-11-15-Curvature-and-Winding-Number.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-11-08-Transseries-Lecture.md",
+                "file": "_drafts/2023-11-15-Curvature-and-Winding-Number.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-11-08-Transseries-Lecture.md"
+                "file": "_drafts/2023-11-15-Curvature-and-Winding-Number.md"
               }
             }
           },
@@ -175,36 +187,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "093c53a1e3343e37",
+  "active": "62cbb4839c0837de",
   "lastOpenFiles": [
-    "7.md",
-    "_posts/2023-11-08-Transseries-Lecture.md",
-    "6.md",
-    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_drafts/2023-11-7-Analytic-Structure.md",
     "_drafts/2023-11-08-Categorical-Equivalence-and-the-Renormalization-Group.md",
-    "_drafts/2023-11-07-Curvature-and-Winding-Number.md",
-    "img/eom.png",
-    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-07-28-Topological-Quantization.md",
-    "_posts/2023-07-07-Quartic-Time-Derivative.md",
-    "_posts/2023-07-12-Coset-Spaces.md",
-    "_posts/2023-08-23-Connection-in-Principal-Bundles.md",
-    "_posts/2023-07-18-Mikhail-Bakunin.md",
-    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
-    "_posts/2023-08-27-Associated-bundles.md",
-    "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
-    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
-    "_posts/2023-09-21-The-Dirac-Equation.md",
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
-    "_posts/2023-06-17-The-Workers-and-the-Fatherland.md",
-    "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
-    "_posts/2023-3-22-Heuristics-of-Einstein's-Theory.md",
-    "_drafts/2023-11-01-Chern-Forms-and-Winding-Numbers.md",
-    "assets/img/z.png",
-    "_news/announcement_2.md",
+    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
+    "_posts/2023-11-08-Transseries-Lecture.md",
+    "7.md",
+    "_posts/2022-11-4-俄乌战争前普京的演讲.md",
+    "_drafts/2023mm-dd--Basic-Algebraic-Geometry-n.md",
     "_drafts/2023-mm-dd-Theodore-Frankel.md",
+    "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_drafts/2023-mm-dd-Confinement-in-Toy-Models-Lecture-.md",
+    "_drafts/2023-11-15-Curvature-and-Winding-Number.md",
+    "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
+    "_drafts/2023-06-02-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
+    "_drafts/2023-3-22-Hilbert's-Action-Principle.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
+    "_posts/2023-08-23-Connection-in-Principal-Bundles.md",
+    "_posts/2023-08-27-Associated-bundles.md",
+    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
+    "_posts/2023-09-21-The-Dirac-Equation.md",
+    "CONTRIBUTING.md",
+    "Pasted image 20231107092203.png",
+    "_drafts/2023-11-7-Analytic-Structure.md",
+    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
+    "_posts/2023-2-4-Basic-Algebraic-Geometry-6.md",
+    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
+    "img/eom.png",
+    "assets/img/z.png",
     "img/relaxationMethod.jpg",
     "news.html",
     "bin/entry_point.sh",
@@ -221,7 +234,6 @@
     "assets/img/publications-screenshot-1400.webp",
     "assets/img/projects-screenshot-800.webp",
     "assets/img/projects-screenshot-480.webp",
-    "assets/img/projects-screenshot-1400.webp",
-    "assets/img/prof_pic-800.webp"
+    "assets/img/projects-screenshot-1400.webp"
   ]
 }
