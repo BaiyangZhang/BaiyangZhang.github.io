@@ -76,13 +76,31 @@ The basis are $\left\{ v_ {1}\wedge v_ {2},v_ {1}\wedge v_ {3},v_ {2}\wedge v_ {
 
 *Higher Exterior Powers, $\Lambda^k(V)$ for $k > 3$*: For any $k$ greater than the dimension of $V$ (which is 3 in this case), the exterior power $\Lambda^k(V)$ is the trivial vector space {0}, as there are no non-zero $k$-vectors in a 3-dimensional space for $k > 3$.
 
+- - -
 
-
-
-
-
+Let $V=\mathbb{C}^{N}$ be $N$-dimensional complex vector space. Let $A$ be a $N\times N$ complex matrix that acts on $V$ in the usual way. Consider the` characteristic (eigenvalue) polynomial` of $A$, 
 $$
-\bigwedge^k V 
+\det(\lambda I-A) = (\lambda-\lambda_ {1})(\lambda-\lambda_ {2})\dots(\lambda-\lambda_ {N})
+$$
+where $\lambda_ {1},\dots,\lambda_ {N}$ are the eigenvalues of $A$. Putting $\lambda=-1$ we have
+$$
+\begin{align}
+\det(I+A) &= (1+\lambda_ {1})(1+\lambda_ {2})\dots(1+\lambda_ {N}) \\
+&= 1 + \sum_ {i}\lambda_ {i} + \sum_ {i<j} \lambda _ {i} \lambda _ {j} +\dots+\prod_ {i=1}^{N}\lambda_ {i} \\
+&= 1 + \mathrm{Tr}\,A + \mathrm{Tr}\, \bigwedge^{2}A +\dots+\mathrm{Tr}\,\bigwedge^{N}A
+\end{align}
+$$
+where the big wedges are called the `elementary symmetric functions` of he eigenvalues of $A$. The reason for this notation is as follows. Since
+$$
+A: V \to V
+$$
+is a linear transformation on $V$, we may let $A$ act on each of the *exterior power spaces* $\Lambda^{p} (A)$ by the so-called *exterior power operation* 
+$$
+\bigwedge^{p}A: \; v_ {1}\wedge \dots \wedge v_ {p} \mapsto (Av_ {1})\wedge (Av_ {2})\wedge \dots \wedge (Av_ {p} ).
+$$
+Let's take $p=N$ for example. $\Lambda^{N}(V)$ is one dimensional and 
+$$
+\left( \bigwedge^{N} \right)
 $$
 
 
