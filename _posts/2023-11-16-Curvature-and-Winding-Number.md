@@ -63,16 +63,17 @@ The exterior power space $\Lambda^k(V)$ provides the algebraic structure that un
 
 **Example. 1** 
 
-Considering the exterior powers of a three-dimensional complex vector space $V = \mathbb{C}^3$, with basis $\{ v_ {1},v_ {2},v_ {3} \}$. We explore the spaces formed by taking the exterior powers of $V$. These spaces are constructed using the wedge product as follows:
+Considering the exterior powers of a three-dimensional complex vector space $V = \mathbb{C}^3$, with basis $\lbrace v_ {1},v_ {2},v_ {3}  \rbrace$. We explore the spaces formed by taking the exterior powers of $V$. These spaces are constructed using the wedge product as follows:
 
 *Zeroth Exterior Power*, $\Lambda^0(V)$: This is the space of scalars. It is isomorphic to the field over which the vector space is defined, in this case, the complex numbers $\mathbb{C}$. The dimension of this space is one.
 
-*First Exterior Power, $\Lambda^1(V)$*:  This is just the vector space $V$ itself, with dimension three (since $V = \mathbb{C}^3$). The basis are simply $\left\{ v_ {1},v_ {2},v_ {3} \right\}$.
+*First Exterior Power, $\Lambda^1(V)$*:  This is just the vector space $V$ itself, with dimension three (since $V = \mathbb{C}^3$). The basis are simply $\left\lbrace v_ {1},v_ {2},v_ {3} \right\rbrace$.
 
-*Second Exterior Power, $\Lambda^2(V)$*: This space consists of all skew-symmetric bilinear forms on $V$. It can be visualized as the space of oriented planes in $V$. It has dimension  $$
+*Second Exterior Power, $\Lambda^2(V)$*: This space consists of all skew-symmetric bilinear forms on $V$. It can be visualized as the space of oriented planes in $V$. It has dimension  
+$$
  \binom{3}{2} = 3, \text{ since there are 3 ways to choose pairs from 3 elements.}
- $$
-The basis are $\left\{ v_ {1}\wedge v_ {2},v_ {1}\wedge v_ {3},v_ {2}\wedge v_ {3} \right\}$.
+$$
+The basis are $\left\lbrace v_ {1}\wedge v_ {2},v_ {1}\wedge v_ {3},v_ {2}\wedge v_ {3} \right\rbrace$.
 
 *Third Exterior Power, $\Lambda^3(V)$*: This is the space of 3-vectors in $V$. It represents the oriented volume elements in $V$. The dimension is $\binom{3}{3} = 1$ (there is only one way to choose triples from 3 elements). The basis is $v_ {1}\wedge v_ {2}\wedge v_ {3}$.
 
