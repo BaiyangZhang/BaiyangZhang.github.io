@@ -55,7 +55,17 @@ $$
 
 ### The Chern form for a $U(n)$ bundle
 
-The topological significance of $\mathrm{Tr}\,(\theta \wedge\theta)$, generalizing Poincare’s theorem for closed surfaces (which says the sum of indices times multiplicity equal to the Euler characteristic), is developed by 
+The topological significance of $\mathrm{Tr}\,(\theta \wedge\theta)$, generalizing Poincare’s theorem for closed surfaces (which says the sum of indices times multiplicity equal to the Euler characteristic), is developed by Chern. $\mathrm{Tr}\,(\theta \wedge\theta)$ is but one of a whole family of significant integrands, called the Chern forms. But before going into details, let's review what is `exterior power space` shortly.
+
+Given a vector space $V$ over a field $F$ (like the real numbers $\mathbb{R}$), the exterior algebra is an algebraic structure that extends the concept of scalars and vectors to higher-dimensional analogs. It is denoted as $\bigwedge V$. The $k$-th `exterior power` of $V$, denoted as $\Lambda^k(V)$ or $\wedge$, is a vector space that consists of all alternating $k$-linear forms on $V$. These are essentially objects that can be thought of as $k$-dimensional oriented volumes. For example, in $\Lambda^1(V)$, elements are just vectors (1-dimensional volumes), while in $\Lambda^2(V)$, elements can be interpreted as oriented areas, and so on.
+
+3. **Exterior Differential Forms**: An exterior differential form of degree $k$ (or a $k$-form) on a differentiable manifold $M$ is a smooth section of the $k$-th exterior power of the cotangent bundle of $M$. In simpler terms, a $k$-form is a mathematical object that can be integrated over $k$-dimensional submanifolds of $M$. These forms are crucial in defining integrals over manifolds and in the formulation of Stokes' theorem.
+
+4. **Relationship**: The exterior power space $\Lambda^k(V)$ provides the algebraic structure that underlies the concept of $k$-forms. When you consider a manifold $M$ with a tangent space at each point that is a vector space $V$, the exterior power $\Lambda^k(T^*M)$ (where $T^*M$ is the cotangent bundle of $M$) is the space in which exterior differential forms live. This means that each $k$-form is an element of $\Lambda^k(T^*M)$ at each point of $M$.
+
+5. **Applications**: Exterior differential forms and their associated exterior powers are used in various areas of mathematics and physics, including the formulation of Maxwell's equations in electromagnetism, the general theory of relativity, and in the study of symplectic manifolds in Hamiltonian mechanics.
+
+In summary, the exterior power space provides the foundational algebraic structure for the study of exterior differential forms, which are key tools in differential geometry and related fields.
 $$
 \bigwedge^k V 
 $$
