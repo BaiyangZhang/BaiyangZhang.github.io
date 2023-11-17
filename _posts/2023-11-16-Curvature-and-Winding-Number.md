@@ -168,5 +168,15 @@ $$
 $$
 thanks to the property of determination we have
 $$
-\det()
+\det\left( I+ \frac{i \theta_ {V}}{2\pi} \right) = \det\left( I+ \frac{i\theta_ {U}}{2\pi} \right).
 $$
+It means that each *Chern form* is **globally define** $2r$-form on all of $M^{n}$. 
+
+With the help of Bianchi identity, it is possible to show that $c_ {1}$ is closed. 
+
+For $SU(2)$ bundle, the second Chern form is *locally* the differential of Chern-Simons form. 
+
+We present without proof the
+
+**Theorem of Chern and Weil:** Each $c_ {r}$ is a *closed* $2r$-form thus defines a (real) de Rham class. Furthermore, different connections for the $U(N)$ bundle will yield Chern form that differs by an exact form, and hence define the same de Rham cohomology class. 
+
