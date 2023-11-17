@@ -156,5 +156,17 @@ $$
 c_ {2} = -\frac{1}{8\pi^{2}}[\mathrm{Tr}\,\theta \wedge \mathrm{Tr}\,\theta-\mathrm{Tr}\,(\theta \wedge \theta)].
 $$
 
-Suppose the bundle has $SU(N)$ structure group rather than $U(N)$. The Lie algebra ${\frak su}(N)$ are traceless, anti-hermitian (mathematical convention) matrices, we have $\mathrm{Tr}\,\theta=0$. 
+Suppose the bundle has $SU(N)$ structure group rather than $U(N)$. The Lie algebra ${\frak su}(N)$ are traceless, anti-hermitian (mathematical convention) matrices, thus we have $\mathrm{Tr}\,\theta=0$ (recall that both the connection and curvature are ${\frak g}$-valued forms). Then $c_ {1}(E)$ vanishes but $c_ {2}$ does not,
+$$
+c_ {2}(E) = \frac{1}{8\pi^{2}} \mathrm{Tr}\,(\theta \wedge \theta),
+$$
+which is precisely the 4-form appearing in the winding number of an $SU(2)$ instanton! Just now we have $SU(N)$ instead. 
 
+Recall that the curvature $\theta_ {U}$ is locally defined on open patches $U$, under a change of basis the curvature changes as
+$$
+\theta_ {V} = c_ {VU} \theta_ {U} c_ {UV}^{-1} ,
+$$
+thanks to the property of determination we have
+$$
+\det()
+$$
