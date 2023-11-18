@@ -2,7 +2,7 @@
 layout: post
 title: Categorical Equivalence and the Renormalization Group
 subtitle: Based on E.Sharpe's work
-date: 2023-11-08
+date: 2023-11-18
 author: Baiyang Zhang
 header-img: img/background11.jpg
 catalog: true
@@ -68,7 +68,6 @@ Groupoid fibration captures two notions at once:
 - isomorphism of families. By the arrows in $\mathcal{X}$ (Since $\mathcal{X}$ is a groupoid).
 - pullback.
 
-Let $\mathcal{X} \to \mathcal{T}$ be a groupoid fibration. 
 
 
 
