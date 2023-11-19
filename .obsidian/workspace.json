@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-11-18-Chern-Forms-and-Winding-Numbers.md",
+                "file": "_posts/2023-11-19-Higher-Homotopy-Groups.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 278.5,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-11-18-Chern-Forms-and-Winding-Numbers.md",
+                "file": "_posts/2023-11-19-Higher-Homotopy-Groups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-11-18-Chern-Forms-and-Winding-Numbers.md",
+                "file": "_posts/2023-11-19-Higher-Homotopy-Groups.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-11-18-Chern-Forms-and-Winding-Numbers.md"
+                "file": "_posts/2023-11-19-Higher-Homotopy-Groups.md"
               }
             }
           },
@@ -176,11 +177,15 @@
   },
   "active": "093c53a1e3343e37",
   "lastOpenFiles": [
+    "img/shortExactSequence.png",
+    "img/homotopyCommute.png",
+    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
+    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
+    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
     "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
     "_drafts/2023-11-7-Analytic-Structure.md",
     "_posts/2023-11-16-Curvature-and-Winding-Number.md",
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
     "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
     "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "_posts/2023-11-08-Transseries-Lecture.md",
@@ -200,9 +205,6 @@
     "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
     "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
     "_posts/2023-09-21-The-Dirac-Equation.md",
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
-    "_posts/2023-06-17-The-Workers-and-the-Fatherland.md",
-    "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
     "assets/img/z.png",
     "img/relaxationMethod.jpg",
     "news.html",
@@ -220,7 +222,6 @@
     "assets/img/publications-screenshot-1400.webp",
     "assets/img/projects-screenshot-800.webp",
     "assets/img/projects-screenshot-480.webp",
-    "assets/img/projects-screenshot-1400.webp",
-    "assets/img/prof_pic-800.webp"
+    "assets/img/projects-screenshot-1400.webp"
   ]
 }
