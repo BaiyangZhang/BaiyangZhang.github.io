@@ -177,6 +177,8 @@
   },
   "active": "093c53a1e3343e37",
   "lastOpenFiles": [
+    "img/boundaryMap.png",
+    "img/boundaryHomo.png",
     "img/shortExactSequence.png",
     "img/homotopyCommute.png",
     "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
@@ -220,8 +222,6 @@
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp",
-    "assets/img/projects-screenshot-800.webp",
-    "assets/img/projects-screenshot-480.webp",
-    "assets/img/projects-screenshot-1400.webp"
+    "assets/img/projects-screenshot-800.webp"
   ]
 }
