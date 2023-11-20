@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "949fb283ee618e4a",
+        "id": "22f02dedeb1b58b7",
         "type": "tabs",
         "children": [
           {
-            "id": "093c53a1e3343e37",
+            "id": "52e3cb22cf2f27b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.5069465637207
+    "width": 228.5069465637207,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -174,13 +175,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "093c53a1e3343e37",
+  "active": "52e3cb22cf2f27b0",
   "lastOpenFiles": [
+    "().md",
+    "_news/announcement_3.md",
     "assets/pdf/Notes_on_Solitons.pdf",
     "assets/pdf/Notes_on_Solitons.pdf.crdownload",
     "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "7.md",
-    "_news/announcement_3.md",
     "_news/announcement_2 - 副本.md",
     "_posts/2023-11-08-Transseries-Lecture.md",
     "_posts/2023-11-16-Curvature-and-Winding-Number.md",
@@ -218,7 +220,6 @@
     "assets/jupyter/blog.ipynb",
     "assets/jupyter",
     "assets/css/main.scss",
-    "_sass/font-awesome/_variables.scss",
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp"
