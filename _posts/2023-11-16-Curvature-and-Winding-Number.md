@@ -8,8 +8,8 @@ header-img: img/background11.jpg
 catalog: true
 tags:
   - Geometry
-  - Minkowski
   - Frankel
+  - "#Topology"
 ---
 
 *Disclaimer: Nothing in this note is original.*

@@ -8,7 +8,6 @@ header-img: img/background11.jpg
 catalog: true
 tags:
   - Geometry
-  - Minkowski
   - Frankel
 ---
 
