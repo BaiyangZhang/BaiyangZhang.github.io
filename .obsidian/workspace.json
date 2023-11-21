@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_news/announcement_3.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_news/announcement_3.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_news/announcement_3.md",
+                "file": "_posts/2023-10-9-Mathematical-Economics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_news/announcement_3.md"
+                "file": "_posts/2023-10-9-Mathematical-Economics.md"
               }
             }
           },
@@ -177,20 +177,26 @@
   },
   "active": "52e3cb22cf2f27b0",
   "lastOpenFiles": [
-    "().md",
-    "_news/announcement_3.md",
-    "assets/pdf/Notes_on_Solitons.pdf",
     "assets/pdf/Notes_on_Solitons.pdf.crdownload",
+    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
+    "_drafts/2023-11-7-Analytic-Structure.md",
+    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
+    "_drafts/2023-mm-dd-Confinement-in-Toy-Models-Lecture-.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
+    "_drafts/调档函.md",
+    "_news/announcement_3.md",
+    "assets/pdf/Notes_on_Solitons (1).pdf",
+    "assets/pdf/Notes_on_Solitons (1).pdf.crdownload",
+    "().md",
+    "assets/pdf/Notes_on_Solitons.pdf",
     "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "7.md",
     "_news/announcement_2 - 副本.md",
     "_posts/2023-11-08-Transseries-Lecture.md",
-    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
     "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
     "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
     "_posts/2023-11-19-Higher-Homotopy-Groups.md",
-    "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
-    "_drafts/调档函.md",
     "_drafts/君主论书摘.md",
     "_drafts/2023mm-dd--Basic-Algebraic-Geometry-n.md",
     "img/shortExactSequence.png",
@@ -198,18 +204,13 @@
     "img/boundaryMap.png",
     "img/boundaryHomo.png",
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
     "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
     "6.md",
-    "_drafts/2023-11-7-Analytic-Structure.md",
     "_drafts/2023-11-08-Categorical-Equivalence-and-the-Renormalization-Group.md",
     "_drafts/2023-11-07-Curvature-and-Winding-Number.md",
     "img/eom.png",
     "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-07-28-Topological-Quantization.md",
-    "_posts/2023-07-07-Quartic-Time-Derivative.md",
-    "_posts/2023-07-12-Coset-Spaces.md",
     "assets/img/z.png",
     "img/relaxationMethod.jpg",
     "news.html",
@@ -218,8 +219,6 @@
     "bin/cibuild",
     "bin",
     "assets/jupyter/blog.ipynb",
-    "assets/jupyter",
-    "assets/css/main.scss",
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp"

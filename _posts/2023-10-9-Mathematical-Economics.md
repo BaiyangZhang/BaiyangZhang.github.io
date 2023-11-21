@@ -1064,10 +1064,15 @@ Ex1. Find the extremum of $z=xy$ subject to $x+y=6$.
 
 Ex2. Find the extremum of $z=x_ {1}^{2}+x_ {2}^{2}$ subject to $x_ {1}+4x_ {2}=2$.
 
-### Lecture 11
+### Lecture 11 (Nov 15)
 
-
+Introduction of the basic concepts of probability. 
+1. Probabilistic vs. deterministic world views. Is there such thing as free will or it is determined by nature?
+2. Why probability works in predicting the future. Two causes of probability.
+3. The sample space. Including the application of set theory.
 ### Lecture 12
+
+Countable infinite sample space and continuous sample space. 
 
 
 ### Lecture 13 

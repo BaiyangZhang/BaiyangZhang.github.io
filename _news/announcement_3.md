@@ -10,4 +10,4 @@ I have recently started working on a new project, building upon some previous wo
 
 In our new project, we will try to generalized this method to models beyond $1+1$ dimensional $\phi^4$ model! As the sametime, perhaps develop a better understanding of how renormalization works between different sectors from a categorical viewpoint. My guess is that it can be considered as a groupoid fibered at different topologcial sectors.
 
-A detailed introduction to the old problem of finding the kink-mass correction can be found [here](https://github.com/BaiyangZhang/BaiyangZhang.github.io/blob/master/assets/pdf/Notes_on_Solitons.pdf), it is a note I put together a long time ago.
+A detailed introduction to the old problem of finding the kink-mass correction can be found [here](https://github.com/BaiyangZhang/BaiyangZhang.github.io/blob/master/assets/pdf/Notes_on_Solitons.pdf), it is a note I put together a long time ago. To view the file, you will need to click the "Download" button on the top-right corner to download it.
