@@ -1079,4 +1079,22 @@ Countable infinite sample space and continuous sample space.
 
 
 
+### Final Exam Problem: Economic Analysis of a Production Firm
 
+**Context**: Consider a production firm that manufactures a single product. The firm's production output depends on two factors: labor (L) and capital (K). The market for its product is competitive, and the firm aims to maximize its profit.
+
+##### Part 1: Production Function and Cost Analysis [30 Points]
+- **1.1 Linear Algebra Application (10 points)**: The firm's production function is given by $Q(L, K) = aL + bK$, where $Q$ is the quantity of output, and $a$ and $b$ are constants. Represent this production function in matrix form and find the level of output when $L = 3$ and $K = 5$, given $a = 2$ and $b = 3$.
+- **1.2 Calculating Costs (20 points)**: Assume the firm's total cost (TC) function is $TC = cL^2 + dK^2 + f$, where $c, d,$ and $f$ are constants. Calculate the marginal cost (MC) of labor and capital. 
+
+##### Part 2: Profit Maximization [35 Points]
+- **2.1 Differential Calculus (15 points)**: Given the price per unit of the product is $P$, write the profit function $\Pi$ and use differentiation to find the conditions for profit maximization.
+- **2.2 Break-Even Analysis (20 points)**: Determine the break-even points for the firm in terms of $L$ and $K$.
+
+##### Part 3: Market Demand and Probability [35 Points]
+- **3.1 Integrating Demand Function (10 points)**: The market demand function for the product is $D(p) = m - np$, where $m$ and $n$ are constants, and $p$ is the price. Use integration to find the consumer surplus for a given price range.
+- **3.2 Probability in Market Analysis (25 points)**: Assume there is a probability distribution for a sudden increase in the cost of labor. Given this distribution, calculate the expected change in total cost and its impact on the firm’s profit maximization strategy.
+
+---
+
+This problem encompasses a variety of skills: matrix operations in linear algebra, differentiation and integration in calculus, and expectation calculation in probability theory. Each part of the problem is designed to test the students' understanding of these fundamental concepts in the context of real-world economic analysis.
