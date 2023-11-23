@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
+                "file": "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f3fcf2a0b8ee6ec7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
+                "file": "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md",
+                "file": "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-10-9-Mathematical-Economics.md"
+                "file": "_posts/2023-11-23-Note-on-Cutoff-Kinks.md"
               }
             }
           },
@@ -175,8 +188,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "957cfa2362e38596",
+  "active": "f3fcf2a0b8ee6ec7",
   "lastOpenFiles": [
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
+    "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
     "_posts/2023-11-19-Higher-Homotopy-Groups.md",
     "assets/pdf/Notes_on_Solitons.pdf",
     "_news/announcement_3.md",
@@ -198,7 +215,6 @@
     "_drafts/2023-11-07-Curvature-and-Winding-Number.md",
     "img/eom.png",
     "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
     "_posts/2023-07-28-Topological-Quantization.md",
     "_posts/2023-07-07-Quartic-Time-Derivative.md",
     "_posts/2023-07-12-Coset-Spaces.md",
@@ -206,8 +222,6 @@
     "_posts/2023-07-18-Mikhail-Bakunin.md",
     "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
     "_posts/2023-08-27-Associated-bundles.md",
-    "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
-    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
     "assets/img/z.png",
     "img/relaxationMethod.jpg",
     "news.html",
