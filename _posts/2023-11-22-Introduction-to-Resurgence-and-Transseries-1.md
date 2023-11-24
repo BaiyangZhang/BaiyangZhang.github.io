@@ -1,15 +1,15 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     Introduction to Resurgence and Transseries			# 标题 
-subtitle:   Lecture 1
-date:       2023-3-22 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/mathArt15.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - Math
-    - Transseries
-    - Notes
+layout: post
+title: Introduction to Resurgence Lecture 1
+subtitle: 
+date: 2023-11-22
+author: Baiyang Zhang
+header-img: img/mathArt15.jpg
+catalog: true
+tags:
+  - Math
+  - Transseries
+  - Notes
 ---
 
 ### Motivation

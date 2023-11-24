@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Introduction to Transseries
+title: Introduction to Transseries Lecture 2
 subtitle: 
-date: 2023-11-08
+date: 2023-11-24
 author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
@@ -112,3 +112,49 @@ $$
 
 This will save some writing. The problem is that $\mu^{K}$ can also be interpreted as $\mu^{k_ {1}k_ {1}\dots k_ {n}}$, but it should be clear from the context. 
 
+We will assume that all the generator $\mu \ll 1$. We will think of these as “ratios” between one term of a series and the next. A `ratio set` is a finite set of small monomials.
+
+Let $k \in \mathbb{Z}^{n}$ be an $n$-tuple of integers, it form a group under addition. Let $p$ be another such $n$-tuple, one say 
+$$
+k \leq  p \quad  \text{ iff } k_ {i} \leq p _ {i}  \;\forall\; i,
+$$
+where $k_ {i}$ is the $i$-th component of $k$. 
+
+$J_ {m}$ is a partially ordered set. To be specific, a partially ordered set (or poset) is a set equipped with a binary relation that captures a certain level of order or precedence among its elements. This binary relation is denoted by $\leq$ and must satisfy the following properties for any elements $a, b$, and $c$ in the set:
+
+1. *Reflexivity*: For all elements a in the set, $a\leq a$. In other words, every element is related to itself;
+2. *Antisymmetry*: If $a \leq b$ and $b \leq a$, then $a = b$. This property ensures that *no two distinct elements are related in both directions*;
+3. *Transitivity*: If $a \leq b$ and $b \leq c$, then $a \leq c$. This property means that if there's an order relationship between $a$ and $b$, and another between $b$ and $c$, there's also an order relationship between $a$ and $c$.
+
+A partially ordered set **does not** require every pair of elements to be comparable; that is, it's possible for $a$ and $b$ to be in the set without $a\leq b$ or $b \leq a$ being true. This distinguishes partially ordered sets from `totally ordered sets`, where **every pair of elements is comparable**.
+
+For $m\in \mathbb{Z}^{n}$, define 
+$$
+J_ {m} := \left\lbrace k \in  \mathbb{Z}^{n} \,\middle\vert\, k\geq m \right\rbrace .
+$$
+Apparently $m \in J_ {m}$. The sets $J_ {m}$ will be used to define `grids` of monomials. For example, if 
+$$
+\mu_ {1} = \frac{1}{x},\quad  \mu_ {2}=e^{ -x }
+$$
+comprise the ratio group (recall that each element of a ratio group is required to be small), then we can define a `grid` (about which we will say more later)
+$$
+\left\lbrace \mu^{k} \,\middle\vert\, k\in J_ {(-1,2)} \right\rbrace 
+$$
+which is the same as
+$$
+\left\lbrace \mu^{k}=\mu_ {1}^{k_ {1}} \cdot \mu_ {2}^{k_ {2}} \,\middle\vert\, (k_ {1},k_ {2})\geq (-1,2) \right\rbrace .
+$$
+
+In our convention, the set of natural numbers $\mathbb{N}$ include zero. 
+
+- - -
+
+### Dickson's lemma
+
+It turns out that the set $J_ {m}$ is `well-partially-ordered`, sometimes called `Noetherian`. A partially ordered set (poset) is said to be well-partially-ordered if it satisfies two conditions:
+   - It contains no *infinite strictly descending sequences*. This means there cannot be an infinite sequence of elements $a_1, a_2, a_3, \ldots$ in the set such that $a_1 > a_2 > a_3 > \ldots$.
+   - It contains no *infinite antichains*. An `antichain` is a subset of the poset in which no two distinct elements are comparable. In a well-partially-ordered set, there cannot be an infinite set of elements where none are comparable to each other.
+
+On the other hand, a poset is called Noetherian if it satisfies the **descending chain condition** (**DCC**), which states that every descending sequence of elements eventually stabilizes. In other words, there cannot be an infinite strictly descending sequence of elements in the set.
+
+The primary difference between the two concepts is that being well-partially-ordered is a stronger condition than being Noetherian. While both require the absence of infinite strictly descending sequences (the Noetherian property), being well-partially-ordered also requires the absence of infinite antichains. Therefore, every well-partially-ordered set is Noetherian, but not every Noetherian set is well-partially-ordered.

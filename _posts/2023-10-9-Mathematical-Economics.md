@@ -1074,10 +1074,12 @@ Introduction of the basic concepts of probability.
 
 Countable infinite sample space and continuous sample space. 
 
+Permutation and combination.
 
+The Gaussian (normal, bell) distribution.
 ### Lecture 13 
 
-
+Review.
 
 ## Final Exam 
 

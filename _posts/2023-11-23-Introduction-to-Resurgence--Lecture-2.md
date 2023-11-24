@@ -1,15 +1,15 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     Introduction to Resurgence and Transseries 			# 标题 
-subtitle:   Lecture 2
-date:       2023-04-01 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/mathArt1.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - PureMath
-    - CategoryTheory
-    - Notes
+layout: post
+title: Introduction to Resurgence Lecture 2
+subtitle: 
+date: 2023-11-23
+author: Baiyang Zhang
+header-img: img/mathArt1.jpg
+catalog: true
+tags:
+  - PureMath
+  - CategoryTheory
+  - Notes
 ---
 
 ### An example by Poincare
