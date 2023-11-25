@@ -21,13 +21,11 @@ Transseries have found significant applications in various areas of physics, par
 
 In the realm of general relativity, transseries are applied to asymptotic analysis. General relativity stands as one of the cornerstones of modern physics, governing the laws of gravitation and the dynamics of large-scale structures in the universe . By applying transseries in this domain, researchers can gain insights into the asymptotic behavior of gravitational fields and the dynamics of spacetime.
 
-Furthermore, transseries are used in the *extraction of non-perturbative physics from perturbation theory through resurgence and alien calculus*. Perturbation theory is a fundamental tool in quantum mechanics and quantum field theory, allowing for the approximation of complex systems. The non-perturbative effects are those that cannot be captured by perturbation theory alone, and transseries help to identify and understand these effects [2](https://www.sciencedirect.com/science/article/pii/S0003491619301691)..
+Furthermore, transseries are used in the *extraction of non-perturbative physics from perturbation theory through resurgence and alien calculus*. Perturbation theory is a fundamental tool in quantum mechanics and quantum field theory, allowing for the approximation of complex systems. The non-perturbative effects are those that cannot be captured by perturbation theory alone, and transseries help to identify and understand these effects [2](https://www.sciencedirect.com/science/article/pii/S0003491619301691).
 
 Additionally, in the context of integrable, asymptotically free field theories, transseries have applications in studying the free energy of such systems when coupled to a conserved charge. These studies are significant in high-energy physics, particularly in understanding the thermodynamics and statistical mechanics of particle systems [3](https://link.springer.com/article/10.1007/JHEP08%282022%29279).
 
 These examples showcase the versatility and importance of transseries in advancing the understanding of fundamental physics, from the microscale of particle interactions to the macroscale of cosmic phenomena.
-
-I hope the information provided has sparked your interest in transseries. Now, let's delve into the subject itself.
 
 - - -
 

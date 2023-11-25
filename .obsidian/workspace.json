@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+                "file": "_posts/2023-11-24-Transseries-Lecture-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5,
-    "collapsed": true
+    "width": 278.5
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+                "file": "_posts/2023-11-24-Transseries-Lecture-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+                "file": "_posts/2023-11-24-Transseries-Lecture-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md"
+                "file": "_posts/2023-11-24-Transseries-Lecture-2.md"
               }
             }
           },
@@ -177,38 +176,38 @@
   },
   "active": "093c53a1e3343e37",
   "lastOpenFiles": [
-    "_drafts/老婆圣训.md",
-    "_posts/2023-11-24-Transseries-Lecture-2.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence--Lecture-2.md",
-    "_posts/2023-11-22-Introduction-to-Resurgence-and-Transseries-1.md",
-    "_drafts/2023-11-24-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
-    "2023-11-24- Hamiltonian-Truncation-in-3D.md",
     "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
+    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
+    "_posts/2023-11-24-Transseries-Lecture-2.md",
+    "_drafts/2022-8-29-Excerpts-from-1984-by-Orwell.md",
+    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
+    "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
+    "_drafts/2023-3-22-Hilbert's-Action-Principle.md",
+    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
+    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
+    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
+    "_drafts/2023-10-12-The-Moral-Foundations-of-Politics.md",
+    "_drafts/2023-11-7-Analytic-Structure.md",
+    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
+    "_drafts/2023-11-24-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
+    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
     "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
-    "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
+    "_drafts/圣训.md",
+    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
     "_posts/2023-11-19-Higher-Homotopy-Groups.md",
+    "2023-11-24- Hamiltonian-Truncation-in-3D.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
     "assets/pdf/Notes_on_Solitons.pdf",
     "_news/announcement_3.md",
     "img/boundaryMap.png",
     "img/boundaryHomo.png",
     "img/shortExactSequence.png",
     "img/homotopyCommute.png",
-    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
-    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
-    "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
-    "_drafts/2023-11-7-Analytic-Structure.md",
-    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
-    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
-    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_posts/2023-11-08-Transseries-Lecture.md",
-    "7.md",
-    "6.md",
-    "_drafts/2023-11-07-Curvature-and-Winding-Number.md",
     "img/eom.png",
-    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "assets/img/z.png",
     "img/relaxationMethod.jpg",
     "news.html",

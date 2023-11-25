@@ -25,5 +25,5 @@ Very much like the patriotism, isn't it? So strong and yet so abstract and so ea
 
 >It was always at night – the arrests invariably happened at night. The sudden jerk out of sleep, the rough hand shaking your shoulder, the lights glaring in your eyes, the ring of hard faces round the bed.
 
-This part reminds me of *The Gulag Archipelago* by Solzhenitsyn. Though the depiction in *The Gulag Archipelago* is much better.
+
 
