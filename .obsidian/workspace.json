@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f3fcf2a0b8ee6ec7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
+                "file": "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
+                "file": "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-11-23-Note-on-Cutoff-Kinks.md"
+                "file": "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md"
               }
             }
           },
@@ -188,10 +175,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3fcf2a0b8ee6ec7",
+  "active": "093c53a1e3343e37",
   "lastOpenFiles": [
-    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_drafts/老婆圣训.md",
     "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
     "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
     "_posts/2023-10-9-Mathematical-Economics.md",
     "_posts/2023-11-19-Higher-Homotopy-Groups.md",
@@ -221,7 +209,6 @@
     "_posts/2023-08-23-Connection-in-Principal-Bundles.md",
     "_posts/2023-07-18-Mikhail-Bakunin.md",
     "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
-    "_posts/2023-08-27-Associated-bundles.md",
     "assets/img/z.png",
     "img/relaxationMethod.jpg",
     "news.html",
