@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-11-24-Transseries-Lecture-2.md",
+                "file": "_posts/2023-11-25- Hamiltonian-Truncation-in-3D.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7fd02ac904e4c62c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-07-07-Quartic-Time-Derivative.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Legendre",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,11 +85,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 278.5,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -93,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-11-24-Transseries-Lecture-2.md",
+                "file": "_posts/2023-11-25- Hamiltonian-Truncation-in-3D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-11-24-Transseries-Lecture-2.md",
+                "file": "_posts/2023-11-25- Hamiltonian-Truncation-in-3D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-11-24-Transseries-Lecture-2.md"
+                "file": "_posts/2023-11-25- Hamiltonian-Truncation-in-3D.md"
               }
             }
           },
@@ -176,11 +190,15 @@
   },
   "active": "093c53a1e3343e37",
   "lastOpenFiles": [
+    "_posts/2023-07-07-Quartic-Time-Derivative.md",
+    "_posts/2023-1-13-Colemen-Weinberg-Potential.md",
+    "_posts/2023-11-25- Hamiltonian-Truncation-in-3D.md",
+    "_posts/2023-11-24-Transseries-Lecture-2.md",
+    "Untitled",
     "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
     "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
     "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
     "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
-    "_posts/2023-11-24-Transseries-Lecture-2.md",
     "_drafts/2022-8-29-Excerpts-from-1984-by-Orwell.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
     "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
@@ -199,10 +217,7 @@
     "_drafts/圣训.md",
     "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
     "_posts/2023-11-19-Higher-Homotopy-Groups.md",
-    "2023-11-24- Hamiltonian-Truncation-in-3D.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
     "assets/pdf/Notes_on_Solitons.pdf",
-    "_news/announcement_3.md",
     "img/boundaryMap.png",
     "img/boundaryHomo.png",
     "img/shortExactSequence.png",
@@ -218,7 +233,6 @@
     "assets/jupyter/blog.ipynb",
     "assets/jupyter",
     "assets/css/main.scss",
-    "_sass/font-awesome/_variables.scss",
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp"
