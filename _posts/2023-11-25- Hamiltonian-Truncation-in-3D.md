@@ -48,14 +48,14 @@ $$
 $$
 thus all we need to do is to perform a variation of the field $\phi$ and leaving the canonical momentum $\pi$ untouched, then massage the variation of the Hamiltonian in the form given above. For a generic Hamiltonian $\mathcal{H}(\pi,\phi,\partial_ {x}\phi)$ where $x$ denotes all the spatial coordinates, under the field variation $\phi\to\phi+\delta \phi$ we have
 $$
-\begin{align}
+\begin{align*}
 H\to H' &=  \int d^{d-1}x \, \mathcal{H}(\phi+\delta \phi,\partial_ {x}\phi+\partial_ {x}\delta\phi, \cdots) \\
 &=  \int d^{d-1}x \, \left[ \frac{\partial\mathcal{H}}{\partial \phi }\delta \phi + \frac{\partial \mathcal{H}}{\partial(\partial_ {x}\phi)}\delta(\partial_ {x}\phi) \right] \\
 &= \int d^{d-1}x \, \left[ \frac{\partial\mathcal{H}}{\partial \phi }\delta \phi + \frac{\partial \mathcal{H}}{\partial(\partial_ {x}\phi)}(\partial_ {x}\delta\phi) \right] \\ \\
 &= \int d^{d-1}x \, \left[ \frac{\partial\mathcal{H}}{\partial \phi }\delta \phi - \left( \partial_ x\frac{\partial \mathcal{H}}{\partial(\partial_ {x}\phi)} \right) \delta\phi \right] \\ \\
 &= \int d^{d-1}x \, \delta\phi  \left[ \frac{\partial\mathcal{H}}{\partial \phi } - \left( \partial_ x\frac{\partial \mathcal{H}}{\partial(\partial_ {x}\phi)} \right) \right]  \\
 &= : \int d^{d-1}x \, \delta \phi \frac{\delta \mathcal{H}}{\delta \phi}
-\end{align}
+\end{align*}
 $$
 thus, 
 $$
