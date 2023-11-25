@@ -17,3 +17,4 @@ H' = \mathcal{D}_ {f}^{\dagger} H \mathcal{D}_ {f},
 $$
 where $\mathcal{D}_ {f}$ is the shift operator defined by a function $f$, which usually corresponds to certain classical solitonic solutions.
 
+The 
