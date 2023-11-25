@@ -1,15 +1,15 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     Introduction to Resurgence and Transseries 			# 标题 
-subtitle:   Lecture 3
-date:       2023-04-02 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/mathArt10.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - PureMath
-    - CategoryTheory
-    - Notes
+layout: post
+title: Introduction to Resurgence Lecture 3
+subtitle: 
+date: 2023-11-23
+author: Baiyang Zhang
+header-img: img/mathArt10.jpg
+catalog: true
+tags:
+  - PureMath
+  - CategoryTheory
+  - Notes
 ---
 
 ### The differential algebra

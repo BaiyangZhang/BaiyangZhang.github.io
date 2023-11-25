@@ -1,15 +1,15 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     Introduction to Resurgence and Transseries 4			# 标题 
-subtitle:   The formal Borel transform and the space of 1-Gevrey formal series
-date:       2023-06-02 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/mathArt2.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - PureMath
-    - CategoryTheory
-    - Notes
+layout: post
+title: Introduction to Resurgence and Transseries 4
+subtitle: The formal Borel transform and the space of 1-Gevrey formal series
+date: 2023-11-24
+author: Baiyang Zhang
+header-img: img/mathArt2.jpg
+catalog: true
+tags:
+  - PureMath
+  - CategoryTheory
+  - Notes
 ---
 
 ### Introduction
