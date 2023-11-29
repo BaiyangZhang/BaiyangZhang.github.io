@@ -1070,16 +1070,33 @@ Introduction of the basic concepts of probability.
 1. Probabilistic vs. deterministic world views. Is there such thing as free will or it is determined by nature?
 2. Why probability works in predicting the future. Two causes of probability.
 3. The sample space. Including the application of set theory.
-### Lecture 12
+### Lecture 12 (Nov 22)
 
 Countable infinite sample space and continuous sample space. 
 
 Permutation and combination.
 
 The Gaussian (normal, bell) distribution.
-### Lecture 13 
+### Lecture 13 (Nov 29)
 
-Review.
+**Conditional Probability**
+
+Ex.1 An experiment consists of rolling a die once. Let $X$ be the outcome. Let $F$ be the event $\left\lbrace X=6 \right\rbrace$, and let $E$ be the event $\left\lbrace X>4 \right\rbrace$. 
+
+Ex.2 One finds that in a population of 100,000 females, 90% can expect to live to age 60, while 50% can expect to live to age 80. Given that a woman is 60, what is the probability that she lives to age 80?
+
+Ex.3 Three candidates A, B, and C are running for office. We decided that A and B have an equal chance of winning and C is only 1/2 as likely to win as A. Let A be the event “A wins,” B that “B wins,” and C that “C wins.” Hence, we assigned probabilities $P(A) = 2/5, P(B) = 2/5$, and $P(C) = 1/5$. Suppose that before the election is held, A drops out of the race.
+
+Introduce the conditioned probability.
+
+Introduce the Bayes probabilities.
+
+We have two urns, I and II. Urn I contains 2 black balls and 3 white balls. Urn II contains 1 black ball and 1 white ball. An urn is drawn at random and a ball is chosen at random from it. We can represent the sample space of this experiment as the paths through a tree. Show the probabilities assigned to the paths.
+
+Another example, consider the following description: Steve is very *shy and withdrawn*, invariably helpful but with very little interest in people or in the world of reality. A meek and tidy soul. He has a need for order and structure, and a passion for detail. Now, what is he more likely to be, a farmer or a librarian?
+
+
+
 
 ## Final Exam 
 
