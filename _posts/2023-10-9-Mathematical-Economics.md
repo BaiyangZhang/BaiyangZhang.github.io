@@ -1123,3 +1123,117 @@ Consider a market where the supply curve is given by $S(q)=2q^{2}$ and the deman
 **Problem 3** [20 Points]
 
 A company is planning to launch a new product. Market research suggests that the demand for this product can be modeled as a normally distributed random variable with a mean of 1000 units and a standard deviation of 200 units. Calculate the probability that the demand will exceed 1200 units. Also, determine the probability that the demand will be between 800 and 1200 units.
+
+
+### Answer to the final exam
+
+**Problem 1**
+
+Consider a production firm that manufactures a single product. The firm's production output depends on two factors: labor (L) and capital (K). The market for its product is competitive, and the firm aims to maximize its profit.
+
+*Part 1: Production Function and Cost Analysis* [30 Points]
+- 1.1 Linear Algebra Application (10 points): The firm's production function is given by $Q(L, K) = aL + bK$, where $Q$ is the quantity of output, and $a$ and $b$ are constants. Represent this production function in matrix form and find the level of output when $L = 3$ and $K = 5$, given $a = 2$ and $b = 3$.
+
+**Answer**: To represent this in matrix form, consider the vector of inputs $\begin{bmatrix} L \\ K \end{bmatrix}$ and the matrix of coefficients $\begin{bmatrix} a & b \end{bmatrix}$. The production function becomes a matrix product. The key points is that the production has to be the form
+$$
+\begin{bmatrix} a & b \end{bmatrix} \cdot \begin{bmatrix} L \\ K \end{bmatrix},
+$$
+it shouldn't be written as, for example
+$$
+\begin{bmatrix} a & b \end{bmatrix} \cdot\begin{bmatrix} L & K \end{bmatrix} , \quad \text{Incorrect!}
+$$
+
+Substitution of the variables with numbers is straightforward,
+$$ Q = \begin{bmatrix} a & b \end{bmatrix} \begin{bmatrix} L \\ K \end{bmatrix} = \begin{bmatrix} 2 & 3 \end{bmatrix} \begin{bmatrix} 3 \\ 5 \end{bmatrix} = 2 \times 3 + 3 \times 5 = 21.$$
+
+- 1.2 Calculating Costs (20 points): Assume the firm's total cost (TC) function is $TC = cL^2 + dK^2 + f$, where $c, d,$ and $f$ are constants. Calculate the marginal cost (MC) of labor and capital. 
+
+**Answer**: Marginal Cost (MC) is the derivative of the Total Cost (TC) with respect to a particular input while holding other inputs constant. We just need to calculate $MC_L = \frac{\partial TC}{\partial L}$ and $MC_K = \frac{\partial TC}{\partial K}$. To be specific,
+$$
+\frac{\partial TC}{\partial L} = 2cL,\quad  \frac{\partial TC}{\partial K}=2dK.
+$$
+
+*Part 2: Profit Maximization* [30 Points]
+- 2.1 Differential Calculus (15 points): Given the price per unit of the product is $P$, write the profit function $\Pi$ and use differentiation to find the conditions for profit maximization.
+- 2.2 Break-Even Analysis (20 points): Determine the break-even points for the firm in terms of $L$ and $K$.
+
+**Answer**: The profit function is 
+$$
+\Pi = P \times  Q -TC = P(aL+bK)-(cL^{2}+dK^{2}+f),
+$$
+the conditions for profit maximization is where the first order partial derivatives are zero,
+$$
+\frac{\partial \Pi}{\partial L}=ap-2cL=0
+$$
+and 
+$$
+\frac{\partial\Pi}{\partial K}=bP-2dK=0. 
+$$
+A common mistake here is to put the total derivative symbol $d\Pi / dL$ instead of partial derivative symbol.
+
+Break-even occurs when $\Pi = 0$. We can set the profit function $\Pi = 0$ and solve for $L$ and $K$ to find the break-even points. The break even point is given by $L$ and $K$ such that 
+$$
+-P(aL+bK)+(cL^{2}+dK^{2}+f)=0.
+$$
+For more mathematically advanced students, we can also try to complete the square,
+$$
+\begin{align*}
+&(c L^{2}-aP L ) +(dK^{2}-PbK) +f =0\\
+\implies& \left( cL^{2} -2\cdot \sqrt{ c }L \cdot \frac{aP}{2\sqrt{ c }} + \frac{a^{2}P^{2}}{4c} \right)-\frac{a^{2}P^{2}}{4c}  \\
+&+\left( dK^{2}-2\cdot\sqrt{ d }K\cdot \frac{Pb}{2\sqrt{ d }}+ \frac{P^{2}b^{2}}{4d} \right)-\frac{P^{2}b^{2}}{4d}+f=0\\
+\implies & \left( \sqrt{ c }L- \frac{aP}{2\sqrt{ c }} \right)^{2}+\left( \sqrt{ d }K- \frac{pB}{2\sqrt{ d }} \right)^{2} = \text{Const}
+\end{align*}
+$$
+where the const term is an expression of all the parameters of the model. We see that the break even points in terms of $(L,K)$ *form an ellipse*! 
+
+- - -
+
+**Problem 2** [20 Points]
+
+Consider a market where the supply curve is given by $S(q)=2q^{2}$ and the demand curve is given by $D(q)=40-q$, where $q$ is the quantity of goods. The market reaches equilibrium where supply equals demand. Calculate the consumer surplus at equilibrium.
+
+**Answer**.  From $D(q)=S(q)$ we get $q^{\ast}\approx 4.23$, the other negative root can be safely neglected. Then the consumer surplus is 
+$$
+\text{Consumer surplus} = \frac{1}{2}\times q^{\ast } \times (40-D(q^{\ast })) \approx 8.9.
+$$
+
+A common mistake is that when people draw the demand-supply plot, the supply curve appears to be a straight line, which is what students would get from most online teaching materials on consumer surplus. However, in our case, the supply line is quadratic.
+
+- - -
+
+**Problem 3** [20 Points]
+
+A company is planning to launch a new product. Market research suggests that the demand for this product can be modeled as a normally distributed random variable with a mean of 1000 units and a standard deviation of 200 units. Calculate the probability that the demand will exceed 1200 units. Also, determine the probability that the demand will be between 800 and 1200 units.
+
+**Answer.** To calculate these probabilities, we'll use the properties of the normal distribution and integrate the probability density function (PDF) over the desired range. The PDF of a normal distribution with mean $\mu$ and standard deviation $\sigma$ is given by:
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$
+
+For our case, $\mu = 1000$ and $\sigma = 200$.
+
+To calculate the probability that demand exceeds 1200 units, we need to integrate the PDF from 1200 to infinity:
+   $$
+   P(X > 1200) = \int_{1200}^{\infty} \frac{1}{200 \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-1000}{200}\right)^2} dx
+   $$
+
+This integral can be transformed into a standard normal distribution integral by substituting $z = \frac{x - 1000}{200}$, which simplifies the integral to a form involving the standard normal cumulative distribution function. Similarly, we integrate the PDF from 800 to 1200:  
+$$
+   P(800 < X < 1200) = \int_{800}^{1200} \frac{1}{200 \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-1000}{200}\right)^2} dx.
+$$
+
+Let's calculate these integrals and their numerical values in Mathematica. The code to calculate $P(X>1200)$ reads
+```mathematica
+NIntegrate[1/(200 Sqrt[2 Pi]) Exp[-1/2 ((x - 1000)/200)^2], {x, 1200, Infinity}]
+```
+and yields  $0.1587$. This means there is about a 15.87% chance that the demand will exceed 1200 units.
+
+The Mathematica code for integral   $$
+   P(800 < X < 1200) = \int_{800}^{1200} \frac{1}{200 \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-1000}{200}\right)^2} dx
+   $$
+   is   
+```mathematica
+NIntegrate[1/(200 Sqrt[2 Pi]) Exp[-1/2 ((x - 1000)/200)^2], {x, 800, 1200}]
+```
+and yields $0.6827$. This indicates there is about a 68.27% chance that the demand will be between 800 and 1200 units.
