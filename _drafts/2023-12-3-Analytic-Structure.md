@@ -1,13 +1,12 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     Analytic Structure 			# 标题 
-subtitle:   
-date:       2023-05-31 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/background13.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - 
+layout: post
+title: Analytic Structure
+subtitle: 
+date: 2023-12-03
+author: Baiyang Zhang
+header-img: img/background13.jpg
+catalog: true
+tags:
 ---
 
 ### Holomorphic and Meromorphic Functions
@@ -27,11 +26,11 @@ We denote the set of meromorphic functions by $\mathcal{M}(Y)$. A meromorphic fu
 $$
 \text{meromorphic}= \frac{\text{holomorphic function }f}{\text{holomorphic function }g}
 $$
-thus the poles are zeros of $g$. 
+thus the poles are zeros of $g$. This is true because every holomorphic function, which is not identically zero, has only *isolated* points as zeros. 
 
 Since the meromorphic functions are quotients of holomorphic functions, we can construct the inverse of it, thus all the meromorphic functions on $Y$, or $X$ for that matter, form a `field`.
 
-Given two Riemann surfaces $X$ and $X'$, a holomorphic function $f: X \to X'$ is a functions that is holomorphic on all the coordinate patches. If $f$ is a bijection, have an inverse $f^{-1}$ which is also holomorphic, then we call $f$  an `analytic holomorphic`. Analytic is to holomorphism what continuous is to open sets.
+Given two Riemann surfaces $X$ and $X'$, a holomorphic function $f: X \to X'$ is a functions that is holomorphic on all the coordinate patches. If $f$ is a bijection with an inverse $f^{-1}$ which is also holomorphic, then we call $f$  an `analytic holomorphic` function. **Analytic is to holomorphism what continuous is to open sets**.
 
 One of the most important topic is the classification of Riemann surfaces up to analytic holomorphism. 
 
