@@ -2,7 +2,7 @@
 layout: post
 title: " Hamiltonian Truncation in 3D"
 subtitle: 
-date: 2023-12-04
+date: 2023-12-05
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -65,3 +65,16 @@ Taking this back to the Hamiltonian equations we recover the familiar Euler-Lagr
 
 These equations describe how the fields and their conjugate momenta evolve over time, analogous to how the position and momentum of a particle evolve in classical mechanics. They provide a complete description of the dynamics of the field system within the Hamiltonian framework.
 
+## Hamiltonian Truncation
+
+### Definitions
+
+The starting point of defining a quantum field theory is the choice of a manifold $M$ of dimension $d$. We mostly (but not always) regard the manifold as a Riemannian manifold with a **smooth** metric on it. The manifold may or may not have boundaries, if it does then some additional information is needed at the boundaries to define the theory.
+
+Having defined the manifold $M$, the next ingredient is the choice of objects to consider over $M$, the so-called "degree of freedoms", or `fields`. Now it is helpful to adopt a statistical viewpoint toward QFT,  in order to extract the information about physical observables we need "just" to know the partition function, which is obtain via a so-called path-integral. That is, we integrate all the possible field configurations with a weight, which is essentially given by the exponent of the action. For example, we may consider a principal bundle with a connection over $M$. In physics terminology the choice of the connection is the same as picking a gauge field. We may also be considering the section of a vector bundle over $M$, these fields are sometimes called the `matter field`. 
+
+As another example of QFT we may consider the space of maps
+$$
+X: M\to N
+$$
+where $N$ is some `target` manifold. 
