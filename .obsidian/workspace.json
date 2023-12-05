@@ -4,35 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "949fb283ee618e4a",
+        "id": "22f02dedeb1b58b7",
         "type": "tabs",
         "children": [
           {
-            "id": "093c53a1e3343e37",
+            "id": "52e3cb22cf2f27b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-11-7-Analytic-Structure.md",
+                "file": "_posts/2023-12-4-Hamiltonian-Truncation-in-3D.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7fd02ac904e4c62c",
+            "id": "2b61ec10414c0dd7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+                "file": "_posts/2023-11-24-Transseries-Lecture-2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "economics",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5,
+    "width": 228.5069465637207,
     "collapsed": true
   },
   "right": {
@@ -107,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+                "file": "_posts/2023-12-4-Hamiltonian-Truncation-in-3D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+                "file": "_posts/2023-12-4-Hamiltonian-Truncation-in-3D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-3-Homotopy-and-Chern-Forms.md"
+                "file": "_posts/2023-12-4-Hamiltonian-Truncation-in-3D.md"
               }
             }
           },
@@ -188,40 +187,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7fd02ac904e4c62c",
+  "active": "52e3cb22cf2f27b0",
   "lastOpenFiles": [
-    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
+    "_posts/2023-11-24-Transseries-Lecture-2.md",
+    "_posts/2023-12-4-Hamiltonian-Truncation-in-3D.md",
     "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
+    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
+    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
     "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
     "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
     "_posts/2023-11-16-Curvature-and-Winding-Number.md",
-    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
+    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
+    "_drafts/2023-11-24-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
+    "2023-11-24- Hamiltonian-Truncation-in-3D.md",
+    "_posts/2023-10-23-Noether's-Principal.md",
+    "_drafts/圣训.md",
+    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
+    "_posts/2023-11-22-Introduction-to-Resurgence-and-Transseries-1.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence--Lecture-2.md",
     "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
     "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
-    "_posts/2023-11-24-Transseries-Lecture-2.md",
-    "_posts/2023-11-25- Hamiltonian-Truncation-in-3D.md",
-    "_posts/2023-07-07-Quartic-Time-Derivative.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
+    "assets/pdf/Notes_on_Solitons.pdf.crdownload",
     "_drafts/2023-11-7-Analytic-Structure.md",
-    "_posts/2023-10-20-Excerpt-From-On-Anarchism.md",
-    "_posts/2023-10-23-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-10-23-Noether's-Principal.md",
-    "_posts/2023-10-26-Poincare-Duality.md",
-    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
-    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_posts/2023-1-13-Colemen-Weinberg-Potential.md",
-    "Untitled",
-    "_drafts/2022-8-29-Excerpts-from-1984-by-Orwell.md",
-    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
-    "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
-    "_drafts/2023-3-22-Hilbert's-Action-Principle.md",
+    "_drafts/2023-mm-dd-Confinement-in-Toy-Models-Lecture-.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_drafts/2023-mm-dd-Introduction-to-Resurgence-and-Transseries-Lecture-n.md",
+    "_drafts/调档函.md",
+    "assets/pdf/Notes_on_Solitons (1).pdf",
+    "assets/pdf/Notes_on_Solitons (1).pdf.crdownload",
     "assets/pdf/Notes_on_Solitons.pdf",
-    "img/boundaryMap.png",
-    "img/boundaryHomo.png",
     "img/shortExactSequence.png",
     "img/homotopyCommute.png",
+    "img/boundaryMap.png",
+    "img/boundaryHomo.png",
     "img/eom.png",
     "assets/img/z.png",
     "img/relaxationMethod.jpg",
@@ -231,8 +232,6 @@
     "bin/cibuild",
     "bin",
     "assets/jupyter/blog.ipynb",
-    "assets/jupyter",
-    "assets/css/main.scss",
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp"

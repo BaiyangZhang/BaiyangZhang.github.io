@@ -1095,9 +1095,6 @@ We have two urns, I and II. Urn I contains 2 black balls and 3 white balls. Urn 
 
 Another example, consider the following description: Steve is very *shy and withdrawn*, invariably helpful but with very little interest in people or in the world of reality. A meek and tidy soul. He has a need for order and structure, and a passion for detail. Now, what is he more likely to be, a farmer or a librarian?
 
-
-
-
 ## Final Exam 
 
 **Problem 1**

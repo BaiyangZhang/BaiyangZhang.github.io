@@ -2,7 +2,7 @@
 layout: post
 title: " Hamiltonian Truncation in 3D"
 subtitle: 
-date: 2023-11-25
+date: 2023-12-04
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -64,3 +64,4 @@ $$
 Taking this back to the Hamiltonian equations we recover the familiar Euler-Lagrange equation.
 
 These equations describe how the fields and their conjugate momenta evolve over time, analogous to how the position and momentum of a particle evolve in classical mechanics. They provide a complete description of the dynamics of the field system within the Hamiltonian framework.
+
