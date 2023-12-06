@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to Transseries Lecture 2
 subtitle: 
-date: 2023-11-24
+date: 2023-12-06
 author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
@@ -156,3 +156,75 @@ It turns out that the set $J_ {m}$ is `well-partially-ordered`, sometimes called
 On the other hand, a poset is called Noetherian if it satisfies the **descending chain condition** (**DCC**), which states that every descending sequence of elements eventually stabilizes. In other words, there cannot be an infinite strictly descending sequence of elements in the set.
 
 The primary difference between the two concepts is that being well-partially-ordered is a stronger condition than being Noetherian. While both require the absence of infinite strictly descending sequences (the Noetherian property), being well-partially-ordered also requires the absence of infinite antichains. Therefore, every well-partially-ordered set is Noetherian, but not every Noetherian set is well-partially-ordered.
+
+**Proposition.** If $E \subseteq J_ {m}$ and $E \neq \emptyset$, then there is a minimal element $k_ {0} \in E$. 
+
+**Proposition.** Let $E$ from the previous proposition be infinite, then there is an infinite sequence $k_ {i}\subset E$ such that $k_ {0}<k_ {1}<\dots$. 
+
+**Proposition.** For the same $E$, the set of all the minimal elements $\text{min}(E)$ is finite. For every element $k\in E$ there is a $k_ {0} \in \text{min}(E)$ such that $k_ {0} \le k$. 
+
+
+### Convergence of sets
+
+First let's introduce the symmetric difference of two sets, which is a mathematical operation that results in a new set containing elements that are in **either** of the two sets, but **not in their intersection**. In other words, it combines the elements of each set that are not shared by both. The symmetric difference is denoted by the symbol $\Delta$.
+
+Formally, if you have two sets $A$ and $B$, their symmetric difference $A \Delta B$ is defined as:
+$$ A \Delta B = (A - B) \cup (B - A). $$
+Here, $A - B$ represents the set of elements in $A$ but not in $B$, and $B - A$ represents the set of elements in $B$ but not in $A$. The union of these two sets ($\cup$) forms the symmetric difference.
+
+Another way to express this is using the union and intersection of sets:
+$$ A \Delta B = (A \cup B) - (A \cap B). $$
+By subtracting the intersection from the union, you're left with only those elements that are exclusively in either $A$ or $B$, but not in both.
+
+The symmetric difference has several interesting properties:
+
+- It is commutative: $A \Delta B = B \Delta A$.
+- It is associative: $(A \Delta B) \Delta C = A \Delta (B \Delta C)$.
+- The symmetric difference of a set with itself is the empty set: $A \Delta A = \emptyset$.
+- The symmetric difference of a set with the empty set is the set itself: $A \Delta \emptyset = A$.
+
+Now let's define the convergence of a sequence of sets $E_ {i}, i\in I$, where $I$ is an infinite index set. For each $i\in I$, let $E_ {i} \in \mathbb{Z}^{n}$. We say the family $E_ {i,\,i\in I}$ is `point-finite` if each $p\in \mathbb{Z}^{n}$ belong to $E_ {i}$ for only finite many $i$ (could be zero). 
+
+Let $m\in\mathbb{Z}^{n}$ and define $J_ {m}$ as before. If the "limit" of $E_ {i}$ is empty, we write
+$$
+E_ {i} \xrightarrow{m}\emptyset,\quad  \text{iff } E_ {i} \subset J_ {m} \text{ and } (E_ {i}) \text{ is point-finite.}
+$$
+More generally, we write 
+$$
+E_ {i} \to \emptyset
+$$
+if there exist $m\in\mathbb{Z}^{n}$ such that $E_ {i}\xrightarrow{m}\emptyset$. 
+
+Now we can generalize the situation to other than the empty set. To do that we need the concept of symmetric difference. Intuitively, if the limit of $E_ {i}$ is another set $E$, then there should be infinite sets $E_ {i, \, i>j}$ for some $j$ such that they all "tend to" contain $E$. It implies that $E_ {i}-E$ should tend to be empty, for if there is some element $e$ in the limit of $E_ {i}-E$ then $e$ should be in the limit, too. On the other hand, the limit $E$ shouldn't contain any more element that is not in $E_ {i}$'s. For example, if for all $i>j$, some element $e'$ is not in $E_ {i,i>j}$ then it should not be contained in the limit $E$ as well. These very hand-waving arguments inspires us to define the limit of $E_ {i}$ as follows. 
+
+We write 
+$$
+E_ {i}\xrightarrow{m} E,\quad  \text{iff }E_ {i} \subset J_ {m} \text{ and } E_ {i}\Delta E\xrightarrow{m}\emptyset .
+$$
+All the properties we want for a limit of $E_ {i}$ are concisely contained in the condition that $E_ {i}\Delta E$ tend to the empty set. Also, we simply write 
+$$
+E_ {i}\to E
+$$
+if there exists some $m$ such that $E_ {i}\xrightarrow{m}E$ and we don't care about the details of $m$. 
+
+Equivalently, we could say that $(E_ {i}\Delta E)$ is point finite.
+
+**Example.** Consider $\mathbb{Z}^{n}=\mathbb{Z}^{1}=\mathbb{Z}$. Let $E_ {i} =\left\lbrace i,i+1,\dots \right\rbrace$ for $i\in \mathbb{N}$. Then the sequence $E_ {i}$ is point-finite. We have 
+$$
+E_ {i}\to \emptyset .
+$$
+But if we let $F_ {i}=\left\lbrace -i \right\rbrace$, then even though $F_ {i}$ is point-finite but $F$ can not be contained in some $J_ {m}$ so it does not converge. 
+
+**Notation.** Let $k = (k_ {1},k_ {2},\dots,k_ {n})$ then define $\left\lvert k \right\rvert:=k_ {1}+k_ {2}+\dots+k_ {n}$.
+
+For two pints $p,q$ in $J_ {m}$, we can introduce the concept of distance by defining
+$$
+d(p,q):= 2^{-\left\lvert p-q \right\rvert }
+$$
+This reminds me of Krull topology. 
+
+For two sets $E,F\subset J_ {m}$, define
+$$
+d(E,F):= \sum_ {k\in E\Delta F} 2^{-\left\lvert k \right\rvert },
+$$
+then for any $E_ {i}\subset J_ {m}$, we have $E_ {i}\to E$ iff $d(E_ {i},E)\to 0$. And $d$ is a metric on the grid $J_ {m}$. 
