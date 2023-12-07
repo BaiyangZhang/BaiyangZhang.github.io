@@ -4,34 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "22f02dedeb1b58b7",
+        "id": "949fb283ee618e4a",
         "type": "tabs",
         "children": [
           {
-            "id": "52e3cb22cf2f27b0",
+            "id": "093c53a1e3343e37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
+                "file": "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2b61ec10414c0dd7",
+            "id": "7fd02ac904e4c62c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-11-24-Transseries-Lecture-2.md",
+                "file": "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17b60a9102c0b2af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/2023-12-3-Analytic-Structure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e81e045abbdd065e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-12-04-Scaling.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "economics",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.5069465637207,
+    "width": 278.5,
     "collapsed": true
   },
   "right": {
@@ -106,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
+                "file": "_drafts/2023-12-3-Analytic-Structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
+                "file": "_drafts/2023-12-3-Analytic-Structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md"
+                "file": "_drafts/2023-12-3-Analytic-Structure.md"
               }
             }
           },
@@ -187,42 +212,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52e3cb22cf2f27b0",
+  "active": "17b60a9102c0b2af",
   "lastOpenFiles": [
+    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+    "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
     "_drafts/2023-12-3-Analytic-Structure.md",
     "2023-12-04-Scaling.md",
-    "_posts/2023-11-24-Transseries-Lecture-2.md",
     "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
-    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
-    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
+    "_drafts/2023-11-24-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
+    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
+    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
+    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
+    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
+    "_drafts/2023-3-22-Hilbert's-Action-Principle.md",
+    "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
+    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
+    "_drafts/2022-8-29-Excerpts-from-1984-by-Orwell.md",
     "_posts/2023-11-19-Higher-Homotopy-Groups.md",
     "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
     "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
     "_posts/2023-11-16-Curvature-and-Winding-Number.md",
-    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
-    "_drafts/2023-11-24-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
-    "2023-11-24- Hamiltonian-Truncation-in-3D.md",
-    "_posts/2023-10-23-Noether's-Principal.md",
-    "_drafts/圣训.md",
-    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
-    "_posts/2023-11-22-Introduction-to-Resurgence-and-Transseries-1.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence--Lecture-2.md",
+    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
     "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
     "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
-    "assets/pdf/Notes_on_Solitons.pdf.crdownload",
-    "_drafts/2023-11-7-Analytic-Structure.md",
-    "_drafts/2023-mm-dd-Confinement-in-Toy-Models-Lecture-.md",
-    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
-    "assets/pdf/Notes_on_Solitons (1).pdf",
-    "assets/pdf/Notes_on_Solitons (1).pdf.crdownload",
+    "_posts/2023-11-24-Transseries-Lecture-2.md",
+    "_posts/2023-11-25- Hamiltonian-Truncation-in-3D.md",
+    "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
-    "img/shortExactSequence.png",
-    "img/homotopyCommute.png",
     "img/boundaryMap.png",
     "img/boundaryHomo.png",
+    "img/shortExactSequence.png",
+    "img/homotopyCommute.png",
     "img/eom.png",
     "assets/img/z.png",
     "img/relaxationMethod.jpg",
@@ -232,6 +255,8 @@
     "bin/cibuild",
     "bin",
     "assets/jupyter/blog.ipynb",
+    "assets/jupyter",
+    "assets/css/main.scss",
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp"
