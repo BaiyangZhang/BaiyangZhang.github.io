@@ -232,6 +232,20 @@ This comes from the derivative of $z$ with respect to $w$, noting that $z = 1/w$
 
 - - -
 
-Behold, the celebrated Riemann-Roch theorem:
+The Riemann-Roch theorem is a fundamental result in the field of algebraic geometry and complex analysis, particularly regarding the study of Riemann surfaces. This theorem provides deep insights into the relationship between the **geometry** of a curve and the **algebraic** properties of divisors, and line bundles associated with it. 
 
-**Riemann-Roch theorem.** 
+For a compact Riemann surface, the Riemann-Roch theorem gives a formula to compute the **dimension of the space of meromorphic functions** associated with a given divisor. The theorem is stated as follows:
+
+**Riemann-Roch Theorem.** If $D$ is a divisor on a compact Riemann surface, then
+
+$$ \text{dim } L(D) - \text{dim } L(K - D) = \text{deg}(D) - g + 1 $$
+
+where $K$ is the canonical divisor, associated with the differential forms on the surface, $\text{deg}(D)$ is the degree of the divisor $D$ and $g$ is the genus of the Riemann surface.
+
+The Riemann-Roch theorem links the geometric properties of Riemann surfaces (like genus) with the algebraic properties of divisors and function spaces. Also, it provides a powerful tool for understanding the behavior of divisors and line bundles on Riemann surfaces. This includes determining the number of independent meromorphic functions or sections of line bundles with certain properties. The theorem laid the groundwork for further developments in algebraic geometry, including sheaf cohomology and modern intersection theory.
+
+As an example, consider the zero divisor $D$ with $\text{deg}(D)=0$. Then the theorem says
+
+$$
+1-\text{dim } L(K) = -g+1 \implies \text{dim }L(K) = g.
+$$
