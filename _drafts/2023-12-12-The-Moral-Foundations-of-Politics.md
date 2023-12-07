@@ -9,6 +9,6 @@ catalog: true
 tags:
 ---
 
-### Chapter 1
+### Enlightenment Politics
 
-2023-10-12
+If there is a single overarching idea shared in common by adherents to diverent strands of Enlightenment thinking, it is faith in the power of human reason to understand the true nature of our circumstances and ourselves.
