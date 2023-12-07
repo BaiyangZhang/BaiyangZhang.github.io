@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-12-3-Analytic-Structure.md",
+                "file": "_posts/2023-12-3-Analytic-Structure.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-12-3-Analytic-Structure.md",
+                "file": "_posts/2023-12-3-Analytic-Structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-12-3-Analytic-Structure.md",
+                "file": "_posts/2023-12-3-Analytic-Structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-12-3-Analytic-Structure.md"
+                "file": "_posts/2023-12-3-Analytic-Structure.md"
               }
             }
           },
@@ -218,7 +218,7 @@
     "_drafts/2023-12-7-Transseries-Lecture-3.md",
     "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
     "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
-    "_drafts/2023-12-3-Analytic-Structure.md",
+    "_posts/2023-12-3-Analytic-Structure.md",
     "2023-12-04-Scaling.md",
     "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
     "_drafts/2023-11-24-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
