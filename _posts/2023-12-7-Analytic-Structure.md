@@ -2,7 +2,7 @@
 layout: post
 title: Analytic Structure
 subtitle: 
-date: 2023-12-03
+date: 2023-12-07
 author: Baiyang Zhang
 header-img: img/background13.jpg
 catalog: true
