@@ -20,30 +20,6 @@
             }
           },
           {
-            "id": "7fd02ac904e4c62c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "17b60a9102c0b2af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-12-7-Analytic-Structure.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e81e045abbdd065e",
             "type": "leaf",
             "state": {
@@ -55,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -131,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-7-Analytic-Structure.md",
+                "file": "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-7-Analytic-Structure.md",
+                "file": "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-7-Analytic-Structure.md"
+                "file": "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md"
               }
             }
           },
@@ -212,11 +187,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17b60a9102c0b2af",
+  "active": "093c53a1e3343e37",
   "lastOpenFiles": [
-    "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
     "_posts/2023-12-7-Analytic-Structure.md",
+    "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-6-Transseries-Lecture-2.md",
     "_drafts/2023-12-7-Transseries-Lecture-3.md",
     "2023-12-04-Scaling.md",
