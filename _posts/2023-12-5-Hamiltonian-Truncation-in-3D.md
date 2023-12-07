@@ -67,7 +67,6 @@ These equations describe how the fields and their conjugate momenta evolve over 
 
 ## Hamiltonian Truncation
 
-### Definitions
 
 The starting point of defining a quantum field theory is the choice of a manifold $M$ of dimension $d$. We mostly (but not always) regard the manifold as a Riemannian manifold with a **smooth** metric on it. The manifold may or may not have boundaries, if it does then some additional information is needed at the boundaries to define the theory.
 
@@ -77,4 +76,70 @@ As another example of QFT we may consider the space of maps
 $$
 X: M\to N
 $$
-where $N$ is some `target` manifold. 
+where $N$ is the `target` manifold. The field theories associated with integrating over the space of such maps are called `sigma models`. 
+
+In quantum field theories we are typically interested in integrating over infinite-dimensional spaces. It turns out that the greater the dimension $d$ of $M$, the more complicated the integrations over these spaces. In fact (ignoring gravitational theories), the only non-trivial quantum field theories that are believed to exist (i.e., for which some kind of integration over the infinite-dimensional space exists) have $d \leq 6$ and most of the standard ones have $d \leq 4$. 
+
+Quantum field theories in different dimensions can be related to each other by an operation known as `Kaluza–Klein reduction`. Roughly speaking this means considering the situation where
+$$
+M = N \times  K,\quad  K \ll  N
+$$
+The action may be very large for field configurations that are **not** constant over $K$, so the path-integral, which is weighted by $e^{ -S_ {E} }$, localizes to field configurations that are constant along $K$. This gives rise to an **effective** path integral over field configurations that have only constant modes along $K$. 
+
+### Definitions
+
+In our case, we consider the phi-fourth theory defined on 
+$$
+M = \mathbb{T}^{2} \times  \mathbb{R},
+$$
+where $\mathbb{T}^{2}$ is the flat torus space of size $L \times L$, and the time direction $\mathbb{R}$ is left uncompactified. Since the space manifold is compact, the spectrum of the free theory is discrete and free of IR divergence. Following the procedure of canonical quantization, we first expand the scalar field in terms of ladder operators (in discrete form) as
+$$
+\phi(\vec{x}) = \sum_ {k_ {1},k_ {2}} c_ {k} a_ {k}e^{ +i \vec{k}\cdot \vec{x} }  + \text{h.c.}
+\tag{1}
+$$
+where $\vec{k}$ is the two-dimensional momentum vector $\vec{k}=(k_ {1},k_ {2})$. Since the space is a torus of size $L \times L$, the momentum can only take values 
+$$
+k_ {i} = \frac{2\pi n_ {i} }{L},\quad  n_ {i} \in \mathbb{Z}.
+$$
+The coefficient $c_ {k}$ is defined to be 
+$$
+c_ {k}  = \frac{1}{L\sqrt{ 2\omega_ {k} }},\quad  \omega _ {k}  = \sqrt{ k^{2}+m^{2} }.
+$$
+The canonical quantization in terms of the ladder operator is rather simple,
+$$
+[a_ {k} , a_ {k'}^{^{\dagger}}] = \delta_ {k,k'},\quad  \text{zero otherwise.}
+$$
+The free Hamiltonian is 
+$$
+\mathcal{H}_ {0} = \frac{1}{2} \pi^{2} + \frac{1}{2 } (\nabla \phi)^{2} + \frac{m^{2}}{2} \phi^{2},
+$$
+where $\pi$ is the canonical momentum. So far we have assumed that the field configuration is static so there is no contribution from the canonical momentum. Taking Eq. (1) to $\\mathcal{H}_ {0}$ we have
+$$
+H_ {0} = \int _ {L^{2}} d^{2}x \,  \mathcal{H}_ {0} = \sum_ {k} \omega_ {k} a_ {k} ^{\dagger} a_ {k}  + \text{Const},
+$$
+where the constant term is the zero point energy. 
+
+The free vacuum is defined by $H_ {0} \left\lvert{0}\right\rangle=0$. 
+
+The interacting Hamiltonian is defined as 
+$$
+\mathcal{H} (E_ {T}) = \mathcal{H}_ {0} + \mathcal{V}, \quad  \mathcal{V}=g_ {2} \mathcal{V}_ {2} + g_ {4} \mathcal{V} _ {4}+ C(E_ {T}),
+$$
+where 
+$$
+\mathcal{V}_ {n} = \frac{1}{n!} :\phi^{n}:
+$$
+and $:\bullet:$ denotes the normal ordering. $E_ {T}$ is the truncation energy and $C(E_ {T})$ is a counter terms which will be needed later. 
+
+-  - -
+
+The Hilbert space is spanned by the eigenstates of the **free** Hamiltonian, $\left\lvert{E_ {i}}\right\rangle$. In the Hamiltonian truncation approach, we only consider the the states with $E_ {i} < E_ {T}=: \Lambda$. In this case, the **full** Hamiltonian can be considered as a finite-dimensional matrix
+$$
+H_ {ij} := \left\langle{E_ {i}}\right\rvert H \left\lvert{E_ {j} }\right\rangle .
+$$
+At weak coupling, the spectrum of the truncated Hamiltonian can be computed using Hamiltonian Perturbation Theory (HPT). 
+
+### Hamiltonian Perturbation Theory
+
+In quantum field theory, Lagrangian perturbation theory has been dominant, especially in the study of scattering processes and elementary particle physics. This approach's explicit covariance has been crucial in implementing the renormalization program. However, it complicates the identification of physical states defined as eigenstates of the Hamiltonian and the Hilbert space they span.
+
