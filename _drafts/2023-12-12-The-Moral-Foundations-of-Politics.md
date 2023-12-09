@@ -46,3 +46,39 @@ Immanuel Kant distinguished between two types of judgments: `analytic` and `synt
 
 Kant's distinction between analytic and synthetic judgments is fundamental to his epistemology, particularly in addressing the question of how human beings can have knowledge about the world. He further introduced the concept of "synthetic a priori" judgments, which are synthetic judgments that are known independently of experience (a priori), like mathematical truths. 
 
+- - -
+
+The "creationist" or "workmanship" theory in political science, often associated with the work of John Locke, is a theory of political obligation. It suggests that political authority and legitimacy derive from the consent of the governed, likening the role of the government or ruler to that of a craftsman or creator who constructs a system with the consent and for the benefit of the people.
+
+This theory is rooted in the idea that political and social structures are artificial constructs, made by human beings, unlike natural phenomena. The "creationist" aspect implies that political structures are deliberately created or constructed, rather than organically evolved. The "workmanship" aspect emphasizes the idea that the creators or rulers of these structures have a responsibility to the people they govern, similar to how a craftsman is responsible for the quality and function of their creation.
+
+Locke's theory was revolutionary at its time because it challenged the prevailing notion of the divine right of kings, suggesting instead that political authority is justified only when it serves the interests of the governed and respects their rights. This theory laid the groundwork for modern concepts of democracy, individual rights, and the social contract. 
+
+- - -
+
+Thomas Hobbes and John Locke, two prominent philosophers, had distinct views on natural law, reflecting their differing perspectives on human nature and the ideal structure of society.
+
+**Thomas Hobbes' View on Natural Law:**
+Hobbes, in his work "Leviathan," presented a rather pessimistic view of human nature. He believed that in the state of nature (a hypothetical condition without government or laws), humans are driven by self-interest and a desire for self-preservation, leading to a "war of all against all" (bellum omnium contra omnes). In this state, life would be "solitary, poor, nasty, brutish, and short."
+
+For Hobbes, natural law is a set of precepts or general rules, discovered by reason, which prohibit anything destructive to one's own life. It’s based on the right of every individual to preserve their own life, leading to the conclusion that humans should seek peace. This is where his famous concept of the social contract comes into play: individuals surrender some of their freedoms and submit to the authority of a ruler (or a ruling assembly) to ensure their own safety and peace. Thus, Hobbes's natural law is fundamentally about self-preservation and the avoidance of harm to others as a means of securing one's own safety.
+
+**John Locke's View on Natural Law:**
+Locke's view, as articulated in "Two Treatises of Government," is more optimistic about human nature. He believed that in the state of nature, humans live in a state of equality and freedom, not inherently prone to violence or war. For Locke, the law of nature is a moral guide based on the belief that God has given the world to all people in common. It teaches that, since all are equal and independent, no one ought to harm another in their life, health, liberty, or possessions. 
+
+Locke’s natural law is grounded in the rights to life, liberty, and property. It includes the idea that people have the obligation to respect the rights of others. His social contract theory suggests that people form governments to protect these natural rights. If a government fails to do so, citizens have the right to overthrow it. This view laid the groundwork for modern democracy and significantly influenced the development of political philosophy in the Western world.
+
+In summary, Hobbes saw natural law as a means of avoiding the brutal state of nature through self-preservation and peace, whereas Locke viewed natural law as a moral guide ensuring equality and the inherent rights of life, liberty, and property.
+
+- - -
+
+>A basic issue for Locke and many of his contemporaries was the ontological status of natural law and in particular its relation to God’s will.
+
+In this sentence, "ontological status" refers to the fundamental nature or essence of natural law, especially in relation to its existence and its relationship to God's will. Ontology, in philosophy, is the study of being or existence, and it deals with questions concerning what entities exist or can be said to exist, and how such entities can be grouped, related within a hierarchy, and subdivided according to similarities and differences.
+
+So, when discussing the "ontological status of natural law" in the context of John Locke and his contemporaries, the focus is on understanding the very essence of natural law: whether it exists as an objective reality independent of human beings, how it relates to or derives from God's will, and what its fundamental characteristics are. This was a central topic in the philosophical and theological debates of that era, particularly in the context of determining the basis and legitimacy of moral and legal principles. Locke and many others were engaged in trying to understand whether natural laws were inherent aspects of the universe, ordained by God, or whether they were constructs of human reason and society.
+
+"Will-centered" refers to the philosophical position known as voluntarism. This is a theory that emphasizes the role of the will, either divine or human, in various philosophical contexts. In the context of Locke's moral and political writings, being "will-centered" or a voluntarist means that Locke ultimately leaned towards the view that natural law and moral principles are determined by the will, particularly the will of God, rather than being inherent or objective truths that exist independently of any will.
+
+In Locke's time, the debate about the nature of natural law often centered around whether natural laws were intrinsic to the universe (a position known as intellectualism or rationalism) or whether they were decrees of God's will (voluntarism). A will-centered or voluntarist approach suggests that moral and legal norms derive their authority from an act of will, particularly the divine will, rather than from reason alone or from the inherent nature of reality. In this view, what is right or wrong, just or unjust, is so because God wills it to be that way, and human beings understand and follow these laws through revelation, religious teachings, or other means of discerning God's will.
+
