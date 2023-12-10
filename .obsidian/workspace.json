@@ -13,25 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+                "file": "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e81e045abbdd065e",
+            "id": "40e302af481420c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-12-04-Scaling.md",
+                "file": "_posts/2023-12-10-罗伯特议事规则.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+                "file": "_posts/2023-12-10-罗伯特议事规则.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+                "file": "_posts/2023-12-10-罗伯特议事规则.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-08-25-韩钢中国当代史阅读书目.md"
+                "file": "_posts/2023-12-10-罗伯特议事规则.md"
               }
             }
           },
@@ -187,14 +188,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "093c53a1e3343e37",
+  "active": "40e302af481420c8",
   "lastOpenFiles": [
-    "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+    "Untitled.md",
+    "_posts/2023-12-10-罗伯特议事规则.md",
     "_posts/2023-12-7-Analytic-Structure.md",
+    "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
+    "2023-12-04-Scaling.md",
+    "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
     "_posts/2023-12-6-Transseries-Lecture-2.md",
     "_drafts/2023-12-7-Transseries-Lecture-3.md",
-    "2023-12-04-Scaling.md",
     "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
     "_drafts/2023-11-24-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
     "_drafts/2023-11-13-Representables-in-Category-Theory.md",
@@ -212,9 +216,6 @@
     "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
     "_posts/2023-11-16-Curvature-and-Winding-Number.md",
     "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
-    "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",

@@ -8,7 +8,7 @@ header-img: img/background13.jpg
 catalog: true
 tags:
 ---
-
+https://www.bilibili.com/video/BV1tu4y1V7X4?p=42&vd_source=4334e8d75eccd3e1ab6a134826449f63
 ### Holomorphic and Meromorphic Functions
 
 Let $X$ be a Riemann surface and $(U_ {p},\phi_ {p})$ an coordinate patch of $X$ containing a point $p$ in it. A coordinate system of $X$ is a map $X\to \mathbb{C}$, a map $\mathbb{C} \to X$ would be called a parametrization. A coordinate system is a function on $X$. 
