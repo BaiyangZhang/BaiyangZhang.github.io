@@ -212,7 +212,7 @@ $$
 $$
 the question is, when $m = 0$, will the quantum effects modify the shape of the potential?
 
-Introduce a background field $\phi \to \phi_b +\phi$, take it into the action and expand, keep in mind that the path integral is over field $\phi$, we have
+Introduce a background field $\phi \to \phi_b +\phi$, take it into the action and expand, keep in mind that the path integral is over field $\phi$ only, we have
 $$
 \begin{align}
   e^{i\Gamma[\phi_b]} &= e^{i\int d^4 x (-\frac{1}{2} \phi_b \partial^2 \phi_b-V(\phi_b))} \\ \\
