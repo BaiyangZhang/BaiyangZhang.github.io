@@ -17,9 +17,8 @@ In lecture 2 we have talked about classic symmetry and their re-interpretation i
 
 Let's start with the ordinary symmetry once again. Recall that we have written the variation of the action as 
 $$
-\begin{equation}
 \delta S = \int d^{D-1}x \, J^{\mu}\partial_ {\mu}\epsilon(x)
-\end{equation}
+\tag{1}
 $$
 where $\xi$ is the parameter of the symmetry transformation, under which the charged operators transform as 
 $$
