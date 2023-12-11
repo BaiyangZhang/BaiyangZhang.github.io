@@ -10,7 +10,7 @@ tags:
 ---
 ### Holomorphic and Meromorphic Functions
 
-Let $X$ be a Riemann surface and $(U_ {p},\phi_ {p})$ an coordinate patch of $X$ containing a point $p$ in it. A coordinate system of $X$ is a map $X\to \mathbb{C}$, a map $\mathbb{C} \to X$ would be called a parametrization. A coordinate system is a function on $X$. 
+Let $X$ be a Riemann surface and $(U_ {p},\phi_ {p})$ an coordinate patch of $X$ containing a point $p$ in it. A `coordinate system` of $X$ is a map $X\to \mathbb{C}$. Note that a map of inverse direction $\mathbb{C} \to X$ would be called a `parametrization`. A coordinate system can be considered a function on $X$ that varies particularly, reflecting the fact that we use the function defined on the space to study the geometry of the space, a manifestation of the duality between geometry and algebra.
 
 Let $Y\subset X$ be a open subset of $X$. Denote the set of all holomorphic function on $Y$ by $\mathcal{O}(Y)$ or $\mathcal{O}_ {Y}$. This notation reminds us of the sheaf theory.  
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-7-Analytic-Structure.md",
+                "file": "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5069465637207
+    "width": 355.5069465637207,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -105,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-7-Analytic-Structure.md",
+                "file": "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-7-Analytic-Structure.md",
+                "file": "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-7-Analytic-Structure.md"
+                "file": "_posts/2023-12-11-Coleman-Weinberg-Potential.md"
               }
             }
           },
@@ -188,7 +189,9 @@
   },
   "active": "52e3cb22cf2f27b0",
   "lastOpenFiles": [
-    "_posts/2023-1-13-Colemen-Weinberg-Potential.md",
+    "_posts/2023-12-7-Analytic-Structure.md",
+    "_drafts/2023-12-7-Transseries-Lecture-3.md",
+    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
     "_posts/2023-12-10-罗伯特议事规则.md",
     "Untitled.md",
     "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
@@ -197,8 +200,6 @@
     "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
     "_posts/2022-11-25-Basic-Cumutative-Algebra-4.md",
     "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
-    "_drafts/2023-12-7-Transseries-Lecture-3.md",
-    "_posts/2023-12-7-Analytic-Structure.md",
     "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-6-Transseries-Lecture-2.md",
     "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
