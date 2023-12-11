@@ -22,15 +22,18 @@ The other kind of effective action is the so-called `quantum effective actions` 
 
 There are in general three ways to calculate the effective action as listed in the following.
 
-- By matching, require
+- By matching, we require
+
 $$\int \mathcal{D}\{\text{original dof}\} e^{iS}
     = \int \mathcal{D}\{\text{effective dof}\} e^{i\Gamma}
 $$
+
 where dof stands for the `degree of freedom`, the LHS is the original theory while the RHS is the effective theory, with different degree of freedom, $\Gamma$ is the quantum action.
 
 - by Legendre transformation, as will be shown in the next section.
 
 - by background field method, that is to separate the field into a static non-propagating background field $\phi_b$ and a dynamic propagating field $\tilde{\phi}$, the dynamic fields are the fluctuations around the background field. Integrating out the fluctuations (usually done perturbatively) leaves us the effective potential $\Gamma[\phi_b]$,
+
 $$
 \int \mathcal{D} \phi e^{i S[\phi_b + \tilde{\phi}]}
 = e^{i\Gamma[\phi_b]}.
