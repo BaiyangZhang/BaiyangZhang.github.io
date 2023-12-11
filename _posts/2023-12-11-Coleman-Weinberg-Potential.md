@@ -96,7 +96,7 @@ $$
 $$
 It will generate Feynman diagrams with sources, just like the original action $S$ does, only this time the tree diagrams alone is enough to give the complete information of the original theory. Thus $\Gamma$ must gives us exact propagators and exact n-point vertices, while the original action $S$ gives us the ordinary propagator and ordinary vertex. Also in order to calculate the exact n-point vertex, we need not consider the 1-particle reducible diagrams since any contribution from connected diagram can be written as a tree diagram comprised of two or more sub 1 particle IRREDUCIBLE diagrams.
 
-**Remark.** The generating functionals such as $W[J]$ and $\Gamma[\varphi]$ are classical. In fact the language of path integral is highly classical, in the sense that each path, namely each field configuration is a c-field of space of time, instead of q-field.
+**Remark.** The generating functionals such as $W[J]$ and $\Gamma[\varphi]$ are classical. In fact the language of path integral has a feeling of classical field theory, in the sense that each path we take into consideration is a c-field in space-time, instead of q-field.
 
 #### Tree-level Example
 
@@ -135,11 +135,10 @@ We want a quantum effective potential which works like the classical potential, 
 
 Recall that the quantum effective action
 
-- is a functional of $\varphi$, and $\varphi = \left\langle {\phi}_J \right\rangle$, meaning $\varphi$ is the expectation value of $\phi$ in the presence of a source term $J$
+- is a functional of $\varphi$, and $\varphi = \left\langle {\phi}_J \right\rangle$, meaning $\varphi$ is the expectation value of $\phi$ in the presence of a source term $J$, and
 - satisfies ${\delta \Gamma}/{\delta \varphi} = J$
 thus
 - when $J=0$, the solution to ${\delta \Gamma}/{\delta \varphi} = J$ is the vev of $\phi$.
-
 
 Furthermore, assume that the vacuum has translation symmetry, meaning $\left\langle \phi \right\rangle$ is a constant in space and time, then we just need one number to denote the field configuration, we can define a function $\mathcal{V} _ {\text{eff}}$ whose minimum is the vev of $\phi$,
 $$
