@@ -4,35 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "22f02dedeb1b58b7",
+        "id": "949fb283ee618e4a",
         "type": "tabs",
         "children": [
           {
-            "id": "52e3cb22cf2f27b0",
+            "id": "093c53a1e3343e37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
+                "file": "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2b61ec10414c0dd7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2313119745baf517",
+            "id": "40e302af481420c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "economics",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5069465637207,
+    "width": 278.5,
     "collapsed": true
   },
   "right": {
@@ -119,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-10-罗伯特议事规则.md",
+                "file": "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-10-罗伯特议事规则.md",
+                "file": "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-10-罗伯特议事规则.md"
+                "file": "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md"
               }
             }
           },
@@ -200,42 +187,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2313119745baf517",
+  "active": "093c53a1e3343e37",
   "lastOpenFiles": [
-    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
-    "_posts/2023-12-10-罗伯特议事规则.md",
-    "_drafts/2023-12-7-Transseries-Lecture-3.md",
-    "_posts/2023-12-7-Analytic-Structure.md",
-    "Untitled.md",
-    "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
-    "_posts/2023-1-9-US-Political-System.md",
-    "_posts/2022-12-29-Hobbes-Moral-and-Political-Philosophy.md",
-    "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
-    "_posts/2022-11-25-Basic-Cumutative-Algebra-4.md",
-    "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
-    "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-6-Transseries-Lecture-2.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
-    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
-    "_drafts/2023-12-3-Analytic-Structure.md",
-    "2023-12-04-Scaling.md",
-    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
-    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
-    "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
-    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
+    "_posts/2023-10-23-Noether's-Principal.md",
+    "_posts/2023-10-26-Poincare-Duality.md",
+    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
+    "_posts/2023-10-30-The-Fundamental-Group-and-Covering -paces.md",
     "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_drafts/2023-11-13-Representables-in-Category-Theory.md",
-    "assets/pdf/Notes_on_Solitons.pdf.crdownload",
-    "assets/pdf/Notes_on_Solitons (1).pdf",
-    "assets/pdf/Notes_on_Solitons (1).pdf.crdownload",
+    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
+    "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
+    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
+    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
+    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
+    "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
+    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+    "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
+    "_posts/2023-12-6-Transseries-Lecture-2.md",
+    "_posts/2023-12-7-Analytic-Structure.md",
+    "_posts/2023-12-10-罗伯特议事规则.md",
+    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
+    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
+    "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
+    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
+    "_drafts/2023-3-22-Hilbert's-Action-Principle.md",
+    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
+    "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
-    "img/shortExactSequence.png",
-    "img/homotopyCommute.png",
     "img/boundaryMap.png",
     "img/boundaryHomo.png",
+    "img/shortExactSequence.png",
+    "img/homotopyCommute.png",
     "img/eom.png",
     "assets/img/z.png",
     "img/relaxationMethod.jpg",
@@ -245,6 +230,8 @@
     "bin/cibuild",
     "bin",
     "assets/jupyter/blog.ipynb",
+    "assets/jupyter",
+    "assets/css/main.scss",
     "assets/img/publications-screenshot-800.webp",
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp"
