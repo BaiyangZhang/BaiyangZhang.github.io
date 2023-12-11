@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-12-11-Coleman-Weinberg-Potential.md",
+                "file": "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5069465637207
+    "width": 355.5069465637207,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -117,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-12-11-Coleman-Weinberg-Potential.md",
+                "file": "_posts/2023-12-10-罗伯特议事规则.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-12-11-Coleman-Weinberg-Potential.md",
+                "file": "_posts/2023-12-10-罗伯特议事规则.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-12-11-Coleman-Weinberg-Potential.md"
+                "file": "_posts/2023-12-10-罗伯特议事规则.md"
               }
             }
           },
@@ -198,12 +200,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "957cfa2362e38596",
+  "active": "2313119745baf517",
   "lastOpenFiles": [
-    "_posts/2023-12-10-罗伯特议事规则.md",
-    "_drafts/2023-12-11-Coleman-Weinberg-Potential.md",
-    "_posts/2023-12-7-Analytic-Structure.md",
     "_drafts/2023-12-7-Transseries-Lecture-3.md",
+    "_posts/2023-12-10-罗伯特议事规则.md",
+    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
+    "_posts/2023-12-7-Analytic-Structure.md",
     "Untitled.md",
     "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
     "_posts/2023-1-9-US-Political-System.md",
