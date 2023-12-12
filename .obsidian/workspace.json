@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+                "file": "_posts/2023-12-12-泉州游.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+                "file": "_posts/2023-12-12-泉州游.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+                "file": "_posts/2023-12-12-泉州游.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md"
+                "file": "_posts/2023-12-12-泉州游.md"
               }
             }
           },
@@ -177,9 +177,10 @@
   },
   "active": "093c53a1e3343e37",
   "lastOpenFiles": [
+    "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-12-泉州游.md",
     "_posts/2023-12-10-罗伯特议事规则.md",
     "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
-    "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-10-23-Noether's-Principal.md",
     "_posts/2023-10-26-Poincare-Duality.md",
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
@@ -202,7 +203,6 @@
     "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
     "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "_drafts/2023-3-22-Hilbert's-Action-Principle.md",
-    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
