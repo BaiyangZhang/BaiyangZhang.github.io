@@ -38,7 +38,7 @@ where $\star J$ is a $(D-1)$-form, $d \epsilon$ is a $1$-form (since $\epsilon$ 
 
 - - -
 
-The advantage of Eq. (2) is that it can be generalized to higher forms. Assume now the symmetry is parametrized by a $1$-form $\xi$. Then $d \xi$ is a 2-form, as a result $\star J$ is a $(D-2)$-form thus $J$ is a $2$-form. The conservation law becomes
+The advantage of Eq. (2) is that it can be generalized to higher forms. Assume now the symmetry is parametrized by a $1$-form $\xi = \xi_ {\mu}dx^{\mu}$. Then $d \xi$ is a 2-form, as a result $\star J$ is a $(D-2)$-form thus $J$ is a $2$-form. The conservation law becomes
 $$
 d \star J = 0 \to \partial_ {\mu} J^{\mu \nu}=0.
 $$

@@ -18,18 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "40e302af481420c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-12-10-罗伯特议事规则.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -189,6 +177,9 @@
   },
   "active": "093c53a1e3343e37",
   "lastOpenFiles": [
+    "_posts/2023-12-10-罗伯特议事规则.md",
+    "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+    "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-10-23-Noether's-Principal.md",
     "_posts/2023-10-26-Poincare-Duality.md",
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
@@ -206,15 +197,12 @@
     "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
     "_posts/2023-12-6-Transseries-Lecture-2.md",
     "_posts/2023-12-7-Analytic-Structure.md",
-    "_posts/2023-12-10-罗伯特议事规则.md",
     "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
     "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
     "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "_drafts/2023-3-22-Hilbert's-Action-Principle.md",
     "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
-    "_drafts/2023-05-07-soliton-particle-duality.md",
-    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
