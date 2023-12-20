@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to Resurgence and Transseries 4
 subtitle: The formal Borel transform and the space of 1-Gevrey formal series
-date: 2023-11-24
+date: 2023-12-20
 author: Baiyang Zhang
 header-img: img/mathArt2.jpg
 catalog: true
