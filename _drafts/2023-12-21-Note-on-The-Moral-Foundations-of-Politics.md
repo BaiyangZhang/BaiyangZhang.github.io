@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The Moral\rFoundations\rof Politics"
+title: "Note on The Moral\rFoundations\rof Politics"
 subtitle: by Ian Shapiro
-date: 2023-12-12
+date: 2023-12-21
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
