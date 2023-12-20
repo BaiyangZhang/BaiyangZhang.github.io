@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "52e3cb22cf2f27b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2b61ec10414c0dd7",
             "type": "leaf",
             "state": {
@@ -30,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "df459810c314b63d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
+                "file": "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
+                "file": "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md"
+                "file": "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md"
               }
             }
           },
@@ -187,10 +188,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52e3cb22cf2f27b0",
+  "active": "df459810c314b63d",
   "lastOpenFiles": [
-    "_posts/2023-12-20-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
+    "_posts/2023-12-20-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
     "_posts/2023-12-6-Transseries-Lecture-1.md",
     "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
     "_posts/2023-12-12-泉州游.md",
@@ -204,7 +206,6 @@
     "_posts/2022-12-29-Hobbes-Moral-and-Political-Philosophy.md",
     "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
     "_posts/2022-11-25-Basic-Cumutative-Algebra-4.md",
-    "_posts/2023-12-5-Hamiltonian-Truncation-in-3D.md",
     "_drafts/2023-12-12-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
     "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md",

@@ -65,8 +65,7 @@ Taking this back to the Hamiltonian equations we recover the familiar Euler-Lagr
 
 These equations describe how the fields and their conjugate momenta evolve over time, analogous to how the position and momentum of a particle evolve in classical mechanics. They provide a complete description of the dynamics of the field system within the Hamiltonian framework.
 
-## Hamiltonian Truncation
-
+### Basics of QFT
 
 The starting point of defining a quantum field theory is the choice of a manifold $M$ of dimension $d$. We mostly (but not always) regard the manifold as a Riemannian manifold with a **smooth** metric on it. The manifold may or may not have boundaries, if it does then some additional information is needed at the boundaries to define the theory.
 
@@ -86,7 +85,7 @@ M = N \times  K,\quad  K \ll  N
 $$
 The action may be very large for field configurations that are **not** constant over $K$, so the path-integral, which is weighted by $e^{ -S_ {E} }$, localizes to field configurations that are constant along $K$. This gives rise to an **effective** path integral over field configurations that have only constant modes along $K$. 
 
-### Definitions
+## Hamiltonian Truncation
 
 In our case, we consider the phi-fourth theory defined on 
 $$
@@ -141,5 +140,17 @@ At weak coupling, the spectrum of the truncated Hamiltonian can be computed usin
 
 ### Hamiltonian Perturbation Theory
 
-In quantum field theory, Lagrangian perturbation theory has been dominant, especially in the study of scattering processes and elementary particle physics. This approach's explicit covariance has been crucial in implementing the renormalization program. However, it complicates the identification of physical states defined as eigenstates of the Hamiltonian and the Hilbert space they span.
+In quantum field theory, Lagrangian perturbation theory has been dominant, especially in the study of scattering processes and elementary particle physics. This approach's explicit covariance has been crucial in implementing the renormalization program. 
+
+The total Hamiltonian $H$ of a system is divided into two parts, 1) the unperturbed Hamiltonian $H_0$, which is solvable and represents the system in the absence of the interaction or perturbation, and 2) the perturbation Hamiltonian $H'$, which represents the interaction or perturbation that is considered small compared to $H_0$.
+
+The idea is to treat the perturbation $H'$ as a small correction to $H_0$ and expand the observables of interest (like the energy levels or scattering amplitudes) in a power series of $H'$.
+
+In the absence of the perturbation, the eigenstates and eigenvalues of $H_0$ are assumed to be known. *These serve as the basis for exploring the effects of the perturbation.* The corrections to the eigenvalues and eigenstates of the system due to $H'$ can be calculated iteratively. In practical calculations, Feynman diagrams (or similar diagrams) are used to visually and systematically represent the terms in the perturbation series. Each diagram corresponds to a mathematical term in the expansion and simplifies the computation of complex interactions.
+
+
+
+### Hamiltonian truncation with UV divergence
+
+
 
