@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Transseries Lecture 3
+title: Introduction to Transseries Lecture 2
 subtitle: 
 date: 2023-12-06
 author: Baiyang Zhang
