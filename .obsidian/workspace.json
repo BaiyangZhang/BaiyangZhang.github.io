@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5,
-    "collapsed": true
+    "width": 278.5
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -189,15 +188,15 @@
   },
   "active": "093c53a1e3343e37",
   "lastOpenFiles": [
+    "_posts/2023-12-12-泉州游.md",
+    "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
     "_posts/2023-12-6-Transseries-Lecture-1.md",
     "_posts/2023-12-20-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
     "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2023-12-12-泉州游.md",
     "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
     "_posts/2023-12-11-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-12-10-罗伯特议事规则.md",
-    "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
     "_posts/2023-10-23-Noether's-Principal.md",
     "_posts/2023-10-26-Poincare-Duality.md",
     "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
