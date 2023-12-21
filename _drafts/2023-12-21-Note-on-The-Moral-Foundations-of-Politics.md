@@ -94,3 +94,4 @@ In summary, Locke's distinction between archetype and ectype ideas can be unders
 
 #### The Preoccupation with Certainty
 
+The post-Humean Enlightenment tradition has been marked by a fallibilist view of knowledge. All knowledge claims are fallible on this account, and science advances not by making knowledge more certain but by producing more knowledge. 
