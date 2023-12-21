@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to Higher Form Symmetry
 subtitle: Lecture 3
-date: 2023-12-11
+date: 2023-12-21
 author: Baiyang Zhang
 header-img: img/lib3.jpg
 catalog: true
@@ -11,9 +11,9 @@ tags:
   - Notes
 ---
 
-For conventions used in this note, see my blog [here](https://www.mathlimbo.net/blog/2022/Conventions-and-Formula/). 
+For conventions used in this note, see my other blog [here](https://www.mathlimbo.net/blog/2022/Conventions-and-Formula/). 
 
-In lecture 2 we have talked about classic symmetry and their re-interpretation in the language of differential (exterior) form. We have made the connection between the so-called symmetry defect operator (SDO) and a charged, point operator. In this note we try to generalized this concept to charged operators defined on manifolds of dimension more than zero, such as a line or a surface, etc. 
+In lecture 2 we talked about classic symmetry and their re-interpretation in the language of differential (exterior) form. We have made the connection between the so-called symmetry defect operator (SDO) and a charged, point operator. In this note we try to generalized this concept to charged operators defined on manifolds of dimension more than zero, such as a line or a surface, etc. 
 
 Let's start with the ordinary symmetry once again on a $D$-dimensional manifold. We first upgraded the global symmetry parametrized by $\epsilon$ to a local symmetry parametrized by $\epsilon(x)$, and wrote the action variation as 
 $$
