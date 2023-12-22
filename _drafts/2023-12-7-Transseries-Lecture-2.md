@@ -27,7 +27,7 @@ For example, the set of monomials in one variable $x$, where the exponent is a n
 
 By order we mean either *totally ordered* (which is a binary relation $\leq$ that satisfies comparability, also called totality, meaning the any two elements are comparable, transitivity, reflexivity $a\leq a$ and anti-symmetry, $a\leq b$ and $b\leq a$ imply $a=b$ ) or linearly ordered (the elements can be thought of as lying on a straight line in such a way that every element has a distinct position, and you can move from one end of the line to the other, encountering each element in a definite order). Linearly ordered is the same thing as totally ordered. 
 
-In our case, the order relation is again "far larger then" $\gg$. However, note that this is **not a totally order**, we don't require reflexivity and antisymmetry, since $a \gg a$ can not be correct. We do require comparability and transitivity though. The concept of `large` and `small` are defined with respect to identity $1$, if ${\frak g}\in {\frak M}$ and ${\frak g} \ll 1$ then ${\frak g}$ is said to be small, if ${\frak g} \gg 1$ the it is said to be large. 
+In our case, the order relation is again "far larger then" $\gg$. However, note that this is **not a totally order**, we don't require reflexivity and antisymmetry, since $a \gg a$ can not be correct. We do require comparability and transitivity though. The concept of `large` and `small` are defined with respect to identity $1$, if ${\frak g}\in {\frak M}$ and ${\frak g} \ll 1$ then ${\frak g}$ is said to be `small`, if ${\frak g} \gg 1$ the it is said to be `large`. 
 
 As a convention, we will use fraktur font, lower case for elements and upper case for sets. 
 
@@ -68,4 +68,20 @@ In all cases of interest to us, *the support will be well ordered* with respect 
 $$
 {\frak A} \subset \text{supp} (T), \quad  {\frak A} \neq \emptyset ,
 $$
-there exist a maximal element in ${\frak A}$. To be specific, this should be called "converse well ordered" since well order usually implies that every non-empty subset has a *smallest* element under the given order. But we will continue using "well order" anyway. 
+there exist a maximal element in ${\frak A}$. To be specific, this should be called "converse well ordered" since well order usually implies that every non-empty subset has a *smallest* element under the given order. But we will continue using "well order" to save some breath. 
+
+Now, consider non-zero terms in $T$. Let's pick out the larges monomial ${\frak g}_ {\text{max}}$, then it is called the `magnitude`of $T$, $\text{mag}(T)={\frak g}_ {\text{max}}$. The corresponding coefficient is called the `leading coefficient`. The coefficient and the monomial put together is called the `dominance` of $T$, $\text{dom}(T)=a_ {{\frak g}} \cdot {\frak g}$ where ${\frak g}$ is ${\frak g}_ {\text{max}}$. We say $T> 0$ if $a_ {{\frak g}}> 0$ and $T<0$ if $a_ {{\frak g}} < 0$. We say $T$ is small if all its monomials ${\frak g} \in \text{supp}(T)$ are small or zero, equivalently if the magnitude of $T$ is small or zero. We say $T$ is large if the magnitude of $T$ is large, other terms in $T$ could be small. However, if all the monomials in $T$ are large then $T$ is said to be purely large. A pure large Hahn series does not have a single small monomial. 
+
+Note that here our usage of terminologies might be different from others. 
+
+Let's take a look at an example. Let 
+$$
+A = 3 e^{x} + 4x^{2},
+$$
+then 
+$$
+\text{mag} (A) = e^{ x }, \text{dom}(A) = 3e^{ x },
+$$
+$A$ is positive and large, further more $A$ is purely large since $x^{2} \gg 1$ at $x\to \infty$. 
+
+The addition and scalar multiplication are defined in the obvious way. 

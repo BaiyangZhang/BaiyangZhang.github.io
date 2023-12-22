@@ -45,7 +45,7 @@ $$
 
 The multiplication is defined in the obvious way. The group identity is just $1$. 
 
-We define a binary relation $\gg$, read "far larger than". Keep in mind that we assumed $x\to \infty$. So how does this "far larger than" work? We compare the exponents $e^{ L }$ first, whichever with the largest exponent $L$ is far larger than others; if they have same exponents, then we compare the power of $x$, namely $x^{b}$, whichever with larger $b$ is far larger then others. To be specific,
+We define a binary relation $\gg$, read "far larger than". Keep in mind that we assumed $x\to \infty$. So how does this "far larger than" work? We compare the exponents $L$ in $e^{ L }$ first, if the exponent is *large* then $e$ to the exponent is *far larger*; if they have same exponents, then we compare the power of $x$, namely $x^{b}$, whichever with larger $b$ is far larger then others. To be specific,
 $$
 x^{b_ {1}}e^{ L_ {1} } \gg  x^{b_ {2}}e^{ L_ {2} }\quad  \text{ if } L_ {1} > L_ {2} \;\lor\; (L_ {1}=L_ {2}\;\land\; b_ {1}>b_ {2} ),
 $$
