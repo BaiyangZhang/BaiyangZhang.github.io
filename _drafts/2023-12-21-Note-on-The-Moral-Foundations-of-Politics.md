@@ -48,7 +48,7 @@ Kant's distinction between analytic and synthetic judgments is fundamental to hi
 
 - - -
 
-The "creationist" or "workmanship" theory in political science, often associated with the work of John Locke, is a theory of political obligation. It suggests that political authority and legitimacy derive from the consent of the governed, likening the role of the government or ruler to that of a craftsman or creator who constructs a system with the consent and for the benefit of the people.
+The `creationist` or `workmanship` theory in political science, often associated with the work of John Locke, is a theory of political obligation. It suggests that political authority and legitimacy derive from the consent of the governed, likening the role of the government or ruler to that of a craftsman or creator who constructs a system with the consent and for the benefit of the people.
 
 This theory is rooted in the idea that political and social structures are artificial constructs, made by human beings, unlike natural phenomena. The "creationist" aspect implies that political structures are deliberately created or constructed, rather than organically evolved. The "workmanship" aspect emphasizes the idea that the creators or rulers of these structures have a responsibility to the people they govern, similar to how a craftsman is responsible for the quality and function of their creation.
 
@@ -91,4 +91,8 @@ For instance, the archetype of a tree would be the idealized concept or mental r
 Ectypes, on the other hand, are derivative or secondary ideas. They are the imperfect copies or generalizations that we derive from our experience with individual instances in the world. Ectype ideas are more about the general ideas of substances we form based on our sensory experiences and observations. When we see many individual trees, for example, we form a general idea of what a tree is - this is an ectype. It's a more practical, experiential idea based on the aggregation of real-world instances.
 
 In summary, Locke's distinction between archetype and ectype ideas can be understood as a differentiation between the idealized, abstract concepts we hold in our minds as standards (archetypes) and the more practical, general ideas we form based on our sensory experience of the world (ectypes). Archetypes are about the essence or ideal form of things, while ectypes are about the general, often imperfect, concepts we derive from actual experiences.
+
+#### The Preoccupation with Certainty
+
+>The post-Humean Enlightenment tradition has been marked by a fallibilist view of knowledge. All knowledge claims are fallible on this account, and science advances not by making knowledge more certain but by producing more knowledge. Recognizing the corrigibility of all knowledge claims and the possibility that one might always be wrong exemplifies the modern scientific attitude. As Karl Popper (1902-1994) noted, the most that we can say, when hypotheses survive empirical tests, is that they have not been falsified so that we can accept them provisionally.
 
