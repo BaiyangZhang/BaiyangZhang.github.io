@@ -96,3 +96,72 @@ In summary, Locke's distinction between archetype and ectype ideas can be unders
 
 >The post-Humean Enlightenment tradition has been marked by a fallibilist view of knowledge. All knowledge claims are fallible on this account, and science advances not by making knowledge more certain but by producing more knowledge. Recognizing the corrigibility of all knowledge claims and the possibility that one might always be wrong exemplifies the modern scientific attitude. As Karl Popper (1902-1994) noted, the most that we can say, when hypotheses survive empirical tests, is that they have not been falsified so that we can accept them provisionally.
 
+`Value judgments` are statements or opinions that express an evaluation, typically of something's worth, beauty, goodness, or morality. Examples include statements like "Lying is wrong," or "This painting is beautiful." A.J. Ayer was a key figure in the logical positivist movement, which held that for a statement to be meaningful, it must be either empirically verifiable (i.e., testable by observation or experiment) or analytically true (true by definition, like mathematical or logical statements). In logical positivism, a `proposition` is a statement that can be either true or false. It's a claim about the world that can, *at least in principle*, be tested and verified or falsified.
+
+The Logical Positivist movement, also known as Logical Empiricism, was a philosophical movement that emerged in the early 20th century. It primarily revolved around a group of philosophers associated with the Vienna Circle (`Moritz Schlick`, `Hans Hahn`, ), along with others like A.J. Ayer in Britain. This movement sought to apply the rigor of scientific methodology to philosophy, with a significant focus on the analysis of language and the verification of statements.
+
+Key Features of Logical Positivism include 
+
+1. **Verification Principle**: The central tenet of Logical Positivism is the verification principle. This principle asserts that a statement is only meaningful if it can be empirically verified or is analytically true (true by virtue of its meaning, like "All bachelors are unmarried"). The idea was to eliminate metaphysical and abstract discussions that couldn't be supported by empirical evidence or logical reasoning.
+
+2. **Empiricism and Science**: Logical Positivists emphasized the importance of empirical evidence and scientific methods in acquiring knowledge. They viewed science as the model for all true knowledge.
+
+3. **Rejection of Metaphysics**: They were critical of metaphysics and other traditional philosophical endeavors, which they saw as meaningless since such statements couldn't be empirically verified. They believed that many philosophical problems arose from misunderstandings of language and could be resolved by clarifying the language used.
+
+4. **Language and Meaning**: A significant focus was placed on the analysis of language, particularly the language of science. They aimed to clarify how language is used in scientific theories and to distinguish between meaningful and meaningless statements.
+
+5. **Influence of Wittgenstein**: Although not officially part of the Vienna Circle, Ludwig Wittgenstein's early work, especially his "Tractatus Logico-Philosophicus," significantly influenced Logical Positivism. Wittgenstein argued that *much of philosophy consists of nonsensical propositions and that the role of philosophy should be to clarify thought and language*.
+
+6. **Ethical and Aesthetic Statements**: Logical Positivists generally considered ethical and aesthetic statements to be expressions of emotions or subjective preferences, rather than statements that could be true or false.
+
+The "positivism" component is linked to the movement's commitment to a scientific and empirical approach to knowledge. Positivism, as a philosophical stance, argues that knowledge should be based on positive, observable facts and their logical and mathematical treatment. It rejects introspection and intuition as sources of knowledge and instead emphasizes empirical evidence obtained through observation and experimentation. Logical Positivists extended this approach by asserting that statements must be empirically verifiable (or analytically true) to be meaningful.
+
+- - -
+
+Somewhat to my surprise, Karl Popper is not a member of the Vienna circle even though they shared many intellectual engagements. Furthermore, Karl Popper is even critically oppositional. The Vienna Circle advocated for the verification principle, which held that a statement is meaningful only if it can be empirically *verified*. Popper challenged this view, proposing *falsificationism* instead. According to Popper, scientific theories cannot be conclusively verified but can be falsified. He argued that a theory is scientific if it is testable and can potentially be refuted by evidence. This approach places a greater emphasis on the role of empirical refutation rather than verification.
+
+Also, Popper was critical of what he called `historicism` – the belief that *history unfolds according to deterministic laws or principles*. He argued that such theories, which *were often used to justify authoritarian regimes*, are fundamentally flawed. He believed that historicism led to totalitarianism because it promoted the idea that certain individuals or groups had access to inevitable truths about societal development, thus justifying their absolute rule. Popper advocated for what he termed an `open society`. An open society, in his view, is characterized by a democratic government, individual freedoms, and a critical attitude towards tradition and authority. It allows for change and improvement through rational and critical discourse, as opposed to the unquestioning acceptance of dogmatic principles.
+
+Just as Popper applied the *principle of falsifiability* to scientific theories, he suggested that political policies should also be subjected to critical scrutiny and should be alterable in the face of new evidence or arguments. He was wary of any political theory or system that claimed to have absolute or final answers.
+
+- - -
+
+According to Ayer, the expression of a value judgment is not a proposition since it can not be judged by right and wrong, the question of truth or falsehood does not here arise. 
+
+Regarding ethics, Ayer points out that many theorists in ethics tend to treat statements about the causes and characteristics of our ethical feelings as if these statements were definitions of ethical concepts. For example, a theory might claim that an action is good if it promotes happiness. Here, the cause of the ethical feeling (happiness) is used to define the ethical concept (good). Ayer argues that ethical concepts are *pseudo-concepts*, since ethical concepts, in his view, is neither empirically verifiable or analytically correct.
+
+Ayer's stance is closely associated with `emotivism`, a meta-ethical view that suggests *ethical statements do not assert propositions but express emotional attitudes*. According to emotivism, saying "Stealing is wrong" is akin to expressing one's disapproval of stealing, rather than making an objective claim about the nature of stealing.
+
+
+#### The Centrality of Individual Rights
+
+>In addition to faith in science, the Enlightenment’s central focus on individual rights differentiates its political philosophy from the ancient and medieval commitments to order and hierarchy. This focus brings the freedom of the individual to the center of arguments about politics. This move was signaled in the natural law tradition by a shift in emphasis from the logic of law to the idea of natural right.
+
+Hobbes contended  that it was customary to conflate "Jus and Lex, law and right". Yet he made the distinction that right, consisted in liberty to do, or to forbeare, whereas law, determines and binds to one of them. Similarly by Locke. 
+
+John Locke's oppinion on natural law is as the following. In his work *Essays on the Law of Nature*, Locke argues a moral law inherent in the world and discoverable through reason.
+
+Key points of Locke's argument include:
+
+1. **Natural Law and Reason:** Locke posits that natural law is an aspect of the natural world, similar to physical laws. According to him, this *moral law can be discovered through the use of reason, without the need for divine revelation*.
+
+2. **Moral Obligations:** He argues that *natural law imposes moral obligations on individuals*. These moral principles are universal and apply to all people, regardless of their culture or society.
+
+3. **Rights and Duties:** Locke's view of natural law is closely tied to his ideas about individual rights and duties. He believes that natural law forms the basis for understanding human rights, especially the right to life, liberty, and property.
+
+4. **Foundation for Political Theory:** These essays lay the groundwork for Locke's later political theories, particularly those presented in his famous works, "Two Treatises of Government." He uses the concept of natural law to argue for the rights of individuals and the limitations of governmental power.
+
+5. **Human Equality:** Locke emphasizes the inherent equality of all human beings, derived from their natural state. This idea is a critical aspect of his argument against absolute monarchy and for the formation of governments based on the consent of the governed.
+
+6. **Religious Tolerance:** Although not as explicitly developed in these essays as in his later works, Locke's concept of natural law also leads to his advocacy for religious tolerance, seeing religious belief as a matter of individual conscience.
+
+In summary, Locke's "Essays on the Law of Nature" propose that there is a moral law inherent in the natural world, understandable through human reason, and that this law underpins human rights and forms the basis for just and ethical governance.
+
+- - -
+
+John Locke's `voluntarist theology` reflects his views on the nature of God and the relationship between divine will and moral law. The emphasis is on *the will will (voluntas in Latin, hence the name) of God of God as the primary or sole source of moral law*. Locke's voluntarism posits that *moral laws are decrees of God's will*. In this view, what is morally right or wrong is so because God wills it, and not necessarily because it aligns with any intrinsic moral truths or rational principles independent of God's will. Locke emphasizes the *absolute freedom* and *omnipotence* of God. He argues that God's will is not bound by any external standards or principles. Therefore, moral laws are a product of God's free choice. 
+
+While Locke is a proponent of reason and believes that human beings can discover moral truths through rational inquiry, he also upholds the importance of divine revelation. In his voluntarist theology, revelation plays a crucial role in imparting knowledge of God's will, which might not be entirely accessible through reason alone. Locke's voluntarism is tied to his rejection of innate ideas, a concept he famously critiques in his "Essay Concerning Human Understanding." He argues against the notion that *moral principles are innately known*, instead positing that our understanding of moral laws comes from experience, reason, and revelation. Locke's voluntarist approach suggests that moral obligations are ultimately grounded in obedience to God's will. This perspective can lead to a form of ethical subjectivism, where moral truths depend on the decrees of a divine authority. 
+
+
+

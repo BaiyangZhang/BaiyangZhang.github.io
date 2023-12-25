@@ -2,7 +2,7 @@
 layout: post
 title: Representables in Category Theory
 subtitle: What do objects see?
-date: 2023-11-13
+date: 2023-12-23
 author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
@@ -25,8 +25,12 @@ In the following we will talk about how each object sees and is seen by the cate
 
 Fix an object $A \in \mathcal{A}$. Consider the *totality* of maps *out of* $A$. To each $B\in \mathcal{A}$, there is assigned the set $\mathcal{A}(A,B)$ of maps from $A$ to $B$. This assignation is actually **functorial**, in the sense that to *each* $B\in\mathcal{A}$, there is a set $A(A,B)$, and to each arrow in $A$, there is another arrow in the codomain of this functorial, which we will define shortly.
 
-**Definition 1.** Let $\mathcal{A}$ be a locally small (meaning that the arrows from one object to another actually form a set) category and $A\in \mathcal{A}$. We define a functor
+**Definition 1.** Let $\mathcal{A}$ be a locally small (meaning that the arrows from one object to another actually form a set) category and $A\in \mathcal{A}$. Define a functor
 $$
 H^{A}: B \mapsto \mathcal{A}(A,B) ,\quad  \mathcal{A}\to \text{Set},
 $$
-where $B\in \mathcal{A}$ is any object in $\mathcal{A}$. 
+where $B\in \mathcal{A}$ is any object in $\mathcal{A}$. In other words, $H^{A}$ is a set-valued functor defined on $\mathcal{A}$. For objects $A' \in \mathcal{A}$, 
+$$
+H^{A}(A') := \mathcal{A}(A \to A'),
+$$
+for maps in $g: A' \to A''$ in $\mathcal{A}$,  
