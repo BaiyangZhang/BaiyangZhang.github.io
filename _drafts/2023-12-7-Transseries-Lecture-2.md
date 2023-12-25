@@ -17,7 +17,7 @@ A Hahn series is a generalization of a power series where the exponents are allo
 
 Hahn series introduce more flexibility in exponents, which can come from a broader class (ordered abelian groups), allowing for a more nuanced expression of asymptotic behaviors. We will talk more about this later. Hahn series also provide a framework for analyzing functions at points where traditional power series fail, such as at singularities or when considering behavior at infinity.  These tools are particularly valuable in areas like differential equations, analytic number theory, and dynamical systems, where understanding the precise behavior of functions in extreme conditions is crucial.
 
-First, let us begin with an *ordered abelian group* ${\frak M}$, called the `monomial group` (or `valuation gorup`). Let's break it down.
+First, let us begin with an *ordered abelian group* ${\frak M}$, called the `monomial group` (or `value group`). Let's break it down.
 
 To understand monomial groups, it's crucial to first clarify what a monomial is. A monomial is a product of powers of variables with *non-negative integer* exponents. For example, $x^2y$ and $z^5$ are monomials in the variables $x, y$ and $z$.
 
@@ -28,6 +28,8 @@ For example, the set of monomials in one variable $x$, where the exponent is a n
 By order we mean either *totally ordered* (which is a binary relation $\leq$ that satisfies comparability, also called totality, meaning the any two elements are comparable, transitivity, reflexivity $a\leq a$ and anti-symmetry, $a\leq b$ and $b\leq a$ imply $a=b$ ) or linearly ordered (the elements can be thought of as lying on a straight line in such a way that every element has a distinct position, and you can move from one end of the line to the other, encountering each element in a definite order). Linearly ordered is the same thing as totally ordered. 
 
 In our case, the order relation is again "far larger then" $\gg$. However, note that this is **not a totally order**, we don't require reflexivity and antisymmetry, since $a \gg a$ can not be correct. We do require comparability and transitivity though. The concept of `large` and `small` are defined with respect to identity $1$, if ${\frak g}\in {\frak M}$ and ${\frak g} \ll 1$ then ${\frak g}$ is said to be `small`, if ${\frak g} \gg 1$ the it is said to be `large`. 
+
+In algebra, a `valuation` is a function on a field that provides a *measure of the size or multiplicity of elements of the field*. A field with a valuation on it is called a valued field. 
 
 As a convention, we will use fraktur font, lower case for elements and upper case for sets. 
 
@@ -85,3 +87,22 @@ $$
 $A$ is positive and large, further more $A$ is purely large since $x^{2} \gg 1$ at $x\to \infty$. 
 
 The addition and scalar multiplication are defined in the obvious way. 
+
+- - -
+
+Note the difference between two distinct concepts: *larger than* and *far larger than*. Given two generalized power series $S$ and $T$, we say $S$ is larger than $T$ if $S-T >0$, in the usual sense. However, when we sat $S$ is `far larger than` $T$, written as $S \gg T$, we are comparing the *magnitudes* of them, or equivalently the absolute value of them; i.e. $S \gg T$ iff $\text{mag}(S) \gg \text{mag}(T)$. It does not matter whether the sign of the dominance (the largest term) is positive or negative. 
+
+We say $S$ is `comparable` to $T$, written as $S \approx T$ (other symbols are possible), if $S$ and $T$ have the same magnitude. Further, if they have the same dominance then we say $S$ is `asymptotic` to $T$, written as $S \sim T$. 
+
+**Examples.**
+
+$$
+\begin{align*}
+-3e^{ x }+4x^{2} &\gg  x^{9}\\
+-3e^{ x }+4x^{2} &\approx 7e^{ x }+x^{9} \\
+-3e^{ x }+4x^{2} &\sim -3 e^{ x }+x^{9}.
+\end{align*}
+$$
+
+#### The Two Canonical Decompositions
+
