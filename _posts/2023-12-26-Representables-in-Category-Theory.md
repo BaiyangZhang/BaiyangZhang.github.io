@@ -116,12 +116,7 @@ induces a natural transformation
 $$
 H^{f} : H^{A} \to H^{A'}.
 $$
-
-A diagram of this can be found [here](https://q.uiver.app/#q=WzAsMixbMCwwLCJcXG1hdGhjYWx7QX0iXSxbMywwLCJcXHRleHR7U2V0fSJdLFswLDEsIkheQSIsMCx7ImN1cnZlIjotNH1dLFswLDEsIkhee0EnfSIsMix7ImN1cnZlIjo0fV0sWzIsMywiSF5mIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==).
-
-<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMixbMCwwLCJcXG1hdGhjYWx7QX0iXSxbMywwLCJcXHRleHR7U2V0fSJdLFswLDEsIkheQSIsMCx7ImN1cnZlIjotNH1dLFswLDEsIkhee0EnfSIsMix7ImN1cnZlIjo0fV0sWzIsMywiSF5mIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==&embed" width="560" height="176" style="border-radius: 8px; border: none;"></iframe>
-
-
+An interactive diagram of this can be found [here](https://q.uiver.app/#q=WzAsMixbMCwwLCJcXG1hdGhjYWx7QX0iXSxbMywwLCJcXHRleHR7U2V0fSJdLFswLDEsIkheQSIsMCx7ImN1cnZlIjotNH1dLFswLDEsIkhee0EnfSIsMix7ImN1cnZlIjo0fV0sWzIsMywiSF5mIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==).
 
 Recall that a natural transformation $\alpha$ between two functors $F$ and $G$, both from category $\mathcal{C}$ to category $\mathcal{D}$, is made up of components. Each component is a morphism in category $\mathcal{D}$.
 
@@ -152,7 +147,9 @@ H^{-}: \mathcal{A}^{\text{op}} \to [\mathcal{A},\text{Set}]
 $$
 is defined on objects $A$ by $H^{-}(A)=H^{A}$, and on maps $f$ by $H^{-}(f)=H^{f}$.
 
-A lot of explain regarding the notations is in order. Apparently the dash $-$ in $H^{-}$ is a placeholder, to be filled by whatever it acts on, no matter if it is an object or an arrow. $\mathcal{A}^{\text{op}}$ means the 
+A lot of explain regarding the notations is in order. Apparently the dash $-$ in $H^{-}$ is a placeholder, to be filled by whatever it acts on, no matter if it is an object or an arrow. $\mathcal{A}^{\text{op}}$ is the opposite, or dual category of $\mathcal{A}$, with same objects but reversed arrows (all of them). $\mathcal{A}^{\text{op}}$ is a category, $[\mathcal{A},\text{Set}]$ is another category ( of functors from $\mathcal{A}$ to $\text{Set}$), thus $H^{-}$ is a functor. $H^{-}$ of $A$ is $H^{A}$, which is a set-valued functor on $\mathcal{A}$, hence $H^{A}$ is an object of $[\mathcal{A},\text{Set}]$. 
 
+
+ 
 
 
