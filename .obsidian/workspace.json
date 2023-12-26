@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "093c53a1e3343e37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-12-26-Renormalization-method-in-PDF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "551eb9f26372290a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c64d85669ef2832c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2023-12-26-Renormalization-method-in-PDF.md",
                 "mode": "source",
                 "source": false
               }
@@ -54,9 +30,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e9ff120db3612810",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -131,7 +115,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-23-Representables-in-Category-Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +131,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-23-Representables-in-Category-Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,9 +152,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_posts/2023-12-23-Representables-in-Category-Theory.md"
-              }
+              "state": {}
             }
           },
           {
@@ -212,10 +192,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe4355d02a621ea2",
+  "active": "e9ff120db3612810",
   "lastOpenFiles": [
-    "_drafts/2023-12-21-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-23-Representables-in-Category-Theory.md",
+    "_drafts/2023-12-21-Note-on-The-Moral-Foundations-of-Politics.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_drafts/2023-05-07-soliton-particle-duality.md",
@@ -232,14 +215,11 @@
     "_posts/2023-06-08-Note-on-Kink-Antikink-Scattering.md",
     "_posts/2023-06-13-Connections-in-a-Vector-Bundle.md",
     "_posts/2023-07-17-历史笔记若干.md",
-    "_posts/2023-12-23-Representables-in-Category-Theory.md",
     "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
     "_drafts/2022-8-29-Excerpts-from-1984-by-Orwell.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",

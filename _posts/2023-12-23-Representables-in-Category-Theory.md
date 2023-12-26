@@ -127,7 +127,7 @@ $$
 $$
 This means that there is essential only one way to go from $F(X)$ to $G(Y)$. This property must hold for all objects and morphisms in category $C$, making the transformation "natural" in the sense that it works consistently across the entire category.
 
-Coming back to 
+Coming back to $H^{f}$. 
 
 
 
