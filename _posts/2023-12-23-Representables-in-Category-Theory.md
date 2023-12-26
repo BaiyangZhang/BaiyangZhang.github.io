@@ -38,7 +38,7 @@ $$
 H^{A}(A') := \mathcal{A}(A \to A') \text{ regarded as a set}.
 $$
 
-An easy way to remember the direction of arrow (at least for me) is to think of $A$ in $H^{A}$ standing up high, since it is a superscript, it is standing "upstairs", as a result $A$ has a pretty good view, allowing it to "see" other objects (say, $B$) in $\mathcal{A}$, and the arrow $A \to B$ represents that $A$ is watching $B$. With this analogy, in novel *1984* by Orwell, the big brother is watching everyone in the nation, making him the *initial object.* Similarly, given $A \in \mathcal{A}$, when we need to talk about arrow coming from other objects *into* $A$ later, we will define the functor $H_ {A}$ where $H_ {A}(B)$ is the set of arrows from $B$ to $A$ this time, for $A$ sits at the bottom and everyone can see $A$. 
+An easy way to remember the direction of arrow (at least for me) is to think of $A$ in $H^{A}$ standing up high, since it is a superscript, it is standing "upstairs", as a result $A$ has a pretty good view, allowing it to "see" other objects (say, $B$) in $\mathcal{A}$, and the arrow $A \to B$ represents that $A$ is watching $B$. With this analogy, in novel *1984* by Orwell, the big brother is watching everyone in the nation, making him the *initial object.* Similarly, given $A \in \mathcal{A}$, when we need to talk about arrow coming from other objects *into* $A$ later, we will define the functor $H_  {A}$ where $H_ {A}(B)$ is the set of arrows from $B$ to $A$ this time, for $A$ sits at the bottom and everyone can see $A$. 
 
 For a map $g: A' \to A''$ in $\mathcal{A}$,  $H^{A}$  maps $g$ to another map from $H^{A}(A')$ to $H^{A}(A'')$ by composition, that is  
 $$
@@ -114,9 +114,20 @@ f: A' \to A,\quad  A,A'\in \mathcal{A}
 $$
 induces a natural transformation
 $$
-H^{f} : H^{A} \to H^{A'}
+H^{f} : H^{A} \to H^{A'}.
 $$
 
+Recall that a natural transformation $\alpha$ between two functors $F$ and $G$, both from category $\mathcal{C}$ to category $\mathcal{D}$, is made up of components. Each component is a morphism in category $\mathcal{D}$.
+
+For each object $X$ in category $\mathcal{C}$, the `component` of the natural transformation $\alpha$ at $X$ is a morphism in category $\mathcal{D}$:
+$$ \alpha_ X : F(X) \rightarrow G(X) $$
+These components must satisfy a naturality condition, which states that for every morphism $f: X \rightarrow Y$ in category $\mathcal{C}$, the following diagram commutes:
+$$
+\begin{array}{ccc} F(X) & \xrightarrow{F(f)} & F(Y) \\ \downarrow{\alpha_X} & & \downarrow{\alpha_Y} \\ G(X) & \xrightarrow{G(f)} & G(Y) \\ \end{array}
+$$
+This means that there is essential only one way to go from $F(X)$ to $G(Y)$. This property must hold for all objects and morphisms in category $C$, making the transformation "natural" in the sense that it works consistently across the entire category.
+
+Coming back to 
 
 
 

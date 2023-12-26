@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-12-23-Representables-in-Category-Theory.md",
+                "file": "_posts/2023-12-23-Representables-in-Category-Theory.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+                "file": "_posts/2023-12-23-Representables-in-Category-Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+                "file": "_posts/2023-12-23-Representables-in-Category-Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md"
+                "file": "_posts/2023-12-23-Representables-in-Category-Theory.md"
               }
             }
           },
@@ -212,34 +212,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "551eb9f26372290a",
+  "active": "fe4355d02a621ea2",
   "lastOpenFiles": [
-    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
+    "_drafts/2023-12-21-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/DiscussionLetters/2022-09-22-HuiDiscussion1.md",
+    "_posts/2023-3-12-The-Geometry-of-Surfaces-in-R3.md",
+    "_posts/2023-3-21-Montesquieu.md",
+    "_posts/2023-3-23-Synges-Theorem.md",
+    "_posts/2023-04-29-Weihai-Travel-Plan.md",
+    "_posts/2023-05-12-Lie-Groups.md",
+    "_posts/2023-5-18-(Vector)-Fibre-Bundles.md",
+    "_posts/2023-05-28-Symmetry-groupoid.md",
+    "_posts/2023-06-04-Basic-Category-Theory.md",
+    "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
+    "_posts/2023-06-08-Note-on-Kink-Antikink-Scattering.md",
+    "_posts/2023-06-13-Connections-in-a-Vector-Bundle.md",
+    "_posts/2023-07-17-历史笔记若干.md",
+    "_posts/2023-12-23-Representables-in-Category-Theory.md",
+    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
     "_drafts/2022-8-29-Excerpts-from-1984-by-Orwell.md",
-    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
-    "_drafts/paperDrafts/2023-07-13-Nonlinear-quantization- of-the-Skyrme-model.md",
-    "_drafts/2023-05-07-soliton-particle-duality.md",
-    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
-    "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_drafts/2023-12-21-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_drafts/2023-12-23-Representables-in-Category-Theory.md",
-    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
-    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
-    "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
-    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
-    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-06-15-Complex-Vector-Space.md",
-    "_posts/2023-06-16-Complex-Line-Bundle.md",
-    "_posts/2023-06-17-The-Workers-and-the-Fatherland.md",
-    "_posts/2023-06-16-Representables-in-Category-Theory.md",
-    "_posts/2023-07-18-Mikhail-Bakunin.md",
-    "_posts/2023-07-20-Gauss-Bonnet-and-Index-Theorem.md",
-    "_posts/2023-07-28-Topological-Quantization.md",
-    "_posts/2023-08-23-Connection-in-Principal-Bundles.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
