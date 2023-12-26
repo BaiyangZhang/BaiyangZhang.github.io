@@ -163,5 +163,13 @@ John Locke's `voluntarist theology` reflects his views on the nature of God and 
 
 While Locke is a proponent of reason and believes that human beings can discover moral truths through rational inquiry, he also upholds the importance of divine revelation. In his voluntarist theology, revelation plays a crucial role in imparting knowledge of God's will, which might not be entirely accessible through reason alone. Locke's voluntarism is tied to his rejection of innate ideas, a concept he famously critiques in his "Essay Concerning Human Understanding." He argues against the notion that *moral principles are innately known*, instead positing that our understanding of moral laws comes from experience, reason, and revelation. Locke's voluntarist approach suggests that moral obligations are ultimately grounded in obedience to God's will. This perspective can lead to a form of ethical subjectivism, where moral truths depend on the decrees of a divine authority. 
 
+- - -
+
+>In Locke’s formulation, natural law dictates that man is subject to divine imperatives to live in certain ways, but, within the limits set by the law of nature, men can act in a godlike fashion. Man as maker has a maker’s knowledge of his intentional actions, and a natural right to dominion over man’s products. ... Provided we do not violate natural law, we stand in the same relation to the objects we create as God stands to us; we own them just as he owns us.
+
+#### Tensions Between Science and Individual Rights
+
+The two enlightenment values, the preoccupation of science and the commitment to individual rights, seem to be in contradiction with each other. Science is deterministic, 
+
 
 

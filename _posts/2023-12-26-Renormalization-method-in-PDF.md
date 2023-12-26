@@ -1,23 +1,18 @@
 ---
----
 layout:     post   				    # 使用的布局（不需要改）
 title:      	Renormalization method in PDF	# 标题 
 subtitle:  
-date:       2022-10-30 				# 时间
+date:       2023-12-26 				# 时间
 author:     Baiyang Zhang 						# 作者
 header-img: img/mathArt15.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
     - Math
     - Renormalization 
-    - Notes ^64e65f
 ---
-
-### abstract
+### Abstract
 
 The application of renormalization group method in solving the differential equation in the momentum space, and the error estimation of the solution with finite sized lattice size.
-
-- - -
 
 ### Introduction
 
