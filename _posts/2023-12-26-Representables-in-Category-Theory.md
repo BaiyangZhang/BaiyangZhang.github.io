@@ -117,13 +117,17 @@ $$
 H^{f} : H^{A} \to H^{A'}.
 $$
 
+A diagram of this can be found [here](https://q.uiver.app/#q=WzAsMixbMCwwLCJcXG1hdGhjYWx7QX0iXSxbMywwLCJcXHRleHR7U2V0fSJdLFswLDEsIkheQSIsMCx7ImN1cnZlIjotNH1dLFswLDEsIkhee0EnfSIsMix7ImN1cnZlIjo0fV0sWzIsMywiSF5mIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==).
+
 Recall that a natural transformation $\alpha$ between two functors $F$ and $G$, both from category $\mathcal{C}$ to category $\mathcal{D}$, is made up of components. Each component is a morphism in category $\mathcal{D}$.
 
 For each object $X$ in category $\mathcal{C}$, the `component` of the natural transformation $\alpha$ at $X$ is a morphism in category $\mathcal{D}$:
 $$ \alpha_ X : F(X) \rightarrow G(X) $$
 These components must satisfy a naturality condition, which states that for every morphism $f: X \rightarrow Y$ in category $\mathcal{C}$, the following diagram commutes:
 $$
-\begin{array}{ccc} F(X) & \xrightarrow{F(f)} & F(Y) \\ \downarrow{\alpha_X} & & \downarrow{\alpha_Y} \\ G(X) & \xrightarrow{G(f)} & G(Y) \\ \end{array}
+\begin{CD} 
+F(X) @>F(f)>> F(Y) \\ @V\alpha_XVV @VV\alpha_YV \\ G(X) @>G(f)>> G(Y) 
+\end{CD}
 $$
 This means that there is essential only one way to go from $F(X)$ to $G(Y)$. This property must hold for all objects and morphisms in category $C$, making the transformation "natural" in the sense that it works consistently across the entire category.
 
@@ -146,21 +150,5 @@ is defined on objects $A$ by $H^{-}(A)=H^{A}$, and on maps $f$ by $H^{-}(f)=H^{f
 
 A lot of explain regarding the notations is in order. Apparently the dash $-$ in $H^{-}$ is a placeholder, to be filled by whatever it acts on, no matter if it is an object or an arrow. $\mathcal{A}^{\text{op}}$ means the 
 
-```tikz 
-\usepackage{tikz-cd}
-\begin{document} 
-\begin{tikzcd} 
- 
-\end{tikzcd} 
-\end{document}
-```
 
-```tikz 
-\usepackage{tikz-cd} 
-\begin{document} 
-\begin{tikzcd}    
-T     \arrow[drr, bend left, "x"]     \arrow[ddr, bend right, "y"]     \arrow[dr, dotted, "{(x,y)}" description] & & \\     K & X \times_Z Y \arrow[r, "p"] \arrow[d, "q"]     & X \arrow[d, "f"] \\     & Y \arrow[r, "g"]     & Z \end{tikzcd} \quad \quad \begin{tikzcd}[row sep=2.5em] A' \arrow[rr,"f'"] \arrow[dr,swap,"a"] \arrow[dd,swap,"g'"] &&   B' \arrow[dd,swap,"h'" near start] \arrow[dr,"b"] \\ & A \arrow[rr,crossing over,"f" near start] &&   B \arrow[dd,"h"] \\ C' \arrow[rr,"k'" near end] \arrow[dr,swap,"c"] && D' \arrow[dr,swap,"d"] \\ & C \arrow[rr,"k"] \arrow[uu,<-,crossing over,"g" near end]&& D 
-\end{tikzcd} 
-\end{document} 
-```
 
