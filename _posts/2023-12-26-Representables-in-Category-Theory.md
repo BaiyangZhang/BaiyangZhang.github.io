@@ -119,6 +119,10 @@ $$
 
 A diagram of this can be found [here](https://q.uiver.app/#q=WzAsMixbMCwwLCJcXG1hdGhjYWx7QX0iXSxbMywwLCJcXHRleHR7U2V0fSJdLFswLDEsIkheQSIsMCx7ImN1cnZlIjotNH1dLFswLDEsIkhee0EnfSIsMix7ImN1cnZlIjo0fV0sWzIsMywiSF5mIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==).
 
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMixbMCwwLCJcXG1hdGhjYWx7QX0iXSxbMywwLCJcXHRleHR7U2V0fSJdLFswLDEsIkheQSIsMCx7ImN1cnZlIjotNH1dLFswLDEsIkhee0EnfSIsMix7ImN1cnZlIjo0fV0sWzIsMywiSF5mIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==&embed" width="560" height="176" style="border-radius: 8px; border: none;"></iframe>
+
+
+
 Recall that a natural transformation $\alpha$ between two functors $F$ and $G$, both from category $\mathcal{C}$ to category $\mathcal{D}$, is made up of components. Each component is a morphism in category $\mathcal{D}$.
 
 For each object $X$ in category $\mathcal{C}$, the `component` of the natural transformation $\alpha$ at $X$ is a morphism in category $\mathcal{D}$:
