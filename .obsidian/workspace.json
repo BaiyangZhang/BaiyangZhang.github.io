@@ -35,12 +35,15 @@
             "id": "e9ff120db3612810",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,6 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2023-12-26-Renormalization-method-in-PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,6 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2023-12-26-Renormalization-method-in-PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +157,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2023-12-26-Renormalization-method-in-PDF.md"
+              }
             }
           },
           {
@@ -192,13 +199,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e9ff120db3612810",
+  "active": "c64d85669ef2832c",
   "lastOpenFiles": [
+    "_posts/2023-12-23-Representables-in-Category-Theory.md",
+    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-23-Representables-in-Category-Theory.md",
-    "_drafts/2023-12-21-Note-on-The-Moral-Foundations-of-Politics.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_drafts/2023-05-07-soliton-particle-duality.md",
@@ -219,7 +227,6 @@
     "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
-    "_drafts/2022-8-29-Excerpts-from-1984-by-Orwell.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",

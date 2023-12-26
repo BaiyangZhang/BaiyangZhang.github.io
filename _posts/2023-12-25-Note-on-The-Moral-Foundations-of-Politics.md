@@ -2,14 +2,14 @@
 layout: post
 title: "Note on The Moral\rFoundations\rof Politics"
 subtitle: by Ian Shapiro
-date: 2023-12-21
+date: 2023-12-25
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
 ---
 
-## Enlightenment Politics
+# Enlightenment Politics
 
 >f there is a single overarching idea shared in common by adherents to different strands of Enlightenment thinking, it is faith in the power of human reason to understand the true nature of our circumstances and ourselves. Human improvement is measured by the yardstick of **individual rights** that embody, and protect, **human freedom**.
 
@@ -23,7 +23,7 @@ Such ideas, as necessary conditions for the development of natural science (not 
 
 >During the seventeenth and eighteenth centuries, when the hallmark of scientific knowledge was indubitable certainty, ethics, political philosophy, and the human sciences were regarded as superior to the natural sciences. This view seems strange from the vantage point of the twenty-first century, when fields like physics, chemistry, astronomy, geology, and biology have all advanced with astonishing speed to discoveries that would have been unimaginable in the eighteenth century.
 
-#### The Workmanship Ideal of Knowledge
+## The Workmanship Ideal of Knowledge
 
 >The first distinctive feature of the early Enlightenment concerns the range of `a priori knowledge`, the kind of knowledge that either follows from definitions or is otherwise deduced from covering principals. This is the kind of knowledge Descartes had in mind when he formulated his cogito and that Kant located in the realm of ‘‘analytic judgments.’
 
@@ -92,7 +92,7 @@ Ectypes, on the other hand, are derivative or secondary ideas. They are the impe
 
 In summary, Locke's distinction between archetype and ectype ideas can be understood as a differentiation between the idealized, abstract concepts we hold in our minds as standards (archetypes) and the more practical, general ideas we form based on our sensory experience of the world (ectypes). Archetypes are about the essence or ideal form of things, while ectypes are about the general, often imperfect, concepts we derive from actual experiences.
 
-#### The Preoccupation with Certainty
+## The Preoccupation with Certainty
 
 >The post-Humean Enlightenment tradition has been marked by a fallibilist view of knowledge. All knowledge claims are fallible on this account, and science advances not by making knowledge more certain but by producing more knowledge. Recognizing the corrigibility of all knowledge claims and the possibility that one might always be wrong exemplifies the modern scientific attitude. As Karl Popper (1902-1994) noted, the most that we can say, when hypotheses survive empirical tests, is that they have not been falsified so that we can accept them provisionally.
 
@@ -133,7 +133,7 @@ Regarding ethics, Ayer points out that many theorists in ethics tend to treat st
 Ayer's stance is closely associated with `emotivism`, a meta-ethical view that suggests *ethical statements do not assert propositions but express emotional attitudes*. According to emotivism, saying "Stealing is wrong" is akin to expressing one's disapproval of stealing, rather than making an objective claim about the nature of stealing.
 
 
-#### The Centrality of Individual Rights
+## The Centrality of Individual Rights
 
 >In addition to faith in science, the Enlightenment’s central focus on individual rights differentiates its political philosophy from the ancient and medieval commitments to order and hierarchy. This focus brings the freedom of the individual to the center of arguments about politics. This move was signaled in the natural law tradition by a shift in emphasis from the logic of law to the idea of natural right.
 
@@ -167,9 +167,20 @@ While Locke is a proponent of reason and believes that human beings can discover
 
 >In Locke’s formulation, natural law dictates that man is subject to divine imperatives to live in certain ways, but, within the limits set by the law of nature, men can act in a godlike fashion. Man as maker has a maker’s knowledge of his intentional actions, and a natural right to dominion over man’s products. ... Provided we do not violate natural law, we stand in the same relation to the objects we create as God stands to us; we own them just as he owns us.
 
-#### Tensions Between Science and Individual Rights
+## Tensions Between Science and Individual Rights
 
-The two enlightenment values, the preoccupation of science and the commitment to individual rights, seem to be in contradiction with each other. Science is deterministic, 
+The two enlightenment values, the preoccupation of science and the commitment to individual rights, seem to be in contradiction with each other. Science is deterministic, concerned with discovering the laws that govern the universe, with human being included. This has potential for conflict with an ethic that emphasizes individual freedom, for now the freedom has to be subjugated to the laws (of nature, of God). 
+
+In Locke's theory, the freedom to comprehend natural law by one’s own lights supplied the basis of Locke’s right to resist, which could be invoked against the sovereign. No one is in a higher position to monopolize the right to interpret the scripture. 
+
+>We will see this tension surface repeatedly in the utilitarian, Marxist, and social contract traditions, without ever being fully resolved.
 
 
+# Classical Utilitarianism
+
+Jeremy Bentham famously wrote that
+
+>Nature has placed mankind under the governance of two sovereign masters, *pain* and *pleasure*. It is for them alone to point out what we ought to do, as well as to determine what we shall do. On the one hand the standard of right and wrong, on the other the chain of causes and effects, are fastened to their throne. They govern us in all we do, in all we say, in all we think: every effort we can make to throw off our subjection, will serve but to demonstrate and confirm it. In words a man may pretend to abjure their empire: but in reality he will remain subject to it all the while. The principle of utility recognizes this subjection, and assumes it for the foundation of that system, the object of which is to rear the fabric of felicity by the hands of reason and law. Systems which attempt to question it, deal in sounds instead of senses, in caprice instead of reason, in darkness instead of light.
+
+The `principle of utility`, as Bentham explains, ‘‘approves or disapproves of every action whatsoever, according to the tendency which it appears to have to augment or diminish the happiness of the party whose interest is in question: or, what is the same thing in other words, to promote or to oppose that happiness.’’ 
 

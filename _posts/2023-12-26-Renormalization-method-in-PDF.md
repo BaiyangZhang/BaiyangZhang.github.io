@@ -132,7 +132,7 @@ $$
 
 The conclusion is that at each $t$, the error $[g^{(\infty)}-g^{(\infty)}]^2 < e^{-\Lambda^2/4\lambda}$.
 
-![region](img/region.png)
+![region](/img/region.png)
 
 Out of a more differential point of view, let us consider the change of the function as we vary the cutoff $\Lambda$. We can calculate $\boxed{\frac{d}{d\Lambda}  g^{(\Lambda)}(t)}$. Note that sometimes we will neglect the independent variable $t$ to save some space.
 
