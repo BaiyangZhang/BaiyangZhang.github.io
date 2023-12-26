@@ -2,7 +2,7 @@
 layout: post
 title: Representables in Category Theory
 subtitle: What do objects see?
-date: 2023-12-23
+date: 2023-12-26
 author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
@@ -127,7 +127,21 @@ $$
 $$
 This means that there is essential only one way to go from $F(X)$ to $G(Y)$. This property must hold for all objects and morphisms in category $C$, making the transformation "natural" in the sense that it works consistently across the entire category.
 
-Coming back to $H^{f}$. 
+Coming back to $H^{f}$. Let $B\in \mathcal{A}$, what would the component $H^{f}_ {B}$ be? Recall that $f$ maps from $A'$ to $A$, by construction $H^{f}$ maps in the opposite direction, it is the function
+$$
+H^{A}(B) \equiv \mathcal{A}(A,B) \to H^{A'}(B)\equiv \mathcal{A}(A',B), 
+$$
+in terms of the elements, let $p \in \mathcal{A}(A,B)$ we have
+$$
+H^{f}: p \mapsto p\,\circ\,f.
+$$
 
+Notice that, each $H^{A}$ is *covariant* (meaning they preserve the direction of the arrows), however they come together to form a *contravariant* thing! What exactly is this thing then? To understand it, the following definition is important:
+
+Let $\mathcal{A}$ be a locally small category, the functor
+$$
+H^{-}: \mathcal{A}^{\text{op}} \to [\mathcal{A},\text{Set}]
+$$
+is defined on object 
 
 
