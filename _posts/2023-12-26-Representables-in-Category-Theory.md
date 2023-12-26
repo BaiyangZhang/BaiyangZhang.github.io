@@ -149,6 +149,10 @@ is defined on objects $A$ by $H^{-}(A)=H^{A}$, and on maps $f$ by $H^{-}(f)=H^{f
 
 A lot of explain regarding the notations is in order. Apparently the dash $-$ in $H^{-}$ is a placeholder, to be filled by whatever it acts on, no matter if it is an object or an arrow. $\mathcal{A}^{\text{op}}$ is the opposite, or dual category of $\mathcal{A}$, with same objects but reversed arrows (all of them). $\mathcal{A}^{\text{op}}$ is a category, $[\mathcal{A},\text{Set}]$ is another category ( of functors from $\mathcal{A}$ to $\text{Set}$), thus $H^{-}$ is a functor. $H^{-}$ of $A$ is $H^{A}$, which is a set-valued functor on $\mathcal{A}$, hence $H^{A}$ is an object of $[\mathcal{A},\text{Set}]$. 
 
+All of the definitions presented so far in this chapter can be dualized. At the formal level, this is trivial: just reverse all the arrows! But in our analogy, after dualize it, we are no longer asking what objects see, but *how they are seen*. 
+
+
+
 
  
 
