@@ -152,5 +152,4 @@ In the absence of the perturbation, the eigenstates and eigenvalues of $H_0$ are
 
 ### Hamiltonian truncation with UV divergence
 
-
-
+In the paper "Exploring Hamiltonian Truncation in $d = 2 + 1$", the $\phi^{2}$ theory is analysed using different methods, including analytical, perturbative, and HT solutions, to establish the reliability of the HT method. 

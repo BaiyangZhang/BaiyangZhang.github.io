@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "15d0ede086d3cf92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -107,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-26-Representables-in-Category-Theory.md",
+                "file": "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-26-Representables-in-Category-Theory.md",
+                "file": "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-26-Representables-in-Category-Theory.md"
+                "file": "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md"
               }
             }
           },
@@ -157,7 +169,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -188,8 +202,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe4355d02a621ea2",
+  "active": "15d0ede086d3cf92",
   "lastOpenFiles": [
+    "_posts/2023-12-20-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
     "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "_posts/2023-12-26-Representables-in-Category-Theory.md",
@@ -215,7 +230,6 @@
     "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
-    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
