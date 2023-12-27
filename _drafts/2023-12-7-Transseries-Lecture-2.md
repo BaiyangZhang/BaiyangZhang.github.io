@@ -72,7 +72,7 @@ $$
 $$
 there exist a maximal element in ${\frak A}$. To be specific, this should be called "converse well ordered" since well order usually implies that every non-empty subset has a *smallest* element under the given order. But we will continue using "well order" to save some breath. 
 
-Now, consider non-zero terms in $T$. Let's pick out the larges monomial ${\frak g}_ {\text{max}}$, then it is called the `magnitude`of $T$, $\text{mag}(T)={\frak g}_ {\text{max}}$. The corresponding coefficient is called the `leading coefficient`. The coefficient and the monomial put together is called the `dominance` of $T$, $\text{dom}(T)=a_ {{\frak g}} \cdot {\frak g}$ where ${\frak g}$ is ${\frak g}_ {\text{max}}$. We say $T> 0$ if $a_ {{\frak g}}> 0$ and $T<0$ if $a_ {{\frak g}} < 0$. We say $T$ is small if all its monomials ${\frak g} \in \text{supp}(T)$ are small or zero, equivalently if the magnitude of $T$ is small or zero. We say $T$ is large if the magnitude of $T$ is large, other terms in $T$ could be small. However, if all the monomials in $T$ are large then $T$ is said to be purely large. A pure large Hahn series does not have a single small monomial. 
+Now, consider non-zero terms in $T$. Let's pick out the larges monomial ${\frak g}_ {\text{max}}$, then it is called the `magnitude`of $T$, $\text{mag}(T)={\frak g}_ {\text{max}}$. The corresponding coefficient is called the `leading coefficient`. The coefficient and the monomial put together is called the `dominance` of $T$, $\text{dom}(T)=a_ {{\frak g}} \cdot {\frak g}$ where ${\frak g}$ is ${\frak g}_ {\text{max}}$. We say $T> 0$ if $a_ {{\frak g}}> 0$ and $T<0$ if $a_ {{\frak g}} < 0$. We say $T$ is small if all its monomials ${\frak g} \in \text{supp}(T)$ are small or zero, equivalently $T$ is small if the magnitude of $T$ is small or zero. We say $T$ is large if the magnitude of $T$ is large, other terms in $T$ could be small. However, if all the monomials in $T$ are large then $T$ is said to be purely large. A pure large Hahn series does not have a single small monomial. 
 
 Note that here our usage of terminologies might be different from others. 
 
@@ -105,4 +105,25 @@ $$
 $$
 
 #### The Two Canonical Decompositions
+
+Next we introduce so-called `canonical decompostion`, which refers to a specific way of breaking a generalized power series into simpler parts. 
+
+Transseries are formal objects that generalize power series to include not only powers of a variable (like $x, x^2, x^3, \ldots$) but also exponentials (like $e^x, e^{-x}$), logarithms (like $\log(x)$), and compositions of these functions. The canonical decomposition of a transseries involves splitting it into distinct parts that reflect its different asymptotic behaviors. 
+
+The purpose of this decomposition is to simplify the analysis of the transseries by studying each of its simpler components separately. This is particularly useful in asymptotic analysis, where the behavior of a function as it approaches a certain limit (like $x \to \infty$, as we assumed throughout this note) is of interest. 
+
+`Canonical Additive Decomposition.` Every Hahn series $A$ can be decomposed *uniquely* into a purely large part $L$, a constant $c$ and a small part $S$, 
+$$
+A = L + c + S.
+$$
+
+Recall that "large" and "small" are in comparison to $1$. 
+
+The multiplication between Hahn series follow the same rules as that between regular power series. As a result it also satisfies the convolution rule, let $A = \sum a_ {{\frak g}}{\frak g}$ and $B=\sum b_ {{\frak g}}{\frak g}$, then
+$$
+(AB)[{\frak g}] = \sum_ {{\frak mn}={\frak g}}a_ {{\frak m}}b_ {{\frak n}}.
+$$
+
+Hans Hahn had shown that (1907) the set of all $T\in \mathbb{R}^{{\frak M}}$ is an associative, commutative algebra over $\mathbb{R}$ with only one condition: the support is well-ordered. Actually, ever better, it is a field! 
+
 
