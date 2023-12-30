@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2f50a51236965cf9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md"
+                "file": "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md"
               }
             }
           },
@@ -177,8 +190,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c64d85669ef2832c",
+  "active": "2f50a51236965cf9",
   "lastOpenFiles": [
+    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "_posts/2023-12-6-Transseries-Lecture-1.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
@@ -187,7 +202,6 @@
     "_posts/2023-12-26-Representables-in-Category-Theory.md",
     "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
     "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
-    "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_drafts/2023-05-07-soliton-particle-duality.md",
@@ -204,7 +218,6 @@
     "_posts/2023-06-08-Note-on-Kink-Antikink-Scattering.md",
     "_posts/2023-06-13-Connections-in-a-Vector-Bundle.md",
     "_posts/2023-07-17-历史笔记若干.md",
-    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
