@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7a4c9b8115676424",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Trash.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "efcb5e9f34c37f65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -77,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 383.5,
-    "collapsed": true
+    "width": 383.5
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -177,8 +201,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c64d85669ef2832c",
+  "active": "efcb5e9f34c37f65",
   "lastOpenFiles": [
+    "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "Trash.md",
     "_posts/2023-12-6-Transseries-Lecture-1.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
@@ -187,7 +213,6 @@
     "_posts/2023-12-26-Representables-in-Category-Theory.md",
     "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
     "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
-    "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_drafts/2023-05-07-soliton-particle-duality.md",
@@ -204,7 +229,6 @@
     "_posts/2023-06-08-Note-on-Kink-Antikink-Scattering.md",
     "_posts/2023-06-13-Connections-in-a-Vector-Bundle.md",
     "_posts/2023-07-17-历史笔记若干.md",
-    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
