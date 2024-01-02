@@ -17,6 +17,6 @@ Also I like to edit Latex file on some local editor, such as WinEDT. The best on
 
 ### Obsidian + Markdown
 
-Obsidian can be installed online. Make sure you have installed the **Latexsuit** plugin. $a=c_ {1}+c_ {2}$. 
+Obsidian can be installed online. Make sure you have installed the **Latexsuit** plugin. There you can define your own snippet. 
 
 
