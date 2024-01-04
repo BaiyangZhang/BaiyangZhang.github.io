@@ -30,12 +30,75 @@ $$
 H = \int_ {M} dx^{2}\, \mathcal{H}(\phi,\pi),\quad  \mathcal{H}=\frac{1}{2}\pi^{2}(x)+\frac{1}{2} (\partial_ i \phi)^{2} + \frac{1}{\lambda}V(\sqrt{ \lambda }\phi(x)) 
 $$
 
-**Dimensional analysis.** In Lagrangian formalism, $[S]=\hbar$ where $S$ is the action, and $S = \int d^d x \, \mathcal{L}$, where $\mathcal{L}$ is the Lagrangian (density) and $d$ is the space-time dimension. Note that we are working with a partly "natural" units, where $c=1$ but $\hbar \neq 1$. Since $c=1$ we still have $[x] = [t]$, but no-longer do we have $[t]=-[E]$ since this is a result of $[\hbar]=ET=1$. If we want to write the dimension of everything in terms of $E$ and $\hbar$, we can define
+**Dimensional analysis.** In Lagrangian formalism, $[S]=[\hbar]$ where $S$ is the action, and $S = \int d^d x \, \mathcal{L}$, where $\mathcal{L}$ is the Lagrangian (density) and $d$ is the space-time dimension. Note that right now we are working with a partially "natural" units, where $c=1$ but $\hbar \neq 1$. Since $c=1$ we still have $[x] = [t]$, namely $L=T$ ($L$ is length and $T$ is time), but no longer do we have $T=E^{-1}$ since this is a result of $[\hbar]=ET=1$ (recall that $\hbar \omega=E$, meaning $[\hbar \omega]=E$, and $\omega$ is the frequency with dimension $1 / T$ ). 
+
+
+
+**Dimension and measurement**
+
+If two things are of the same dimension, for example, say
 $$
-[x] = [t] = T = \frac{\hbar}{E}.
+[A] \sim [a] = L
 $$
-## A digression to $\hbar$-expansion
+where $\sim$ means having the same dimension. Then we can use one of them as the unit to measure the other, say, use $a$ as the "ruler" to measure $A$, the result $\widetilde{A} :=A / a$ is a dimensionless number. 
+
+Suppose $[\phi]=[\hbar]^{1/2}$, another way to say the same ting is $\phi \sim \sqrt{ \hbar }$, note that the tilde does not imply any relation between the *values* of $\phi$ and $\sqrt{ \hbar }$, it only means that they have the same dimension. The point is, since they have the same dimension, we can use one of them to measure the other, for example we can define
+$$
+\tilde{\phi} = \phi / \sqrt{ \hbar }
+$$
+which is a dimensionless number. Since $\hbar$ scales the "quantumness", the more classical the world is, the smaller $\hbar$ (and $\sqrt{ \hbar }$), hence the bigger the numeric value of $\tilde{\phi}$. 
+
+- - -
+
+In the quasi-natural units, I'd like to think there are two fundamental "rulers"
+## Digression to $\hbar$-expansion
 
 To appreciate the importance of $\hbar$, just recall that in canonical quantization $[x,p]=i\hbar$, $\hbar$ enters explicitly in the commutation relation, providing the fundamental basis of quantum theory. This is also true in the case of quantum field theory. Furthermore, at each order of an expansion in $\hbar$, the physical symmetries (Lorentz invariance, $U(1)$ symmetry, etc.) must be satisfied, otherwise there will be some special value of $\hbar$ only at which the symmetries are preserved, which is just strange. 
 
-In the unit where $c=1$, the Planck's constant $\hbar$ has the unit of action, or rather the action has the unit of $[\hbar]=ET$, where $E$ is the energy scale and $T$ the time. It turns out that there are more than one way to assign $\hbar$-dependence for quantities such as the mass $m$, the coupling $g,\lambda$ etc. A criterion for the "right" choice is that, at $\hbar\to 0$ limit, the quantum theory agrees with the classical theory. As an example, take a look at the harmonic oscillator, 
+In the unit where $c=1$, the Planck's constant $\hbar$ has the unit of action, or rather the action has the unit of $[\hbar]=ET$, where $E$ is the energy scale and $T$ the time. It turns out that there are more than one way to assign $\hbar$-dependence for quantities such as the mass $m$, the coupling $g,\lambda$ etc. A criterion for the "right" choice is that, at $\hbar\to 0$ limit, the quantum theory agrees with the classical theory. As an example, Stanley Brodsky and Paul Hoyer in their [paper](https://arxiv.org/pdf/1009.2313.pdf) used the quantum mechanical harmonic oscillator as an example in Eq.(1). The gist is that, you can rescale $x$ to $x / \sqrt{ \hbar }$, then the propagator is formally independent of $\hbar$. However, this will change how we view distance, in the $\hbar\to 0$ limit, for a fixed distance $L$, the "length" measure will increase as $1 / \sqrt{ \hbar }$, hence we are going to smaller and smaller area. 
+
+It is generally understood that each loop contribution to amplitudes is associated with one factor of $\hbar$. However, to fully define the $\hbar\to 0$ limit one need to specify the $\hbar$ dependence of various quantities in the Lagrangian as mentioned before, such as the field operator, the mass, the coupling, etc. This is not as straightforward as one might think, for $\hbar$ not only appears in the action $iS / \hbar$ but also appears in the Lagrangian. In Brodsky's paper mentioned above, the authors proposed a way to establish the $\hbar$ dependence such that the loop and $\hbar$ expansions are equivalent. We will go to more details in the following.
+
+**First, regard $\hbar$ as a constant of nature with certain dimension, use $\hbar$ to make terms in the Lagrangian dimensionless.**
+
+Again, let's work with the assumption that $c = \epsilon_ {0} = 1$. Require $[S]=\hbar$, and $\alpha_ {s} = g^{2} / 4\pi \hbar$ is dimensionless, the latter implies that $[g]=\sqrt{ \hbar }=\sqrt{ ET }=\sqrt{ EL }$. From the self-energy of gluons $G_ {\mu \nu}G^{\mu \nu}$ where $G = \partial A - \partial A +ig / \hbar [A,A]$ we have  
+$$
+[A] = \sqrt{ \frac{E}{L} }.
+$$
+For the same reasons, in the scalar QED the classical electric charge $e$ and mass $m$ are divided by $\hbar$,
+$$
+S_ {\text{sQED}} = \int d^{4}x \, \left\lbrace \left\lvert D\phi \right\rvert ^{2}-\frac{m^{2}}{\hbar^{2}}\left\lvert \phi \right\rvert ^{2} \right\rbrace , \quad  D = \partial +i \frac{e}{\hbar }A.
+$$
+The boson field dimension 
+$$
+[\phi]=[A]= \sqrt{ \frac{E}{L} }.
+$$
+Fermion fields are more complicated, since they have no classical counterparts, their dimensions are convention-dependent. 
+
+**Then we can try to specify the $\hbar$ dependence of all quantities appearing in the action.**
+
+The choice made by Brodsky and Hoyer is as following:
+$$
+\widetilde{A}:= \frac{A}{\sqrt{ \hbar }},\quad \tilde{\phi}:= \frac{\phi}{\sqrt{ \hbar }}
+$$
+where $\widetilde{A},\tilde{\phi}$ are $\hbar$-independent. Similarly, define the following $\hbar$-independent quantities
+$$
+\widetilde{g}:= \frac{g}{\hbar},\quad  \widetilde{e}:= \frac{e}{\hbar},\quad  \widetilde{m}:= \frac{m}{\hbar}.
+$$
+Then one can write the Lagrangian in terms of these $\hbar$-independent quantities to check the $\hbar$ dependence explicitly. It turns out that, at least in the simple models discussion in the paper, $\hbar$ always appears in the combination 
+$$
+\widetilde{g}\sqrt{ \hbar } \quad \text{and}\quad \widetilde{e}\sqrt{ \hbar }
+$$
+that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ will be of order $\hbar$. 
+
+This derivation is equivalent to the standard one of, for example, Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume the parameters appearing in the action to be independent of $\hbar$. 
+## Back to kinks in 3D
+
+In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pii/037015737690048X), he made three assumption:
+1. The energy (mass) is finite;
+2. The energy is locally minimum, meaning the soliton is stable;
+3. The potential $U$ depends on a coupling constant $\lambda$ according to the scaling law
+$$
+U(\phi;\lambda) = \frac{1}{\lambda}U(\sqrt{ \lambda }\,\phi;1).
+$$
+The choice is 
