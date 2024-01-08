@@ -156,5 +156,18 @@ $$
 \frac{\delta \mathcal{H}}{\delta \pi_i} &= \dot{\phi}_i.
 \end{align*}
 $$
+This is a non-trivial generalization of the familiar Hamiltonian in classical mechanics, non-trivial since the connection between variational derivative and partial derivative is not as simple as one might think, we have
+$$
+\frac{\delta \mathcal{H}}{\delta \phi} = \frac{\partial\mathcal{H}}{\partial \phi } - \left( \partial_ x\frac{\partial \mathcal{H}}{\partial(\partial_ {x}\phi)} \right).
+$$
 
+Taking everything into consideration, we can obtain the equation of motion by straightforward calculation. But before going there, let's rewrite the Hamiltonian in a more compact form:
+$$
+\boxed{
+\lambda \, \mathcal{H} = \frac{1}{2} \tilde{\pi}^{2} + \frac{1}{2} \vec{\nabla}^{2}\,\tilde{\pi} + V(\tilde{\phi}),\quad  \tilde{\pi} := \sqrt{ \lambda }\, \pi,\quad  \tilde{\phi} := \sqrt{ \lambda  }\,\phi.
+}
+$$
 
+$$
+\ddot{\phi} - \vec{\nabla}^{2} \phi(x,t) + 
+$$
