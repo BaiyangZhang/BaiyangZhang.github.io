@@ -167,7 +167,12 @@ $$
 \lambda \, \mathcal{H} = \frac{1}{2} \tilde{\pi}^{2} + \frac{1}{2} \vec{\nabla}^{2}\,\tilde{\pi} + V(\tilde{\phi}),\quad  \tilde{\pi} := \sqrt{ \lambda }\, \pi,\quad  \tilde{\phi} := \sqrt{ \lambda  }\,\phi.
 }
 $$
+Then we can first obtain the EOM in terms of $\tilde{\phi}$ and $\tilde{\pi}$, the changing to un-tilded version is trivial. Finally we have
+$$
+\ddot{\phi} - \vec{\nabla}^{2} \phi(x,t) + \frac{1}{\sqrt{ \lambda }} V^{(1)}(\sqrt{ \lambda }\phi)  = 0
+$$
+with definition
+$$
+V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n}}. 
+$$
 
-$$
-\ddot{\phi} - \vec{\nabla}^{2} \phi(x,t) + 
-$$
