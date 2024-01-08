@@ -175,4 +175,13 @@ with definition
 $$
 V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n}}. 
 $$
+## Domain wall in 3D
 
+Now, how can we borrow the kink result form 2D directly to 3D? Consider a static kink solution in the $x$ direction
+$$
+\phi(x,y) =: f(x,y)=: f_ {1}(x)\times f_ {2}(y) , 
+$$
+where we have assumed the possibility of separation of variables. To say the kink is in the $x$ direction is to say the solution satisfies the equation of motion in the $x$ direction,
+$$
+\frac{ \partial^{2} f(x,y) }{ \partial x^{2} } = \frac{1}{\lambda} \frac{ \partial V }{ \partial \phi }  = \frac{1}{\sqrt{ \lambda }} \frac{ \partial V }{ \partial \tilde{\phi} }  = \frac{1}{\sqrt{ \lambda }}V^{(1)}(\tilde{\phi}). 
+$$
