@@ -2,7 +2,7 @@
 layout: post
 title: Note on the kink mass correction in 3D
 subtitle: 
-date: 2024-01-03
+date: 2024-01-08
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -111,9 +111,9 @@ The boson field dimension
 $$
 [\phi]=[A]= \sqrt{ \frac{E}{L} }.
 $$
-Fermion fields are more complicated, since they have no classical counterparts, their dimensions are convention-dependent. 
+Fermion fields are more complicated, since they have no classical counterparts, their dimensions are convention-dependent. We will deal with fermions in a different note perhaps.
 
-**Then we can try to specify the $\hbar$ dependence of all quantities appearing in the action.**
+**Second step is to specify $\hbar$ dependence of all quantities appearing in the action.**
 
 The choice made by Brodsky and Hoyer is as following:
 $$
@@ -130,6 +130,8 @@ $$
 that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ will be of order $\hbar$. 
 
 This derivation is equivalent to the standard one of, for example, Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume the parameters appearing in the action to be independent of $\hbar$. 
+
+Fore more details please refer to Brodsky and Hoyer's paper mentioned above. 
 ## Back to kinks in 3D
 
 In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pii/037015737690048X), he made three assumption:
@@ -139,4 +141,5 @@ In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pi
 $$
 U(\phi;\lambda) = \frac{1}{\lambda}U(\sqrt{ \lambda }\,\phi;1).
 $$
-The choice is 
+The choice is such that all the $\lambda$ dependence are now moved to the pre-factor $1 / \lambda$. As for $\hbar$-expansion, we take the scheme such that $\hbar$-expansion agrees with $\lambda$-expansion, namely each loop brings in a factor of $\hbar$. 
+
