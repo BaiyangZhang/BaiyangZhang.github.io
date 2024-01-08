@@ -38,9 +38,10 @@ $$ \mathcal{H} = \sum_i \pi_i \partial_t \phi_i - \mathcal{L}, $$
 where the sum runs over all fields in the theory.
 
 The equations of motion in the Hamiltonian formalism for field theory are then given by Hamilton's equations, analogous to the Hamiltonian formalism in classical mechanics. These equations are
-$$ \frac{\partial \phi_i}{\partial t} = \frac{\delta \mathcal{H}}{\delta \pi_i}, $$
-$$ \frac{\partial \pi_i}{\partial t} = -\frac{\delta \mathcal{H}}{\delta \phi_i}, $$
-where $\frac{\delta}{\delta \phi_i}$ and $\frac{\delta}{\delta \pi_i}$ represent functional derivatives with respect to the field $\phi_i$ and its conjugate momentum $\pi_i$, respectively. 
+
+$$ \frac{\delta \mathcal{H}}{\delta \phi_i}=-\dot{\pi}(x), $$
+$$ \frac{\delta \mathcal{H}}{\delta \pi_i} = \dot{\phi}_i, $$
+where $\delta / \delta \phi_i$ and $\delta / \delta \pi_i$ represent functional derivatives with respect to the field $\phi_i$ and its conjugate momentum $\pi_i$, respectively. 
 
 From now on let's assume there are only one type of field and canonical momentum, so we can neglect the subscript $i$. Note here the functional derivative $\delta / \delta \phi$ is not equivalent to the partial derivative $\partial / \partial \phi$. To see this, recall how $\delta \mathcal{H}$ and $\delta \mathcal{H} / \delta \phi$ is defined,
 $$

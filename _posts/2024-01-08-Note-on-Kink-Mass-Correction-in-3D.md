@@ -147,4 +147,14 @@ Let the Hamiltonian be
 $$
 H = \int d^{2}x \, : \mathcal{H} :_ {a},\quad \mathcal{H}(x) = \frac{\pi^{2}}{2} + \frac{(\partial_ {x}\phi(x))^{2}}{2} + \frac{1}{\lambda} V\left(\sqrt{ \lambda}\,  \phi(x) \right).    
 $$
+Now, in order to get the equation of motion, we have two options: 1) Legendre-transform the equation to the Lagrangian formalism and adopt Euler-Lagrange equation, or 2) stick with the Hamiltonian formalism and adopt the Hamiltonian equations of motion (Hamilton equations) instead. Here we will take the second option. 
+
+Recall that the Hamilton equations in classical field theory reads 
+$$
+\begin{align*}
+\frac{\delta \mathcal{H}}{\delta \phi_i} &=-\dot{\pi}(x), \\
+\frac{\delta \mathcal{H}}{\delta \pi_i} &= \dot{\phi}_i.
+\end{align*}
+$$
+
 
