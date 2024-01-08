@@ -16,3 +16,8 @@ Let $\mathcal{X}$ and $\mathcal{T}$ be categories with a functor $\mathcal{X}\to
 $$
 \left\langle{E_ {i}}\right\rvert V([E_ {i}-H_ {0}]^{-1} )^{n-1}\left\lvert{E_ {i}}\right\rangle -\text{counter terms}
 $$
+
+根据您的新要求，论文的标题被修改为：“跨文化交际视角下对外汉语教材的开发与应用”。在这个主题下，论文的大纲可以调整为以下内容：
+
+- - -
+
