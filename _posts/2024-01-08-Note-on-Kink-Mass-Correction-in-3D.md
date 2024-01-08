@@ -143,3 +143,8 @@ U(\phi;\lambda) = \frac{1}{\lambda}U(\sqrt{ \lambda }\,\phi;1).
 $$
 The choice is such that all the $\lambda$ dependence are now moved to the pre-factor $1 / \lambda$. As for $\hbar$-expansion, we take the scheme such that $\hbar$-expansion agrees with $\lambda$-expansion, namely each loop brings in a factor of $\hbar$. 
 
+Let the Hamiltonian be 
+$$
+H = \int d^{2}x \, : \mathcal{H} :_ {a},\quad \mathcal{H}(x) = \frac{\pi^{2}}{2} + \frac{(\partial_ {x}\phi(x))^{2}}{2} + \frac{1}{\lambda} V\left(\sqrt{ \lambda}\,  \phi(x) \right).    
+$$
+
