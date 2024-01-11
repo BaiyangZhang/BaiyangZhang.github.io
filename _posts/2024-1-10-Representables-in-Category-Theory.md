@@ -2,7 +2,7 @@
 layout: post
 title: Representables in Category Theory
 subtitle: What do objects see?
-date: 2023-12-26
+date: 2024-01-10
 author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
@@ -149,11 +149,79 @@ is defined on objects $A$ by $H^{-}(A)=H^{A}$, and on maps $f$ by $H^{-}(f)=H^{f
 
 A lot of explain regarding the notations is in order. Apparently the dash $-$ in $H^{-}$ is a placeholder, to be filled by whatever it acts on, no matter if it is an object or an arrow. $\mathcal{A}^{\text{op}}$ is the opposite, or dual category of $\mathcal{A}$, with same objects but reversed arrows (all of them). $\mathcal{A}^{\text{op}}$ is a category, $[\mathcal{A},\text{Set}]$ is another category ( of functors from $\mathcal{A}$ to $\text{Set}$), thus $H^{-}$ is a functor. $H^{-}$ of $A$ is $H^{A}$, which is a set-valued functor on $\mathcal{A}$, hence $H^{A}$ is an object of $[\mathcal{A},\text{Set}]$. 
 
-All of the definitions presented so far in this chapter can be dualized. At the formal level, this is trivial: just reverse all the arrows! But in our analogy, after dualize it, we are no longer asking what objects see, but *how they are seen*. 
+All of the definitions presented so far in this chapter can be dualized. At the formal level, this is trivial: just reverse all the arrows! But in our analogy, after dualize it, we are no longer asking what objects see, but *how they are seen*:
 
+Let $\mathcal{A}$ be a *locally small* category and $A\in \mathcal{A}$. We define a functor $H_ {A}$ as follows,
+$$
+H_ {A} := \mathcal{A}(-,A): \mathcal{A}^{\text{op}}\to\text{Set}
+$$
+where
+- for objects $B \in \mathcal{A}$, put $H_ {A}(B) = \mathcal{A}(B,A)$;
+- For maps $g:B'\to B$, define 
+$$
+H_ {A}(g) = \mathcal{A}(g,A) = g^{\ast } = - \,\circ\,g: \mathcal{A}(B,A)\to\mathcal{A}(b',A)
+$$
+by
+$$
+p\mapsto p\,\circ\,g \quad  \;\forall\;  p: B\to A.
+$$
+- - -
 
+Note that a map $B'\to B$ induces a map in the opposite direction, $H_ {A}(B)\to H_ {A}(B')$. 
 
+We now define representability for *contravariant set-valued* functors. 
 
+Let $\mathcal{A}$ be a locally small category, and $X$ be a set-valued contravariant functor, 
+$$
+X: \mathcal{A}^{\text{op}} \to \text{Set}.
+$$
+We say $X$ is **representable** is $X \cong H_ {A}$ for some $A\in \mathcal{A}$. A `representation` of $X$ is a choice of $A$ and an isomorphism between $X$ and $H_ {A}$.  
  
+As an example, take the power set (contravariant-)functor $\mathcal{P}$ for example. Recall that the power set $\mathcal{P}(S)$ of a set $S$ is the collection of subsets of $S$. Let $S,S'\in \text{Set}$ be two sets, and $f: S \to S'$ a map (morphism) in the category of sets. Since we are regarding $\mathcal{P}$ as a contravariant functor, we should define $\mathcal{P}(f)$, which is a map from $\mathcal{P}(S')$ to $\mathcal{P}(S)$, notice the inversed direction. Well, turns out this can be done in a more or less direct way: we define $\mathcal{P}(f)$ to be in a sense the *inverse* of $f$! Take $U\in\mathcal{P}(S')$, we define the action on $U$ by $\mathcal{P}(f)$ by $f^{-1}(U)$, where $f^{-1}$ is **not** the inverse of $f$, for we didn't assume that $f$ is invertible at all, but rather the preimage of $f$, 
+$$
+f^{-1} (U) := \left\lbrace s\in S \,\middle\vert\, f(s)\in U \right\rbrace .
+$$
+On the other hand, the subsets of $S$ can be regarded as a maps from $S$ to $2$, the set with two elements, which we call `true` and `false`. To see how it works, take $S=\left\lbrace 1,2 ,3\right\rbrace$, the subset $\left\lbrace 1,2 \right\rbrace$ can be regarded as a map $g: S\to \left\lbrace \text{true,false} \right\rbrace$ where $1,2$ are map to true and $3$ is mapped to false. Such maps are sometimes called the characteristic functions. This provides as another way to look at power sets, and confirms the idea that in category theory everything is a morphism!
 
+Note that $\chi:=\left\lbrace \text{true,false} \right\rbrace$ is itself an object in $\text{Set}$, so we can talk about the Hom-functor $H_ {\chi}$, defined by maps from other stuff into $\chi$. Maybe not too surprisingly, $H_ {\chi}$ is isomorphic to the power functor $\mathcal{P}$,
+$$
+\mathcal{P} \cong  H_ {\chi}.
+$$
+Try to convince yourself with it, better with some simple examples. Thus we say the power functor $\mathcal{P}$ is representable, and the representation is $\chi$. 
 
+- - -
+
+Just as we assembled the covariant representables $H^{A}$s into a big functor $H^{-}$, we can do the same for the contravariant representables. If $f: A \to A'$ is a map in $\mathcal{A}$, there is an induced natural transformation $H_ {f}$:
+$$
+H_ {f}: H_ {A} \to H_ {A'},\quad  H_ {A,A'}: \mathcal{A}\to\text{Set}.
+$$
+- - -
+
+Let $\mathcal{A}$ be a locally small category. The `Yoneda embedding` of $\mathcal{A}$ is the functor 
+$$
+H_ {-}: \mathcal{A} \to [A^{\text{op}},\text{Set}]
+$$
+defined on objects $A \in \mathcal{A}$ as $H_ {-}(A)=H_ {A}$ and arrows $H_ {-}(f)=H_ {f}$. 
+
+Note that in $[\mathcal{A}^{\text{op}},\text{Set}]$, the objects are functors from $\mathcal{A}^{\text{op}}$ to $\text{Set}$ and the arrows are natural transformations.
+
+For each object $A\in\mathcal{A}$, the Yoneda embedding assigns a functor $H_ {A}$, it is sometimes called the Yoneda functor. In a sense, the Yoneda embedding allows as to regard each $A$ as arrows. Or, more precisely, it allows us to represent each $A$ as a set-valued functor. Yoneda embedding is a one-to-one correspondence between objects in $\mathcal{A}$ and functors in $[\mathcal{A},\text{Set}]$. In a sense to be explained, $H_ {-}$ embeds $\mathcal{A}$ into $[\mathcal{A},\text{Set}]$. 
+
+- - -
+
+Let $\mathcal{A}$ be a locally small category, the functor
+$$
+\text{Hom}_ {\mathcal{A}}: \mathcal{A}^{\text{op}}\times \mathcal{A}\to\text{Set}
+$$
+is defined by the following diagram, 
+![hom](/img/hom.png)
+
+This is like a generalization of $\text{Hom}(A,B)$ that we have encountered before. Recall that $\text{Hom}(A,B)$ is the set of the morphisms from $A$ to $B$, now $\text{Hom}_ {\mathcal{A}}$ is generalized such that it can also take two maps $f,g$ as well.
+
+- - -
+
+Given an arbitrary object in an arbitrary category, it is in general meaningless to talk about the "element" of this object since it not necessarily a set. However, in the category of sets, an element is the same thing as a map $1\to A$. This inspires the following definition.
+
+Let $A$ be a locally small category. A `Generalized element` of $A$ is a map with codomain $A$. A map $S\to A$ is a generalized element of $A$ of shape $S$.  
+
+For example, a generalized element of a set $S$ of shape $\mathbb{N}$ is nothing but a sequence in $S$. In the category of topological spaces, the generalized elements of shape $1$ (the one point space) are points, and the generalized elements of shape $\mathbb{S}^{1}$ are loops. 

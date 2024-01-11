@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "efcb5e9f34c37f65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-12-26-Representables-in-Category-Theory.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "22282c7baf0ff398",
             "type": "leaf",
             "state": {
@@ -44,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,8 +193,10 @@
   "active": "22282c7baf0ff398",
   "lastOpenFiles": [
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
+    "_posts/2024-1-10-Representables-in-Category-Theory.md",
+    "img/hom.png",
+    "img/relaxationMethod - Copy.jpg",
     "_posts/2024-01-08-Note-on-Kink-Mass-Correction-in-3D.md",
-    "_posts/2023-12-26-Representables-in-Category-Theory.md",
     "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
@@ -229,7 +219,6 @@
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_drafts/2023-05-07-soliton-particle-duality.md",
     "_drafts/DiscussionLetters/2022-09-22-HuiDiscussion1.md",
-    "_posts/2023-3-12-The-Geometry-of-Surfaces-in-R3.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
@@ -247,8 +236,6 @@
     "assets/jupyter/blog.ipynb",
     "assets/jupyter",
     "assets/css/main.scss",
-    "assets/img/publications-screenshot-800.webp",
-    "assets/img/publications-screenshot-480.webp",
-    "assets/img/publications-screenshot-1400.webp"
+    "assets/img/publications-screenshot-800.webp"
   ]
 }

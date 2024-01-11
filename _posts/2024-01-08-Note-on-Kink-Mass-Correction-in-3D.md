@@ -89,7 +89,7 @@ which is a dimensionless number. Since $\hbar$ scales the "quantumness", the mor
 - - -
 
 In the partial natural units, I'd like to think there are two fundamental "rulers" to measure all the quantities, such as mass, coupling, field, etc. One of them is the unit of energy, for example $\text{MeV}$, the other is $\hbar$ whose dimension is $ET$. To measure the length of something, we can use $\frac{\hbar}{\text{MeV}}$ as unit. The advantage of the partial natural unit is that it makes explicit the $\hbar$ factor, revealing the direct relations between quantities with $\hbar$, which is the scale of quantumness, this enables us to discern the importance of various quantities in the classical limit, making the analysis regarding semi-classical more straightforward. 
-## Digression to $\hbar$-expansion
+## Digression on $\hbar$-expansion
 
 To appreciate the importance of $\hbar$, just recall that in canonical quantization $[x,p]=i\hbar$, $\hbar$ enters explicitly in the commutation relation, providing the fundamental basis of quantum theory. This is also true in the case of quantum field theory. Furthermore, at each order of an expansion in $\hbar$, the physical symmetries (Lorentz invariance, $U(1)$ symmetry, etc.) must be satisfied, otherwise there will be some special value of $\hbar$ only at which the symmetries are preserved, which is just strange. 
 
@@ -185,3 +185,52 @@ where we have assumed the possibility of separation of variables. To say the kin
 $$
 \frac{ \partial^{2} f(x,y) }{ \partial x^{2} } = \frac{1}{\lambda} \frac{ \partial V }{ \partial \phi }  = \frac{1}{\sqrt{ \lambda }} \frac{ \partial V }{ \partial \tilde{\phi} }  = \frac{1}{\sqrt{ \lambda }}V^{(1)}(\tilde{\phi}). 
 $$
+
+- - -
+
+First, consider the case in 2D. Writing the filed as a kink background plus fluctuation, 
+$$
+\phi(x,t) =: f(x) + {\mathfrak g}(x) e^{ -i\omega t }
+$$
+where $f(x)$ is the 1-dimensional kink solution, the equation of motion in terms of ${\mathfrak g}$ reads
+$$
+[-\omega^{2}-\partial_ {x}^{2}+V^{(2)}(\sqrt{ \lambda }f(x))]\, {\mathfrak g}(x) = 0.
+$$
+
+As we mentioned before, there are three kinks of solutions: the zero mode, the shape mode and the continuum. 
+
+- - -
+
+The equation of motion is the Sturm-Liouville equation. A general Sturm-Liouville problem is typically written in the form:
+$$
+\frac{d}{dx}\left[ p(x) \frac{dy}{dx} \right] - q(x)y + \lambda r(x)y = 0
+$$
+Here, $y$ is the function of the variable $x$ that we are solving for, and $p(x)$, $q(x)$, and $r(x)$ are known functions that specify the particular Sturm-Liouville problem. The parameter $\lambda$ is often referred to as the eigenvalue.
+
+Key characteristics and applications of the Sturm-Liouville equation include:
+
+1. **Eigenvalue Problem**: The Sturm-Liouville equation is an eigenvalue problem. The solutions $y(x)$ are eigenfunctions, and the associated values of $\lambda$ are eigenvalues. These eigenvalues are typically discrete and can be ordered as a sequence $\lambda_1, \lambda_2, \lambda_3, \ldots$, where each $\lambda_n$ corresponds to a particular eigenfunction $y_n(x)$.
+
+2. **Orthogonality and Completeness**: The eigenfunctions of a Sturm-Liouville problem are orthogonal with respect to the weight function $r(x)$. This property is crucial in solving partial differential equations, as it allows the expansion of functions in terms of these eigenfunctions (similar to Fourier series).
+
+3. **Boundary Conditions**: Sturm-Liouville problems are typically accompanied by boundary conditions that the solutions must satisfy. These conditions are usually specified at the endpoints of the interval in which the equation is defined.
+
+4. **Physical Applications**: The Sturm-Liouville problem appears in various areas of physics, such as quantum mechanics (in solving the Schrödinger equation), heat conduction, wave propagation, and vibrations analysis. It is essential in the separation of variables technique for solving partial differential equations.
+
+5. **Self-Adjoint Form**: The equation is often referred to as a self-adjoint form, which has important implications in the theory of linear operators and functional analysis.
+
+- - -
+
+In our case, the weight function is trivial. 
+
+We will denote the zero mode by ${\mathfrak g}_ {B}$ and the shape mode by ${\mathfrak g}_ {S}$. The $B$ in ${\mathfrak g}_ {B}$ has a historical reason, but in our note it is just part of the name. The normalization conditions are
+$$
+\int dx \, {\mathfrak g}_ {S}^{2} = \int dx \, {\mathfrak g}_ {B}^{2} = 1 , \quad \int dx \, {\mathfrak g}_ {B}{\mathfrak g}_ {S} = 0 ,\quad \int dx \, {\mathfrak g}_ {k}(x){\mathfrak g}_ {p}(x) =  2\pi i\delta(p-k). 
+$$
+
+The sign of ${\mathfrak g}_ {B}$ is fixed using 
+$$
+{\mathfrak g}_ {B}(x) = - \frac{f'(x)}{\sqrt{ Q_ {0} }},
+$$
+where $f$ is again the kink solution.
+
