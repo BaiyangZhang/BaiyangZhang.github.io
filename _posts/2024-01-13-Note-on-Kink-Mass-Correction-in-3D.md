@@ -240,11 +240,6 @@ where $f$ is again the kink solution.
 
 We choose to expand in the $x$ direction in normal modes (in the kink background), while in the $y$ direction in plane waves. The 2D momentum $\vec{k}=\left\lbrace k_ {x},k_ {y} \right\rbrace$, where $k_ {x}=\left\lbrace B,S,k \right\rbrace$, $B$ for the zeromode (bounded solution), $S$ for the shape mode (also bounded) and $k$ for the continuum. A nice illustration of normal modes in the background of kink is shown in the figure below, which I shamelessly copied from Tanmay Vachaspati's book, all the credits goes to Vachaspati. 
 
-![kinkLevel](/img/kinkLevel.png)
-
-
-Test some diagrams:
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
@@ -254,3 +249,10 @@ Test some diagrams:
 	A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
 </div>
 
+We want to expand the fluctuation field in terms of normal modes, 
+$$
+\begin{align*}
+\phi(x) &= \phi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (x)\\
+\phi(x) &= \phi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (x)
+\end{align*}
+$$

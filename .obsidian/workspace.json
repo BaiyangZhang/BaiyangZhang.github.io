@@ -204,6 +204,8 @@
   },
   "active": "22282c7baf0ff398",
   "lastOpenFiles": [
+    "2015-05-15-images.md",
+    "2015-05-15-images.md.crdownload",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
     "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
@@ -247,7 +249,6 @@
     "bin/entry_point.sh",
     "bin/deploy",
     "bin/cibuild",
-    "bin",
-    "assets/jupyter/blog.ipynb"
+    "bin"
   ]
 }
