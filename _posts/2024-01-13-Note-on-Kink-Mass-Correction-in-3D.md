@@ -249,10 +249,15 @@ We choose to expand in the $x$ direction in normal modes (in the kink background
 	A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
 </div>
 
-We want to expand the fluctuation field in terms of normal modes, 
+We want to expand the fluctuation field $g(r)$ (defined by $\phi=f_ {\text{kink}}+g$) in terms of normal modes, 
 $$
 \begin{align*}
-\phi(x) &= \phi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (x)\\
-\phi(x) &= \phi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (x)
+g(r) &= \phi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (r),\\
+\pi(r) &= \pi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} -\frac{B_ {-k}}{2}  \right){\mathfrak g}_ {k} (r),
 \end{align*}
 $$
+where $r = (x,y)$. We assume the separation of variables $x$ and $y$ for ${\mathfrak g}(r)$,
+$$
+{\mathfrak g}(r) = {\mathfrak g}_ {x}\times g_ {y},\quad  {\mathfrak g}_ {x} = \phi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \, (\cdots){\mathfrak g}_ {k}(x)
+$$
+and in the $y$ direction we have plane waves. 
