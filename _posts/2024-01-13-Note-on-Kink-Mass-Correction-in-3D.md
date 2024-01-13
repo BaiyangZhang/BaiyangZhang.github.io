@@ -134,7 +134,7 @@ that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ 
 This derivation is equivalent to the standard one of, for example, Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume the parameters appearing in the action to be independent of $\hbar$. 
 
 Fore more details please refer to Brodsky and Hoyer's paper mentioned above. 
-## 1.3. Back to kinks in 3D
+# 2. Back to kinks in 3D
 
 In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pii/037015737690048X), he made three assumption:
 1. The energy (mass) is finite;
@@ -177,7 +177,7 @@ with definition
 $$
 V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n}}. 
 $$
-## 1.4. Domain wall in 3D
+## 2.1. Normal modes and quantization
 
 When kink solutions are placed in more than one spatial dimension, they become extended planar structures called “domain walls.” 
 
@@ -249,16 +249,39 @@ We choose to expand in the $x$ direction in normal modes (in the kink background
 	A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
 </div>
 
-We want to expand the static fluctuation field $\phi(r)$ (defined by $\phi=f_ {\text{kink}}+g$) in terms of normal modes, 
+We want to expand the static fluctuation field $\phi(r)$ (defined by $\phi=f_ {\text{kink}}+g$) in terms of normal modes. Since we have defined the indices $k$ in ${\mathfrak g}_ {k}(x)$ to include everything, we can conveniently write the field expansion as
 $$
 \begin{align*}
-\phi(r) &= \phi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (r),\\
-\phi(r) &= \pi_ {0}{\mathfrak g}_ {B}(x) + \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} -\frac{B_ {-k}}{2}  \right){\mathfrak g}_ {k} (r),
+\phi(r) &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (r),\\
+\pi(r) &=  \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} -\frac{B_ {-k}}{2}  \right){\mathfrak g}_ {k} (r),
 \end{align*}
 $$
-where $r = (x,y)$. We assume the separation of variables $x$ and $y$ for 2D nomal modes ${\mathfrak g}(r)$,
+where $r = (x,y)$. We adopt the convention
 $$
-{\mathfrak g}(r) = {\mathfrak g}_ {x}\times g_ {y},\quad  {\mathfrak g}_ {x} = \text{kink normal modes},\,
+B^{\ddagger}_ {k} = \frac{B^{\dagger}_ {k} }{2\omega _ {k} }.
 $$
-and in the $y$ direction we have plane waves. 
+This helps us to jump between different conventions for the field expansion.
 
+We have omitted the vector sign (or bold font) in $r$ since it would not raise any misunderstanding. We assume (quite reasonably) the separation of variables $x$ and $y$ for 2D normal modes ${\mathfrak g}(r)$,
+$$
+{\mathfrak g}(r) = {\mathfrak g}_ {x}\times g_ {y},\quad  {\mathfrak g}_ {x} = \text{kink normal modes},\, {\mathfrak g}_ {y} = \text{plane waves.}
+$$
+The quantization in terms of $\phi$ and $\pi$ reads
+$$
+[\phi(r),\pi(r')] = i\delta^{(2)}(r-r').
+$$
+This represents the fundamental quantization relation, unaffected by the selection of sectors. We haven't given a formal definition of sectors, roughly speaking, within each sector, there exists a distinct set of normal modes for expanding both $\phi$ and $\pi$. Each mode must conform to the aforementioned relation, namely the quantization relation given in space-time positions $r$. Ultimately, the difference across different sectors lies in the diverse backgrounds (regarded as classical functions) used for field expansion. However, as we are analyzing the same theory within the same space-time, the theory should be quantized only once, and, all sectors must consistently align with the same quantization process. 
+
+Things does get more complicated when renormalization is included. The commonly used renormalization method include (but not limited to):
+1. `Dimensional regularization`. This is particularly useful in 4D. This technique regularizes integrals by analytically continuing the number of dimensions of space $d$, usually reduce it by an infinitesimal quantity $\epsilon$. It preserves the gauge symmetry and Lorentz invariance. 
+2. `Cutoff regularization`. This method introduces a high-energy cutoff in the energy. By doing this we are making the momentum integrals finite by force, but as a price we would introduce a new parameter $\Lambda$ with the dimension of energy. This $\Lambda$ has profound physical consequence, such as in dimensional transmutation and, most importantly, the Wilsonian RG flow. 
+3. `Pauli-Villars Regularization.` This approach involves adding hypothetical heavy particles to the theory to cancel out the divergences. The mass of the heavy particles acts effectively as the cutoff in the integrals.
+4. `Lattice reguglarization`. This method discretizes the spacetime into a lattice. Computations are performed on this lattice, the spacing between different sites, or the resolution of the lattice serves as a cutoff.
+
+There also exist tons of other renormalization methods, such as holographic renormalization, Hopf algebra renormalization, Connes-Kreimer renormalization, and so on. They sounds like fun but, unfortunately, they lie beyond the scope of our work and my comprehension.
+
+Different renormalization methods may yield different results depending on the specific sector they are applied to. For instance, the momentum cutoff method produces distinct outcomes when used in the trivial vacuum sector compared to the one-kink sector. From my perspective, it seems more appropriate to *consider the regularization method as an integral part of the quantization process*. Quantization itself is not a natural, free from; whether one opts for geometrical quantization or path integral quantization (among other methods), additional elements are always necessary. For example, incorporating a momentum cutoff is often a crucial step.
+
+Different sectors also seem to give different perspectives regarding the relations between different regularization methods. For example, in trivial vacuum sector (which we will just call vacuum sector), the momentum cutoff method is closely connected to the lattice renormalization method, by roughly $\Lambda = 2\pi / a$ where $a$ is the lattice spacing. This kind of relation is harder to see in, for instance, one-kink sector (which we will just call kink sector). 
+
+A natural question that follows is, if there exists a regularization method that applies to all the sectors (unlike the momentum cutoff renormalization) equally well? If so, which one? 
