@@ -179,6 +179,8 @@ V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n}}.
 $$
 ## 1.4. Domain wall in 3D
 
+When kink solutions are placed in more than one spatial dimension, they become extended planar structures called “domain walls.” 
+
 Now, how can we borrow the kink result form 2D directly to 3D? Consider a static kink solution in the $x$ direction
 $$
 \phi(x,y) =: f(x,y)=: f_ {1}(x)\times f_ {2}(y) , 
@@ -221,9 +223,9 @@ Key characteristics and applications of the Sturm-Liouville equation include:
 
 5. **Self-Adjoint Form**: The equation is often referred to as a self-adjoint form, which has important implications in the theory of linear operators and functional analysis.
 
-- - -
-
 In our case, the weight function is trivial. 
+
+- - -
 
 We will denote the zero mode by ${\mathfrak g}_ {B}$ and the shape mode by ${\mathfrak g}_ {S}$. The $B$ in ${\mathfrak g}_ {B}$ has a historical reason, but in our note it is just part of the name. The normalization conditions are
 $$
@@ -236,11 +238,18 @@ $$
 $$
 where $f$ is again the kink solution.
 
-- - -
+We choose to expand in the $x$ direction in normal modes (in the kink background), while in the $y$ direction in plane waves. The 2D momentum $\vec{k}=\left\lbrace k_ {x},k_ {y} \right\rbrace$, where $k_ {x}=\left\lbrace B,S,k \right\rbrace$, $B$ for the zeromode (bounded solution), $S$ for the shape mode (also bounded) and $k$ for the continuum. A nice illustration of normal modes in the background of kink is shown in the figure below, which I shamelessly copied from Tanmay Vachaspati's book, all the credits goes to Vachaspati. 
 
-When kink solutions are placed in more than one spatial dimension, they become extended planar structures called “domain walls.” 
+![kinkLevel](/img/kinkLevel.png)
 
-- - -
-
-### 1.4.1. The mode expansion
-
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+	    A trivial potential on a periodic space with period $L$ is shown on the left. The normal modes in the background of a kink is shown on the right.
+</div>
