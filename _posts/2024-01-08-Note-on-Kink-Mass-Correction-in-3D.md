@@ -9,7 +9,9 @@ catalog: true
 tags:
 ---
 
-# The model 
+# 1. The model 
+
+## 1.1. Background 
 
 We will establish the model and notations in this section. First, some nomenclatures.
 
@@ -89,7 +91,7 @@ which is a dimensionless number. Since $\hbar$ scales the "quantumness", the mor
 - - -
 
 In the partial natural units, I'd like to think there are two fundamental "rulers" to measure all the quantities, such as mass, coupling, field, etc. One of them is the unit of energy, for example $\text{MeV}$, the other is $\hbar$ whose dimension is $ET$. To measure the length of something, we can use $\frac{\hbar}{\text{MeV}}$ as unit. The advantage of the partial natural unit is that it makes explicit the $\hbar$ factor, revealing the direct relations between quantities with $\hbar$, which is the scale of quantumness, this enables us to discern the importance of various quantities in the classical limit, making the analysis regarding semi-classical more straightforward. 
-## Digression on $\hbar$-expansion
+## 1.2. Digression on $\hbar$-expansion
 
 To appreciate the importance of $\hbar$, just recall that in canonical quantization $[x,p]=i\hbar$, $\hbar$ enters explicitly in the commutation relation, providing the fundamental basis of quantum theory. This is also true in the case of quantum field theory. Furthermore, at each order of an expansion in $\hbar$, the physical symmetries (Lorentz invariance, $U(1)$ symmetry, etc.) must be satisfied, otherwise there will be some special value of $\hbar$ only at which the symmetries are preserved, which is just strange. 
 
@@ -132,7 +134,7 @@ that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ 
 This derivation is equivalent to the standard one of, for example, Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume the parameters appearing in the action to be independent of $\hbar$. 
 
 Fore more details please refer to Brodsky and Hoyer's paper mentioned above. 
-## Back to kinks in 3D
+## 1.3. Back to kinks in 3D
 
 In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pii/037015737690048X), he made three assumption:
 1. The energy (mass) is finite;
@@ -175,7 +177,7 @@ with definition
 $$
 V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n}}. 
 $$
-## Domain wall in 3D
+## 1.4. Domain wall in 3D
 
 Now, how can we borrow the kink result form 2D directly to 3D? Consider a static kink solution in the $x$ direction
 $$
@@ -234,5 +236,11 @@ $$
 $$
 where $f$ is again the kink solution.
 
+- - -
 
+When kink solutions are placed in more than one spatial dimension, they become extended planar structures called “domain walls.” 
+
+- - -
+
+### 1.4.1. The mode expansion
 
