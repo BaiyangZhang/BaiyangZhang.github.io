@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-08-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d1982b0eee003f27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-1-10-Representables-in-Category-Theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-08-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-08-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-08-Note-on-Kink-Mass-Correction-in-3D.md"
+                "file": "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md"
               }
             }
           },
@@ -192,14 +204,14 @@
   },
   "active": "22282c7baf0ff398",
   "lastOpenFiles": [
+    "_posts/2024-1-10-Representables-in-Category-Theory.md",
+    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
+    "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
     "_includes/figure.liquid",
     "_includes/figure.liquid.crdownload",
     "img/kinkLevel.png",
-    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
     "img/hom.png",
     "img/relaxationMethod - Copy.jpg",
-    "_posts/2024-01-08-Note-on-Kink-Mass-Correction-in-3D.md",
     "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
@@ -236,7 +248,6 @@
     "bin/deploy",
     "bin/cibuild",
     "bin",
-    "assets/jupyter/blog.ipynb",
-    "assets/jupyter"
+    "assets/jupyter/blog.ipynb"
   ]
 }

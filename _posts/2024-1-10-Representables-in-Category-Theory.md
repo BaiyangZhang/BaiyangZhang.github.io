@@ -122,13 +122,7 @@ Recall that a natural transformation $\alpha$ between two functors $F$ and $G$, 
 
 For each object $X$ in category $\mathcal{C}$, the `component` of the natural transformation $\alpha$ at $X$ is a morphism in category $\mathcal{D}$:
 $$ \alpha_ X : F(X) \rightarrow G(X) $$
-These components must satisfy a naturality condition, which states that for every morphism $f: X \rightarrow Y$ in category $\mathcal{C}$, the following diagram commutes:
-$$
-\begin{CD} 
-F(X) @>F(f)>> F(Y) \\ @V\alpha_XVV @VV\alpha_YV \\ G(X) @>G(f)>> G(Y) 
-\end{CD}
-$$
-This means that there is essential only one way to go from $F(X)$ to $G(Y)$. This property must hold for all objects and morphisms in category $C$, making the transformation "natural" in the sense that it works consistently across the entire category.
+These components must satisfy a naturality condition, which states that for every morphism $f: X \rightarrow Y$ in category $\mathcal{C}$, the naturality diagram commutes. The naturality condition must hold for all objects and morphisms in category $C$, making the transformation "natural" in the sense that it works consistently across the entire category.
 
 Coming back to $H^{f}$. Let $B\in \mathcal{A}$, what would the component $H^{f}_ {B}$ be? Recall that $f$ maps from $A'$ to $A$, by construction $H^{f}$ maps in the opposite direction, it is the function
 $$

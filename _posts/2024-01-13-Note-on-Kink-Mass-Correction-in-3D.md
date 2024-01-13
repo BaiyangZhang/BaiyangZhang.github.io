@@ -2,7 +2,7 @@
 layout: post
 title: Note on the kink mass correction in 3D
 subtitle: 
-date: 2024-01-08
+date: 2024-01-13
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -249,10 +249,8 @@ Test some diagrams:
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
-    </div>
 </div>
 <div class="caption">
-    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
+	A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
 </div>
+
