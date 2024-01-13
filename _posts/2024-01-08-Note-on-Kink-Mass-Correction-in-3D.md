@@ -242,14 +242,4 @@ We choose to expand in the $x$ direction in normal modes (in the kink background
 
 ![kinkLevel](/img/kinkLevel.png)
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-	    A trivial potential on a periodic space with period $L$ is shown on the left. The normal modes in the background of a kink is shown on the right.
-</div>
+
