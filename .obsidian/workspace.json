@@ -192,6 +192,8 @@
   },
   "active": "22282c7baf0ff398",
   "lastOpenFiles": [
+    "_includes/figure.liquid",
+    "_includes/figure.liquid.crdownload",
     "img/kinkLevel.png",
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
@@ -235,8 +237,6 @@
     "bin/cibuild",
     "bin",
     "assets/jupyter/blog.ipynb",
-    "assets/jupyter",
-    "assets/css/main.scss",
-    "assets/img/publications-screenshot-800.webp"
+    "assets/jupyter"
   ]
 }
