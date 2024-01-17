@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md",
                 "mode": "source",
                 "source": false
               }
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md"
+                "file": "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md"
               }
             }
           },
@@ -208,7 +208,7 @@
     "2015-05-15-images.md.crdownload",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
-    "_posts/2024-01-13-Note-on-Kink-Mass-Correction-in-3D.md",
+    "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md",
     "_includes/figure.liquid",
     "_includes/figure.liquid.crdownload",
     "img/kinkLevel.png",

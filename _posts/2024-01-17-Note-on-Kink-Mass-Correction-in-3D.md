@@ -2,18 +2,18 @@
 layout: post
 title: Note on the kink mass correction in 3D
 subtitle: 
-date: 2024-01-13
+date: 2024-01-17
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
 ---
 
-# 1. The model 
+# 1 Introduction 
 
-## 1.1. Background 
+## 1.1 Background 
 
-We will establish the model and notations in this section. First, some nomenclatures.
+We will establish the model and notation in this section. First, some nomenclatures.
 
 `Shape modes`: In theories with a kink solution, the equation of motion in the background of the kink typically has discrete, bounded solutions. They are called `shape modes`. They are localized around the kink. Shape modes represent small fluctuations or deformations of the kink's shape. Unlike the continuum of delocalized modes that represent free particle states, the shape modes are confined to the vicinity of the kink, with discrete energy levels. 
 
@@ -91,7 +91,7 @@ which is a dimensionless number. Since $\hbar$ scales the "quantumness", the mor
 - - -
 
 In the partial natural units, I'd like to think there are two fundamental "rulers" to measure all the quantities, such as mass, coupling, field, etc. One of them is the unit of energy, for example $\text{MeV}$, the other is $\hbar$ whose dimension is $ET$. To measure the length of something, we can use $\frac{\hbar}{\text{MeV}}$ as unit. The advantage of the partial natural unit is that it makes explicit the $\hbar$ factor, revealing the direct relations between quantities with $\hbar$, which is the scale of quantumness, this enables us to discern the importance of various quantities in the classical limit, making the analysis regarding semi-classical more straightforward. 
-## 1.2. Digression on $\hbar$-expansion
+## 1.2 Digression on $\hbar$-expansion
 
 To appreciate the importance of $\hbar$, just recall that in canonical quantization $[x,p]=i\hbar$, $\hbar$ enters explicitly in the commutation relation, providing the fundamental basis of quantum theory. This is also true in the case of quantum field theory. Furthermore, at each order of an expansion in $\hbar$, the physical symmetries (Lorentz invariance, $U(1)$ symmetry, etc.) must be satisfied, otherwise there will be some special value of $\hbar$ only at which the symmetries are preserved, which is just strange. 
 
@@ -134,7 +134,7 @@ that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ 
 This derivation is equivalent to the standard one of, for example, Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume the parameters appearing in the action to be independent of $\hbar$. 
 
 Fore more details please refer to Brodsky and Hoyer's paper mentioned above. 
-# 2. Back to kinks in 3D
+# 2 Kinks in 3D
 
 In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pii/037015737690048X), he made three assumption:
 1. The energy (mass) is finite;
@@ -272,6 +272,8 @@ $$
 $$
 This represents the fundamental quantization relation, unaffected by the selection of sectors. We haven't given a formal definition of sectors, roughly speaking, within each sector, there exists a distinct set of normal modes for expanding both $\phi$ and $\pi$. Each mode must conform to the aforementioned relation, namely the quantization relation given in space-time positions $r$. Ultimately, the difference across different sectors lies in the diverse backgrounds (regarded as classical functions) used for field expansion. However, as we are analyzing the same theory within the same space-time, the theory should be quantized only once, and, all sectors must consistently align with the same quantization process. 
 
+## 2.2 Renormalization methods review
+
 Things does get more complicated when renormalization is included. The commonly used renormalization method include (but not limited to):
 1. `Dimensional regularization`. This is particularly useful in 4D. This technique regularizes integrals by analytically continuing the number of dimensions of space $d$, usually reduce it by an infinitesimal quantity $\epsilon$. It preserves the gauge symmetry and Lorentz invariance. 
 2. `Cutoff regularization`. This method introduces a high-energy cutoff in the energy. By doing this we are making the momentum integrals finite by force, but as a price we would introduce a new parameter $\Lambda$ with the dimension of energy. This $\Lambda$ has profound physical consequence, such as in dimensional transmutation and, most importantly, the Wilsonian RG flow. 
@@ -280,8 +282,151 @@ Things does get more complicated when renormalization is included. The commonly 
 
 There also exist tons of other renormalization methods, such as holographic renormalization, Hopf algebra renormalization, Connes-Kreimer renormalization, and so on. They sounds like fun but, unfortunately, they lie beyond the scope of our work and my comprehension.
 
-Different renormalization methods may yield different results depending on the specific sector they are applied to. For instance, the momentum cutoff method produces distinct outcomes when used in the trivial vacuum sector compared to the one-kink sector. From my perspective, it seems more appropriate to *consider the regularization method as an integral part of the quantization process*. Quantization itself is not a natural, free from; whether one opts for geometrical quantization or path integral quantization (among other methods), additional elements are always necessary. For example, incorporating a momentum cutoff is often a crucial step.
+Different renormalization methods may yield different results depending on the specific sector they are applied to. For instance, the momentum cutoff method produces distinct outcomes when used in the trivial vacuum sector compared to the one-kink sector. From my perspective, it seems more appropriate to *consider the regularization method as an integral part of the quantization process*. Quantization itself is not a natural, free functor (just means a ); whether one opts for geometrical quantization or path integral quantization (among other methods), additional elements are always needed. For example, incorporating a momentum cutoff is often a crucial step.
 
-Different sectors also seem to give different perspectives regarding the relations between different regularization methods. For example, in trivial vacuum sector (which we will just call vacuum sector), the momentum cutoff method is closely connected to the lattice renormalization method, by roughly $\Lambda = 2\pi / a$ where $a$ is the lattice spacing. This kind of relation is harder to see in, for instance, one-kink sector (which we will just call kink sector). 
+Different sectors also seem to give different perspectives regarding the relations between different regularization methods. For example, in trivial vacuum sector (which we will just call vacuum sector), the momentum cutoff method is closely connected to the lattice renormalization method, by roughly $\Lambda = 2\pi / a$ where $a$ is the lattice spacing. This very relation is harder to see in, for instance, one-kink sector (which we will just call kink sector). 
 
-A natural question that follows is, if there exists a regularization method that applies to all the sectors (unlike the momentum cutoff renormalization) equally well? If so, which one? 
+A natural question that follows is, if there exists a regularization method that applies to all the sectors (unlike the momentum cutoff renormalization) equally well? If so, which one? Apparently the space-time itself is the common ground of all sectors, since the lattice regularization is dependent on spacetime alone, it is independent of the specific mode-expansion we adopt for fields, so it seems reasonable to use it as the renormalization scheme. Other advantages of lattice renormalization includes, 1) it made obvious the Wilsonian RG flow, which is continuous change of various parameters in the theory depending on a continuous change of the lattice size. 2) The connection between the lattice quantization and momentum-cutoff renormalization is already know in the trivial vacuum sector. We just need to find a way to generalize it to other sectors.  
+
+## 2.3. Lattice quantization
+
+In our work we will start with the lattice quantization. Recall that the canonical quantization relation in a continuous $d$-dimensional spacetime reads
+$$
+[\phi(r),\pi(r')] = i \delta^{(d)} (r-r'),
+\tag{2.1}
+$$
+In lattice quantization, the continuous spacetime of the theory is replaced by a discrete set of points, and the fields are defined only at these points. It is a powerful, comprehensive change of viewpoint, not only of numerical importance, but really alters our view of spacetime. In principal we can translate all concepts we have defined in spacetime continuum into the lattice spacetime, such as the gauge connection, gauge field strength, etc. Sometimes, it is convenient to think the lattices as "sample points" of a spacetime continuum. In this view, between the lattice sites there maybe exists something other than the pure void, but it is meaning less to talk about them anyway. This view is rather useful when discussing the connection between lattice quantization and momentum cutoff quantization. 
+
+The commutation relation on a lattice should take the form
+$$
+[\phi_ {i},\pi_ {j}] =i\delta_ {ij},
+\tag{2.2}
+$$
+where $i,j$ are the indices of different sites. 
+
+Recall that in canonical quantization, Eq. (2.1) translate to the momentum space rather trivially, yielding
+$$
+[a_ {p},a^{\dagger}_ {p'}] = i (2\pi)^{d} \delta^{(d)}(p-p').
+$$
+So the question is, how does the lattice commutation relation translates to different sectors? Particularly, in the trivial vacuum sector and the one-kink sector?
+
+### 2.3.1 Latticization of scalar field
+
+Write the scalar field $\phi$ in continuum as as function of spacetime position $\phi(x)$, and write the lattice position as a label of the field $\phi_ {a^{\mu}}$, where $a^{\mu}=m^{\mu} a$, $m^{\mu}\in \mathbb{N}^{d}$ is the $d$-dimensional count of the lattice site, $a$ is the lattice distance. The summation on lattices goes to integral in the continuous limit with the following dictionary,
+$$
+\begin{align*}
+\sum_ {m^{d}}  &\to \int, \\
+a^{d} &\to d^{d}x,\\
+f_ {a^{\mu}} &\to f(x)
+\end{align*}
+$$
+where $m^{d}$ indicates the $d$-dimensional lattice. Combined together we have the familiar formula
+$$
+\sum_ {m^{d}} a^{d} f_ {a^{\mu}} \to \int d^{d}x \, f(x).  
+$$
+We can define two types of differences, corresponding to derivatives in the continuous case
+$$
+\begin{align*}
+\partial_ {\mu} f_ {x} &= \frac{1}{a} (f_ {x+\hat{a}^{\mu}}-f_ {x}),\\
+\partial'_ {\mu} f_ {x} &= \frac{1}{a} (f_ {x}-f_ {x-\hat{a}^{\mu}}),
+\end{align*}
+$$
+where $\hat{a}^{\mu}$ is a vector in direction $x^{\mu}$ of length $a$, namely $\hat{a}$ moves to the next lattice site in the $x^{\mu}$ direction. These two differences are like differences "from right" and "from left". For smooth functions of course their continuous limit all give the derivative.
+
+The interesting thing is that these two types of differences are kind of dual to each other. Define an inner product
+$$
+(f_ {x},g_ {x}) := \sum_ {x}  f_ {x} g_ {x},
+$$
+similar to what we have for differential forms, then 
+$$
+(f_ {x},\partial g_ {x}) = (-\partial' f_ {x},g_ {x}),
+$$
+which corresponds to the integral by part
+$$
+\int  \, f\partial g  = \int \,(-\partial f)  g.
+$$
+
+### 2.3.2 Second quantization in the vacuum sector
+
+First let's review how the second quantization is achieved in the vacuum sector without latticization, namely on a continuum of spacetime of dimension $d+1$. This is what we learnt from textbooks. 
+
+Note that we will adopt a slight change of variable here. Before we used $\vec{r}$ to denote the spatial vector where $\vec{r}=(x,y, \cdots)$ since in two dimensional space time, it is easier to write $x,y$ than $x_ {1},x_ {2}$. However, since now we are dealing with $d+1$ dimensional spacetime, we will also adopt a different convention, namely $x=(t,\vec{x})$ where $\vec{x}$ is a $d$-dimensional vector with components $x_ {1},\cdots,x_ {d}$. In summary, Latin letters without a vector sign $x$ are covariant $d+1$-vectors, the generalization of $4$-vector to arbitrary dimension.
+
+The simplest special relativistic equation of motion a field $\phi$ can satisfy is the massless Klein-Gordon equation, 
+$$
+\partial^{2}\phi=0,\quad \partial^{2}=\partial_ {\mu}\partial^{\mu}=\partial_ {t}^{2}-\nabla^{2}.
+$$
+Decompose $\phi$ into a continuum of momentum mode, each mode can be written as
+$$
+a_ {p} (t) e^{ i\vec{p}\cdot \vec{x} }
+$$
+where we have assume the separation of variable $t$ and $\vec{x}$, and the time-dependent part of the Klein-Gordon equation gives
+$$
+(\partial_ {t}^{2}+\vec{p}\cdot \vec{p})a_ {p} (t) = 0
+$$
+with solutions 
+$$
+a_ {p} (t) =a_ {p}  e^{ \pm  i\omega t},\quad \omega^{2}= \vec{p}^{2}.
+$$
+where $a_ {p}$ now is just some c-number, constant in time. The field can be expanded as a linear combination of all the momentum modes
+$$
+\phi(t,\vec{r}) = \int \frac{d^{d}p}{(2\pi)^{d}} \, (a_ {p} e^{ -ipx }+a_ {p} ^{\ast }e^{ipx }) 
+$$
+where the second term in the parenthesis is to make sure that $\phi$ is real. We have assembled $\omega$ and $\vec{p}$ into $p=(\omega,\vec{p})$. 
+
+Now the second quantization kicks in. This is usually first done in the momentum space, since we are treating each mode as a harmonic oscillator. You can already see one aspect of the difference between the previously define lattice quantization and the textbook second quantization. We introduce the `equal-time commutation relation`
+$$
+[a_ {k} ,a_ {p}^{\dagger}] = (2\pi)^{d} \,\delta^{d}(\vec{k}-\vec{p}),
+$$
+where we have omitted the vector sign in the superscript $k,p$ to avoid overly cumbersome notation.
+The factors of $2\pi$ are a convention, stemming from our convention for Fourier transform, for the details see my other blog on conventions. 
+
+We want the operators $a_ {p}^{\dagger}$ to create particles with momentum $\vec{p}$. Let $\left\lvert{\vec{p}}\right\rangle$ be a physical state with a single particle with momentum $\vec{p}$, *define*
+$$
+a_ {p} ^{\dagger}\left\lvert{\Omega}\right\rangle = \frac{1}{\sqrt{ 2\omega _ {p}  }}\left\lvert{\vec{p}}\right\rangle ,
+$$
+where $\left\lvert{\Omega}\right\rangle$ is the ground state in the vacuum sector. This factor of $1 / \sqrt{ 2\omega _ {p} }$ is just another convention. 
+
+From the normalization $\left\langle \Omega \middle\vert \Omega \right\rangle=1$ and the commutation of $a,a^{\dagger}$ we get
+$$
+\left\langle \vec{p} \middle\vert \vec{k} \right\rangle =2\omega _ {p} (2\pi)^{d}\delta^{d}(\vec{p}-\vec{k}).
+$$
+As a result, the identity operator for one particle states is 
+$$
+\mathbb{1}=\int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{2\omega _ {p} }\left\lvert{\vec{p}}\right\rangle \left\langle{\vec{p}}\right\rvert .
+$$
+We define the quantum field as integrals over $a_ {p}$ and $a_ {p}^{\dagger}$, 
+$$
+\phi_ {0}(\vec{x})= \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{ 2\omega }} (a_ {p} e^{ i\vec{p} \cdot \vec{x}} + a_ {p} ^{\dagger}e^{ -i\vec{p}\cdot \vec{x} }) 
+$$
+where the subscript $0$ indicates this is a free field. The traditional view is to take it as the definition of the field operator $\phi_ {0}$ constructed from the creation and annihilation operators $a_ {p}$ and $a_ {p}^{\dagger}$ (*Schwartz M.D.*), but we shall try an opposite viewpoint, as will be shown later. 
+
+Later we will work with the Schrodinger picture which is less commonly used compared to the Heisenberg or interaction pictures. To finish the review on the second quantization, we just mentioned that in Heisenberg picture, all the time dependence is in operators such as $\phi$ and $a_ {p}$, the field operator reads
+$$
+\phi_ {0}(\vec{x},t) = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{ 2\omega _ {p}  }}(a_ {p} e^{ -ipx } + a_ {p} ^{\dagger}e^{ ipx }),
+$$
+which is also Lorentz invariant. 
+
+- - -
+
+Instead of the traditional view of harmonic oscillator quantization in the momentum space, let's take Eq.(2) as the starting point. Adopt a somewhat un-conventional field expansion
+$$
+\begin{align*}
+\phi(\vec{x}) &= \int \frac{d^{d}p}{(2\pi)^{d}} \, e^{ -i\vec{x}\cdot \vec{p} }\phi_ {p},\\
+\pi(\vec{x}) &= \int \frac{d^{d}p}{(2\pi)^{d}} \, e^{ -i \vec{x}\cdot \vec{p} }\pi_ {p}. 
+\end{align*}
+$$
+The next question is how to inverse it on a lattice...
+
+### 2.4 (2+1)-dimensional 
+
+For now, let's accept (1) the ultraviolet cutoff $\Lambda$ and (2) the harmonic quantization *in the trivial vacuum sector* and translate it to the physical spacetime. As a result we get a non-local commutation relation in spacetime,
+$$
+[\phi(x),\pi(y)]_ {\Lambda} = i \int_{-\Lambda}^{\Lambda} \frac{dp}{2\pi} \, e^{ -ip(x-y)} = i \frac{\sin(\Lambda x)}{\pi x}     .
+$$
+This is non-local in the sense that for certain $x\neq y$ the commutator is nonzero. However, this commutation relation does agree with the lattice picture, if we set the lattice spacing to be $\pi / \Lambda$! (check for yourself)
+
+Now we can define the normal ordering in the vacuum sector, then propagate it to the kink sector via the displacement operator, which we will talk about shortly.
+
+
+
