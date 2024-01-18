@@ -38,40 +38,48 @@ $$
 In Lagrangian formalism, $[S]=[\hbar]$ where $S$ is the action, and $S = \int d^d x \, \mathcal{L}$, where $\mathcal{L}$ is the Lagrangian (density) and $d$ is the space-time dimension. Note that right now we are working with a partially "natural" units, where $c=1$ but $\hbar \neq 1$. Since $c=1$ we still have $[x] = [t]$, namely $L=T$ ($L$ is length and $T$ is time), but no longer do we have $T=E^{-1}$ since this is a result of $[\hbar]=ET=1$ (recall that $\hbar \omega=E$, meaning $[\hbar \omega]=E$, and $\omega$ is the frequency with dimension $1 / T$ ). 
 
 Let $d$ be the dimension of spacetime, in the partial natural unit we have
+
 $$
 \int d^{d}x \, \mathcal{L}\sim \hbar \implies [\mathcal{L}]=[\hbar] L^{-d}
 $$
 Take a specific term, say $(\partial \phi)^{2}$, to continue the analysis,
+
 $$
 [(\partial \phi)^{2}] = L^{-2} [\phi^{2}] = [\mathcal{L}] = [\hbar]L^{-d} \implies [\phi^{2}]=[\hbar] L^{2-d}
 $$
 which is 
+
 $$
 [\phi] = [\sqrt{ \hbar }] \, L^{1-d / 2}.\tag{1}
 $$
 This agrees with the convention that field operator $\phi$ scales as $\sqrt{ \hbar }$. Furthermore, this scaling property does not depend on the spacetime dimension $d$, it holds for any spacetime dimension.
 
 I don't think the $\hbar$-dependence given by Eq. (1) is unique, apparently there exist other possibilities, we can move $\hbar$ around in the Lagrangian, just to make sure that the action altogether is of dimension $\hbar$. However it seems that $\phi\sim \hbar^{1/2}$ is indeed the most convenient option. Another way to see the advantage of this choice is from the action,
+
 $$
 S \sim \hbar \sim \int d^{4}x \, (m^{2} \phi^{2}+(\partial \phi)^{2} +U(\phi)),
 $$
 then
+
 $$
 \int d^{4}x \, \left[ m^{2} \xi^{2}+(\partial \xi)^{2} + U(\xi) \right] \sim 1,   \quad \xi:= \frac{\phi}{\sqrt{ \hbar }} . 
 $$
 In this way, we can absorb $\hbar$ into the definition of $\phi$, this is similar to absorbing the coupling $g$ into the field definition in gauge theory. We now *define* $\xi$ to be *independent* of $\hbar$. 
 
 Having fixed the $\hbar$-dependence of $\phi$, we can substitute it to the potential $U$, for example the $\phi^{4}$ model to determine the $\hbar$ dependence of the coupling,
+
 $$
 [S]\sim\int d^{d}x \, \lambda \phi^{4} \sim L^{d} [\lambda][\hbar^{2}] L^{4-2d} = L^{4-d}[\hbar^{2}][\lambda],
 $$
 on the other hand we already know that $S\sim \hbar$ so
+
 $$
 L^{4-d}[\hbar^{2}][\lambda] = [\hbar] \implies [\lambda \hbar] = L^{d-4}. 
 $$
 If we choose $L$ to be the fundamental unit instead of energy $E$, it is clear the $\lambda \hbar$ is independent of $\hbar$. Plus, we see that $d=4$ is special.
 
 For the sake of completeness, let's consider the mass term in the Lagrangian. Similar to what we have for the kinetic term, 
+
 $$
 [m^{2} \phi^{2}] = E^{2}\, [\phi^{2}] = [\mathcal{L}] = [\hbar]\,L^{-d} \implies [\phi] = [\sqrt{ \hbar }]L^{-d/2}E^{-1} .
 \tag{2}
@@ -80,12 +88,14 @@ $$
 **Dimension and measurement**
 
 If two things are of the same dimension, for example, say
+
 $$
 [A] \sim [a] = L
 $$
 where $\sim$ means having the same dimension. Then we can use one of them as the unit to measure the other, say, use $a$ as the "ruler" to measure $A$, the result $\widetilde{A} :=A / a$ is a dimensionless number. 
 
 Suppose $[\phi]=[\hbar]^{1/2}$, another way to say the same ting is $\phi \sim \sqrt{ \hbar }$, note that the tilde does not imply any relation between the *values* of $\phi$ and $\sqrt{ \hbar }$, it only means that they have the same dimension. The point is, since they have the same dimension, we can use one of them to measure the other, for example we can define
+
 $$
 \tilde{\phi} = \phi / \sqrt{ \hbar }
 $$
@@ -105,14 +115,17 @@ It is generally understood that each loop contribution to amplitudes is associat
 **First, regard $\hbar$ as a constant of nature with certain dimension, use $\hbar$ to make terms in the Lagrangian dimensionless.**
 
 Again, let's work with the assumption that $c = \epsilon_ {0} = 1$. Require $[S]=\hbar$, and $\alpha_ {s} = g^{2} / 4\pi \hbar$ is dimensionless, the latter implies that $[g]=\sqrt{ \hbar }=\sqrt{ ET }=\sqrt{ EL }$. From the self-energy of gluons $G_ {\mu \nu}G^{\mu \nu}$ where $G = \partial A - \partial A +ig / \hbar [A,A]$ we have  
+
 $$
 [A] = \sqrt{ \frac{E}{L} }.
 $$
 For the same reasons, in the scalar QED the classical electric charge $e$ and mass $m$ are divided by $\hbar$,
+
 $$
 S_ {\text{sQED}} = \int d^{4}x \, \left\lbrace \left\lvert D\phi \right\rvert ^{2}-\frac{m^{2}}{\hbar^{2}}\left\lvert \phi \right\rvert ^{2} \right\rbrace , \quad  D = \partial +i \frac{e}{\hbar }A.
 $$
 The boson field dimension 
+
 $$
 [\phi]=[A]= \sqrt{ \frac{E}{L} }.
 $$
@@ -121,14 +134,17 @@ Fermion fields are more complicated, since they have no classical counterparts, 
 **Second step is to specify $\hbar$ dependence of all quantities appearing in the action.**
 
 The choice made by Brodsky and Hoyer is as following:
+
 $$
 \widetilde{A}:= \frac{A}{\sqrt{ \hbar }},\quad \tilde{\phi}:= \frac{\phi}{\sqrt{ \hbar }}
 $$
 where $\widetilde{A},\tilde{\phi}$ are $\hbar$-independent. Similarly, define the following $\hbar$-independent quantities
+
 $$
 \widetilde{g}:= \frac{g}{\hbar},\quad  \widetilde{e}:= \frac{e}{\hbar},\quad  \widetilde{m}:= \frac{m}{\hbar}.
 $$
 Then one can write the Lagrangian in terms of these $\hbar$-independent quantities to check the $\hbar$ dependence explicitly. It turns out that, at least in the simple models discussion in the paper, $\hbar$ always appears in the combination 
+
 $$
 \widetilde{g}\sqrt{ \hbar } \quad \text{and}\quad \widetilde{e}\sqrt{ \hbar }
 $$
@@ -143,18 +159,21 @@ In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pi
 1. The energy (mass) is finite;
 2. The energy is locally minimum, meaning the soliton is stable;
 3. The potential $U$ depends on a coupling constant $\lambda$ according to the scaling law
+4. 
 $$
 U(\phi;\lambda) = \frac{1}{\lambda}U(\sqrt{ \lambda }\,\phi;1).
 $$
 The choice is such that all the $\lambda$ dependence are now moved to the pre-factor $1 / \lambda$. As for $\hbar$-expansion, we take the scheme such that $\hbar$-expansion agrees with $\lambda$-expansion, namely each loop brings in a factor of $\hbar$. 
 
 Let the Hamiltonian be 
+
 $$
 H = \int d^{2}x \, : \mathcal{H} :_ {a},\quad \mathcal{H}(x) = \frac{\pi^{2}}{2} + \frac{(\partial_ {x}\phi(x))^{2}}{2} + \frac{1}{\lambda} V\left(\sqrt{ \lambda}\,  \phi(x) \right).    
 $$
 Now, in order to get the equation of motion, we have two options: 1) Legendre-transform the equation to the Lagrangian formalism and adopt Euler-Lagrange equation, or 2) stick with the Hamiltonian formalism and adopt the Hamiltonian equations of motion (Hamilton equations) instead. Here we will take the second option. 
 
 Recall that the Hamilton equations in classical field theory reads 
+
 $$
 \begin{align*}
 \frac{\delta \mathcal{H}}{\delta \phi_i} &=-\dot{\pi}(x), \\
@@ -162,21 +181,25 @@ $$
 \end{align*}
 $$
 This is a non-trivial generalization of the familiar Hamiltonian in classical mechanics, non-trivial since the connection between variational derivative and partial derivative is not as simple as one might think, we have
+
 $$
 \frac{\delta \mathcal{H}}{\delta \phi} = \frac{\partial\mathcal{H}}{\partial \phi } - \left( \partial_ x\frac{\partial \mathcal{H}}{\partial(\partial_ {x}\phi)} \right).
 $$
 
 Taking everything into consideration, we can obtain the equation of motion by straightforward calculation. But before going there, let's rewrite the Hamiltonian in a more compact form:
+
 $$
 \boxed{
 \lambda \, \mathcal{H} = \frac{1}{2} \tilde{\pi}^{2} + \frac{1}{2} \vec{\nabla}^{2}\,\tilde{\pi} + V(\tilde{\phi}),\quad  \tilde{\pi} := \sqrt{ \lambda }\, \pi,\quad  \tilde{\phi} := \sqrt{ \lambda  }\,\phi.
 }
 $$
 Then we can first obtain the EOM in terms of $\tilde{\phi}$ and $\tilde{\pi}$, the changing to un-tilded version is trivial. Finally we have
+
 $$
 \ddot{\phi} - \vec{\nabla}^{2} \phi(x,t) + \frac{1}{\sqrt{ \lambda }} V^{(1)}(\sqrt{ \lambda }\phi)  = 0
 $$
 with definition
+
 $$
 V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n}}. 
 $$
@@ -185,10 +208,12 @@ $$
 When kink solutions are placed in more than one spatial dimension, they become extended planar structures called “domain walls.” 
 
 Now, how can we borrow the kink result form 2D directly to 3D? Consider a static kink solution in the $x$ direction
+
 $$
 \phi(x,y) =: f(x,y)=: f_ {1}(x)\times f_ {2}(y) , 
 $$
 where we have assumed the possibility of separation of variables. To say the kink is in the $x$ direction is to say the solution satisfies the equation of motion in the $x$ direction,
+
 $$
 \frac{ \partial^{2} f(x,y) }{ \partial x^{2} } = \frac{1}{\lambda} \frac{ \partial V }{ \partial \phi }  = \frac{1}{\sqrt{ \lambda }} \frac{ \partial V }{ \partial \tilde{\phi} }  = \frac{1}{\sqrt{ \lambda }}V^{(1)}(\tilde{\phi}). 
 $$
@@ -196,10 +221,12 @@ $$
 - - -
 
 First, consider the case in 2D. Writing the filed as a kink background plus fluctuation, 
+
 $$
 \phi(x,t) =: f(x) + {\mathfrak g}(x) e^{ -i\omega t }
 $$
 where $f(x)$ is the 1-dimensional kink solution, the equation of motion in terms of ${\mathfrak g}$ reads
+
 $$
 [-\omega^{2}-\partial_ {x}^{2}+V^{(2)}(\sqrt{ \lambda }f(x))]\, {\mathfrak g}(x) = 0.
 $$
@@ -209,6 +236,7 @@ As we mentioned before, there are three kinks of solutions: the zero mode, the s
 - - -
 
 The equation of motion is the Sturm-Liouville equation. A general Sturm-Liouville problem is typically written in the form:
+
 $$
 \frac{d}{dx}\left[ p(x) \frac{dy}{dx} \right] - q(x)y + \lambda r(x)y = 0
 $$
@@ -231,11 +259,13 @@ In our case, the weight function is trivial.
 - - -
 
 We will denote the zero mode by ${\mathfrak g}_ {B}$ and the shape mode by ${\mathfrak g}_ {S}$. The $B$ in ${\mathfrak g}_ {B}$ has a historical reason, but in our note it is just part of the name. The normalization conditions are
+
 $$
 \int dx \, {\mathfrak g}_ {S}^{2} = \int dx \, {\mathfrak g}_ {B}^{2} = 1 , \quad \int dx \, {\mathfrak g}_ {B}{\mathfrak g}_ {S} = 0 ,\quad \int dx \, {\mathfrak g}_ {k}(x){\mathfrak g}_ {p}(x) =  2\pi i\delta(p-k). 
 $$
 
 The sign of ${\mathfrak g}_ {B}$ is fixed using 
+
 $$
 {\mathfrak g}_ {B}(x) = - \frac{f'(x)}{\sqrt{ Q_ {0} }},
 $$
@@ -253,6 +283,7 @@ We choose to expand in the $x$ direction in normal modes (in the kink background
 </div>
 
 We want to expand the static fluctuation field $\phi(r)$ (defined by $\phi=f_ {\text{kink}}+g$) in terms of normal modes. Since we have defined the indices $k$ in ${\mathfrak g}_ {k}(x)$ to include everything, we can conveniently write the field expansion as
+
 $$
 \begin{align*}
 \phi(r) &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (r),\\
@@ -260,16 +291,19 @@ $$
 \end{align*}
 $$
 where $r = (x,y)$. We adopt the convention
+
 $$
 B^{\ddagger}_ {k} = \frac{B^{\dagger}_ {k} }{2\omega _ {k} }.
 $$
 This helps us to jump between different conventions for the field expansion.
 
 We have omitted the vector sign (or bold font) in $r$ since it would not raise any misunderstanding. We assume (quite reasonably) the separation of variables $x$ and $y$ for 2D normal modes ${\mathfrak g}(r)$,
+
 $$
 {\mathfrak g}(r) = {\mathfrak g}_ {x}\times g_ {y},\quad  {\mathfrak g}_ {x} = \text{kink normal modes},\, {\mathfrak g}_ {y} = \text{plane waves.}
 $$
 The quantization in terms of $\phi$ and $\pi$ reads
+
 $$
 [\phi(r),\pi(r')] = i\delta^{(2)}(r-r').
 $$
@@ -294,6 +328,7 @@ A natural question that follows is, if there exists a regularization method that
 ## 2.3. Lattice quantization
 
 In our work we will start with the lattice quantization. Recall that the canonical quantization relation in a continuous $d$-dimensional spacetime reads
+
 $$
 [\phi(r),\pi(r')] = i \delta^{(d)} (r-r'),
 \tag{2.1}
@@ -301,6 +336,7 @@ $$
 In lattice quantization, the continuous spacetime of the theory is replaced by a discrete set of points, and the fields are defined only at these points. It is a powerful, comprehensive change of viewpoint, not only of numerical importance, but really alters our view of spacetime. In principal we can translate all concepts we have defined in spacetime continuum into the lattice spacetime, such as the gauge connection, gauge field strength, etc. Sometimes, it is convenient to think the lattices as "sample points" of a spacetime continuum. In this view, between the lattice sites there maybe exists something other than the pure void, but it is meaning less to talk about them anyway. This view is rather useful when discussing the connection between lattice quantization and momentum cutoff quantization. 
 
 The commutation relation on a lattice should take the form
+
 $$
 [\phi_ {i},\pi_ {j}] =i\delta_ {ij},
 \tag{2.2}
@@ -308,6 +344,7 @@ $$
 where $i,j$ are the indices of different sites. 
 
 Recall that in canonical quantization, Eq. (2.1) translate to the momentum space rather trivially, yielding
+
 $$
 [a_ {p},a^{\dagger}_ {p'}] = i (2\pi)^{d} \delta^{(d)}(p-p').
 $$
@@ -316,6 +353,7 @@ So the question is, how does the lattice commutation relation translates to diff
 ### 2.3.1 Latticization of scalar field
 
 Write the scalar field $\phi$ in continuum as as function of spacetime position $\phi(x)$, and write the lattice position as a label of the field $\phi_ {a^{\mu}}$, where $a^{\mu}=m^{\mu} a$, $m^{\mu}\in \mathbb{N}^{d}$ is the $d$-dimensional count of the lattice site, $a$ is the lattice distance. The summation on lattices goes to integral in the continuous limit with the following dictionary,
+
 $$
 \begin{align*}
 \sum_ {m^{d}}  &\to \int, \\
@@ -324,10 +362,12 @@ f_ {a^{\mu}} &\to f(x)
 \end{align*}
 $$
 where $m^{d}$ indicates the $d$-dimensional lattice. Combined together we have the familiar formula
+
 $$
 \sum_ {m^{d}} a^{d} f_ {a^{\mu}} \to \int d^{d}x \, f(x).  
 $$
 We can define two types of differences, corresponding to derivatives in the continuous case
+
 $$
 \begin{align*}
 \partial_ {\mu} f_ {x} &= \frac{1}{a} (f_ {x+\hat{a}^{\mu}}-f_ {x}),\\
@@ -337,14 +377,17 @@ $$
 where $\hat{a}^{\mu}$ is a vector in direction $x^{\mu}$ of length $a$, namely $\hat{a}$ moves to the next lattice site in the $x^{\mu}$ direction. These two differences are like differences "from right" and "from left". For smooth functions of course their continuous limit all give the derivative.
 
 The interesting thing is that these two types of differences are kind of dual to each other. Define an inner product
+
 $$
 (f_ {x},g_ {x}) := \sum_ {x}  f_ {x} g_ {x},
 $$
 similar to what we have for differential forms, then 
+
 $$
 (f_ {x},\partial g_ {x}) = (-\partial' f_ {x},g_ {x}),
 $$
 which corresponds to the integral by part
+
 $$
 \int  \, f\partial g  = \int \,(-\partial f)  g.
 $$
@@ -356,28 +399,34 @@ First let's review how the second quantization is achieved in the vacuum sector 
 Note that we will adopt a slight change of variable here. Before we used $\vec{r}$ to denote the spatial vector where $\vec{r}=(x,y, \cdots)$ since in two dimensional space time, it is easier to write $x,y$ than $x_ {1},x_ {2}$. However, since now we are dealing with $d+1$ dimensional spacetime, we will also adopt a different convention, namely $x=(t,\vec{x})$ where $\vec{x}$ is a $d$-dimensional vector with components $x_ {1},\cdots,x_ {d}$. In summary, Latin letters without a vector sign $x$ are covariant $d+1$-vectors, the generalization of $4$-vector to arbitrary dimension.
 
 The simplest special relativistic equation of motion a field $\phi$ can satisfy is the massless Klein-Gordon equation, 
+
 $$
 \partial^{2}\phi=0,\quad \partial^{2}=\partial_ {\mu}\partial^{\mu}=\partial_ {t}^{2}-\nabla^{2}.
 $$
 Decompose $\phi$ into a continuum of momentum mode, each mode can be written as
+
 $$
 a_ {p} (t) e^{ i\vec{p}\cdot \vec{x} }
 $$
 where we have assume the separation of variable $t$ and $\vec{x}$, and the time-dependent part of the Klein-Gordon equation gives
+
 $$
 (\partial_ {t}^{2}+\vec{p}\cdot \vec{p})a_ {p} (t) = 0
 $$
 with solutions 
+
 $$
 a_ {p} (t) =a_ {p}  e^{ \pm  i\omega t},\quad \omega^{2}= \vec{p}^{2}.
 $$
 where $a_ {p}$ now is just some c-number, constant in time. The field can be expanded as a linear combination of all the momentum modes
+
 $$
 \phi(t,\vec{r}) = \int \frac{d^{d}p}{(2\pi)^{d}} \, (a_ {p} e^{ -ipx }+a_ {p} ^{\ast }e^{ipx }) 
 $$
 where the second term in the parenthesis is to make sure that $\phi$ is real. We have assembled $\omega$ and $\vec{p}$ into $p=(\omega,\vec{p})$. 
 
 Now the second quantization kicks in. This is usually first done in the momentum space, since we are treating each mode as a harmonic oscillator. You can already see one aspect of the difference between the previously define lattice quantization and the textbook second quantization. We introduce the `equal-time commutation relation`
+
 $$
 [a_ {k} ,a_ {p}^{\dagger}] = (2\pi)^{d} \,\delta^{d}(\vec{k}-\vec{p}),
 $$
@@ -385,26 +434,31 @@ where we have omitted the vector sign in the superscript $k,p$ to avoid overly c
 The factors of $2\pi$ are a convention, stemming from our convention for Fourier transform, for the details see my other blog on conventions. 
 
 We want the operators $a_ {p}^{\dagger}$ to create particles with momentum $\vec{p}$. Let $\left\lvert{\vec{p}}\right\rangle$ be a physical state with a single particle with momentum $\vec{p}$, *define*
+
 $$
 a_ {p} ^{\dagger}\left\lvert{\Omega}\right\rangle = \frac{1}{\sqrt{ 2\omega _ {p}  }}\left\lvert{\vec{p}}\right\rangle ,
 $$
 where $\left\lvert{\Omega}\right\rangle$ is the ground state in the vacuum sector. This factor of $1 / \sqrt{ 2\omega _ {p} }$ is just another convention. 
 
 From the normalization $\left\langle \Omega \middle\vert \Omega \right\rangle=1$ and the commutation of $a,a^{\dagger}$ we get
+
 $$
 \left\langle \vec{p} \middle\vert \vec{k} \right\rangle =2\omega _ {p} (2\pi)^{d}\delta^{d}(\vec{p}-\vec{k}).
 $$
 As a result, the identity operator for one particle states is 
+
 $$
 \mathbb{1}=\int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{2\omega _ {p} }\left\lvert{\vec{p}}\right\rangle \left\langle{\vec{p}}\right\rvert .
 $$
 We define the quantum field as integrals over $a_ {p}$ and $a_ {p}^{\dagger}$, 
+
 $$
 \phi_ {0}(\vec{x})= \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{ 2\omega }} (a_ {p} e^{ i\vec{p} \cdot \vec{x}} + a_ {p} ^{\dagger}e^{ -i\vec{p}\cdot \vec{x} }) 
 $$
 where the subscript $0$ indicates this is a free field. The traditional view is to take it as the definition of the field operator $\phi_ {0}$ constructed from the creation and annihilation operators $a_ {p}$ and $a_ {p}^{\dagger}$ (*Schwartz M.D.*), but we shall try an opposite viewpoint, as will be shown later. 
 
 Later we will work with the Schrodinger picture which is less commonly used compared to the Heisenberg or interaction pictures. To finish the review on the second quantization, we just mentioned that in Heisenberg picture, all the time dependence is in operators such as $\phi$ and $a_ {p}$, the field operator reads
+
 $$
 \phi_ {0}(\vec{x},t) = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{ 2\omega _ {p}  }}(a_ {p} e^{ -ipx } + a_ {p} ^{\dagger}e^{ ipx }),
 $$
@@ -413,6 +467,7 @@ which is also Lorentz invariant.
 - - -
 
 Instead of the traditional view of harmonic oscillator quantization in the momentum space, let's take Eq.(2) as the starting point. Adopt a somewhat un-conventional field expansion
+
 $$
 \begin{align*}
 \phi(\vec{x}) &= \int \frac{d^{d}p}{(2\pi)^{d}} \, e^{ -i\vec{x}\cdot \vec{p} }\phi_ {p},\\
@@ -424,6 +479,7 @@ The next question is how to inverse it on a lattice...
 ### 2.4 (2+1)-dimensional 
 
 For now, let's accept (1) the ultraviolet cutoff $\Lambda$ and (2) the harmonic quantization *in the trivial vacuum sector* and translate it to the physical spacetime. As a result we get a non-local commutation relation in spacetime,
+
 $$
 [\phi(x),\pi(y)]_ {\Lambda} = i \int_{-\Lambda}^{\Lambda} \frac{dp}{2\pi} \, e^{ -ip(x-y)} = i \frac{\sin(\Lambda x)}{\pi x}     .
 $$
