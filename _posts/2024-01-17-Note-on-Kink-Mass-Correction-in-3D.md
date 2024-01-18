@@ -186,7 +186,7 @@ $$
 \frac{\delta \mathcal{H}}{\delta \phi} = \frac{\partial\mathcal{H}}{\partial \phi } - \left( \partial_ x\frac{\partial \mathcal{H}}{\partial(\partial_ {x}\phi)} \right).
 $$
 
-Taking everything into consideration, we can obtain the equation of motion by straightforward calculation. But before going there, let's rewrite the Hamiltonian in a more compact form:
+Taking everything into consideration, we obtain the equation of motion by straightforward calculation. But before going there, let's rewrite the Hamiltonian in a more compact form:
 
 $$
 \boxed{
@@ -462,7 +462,7 @@ Later we will work with the Schrodinger picture which is less commonly used comp
 $$
 \phi_ {0}(\vec{x},t) = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{ 2\omega _ {p}  }}(a_ {p} e^{ -ipx } + a_ {p} ^{\dagger}e^{ ipx }),
 $$
-which is also Lorentz invariant. 
+which is *not* Lorentz invariant. 
 
 - - -
 
@@ -487,5 +487,28 @@ This is non-local in the sense that for certain $x\neq y$ the commutator is nonz
 
 Now we can define the normal ordering in the vacuum sector, then propagate it to the kink sector via the displacement operator, which we will talk about shortly.
 
+Recall the equation of motion reads
 
+$$
+\partial^{2}\phi-\frac{1}{\lambda} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi}=0,
+$$
+separate $\phi(\vec{x},t)$ into the kink background $f(\vec{x})$ and the fluctuation (time-dependent) ${\mathfrak g}$,
 
+$$
+\phi(\vec{x},t) = f(\vec{x})+{\mathfrak g}(\vec{x},t),
+$$
+insert it into the equation of motion and use the fact that $f(\vec{x})$ satisfies the time-independent EoM, we get the EoM for the fluctuation field:
+
+$$
+\begin{align*}
+0 &= \partial^{2}(f+{\mathfrak g}) -\frac{1}{\lambda} \frac{dV(\sqrt{ \lambda }(f+{\mathfrak g}))}{d\phi}\\
+&= \partial^{2} f + \partial^{2}{\mathfrak g}-\frac{1}{\lambda} \frac{d}{d\phi}\left( V( \sqrt{ \lambda  } f)+{\mathfrak g} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi}{\Large\mid}_ {\phi=f} + \mathcal{O}({\mathfrak g^{2}}) \right)\\
+&= \left\lbrace \partial^{2}f - \frac{1}{\lambda} \frac{dV(\sqrt{ \lambda }f)}{df} \right\rbrace + \left\lbrace \partial^{2}{\mathfrak g}-\frac{{\mathfrak g}}{\lambda} \frac{d^{2}V(\sqrt{ \lambda }f)}{df^{2}} \right\rbrace +\mathcal{O}({\mathfrak g^{2}})\\
+&= \partial^{2}{\mathfrak g}+V^{(2)}(\sqrt{ \lambda }f) + \mathcal{O}({\mathfrak g}^{2}),
+\end{align*}
+$$
+where 
+
+$$
+V^{(n)} := \frac{d^{n}V(\tilde{\phi})}{d\tilde{\phi}^{n}},\quad  \tilde{\phi}:=\sqrt{ \lambda }\phi.
+$$
