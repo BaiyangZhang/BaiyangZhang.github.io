@@ -28,11 +28,14 @@ In the frame work of the linearized soliton perturbation theory, we can systemat
 Firstly, we work in the Schrodinger picture where the operator are time-independent while the wave functions (vectors in Hilbert space) are time dependent. Secondly, we will start with the Hamiltonian formalism where the canonical momentum, $\pi$, is considered as a fundamental ingredient, rather than the time derivative of $\phi$, the field of the Lagrangian. 
 
 In $2+1$ dimension, the Hamiltonian $H$ is  the integral of the Hamiltonian density $\mathcal{H}$ over the 2D manifold of space alone, 
+
 $$
 H = \int_ {M} d^{2}x\, \mathcal{H}(\phi,\pi),\quad  \mathcal{H}=\frac{1}{2}\pi^{2}(x)+\frac{1}{2} (\partial_ i \phi)^{2} + \frac{1}{\lambda}V(\sqrt{ \lambda }\phi(x)) 
 $$
 
-**Dimensional analysis.** In Lagrangian formalism, $[S]=[\hbar]$ where $S$ is the action, and $S = \int d^d x \, \mathcal{L}$, where $\mathcal{L}$ is the Lagrangian (density) and $d$ is the space-time dimension. Note that right now we are working with a partially "natural" units, where $c=1$ but $\hbar \neq 1$. Since $c=1$ we still have $[x] = [t]$, namely $L=T$ ($L$ is length and $T$ is time), but no longer do we have $T=E^{-1}$ since this is a result of $[\hbar]=ET=1$ (recall that $\hbar \omega=E$, meaning $[\hbar \omega]=E$, and $\omega$ is the frequency with dimension $1 / T$ ). 
+**Dimensional analysis**
+
+In Lagrangian formalism, $[S]=[\hbar]$ where $S$ is the action, and $S = \int d^d x \, \mathcal{L}$, where $\mathcal{L}$ is the Lagrangian (density) and $d$ is the space-time dimension. Note that right now we are working with a partially "natural" units, where $c=1$ but $\hbar \neq 1$. Since $c=1$ we still have $[x] = [t]$, namely $L=T$ ($L$ is length and $T$ is time), but no longer do we have $T=E^{-1}$ since this is a result of $[\hbar]=ET=1$ (recall that $\hbar \omega=E$, meaning $[\hbar \omega]=E$, and $\omega$ is the frequency with dimension $1 / T$ ). 
 
 Let $d$ be the dimension of spacetime, in the partial natural unit we have
 $$
