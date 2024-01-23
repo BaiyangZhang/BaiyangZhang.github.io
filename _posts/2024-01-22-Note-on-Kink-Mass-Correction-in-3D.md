@@ -544,14 +544,14 @@ $$
 $$
 The commutation relation in terms of those reads
 $$
-[B_ {k_ {1}},B^{\dagger}_ {k_ {2}}] = (2\pi)^{d}\delta^{d}(k_ {1}-k_ {2}).
+[B_ {k_ {1}},B^{\ddagger}_ {k_ {2}}] = (2\pi)^{d}\delta^{d}(k_ {1}-k_ {2}).
 $$
 Note the minus sign. 
 
 Expand $A,A^{\ddagger}$ in terms of $B^{\dagger},B$ we have
 $$
 \begin{align*}
-A^{\ddagger}_ {p} &= \frac{1}{2}\sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p})}{\omega_ {p}} \left[ (\omega _ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right]     ,\\
+A^{\ddagger}_ {p} &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p})}{2\omega_ {p}} \left[ (\omega _ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right]     ,\\
 A_ {-p}&= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \tilde{{\mathfrak g}}_ {k}(-\vec{p}) \left[ (\omega _ {p} -\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} +\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right].     
 \end{align*}
 $$
@@ -568,24 +568,45 @@ $$
 
 Define the Fourier transformation $\tilde{f}$ of function $f(x)$ to be 
 $$
-\tilde{f}(\vec{p}) := \int d^{d}x \,   f(\vec{x})e^{ -i\vec{p}\cdot \vec{x} },
+\tilde{f}(\vec{p}) := \int d^{d}x \,   f(\vec{x})e^{ -i\vec{p}\cdot \vec{x} }.
 $$
-Note that instead of $+i\vec{p}\cdot \vec{x}$ we have minus sign. This is only the spatial part of the Fourier transformation (recall that our spacetime is $d+1$ dimensional).
+The Fourier transformation of normal modes reads
+$$
+\tilde{{\mathfrak g}}_ {k}(p) = \int d^{d}x \, {\mathfrak g_ {k}(\vec{x})} e^{ -i\vec{p}\cdot \vec{x} }
+$$
+which satisfies relation
+$$
+\tilde{{\mathfrak g}}_ {k}(\vec{p}) = \tilde{{\mathfrak g}}_ {-k}(-\vec{p})^\ast .
+$$
+Sometime this relation can help to make the numerical calculation easier.
+
+Note that in our convention of Fourier transformation, instead of $+i\vec{p}\cdot \vec{x}$ we have minus sign. This is only the spatial part of the Fourier transformation (recall that our spacetime is $d+1$ dimensional).
 
 We have divided the leading order, kink-sector Hamiltonian into $A+B+C$ three parts, in normal order we have
 $$
 \begin{align*}
-A &= \\
-B &= \\
-C &= \\
+A &=\frac{1}{2} \int \frac{d^{d}p}{(2\pi)^{d}} \, \left( -\omega^{2}_ {p}  A^{\ddagger}_ {p}  A^{\ddagger}_ {-p}+ \omega _ {p}  A^{\ddagger}_ {p} A_ {p}  -\frac{1}{4} A_ {-p}A_ {p}  \right),  \\
+B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d}} \int   \frac{d^{d}p}{(2\pi)^{d}} \frac{d^{d}p'}{(2\pi)^{d}} \,\omega_ {k}^{2}\, \tilde{{\mathfrak g}}_ {-k}(\vec{p} )\tilde{{\mathfrak g}}_ {k}(\vec{p}') \\
+&\;\;\;\; \times \left[ A^{\ddagger}_ {p }A^{\ddagger}_ {p'} + \frac{A^{\ddagger}_ {p }A_ {-p'}}{2\omega_ {p'}} + \frac{A^{\ddagger}_ {p'}A_ {-p }}{2\omega_ {p }} + \frac{A_ {-p }}{2\omega_ {p }} \frac{A_ {-p'}}{2\omega_ {p'}} \right].
 \end{align*}
 $$
 
-The following relations are useful in derivation:
+The following relations are useful in derivation, with terms that do not annihilate the kink ground state $\left\lvert{0}\right\rangle$:
 $$
 \begin{align*}
-A^{\ddagger}_ {p} A^{\ddagger}_ {-p} &= \frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}}\frac{\;d^{d}k'}{(2\pi)^{d}} \frac{\tilde{{\mathfrak g}}_ {k}(-p)\tilde{{\mathfrak g}}_ {k'}(p)}{\omega^{2}_ {p} } \,\\
-&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {-p}+\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} }(\omega _ {p} -\omega _ {k} )(\omega_ {-p}+\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right)  \\
-
+A^{\ddagger}_ {p} A^{\ddagger}_ {p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k'}{(2\pi)^{d}} \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p}) \tilde{{\mathfrak g}}_ {k'}(-\vec{p'})}{2\omega_ {p} 2\omega_ {p'} } \\
+&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}+\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} }(\omega _ {p} -\omega _ {k} )(\omega_ {p'}+\omega_ {{k'}}) B_ {-k} B^{\ddagger}_ {k'}) \right),  \\
+A^{\ddagger}_ {p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k'}{(2\pi)^{d}} \frac{1}{2\omega_ {p} } \tilde{{\mathfrak g}}_ {k}(-\vec{p})\tilde{{\mathfrak g}}_ {k'}(-\vec{p}') \\
+&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p‘}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} } (\omega _ {p} -\omega _ {k} )(\omega_ {p’}-\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right),  \\
+A_ {-p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}}\frac{d^{d}k'}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(-\vec{p})\tilde{{\mathfrak g}}_ {k'}(-\vec{p}')\\
+&\;\;\;\;\; \times  \left( (\omega _ {p} -\omega _ {k} )(\omega_ {p'}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'} + \frac{1}{2\omega _ {k} }(\omega _ {p} +\omega _ {k} )(\omega_ {p'}-\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right).  \\
 \end{align*}
+$$
+
+Keeps the terms in $A$ that survives acting on $\left\lvert{0}\right\rangle$, We have 
+$$
+\begin{align*}
+A &=  \\
+B+C &= 
+\end{align*} 
 $$
