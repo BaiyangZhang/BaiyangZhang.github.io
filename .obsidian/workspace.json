@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-1-10-Representables-in-Category-Theory.md",
+                "file": "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md"
+                "file": "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md"
               }
             }
           },
@@ -202,13 +202,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "22282c7baf0ff398",
+  "active": "d1982b0eee003f27",
   "lastOpenFiles": [
+    "_posts/2024-1-10-Representables-in-Category-Theory.md",
+    "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
+    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
     "2015-05-15-images.md",
     "2015-05-15-images.md.crdownload",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
-    "_posts/2024-01-17-Note-on-Kink-Mass-Correction-in-3D.md",
     "_includes/figure.liquid",
     "_includes/figure.liquid.crdownload",
     "img/kinkLevel.png",
@@ -217,7 +220,6 @@
     "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
-    "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "Trash.md",
     "_pages/about.md",
     "_pages/about_baiyang.md",
@@ -234,8 +236,6 @@
     "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
-    "_drafts/2023-05-07-soliton-particle-duality.md",
-    "_drafts/DiscussionLetters/2022-09-22-HuiDiscussion1.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",

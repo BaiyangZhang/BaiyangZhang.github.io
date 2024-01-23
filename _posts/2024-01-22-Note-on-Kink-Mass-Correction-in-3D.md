@@ -2,7 +2,7 @@
 layout: post
 title: Note on the kink mass correction in 3D
 subtitle: 
-date: 2024-01-17
+date: 2024-01-22
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -153,6 +153,11 @@ that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ 
 This derivation is equivalent to the standard one of, for example, Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume the parameters appearing in the action to be independent of $\hbar$. 
 
 Fore more details please refer to Brodsky and Hoyer's paper mentioned above. 
+
+## 1.3 Review of Kink mass quantization
+
+
+
 # 2 Kinks in 3D
 
 In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pii/037015737690048X), he made three assumption:
@@ -232,6 +237,7 @@ $$
 $$
 
 As we mentioned before, there are three kinks of solutions: the zero mode, the shape mode and the continuum. 
+
 
 - - -
 
@@ -511,4 +517,75 @@ where
 
 $$
 V^{(n)} := \frac{d^{n}V(\tilde{\phi})}{d\tilde{\phi}^{n}},\quad  \tilde{\phi}:=\sqrt{ \lambda }\phi.
+$$
+- - -
+
+In the below are some results needed for the derivation, not carefully organized in a readable order. I will tidy it up later.
+
+The commutation relation reads
+$$
+[\phi(\vec{x}_ {1}),\pi(\vec{x}_ {2})] = i^{d} \delta(\vec{x}_ {1}-\vec{x}_ {2}),
+$$
+together with the decomposition we have
+$$
+\begin{align*}
+[\phi_ {p_ {1}},\pi_ {p_ {2}}] &= i(2\pi)^{d}\delta^{d}(p_ {1}+p_ {2}),\\
+[\phi_ {k_ {1}},\pi_ {k_ {2}}] &= i(2\pi)^{d}\delta^{d}(k_ {1}+k_ {2}),
+\end{align*}
+$$
+note the plus sign instead of minus in the parenthesis. 
+
+The decomposition into ladder operators reads
+$$
+\begin{align*}
+\phi_ {p} &= A^{\ddagger}_ {p}+\frac{A_ {-p}}{2\omega_ {p}},\quad \pi_ {p}=i\omega_ {p}A^{\ddagger}_ {p}- \frac{iA_ {-p}}{2},\quad A^{\ddagger}_ {p} = \frac{A^{\dagger}_ {p} }{2\omega _ {p} },\\
+\phi_ {k} &= B^{\ddagger}_ {k}+\frac{B_ {-k}}{2\omega_ {k}},\quad \pi_ {k}=i\omega_ {k}B^{\ddagger}_ {k}- \frac{iB_ {-k}}{2},\quad B^{\ddagger}_ {k} = \frac{B^{\dagger}_ {k} }{2\omega _ {k} }.
+\end{align*}
+$$
+The commutation relation in terms of those reads
+$$
+[B_ {k_ {1}},B^{\dagger}_ {k_ {2}}] = (2\pi)^{d}\delta^{d}(k_ {1}-k_ {2}).
+$$
+Note the minus sign. 
+
+Expand $A,A^{\ddagger}$ in terms of $B^{\dagger},B$ we have
+$$
+\begin{align*}
+A^{\ddagger}_ {p} &= \frac{1}{2}\sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p})}{\omega_ {p}} \left[ (\omega _ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right]     ,\\
+A_ {-p}&= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \tilde{{\mathfrak g}}_ {k}(-\vec{p}) \left[ (\omega _ {p} -\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} +\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right].     
+\end{align*}
+$$
+
+The idea is to 
+1. write terms in the Hamiltonian in normal order with respect to $A,A^{\ddagger}$, 
+2. use the above relation to rewrite it in terms of $B,B^{\ddagger}$,
+3. use the commutation relation to diagonalize $H$ in terms of $B,B^{\ddagger}$. 
+
+The normal ordered leading order Hamiltonian (in kink sector) reads
+$$
+H'_ {2} =   .
+$$
+
+Define the Fourier transformation $\tilde{f}$ of function $f(x)$ to be 
+$$
+\tilde{f}(\vec{p}) := \int d^{d}x \,   f(\vec{x})e^{ -i\vec{p}\cdot \vec{x} },
+$$
+Note that instead of $+i\vec{p}\cdot \vec{x}$ we have minus sign. This is only the spatial part of the Fourier transformation (recall that our spacetime is $d+1$ dimensional).
+
+We have divided the leading order, kink-sector Hamiltonian into $A+B+C$ three parts, in normal order we have
+$$
+\begin{align*}
+A &= \\
+B &= \\
+C &= \\
+\end{align*}
+$$
+
+The following relations are useful in derivation:
+$$
+\begin{align*}
+A^{\ddagger}_ {p} A^{\ddagger}_ {-p} &= \frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}}\frac{\;d^{d}k'}{(2\pi)^{d}} \frac{\tilde{{\mathfrak g}}_ {k}(-p)\tilde{{\mathfrak g}}_ {k'}(p)}{\omega^{2}_ {p} } \,\\
+&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {-p}+\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} }(\omega _ {p} -\omega _ {k} )(\omega_ {-p}+\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right)  \\
+
+\end{align*}
 $$

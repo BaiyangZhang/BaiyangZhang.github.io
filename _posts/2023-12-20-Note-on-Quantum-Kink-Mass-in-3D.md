@@ -8,7 +8,6 @@ header-img: img/background1.jpg
 catalog: true
 tags:
 ---
-
 ### Background
 
 ### The symplectic manifold
