@@ -636,7 +636,7 @@ A &\supset \frac{1}{8} \int \frac{d^{d}p}{(2\pi)^{d}} \sum\!\!\!\!\!\!\!\!\int \
 &= - \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \,   \frac{d^{d}k}{(2\pi)^{d}} \, \omega^{2}_ {k}B^{\ddagger}_ {k} B^{\ddagger}_ {-k},   \\
 B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k_ {1}}{(2\pi)^{d}} \frac{d^{d}k_ {2}}{(2\pi)^{d}}  \int \frac{d^{d}p_ {1}}{(2\pi)^{d}} \frac{d^{d}p_ {2}}{(2\pi)^{d}}  \\
 & \;\;\;\;\; \times  \omega^{2}_ {k} \, \tilde{\mathfrak g}_ {k_ {1}}(-\vec{p})  \tilde{\mathfrak g}_ {k_ {2}}(-\vec{p}')  \tilde{\mathfrak g}_ {-k}(\vec{p})  \tilde{\mathfrak g}_ {k}(\vec{p}') B^{\ddagger}_ {k_ {1}}B^{\ddagger}_ {k_ {2}} \\
-&= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \,\omega _ {k} ^{2} B^{\ddagger}_ {k}B^{\ddagger}_ {-k} .
+&= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}} \,\omega _ {k} ^{2} B^{\ddagger}_ {k}B^{\ddagger}_ {-k} .
 \end{align*} 
 $$
 
