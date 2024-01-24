@@ -468,6 +468,7 @@ Later we will work with the Schrodinger picture which is less commonly used comp
 $$
 \phi_ {0}(\vec{x},t) = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{ 2\omega _ {p}  }}(a_ {p} e^{ -ipx } + a_ {p} ^{\dagger}e^{ ipx }),
 $$
+
 which is *not* Lorentz invariant. 
 
 - - -
@@ -480,6 +481,7 @@ $$
 \pi(\vec{x}) &= \int \frac{d^{d}p}{(2\pi)^{d}} \, e^{ -i \vec{x}\cdot \vec{p} }\pi_ {p}. 
 \end{align*}
 $$
+
 The next question is how to inverse it on a lattice...
 ### 2.4 (2+1)-dimensional 
 
@@ -488,6 +490,7 @@ For now, let's accept (1) the ultraviolet cutoff $\Lambda$ and (2) the harmonic 
 $$
 [\phi(x),\pi(y)]_ {\Lambda} = i \int_{-\Lambda}^{\Lambda} \frac{dp}{2\pi} \, e^{ -ip(x-y)} = i \frac{\sin(\Lambda x)}{\pi x}     .
 $$
+
 This is non-local in the sense that for certain $x\neq y$ the commutator is nonzero. However, this commutation relation does agree with the lattice picture, if we set the lattice spacing to be $\pi / \Lambda$! (check for yourself)
 
 Now we can define the normal ordering in the vacuum sector, then propagate it to the kink sector via the displacement operator, which we will talk about shortly.

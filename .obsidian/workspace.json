@@ -42,6 +42,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "aa82843c815938bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 2
@@ -73,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scaling",
+                "query": "kink",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +110,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -204,12 +217,13 @@
   },
   "active": "d1982b0eee003f27",
   "lastOpenFiles": [
+    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
+    "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
     "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
     "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
     "2015-05-15-images.md",
     "2015-05-15-images.md.crdownload",
     "_includes/figure.liquid",
@@ -235,7 +249,6 @@
     "_posts/2023-12-20-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
     "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
-    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
