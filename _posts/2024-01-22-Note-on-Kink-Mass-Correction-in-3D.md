@@ -506,10 +506,10 @@ insert it into the equation of motion and use the fact that $f(\vec{x})$ satisfi
 
 $$
 \begin{align*}
-0 &= \partial^{2}(f+{\mathfrak g}) -\frac{1}{\lambda} \frac{dV(\sqrt{ \lambda }(f+{\mathfrak g}))}{d\phi}\\
-&= \partial^{2} f + \partial^{2}{\mathfrak g}-\frac{1}{\lambda} \frac{d}{d\phi}\left( V( \sqrt{ \lambda  } f)+{\mathfrak g} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi}{\Large\mid}_ {\phi=f} + \mathcal{O}({\mathfrak g^{2}}) \right)\\
-&= \left\lbrace \partial^{2}f - \frac{1}{\lambda} \frac{dV(\sqrt{ \lambda }f)}{df} \right\rbrace + \left\lbrace \partial^{2}{\mathfrak g}-\frac{{\mathfrak g}}{\lambda} \frac{d^{2}V(\sqrt{ \lambda }f)}{df^{2}} \right\rbrace +\mathcal{O}({\mathfrak g^{2}})\\
-&= \partial^{2}{\mathfrak g}+V^{(2)}(\sqrt{ \lambda }f) + \mathcal{O}({\mathfrak g}^{2}),
+0 &= \partial^{2} (f+{\mathfrak g}) -\frac{1}{\lambda} \frac{d V(\sqrt{ \lambda }(f+{\mathfrak g}))}{d\phi} \\
+&= \partial^{2} f + \partial^{2}{\mathfrak g}-\frac{1}{\lambda} \frac{d}{d\phi}\left( V( \sqrt{ \lambda  } f)+{\mathfrak g} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi} \Large\mid_ {\phi=f} + \mathcal{O}({\mathfrak g^{2}}) \right)\\
+&= \left\lbrace \partial^{2}f - \frac{1}{\lambda} \frac{dV(\sqrt{ \lambda }f)}{df} \right\rbrace + \left\lbrace \partial^{2}{\mathfrak g}-\frac{{\mathfrak g}}{\lambda} \frac{d^{2}V(\sqrt{ \lambda }f)}{df^{2}} \right\rbrace +\mathcal{O}({\mathfrak g^{2}}) \\
+&= \partial^{2} {\mathfrak g}+V^{(2)}(\sqrt{ \lambda }f) + \mathcal{O}({\mathfrak g}^{2}),
 \end{align*}
 $$
 where 
