@@ -599,14 +599,14 @@ $$
 The Fourier transformation of normal modes reads
 
 $$
-\tilde{{\mathfrak g}}_ {k}(p) = \int d^{d} x \, {\mathfrak g_ {k}}(\vec{x}) 
+\tilde{{\mathfrak g}}_ {k}(p) = \int d^{d} x \, {\mathfrak g}_ {k}(\vec{x}) 
 e^{-i\vec{p}\cdot \vec{x}}
 $$
 
 which satisfies relation
 
 $$
-\tilde{{\mathfrak g}}^\ast_ {k}(\vec{p}) = \tilde{{\mathfrak g}}_ {-k}(-\vec{p}) .
+\tilde{{\mathfrak g}}_ {k}^{\ast}(\vec{p}) = \tilde{{\mathfrak g}}_ {-k}(-\vec{p}) .
 $$
 
 Sometime this relation can help to make the numerical calculation easier. The normalization relations for ${\mathfrak g}$ reads
