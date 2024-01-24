@@ -500,11 +500,13 @@ Recall the equation of motion reads
 $$
 \partial^{2}\phi-\frac{1}{\lambda} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi}=0,
 $$
+
 separate $\phi(\vec{x},t)$ into the kink background $f(\vec{x})$ and the fluctuation (time-dependent) ${\mathfrak g}$,
 
 $$
 \phi(\vec{x},t) = f(\vec{x})+{\mathfrak g}(\vec{x},t),
 $$
+
 insert it into the equation of motion and use the fact that $f(\vec{x})$ satisfies the time-independent EoM, we get the EoM for the fluctuation field:
 
 $$
@@ -515,11 +517,13 @@ $$
 &= \partial^{2} {\mathfrak g}+V^{(2)}(\sqrt{ \lambda }f) + \mathcal{O}({\mathfrak g}^{2}),
 \end{align*}
 $$
+
 where 
 
 $$
 V^{(n)} := \frac{d^{n}V(\tilde{\phi})}{d\tilde{\phi}^{n}},\quad  \tilde{\phi}:=\sqrt{ \lambda }\phi.
 $$
+
 - - -
 
 In the below are some results needed for the derivation, not carefully organized in a readable order. I will tidy it up later.
