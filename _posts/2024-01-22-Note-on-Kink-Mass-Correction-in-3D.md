@@ -481,7 +481,6 @@ $$
 \end{align*}
 $$
 The next question is how to inverse it on a lattice...
-
 ### 2.4 (2+1)-dimensional 
 
 For now, let's accept (1) the ultraviolet cutoff $\Lambda$ and (2) the harmonic quantization *in the trivial vacuum sector* and translate it to the physical spacetime. As a result we get a non-local commutation relation in spacetime,
@@ -523,10 +522,12 @@ $$
 In the below are some results needed for the derivation, not carefully organized in a readable order. I will tidy it up later.
 
 The commutation relation reads
+
 $$
 [\phi(\vec{x}_ {1}),\pi(\vec{x}_ {2})] = i^{d} \delta(\vec{x}_ {1}-\vec{x}_ {2}),
 $$
 together with the decomposition we have
+
 $$
 \begin{align*}
 [\phi_ {p_ {1}},\pi_ {p_ {2}}] &= i(2\pi)^{d}\delta^{d}(p_ {1}+p_ {2}),\\
@@ -536,6 +537,7 @@ $$
 note the plus sign instead of minus in the parenthesis. 
 
 The decomposition into ladder operators reads
+
 $$
 \begin{align*}
 \phi_ {p} &= A^{\ddagger}_ {p}+\frac{A_ {-p}}{2\omega_ {p}},\quad \pi_ {p}=i\omega_ {p}A^{\ddagger}_ {p}- \frac{iA_ {-p}}{2},\quad A^{\ddagger}_ {p} = \frac{A^{\dagger}_ {p} }{2\omega _ {p} },\\
@@ -543,12 +545,18 @@ $$
 \end{align*}
 $$
 The commutation relation in terms of those reads
+
 $$
 [B_ {k_ {1}},B^{\ddagger}_ {k_ {2}}] = (2\pi)^{d}\delta^{d}(k_ {1}-k_ {2}).
 $$
-Note the minus sign. 
+Note the minus sign. This is similar to the trivial vacuum where
+
+$$
+[A_ {p_ {1}},A^{\ddagger}_ {p_ {2}}] = (2\pi)^{d}\delta^{d}(p_ {1}-p_ {2}).
+$$
 
 Expand $A,A^{\ddagger}$ in terms of $B^{\dagger},B$ we have
+
 $$
 \begin{align*}
 A^{\ddagger}_ {p} &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p})}{2\omega_ {p}} \left[ (\omega _ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right]     ,\\
@@ -562,27 +570,40 @@ The idea is to
 3. use the commutation relation to diagonalize $H$ in terms of $B,B^{\ddagger}$. 
 
 The normal ordered leading order Hamiltonian (in kink sector) reads
+
 $$
 H'_ {2} =   .
 $$
 
 Define the Fourier transformation $\tilde{f}$ of function $f(x)$ to be 
+
 $$
 \tilde{f}(\vec{p}) := \int d^{d}x \,   f(\vec{x})e^{ -i\vec{p}\cdot \vec{x} }.
 $$
 The Fourier transformation of normal modes reads
+
 $$
 \tilde{{\mathfrak g}}_ {k}(p) = \int d^{d}x \, {\mathfrak g_ {k}(\vec{x})} e^{ -i\vec{p}\cdot \vec{x} }
 $$
 which satisfies relation
+
 $$
-\tilde{{\mathfrak g}}_ {k}(\vec{p}) = \tilde{{\mathfrak g}}_ {-k}(-\vec{p})^\ast .
+\tilde{{\mathfrak g}}^\ast_ {k}(\vec{p}) = \tilde{{\mathfrak g}}_ {-k}(-\vec{p}) .
 $$
-Sometime this relation can help to make the numerical calculation easier.
+Sometime this relation can help to make the numerical calculation easier. The normalization relations for ${\mathfrak g}$ reads
+
+$$
+\begin{align*}
+\int d^{d}x \, {\mathfrak g}^{\ast }_ {k}(\vec{x}){\mathfrak g}_ {k'}(\vec{x}) &=(2\pi)^{d}\delta ^{d}(k-k') \\
+\int \frac{d^{d}p}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(\vec{p}) \tilde{{\mathfrak g}}_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(k+k') \\  
+\int \frac{d^{d}p}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(\vec{p}) \tilde{{\mathfrak g}}^{\ast }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(k-k') 
+\end{align*}
+$$
 
 Note that in our convention of Fourier transformation, instead of $+i\vec{p}\cdot \vec{x}$ we have minus sign. This is only the spatial part of the Fourier transformation (recall that our spacetime is $d+1$ dimensional).
 
 We have divided the leading order, kink-sector Hamiltonian into $A+B+C$ three parts, in normal order we have
+
 $$
 \begin{align*}
 A &=\frac{1}{2} \int \frac{d^{d}p}{(2\pi)^{d}} \, \left( -\omega^{2}_ {p}  A^{\ddagger}_ {p}  A^{\ddagger}_ {-p}+ \omega _ {p}  A^{\ddagger}_ {p} A_ {p}  -\frac{1}{4} A_ {-p}A_ {p}  \right),  \\
@@ -592,21 +613,34 @@ B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d}} \int   \
 $$
 
 The following relations are useful in derivation, with terms that do not annihilate the kink ground state $\left\lvert{0}\right\rangle$:
+
 $$
 \begin{align*}
 A^{\ddagger}_ {p} A^{\ddagger}_ {p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k'}{(2\pi)^{d}} \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p}) \tilde{{\mathfrak g}}_ {k'}(-\vec{p'})}{2\omega_ {p} 2\omega_ {p'} } \\
 &\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}+\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} }(\omega _ {p} -\omega _ {k} )(\omega_ {p'}+\omega_ {{k'}}) B_ {-k} B^{\ddagger}_ {k'}) \right),  \\
 A^{\ddagger}_ {p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k'}{(2\pi)^{d}} \frac{1}{2\omega_ {p} } \tilde{{\mathfrak g}}_ {k}(-\vec{p})\tilde{{\mathfrak g}}_ {k'}(-\vec{p}') \\
-&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p‘}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} } (\omega _ {p} -\omega _ {k} )(\omega_ {p’}-\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right),  \\
+&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} } (\omega _ {p} -\omega _ {k} )(\omega_ {p’}-\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right),  \\
 A_ {-p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}}\frac{d^{d}k'}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(-\vec{p})\tilde{{\mathfrak g}}_ {k'}(-\vec{p}')\\
 &\;\;\;\;\; \times  \left( (\omega _ {p} -\omega _ {k} )(\omega_ {p'}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'} + \frac{1}{2\omega _ {k} }(\omega _ {p} +\omega _ {k} )(\omega_ {p'}-\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right).  \\
 \end{align*}
 $$
 
-Keeps the terms in $A$ that survives acting on $\left\lvert{0}\right\rangle$, We have 
+We just need to keeps the terms surviving acting on $\left\lvert{0}\right\rangle$, namely the terms that are proportional to $B^{\ddagger} B^{\ddagger}$ and $B B^{\ddagger}$. 
+
+The part in $A$ and $B+C$ that are proportional to $B^{\ddagger}B^{\ddagger}$ reads  
+
 $$
 \begin{align*}
-A &=  \\
-B+C &= 
+A &\supset \frac{1}{8} \int \frac{d^{d}p}{(2\pi)^{d}} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \frac{d^{d}k'}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(-\vec{p})\tilde{{\mathfrak g}}_ {k'}(\vec{p}) B_ {k}^{^{\ddagger}} B_ {k'}^{\ddagger} \\
+&\;\;\;\;\; \times (-4\omega _ {k} \omega_ {k'} + 2\omega _ {p} \omega _ {k}  -2\omega _ {p} \omega_ {k'})  \\
+&= - \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \,   \frac{d^{d}k}{(2\pi)^{d}} \, \omega^{2}_ {k}B^{\ddagger}_ {k} B^{\ddagger}_ {-k},   \\
+B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k_ {1}}{(2\pi)^{d}} \frac{d^{d}k_ {2}}{(2\pi)^{d}}  \int \frac{d^{d}p_ {1}}{(2\pi)^{d}} \frac{d^{d}p_ {2}}{(2\pi)^{d}}  \\
+& \;\;\;\;\; \times  \omega^{2}_ {k} \, \tilde{\mathfrak g}_ {k_ {1}}(-\vec{p})  \tilde{\mathfrak g}_ {k_ {2}}(-\vec{p}')  \tilde{\mathfrak g}_ {-k}(\vec{p})  \tilde{\mathfrak g}_ {k}(\vec{p}') B^{\ddagger}_ {k_ {1}}B^{\ddagger}_ {k_ {2}} \\
+&= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \,\omega _ {k} ^{2} B^{\ddagger}_ {k}B^{\ddagger}_ {-k} .
 \end{align*} 
 $$
+
+Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{{\mathfrak g}}$ functions. Apparently, *when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.
+
+
+
