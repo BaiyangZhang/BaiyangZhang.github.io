@@ -599,7 +599,8 @@ $$
 The Fourier transformation of normal modes reads
 
 $$
-\tilde{{\mathfrak g}}_ {k}(p) = \int d^{d}x \, {\mathfrak g_ {k}(\vec{x})} e^{ -i\vec{p}\cdot \vec{x} }
+\tilde{{\mathfrak g}}_ {k}(p) = \int d^{d} x \, {\mathfrak g_ {k}}(\vec{x}) 
+e^{-i\vec{p}\cdot \vec{x}}
 $$
 which satisfies relation
 
