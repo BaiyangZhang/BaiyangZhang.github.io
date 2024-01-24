@@ -510,12 +510,12 @@ $$
 insert it into the equation of motion and use the fact that $f(\vec{x})$ satisfies the time-independent EoM, we get the EoM for the fluctuation field:
 
 $$
-\begin{align}
+\begin{aligned}
 0 &= \partial^{2} (f+{\mathfrak g}) -\frac{1}{\lambda} \frac{d V(\sqrt{ \lambda }(f+{\mathfrak g}))}{d\phi} \\
 &= \partial^{2} f + \partial^{2}{\mathfrak g}-\frac{1}{\lambda} \frac{d}{d\phi}\left( V( \sqrt{ \lambda  } f)+{\mathfrak g} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi} \mid_ {\phi=f} + \mathcal{O}({\mathfrak g^{2}}) \right) \\
 &= \left\lbrace \partial^{2}f - \frac{1}{\lambda} \frac{dV(\sqrt{ \lambda }f)}{df} \right\rbrace + \left\lbrace \partial^{2}{\mathfrak g}-\frac{{\mathfrak g}}{\lambda} \frac{d^{2}V(\sqrt{ \lambda }f)}{df^{2}} \right\rbrace +\mathcal{O}({\mathfrak g^{2}}) \\
 &= \partial^{2} {\mathfrak g}+V^{(2)}(\sqrt{ \lambda }f) + \mathcal{O}({\mathfrak g}^{2}),
-\end{align}
+\end{aligned}
 $$
 
 where 
@@ -541,6 +541,7 @@ $$
 [\phi_ {k_ {1}},\pi_ {k_ {2}}] &= i(2\pi)^{d}\delta^{d}(k_ {1}+k_ {2}),
 \end{align*}
 $$
+
 note the plus sign instead of minus in the parenthesis. 
 
 The decomposition into ladder operators reads
@@ -556,6 +557,7 @@ The commutation relation in terms of those reads
 $$
 [B_ {k_ {1}},B^{\ddagger}_ {k_ {2}}] = (2\pi)^{d}\delta^{d}(k_ {1}-k_ {2}).
 $$
+
 Note the minus sign. This is similar to the trivial vacuum where
 
 $$
@@ -565,10 +567,10 @@ $$
 Expand $A,A^{\ddagger}$ in terms of $B^{\dagger},B$ we have
 
 $$
-\begin{align*}
+\begin{align}
 A^{\ddagger}_ {p} &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p})}{2\omega_ {p}} \left[ (\omega _ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right]     ,\\
 A_ {-p}&= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \tilde{{\mathfrak g}}_ {k}(-\vec{p}) \left[ (\omega _ {p} -\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} +\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right].     
-\end{align*}
+\end{align}
 $$
 
 The idea is to 
