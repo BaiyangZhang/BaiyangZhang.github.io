@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kinks.md",
+                "file": "_posts/2024-01-25-test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kinks.md",
+                "file": "_posts/2024-01-25-test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kinks.md"
+                "file": "_posts/2024-01-25-test.md"
               }
             }
           },
@@ -227,11 +227,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bfec5e2f38a7e0bd",
+  "active": "d1982b0eee003f27",
   "lastOpenFiles": [
+    "_posts/2024-01-25-Note-on-Kinks.md",
     "_posts/2024-01-25-test.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2024-01-25-Note-on-Kinks.md",
     "Untitled.md",
     "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
     "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
