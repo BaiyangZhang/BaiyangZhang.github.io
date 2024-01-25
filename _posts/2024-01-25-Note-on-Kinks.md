@@ -1,15 +1,15 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:      Note on Kink-anitkink Scattering		# 标题 
-subtitle:   Part 2
-date:       2023-06-08 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/background9.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - QuantumFieldTheory
-    - Kink
-    - Meson
+layout: post
+title: Note on Classical Kinks
+subtitle: 
+date: 2024-01-25
+author: Baiyang Zhang
+header-img: img/background9.jpg
+catalog: true
+tags:
+  - QuantumFieldTheory
+  - Kink
+  - Meson
 ---
 
 ### The Model
