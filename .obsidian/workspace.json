@@ -227,6 +227,8 @@
   },
   "active": "c64d85669ef2832c",
   "lastOpenFiles": [
+    "_includes/scripts/mathjaxBackup.html",
+    "_includes/scripts/mathjax - Copy.html",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "_posts/2024-01-25-test.md",
     "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
@@ -258,7 +260,6 @@
     "_pages/projects.md",
     "_pages/publications.md",
     "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
-    "_posts/2023-12-6-Transseries-Lecture-1.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
@@ -271,7 +272,6 @@
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",
-    "bin/cibuild",
-    "bin"
+    "bin/cibuild"
   ]
 }
