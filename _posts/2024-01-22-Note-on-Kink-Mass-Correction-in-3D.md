@@ -533,7 +533,7 @@ $$
 $$
 
 $$
-= \partial^{2} f - \frac{1}{\lambda} \frac{dV(\sqrt{\lambda} f)}{df}  + \partial^{2}{\mathfrak g}-\frac{{\mathfrak g}}{\lambda} \frac{d^{2}V(\sqrt{\lambda}f)}{d f^{2}} +\mathcal{O}({\mathfrak g}^{2})
+= \partial^{2} f - \frac{1}{\lambda} \frac{dV(\sqrt{\lambda} f)}{df}  + \partial^{2}{\mathfrak g}-\frac{ {\mathfrak g} } {\lambda} \frac{d^{2}V(\sqrt{\lambda}f)}{d f^{2}} +\mathcal{O}( {\mathfrak g}^{2} )
 $$
 
 $$
