@@ -34,20 +34,25 @@ In algebra, a `valuation` is a function on a field that provides a *measure of t
 As a convention, we will use fraktur font, lower case for elements and upper case for sets. 
 
 The evaluation 
+
 $$
 T: {\frak M} \to \mathbb{R}
 $$
+
 is denoted as $\mathbb{R}^{{\frak M}}$. $T$ can be regarded as a function defined on ${\frak M}$ with value in $\mathbb{R}$. For ${\frak g} \in {\frak M}$, we also write $T[{\frak g}]$ for the value of $T$ at ${\frak g}$, we don't use round parenthesis since $T(x)$ is reserved for another use. 
 
 The `support` of a function $T \in \mathbb{R}^{{\frak M}}$ is the collection of ${\frak g}$ on which $T$ is non-zero, 
+
 $$
 \text{supp} (T) := \left\lbrace {\frak g}\in {\frak M} \,\middle\vert\, T[{\frak g}]\neq 0 \right\rbrace .
 $$
+
 This definition is in agreement with that in real analysis, where the support of a function is defined as the closure of the set where the function is non-zero. Here we don't talk about closeness... yet. 
 
 Let ${\frak A}$ (Gothic A) be a subset of ${\frak M}$ and $\text{supp}(T) \subseteq {\frak A}$. We say $T$ is supported by ${\frak A}$. ${\frak A}$ is in general bigger a set then the actual support of $T$. 
 
 Since we are interested in series, we will in general write $T$ as a *formal* combination of group elements,
+
 $$
 T = \sum_ {{\frak g}\in  {\frak A}} a_ {{\frak g}}\cdot {\frak g}.
 $$
@@ -57,19 +62,25 @@ Here is the peculiar part: the value of $T[{\frak g}]$ is $a_ {{\frak g}}$. If $
 Such $T$ is called `Hahn series` or `generalized power sereis`.
 
 As one might guess, a constant $c$ in a Hahn series is a regular constant in $\mathbb{R}$. That is, $T$ is a constant if
+
 $$
 T[1] = c, \quad  T[{\frak g}] =0 \;\forall\; {\frak g} \neq 1.
 $$
+
 since $c$ can be regarded as $c$ multiply $1$ which is an element of ${\frak M}$, $c = c \cdot 1 \in T$. 
 
 if ${\frak m} \in {\frak M}$, then $1 \cdot {\frak m} \in \mathbb{R}^{{\frak M}}$ is called a `monomial` and identified with ${\frak m}$. That is, $T$ is a monomial if
+
 $$
 T[{\frak m}] = 1, \quad  T[{\frak g}] =0 \text{ otherwise.}
 $$
+
 In all cases of interest to us, *the support will be well ordered* with respect to $\ll$. That is, for 
+
 $$
 {\frak A} \subset \text{supp} (T), \quad  {\frak A} \neq \emptyset ,
 $$
+
 there exist a maximal element in ${\frak A}$. To be specific, this should be called "converse well ordered" since well order usually implies that every non-empty subset has a *smallest* element under the given order. But we will continue using "well order" to save some breath. 
 
 Now, consider non-zero terms in $T$. Let's pick out the larges monomial ${\frak g}_ {\text{max}}$, then it is called the `magnitude`of $T$, $\text{mag}(T)={\frak g}_ {\text{max}}$. The corresponding coefficient is called the `leading coefficient`. The coefficient and the monomial put together is called the `dominance` of $T$, $\text{dom}(T)=a_ {{\frak g}} \cdot {\frak g}$ where ${\frak g}$ is ${\frak g}_ {\text{max}}$. We say $T> 0$ if $a_ {{\frak g}}> 0$ and $T<0$ if $a_ {{\frak g}} < 0$. We say $T$ is small if all its monomials ${\frak g} \in \text{supp}(T)$ are small or zero, equivalently $T$ is small if the magnitude of $T$ is small or zero. We say $T$ is large if the magnitude of $T$ is large, other terms in $T$ could be small. However, if all the monomials in $T$ are large then $T$ is said to be purely large. A pure large Hahn series does not have a single small monomial. 
@@ -77,13 +88,17 @@ Now, consider non-zero terms in $T$. Let's pick out the larges monomial ${\frak 
 Note that here our usage of terminologies might be different from others. 
 
 Let's take a look at an example. Let 
+
 $$
 A = 3 e^{x} + 4x^{2},
 $$
+
 then 
+
 $$
 \text{mag} (A) = e^{ x }, \text{dom}(A) = 3e^{ x },
 $$
+
 $A$ is positive and large, further more $A$ is purely large since $x^{2} \gg 1$ at $x\to \infty$. 
 
 The addition and scalar multiplication are defined in the obvious way. 
@@ -113,6 +128,7 @@ Transseries are formal objects that generalize power series to include not only 
 The purpose of this decomposition is to simplify the analysis of the transseries by studying each of its simpler components separately. This is particularly useful in asymptotic analysis, where the behavior of a function as it approaches a certain limit (like $x \to \infty$, as we assumed throughout this note) is of interest. 
 
 `Canonical Additive Decomposition.` Every Hahn series $A$ can be decomposed *uniquely* into a purely large part $L$, a constant $c$ and a small part $S$, 
+
 $$
 A = L + c + S.
 $$

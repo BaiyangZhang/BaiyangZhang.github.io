@@ -30,33 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "bfec5e2f38a7e0bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-01-25-Note-on-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa82843c815938bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -131,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kinks.md",
+                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kinks.md",
+                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kinks.md"
+                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md"
               }
             }
           },
@@ -214,19 +190,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bfec5e2f38a7e0bd",
+  "active": "22282c7baf0ff398",
   "lastOpenFiles": [
-    "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2024-01-25-test.md",
     "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
     "_news/announcement_4.md",
+    "_posts/2024-01-25-Note-on-Classical-Kinks.md",
+    "Untitled.md",
+    "_posts/2024-01-25-test.md",
     "_news/announcement_3 - Copy.md",
     "_includes/scripts/mathjaxBackup.html",
     "_includes/scripts/mathjax - Copy.html",
-    "_posts/2024-01-25-Note-on-Kinks.md",
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
-    "Untitled.md",
-    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
     "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
     "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
