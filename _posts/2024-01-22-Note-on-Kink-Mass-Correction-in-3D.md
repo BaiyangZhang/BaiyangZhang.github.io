@@ -66,7 +66,7 @@ $$
 then
 
 $$
-\int d^{4}x \, \left[ m^{2} \xi^{2}+(\partial \xi)^{2} + U(\xi) \right] \sim 1,   \quad \xi:= \frac{\phi}{\sqrt{ \hbar }} . 
+\int d^{4}x \, \left[ m^{2} \xi^{2}+(\partial \xi)^{2} + U(\xi) \right] \sim 1,   \quad \xi:= \frac{\phi}{\sqrt{ \hbar } } . 
 $$
 
 In this way, we can absorb $\hbar$ into the definition of $\phi$, this is similar to absorbing the coupling $g$ into the field definition in gauge theory. We now *define* $\xi$ to be *independent* of $\hbar$. 
@@ -112,7 +112,7 @@ which is a dimensionless number. Since $\hbar$ scales the "quantumness", the mor
 
 - - -
 
-In the partial natural units, I'd like to think there are two fundamental "rulers" to measure all the quantities, such as mass, coupling, field, etc. One of them is the unit of energy, for example $\text{MeV}$, the other is $\hbar$ whose dimension is $ET$. To measure the length of something, we can use $\frac{\hbar}{\text{MeV}}$ as unit. The advantage of the partial natural unit is that it makes explicit the $\hbar$ factor, revealing the direct relations between quantities with $\hbar$, which is the scale of quantumness, this enables us to discern the importance of various quantities in the classical limit, making the analysis regarding semi-classical more straightforward. 
+In the partial natural units, I'd like to think there are two fundamental "rulers" to measure all the quantities, such as mass, coupling, field, etc. One of them is the unit of energy, for example $\text{MeV}$, the other is $\hbar$ whose dimension is $ET$. To measure the length of something, we can use $\frac{\hbar}{\text{MeV} }$ as unit. The advantage of the partial natural unit is that it makes explicit the $\hbar$ factor, revealing the direct relations between quantities with $\hbar$, which is the scale of quantumness, this enables us to discern the importance of various quantities in the classical limit, making the analysis regarding semi-classical more straightforward. 
 ## 1.2 Digression on $\hbar$-expansion
 
 To appreciate the importance of $\hbar$, just recall that in canonical quantization $[x,p]=i\hbar$, $\hbar$ enters explicitly in the commutation relation, providing the fundamental basis of quantum theory. This is also true in the case of quantum field theory. Furthermore, at each order of an expansion in $\hbar$, the physical symmetries (Lorentz invariance, $U(1)$ symmetry, etc.) must be satisfied, otherwise there will be some special value of $\hbar$ only at which the symmetries are preserved, which is just strange. 
@@ -132,7 +132,7 @@ $$
 For the same reasons, in the scalar QED the classical electric charge $e$ and mass $m$ are divided by $\hbar$,
 
 $$
-S_ {\text{sQED}} = \int d^{4}x \, \left\lbrace \left\lvert D\phi \right\rvert ^{2}-\frac{m^{2}}{\hbar^{2}}\left\lvert \phi \right\rvert ^{2} \right\rbrace , \quad  D = \partial +i \frac{e}{\hbar }A.
+S_ {\text{sQED} } = \int d^{4}x \, \left\lbrace \left\lvert D\phi \right\rvert ^{2}-\frac{m^{2} }{\hbar^{2} }\left\lvert \phi \right\rvert ^{2} \right\rbrace , \quad  D = \partial +i \frac{e}{\hbar }A.
 $$
 
 The boson field dimension 
@@ -148,7 +148,7 @@ Fermion fields are more complicated, since they have no classical counterparts, 
 The choice made by Brodsky and Hoyer is as following:
 
 $$
-\widetilde{A}:= \frac{A}{\sqrt{ \hbar }},\quad \tilde{\phi}:= \frac{\phi}{\sqrt{ \hbar }}
+\widetilde{A}:= \frac{A}{\sqrt{ \hbar } },\quad \tilde{\phi}:= \frac{\phi}{\sqrt{ \hbar } }
 $$
 
 where $\widetilde{A},\tilde{\phi}$ are $\hbar$-independent. Similarly, define the following $\hbar$-independent quantities
@@ -188,7 +188,7 @@ The choice is such that all the $\lambda$ dependence are now moved to the pre-fa
 Let the Hamiltonian be 
 
 $$
-H = \int d^{2}x \, : \mathcal{H} :_ {a},\quad \mathcal{H}(x) = \frac{\pi^{2}}{2} + \frac{(\partial_ {x}\phi(x))^{2}}{2} + \frac{1}{\lambda} V\left(\sqrt{ \lambda}\,  \phi(x) \right).    
+H = \int d^{2}x \, : \mathcal{H} :_ {a},\quad \mathcal{H}(x) = \frac{\pi^{2} }{2} + \frac{(\partial_ {x}\phi(x))^{2} }{2} + \frac{1}{\lambda} V\left(\sqrt{ \lambda}\,  \phi(x) \right).    
 $$
 Now, in order to get the equation of motion, we have two options: 1) Legendre-transform the equation to the Lagrangian formalism and adopt Euler-Lagrange equation, or 2) stick with the Hamiltonian formalism and adopt the Hamiltonian equations of motion (Hamilton equations) instead. Here we will take the second option. 
 
@@ -196,14 +196,14 @@ Recall that the Hamilton equations in classical field theory reads
 
 $$
 \begin{align*}
-\frac{\delta \mathcal{H}}{\delta \phi_i} &=-\dot{\pi}(x), \\
-\frac{\delta \mathcal{H}}{\delta \pi_i} &= \dot{\phi}_i.
+\frac{\delta \mathcal{H} }{\delta \phi_i} &=-\dot{\pi}(x), \\
+\frac{\delta \mathcal{H} }{\delta \pi_i} &= \dot{\phi}_i.
 \end{align*}
 $$
 This is a non-trivial generalization of the familiar Hamiltonian in classical mechanics, non-trivial since the connection between variational derivative and partial derivative is not as simple as one might think, we have
 
 $$
-\frac{\delta \mathcal{H}}{\delta \phi} = \frac{\partial\mathcal{H}}{\partial \phi } - \left( \partial_ x\frac{\partial \mathcal{H}}{\partial(\partial_ {x}\phi)} \right).
+\frac{\delta \mathcal{H} }{\delta \phi} = \frac{\partial\mathcal{H} }{\partial \phi } - \left( \partial_ x\frac{\partial \mathcal{H} }{\partial(\partial_ {x}\phi)} \right).
 $$
 
 Taking everything into consideration, we obtain the equation of motion by straightforward calculation. But before going there, let's rewrite the Hamiltonian in a more compact form:
@@ -216,12 +216,12 @@ $$
 Then we can first obtain the EOM in terms of $\tilde{\phi}$ and $\tilde{\pi}$, the changing to un-tilded version is trivial. Finally we have
 
 $$
-\ddot{\phi} - \vec{\nabla}^{2} \phi(x,t) + \frac{1}{\sqrt{ \lambda }} V^{(1)}(\sqrt{ \lambda }\phi)  = 0
+\ddot{\phi} - \vec{\nabla}^{2} \phi(x,t) + \frac{1}{\sqrt{ \lambda } } V^{(1)}(\sqrt{ \lambda }\phi)  = 0
 $$
 with definition
 
 $$
-V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n}}. 
+V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n} }. 
 $$
 ## 2.1. Normal modes and quantization
 
@@ -235,7 +235,7 @@ $$
 where we have assumed the possibility of separation of variables. To say the kink is in the $x$ direction is to say the solution satisfies the equation of motion in the $x$ direction,
 
 $$
-\frac{ \partial^{2} f(x,y) }{ \partial x^{2} } = \frac{1}{\lambda} \frac{ \partial V }{ \partial \phi }  = \frac{1}{\sqrt{ \lambda }} \frac{ \partial V }{ \partial \tilde{\phi} }  = \frac{1}{\sqrt{ \lambda }}V^{(1)}(\tilde{\phi}). 
+\frac{ \partial^{2} f(x,y) }{ \partial x^{2} } = \frac{1}{\lambda} \frac{ \partial V }{ \partial \phi }  = \frac{1}{\sqrt{ \lambda } } \frac{ \partial V }{ \partial \tilde{\phi} }  = \frac{1}{\sqrt{ \lambda } }V^{(1)}(\tilde{\phi}). 
 $$
 
 - - -
@@ -288,7 +288,7 @@ $$
 The sign of ${\mathfrak g}_ {B}$ is fixed using 
 
 $$
-{\mathfrak g}_ {B}(x) = - \frac{f'(x)}{\sqrt{ Q_ {0} }},
+{\mathfrak g}_ {B}(x) = - \frac{f'(x)}{\sqrt{ Q_ {0} } },
 $$
 where $f$ is again the kink solution.
 
@@ -303,12 +303,12 @@ We choose to expand in the $x$ direction in normal modes (in the kink background
 	A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
 </div>
 
-We want to expand the static fluctuation field $\phi(r)$ (defined by $\phi=f_ {\text{kink}}+g$) in terms of normal modes. Since we have defined the indices $k$ in ${\mathfrak g}_ {k}(x)$ to include everything, we can conveniently write the field expansion as
+We want to expand the static fluctuation field $\phi(r)$ (defined by $\phi=f_ {\text{kink} }+g$) in terms of normal modes. Since we have defined the indices $k$ in ${\mathfrak g}_ {k}(x)$ to include everything, we can conveniently write the field expansion as
 
 $$
 \begin{align*}
-\phi(r) &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k}}{2\omega _ {k} }  \right){\mathfrak g}_ {k} (r),\\
-\pi(r) &=  \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2}} \,  \left( B_ {k} ^{\ddagger} -\frac{B_ {-k}}{2}  \right){\mathfrak g}_ {k} (r),
+\phi(r) &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2} } \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k} }{2\omega _ {k} }  \right){\mathfrak g}_ {k} (r),\\
+\pi(r) &=  \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2} } \,  \left( B_ {k} ^{\ddagger} -\frac{B_ {-k} }{2}  \right){\mathfrak g}_ {k} (r),
 \end{align*}
 $$
 where $r = (x,y)$. We adopt the convention
@@ -373,26 +373,26 @@ So the question is, how does the lattice commutation relation translates to diff
 
 ### 2.3.1 Latticization of scalar field
 
-Write the scalar field $\phi$ in continuum as as function of spacetime position $\phi(x)$, and write the lattice position as a label of the field $\phi_ {a^{\mu}}$, where $a^{\mu}=m^{\mu} a$, $m^{\mu}\in \mathbb{N}^{d}$ is the $d$-dimensional count of the lattice site, $a$ is the lattice distance. The summation on lattices goes to integral in the continuous limit with the following dictionary,
+Write the scalar field $\phi$ in continuum as as function of spacetime position $\phi(x)$, and write the lattice position as a label of the field $\phi_ {a^{\mu} }$, where $a^{\mu}=m^{\mu} a$, $m^{\mu}\in \mathbb{N}^{d}$ is the $d$-dimensional count of the lattice site, $a$ is the lattice distance. The summation on lattices goes to integral in the continuous limit with the following dictionary,
 
 $$
 \begin{align*}
-\sum_ {m^{d}}  &\to \int, \\
+\sum_ {m^{d} }  &\to \int, \\
 a^{d} &\to d^{d}x,\\
-f_ {a^{\mu}} &\to f(x)
+f_ {a^{\mu} } &\to f(x)
 \end{align*}
 $$
 where $m^{d}$ indicates the $d$-dimensional lattice. Combined together we have the familiar formula
 
 $$
-\sum_ {m^{d}} a^{d} f_ {a^{\mu}} \to \int d^{d}x \, f(x).  
+\sum_ {m^{d} } a^{d} f_ {a^{\mu} } \to \int d^{d}x \, f(x).  
 $$
 We can define two types of differences, corresponding to derivatives in the continuous case
 
 $$
 \begin{align*}
-\partial_ {\mu} f_ {x} &= \frac{1}{a} (f_ {x+\hat{a}^{\mu}}-f_ {x}),\\
-\partial'_ {\mu} f_ {x} &= \frac{1}{a} (f_ {x}-f_ {x-\hat{a}^{\mu}}),
+\partial_ {\mu} f_ {x} &= \frac{1}{a} (f_ {x+\hat{a}^{\mu} }-f_ {x}),\\
+\partial'_ {\mu} f_ {x} &= \frac{1}{a} (f_ {x}-f_ {x-\hat{a}^{\mu} }),
 \end{align*}
 $$
 where $\hat{a}^{\mu}$ is a vector in direction $x^{\mu}$ of length $a$, namely $\hat{a}$ moves to the next lattice site in the $x^{\mu}$ direction. These two differences are like differences "from right" and "from left". For smooth functions of course their continuous limit all give the derivative.
@@ -442,7 +442,7 @@ $$
 where $a_ {p}$ now is just some c-number, constant in time. The field can be expanded as a linear combination of all the momentum modes
 
 $$
-\phi(t,\vec{r}) = \int \frac{d^{d}p}{(2\pi)^{d}} \, (a_ {p} e^{ -ipx }+a_ {p} ^{\ast }e^{ipx }) 
+\phi(t,\vec{r}) = \int \frac{d^{d}p}{(2\pi)^{d} } \, (a_ {p} e^{ -ipx }+a_ {p} ^{\ast }e^{ipx }) 
 $$
 where the second term in the parenthesis is to make sure that $\phi$ is real. We have assembled $\omega$ and $\vec{p}$ into $p=(\omega,\vec{p})$. 
 
@@ -454,10 +454,10 @@ $$
 where we have omitted the vector sign in the superscript $k,p$ to avoid overly cumbersome notation.
 The factors of $2\pi$ are a convention, stemming from our convention for Fourier transform, for the details see my other blog on conventions. 
 
-We want the operators $a_ {p}^{\dagger}$ to create particles with momentum $\vec{p}$. Let $\left\lvert{\vec{p}}\right\rangle$ be a physical state with a single particle with momentum $\vec{p}$, *define*
+We want the operators $a_ {p}^{\dagger}$ to create particles with momentum $\vec{p}$. Let $\left\lvert{\vec{p} }\right\rangle$ be a physical state with a single particle with momentum $\vec{p}$, *define*
 
 $$
-a_ {p} ^{\dagger}\left\lvert{\Omega}\right\rangle = \frac{1}{\sqrt{ 2\omega _ {p}  }}\left\lvert{\vec{p}}\right\rangle ,
+a_ {p} ^{\dagger}\left\lvert{\Omega}\right\rangle = \frac{1}{\sqrt{ 2\omega _ {p}  } }\left\lvert{\vec{p} }\right\rangle ,
 $$
 where $\left\lvert{\Omega}\right\rangle$ is the ground state in the vacuum sector. This factor of $1 / \sqrt{ 2\omega _ {p} }$ is just another convention. 
 
@@ -469,19 +469,19 @@ $$
 As a result, the identity operator for one particle states is 
 
 $$
-\mathbb{1}=\int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{2\omega _ {p} }\left\lvert{\vec{p}}\right\rangle \left\langle{\vec{p}}\right\rvert .
+\mathbb{1}=\int \frac{d^{d}p}{(2\pi)^{d} } \, \frac{1}{2\omega _ {p} }\left\lvert{\vec{p} }\right\rangle \left\langle{\vec{p} }\right\rvert .
 $$
 We define the quantum field as integrals over $a_ {p}$ and $a_ {p}^{\dagger}$, 
 
 $$
-\phi_ {0}(\vec{x})= \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{ 2\omega }} (a_ {p} e^{ i\vec{p} \cdot \vec{x}} + a_ {p} ^{\dagger}e^{ -i\vec{p}\cdot \vec{x} }) 
+\phi_ {0}(\vec{x})= \int \frac{d^{d}p}{(2\pi)^{d} } \, \frac{1}{\sqrt{ 2\omega } } (a_ {p} e^{ i\vec{p} \cdot \vec{x} } + a_ {p} ^{\dagger}e^{ -i\vec{p}\cdot \vec{x} }) 
 $$
 where the subscript $0$ indicates this is a free field. The traditional view is to take it as the definition of the field operator $\phi_ {0}$ constructed from the creation and annihilation operators $a_ {p}$ and $a_ {p}^{\dagger}$ (*Schwartz M.D.*), but we shall try an opposite viewpoint, as will be shown later. 
 
 Later we will work with the Schrodinger picture which is less commonly used compared to the Heisenberg or interaction pictures. To finish the review on the second quantization, we just mentioned that in Heisenberg picture, all the time dependence is in operators such as $\phi$ and $a_ {p}$, the field operator reads
 
 $$
-\phi_ {0}(\vec{x},t) = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{ 2\omega _ {p}  }}(a_ {p} e^{ -ipx } + a_ {p} ^{\dagger}e^{ ipx }),
+\phi_ {0}(\vec{x},t) = \int \frac{d^{d}p}{(2\pi)^{d} } \, \frac{1}{\sqrt{ 2\omega _ {p}  } }(a_ {p} e^{ -ipx } + a_ {p} ^{\dagger}e^{ ipx }),
 $$
 
 which is *not* Lorentz invariant. 
@@ -492,8 +492,8 @@ Instead of the traditional view of harmonic oscillator quantization in the momen
 
 $$
 \begin{align*}
-\phi(\vec{x}) &= \int \frac{d^{d}p}{(2\pi)^{d}} \, e^{ -i\vec{x}\cdot \vec{p} }\phi_ {p},\\
-\pi(\vec{x}) &= \int \frac{d^{d}p}{(2\pi)^{d}} \, e^{ -i \vec{x}\cdot \vec{p} }\pi_ {p}. 
+\phi(\vec{x}) &= \int \frac{d^{d}p}{(2\pi)^{d} } \, e^{ -i\vec{x}\cdot \vec{p} }\phi_ {p},\\
+\pi(\vec{x}) &= \int \frac{d^{d}p}{(2\pi)^{d} } \, e^{ -i \vec{x}\cdot \vec{p} }\pi_ {p}. 
 \end{align*}
 $$
 
@@ -527,8 +527,8 @@ insert it into the equation of motion and use the fact that $f(\vec{x})$ satisfi
 $$
 \begin{align*}
 0 &= \partial^{2} (f+{\mathfrak g}) -\frac{1}{\lambda} \frac{d V(\sqrt{ \lambda }(f+{\mathfrak g}))}{d\phi} \\
-&= \partial^{2} f + \partial^{2}{\mathfrak g}-\frac{1}{\lambda} \frac{d}{d\phi}\left( V( \sqrt{ \lambda  } f)+{\mathfrak g} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi} \mid_ {\phi=f} + \mathcal{O}({\mathfrak g^{2}}) \right)  \\
-&= \partial^{2} f - \frac{1}{\lambda} \frac{dV(\sqrt{\lambda} f)}{df}  + \partial^{2}{\mathfrak g}-\frac{ {\mathfrak g} } {\lambda} \frac{d^{2}V(\sqrt{\lambda}f)}{d f^{2}} +\mathcal{O}( {\mathfrak g}^{2} ) \\
+&= \partial^{2} f + \partial^{2}{\mathfrak g}-\frac{1}{\lambda} \frac{d}{d\phi}\left( V( \sqrt{ \lambda  } f)+{\mathfrak g} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi} \mid_ {\phi=f} + \mathcal{O}({\mathfrak g^{2} }) \right)  \\
+&= \partial^{2} f - \frac{1}{\lambda} \frac{dV(\sqrt{\lambda} f)}{df}  + \partial^{2}{\mathfrak g}-\frac{ {\mathfrak g} } {\lambda} \frac{d^{2}V(\sqrt{\lambda}f)}{d f^{2} } +\mathcal{O}( {\mathfrak g}^{2} ) \\
 &= \partial^{2} {\mathfrak g}+V^{(2)}(\sqrt{ \lambda }f) + \mathcal{O}({\mathfrak g}^{2}),
 \end{align*}
 $$
@@ -536,7 +536,7 @@ $$
 where 
 
 $$
-V^{(n)} := \frac{d^{n}V(\tilde{\phi})}{d\tilde{\phi}^{n}},\quad  \tilde{\phi}:=\sqrt{ \lambda }\phi.
+V^{(n)} := \frac{d^{n}V(\tilde{\phi})}{d\tilde{\phi}^{n} },\quad  \tilde{\phi}:=\sqrt{ \lambda }\phi.
 $$
 
 - - -
@@ -552,8 +552,8 @@ together with the decomposition we have
 
 $$
 \begin{align*}
-[\phi_ {p_ {1}},\pi_ {p_ {2}}] &= i(2\pi)^{d}\delta^{d}(p_ {1}+p_ {2}),\\
-[\phi_ {k_ {1}},\pi_ {k_ {2}}] &= i(2\pi)^{d}\delta^{d}(k_ {1}+k_ {2}),
+[\phi_ {p_ {1} },\pi_ {p_ {2} }] &= i(2\pi)^{d}\delta^{d}(p_ {1}+p_ {2}),\\
+[\phi_ {k_ {1} },\pi_ {k_ {2} }] &= i(2\pi)^{d}\delta^{d}(k_ {1}+k_ {2}),
 \end{align*}
 $$
 
@@ -563,28 +563,28 @@ The decomposition into ladder operators reads
 
 $$
 \begin{align*}
-\phi_ {p} &= A^{\ddagger}_ {p}+\frac{A_ {-p}}{2\omega_ {p}},\quad \pi_ {p}=i\omega_ {p}A^{\ddagger}_ {p}- \frac{iA_ {-p}}{2},\quad A^{\ddagger}_ {p} = \frac{A^{\dagger}_ {p} }{2\omega _ {p} },\\
-\phi_ {k} &= B^{\ddagger}_ {k}+\frac{B_ {-k}}{2\omega_ {k}},\quad \pi_ {k}=i\omega_ {k}B^{\ddagger}_ {k}- \frac{iB_ {-k}}{2},\quad B^{\ddagger}_ {k} = \frac{B^{\dagger}_ {k} }{2\omega _ {k} }.
+\phi_ {p} &= A^{\ddagger}_ {p}+\frac{A_ {-p} }{2\omega_ {p} },\quad \pi_ {p}=i\omega_ {p}A^{\ddagger}_ {p}- \frac{iA_ {-p} }{2},\quad A^{\ddagger}_ {p} = \frac{A^{\dagger}_ {p} }{2\omega _ {p} },\\
+\phi_ {k} &= B^{\ddagger}_ {k}+\frac{B_ {-k} }{2\omega_ {k} },\quad \pi_ {k}=i\omega_ {k}B^{\ddagger}_ {k}- \frac{iB_ {-k} }{2},\quad B^{\ddagger}_ {k} = \frac{B^{\dagger}_ {k} }{2\omega _ {k} }.
 \end{align*}
 $$
 The commutation relation in terms of those reads
 
 $$
-[B_ {k_ {1}},B^{\ddagger}_ {k_ {2}}] = (2\pi)^{d}\delta^{d}(k_ {1}-k_ {2}).
+[B_ {k_ {1} },B^{\ddagger}_ {k_ {2} }] = (2\pi)^{d}\delta^{d}(k_ {1}-k_ {2}).
 $$
 
 Note the minus sign. This is similar to the trivial vacuum where
 
 $$
-[A_ {p_ {1}},A^{\ddagger}_ {p_ {2}}] = (2\pi)^{d}\delta^{d}(p_ {1}-p_ {2}).
+[A_ {p_ {1} },A^{\ddagger}_ {p_ {2} }] = (2\pi)^{d}\delta^{d}(p_ {1}-p_ {2}).
 $$
 
 Expand $A,A^{\ddagger}$ in terms of $B^{\dagger},B$ we have
 
 $$
 \begin{align*}
-A^{\ddagger}_ {p} &= \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \, \frac{\tilde{ {\mathfrak g} }_ {k}(-\vec{p})}{2\omega_ {p}} \left[ (\omega_ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k}}{2\omega_ {k} } \right]     ,\\
-A_ {-p}&= \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \, \tilde{ {\mathfrak g} }_ {k}(-\vec{p}) \left[ (\omega _ {p} -\omega _ {k} ) B_ {k} ^{\ddagger}+(\omega _ {p} +\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right].     
+A^{\ddagger}_ {p} &= \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d} } \, \frac{\tilde{ {\mathfrak g} }_ {k}(-\vec{p})}{2\omega_ {p} } \left[ (\omega_ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k} }{2\omega_ {k} } \right]     ,\\
+A_ {-p}&= \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d} } \, \tilde{ {\mathfrak g} }_ {k}(-\vec{p}) \left[ (\omega _ {p} -\omega _ {k} ) B_ {k} ^{\ddagger}+(\omega _ {p} +\omega _ {k} )\frac{B_ {-k} }{2\omega _ {k} } \right].     
 \end{align*}
 $$
 
@@ -609,13 +609,13 @@ The Fourier transformation of normal modes reads
 
 $$
 \tilde{ {\mathfrak g} }_ {k}(p) = \int d^{d} x \, {\mathfrak g}_ {k}(\vec{x}) 
-e^{-i\vec{p}\cdot \vec{x}}
+e^{-i\vec{p}\cdot \vec{x} }
 $$
 
 which satisfies relation
 
 $$
-\tilde{{\mathfrak g}}_ {k}^{\ast}(\vec{p}) = \tilde{{\mathfrak g}}_ {-k}(-\vec{p}) .
+\tilde{ {\mathfrak g} }_ {k}^{\ast}(\vec{p}) = \tilde{ {\mathfrak g} }_ {-k}(-\vec{p}) .
 $$
 
 Sometime this relation can help to make the numerical calculation easier. The normalization relations for ${\mathfrak g}$ reads
@@ -623,8 +623,8 @@ Sometime this relation can help to make the numerical calculation easier. The no
 $$
 \begin{align*}
 \int d^{d}x \, {\mathfrak g}^{\ast }_ {k}(\vec{x}){\mathfrak g}_ {k'}(\vec{x}) &=(2\pi)^{d}\delta ^{d}(k-k') \\
-\int \frac{d^{d}p}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(\vec{p}) \tilde{{\mathfrak g}}_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(k+k') \\  
-\int \frac{d^{d}p}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(\vec{p}) \tilde{{\mathfrak g}}^{\ast }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(k-k') 
+\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(k+k') \\  
+\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }^{\ast }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(k-k') 
 \end{align*}
 $$
 
@@ -634,9 +634,9 @@ We have divided the leading order, kink-sector Hamiltonian into $A+B+C$ three pa
 
 $$
 \begin{align*}
-A &=\frac{1}{2} \int \frac{d^{d}p}{(2\pi)^{d}} \, \left( -\omega^{2}_ {p}  A^{\ddagger}_ {p}  A^{\ddagger}_ {-p}+ \omega _ {p}  A^{\ddagger}_ {p} A_ {p}  -\frac{1}{4} A_ {-p}A_ {p}  \right),  \\
-B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d}} \int   \frac{d^{d}p}{(2\pi)^{d}} \frac{d^{d}p'}{(2\pi)^{d}} \,\omega_ {k}^{2}\, \tilde{{\mathfrak g}}_ {-k}(\vec{p} )\tilde{{\mathfrak g}}_ {k}(\vec{p}') \\
-&\;\;\;\; \times \left[ A^{\ddagger}_ {p }A^{\ddagger}_ {p'} + \frac{A^{\ddagger}_ {p }A_ {-p'}}{2\omega_ {p'}} + \frac{A^{\ddagger}_ {p'}A_ {-p }}{2\omega_ {p }} + \frac{A_ {-p }}{2\omega_ {p }} \frac{A_ {-p'}}{2\omega_ {p'}} \right].
+A &=\frac{1}{2} \int \frac{d^{d}p}{(2\pi)^{d} } \, \left( -\omega^{2}_ {p}  A^{\ddagger}_ {p}  A^{\ddagger}_ {-p}+ \omega _ {p}  A^{\ddagger}_ {p} A_ {p}  -\frac{1}{4} A_ {-p}A_ {p}  \right),  \\
+B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d} } \int   \frac{d^{d}p}{(2\pi)^{d} } \frac{d^{d}p'}{(2\pi)^{d} } \,\omega_ {k}^{2}\, \tilde{ {\mathfrak g} }_ {-k}(\vec{p} )\tilde{ {\mathfrak g} }_ {k}(\vec{p}') \\
+&\;\;\;\; \times \left[ A^{\ddagger}_ {p }A^{\ddagger}_ {p'} + \frac{A^{\ddagger}_ {p }A_ {-p'} }{2\omega_ {p'} } + \frac{A^{\ddagger}_ {p'}A_ {-p } }{2\omega_ {p } } + \frac{A_ {-p } }{2\omega_ {p } } \frac{A_ {-p'} }{2\omega_ {p'} } \right].
 \end{align*}
 $$
 
@@ -644,12 +644,12 @@ The following relations are useful in derivation, with terms that do not annihil
 
 $$
 \begin{align*}
-A^{\ddagger}_ {p} A^{\ddagger}_ {p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k'}{(2\pi)^{d}} \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p}) \tilde{{\mathfrak g}}_ {k'}(-\vec{p'})}{2\omega_ {p} 2\omega_ {p'} } \\
-&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}+\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} }(\omega _ {p} -\omega _ {k} )(\omega_ {p'}+\omega_ {{k'}}) B_ {-k} B^{\ddagger}_ {k'}) \right),  \\
-A^{\ddagger}_ {p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k'}{(2\pi)^{d}} \frac{1}{2\omega_ {p} } \tilde{{\mathfrak g}}_ {k}(-\vec{p})\tilde{{\mathfrak g}}_ {k'}(-\vec{p}') \\
-&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} } (\omega _ {p} -\omega _ {k} )(\omega_ {p’}-\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right),  \\
-A_ {-p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}}\frac{d^{d}k'}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(-\vec{p})\tilde{{\mathfrak g}}_ {k'}(-\vec{p}')\\
-&\;\;\;\;\; \times  \left( (\omega _ {p} -\omega _ {k} )(\omega_ {p'}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'} + \frac{1}{2\omega _ {k} }(\omega _ {p} +\omega _ {k} )(\omega_ {p'}-\omega_ {{k'}}) B_ {-k}B^{\ddagger}_ {k'}) \right).  \\
+A^{\ddagger}_ {p} A^{\ddagger}_ {p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d} } \frac{d^{d}k'}{(2\pi)^{d} } \frac{\tilde{ {\mathfrak g} }_ {k}(-\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(-\vec{p'})}{2\omega_ {p} 2\omega_ {p'} } \\
+&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}+\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} }(\omega _ {p} -\omega _ {k} )(\omega_ {p'}+\omega_ { {k'} }) B_ {-k} B^{\ddagger}_ {k'}) \right),  \\
+A^{\ddagger}_ {p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d} } \frac{d^{d}k'}{(2\pi)^{d} } \frac{1}{2\omega_ {p} } \tilde{ {\mathfrak g} }_ {k}(-\vec{p})\tilde{ {\mathfrak g} }_ {k'}(-\vec{p}') \\
+&\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} } (\omega _ {p} -\omega _ {k} )(\omega_ {p’}-\omega_ { {k'} }) B_ {-k}B^{\ddagger}_ {k'}) \right),  \\
+A_ {-p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d} }\frac{d^{d}k'}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(-\vec{p})\tilde{ {\mathfrak g} }_ {k'}(-\vec{p}')\\
+&\;\;\;\;\; \times  \left( (\omega _ {p} -\omega _ {k} )(\omega_ {p'}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'} + \frac{1}{2\omega _ {k} }(\omega _ {p} +\omega _ {k} )(\omega_ {p'}-\omega_ { {k'} }) B_ {-k}B^{\ddagger}_ {k'}) \right).  \\
 \end{align*}
 $$
 
@@ -659,16 +659,16 @@ The part in $A$ and $B+C$ that are proportional to $B^{\ddagger}B^{\ddagger}$ re
 
 $$
 \begin{align*}
-A &\supset \frac{1}{8} \int \frac{d^{d}p}{(2\pi)^{d}} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \frac{d^{d}k'}{(2\pi)^{d}} \tilde{{\mathfrak g}}_ {k}(-\vec{p})\tilde{{\mathfrak g}}_ {k'}(\vec{p}) B_ {k}^{^{\ddagger}} B_ {k'}^{\ddagger} \\
+A &\supset \frac{1}{8} \int \frac{d^{d}p}{(2\pi)^{d} } \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d} } \frac{d^{d}k'}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(-\vec{p})\tilde{ {\mathfrak g} }_ {k'}(\vec{p}) B_ {k}^{^{\ddagger} } B_ {k'}^{\ddagger} \\
 &\;\;\;\;\; \times (-4\omega _ {k} \omega_ {k'} + 2\omega _ {p} \omega _ {k}  -2\omega _ {p} \omega_ {k'})  \\
-&= - \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \,   \frac{d^{d}k}{(2\pi)^{d}} \, \omega^{2}_ {k}B^{\ddagger}_ {k} B^{\ddagger}_ {-k},   \\
-B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \frac{d^{d}k_ {1}}{(2\pi)^{d}} \frac{d^{d}k_ {2}}{(2\pi)^{d}}  \int \frac{d^{d}p_ {1}}{(2\pi)^{d}} \frac{d^{d}p_ {2}}{(2\pi)^{d}}  \\
-& \;\;\;\;\; \times  \omega^{2}_ {k} \, \tilde{\mathfrak g}_ {k_ {1}}(-\vec{p})  \tilde{\mathfrak g}_ {k_ {2}}(-\vec{p}')  \tilde{\mathfrak g}_ {-k}(\vec{p})  \tilde{\mathfrak g}_ {k}(\vec{p}') B^{\ddagger}_ {k_ {1}}B^{\ddagger}_ {k_ {2}} \\
-&= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d}} \,\omega _ {k} ^{2} B^{\ddagger}_ {k}B^{\ddagger}_ {-k} .
+&= - \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \,   \frac{d^{d}k}{(2\pi)^{d} } \, \omega^{2}_ {k}B^{\ddagger}_ {k} B^{\ddagger}_ {-k},   \\
+B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d} } \frac{d^{d}k_ {1} }{(2\pi)^{d} } \frac{d^{d}k_ {2} }{(2\pi)^{d} }  \int \frac{d^{d}p_ {1} }{(2\pi)^{d} } \frac{d^{d}p_ {2} }{(2\pi)^{d} }  \\
+& \;\;\;\;\; \times  \omega^{2}_ {k} \, \tilde{\mathfrak g}_ {k_ {1} }(-\vec{p})  \tilde{\mathfrak g}_ {k_ {2} }(-\vec{p}')  \tilde{\mathfrak g}_ {-k}(\vec{p})  \tilde{\mathfrak g}_ {k}(\vec{p}') B^{\ddagger}_ {k_ {1} }B^{\ddagger}_ {k_ {2} } \\
+&= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d} } \,\omega _ {k} ^{2} B^{\ddagger}_ {k}B^{\ddagger}_ {-k} .
 \end{align*} 
 $$
 
-Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, *when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.
+Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.
 
 
 
