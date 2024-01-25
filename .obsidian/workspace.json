@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
+                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md"
+                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
               }
             }
           },
@@ -233,7 +233,7 @@
     "_includes/scripts/mathjax - Copy.html",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "_posts/2024-01-25-test.md",
-    "_posts/2024-01-22-Note-on-Kink-Mass-Correction-in-3D.md",
+    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-01-25-Note-on-Kinks.md",
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
     "Untitled.md",
