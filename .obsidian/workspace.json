@@ -227,6 +227,8 @@
   },
   "active": "c64d85669ef2832c",
   "lastOpenFiles": [
+    "_news/announcement_4.md",
+    "_news/announcement_3 - Copy.md",
     "_includes/scripts/mathjaxBackup.html",
     "_includes/scripts/mathjax - Copy.html",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
@@ -259,7 +261,6 @@
     "_pages/repositories.md",
     "_pages/projects.md",
     "_pages/publications.md",
-    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
@@ -271,7 +272,6 @@
     "img/relaxationMethod.jpg",
     "news.html",
     "bin/entry_point.sh",
-    "bin/deploy",
-    "bin/cibuild"
+    "bin/deploy"
   ]
 }
