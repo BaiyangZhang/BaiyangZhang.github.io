@@ -525,19 +525,12 @@ $$
 insert it into the equation of motion and use the fact that $f(\vec{x})$ satisfies the time-independent EoM, we get the EoM for the fluctuation field:
 
 $$
-0 = \partial^{2} (f+{\mathfrak g}) -\frac{1}{\lambda} \frac{d V(\sqrt{ \lambda }(f+{\mathfrak g}))}{d\phi}
-$$
-
-$$
-= \partial^{2} f + \partial^{2}{\mathfrak g}-\frac{1}{\lambda} \frac{d}{d\phi}\left( V( \sqrt{ \lambda  } f)+{\mathfrak g} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi} \mid_ {\phi=f} + \mathcal{O}({\mathfrak g^{2}}) \right) 
-$$
-
-$$
-= \partial^{2} f - \frac{1}{\lambda} \frac{dV(\sqrt{\lambda} f)}{df}  + \partial^{2}{\mathfrak g}-\frac{ {\mathfrak g} } {\lambda} \frac{d^{2}V(\sqrt{\lambda}f)}{d f^{2}} +\mathcal{O}( {\mathfrak g}^{2} )
-$$
-
-$$
-= \partial^{2} {\mathfrak g}+V^{(2)}(\sqrt{ \lambda }f) + \mathcal{O}({\mathfrak g}^{2}),
+\begin{align*}
+0 &= \partial^{2} (f+{\mathfrak g}) -\frac{1}{\lambda} \frac{d V(\sqrt{ \lambda }(f+{\mathfrak g}))}{d\phi} \\
+&= \partial^{2} f + \partial^{2}{\mathfrak g}-\frac{1}{\lambda} \frac{d}{d\phi}\left( V( \sqrt{ \lambda  } f)+{\mathfrak g} \frac{dV(\sqrt{ \lambda }\phi)}{d\phi} \mid_ {\phi=f} + \mathcal{O}({\mathfrak g^{2}}) \right)  \\
+&= \partial^{2} f - \frac{1}{\lambda} \frac{dV(\sqrt{\lambda} f)}{df}  + \partial^{2}{\mathfrak g}-\frac{ {\mathfrak g} } {\lambda} \frac{d^{2}V(\sqrt{\lambda}f)}{d f^{2}} +\mathcal{O}( {\mathfrak g}^{2} ) \\
+&= \partial^{2} {\mathfrak g}+V^{(2)}(\sqrt{ \lambda }f) + \mathcal{O}({\mathfrak g}^{2}),
+\end{align*}
 $$
 
 where 
@@ -589,10 +582,10 @@ $$
 Expand $A,A^{\ddagger}$ in terms of $B^{\dagger},B$ we have
 
 $$
-\begin{align}
-A^{\ddagger}_ {p} &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \frac{\tilde{{\mathfrak g}}_ {k}(-\vec{p})}{2\omega_ {p}} \left[ (\omega _ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right]     ,\\
-A_ {-p}&= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{d}k}{(2\pi)^{d}} \, \tilde{{\mathfrak g}}_ {k}(-\vec{p}) \left[ (\omega _ {p} -\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} +\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right].     
-\end{align}
+\begin{align*}
+A^{\ddagger}_ {p} &= \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \, \frac{\tilde{ {\mathfrak g} }_ {k}(-\vec{p})}{2\omega_ {p}} \left[ (\omega_ {p} +\omega _ {k} )B_ {k} ^{\ddagger}+(\omega _ {p} -\omega _ {k} )\frac{B_ {-k}}{2\omega_ {k} } \right]     ,\\
+A_ {-p}&= \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \, \tilde{ {\mathfrak g} }_ {k}(-\vec{p}) \left[ (\omega _ {p} -\omega _ {k} ) B_ {k} ^{\ddagger}+(\omega _ {p} +\omega _ {k} )\frac{B_ {-k}}{2\omega _ {k} } \right].     
+\end{align*}
 $$
 
 The idea is to 
@@ -611,10 +604,11 @@ Define the Fourier transformation $\tilde{f}$ of function $f(x)$ to be
 $$
 \tilde{f}(\vec{p}) := \int d^{d}x \,   f(\vec{x})e^{ -i\vec{p}\cdot \vec{x} }.
 $$
+
 The Fourier transformation of normal modes reads
 
 $$
-\tilde{{\mathfrak g}}_ {k}(p) = \int d^{d} x \, {\mathfrak g}_ {k}(\vec{x}) 
+\tilde{ {\mathfrak g} }_ {k}(p) = \int d^{d} x \, {\mathfrak g}_ {k}(\vec{x}) 
 e^{-i\vec{p}\cdot \vec{x}}
 $$
 
@@ -674,7 +668,7 @@ B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} 
 \end{align*} 
 $$
 
-Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{{\mathfrak g}}$ functions. Apparently, *when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.
+Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, *when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.
 
 
 
