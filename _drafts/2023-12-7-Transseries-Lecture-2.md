@@ -120,6 +120,7 @@ $$
 Recall that "large" and "small" are in comparison to $1$. 
 
 The multiplication between Hahn series follow the same rules as that between regular power series. As a result it also satisfies the convolution rule, let $A = \sum a_ {{\frak g}}{\frak g}$ and $B=\sum b_ {{\frak g}}{\frak g}$, then
+
 $$
 (AB)[{\frak g}] = \sum_ {{\frak mn}={\frak g}}a_ {{\frak m}}b_ {{\frak n}}.
 $$

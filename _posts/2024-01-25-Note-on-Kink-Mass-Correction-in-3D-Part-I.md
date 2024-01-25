@@ -179,10 +179,11 @@ In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pi
 1. The energy (mass) is finite;
 2. The energy is locally minimum, meaning the soliton is stable;
 3. The potential $U$ depends on a coupling constant $\lambda$ according to the scaling law
-4. 
+
 $$
 U(\phi;\lambda) = \frac{1}{\lambda}U(\sqrt{ \lambda }\,\phi;1).
 $$
+
 The choice is such that all the $\lambda$ dependence are now moved to the pre-factor $1 / \lambda$. As for $\hbar$-expansion, we take the scheme such that $\hbar$-expansion agrees with $\lambda$-expansion, namely each loop brings in a factor of $\hbar$. 
 
 Let the Hamiltonian be 
@@ -190,6 +191,7 @@ Let the Hamiltonian be
 $$
 H = \int d^{2}x \, : \mathcal{H} :_ {a},\quad \mathcal{H}(x) = \frac{\pi^{2} }{2} + \frac{(\partial_ {x}\phi(x))^{2} }{2} + \frac{1}{\lambda} V\left(\sqrt{ \lambda}\,  \phi(x) \right).    
 $$
+
 Now, in order to get the equation of motion, we have two options: 1) Legendre-transform the equation to the Lagrangian formalism and adopt Euler-Lagrange equation, or 2) stick with the Hamiltonian formalism and adopt the Hamiltonian equations of motion (Hamilton equations) instead. Here we will take the second option. 
 
 Recall that the Hamilton equations in classical field theory reads 
@@ -200,6 +202,7 @@ $$
 \frac{\delta \mathcal{H} }{\delta \pi_i} &= \dot{\phi}_i.
 \end{align*}
 $$
+
 This is a non-trivial generalization of the familiar Hamiltonian in classical mechanics, non-trivial since the connection between variational derivative and partial derivative is not as simple as one might think, we have
 
 $$
@@ -213,11 +216,13 @@ $$
 \lambda \, \mathcal{H} = \frac{1}{2} \tilde{\pi}^{2} + \frac{1}{2} \vec{\nabla}^{2}\,\tilde{\pi} + V(\tilde{\phi}),\quad  \tilde{\pi} := \sqrt{ \lambda }\, \pi,\quad  \tilde{\phi} := \sqrt{ \lambda  }\,\phi.
 }
 $$
+
 Then we can first obtain the EOM in terms of $\tilde{\phi}$ and $\tilde{\pi}$, the changing to un-tilded version is trivial. Finally we have
 
 $$
 \ddot{\phi} - \vec{\nabla}^{2} \phi(x,t) + \frac{1}{\sqrt{ \lambda } } V^{(1)}(\sqrt{ \lambda }\phi)  = 0
 $$
+
 with definition
 
 $$
@@ -232,6 +237,7 @@ Now, how can we borrow the kink result form 2D directly to 3D? Consider a static
 $$
 \phi(x,y) =: f(x,y)=: f_ {1}(x)\times f_ {2}(y) , 
 $$
+
 where we have assumed the possibility of separation of variables. To say the kink is in the $x$ direction is to say the solution satisfies the equation of motion in the $x$ direction,
 
 $$
@@ -245,6 +251,7 @@ First, consider the case in 2D. Writing the filed as a kink background plus fluc
 $$
 \phi(x,t) =: f(x) + {\mathfrak g}(x) e^{ -i\omega t }
 $$
+
 where $f(x)$ is the 1-dimensional kink solution, the equation of motion in terms of ${\mathfrak g}$ reads
 
 $$
@@ -261,6 +268,7 @@ The equation of motion is the Sturm-Liouville equation. A general Sturm-Liouvill
 $$
 \frac{d}{dx}\left[ p(x) \frac{dy}{dx} \right] - q(x)y + \lambda r(x)y = 0
 $$
+
 Here, $y$ is the function of the variable $x$ that we are solving for, and $p(x)$, $q(x)$, and $r(x)$ are known functions that specify the particular Sturm-Liouville problem. The parameter $\lambda$ is often referred to as the eigenvalue.
 
 Key characteristics and applications of the Sturm-Liouville equation include:
@@ -290,6 +298,7 @@ The sign of ${\mathfrak g}_ {B}$ is fixed using
 $$
 {\mathfrak g}_ {B}(x) = - \frac{f'(x)}{\sqrt{ Q_ {0} } },
 $$
+
 where $f$ is again the kink solution.
 
 We choose to expand in the $x$ direction in normal modes (in the kink background), while in the $y$ direction in plane waves. The 2D momentum $\vec{k}=\left\lbrace k_ {x},k_ {y} \right\rbrace$, where $k_ {x}=\left\lbrace B,S,k \right\rbrace$, $B$ for the zeromode (bounded solution), $S$ for the shape mode (also bounded) and $k$ for the continuum. A nice illustration of normal modes in the background of kink is shown in the figure below, which I shamelessly copied from Tanmay Vachaspati's book, all the credits goes to Vachaspati. 
@@ -311,11 +320,13 @@ $$
 \pi(r) &=  \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2} } \,  \left( B_ {k} ^{\ddagger} -\frac{B_ {-k} }{2}  \right){\mathfrak g}_ {k} (r),
 \end{align*}
 $$
+
 where $r = (x,y)$. We adopt the convention
 
 $$
 B^{\ddagger}_ {k} = \frac{B^{\dagger}_ {k} }{2\omega _ {k} }.
 $$
+
 This helps us to jump between different conventions for the field expansion.
 
 We have omitted the vector sign (or bold font) in $r$ since it would not raise any misunderstanding. We assume (quite reasonably) the separation of variables $x$ and $y$ for 2D normal modes ${\mathfrak g}(r)$,
@@ -323,11 +334,13 @@ We have omitted the vector sign (or bold font) in $r$ since it would not raise a
 $$
 {\mathfrak g}(r) = {\mathfrak g}_ {x}\times g_ {y},\quad  {\mathfrak g}_ {x} = \text{kink normal modes},\, {\mathfrak g}_ {y} = \text{plane waves.}
 $$
+
 The quantization in terms of $\phi$ and $\pi$ reads
 
 $$
 [\phi(r),\pi(r')] = i\delta^{(2)}(r-r').
 $$
+
 This represents the fundamental quantization relation, unaffected by the selection of sectors. We haven't given a formal definition of sectors, roughly speaking, within each sector, there exists a distinct set of normal modes for expanding both $\phi$ and $\pi$. Each mode must conform to the aforementioned relation, namely the quantization relation given in space-time positions $r$. Ultimately, the difference across different sectors lies in the diverse backgrounds (regarded as classical functions) used for field expansion. However, as we are analyzing the same theory within the same space-time, the theory should be quantized only once, and, all sectors must consistently align with the same quantization process. 
 
 ## 2.2 Renormalization methods review
@@ -354,6 +367,7 @@ $$
 [\phi(r),\pi(r')] = i \delta^{(d)} (r-r'),
 \tag{2.1}
 $$
+
 In lattice quantization, the continuous spacetime of the theory is replaced by a discrete set of points, and the fields are defined only at these points. It is a powerful, comprehensive change of viewpoint, not only of numerical importance, but really alters our view of spacetime. In principal we can translate all concepts we have defined in spacetime continuum into the lattice spacetime, such as the gauge connection, gauge field strength, etc. Sometimes, it is convenient to think the lattices as "sample points" of a spacetime continuum. In this view, between the lattice sites there maybe exists something other than the pure void, but it is meaning less to talk about them anyway. This view is rather useful when discussing the connection between lattice quantization and momentum cutoff quantization. 
 
 The commutation relation on a lattice should take the form
@@ -362,6 +376,7 @@ $$
 [\phi_ {i},\pi_ {j}] =i\delta_ {ij},
 \tag{2.2}
 $$
+
 where $i,j$ are the indices of different sites. 
 
 Recall that in canonical quantization, Eq. (2.1) translate to the momentum space rather trivially, yielding
@@ -369,6 +384,7 @@ Recall that in canonical quantization, Eq. (2.1) translate to the momentum space
 $$
 [a_ {p},a^{\dagger}_ {p'}] = i (2\pi)^{d} \delta^{(d)}(p-p').
 $$
+
 So the question is, how does the lattice commutation relation translates to different sectors? Particularly, in the trivial vacuum sector and the one-kink sector?
 
 ### 2.3.1 Latticization of scalar field
@@ -382,11 +398,13 @@ a^{d} &\to d^{d}x,\\
 f_ {a^{\mu} } &\to f(x)
 \end{align*}
 $$
+
 where $m^{d}$ indicates the $d$-dimensional lattice. Combined together we have the familiar formula
 
 $$
 \sum_ {m^{d} } a^{d} f_ {a^{\mu} } \to \int d^{d}x \, f(x).  
 $$
+
 We can define two types of differences, corresponding to derivatives in the continuous case
 
 $$
@@ -395,6 +413,7 @@ $$
 \partial'_ {\mu} f_ {x} &= \frac{1}{a} (f_ {x}-f_ {x-\hat{a}^{\mu} }),
 \end{align*}
 $$
+
 where $\hat{a}^{\mu}$ is a vector in direction $x^{\mu}$ of length $a$, namely $\hat{a}$ moves to the next lattice site in the $x^{\mu}$ direction. These two differences are like differences "from right" and "from left". For smooth functions of course their continuous limit all give the derivative.
 
 The interesting thing is that these two types of differences are kind of dual to each other. Define an inner product
@@ -402,11 +421,13 @@ The interesting thing is that these two types of differences are kind of dual to
 $$
 (f_ {x},g_ {x}) := \sum_ {x}  f_ {x} g_ {x},
 $$
+
 similar to what we have for differential forms, then 
 
 $$
 (f_ {x},\partial g_ {x}) = (-\partial' f_ {x},g_ {x}),
 $$
+
 which corresponds to the integral by part
 
 $$
@@ -424,26 +445,31 @@ The simplest special relativistic equation of motion a field $\phi$ can satisfy 
 $$
 \partial^{2}\phi=0,\quad \partial^{2}=\partial_ {\mu}\partial^{\mu}=\partial_ {t}^{2}-\nabla^{2}.
 $$
+
 Decompose $\phi$ into a continuum of momentum mode, each mode can be written as
 
 $$
 a_ {p} (t) e^{ i\vec{p}\cdot \vec{x} }
 $$
+
 where we have assume the separation of variable $t$ and $\vec{x}$, and the time-dependent part of the Klein-Gordon equation gives
 
 $$
 (\partial_ {t}^{2}+\vec{p}\cdot \vec{p})a_ {p} (t) = 0
 $$
+
 with solutions 
 
 $$
 a_ {p} (t) =a_ {p}  e^{ \pm  i\omega t},\quad \omega^{2}= \vec{p}^{2}.
 $$
+
 where $a_ {p}$ now is just some c-number, constant in time. The field can be expanded as a linear combination of all the momentum modes
 
 $$
 \phi(t,\vec{r}) = \int \frac{d^{d}p}{(2\pi)^{d} } \, (a_ {p} e^{ -ipx }+a_ {p} ^{\ast }e^{ipx }) 
 $$
+
 where the second term in the parenthesis is to make sure that $\phi$ is real. We have assembled $\omega$ and $\vec{p}$ into $p=(\omega,\vec{p})$. 
 
 Now the second quantization kicks in. This is usually first done in the momentum space, since we are treating each mode as a harmonic oscillator. You can already see one aspect of the difference between the previously define lattice quantization and the textbook second quantization. We introduce the `equal-time commutation relation`
@@ -451,6 +477,7 @@ Now the second quantization kicks in. This is usually first done in the momentum
 $$
 [a_ {k} ,a_ {p}^{\dagger}] = (2\pi)^{d} \,\delta^{d}(\vec{k}-\vec{p}),
 $$
+
 where we have omitted the vector sign in the superscript $k,p$ to avoid overly cumbersome notation.
 The factors of $2\pi$ are a convention, stemming from our convention for Fourier transform, for the details see my other blog on conventions. 
 
@@ -459,6 +486,7 @@ We want the operators $a_ {p}^{\dagger}$ to create particles with momentum $\vec
 $$
 a_ {p} ^{\dagger}\left\lvert{\Omega}\right\rangle = \frac{1}{\sqrt{ 2\omega _ {p}  } }\left\lvert{\vec{p} }\right\rangle ,
 $$
+
 where $\left\lvert{\Omega}\right\rangle$ is the ground state in the vacuum sector. This factor of $1 / \sqrt{ 2\omega _ {p} }$ is just another convention. 
 
 From the normalization $\left\langle \Omega \middle\vert \Omega \right\rangle=1$ and the commutation of $a,a^{\dagger}$ we get
@@ -466,16 +494,19 @@ From the normalization $\left\langle \Omega \middle\vert \Omega \right\rangle=1$
 $$
 \left\langle \vec{p} \middle\vert \vec{k} \right\rangle =2\omega _ {p} (2\pi)^{d}\delta^{d}(\vec{p}-\vec{k}).
 $$
+
 As a result, the identity operator for one particle states is 
 
 $$
 \mathbb{1}=\int \frac{d^{d}p}{(2\pi)^{d} } \, \frac{1}{2\omega _ {p} }\left\lvert{\vec{p} }\right\rangle \left\langle{\vec{p} }\right\rvert .
 $$
+
 We define the quantum field as integrals over $a_ {p}$ and $a_ {p}^{\dagger}$, 
 
 $$
 \phi_ {0}(\vec{x})= \int \frac{d^{d}p}{(2\pi)^{d} } \, \frac{1}{\sqrt{ 2\omega } } (a_ {p} e^{ i\vec{p} \cdot \vec{x} } + a_ {p} ^{\dagger}e^{ -i\vec{p}\cdot \vec{x} }) 
 $$
+
 where the subscript $0$ indicates this is a free field. The traditional view is to take it as the definition of the field operator $\phi_ {0}$ constructed from the creation and annihilation operators $a_ {p}$ and $a_ {p}^{\dagger}$ (*Schwartz M.D.*), but we shall try an opposite viewpoint, as will be shown later. 
 
 Later we will work with the Schrodinger picture which is less commonly used compared to the Heisenberg or interaction pictures. To finish the review on the second quantization, we just mentioned that in Heisenberg picture, all the time dependence is in operators such as $\phi$ and $a_ {p}$, the field operator reads
@@ -548,6 +579,7 @@ The commutation relation reads
 $$
 [\phi(\vec{x}_ {1}),\pi(\vec{x}_ {2})] = i^{d} \delta(\vec{x}_ {1}-\vec{x}_ {2}),
 $$
+
 together with the decomposition we have
 
 $$
@@ -567,6 +599,7 @@ $$
 \phi_ {k} &= B^{\ddagger}_ {k}+\frac{B_ {-k} }{2\omega_ {k} },\quad \pi_ {k}=i\omega_ {k}B^{\ddagger}_ {k}- \frac{iB_ {-k} }{2},\quad B^{\ddagger}_ {k} = \frac{B^{\dagger}_ {k} }{2\omega _ {k} }.
 \end{align*}
 $$
+
 The commutation relation in terms of those reads
 
 $$

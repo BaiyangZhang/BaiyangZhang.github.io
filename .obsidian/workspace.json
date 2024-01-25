@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "d1982b0eee003f27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-01-25-test.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "bfec5e2f38a7e0bd",
             "type": "leaf",
             "state": {
@@ -67,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -142,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-01-25-Note-on-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-01-25-Note-on-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
+                "file": "_posts/2024-01-25-Note-on-Kinks.md"
               }
             }
           },
@@ -225,15 +214,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c64d85669ef2832c",
+  "active": "bfec5e2f38a7e0bd",
   "lastOpenFiles": [
+    "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "_posts/2024-01-25-test.md",
+    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_news/announcement_4.md",
     "_news/announcement_3 - Copy.md",
     "_includes/scripts/mathjaxBackup.html",
     "_includes/scripts/mathjax - Copy.html",
-    "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2024-01-25-test.md",
-    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-01-25-Note-on-Kinks.md",
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
     "Untitled.md",
