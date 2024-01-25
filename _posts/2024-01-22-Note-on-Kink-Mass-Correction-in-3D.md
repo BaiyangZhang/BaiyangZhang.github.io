@@ -42,16 +42,19 @@ Let $d$ be the dimension of spacetime, in the partial natural unit we have
 $$
 \int d^{d}x \, \mathcal{L}\sim \hbar \implies [\mathcal{L}]=[\hbar] L^{-d}
 $$
+
 Take a specific term, say $(\partial \phi)^{2}$, to continue the analysis,
 
 $$
 [(\partial \phi)^{2}] = L^{-2} [\phi^{2}] = [\mathcal{L}] = [\hbar]L^{-d} \implies [\phi^{2}]=[\hbar] L^{2-d}
 $$
+
 which is 
 
 $$
 [\phi] = [\sqrt{ \hbar }] \, L^{1-d / 2}.\tag{1}
 $$
+
 This agrees with the convention that field operator $\phi$ scales as $\sqrt{ \hbar }$. Furthermore, this scaling property does not depend on the spacetime dimension $d$, it holds for any spacetime dimension.
 
 I don't think the $\hbar$-dependence given by Eq. (1) is unique, apparently there exist other possibilities, we can move $\hbar$ around in the Lagrangian, just to make sure that the action altogether is of dimension $\hbar$. However it seems that $\phi\sim \hbar^{1/2}$ is indeed the most convenient option. Another way to see the advantage of this choice is from the action,
@@ -59,11 +62,13 @@ I don't think the $\hbar$-dependence given by Eq. (1) is unique, apparently ther
 $$
 S \sim \hbar \sim \int d^{4}x \, (m^{2} \phi^{2}+(\partial \phi)^{2} +U(\phi)),
 $$
+
 then
 
 $$
 \int d^{4}x \, \left[ m^{2} \xi^{2}+(\partial \xi)^{2} + U(\xi) \right] \sim 1,   \quad \xi:= \frac{\phi}{\sqrt{ \hbar }} . 
 $$
+
 In this way, we can absorb $\hbar$ into the definition of $\phi$, this is similar to absorbing the coupling $g$ into the field definition in gauge theory. We now *define* $\xi$ to be *independent* of $\hbar$. 
 
 Having fixed the $\hbar$-dependence of $\phi$, we can substitute it to the potential $U$, for example the $\phi^{4}$ model to determine the $\hbar$ dependence of the coupling,
@@ -71,11 +76,13 @@ Having fixed the $\hbar$-dependence of $\phi$, we can substitute it to the poten
 $$
 [S]\sim\int d^{d}x \, \lambda \phi^{4} \sim L^{d} [\lambda][\hbar^{2}] L^{4-2d} = L^{4-d}[\hbar^{2}][\lambda],
 $$
+
 on the other hand we already know that $S\sim \hbar$ so
 
 $$
 L^{4-d}[\hbar^{2}][\lambda] = [\hbar] \implies [\lambda \hbar] = L^{d-4}. 
 $$
+
 If we choose $L$ to be the fundamental unit instead of energy $E$, it is clear the $\lambda \hbar$ is independent of $\hbar$. Plus, we see that $d=4$ is special.
 
 For the sake of completeness, let's consider the mass term in the Lagrangian. Similar to what we have for the kinetic term, 
@@ -92,6 +99,7 @@ If two things are of the same dimension, for example, say
 $$
 [A] \sim [a] = L
 $$
+
 where $\sim$ means having the same dimension. Then we can use one of them as the unit to measure the other, say, use $a$ as the "ruler" to measure $A$, the result $\widetilde{A} :=A / a$ is a dimensionless number. 
 
 Suppose $[\phi]=[\hbar]^{1/2}$, another way to say the same ting is $\phi \sim \sqrt{ \hbar }$, note that the tilde does not imply any relation between the *values* of $\phi$ and $\sqrt{ \hbar }$, it only means that they have the same dimension. The point is, since they have the same dimension, we can use one of them to measure the other, for example we can define
@@ -99,6 +107,7 @@ Suppose $[\phi]=[\hbar]^{1/2}$, another way to say the same ting is $\phi \sim \
 $$
 \tilde{\phi} = \phi / \sqrt{ \hbar }
 $$
+
 which is a dimensionless number. Since $\hbar$ scales the "quantumness", the more classical the world is, the smaller $\hbar$ (and $\sqrt{ \hbar }$), hence the bigger numeric value of $\tilde{\phi}$. 
 
 - - -
@@ -119,16 +128,19 @@ Again, let's work with the assumption that $c = \epsilon_ {0} = 1$. Require $[S]
 $$
 [A] = \sqrt{ \frac{E}{L} }.
 $$
+
 For the same reasons, in the scalar QED the classical electric charge $e$ and mass $m$ are divided by $\hbar$,
 
 $$
 S_ {\text{sQED}} = \int d^{4}x \, \left\lbrace \left\lvert D\phi \right\rvert ^{2}-\frac{m^{2}}{\hbar^{2}}\left\lvert \phi \right\rvert ^{2} \right\rbrace , \quad  D = \partial +i \frac{e}{\hbar }A.
 $$
+
 The boson field dimension 
 
 $$
 [\phi]=[A]= \sqrt{ \frac{E}{L} }.
 $$
+
 Fermion fields are more complicated, since they have no classical counterparts, their dimensions are convention-dependent. We will deal with fermions in a different note perhaps.
 
 **Second step is to specify $\hbar$ dependence of all quantities appearing in the action.**
@@ -138,16 +150,19 @@ The choice made by Brodsky and Hoyer is as following:
 $$
 \widetilde{A}:= \frac{A}{\sqrt{ \hbar }},\quad \tilde{\phi}:= \frac{\phi}{\sqrt{ \hbar }}
 $$
+
 where $\widetilde{A},\tilde{\phi}$ are $\hbar$-independent. Similarly, define the following $\hbar$-independent quantities
 
 $$
 \widetilde{g}:= \frac{g}{\hbar},\quad  \widetilde{e}:= \frac{e}{\hbar},\quad  \widetilde{m}:= \frac{m}{\hbar}.
 $$
+
 Then one can write the Lagrangian in terms of these $\hbar$-independent quantities to check the $\hbar$ dependence explicitly. It turns out that, at least in the simple models discussion in the paper, $\hbar$ always appears in the combination 
 
 $$
 \widetilde{g}\sqrt{ \hbar } \quad \text{and}\quad \widetilde{e}\sqrt{ \hbar }
 $$
+
 that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ will be of order $\hbar$. 
 
 This derivation is equivalent to the standard one of, for example, Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume the parameters appearing in the action to be independent of $\hbar$. 
