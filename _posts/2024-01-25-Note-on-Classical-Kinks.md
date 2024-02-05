@@ -42,7 +42,7 @@ $$
 
 At a certain moment, the instantaneous energy is obtained by the Legendre transformation of the Lagrangian. Then the translational symmetry makes sure that the energy is a conserved quantity in time. Classically, given the field configuration, we just substitute it to the energy functional, then you have the total energy of the field configuration. After quantization, though, there will be infinite zero point energy. But for our concern we will just pretend it is not there and carry on to calculate the difference of energy. This is a common property to quantum field theory models, it is usually possible to calculate the **difference of something** rather than the things themselves, which will be divergent, as it often turn out to be. 
 
-The vacuum manifold is the manifold given by the minimum of $U(\phi)$. If there exists non-trivial maps
+The vacuum manifold is the manifold given by the minimum of $U( \phi )$. If there exists non-trivial maps
 
 $$
 \text{boundary of space} \to \text{vacuum manifold}
@@ -80,7 +80,7 @@ $$
 E[\phi(x)] = \frac{1}{2} \int dx \, \left( \partial _ {x}\phi \mp \frac{dW}{d\phi} \right) ^{2} \pm W{\Large\mid}^{\phi(x=+\infty)}_ {\phi(x=-\infty)} 
 $$
 
-which is of the form $E = (\dots)^{2}+\mathrm{eq}$, the minimum of which is given by $\text{eq}=0$. 
+which is of the form $E=(\cdots)^{2}+\mathrm{eq}$, the minimum of which is given by $\text{eq}=0$. 
 
 Recall that for the (anti-)kink solution, the boundary condition is taken such that the potential $U(x)$ takes different vacua at different space boundaries, then $W(x=\pm\infty)$ is fixed. The kink equation will just be 
 
@@ -98,7 +98,7 @@ $$
 
 Any field configuration with energy equal to BPS energy is said to **saturate the BPS bound**.
 
-In terms of the potential $U(x)$, the BPS equation becomes
+In terms of the potential $U (x)$, the BPS equation becomes
 
 $$
 \partial _ {x}\phi = \frac{dW}{d\phi} = \sqrt{ 2U(\phi) },

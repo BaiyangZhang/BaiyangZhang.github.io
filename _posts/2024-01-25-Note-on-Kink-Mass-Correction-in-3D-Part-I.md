@@ -316,8 +316,8 @@ We want to expand the static fluctuation field $\phi(r)$ (defined by $\phi=f_ {\
 
 $$
 \begin{align*}
-\phi(r) &= \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2} } \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k} }{2\omega _ {k} }  \right){\mathfrak g}_ {k} (r),\\
-\pi(r) &=  \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi )^{2} } \,  \left( B_ {k} ^{\ddagger} -\frac{B_ {-k} }{2}  \right){\mathfrak g}_ {k} (r),
+\phi(r) &= \sum\!\!\!\!\!\!\!\!\int \frac{ d^{d}k}{(2\pi )^{d} } \,  \left( B_ {k} ^{\ddagger} +\frac{B_ {-k} }{2\omega _ {k} }  \right){\mathfrak g}_ {k} (r),\\
+\pi(r) &=  \sum\!\!\!\!\!\!\!\!\int \frac{ d^{d}k}{(2\pi )^{d} } \,  \left( B_ {k} ^{\ddagger} -\frac{B_ {-k} }{2}  \right){\mathfrak g}_ {k} (r),
 \end{align*}
 $$
 
@@ -327,7 +327,7 @@ $$
 B^{\ddagger}_ {k} = \frac{B^{\dagger}_ {k} }{2\omega _ {k} }.
 $$
 
-This helps us to jump between different conventions for the field expansion.
+This helps us to switch between different conventions for the field expansion.
 
 We have omitted the vector sign (or bold font) in $r$ since it would not raise any misunderstanding. We assume (quite reasonably) the separation of variables $x$ and $y$ for 2D normal modes ${\mathfrak g}(r)$,
 
@@ -338,7 +338,7 @@ $$
 The quantization in terms of $\phi$ and $\pi$ reads
 
 $$
-[\phi(r),\pi(r')] = i\delta^{(2)}(r-r').
+[\phi(r),\pi(r')] = i\delta^{(d)}(r-r').
 $$
 
 This represents the fundamental quantization relation, unaffected by the selection of sectors. We haven't given a formal definition of sectors, roughly speaking, within each sector, there exists a distinct set of normal modes for expanding both $\phi$ and $\pi$. Each mode must conform to the aforementioned relation, namely the quantization relation given in space-time positions $r$. Ultimately, the difference across different sectors lies in the diverse backgrounds (regarded as classical functions) used for field expansion. However, as we are analyzing the same theory within the same space-time, the theory should be quantized only once, and, all sectors must consistently align with the same quantization process. 
@@ -382,7 +382,7 @@ where $i,j$ are the indices of different sites.
 Recall that in canonical quantization, Eq. (2.1) translate to the momentum space rather trivially, yielding
 
 $$
-[a_ {p},a^{\dagger}_ {p'}] = i (2\pi)^{d} \delta^{(d)}(p-p').
+[a_ {p},a^{\dagger}_ {p'}] =  (2\pi)^{d} \delta^{(d)}(p-p').
 $$
 
 So the question is, how does the lattice commutation relation translates to different sectors? Particularly, in the trivial vacuum sector and the one-kink sector?
@@ -422,7 +422,7 @@ $$
 (f_ {x},g_ {x}) := \sum_ {x}  f_ {x} g_ {x},
 $$
 
-similar to what we have for differential forms, then 
+similar to the case of differential forms, then 
 
 $$
 (f_ {x},\partial g_ {x}) = (-\partial' f_ {x},g_ {x}),
@@ -531,7 +531,7 @@ $$
 The next question is how to inverse it on a lattice...
 ### 2.4 (2+1)-dimensional 
 
-For now, let's accept (1) the ultraviolet cutoff $\Lambda$ and (2) the harmonic quantization *in the trivial vacuum sector* and translate it to the physical spacetime. As a result we get a non-local commutation relation in spacetime,
+If we adopt (1) the ultraviolet cutoff $\Lambda$ and (2) the harmonic quantization *in the trivial vacuum sector* and translate it to the physical spacetime. As a result we get a non-local commutation relation in spacetime,
 
 $$
 [\phi(x),\pi(y)]_ {\Lambda} = i \int_{-\Lambda}^{\Lambda} \frac{dp}{2\pi} \, e^{ -ip(x-y)} = i \frac{\sin(\Lambda x)}{\pi x}     .
@@ -539,7 +539,7 @@ $$
 
 This is non-local in the sense that for certain $x\neq y$ the commutator is nonzero. However, this commutation relation does agree with the lattice picture, if we set the lattice spacing to be $\pi / \Lambda$! (check for yourself)
 
-Now we can define the normal ordering in the vacuum sector, then propagate it to the kink sector via the displacement operator, which we will talk about shortly.
+But for now let's forget about the momentum cutoff and work with a more general picture. We can define the normal ordering in the vacuum sector, then propagate it to the kink sector via the displacement operator, which we will talk about shortly.
 
 Recall the equation of motion reads
 
@@ -577,7 +577,7 @@ In the below are some results needed for the derivation, not carefully organized
 The commutation relation reads
 
 $$
-[\phi(\vec{x}_ {1}),\pi(\vec{x}_ {2})] = i^{d} \delta(\vec{x}_ {1}-\vec{x}_ {2}),
+[\phi(\vec{x}_ {1}),\pi(\vec{x}_ {2})] = i \delta^{d}(\vec{x}_ {1}-\vec{x}_ {2}),
 $$
 
 together with the decomposition we have
@@ -702,6 +702,4 @@ B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d} }
 $$
 
 Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.
-
-
 

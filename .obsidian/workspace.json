@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4b89bbd91fd33ce7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-01-25-Note-on-Classical-Kinks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -107,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2024-01-25-Note-on-Classical-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2024-01-25-Note-on-Classical-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md"
+                "file": "_posts/2024-01-25-Note-on-Classical-Kinks.md"
               }
             }
           },
@@ -190,10 +202,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "22282c7baf0ff398",
+  "active": "4b89bbd91fd33ce7",
   "lastOpenFiles": [
-    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
     "_news/announcement_4.md",
     "_posts/2024-01-25-Note-on-Classical-Kinks.md",
