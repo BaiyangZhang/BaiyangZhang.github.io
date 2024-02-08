@@ -641,8 +641,8 @@ $$
 The Fourier transformation of normal modes reads
 
 $$
-\tilde{ {\mathfrak g} }_ {k}(p) = \int d^{d} x \, {\mathfrak g}_ {k}(\vec{x}) 
-e^{-i\vec{p}\cdot \vec{x} }
+\tilde{ {\mathfrak g} }_ {k}(p) = \int d^{d} x \, {\mathfrak g}_ {k}( \vec{x} ) 
+e^{-i\vec{p} \cdot \vec{x} }
 $$
 
 which satisfies relation
@@ -655,9 +655,9 @@ Sometime this relation can help to make the numerical calculation easier. The no
 
 $$
 \begin{align*}
-\int d^{d}x \, {\mathfrak g}^{\ast }_ {k}(\vec{x}){\mathfrak g}_ {k'}(\vec{x}) &=(2\pi)^{d}\delta ^{d}(k-k') \\
-\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(k+k') \\  
-\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }^{\ast }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(k-k') 
+\int d^{d}x \, {\mathfrak g}^{\ast }_ {k}(\vec{x}){\mathfrak g}_ {k'}(\vec{x}) &=(2\pi)^{d}\delta ^{d}(\vec{k}-\vec{k}') \\
+\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(\vec{k}+\vec{k}') \\  
+\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }^{\ast }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(\vec{k}-\vec{k}') 
 \end{align*}
 $$
 
@@ -677,7 +677,7 @@ The following relations are useful in derivation, with terms that do not annihil
 
 $$
 \begin{align*}
-A^{\ddagger}_ {p} A^{\ddagger}_ {p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d} } \frac{d^{d}k'}{(2\pi)^{d} } \frac{\tilde{ {\mathfrak g} }_ {k}(-\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(-\vec{p'})}{2\omega_ {p} 2\omega_ {p'} } \\
+A^{\ddagger}_ {p} A^{\ddagger}_ {p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d} } \frac{d^{d}k'}{(2\pi)^{d} } \frac{\tilde{ {\mathfrak g} }_ {k}(-\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(-\vec{p}')}{2\omega_ {p} 2\omega_ {p'} } \\
 &\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}+\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} }(\omega _ {p} -\omega _ {k} )(\omega_ {p'}+\omega_ { {k'} }) B_ {-k} B^{\ddagger}_ {k'}) \right),  \\
 A^{\ddagger}_ {p} A_ {-p'} &\cong  \sum\!\!\!\!\!\!\!\!\int \frac{d^{d}k}{(2\pi)^{d} } \frac{d^{d}k'}{(2\pi)^{d} } \frac{1}{2\omega_ {p} } \tilde{ {\mathfrak g} }_ {k}(-\vec{p})\tilde{ {\mathfrak g} }_ {k'}(-\vec{p}') \\
 &\;\;\;\;\; \times  \left( (\omega _ {p} +\omega _ {k} )(\omega_ {p'}-\omega_ {k'})B^{\ddagger}_ {k} B^{\ddagger}_ {k'}+ \frac{1}{2\omega _ {k} } (\omega _ {p} -\omega _ {k} )(\omega_ {p’}-\omega_ { {k'} }) B_ {-k}B^{\ddagger}_ {k'}) \right),  \\
