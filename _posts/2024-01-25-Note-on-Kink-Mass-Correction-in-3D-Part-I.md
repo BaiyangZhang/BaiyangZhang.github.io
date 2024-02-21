@@ -629,8 +629,28 @@ The idea is to
 The normal ordered leading order Hamiltonian (in kink sector) reads
 
 $$
-H'_ {2} =   .
+H'_ {2} = A+B+C
 $$
+where
+
+$$
+\begin{align*}
+A &= \frac{1}{2} \int d^{d}x \, :\pi^{2}(\vec{x}):_ {a}, \\
+B &= \frac{1}{2} \int d^{d}x \, :(\nabla\phi(\vec{x}))^{2}:_ {a},   \\
+C &= \frac{1}{2} \int d^{d}x \, V^{(2)} (\sqrt{ \lambda }f) :\phi^{2}(\vec{x}):_ {a}.
+\end{align*}
+$$
+
+In plane-wave space and  $\vec{k}$-space we have 
+
+$$
+\begin{align*}
+A &= \frac{1}{2} \int\frac{d^{d}p}{(2\pi)^{d}} \, :\pi_ {p}\pi_ {-p}:_ {a}  , \\
+B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d}} \, \omega^{2}_ {k} \int \frac{d^{d}p_ {1}}{(2\pi)^{d}} \int \frac{d^{d}p_ {2}}{(2\pi)^{d}} \, \tilde{{\mathfrak g}}_ {-k}(\vec{p}_ {1}) \tilde{{\mathfrak g}}_ {k}(\vec{p}_ {2}) :\phi_ {p_ {1}}\phi_ {p_ {2}}:_ {a}.
+\end{align*}
+$$
+
+- - -
 
 Define the Fourier transformation $\tilde{f}$ of function $f(x)$ to be 
 
