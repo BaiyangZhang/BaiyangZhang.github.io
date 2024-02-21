@@ -606,7 +606,7 @@ $$
 [B_ {k_ {1} },B^{\ddagger}_ {k_ {2} }] = (2\pi)^{d}\delta^{d}(k_ {1}-k_ {2}).
 $$
 
-Note the minus sign. This is similar to the trivial vacuum where
+Note the minus sign. It is exactly the same as what we've got in the trivial vacuum sector where
 
 $$
 [A_ {p_ {1} },A^{\ddagger}_ {p_ {2} }] = (2\pi)^{d}\delta^{d}(p_ {1}-p_ {2}).
@@ -693,6 +693,8 @@ B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d} } \int   
 \end{align*}
 $$
 
+Due to the property of $\tilde{{\mathfrak g}}$ and invariance of the integrals under exchange $p \leftrightarrow p'$, one can show that there are only two kinds of independent terms in $A$ and $B+C$, namely that proportional to $A^{\ddagger} A^{\ddagger}$ and $A^{\ddagger} A$.
+ 
 The following relations are useful in derivation, with terms that do not annihilate the kink ground state $\left\lvert{0}\right\rangle$:
 
 $$
@@ -721,5 +723,10 @@ B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d} }
 \end{align*} 
 $$
 
-Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.
+Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.* 
+
+- - -
+
+With some calculation we have
+
 
