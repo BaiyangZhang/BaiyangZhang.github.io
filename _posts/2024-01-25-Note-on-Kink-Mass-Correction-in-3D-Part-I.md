@@ -646,7 +646,7 @@ In plane-wave space and  $\vec{k}$-space we have
 $$
 \begin{align*}
 A &= \frac{1}{2} \int\frac{d^{d}p}{(2\pi)^{d}} \, :\pi_ {p}\pi_ {-p}:_ {a}  , \\
-B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d}} \, \omega^{2}_ {k} \int \frac{d^{d}p_ {1}}{(2\pi)^{d}} \int \frac{d^{d}p_ {2}}{(2\pi)^{d}} \, \tilde{{\mathfrak g}}_ {-k}(\vec{p}_ {1}) \tilde{{\mathfrak g}}_ {k}(\vec{p}_ {2}) :\phi_ {p_ {1}}\phi_ {p_ {2}}:_ {a}.
+B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d}} \, \omega^{2}_ {k} \int \frac{d^{d}p_ {1}}{(2\pi)^{d}} \int \frac{d^{d}p_ {2}}{(2\pi)^{d}} \, \tilde{ {\mathfrak g}}_ {-k}(\vec{p}_ {1}) \tilde{ {\mathfrak g}}_ {k}(\vec{p}_ {2}) :\phi_ {p_ {1}}\phi_ {p_ {2}}:_ {a}.
 \end{align*}
 $$
 
@@ -693,7 +693,7 @@ B+C &= \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \;\frac{d^{d}k}{(2\pi)^{d} } \int   
 \end{align*}
 $$
 
-Due to the property of $\tilde{{\mathfrak g}}$ and invariance of the integrals under exchange $p \leftrightarrow p'$, one can show that there are only two kinds of independent terms in $A$ and $B+C$, namely that proportional to $A^{\ddagger} A^{\ddagger}$ and $A^{\ddagger} A$.
+In the calculation just keep in mind the property of $\tilde{ {\mathfrak g}}$ and invariance under combined exchange $p \leftrightarrow p'$ with $k \to -k$.
  
 The following relations are useful in derivation, with terms that do not annihilate the kink ground state $\left\lvert{0}\right\rangle$:
 
@@ -723,10 +723,10 @@ B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d} }
 \end{align*} 
 $$
 
-Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, when put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.* 
+Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.* 
 
 - - -
 
-With some calculation we have
+With some calculation we get
 
 
