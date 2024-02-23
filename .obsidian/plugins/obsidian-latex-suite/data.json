@@ -8,7 +8,7 @@
   "concealEnabled": false,
   "colorPairedBracketsEnabled": true,
   "highlightCursorBracketsEnabled": true,
-  "inlineMathPreviewEnabled": true,
+  "inlineMathPreviewEnabled": false,
   "autofractionEnabled": true,
   "autofractionExcludedEnvs": "[\n        [\"^{\", \"}\"],\n        [\"\\\\pu{\", \"}\"]\n]",
   "autofractionBreakingChars": "+-=\t",

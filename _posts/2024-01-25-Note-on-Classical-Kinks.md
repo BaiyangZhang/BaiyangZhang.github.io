@@ -14,6 +14,30 @@ tags:
 
 # Introduction
 
+The reason why kinks (and domain walls) are of interest to us is that,
+
+1. they are known to exist in many laboratory systems and may exist in other exotic settings such as the early universe,
+2. they provide a relatively simple setting for studying the non-linear, non-perturbative physics,
+3. they shed light on the dynamics of phase transition.
+
+Take the phi-4 model for example, the Lagrangian is (one of many different forms)
+
+$$
+\mathcal{L} = \frac{1}{2}(\partial_ {\mu}\phi)^{2} - \frac{\lambda}{4} (\phi^{2} - \eta^{2})^{2}
+$$
+
+Then we can write down the kink solution, so-called $\mathcal{Z}_ {2}$ kink. The nice thing about $\mathcal{Z}_ {2}$ kink is that almost everything, from the kink solution to its energy, can be written down in closed form, as we shall see in the next chapter. 
+
+
+
+
+One can rescale the field $\phi$ and the coordinate $y$ such that the Lagrangian reads 
+$$
+\mathcal{L} = \eta^{2}\left[ \frac{1}{2} (\partial_ {\mu}\phi)^{2} - \frac{1}{4} (\phi^{2}-1)^{2}\right] .
+$$
+
+From this form it is clear that $\eta^{2}$ does not enter the classical equation of motion. It plays the rule of $\frac{1}{\hbar}$. 
+
 
 
 # The Model
