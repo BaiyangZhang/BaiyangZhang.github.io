@@ -26,9 +26,9 @@ $$
 \begin{align}
   g_{\mu\nu}&=\text{diag}\{1,-1,-1,-1\},\\
   \epsilon_{0123} &= 1,\\
-  f(x) &= \int \frac{d^nk}{(2\pi)^n}e^{-ip\cdot x}\widetilde{f}(p),\\
-  \widetilde{f}(p)&=\int dx e^{ip\cdot x}f(x),\\
-  \delta^{(n)}(k) &= \frac{1}{(2\pi)^n}\int d^nxe^{i k x}.
+  f(x) &= \int \frac{d^nk}{(2\pi)^n} \, e^{-ip\cdot x}\widetilde{f}(p),\\
+  \widetilde{f}(p)&=\int dx \, e^{ip\cdot x}f(x),\\
+  \delta^{(n)}(k) &= \frac{1}{(2\pi)^n}\int d^nx \, e^{i k x}.
 \end{align}
 $$
 The gauge Lie group $G$ has an underlying Lie algebra $\mathfrak{g}$, whose generator satisfies

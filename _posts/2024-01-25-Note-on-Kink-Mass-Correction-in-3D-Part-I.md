@@ -671,17 +671,32 @@ $$
 \tilde{ {\mathfrak g} }_ {k}^{\ast}(\vec{p}) = \tilde{ {\mathfrak g} }_ {-k}(-\vec{p}) .
 $$
 
-Sometime this relation can help to make the numerical calculation easier. The normalization relations for ${\mathfrak g}$ reads
+Sometime this relation can help to make the numerical calculation easier. 
+
+The normalization relations for ${\mathfrak g}$ reads
 
 $$
 \begin{align*}
-\int d^{d}x \, {\mathfrak g}^{\ast }_ {k}(\vec{x}){\mathfrak g}_ {k'}(\vec{x}) &=(2\pi)^{d}\delta ^{d}(\vec{k}-\vec{k}') \\
-\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(\vec{k}+\vec{k}') \\  
-\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }^{\ast }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(\vec{k}-\vec{k}') 
+\int d^{d}x \, {\mathfrak g}^{\ast }_ {k}(\vec{x}){\mathfrak g}_ {k'}(\vec{x}) &=(2\pi)^{d}\delta ^{d}(\vec{k}-\vec{k}'), \\
+\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(\vec{k}+\vec{k}'), \\  
+\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }^{\ast }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(\vec{k}-\vec{k}') ,
+\end{align*}
+$$
+
+and the completeness condition (in both spacetime and momentum space)
+
+$$
+\begin{align*}
+\int \frac{d^{d}k}{(2\pi)^{2}} \, {\mathfrak g}_ {k}(\vec{x})  {\mathfrak g}^{\ast }_ {k}(\vec{y}) 
+&=\delta ^{d}(\vec{x}-\vec{y}), \\
+\sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \, \tilde{ {\frak g} }_ {k}(\vec{p}_ {1}) \tilde{ {\frak g} }^{\ast} _ {k}(\vec{p}_ {2}) 
+&= (2\pi)^{d} \delta^{d}(\vec{p}_ {1} - \vec{p}_ {2}).
 \end{align*}
 $$
 
 Note that in our convention of Fourier transformation, instead of $+i\vec{p}\cdot \vec{x}$ we have minus sign. This is only the spatial part of the Fourier transformation (recall that our spacetime is $d+1$ dimensional).
+
+- - -
 
 We have divided the leading order, kink-sector Hamiltonian into $A+B+C$ three parts, in normal order we have
 

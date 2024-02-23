@@ -20,24 +20,24 @@
             }
           },
           {
-            "id": "22282c7baf0ff398",
+            "id": "2f50a51236965cf9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4b89bbd91fd33ce7",
+            "id": "55e1f49bc2c2c1bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Classical-Kinks.md",
+                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "note-on-",
+                "query": "scaling",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,8 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 383.5,
-    "collapsed": true
+    "width": 383.5
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -203,40 +202,37 @@
   },
   "active": "c64d85669ef2832c",
   "lastOpenFiles": [
-    "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2024-01-25-Note-on-Classical-Kinks.md",
+    "_posts/2022-7-17-Conventions-and-Formula.md",
     "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
-    "_news/announcement_4.md",
-    "Untitled.md",
-    "_posts/2024-01-25-test.md",
-    "_news/announcement_3 - Copy.md",
-    "_includes/scripts/mathjaxBackup.html",
-    "_includes/scripts/mathjax - Copy.html",
-    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
-    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
     "2015-05-15-images.md",
-    "2015-05-15-images.md.crdownload",
-    "_includes/figure.liquid",
-    "_includes/figure.liquid.crdownload",
+    "_drafts/2023-12-7-Transseries-Lecture-2.md",
+    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "img/relaxationMethod - Copy.jpg",
     "img/kinkLevel.png",
     "img/hom.png",
-    "img/relaxationMethod - Copy.jpg",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
+    "_posts/2024-1-10-Representables-in-Category-Theory.md",
+    "_posts/2024-01-25-Note-on-Classical-Kinks.md",
+    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
+    "_news/announcement_4.md",
+    "_includes/scripts/mathjaxBackup.html",
+    "_includes/figure.liquid",
     "Trash.md",
-    "_pages/about.md",
-    "_pages/about_baiyang.md",
-    "_pages/cv.md",
-    "_pages/dropdown.md",
-    "_pages/profiles.md",
-    "_pages/teaching.md",
-    "_pages/repositories.md",
-    "_pages/projects.md",
-    "_pages/publications.md",
+    "_posts/2023-12-6-Transseries-Lecture-1.md",
+    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
+    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-20-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
+    "_posts/2023-12-26-Representables-in-Category-Theory.md",
+    "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
+    "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
+    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
+    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/DiscussionLetters/2022-09-22-HuiDiscussion1.md",
+    "_posts/2023-3-12-The-Geometry-of-Surfaces-in-R3.md",
+    "_posts/2023-3-21-Montesquieu.md",
+    "_posts/2023-3-23-Synges-Theorem.md",
+    "_posts/2023-04-29-Weihai-Travel-Plan.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
@@ -248,6 +244,9 @@
     "img/relaxationMethod.jpg",
     "news.html",
     "bin/entry_point.sh",
-    "bin/deploy"
+    "bin/deploy",
+    "bin/cibuild",
+    "bin",
+    "assets/jupyter/blog.ipynb"
   ]
 }
