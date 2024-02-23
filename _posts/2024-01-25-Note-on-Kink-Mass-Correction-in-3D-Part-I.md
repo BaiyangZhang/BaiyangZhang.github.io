@@ -744,4 +744,3 @@ Note that the last two terms in the second line cancel each other since $k,k'$ a
 
 With some calculation we get
 
-
