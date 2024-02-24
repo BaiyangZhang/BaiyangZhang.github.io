@@ -32,11 +32,14 @@ Then we can write down the kink solution, so-called $\mathcal{Z}_ {2}$ kink. The
 
 
 One can rescale the field $\phi$ and the coordinate $y$ such that the Lagrangian reads 
+
 $$
 \mathcal{L} = \eta^{2}\left[ \frac{1}{2} (\partial_ {\mu}\phi)^{2} - \frac{1}{4} (\phi^{2}-1)^{2}\right] .
 $$
 
 From this form it is clear that $\eta^{2}$ does not enter the classical equation of motion. It plays the rule of $\frac{1}{\hbar}$. 
+
+
 
 
 
@@ -49,6 +52,7 @@ $$
 $$
 
 The Euler-Lagrange equation, or the equation of motion, is 
+
 $$
 \frac{\partial \mathcal{L}}{\partial \phi}= \partial_ {\mu} \frac{\partial \mathcal{L}}{\partial (\partial _ {\mu}\phi)}
 $$
@@ -280,7 +284,7 @@ $$
 
 where $a$ is the center of the kink and $l_ {K}$ the characteristic size. 
 
-Its easy using mathematica to check that this solution satisfies both the second order equation of motion and the first order BPS equation. The anti-kink solution is just $-\phi_ {K}(x)$.
+It is easy using Mathematica to check that this solution satisfies both the second order equation of motion and the first order BPS equation. The anti-kink solution is just $-\phi_ {K}(x)$.
 
 We claim without proof that there exists a static solution to the kink equation,
 
