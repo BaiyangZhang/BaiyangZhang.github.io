@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Figure.md",
+                "file": "_posts/2024-02-25-Kinks-in-QFT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "80d80095383dd99a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-02-25-Kinks-in-QFT.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -119,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Figure.md",
+                "file": "_posts/2024-02-25-Kinks-in-QFT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/Figure.md",
+                "file": "_posts/2024-02-25-Kinks-in-QFT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/Figure.md"
+                "file": "_posts/2024-02-25-Kinks-in-QFT.md"
               }
             }
           },
@@ -201,42 +213,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "02413a27063c5367",
+  "active": "80d80095383dd99a",
   "lastOpenFiles": [
-    "Templates/DateNote.md",
+    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+    "_posts/2024-1-10-Representables-in-Category-Theory.md",
+    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
+    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
+    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
+    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
+    "_posts/2023-12-6-Transseries-Lecture-1.md",
+    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
+    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
+    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
+    "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
+    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+    "_posts/2024-02-25-Kinks-in-QFT.md",
     "Templates/Figure.md",
+    "Templates/DateNote.md",
     "Templates/date.md",
     "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
     "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
     "_news/announcement_4.md",
     "Untitled.md",
     "_posts/2024-01-25-test.md",
-    "_news/announcement_3 - Copy.md",
     "_includes/scripts/mathjaxBackup.html",
     "_includes/scripts/mathjax - Copy.html",
-    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
-    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
-    "2015-05-15-images.md",
     "2015-05-15-images.md.crdownload",
     "_includes/figure.liquid",
     "_includes/figure.liquid.crdownload",
     "img/kinkLevel.png",
     "img/hom.png",
     "img/relaxationMethod - Copy.jpg",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
-    "Trash.md",
-    "_pages/about.md",
-    "_pages/about_baiyang.md",
-    "_pages/cv.md",
-    "_pages/dropdown.md",
-    "_pages/profiles.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
