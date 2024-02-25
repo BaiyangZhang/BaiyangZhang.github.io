@@ -32,24 +32,12 @@
             }
           },
           {
-            "id": "4b89bbd91fd33ce7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "02413a27063c5367",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "Templates/Figure.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+                "file": "Templates/Figure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+                "file": "Templates/Figure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md"
+                "file": "Templates/Figure.md"
               }
             }
           },
@@ -213,12 +201,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4b89bbd91fd33ce7",
+  "active": "02413a27063c5367",
   "lastOpenFiles": [
+    "Templates/DateNote.md",
+    "Templates/Figure.md",
+    "Templates/date.md",
     "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
     "_news/announcement_4.md",
     "Untitled.md",
@@ -246,9 +237,6 @@
     "_pages/cv.md",
     "_pages/dropdown.md",
     "_pages/profiles.md",
-    "_pages/teaching.md",
-    "_pages/repositories.md",
-    "_pages/projects.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",

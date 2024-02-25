@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Note on the kink mass correction in 3D Part I
+title: Note on the kink mass correction in 3D Part II
 subtitle: 
 date: 2024-01-25
 author: Baiyang Zhang
