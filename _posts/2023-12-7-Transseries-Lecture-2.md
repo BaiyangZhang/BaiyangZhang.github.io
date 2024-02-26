@@ -39,9 +39,9 @@ $$
 T: {\frak M} \to \mathbb{R}
 $$
 
-is denoted as $\mathbb{R}^{{\frak M}}$. $T$ can be regarded as a function defined on ${\frak M}$ with value in $\mathbb{R}$. For ${\frak g} \in {\frak M}$, we also write $T[{\frak g}]$ for the value of $T$ at ${\frak g}$, we don't use round parenthesis since $T(x)$ is reserved for another use. 
+is denoted as $\mathbb{R}^{ {\frak M} }$. $T$ can be regarded as a function defined on ${\frak M}$ with value in $\mathbb{R}$. For ${\frak g} \in {\frak M}$, we also write $T[{\frak g}]$ for the value of $T$ at ${\frak g}$, we don't use round parenthesis since $T(x)$ is reserved for another use. 
 
-The `support` of a function $T \in \mathbb{R}^{{\frak M}}$ is the collection of ${\frak g}$ on which $T$ is non-zero, 
+The `support` of a function $T \in \mathbb{R}^{ {\frak M} }$ is the collection of ${\frak g}$ on which $T$ is non-zero, 
 
 $$
 \text{supp} (T) := \left\lbrace {\frak g}\in {\frak M} \,\middle\vert\, T[{\frak g}]\neq 0 \right\rbrace .
@@ -54,10 +54,10 @@ Let ${\frak A}$ (Gothic A) be a subset of ${\frak M}$ and $\text{supp}(T) \subse
 Since we are interested in series, we will in general write $T$ as a *formal* combination of group elements,
 
 $$
-T = \sum_ {{\frak g}\in  {\frak A}} a_ {{\frak g}}\cdot {\frak g}.
+T = \sum_ { {\frak g} \in {\frak A} } a_ { {\frak g} }\cdot {\frak g}.
 $$
 
-Here is the peculiar part: the value of $T[{\frak g}]$ is $a_ {{\frak g}}$. If ${\frak g}\notin {\frak A}$ then $T[{\frak g}]=0$. 
+Here is the peculiar part: the value of $T[{\frak g}]$ is $a_ { {\frak g} }$. If ${\frak g}\notin {\frak A}$ then $T[{\frak g}]=0$. 
 
 Such $T$ is called `Hahn series` or `generalized power sereis`.
 
@@ -69,7 +69,7 @@ $$
 
 since $c$ can be regarded as $c$ multiply $1$ which is an element of ${\frak M}$, $c = c \cdot 1 \in T$. 
 
-if ${\frak m} \in {\frak M}$, then $1 \cdot {\frak m} \in \mathbb{R}^{{\frak M}}$ is called a `monomial` and identified with ${\frak m}$. That is, $T$ is a monomial if
+if ${\frak m} \in {\frak M}$, then $1 \cdot {\frak m} \in \mathbb{R}^{ {\frak M} }$ is called a `monomial` and identified with ${\frak m}$. That is, $T$ is a monomial if
 
 $$
 T[{\frak m}] = 1, \quad  T[{\frak g}] =0 \text{ otherwise.}
@@ -83,7 +83,7 @@ $$
 
 there exist a maximal element in ${\frak A}$. To be specific, this should be called "converse well ordered" since well order usually implies that every non-empty subset has a *smallest* element under the given order. But we will continue using "well order" to save some breath. 
 
-Now, consider non-zero terms in $T$. Let's pick out the larges monomial ${\frak g}_ {\text{max}}$, then it is called the `magnitude`of $T$, $\text{mag}(T)={\frak g}_ {\text{max}}$. The corresponding coefficient is called the `leading coefficient`. The coefficient and the monomial put together is called the `dominance` of $T$, $\text{dom}(T)=a_ {{\frak g}} \cdot {\frak g}$ where ${\frak g}$ is ${\frak g}_ {\text{max}}$. We say $T> 0$ if $a_ {{\frak g}}> 0$ and $T<0$ if $a_ {{\frak g}} < 0$. We say $T$ is small if all its monomials ${\frak g} \in \text{supp}(T)$ are small or zero, equivalently $T$ is small if the magnitude of $T$ is small or zero. We say $T$ is large if the magnitude of $T$ is large, other terms in $T$ could be small. However, if all the monomials in $T$ are large then $T$ is said to be purely large. A pure large Hahn series does not have a single small monomial. 
+Now, consider non-zero terms in $T$. Let's pick out the larges monomial ${\frak g}_ {\text{max} }$, then it is called the `magnitude`of $T$, $\text{mag}(T)={\frak g}_ {\text{max} }$. The corresponding coefficient is called the `leading coefficient`. The coefficient and the monomial put together is called the `dominance` of $T$, $\text{dom}(T)=a_ { {\frak g} } \cdot {\frak g}$ where ${\frak g}$ is ${\frak g}_ {\text{max} }$. We say $T> 0$ if $a_ { {\frak g} }> 0$ and $T<0$ if $a_ { {\frak g} } < 0$. We say $T$ is small if all its monomials ${\frak g} \in \text{supp}(T)$ are small or zero, equivalently $T$ is small if the magnitude of $T$ is small or zero. We say $T$ is large if the magnitude of $T$ is large, other terms in $T$ could be small. However, if all the monomials in $T$ are large then $T$ is said to be purely large. A pure large Hahn series does not have a single small monomial. 
 
 Note that here our usage of terminologies might be different from others. 
 
@@ -135,12 +135,12 @@ $$
 
 Recall that "large" and "small" are in comparison to $1$. 
 
-The multiplication between Hahn series follow the same rules as that between regular power series. As a result it also satisfies the convolution rule, let $A = \sum a_ {{\frak g}}{\frak g}$ and $B=\sum b_ {{\frak g}}{\frak g}$, then
+The multiplication between Hahn series follow the same rules as that between regular power series. As a result it also satisfies the convolution rule, let $A = \sum a_ { {\frak g} }{\frak g}$ and $B=\sum b_ { {\frak g} }{\frak g}$, then
 
 $$
-(AB)[{\frak g}] = \sum_ {{\frak mn}={\frak g}}a_ {{\frak m}}b_ {{\frak n}}.
+(AB)[{\frak g}] = \sum_ { {\frak mn}={\frak g} }a_ { {\frak m} }b_ { {\frak n} }.
 $$
 
-Hans Hahn had shown that (1907) the set of all $T\in \mathbb{R}^{{\frak M}}$ is an associative, commutative algebra over $\mathbb{R}$ with only one condition: the support is well-ordered. Actually, ever better, it is a field! 
+Hans Hahn had shown that (1907) the set of all $T\in \mathbb{R}^{ {\frak M} }$ is an associative, commutative algebra over $\mathbb{R}$ with only one condition: the support is well-ordered. Actually, ever better, it is a field! 
 
 
