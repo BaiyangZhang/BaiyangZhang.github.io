@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-25-Quantum-Kinks.md",
+                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 383.5,
-    "collapsed": true
+    "width": 334.5069465637207
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -131,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-25-Quantum-Kinks.md",
+                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-25-Quantum-Kinks.md",
+                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-25-Quantum-Kinks.md"
+                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md"
               }
             }
           },
@@ -215,15 +214,17 @@
   },
   "active": "6b08a3177d1c52f5",
   "lastOpenFiles": [
-    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
-    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-02-25-Quantum-Kinks.md",
-    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
+    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "Templates/Figure.md",
-    "_posts/2022-7-17-Conventions-and-Formula.md",
     "2015-05-15-images.md",
+    "README.md",
+    "Trash.md",
+    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
+    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
+    "_posts/2022-7-17-Conventions-and-Formula.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",
     "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
     "img/relaxationMethod - Copy.jpg",
@@ -235,7 +236,6 @@
     "_news/announcement_4.md",
     "_includes/scripts/mathjaxBackup.html",
     "_includes/figure.liquid",
-    "Trash.md",
     "_posts/2023-12-6-Transseries-Lecture-1.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
@@ -245,7 +245,6 @@
     "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
     "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
-    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",
