@@ -8,103 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c64d85669ef2832c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/2024-02-26-Note-on-Classical-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6b08a3177d1c52f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2f50a51236965cf9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "55e1f49bc2c2c1bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-02-26-Note-on-Classical-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "38070138df6db0c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/2024-02-26-Note-on-Classical-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f87a090ac2218817",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/2024-2-26-Renormalization-method-in-PDF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a3e6aabbed4d1215",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/2024-02-26-Note-on-Classical-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4889baf6bee17d85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_drafts/2024-02-25-Quantum-Kinks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_drafts/2024-02-25-Quantum-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_drafts/2024-02-25-Quantum-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
+                "file": "_drafts/2024-02-25-Quantum-Kinks.md"
               }
             }
           },
@@ -262,50 +177,51 @@
   },
   "active": "957cfa2362e38596",
   "lastOpenFiles": [
-    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2024-02-25-Quantum-Kinks.md",
-    "_drafts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_drafts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_drafts/2024-02-26-Note-on-Classical-Kinks.md",
-    "_includes/figure (2).liquid",
-    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
-    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
-    "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
-    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
-    "_posts/2023-12-6-Transseries-Lecture-1.md",
-    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
-    "_posts/2023-10-9-Mathematical-Economics.md",
-    "_posts/2023-10-23-Noether's-Principal.md",
-    "_posts/2023-10-26-Poincare-Duality.md",
-    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
-    "_posts/2023-10-30-The-Fundamental-Group-and-Covering-Spaces.md",
-    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
-    "_posts/2022-7-17-Conventions-and-Formula.md",
-    "Templates/Figure.md",
-    "2015-05-15-images.md",
     "README.md",
+    "2015-05-15-images.md",
     "Trash.md",
-    "img/relaxationMethod - Copy.jpg",
-    "img/kinkLevel.png",
-    "img/hom.png",
-    "_includes/scripts/mathjaxBackup.html",
-    "_includes/figure.liquid",
-    "Untitled",
-    "assets/pdf/Notes_on_Solitons.pdf",
-    "img/boundaryMap.png",
-    "img/boundaryHomo.png",
-    "img/shortExactSequence.png",
-    "img/homotopyCommute.png",
-    "img/eom.png",
-    "assets/img/z.png",
-    "img/relaxationMethod.jpg",
+    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
+    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "_posts/2024-1-10-Representables-in-Category-Theory.md",
+    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_drafts/2024-02-25-Quantum-Kinks.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",
     "bin/cibuild",
-    "bin"
+    "bin",
+    "backups/2022-02-01-redirect.md",
+    "backups/2021-07-04-diagrams.md",
+    "backups/2020-09-28-twitter.md",
+    "backups/2020-09-28-github-metadata.md",
+    "backups/2018-12-22-distill.md",
+    "backups/2015-10-20-math.md",
+    "backups/2015-10-20-disqus-comments.md",
+    "backups/2015-07-15-code.md",
+    "backups/2015-05-15-images.md",
+    "backups/2015-03-15-formatting-and-links.md",
+    "assets/jupyter/blog.ipynb",
+    "assets/css/main.scss",
+    "_sass/font-awesome/_variables.scss",
+    "_sass/font-awesome/_stacked.scss",
+    "_sass/font-awesome/_sizing.scss",
+    "_projects/1_project.md",
+    "_posts/2023-5-18-(Vector)-Fibre-Bundles.md",
+    "_posts/2023-3-24-Betti-Numbers.md",
+    "_posts/2023-3-23-Synges-Theorem.md",
+    "_posts/2023-3-22-Heuristics-of-Einstein's-Theory.md",
+    "_posts/2023-3-21-Montesquieu.md",
+    "assets/img/z-800.webp",
+    "assets/img/z-480.webp",
+    "assets/img/z-1400.webp",
+    "assets/img/publications-screenshot-800.webp",
+    "assets/img/publications-screenshot-480.webp",
+    "assets/img/publications-screenshot-1400.webp",
+    "assets/img/projects-screenshot-800.webp",
+    "assets/img/projects-screenshot-480.webp",
+    "assets/img/projects-screenshot-1400.webp",
+    "assets/img/prof_pic-800.webp"
   ]
 }
