@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-02-25-Quantum-Kinks.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2024-02-25-Quantum-Kinks.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2024-02-25-Quantum-Kinks.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2024-02-25-Quantum-Kinks.md"
+                "file": "README.md"
               }
             }
           },
@@ -175,8 +175,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "957cfa2362e38596",
+  "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
+    "_drafts/2024-02-25-Quantum-Kinks.md",
+    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+    "_posts/2024-02-25-Quantum-Kinks.md",
+    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2023-12-7-Transseries-Lecture-2.md",
+    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "README.md",
     "2015-05-15-images.md",
     "Trash.md",
@@ -186,7 +193,6 @@
     "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
     "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_drafts/2024-02-25-Quantum-Kinks.md",
     "news.html",
     "bin/entry_point.sh",
     "bin/deploy",
@@ -207,12 +213,6 @@
     "_sass/font-awesome/_variables.scss",
     "_sass/font-awesome/_stacked.scss",
     "_sass/font-awesome/_sizing.scss",
-    "_projects/1_project.md",
-    "_posts/2023-5-18-(Vector)-Fibre-Bundles.md",
-    "_posts/2023-3-24-Betti-Numbers.md",
-    "_posts/2023-3-23-Synges-Theorem.md",
-    "_posts/2023-3-22-Heuristics-of-Einstein's-Theory.md",
-    "_posts/2023-3-21-Montesquieu.md",
     "assets/img/z-800.webp",
     "assets/img/z-480.webp",
     "assets/img/z-1400.webp",
