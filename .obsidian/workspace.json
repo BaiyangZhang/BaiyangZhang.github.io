@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2024-02-25-Quantum-Kinks.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.5069465637207,
-    "collapsed": true
+    "width": 334.5069465637207
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2024-02-25-Quantum-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-12-7-Transseries-Lecture-2.md",
+                "file": "_posts/2024-02-25-Quantum-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-12-7-Transseries-Lecture-2.md"
+                "file": "_posts/2024-02-25-Quantum-Kinks.md"
               }
             }
           },
@@ -178,7 +177,12 @@
   },
   "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
+    "Templates/fig.md",
+    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-02-25-Quantum-Kinks.md",
+    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
+    "_posts/2023-12-7-Transseries-Lecture-2.md",
     "_includes/scripts/wechatModal.liquid",
     "_includes/scripts/vega.liquid",
     "_includes/scripts/tikzjax.liquid",
@@ -189,13 +193,10 @@
     "_includes/scripts/masonry.liquid",
     "_includes/scripts/leaflet.liquid",
     "_includes/scripts/jquery.liquid",
-    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
-    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "README.md",
     "_drafts/2024-02-25-Quantum-Kinks.md",
     "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2023-12-7-Transseries-Lecture-2.md",
     "2015-05-15-images.md",
     "Trash.md",
     "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
@@ -203,7 +204,6 @@
     "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "backups/2022-02-01-redirect.md",
     "backups/2021-07-04-diagrams.md",
     "backups/2020-09-28-twitter.md",
