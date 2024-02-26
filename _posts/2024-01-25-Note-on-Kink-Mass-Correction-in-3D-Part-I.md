@@ -305,7 +305,7 @@ We choose to expand in the $x$ direction in normal modes (in the kink background
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md"
               }
             }
           },
@@ -215,9 +215,11 @@
   },
   "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
-    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-02-25-Quantum-Kinks.md",
+    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_includes/figure (2).liquid",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
@@ -235,12 +237,10 @@
     "_posts/2023-10-30-The-Fundamental-Group-and-Covering-Spaces.md",
     "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "_posts/2022-7-17-Conventions-and-Formula.md",
-    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "Templates/Figure.md",
     "2015-05-15-images.md",
     "README.md",
     "Trash.md",
-    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
     "img/relaxationMethod - Copy.jpg",
     "img/kinkLevel.png",
     "img/hom.png",
@@ -259,7 +259,6 @@
     "bin/entry_point.sh",
     "bin/deploy",
     "bin/cibuild",
-    "bin",
-    "assets/jupyter/blog.ipynb"
+    "bin"
   ]
 }

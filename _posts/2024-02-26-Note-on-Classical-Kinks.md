@@ -389,14 +389,6 @@ With this modified potential we can then talk about its equation of motion. In n
 
 To be more specific, consider a static kink solution starting from $a=6$, moving towards am impurity located at $x_ {0}=0$, with fixed impurity strength $\left\lvert \epsilon \right\rvert=0.5$. The figure below shows the phase diagram.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/phase.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-	The right panel shows a attractive impurity. If the incoming velocity of the kink is large enough, it will just pass through the impurity and deposit some vibrational energy at the impurity, as shown by the read line. If the velocity is too low then it will be trapped by the attractive impurity, starts to oscillate about the impurity, shown by the blue line. If the velocity is in the resonance window, the kink will bounce back resonantly, shown by the green line.
-</div>
 
 On the left panel a repulsive impurity $\epsilon=-0.5$ is shown, for low velocity the kink will bounce back, as shown by the blue line; for high velocity the kink can overcome the impurity barrier and keep propagating, as shown by the red line.
 
