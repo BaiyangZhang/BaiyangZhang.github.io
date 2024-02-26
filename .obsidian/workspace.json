@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-25-Quantum-Kinks.md",
+                "file": "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-25-Quantum-Kinks.md",
+                "file": "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +195,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-25-Quantum-Kinks.md",
+                "file": "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +218,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-25-Quantum-Kinks.md"
+                "file": "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
               }
             }
           },
@@ -260,13 +260,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4889baf6bee17d85",
+  "active": "957cfa2362e38596",
   "lastOpenFiles": [
-    "_drafts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_drafts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-02-25-Quantum-Kinks.md",
+    "_drafts/2024-2-26-Renormalization-method-in-PDF.md",
+    "_drafts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_drafts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_drafts/2024-02-26-Note-on-Classical-Kinks.md",
     "_includes/figure (2).liquid",
     "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
