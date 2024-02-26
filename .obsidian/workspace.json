@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/fig.md",
+                "file": "Templates/DateNote.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/fig.md",
+                "file": "Templates/DateNote.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/fig.md",
+                "file": "Templates/DateNote.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/fig.md"
+                "file": "Templates/DateNote.md"
               }
             }
           },
@@ -177,9 +177,11 @@
   },
   "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
+    "Templates/Figure.md",
+    "Templates/fig.md",
+    "fig.md",
     "Templates/DateNote.md",
     "Templates/date.md",
-    "Templates/fig.md",
     "_posts/2024-02-25-Quantum-Kinks.md",
     "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
@@ -211,8 +213,6 @@
     "backups/2020-09-28-twitter.md",
     "backups/2020-09-28-github-metadata.md",
     "backups/2018-12-22-distill.md",
-    "backups/2015-10-20-math.md",
-    "backups/2015-10-20-disqus-comments.md",
     "assets/img/z-800.webp",
     "assets/img/z-480.webp",
     "assets/img/z-1400.webp",
