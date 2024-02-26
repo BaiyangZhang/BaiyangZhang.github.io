@@ -159,11 +159,3 @@ According to Nakahara, this is called the `Poincare duality`. The problem is tha
 - - -
 
 After introducing the Poincare duality, Nakahara introduces the cohomology ring where the role of production is played by wedge. Note that this is a ring regarding cohomology, not the differential forms themselves. This is one big difference between homology and cohomology, that we can define a sensible product for cohomology but not for homology. But I am not sure if this statement only applies to de Rham cohomology or to any cohomology.
-
-At the end of this chapter, Nakahara talked about Kunneth formula, which tells 
-
-
-
-
-
-

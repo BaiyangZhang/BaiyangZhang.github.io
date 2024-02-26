@@ -305,11 +305,11 @@ We choose to expand in the $x$ direction in normal modes (in the kink background
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-	A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
+    A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
 </div>
 
 We want to expand the static fluctuation field $\phi(r)$ (defined by $\phi=f_ {\text{kink} }+g$) in terms of normal modes. Since we have defined the indices $k$ in ${\mathfrak g}_ {k}(x)$ to include everything, we can conveniently write the field expansion as

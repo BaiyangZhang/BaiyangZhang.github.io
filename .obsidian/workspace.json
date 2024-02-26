@@ -49,13 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
+                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -130,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md"
+                "file": "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
               }
             }
           },
@@ -212,39 +213,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c64d85669ef2832c",
+  "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
     "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-02-25-Quantum-Kinks.md",
+    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
+    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
+    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
+    "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
+    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
+    "_posts/2023-12-6-Transseries-Lecture-1.md",
+    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
+    "_posts/2023-10-23-Noether's-Principal.md",
+    "_posts/2023-10-26-Poincare-Duality.md",
+    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
+    "_posts/2023-10-30-The-Fundamental-Group-and-Covering-Spaces.md",
+    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "_posts/2022-7-17-Conventions-and-Formula.md",
+    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "Templates/Figure.md",
     "2015-05-15-images.md",
     "README.md",
     "Trash.md",
     "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
-    "_posts/2022-7-17-Conventions-and-Formula.md",
-    "_drafts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
     "img/relaxationMethod - Copy.jpg",
     "img/kinkLevel.png",
     "img/hom.png",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_posts/2024-01-25-Note-on-Classical-Kinks.md",
-    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
-    "_news/announcement_4.md",
     "_includes/scripts/mathjaxBackup.html",
     "_includes/figure.liquid",
-    "_posts/2023-12-6-Transseries-Lecture-1.md",
-    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
-    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-20-Introduction-to-Resurgence-and-Transseries-Lecture-4.md",
-    "_posts/2023-12-26-Representables-in-Category-Theory.md",
-    "_posts/2023-12-20-Hamiltonian-Truncation-in-3D.md",
-    "_posts/2023-12-20-Excerpt-From-On-Anarchism.md",
-    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "Untitled",
     "assets/pdf/Notes_on_Solitons.pdf",
     "img/boundaryMap.png",

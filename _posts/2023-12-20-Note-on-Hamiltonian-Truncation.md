@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Note on Quantum Kink Mass in 3D
+title: Note on Hamiltonian Truncation
 subtitle: 
 date: 2023-12-20
 author: Baiyang Zhang
