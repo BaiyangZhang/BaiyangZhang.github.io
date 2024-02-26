@@ -85,12 +85,6 @@ M = N \times  K,\quad  K \ll  N
 $$
 The action may be very large for field configurations that are **not** constant over $K$, so the path-integral, which is weighted by $e^{ -S_ {E} }$, localizes to field configurations that are constant along $K$. This gives rise to an **effective** path integral over field configurations that have only constant modes along $K$. 
 
-## The model
-
-
-
-
-
 ## Hamiltonian Truncation
 
 In our case, we consider the phi-fourth theory defined on 

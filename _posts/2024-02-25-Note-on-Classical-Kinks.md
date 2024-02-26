@@ -2,7 +2,7 @@
 layout: post
 title: Note on Classical Kinks
 subtitle: 
-date: 2024-01-25
+date: 2024-01-24
 author: Baiyang Zhang
 header-img: img/background9.jpg
 catalog: true
@@ -14,17 +14,47 @@ tags:
 
 # Introduction
 
+The reason why kinks (and domain walls) are of interest to us is that,
 
+1. they are known to exist in many laboratory systems and may exist in other exotic settings such as the early universe,
+2. they provide a relatively simple setting for studying the non-linear, non-perturbative physics,
+3. they shed light on the dynamics of phase transition.
+
+Take the phi-4 model for example, the Lagrangian is (one of many different forms)
+
+$$
+\mathcal{L} = \frac{1}{2}(\partial_ {\mu}\phi)^{2} - \frac{\lambda}{4} (\phi^{2} - \eta^{2})^{2}
+$$
+
+Then we can write down the kink solution, so-called $\mathcal{Z}_ {2}$ kink. The nice thing about $\mathcal{Z}_ {2}$ kink is that almost everything, from the kink solution to its energy, can be written down in closed form, as we shall see in the next chapter. 
+
+
+
+
+One can rescale the field $\phi$ and the coordinate $y$ such that the Lagrangian reads 
+
+$$
+\mathcal{L} = \eta^{2}\left[ \frac{1}{2} (\partial_ {\mu}\phi)^{2} - \frac{1}{4} (\phi^{2}-1)^{2}\right] .
+$$
+
+From this form it is clear that $\eta^{2}$ does not enter the classical equation of motion. It plays the rule of $\frac{1}{\hbar}$. 
+
+- - -
+
+Derrick's theorem states that, broadly speaking, *in spatial dimensions greater than (or equal to) two, static, finite-energy, non-singular solutions to the equations of motion (like solitons) cannot exist for scalar field theories with purely local interactions.* The theorem, formulated by G.H. Derrick in 1964, implies that such field configurations would be unstable and either collapse to a singularity or disperse. However, in higher spatial space we could still have topological structure with infinite energy, one example of such constructs is *domain wall*. Domain walls are extended planar structures separating two different vacua. 
 
 # The Model
+
+## Phi-fourth kink
 
 We will introduce the scalar field in (1+1) dimension. We regard the mass terms as a special type of self-interaction and put it in the interaction $U(\phi(x))$. The Lagrangian is 
 
 $$
-\mathcal{L} = \frac{1}{2} (\partial \phi)^{2} - U(\phi), \quad  (\partial \phi)^{2} \equiv\partial _ {\mu}\phi \partial ^{\mu}\phi.
+\mathcal{L} = \frac{1}{2} (\partial \phi)^{2} - U(\phi), \quad  (\partial \phi)^{2} := \partial _ {\mu}\phi \partial ^{\mu}\phi.
 $$
 
 The Euler-Lagrange equation, or the equation of motion, is 
+
 $$
 \frac{\partial \mathcal{L}}{\partial \phi}= \partial_ {\mu} \frac{\partial \mathcal{L}}{\partial (\partial _ {\mu}\phi)}
 $$
@@ -132,7 +162,7 @@ Besides the kink solution, there is another static solution given by the ellipti
 
 The circular functions arise from ratios of lengths in a circle. In a similar manner, the elliptic functions can be defined by means of ratios of lengths in an ellipse. Many of the key properties of the elliptic functions follow from simple geometric properties of the ellipse.
 
-The most general form of Jacobi elliptic functions take two input, the first input is like the variable and the second as a parameter that controls the behavior of the function. The first input, the variable, is usually written in two ways, $u$ and $\phi$, related by 
+The most general form of Jacobi elliptic functions take two input, the first input behaviors as variable and the second as a parameter that controls the behavior of the function. The first input, the variable, is usually written as either $u$ or $\phi$, related by 
 
 $$
 u=\int_{0}^{\phi} d\theta \, \frac{1}{\sqrt{ 1-m \sin ^{2}\theta} }.
@@ -140,7 +170,7 @@ $$
 
 The angle $\phi$ is called the amplitude, a rather confusing name to call an angle. 
 
-To say more about the topic, we need to start with the elliptic integrals. The most general form of elliptic integral reads
+The most general form of elliptic integral is
 
 $$
 f(x)= \int dx \,  \frac{A+B}{C+D\sqrt{ S }},\quad  A,B,C,D,S\in \mathbb{R}[x], \,\text{deg}(S)=3\text{ or }4.
@@ -256,13 +286,15 @@ $$
 
 where $a$ is the center of the kink and $l_ {K}$ the characteristic size. 
 
-Its easy using mathematica to check that this solution satisfies both the second order equation of motion and the first order BPS equation. The anti-kink solution is just $-\phi_ {K}(x)$.
+It is easy using Mathematica to check that this solution satisfies both the second order equation of motion and the first order BPS equation. The anti-kink solution is just $-\phi_ {K}(x)$.
 
-We claim without proof that there exists a static solution to the kink equation,
+We claim without proof that there exists another static solution to the kink equation,
 
 $$
 \phi(t)=\phi_ {0}\, \text{sn}(bx,k),\quad k^{2}=\frac{\phi_ {0}^{2}}{2-\phi_ {0}^{2}},\quad b^{2}=1-\frac{\phi_ {0}^{2}}{2}.
 $$
+
+- - -
 
 What about a moving kink then? Firstly, the center of the kink will move with velocity $v$ thus we should replace $x-a$ with $x-a-vt$ where $v$ is the kink velocity. Secondly, from special relativistic we know that a moving frame will experience space contraction, thus we should multiply $x-a-vt$ by $\gamma$ factor, which is $\gamma=\frac{1}{\sqrt{ 1-v^{2} }}$ in natural units. Then a right-moving kink can be written as 
 
@@ -357,9 +389,14 @@ With this modified potential we can then talk about its equation of motion. In n
 
 To be more specific, consider a static kink solution starting from $a=6$, moving towards am impurity located at $x_ {0}=0$, with fixed impurity strength $\left\lvert \epsilon \right\rvert=0.5$. The figure below shows the phase diagram.
 
-![](/img/phase.png)
-
-The right panel shows a attractive impurity. If the incoming velocity of the kink is large enough, it will just pass through the impurity and deposit some vibrational energy at the impurity, as shown by the read line. If the velocity is too low then it will be trapped by the attractive impurity, starts to oscillate about the impurity, shown by the blue line. If the velocity is in the resonance window, the kink will bounce back resonantly, shown by the green line.
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/phase.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+	The right panel shows a attractive impurity. If the incoming velocity of the kink is large enough, it will just pass through the impurity and deposit some vibrational energy at the impurity, as shown by the read line. If the velocity is too low then it will be trapped by the attractive impurity, starts to oscillate about the impurity, shown by the blue line. If the velocity is in the resonance window, the kink will bounce back resonantly, shown by the green line.
+</div>
 
 On the left panel a repulsive impurity $\epsilon=-0.5$ is shown, for low velocity the kink will bounce back, as shown by the blue line; for high velocity the kink can overcome the impurity barrier and keep propagating, as shown by the red line.
 

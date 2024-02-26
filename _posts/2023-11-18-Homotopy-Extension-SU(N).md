@@ -30,13 +30,17 @@ such that the restriction of $F$ on $\mathbb{S}^{1}$ gives $f$? The ability to e
 Now, consider a sphere of arbitrary dimension $n$, and consider it as the boundary of some $n+1$ dimensional disk $\mathbb{D}^{n+1}$ (a ball if $n>0$). Let $M$ be a $n$ dimensional manifold. We have the following simple observation.
 
 **Extension Theorem.** The function 
+
 $$
 f:\mathbb{S}^{k} \to M^{n}
 $$
+
 is homotopic to a constant map iff $f$ can be extended to a map of the ball
+
 $$
 F: \mathbb{D}^{k+1} \to M.
 $$
+
 The proof is rather intuitive, just think of the homotopy as shrinking $\mathbb{S}^{k}$ all the way to the center of the circle. 
 
 The extension theorem is important when discussing **defects**.
@@ -46,26 +50,36 @@ The extension theorem is important when discussing **defects**.
 ## Covering homotopy
 
 Let $\pi: E \to M$ be a vector bundle and $f: W \to E$ be a map of a space $W$ into the bundle space $E$. Then the composition 
+
 $$
 W \xrightarrow{f}E \xrightarrow{\pi} M
 $$
+
 defines a map $\overline{f}$ from $W$ to $M$,
+
 $$
 \overline{f} := \pi \,\circ\, f.
 $$
 
+
 Now, let $\overline{F}: \overline{f}\to \overline{f_ {1}}$ be a homotopy (a series of continuous functions parametrized by $t$ from $\overline{f}$ to $\overline{f_ {1}}$), we claim that we can **cover the homotopy** $\overline{F}$ by a homotopy of the original map $F: f\to f_ {1}$. That is, there is a map
+
 $$
 F: W\times [0,1] \to E
 $$
+
 such that for $w \in W$,
+
 $$
 F(w,0)=f(w),\quad  F(w,1)=f_ {1}(w).
 $$
+
 The trick to prove the existence of covering of a homotopy is to find a way to lift the homotopy from $M$ to $E$. To be specific, consider a fixed point $w \in W$ and look at the curve 
+
 $$
 \overline{C}:t \in [0,1] \to \overline{F}(w,t)
 $$
+
 in $M$. We need to find a unique lifting of $\overline{C}$ to a curve $C$ in $E$. The way to achieve that is to endow the bundle a connection $\omega$, then require $C$ to be the **horizontal lift**. 
 
 *Note that if $\overline{f}$ is homotopic to a constant map $p_ {0}$, it need not be that $f$ will be homotopic to a constant map*.
@@ -77,33 +91,42 @@ It turns out that one can cover homotopies in **any** fiber bundle, without any 
 ## Some Topology of $SU(n)$
 
 $SU(n)$ is represented by $N \times N$ complex matrices acting on $\mathbb{C}^{n}$. Since each $g \in SU(N)$ is unitary, $SU(N)$ sends the unit sphere $\mathbb{S}^{2N-1} \subset \mathbb{C}^{n}$ 
+
 $$
 \mathbb{S}^{2N-1} = \left\lbrace z \in  \mathbb{C}^{N} \,\middle\vert\, \left\lvert z_ {1} \right\rvert^{2} + \dots + \left\lvert z_ {N} \right\rvert^{2}=1  \right\rbrace 
 $$
+
 into itself. The action is also transitive (meaning any two points on $\mathbb{S}^{2N-1}$ can be connected by some group action). The isometry group for the point $(1,0,\dots,0)$ is clearly
+
 $$
 \begin{bmatrix} 
 1 & 0 \\
 0 & SU(N-1)
 \end{bmatrix}
 $$
+
 which we shall briefly denote simply by $SU(N-1)$. 
 
 We have
+
 $$
 \mathbb{S}^{2N-1} \cong  \frac{SU(N)}{SU(2N-1)}.
 $$
 
 and in fact $SU(N)$ is a principal $SU(N − 1)$ bundle over $\mathbb{S}^{2N-1}$, with fiber at each point $p\in M$ being the little group of $p$. Thus we write
+
 $$
 SU(N-1)\to SU(N) \to \mathbb{S}^{2N-1}
 $$
+
 **Theorem.** If $F\to P \to M$ is a fiber bundle with connected $M$ and connected $F$, then $P$ is also connected.
 
 As a corollary, $SU(N)$ is connected. To see that, note $SU(1)$ is a single point, $SU(2)$ is a $3$-sphere and is connected, as are all $k$-spheres for $k\geq 3$. From
+
 $$
 SU(2) \to SU(3) \to \mathbb{S}^{5}
 $$
+
 we see that $SU(3)$ is connected. The connectness of higher $SU$ groups follow from induction.
 
 

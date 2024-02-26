@@ -738,10 +738,4 @@ B+C &\supset  \frac{1}{2} \sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d} }
 \end{align*} 
 $$
 
-Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! *We are left with terms proportional to $B B^{\ddagger}$ only.* 
-
-- - -
-
-With some calculation we get
-
-
+Note that the last two terms in the second line cancel each other since $k,k'$ are dummy indices, we can simply exchange them. We have used the normalization condition for $\tilde{ {\mathfrak g} }$ functions. Apparently, put together, in $A+B+C$ the terms proportions to $B^{\ddagger}B^{\ddagger}$ disappear! We are left with terms proportional to $B B^{\ddagger}$ only, which can be obtained similarly. We will omit the explicit result here since it can be easily found in other papers.

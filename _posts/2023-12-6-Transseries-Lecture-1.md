@@ -34,11 +34,13 @@ Define a ordered group ${\frak G}$ (frak G) of transmonomials. Define a differen
 Let's start with exponents first.
 
 **Log-free transmonomials.** They are of form 
+
 $$
 x^{b}e^{ L },\quad  b\in \mathbb{R},\; L \in \text{large log-free transseries.} 
 $$
 
 For example, the following are all log-free transmonomials,
+
 $$
 x^{-1},\; x^{\pi}x^{x^{\sqrt{ 2 }}-3x},\; e^{ \sum_ {i}x^{-1}e^{ x } },etc.
 $$
@@ -46,15 +48,19 @@ $$
 The multiplication is defined in the obvious way. The group identity is just $1$. 
 
 We define a binary relation $\gg$, read "far larger than". Keep in mind that we assumed $x\to \infty$. So how does this "far larger than" work? We compare the exponents $L$ in $e^{ L }$ first, if the exponent is *large* then $e$ to the exponent is *far larger*; if they have same exponents, then we compare the power of $x$, namely $x^{b}$, whichever with larger $b$ is far larger then others. To be specific,
+
 $$
 x^{b_ {1}}e^{ L_ {1} } \gg  x^{b_ {2}}e^{ L_ {2} }\quad  \text{ if } L_ {1} > L_ {2} \;\lor\; (L_ {1}=L_ {2}\;\land\; b_ {1}>b_ {2} ),
 $$
+
 where $\lor$ is logic or. For example, $x^{-5}\gg x^{20}e^{ -x }$ since $x^{-5}=x^{-5}e^{ 0 }$ and $0>-x$. 
 
 **Log-free transseries.** A log-free transseries $T$ is a formal sum of log-free monomials ${\frak g}$,
+
 $$
 T = \sum_ {i} c_ {i} {\frak g}_ {i},\quad  c_ {i} \in \mathbb{R} .
 $$
+
 We require the order of transmonomials be such that, each ${\frak g_ {i}}$ is far smaller than all previous terms, namely they appear in descending orders. This is similar to the case of regular polynomials where we usually put the highest powers at first. 
 
 The transseries $T$ is said to be `purely large` if all transmonomials ${\frak g}_ {i}$ are far larger than $1$ (not $0$), namely ${\frak g_ {i}}\gg  1 \;\forall i$. $T$ is said to be `small` if all ${\frak g}_ {i}\ll 1$ (why isn't it called purely small?). The largest (in the sense of far larger than) transmonomial is called the `dominant term`, let's call it $c_ {0}{\frak g}_ {0}$. If the dominant term has positive coefficients, $c_ {0}>0$, then $T$ is said to be positive. This enables us to compare the size of two transseries $S,T$, we say $S>T$ if $S-T>0$. So we just need to compare their dominant terms.
@@ -62,6 +68,7 @@ The transseries $T$ is said to be `purely large` if all transmonomials ${\frak g
 - - -
 
 We consider only transmonomials and transseries of “finite exponential height”. For example, we don't want
+
 $$
 e^{ x^{x^{x\dots}} }.
 $$
@@ -71,6 +78,7 @@ The `differentiation` of $T$ with respect to $x$ is defined the usual way.
 - - -
 
 Next let's include logarithmic. $\log$ acting $m$ times is denoted $\log_ {m}x$ or $\log_ {(m)}x$, namely
+
 $$
 \log_ {(m)}x = \log \dots \log x,\quad  m\; \log .
 $$
@@ -90,20 +98,27 @@ However, this precision comes at a cost. It can make the subject less accessible
 - - -
 
 The set of monomials ${\frak G}$ form a field, which is also a group if we focus on multiplication alone. ${\frak G}$ is *not* finitely generated, to see this consider the finitely generated group with generator 
+
 $$
 \mu_ {1},\mu_ {2},\dots,\mu_ {n},
 $$
+
 the generated group has elements of form
+
 $$
 \left\{ \mu_ {1}^{k_ {1}}\times \mu_ {2}^{k_ {2}}\times \dots \times \mu_ {n}^{k_ {n}} \,\middle\vert\, k_ {1},\dots,k_ {n} \in \mathbb{Z} \right\} .
 $$
+
 Note that the exponents must be integers. 
 
 Let's use capital letters to denote a set of indices, for example define 
+
 $$
 K := (k_ {1},k_ {2},\dots,k_ {n})
 $$
+
 then 
+
 $$
 \mu_ {1}^{k_ {1}}\dots \mu_ {n}^{k_ {n}} =: \mu^{K}.
 $$
@@ -113,9 +128,11 @@ This will save some writing. The problem is that $\mu^{K}$ can also be interpret
 We will assume that all the generator $\mu \ll 1$. We will think of these as “ratios” between one term of a series and the next. A `ratio set` is a finite set of small monomials.
 
 Let $k \in \mathbb{Z}^{n}$ be an $n$-tuple of integers, it form a group under addition. Let $p$ be another such $n$-tuple, one say 
+
 $$
 k \leq  p \quad  \text{ iff } k_ {i} \leq p _ {i}  \;\forall\; i,
 $$
+
 where $k_ {i}$ is the $i$-th component of $k$. 
 
 $J_ {m}$ is a partially ordered set. To be specific, a partially ordered set (or poset) is a set equipped with a binary relation that captures a certain level of order or precedence among its elements. This binary relation is denoted by $\leq$ and must satisfy the following properties for any elements $a, b$, and $c$ in the set:
@@ -127,18 +144,25 @@ $J_ {m}$ is a partially ordered set. To be specific, a partially ordered set (or
 A partially ordered set **does not** require every pair of elements to be comparable; that is, it's possible for $a$ and $b$ to be in the set without $a\leq b$ or $b \leq a$ being true. This distinguishes partially ordered sets from `totally ordered sets`, where **every pair of elements is comparable**.
 
 For $m\in \mathbb{Z}^{n}$, define 
+
 $$
 J_ {m} := \left\lbrace k \in  \mathbb{Z}^{n} \,\middle\vert\, k\geq m \right\rbrace .
 $$
+
 Apparently $m \in J_ {m}$. The sets $J_ {m}$ will be used to define `grids` of monomials. For example, if 
+
 $$
 \mu_ {1} = \frac{1}{x},\quad  \mu_ {2}=e^{ -x }
 $$
+
 comprise the ratio group (recall that each element of a ratio group is required to be small), then we can define a `grid` (about which we will say more later)
+
 $$
 \left\lbrace \mu^{k} \,\middle\vert\, k\in J_ {(-1,2)} \right\rbrace 
 $$
+
 which is the same as
+
 $$
 \left\lbrace \mu^{k}=\mu_ {1}^{k_ {1}} \cdot \mu_ {2}^{k_ {2}} \,\middle\vert\, (k_ {1},k_ {2})\geq (-1,2) \right\rbrace .
 $$
@@ -169,11 +193,15 @@ The primary difference between the two concepts is that being well-partially-ord
 First let's introduce the symmetric difference of two sets, which is a mathematical operation that results in a new set containing elements that are in **either** of the two sets, but **not in their intersection**. In other words, it combines the elements of each set that are not shared by both. The symmetric difference is denoted by the symbol $\Delta$.
 
 Formally, if you have two sets $A$ and $B$, their symmetric difference $A \Delta B$ is defined as:
+
 $$ A \Delta B = (A - B) \cup (B - A). $$
+
 Here, $A - B$ represents the set of elements in $A$ but not in $B$, and $B - A$ represents the set of elements in $B$ but not in $A$. The union of these two sets ($\cup$) forms the symmetric difference.
 
 Another way to express this is using the union and intersection of sets:
+
 $$ A \Delta B = (A \cup B) - (A \cap B). $$
+
 By subtracting the intersection from the union, you're left with only those elements that are exclusively in either $A$ or $B$, but not in both.
 
 The symmetric difference has several interesting properties:
@@ -186,45 +214,59 @@ The symmetric difference has several interesting properties:
 Now let's define the convergence of a sequence of sets $E_ {i}, i\in I$, where $I$ is an infinite index set. For each $i\in I$, let $E_ {i} \in \mathbb{Z}^{n}$. We say the family $E_ {i,\,i\in I}$ is `point-finite` if each $p\in \mathbb{Z}^{n}$ belong to $E_ {i}$ for only finite many $i$ (could be zero). 
 
 Let $m\in\mathbb{Z}^{n}$ and define $J_ {m}$ as before. If the "limit" of $E_ {i}$ is empty, we write
+
 $$
 E_ {i} \xrightarrow{m}\emptyset,\quad  \text{iff } E_ {i} \subset J_ {m} \text{ and } (E_ {i}) \text{ is point-finite.}
 $$
+
 More generally, we write 
+
 $$
 E_ {i} \to \emptyset
 $$
+
 if there exist $m\in\mathbb{Z}^{n}$ such that $E_ {i}\xrightarrow{m}\emptyset$. 
 
 Now we can generalize the situation to other than the empty set. To do that we need the concept of symmetric difference. Intuitively, if the limit of $E_ {i}$ is another set $E$, then there should be infinite sets $E_ {i, \, i>j}$ for some $j$ such that they all "tend to" contain $E$. It implies that $E_ {i}-E$ should tend to be empty, for if there is some element $e$ in the limit of $E_ {i}-E$ then $e$ should be in the limit, too. On the other hand, the limit $E$ shouldn't contain any more element that is not in $E_ {i}$'s. For example, if for all $i>j$, some element $e'$ is not in $E_ {i,i>j}$ then it should not be contained in the limit $E$ as well. These very hand-waving arguments inspires us to define the limit of $E_ {i}$ as follows. 
 
 We write 
+
 $$
 E_ {i}\xrightarrow{m} E,\quad  \text{iff }E_ {i} \subset J_ {m} \text{ and } E_ {i}\Delta E\xrightarrow{m}\emptyset .
 $$
+
 All the properties we want for a limit of $E_ {i}$ are concisely contained in the condition that $E_ {i}\Delta E$ tend to the empty set. Also, we simply write 
+
 $$
 E_ {i}\to E
 $$
+
 if there exists some $m$ such that $E_ {i}\xrightarrow{m}E$ and we don't care about the details of $m$. 
 
 Equivalently, we could say that $(E_ {i}\Delta E)$ is point finite.
 
 **Example.** Consider $\mathbb{Z}^{n}=\mathbb{Z}^{1}=\mathbb{Z}$. Let $E_ {i} =\left\lbrace i,i+1,\dots \right\rbrace$ for $i\in \mathbb{N}$. Then the sequence $E_ {i}$ is point-finite. We have 
+
 $$
 E_ {i}\to \emptyset .
 $$
+
 But if we let $F_ {i}=\left\lbrace -i \right\rbrace$, then even though $F_ {i}$ is point-finite but $F$ can not be contained in some $J_ {m}$ so it does not converge. 
 
 **Notation.** Let $k = (k_ {1},k_ {2},\dots,k_ {n})$ then define $\left\lvert k \right\rvert:=k_ {1}+k_ {2}+\dots+k_ {n}$.
 
 For two pints $p,q$ in $J_ {m}$, we can introduce the concept of distance by defining
+
 $$
 d(p,q):= 2^{-\left\lvert p-q \right\rvert }
 $$
+
 This reminds me of Krull topology. 
 
 For two sets $E,F\subset J_ {m}$, define
+
 $$
 d(E,F):= \sum_ {k\in E\Delta F} 2^{-\left\lvert k \right\rvert },
 $$
+
 then for any $E_ {i}\subset J_ {m}$, we have $E_ {i}\to E$ iff $d(E_ {i},E)\to 0$. And $d$ is a metric on the grid $J_ {m}$. 
