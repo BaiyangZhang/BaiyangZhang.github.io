@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 334.5069465637207
+    "width": 334.5069465637207,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-25-Note-on-Classical-Kinks.md"
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md"
               }
             }
           },
@@ -212,17 +212,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6b08a3177d1c52f5",
+  "active": "c64d85669ef2832c",
   "lastOpenFiles": [
-    "_posts/2024-02-25-Quantum-Kinks.md",
     "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+    "_posts/2024-02-25-Quantum-Kinks.md",
     "Templates/Figure.md",
     "2015-05-15-images.md",
     "README.md",
     "Trash.md",
     "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
     "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
     "_posts/2022-7-17-Conventions-and-Formula.md",
     "_drafts/2023-12-7-Transseries-Lecture-2.md",

@@ -2,7 +2,7 @@
 layout: post
 title: Note on Classical Kinks
 subtitle: 
-date: 2024-01-24
+date: 2024-02-26
 author: Baiyang Zhang
 header-img: img/background9.jpg
 catalog: true
