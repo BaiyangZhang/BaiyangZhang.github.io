@@ -31,3 +31,17 @@ We will adopt perturbative methods to study the quantization of kinks. As we all
 
 # Quantization procedure
 
+The broad outline is as following. 
+
+1. Consider the 2D QFT model with compact spatial dimension of size $L$. Let $\phi$ be the degree of freedom. We could adopt either periodic or anti-periodic boundary condition. Eventually we will take $L \to \infty$, but for now it is large but finite. 
+2. Consider small quantum fluctuation $\psi$ about the kink ground $\phi_ {k}$, namely $\psi = \phi - \phi_ {k}$. 
+3. Linearize the equation for the fluctuation field $\psi$ (not the original field). Find the solutions, also known as `eigenmodes` or `normal modes`. Expand the fluctuation field $\psi$ in normal modes.
+4. `Quantization.` Each normal mode corresponds to a quantum harmonic oscillator, with zero point fluctuations. Sum up the zero point energies of all the normal modes. This is the quantum correction we were looking for, but without appropriate renormalization procedure the sum is divergent. 
+5. `Renormalization` must be performed. This is the subtle part. The zero point energy of the trivial vacuum (without kink background) must be subtracted from the zero point energy of the kink, since we want the energy of the trivial vacuum to be zero. Also, the energy must be expressed in terms of renormalized parameters. 
+
+As we turn on the potential slowly, some of the low-lying modes in the trivial box become the bound states of the kink.
+
+Notice that in the trivial vacuum, the solutions to the equation of motion, a.k.a. the scattering states, are plane waves. They are eigenfunctions to both energy and momentum operator; in the presence of a kink, however, the scattering states are now normal modes, which are eigenstates of energy operator but *not eigenstates to momentum operator*.
+
+To consistently compare the energy difference between trivial vacuum sector (just vacuum sector from now on) and kink sector, we need to carefully match discrete modes (thanks to finite box size $L$) in these two.
+
