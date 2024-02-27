@@ -67,5 +67,61 @@ and $c_ {0}^{\dagger}=c_ {0}$. It is classical since it commutes with everything
 
 # Sign of the leading order correction
 
-In both $\mathcal{Z}_ {2}$ and sine-Gordon models, the leading order quantum correction reduces the energy of the kink. A argument by Coleman in his private communication show that this observation holds quite true in 1+1 dimension, with boson only. 
+In both $\mathcal{Z}_ {2}$ and sine-Gordon models, the leading order quantum correction reduces the energy of the kink. A argument by Coleman in his private communication show that this observation holds quite true in 1+1 dimension, with boson only. However I am not convinced by the argument. I am not gonna put the argument here, interested readers can refer to section 4.5 of Tanmay Vachaspati's textbook. 
+# Boson-fermion connection
+
+Boson and fermion operators satisfy different (equal time) commutation relations. It is remarkable that in 1+1 dimension, it is possible to construct explicitly a fermionic operator from bosonic operators. Let $\phi$ be a scalar bosonic field and $\psi_ {1}, \psi_ {2}$ the two components of Dirac spinor (there are only two components allowed in 1D space), then 
+
+$$
+\psi_ {1}(x) = C : e^{ P_ {+}(x) } :_ {a}, \quad  \psi_ {2} = -i C : e^{ P_ {-}(x) } :,
+$$
+
+The normal ordering is defined in the trivial vacuum sector, justifying us to call it a "defining" sector. $C$ is a c-number coefficient depending on mass and other cutoffs, while $P_ {\pm}$ are q-number function of $\phi(x)$. 
+
+Note that normal ordering should be treated carefully -- normal ordering should be prior to commuting operators that occur within the string. 
+
+This transformation between fermionic and bosonic operators hold on the level of quantum operators, not just on the level of expectation values. Furthermore, this transformation holds independent of interactions. However, when the bosonic model is sine-Gordon model, the dual fermionic model turn out to be another well-known model -- the massive Thirring model.
+
+# Equivalence of sine-Gordon and massive Thirring models
+
+
+The sine-Gordon model is an important field theory model in both classical and quantum physics, known for its rich structure of soliton solutions. The difference between the classical and quantum versions of the sine-Gordon model, particularly in the context of ground states for various parameter values, can be understood in terms of quantization and the effects of quantum fluctuations.
+
+### Classical sine-Gordon Model
+
+The Lagrangian of sine-Gordon model is 
+
+$$
+L_ {sG} = \frac{1}{2} (\partial_ {\mu}\phi)^{2}  - \frac{\alpha}{\beta^{2}}(1-\cos(\beta \phi)).
+$$
+
+where $\alpha$ is a parameter related to the amplitude of the potential, and $\beta$ controls the periodicity of the potential. The term $(1 - \cos(\beta \phi))$ represents a periodic potential with minima occurring at $\phi = 2\pi n/\beta$ for integer $n$, which are the classical ground states of the system.
+
+The sine-Gordon model undergoes a change in behavior when quantized, particularly as the parameter $\beta$ is varied. This model does not have a well-defined ground state for 
+
+$$
+\beta^{2}>8\pi.
+$$
+
+The key to understanding the issue with having a well-defined ground state for $\beta^2 > 8\pi$ lies in the renormalization group flow of the coupling constants and the concept of quantum fluctuations.
+
+In quantum field theory, quantum fluctuations can significantly affect the properties of a model. The coupling constants, such as the one associated with the $\beta$ parameter in the sine-Gordon model, can "run" or change their values at different energy scales due to renormalization effects. This running of the coupling constants is described by the renormalization group (RG) equations.
+
+The condition $\beta^2 > 8\pi$ is significant because it marks a threshold beyond which the *quantum fluctuations in the sine-Gordon model become so strong that they destabilize the classical vacuum structure*. This can be understood in terms of the renormalization of the coupling constant $\beta$: as the energy scale changes, the effective $\beta$ can grow in such a way that the periodic potential becomes "flatter" at the quantum level, making it harder to define distinct vacuum states.
+
+For $\beta^2 \leq 8\pi$, the renormalization effects are such that the theory can maintain its integrability and the solitons (or topological excitations) of the sine-Gordon model have well-defined, finite masses. These solitons can be thought of as the "particles" of the quantum field theory, and their stability is crucial for the theory to have a well-defined ground state.
+
+When $\beta^2 > 8\pi$, **the quantum corrections make the mass of these solitons diverge**, leading to a loss of particle-like excitations that could stabilize the ground state. This destabilization is related to the fact that the quantum theory no longer supports stable soliton solutions as it does in the classical case or in the quantum case for smaller $\beta$. *The vacuum structure becomes ambiguous due to the proliferation of vacuum fluctuations*, making it challenging to define a unique ground state. As a result, for $\beta^2 > 8\pi$, the sine-Gordon model does not have a well-defined ground state due to the strong quantum fluctuations that destabilize the classical vacuum structure.
+
+In the range $0 < \beta^{2} < 8\pi$, the sine-Gordon model is dual to massive Thirring model whose Lagrangian reads
+
+$$
+\mathcal{L}_ {mT} = i\overline{\psi} \partial\llap{/}\, \overline{\psi} - m \overline{\psi} \psi - \frac{g}{2} j^{\mu} j_ {\mu},\quad  j^{\mu} := \overline{\psi} \partial^{\mu}\psi. 
+$$
+
+The relations between coupling is 
+
+$$
+\frac{g}{\pi} = 1- \frac{4\pi}{\beta^{2}}.
+$$
 

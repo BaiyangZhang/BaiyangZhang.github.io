@@ -13,5 +13,6 @@
   "spellcheckLanguages": null,
   "livePreview": true,
   "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "useMarkdownLinks": false
 }
