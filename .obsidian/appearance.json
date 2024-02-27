@@ -1,6 +1,7 @@
 {
-  "theme": "system",
-  "cssTheme": "Obsidianite",
-  "baseFontSize": 21,
-  "accentColor": "#0e00cc"
+  "theme": "moonstone",
+  "cssTheme": "Shimmering Focus",
+  "baseFontSize": 18,
+  "accentColor": "#0e00cc",
+  "baseFontSizeAction": true
 }
