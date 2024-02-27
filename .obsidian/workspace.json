@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4214f2873da847ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-27-Quantum-Kinks.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-27-Quantum-Kinks.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-27-Quantum-Kinks.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -176,12 +189,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c64d85669ef2832c",
+  "active": "4214f2873da847ef",
   "lastOpenFiles": [
+    "_posts/2024-02-27-Quantum-Kinks.md",
+    "Untitled.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
-    "_posts/2024-02-27-Quantum-Kinks.md",
     "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-02-25-Kinks-in-QFT.md",
     "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
@@ -213,7 +227,6 @@
     "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
     "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
     "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
-    "Templates/Figure.md",
     "img/kinkLevel.png",
     "img/hom.png",
     "img/relaxationMethod - Copy.jpg",
