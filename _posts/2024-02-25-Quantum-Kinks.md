@@ -116,7 +116,7 @@ When $\beta^2 > 8\pi$, **the quantum corrections make the mass of these solitons
 In the range $0 < \beta^{2} < 8\pi$, the sine-Gordon model is dual to massive Thirring model whose Lagrangian reads
 
 $$
-\mathcal{L}_ {mT} = i\overline{\psi} \cancel{\partial}\, \overline{\psi} - m \overline{\psi} \psi - \frac{g}{2} j^{\mu} j_ {\mu},\quad  j^{\mu} := \overline{\psi} \partial^{\mu}\psi. 
+\mathcal{L}_ {mT} = i\overline{\psi} \partial\llap{/}\, \overline{\psi} - m \overline{\psi} \psi - \frac{g}{2} j^{\mu} j_ {\mu},\quad  j^{\mu} := \overline{\psi} \partial^{\mu}\psi. 
 $$
 
-
+The relations between 
