@@ -119,4 +119,9 @@ $$
 \mathcal{L}_ {mT} = i\overline{\psi} \partial\llap{/}\, \overline{\psi} - m \overline{\psi} \psi - \frac{g}{2} j^{\mu} j_ {\mu},\quad  j^{\mu} := \overline{\psi} \partial^{\mu}\psi. 
 $$
 
-The relations between 
+The relations between coupling is 
+
+$$
+\frac{g}{\pi} = 1- \frac{4\pi}{\beta^{2}}.
+$$
+
