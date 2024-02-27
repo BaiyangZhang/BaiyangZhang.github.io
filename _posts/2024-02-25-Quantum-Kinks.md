@@ -45,3 +45,27 @@ Notice that in the trivial vacuum, the solutions to the equation of motion, a.k.
 
 To consistently compare the energy difference between trivial vacuum sector (just vacuum sector from now on) and kink sector, we need to carefully match discrete modes (thanks to finite box size $L$) in these two.
 
+$\mathcal{Z}_ {2}$ kink has two bound states, sine-Gordon has only one, the translational zero mode. The leading order correction to kink mass are quite close in these two cases. 
+
+# Introduce the particles 
+
+As in the second quantization of a free quantum field theory, particle creation and annihilation operators are introduced for each of the excitation modes of the kink. This is straightforward, except for the zero mode. The final result is a quantum theory with both kinks and particles, which are sometimes referred to as mesons. 
+
+The distinctive aspect of the zero mode in second quantization is associated with its time dependence and the reality of its eigenfunction, in contrast to the complex nature of the remaining eigenfunctions. To be more specific, the time dependence of the eigenfunction is $e^{ i\omega t}$, since zero mode has zero energy, the time dependence is trivial. A real eigenfunction means that in the normal mode expansion, instead of 
+
+$$
+a_ {k}  f _ {k} + a_ {k}^{\dagger} f_ {k}^\ast
+$$
+
+we have a single term, say
+
+$$
+c_ {0} F,\quad  F \text{ is the zero mode eigenfunction}
+$$
+
+and $c_ {0}^{\dagger}=c_ {0}$. It is classical since it commutes with everything (that is $c_ {0}$ itself and all the other ladder operators). 
+
+# Sign of the leading order correction
+
+In both $\mathcal{Z}_ {2}$ and sine-Gordon models, the leading order quantum correction reduces the energy of the kink. A argument by Coleman in his private communication show that this observation holds quite true in 1+1 dimension, with boson only. 
+
