@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes
+title: Mean, Median and Variance
 subtitle: 
 date: 2024-02-27
 author: Baiyang Zhang
