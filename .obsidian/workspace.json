@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "55e1f49bc2c2c1bb",
+            "id": "c64d85669ef2832c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/DateNote.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1f2833febde22c62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+                "file": "_posts/2024-02-27-Quantum-Kinks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scaling",
+                "query": "note-on-",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+                "file": "_posts/2024-02-27-Quantum-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+                "file": "_posts/2024-02-27-Quantum-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-08-25-韩钢中国当代史阅读书目.md"
+                "file": "_posts/2024-02-27-Quantum-Kinks.md"
               }
             }
           },
@@ -189,22 +176,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f2833febde22c62",
+  "active": "c64d85669ef2832c",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "_posts/2024-02-25-Quantum-Kinks.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
+    "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+    "_posts/2024-02-27-Quantum-Kinks.md",
     "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-02-25-Kinks-in-QFT.md",
-    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-7-Transseries-Lecture-2.md",
     "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
-=======
-    "Templates/DateNote.md",
-    "_posts/2024-02-25-Quantum-Kinks.md",
-    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
->>>>>>> 86f8ac4a6517e59e3cb5a91efca8d5339689233f
     "_includes/video.liquid",
     "_includes/social.liquid",
     "_includes/selected_papers.liquid",
@@ -215,37 +197,32 @@
     "_includes/news.liquid",
     "_includes/metadata.liquid",
     "_includes/latest_posts.liquid",
-    "Templates/Figure.md",
-    "Templates/fig.md",
-    "fig.md",
-    "Templates/date.md",
-    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_posts/2023-12-7-Transseries-Lecture-2.md",
-    "README.md",
-    "_drafts/2024-02-25-Quantum-Kinks.md",
-    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "2015-05-15-images.md",
-    "Trash.md",
-    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
-    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
+    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "backups/2022-02-01-redirect.md",
-    "backups/2021-07-04-diagrams.md",
-    "backups/2020-09-28-twitter.md",
-    "backups/2020-09-28-github-metadata.md",
-    "assets/img/z-800.webp",
-    "assets/img/z-480.webp",
-    "assets/img/z-1400.webp",
-    "assets/img/publications-screenshot-800.webp",
-    "assets/img/publications-screenshot-480.webp",
-    "assets/img/publications-screenshot-1400.webp",
-    "assets/img/projects-screenshot-800.webp",
-    "assets/img/projects-screenshot-480.webp",
-    "assets/img/projects-screenshot-1400.webp",
-    "assets/img/prof_pic-800.webp"
+    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
+    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
+    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
+    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
+    "_posts/2023-12-6-Transseries-Lecture-1.md",
+    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
+    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
+    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
+    "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
+    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
+    "Templates/Figure.md",
+    "img/kinkLevel.png",
+    "img/hom.png",
+    "img/relaxationMethod - Copy.jpg",
+    "img/boundaryMap.png",
+    "img/boundaryHomo.png",
+    "img/shortExactSequence.png",
+    "img/homotopyCommute.png",
+    "img/eom.png",
+    "assets/img/z.png",
+    "img/relaxationMethod.jpg"
   ]
 }

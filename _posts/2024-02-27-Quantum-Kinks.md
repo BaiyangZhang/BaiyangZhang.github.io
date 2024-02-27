@@ -2,7 +2,7 @@
 layout: post
 title: Kink in Quantum Field Theory, A Broad Outline
 subtitle: 
-date: 2024-02-25
+date: 2024-02-27
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
