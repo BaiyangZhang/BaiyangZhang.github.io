@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c64d85669ef2832c",
+            "id": "55e1f49bc2c2c1bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-27-Quantum-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4214f2873da847ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-02-27-Quantum-Kinks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8f4df30737786289",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-02-27-Mean-Median-and-Variance.md",
+                "file": "_posts/2024-02-28-Quantum-Kinks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "note-on-",
+                "query": "scaling",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -118,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-27-Mean-Median-and-Variance.md",
+                "file": "_posts/2024-02-28-Quantum-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-27-Mean-Median-and-Variance.md",
+                "file": "_posts/2024-02-28-Quantum-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-27-Mean-Median-and-Variance.md"
+                "file": "_posts/2024-02-28-Quantum-Kinks.md"
               }
             }
           },
@@ -200,20 +176,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f4df30737786289",
+  "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
-    "_posts/2024-02-27-Quantum-Kinks.md",
-    "2015-05-15-images.md",
+    "img/kinkMassvsCoupling.png",
     "_posts/2024-02-27-Mean-Median-and-Variance.md",
+    "Templates/DateNote.md",
+    "_posts/2024-02-25-Quantum-Kinks.md",
     "img/boxPlot.png",
+    "_posts/2024-02-28-Quantum-Kinks.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
-    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
-    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-02-25-Kinks-in-QFT.md",
-    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
     "_includes/video.liquid",
     "_includes/social.liquid",
     "_includes/selected_papers.liquid",
@@ -224,29 +195,34 @@
     "_includes/news.liquid",
     "_includes/metadata.liquid",
     "_includes/latest_posts.liquid",
-    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
-    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
-    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
+    "Templates/Figure.md",
+    "Templates/fig.md",
+    "fig.md",
+    "Templates/date.md",
+    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
+    "_posts/2023-12-7-Transseries-Lecture-2.md",
+    "README.md",
+    "_drafts/2024-02-25-Quantum-Kinks.md",
+    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-01-25-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "2015-05-15-images.md",
+    "Trash.md",
     "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
-    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
-    "_posts/2023-12-6-Transseries-Lecture-1.md",
-    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
-    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
-    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
-    "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
-    "img/kinkLevel.png",
-    "img/hom.png",
-    "img/relaxationMethod - Copy.jpg",
-    "img/boundaryMap.png",
-    "img/boundaryHomo.png",
-    "img/shortExactSequence.png",
-    "img/homotopyCommute.png",
-    "img/eom.png",
-    "assets/img/z.png"
+    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "_posts/2024-1-10-Representables-in-Category-Theory.md",
+    "backups/2022-02-01-redirect.md",
+    "backups/2021-07-04-diagrams.md",
+    "assets/img/z-800.webp",
+    "assets/img/z-480.webp",
+    "assets/img/z-1400.webp",
+    "assets/img/publications-screenshot-800.webp",
+    "assets/img/publications-screenshot-480.webp",
+    "assets/img/publications-screenshot-1400.webp",
+    "assets/img/projects-screenshot-800.webp",
+    "assets/img/projects-screenshot-480.webp",
+    "assets/img/projects-screenshot-1400.webp"
   ]
 }

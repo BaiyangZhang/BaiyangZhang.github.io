@@ -2,11 +2,12 @@
 layout: post
 title: Kink in Quantum Field Theory, A Broad Outline
 subtitle: 
-date: 2024-02-27
+date: 2024-02-28
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
+  - "#kink"
 ---
 
 Since the details of calculation can be found in other notes, here I will only talk about the broad outline. I will use as few as formula as possible. 
@@ -87,7 +88,7 @@ This transformation between fermionic and bosonic operators hold on the level of
 
 The sine-Gordon model is an important field theory model in both classical and quantum physics, known for its rich structure of soliton solutions. The difference between the classical and quantum versions of the sine-Gordon model, particularly in the context of ground states for various parameter values, can be understood in terms of quantization and the effects of quantum fluctuations.
 
-### Classical sine-Gordon Model
+- - -
 
 The Lagrangian of sine-Gordon model is 
 
@@ -125,4 +126,23 @@ $$
 \frac{g}{\pi} = 1- \frac{4\pi}{\beta^{2}}.
 $$
 
-The 
+The fermionic field $\psi$ creates a fermion after quantization, it also creates a kink in terms of $\phi$ field. Hence the sine-Gordon kink is identified with the fermion in the massive Thirring model. The fermion in the massive Thirring model carries a topological charge in the sine-Gordon model.
+
+The massive Thirring model does not have soliton solutions (a solution for a Dirac field represents a state that a fermion can occupy, not a classical soliton or anything like that), however fermions can form bound states, for the interaction between a fermion and an anti-fermion is attractive. It can be shown that such a bound state corresponds to a scalar field created by $\phi$. 
+
+We have a few options for the fundamental degree of freedom, including the boson $\phi$, the fermions $\psi$, the kink of $\phi$, the bound state of $\psi$. Which one is the fundamental dof depends on its *mass*. For example, in the massive Thirring model let mass of a single fermion be $m$, a pair of fermion-antifermion has mass less than $2m$ due to the interaction between them. As the coupling increases, the interaction strengthens and the mass further reduces. Eventually the bounded pair will be lighter than a single fermion, then the bound state should be regarded as the fundamental degree of freedom. We know that the bounded state corresponds to boson created by $\phi$ field, hence the fundamental description should be the sine-Gordon model. A dual picture exists for $\phi$ and kink, a lattice result is shown in the below.
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="kinkMassvsCoupling.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+	The figure show how mass of the $Z_2$ kink depends on the inverse coupling $\beta_ {0}=1 / \lambda_ {0}$, where $\lambda_ {0}\equiv 6 \lambda a^{2}$ is the scaled coupling on the lattice ($48\times 48$) whose lattice spacing is $a$. From the figure we see that the classical value of the kink is always larger then that with quantum correction. When the coupling $\lambda$ is larger then certain value, that is when $\beta_ {0}$ is smaller then certain value, the kink become lighter than the boson, and takes the place of the fundamental dof. It is to say that the fundamental dof becomes the fermion in the massive Thirring model, due to the soliton-particle duality. 
+</div>
+
+The construction of fermion operators from boson operator and vise versa has been used extensively in condensed matter physics under the name of `bosonization`. 
+
+
+
