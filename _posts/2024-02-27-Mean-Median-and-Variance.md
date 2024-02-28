@@ -68,3 +68,18 @@ In addition to measuring the center of the distribution, we are also interested 
 1. $p\%$ of observations are $\leq V_ {p}$;
 2. $1-p\%$ of observations are $\gg V_ {p}$. 
 
+The `quartile` is made of 
+
+$$
+\begin{align*}
+Q_ {1} &= 25\text{th} \text{ percentile} = 1\text{st} \text{ or lower quartile}\\
+Q_ {2} &= 50\text{th} \text{ percentile} = 2\text{nd} \text{ quartile or median}\\
+Q_ {3} &= 75\text{th} \text{ percentile} = 3\text{rd} \text{ or upper quartile}\\
+\end{align*}
+$$
+
+A commonly used percentile-based measure of spread combining these measures is the **interquartile range (IQR)**, defined as
+
+$$
+\text{IQR} := Q_ {3} - Q_ {1}.
+$$
