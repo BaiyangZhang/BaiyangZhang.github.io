@@ -25,6 +25,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "_posts/2024-02-27-Quantum-Kinks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8f4df30737786289",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "_posts/2024-02-27-Mean-Median-and-Variance.md",
                 "mode": "source",
                 "source": false
@@ -32,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -90,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -189,10 +200,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4214f2873da847ef",
+  "active": "8f4df30737786289",
   "lastOpenFiles": [
     "_posts/2024-02-27-Quantum-Kinks.md",
+    "2015-05-15-images.md",
     "_posts/2024-02-27-Mean-Median-and-Variance.md",
+    "img/boxPlot.png",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
@@ -226,7 +239,6 @@
     "_posts/2023-11-19-Higher-Homotopy-Groups.md",
     "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
     "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
-    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
     "img/kinkLevel.png",
     "img/hom.png",
     "img/relaxationMethod - Copy.jpg",
@@ -235,7 +247,6 @@
     "img/shortExactSequence.png",
     "img/homotopyCommute.png",
     "img/eom.png",
-    "assets/img/z.png",
-    "img/relaxationMethod.jpg"
+    "assets/img/z.png"
   ]
 }
