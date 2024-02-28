@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-28-Quantum-Kinks.md",
+                "file": "_posts/2024-02-27-Mean-Median-and-Variance.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-28-Quantum-Kinks.md",
+                "file": "_posts/2024-02-27-Mean-Median-and-Variance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-28-Quantum-Kinks.md",
+                "file": "_posts/2024-02-27-Mean-Median-and-Variance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-28-Quantum-Kinks.md"
+                "file": "_posts/2024-02-27-Mean-Median-and-Variance.md"
               }
             }
           },
@@ -178,12 +178,12 @@
   },
   "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
+    "_posts/2024-02-28-Quantum-Kinks.md",
     "img/kinkMassvsCoupling.png",
     "_posts/2024-02-27-Mean-Median-and-Variance.md",
     "Templates/DateNote.md",
     "_posts/2024-02-25-Quantum-Kinks.md",
     "img/boxPlot.png",
-    "_posts/2024-02-28-Quantum-Kinks.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_includes/video.liquid",
     "_includes/social.liquid",
@@ -222,7 +222,6 @@
     "assets/img/publications-screenshot-480.webp",
     "assets/img/publications-screenshot-1400.webp",
     "assets/img/projects-screenshot-800.webp",
-    "assets/img/projects-screenshot-480.webp",
-    "assets/img/projects-screenshot-1400.webp"
+    "assets/img/projects-screenshot-480.webp"
   ]
 }

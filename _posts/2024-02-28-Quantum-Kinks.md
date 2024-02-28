@@ -7,7 +7,7 @@ author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
-  - "#kink"
+  - kink
 ---
 
 Since the details of calculation can be found in other notes, here I will only talk about the broad outline. I will use as few as formula as possible. 

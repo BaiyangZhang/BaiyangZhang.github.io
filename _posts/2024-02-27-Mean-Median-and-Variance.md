@@ -97,7 +97,40 @@ Percentiles are also used to create another common visual representation of cont
         {% include figure.liquid path="/img/boxPlot.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
 <div class="caption">
     Just like histograms, boxplots can also illustrate the skew of a data. In a histogram, the skewed was named after the location of the tail and in a boxplot, this corresponds to the side with a longer whisker. Here we can see histograms and boxplots for various distributions of data.
 </div>
+
+- - -
+
+The variance and the standard deviation are numerical summaries which quantify how spread out the distribution is around its mean. 
+
+We have two kinds of variances: `sample variance` and `population variance`. The difference between sample variance and population variance lies in how they are calculated and what they represent in the context of statistical analysis.
+
+**Population Variance**:
+
+Population variance measures how much the members of a population differ from the population mean. It is denoted by $\sigma^2$. If you have a population with $N$ members and population values $x_1, x_2, ..., x_N$, the population variance $\sigma^2$ is calculated as:
+  $$ \sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2 $$
+  where $\mu$ is the population mean. Note that $\mu$ is not the mean of some measured data, it is supposed to be given by some theoretical model. Population variance is used when you have access to all the data points in the population.
+
+**Sample Variance**
+
+Sample variance measures how much the members of a sample (a subset of the population) differ from the sample mean. It is an estimator of the population variance. Sample variance is denoted by $s^2$. If you have a sample of size $n$ with values $x_1, x_2, ..., x_n$, the sample variance $s^2$ is calculated as:
+  $$ s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \overline{x})^2 $$
+  where $\overline{x}$ is the sample mean.
+  
+Key Differences:
+
+1. **Purpose:** Population variance describes the variability within an entire population, while sample variance estimates the population variance from a subset of the population.
+2. **Formula:** The population variance formula divides by $n$ (the total number of population members), whereas the sample variance formula divides by $n-1$ (one less than the sample size).
+3. **Bias Correction:** The use of $n-1$ in the sample variance formula, known as Bessel's correction, corrects for the bias in the estimation of population variance from a sample.
+
+When we calculate the variance of a sample, we typically use the sample mean $\overline{x}$ as an estimate of the true population mean. However, using the sample mean introduces a bias because it is based on the same data points that we are using to calculate the variance. This means the sum of the squared deviations $(x_i - \overline{x})^2$ tends to be smaller than it would be if we used the true population mean, leading to an underestimate of the true population variance.
+
+To correct for this bias, we use $n-1$ in the denominator instead of $n$. This adjustment is known as Bessel's correction. The rationale behind it is that when estimating variance from a sample, we lose one degree of freedom because we have estimated the mean from the same data set. Using $n-1$ effectively compensates for this loss, making the sample variance an unbiased estimator of the true population variance.
+
+In summary, the factor $\frac{1}{n-1}$ is used instead of $\frac{1}{n}$ to make the sample variance an unbiased estimator of the population variance, accounting for the fact that the sample mean is used in the variance calculation.
+
+The standard deviation, denoted as $s$, is a function of variance. Recall that the mean is not a robust outlier and is highly sensitive to skew or the presence of outliers. Consequently, the variance and the standard deviation are also very sensitive.
 
