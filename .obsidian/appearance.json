@@ -1,7 +1,7 @@
 {
   "theme": "moonstone",
   "cssTheme": "Shimmering Focus",
-  "baseFontSize": 18,
+  "baseFontSize": 21,
   "accentColor": "#0e00cc",
   "baseFontSizeAction": true
 }
