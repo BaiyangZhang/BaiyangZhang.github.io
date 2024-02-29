@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1927d652b15c390f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-02-29-解析SARS-CoV-2药物治疗的现状与前沿挑战.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -178,6 +190,8 @@
   },
   "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
+    "_posts/2024-02-29-解析SARS-CoV-2药物治疗的现状与前沿挑战.md",
+    "_posts/2024-03-01-Domain-Wall.md",
     "_posts/2024-02-28-Quantum-Kinks.md",
     "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
     "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
@@ -202,8 +216,6 @@
     "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
     "_posts/2023-11-16-Curvature-and-Winding-Number.md",
     "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
-    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
-    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
     "img/kinkMassvsCoupling.png",
     "img/boxPlot.png",
     "_includes/video.liquid",
