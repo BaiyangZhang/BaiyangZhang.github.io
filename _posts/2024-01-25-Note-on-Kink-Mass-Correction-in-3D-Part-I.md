@@ -7,6 +7,7 @@ author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
+  - kink
 ---
 
 # 1 Introduction 

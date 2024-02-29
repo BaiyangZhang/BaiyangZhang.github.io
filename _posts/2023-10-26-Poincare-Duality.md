@@ -7,11 +7,7 @@ author: Baiyang Zhang
 header-img: img/mathArt14.jpg
 catalog: true
 tags:
-  - math
-  - quantum
-  - field
-  - theory
-  - confinement
+  - duality
 ---
 
 ### Simplicial vs. Singular complex

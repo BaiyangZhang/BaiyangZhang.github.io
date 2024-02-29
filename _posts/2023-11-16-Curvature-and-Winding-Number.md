@@ -7,9 +7,9 @@ author: Baiyang Zhang
 header-img: img/background11.jpg
 catalog: true
 tags:
-  - Geometry
-  - Frankel
-  - "#Topology"
+  - geometry
+  - frankel
+  - topology
 ---
 
 *Disclaimer: Nothing in this note is original.*

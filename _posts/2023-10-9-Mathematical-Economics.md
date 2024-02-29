@@ -7,6 +7,8 @@ author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
 tags:
+ - lectureNote
+ - mathematicalEconomics
 ---
 
 ### Syllabus

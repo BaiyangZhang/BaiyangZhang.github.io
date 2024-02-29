@@ -7,9 +7,9 @@ author: Baiyang Zhang
 header-img: img/math3.jpg
 catalog: true
 tags:
-  - Geometry
-  - Minkowski
-  - Frankel
+  - diracEquation
+  - minkowski
+  - frankel
 ---
 
 *Disclaimer: Nothing in this note is original.*

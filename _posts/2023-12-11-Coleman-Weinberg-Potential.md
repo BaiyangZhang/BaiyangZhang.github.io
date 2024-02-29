@@ -7,9 +7,10 @@ author: Baiyang Zhang
 header-img: img/mathArt8.jpg
 catalog: true
 tags:
-  - ColemanWeinbergPotential
-  - EffectiveTheory
-  - Coleman
+  - colemanWeinbergPotential
+  - effectiveTheory
+  - coleman
+  - effectivePotential
 ---
 
 ### Quantum Effective Action

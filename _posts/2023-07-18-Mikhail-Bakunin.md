@@ -7,7 +7,7 @@ author:     Baiyang Zhang 						# 作者
 header-img: img/background14.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
-    - PoliticalPhilosophy
+    - politicalPhilosophy
 ---
 
 >It is obvious that liberty will never be given to humanity and that the real interests of society, of all groups, local associations, and individuals who make up society will never be satisfied until there are no longer any states.

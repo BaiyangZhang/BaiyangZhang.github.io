@@ -7,6 +7,7 @@ author: Baiyang Zhang
 header-img: img/lib13.jpg
 catalog: true
 tags:
+ - quantization
 ---
 
 ### The Lagrangian

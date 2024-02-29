@@ -7,8 +7,8 @@ author: Baiyang Zhang
 header-img: img/lib3.jpg
 catalog: true
 tags:
-  - PureMath
-  - Notes
+  - higherFormSymmetry
+  - generalizedSymmetry
 ---
 
 For conventions used in this note, see my other blog [here](https://www.mathlimbo.net/blog/2022/Conventions-and-Formula/). 

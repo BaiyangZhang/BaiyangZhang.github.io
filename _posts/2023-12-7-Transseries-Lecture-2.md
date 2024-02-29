@@ -7,6 +7,7 @@ author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
 tags:
+ - transseries
 ---
 
 ## Hahn Series

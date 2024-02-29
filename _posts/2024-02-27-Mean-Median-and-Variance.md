@@ -7,7 +7,7 @@ author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
-  - "#biostatistics"
+  - biostatistics
 ---
 
 *Disclaimer: Nothing in this note is original.*

@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8f4df30737786289",
+            "id": "55e1f49bc2c2c1bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-28-.md",
+                "file": "_posts/2024-03-01-Domain-Wall.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "scaling",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-28-.md",
+                "file": "_posts/2024-03-01-Domain-Wall.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-28-.md",
+                "file": "_posts/2024-03-01-Domain-Wall.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-28-.md"
+                "file": "_posts/2024-03-01-Domain-Wall.md"
               }
             }
           },
@@ -175,23 +176,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f4df30737786289",
+  "active": "55e1f49bc2c2c1bb",
   "lastOpenFiles": [
-    "_posts/2024-02-27-Mean-Median-and-Variance.md",
-    "_posts/2024-02-28-.md",
     "_posts/2024-02-28-Quantum-Kinks.md",
+    "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
+    "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
+    "_posts/2023-06-21-The-Phase-Space.md",
+    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
+    "_posts/2023-07-18-Mikhail-Bakunin.md",
+    "_posts/2023-07-20-Gauss-Bonnet-and-Index-Theorem.md",
+    "_posts/2023-07-28-Topological-Quantization.md",
+    "_posts/2023-08-19-韩非子.md",
+    "_posts/2023-08-23-Connection-in-Principal-Bundles.md",
+    "_posts/2023-08-27-Associated-bundles.md",
+    "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
+    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
+    "_posts/2023-09-21-The-Dirac-Equation.md",
+    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Forms.md",
+    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
+    "_posts/2023-10-9-Mathematical-Economics.md",
+    "_posts/2023-10-23-Noether's-Principal.md",
+    "_posts/2023-10-26-Poincare-Duality.md",
+    "_posts/2023-10-29-Bi-invariant-Forms-on-Compact-Groups.md",
+    "_posts/2023-10-30-The-Fundamental-Group-and-Covering-Spaces.md",
+    "_posts/2023-10-31-Notes-on-Numerical-Methods-in-Solving-ODE.md",
+    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
+    "_posts/2023-11-18-Categorical-Equivalence-and-the-Renormalization-Group.md",
+    "_posts/2023-11-18-Homotopy-Extension-SU(N).md",
+    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
     "img/kinkMassvsCoupling.png",
-    "_posts/2024-02-27-Quantum-Kinks.md",
-    "2015-05-15-images.md",
     "img/boxPlot.png",
-    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
-    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
-    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-02-25-Kinks-in-QFT.md",
-    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
     "_includes/video.liquid",
     "_includes/social.liquid",
     "_includes/selected_papers.liquid",
@@ -202,26 +216,13 @@
     "_includes/news.liquid",
     "_includes/metadata.liquid",
     "_includes/latest_posts.liquid",
-    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
-    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
-    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
-    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
-    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
-    "_posts/2023-12-6-Transseries-Lecture-1.md",
-    "_posts/2023-11-22-Introduction-to-Resurgence-Lecture-1.md",
-    "_posts/2023-11-19-Higher-Homotopy-Groups.md",
-    "img/kinkLevel.png",
-    "img/hom.png",
-    "img/relaxationMethod - Copy.jpg",
-    "img/boundaryMap.png",
-    "img/boundaryHomo.png",
-    "img/shortExactSequence.png",
-    "img/homotopyCommute.png",
-    "img/eom.png"
+    "assets/img/z-800.webp",
+    "assets/img/z-480.webp",
+    "assets/img/z-1400.webp",
+    "assets/img/publications-screenshot-800.webp",
+    "assets/img/publications-screenshot-480.webp",
+    "assets/img/publications-screenshot-1400.webp",
+    "assets/img/projects-screenshot-800.webp",
+    "assets/img/projects-screenshot-480.webp"
   ]
 }

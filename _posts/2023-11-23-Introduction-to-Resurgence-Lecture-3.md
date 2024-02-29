@@ -7,9 +7,8 @@ author: Baiyang Zhang
 header-img: img/mathArt10.jpg
 catalog: true
 tags:
-  - PureMath
-  - CategoryTheory
-  - Notes
+  - pureMath
+  - resurgence
 ---
 
 ### The differential algebra

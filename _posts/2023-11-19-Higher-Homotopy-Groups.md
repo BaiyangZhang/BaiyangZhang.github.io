@@ -7,8 +7,7 @@ author: Baiyang Zhang
 header-img: img/background11.jpg
 catalog: true
 tags:
-  - Geometry
-  - Frankel
+  - frankel
 ---
 ## $\pi_ {k}(M)$
 

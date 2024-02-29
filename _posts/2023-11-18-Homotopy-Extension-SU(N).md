@@ -8,7 +8,7 @@ header-img: img/background11.jpg
 catalog: true
 tags:
   - Geometry
-  - Frankel
+  - frankel
 ---
 
 *Disclaimer: Nothing in this note is original.*

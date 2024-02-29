@@ -7,8 +7,8 @@ author: Baiyang Zhang
 header-img: img/background11.jpg
 catalog: true
 tags:
-  - Geometry
-  - Frankel
+  - categoryTheory
+  - geometry
 ---
 
 *Disclaimer: Nothing in this note is original.*

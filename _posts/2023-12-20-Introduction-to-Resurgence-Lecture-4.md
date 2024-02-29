@@ -7,9 +7,7 @@ author: Baiyang Zhang
 header-img: img/mathArt2.jpg
 catalog: true
 tags:
-  - PureMath
-  - CategoryTheory
-  - Notes
+  - resurgence
 ---
 
 ### Introduction

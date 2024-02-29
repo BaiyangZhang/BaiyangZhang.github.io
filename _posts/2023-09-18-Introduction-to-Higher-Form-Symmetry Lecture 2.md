@@ -7,9 +7,8 @@ author: Baiyang Zhang
 header-img: img/lib18.jpg
 catalog: true
 tags:
-  - PureMath
-  - GeneralizedSymmetry
-  - Notes
+  - higherFormSymmetry
+  - generalizedSymmetry
 ---
 
 ## Ordinary symmetries

@@ -7,8 +7,8 @@ author: Baiyang Zhang
 header-img: img/background11.jpg
 catalog: true
 tags:
-  - Geometry
-  - Frankel
+  - geometry
+  - frankel
 ---
 ## Lifting spheres from the base to the bundle
 

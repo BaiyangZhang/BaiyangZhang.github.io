@@ -7,9 +7,10 @@ author: Baiyang Zhang
 header-img: img/background13.jpg
 catalog: true
 tags:
-  - Geometry
-  - Minkowski
-  - Frankel
+  - geometry
+  - minkowski
+  - frankel
+  - differentialForm
 ---
 
 *Disclaimer: Nothing in this note is original.*

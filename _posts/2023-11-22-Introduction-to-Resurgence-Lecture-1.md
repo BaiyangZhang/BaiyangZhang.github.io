@@ -7,9 +7,7 @@ author: Baiyang Zhang
 header-img: img/mathArt15.jpg
 catalog: true
 tags:
-  - Math
-  - Transseries
-  - Notes
+  - resurgence
 ---
 
 ### Motivation
