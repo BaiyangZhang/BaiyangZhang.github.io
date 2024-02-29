@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Mean, Median and Variance
+title: "Regression Methods\rin Biostatistics"
 subtitle: 
-date: 2024-02-27
+date: 2024-02-29
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -133,4 +133,28 @@ To correct for this bias, we use $n-1$ in the denominator instead of $n$. This a
 In summary, the factor $\frac{1}{n-1}$ is used instead of $\frac{1}{n}$ to make the sample variance an unbiased estimator of the population variance, accounting for the fact that the sample mean is used in the variance calculation.
 
 The standard deviation, denoted as $s$, is a function of variance. Recall that the mean is not a robust outlier and is highly sensitive to skew or the presence of outliers. Consequently, the variance and the standard deviation are also very sensitive.
+
+- - -
+
+The regression method is a statistical technique used to model and analyze the relationships between a dependent variable and one or more independent variables. The primary goal of regression is to predict the value of the dependent (or `response`) variable based on the values of the independent (or `predictor`) variables. It is widely used in various fields such as economics, finance, biological sciences, and social sciences for forecasting, estimating, and determining causal relationships.
+
+There are several types of regression methods, each suited to different types of data and relationships:
+
+1. **Linear Regression**: The simplest form of regression, linear regression uses a linear approach to model the relationship between the dependent variable and one or more independent variables. The model assumes that the relationship can be described by a straight line in the form $y = \beta_0 + \beta_1x_1 + \epsilon$, where $y$ is the dependent variable, $x_1$ is the independent variable, $\beta_0$ is the y-intercept, $\beta_1$ is the slope of the line, and $\epsilon$ represents the error term.
+
+2. **Multiple Linear Regression**: An extension of simple linear regression, this method involves two or more independent variables. The model is expressed as $y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$, where $x_1, x_2, ..., x_n$ are the independent variables.
+
+3. **Logistic Regression**: Used when the dependent variable is categorical, typically binary. Logistic regression models the probability that the dependent variable belongs to a particular category, using a logistic function.
+
+4. **Polynomial Regression**: A form of regression where the relationship between the independent variable and the dependent variable is modeled as an nth degree polynomial. Polynomial regression fits a nonlinear relationship between the value of x and the corresponding conditional mean of y.
+
+5. **Ridge and Lasso Regression**: These are types of linear regression that include regularization. Regularization adds a penalty on the size of coefficients to prevent overfitting. Ridge regression adds a squared magnitude of the coefficient as a penalty term to the loss function, while Lasso regression adds the absolute value of the magnitude of the coefficient as a penalty term.
+
+6. **Non-linear Regression**: Used when the data cannot be modeled using linear methods due to a non-linear relationship between the dependent and independent variables. Non-linear regression can fit complex curves to data.
+
+Regression analysis involves selecting the appropriate model for the data, estimating the model parameters (usually through methods like least squares), evaluating the model's adequacy (checking for goodness-of-fit, residuals, etc.), and interpreting the results to make inferences or predictions.
+
+In practice, the choice of regression method depends on the nature of the dependent variable, the shape of the relationship, and the distribution of the residuals, among other factors. Proper model selection, diagnostic testing, and validation are crucial steps in ensuring that the regression model provides reliable and accurate predictions or insights.
+
+# Multipredictor Regression
 
