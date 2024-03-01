@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "949fb283ee618e4a",
+        "id": "6977c06f6cc6b901",
         "type": "tabs",
         "children": [
           {
-            "id": "8f4df30737786289",
+            "id": "6573360c93a400e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-29-egression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-01-Domain-Wall.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-29-egression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-01-Domain-Wall.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-29-egression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-01-Domain-Wall.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-29-egression-Methods-in-Biostatistics.md"
+                "file": "_posts/2024-03-01-Domain-Wall.md"
               }
             }
           },
@@ -176,13 +176,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f4df30737786289",
+  "active": "6573360c93a400e1",
   "lastOpenFiles": [
+    "img/kink/kinkWorldLine.png",
+    "img/kink",
+    "img/新建文件夹",
+    "_posts/2024-02-29-egression-Methods-in-Biostatistics.md",
     "_posts/2024-02-28-.md",
     "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
     "_posts/2024-03-01-Domain-Wall.md",
     "_posts/2024-02-29-解析SARS-CoV-2药物治疗的现状与前沿挑战.md",
-    "_posts/2024-02-29-egression-Methods-in-Biostatistics.md",
     "_posts/2024-02-28-Quantum-Kinks.md",
     "img/kinkMassvsCoupling.png",
     "_posts/2024-02-27-Quantum-Kinks.md",
@@ -204,8 +207,6 @@
     "_includes/projects.liquid",
     "_includes/pagination.liquid",
     "_includes/news.liquid",
-    "_includes/metadata.liquid",
-    "_includes/latest_posts.liquid",
     "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
     "_posts/2024-02-25-Note-on-Classical-Kinks.md",
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
@@ -215,7 +216,6 @@
     "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
     "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
-    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
     "img/kinkLevel.png",
     "img/hom.png",
     "img/relaxationMethod - Copy.jpg",
