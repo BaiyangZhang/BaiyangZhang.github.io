@@ -75,10 +75,10 @@ and $T$ is normalized to $T^{2}=1$.
 The unit vector $\hat{N} = N^{\mu}(\tau)$ orthogonal to $\hat{T} = T^{\mu}$ is found by solving 
 
 $$
-g_ {\mu \nu} T^{\mu} N^{\nu} = 0, \quad  T^{\mu}T_ {\mu}=T^{2} = 1.
+g_ {\mu \nu} T^{\mu} N^{\nu} = 0, \quad  N^{\mu}N_ {\mu}=N^{2} = -1.
 $$
 
-Since we are working in 2D, there is only one $N^{\mu}$. In the special case of a Minkowski background we choose $g_ {\mu \nu} = \eta_ {\mu \nu} = \text{diag}(1,-1)$. (This is gonna piss off some theorists I know) We find 
+Note the normalization of $N$ is $-1$ since it is time-like. Since we are working in 2D, there is only one $N^{\mu}$. In the special case of a Minkowski background we choose $g_ {\mu \nu} = \eta_ {\mu \nu} = \text{diag}(1,-1)$. (This is gonna piss off some theorists I know) We find 
 
 $$
 T^{\mu} = \gamma(1,V),\quad  N^{\mu} = \gamma(V,1),\quad  \gamma = \frac{1}{\sqrt{ 1-V^{2} }}.
