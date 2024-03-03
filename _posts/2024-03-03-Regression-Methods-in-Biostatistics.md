@@ -2,7 +2,7 @@
 layout: post
 title: "Regression Methods\rin Biostatistics"
 subtitle: 
-date: 2024-02-29
+date: 2024-03-03
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -157,4 +157,6 @@ Regression analysis involves selecting the appropriate model for the data, estim
 In practice, the choice of regression method depends on the nature of the dependent variable, the shape of the relationship, and the distribution of the residuals, among other factors. Proper model selection, diagnostic testing, and validation are crucial steps in ensuring that the regression model provides reliable and accurate predictions or insights.
 
 # Multipredictor Regression
+
+## Motivation
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-01-Domain-Wall.md",
+                "file": "_posts/2024-03-03-Regression-Methods-in-Biostatistics.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5f16c9608f79f67e",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-01-Domain-Wall.md",
+                "file": "_posts/2024-03-03-Regression-Methods-in-Biostatistics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-01-Domain-Wall.md",
+                "file": "_posts/2024-03-03-Regression-Methods-in-Biostatistics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-01-Domain-Wall.md"
+                "file": "_posts/2024-03-03-Regression-Methods-in-Biostatistics.md"
               }
             }
           },
@@ -177,12 +178,12 @@
   },
   "active": "8f4df30737786289",
   "lastOpenFiles": [
+    "_posts/2024-03-01-Domain-Wall.md",
     "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
-    "_posts/2024-02-29-Regression-Methods-in-Biostatistics.md",
+    "_posts/2024-03-03-Regression-Methods-in-Biostatistics.md",
     "img/kink/kinkWorldLine.png",
     "img/kink",
     "_posts/2024-02-28-.md",
-    "_posts/2024-03-01-Domain-Wall.md",
     "_posts/2024-02-29-解析SARS-CoV-2药物治疗的现状与前沿挑战.md",
     "_posts/2024-02-28-Quantum-Kinks.md",
     "img/kinkMassvsCoupling.png",
