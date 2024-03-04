@@ -298,3 +298,7 @@ If the computed F-statistic is greater than the critical value, the null hypothe
 
 We have assumed normal distribution for the distribution of random variables. However, both the t-test and the F-test are pretty robust to violations of the normality assumption, especially in large samples, similar to the central limit theorem. *By robust we mean that the type-I error rate, which is the mistake of rejecting the null hypothesis when it actually holds, is not seriously affected.* They are, however, primarily sensitive to outliers, which will mess up the variation. 
 
+Specifically for the independent two-sample t-test, there's an important assumption known as the **equal variance assumption** or **homoscedasticity**. This assumption states that the variance within each of the groups being compared should be approximately equal. The t-test is less robust to violations to this assumption, which can seriously affect the type-I error rate (and not always in conservative direction). In contrast, the overall F-test in ANOVA loses efficiency, but the error rate of type-I is use seriously increases. If the assumption of equal variances is violated, adjustments to the t-test can be made to account for the difference in variances. One common approach is to use Welch's t-test, which does not assume equal population variances. Welch's t-test adjusts the degrees of freedom of the t-test based on the sample sizes and variances of the two groups, making it more reliable when the variances are unequal.
+
+# Correlation
+
