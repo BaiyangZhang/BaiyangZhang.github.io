@@ -156,7 +156,52 @@ Regression analysis involves selecting the appropriate model for the data, estim
 
 In practice, the choice of regression method depends on the nature of the dependent variable, the shape of the relationship, and the distribution of the residuals, among other factors. Proper model selection, diagnostic testing, and validation are crucial steps in ensuring that the regression model provides reliable and accurate predictions or insights.
 
-# Multipredictor Regression
+# Basic Statistical Methods
 
-## Motivation
+## t-Test and ANOVA (Analysis of Variance)
+
+My time is really limited here so I'll direct jump to a short review of some mostly commonly used statistical methods. 
+
+The basic $t$-test is used to compare two independent samples. The t-statistic on which the test is based is the difference between the two sample averages, divided by the standard error of that difference. The t-test is designed to work in small samples, whereas Z-tests are not. 
+
+- - -
+
+In the context of the t-test and statistical hypothesis testing, "significance" refers to the degree to which the test results allow us to reject the null hypothesis. The null hypothesis typically proposes that there is no effect or no difference between groups or conditions. When we say a result is "statistically significant," it means that the observed data are unlikely to have occurred under the null hypothesis, suggesting that there is a real effect or difference.
+
+The significance level, denoted as $\alpha$, is a threshold set by the researcher before conducting the test, which defines the probability of rejecting the null hypothesis when it is actually true (a type I error). Common values for $\alpha$ are 0.05, 0.01, and 0.10, with 0.05 being the most widely used. Setting $\alpha$ at 0.05 means that there is a 5% risk of concluding that a difference exists when there is no actual difference.
+
+The p-value is a key metric derived from the t-test that indicates the probability of observing the test results, or more extreme results, if the null hypothesis were true. A p-value that is less than or equal to the significance level ($p \leq \alpha$) indicates that the observed data are unlikely under the null hypothesis, leading to the rejection of the null hypothesis. In simpler terms, a low p-value (typically ≤ 0.05) suggests that the evidence against the null hypothesis is strong enough to consider the results statistically significant.
+
+**Interpretation of Significance**
+
+- **Statistically Significant**: If the test result is statistically significant, it suggests that the evidence is strong enough to reject the null hypothesis. This typically means there is a meaningful difference between the groups being compared, which is not likely to have occurred by chance.
+
+- **Not Statistically Significant**: If the result is not statistically significant, it suggests that the evidence is not strong enough to reject the null hypothesis. This could mean that there is no meaningful difference between the groups, or that the study did not have enough power (e.g., sample size was too small) to detect a difference if one exists.
+
+It's important to note that *statistical significance does not necessarily imply practical or clinical significance*. A result can be statistically significant but still be of little practical value if the observed effect or difference is too small to be of interest or use in a practical context.
+
+- - -
+
+### Two-sided Hypothesis Test
+
+In biostatistics, the two-sided t-test (also known as the two-tailed t-test) is commonly used to determine whether there is a significant difference between the means of two groups, *without specifying the direction of the difference*. This type of test is employed when the research question is concerned with whether there is any difference at all, rather than predicting which group will have a higher or lower mean.
+
+Biostatistics often involves comparing biological measurements or outcomes across different groups. For instance, one might compare the efficacy of two different medications, the impact of a treatment versus a placebo, or physiological measurements (like blood pressure) between two groups with different dietary habits. In these cases, researchers might not have a strong hypothesis about which group will have higher or lower means, or they may wish to test for the possibility of a difference in either direction. The two-sided t-test is ideal for these scenarios because it allows for the detection of significant differences regardless of their direction.
+
+The formula for the t-statistic in a two-sided t-test is similar to that of a one-sided t-test, but the *interpretation of the p-value and the critical value from the t-distribution is different*.
+
+For an independent two-sample t-test, the formula for the t-statistic remains:
+
+$$ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{s^2 \left(\frac{1}{n_1} + \frac{1}{n_2}\right)}} $$
+
+However, in a two-sided t-test, you're interested in differences in both directions, so you consider both tails of the distribution when determining the critical t-value or when interpreting the p-value.
+
+The hypotheses for a two-sided t-test are formulated as follows:
+
+- Null Hypothesis ($H_0$): There is no difference between the group means ($\mu_1 = \mu_2$).
+- Alternative Hypothesis ($H_a$): There is a difference between the group means ($\mu_1 \neq \mu_2$).
+
+In a two-sided t-test, the p-value represents the probability of observing a test statistic as extreme as, or more extreme than, the one observed, in either direction, assuming the null hypothesis is true. If this p-value is less than or equal to the chosen significance level ($\alpha$), the null hypothesis is rejected, indicating a statistically significant difference between the two group means.
+
+A significant result in a two-sided t-test suggests that there is enough evidence to conclude that a difference exists between the two group means, but it does not indicate which group has the higher mean. This approach is particularly useful in biostatistics, where establishing the existence of a difference can be crucial for further research, clinical decisions, or policy-making, even before the direction of the difference is fully understood.
 

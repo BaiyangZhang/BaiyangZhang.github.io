@@ -2,7 +2,7 @@
 layout: post
 title: Domain Wall
 subtitle: 
-date: 2024-03-01
+date: 2024-03-03
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -90,7 +90,7 @@ $$
 x^{\mu} = X_ {0}^{\mu} + \tau \hat{T}_ {0} + \xi \hat{N}_ {0},
 $$
 
-where $\hat{T}_ {0}$ and $\hat{N}_ {0}$ are the tangent and normal unit vector at time $\tau_ {0}$. However, we can always choose a time $\tau$ at which the coordinate in $\hat{T}$ direction is zero, this is always possible at least locally, when $x^{\mu}$ is close to the world line of the kink. It is illustrated in the following figure, which I shamelessly copied from Tanmay's textbook. 
+where $\hat{T}_ {0}$ and $\hat{N}_ {0}$ are the tangent and normal unit vector at time $\tau_ {0}$. However, we can always choose a time $\tau$ at which the coordinate in $\hat{T}$ direction is zero (at least locally), when $x^{\mu}$ is not too far away from kink world line. It is illustrated in the following figure, which I shamelessly copied from Tanmay's textbook. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -101,4 +101,41 @@ where $\hat{T}_ {0}$ and $\hat{N}_ {0}$ are the tangent and normal unit vector a
     The Thick curve is the kink world line. The kink-frame coordinates $y^a=(\tau,xi)$ are defined in the instantaneous rest frame of the kink and functions of the background coordinates $x^\mu=(t,x)$.
 </div>
 
+Generally speaking, given a curve $C:=p(t)$ parametrized by $t$ in manifold $\mathcal{M}$, the curve is a map from the parameter to the manifold,
+
+$$
+C : \mathcal{R} \to \mathcal{M}.
+$$
+
+Curve $p(t)$ defines a velocity vector $\dot{p}(t)$. Note that in a general manifold (including affine space), points and vectors are distinct concepts, each serving a different role, although they are closely related and often used together in geometric computations and theoretical discussions. The tangent vector really takes a set of parametrized points and turn them into something entirely different: vectors. Furthermore, vectors can be equivalently regarded as differentials operators. The philosophy can be roughly states as: we use functions to measure the space, and we use differential to measure vectors. For example, we use coordinate patches to denote different points on a manifold, but a coordinate patch is nothing but a map from (sub-) manifold to $\mathbb{R}^{n}$, hence is a real-valued function. A vector $V$ with components $V^{0},\cdots,V^{i}$ in basis $\left\lbrace x \right\rbrace$ can be regarded as a differential operator $V = V^{i} \partial_ {i}$. 
+
+In our case, the curve $X(\tau)$ is parametrized by $\tau$, and the worldline of the kink (center) can be regarded as a `coordinate curve`, that is to say the tangent vector given by $\partial_ {\tau}$ is not the basis. Recall that the 2-dimensional coordinate system was defined as $y^{a}=(\tau,\xi)$, we can talk about the metric in terms of $y$'s, denoted as $h_ {ab}$, in contrast to $g_ {\mu \nu}$ in terms of $x$'s.
+
+However, the treatment of $(\tau,\xi)$ in Vachaspati's textbook is a little weird, it seems to regard $X^{\mu}_ {0}$ (see the figure above) as some kink of origin, which is problematic in curved manifold. Maybe I missed something here? Anyways, here I will just treat $(\tau,\xi)$ as a (locally defined) coordinate system. We can also construct basis $\partial_ {\xi}$ such that their Lie bracket is zero, 
+
+$$
+[\partial_ {\tau},\partial_ {\xi}]=0
+$$
+
+as is required for coordinate basis, this is locally equivalent to $\partial_ {\tau}$ being parallel to $\partial_ {\xi}$. 
+
+We can go on and calculate the metric in terms of $y$ coordinates. Let $\left\langle X,Y \right\rangle$ be the inner product of vectors $X$ and $Y$, we have 
+
+$$
+h_ {00} := \left\langle \partial_ {\tau}, \partial_ {\tau} \right\rangle  = \left\langle \partial_ {\tau}X,\partial_ {\tau}X \right\rangle  = \left\langle (\partial_ {\tau}X^{\mu}) \partial_ {\mu},(\partial_ {\tau}X^{\nu}) \partial_ {\nu} \right\rangle  = g_ {\mu \nu} (\partial_ {\tau}X^{\mu}) (\partial_ {\tau}X^{\nu}).
+$$
+
+By construction we have 
+
+$$
+h_ {01} := \left\langle  \partial_ {\tau},\partial_ {\xi} \right\rangle =0
+$$
+
+and 
+
+$$
+h_ {11} := \left\langle \partial_ {\xi},\partial_ {\xi} \right\rangle  = -1.
+$$
+
+- - -
 
