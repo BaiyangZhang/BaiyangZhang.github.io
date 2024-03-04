@@ -11,7 +11,7 @@ tags:
   - domainWall
 ---
 
-# Kink 
+# Kink in 1+1 dimension
 
 Domain walls in theoretical physics are fascinating phenomena that arise in a variety of contexts, from condensed matter physics to cosmology. They are a type of topological soliton that occurs when a discrete symmetry is spontaneously broken. In simpler terms, domain walls can be thought of as boundaries between different phases or domains where the order parameter (some scalar degree of freedom) differs on either side.
 

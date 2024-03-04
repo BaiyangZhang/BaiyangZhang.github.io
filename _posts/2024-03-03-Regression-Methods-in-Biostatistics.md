@@ -166,6 +166,35 @@ The basic $t$-test is used to compare two independent samples. The t-statistic o
 
 - - -
 
+Below is the gist of the derivation of the t-distribution. Assume we have a population that follows a normal distribution with mean $\mu$ and standard deviation $\sigma$. We take a random sample of size $n$ from this population, and we calculate the sample mean $\bar{x}$. The sample mean $\bar{x}$ is also normally distributed (due to the Central Limit Theorem) with mean $\mu$ and standard deviation $\sigma / \sqrt{n}$. We standardize $\bar{x}$ to transform it into a standard normal variable $Z$:
+
+$$
+Z = \frac{\bar{x} - \mu}{\sigma / \sqrt{n}}
+$$
+
+In practice, $\sigma$ (the population standard deviation) is often unknown and must be estimated from the sample. We use the sample standard deviation $s$ as an estimate for $\sigma$, where $s$ is calculated from the sample data. We replace $\sigma$ with $s$ in the standardization formula, but this introduces additional variability because $s$ is an estimate:
+
+$$
+T = \frac{\bar{x} - \mu}{s / \sqrt{n}}
+$$
+
+This ratio $T$ does **not** follow a standard normal distribution anymore due to the uncertainty introduced by using $s$ instead of $\sigma$. Instead, the variable $T$ follows a distribution that is similar to the normal distribution but with heavier tails. This is the t-distribution. *The exact shape of the t-distribution depends on the sample size $n$ through the degrees of freedom, which is $n - 1$ in this context*. The degrees of freedom account for the additional uncertainty introduced by estimating the population standard deviation. 
+
+The t-distribution is formally defined through its probability density function (pdf), which is more complex than that of the normal distribution and involves the Gamma function. The pdf of the t-distribution for a given $t$ value and $v$ degrees of freedom (where $v = n - 1$) is given by:
+
+$$
+f(t; v) = \frac{\Gamma((v+1)/2)}{\sqrt{v\pi}\Gamma(v/2)} \left(1 + \frac{t^2}{v} \right)^{-(v+1)/2}
+$$
+
+where $\Gamma$ is the Gamma function, a generalization of the factorial function to complex numbers.
+
+In short, remember the following:
+
+- The t-distribution accounts for the additional uncertainty in estimating the population mean when the population standard deviation is unknown and the sample size is small.
+- As the sample size increases, the t-distribution approaches the standard normal distribution because the estimate $s$ becomes more accurate, reducing the extra uncertainty.
+
+- - -
+
 In the context of the t-test and statistical hypothesis testing, "significance" refers to the degree to which the test results allow us to reject the null hypothesis. The null hypothesis typically proposes that there is no effect or no difference between groups or conditions. When we say a result is "statistically significant," it means that the observed data are unlikely to have occurred under the null hypothesis, suggesting that there is a real effect or difference.
 
 The significance level, denoted as $\alpha$, is a threshold set by the researcher before conducting the test, which defines the probability of rejecting the null hypothesis when it is actually true (a type I error). Common values for $\alpha$ are 0.05, 0.01, and 0.10, with 0.05 being the most widely used. Setting $\alpha$ at 0.05 means that there is a 5% risk of concluding that a difference exists when there is no actual difference.
@@ -205,3 +234,41 @@ In a two-sided t-test, the p-value represents the probability of observing a tes
 
 A significant result in a two-sided t-test suggests that there is enough evidence to conclude that a difference exists between the two group means, but it does not indicate which group has the higher mean. This approach is particularly useful in biostatistics, where establishing the existence of a difference can be crucial for further research, clinical decisions, or policy-making, even before the direction of the difference is fully understood.
 
+- - -
+
+Suppose that we need to compare sample averages across the arms of a clinical trial with multiple treatments, or more generally across more than two independent samples. For this purpose, one-way analysis of variance (ANOVA) and the F-test take the place of the t-test. F-test technique extends the t-test, which compares only two means, by allowing comparisons among multiple groups simultaneously, thus providing a holistic view of the data.
+
+In the context of $F$-test, the *null hypothesis is that the mean values of the outcomes from all the populations sampled from are the same*, against the alternative that the means differ in at least two of the samples. 
+
+
+The F-test is based on the F-distribution and uses an F-statistic to test the null hypothesis. *The test essentially compares the variance between the groups to the variance within the groups*; a higher ratio suggests that the group means differ significantly.
+
+Key Concepts of One-Way ANOVA are
+
+- `Between-Group Variability`: Differences among the group means, which reflect the effect of the independent variable.
+- `Within-Group Variability`: Variations within each group, attributed to random error or individual differences not due to the treatment effect.
+- `F-Statistic`: A ratio of the between-group variability to the within-group variability. A larger F-statistic indicates a greater likelihood that significant differences exist among the group means.
+
+F-test assumes that:
+
+1. **Independence of Observations:** The data in different groups should be independent of each other.
+2. **Normality:** The distribution of the residuals (errors) should be approximately normally distributed for each group.
+3. **Homogeneity of Variances:** The variances among the groups should be approximately equal.
+
+Imagine a researcher wants to investigate the effect of different teaching methods on student performance. The researcher divides a group of 90 students into three equal groups, each subjected to a different teaching method: Method A (traditional), Method B (interactive), and Method C (technology-assisted). After a semester, the researcher measures the performance of each student on a standardized test.
+
+The research question is: "Do the three teaching methods result in different student performance levels?"
+
+To address this question using one-way ANOVA, the researcher would:
+
+1. **Calculate the group means:** Find the average performance score for students in each teaching method group.
+2. **Compute the ANOVA statistics:** Determine the between-group and within-group variances and calculate the F-statistic.
+3. **Compare the F-statistic to a critical value from the F-distribution:** The critical value depends on the level of significance (usually set at 0.05) and the degrees of freedom for the numerator (between-groups, $k - 1$, where $k$ is the number of groups) and the denominator (within-groups, $N - k$, where $N$ is the total number of observations).
+
+If the computed F-statistic is greater than the critical value, the null hypothesis is rejected, suggesting that there is a significant difference in student performance across at least two of the teaching methods. The researcher might then conduct post-hoc tests to identify specifically which groups differ from each other.
+
+- - -
+
+### Robustness 
+
+We have assumed normal distribution for the distribution of random variables. However, both the t-test and the F-test are pretty robust to violations of the normality assumption, especially in large samples, similar to the central limit theorem. *By robust we mean that the type-I error rate, which is the mistake of rejecting the null hypothesis when it actually holds, is not seriously affected.* They are, however, primarily sensitive to outliers, which will mess up the variation. 
