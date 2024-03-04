@@ -11,7 +11,7 @@ tags:
   - domainWall
 ---
 
-# Introduction
+# Kink 
 
 Domain walls in theoretical physics are fascinating phenomena that arise in a variety of contexts, from condensed matter physics to cosmology. They are a type of topological soliton that occurs when a discrete symmetry is spontaneously broken. In simpler terms, domain walls can be thought of as boundaries between different phases or domains where the order parameter (some scalar degree of freedom) differs on either side.
 
@@ -104,7 +104,7 @@ where $\hat{T}_ {0}$ and $\hat{N}_ {0}$ are the tangent and normal unit vector a
 Generally speaking, given a curve $C:=p(t)$ parametrized by $t$ in manifold $\mathcal{M}$, the curve is a map from the parameter to the manifold,
 
 $$
-C : \mathcal{R} \to \mathcal{M}.
+C : \mathbb{R} \to \mathcal{M}.
 $$
 
 Curve $p(t)$ defines a velocity vector $\dot{p}(t)$. Note that in a general manifold (including affine space), points and vectors are distinct concepts, each serving a different role, although they are closely related and often used together in geometric computations and theoretical discussions. The tangent vector really takes a set of parametrized points and turn them into something entirely different: vectors. Furthermore, vectors can be equivalently regarded as differentials operators. The philosophy can be roughly states as: we use functions to measure the space, and we use differential to measure vectors. For example, we use coordinate patches to denote different points on a manifold, but a coordinate patch is nothing but a map from (sub-) manifold to $\mathbb{R}^{n}$, hence is a real-valued function. A vector $V$ with components $V^{0},\cdots,V^{i}$ in basis $\left\lbrace x \right\rbrace$ can be regarded as a differential operator $V = V^{i} \partial_ {i}$. 
@@ -134,8 +134,62 @@ $$
 and 
 
 $$
-h_ {11} := \left\langle \partial_ {\xi},\partial_ {\xi} \right\rangle  = -1.
+h_ {11} := \left\langle \partial_ {\xi},\partial_ {\xi} \right\rangle  = -1. 
 $$
+
+Next we need to write down the action. We assume the only import region is spacetime is that close to the kink world line, far from it the spacetime would be flat and the fluctuation would be a bunch of plane waves, it shouldn't matter too much to the quantum correction of the domain wall. Thus we will only consider *the action given by a "band" around the kink world line.*
 
 - - -
 
+In the context of a curved spacetime, particularly in a two-dimensional, the action for a scalar field can be described using the general form that incorporates the effects of curvature. The action $S$ for a scalar field $\phi$ in a curved spacetime can be written as:
+
+$$
+S = \int d^2x \sqrt{-g} \left( -\frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi - V(\phi) + \frac{1}{2} g R \phi^2 \right) 
+\tag{2} 
+$$
+
+Here $d^2x \sqrt{-g}$ represents the *invariant differential volume element* in two-dimensional spacetime, $g^{\mu\nu}$ is the inverse metric tensor, used to raise indices. $g$ is a dimensionless coupling constant that describes the coupling of the scalar field to the Ricci scalar $R$, a scalar quantity that describes the curvature of spacetime and is obtained by contracting the Ricci tensor $R_{\mu\nu}$. The term $\frac{1}{2} \xi R \phi^2$ is known as the non-minimal coupling term. In two dimensions, the choice of $g$ can be particularly interesting due to the conformal properties of the spacetime. For now we will neglect the non-minimal coupling term.
+
+In our coordinates $y=(\tau,\xi)$ and metric is $h_ {ab}$, the determinant of $h_ {ab}$ reads
+
+$$
+h := \det h = - g_ {\mu \nu} \partial_ {\tau}X^{\mu} \partial_ {\tau}X^{\nu}.
+$$
+
+As before we want to study the effects of small fluctuation about the kink background, so we write 
+
+$$
+\phi = \phi_ {k} + \psi
+$$
+
+where $\phi_ {k}$ is the classical kink solution, $\psi$ is the deviation from it. Upon quantization we will only quantize $\psi$ not $\phi_ {k}$. The action now follows from Eq. (2), 
+
+$$
+\begin{align*}
+S &= \int d\tau d\xi \, \sqrt{ \left\lvert h \right\rvert  } \mathcal{L}(\phi) \\
+&= \int d\tau d\xi  \, \sqrt{ \left\lvert h \right\rvert  } \mathcal{L}(\phi_ {k}+\psi)  \\
+&= \int d\tau d\xi  \, \sqrt{ \left\lvert h \right\rvert  } \mathcal{L}(\phi_ {k}) + \int \frac{\delta^{2}S}{\delta \phi \delta \phi} \, \psi^{2} + \mathcal{O}(\psi^{3})   \\
+&= -M_ {\text{kink}} \int d\tau \, \sqrt{ \left\lvert h \right\rvert  } + \mathcal{O}(\psi^{2}).
+\end{align*}
+$$
+
+This is just we we have conjectured in Eq.(1), plus some higher order corrections! If the kink is moving relatively slowly, $\left\lvert h \right\rvert$ would be approximately $1$. Note that the negative kink mass comes from the integral
+
+$$
+\int d \xi \, \mathcal{L} = \int d\xi \,  (T-V) = -\int d\xi \, V =M_ {\text{kink}},
+$$
+
+the first order of $\psi$ disappears due to the fact that $\phi_ {k}$ is a solution to the equation of motion. 
+
+Note that the leading term in the effective action $\int d\tau$ is proportional to the world volume. This result can easily be extended to walls (and strings) propagating in higher dimensions. Even if the self-gravity of the domain wall is taken into account, the dominant contribution to the effective action is still the Nambu-Goto action. 
+
+
+# Walls in 3 + 1 dimensions
+
+In $3+1$ dimension, the position of domain wall, being a co-dimension one object, is described by $2+1$ dimensional coordinates. Let the location of the domain wall be 
+
+$$
+X^{\mu} = X^{\mu}(y),\quad  y = \tau,\zeta,\chi.
+$$
+
+where $\tau$ is again the proper time. 
