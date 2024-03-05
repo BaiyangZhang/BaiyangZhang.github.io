@@ -195,5 +195,43 @@ $$
  $\tau$ is again the proper time, $\xi^{1,2}$ are spatial coordinates. $y$ is the coordinates on the domain-wall world-volume, similar to the case in $1+1$ dimension, with metric given by 
 
 $$
- h_ {ab} = g_ {\mu \nu}(X) \frac{ \partial X^{\mu} }{ \partial y^{a} }  \frac{ \partial X^{\nu} }{ \partial y^{b} } 
+ h_ {ab} = g_ {\mu \nu}(X) \frac{ \partial X^{\mu} }{ \partial y^{a} }  \frac{ \partial X^{\nu} }{ \partial y^{b} } .
 $$
+
+The major difference between the kink in 1 + 1 dimensions and the domain wall is that the wall can be curved, and so the profile $\phi_ {\text{kink}}$ does not solve the equation of motion. The dynamics of a domain wall is much richer, for example, as the wall moves it accelerates and emits radiation. 
+
+The Nambu-Goto action of domain wall can be derived in the same way as in 1+1 kink, 
+
+$$
+S_ {0} = - \sigma \int d^{3} y \, \sqrt{ \left\lvert h \right\rvert  }
+\tag{3} 
+$$
+
+where $\sqrt{ \left\lvert h \right\rvert }$ comes from the invariant integral measure $\sqrt{ \left\lvert h \right\rvert } d^{3}y$, and $\sigma$ is the tension of the wall. 
+
+From the effective action of the domain wall Eq.(3) we can derive the equation of motion for the wall. But before that we need to know how the variation of the determinant of a matrix $h$. There are two ways to achieve that. One can calculate $\delta \det h$ directly. Under the variation $h\to h+\delta h$ where $\delta h$ is assumed to be infinitesimal, we have 
+
+$$
+\begin{align*}
+\det (h+\delta h) &=  \det (h(\mathbb{1}+h^{-1} \delta h))\\
+&= \det h \times  \det(\mathbb{1}+h^{-1} \delta h)\\
+&= \det h ( 1 + \mathrm{Tr}\,(h^{-1} \delta h) + \mathcal{O}(\delta h^{2}) )\\
+&= \det h + \det h \times \mathrm{Tr}\,(h^{-1} \delta h).
+\end{align*}
+$$
+
+Hence 
+
+$$
+\delta \det h \equiv \det (h+\delta h)-\det(h) = \det h \times \mathrm{Tr}\,(h^{-1} \delta h).
+$$
+
+We just mention on the fly that there is another formula
+
+$$
+\det M = \exp(\mathrm{Tr}\,\ln M).
+$$
+
+We could also start with this formula and arrive at the same result.
+
+
