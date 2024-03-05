@@ -186,10 +186,14 @@ Note that the leading term in the effective action $\int d\tau$ is proportional 
 
 # Walls in 3 + 1 dimensions
 
-In $3+1$ dimension, the position of domain wall, being a co-dimension one object, is described by $2+1$ dimensional coordinates. Let the location of the domain wall be 
+In $3+1$ dimension, the position of domain wall, being a co-dimension one object in space, is described by $2+1$ dimensional coordinates. To be more specific, a domain wall in 3-dimensional space is a 2D plane, hence is parametrized by two parameters, call them $\xi^{1}$ and $\xi^{2}$. As a consequence the world-volume of such a domain wall is 2+1 dimensional hence should be parametrized by three parameters. This is reflected in how we describe the location of domain wall. Let the location of the domain wall be 
 
 $$
-X^{\mu} = X^{\mu}(y),\quad  y = \tau,\zeta,\chi.
+X^{\mu} = X^{\mu}(y),\quad  y = (\tau,\xi^{1},\xi^{2}),
 $$
 
-where $\tau$ is again the proper time. 
+ $\tau$ is again the proper time, $\xi^{1,2}$ are spatial coordinates. $y$ is the coordinates on the domain-wall world-volume, similar to the case in $1+1$ dimension, with metric given by 
+
+$$
+ h_ {ab} = g_ {\mu \nu}(X) \frac{ \partial X^{\mu} }{ \partial y^{a} }  \frac{ \partial X^{\nu} }{ \partial y^{b} } 
+$$

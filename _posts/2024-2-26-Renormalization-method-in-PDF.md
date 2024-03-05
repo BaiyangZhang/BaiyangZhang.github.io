@@ -2,7 +2,7 @@
 layout: post
 title: Renormalization method in PDF
 subtitle: 
-date: 2024-2-26
+date: 2024-3-2
 author: Baiyang Zhang
 header-img: img/mathArt15.jpg
 catalog: true
@@ -10,15 +10,15 @@ tags:
   - Math
   - Renormalization
 ---
-### Abstract
+# Abstract
 
 The application of renormalization group method in solving the differential equation in the momentum space, and the error estimation of the solution with finite sized lattice size.
 
-### Introduction
+# Introduction
 
 The question we want to answer here is very simple: If we solve the PDF in the momentum space with a given cutoff $\Lambda$, how does the solution change with respect to $\Lambda$?
 
-### First Order Homogeneous Linear Differential Equation
+# First Order Homogeneous Linear Differential Equation
 
 We want a well behaved function $\mathbb{R} \to \mathbb{R}$ so we begin with Gaussian function $g(t) = e^{-\lambda t^2}$. The equation it solves is 
 
@@ -91,7 +91,7 @@ $$
 Define 
 
 $$
-\boxed{\Delta g^{(\infty - \Lambda)}(t) \equiv g^{(\infty)}(t) - g^{(\Lambda)}(t)},
+\boxed{\Delta g(t) \equiv g^{(\infty)}(t) - g^{(\Lambda)}(t)},
 $$
 
 we have 
@@ -107,17 +107,17 @@ $$
 \end{align}
 $$
 
-where we have simplified notations, Re erf is the real part of the error function, and $\text{erfi}(z)$ is the so-called imaginary error function defined by $\text{erfi}(z) = -i \,\text{erf}(iz)$. For more properties of error function, see App.~\ref{sec:error}. 
+where we have simplified notations, Re erf is the real part of the error function, and $\text{erfi}(z)$ is the so-called imaginary error function defined by $\text{erfi}(z) = -i \,\text{erf}(iz)$. 
 
-Well, the last expression is not super helpful, we can do better by looking at $|\Delta g^2|$ as an estimate of the overall error. Square the second line in the previous equation we get 
+Well, the last expression is not super helpful, we can do better by looking at $\Delta g^2$ as an estimate of the overall error. Square the second line in the previous equation we get 
 
 $$
-\begin{align}
+\begin{align*}
 \notag
-    \Delta g(t)^2 &=\frac{1}{4\pi\lambda}  \int_ {|\omega_ 1|>\Lambda} d\omega_ 1 \int_ {|\omega_ 2|>\Lambda} d\omega_ 2 \, e^{-\omega_ 1^2/4\lambda - \omega_ 1^2/4\lambda} \cos(\omega_ 1 t) \cos(\omega_ 2 t) \\\notag
-    &=\frac{1}{4\pi\lambda} \int_ {|\omega_ {1,2}|>\Lambda} d^2\omega  e^{-\omega^2/4\lambda} \cos(\omega_ 1 t) \cos(\omega_ 2 t) \\
-    & < \frac{1}{4\pi\lambda} \int_ {|\omega_ {1,2}|>\Lambda} d^2\omega  e^{-\omega^2/4\lambda} 
-\end{align}
+    \Delta g(t)^2 &=\frac{1}{4\pi\lambda}  \int_ {\left\lvert \omega_ 1 \right\rvert >\Lambda} d\omega_ 1 \int_ {\left\lvert \omega_ 2 \right\rvert >\Lambda} d\omega_ 2 \, e^{-\omega_ 1^2/4\lambda - \omega_ 1^2/4\lambda} \cos(\omega_ 1 t) \cos(\omega_ 2 t) \\\notag
+    &=\frac{1}{4\pi\lambda} \int_ {\left\lvert \omega_ {1,2} \right\rvert >\Lambda} d^2\omega  e^{-\omega^2/4\lambda} \cos(\omega_ 1 t) \cos(\omega_ 2 t) \\
+    & < \frac{1}{4\pi\lambda} \int_ {\left\lvert \omega_ {1,2} \right\rvert >\Lambda} d^2\omega  e^{-\omega^2/4\lambda} 
+\end{align*}
 $$
 
 where $\omega^2 = \omega_ 1^2 + \omega_ 2^2$. The integral region is shown in the Figure below, the four corners where $\omega_ {1,2}>\Lambda$ corresponds to the integral region. We can extend the region first to $(\mathbb{R}^2 - \text{square})$, then to $(\mathbb{R}^2 - \text{disk})$, each step will increase the error, thus we will get an upper bound. The reason for changing the square to circle is that so we can use the rotation symmetry. Continue with the integral,
@@ -130,7 +130,9 @@ $$
     &= \frac{1}{4\pi\lambda}2\pi \int_ {\Lambda}^\infty \int d\omega \, \omega e^{-\omega^2/4\lambda}
 \end{align}
 $$
+
 where we have used $d^2 \omega = d\omega \omega d\theta$,
+
 $$
 \begin{align}
     |\Delta g(t)|^2 &< \frac{1}{4\lambda} \int_ {\Lambda}^\infty \int d\omega^2 \, \omega e^{-\omega^2/4\lambda} \\
@@ -191,17 +193,17 @@ In summary, We have obtained the lattice spacing dependence, or equivalently the
 
 - - -
 
-### In-homogeneous Linear Differential Equation
+# In-homogeneous Linear Differential Equation
 
 
 - - -
 
-### kink Equation
+# kink Equation
 
 
 - - -
 
-### Conventions
+# Conventions
 
 The conventions are chose so be the same as that used by Mathematica.
 
@@ -220,7 +222,7 @@ Note the factor of $\frac{1}{\sqrt{2\pi}}$ and the signs in the exponent.
 
 - - -
 
-### Error function in the complex plane
+# Appendix A. Error function in the complex plane
 
 The error function in the complex plane is defined to be
 
