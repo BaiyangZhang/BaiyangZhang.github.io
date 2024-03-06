@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-06-Domain-Wall.md",
+                "file": "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-06-Domain-Wall.md",
+                "file": "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-06-Domain-Wall.md",
+                "file": "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-06-Domain-Wall.md"
+                "file": "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md"
               }
             }
           },
@@ -178,9 +178,9 @@
   },
   "active": "8f4df30737786289",
   "lastOpenFiles": [
+    "_posts/2024-03-06-Domain-Wall.md",
     "img/kink/movingWall.png",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_posts/2024-03-06-Domain-Wall.md",
     "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
     "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
     "_posts/2024-02-28-Quantum-Kinks.md",
@@ -222,7 +222,6 @@
     "img/relaxationMethod - Copy.jpg",
     "img/boundaryMap.png",
     "img/boundaryHomo.png",
-    "img/shortExactSequence.png",
-    "img/homotopyCommute.png"
+    "img/shortExactSequence.png"
   ]
 }
