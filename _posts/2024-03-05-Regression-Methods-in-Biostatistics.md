@@ -2,7 +2,7 @@
 layout: post
 title: "Regression Methods\rin Biostatistics"
 subtitle: 
-date: 2024-03-03
+date: 2024-03-05
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -301,4 +301,29 @@ We have assumed normal distribution for the distribution of random variables. Ho
 Specifically for the independent two-sample t-test, there's an important assumption known as the **equal variance assumption** or **homoscedasticity**. This assumption states that the variance within each of the groups being compared should be approximately equal. The t-test is less robust to violations to this assumption, which can seriously affect the type-I error rate (and not always in conservative direction). In contrast, the overall F-test in ANOVA loses efficiency, but the error rate of type-I is use seriously increases. If the assumption of equal variances is violated, adjustments to the t-test can be made to account for the difference in variances. One common approach is to use Welch's t-test, which does not assume equal population variances. Welch's t-test adjusts the degrees of freedom of the t-test based on the sample sizes and variances of the two groups, making it more reliable when the variances are unequal.
 
 # Correlation
+
+Pearson correlation coefficient, often symbolized as $r$, is a measure of the linear correlation between two variables $X$ and $Y$. In biostatistics, it's widely used to quantify the degree to which two biological or health-related variables are linearly related. The value of $r$ ranges from -1 to +1, where:
+
+- $r = 1$ indicates a perfect positive linear relationship,
+- $r = -1$ indicates a perfect negative linear relationship,
+- $r = 0$ suggests no linear relationship.
+
+
+In biostatistics, Pearson correlation is used to explore relationships between various biological, clinical, or health-related variables. Some examples include:
+
+1. **Gene Expression Studies**: Researchers might use Pearson correlation to assess the relationship between the expression levels of two genes across various conditions or tissue types, helping to identify potentially co-regulated genes or gene pairs with opposing expression patterns.
+
+2. **Nutritional Epidemiology**: It can be used to explore the relationship between dietary intake (like calorie intake) and health outcomes such as blood pressure or cholesterol levels. A positive correlation might suggest that higher intake is associated with higher blood pressure, while a negative correlation could indicate the opposite.
+
+3. **Clinical Trials**: In trials, Pearson correlation might be applied to examine the relationship between the dose of a drug and its effect on a biomarker. A positive correlation would suggest that as the dose increases, the biomarker levels also increase, indicating a possible dose-response relationship.
+
+The Pearson correlation coefficient is calculated as:
+
+$$
+r = \frac{\left\langle (x-\overline{x})(y-\overline{y}) \right\rangle }{\sqrt{  \left\langle (x-\overline{x})^{2} \right\rangle \left\langle (y-\overline{y})^{2} \right\rangle }}
+$$
+
+Where $\left\langle \bullet \right\rangle$ is the *sample  mean* of $\bullet$, not the population mean. 
+
+While the Pearson correlation coefficient is a powerful tool, it has limitations. It only measures *linear relationships*, so it may not capture more complex patterns. Additionally, *it is sensitive to outliers*, which can disproportionately affect the correlation coefficient. Finally, *a significant Pearson correlation does not imply causation; it only indicates that a linear relationship exists*.
 
