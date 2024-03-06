@@ -48,7 +48,7 @@ The Fourier transformed equation reads
 $$
   \int_ {-\infty}^{\infty} \frac{d\omega}{\sqrt{2\pi}}
   e^{-i\omega t} 
-  \left\{ -i \omega \tilde{g}(\omega) - 2i\lambda \frac{d}{d\omega} \tilde{g}(\omega) \right\}.
+  \left\lbrace -i \omega \tilde{g}(\omega) - 2i\lambda \frac{d}{d\omega} \tilde{g}(\omega) \right\rbrace.
 $$
 
 A lower bound in the lattice size $a$ corresponds to an upper bound $\Lambda$ in the momentum (exchangeable with frequency in our discussion) space, $a \sim 1/\Lambda$, thus we have
@@ -57,7 +57,7 @@ $$
 \begin{align}
 &\int_ {-\Lambda}^{\Lambda} \frac{d\omega}{\sqrt{2\pi}}
 e^{-i\omega t} 
-\left\{ -i \omega \tilde{g}(\omega) - 2i\lambda \frac{d}{d\omega} \tilde{g}(\omega) \right\} = 0, \\
+\left\lbrace -i \omega \tilde{g}(\omega) - 2i\lambda \frac{d}{d\omega} \tilde{g}(\omega) \right\rbrace = 0, \\
 \implies & \omega \tilde{g}(\omega) + 2\lambda \frac{d}{d\omega} \tilde{g}(\omega) = 0\, \forall \, |\omega| < \Lambda, \quad 0 \text{ otherwise}
 \end{align}
 $$
@@ -85,7 +85,7 @@ $$
 where the Fourier transform of Gaussian function is 
 
 $$
-  \mathcal{F}\left\{e^{-\lambda x^2}\right\}(\omega) = \frac{1}{\sqrt{2 \lambda }}e^{-\frac{\omega ^2}{4 \lambda }}
+  \mathcal{F}\left\lbrace e^{-\lambda x^2}\right\rbrace(\omega) = \frac{1}{\sqrt{2 \lambda }}e^{-\frac{\omega ^2}{4 \lambda }}
 $$
 
 Define 
@@ -216,7 +216,7 @@ $$
 \end{align}
 $$
 
-where $\tilde{f}(\omega) \equiv \mathcal{F}\left\{ f \right\}(\omega)$.
+where $\tilde{f}(\omega) \equiv \mathcal{F} \left\lbrace f \right\rbrace(\omega)$.
 
 Note the factor of $\frac{1}{\sqrt{2\pi}}$ and the signs in the exponent.
 

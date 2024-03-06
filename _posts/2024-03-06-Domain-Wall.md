@@ -234,4 +234,43 @@ $$
 
 We could also start with this formula and arrive at the same result.
 
+Instead of giving the full derivation of the equation of notion, we only mention here that the equation is highly non-linear since $h_ {ab}$ itself is defined as a quadratic in derivative of $X^{\mu}$. 
+
+# Some solutions
+
+The effective action of domain wall, or Nambu-Goto action, is valid when the domain wall is not curved too much, and separate walls (or different parts of the same wall) are not placed too closely. Otherwise the single kink solution would not be a very good approximation. In addition, in the center of mass frame, the velocity of the wall should be relatively small. If these conditions are met, we can use Nambu-Goto effective action to study the properties of walls. 
+
+Recall that we use $y^{a}, a=0,1,2$ for the parametrization of the world volume of the domain wall. (We will not dwell on the difference between parametrization and coordination here, but we should be aware.) In components $y=(\tau,\xi^{1},\xi^{2})$. The Minkowski metric is defined as $\eta=(1,-1,-1,-1)$. 
+
+A domain wall flat in $x-y$ direction is described by 
+
+$$
+X^{\mu} = (X^{0}=t, X^{1}=\xi^{1}, X^{2} = \xi^{2}, X^{3}=0).
+$$
+
+Next consider a planar domain wall with some "ripples" in $3$-direction, then $X^{3}$ is a function of $y$'s just as $X^{1}$ and $X^{2}$. Write
+
+$$
+X^{\mu} = (X^{0}=t, X^{1}=\xi^{1}, X^{2} = \xi^{2}, X^{3}=X^{3}(y)).
+$$
+
+The metric is given by 
+
+$$
+h_ {ab} = \eta_ {\mu \nu} \partial_ {a}X^{\mu} \partial_ {b}X^{\nu} = \eta_ {ab} - \partial_ {a} X^{3} \partial_ {b}X^{3}
+$$
+
+Then we can calculate the inverse of $h_ {ab}$, insert it into the equation of motion, and solve it. Of course it is easier said then done, here we only mention some of the results. One class of solutions found by Friedlander etc. in 1976 corresponds to a pulse of arbitrary shape on a planar domain wall that propagates in the $+X^{1}$ direction *at the speed of light*. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/movingWall.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Sketch of a traveling wave on a planar domain wall. The pulse propagates at the speed of light along the wall. Figure taken from Tanmay Vachaspati, who is a physics professor at Case Western Reserve University. 
+</div>
+
+These solutions are known as `travelling waves`. 
+
 

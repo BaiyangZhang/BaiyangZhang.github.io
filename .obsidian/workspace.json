@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-06-Domain-Wall.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-06-Domain-Wall.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-06-Domain-Wall.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md"
+                "file": "_posts/2024-03-06-Domain-Wall.md"
               }
             }
           },
@@ -178,17 +178,20 @@
   },
   "active": "8f4df30737786289",
   "lastOpenFiles": [
-    "_posts/2024-03-06-Domain-Wall.md",
-    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+    "img/kink/movingWall.png",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
+    "_posts/2024-03-06-Domain-Wall.md",
     "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
+    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+    "_posts/2024-02-28-Quantum-Kinks.md",
+    "_posts/2024-03-03-Domain-Wall.md",
     "_posts/2022-7-17-Conventions-and-Formula.md",
+    "_posts/2024-03-03-Regression-Methods-in-Biostatistics.md",
     "_posts/2024-03-04-Domain-Wall.md",
     "img/kink/kinkWorldLine.png",
     "img/kink",
     "_posts/2024-02-28-.md",
     "_posts/2024-02-29-解析SARS-CoV-2药物治疗的现状与前沿挑战.md",
-    "_posts/2024-02-28-Quantum-Kinks.md",
     "img/kinkMassvsCoupling.png",
     "_posts/2024-02-27-Quantum-Kinks.md",
     "2015-05-15-images.md",
@@ -214,9 +217,6 @@
     "_posts/2024-1-10-Representables-in-Category-Theory.md",
     "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
     "_posts/2023-12-26-Renormalization-method-in-PDF.md",
-    "_posts/2023-12-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-20-Note-on-Quantum-Kink-Mass-in-3D.md",
     "img/kinkLevel.png",
     "img/hom.png",
     "img/relaxationMethod - Copy.jpg",
