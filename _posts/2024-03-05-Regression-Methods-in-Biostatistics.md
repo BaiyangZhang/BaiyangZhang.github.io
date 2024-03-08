@@ -359,7 +359,7 @@ Kendall's tau (often denoted as $\tau$) is a measure of association or correlati
 The formula for Kendall's tau for two variables $X$ and $Y$ with $n$ observations each is given by:
 
 $$ 
-\tau = \frac{{\text{Number of concordant pairs} - \text{Number of discordant pairs}}}{{\text{Number of possible pairs}}} 
+\tau = \frac{\text{Number of concordant pairs} - \text{Number of discordant pairs}}{\text{Number of possible pairs}} 
 $$
 
 Where:
