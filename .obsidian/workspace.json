@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
+                "file": "_posts/2024-03-07-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
+                "file": "_posts/2024-03-07-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
+                "file": "_posts/2024-03-07-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md"
+                "file": "_posts/2024-03-07-Note-on-Kink-Mass-Correction-in-3D-Part-II.md"
               }
             }
           },
@@ -178,6 +178,12 @@
   },
   "active": "8f4df30737786289",
   "lastOpenFiles": [
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
+    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
+    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
+    "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
     "_posts/2024-03-06-Domain-Wall.md",
     "img/kink/movingWall.png",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
@@ -198,7 +204,7 @@
     "img/boxPlot.png",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
-    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-03-07-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-02-25-Kinks-in-QFT.md",
     "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-7-Transseries-Lecture-2.md",
@@ -212,11 +218,6 @@
     "_includes/pagination.liquid",
     "_includes/news.liquid",
     "_includes/metadata.liquid",
-    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
-    "_posts/2023-12-26-Renormalization-method-in-PDF.md",
     "img/kinkLevel.png",
     "img/hom.png",
     "img/relaxationMethod - Copy.jpg",
