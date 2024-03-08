@@ -363,9 +363,9 @@ $$
 $$
 
 Where:
-- A pair of observations $X_i, Y_i$ and $X_j, Y_j$ is considered concordant if the ranks agree, i.e., if $(X_i - X_j)(Y_i - Y_j) > 0$.
-- A pair is discordant if the ranks disagree, i.e., if $(X_i - X_j)(Y_i - Y_j) < 0$.
-- The number of possible pairs is the total number of pairs of observations, which is $\frac{{n(n-1)}}{2}$ for n observations.
+- A pair of observations $X_ i, Y_ i$ and $X_ j, Y_ j$ is considered concordant if the ranks agree, i.e., if $(X_ i - X_ j)(Y_ i - Y_ j) > 0$.
+- A pair is discordant if the ranks disagree, i.e., if $(X_ i - X_ j)(Y_ i - Y_ j) < 0$.
+- The number of possible pairs is the total number of pairs of observations, which is $\frac{n(n-1)}{2}$ for n observations.
 
 Let's go through an example to illustrate Kendall's tau:
 
@@ -390,9 +390,9 @@ pairs (5, 2), (5, 1), (5, 3), (4, 1), (4, 3), (3, 1)
 
 Step 2: Calculate Kendall's tau.
 
-$$ \tau = \frac{{\text{Concordant pairs} - \text{Discordant pairs}}}{{\text{Number of possible pairs}}} $$
+$$ \tau = \frac{\text{Concordant pairs} - \text{Discordant pairs}}{\text{Number of possible pairs}} $$
 
-$$ \tau = \frac{{4 - 6}}{{\frac{{5(5-1)}}{2}}} = \frac{{-2}}{{10}} = -0.2 $$
+$$ \tau = \frac{4 - 6}{\frac{{5(5-1)}}{2}} = \frac{-2}{10} = -0.2 $$
 
 So, Kendall's tau for the given data is -0.2. 
 
