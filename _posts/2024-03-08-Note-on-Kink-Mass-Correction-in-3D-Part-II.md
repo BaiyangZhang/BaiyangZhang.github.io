@@ -102,3 +102,48 @@ hence in $2+1$ dimension the coupling has dimension of mass.
 
 ## Normal Modes
 
+Since we assumed the domain wall to be flatly lying in the $y$-plane, the normal modes in 2-d space can be *factorized* into $x$ and $y$ components,
+
+$$
+{\mathfrak g} _ {k_ {x}k_ {y}} (x,y) =  {\mathfrak g}_ {k_ {x}}(x) \times  e^{ -i y k_ {y}}.
+$$
+
+The normal modes are the solution of the equation of motion in the kink background, or Poschl-Teller potential. These modes include a continuum
+
+$$
+ {\mathfrak g} _ {k}(x) = \frac{e^{-ikx}}{\omega_ {k} \sqrt{m^2+4k^2}}\left[2k^2-m^2+(3/2)m^2\text{sech}^2(m x/2)-3im k\tanh(m x/2)\right]
+$$
+
+with eigenvalue $\omega_ {k} = \sqrt{ k^{2}+m^{2} }$, a zero mode 
+
+$$
+{\mathfrak g}_ {B} = -\sqrt{ \frac{3m}{8} } \text{sech}^{2}\left( \frac{mx}{2} \right)
+$$
+
+with eigenvalue $0$ and a shape mode
+
+$$
+ {\mathfrak g} _ {S} = \frac{\sqrt{ 3m }}{2} \tanh \frac{mx}{2} \text{sech} \frac{mx}{2}
+$$
+
+with eigenvalue less then the rest mass of excited particle, $\omega_ {s} = \frac{\sqrt{ 3 }}{2}m$. 
+
+Momentum in the $y$-direction also contributes to the total energy, putting them together with the zero modes, shape modes and continuum in the $x$ direction we have 
+
+$$
+\omega_ {Bk_ {}y} = \left\lvert k_ {y} \right\rvert ,\quad  \omega_ {Sk_ {y}} = \sqrt{ \frac{3m^{2}}{4}+k_ {y}^{2} },\quad  \omega_ {k_ {x} k_ {y}} = \sqrt{ m^{2}+k_ {x}^{2}+k_ {y}^{2} }.
+$$
+
+Note that 
+
+- there is a zero mode corresponding to $k_ {B},k_ {y}=0$,
+- the mass gap disappears, due to the mass-gap-less of $y$-momentum.
+
+The formalism we developed in generic dimension $d$ surely also applies to $d=2$. Let $\vec{p}=(p_ {x},p_ {y})$ and $\vec{k}=(k_ {x},k_ {y})$. The Fourier transform is 
+
+$$
+ \tilde{\mathfrak{g} }_ {k_ {x},k_ {y}} (\vec{p})= \int d^{2}x \,   \mathfrak{g} _ {k}(\vec{x}) e^{ -i\vec{k}\cdot \vec{x} } = (2\pi)\delta(k_ {y}-p_ {y}) \times   \tilde{\mathfrak{g}} _ k (p_ {x}).
+$$
+
+Again we see the factorization in $x$ and $y$, the $\delta$-function in $y$ direction is due to the plane wave expansion. 
+
