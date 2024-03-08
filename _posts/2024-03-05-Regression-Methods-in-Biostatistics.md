@@ -327,3 +327,78 @@ Where $\left\langle \bullet \right\rangle$ is the *sample  mean* of $\bullet$, n
 
 While the Pearson correlation coefficient is a powerful tool, it has limitations. It only measures *linear relationships*, so it may not capture more complex patterns. Additionally, *it is sensitive to outliers*, which can disproportionately affect the correlation coefficient. Finally, *a significant Pearson correlation does not imply causation; it only indicates that a linear relationship exists*.
 
+- - -
+
+Like the $t$-test and linear regression, the correlation coefficients are sensitive to outliers. In this case, a *robust* alternative is the Spearman correlation coefficient, which is equivalent to the Pearson coefficient applied to the `ranks` of $x$ and $y$. *By rank we mean position in the ordered sequence of the values of a variable*. For example, if $x$ takes on values $1.2,5.1,4.3,16.0$, then we first order them from small to large, then the so-called rank is the position; the rank of $1.2$ is 1, the rank of 4.3 is 2, the rank of the outlier 16.0 is 4. In the given order the outliers are by construction either on the smallest end or the largest end. Ranks are used in a range of nonparametric methods, in no small part because of their robustness when the data include outliers. Their disadvantage is that any information contained in the measured values of the outcome beyond the ranks is lost.
+
+To be more specific, here's a step-by-step explanation of how ranking is done, along with an example:
+
+1. **Sort the data**: Arrange the data in ascending or descending order.
+
+2. **Assign ranks**: Assign ranks to each observation based on its position in the sorted data. The smallest observation gets a rank of 1, the second smallest gets a rank of 2, and so on.
+
+3. **Handle tied ranks**: If there are tied values (i.e., two or more observations with the same value), assign them the average of the ranks they would have received. For example, if two observations tie for the second smallest value, each would receive a rank of 2.5.
+
+Let's illustrate this with an example. Consider the following dataset: 10, 15, 8, 20, 25, 15, 30
+
+1. Sort the data: 8, 10, 15, 15, 20, 25, 30
+
+2. Assign ranks:
+   - 8 gets a rank of 1
+   - 10 gets a rank of 2
+   - 15 gets a rank of 3.5 (average of ranks 3 and 4)
+   - 15 gets a rank of 3.5 (average of ranks 3 and 4)
+   - 20 gets a rank of 5
+   - 25 gets a rank of 6
+   - 30 gets a rank of 7
+
+- - -
+
+Kendall's tau (often denoted as $\tau$) is a measure of association or correlation between two ranked variables. It's a `non-parametric statistic`, meaning *it doesn't assume any specific distribution for the variables involved*. Kendall's tau is particularly useful when dealing with ranked or ordinal data, where the exact numerical values of the data points might not be as important as their relative ordering.
+
+The formula for Kendall's tau for two variables $X$ and $Y$ with $n$ observations each is given by:
+
+$$ 
+\tau = \frac{{\text{Number of concordant pairs} - \text{Number of discordant pairs}}}{{\text{Number of possible pairs}}} 
+$$
+
+Where:
+- A pair of observations $X_i, Y_i$ and $X_j, Y_j$ is considered concordant if the ranks agree, i.e., if $(X_i - X_j)(Y_i - Y_j) > 0$.
+- A pair is discordant if the ranks disagree, i.e., if $(X_i - X_j)(Y_i - Y_j) < 0$.
+- The number of possible pairs is the total number of pairs of observations, which is $\frac{{n(n-1)}}{2}$ for n observations.
+
+Let's go through an example to illustrate Kendall's tau:
+
+Suppose we have the following ranked data for two variables X and Y:
+
+$$ X: 5, 3, 1, 4, 2 $$
+$$ Y: 2, 4, 5, 1, 3 $$
+
+Step 1: Calculate the number of concordant and discordant pairs.
+- Concordant pairs: Count the pairs where the ranks agree.
+- Discordant pairs: Count the pairs where the ranks disagree.
+
+$$
+\text{Concordant pairs} = 4
+$$
+
+pairs (5, 4), (5, 3), (4, 2), (3, 2)
+
+$$ \text{Discordant pairs} = 6 $$
+
+pairs (5, 2), (5, 1), (5, 3), (4, 1), (4, 3), (3, 1)
+
+Step 2: Calculate Kendall's tau.
+
+$$ \tau = \frac{{\text{Concordant pairs} - \text{Discordant pairs}}}{{\text{Number of possible pairs}}} $$
+
+$$ \tau = \frac{{4 - 6}}{{\frac{{5(5-1)}}{2}}} = \frac{{-2}}{{10}} = -0.2 $$
+
+So, Kendall's tau for the given data is -0.2. 
+
+Interpretation: Since Kendall's tau is negative, it suggests a slight negative association between variables X and Y. This means that as the rank of X increases, the rank of Y tends to decrease slightly, and vice versa.
+
+Kendall's tau is widely used in various fields, especially when dealing with ranked or ordinal data, as it provides a robust measure of association that is not sensitive to the specific values of the ranks.
+
+- - -
+
