@@ -2,7 +2,7 @@
 layout: post
 title: Note on the kink mass correction in 3D Part II
 subtitle: 
-date: 2024-03-07
+date: 2024-03-08
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -10,7 +10,7 @@ tags:
   - kink
 ---
 
-# Domain wall in phi-fourth model
+## Domain wall in phi-fourth model
 
 Recall that we are working in $D = d+1$ dimensional space-time, the space-dimension is $d$. For now let's consider $d=2$. In 2-dimensional space, a kink can extend to form a domain wall, for more info about domain walls see my other [note](https://www.mathlimbo.net/blog/2024/Domain-Wall/). The world line of such a domain wall would be world sheet. Now let's try to calculate the quantum corrections to the tension of such a domain wall.
 
@@ -63,6 +63,7 @@ $$
 \int dx \,  \frac{1}{\lambda} V(\tilde{f}) &= \frac{m^{3}}{8\lambda}\int dt \, (\tanh ^{2}(t)-1) ^{2}\\
 &= \frac{m^{3}}{8\lambda} \int dt \, \frac{1}{\cosh^{4}t} \\
 &= \frac{m^{3}}{6\lambda},
+\tag{1} 
 \end{align*}
 $$
 
@@ -76,6 +77,28 @@ Similarly, the contribution from the space-derivative term reads
 
 $$
 \begin{align*}
-\frac{1}{\lambda} \int dx \, \frac{1}{2} (\partial_ {x}\widetilde{f})^{2}  &=  \\
+\frac{1}{\lambda} \int dx \, \frac{1}{2} (\partial_ {x}\widetilde{f})^{2}  &= \frac{m^{3}}{8\lambda} \int dt \,  (\partial_ {t}\tanh t)^{2} \\
+&= \frac{m^{3}}{8\lambda} \int dt \,  \frac{1}{\cosh^{4}t} \\
+&= \frac{m^{3}}{6\lambda}.
 \end{align*}
+\tag{2} 
 $$
+
+Putting Eq. (1) and Eq. (2) together, we have 
+
+$$
+\rho_ {0} = \frac{m^{3}}{3\lambda}.
+$$
+
+- - -
+
+The dimensional analysis gives us
+
+$$
+[\lambda] = 4-D = 3-d,
+$$
+
+hence in $2+1$ dimension the coupling has dimension of mass. 
+
+## Normal Modes
+
