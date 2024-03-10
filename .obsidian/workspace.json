@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
+                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
+                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
+                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-7-17-Conventions-and-Formula.md"
+                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md"
               }
             }
           },
@@ -179,17 +179,12 @@
   "active": "8f4df30737786289",
   "lastOpenFiles": [
     "_posts/2024-03-08-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-03-06-Domain-Wall.md",
-    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
-    "_drafts/2023-05-07-soliton-particle-duality.md",
-    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
-    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
-    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
     "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
-    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_posts/2024-03-06-Domain-Wall.md",
     "img/kink/movingWall.png",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
+    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
     "_posts/2024-02-28-Quantum-Kinks.md",
     "_posts/2024-03-03-Domain-Wall.md",
     "_posts/2022-7-17-Conventions-and-Formula.md",
@@ -205,6 +200,7 @@
     "img/boxPlot.png",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_posts/2022-08-25-韩钢中国当代史阅读书目.md",
+    "_posts/2024-02-24-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-02-25-Kinks-in-QFT.md",
     "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-7-Transseries-Lecture-2.md",
@@ -218,6 +214,10 @@
     "_includes/pagination.liquid",
     "_includes/news.liquid",
     "_includes/metadata.liquid",
+    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
+    "_posts/2024-02-25-Note-on-Classical-Kinks.md",
+    "_posts/2024-1-10-Representables-in-Category-Theory.md",
+    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
     "img/kinkLevel.png",
     "img/hom.png",
     "img/relaxationMethod - Copy.jpg",
