@@ -176,9 +176,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f4df30737786289",
+  "active": "957cfa2362e38596",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "_posts/2024-03-08-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+=======
+>>>>>>> Stashed changes
     "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
     "_posts/2024-03-06-Domain-Wall.md",
     "img/kink/movingWall.png",
