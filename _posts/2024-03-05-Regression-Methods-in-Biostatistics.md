@@ -63,33 +63,33 @@ The shape of a distribution is often characterized by its `modality` and its `sk
 
 - - -
 
-In addition to measuring the center of the distribution, we are also interested in the spread or dispersion of the data. Two distributions could have the same mean or median without necessarily having the same shape. Perhaps the most intuitive methods of describing the dispersion of our data are those associated with `percentile-based` summaries. Formally, the $p$-th percentile is some value $V_ {p}$ such that 
+In addition to measuring the center of the distribution, we are also interested in the spread or dispersion of the data. Two distributions could have the same mean or median without necessarily having the same shape. Perhaps the most intuitive methods of describing the dispersion of our data are those associated with `percentile-based` summaries. Formally, the $p$-th percentile is some value $V_  {p}$ such that 
 
-1. $p\%$ of observations are $\leq V_ {p}$;
-2. $1-p\%$ of observations are $\gg V_ {p}$. 
+1. $p\%$ of observations are $\leq V_  {p}$;
+2. $1-p\%$ of observations are $\gg V_  {p}$. 
 
 The `quartile` is made of 
 
 $$
 \begin{align*}
-Q_ {1} &= 25\text{th} \text{ percentile} = 1\text{st} \text{ or lower quartile}\\
-Q_ {2} &= 50\text{th} \text{ percentile} = 2\text{nd} \text{ quartile or median}\\
-Q_ {3} &= 75\text{th} \text{ percentile} = 3\text{rd} \text{ or upper quartile}\\
+Q_  {1} &= 25\text{th} \text{ percentile} = 1\text{st} \text{ or lower quartile}\\
+Q_  {2} &= 50\text{th} \text{ percentile} = 2\text{nd} \text{ quartile or median}\\
+Q_  {3} &= 75\text{th} \text{ percentile} = 3\text{rd} \text{ or upper quartile}\\
 \end{align*}
 $$
 
 A commonly used percentile-based measure of spread combining these measures is the **interquartile range (IQR)**, defined as
 
 $$
-\text{IQR} := Q_ {3} - Q_ {1}.
+\text{IQR} := Q_  {3} - Q_  {1}.
 $$
 The IQR is not impacted by the presence of outliers, so it is considered a robust measure of the spread of the data. So, like the median, it enjoys the quality of being a robust measure of the data.
 
 Percentiles are also used to create another common visual representation of continuous data: the `boxplot`, also known as a `box-and-whisker plot`. A boxplot consist of the following elements: 
 
-- A box, indicating the Interquartile Range (IQR), bounded by the values $Q_ {1}$ and $Q_ {3}$;
-- The median, or $Q_ {2}$, represented by the line drawn within the box;
-- The “whiskers,” extending out of the box, which can be defined in a number of ways. Commonly, the whiskers are 1.5 times the length of the IQR from either $Q_ {1}$ or $Q_ {3}$; 
+- A box, indicating the Interquartile Range (IQR), bounded by the values $Q_  {1}$ and $Q_  {3}$;
+- The median, or $Q_  {2}$, represented by the line drawn within the box;
+- The “whiskers,” extending out of the box, which can be defined in a number of ways. Commonly, the whiskers are 1.5 times the length of the IQR from either $Q_  {1}$ or $Q_  {3}$; 
 - Outliers, presented as small circles or dots, and are values in the data that are not present within the bounds set by either the box or whiskers.
 
 <div class="row mt-3">
@@ -110,14 +110,14 @@ We have two kinds of variances: `sample variance` and `population variance`. The
 
 **Population Variance**:
 
-Population variance measures how much the members of a population differ from the population mean. It is denoted by $\sigma^2$. If you have a population with $N$ members and population values $x_1, x_2, ..., x_N$, the population variance $\sigma^2$ is calculated as:
-  $$ \sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2 $$
+Population variance measures how much the members of a population differ from the population mean. It is denoted by $\sigma^2$. If you have a population with $N$ members and population values $x_ 1, x_ 2, ..., x_ N$, the population variance $\sigma^2$ is calculated as:
+  $$ \sigma^2 = \frac{1}{N} \sum_ {i=1}^{N} (x_ i - \mu)^2 $$
   where $\mu$ is the population mean. Note that $\mu$ is not the mean of some measured data, it is supposed to be given by some theoretical model. Population variance is used when you have access to all the data points in the population.
 
 **Sample Variance**
 
-Sample variance measures how much the members of a sample (a subset of the population) differ from the sample mean. It is an estimator of the population variance. Sample variance is denoted by $s^2$. If you have a sample of size $n$ with values $x_1, x_2, ..., x_n$, the sample variance $s^2$ is calculated as:
-  $$ s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \overline{x})^2 $$
+Sample variance measures how much the members of a sample (a subset of the population) differ from the sample mean. It is an estimator of the population variance. Sample variance is denoted by $s^2$. If you have a sample of size $n$ with values $x_ 1, x_ 2, ..., x_ n$, the sample variance $s^2$ is calculated as:
+  $$ s^2 = \frac{1}{n-1} \sum_ {i=1}^{n} (x_ i - \overline{x})^2 $$
   where $\overline{x}$ is the sample mean.
   
 Key Differences:
@@ -126,7 +126,7 @@ Key Differences:
 2. **Formula:** The population variance formula divides by $n$ (the total number of population members), whereas the sample variance formula divides by $n-1$ (one less than the sample size).
 3. **Bias Correction:** The use of $n-1$ in the sample variance formula, known as Bessel's correction, corrects for the bias in the estimation of population variance from a sample.
 
-When we calculate the variance of a sample, we typically use the sample mean $\overline{x}$ as an estimate of the true population mean. However, using the sample mean introduces a bias because it is based on the same data points that we are using to calculate the variance. This means the sum of the squared deviations $(x_i - \overline{x})^2$ tends to be smaller than it would be if we used the true population mean, leading to an underestimate of the true population variance.
+When we calculate the variance of a sample, we typically use the sample mean $\overline{x}$ as an estimate of the true population mean. However, using the sample mean introduces a bias because it is based on the same data points that we are using to calculate the variance. This means the sum of the squared deviations $(x_ i - \overline{x})^2$ tends to be smaller than it would be if we used the true population mean, leading to an underestimate of the true population variance.
 
 To correct for this bias, we use $n-1$ in the denominator instead of $n$. This adjustment is known as Bessel's correction. The rationale behind it is that when estimating variance from a sample, we lose one degree of freedom because we have estimated the mean from the same data set. Using $n-1$ effectively compensates for this loss, making the sample variance an unbiased estimator of the true population variance.
 
@@ -140,9 +140,9 @@ The regression method is a statistical technique used to model and analyze the r
 
 There are several types of regression methods, each suited to different types of data and relationships:
 
-1. **Linear Regression**: The simplest form of regression, linear regression uses a linear approach to model the relationship between the dependent variable and one or more independent variables. The model assumes that the relationship can be described by a straight line in the form $y = \beta_0 + \beta_1x_1 + \epsilon$, where $y$ is the dependent variable, $x_1$ is the independent variable, $\beta_0$ is the y-intercept, $\beta_1$ is the slope of the line, and $\epsilon$ represents the error term.
+1. **Linear Regression**: The simplest form of regression, linear regression uses a linear approach to model the relationship between the dependent variable and one or more independent variables. The model assumes that the relationship can be described by a straight line in the form $y = \beta_ 0 + \beta_ 1x_ 1 + \epsilon$, where $y$ is the dependent variable, $x_ 1$ is the independent variable, $\beta_ 0$ is the y-intercept, $\beta_ 1$ is the slope of the line, and $\epsilon$ represents the error term.
 
-2. **Multiple Linear Regression**: An extension of simple linear regression, this method involves two or more independent variables. The model is expressed as $y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$, where $x_1, x_2, ..., x_n$ are the independent variables.
+2. **Multiple Linear Regression**: An extension of simple linear regression, this method involves two or more independent variables. The model is expressed as $y = \beta_ 0 + \beta_ 1x_ 1 + \beta_ 2x_ 2 + ... + \beta_ nx_ n + \epsilon$, where $x_ 1, x_ 2, ..., x_ n$ are the independent variables.
 
 3. **Logistic Regression**: Used when the dependent variable is categorical, typically binary. Logistic regression models the probability that the dependent variable belongs to a particular category, using a logistic function.
 
@@ -221,14 +221,14 @@ The formula for the t-statistic in a two-sided t-test is similar to that of a on
 
 For an independent two-sample t-test, the formula for the t-statistic remains:
 
-$$ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{s^2 \left(\frac{1}{n_1} + \frac{1}{n_2}\right)}} $$
+$$ t = \frac{\bar{x}_ 1 - \bar{x}_ 2}{\sqrt{s^2 \left(\frac{1}{n_ 1} + \frac{1}{n_ 2}\right)}} $$
 
 However, in a two-sided t-test, you're interested in differences in both directions, so you consider both tails of the distribution when determining the critical t-value or when interpreting the p-value.
 
 The hypotheses for a two-sided t-test are formulated as follows:
 
-- Null Hypothesis ($H_0$): There is no difference between the group means ($\mu_1 = \mu_2$).
-- Alternative Hypothesis ($H_a$): There is a difference between the group means ($\mu_1 \neq \mu_2$).
+- Null Hypothesis ($H_ 0$): There is no difference between the group means ($\mu_ 1 = \mu_ 2$).
+- Alternative Hypothesis ($H_ a$): There is a difference between the group means ($\mu_ 1 \neq \mu_ 2$).
 
 In a two-sided t-test, the p-value represents the probability of observing a test statistic as extreme as, or more extreme than, the one observed, in either direction, assuming the null hypothesis is true. If this p-value is less than or equal to the chosen significance level ($\alpha$), the null hypothesis is rejected, indicating a statistically significant difference between the two group means.
 
@@ -258,23 +258,23 @@ Next we will give the gist of the derivation of F-distribution, follow by an exa
 
 Roughly speaking, *the F-distribution arises when dividing one $\chi^{2}$ (chi-square) distributed variable by another,* each divided by their respective degrees of freedom. Here's a step-by-step explanation:
 
-Consider two independent chi-square distributed variables, $X$ and $Y$, with degrees of freedom $d_1$ and $d_2$, respectively. These chi-square variables can be thought of as the sum of squares of $d_1$ and $d_2$ independent standard normal variables.
+Consider two independent chi-square distributed variables, $X$ and $Y$, with degrees of freedom $d_ 1$ and $d_ 2$, respectively. These chi-square variables can be thought of as the sum of squares of $d_ 1$ and $d_ 2$ independent standard normal variables.
 
 The probability density functions (pdf) for $X$ and $Y$ are given by:
 
-$$ f_X(x) = \frac{1}{2^{d_1/2}\Gamma(d_1/2)} x^{d_1/2 - 1} e^{-x/2}, \quad x > 0 $$
+$$ f_ X(x) = \frac{1}{2^{d_ 1/2}\Gamma(d_ 1/2)} x^{d_ 1/2 - 1} e^{-x/2}, \quad x > 0 $$
 
-$$ f_Y(y) = \frac{1}{2^{d_2/2}\Gamma(d_2/2)} y^{d_2/2 - 1} e^{-y/2}, \quad y > 0 $$
+$$ f_ Y(y) = \frac{1}{2^{d_ 2/2}\Gamma(d_ 2/2)} y^{d_ 2/2 - 1} e^{-y/2}, \quad y > 0 $$
 
 where $\Gamma$ denotes the Gamma function.
 
-The F-statistic is constructed by dividing $X/d_1$ by $Y/d_2$, each chi-square variable divided by its degrees of freedom, which normalizes them:
+The F-statistic is constructed by dividing $X/d_ 1$ by $Y/d_ 2$, each chi-square variable divided by its degrees of freedom, which normalizes them:
 
-$$ F = \frac{X/d_1}{Y/d_2} $$
+$$ F = \frac{X/d_ 1}{Y/d_ 2} $$
 
-To derive the pdf of the F-distribution, we need to find the distribution of the variable $F$. This involves some complex integration because we have to consider the joint distribution of $X$ and $Y$, and then transform it to the distribution of $F$. The transformation involves the Jacobian of the transformation from $(X, Y)$ to $(F, Y)$, and then integrating out $Y$ to get the marginal distribution of $F$. After performing the necessary mathematical manipulations, the pdf of the F-distribution for a given $f$ value, with degrees of freedom $d_1$ and $d_2$, is given by:
+To derive the pdf of the F-distribution, we need to find the distribution of the variable $F$. This involves some complex integration because we have to consider the joint distribution of $X$ and $Y$, and then transform it to the distribution of $F$. The transformation involves the Jacobian of the transformation from $(X, Y)$ to $(F, Y)$, and then integrating out $Y$ to get the marginal distribution of $F$. After performing the necessary mathematical manipulations, the pdf of the F-distribution for a given $f$ value, with degrees of freedom $d_ 1$ and $d_ 2$, is given by:
 
-$$ f(f; d_1, d_2) = \frac{\Gamma((d_1+d_2)/2)}{\Gamma(d_1/2)\Gamma(d_2/2)} \left(\frac{d_1}{d_2}\right)^{d_1/2} f^{d_1/2 - 1} \left(1 + \frac{d_1}{d_2}f\right)^{-(d_1+d_2)/2}, \quad f > 0 $$
+$$ f(f; d_ 1, d_ 2) = \frac{\Gamma((d_ 1+d_ 2)/2)}{\Gamma(d_ 1/2)\Gamma(d_ 2/2)} \left(\frac{d_ 1}{d_ 2}\right)^{d_ 1/2} f^{d_ 1/2 - 1} \left(1 + \frac{d_ 1}{d_ 2}f\right)^{-(d_ 1+d_ 2)/2}, \quad f > 0 $$
 
 This distribution is used to test hypotheses about the equality of variances of two normally distributed populations, among other applications.
 
@@ -363,8 +363,8 @@ $$
 $$
 
 Where:
-- A pair of observations $X_ i, Y_ i$ and $X_ j, Y_ j$ is considered concordant if the ranks agree, i.e., if $(X_ i - X_ j)(Y_ i - Y_ j) > 0$.
-- A pair is discordant if the ranks disagree, i.e., if $(X_ i - X_ j)(Y_ i - Y_ j) < 0$.
+- A pair of observations $X_  i, Y_  i$ and $X_  j, Y_  j$ is considered concordant if the ranks agree, i.e., if $(X_  i - X_  j)(Y_  i - Y_  j) > 0$.
+- A pair is discordant if the ranks disagree, i.e., if $(X_  i - X_  j)(Y_  i - Y_  j) < 0$.
 - The number of possible pairs is the total number of pairs of observations, which is $\frac{n(n-1)}{2}$ for n observations.
 
 Let's go through an example to illustrate Kendall's tau:
@@ -400,6 +400,61 @@ Interpretation: Since Kendall's tau is negative, it suggests a slight negative a
 
 Kendall's tau is widely used in various fields, especially when dealing with ranked or ordinal data, as it provides a robust measure of association that is not sensitive to the specific values of the ranks.
 
+# Linear Regression Method 
+
+Linear regression methods in biostatistics are used to describe the relationship between one or more independent (predictor or explanatory) variables and a continuous dependent (outcome) variable. These methods are fundamental in biostatistical analysis for understanding associations, predicting outcomes, and identifying potential causal relationships in health sciences. The primary methods include:
+
+1. Simple Linear Regression:
+- **Description**: Examines the relationship between a single independent variable (X) and a dependent variable (Y).
+- **Model**: The relationship is modeled as $Y = \beta_  0 + \beta_  1X + \epsilon$, where $\beta_  0$ is the y-intercept, $\beta_  1$ is the slope of the line (indicating the change in Y for a one-unit change in X), and $\epsilon$ represents the error term.
+- **Use Cases**: Used when you want to see how changes in one predictor variable influence changes in the outcome. For example, studying the effect of drug dosage on blood pressure levels.
+
+2. Multiple Linear Regression (MLR):
+- **Description**: Extends simple linear regression to include multiple independent variables.
+- **Model**: $Y = \beta_  0 + \beta_  1X_  1 + \beta_  2X_  2 + ... + \beta_  kX_  k + \epsilon$, where $\beta_  0$ is the intercept, $\beta_  i$ are the coefficients for each predictor $X_  i$, and $\epsilon$ is the error term.
+- **Use Cases**: Useful when investigating the impact of several factors on an outcome. For instance, assessing how patient age, weight, and smoking status together influence the risk of developing cardiovascular diseases.
+
+3. Polynomial Regression:
+- **Description**: A form of regression analysis where the relationship between the independent variable and the dependent variable is modeled as an nth degree polynomial.
+- **Model**: $Y = \beta_  0 + \beta_  1X + \beta_  2X^2 + ... + \beta_  nX^n + \epsilon$.
+- **Use Cases**: Employed when the relationship between variables is not linear, allowing for a better fit to data that display curvature. For example, modeling the growth rate of bacteria at different temperatures might require a polynomial fit.
+
+4. Ridge Regression (L2 Regularization):
+- **Description**: Addresses multicollinearity (high correlation among independent variables) in MLR by adding a penalty term equal to the square of the magnitude of the coefficients.
+- **Model**: The cost function is $\text{Cost} = ||Y - X\beta||^2 + \lambda||\beta||^2$, where $\lambda$ is the penalty term.
+- **Use Cases**: Useful in situations with many predictors, some of which might be correlated. It helps in reducing overfitting by shrinking the coefficients.
+
+5. Lasso Regression (L1 Regularization):
+- **Description**: Similar to ridge regression but uses an absolute value penalty for the size of coefficients, which can lead to some coefficients being exactly zero.
+- **Model**: The cost function is $\text{Cost} = ||Y - X\beta||^2 + \lambda|\beta|$.
+- **Use Cases**: Used for variable selection and regularization to improve prediction accuracy and interpretability of the statistical model by excluding irrelevant variables.
+
+6. Elastic Net Regression:
+- **Description**: Combines penalties of ridge regression and lasso regression.
+- **Model**: The cost function includes both L1 and L2 penalties, $\text{Cost} = ||Y - X\beta||^2 + \lambda_  1|\beta| + \lambda_  2||\beta||^2$.
+- **Use Cases**: Effective when there are multiple correlated variables, providing a balance between ridge and lasso regression by including both sets of penalties.
+
+Some comments. Ridge Regression is called L2 regularization because of the nature of the penalty applied to the coefficients in the regression model. In this context, "L2" refers to the L2 norm of the coefficient vector, which is used as the penalty term. The L2 norm is essentially the square root of the sum of the squared vector values, but in the context of ridge regression, the penalty term involves the square of the L2 norm (i.e., the sum of the squared values of the coefficients, not taking the square root).
+
+More mathematically, for a regression coefficient vector $\beta = [\beta_ 1, \beta_ 2, ..., \beta_ n]$, the L2 norm is defined as:
+
+$$
+||\beta||_ 2 = \sqrt{\beta_ 1^2 + \beta_ 2^2 + ... + \beta_ n^2}
+$$
+
+In ridge regression, the penalty term added to the `cost function` (which is minimized during the training of the model) is the square of this L2 norm (hence the term "L2 regularization"), but it's often just presented without the square root to begin with in the context of ridge regression. 
+
+The rationale behind using L2 regularization (ridge regression) is to prevent overfitting by shrinking the coefficients of less important features towards zero (though not exactly zero, which is a characteristic of Lasso regression, or L1 regularization). This is particularly useful when dealing with multicollinearity or when the number of predictor variables is large relative to the number of observations. *The L2 regularization term penalizes large coefficients, thus enforcing a constraint on the size of coefficients, which can lead to more robust and better-generalized models.*
+
+Overfitting occurs when a statistical model or machine learning algorithm captures the noise of the data rather than the underlying pattern. It happens when the model is too complex relative to the amount and noisiness of the input data. The overfitted model has high variance and low bias, making excellent predictions on the training data but performing poorly on new, unseen data because it has essentially memorized the training dataset rather than learning the general underlying patterns.
+
 - - -
 
-# Logistic 
+The name "Lasso regression" comes from the term "Least Absolute Shrinkage and Selection Operator." It was introduced by Robert Tibshirani in 1996 as a new regression method that not only has the capability to shrink the coefficients toward zero, like Ridge regression, but also to set some coefficients exactly to zero. This latter property makes Lasso regression particularly useful for feature selection in addition to regularization.
+
+The term "Lasso" itself is a metaphor, likening the method to a cowboy's lasso used to catch and select specific components (in this case, variables or features in a model). The lasso wraps around the most important features while discarding the less important ones, making it a valuable tool for models with a large number of features, many of which might be irrelevant or redundant.
+
+# Logistic Regression method
+
+Logistic regression in biostatistics is a statistical analysis method used to model the relationship between one or multiple independent variables and a dependent variable that is binary (i.e., it takes on two possible outcomes, often coded as 0 and 1). It's particularly useful in the field of biostatistics for analyzing and predicting the probability of a binary outcome based on one or more risk factors or predictor variables. 
+
