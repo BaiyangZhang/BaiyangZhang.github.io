@@ -2,7 +2,7 @@
 layout: post
 title: Note on the kink mass correction in 3D Part II
 subtitle: 
-date: 2024-03-08
+date: 2024-03-11
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -10,7 +10,7 @@ tags:
   - kink
 ---
 
-## Domain wall in phi-fourth model
+# Domain wall in phi-fourth model
 
 Recall that we are working in $D = d+1$ dimensional space-time, the space-dimension is $d$. For now let's consider $d=2$. In 2-dimensional space, a kink can extend to form a domain wall, for more info about domain walls see my other [note](https://www.mathlimbo.net/blog/2024/Domain-Wall/). The world line of such a domain wall would be world sheet. Now let's try to calculate the quantum corrections to the tension of such a domain wall.
 
@@ -100,7 +100,7 @@ $$
 
 hence in $2+1$ dimension the coupling has dimension of mass. 
 
-## Normal Modes
+# Normal Modes
 
 Since we assumed the domain wall to be flatly lying in the $y$-plane, the normal modes in 2-d space can be *factorized* into $x$ and $y$ components,
 
@@ -142,8 +142,56 @@ Note that
 The formalism we developed in generic dimension $d$ surely also applies to $d=2$. Let $\vec{p}=(p_ {x},p_ {y})$ and $\vec{k}=(k_ {x},k_ {y})$. The Fourier transform is 
 
 $$
- \tilde{\mathfrak{g} }_ {k_ {x},k_ {y}} (\vec{p})= \int d^{2}x \,   \mathfrak{g} _ {k}(\vec{x}) e^{ -i\vec{k}\cdot \vec{x} } = (2\pi)\delta(k_ {y}-p_ {y}) \times   \tilde{\mathfrak{g}} _ k (p_ {x}).
+ \tilde{\mathfrak{g} }_ {k_ {x},k_ {y}} (\vec{p})= \int d^{2}x \,   \mathfrak{g} _ {k}(\vec{x}) e^{ -i\vec{k}\cdot \vec{x} } = (2\pi)\delta(k_ {y}+p_ {y}) \times   \tilde{\mathfrak{g}} _ k (p_ {x}).
+ \tag{3} 
 $$
 
 Again we see the factorization in $x$ and $y$, the $\delta$-function in $y$ direction is due to the plane wave expansion. 
+
+Note that the infinite volume of a flat $\mathbb{R}$ can be written as Dirac-$\delta$ function $\delta(0)$. To see that, recall the Fourier transform of a function is written as 
+
+$$
+\widetilde{f}(\vec{k}) = \int d^{d}x \, e^{ -i\vec{k}\cdot \vec{x} } f(\vec{x})
+$$
+
+which means if we set $f(\vec{x})=1$ then
+
+$$
+\tilde{f}(\vec{k}) = \int d^{d}x \,  e^{ -i \vec{k}\cdot\vec{x} } = (2\pi)^{d} \delta^{d}(k),
+$$
+
+If we further set $k=0$ then the integral becomes
+
+$$
+\int d^{d}x \, 1\,   = \text{Vol}^{d} = (2\pi)^{d}\delta^{d}(0).
+$$
+
+In the case of 1-dimension, say coordinated by $y$, the total length would be $2\pi \delta(0)$.
+
+This identity comes in handy when we take the factorized expression Eq. (3) into the one-loop correction
+
+$$
+\begin{align*}
+Q_ {1} &= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi)^{2}} \,    \int \frac{d^{2}p}{(2\pi)^{2}} \,  \left\lvert \tilde{ \mathfrak{g} }_ {k}(\vec{p}) \right\rvert^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi)^{2}} \,    \int \frac{d^{2}p}{(2\pi)^{2}} \,  \left\lvert (2\pi)\delta(k_ {y}+p_ {y})\tilde{ \mathfrak{g} }_ {k}(p_ {x}) \right\rvert^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \; \frac{dk_ {x}}{2\pi} \int \frac{dk_ {y}}{2\pi} \int \frac{dp_ {x}}{2\pi} (2\pi)\delta(0)\left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= - \frac{L_ {\text{DM}}}{4}\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dk_ {y}}{2\pi}  \int \frac{dp_ {x}}{2\pi} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= L_ {\text{DM}} \times (\text{tension correction}).
+\end{align*}
+\tag{4} 
+$$
+
+In the above equation we have set the dimensionality $d$ to $2$. $\omega_ {k}$ is the short-handed form for $\omega_ {k_ {x}k_ {y}}$, the same for $\omega_ {p}$. The integral regarding $y$-coordinate gives as a term proportional to $(2\pi)\delta(0)$, which is the total length of the $y$-direction. $L_ {\text{DM}}$ is the length of the domain wall, $L_ {\text{DM}}=\int dy$. It is understood that in the final result $p_ {y}=-k_ {y}$. It agrees with our naive expectation that the correction is proportional to the total length of the domain wall. 
+
+Eq. (4) can also be written as 
+
+$$
+\begin{align*}
+Q_ {1} &= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \; \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi} \int \frac{dp_ {y}}{2\pi} (2\pi)\delta(0)\left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= - \frac{L_ {\text{DM}}}{4}\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dp^{2}}{(2\pi)^{2}} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= \int dy \,  \left( - \frac{1}{4} \right)\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dp^{2}}{(2\pi)^{2}} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} .
+\end{align*}
+\tag{5} 
+$$
+
 

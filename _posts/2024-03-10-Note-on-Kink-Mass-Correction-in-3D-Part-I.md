@@ -2,7 +2,7 @@
 layout: post
 title: Note on the kink mass correction in 3D Part I
 subtitle: 
-date: 2024-01-25
+date: 2024-03-10
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -347,6 +347,7 @@ This represents the fundamental quantization relation, unaffected by the selecti
 ## 2.2 Renormalization methods review
 
 Things does get more complicated when renormalization is included. The commonly used renormalization method include (but not limited to):
+
 1. `Dimensional regularization`. This is particularly useful in 4D. This technique regularizes integrals by analytically continuing the number of dimensions of space $d$, usually reduce it by an infinitesimal quantity $\epsilon$. It preserves the gauge symmetry and Lorentz invariance. 
 2. `Cutoff regularization`. This method introduces a high-energy cutoff in the energy. By doing this we are making the momentum integrals finite by force, but as a price we would introduce a new parameter $\Lambda$ with the dimension of energy. This $\Lambda$ has profound physical consequence, such as in dimensional transmutation and, most importantly, the Wilsonian RG flow. 
 3. `Pauli-Villars Regularization.` This approach involves adding hypothetical heavy particles to the theory to cancel out the divergences. The mass of the heavy particles acts effectively as the cutoff in the integrals.
@@ -471,9 +472,9 @@ $$
 \phi(t,\vec{r}) = \int \frac{d^{d}p}{(2\pi)^{d} } \, (a_ {p} e^{ -ipx }+a_ {p} ^{\ast }e^{ipx }) 
 $$
 
-where the second term in the parenthesis is to make sure that $\phi$ is real. We have assembled $\omega$ and $\vec{p}$ into $p=(\omega,\vec{p})$. 
+where the second term in the parenthesis is to make sure that $\phi$ is real. We have assembled $\omega$ and $\vec{p}$ into a Lorentzian vector $p=(\omega,\vec{p})$. 
 
-Now the second quantization kicks in. This is usually first done in the momentum space, since we are treating each mode as a harmonic oscillator. You can already see one aspect of the difference between the previously define lattice quantization and the textbook second quantization. We introduce the `equal-time commutation relation`
+Now the second quantization. This is usually first done in the momentum space, since we are treating each mode as a harmonic oscillator. You can already see one aspect of the difference between the previously define lattice quantization and the textbook second quantization. We introduce the `equal-time commutation relation`
 
 $$
 [a_ {k} ,a_ {p}^{\dagger}] = (2\pi)^{d} \,\delta^{d}(\vec{k}-\vec{p}),
@@ -613,7 +614,7 @@ $$
 [A_ {p_ {1} },A^{\ddagger}_ {p_ {2} }] = (2\pi)^{d}\delta^{d}(p_ {1}-p_ {2}).
 $$
 
-Expand $A,A^{\ddagger}$ in terms of $B^{\dagger},B$ we have
+Expand $A,A^{\ddagger}$ in terms of $B,B^{\ddagger}$ we have
 
 $$
 \begin{align*}
