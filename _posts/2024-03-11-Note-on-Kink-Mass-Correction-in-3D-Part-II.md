@@ -8,6 +8,7 @@ header-img: img/background1.jpg
 catalog: true
 tags:
   - kink
+description:
 ---
 
 # Domain wall in phi-fourth model
@@ -120,7 +121,7 @@ $$
 {\mathfrak g}_ {B} = -\sqrt{ \frac{3m}{8} } \text{sech}^{2}\left( \frac{mx}{2} \right)
 $$
 
-with eigenvalue $0$ and a shape mode
+with eigenvalue $0$, and a shape mode
 
 $$
  {\mathfrak g} _ {S} = \frac{\sqrt{ 3m }}{2} \tanh \frac{mx}{2} \text{sech} \frac{mx}{2}
@@ -208,3 +209,71 @@ $$
 }
 $$
 
+To do this, first we need to Fourier-Transform various normal modes. 
+
+To Fourier transform it we use `Mathematica`. In Mathematica, the convention used for the Fourier transform is represented by the function `FourierTransform[expr, t, ω]`, where `expr` is the expression to be transformed, `t` is the time variable, and `ω` is the frequency variable. This gives the symbolic Fourier transform of the expression. For multidimensional Fourier transforms, you can use `FourierTransform[expr, {t1, t2, …}, {ω1, ω2, …}]`, but here we won't need it.
+
+The basis function used by Mathematica's `FourierTransform` is dependent on the `FourierParameters` setting. The `FourierParameters` option is specified as {a, b}, where a and b are parameters that influence the Fourier transform's definition. Specifically, they appear in the exponential factor and the normalization constant of the Fourier transform equations. The default setting for `FourierParameters` in Mathematica is `{0, 1}`, which corresponds to using the basis function $e^{i t \omega}$ for the Fourier transform, 
+
+$$
+\mathcal{F}\left\lbrace f(t) \right\rbrace (\omega) = \frac{1}{\sqrt{ 2\pi }} \int_{-\infty}^{\infty} dt \, f(t) e^{ i \omega t }
+$$
+
+where $\mathcal{F}\left\lbrace f \right\rbrace$ is the Fourier transform of function $f(t)$. In general, under `FourierParameters->{a,b}` the Fourier Transform is set to be
+
+$$
+\mathcal{F}\left\lbrace f(t) \right\rbrace (\omega){\Large\mid}_ {\left\lbrace a,b \right\rbrace }  = \sqrt{\frac{\left\lvert b \right\rvert }{( 2\pi)^{1-a} }} \int_{-\infty}^{\infty} d t \, f(t) e^{i b \omega t }
+$$
+
+In order to change it to our desired basis, we need to set $a=1,b=-1$, which is the so-called physics convention. As a test let's try to transform a plane wave $\exp(-ipx)$, with our convention mathematica should return $2\pi \delta(p+k)$. The code reads
+
+```mathematica
+FourierTransform[Exp[-I p x], x, k, FourierParameters -> {1, -1}]
+```
+
+which indeed returns `2 Pi DiracDelta[k + p]`. 
+
+- - -
+
+**The shape mode**
+
+The shape mode as a function of $x$ reads
+
+$$
+{\mathfrak g} _ {S}(x) = \frac{\sqrt{ 3m }}{2} \tanh \frac{mx}{2} \text{sech} \frac{mx}{2},
+$$
+
+whose Fourier transform can be calculated with mathematica code 
+
+```mathematica
+fkgS[x_] := Sqrt[3 m]/2 Tanh[(m x)/2] Sech[ (m x)/2];
+FourierTransform[fkgS[x], x, p, FourierParameters -> {1, -1}]
+```
+
+The result reads
+
+$$
+\boxed { 
+\tilde{ \mathfrak{g} }_ {S}(p) = -\frac{2i\sqrt{ 3 }\pi p}{m^{3/2}} \mathrm{sech}\left( \frac{p\pi}{m} \right).
+}
+$$
+
+
+
+--- 
+
+**The zero mode**
+
+```mathematica
+fkgB[x_] := -Sqrt[((3 m)/8)] Sech[(m x)/2]^2;
+FourierTransform[fkgB[x], x, k, FourierParameters -> {1, -1}]
+```
+
+- - -
+
+**The continuum**
+
+```mathematica
+fkgk[x_] :=E^(-I k x)/(\[Omega]k Sqrt[m^2+4k^2])(2k^2-m^2+3/2 m^2 Sech[(m x)/2]^2 - 3I m k Tanh[(m x)/2]);
+FourierTransform[fkgk[x], x, p, FourierParameters -> {1, -1}]
+```
