@@ -189,9 +189,22 @@ $$
 \begin{align*}
 Q_ {1} &= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \; \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi} \int \frac{dp_ {y}}{2\pi} (2\pi)\delta(0)\left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
 &= - \frac{L_ {\text{DM}}}{4}\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dp^{2}}{(2\pi)^{2}} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
-&= \int dy \,  \left( - \frac{1}{4} \right)\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dp^{2}}{(2\pi)^{2}} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} .
+&= \int dy \,  \left( - \frac{1}{4} \right)\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dp^{2}}{(2\pi)^{2}} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= : \int dy \, \rho_ {1}(y). 
 \end{align*}
 \tag{5} 
 $$
 
+Here again $\omega_ {k}$ is understood to be $\omega_ {k_ {x} k_ {y}}$, and we have defined the one-loop correction $\rho_ {1}$ to the tension. Note that *one-loop correction comes not from the interaction, as in QFT models in the vacuum sector, but rather comes from the non-trivial soliton background.*
+
+
+# Numerical Results
+
+We still need to evaluate the one-loop correction 
+
+$$
+\boxed { 
+\rho_ {1} = \left( - \frac{1}{4} \right)\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dp^{2}}{(2\pi)^{2}} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}}.
+}
+$$
 
