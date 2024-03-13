@@ -198,8 +198,7 @@ $$
 
 Here again $\omega_ {k}$ is understood to be $\omega_ {k_ {x} k_ {y}}$, and we have defined the one-loop correction $\rho_ {1}$ to the tension. Note that *one-loop correction comes not from the interaction, as in QFT models in the vacuum sector, but rather comes from the non-trivial soliton background.*
 
-
-# Numerical Results
+# Fourier Transform
 
 We still need to evaluate the one-loop correction 
 
@@ -258,22 +257,42 @@ $$
 }
 $$
 
-
-
 --- 
 
 **The zero mode**
+
+From the following Mathematica code
 
 ```mathematica
 fkgB[x_] := -Sqrt[((3 m)/8)] Sech[(m x)/2]^2;
 FourierTransform[fkgB[x], x, k, FourierParameters -> {1, -1}]
 ```
 
+we have 
+
+$$
+\boxed { 
+\tilde{ \mathfrak{g} }_ {B}(p) = -\frac{\sqrt{ 6 }\pi p}{m^{3/2}}\text{csch}\left(\frac{\pi p}{m} \right)
+}
+$$
+
 - - -
 
 **The continuum**
+
+The Fourier transform is given by the following Mathematica code,
 
 ```mathematica
 fkgk[x_] :=E^(-I k x)/(\[Omega]k Sqrt[m^2+4k^2])(2k^2-m^2+3/2 m^2 Sech[(m x)/2]^2 - 3I m k Tanh[(m x)/2]);
 FourierTransform[fkgk[x], x, p, FourierParameters -> {1, -1}]
 ```
+
+which gives us
+
+$$
+\boxed { 
+\tilde{ \mathfrak{g} }_ {k}(p) = \frac{6\pi p}{\omega_ {k}\sqrt{ 4k^{2} + m^{2} }} \text{csch}\left(\frac{(k+p)\pi}{m}\right)
+}
+$$
+# Numerical Results
+
