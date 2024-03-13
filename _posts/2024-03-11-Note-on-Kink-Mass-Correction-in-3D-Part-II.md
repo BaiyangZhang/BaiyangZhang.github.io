@@ -124,15 +124,17 @@ $$
 with eigenvalue $0$, and a shape mode
 
 $$
- {\mathfrak g} _ {S} = \frac{\sqrt{ 3m }}{2} \tanh \frac{mx}{2} \text{sech} \frac{mx}{2}
+ {\mathfrak g} _ {S} = \frac{\sqrt{ 3m }}{2} \tanh \frac{mx}{2} \text{sech} \frac{mx}{2},\quad  \omega_ {S} = \frac{\sqrt{ 3 }}{2}m
 $$
 
-with eigenvalue less then the rest mass of excited particle, $\omega_ {s} = \frac{\sqrt{ 3 }}{2}m$. 
+with eigenvalue less then the rest mass of excited particle. 
 
 Momentum in the $y$-direction also contributes to the total energy, putting them together with the zero modes, shape modes and continuum in the $x$ direction we have 
 
 $$
+\boxed { 
 \omega_ {Bk_ {}y} = \left\lvert k_ {y} \right\rvert ,\quad  \omega_ {Sk_ {y}} = \sqrt{ \frac{3m^{2}}{4}+k_ {y}^{2} },\quad  \omega_ {k_ {x} k_ {y}} = \sqrt{ m^{2}+k_ {x}^{2}+k_ {y}^{2} }.
+}
 $$
 
 Note that 
@@ -175,14 +177,14 @@ $$
 \begin{align*}
 Q_ {1} &= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi)^{2}} \,    \int \frac{d^{2}p}{(2\pi)^{2}} \,  \left\lvert \tilde{ \mathfrak{g} }_ {k}(\vec{p}) \right\rvert^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
 &= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi)^{2}} \,    \int \frac{d^{2}p}{(2\pi)^{2}} \,  \left\lvert (2\pi)\delta(k_ {y}+p_ {y})\tilde{ \mathfrak{g} }_ {k}(p_ {x}) \right\rvert^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
-&= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \; \frac{dk_ {x}}{2\pi} \int \frac{dk_ {y}}{2\pi} \int \frac{dp_ {x}}{2\pi} (2\pi)\delta(0)\left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
-&= - \frac{L_ {\text{DM}}}{4}\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dk_ {y}}{2\pi}  \int \frac{dp_ {x}}{2\pi} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \; \frac{dk_ {x}}{2\pi} \int \frac{dk_ {y}}{2\pi} \int \frac{dp_ {x}}{2\pi} (2\pi)\delta(0)\left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k_ {x} p_ {y}}-\omega_ {p})^{2}}{\omega_ {p}} \\
+&= - \frac{L_ {\text{DM}}}{4}\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dk_ {y}}{2\pi}  \int \frac{dp_ {x}}{2\pi} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k_ {x} p_ {y}}-\omega_ {p})^{2}}{\omega_ {p}} \\
 &= L_ {\text{DM}} \times (\text{tension correction}).
 \end{align*}
 \tag{4} 
 $$
 
-In the above equation we have set the dimensionality $d$ to $2$. $\omega_ {k}$ is the short-handed form for $\omega_ {k_ {x}k_ {y}}$, the same for $\omega_ {p}$. The integral regarding $y$-coordinate gives as a term proportional to $(2\pi)\delta(0)$, which is the total length of the $y$-direction. $L_ {\text{DM}}$ is the length of the domain wall, $L_ {\text{DM}}=\int dy$. It is understood that in the final result $p_ {y}=-k_ {y}$. It agrees with our naive expectation that the correction is proportional to the total length of the domain wall. 
+In the above equation we have set the dimensionality $d$ to $2$. $\omega_ {k}$ is the short-handed form for $\omega_ {k_ {x}k_ {y}}$, the same for $\omega_ {p}$. Note that **starting from the third line**, we have $\omega_ {k}=\omega_ {k_ {x} p_ {y}}$ due to the Dirac-$\delta$ function. The integral regarding $y$-coordinate gives as a term proportional to $(2\pi)\delta(0)$, which is the total length of the $y$-direction. $L_ {\text{DM}}$ is the length of the domain wall, $L_ {\text{DM}}=\int dy$. It is understood that in the final result $p_ {y}=-k_ {y}$. It agrees with our naive expectation that the correction is proportional to the total length of the domain wall. 
 
 Eq. (4) can also be written as 
 
@@ -319,6 +321,46 @@ $$
 $$
 
 I have no idea why this delta function disappeared. Any help here?
+
+- - -
+
+Let's proceed to calculate $\rho_ {1}$. Since $k_ {x}$ is separated into three parts, i.e. zero mode, shape mode and continuum, we can separate $\rho_ {1}$ into three corresponding parts, writing 
+
+$$
+\rho_ {1} = \rho_ {1B} + \rho_ {1S} + \int \frac{dk_ {x}}{2\pi} \,  \rho_ {1k_ {x}}
+$$
+
+where 
+
+$$
+\begin{align*}
+\rho_ {1B} &=  - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi}\, \frac{(\omega_ {k_ {B}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},  \tag{6}      \\
+\rho_ {1S} &= -\frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {S}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi} \, \frac{(\omega_ {k_ {S}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},    \tag{7}   \\
+\rho_ {1k_ {x}} &=  - \frac{1}{4} \int \, \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} 
+\int \frac{dp_ {y}}{2\pi} \,  \frac{(\omega_ {k_ {x}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ { p_ {x}p_ {y}}}.    \tag{8} 
+\end{align*}
+$$
+
+Note the subscript of $\omega_ {k}$. We have separated the integral over $d^{2}p$ into its two components for a reason, so we can perform the integral over the flat direction $p_ {y}$ analytically first. For the sake of convenience let's define a general integral of form
+
+$$
+\mathcal{I}_ {ab} := \int_ {-\infty}^{\infty} \frac{d p}{2\pi} \, \frac{(\sqrt{ a+p^{2} }-\sqrt{ b+p^{2} })^{2}}{\sqrt{ b+p^{2} }} ,
+$$
+
+With the help of mathematica again we get 
+
+$$
+\mathcal{I}_ {ab} = \frac{a}{2\pi} \left( \frac{b}{a}-\ln\left( \frac{b}{a} \right) -1 \right).
+$$
+
+It shows that if $a=b$ then $\mathcal{I}_ {ab}=0$, as it should be by definition.
+
+Let's carry on to calculate the three parts of $\rho_ {1}$. 
+
+- - -
+
+Recall that $\omega_ {k_ {B}p_ {y}}=\left\lvert p_ {y} \right\rvert$, 
+
 
 # Numerical Results
 
