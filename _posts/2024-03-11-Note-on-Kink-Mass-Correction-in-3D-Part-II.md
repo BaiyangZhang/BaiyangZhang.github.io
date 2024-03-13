@@ -290,9 +290,35 @@ FourierTransform[fkgk[x], x, p, FourierParameters -> {1, -1}]
 which gives us
 
 $$
-\boxed { 
-\tilde{ \mathfrak{g} }_ {k}(p) = \frac{6\pi p}{\omega_ {k}\sqrt{ 4k^{2} + m^{2} }} \text{csch}\left(\frac{(k+p)\pi}{m}\right)
-}
+\tilde{ \mathfrak{g} }_ {k}(p) = \frac{6\pi p}{\omega_ {k}\sqrt{ 4k^{2} + m^{2} }} \text{csch}\left(\frac{(k+p)\pi}{m}\right).
 $$
+
+However if we perform the Fourier transform separately we get
+
+```mathematica
+In[1]:= FourierTransform[E^(-I k x)/(\[Omega]k Sqrt[m^2 + 4 k^2]) (2 k^2 - m^2), x, p, 
+ FourierParameters -> {1, -1}]
+
+Out[1]= (2 (2 k^2 - m^2) \[Pi] DiracDelta[k + p])/(Sqrt[4 k^2 + m^2] \[Omega]k)
+
+In[2]:= FourierTransform[E^(-I k x)/(\[Omega]k Sqrt[m^2 + 4 k^2]) (3/2 m^2 Sech[(m x)/2]^2), x, p, 
+ FourierParameters -> {1, -1}]
+
+Out[2]= (6 (k + p) \[Pi] Csch[((k + p) \[Pi])/m])/(Sqrt[4 k^2 + m^2] \[Omega]k)
+
+In[3]:= FourierTransform[E^(-I k x)/(\[Omega]k Sqrt[m^2 + 4 k^2]) (-3 I m k Tanh[(m x)/2]), x, p, 
+ FourierParameters -> {1, -1}]
+
+Out[3]= -((6 k \[Pi] Csch[((k + p) \[Pi])/m])/(Sqrt[4 k^2 + m^2] \[Omega]k))
+```
+
+Putting them together we get
+
+$$
+\tilde{ \mathfrak{g} }_ {k}(p) = \frac{6\pi p}{\omega_ {k}\sqrt{ 4k^{2} + m^{2} }} \text{csch}\left(\frac{(k+p)\pi}{m}\right)+\frac{2\pi(2k^{2}-m^{2})}{\omega_ {k}\sqrt{ 4k^{2} + m^{2} }} \delta(p+k). 
+$$
+
+I have no idea why this delta function disappeared. Any help here?
+
 # Numerical Results
 
