@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md"
+                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md"
               }
             }
           },
@@ -190,9 +190,10 @@
   },
   "active": "8f4df30737786289",
   "lastOpenFiles": [
+    "img/rhokmarNew.png",
+    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
     "Untitled 1.md",
     "_drafts/2024-03-12-Note-on-Tsallis-statistics.md",
-    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-03-08-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
@@ -220,7 +221,6 @@
     "_posts/2024-02-25-Kinks-in-QFT.md",
     "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
     "_includes/video.liquid",
     "_includes/social.liquid",
     "_includes/selected_papers.liquid",

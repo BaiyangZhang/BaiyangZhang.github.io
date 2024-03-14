@@ -295,7 +295,7 @@ $$
 \tilde{ \mathfrak{g} }_ {k}(p) = \frac{6\pi p}{\omega_ {k}\sqrt{ 4k^{2} + m^{2} }} \text{csch}\left(\frac{(k+p)\pi}{m}\right).
 $$
 
-However if we perform the Fourier transform separately we get
+However, if we perform the Fourier transform term-by-term we get
 
 ```mathematica
 In[1]:= FourierTransform[E^(-I k x)/(\[Omega]k Sqrt[m^2 + 4 k^2]) (2 k^2 - m^2), x, p, 
@@ -336,12 +336,15 @@ $$
 \begin{align*}
 \rho_ {1B} &=  - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi}\, \frac{(\omega_ {k_ {B}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},  \tag{6}      \\
 \rho_ {1S} &= -\frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {S}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi} \, \frac{(\omega_ {k_ {S}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},    \tag{7}   \\
-\rho_ {1k_ {x}} &=  - \frac{1}{4} \int \, \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} 
-\int \frac{dp_ {y}}{2\pi} \,  \frac{(\omega_ {k_ {x}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ { p_ {x}p_ {y}}}.    \tag{8} 
+\rho_ {1C} &=  \int \, \frac{dk_ {x}}{2\pi} \left( - \frac{1}{4} \right)  \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} 
+\int \frac{dp_ {y}}{2\pi} \,  \frac{(\omega_ {k_ {x}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ { p_ {x}p_ {y}}} \tag{8} \\
+&=: \int \frac{dk_ {x}}{2\pi} \,  \rho_ {1k_ {x}}.
 \end{align*}
 $$
 
-Note the subscript of $\omega_ {k}$. We have separated the integral over $d^{2}p$ into its two components for a reason, so we can perform the integral over the flat direction $p_ {y}$ analytically first. For the sake of convenience let's define a general integral of form
+The subscript $C$ in $\rho_ {1C}$ stands for continuum.
+
+We have separated the integral over $d^{2}p$ into its two components for a reason, so we can perform the integral over the flat direction $p_ {y}$ analytically first. For the sake of convenience let's define a general integral of form
 
 $$
 \mathcal{I} (a,b) := \int_ {-\infty}^{\infty} \frac{d p}{2\pi} \, \frac{(\sqrt{ a+p^{2} }-\sqrt{ b+p^{2} })^{2}}{\sqrt{ b+p^{2} }} ,
@@ -435,6 +438,53 @@ It is a little harder to do Eq. (8).
 
 $$
 \begin{align*}
-
+\rho_ {1C} &=  - \frac{1}{4} \int \, \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} 
+\int \frac{dp_ {y}}{2\pi} \,  \frac{(\omega_ {k_ {x}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ { p_ {x}p_ {y}}} \\
+&= - \frac{1}{4} \int \, \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \, \mathcal{I}(m^{2}+k_ {x}^{2},m^{2}+p_ {x}^{2})  \tag{8'} 
 \end{align*}
 $$
+
+where 
+
+$$
+\mathcal{I}(m^{2}+k_ {x}^{2},m^{2}+p_ {x}^{2}) = \frac{1}{2\pi} \left[ p_ {x}^{2}-k_ {x}^{2}+(m^{2}+k_ {x}^{2})\ln\left( \frac{m^{2}+k_ {x}^{2}}{m^{2}+p_ {x}^{2}} \right) \right].
+$$
+
+This leaves 
+
+$$
+\rho_ {1k_ {x}} = - \frac{1}{8\pi} \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \, \left[ p_ {x}^{2}-k_ {x}^{2}+(m^{2}+k_ {x}^{2})\ln\left( \frac{m^{2}+k_ {x}^{2}}{m^{2}+p_ {x}^{2}} \right) \right]
+$$
+
+Now we simply need to substitute 
+
+$$
+\tilde{ \mathfrak{g} }_ {k_ {x}}(p_ {x}) = \frac{6\pi p_ {x}}{\omega_ {k_ {x}}\sqrt{ 4k_ {x}^{2} + m^{2} }} \text{csch}\left(\frac{(k_ {x}+p_ {x})\pi}{m}\right)+\frac{2\pi(2k_ {x}^{2}-m^{2})}{\omega_ {k_ {x}}\sqrt{ 4k_ {x}^{2} + m^{2} }} \delta(p_ {x}+k_ {x}). 
+$$
+
+where $\omega_ {k_ {x}} = \sqrt{ m^{2}+k_ {x}^{2} }$. Note that since $\mathcal{I}(m^{2}+k_ {x}^{2},m^{2}+p_ {x}^{2})$ equals to zero when $p=-k$, hence we can discard the $\delta$ term and focus on the $\text{csch}$ term. 
+
+Again we have to turn to numerical methods, and again we need to cook up some dimension-less variables from $k_ {x}$ and $p_ {x}$. Define $\kappa:= k_ {x} / m$ and $\rho := p_ {x} / m$, we have
+
+$$
+\frac{\rho_ {1k_ {x}}(\kappa)}{m} =  \int d \rho \, (-9 \rho ^2) \frac{ \left(\left(\kappa ^2+1\right) \log \left(\frac{\kappa ^2+1}{\rho ^2+1}\right)-\kappa ^2+\rho ^2\right) }{4 \left(4 \kappa ^4+5 \kappa ^2+1\right)} \, \text{csch}^2(\pi  (\kappa +\rho )).
+$$
+
+The figure of the integral is shown in the below.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/rhokmarNew.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The contribution $\rho_ {1k_ x}$ to the one loop tension arising from each continuum normal mode $k_ x$.
+</div>
+
+The numerical result shows that the total contribution is 
+
+$$
+\rho_ {1C} = -0.0312775 m^{2}
+$$
+
+which is slightly different from Jarah's result $−0.03156 m^{2}$.
