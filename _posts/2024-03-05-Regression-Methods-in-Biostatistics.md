@@ -460,7 +460,9 @@ Logistic regression in biostatistics is a statistical analysis method used to mo
 
 Logistic regression is a statistical method used for analyzing a dataset in which there are one or more independent variables that determine an outcome. The outcome is measured with a dichotomous variable (in which there are only two possible outcomes). It's used extensively in fields like medicine, biology, and social sciences, among others, for tasks like disease prediction, customer churn prediction, and spam detection.
 
-The logistic function, also called the sigmoid function, is an S-shaped curve that can take any real-valued number and map it into a value between 0 and 1, but never exactly at those limits. The logistic function is defined as:
+The logistic function, also called the sigmoid function, is an S-shaped curve that can take any real-valued number and map it into a value between 0 and 1, but never exactly at those limits. 
+
+
 
 # Entropy in Statistics
 

@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0a2ce4dc326fda40",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "8f4df30737786289",
             "type": "leaf",
             "state": {
@@ -33,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "_drafts/2024-03-12-Note-on-Tsallis-statistics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,7 +190,7 @@
   },
   "active": "8f4df30737786289",
   "lastOpenFiles": [
-    "Untitled.md",
+    "_drafts/2024-03-12-Note-on-Tsallis-statistics.md",
     "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
