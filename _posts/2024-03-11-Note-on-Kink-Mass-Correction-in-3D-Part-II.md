@@ -133,7 +133,7 @@ Momentum in the $y$-direction also contributes to the total energy, putting them
 
 $$
 \boxed { 
-\omega_ {Bk_ {}y} = \left\lvert k_ {y} \right\rvert ,\quad  \omega_ {Sk_ {y}} = \sqrt{ \frac{3m^{2}}{4}+k_ {y}^{2} },\quad  \omega_ {k_ {x} k_ {y}} = \sqrt{ m^{2}+k_ {x}^{2}+k_ {y}^{2} }.
+\omega_ {k_ {B}k_ {y}} = \left\lvert k_ {y} \right\rvert ,\quad  \omega_ {k_ {S}k_ {y}} = \sqrt{ \frac{3m^{2}}{4}+k_ {y}^{2} },\quad  \omega_ {k_ {x} k_ {y}} = \sqrt{ m^{2}+k_ {x}^{2}+k_ {y}^{2} }.
 }
 $$
 
@@ -365,12 +365,76 @@ This form made obvious that $\mathcal{I}(a,b)$ behaviors nice at $a=0$.
 
 - - -
 
-To calculate Eq. (6), recall that $\omega_ {k_ {B}p_ {y}}=\left\lvert p_ {y} \right\rvert$. We have 
+To calculate Eq. (6), recall that (since $k_ {y}=-p_ {y}$)
 
 $$
- 
+\boxed { 
+\omega_ {k_ {B}p_ {y}} = \left\lvert p_ {y} \right\rvert ,\quad  \omega_ {k_ {S}p_ {y}} = \sqrt{ \frac{3m^{2}}{4}+p_ {y}^{2} },\quad  \omega_ {k_ {x} p_ {y}} = \sqrt{ m^{2}+k_ {x}^{2}+p_ {y}^{2} }.
+}
 $$
 
+We have 
 
-# Numerical Results
+$$
+\begin{align*}
+\rho_ {1B} &=  - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi}\, \frac{(\omega_ {k_ {B}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},  \tag{6'}      \\
+&= - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \mathcal{I}(0,m^{2}+p^{2}_ {x}) \\
+&= - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \frac{m^{2}+p^{2}_ {x}}{2\pi} \\
+&= - \frac{1}{8\pi} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} (m^{2}+p^{2}_ {x})\\
+&= -\frac{3 m^2}{20 \pi}
+\end{align*} 
+$$
 
+The last line is obtained by Mathematica code
+
+```Mathematica
+tldgB[p_] := -((Sqrt[6] \[Pi] p) /m^(3/2)) Csch[(p \[Pi])/m];
+Integrate[-1/(8 \[Pi]) 1/(2 Pi) tldgB[px]^2 (m^2 + px^2), {px, -\[Infinity], \[Infinity]}, 
+ Assumptions -> {m > 0, m \[Element] Reals}]
+```
+
+- - -
+
+Next let's move on to Eq. (7). We have 
+
+$$
+\begin{align*}
+\rho_ {1S} &= -\frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, \left\lvert \tilde{ \mathfrak{g} }_ {S}(p_ {x}) \right\rvert ^{2} \int \frac{dp_ {y}}{2\pi} \, \frac{(\omega_ {k_ {S}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}}     \\
+&= -\frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, \left\lvert \tilde{ \mathfrak{g} }_ {S}(p_ {x}) \right\rvert ^{2} \, \mathcal{I}\left( \frac{3}{4}m^{2},m^{2}+p_ {x}^{2} \right) \\
+&= -\frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, \left\lvert \tilde{ \mathfrak{g} }_ {S}(p_ {x}) \right\rvert ^{2} \, \mathcal{I}\left( \frac{3}{4}m^{2},m^{2}+p_ {x}^{2} \right)
+\end{align*}
+$$
+
+where 
+
+$$
+\mathcal{I}\left( \frac{3}{4}m^{2},m^{2}+p_ {x}^{2} \right) = \frac{m^{2}}{2\pi} 
+\left[ \frac{1}{4} + \frac{p_ {x}^{2}}{m^{2}} + \frac{3}{4}\ln\left( \frac{3}{4} \right) - \frac{3}{4}\ln\left( 1+\frac{p_ {x}^{2}}{m^{2}} \right) \right].
+$$
+
+We'll have to turn to numerical calculation now. For the sake of numerical calculation, we better change $p_ {x}$ to something without dimension. Set $t:= p_ {x} / m$, we have 
+
+$$
+\begin{align*}
+dp_ {x} &= m dt, \\
+\tilde{ \mathfrak{g} }_ {S}(t) &= - \frac{2i\sqrt{3} \pi t}{\sqrt{ m }} \mathrm{sech}\,(\pi t), \\
+\mathcal{I}(t) &= \frac{m^{2}}{2\pi} 
+\left[ \frac{1}{4} + t^{2} + \frac{3}{4}\ln\left( \frac{3}{4} \right) - \frac{3}{4}\ln\left( 1+ t^{2} \right) \right].
+\end{align*}
+$$
+
+All of this gives us 
+
+$$
+\rho_ {1S} = -\frac{1}{4} \int_ {\infty}^{\infty} \frac{m dt}{2\pi} \, \left\lvert \tilde{ \mathfrak{g} }_ {S}(t) \right\rvert^{2} \, \mathcal{I}(t) = -0.00725 m^{2}. \tag{7'}  
+$$
+
+- - -
+
+It is a little harder to do Eq. (8). 
+
+$$
+\begin{align*}
+
+\end{align*}
+$$
