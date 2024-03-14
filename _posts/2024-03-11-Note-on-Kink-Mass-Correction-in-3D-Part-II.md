@@ -344,22 +344,32 @@ $$
 Note the subscript of $\omega_ {k}$. We have separated the integral over $d^{2}p$ into its two components for a reason, so we can perform the integral over the flat direction $p_ {y}$ analytically first. For the sake of convenience let's define a general integral of form
 
 $$
-\mathcal{I}_ {ab} := \int_ {-\infty}^{\infty} \frac{d p}{2\pi} \, \frac{(\sqrt{ a+p^{2} }-\sqrt{ b+p^{2} })^{2}}{\sqrt{ b+p^{2} }} ,
+\mathcal{I} (a,b) := \int_ {-\infty}^{\infty} \frac{d p}{2\pi} \, \frac{(\sqrt{ a+p^{2} }-\sqrt{ b+p^{2} })^{2}}{\sqrt{ b+p^{2} }} ,
 $$
 
 With the help of mathematica again we get 
 
 $$
-\mathcal{I}_ {ab} = \frac{a}{2\pi} \left( \frac{b}{a}-\ln\left( \frac{b}{a} \right) -1 \right).
+\mathcal{I} (a,b) = \frac{a}{2\pi} \left( \frac{b}{a}-\ln \left\lvert \frac{b}{a} \right\rvert  -1 \right).
 $$
 
-It shows that if $a=b$ then $\mathcal{I}_ {ab}=0$, as it should be by definition.
+This form shows that if $a=b$ then $\mathcal{I}_ {ab}=0$, as it should be by definition. If we allow the parameters of $\ln$ function to be dimensionful, another form is more useful to us,
 
-Let's carry on to calculate the three parts of $\rho_ {1}$. 
+$$
+\boxed { 
+\mathcal{I} (a,b) = \frac{1}{2\pi} (b-a-a\ln \left\lvert b \right\rvert +a\ln \left\lvert a \right\rvert ).
+}
+$$
+
+This form made obvious that $\mathcal{I}(a,b)$ behaviors nice at $a=0$.
 
 - - -
 
-Recall that $\omega_ {k_ {B}p_ {y}}=\left\lvert p_ {y} \right\rvert$, 
+To calculate Eq. (6), recall that $\omega_ {k_ {B}p_ {y}}=\left\lvert p_ {y} \right\rvert$. We have 
+
+$$
+ 
+$$
 
 
 # Numerical Results
