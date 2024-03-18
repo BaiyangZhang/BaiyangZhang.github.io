@@ -489,6 +489,15 @@ $$
 
 which is slightly different from that in the draft where $\rho_ {1C}=−0.03156 m^{2}$.
 
+- - -
 
-# Higher order Hamiltonian
+We can also directly perform the double integral over $dk_ {x}dp_ {x}$, based on Eq. (5.18) in  the paper. Using the Mathematica code in the following
 
+```mathematica
+Module[{integrandTem}, 
+ integrandTem[\[Kappa]_, \[Rho]_] := - (9/(2*4 Pi*(1 + \[Kappa]^2) (1 + 4 \[Kappa]^2))) \[Rho]^2 (Csch[Pi (\[Kappa] + \[Rho])])^2 (-\[Kappa]^2 + \[Rho]^2 - (1 + \[Kappa]^2) Log[(1 + \[Rho]^2)/(1 + \[Kappa]^2)]); 
+ NIntegrate[integrandTem[\[Kappa], \[Rho]], {\[Kappa], -\[Infinity], \[Infinity]}, {\[Rho], -\[Infinity], \[Infinity]}]
+ ]
+```
+
+We get -0.0290278 without any error or warning message.
