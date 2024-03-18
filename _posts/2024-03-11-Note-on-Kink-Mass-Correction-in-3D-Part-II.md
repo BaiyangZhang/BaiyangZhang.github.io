@@ -487,4 +487,5 @@ $$
 \rho_ {1C} = -0.0312775 m^{2}
 $$
 
-which is slightly different from Jarah's result $−0.03156 m^{2}$.
+which is slightly different from that in the draft where $\rho_ {1C}=−0.03156 m^{2}$.
+
