@@ -500,4 +500,6 @@ Module[{integrandTem},
  ]
 ```
 
+where $\kappa := k_ {x} / m$ and $\rho := p_ {x} / m$, they are the reduced momenta.
+
 We get -0.0290278 without any error or warning message.
