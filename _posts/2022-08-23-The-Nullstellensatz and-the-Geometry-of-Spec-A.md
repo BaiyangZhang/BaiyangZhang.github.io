@@ -15,9 +15,11 @@ tags:								#标签
 ## Field Extensions
 
 A field has characteristic either zero or a prime number $p$. Recall that the characteristic of a field is defined by the minimum number of how many unit elements we can add together to get 0, for example, if the characteristic is N, then we have 
+
 $$
  \underbrace{1+1 \dots +1}_{N} = 0.
 $$
+
 For example, $\mathbb{Z}_{5}$ has characteristic 5 since $1+1+1+1+1 = 5 = 0$, $\mathbb{Q}$ has characteristic zero.
 
 Let $k\subset K$ be both fields, we shall say that $K$ is an *extension* of $k$ and $k$ a subfield of $K$. 
@@ -45,28 +47,35 @@ We now define an extension $K / k$ to be algebraic over $k$ if every of $K$ is a
 Let $k$ be a field,  and consider the polynomial ring $k[X_1,\dots,X_n]$. For any maximal ideal $m$, the residue field $K =k[X_{1},\dots,X_{n}] / m$ is a finite algebraic extension of k. Suppose in addition that $k$ is algebraically closed, then $k = K$. 
 
 The maximal ideals of $A = k[X_{1},\dots,X_{n}]$ are of the form 
+
 $$
 m = (X_{1}-a_{1},\dots, X_{n} - a_{n}),\quad a_{i} \in k.
 $$
+
 Take $A=k[X]$ for example, $X-a_{1}$ is irreducible, $X^2+a_{2}X+a_{3}$ is not irreducible since $k$ is closed and $X^2+a_{2}X+a_{3}=0$ always has roots so we can always reduce it. Thus $(X-a_{1})$ is the maximal ideal.
 
 ## Definition of a variety
 
-Let $k$ be a closed field. A *variety* is a subset of $k^n$, a geometric shape of the form 
+Let $k$ be a closed field. A *variety* is a subset of $k^n$, a geometric shape of the form
+
 $$
 V = V(J) = \{ (a_{1},\dots,a_{n}) | f(a_{1},\dots,a_{n})=0 \text{ for all } f\in J  \},
 $$
+
 where $J$ is an ideal of $k[X_{1},\dots,X_{n}]$. Note that $J=(f_{1},\dots,f_{n})$ is finitely generated. The variety of $J$ is nothing but the zero locus of $f_{1},\dots,f_{n}$. 
 
 Every maximal ideal corresponds to a point in $k^n$. In other words, there is a 1-2-1 correspondence 
+
 $$
   V(J) \longleftrightarrow \text{m-Spec}, \text{ given by } (a_{1},\dots,a_{n}) \longleftrightarrow (x_{1}-a_{1},\dots,x_{n}-a_{n}),
 $$
+
 where m-Spec is the set of maximal ideals.
 
 ## The correspondences V and I
 
-A variety $X \subset k^n$ is by definition the same as $V(J)$ for some ideal $J$. We can regard V as a function that maps an ideal to its variety. There is another function doing the inverse: maps a variety to an ideal:  
+A variety $X \subset k^n$ is by definition the same as $V(J)$ for some ideal $J$. We can regard V as a function that maps an ideal to its variety. There is another function doing the inverse: maps a variety to an ideal:
+
 $$
   I: \{ \text{subsets X of } k^n \} \to \{ \text{ideals of } k[X_{1},\dots,X_{n}]\},
 $$  
@@ -75,6 +84,7 @@ defined by taking a variety into the *maximal* ideal.
 But, what is the relation between $V(J)$ and the corresponding maximal ideal, namely $I(V(J))$? Are the always the same? That question is answered by 
 
 **Theorem** (**Nullstellensatz**) Let k be an algebraically closed field.
+
 1. If $J \subset k[X_{1},\dots,X_{n}]$ but $J \neq k[X_{1},\dots,X_{n}]$, then $V(J) \neq 0$.
 2. $I(V(J)) = \text{rad} J$.
 
@@ -104,10 +114,13 @@ Therefore, Spec $k[X_{1},\dots,X_{n}]$ corresponds to the irreducible varieties.
 
 The varieties form  the *closed* sets of a topology on $k^n$, since 
 - The union of two varieties is again a variety,  
+- 
 $$
 V(I) \cup V(J) = V(I\cap J) = V(IJ),
 $$
+
 - The intersection of any varieties is again a variety,   
+- 
 $$
 \cap X_{i} = V\left( \sum J_{i} \right)
 $$  
