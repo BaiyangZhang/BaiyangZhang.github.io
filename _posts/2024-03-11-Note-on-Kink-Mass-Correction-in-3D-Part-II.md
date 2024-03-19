@@ -468,6 +468,7 @@ Again we have to turn to numerical methods, and again we need to cook up some di
 
 $$
 \frac{\rho_ {1k_ {x}}(\kappa)}{m} =  \int d \rho \, (-9 \rho ^2) \frac{ \left(\left(\kappa ^2+1\right) \log \left(\frac{\kappa ^2+1}{\rho ^2+1}\right)-\kappa ^2+\rho ^2\right) }{4 \left(4 \kappa ^4+5 \kappa ^2+1\right)} \, \text{csch}^2(\pi  (\kappa +\rho )).
+\tag{9} 
 $$
 
 The figure of the integral is shown in the below.
@@ -487,11 +488,13 @@ $$
 \rho_ {1C} = -0.0312775 m^{2}
 $$
 
-which is slightly different from that in the draft where $\rho_ {1C}=−0.03156 m^{2}$.
+which is slightly different from that in the draft where $\rho_ {1C}=−0.03156 m^{2}$. We will explain how we get the numerical result and how reliable they are in the following section.
 
-- - -
+# Numeric Results
 
-We can also directly perform the double integral over $dk_ {x}dp_ {x}$, based on Eq. (5.18) in  the paper. Using the Mathematica code in the following
+**Result Using Mathematica function `NIntegral`**
+
+We can directly perform the double integral over $dk_ {x}dp_ {x}$, based on Eq. (5.18) in  the paper. Using the Mathematica code in the following (it is meant to be copied and opened in Mathematica notebook)
 
 ```mathematica
 Module[{integrandTem}, 
@@ -502,4 +505,113 @@ Module[{integrandTem},
 
 where $\kappa := k_ {x} / m$ and $\rho := p_ {x} / m$, they are the reduced momenta.
 
-We get -0.0290278 without any error or warning message.
+We get -0.0290278 without any error or warning message. However since the slow-converging nature and the fact that the 2D integral domain is infinity, this result is not very reliable, especially it differs from results that we got from more reliable method, which we will elaborate in the following.
+
+When the parameter `WorkingPrecision` and `MaxRecursion` is set too high, $50$ for example, the integral result will be unstable and oscillates wildly. It can be seen from running the following code, we will skip the final result rather just mention that it doesn't work.
+
+```mathematica
+Module[{data}, 
+ rho1kx[\[Kappa]_] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Infinity], \[Infinity]}, 
+   WorkingPrecision -> 50, MaxRecursion -> 50, PrecisionGoal -> 50, 
+   AccuracyGoal -> 50];
+ Plot[rho1kx[\[Kappa]], {\[Kappa], -10, 10}]]
+```
+
+Similarly, `PrecisionGoal->50` does not help, for *the result is not even monotonically decreasing at large $k_ {x}$*, we list the code and the result:
+
+```mathematica
+Module[{data}, 
+ rho1kx[\[Kappa]_] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Infinity], \[Infinity]}, 
+   WorkingPrecision -> 50, MaxRecursion -> 50, PrecisionGoal -> 50, 
+   AccuracyGoal -> 50];
+ data = Table[{\[Kappa], rho1kx[\[Kappa]]}, {\[Kappa], 0, 100, 10}];
+ TableForm[data, 
+  TableHeadings -> {None, {"\[Kappa]", "rho1kx[\[Kappa]]"}}]]
+```
+
+| $\kappa:=k_ {x} / m$ | $\rho_ {1k_ {x}}(\kappa)$                                                              |
+| -------------------- | :------------------------------------------------------------------------------------- |
+| 0                    | -0.01006749649788711098711857084994935329969685541183878214107904582123515308302       |
+| 10                   | -0.0011686020701178210972909521296487066189263742489601351585665823047453837217        |
+| 20                   | -0.00029683035584775581156058547901822136103318225147929961904900419907102724281       |
+| 30                   | -0.00013231530085233583442497003327532617560145592710253697711716088939790650143       |
+| 40                   | -0.00007450450777691673214866577793384482867825300381463112353663045604557837695       |
+| 50                   | -0.00004770576549529244561173447135702738762050345037729455603576967068239692329       |
+| 60                   | -0.00003313763983924425143831035983787787108360534775902718717778116210540211577       |
+| 70                   | -3.05720109112434448297096772257979519066270693516655258261985652468392e-67            |
+| 80                   | -0.00001864475446773486568369540682272388850447396654084892463438555277298711842       |
+| 90                   | -1.4130111258010705126942302422531874366831796760314017313726306134102608247521657e-56 |
+| 100                  | -1.08733498976318462751508987228401098685929997485580324213060115407081675e-83         |
+
+It shows wild oscillation, hence is not trust-worthy.
+
+With reasonable options 
+
+```mathematica
+NIntegrate[
+ rho1kx[\[Kappa]]/(2 Pi), {\[Kappa], -\[Infinity], \[Infinity]},
+ WorkingPrecision -> 30, PrecisionGoal -> 6, AccuracyGoal -> 6
+ ]
+```
+
+we get the following result:
+
+>NIntegrate failed to converge to prescribed accuracy after 9 recursive bisections in \[Kappa] near {\[Kappa]} = {169.954045306876363791355871581}. NIntegrate obtained -0.0313611336264321023970618041371 and 2.68446200766726199070353491885 * 10^-6 for the integral and error estimates". 
+
+Which translates to $\boxed {-0.031361 \pm 0.0000027}$.
+
+- - -
+
+**Cutoff on $\rho$-integral**
+
+Let's take a closer look at the integral Eq. (9). The integrand contains a factor roughly $\text{csch}^{2}(\kappa+\rho )$, proportional to $e^{-2 (\kappa+\rho) }$, a exponential suppression. When $\kappa$ is fixed, the only integral domain that contributes to the integral is $\rho \in (\kappa-\Lambda,\kappa+\Lambda)$ for some cutoff $\Lambda$. The below numerical results will show that it is sufficient for $\Lambda=4$. We compare the integrals with and without a cutoff, and calculate the numerical difference. The Mathematica code is as follow.
+
+```mathematica
+Module[{data, 
+  cut = 4},(*Change the range of \[Rho] to (-\[Kappa]-4,-\[Kappa]+4). \
+The error is e^(-12)*)
+ integrand[\[Kappa]_, \[Rho]_] := -((
+   9 \[Rho]^2 Csch[\[Pi] (\[Kappa] + \[Rho])]^2 (-\[Kappa]^2 + \
+\[Rho]^2 + (1 + \[Kappa]^2) Log[(1 + \[Kappa]^2)/(1 + \[Rho]^2)]))/(
+   4 (1 + 5 \[Kappa]^2 + 4 \[Kappa]^4))); 
+ rho1kxCut[\[Kappa]_] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Kappa] - cut, -\[Kappa] + 
+     cut}];
+ rho1kxOld[\[Kappa]_] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Infinity], \[Infinity]}];
+ data = Table[{\[Kappa], rho1kxCut[\[Kappa]], 
+    rho1kxCut[\[Kappa]] - rho1kxOld[\[Kappa]]}, {\[Kappa], 0, 50, 
+    5}];
+ TableForm[data, 
+  TableHeadings -> {None, {"\[Kappa]", "rho1kxCut[\[Kappa]]", 
+     "\!\(\*SubscriptBox[\(\[CapitalDelta]\[Rho]\), \(1 \
+\*SubscriptBox[\(k\), \(x\)]\)]\)"}}]]
+```
+
+The result is 
+
+| $\kappa$ | $\rho_ {1k_ {x}}$, cutoff $\Lambda=4$ | (no cutoff)-(cutoff)    |
+| -------- | ------------------------------------- | ----------------------- |
+| 0        | -0.010067487732895529                 | 8.765189650483673e-9    |
+| 5        | -0.004392140942187636                 | 1.593452800263684e-11   |
+| 10       | -0.0011686020668566898                | 3.550229121102033e-12   |
+| 15       | -0.0005255221885434485                | 1.3990545917955122e-12  |
+| 20       | -0.00029683035507646215               | 7.731202830707495e-13   |
+| 25       | -0.00019033570885620298               | 5.392984236268772e-13   |
+| 30       | -0.0001323153005189792                | 2.925147653937664e-11   |
+| 35       | -0.0000972723299390857                | 2.439141418139265e-13   |
+| 40       | -0.00007450450758206166               | -4.5439728150705513e-10 |
+| 45       | -0.00005888422463756871               | -5.451281699940568e-10  |
+| 50       | -0.00004770576537439472               | 2.9170256334566332e-8   |
+
+The error is larger then 10 to the power of 8 ate least, its influence to the final result is negligible. *Hence we will used the cutoff version.*
+
+## Summation method
+
+At lower values of $\kappa$ we can afford finer step
