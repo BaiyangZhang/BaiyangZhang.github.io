@@ -534,7 +534,7 @@ Module[{data},
 ```
 
 
-| $\kappa:=k_ {x} / m$ | $\rho_ {1k_ {x}}(\kappa)$           |
+| $\kappa:=k_ {x} / m$ | $2\pi\rho_ {1k_ {x}}(\kappa)$                                                          |
 | -------------------- | :------------------------------------------------------------------------------------- |
 | 0                    | -0.01006749649788711098711857084994935329969685541183878214107904582123515308302       |
 | 10                   | -0.0011686020701178210972909521296487066189263742489601351585665823047453837217        |
@@ -667,7 +667,7 @@ totalSum[\[CapitalLambda]_, stepSize_] :=
  Module[{\[Kappa]Min = -\[CapitalLambda], \[Kappa]Max = \
 \[CapitalLambda]},
   Sum[rho1kxCut[\[Kappa]]*
-    stepSize, {\[Kappa], \[Kappa]Min, \[Kappa]Max, stepSize}]]
+    stepSize, {\[Kappa], \[Kappa]Min, \[Kappa]Max, stepSize}]/(2 Pi)]
  
 ```
 
@@ -690,27 +690,130 @@ and we get
 
 $\text{step size=0.01}$, $\kappa \in(-\Lambda,+\Lambda)$:
 
-| $\Lambda$ | $\rho_ {1k_ {x}}$ |
-| --------- | :---------------: |
-| 1         |     -0.046851     |
-| 2         |    -0.0963558     |
-| 3         |     -0.124661     |
-| 4         |     -0.14134      |
-| 5         |     -0.152061     |
-| 6         |     -0.159464     |
-| 7         |     -0.16486      |
-| 8         |     -0.168959     |
-| 9         |     -0.172175     |
-| 10        |     -0.174763     |
-| 11        |     -0.176889     |
-| 12        |     -0.178667     |
-| 13        |     -0.180176     |
-| 14        |     -0.181471     |
-| 15        |     -0.182596     |
-| 16        |     -0.183581     |
-| 17        |     -0.184452     |
-| 18        |     -0.185226     |
-| 19        |     -0.185919     |
-| 20        |     -0.186544     |
+| $\Lambda$ | $2\pi\rho_ {1k_ {x}}$ |
+| --------- | :-------------------: |
+| 1         |       -0.046851       |
+| 2         |      -0.0963558       |
+| 3         |       -0.124661       |
+| 4         |       -0.14134        |
+| 5         |       -0.152061       |
+| 6         |       -0.159464       |
+| 7         |       -0.16486        |
+| 8         |       -0.168959       |
+| 9         |       -0.172175       |
+| 10        |       -0.174763       |
+| 11        |       -0.176889       |
+| 12        |       -0.178667       |
+| 13        |       -0.180176       |
+| 14        |       -0.181471       |
+| 15        |       -0.182596       |
+| 16        |       -0.183581       |
+| 17        |       -0.184452       |
+| 18        |       -0.185226       |
+| 19        |       -0.185919       |
+| 20        |       -0.186544       |
 
 Looks stable enough. 
+
+I decided to increase the upper and lower limit $\Lambda$ until the first four or five digit (after the decimal point) stabilizes, with step size 0.01, and include the $2\pi$ factor:
+
+```mathematica
+(*cut_:4 means the defalut value for cut is 4, which is  used unless \
+an explicit value is provided for cut in the function call. rho1kxCut \
+can be called as, for example, rho1kxCut[0] or rho1kxCut[0,6] *)
+
+integrand[\[Kappa]_, \[Rho]_] := -((
+   9 \[Rho]^2 Csch[\[Pi] (\[Kappa] + \[Rho])]^2 (-\[Kappa]^2 + \
+\[Rho]^2 + (1 + \[Kappa]^2) Log[(1 + \[Kappa]^2)/(1 + \[Rho]^2)]))/(
+   4 (1 + 5 \[Kappa]^2 + 4 \[Kappa]^4)));
+rho1kxCut[\[Kappa]_, cut_ : 4] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Kappa] - cut, -\[Kappa] +  cut}];
+
+(*Set up the discretization parameters*)
+\[CapitalLambda] = 50;
+\[Kappa]Min = -\[CapitalLambda];  (*LargeValue should be a large \
+number representing the approximation to -Infinity*)
+\[Kappa]Max = \[CapitalLambda];   (*Similarly for +Infinity*)
+stepSize = 
+  0.1;  (*DesiredStep is the step size for the discretization,choose \
+based on desired precision*)
+
+(*Sum up the values of rho1kx over the range using the specified step \
+size*)
+(*The first argument defined the range of Subscript[\[Rho], \
+1Subscript[k, x]], the second argument defines the step size.*)
+
+totalSum[\[CapitalLambda]_, stepSize_] := 
+ Module[{\[Kappa]Min = -\[CapitalLambda], \[Kappa]Max = \
+\[CapitalLambda]},
+  Sum[rho1kxCut[\[Kappa]]*
+    stepSize, {\[Kappa], \[Kappa]Min, \[Kappa]Max, stepSize}]/(2 Pi)]
+ 
+Module[{data},
+ data = Table[
+   totalSum[\[CapitalLambda], 
+    stepSize], {\[CapitalLambda], {50, 170, 5}}, {stepSize, {0.01}}];
+ TableForm[data, 
+  TableHeadings -> {Table[
+     "\[CapitalLambda]=" <> 
+      ToString[\[CapitalLambda]tem], {\[CapitalLambda]tem, 20}], 
+    Table["stepSize=" <> ToString[a], {a, {0.01}}]}]
+ ]
+```
+
+We get 
+
+| $\kappa \in(-\Lambda,\Lambda)$ | stepSize=0.01 |
+| ------------------------------ | ------------- |
+| Λ=100                          | -0.0312054    |
+| Λ=105                          | -0.0312235    |
+| Λ=110                          | -0.0312399    |
+| Λ=115                          | -0.0312549    |
+| Λ=120                          | -0.0312687    |
+| Λ=125                          | -0.0312813    |
+| Λ=130                          | -0.031293     |
+| Λ=135                          | -0.0313038    |
+| Λ=135                          | -0.0313038    |
+| Λ=140                          | -0.0313139    |
+| Λ=145                          | -0.0313233    |
+| Λ=150                          | -0.031332     |
+| Λ=155                          | -0.0313402    |
+| Λ=160                          | -0.0313478    |
+| Λ=165                          | -0.031355     |
+| Λ=170                          | -0.0313618    |
+| Λ=175                          | -0.0313682    |
+| Λ=180                          | -0.0313742    |
+| Λ=195                          | -0.0313904    |
+| Λ=200                          | -0.0313953    |
+| Λ=210                          | -0.0314044    |
+| Λ=220                          | -0.0314126    |
+| Λ=230                          | -0.0314201    |
+| Λ=240                          | -0.031426995  |
+| Λ=250                          | -0.0314333    |
+| Λ=300                          | -0.0314587    |
+| Λ=400                          | -0.0314903    |
+| Λ=500                          | -0.0315093    |
+| Λ=600                          | -0.031522     |
+| Λ=800                          | -0.0315378    |
+| Λ=1000                         | -0.0315473    |
+| Λ=1200                         | -0.0315537    |
+| Λ=1400                         | -0.0315582    |
+| Λ=1600                         | -0.0315616    |
+
+With step size 0.01, the first four digits after decimal point can no longer be improved by enlarging $\Lambda$. 
+
+
+Next, we divide the integral domain into an inner region where we use fine summations (smaller step size) and an outer region where we use coarser summation (large step size), separated by an limit $\Lambda=1600$. We do two things simultaneously, 1) increase the inner region step size from $0.005$ to $0.01$ and 2) increase the outer region step size from $0.05$ to $0.1$ until the first four or five digits after the decimal point stabilizes. 
+
+$\Lambda=1600$, Upper limit of $\kappa$ is set to be 10 000.
+
+In the following table, large step size means 0.01 for inner region and 0.1 for outer region; small step size means 0.005 for inner region and 0.05 for outer region. Hope I had a stronger computer...
+
+|       | Small Step Size | Large Step Size       |
+| ----- | --------------- | --------------------- |
+| Inner |                 | -0.03156158063750391` |
+| Outer |                 | -0.0000199484         |
+| Total |                 |                       |
+
+
