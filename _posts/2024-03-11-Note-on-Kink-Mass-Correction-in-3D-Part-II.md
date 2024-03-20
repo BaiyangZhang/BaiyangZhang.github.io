@@ -815,5 +815,3 @@ In the following table, large step size means 0.01 for inner region and 0.1 for 
 | Inner | -0.0315615                 | -0.03156158063750391`        |
 | Outer | -0.000019948               | -0.0000199484                |
 | Total | -0.03158147                | -0.03158153                  |
-
-
