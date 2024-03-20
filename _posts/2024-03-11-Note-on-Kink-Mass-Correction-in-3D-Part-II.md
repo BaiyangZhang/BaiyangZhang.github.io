@@ -810,10 +810,10 @@ $\Lambda=1600$, Upper limit of $\kappa$ is set to be 10 000.
 
 In the following table, large step size means 0.01 for inner region and 0.1 for outer region; small step size means 0.005 for inner region and 0.05 for outer region. Hope I had a stronger computer...
 
-|       | Small Step Size | Large Step Size       |
-| ----- | --------------- | --------------------- |
-| Inner |                 | -0.03156158063750391` |
-| Outer |                 | -0.0000199484         |
-| Total |                 |                       |
+|       | Small Step Size (fine sum) | Large Step Size (coarse sum) |
+| ----- | -------------------------- | ---------------------------- |
+| Inner | -0.0315615                 | -0.03156158063750391`        |
+| Outer | -0.000019948               | -0.0000199484                |
+| Total | -0.03158147                | -0.03158153                  |
 
 
