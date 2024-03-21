@@ -468,6 +468,7 @@ Again we have to turn to numerical methods, and again we need to cook up some di
 
 $$
 \frac{\rho_ {1k_ {x}}(\kappa)}{m} =  \int d \rho \, (-9 \rho ^2) \frac{ \left(\left(\kappa ^2+1\right) \log \left(\frac{\kappa ^2+1}{\rho ^2+1}\right)-\kappa ^2+\rho ^2\right) }{4 \left(4 \kappa ^4+5 \kappa ^2+1\right)} \, \text{csch}^2(\pi  (\kappa +\rho )).
+\tag{9} 
 $$
 
 The figure of the integral is shown in the below.
@@ -487,8 +488,330 @@ $$
 \rho_ {1C} = -0.0312775 m^{2}
 $$
 
-which is slightly different from that in the draft where $\rho_ {1C}=−0.03156 m^{2}$.
+which is slightly different from that in the draft where $\rho_ {1C}=−0.03156 m^{2}$. We will explain how we get the numerical result and how reliable they are in the following section.
+
+# Numeric Results
+
+**Result Using Mathematica function `NIntegral`**
+
+We can directly perform the double integral over $dk_ {x}dp_ {x}$, based on Eq. (5.18) in  the paper. Using the Mathematica code in the following (it is meant to be copied and opened in Mathematica notebook)
+
+```mathematica
+Module[{integrandTem}, 
+ integrandTem[\[Kappa]_, \[Rho]_] := - (9/(2*4 Pi*(1 + \[Kappa]^2) (1 + 4 \[Kappa]^2))) \[Rho]^2 (Csch[Pi (\[Kappa] + \[Rho])])^2 (-\[Kappa]^2 + \[Rho]^2 - (1 + \[Kappa]^2) Log[(1 + \[Rho]^2)/(1 + \[Kappa]^2)]); 
+ NIntegrate[integrandTem[\[Kappa], \[Rho]], {\[Kappa], -\[Infinity], \[Infinity]}, {\[Rho], -\[Infinity], \[Infinity]}]
+ ]
+```
+
+where $\kappa := k_ {x} / m$ and $\rho := p_ {x} / m$, they are the reduced momenta.
+
+We get -0.0290278 without any error or warning message. However since the slow-converging nature and the fact that the 2D integral domain is infinity, this result is not very reliable, especially it differs from results that we got from more reliable method, which we will elaborate in the following.
+
+When the parameter `WorkingPrecision` and `MaxRecursion` is set too high, $50$ for example, the integral result will be unstable and oscillates wildly. It can be seen from running the following code, we will skip the final result rather just mention that it doesn't work.
+
+```mathematica
+Module[{data}, 
+ rho1kx[\[Kappa]_] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Infinity], \[Infinity]}, 
+   WorkingPrecision -> 50, MaxRecursion -> 50, PrecisionGoal -> 50, 
+   AccuracyGoal -> 50];
+ Plot[rho1kx[\[Kappa]], {\[Kappa], -10, 10}]]
+```
+
+Similarly, `PrecisionGoal->50` does not help, for *the result is not even monotonically decreasing at large $k_ {x}$*, we list the code and the result:
+
+```mathematica
+Module[{data}, 
+ rho1kx[\[Kappa]_] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Infinity], \[Infinity]}, 
+   WorkingPrecision -> 50, MaxRecursion -> 50, PrecisionGoal -> 50, 
+   AccuracyGoal -> 50];
+ data = Table[{\[Kappa], rho1kx[\[Kappa]]}, {\[Kappa], 0, 100, 10}];
+ TableForm[data, 
+  TableHeadings -> {None, {"\[Kappa]", "rho1kx[\[Kappa]]"}}]]
+```
 
 
-# Higher order Hamiltonian
+| $\kappa:=k_ {x} / m$ | $2\pi\rho_ {1k_ {x}}(\kappa)$                                                          |
+| -------------------- | :------------------------------------------------------------------------------------- |
+| 0                    | -0.01006749649788711098711857084994935329969685541183878214107904582123515308302       |
+| 10                   | -0.0011686020701178210972909521296487066189263742489601351585665823047453837217        |
+| 20                   | -0.00029683035584775581156058547901822136103318225147929961904900419907102724281       |
+| 30                   | -0.00013231530085233583442497003327532617560145592710253697711716088939790650143       |
+| 40                   | -0.00007450450777691673214866577793384482867825300381463112353663045604557837695       |
+| 50                   | -0.00004770576549529244561173447135702738762050345037729455603576967068239692329       |
+| 60                   | -0.00003313763983924425143831035983787787108360534775902718717778116210540211577       |
+| 70                   | -3.05720109112434448297096772257979519066270693516655258261985652468392e-67            |
+| 80                   | -0.00001864475446773486568369540682272388850447396654084892463438555277298711842       |
+| 90                   | -1.4130111258010705126942302422531874366831796760314017313726306134102608247521657e-56 |
+| 100                  | -1.08733498976318462751508987228401098685929997485580324213060115407081675e-83         |
 
+It shows wild oscillation, hence is not trust-worthy.
+
+With reasonable options 
+
+```mathematica
+NIntegrate[
+ rho1kx[\[Kappa]]/(2 Pi), {\[Kappa], -\[Infinity], \[Infinity]},
+ WorkingPrecision -> 30, PrecisionGoal -> 6, AccuracyGoal -> 6
+ ]
+```
+
+we get the following result:
+
+>`NIntegrate` failed to converge to prescribed accuracy after 9 recursive bisections in \[Kappa] near {\[Kappa]} = {169.954045306876363791355871581}. `NIntegrate` obtained -0.0313611336264321023970618041371 and 2.68446200766726199070353491885 * 10^-6 for the integral and error estimates". 
+
+Which translates to $\boxed {-0.031361 \pm 0.0000027}$. However, the origin of this error estimation is unclear to me, and multiple warnings about converging too slowly make it even less convincing. This motivates us to try another more direct but more controllable method to perform the integral.
+
+- - -
+
+**Cutoff on $\rho$-integral**
+
+Let's take a closer look at the integral Eq. (9). The integrand contains a factor roughly $\text{csch}^{2}(\kappa+\rho )$, proportional to $e^{-2 (\kappa+\rho) }$, a exponential suppression. When $\kappa$ is fixed, the only integral domain that contributes to the integral is $\rho \in (\kappa-\Lambda,\kappa+\Lambda)$ for some cutoff $\Lambda$. The below numerical results will show that it is sufficient for $\Lambda=4$. We compare the integrals with and without a cutoff, and calculate the numerical difference. The Mathematica code is as follow.
+
+```mathematica
+(*cut_:4 means the defalut value for cut is 4, which is  used unless \
+an explicit value is provided for cut in the function call. rho1kxCut \
+can be called as, for example, rho1kxCut[0] or rho1kxCut[0,6] *)
+
+integrand[\[Kappa]_, \[Rho]_] := -((
+   9 \[Rho]^2 Csch[\[Pi] (\[Kappa] + \[Rho])]^2 (-\[Kappa]^2 + \
+\[Rho]^2 + (1 + \[Kappa]^2) Log[(1 + \[Kappa]^2)/(1 + \[Rho]^2)]))/(
+   4 (1 + 5 \[Kappa]^2 + 4 \[Kappa]^4)));
+rho1kxCut[\[Kappa]_, cut_ : 4] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Kappa] - cut, -\[Kappa] + 
+     cut}];
+
+Module[{data},
+ rho1kxOld[\[Kappa]_] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Infinity], \[Infinity]}];
+ data = Table[{\[Kappa], 
+    rho1kxCut[\[Kappa]], (rho1kxCut[\[Kappa]] - rho1kxOld[\[Kappa]])/
+     rho1kxOld[\[Kappa]]}, {\[Kappa], 0, 70, 5}];
+ Labeled[
+  TableForm[data, 
+   TableHeadings -> {None, {"\[Kappa]", "rho1kxCut[\[Kappa]]", 
+      "Relative Error"}}], 
+  "\[Rho]\[Element](-\[Kappa]-4,-\[Kappa]+4)", Top]
+ ]
+```
+
+The result is shown in the following, where relative error is defined as $(\text{cut}-\text{uncut})/\text{cut}$.
+
+$\rho \in(\kappa-4,\kappa+4)$
+
+| $\kappa$ | rho1kxCut     | Relative Error |
+| -------- | ------------- | -------------- |
+| 0        | -0.0100675    | -8.70642e-7    |
+| 5        | -0.00439214   | -3.62796e-9    |
+| 10       | -0.0011686    | -3.03801e-9    |
+| 15       | -0.000525522  | -2.66222e-9    |
+| 20       | -0.00029683   | -2.60459e-9    |
+| 25       | -0.000190336  | -2.83341e-9    |
+| 30       | -0.000132315  | -2.21074e-7    |
+| 35       | -0.0000972723 | -2.50754e-9    |
+| 40       | -0.0000745045 | 6.09896e-6     |
+| 45       | -0.0000588842 | 9.25771e-6     |
+| 50       | -0.0000477058 | -0.000611088   |
+| 55       | -0.0000394321 | -3.35955e-6    |
+| 60       | -0.0000331376 | 7.45096e-6     |
+| 65       | -0.0000282381 | 7.13059e-7     |
+| 70       | -0.0000243498 | 0.000272326    |
+
+$\rho \in(-\kappa-5,-\kappa+5)$:
+
+| $\kappa$ | rho1kxCut     | Relative Error |
+| -------- | ------------- | -------------- |
+| 0        | -0.0100675    | -4.05348e-9    |
+| 5        | -0.00439214   | -1.14805e-11   |
+| 10       | -0.0011686    | -2.57375e-10   |
+| 15       | -0.000525522  | -1.60657e-11   |
+| 20       | -0.00029683   | -2.65453e-11   |
+| 25       | -0.000190336  | -2.58825e-10   |
+| 30       | -0.000132315  | -2.18558e-7    |
+| 35       | -0.0000972723 | 2.75179e-11    |
+| 40       | -0.0000745045 | 6.10152e-6     |
+| 45       | -0.0000588842 | 9.26034e-6     |
+| 50       | -0.0000477058 | -0.000611086   |
+| 55       | -0.0000394321 | -3.35706e-6    |
+| 60       | -0.0000331376 | 7.45363e-6     |
+| 65       | -0.0000282381 | 7.15863e-7     |
+| 70       | -0.0000243498 | 0.000272329    |
+
+For $\rho \in(\kappa-4,\kappa+4)$, the relative error is negligible. *Hence we will used the cutoff version.*
+
+## Summation method
+
+At lower values of $\kappa$ we can afford finer step size, the basic Mathematica code we are gonna use is (ignore it or copy to a note book to read)
+
+```mathematica
+(*Set up the discretization parameters*)
+\[CapitalLambda] = 50;
+\[Kappa]Min = -\[CapitalLambda];  (*LargeValue should be a large \
+number representing the approximation to -Infinity*)
+\[Kappa]Max = \[CapitalLambda];   (*Similarly for +Infinity*)
+stepSize = 
+  0.1;  (*DesiredStep is the step size for the discretization,choose \
+based on desired precision*)
+
+(*Sum up the values of rho1kx over the range using the specified step \
+size*)
+(*The first argument defined the range of Subscript[\[Rho], \
+1Subscript[k, x]], the second argument defines the step size.*)
+
+totalSum[\[CapitalLambda]_, stepSize_] := 
+ Module[{\[Kappa]Min = -\[CapitalLambda], \[Kappa]Max = \
+\[CapitalLambda]},
+  Sum[rho1kxCut[\[Kappa]]*
+    stepSize, {\[Kappa], \[Kappa]Min, \[Kappa]Max, stepSize}]/(2 Pi)]
+ 
+```
+
+To see if summation method is stable at step size $0.01$ for various $\Lambda$, execute
+
+```mathematica
+Module[{data},
+ data = Table[
+   totalSum[\[CapitalLambda], 
+    stepSize], {\[CapitalLambda], {1, 20, 1}}, {stepSize, {0.01}}];
+ TableForm[data, 
+  TableHeadings -> {Table[
+     "\[CapitalLambda]=" <> 
+      ToString[\[CapitalLambda]tem], {\[CapitalLambda]tem, 20}], 
+    Table["stepSize=" <> ToString[a], {a, {0.01}}]}]
+ ]
+```
+
+and we get 
+
+$\text{step size=0.01}$, $\kappa \in(-\Lambda,+\Lambda)$:
+
+| $\Lambda$ | $2\pi\rho_ {1k_ {x}}$ |
+| --------- | :-------------------: |
+| 1         |       -0.046851       |
+| 2         |      -0.0963558       |
+| 3         |       -0.124661       |
+| 4         |       -0.14134        |
+| 5         |       -0.152061       |
+| 6         |       -0.159464       |
+| 7         |       -0.16486        |
+| 8         |       -0.168959       |
+| 9         |       -0.172175       |
+| 10        |       -0.174763       |
+| 11        |       -0.176889       |
+| 12        |       -0.178667       |
+| 13        |       -0.180176       |
+| 14        |       -0.181471       |
+| 15        |       -0.182596       |
+| 16        |       -0.183581       |
+| 17        |       -0.184452       |
+| 18        |       -0.185226       |
+| 19        |       -0.185919       |
+| 20        |       -0.186544       |
+
+Looks stable enough. 
+
+I decided to increase the upper and lower limit $\Lambda$ until the first four or five digit (after the decimal point) stabilizes, with step size 0.01, and include the $2\pi$ factor:
+
+```mathematica
+(*cut_:4 means the defalut value for cut is 4, which is  used unless \
+an explicit value is provided for cut in the function call. rho1kxCut \
+can be called as, for example, rho1kxCut[0] or rho1kxCut[0,6] *)
+
+integrand[\[Kappa]_, \[Rho]_] := -((
+   9 \[Rho]^2 Csch[\[Pi] (\[Kappa] + \[Rho])]^2 (-\[Kappa]^2 + \
+\[Rho]^2 + (1 + \[Kappa]^2) Log[(1 + \[Kappa]^2)/(1 + \[Rho]^2)]))/(
+   4 (1 + 5 \[Kappa]^2 + 4 \[Kappa]^4)));
+rho1kxCut[\[Kappa]_, cut_ : 4] := 
+  NIntegrate[
+   integrand[\[Kappa], \[Rho]], {\[Rho], -\[Kappa] - cut, -\[Kappa] +  cut}];
+
+(*Set up the discretization parameters*)
+\[CapitalLambda] = 50;
+\[Kappa]Min = -\[CapitalLambda];  (*LargeValue should be a large \
+number representing the approximation to -Infinity*)
+\[Kappa]Max = \[CapitalLambda];   (*Similarly for +Infinity*)
+stepSize = 
+  0.1;  (*DesiredStep is the step size for the discretization,choose \
+based on desired precision*)
+
+(*Sum up the values of rho1kx over the range using the specified step \
+size*)
+(*The first argument defined the range of Subscript[\[Rho], \
+1Subscript[k, x]], the second argument defines the step size.*)
+
+totalSum[\[CapitalLambda]_, stepSize_] := 
+ Module[{\[Kappa]Min = -\[CapitalLambda], \[Kappa]Max = \
+\[CapitalLambda]},
+  Sum[rho1kxCut[\[Kappa]]*
+    stepSize, {\[Kappa], \[Kappa]Min, \[Kappa]Max, stepSize}]/(2 Pi)]
+ 
+Module[{data},
+ data = Table[
+   totalSum[\[CapitalLambda], 
+    stepSize], {\[CapitalLambda], {50, 170, 5}}, {stepSize, {0.01}}];
+ TableForm[data, 
+  TableHeadings -> {Table[
+     "\[CapitalLambda]=" <> 
+      ToString[\[CapitalLambda]tem], {\[CapitalLambda]tem, 20}], 
+    Table["stepSize=" <> ToString[a], {a, {0.01}}]}]
+ ]
+```
+
+We get 
+
+| $\kappa \in(-\Lambda,\Lambda)$ | stepSize=0.01 |
+| ------------------------------ | ------------- |
+| Λ=100                          | -0.0312054    |
+| Λ=105                          | -0.0312235    |
+| Λ=110                          | -0.0312399    |
+| Λ=115                          | -0.0312549    |
+| Λ=120                          | -0.0312687    |
+| Λ=125                          | -0.0312813    |
+| Λ=130                          | -0.031293     |
+| Λ=135                          | -0.0313038    |
+| Λ=135                          | -0.0313038    |
+| Λ=140                          | -0.0313139    |
+| Λ=145                          | -0.0313233    |
+| Λ=150                          | -0.031332     |
+| Λ=155                          | -0.0313402    |
+| Λ=160                          | -0.0313478    |
+| Λ=165                          | -0.031355     |
+| Λ=170                          | -0.0313618    |
+| Λ=175                          | -0.0313682    |
+| Λ=180                          | -0.0313742    |
+| Λ=195                          | -0.0313904    |
+| Λ=200                          | -0.0313953    |
+| Λ=210                          | -0.0314044    |
+| Λ=220                          | -0.0314126    |
+| Λ=230                          | -0.0314201    |
+| Λ=240                          | -0.031426995  |
+| Λ=250                          | -0.0314333    |
+| Λ=300                          | -0.0314587    |
+| Λ=400                          | -0.0314903    |
+| Λ=500                          | -0.0315093    |
+| Λ=600                          | -0.031522     |
+| Λ=800                          | -0.0315378    |
+| Λ=1000                         | -0.0315473    |
+| Λ=1200                         | -0.0315537    |
+| Λ=1400                         | -0.0315582    |
+| Λ=1600                         | -0.0315616    |
+
+With step size 0.01, the first four digits after decimal point can no longer be improved by enlarging $\Lambda$. 
+
+
+Next, we divide the integral domain into an inner region where we use fine summations (smaller step size) and an outer region where we use coarser summation (large step size), separated by an limit $\Lambda=1600$. We do two things simultaneously, 1) increase the inner region step size from $0.005$ to $0.01$ and 2) increase the outer region step size from $0.05$ to $0.1$ until the first four or five digits after the decimal point stabilizes. 
+
+$\Lambda=1600$, Upper limit of $\kappa$ is set to be 10 000.
+
+In the following table, large step size means 0.01 for inner region and 0.1 for outer region; small step size means 0.005 for inner region and 0.05 for outer region. Hope I had a stronger computer...
+
+|       | Small Step Size (fine sum) | Large Step Size (coarse sum) |
+| ----- | -------------------------- | ---------------------------- |
+| Inner | -0.0315615                 | -0.03156158063750391`        |
+| Outer | -0.000019948               | -0.0000199484                |
+| Total | -0.03158147                | -0.03158153                  |

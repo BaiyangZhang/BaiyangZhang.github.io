@@ -21,6 +21,7 @@ If $K/k$ is a field, and element $y$ in K is said to be *algebraic* over $k$ if 
 A polynomial $a_n y^n + \cdots + a_1 y + a_0$ is said to be *monic* if $a_n = 1$.
 
 We have two different dependence relations:
+
 - algebraic dependence relation: $f(y) = a_n y^n + \cdots + a_1 y + a_0 = 0,\quad f\in k[Y]$, and
 - integral dependence relation: $f(y) = y^n + a_{n-1} y^{n-1}\cdots + a_1 y + a_0 = 0,\quad f\in A[Y]$, where $A$ is a ring.
 
@@ -33,6 +34,7 @@ The following definition will be important.
 Being a vector space means that one can add two elements in a Banach space together, but in general not multiply them. A vector space with a multiplicative structure is called an **algebra**, and if the space is a Banach space, and the multiplication satisfies $\lVert xy \rVert \le \lVert x \rVert \lVert y \rVert$ for any two elements, then it is called a **Banach algebra**.
 
 A $C^\star$-algebra is a Banach algebra with an involution, which means that for any elements x in the space, it is associated with another element $x^*$ that satisfies 
+
 - $x^\star =x$,
 - $\lVert x^\star \rVert = \lVert x \rVert$,
 - $(x+y)^\star =x^\star +y^\star$,
