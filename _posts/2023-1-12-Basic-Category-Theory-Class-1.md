@@ -31,9 +31,11 @@ As the second example, consider the universe of rings. In our note rings are alw
 The ring of integers $\mathbb{Z}$ is special among rings in the sense that, for all rings $R$, there exists a unique homomorphism $f:\mathbb{Z}\to R$, which maps number $1$ to the multiplicative identity of $R$. Note this is again of the form "there exists a unique such-and-such that blahblahblah". Any number can be written as the summation of certain number of $1$, for example $5$ is $1+1+1+1+1$, then the homomorphism $f$ maps number $5$ to an element in $R$ which is the summation of five multiplicative identity. In this way, the homomorphism is `unique`. 
 
 To prove the uniqueness, we don't need to rely on any specific properties of rings! Let $\phi:\mathbb{Z}\to R$ be another homomorphism, we want to prove that $\phi$ is the same as $f$. Now, two maps between sets are equal when they map every element to the same element. So we need to look at how $f$ and $\phi$ acts on elements of $\mathbb{Z}$. Since homomorphism preserves identity, we have $\phi(1)=1=f(1)$. Since homomorphism preserves addition, we have 
+
 $$
 \phi(n) = \phi(1+\dots+1) = \phi(1)+\dots+\phi(1)=1+\dots+1=f(1)+\dots+f(1)=f(1+\dots+1)=f(n).
 $$
+
 Since homomorphism preserves zero, we have $f(0)=0=\phi(0)$. Thus $f(z)=\phi(z)$ for all $z\in\mathbb{Z}$. 
 
 **Crucially, there can be essentially only one object object that satisfying a given universal property**. The word "essentially" means the two objects satisfying the same universal property need not literally be equal, but only equal up to isomorphism. Recall that isomorphism between $A$ and $B$ means that there are two arrows $A\to B$ and $A\leftarrow B$, whose compositions are identity on both ends. In our example of rings, the uniqueness of such objects says:
@@ -57,13 +59,16 @@ Given a map $f:S\to X$, we can regard it as a map from $D(S)$ to $X$, since $D(S
 This statement feels more or less trivial, but still it tells us something about the discrete topology. We mentioned that there can be only one (up to isomorphism) object satisfying a universal property, here the unique object being the discrete topology. The universal properties only holds for discrete topology. If we equip the set with `indiscrete topology`, for example, where the only closed sets are $S$ and $\emptyset$, the universal property will not hold. 
 
 As our last example, consider the collection of vector spaces. Given three vector spaces $U,V$ and $W$, a `bilinear map` $f:U\times V\to W$ is a function $f$ that is linear in each variable:
+
 $$
 \begin{align}
 f(u,v_{1}+\lambda v_{2})&=f(u)+\lambda f(v_{2}),\\
 f(\lambda u_{1}+u_{2},v)&=\lambda f(u_{1})+f(u_{2}).
 \end{align}
 $$
+
 There turns out to be a universal map out of $U\times V$. In other words, there exists a certain vector space $T$ and a certain bilinear map $b:U\times V\to T$ such that every bilinear map from $f:U\times V\to W$ induces a unique bilinear map $\overline{f}:T\to W$, satisfying 
+
 $$
 b\circ\overline{f}=f.
 $$

@@ -29,9 +29,11 @@ A `unit` in $A$ is an element $x$ that "divides" 1, namely there exists elements
 **Definition.** A `principal ideal` is an ideal form by multiples of an element $x\in A$, denoted by $(x)$ or $Ax$. 
 
 If $x$ is a unit, then 
+
 $$
 (x) = (x x^{-1}) = (1) = A.
 $$
+
 In other words, the principal ideal of a unit is the ring itself. 
 
 **Definition.** A `field` is a ring where $1 = 0$ and every non-zero element is a unit, i.e., every non-zero element has an inverse. 

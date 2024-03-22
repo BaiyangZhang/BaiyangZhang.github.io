@@ -31,12 +31,15 @@ Starting with some examples of commutative rings,
 We will assume the rings to be commutative and has multiplication identity element denoted by $1$. The identity element for addition is denoted by $0$.
 
 Note that if $0=1$, then for all elements $x$ in a ring $A$, we have 
+
 $$
-x = x 1 = x 0 = 0
+x = x_ {1} = x_ {0} = 0
 $$
+
 thus A is a ring with only $0$, namely $A$ is the *zero ring*.  
 
 We are interested in maps that preserves multiplication, addition and identity between rings, and give them a name: *ring homomorphism*, homo- comes from Greek "homos" meaning "the same". To be specific, a ring homomorphism should satisfy
+
 - $f(x+y) = f(x) + f(y)$
 - $f(xy) = f(x)f(y)$
 - $f(1) = 1$

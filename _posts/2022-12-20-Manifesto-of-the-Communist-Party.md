@@ -13,6 +13,7 @@ tags:								#标签
 
 
 ## Manifesto of the Communist Party
+
 Source: Marx/Engels Selected Works, Vol. One, Progress Publishers, Moscow, 1969, pp. 98-137;
 Author: Karl Marx and Frederick Engels
 
