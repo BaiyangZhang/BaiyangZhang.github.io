@@ -44,3 +44,44 @@ While the application of Tsallis statistics to biostatistics is an intriguing pr
 10. **Public Health Data Analysis**: Applying Tsallis statistics to public health data, potentially uncovering new patterns or correlations in large-scale health trends.
 
 
+- - -
+
+The whole theory of Tsallis statistics is based on a single concept: the modified Boltzmann-Gibbs (B-G) entropy $S_ {q}$. $q$ is some index show how much $S_ {q}$ deviates from the $BG$ entropy, if $q=1$ then there is no difference. 
+
+To explain why the Boltzmann-Gibbs entropy is said to be additive, let's first clarify what we mean by entropy in this context. In statistical mechanics, the Boltzmann-Gibbs entropy is a measure of the number of microstates that correspond to a given macrostate, providing a quantification of the system's disorder or randomness.
+
+The formula for Boltzmann-Gibbs entropy, $S$, for a system in a particular macrostate is given by:
+
+$$ 
+S = -k_B \sum_i p_i \ln p_i 
+$$
+
+where $p_i$ is the probability of the system being in the $i$-th microstate, and $k_B$ is the Boltzmann constant.
+
+Entropy is said to be additive when, for two independent systems $A$ and $B$, the total entropy $S_{AB}$ of the combined system is the sum of their individual entropies:
+
+$$ 
+S_{AB} = S_A + S_B 
+$$
+
+This additivity property stems from the assumption of statistical independence of the two systems, which implies that the probability of the combined system $ AB $ being in a particular microstate is the product of the probabilities of $A$ and $B$ being in their respective microstates. If $A$ is in a microstate with probability $p_i$ and $B$ is in a microstate with probability $q_j$, then the probability of the combined system being in the microstate characterized by both $p_i$ and $q_j$ is $p_i \cdot q_j$.
+
+As an example, consider two independent systems $A$ and $B$, each with two possible microstates. For system $A$, let the probabilities of the microstates be $p_1$ and $p_2$, and for system $B$, let them be $q_1$ and $q_2$. The entropies of systems $A$ and $B$ are:
+
+$$ S_A = -k_B (p_1 \ln p_1 + p_2 \ln p_2) $$
+$$ S_B = -k_B (q_1 \ln q_1 + q_2 \ln q_2) $$
+
+For the combined system $AB$, there are four possible microstates, with probabilities $p_1q_1, p_1q_2, p_2q_1,$ and $p_2q_2$. The entropy of the combined system is:
+
+$$ S
+_{AB} = -k_B [(p_1q_1) \ln (p_1q_1) + (p_1q_2) \ln (p_1q_2) + (p_2q_1) \ln (p_2q_1) + (p_2q_2) \ln (p_2q_2)] 
+$$
+
+With some algebra, you can show that:
+
+$$ 
+S_{AB} = S_A + S_B .
+$$
+
+This demonstrates the additivity of entropy for independent systems. *The crucial point here is the assumption of independence*, which allows the probabilities of the combined system to be expressed as products of the individual systems' probabilities, leading directly to the additivity of entropy.
+

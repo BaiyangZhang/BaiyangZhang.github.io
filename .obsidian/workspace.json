@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2023-1-12-Basic-Category-Theory-Class-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2023-1-12-Basic-Category-Theory-Class-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2023-1-12-Basic-Category-Theory-Class-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,21 +120,7 @@
             }
           },
           {
-<<<<<<< HEAD
-            "id": "6664d3c3c1b838e2",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
-              }
-            }
-          },
-          {
-            "id": "7964bcd68d6ce503",
-=======
             "id": "3899f4ba479e6538",
->>>>>>> a65b597b10989ba58cecf2d623d03e7573cd2d73
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md"
+                "file": "_posts/2023-1-12-Basic-Category-Theory-Class-1.md"
               }
             }
           }
@@ -175,55 +161,16 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "_drafts/2024-03-17-Note-on-Tsallis-statistics.md",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-03-06-Domain-Wall.md",
-    "_posts/2023-12-7-Transseries-Lecture-2.md",
-    "img/rhokmarNew.png",
-    "_drafts/2024-03-12-Note-on-Tsallis-statistics.md",
-    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
-    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
-    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
+    "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
+    "_posts/2023-2-2-Basic-Algebraic-Geometry-5.md",
+    "_posts/2023-2-6-Basic-Algebraic-Geometry-Class-9.md",
+    "_posts/2023-2-7-Basic-Algebraic-Geometry-Class-10.md",
+    "_posts/2023-2-8-Basic-Algebraic-Geometry-11.md",
+    "_posts/2023-2-10-Basic-Algebraic-Geometry-Class-12.md",
+    "_posts/2022-12-20-Manifesto-of-the-Communist-Party.md",
     "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "Trash.md",
-    "_posts/2022-7-17-Conventions-and-Formula.md",
-    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
-    "_drafts/2023-05-07-soliton-particle-duality.md",
-    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
-    "img/kink/movingWall.png",
-    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
-    "_posts/2024-02-28-Quantum-Kinks.md",
-    "_posts/2024-03-03-Domain-Wall.md",
-    "_posts/2024-03-03-Regression-Methods-in-Biostatistics.md",
-    "_posts/2024-03-04-Domain-Wall.md",
-    "img/kink/kinkWorldLine.png",
-    "img/kink",
-    "_posts/2024-02-28-.md",
-    "img/kinkMassvsCoupling.png",
-    "img/boxPlot.png",
-    "_includes/video.liquid",
-    "_includes/social.liquid",
-    "_includes/selected_papers.liquid",
-    "_includes/related_posts.liquid",
-    "_includes/projects_horizontal.liquid",
-    "_includes/projects.liquid",
-    "_includes/pagination.liquid",
-    "_includes/news.liquid",
-    "_includes/metadata.liquid",
-    "img/kinkLevel.png",
-    "img/hom.png",
-    "img/relaxationMethod - Copy.jpg",
-    "img/boundaryMap.png",
-    "img/boundaryHomo.png"
-=======
-    "_drafts/2024-02-26-Tsallis-Statistics-in-Biostatistics.md",
+    "_drafts/2024-03-17-Note-on-Tsallis-statistics.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2022-11-17-Basic-Cumutative-Algebra-1.md",
     "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md",
@@ -239,9 +186,6 @@
     "_posts/2022-08-09-回国之旅.md",
     "_posts/2022-08-04-幼儿园毕业感言.md",
     "_posts/2022-07-30-The-Secret-Speech.md",
-    "_posts/2022-7-17-Conventions-and-Formula.md",
-    "Trash.md",
-    "_posts/2023-5-18-(Vector)-Fibre-Bundles.md"
->>>>>>> a65b597b10989ba58cecf2d623d03e7573cd2d73
+    "_posts/2022-7-17-Conventions-and-Formula.md"
   ]
 }
