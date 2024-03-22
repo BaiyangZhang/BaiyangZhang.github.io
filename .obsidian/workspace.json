@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-2-4-Basic-Algebraic-Geometry-6.md",
+                "file": "_posts/2023-2-1-Minkowski Space.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-2-4-Basic-Algebraic-Geometry-6.md",
+                "file": "_posts/2023-2-1-Minkowski Space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-2-4-Basic-Algebraic-Geometry-6.md",
+                "file": "_posts/2023-2-1-Minkowski Space.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-2-4-Basic-Algebraic-Geometry-6.md"
+                "file": "_posts/2023-2-1-Minkowski Space.md"
               }
             }
           },
@@ -177,17 +177,18 @@
   },
   "active": "8f4df30737786289",
   "lastOpenFiles": [
+    "_posts/2023-1-13-Thermodynamics-in-Terms-of-Foliations.md",
+    "_posts/2022-12-26-Basics-of-Distributions.md",
+    "_posts/2022-12-20-Manifesto-of-the-Communist-Party.md",
+    "_posts/2022-12-15-《师哲回忆录》.md",
+    "_posts/2023-2-4-Basic-Algebraic-Geometry-6.md",
     "_posts/2023-2-2-Basic-Algebraic-Geometry-5.md",
     "_posts/2023-2-1-Minkowski Space.md",
-    "_posts/2023-1-13-Thermodynamics-in-Terms-of-Foliations.md",
     "_posts/2023-1-12-Basic-Category-Theory-Class-1.md",
     "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
     "_posts/2023-1-9-US-Political-System.md",
     "_posts/2022-12-29-Hobbes-Moral-and-Political-Philosophy.md",
     "_posts/2022-12-27-Thomas-Hobbes.md",
-    "_posts/2022-12-26-Basics-of-Distributions.md",
-    "_posts/2022-12-20-Manifesto-of-the-Communist-Party.md",
-    "_posts/2022-12-15-《师哲回忆录》.md",
     "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
     "_posts/2022-11-25-Basic-Cumutative-Algebra-4.md",
     "_posts/2022-11-22-Confinement-in-Toy-Models-I.md",
@@ -202,7 +203,6 @@
     "_posts/2023-3-21-Confinement-in-Toy-Models-Lecture-1.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_drafts/2024-03-17-Note-on-Tsallis-statistics.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "img/rhokmarNew.png",
     "img/kink/movingWall.png",
     "img/kink/kinkWorldLine.png",
