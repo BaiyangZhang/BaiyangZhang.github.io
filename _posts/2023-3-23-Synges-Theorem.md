@@ -15,6 +15,7 @@ tags:								#标签
 *Disclaimer: Nothing in this note is original.*
 
 The Gauss-Bonnet connects the local, varying from point to point property, namely the curvature, with the global, topological property, namely the genus. It claims that, for a `closed` surface in $\mathbb{R}^{3}$,
+
 $$
 \frac{1}{2\pi}\int _ {M} \, KdS = 2(1-g).
 $$

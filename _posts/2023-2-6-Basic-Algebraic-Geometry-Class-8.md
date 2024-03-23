@@ -29,13 +29,17 @@ If each of $a\in R'$ is integral, we say $R'$ is integral over $R$.
 The following example helps to explain the terminology. 
 
 Consider the ring extension $\mathbb{Z}\subset\mathbb{Q}$, where $\mathbb{Q}$ is the set of rational numbers. What are the integral elements in $\mathbb{Q}$? As the name suggests, the integral elements in $\mathbb{Q}$ should be integers, Right? It indeed is true! Assume where $s,t$ are **coprime** integers and $s / t \in\mathbb{Q}$ is the solution of some monic polynomial equation,
+
 $$
 \left( \frac{s}{t} \right)^{n}+c_ {n-1}\left( \frac{s}{t} \right)^{n-1}+\dots=0
 $$
+
 then
+
 $$
 s^{n}=t\times (\text{some integer})\implies t\mid s^{n}
 $$
+
 but $s,t$ are coprime, so we must have $t=1$ and $s / t$ is an integer.
 
 The key important thing is that the polynomial has to be **monic**.

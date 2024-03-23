@@ -22,9 +22,11 @@ Historically, the word `confinement` originally referred to the fact that quarks
 #### Ising model
 
 Confinement in non-abelian gauge theory involves the idea that the vacuum state is disordered at large scales. But first we need to explain what is meant by a disordered state. Disordered states appear in the Ising model of ferromagnetism. We know that certain materials can be magnetized at low temperature, but above a certain critical temperature, knowns as the `Curie temperature`, the magnetic moment disappears. The tendency to retain a non-zero magnetic moment at low temperature is due to the interaction between neighboring atoms in the crystal. Considering the 3D Ising model, the spin is quantized in $z$ direction, the interaction is 
+
 $$
 H = -J \sum s(x) s(x+\hat{\mu})
 $$
+
 where $s(x)=\pm1$ represents an atom at point $x$ with spin up(down), $J$ is a positive constant. 
 
 The system admits two possible states, the 
@@ -34,11 +36,13 @@ The system admits two possible states, the
 **The energy-entropy argument for phase transition**
 
 The principles of statistical physics says that, the system wants to minimize its free energy
+
 $$
 \boxed{
 F = U-TS
 }
 $$
+
 where $U$ is the internal energy, $T$ the temperature and $S$ the entropy. We can already see that there are two competing terms, internal energy and entropy, their relative strength is controlled by temperature $T$. In order to minimize the free energy, we need to either decrease the energy or increase the entropy, both of them are preferred by the system, that is very intuitive. It is the competition between them that makes things interesting. In general these two things contradicts each other, if the energy is low, the there aren't as much states that can be reached, thus the entropy must be low. So which one is more important in minimizing the free energy? The answer to that question is **temperature**! Roughly speaking, at low temperature, the energy dominates, the system prefers to stay at the low energy state. At high temperature, the contribution from entropy dominates, the system prefers to stay at the high entropy states. 
 
 In our 3D Ising model, 
@@ -50,16 +54,20 @@ Thus there must exist a critical temperature $T^\ast$ such that, below which the
 **The global spin-flip (time reversal) symmetry**
 
 The Hamiltonian is invariant under the flip of all the spins, 
+
 $$
 -1: s(x) \to -s(x)
 $$
+
 Thus the system adopts global $\mathbb{Z}_ {2}$ symmetry. 
 
 But the phase transition also seems impossible from the observations:
 - The system is symmetric under time reversal transition.
-   $$
+
+$$
 Z = \sum_ {\text{all states}} e^{ -\beta H }
 $$
+
 is invariant under $s\to-s$. The expectation of spin average should be zero! You could also say that *the ordered state is forbidden by $\mathbb{Z}_ {2}$ symmetry*! What goes wrong? 
 
 The answer is that, the expectation value of the spin is indeed zero, but only in the long run. If the system is not too small, the time for us to observe the zero expectation value is incredibly long! So we can effectively regard it as impossible. 
@@ -82,9 +90,11 @@ A gauge transformation is a position-dependent transformation of the degrees of 
 The trick is to associate the dynamical degrees of freedom with the links of the lattice, while the gauge transformation is specified at each site.
 
 The $\mathbb{Z}_ {2}$ gauge symmetry of the lattice Ising model is rather peculiar. The spin is associated to the links $s_ {\mu}(x)$, where $x$ is the site and $\mu$ specifies the direction to which the link goes. The gauge transformation is given by 
+
 $$
 s_ {\mu}(x) \to s'_ {\mu}(x) = z(x)s_ {\mu}(x) z^{-1} (x+\mu)
 $$
+
 where $z \in \mathbb{Z}_ {2}$.
 
 **Elitzur’s Theorem.** A local gauge symmetry cannot break spontaneously. The expectation value of any gauge non-invariant local observable must vanish.
@@ -94,6 +104,7 @@ We must look, instead, to gauge-invariant observables, which are unaffected by g
 #### Possible phases of a gauge theory
 
 Elitzur’s theorem tells us that gauge symmetries do not break spontaneously, in the sense that any *local*, gauge non-invariant observable that could serve as an order parameter must have a vanishing expectation value. There is, nonetheless, a qualitative distinction between different phases of a gauge theory, based on the behavior of large Wilson loops. Let us again consider a large rectangular $R\times T$ loop, with $T\gg R$, we know that 
+
 $$
 W(C) \sim  e^{ -V(R)T }.
 $$
@@ -101,29 +112,38 @@ $$
 There are three possibilities:
 
 - **massive phase**. The potential is of the Yukawa type
-  $$
+
+$$
 V(R) = -g^{2} \frac{e^{ -mR }}{R} +2V_{0},
 $$
+
 where $V_{0}$ is a self-energy term. The Wilson loop falls off at $R> \frac{1}{m}$ as $\exp(-2V_{0}T)$, and 
+
 $$
 W(C) = e^{ -V_{0} P(C) }
 $$
+
 where $P(C)$ is the perimeter of loop $C$.
 
 - **massless phase, or Coulomb phase**. The potential looks like 
-  $$
+$$
 V(R) = - \frac{g^{2}(R)}{R} +2V_{0}
 $$
+
 and the Wilson loop still adopts perimeter law. 
 
 - **Confining phase.** The potential is asymptotically linear
-  $$
+
+$$
 V(R) = \sigma R+2V_{0}
 $$
+
 Then the Wilson loop falls off asymptotically as
+
 $$
 W(c) \sim \exp[-\sigma A(C)-V_{0}P(C)]
 $$
+
 and there is an area-law type of falloff.
 
 It is sometimes also called ‘‘magnetic disorder’’ is a terminology inspired by electromagnetism.
