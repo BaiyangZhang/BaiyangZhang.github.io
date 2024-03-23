@@ -13,8 +13,10 @@ tags:								#标签
 ### Representables
 
 A category is a world of objects, all looking at one another. Each sees the world from a different viewpoint. Take the category of topological spaces for example, consider the object with only one point, denoted $\star$, given another topological space $T$, a map 
+
 $$
 \star\to T
 $$
+
 can be regarded as $\star$ looking at $T$. What does $\star$ see? A point in $T$, that's it! It can't see any other structures, being limited 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
+                "file": "_posts/2023-07-09-Fiber-Bundles-and-Principal-Bundles.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
+                "file": "_posts/2023-07-09-Fiber-Bundles-and-Principal-Bundles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
+                "file": "_posts/2023-07-09-Fiber-Bundles-and-Principal-Bundles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md"
+                "file": "_posts/2023-07-09-Fiber-Bundles-and-Principal-Bundles.md"
               }
             }
           }
@@ -161,6 +161,16 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
+    "_posts/2023-07-07-Quartic-Time-Derivative.md",
+    "_posts/2023-07-03-The-Electromagnetic-Connection.md",
+    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
+    "_posts/2023-06-21-The-Phase-Space.md",
+    "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
+    "_posts/2023-06-17-The-Workers-and-the-Fatherland.md",
+    "_posts/2023-06-16-Representables-in-Category-Theory.md",
+    "_posts/2023-06-16-Complex-Line-Bundle.md",
+    "_posts/2023-06-15-Complex-Vector-Space.md",
+    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
     "_posts/2023-06-13-Connections-in-a-Vector-Bundle.md",
     "_posts/2023-06-07-Fractal-Geometry-in-Physics.md",
     "_posts/2023-06-04-Basic-Category-Theory.md",
@@ -176,16 +186,6 @@
     "_posts/2023-04-03-De-Rhams-Theorem.md",
     "_posts/2023-3-24-Betti-Numbers.md",
     "_posts/2023-3-23-Synges-Theorem.md",
-    "_posts/2023-3-22-Heuristics-of-Einstein's-Theory.md",
-    "_posts/2023-3-21-Montesquieu.md",
-    "_posts/2023-3-21-Geodesics-and-Jacobi-Fields.md",
-    "_posts/2023-3-21-Confinement-in-Toy-Models-Lecture-1.md",
-    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
-    "_posts/2023-3-17-Riemanns-Theorem-and-the-Horizontal-Distribution.md",
-    "_posts/2023-3-16-Covariant-Differentiation-and-Curvature.md",
-    "_posts/2023-3-12-The-Geometry-of-Surfaces-in-R3.md",
-    "_posts/2023-2-11-Basic-Algebraic-Geometry-Class-14.md",
-    "_posts/2023-2-10-Basic-Algebraic-Geometry-Class-13.md",
-    "_posts/2023-2-10-Basic-Algebraic-Geometry-Class-12.md"
+    "_posts/2023-3-22-Heuristics-of-Einstein's-Theory.md"
   ]
 }
