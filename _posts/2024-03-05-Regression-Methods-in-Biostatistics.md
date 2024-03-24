@@ -83,6 +83,7 @@ A commonly used percentile-based measure of spread combining these measures is t
 $$
 \text{IQR} := Q_  {3} - Q_  {1}.
 $$
+
 The IQR is not impacted by the presence of outliers, so it is considered a robust measure of the spread of the data. So, like the median, it enjoys the quality of being a robust measure of the data.
 
 Percentiles are also used to create another common visual representation of continuous data: the `boxplot`, also known as a `box-and-whisker plot`. A boxplot consist of the following elements: 
@@ -111,14 +112,18 @@ We have two kinds of variances: `sample variance` and `population variance`. The
 **Population Variance**:
 
 Population variance measures how much the members of a population differ from the population mean. It is denoted by $\sigma^2$. If you have a population with $N$ members and population values $x_ 1, x_ 2, ..., x_ N$, the population variance $\sigma^2$ is calculated as:
-  $$ \sigma^2 = \frac{1}{N} \sum_ {i=1}^{N} (x_ i - \mu)^2 $$
-  where $\mu$ is the population mean. Note that $\mu$ is not the mean of some measured data, it is supposed to be given by some theoretical model. Population variance is used when you have access to all the data points in the population.
+
+$$ \sigma^2 = \frac{1}{N} \sum_ {i=1}^{N} (x_ i - \mu)^2 $$
+
+where $\mu$ is the population mean. Note that $\mu$ is not the mean of some measured data, it is supposed to be given by some theoretical model. Population variance is used when you have access to all the data points in the population.
 
 **Sample Variance**
 
 Sample variance measures how much the members of a sample (a subset of the population) differ from the sample mean. It is an estimator of the population variance. Sample variance is denoted by $s^2$. If you have a sample of size $n$ with values $x_ 1, x_ 2, ..., x_ n$, the sample variance $s^2$ is calculated as:
-  $$ s^2 = \frac{1}{n-1} \sum_ {i=1}^{n} (x_ i - \overline{x})^2 $$
-  where $\overline{x}$ is the sample mean.
+
+$$ s^2 = \frac{1}{n-1} \sum_ {i=1}^{n} (x_ i - \overline{x})^2 $$
+
+where $\overline{x}$ is the sample mean.
   
 Key Differences:
 
@@ -392,7 +397,7 @@ Step 2: Calculate Kendall's tau.
 
 $$ \tau = \frac{\text{Concordant pairs} - \text{Discordant pairs}}{\text{Number of possible pairs}} $$
 
-$$ \tau = \frac{4 - 6}{\frac{{5(5-1)}}{2}} = \frac{-2}{10} = -0.2 $$
+$$ \tau = \frac{4 - 6}{\frac{ {5(5-1)}}{2}} = \frac{-2}{10} = -0.2 $$
 
 So, Kendall's tau for the given data is -0.2. 
 
@@ -421,17 +426,17 @@ Linear regression methods in biostatistics are used to describe the relationship
 
 4. Ridge Regression (L2 Regularization):
 - **Description**: Addresses multicollinearity (high correlation among independent variables) in MLR by adding a penalty term equal to the square of the magnitude of the coefficients.
-- **Model**: The cost function is $\text{Cost} = ||Y - X\beta||^2 + \lambda||\beta||^2$, where $\lambda$ is the penalty term.
+- **Model**: The cost function is $\text{Cost} = \left\lVert Y - X\beta \right\rVert ^2 + \lambda  \left\lVert \beta \right\rVert ^2$, where $\lambda$ is the penalty term.
 - **Use Cases**: Useful in situations with many predictors, some of which might be correlated. It helps in reducing overfitting by shrinking the coefficients.
 
 5. Lasso Regression (L1 Regularization):
 - **Description**: Similar to ridge regression but uses an absolute value penalty for the size of coefficients, which can lead to some coefficients being exactly zero.
-- **Model**: The cost function is $\text{Cost} = ||Y - X\beta||^2 + \lambda|\beta|$.
+- **Model**: The cost function is $\text{Cost} = \left\lVert Y - X\beta \right\rVert ^2 + \lambda \left\lVert \beta \right\rVert$.
 - **Use Cases**: Used for variable selection and regularization to improve prediction accuracy and interpretability of the statistical model by excluding irrelevant variables.
 
 6. Elastic Net Regression:
 - **Description**: Combines penalties of ridge regression and lasso regression.
-- **Model**: The cost function includes both L1 and L2 penalties, $\text{Cost} = ||Y - X\beta||^2 + \lambda_  1|\beta| + \lambda_  2||\beta||^2$.
+- **Model**: The cost function includes both L1 and L2 penalties, $\text{Cost} = \lVert Y - X\beta\rVert ^2 + \lambda_  1 \lvert\beta\rvert + \lambda_  2 \lVert\beta\rVert^2$.
 - **Use Cases**: Effective when there are multiple correlated variables, providing a balance between ridge and lasso regression by including both sets of penalties.
 
 Some comments. Ridge Regression is called L2 regularization because of the nature of the penalty applied to the coefficients in the regression model. In this context, "L2" refers to the L2 norm of the coefficient vector, which is used as the penalty term. The L2 norm is essentially the square root of the sum of the squared vector values, but in the context of ridge regression, the penalty term involves the square of the L2 norm (i.e., the sum of the squared values of the coefficients, not taking the square root).
@@ -439,7 +444,7 @@ Some comments. Ridge Regression is called L2 regularization because of the natur
 More mathematically, for a regression coefficient vector $\beta = [\beta_ 1, \beta_ 2, ..., \beta_ n]$, the L2 norm is defined as:
 
 $$
-||\beta||_ 2 = \sqrt{\beta_ 1^2 + \beta_ 2^2 + ... + \beta_ n^2}
+\lVert\beta\rVert_ 2 = \sqrt{\beta_ 1^2 + \beta_ 2^2 + ... + \beta_ n^2}
 $$
 
 In ridge regression, the penalty term added to the `cost function` (which is minimized during the training of the model) is the square of this L2 norm (hence the term "L2 regularization"), but it's often just presented without the square root to begin with in the context of ridge regression. 
