@@ -397,7 +397,7 @@ Step 2: Calculate Kendall's tau.
 
 $$ \tau = \frac{\text{Concordant pairs} - \text{Discordant pairs}}{\text{Number of possible pairs}} $$
 
-$$ \tau = \frac{4 - 6}{\frac{ {5(5-1)}}{2}} = \frac{-2}{10} = -0.2 $$
+$$ \tau = \frac{4 - 6}{\frac{ {5(5-1)}}{2} } = \frac{-2}{10} = -0.2 $$
 
 So, Kendall's tau for the given data is -0.2. 
 
