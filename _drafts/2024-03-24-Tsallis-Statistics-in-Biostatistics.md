@@ -2,11 +2,12 @@
 layout: post
 title: Tsallis Statistics in Biostatistics
 subtitle: 
-date: 2024-02-26
+date: 2024-03-24
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
+  - tsallis
 ---
 
 # Introduction
@@ -46,11 +47,11 @@ While the application of Tsallis statistics to biostatistics is an intriguing pr
 
 - - -
 
-The whole theory of Tsallis statistics is based on a single concept: the modified Boltzmann-Gibbs (B-G) entropy $S_ {q}$. $q$ is some index show how much $S_ {q}$ deviates from the $BG$ entropy, if $q=1$ then there is no difference. 
+*The whole theory of Tsallis statistics is based on a single concept: the modified Boltzmann-Gibbs (B-G) entropy* $S_ {q}$. $q$ is some index show how much $S_ {q}$ differs from the $BG$ entropy, if $q=1$ then there is no difference. 
 
 To explain why the Boltzmann-Gibbs entropy is said to be additive, let's first clarify what we mean by entropy in this context. In statistical mechanics, the Boltzmann-Gibbs entropy is a measure of the number of microstates that correspond to a given macrostate, providing a quantification of the system's disorder or randomness.
 
-The formula for Boltzmann-Gibbs entropy, $S$, for a system in a particular macrostate is given by:
+The formula for Boltzmann-Gibbs entropy, $S$, for a system in a particular **macrostate** is given by:
 
 $$ 
 S = -k_B \sum_i p_i \ln p_i 
@@ -64,7 +65,7 @@ $$
 S_{AB} = S_A + S_B 
 $$
 
-This additivity property stems from the assumption of statistical independence of the two systems, which implies that the probability of the combined system $ AB $ being in a particular microstate is the product of the probabilities of $A$ and $B$ being in their respective microstates. If $A$ is in a microstate with probability $p_i$ and $B$ is in a microstate with probability $q_j$, then the probability of the combined system being in the microstate characterized by both $p_i$ and $q_j$ is $p_i \cdot q_j$.
+This additivity property stems from the assumption of statistical independence of the two systems, which implies that the probability of the combined system $AB$ being in a particular microstate is the product of the probabilities of $A$ and $B$ being in their respective microstates. If $A$ is in a microstate with probability $p_i$ and $B$ is in a microstate with probability $q_j$, then the probability of the combined system being in the microstate characterized by both $p_i$ and $q_j$ is $p_i \cdot q_j$.
 
 As an example, consider two independent systems $A$ and $B$, each with two possible microstates. For system $A$, let the probabilities of the microstates be $p_1$ and $p_2$, and for system $B$, let them be $q_1$ and $q_2$. The entropies of systems $A$ and $B$ are:
 

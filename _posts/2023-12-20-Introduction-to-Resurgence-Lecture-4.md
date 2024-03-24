@@ -20,7 +20,7 @@ There are roughly speaking three perspectives of resurgence,
 - Ray-crossing in the complex plane.
 
 **Simple resurgence package.** Consists of 
-1. A discrete subset of complex plane, $\left\{ z_ {\alpha} \right\}\in\mathbb{C}$, finite countable. 
+1. A discrete subset of complex plane, $\left\lbrace z_ {\alpha} \right\rbrace \in\mathbb{C}$, finite countable. 
 2. Formal power series, 
 3. A collection of integers $n_ {\alpha \beta}\in\mathbb{Z}$, called Stokes integers, usually anti-symmetric, $n_ {\alpha \beta}=-n_ {\beta \alpha}$.
 
@@ -74,13 +74,13 @@ which is a generalized form of the Euler integral. Substitute it to $\tilde{\phi
 For the formal power series in $\mathbb{C}[[z^{-1}]]$ (note that we have put constant terms back in to make the case most general) which are actually convergent at infinity ($z\to \infty$) with positive radius of convergence, we denote the collection of them
 
 $$
-\mathbb{C}\left\{ z^{-1} \right\} 
+\mathbb{C}\left\lbrace z^{-1} \right\rbrace 
 $$
 
 and the ones without constant terms are again denoted 
 
 $$
-z^{-1}\mathbb{C}\left\{ z^{-1} \right\} .
+z^{-1}\mathbb{C}\left\lbrace z^{-1} \right\rbrace .
 $$
 
 **Lemma 1.** Let 
@@ -92,7 +92,7 @@ $$
 then 
 
 $$
-\tilde{\phi}\in z^{-1}\mathbb{C}\left\{ z^{-1} \right\} 
+\tilde{\phi}\in z^{-1}\mathbb{C}\left\lbrace z^{-1} \right\rbrace 
 $$
 
 iff its formal Borel transform 
