@@ -15,14 +15,18 @@ tags:
 
 ## Homotopies and Extensions
 
-The problem of extension in homotopy typically deals with the following question: given a continuous map defined on a subspace of a topological space, can it be extended to a continuous map on the entire space? Take the extension of a function on a sphere for example. Let $\mathbb{S}^{1}$ be the equator of a $\mathbb{S}^{2}$, and a continuous map $f$ define on $\mathbb{S}^{1}$:
+The problem of extension in homotopy typically deals with the following question: *given a continuous map defined on a subspace of a topological space, can it be extended to a continuous map on the entire space*? Take the extension of a function on a sphere for example. Let $\mathbb{S}^{1}$ be the equator of a $\mathbb{S}^{2}$, and a continuous map $f$ define on $\mathbb{S}^{1}$:
+
 $$
 f: \mathbb{S}^{1} \to \mathbb{R}.
 $$
+
 The extension problem would be, can you find a function 
+
 $$
 F: \mathbb{S}^{2} \to \mathbb{R}
 $$
+
 such that the restriction of $F$ on $\mathbb{S}^{1}$ gives $f$? The ability to extend $f$ depends on its homotopy properties. For instance, if $f$ represents a simple loop around the equator, it may or may not be extendable based on how it "wraps around" the sphere. Certain topological features of the function $f$, such as its winding number or degrees, can serve as **obstructions** to extending it over the entire sphere. In this particular example, $f$ is extendable to the whole sphere if it has zero winding, otherwise the non-zero winding will cause some singularity when extending it to the whole $\mathbb{S}^{2}$. 
 
 - - -

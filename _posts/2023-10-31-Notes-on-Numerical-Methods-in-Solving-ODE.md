@@ -80,11 +80,14 @@ To efficiently and accurately solve stiff differential equations, specialized nu
 
 ## numerical values of parameters
 
-I collected the following values from the Adkins:Nappi:1984 paper[^1],  
+I collected the following values from the Adkins:Nappi:1984 paper[^1], 
+
 $$
 m_ {\pi} = 108 \text{ MeV}, \quad  e=4.82,\quad  F_ {\pi} = \frac{m_ {\pi}}{0.263 e}
 $$
+
 which gives us 
+
 $$
 \begin{align}
 m_ {1} &= 0.526, \\
@@ -93,6 +96,7 @@ m_ {2} &= 1.052.
 $$
 
 In the chiral case, pion is massless and we have
+
 $$
 \begin{align}
 m_ {1} &= 0, \\
@@ -108,8 +112,11 @@ Here's a basic overview of the shooting method:
 
 **The Problem:**
 Suppose you have a second-order ODE given as:
+
 $$y''(x) = f(x, y, y'),$$
+
 with boundary conditions:
+
 $$ y(a) = y_  a $$
 $$ y(b) = y_  b $$
 
@@ -158,6 +165,7 @@ solutionTest1 = Module[{$$Eta] = 1, m1 = 0.526`, m2 = 1.052`},
 ```
 
 where eom is short for the equation of motion, given by
+
 $$
 \begin{align}
 \text{eom} =&-2 r^4 f''(r)-4 \eta  r^2 f''(r) \sin ^2(f(r))+4 \eta  r^3 f'(r)^3-4 r^3 f'(r)^3-4 r^3 f'(r)-2 \eta  r^2 f'(r)^2 \sin (2 f(r)) \\
@@ -166,7 +174,9 @@ $$
 &==0.
 \end{align}
 $$
+
 However the computation takes a long time and yields a nonsensical result, 
+
 ![](/img/eom.png)
 
 which doesn't make any sense. 
@@ -174,6 +184,7 @@ which doesn't make any sense.
 - - -
 
 For the following discussions, I found paper [arXiv:1309.1313](https://arxiv.org/abs/1309.1313) to be most helpful. Below are some approximation we can adopt at $r\to  0$,
+
 $$
 \frac{\sin(f(r))}{r} \to f'(0), \quad \frac{1}{4}-\frac{\sin^2(f(r))}{r^2} -(f'(r))^2 \to \frac{1}{4} 
 $$
@@ -183,21 +194,26 @@ $$
 
 Maybe we can make it work by providing a super accurate initial condition? 
 With this hope I try to solve the equation at the origin, close to $r=0$. Expand $f(r)$ about the origin we get
+
 $$
 f(r) = f(0) + r f'(r) = \pi + rg(r),\quad  g(r) := f'(r)
 $$
+
 where we have made use of the initial condition that $f(0)=\pi$, and $r$ is supposed to be very small. Take this to the equation of motion, with some manipulation we get 
+
 $$
 \left(-4 r^4 g^{2}(r)-2 r^4\right) g'(r)-2 m_ 1^2 r^5 g(r)-4 m_ 2^2 r^5 g(r)-4 r^3 g^{3}(r) =0
 $$
+
 keep the leading order and NLO in $r$ we have
+
 $$
 \left(2 r g^{2}(r)+r\right) g'(r)+2 g^{3}(r)=0
 $$
+
 In paper arXiv:hep-ph/0106150v2, Ponchiano etc. adopted Pade approximation and it seems to be working good. But it's not directly useful to me.
 
 Well let's move on to the next method.
-
 
 
 [^1]:Nuclear Physics B233 (1984) 109-115, doi: 10.1016/0550-3213(84)90172-x
@@ -211,20 +227,27 @@ The core idea behind the "continuation method" is  that, instead of trying to so
 3. **Reach the Target**: Continue this process until you've transformed your simple problem's solution into a solution for your original, harder problem.
 
 Let us apply the aforementioned philosophical ideas into practice. Suppose we wish to solve a system of $N$ non-linear equations in $N$ variables, say
+
 $$
 F(x) = 0,\quad  F: \mathbb{R}^{n} \to \mathbb{R}^{n}.
 $$
+
 We assume $F$ is $C^{\infty}$. Suppose that we don't know a lot about the initial value of the derivative, then we can't effectively adopt the shooting method. As a possible remedy, define a homotopy or deformation $H(x,t)$ which deforms from some simpler equations $G(x)$ to $F(x)$ when $t$ smoothly changes, to be specific define
+
 $$
 H(x,0) = G(x),\quad  H(x,1) = F(x).
 $$
+
 Everything is required to be smooth here. Typically, one can choose a so-called `convex homotopy` such as 
+
 $$
 H(x,t) = t\,F(x) + (1-t)\, G(x).
 $$
+
 $H(x,t)$ is the function we are trying to solve. Our job is to find $G(x)$ with known solution, then the PDE that $H(x,t)$ satisfies, offer the initial condition, then try to solve it. 
 
 Let's look at an example. Let's solve the following non-linear partial differential equation, which is a simplified version of the Ginzburg-Landau equation, a fundamental equation in superconductivity theory:
+
 $$
 \frac{\partial u}{\partial t} = \nabla^2 u + \lambda u - u^3
 $$
@@ -293,15 +316,14 @@ The relaxation method is often used for solving elliptic PDEs, such as Laplace's
 Let's consider an example of solving Laplace's equation on a rectangular domain $[0, a] \times [0, b]$ with Dirichlet boundary conditions.
 
 Laplace's equation is given by:
+
 $$ \nabla^2 u(x, y) = 0 $$
 
 Where $u(x, y)$ is the function we are trying to solve for, and $\nabla^2$ is the Laplacian operator.
 
 For simplicity, let's consider the case where $a = b = 1$, and the boundary conditions are:
+
 $$ u(0, y) = 0, \quad u(1, y) = 0, \quad u(x, 0) = 0, \quad u(x, 1) = \sin(\pi x) $$
-
-
-
 
 Here are the steps to solve this problem using the relaxation method in Mathematica:
 

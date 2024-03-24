@@ -55,10 +55,13 @@ For a concrete example, consider the complex projective space $\mathbb{CP}^n$, w
 Let $\mathcal{T}$ be the category of topological spaces, where the objects are topological spaces and the morphisms are continuous maps. 
 
 A **groupoid fibration,** or a category fibered *in* groupoids, over $\mathcal{T}$ is another category (which is a groupoid) $\mathcal{X}$, together with a functor 
+
 $$
 F: \mathcal{X} \to \mathcal{T}
 $$
+
 such that there exists a pullback and the pull back is unique. First, some terminologies. If the functor maps $X \in \mathcal{X}$ to $T \in \mathcal{T}$ then we say that $X$ lies over $T$, or that $X$ is a $\mathcal{X}$-family parametrized by $T$, and we write $X / T$. If the morphism $\eta: X \to Y$ is mapped by $F$ to $f: T\to S$ then we say that $\eta$ lies over $f$, or $\eta$ *covers* $f$. The requirement of pullback essentially says that for every $\mathcal{X}$-family $X / T$  and a morphism $T' \to T$ there exists another $\mathcal{X}$-family $X' / T'$ such and such. And this pullback is essentially unique. $X' / T'$ is said to be the pullback of $X / T$ via the continuous map $f$. We use notations
+
 $$
 X' = f^{\ast } X \text{ or } X' = X \mid _ {T'}.
 $$

@@ -195,19 +195,23 @@ If Matrix A has dimensions of $m \times n$ (meaning $m$ rows and $n$ columns) an
 Let's consider two simple matrices:
 
 Matrix A:
+
 $$
 \begin{pmatrix}
 1 & 2 \\
 3 & 4
 \end{pmatrix}
 $$
+
 Matrix B:
+
 $$
 \begin{pmatrix}
 2 & 1 \\
 0 & 3
 \end{pmatrix}
 $$
+
 
 To multiply them:
 
@@ -233,12 +237,14 @@ To multiply them:
 
 The resulting matrix is:
 
+
 $$
 \begin{pmatrix}
 2 & 7 \\
 6 & 15
 \end{pmatrix}
 $$
+
 **Visualization**:
 
 Imagine Matrix A's rows as horizontal hands reaching out, and Matrix B's columns as vertical hands reaching up. When these hands "high-five", they form the elements of the resulting matrix by the rule we just discussed.
@@ -261,6 +267,7 @@ Imagine you run a small shoe factory. You produce two types of shoes: sneakers a
    - Boots: 50 pairs
 
    We can represent this as:
+   
    $$
    \text{Shoes} = \begin{bmatrix} 100 \\ 50 \end{bmatrix}
    $$
@@ -270,6 +277,7 @@ Imagine you run a small shoe factory. You produce two types of shoes: sneakers a
    - Cost to produce one pair of boots: $40
 
    This can be represented as:
+   
    $$
    \text{Cost} = \begin{bmatrix} 20 \\ 40 \end{bmatrix}
    $$
@@ -282,9 +290,11 @@ For example:
 - Each pair of boots requires 3 units of leather and 1 unit of rubber.
 
 This matrix is:
+
 $$
 \text{Materials} = \begin{bmatrix} 1 & 2 \\ 3 & 1 \end{bmatrix}
 $$
+
 Where the first column corresponds to the requirements for sneakers and the second column to boots.
 
 **Matrix Multiplication**:
@@ -292,16 +302,19 @@ Where the first column corresponds to the requirements for sneakers and the seco
 Now, suppose you want to find out how much raw material (leather and rubber) you'll need for the entire week's production.
 
 To do this, you'd multiply the Material Requirement Matrix by the Production Vector:
+
 $$
 \text{Total Materials} = \text{Materials} \times \text{Shoes}
 $$
 
 Multiplying, we get:
+
 $$
 \text{Total Materials} = \begin{bmatrix} 1 & 2 \\ 3 & 1 \end{bmatrix} \times \begin{bmatrix} 100 \\ 50 \end{bmatrix} = \begin{bmatrix} 200 \\ 350 \end{bmatrix}
 $$
 
 So, you'll need:
+
 - 200 units of leather (100 for the sneakers and 150 for the boots)
 - 350 units of rubber (200 for the sneakers and 150 for the boots)
 
@@ -317,6 +330,7 @@ Apply the multiplication of matrices to the product of:
 Certainly! Let's embark on this journey to understand transposes and inverses using clear examples and relatable analogies tailored for students stepping into the realm of mathematical economics.
 
 ---
+
 **Transposes**
 
 **What is a Transpose?**
@@ -327,6 +341,7 @@ Imagine you have a bookshelf full of books (your matrix). If you were to tip tha
 
 **Example**:
 Given the matrix:
+
 $$
 A = \begin{bmatrix}
 2 & 5 \\
@@ -336,6 +351,7 @@ A = \begin{bmatrix}
 $$
 
 The transpose, denoted as $A^T$, is:
+
 $$
 A^T = \begin{bmatrix}
 2 & 3 & 1 \\
@@ -352,7 +368,9 @@ Transposing can be useful for various reasons, such as making certain operations
 The inverse of a matrix, if it exists, is a matrix that, when multiplied with the original matrix, results in the identity matrix. The identity matrix is a special square matrix with ones on the main diagonal and zeros elsewhere.
 
 In symbols, for a matrix $A$, its inverse is denoted $A^{-1}$, such that:
+
 $$ A \times A^{-1} = I $$
+
 where $I$ is the identity matrix.
 
 **Real-life Analogy**: 
@@ -364,6 +382,7 @@ Think of the process of multiplication and its inverse, division. When you multi
 
 **Example**:
 For a 2x2 matrix:
+
 $$
 A = \begin{bmatrix}
 a & b \\
@@ -372,6 +391,7 @@ c & d \\
 $$
 
 Its inverse is:
+
 $$
 A^{-1} = \frac{1}{ad-bc} \begin{bmatrix}
 d & -b \\
@@ -396,6 +416,7 @@ Both transposes and inverses are fundamental tools in the toolbox of mathematica
 A matrix is called a "square matrix" if it has the same number of rows and columns. In other words, its dimensions look like $n \times n$, where $n$ is a positive integer. You can visualize it as a perfect square filled with numbers, just like a chess or checkerboard.
 
 **Example**: A 2x2 matrix:
+
 $$
 \begin{bmatrix}
 2 & 5 \\
@@ -407,6 +428,7 @@ $$
 Any matrix that doesn't have the same number of rows and columns is a "non-square matrix". Its dimensions might look like $m \times n$, where $m$ and $n$ are positive integers, and $m \neq n$.
 
 **Example**: A 2x3 matrix:
+
 $$
 \begin{bmatrix}
 1 & 4 & 7 \\
@@ -434,15 +456,19 @@ Let's say you have two square matrices, both of size $2 \times 2$. When you mult
 
 **Definition**: 
 A linear equation is an equation of the form:
+
 $$a_ 1x_ 1 + a_ 2x_ 2 + ... + a_ nx_ n = b$$
+
 where $x_ 1, x_ 2, ... x_ n$ are the variables, $a_ 1, a_ 2, ... a_ n$ are constants (known as coefficients), and $b$ is another constant. 
 
 **Key Features**:
+
 1. Each term consists of a variable multiplied by a constant.
 2. No term has a variable raised to a power higher than one.
 3. There are no products of variables (e.g., $x_ 1 \times x_ 2$).
 
 **Simple Example**: 
+
 Consider the equation $3x + 2y = 12$. Here, $x$ and $y$ are the variables, and the numbers 3 and 2 are their respective coefficients.
 
 Imagine you're graphing this equation on a coordinate plane. For an equation with two variables, the graph would be a straight line. That's why it's called "linear" – the graph is a line.
@@ -450,9 +476,11 @@ Imagine you're graphing this equation on a coordinate plane. For an equation wit
 **What is a System of Linear Equations?**
 
 **Definition**: 
+
 A system of linear equations is just a collection of two or more linear equations that involve the *same set of variables*.
 
 **Simple Example**:
+
 $$
 \begin{align*}
 3x + 2y &= 12 \quad \text{(Equation 1)} \\
@@ -463,6 +491,7 @@ $$
 In this system, you have two linear equations, and you'd typically try to find values for $x$ and $y$ that satisfy both equations simultaneously.
 
 **Graphical Interpretation**:
+
 When you plot both equations on a graph:
 1. If they intersect at a point, that point is the solution to the system (i.e., the values of $x$ and $y$ at that point satisfy both equations).
 2. If they never meet (parallel lines), the system has no solution.
@@ -492,11 +521,16 @@ $$
 This can be represented in a matrix format as $AX = B$:
 
 Where:
-$$ A = \begin{bmatrix} 2 & 3 \\ 1 & -4 \end{bmatrix} $$ (Coefficients of the variables)
+$$ A = \begin{bmatrix} 2 & 3 \\ 1 & -4 \end{bmatrix} $$
+(Coefficients of the variables)
 
-$$ X = \begin{bmatrix} x \\ y \end{bmatrix} $$ (Our unknowns)
+$$ X = \begin{bmatrix} x \\ y \end{bmatrix} $$
 
-$$ B = \begin{bmatrix} 8 \\ -3 \end{bmatrix} $$ (Results of the equations)
+(Our unknowns)
+
+$$ B = \begin{bmatrix} 8 \\ -3 \end{bmatrix} $$
+
+(Results of the equations)
 
 ## Lecture 4
 
@@ -505,7 +539,9 @@ $$ B = \begin{bmatrix} 8 \\ -3 \end{bmatrix} $$ (Results of the equations)
 Here's the magic part: If we multiply both sides of our matrix equation $AX = B$ by the inverse of matrix $A$, which we'll call $A^{-1}$, we can isolate $X$ (our unknowns).
 
 Doing the math:
+
 $$ A^{-1}AX = X = A^{-1}B $$
+
 
 So, if we can find the inverse of $A$ (remember, not all matrices have inverses!), then we can multiply it with $B$ to get our solution, $X$.
 
@@ -580,9 +616,11 @@ The rank of a matrix is a measure of the "dimension" of the linear space spanned
 The term "determinant" was used because it can "determine" whether or not a matrix has an inverse.
 
 Let's say you have a 2x2 matrix:
+
 $$A = \begin{bmatrix} a & b \\ c & d \end{bmatrix} $$
 
 The determinant, often denoted as |A| or det(A), is calculated as:
+
 $$|A| = ad - bc $$
 
 If |A| equals zero, then A is singular.
@@ -604,14 +642,17 @@ Of course! The Laplace Expansion is an important technique for calculating the d
 
 4. **Compute the Determinant:**
    The determinant of the matrix is the sum of the products of the elements of your chosen row or column with their respective cofactors. Mathematically, if you chose the i-th row, this can be written as:
+   
 $$\text{det}(A) = \sum_ {j=1}^{n} a_ {ij} C_ {ij} $$
    
 Alternatively, if you chose the j-th column, it is:
+
 $$\text{det}(A) = \sum_ {i=1}^{n} a_ {ij} C_ {ij} $$
 
 **Example: Determinant of a $3 \times 3$ Matrix using Laplace Expansion:**
 
 Given matrix A:
+
 $$
 \begin{pmatrix}
 1 & 3 & 2 \\
@@ -624,38 +665,45 @@ To compute its determinant, let's expand using the first row:
 
 1. For the element $a_ {11} = 1$:
    - Minor $M_ {11}$ is the determinant of:
+
 $$
 \begin{pmatrix}
 1 & 3 \\
 2 & 1 \\
 \end{pmatrix}
 $$
+
    - $M_ {11} = 1 - 6 = -5$
    - Cofactor $C_ {11} = (-1)^{1+1} \times (-5) = 5$
 
 2. For the element $a_ {12} = 3$:
    - Minor $M_ {12}$ is the determinant of:
+
 $$
 \begin{pmatrix}
 4 & 3 \\
 2 & 1 \\
 \end{pmatrix}
 $$
+
    - $M_ {12} = 4 - 6 = -2$
    - Cofactor $C_ {12} = (-1)^{1+2} \times (-2) = 2$
 
 3. For the element $a_ {13} = 2$:
    - Minor $M_ {13}$ is the determinant of:
+
 $$
 \begin{pmatrix}
 4 & 1 \\
 2 & 2 \\
 \end{pmatrix}
 $$
+
    - $M_ {13} = 8 - 2 = 6$
    - Cofactor $C_ {13} = (-1)^{1+3} \times 6 = -6$
 
 Combining the results, 
+
 $$\text{det}(A) = 1 \times 5 + 3 \times 2 + 2 \times (-6) = 5 + 6 - 12 = -1 $$
 
 And that's how you can use the Laplace Expansion to compute the determinant of a matrix! This method becomes more cumbersome for larger matrices, but the principles remain the same.
@@ -680,6 +728,7 @@ Imagine you're trying to solve a system of equations. This system might represen
 2. On Tuesday, you bought 4 apples and 5 bananas, and it cost you $31.
 
 From this, you have:
+
 1) 3A + 2B = 13
 2) 4A + 5B = 31
 
@@ -690,36 +739,44 @@ Cramer's rule helps you find the cost of A and B using determinants of matrices.
 **Step-by-step with Cramer's Rule:**
 
 1. **Main Determinant (D)**:
+2. 
    First, make a matrix of the coefficients of A and B:
+
 $$ 
 \begin{pmatrix}
 3 & 2 \\
 4 & 5 \\
 \end{pmatrix}
 $$
+
 Calculate its determinant (D). This determinant represents the "base scenario" of our system.
 
 2. **Determinant with respect to A:**
    Replace the first column (which represents apples) with the numbers on the right side of our equations (13 and 31):
+   
 $$ 
 \begin{pmatrix}
 13 & 2 \\
 31 & 5 \\
 \end{pmatrix}
 $$
+
 Calculate its determinant. This determinant represents the scenario when we're focusing just on the apples.
 
 3. **Determinant with respect to B**:
    Replace the second column (which represents bananas) with the numbers on the right side:
+   
 $$ 
 \begin{pmatrix}
 3 & 13 \\
 4 & 31 \\
 \end{pmatrix}
 $$
+
 Calculate its determinant. This represents the scenario when we're focusing just on the bananas.
 
 4. **Solving for A and B**:
+5. 
    - The cost of an apple (A) is found by $A = D_ A / D$
    - The cost of a banana (B) is found by $B = D_ B / D$
 
@@ -760,12 +817,15 @@ Each row represents the output of an industry, and each column (excluding the Fi
 
 2. **The Leontief Inverse**: To find the total output required to satisfy a given final demand, we use:
    $$ X = (I - A)^{-1} Y $$
+   
    Where:
+   
    - $X$ is the total output vector.
    - $Y$ is the final demand vector.
    - $I$ is the identity matrix.
 
    In our case, $Y$ is:
+   
    ```
    | 50 |
    | 20 |
@@ -773,6 +833,7 @@ Each row represents the output of an industry, and each column (excluding the Fi
    ```
 
    And $I$ is:
+   
    ```
    | 1  0  0 |
    | 0  1  0 |
@@ -868,17 +929,22 @@ The chain rule is a fundamental principle in calculus that allows us to find the
 
 The Chain Rule:
 The chain rule states that if you have a composite function $f(g(x))$, and you want to find its derivative, you would do the following:
+
 $$
 \frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x)
 $$
+
 Here, $f'(g(x))$ is the derivative of $f$ with respect to $g(x)$, and $g'(x)$ is the derivative of $g$ with respect to $x$.
 
 Example 1:
 Let's consider an example to understand the application of the chain rule.
+
 $$
 h(x) = \sin(x^2)
 $$
+
 Here, we can consider $f(x) = \sin(x)$ and $g(x) = x^2$, so that $h(x) = f(g(x))$. Now, we want to find the derivative of $h(x)$.
+
 $$
 \begin{aligned}
 h'(x) &= \frac{d}{dx} \sin(x^2) \\
@@ -889,10 +955,13 @@ $$
 
 Example 2:
 Let's take another example.
+
 $$
 h(x) = \exp(\sin(x))
 $$
+
 Here, $f(x) = \exp(x)$ and $g(x) = \sin(x)$, so $h(x) = f(g(x))$. We want to find the derivative of $h(x)$.
+
 $$
 \begin{aligned}
 h'(x) &= \frac{d}{dx} \exp(\sin(x)) \\
@@ -919,6 +988,7 @@ $$x^2 + y^2 = 1$$
 
 This equation defines $y$ implicitly as a function of $x$. We can use the Implicit Function Theorem to find $\frac{dy}{dx}$:
 
+
 $$
 \begin{aligned}
 2x + 2y\frac{dy}{dx} &= 0 \\
@@ -928,8 +998,11 @@ $$
 
 **Example 2:**
 Consider the equation:
+
 $$x^2 - 2xy + y^2 = 3.$$
+
 Again, this equation defines $y$ implicitly as a function of $x$. We can find $\frac{dy}{dx}$ by differentiating both sides of the equation with respect to $x$:
+
 $$
 \begin{aligned}
 2x - 2y - 2x\frac{dy}{dx} + 2y\frac{dy}{dx} &= 0 \\
@@ -993,6 +1066,7 @@ Introduce the definite integrals. Explain the connection between definite and in
 Explain the power rule. The exponential rule and the logarithmic rule. Integrals are linear. 
 
 Introduce the substitution rule. For example, 
+
 $$
 \int dx \, 2x (x^{2}+1). 
 $$
@@ -1049,13 +1123,17 @@ One interesting and significant application of exponential functions in economic
 ### Lecture 10 (Nov 8)
 
 Consider a consumer with the simple utility (index) function
+
 $$
 U = x_ {1}x_ {2}+2x_ {1}.
 $$
+
 Without any constraints, it is impossible to optimize $U$. But with some budget constrain, for instance 
+
 $$
 x_ {1}+2x_ {2}=50,
 $$
+
 then we can optimize it. 
 
 Introduce the Lagrangian multiplier method. 
@@ -1069,6 +1147,7 @@ Ex2. Find the extremum of $z=x_ {1}^{2}+x_ {2}^{2}$ subject to $x_ {1}+4x_ {2}=2
 ### Lecture 11 (Nov 15)
 
 Introduction of the basic concepts of probability. 
+
 1. Probabilistic vs. deterministic world views. Is there such thing as free will or it is determined by nature?
 2. Why probability works in predicting the future. Two causes of probability.
 3. The sample space. Including the application of set theory.
@@ -1079,6 +1158,7 @@ Countable infinite sample space and continuous sample space.
 Permutation and combination.
 
 The Gaussian (normal, bell) distribution.
+
 ### Lecture 13 (Nov 29)
 
 **Conditional Probability**
@@ -1104,10 +1184,12 @@ Another example, consider the following description: Steve is very *shy and with
 Consider a production firm that manufactures a single product. The firm's production output depends on two factors: labor (L) and capital (K). The market for its product is competitive, and the firm aims to maximize its profit.
 
 *Part 1: Production Function and Cost Analysis* [30 Points]
+
 - 1.1 Linear Algebra Application (10 points): The firm's production function is given by $Q(L, K) = aL + bK$, where $Q$ is the quantity of output, and $a$ and $b$ are constants. Represent this production function in matrix form and find the level of output when $L = 3$ and $K = 5$, given $a = 2$ and $b = 3$.
 - 1.2 Calculating Costs (20 points): Assume the firm's total cost (TC) function is $TC = cL^2 + dK^2 + f$, where $c, d,$ and $f$ are constants. Calculate the marginal cost (MC) of labor and capital. 
 
 *Part 2: Profit Maximization* [30 Points]
+
 - 2.1 Differential Calculus (15 points): Given the price per unit of the product is $P$, write the profit function $\Pi$ and use differentiation to find the conditions for profit maximization.
 - 2.2 Break-Even Analysis (20 points): Determine the break-even points for the firm in terms of $L$ and $K$.
 
@@ -1131,50 +1213,66 @@ A company is planning to launch a new product. Market research suggests that the
 Consider a production firm that manufactures a single product. The firm's production output depends on two factors: labor (L) and capital (K). The market for its product is competitive, and the firm aims to maximize its profit.
 
 *Part 1: Production Function and Cost Analysis* [30 Points]
+
 - 1.1 Linear Algebra Application (10 points): The firm's production function is given by $Q(L, K) = aL + bK$, where $Q$ is the quantity of output, and $a$ and $b$ are constants. Represent this production function in matrix form and find the level of output when $L = 3$ and $K = 5$, given $a = 2$ and $b = 3$.
 
 **Answer**: To represent this in matrix form, consider the vector of inputs $\begin{bmatrix} L \\ K \end{bmatrix}$ and the matrix of coefficients $\begin{bmatrix} a & b \end{bmatrix}$. The production function becomes a matrix product. The key points is that the production has to be the form
+
 $$
 \begin{bmatrix} a & b \end{bmatrix} \cdot \begin{bmatrix} L \\ K \end{bmatrix},
 $$
+
 it shouldn't be written as, for example
+
 $$
 \begin{bmatrix} a & b \end{bmatrix} \cdot\begin{bmatrix} L & K \end{bmatrix} , \quad \text{Incorrect!}
 $$
 
 Substitution of the variables with numbers is straightforward,
+
 $$ Q = \begin{bmatrix} a & b \end{bmatrix} \begin{bmatrix} L \\ K \end{bmatrix} = \begin{bmatrix} 2 & 3 \end{bmatrix} \begin{bmatrix} 3 \\ 5 \end{bmatrix} = 2 \times 3 + 3 \times 5 = 21.$$
 
 - 1.2 Calculating Costs (20 points): Assume the firm's total cost (TC) function is $TC = cL^2 + dK^2 + f$, where $c, d,$ and $f$ are constants. Calculate the marginal cost (MC) of labor and capital. 
 
 **Answer**: Marginal Cost (MC) is the derivative of the Total Cost (TC) with respect to a particular input while holding other inputs constant. We just need to calculate $MC_L = \frac{\partial TC}{\partial L}$ and $MC_K = \frac{\partial TC}{\partial K}$. To be specific,
+
 $$
 \frac{\partial TC}{\partial L} = 2cL,\quad  \frac{\partial TC}{\partial K}=2dK.
 $$
 
 *Part 2: Profit Maximization* [30 Points]
+
 - 2.1 Differential Calculus (15 points): Given the price per unit of the product is $P$, write the profit function $\Pi$ and use differentiation to find the conditions for profit maximization.
 - 2.2 Break-Even Analysis (20 points): Determine the break-even points for the firm in terms of $L$ and $K$.
 
 **Answer**: The profit function is 
+
 $$
 \Pi = P \times  Q -TC = P(aL+bK)-(cL^{2}+dK^{2}+f),
 $$
+
 the conditions for profit maximization is where the first order partial derivatives are zero,
+
 $$
 \frac{\partial \Pi}{\partial L}=ap-2cL=0
 $$
+
 and 
+
 $$
 \frac{\partial\Pi}{\partial K}=bP-2dK=0. 
 $$
+
 A common mistake here is to put the total derivative symbol $d\Pi / dL$ instead of partial derivative symbol.
 
 Break-even occurs when $\Pi = 0$. We can set the profit function $\Pi = 0$ and solve for $L$ and $K$ to find the break-even points. The break even point is given by $L$ and $K$ such that 
+
 $$
 -P(aL+bK)+(cL^{2}+dK^{2}+f)=0.
 $$
+
 For more mathematically advanced students, we can also try to complete the square,
+
 $$
 \begin{align*}
 &(c L^{2}-aP L ) +(dK^{2}-PbK) +f =0\\
@@ -1183,6 +1281,7 @@ $$
 \implies & \left( \sqrt{ c }L- \frac{aP}{2\sqrt{ c }} \right)^{2}+\left( \sqrt{ d }K- \frac{pB}{2\sqrt{ d }} \right)^{2} = \text{Const}
 \end{align*}
 $$
+
 where the const term is an expression of all the parameters of the model. We see that the break even points in terms of $(L,K)$ *form an ellipse*! 
 
 - - -
@@ -1192,6 +1291,7 @@ where the const term is an expression of all the parameters of the model. We see
 Consider a market where the supply curve is given by $S(q)=2q^{2}$ and the demand curve is given by $D(q)=40-q$, where $q$ is the quantity of goods. The market reaches equilibrium where supply equals demand. Calculate the consumer surplus at equilibrium.
 
 **Answer**.  From $D(q)=S(q)$ we get $q^{\ast}\approx 4.23$, the other negative root can be safely neglected. Then the consumer surplus is 
+
 $$
 \text{Consumer surplus} = \frac{1}{2}\times q^{\ast } \times (40-D(q^{\ast })) \approx 8.9.
 $$
@@ -1217,22 +1317,30 @@ To calculate the probability that demand exceeds 1200 units, we need to integrat
    P(X > 1200) = \int_{1200}^{\infty} \frac{1}{200 \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-1000}{200}\right)^2} dx
    $$
 
-This integral can be transformed into a standard normal distribution integral by substituting $z = \frac{x - 1000}{200}$, which simplifies the integral to a form involving the standard normal cumulative distribution function. Similarly, we integrate the PDF from 800 to 1200:  
+This integral can be transformed into a standard normal distribution integral by substituting $z = \frac{x - 1000}{200}$, which simplifies the integral to a form involving the standard normal cumulative distribution function. Similarly, we integrate the PDF from 800 to 1200: 
+
 $$
    P(800 < X < 1200) = \int_{800}^{1200} \frac{1}{200 \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-1000}{200}\right)^2} dx.
 $$
 
 Let's calculate these integrals and their numerical values in Mathematica. The code to calculate $P(X>1200)$ reads
+
 ```mathematica
 NIntegrate[1/(200 Sqrt[2 Pi]) Exp[-1/2 ((x - 1000)/200)^2], {x, 1200, Infinity}]
 ```
+
 and yields  $0.1587$. This means there is about a 15.87% chance that the demand will exceed 1200 units.
 
-The Mathematica code for integral   $$
+The Mathematica code for integral 
+
+$$
    P(800 < X < 1200) = \int_{800}^{1200} \frac{1}{200 \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-1000}{200}\right)^2} dx
-   $$
-   is   
+$$
+
+   is 
+   
 ```mathematica
 NIntegrate[1/(200 Sqrt[2 Pi]) Exp[-1/2 ((x - 1000)/200)^2], {x, 800, 1200}]
 ```
+
 and yields $0.6827$. This indicates there is about a 68.27% chance that the demand will be between 800 and 1200 units.

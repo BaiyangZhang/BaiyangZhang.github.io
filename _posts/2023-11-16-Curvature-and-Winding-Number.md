@@ -17,38 +17,52 @@ tags:
 We will assume that the Yang-Mills potential $\omega_ {U}$ in patch $U$ has no singularity. 
 
 Let $\theta$ be the two-form curvature, we have the following observation for any vector bundle over all base manifolds,
+
 $$
 \theta \wedge \theta = (d\omega+\omega \wedge \omega)\wedge (d\omega+\omega \wedge \omega) ,
 $$
+
 using 
+
 $$
 \mathrm{Tr}\,(\omega \wedge \omega \wedge d\omega) = \mathrm{Tr}\,(d\omega \wedge \omega \wedge \omega)
 $$
+
 and 
+
 $$
 \mathrm{Tr}\,(\omega \wedge \omega \wedge \omega \wedge \omega)=0
 $$
+
 we have eventually
+
 $$
 \mathrm{Tr}\,(\theta \wedge \theta) = d\, \mathrm{Tr}\,\left( \omega \wedge d\omega+\frac{2}{3}\omega \wedge \omega \wedge \omega \right)
 $$
+
 thus $\mathrm{Tr}\,(\theta \wedge\theta)$ is *locally exact*, it is locally the differential of a $3$-form, called the `Chern-Simons` $3$-form. $\omega$ is not usually globally defined. 
 
 Coming back to the case of instanton, outside the instanton the curvature vanishes but the connection does not, hence we have
+
 $$
 \int_ {U} \,  \mathrm{Tr}\,(\theta \wedge \theta) = \int_ {\partial U = \mathbb{S}^{3}} \,  \left( -\frac{1}{3} \right)\mathrm{Tr}\,(\omega \wedge \omega \wedge \omega).
 $$
+
 This allows us to write the winding number in terms of curvature, by applying some kind of Stokes theorem
+
 $$
 \frac{1}{24\pi^{2}}\int_ {\mathbb{S}^{3}} \,  \mathrm{Tr}\,(\omega_ {U}\wedge \omega_ {U}\wedge \omega_ {U})
 = - \frac{1}{8\pi^{2}} \int_ {\mathbb{R}^{4}} \, \mathrm{Tr}\,(\theta \wedge \theta).
 $$
 
 Note that $\theta \wedge\theta$ is *not* the Lagrangian, which is $\mathrm{Tr}\,(\theta \wedge\star \theta)$.  We have
+
 $$
 \theta \wedge \theta = (\theta \wedge \theta)_ {0123}\,dt\wedge dx\wedge dy\wedge dz\propto \epsilon^{ijkl}F_ {ij}F_ {kl}
 $$
+
 while
+
 $$
 \theta \wedge \star \theta \propto F_ {ij}F^{ij}.
 $$
@@ -69,10 +83,12 @@ Considering the exterior powers of a three-dimensional complex vector space $V =
 
 *First Exterior Power, $\Lambda^1(V)$*:  This is just the vector space $V$ itself, with dimension three (since $V = \mathbb{C}^3$). The basis are simply $\left\lbrace v_ {1},v_ {2},v_ {3} \right\rbrace$.
 
-*Second Exterior Power, $\Lambda^2(V)$*: This space consists of all skew-symmetric bilinear forms on $V$. It can be visualized as the space of oriented planes in $V$. It has dimension  
+*Second Exterior Power, $\Lambda^2(V)$*: This space consists of all skew-symmetric bilinear forms on $V$. It can be visualized as the space of oriented planes in $V$. It has dimension 
+
 $$
  \binom{3}{2} = 3, \text{ since there are 3 ways to choose pairs from 3 elements.}
 $$
+
 The basis are $\left\lbrace v_ {1}\wedge v_ {2},v_ {1}\wedge v_ {3},v_ {2}\wedge v_ {3} \right\rbrace$.
 
 *Third Exterior Power, $\Lambda^3(V)$*: This is the space of 3-vectors in $V$. It represents the oriented volume elements in $V$. The dimension is $\binom{3}{3} = 1$ (there is only one way to choose triples from 3 elements). The basis is $v_ {1}\wedge v_ {2}\wedge v_ {3}$.
@@ -82,10 +98,13 @@ The basis are $\left\lbrace v_ {1}\wedge v_ {2},v_ {1}\wedge v_ {3},v_ {2}\wedge
 - - -
 
 Let $V=\mathbb{C}^{N}$ be $N$-dimensional complex vector space. Let $A$ be a $N\times N$ complex matrix that acts on $V$ in the usual way. Consider the` characteristic (eigenvalue) polynomial` of $A$, 
+
 $$
 \det(\lambda I-A) = (\lambda-\lambda_ {1})(\lambda-\lambda_ {2})\dots(\lambda-\lambda_ {N})
 $$
+
 where $\lambda_ {1},\dots,\lambda_ {N}$ are the eigenvalues of $A$. Putting $\lambda=-1$ we have
+
 $$
 \begin{align*}
 \det(I+A) &= (1+\lambda_ {1})(1+\lambda_ {2})\dots(1+\lambda_ {N}) \\
@@ -94,27 +113,39 @@ $$
 \end{align*}
 \tag{1}
 $$
+
 where the big wedges are called the `elementary symmetric functions` of he eigenvalues of $A$. The reason for this notation is as follows. Since
+
 $$
 A: V \to V
 $$
+
 is a linear transformation on $V$, we may let $A$ act on each of the *exterior power spaces* $\Lambda^{p} (A)$ by the so-called *exterior power operation* 
+
 $$
 \bigwedge^{p}A: \; v_ {1}\wedge \dots \wedge v_ {p} \mapsto (Av_ {1})\wedge (Av_ {2})\wedge \dots \wedge (Av_ {p} ).
 $$
+
 Let's take $p=N$ for example. $\Lambda^{N}(V)$ is one dimensional and 
+
 $$
 \left( \bigwedge^{N}A \right)(v_ {1}\wedge \dots \wedge v_ {n} ) = \det A\, (v_ {1}\wedge \dots \wedge v_ {n} ).
 $$
+
 Thus justifies the definition shown in the last term in Eq. (1). Let's take a look at other terms, for example, at $\Lambda^{2}A$. We treat $A$ as diagonal matrix $\text{diag}(\lambda_ {1},\dots,\lambda_ {N})$ to simplify the calculation, and we can consider 
+
 $$
 \bigwedge^{2}(v_ {i}\wedge v_ {j})
 $$
+
 as the component of the exterior power operator on basis $v_ {i}\wedge v_ {j}$. Then the trace of $\Lambda^{2}(A)$ is simply the sum total of all its components. We have
+
 $$
 \bigwedge^{2}(v_ {i}\wedge v_ {j}) = A_ {im} A_ {jn}(v_ {m} \wedge v_ {n} ) = (\lambda _ {i} \lambda _ {j})\, v_ {i} \wedge v_ {j} 
 $$
+
 where $i<j$ implicitly. Then the total sum is 
+
 $$
 \mathrm{Tr}\,\bigwedge^{2} A = \sum_ {i<j}\lambda _ {i} \lambda _ {j} .
 $$
@@ -122,12 +153,15 @@ $$
 - - -
 
 It turns out we can further simplify $\Lambda^{p}A$. Note that
+
 $$
 \lambda_ {1}^{p} + \lambda_ {2}^{p} + \dots + \lambda _ {N}^{p} = \mathrm{Tr}\,(A^{p}),\quad  
 A = \text{diag}(\lambda_ {1},\dots,\lambda_ {N}).
 $$
 
+
 Take $p=2$ for example, 
+
 $$
 \bigwedge^{2} A = \sum _ {i<j} \lambda _ {i} \lambda _ {j}  = \frac{1}{2} \sum_ {ij} \lambda _ {i} \lambda _ {j} - \frac{1}{2} \lambda _ {i} \lambda _ {i}  = \frac{1}{2}(\mathrm{Tr}\,A)^{2} - \frac{1}{2} \mathrm{Tr}\,A^{2}.
 $$
@@ -139,37 +173,48 @@ Turns out all the exterior power operators can be expressed as a *polynomial* in
 Now, let $E\to M$ be a complex $\mathbb{C}^{N}$ bundle with structure group $U(N)$. Let the connection be $\omega$. The corresponding $2$-form curvature is still denoted by $\theta$. 
 
 Let's *formally* replace $A$ in Eq. (1) with $i\theta / 2\pi$, replace multiplication with wedge product. To be exact, we work with **polynomial expression** of $\Lambda^{p}A$, and perform these substitutions. Since $\theta$ is a $2$-form there will be no problem with ordering. Regarding $\theta$ as a matrix means that the $(\alpha,\beta)$-th entry of the matrix is $\theta^{\alpha}_ {\;\; \beta}$. Now similar to Eq. (1) we have
+
 $$
 \begin{align*}
 \det \left( I+\frac{i\theta}{2\pi} \right) &= I + \mathrm{Tr}\,\frac{i\theta}{2\pi} + \dots \\
 &= I + c_ {1}(E) + c_ {2}(E) + \dots 
 \end{align*}
 $$
+
 where $c_ {1}(E)$ is a 2-form on $U\subset M$, $c_ {r}(E)$ is a $2r$-form on $U$. It's called the $r$-th `Chern form`.
 
 To be specific, the form $c_ {1}$ is 
+
 $$
 c_ {1} = \frac{i}{2\pi} \mathrm{Tr}\,\theta = \frac{i}{2\pi} \mathrm{Tr}\,\theta^{\alpha}_ {\;\; \alpha}.
 $$
+
 For $c_ {2}$ we have
+
 $$
 c_ {2} = -\frac{1}{8\pi^{2}}[\mathrm{Tr}\,\theta \wedge \mathrm{Tr}\,\theta-\mathrm{Tr}\,(\theta \wedge \theta)].
 $$
 
 Suppose the bundle has $SU(N)$ structure group rather than $U(N)$. The Lie algebra ${\frak su}(N)$ are traceless, anti-hermitian (mathematical convention) matrices, thus we have $\mathrm{Tr}\,\theta=0$ (recall that both the connection and curvature are ${\frak g}$-valued forms). Then $c_ {1}(E)$ vanishes but $c_ {2}$ does not,
+
 $$
 c_ {2}(E) = \frac{1}{8\pi^{2}} \mathrm{Tr}\,(\theta \wedge \theta),
 $$
+
 which is precisely the 4-form appearing in the winding number of an $SU(2)$ instanton! Just now we have $SU(N)$ instead. 
 
 Recall that the curvature $\theta_ {U}$ is locally defined on open patches $U$, under a change of basis the curvature changes as
+
 $$
 \theta_ {V} = c_ {VU} \theta_ {U} c_ {UV}^{-1} ,
 $$
+
 thanks to the property of determination we have
+
 $$
 \det\left( I+ \frac{i \theta_ {V}}{2\pi} \right) = \det\left( I+ \frac{i\theta_ {U}}{2\pi} \right).
 $$
+
 It means that each *Chern form* is **globally define** $2r$-form on all of $M^{n}$. 
 
 With the help of Bianchi identity, it is possible to show that $c_ {1}$ is closed. 

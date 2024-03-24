@@ -18,10 +18,13 @@ tags:
 Recall that a form or vector field on $G$ is said to be bi-invariant if it is both left and right invariant. 
 
 **Theorem.** if $\alpha$ is a bi-invariant $p$-form, then $p$ is closed,
+
 $$
 d \alpha=0.
 $$
+
 Recall that the Maurer-Cartan form is defined as 
+
 $$
 \Omega := g^{-1} dg
 $$
@@ -35,6 +38,7 @@ $$
 $$
 
 Now, let $v$ be a $\mathfrak{g}$-valued vector field on $G$. Then the action of the Maurer-Cartan form on $v$ is given by
+
 $$
 \Omega(v) : G \rightarrow \mathfrak{g},
 $$$$
@@ -43,22 +47,29 @@ $$
 where $v_g$ is the value of the vector field $v$ at $g \in G$.
 
 The Maurer-Cartan form has the property that it is left-invariant, i.e., for any $g, h \in G$, we have
+
 $$
 \Omega_{gh} = \mathrm{Ad}(h^{-1}) \cdot \Omega_g,
 $$
+
 where $\mathrm{Ad}$ is the adjoint representation of the Lie group $G$. This reflects the relationship between the geometry of the Lie group and the algebraic structure of its Lie algebra.
 
 we can also define the `Cartan p-form`
+
 $$
 \Omega_ {p} := \mathrm{Tr}\, \Omega^{p} =\mathrm{Tr}\,\left\{ \Omega \wedge \dots \wedge \Omega \right\} .
 $$
+
 Cartan p-forms are scalar forms with very special properties, 1) they are bi-invariant hence closed, 2) $\Omega_ {2p}=0$ automatically. We will neglect the proof here. 
 
 The Cartan 3-form plays an especially important role. Since $\Omega(X)=X$ for all $X\in{\frak g}$, we have
+
 $$
 (\Omega \wedge \Omega)(X,Y) = \Omega(X)\otimes \Omega(Y) - \Omega(Y)\otimes \Omega(X)=[X,Y],
 $$
+
 When $G$ is compact we have
+
 $$
 \Omega^{3}(X,Y,Z) = 3\mathrm{Tr}\,([X,Y]Z).
 $$
@@ -104,18 +115,23 @@ In particular, $b_ {1}=0$ for $SU(N)$ but not for $U(N)$.
 The following plays an important role in gauge theories,
 
 **Cartan's Theorem.** If $G$ is a *compact*, *nonabelian* Lie group, then the Cartan $3$-form
+
 $$
 \Omega_ {3} = \mathrm{Tr}\,(g^{-1} dg g^{-1}  dg g^{-1}  dg)
 $$
+
 is a non-trivial harmonic form. In particular $b_ {3}(G)\neq 0$. 
 
 ## The Geometry of a Lie Group
 
 Let $G$ be a Lie group endowed with a bi-invariant metric (which exist on every compact Lie group). Let $\mathbf{X},\mathbf{Y},\mathbf{Z},\dots$ be left-invariant vector fields. In a compact Lie group, geodesics are also 1-parameter subgroups and vise versa, so 
+
 $$
 \nabla_ {\mathbf{X}}\mathbf{X}=0.
 $$
+
 Like wise, 
+
 $$
 \nabla_ {\mathbf{X}+\mathbf{Y}}(\mathbf{X}+\mathbf{Y}) \implies 2\nabla_ {\mathbf{X}}\mathbf{Y}=[\mathbf{X},\mathbf{Y}].
 $$
