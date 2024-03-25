@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c169abf707c1049c",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md"
+                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md"
               }
             }
           }
@@ -159,10 +160,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "64f38d0fe9abaf57",
+  "active": "b66263de2453f537",
   "lastOpenFiles": [
-    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
+    "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-03-06-Domain-Wall.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
@@ -184,8 +187,6 @@
     "_posts/2023-2-4-Basic-Algebraic-Geometry-Class-7.md",
     "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
     "_posts/2022-12-26-Basics-of-Distributions.md",
-    "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
-    "_posts/2022-11-22-Confinement-in-Toy-Models-I.md",
-    "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md"
+    "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md"
   ]
 }

@@ -98,3 +98,105 @@ In his book Tsallis listed some reasons for considering non-extensive, non-Boltz
 2. A statistical description of a system should be based on the dynamics of the system, the macroscopic theory should come from a microscopic one. This opens the way, especially for complex systems, for other than Boltzmann statistics.
 3. The existence of long-range interactions on the microscopic level.
 
+# Boltzmann-Gibbs Statistical Mechanics
+
+## Three different forms of BG entropy
+
+No we need to come back to one of the most important concept in physics, statistics and information theory: **entropy**. It appears in various fields, each with its unique perspective but underlying similarities in concept. 
+
+Generally, *entropy represents a measure of disorder, randomness, or uncertainty*. In statistics, entropy is a measure of the **unpredictability** or the **randomness** of a distribution. *The higher the entropy, the more unpredictable the outcome*. For example, in a perfectly uniform distribution where all outcomes are equally likely, entropy is at its maximum, indicating maximum uncertainty or disorder. In contrast, a distribution where one outcome is certain has zero entropy, representing complete order. This concept is used in various statistical methods and models to quantify uncertainty or variability within a dataset. In information theory, entropy is a fundamental concept introduced by `Claude Shannon`. It quantifies the average amount of information produced by a stochastic source of data. The more uncertain or random the source, the higher the entropy. In practical terms, entropy helps in understanding the limits of data compression and the efficiency of communication systems. For instance, a message composed of completely random bits has higher entropy and cannot be compressed beyond a certain limit without losing information. On the other hand, a message with a lot of repetitive or predictable parts has lower entropy and can be compressed more effectively.
+
+In each of these fields, entropy helps us understand systems' behavior in terms of unpredictability, disorder, and efficiency. While the context and applications may vary, the core idea revolves around the concepts of uncertainty and the distribution of states or outcomes.
+
+In the previous section we showed the definition of entropy without much justification, because there is none! Not from the first principal at least. The programme to derive the expression of entropy that we are using today is sometimes called the Boltzmann program, since that was what Boltzmann was trying to do, before he strangled himself to death using a curtain or something. 
+
+However, if the possibilities is a continuous distribution, the BG entropy must be modified accordingly, discrete probability $p_ {i}$ must be replaced by probability density $p(x)$ where $x$ is the variable. As a naively guess, I would say that we can write the entropy as 
+
+$$
+-k \sum p _ {i} \ln p _ {i}  \to -k \int dx \, p(x) \ln(p(x)), 
+$$
+
+where the probability distribution function (or probability density) is normalized,
+
+$$
+\int dx \,  p(x) =1.
+$$
+
+However, a difference between discrete and continuous probability lies in its dimension! Normalized discrete probabilities $p_ {i}$ sums to 1, $\sum_ {i} p_ {i}=1$, since $1$ is dimensionless, so is $p_ {i}$. This is not true for continuous probability density $p(x)$, since now the normalization condition tells us that $\int dx \, p(x)$ should be dimensionless, and $dx$ has the dimension of length, so $p(x)$ must have dimension of length inversed! Thus, wo need to introduce another parameter, call it $\sigma$, with dimension of length. Then we can define the BG entropy in the continuous scenario:
+
+$$
+S_ {BG} = -k\int dx \, p(x) \ln(\sigma\, p(x)). 
+$$
+
+For the case of equal probabilities, that is, $p= 1 / \Omega$ where $\Omega$ is the total number of allowed microscopic states, we have 
+
+$$
+S_ {BG} = k \ln\left( \frac{\Omega}{\sigma} \right).
+$$
+
+We just mention on the fly that, in quantum mechanics, the probabilistic distribution of a mixed state in terms of pure states is described using the density matrix $\rho$, and the BG entropy is generalized to 
+
+$$
+S_ {BF} = -k\,\mathrm{Tr}\, (\rho \ln \rho).
+$$
+
+## Properties of BG entropy
+
+We will list without proof some of the key properties of BG entropy.
+
+- **Non-negativity**. $S\geq 0$ always. $S = k\ln \Omega$ might help to convince you of it.
+- **BG entropy is maximized at equal probability**. Anything that drives the system away from it will decrease the entropy.
+- **Expansibility**. Adding to a system new possible states with zero probability should not modify the entropy.
+- **Additivity**. Let $A,B$ be two systems with entropy $S(A)$ and $S(B)$, putting them together will result in a new system $A+B$ with entropy $S(A+B)=S(A)+S(B)$.
+- **Concavity**. Given two different probability distributions $\left\lbrace p_ {i} \right\rbrace$ and $\left\lbrace p'_ {i} \right\rbrace$, we can define an intermediate probability distribution 
+
+$$
+\widetilde{p}:= \lambda p + (1-\lambda)p',\quad  \lambda \in (0,1).
+$$
+
+Then we have 
+
+$$
+S(\widetilde{p})\equiv S(\lambda)> \lambda S(p)+(1-\lambda)S(p').
+$$
+
+**Shannon Uniqueness Theorem**. 
+
+In his work, Shannon was interested in finding a measure that could quantitatively capture the information content of a message source. He proposed several properties that this measure (which we now call entropy) should satisfy to be a useful and consistent measure of information. These properties included:
+
+1. **Additivity**: The entropy of two independent sources should be the sum of their individual entropies.
+2. **Continuity**: The measure should change continuously as the message probabilities change.
+3. **Symmetry**: The measure should not depend on the order of the messages.
+4. **Maximum**: The measure should be maximal for a uniform distribution, where all messages are equally likely.
+
+Shannon's Uniqueness Theorem essentially states that, given these properties (along with a few others), the entropy of a discrete random variable is unique and is given by the now-familiar formula:
+
+$$
+S = -\sum_{i} p(x_i) \ln p(x_i)
+$$
+
+The theorem's significance lies in its establishment of entropy as a **unique measure** that satisfies these intuitive and necessary properties for quantifying information. It solidified the concept of entropy as the foundational metric in information theory, leading to profound implications for communication, coding theory, and even other disciplines like statistics and thermodynamics.
+
+## Constraints and Entropy Optimization
+
+**Imposing the Mean Value**
+
+We might know a priori the mean value of a variable $x$, i.e.
+
+$$
+\left\langle x \right\rangle  := \int dx \, x \, p(x)  = \overline{x}  \quad  \text{ is known.}
+$$
+
+We can apply the Lagrange multiplier method to find the optimizing distribution with the constraint, together with the normalization condition $\int dx \, p(x)=1$. The Lagrangian functional that we want to extremize reads now 
+
+$$
+\Phi[p(x)] = S_ {BG} - \alpha \int dx \, p(x) - \beta \int dx \, x \, p(x).  
+$$
+
+We get 
+
+$$
+p(x) = \frac{1}{\overline{x}} e^{ -x / \overline{x} }.
+$$
+
+**Imposing the Mean Squared Value**
