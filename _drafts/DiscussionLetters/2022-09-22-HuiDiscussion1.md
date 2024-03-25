@@ -25,13 +25,13 @@ $$
 $$
 
 $$
- \frac{ \partial  }{ \partial \phi_ {0} } \left\lvert{\psi}\right\rangle _ {i+1}= \frac{i}{\sqrt{ Q_ {0} }}P \left\lvert{\psi}\right\rangle _ {i}\tag{1}
+ \frac{ \partial  }{ \partial \phi_ {0} } \left\lvert{\psi}\right\rangle _ {i+1}= \frac{i}{\sqrt{ Q_ {0} }}P \left\lvert{\psi}\right\rangle _ {i}
 $$
 thus up to a constant of integral we have 
 $$
 \boxed { 
  \left\lvert{\psi}\right\rangle _ {i+1}=\int d\phi_ {0} \,   \frac{i}{\sqrt{ Q_ {0} }}P \left\lvert{\psi}\right\rangle _ {i} + \text{const}
-} \tag{2}
+} 
 $$
 Using some equations, the 
 
@@ -48,7 +48,7 @@ if you have $\phi_ {0}^{n}$ acting on $\left\lvert{\psi}\right\rangle_ {0}$ in $
 - - -
 
 $$
- \left\lvert{0}\right\rangle _ {1}=\int d\phi_ {0} \,   \frac{i}{\sqrt{ Q_ {0} }}P \left\lvert{0}\right\rangle _ {0} + \text{const}\tag{3}
+ \left\lvert{0}\right\rangle _ {1}=\int d\phi_ {0} \,   \frac{i}{\sqrt{ Q_ {0} }}P \left\lvert{0}\right\rangle _ {0} + \text{const}
 $$
 where
 $$

@@ -27,7 +27,7 @@ making $G$ into a group. We demand that this map, as well as the "inversion map"
 For example, $\mathbb{R}$ is a Lie group under addition. This group is commutative, or `abelian`. The positive real numbers $\mathbb{R}^{+}$ also form a abelian group under multiplication. The real and complex general linear matrices $GL(n,\mathbb{R})$ and $GL(n,\mathbb{C})$ are also Lie groups under the usual matrix multiplication. The `special linear` group, $SL(n,\mathbb{R})$ is the subset of $GL(n,\mathbb{R})$ that have determinant one. For any matrix group, the adjective **special** means that the determinant is equal to one. Other examples include $\mathbb{T}^{n}$ the $n$-torus group, which is the abelian group of diagonal matrices of the form 
 
 $$
-z = \text{diag }\left\{ \exp i \theta_ {1},\dots,\exp i \theta _ {n} \right\} .\tag{1}
+z = \text{diag }\left\{ \exp i \theta_ {1},\dots,\exp i \theta _ {n} \right\} .
 $$
 
 The $\mathbb{T}^{n}$ group is topologically homeomorphic to $\mathbb{S}^{1}\times\dots \times \mathbb{S}^{1}$, $n$ copies of them. Since the circles are connected, it follows that $\mathbb{T}^{n}$ is also connected.
@@ -153,7 +153,7 @@ $$
 
 To find $g$ that satisfy the condition, let's take derivatives on both sides w.r.t. $s$ then put $s$ to zero,
 $$
-g'(t) = g(t)g'(0),\quad  g'(0)=\text{const matrix.} \tag{2}
+g'(t) = g(t)g'(0),\quad  g'(0)=\text{const matrix.} 
 $$
 
 The solution is of exponential form,

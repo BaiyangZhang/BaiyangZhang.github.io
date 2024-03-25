@@ -48,7 +48,6 @@ The characteristic length of a kink is roughly speaking inverse to some mass, wh
 
 $$
 S_ {1+1} = -M \int d\tau ,
-\tag{1}
 $$
 
 the superscript $1+1$ denotes the dimension. 
@@ -145,7 +144,6 @@ In the context of a curved spacetime, particularly in a two-dimensional, the act
 
 $$
 S = \int d^2x \sqrt{-g} \left( -\frac{1}{2} g^{\mu\nu} \partial_\mu \phi \partial_\nu \phi - V(\phi) + \frac{1}{2} g R \phi^2 \right) 
-\tag{2} 
 $$
 
 Here $d^2x \sqrt{-g}$ represents the *invariant differential volume element* in two-dimensional spacetime, $g^{\mu\nu}$ is the inverse metric tensor, used to raise indices. $g$ is a dimensionless coupling constant that describes the coupling of the scalar field to the Ricci scalar $R$, a scalar quantity that describes the curvature of spacetime and is obtained by contracting the Ricci tensor $R_{\mu\nu}$. The term $\frac{1}{2} \xi R \phi^2$ is known as the non-minimal coupling term. In two dimensions, the choice of $g$ can be particularly interesting due to the conformal properties of the spacetime. For now we will neglect the non-minimal coupling term.
@@ -204,7 +202,6 @@ The Nambu-Goto action of domain wall can be derived in the same way as in 1+1 ki
 
 $$
 S_ {0} = - \sigma \int d^{3} y \, \sqrt{ \left\lvert h \right\rvert  }
-\tag{3} 
 $$
 
 where $\sqrt{ \left\lvert h \right\rvert }$ comes from the invariant integral measure $\sqrt{ \left\lvert h \right\rvert } d^{3}y$, and $\sigma$ is the tension of the wall. 

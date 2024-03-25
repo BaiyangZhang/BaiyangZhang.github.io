@@ -102,7 +102,6 @@ Kiriushcheva and Kuzmin studied the propagation of the wave packet numerically f
 
 $$
 \Phi_{0}(x,t=0) = \exp \left\{ ik_{0}(x-x_{0})-\frac{(x-x_{0})^2}{2b^2} \right\} 
-\tag{1}
 $$
 
 where $x_{0}$ is the center position of the wave packet and $b$ the width. The reason for the imaginary part in the exponential is such that the wave packet has momentum centered at $k_{0}$, as we shall see below. To be specific, the momentum is $k_{0} \pm b$ where $\pm b$ denotes the error. The same wavefunction in the momentum space looks like
@@ -115,7 +114,6 @@ for the convention refer to note [[2022-7-17-Conventions-and-Formula]]. We have
 
 $$
 \tilde{\Phi}_{0}(p) = \sqrt{ 2\pi }b \exp \left\{ -\frac{b^2}{2}(p-k_{0})^{2}-ipx_{0} \right\} .
-\tag{2}
 $$
 
 We can now evolve the state with the Hamiltonian, for a given wavefunction $\psi(x,t)$, in terms of momentum eigenstates we have 

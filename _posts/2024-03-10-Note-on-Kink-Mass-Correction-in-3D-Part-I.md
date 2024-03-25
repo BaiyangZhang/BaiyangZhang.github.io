@@ -53,7 +53,7 @@ $$
 which is 
 
 $$
-[\phi] = [\sqrt{ \hbar }] \, L^{1-d / 2}.\tag{1}
+[\phi] = [\sqrt{ \hbar }] \, L^{1-d / 2}.
 $$
 
 This agrees with the convention that field operator $\phi$ scales as $\sqrt{ \hbar }$. Furthermore, this scaling property does not depend on the spacetime dimension $d$, it holds for any spacetime dimension.
@@ -90,7 +90,6 @@ For the sake of completeness, let's consider the mass term in the Lagrangian. Si
 
 $$
 [m^{2} \phi^{2}] = E^{2}\, [\phi^{2}] = [\mathcal{L}] = [\hbar]\,L^{-d} \implies [\phi] = [\sqrt{ \hbar }]L^{-d/2}E^{-1} .
-\tag{2}
 $$
 
 **Dimension and measurement**
@@ -367,7 +366,6 @@ In our work we will start with the lattice quantization. Recall that the canonic
 
 $$
 [\phi(r),\pi(r')] = i \delta^{(d)} (r-r'),
-\tag{2.1}
 $$
 
 In lattice quantization, the continuous spacetime of the theory is replaced by a discrete set of points, and the fields are defined only at these points. It is a powerful, comprehensive change of viewpoint, not only of numerical importance, but really alters our view of spacetime. In principal we can translate all concepts we have defined in spacetime continuum into the lattice spacetime, such as the gauge connection, gauge field strength, etc. Sometimes, it is convenient to think the lattices as "sample points" of a spacetime continuum. In this view, between the lattice sites there maybe exists something other than the pure void, but it is meaning less to talk about them anyway. This view is rather useful when discussing the connection between lattice quantization and momentum cutoff quantization. 
@@ -376,7 +374,6 @@ The commutation relation on a lattice should take the form
 
 $$
 [\phi_ {i},\pi_ {j}] =i\delta_ {ij},
-\tag{2.2}
 $$
 
 where $i,j$ are the indices of different sites. 

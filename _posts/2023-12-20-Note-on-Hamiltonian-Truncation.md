@@ -113,7 +113,6 @@ where $\mathbb{T}^{2}$ is the flat torus space of size $L \times L$, and the tim
 
 $$
 \phi(\vec{x}) = \sum_ {k_ {1},k_ {2}} c_ {k} a_ {k}e^{ +i \vec{k}\cdot \vec{x} }  + \text{h.c.}
-\tag{1}
 $$
 
 where $\vec{k}$ is the two-dimensional momentum vector $\vec{k}=(k_ {1},k_ {2})$. Since the space is a torus of size $L \times L$, the momentum can only take values 

@@ -272,7 +272,6 @@ Where we have integrated by part. With any luck, the integral $\int dx \, F(x)\p
 
 $$
 \begin{align}
-\tag{1}
 \left\langle \frac{1}{x}\theta(x),\phi \right\rangle &=\int_{0}^{\infty} dx \, \frac{1}{x} \phi(x)   \\ 
 &=\int_{0}^{\infty} dx \, \ln'(x) \phi(x) \\
 &= \ln(x)\phi(x)\mid_{0}^\infty - \int_{0}^{\infty} dx \, \ln(x) \phi'(x) \\

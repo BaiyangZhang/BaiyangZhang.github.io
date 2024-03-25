@@ -25,7 +25,7 @@ The Lagrangian (we don't distinguish Lagrangian from Lagrangian density) is defi
 $$
 \boxed{
 \mathcal{L} = \frac{1}{g^{2}} \left( \frac{1}{2}\mathrm{Tr}\,F^{2} + \mathrm{Tr}\,(D\phi)^{2}+\lambda(\phi^{a}\phi^{a}-v^{2})^{2}\right),\quad G=SU(2),\quad \phi=\phi^{a} T^{a} \in {\frak g}
-}\tag{1}
+}
 $$
 
 where $g$ is the gauge coupling, $T^{a}$ is the generator of the gauge group $G$, the trace is defined in the group space, namely it is over $T^{a} \phi^{a}$, and $\lambda$ is another coupling. The Einstein summation conventions is understood.
@@ -84,7 +84,6 @@ Let's take $v^{2}$ to extremes and see what happens. If $v^{2}\to 0$ or negative
 
 $$
 \mathcal{L}_ {\text{eff}} = \frac{1}{4 g^{2}} \widetilde{F}^{2} \left( 1+C \frac{g^{2}}{v} \right)+\dots,\quad  \widetilde{F}_ {\mu \nu}:=F^{3}_ {\mu \nu},
-\tag{2}
 $$
 
 where $\widetilde{F}$ is the massless part of the gauge field at low energy, and $C$ is some numerical coefficient. We just ignore the terms involving massive fields since they are assumed to be much much heavier than our working-scale and thus decouples from the dynamics. This is equivalent to the “tree-level” integrating out the heavy fields; here, it amounts to crossing them out. The second term in the brackets can be seen as the result of the calculation of the one-loop graph, where the photon is couple to both $W^{+}$ and $W^{-}$, the vertex contribute a factor $1 / g^{2}$ while the propagator of the $W$ bosons contribute a factor of $g^{2} / (k^{2}+v^{2})$. Thus the one-loop contribution is roughly 
@@ -105,7 +104,6 @@ It turns out to be a big surprise that the proliferation in the vacuum that ulti
 
 $$
 \frac{1}{2g^{2}} \mathrm{Tr}\,F_ {MN}F^{MN} = \frac{1}{2g^{2}} \mathrm{Tr}\,F_ {\mu \nu}F^{\mu \nu}+ \frac{1}{2g^{2}} \mathrm{Tr}\,D_ {\mu}\phi D^{\mu }\phi,\quad  \phi \equiv A_ {4}.
-\tag{3}
 $$
 
 **The scalar field has become the fourth component of the gauge field.** This is possible because the Higgs field $\phi$, just like the gauge field, are Lie-algebra-valued fields.
@@ -124,7 +122,6 @@ Now we can rewrite Eq. (3) in terms of $E$ and $B$, and we can call Eq. (3) the 
 
 $$
 L = \frac{1}{2g^{2}} \mathrm{Tr}\,F_ {MN}F^{MN} = \frac{1}{2g^{2}} \mathrm{Tr}\,F_ {\mu \nu}F^{\mu \nu}+ \frac{1}{2g^{2}} \mathrm{Tr}\,D_ {\mu}A_ {4} D^{\mu }A_ {4}= \frac{1}{g^{2}}\mathrm{Tr}\,(B^{2}+E^{2}),
-\tag{4}
 $$
 
 then we can adopt the conventional trick, that is to complete the square
@@ -162,7 +159,7 @@ $$
 where the last term vanishes due to the cyclic property of trace. Thus we have 
 
 $$
-\int d^{3}x  \,\mathrm{Tr}\, BE = \int d^{3}x \, \mathrm{Tr}\,\partial _ {\mu}(B_ {\mu}A_ {4}) = \int  d^{2} S_ {\mu} \, B_ {\mu}A_ {4}\tag{5}
+\int d^{3}x  \,\mathrm{Tr}\, BE = \int d^{3}x \, \mathrm{Tr}\,\partial _ {\mu}(B_ {\mu}A_ {4}) = \int  d^{2} S_ {\mu} \, B_ {\mu}A_ {4}
 $$
 
 where $d^{2}S_ {\mu}$ is the surface measure. Note that although we used the equation of motion in deriving Eq. (5) above, but since it is a surface term, it is immune to local smooth change to the field configuration, thus Eq. (5) also holds for any field configuration, as long as they are in the same topology class, the same homotopy class, to be exact.
@@ -196,7 +193,7 @@ $$
 carrying the unit vectors in two spaces: the physics space and the group space. It enables us to calculate the action of a BPS monopole using the surface integral, 
 
 $$
-S_ {\text{BPS}} = \int  d^{2} S_ {\mu} \, B_ {\mu}A_ {4}\tag{5} = \frac{4\pi \nu}{g^{2}} = S_ {\overline{\text{BPS}}}.
+S_ {\text{BPS}} = \int  d^{2} S_ {\mu} \, B_ {\mu}A_ {4} = \frac{4\pi \nu}{g^{2}} = S_ {\overline{\text{BPS}}}.
 $$
 
 - - -

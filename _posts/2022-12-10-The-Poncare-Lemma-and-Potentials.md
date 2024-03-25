@@ -354,7 +354,6 @@ Considering $\beta = \beta(\mathbf{x})$ as a *time-independent* $p$-form on $\ma
 
 $$
 \beta(\mathbf{x}) = \phi_{0}^\ast \beta(\mathbf{x}) = \phi_{0}^\ast \beta(\mathbf{x})-\phi_{1}^\ast \beta(\mathbf{\phi_{1}x}) = \int_{1}^{0} ds \, \frac{d}{ds}  \phi_{s}^\ast \beta(\mathbf{\phi_{s}x}) .
-\tag{1}
 $$
 
 Using 

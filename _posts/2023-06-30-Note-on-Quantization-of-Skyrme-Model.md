@@ -374,7 +374,6 @@ We have the simplest Skyrme model
 
 $$
 L = \frac{1}{16}F_ {\pi}^{2} \,\mathrm{Tr}\,(\partial _ {\mu}U\partial ^{\mu}U^{\dagger})+\frac{1}{32e^{2}}\mathrm{Tr}\,[\partial _ {\mu}U U^{\dagger},\partial _ {\nu}U U^{\dagger}]^{2}
-\tag{1}
 $$
 
 where we have adopted the convention that the derivative acts on the first term followed by it only. 
@@ -518,7 +517,6 @@ We proceed by substituting the hedgehog ansatz into the Lagrangian, Legendre tra
 $$
 M = 4\pi \int_{0}^{\infty} dr \, r^{2}\left\{ \frac{1}{8}F_ {\pi}^{2}\left[ (\partial _ {r}F)^{2}+2\frac{\sin ^{2}F}{r^{2}} \right] + \frac{1}{2e^{2}} \frac{\sin ^{2}F}{r^{2}}
 \left[ \frac{\sin ^{2}F}{r^{2}}+2(\partial _ {r}F)^{2} \right]\right\} , 
-\tag{2}
 $$
 
 Then we can obtain the variational equation from it, then we can further solve it numerically. Introduce the dimensionless parameter $\widetilde{r}:= eF_ {\pi}r$, the equation of motion reads
@@ -736,7 +734,6 @@ So, substituting $U = A(t)U_ {0}A^{-1}(t)$ in Eq. (1), by the end of the day we 
 
 $$
 L = -M + \lambda \mathrm{Tr}\,(\partial _ {0}A \partial _ {0}A^{-1}), 
-\tag{3}
 $$
 
 where $M$ is the soliton mass defined in Eq. (2) and 
@@ -759,7 +756,7 @@ $$
 where the summation convention has been adopted. It is a general property for all $SU(2)$ matrices. In terms of $a$'s the Lagrangian becomes 
 
 $$
-L = -M + 2\lambda \dot{a}_ {\mu}\dot{a}_ {\mu}\tag{4}.
+L = -M + 2\lambda \dot{a}_ {\mu}\dot{a}_ {\mu}.
 $$
 
 Now we can introduce the canonical momentum in the standard way, 

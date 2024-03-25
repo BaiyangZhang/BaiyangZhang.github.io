@@ -276,7 +276,6 @@ Since the behavior of Wilson loop show whether the system is confined or not, we
 
 $$
 \bra{\theta} W \ket{\theta} = \frac{1}{Z_{\theta}}\int D[A_{\mu},\phi^\ast ,\phi] \, e^{ -S_{E} }e^{ i\nu \theta }\;W 
-\tag{1}
 $$
 
 where $S_{E}$ is the Euclidean action, and since we are working in the Euclidean metric, the field configuration with winding number $n$ contribute a factor $e^{ i\nu \theta }$ instead of $e^{ \nu \theta }$, notice the difference of a factor of $i$. $Z_{\theta}$ is the partition function in the background of $\theta$-vacuum, which we will just call theta-vacuum. You might be wondering why there is a factor $e^{ i\nu \theta }$ in the integrand, to understand why, we must first determine the form of the partition function.
@@ -301,7 +300,6 @@ Now, the expectation value of the Wilson loop is the vev of
 
 $$
 e^{ -iq\int_{D} \, F_{12}d^2x } = e^{ 2\pi q \nu_{in} }
-\tag{2}
 $$
 
 where we have used the expression for winding number 

@@ -87,7 +87,7 @@ We have talked about test particles with charge, they are electric probes. Then 
 Take the simplest gauge group, $U(1)$ for example. We know the magnetic monopole solution, although they are singular at the origin, but it doesn't matter for our discussion. Suppose that a monopole of magnetic charge $m$ traces out a world line $C$ in our Minkowski spacetime. For any $\mathbb{S}^{2}$ that surrounds $C$ in space (*not 4D spacetime but 3D space*), we have
 
 $$
-\int _ {\mathbb{S}^{2}} \, B\cdot dS =m.\tag{1}
+\int _ {\mathbb{S}^{2}} \, B\cdot dS =m.
 $$
 
 We now define the 't Hooft line by requiring that we take the path integral only over fields that satisfy the above equation on $C$. 
@@ -118,7 +118,6 @@ The Dirac quantization condition now requires
 
 $$
 \exp(i \mathbf{m}\cdot {\frak h}) = \mathbb{1}.
-\tag{2}
 $$
 
 which should hold for all the representations of $G$.

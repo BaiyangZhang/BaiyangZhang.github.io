@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\\tag",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c169abf707c1049c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md"
+                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md"
               }
             }
           }
@@ -160,33 +159,33 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b66263de2453f537",
+  "active": "64f38d0fe9abaf57",
   "lastOpenFiles": [
-    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
-    "_posts/2024-03-06-Domain-Wall.md",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "Trash.md",
-    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2024-1-10-Representables-in-Category-Theory.md",
-    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2024-03-06-Domain-Wall.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
-    "_posts/2024-02-28-Quantum-Kinks.md",
-    "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
-    "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
-    "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_posts/2023-12-30-The-Best-Way-to-Write-Math-Notes.md",
+    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
     "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
-    "_posts/2023-12-11-Coleman-Weinberg-Potential.md",
-    "_posts/2023-12-10-罗伯特议事规则.md",
-    "_posts/2023-12-7-Transseries-Lecture-2.md",
-    "_posts/2023-12-7-Analytic-Structure.md",
-    "_posts/2023-12-6-Transseries-Lecture-1.md",
-    "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
-    "_posts/2023-11-23-Note-on-Cutoff-Kinks.md",
-    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-2.md"
+    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
+    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
+    "_posts/2023-07-07-Quartic-Time-Derivative.md",
+    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
+    "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
+    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
+    "_posts/2023-05-12-Lie-Groups.md",
+    "_posts/2023-04-25-Wigner-Weyl-Calculus.md",
+    "_posts/2023-04-20-Harmonic-Forms.md",
+    "_posts/2023-04-04-Confinement-in-Toy-Models-Lecture-2.md",
+    "_posts/2023-3-24-Betti-Numbers.md",
+    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
+    "_posts/2023-2-4-Basic-Algebraic-Geometry-Class-7.md",
+    "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
+    "_posts/2022-12-26-Basics-of-Distributions.md",
+    "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
+    "_posts/2022-11-22-Confinement-in-Toy-Models-I.md",
+    "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md"
   ]
 }

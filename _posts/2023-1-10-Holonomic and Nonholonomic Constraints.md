@@ -123,7 +123,7 @@ Suppose we are given a distribution $\Delta_{k}$, and a pair of vector fields $X
 
 $$\boxed{
 [\Delta,\Delta]\subset \Delta.
-}\tag{1}
+}
 $$
 
 **We will see that this condition is also sufficient for showing integrability.**
@@ -279,7 +279,6 @@ Still more generally, we can consider $r$ linear-independent constraints given b
 
 $$
 \theta_{1}=0,\dots,\theta_{r}=0.
-\tag{1}
 $$
 
 **Definition.** The constraints Eq.(1) are said to be `holonomic` or `integrable`, if the distribution defined by these Pfaffians are **integrable**. Otherwise they are `nonholonomic` or `nonintegrable`.
