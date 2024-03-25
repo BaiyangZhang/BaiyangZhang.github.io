@@ -47,6 +47,8 @@ While the application of Tsallis statistics to biostatistics is an intriguing pr
 
 - - -
 
+## The Basics of Boltzmann-Gibbs Extensive Entropy
+
 *The whole theory of Tsallis statistics is based on a single concept: the modified Boltzmann-Gibbs (B-G) entropy* $S_ {q}$. $q$ is some index show how much $S_ {q}$ differs from the $BG$ entropy, if $q=1$ then there is no difference. 
 
 To explain why the Boltzmann-Gibbs entropy is said to be additive, let's first clarify what we mean by entropy in this context. In statistical mechanics, the Boltzmann-Gibbs entropy is a measure of the number of microstates that correspond to a given macrostate, providing a quantification of the system's disorder or randomness.
@@ -85,4 +87,14 @@ S_{AB} = S_A + S_B .
 $$
 
 This demonstrates the additivity of entropy for independent systems. *The crucial point here is the assumption of independence*, which allows the probabilities of the combined system to be expressed as products of the individual systems' probabilities, leading directly to the additivity of entropy.
+
+Tsallis in his book compared his generalization of B-G statistics to $q$-statistics to the generalization of a circle to ellipses in explaining the motion of celestial objects. In both cases a single parameter changes everything. However I would argue that in the case of Kepler and others, more physics was revealed then in Tsallis' case. 
+
+## Generalization to non-Extensive entropy
+
+In his book Tsallis listed some reasons for considering non-extensive, non-Boltzmann-Gibbs entropy, which can be roughly translated into:
+
+1. There is no (mathematical or physical) reason not to.
+2. A statistical description of a system should be based on the dynamics of the system, the macroscopic theory should come from a microscopic one. This opens the way, especially for complex systems, for other than Boltzmann statistics.
+3. The existence of long-range interactions on the microscopic level.
 
