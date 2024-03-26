@@ -62,16 +62,18 @@ $$
   Z[J] = e^{iW[J]} \implies W[J] = -i \ln Z[J],
 $$
 
-$W[J]$ is the summation of *connected diagrams* with source, connected roughly because if you consider all the diagrams, the disconnected but replica-forming (namely the disconnected diagrams formed by putting two or more replicas of the same diagrams together) diagrams can be arranged into forms of $\bullet^{n}/n!$, where $\bullet$ is some expression. Then we can organized them into an exponential function $e^{ \bullet }$. For more details, please refer to Mark Srednicki's text book on quantum field theory. $W[J]$ generates *connected diagrams*, due to the exponential form of the path integral representation.
+$W[J]$ is the summation of *connected diagrams* with source, connected roughly because if you consider all the diagrams, the disconnected but replica-forming (namely the disconnected diagrams formed by putting two or more replicas of the same diagrams together) diagrams can be arranged into forms of $\bullet^{n}/n!$, where $\bullet$ is (the expression of) some connected diagram. Then we can organized them into an exponential function $e^{ \bullet }$, now $\bullet$ contains information only about connected diagrams. For more details, please refer to Mark Srednicki's text book on quantum field theory. To repeat, $W[J]$ generates *connected diagrams* only.
+
+- - -
 
 The expectation value of $\phi$ in the presence of a source $J$ is given by
 
 $$
- \left\langle {\phi}_ J \right\rangle=\frac{1}{Z} \int \mathcal{D} \phi e^{iS[\phi] + i\int \phi J} \phi
+ \left\langle {\phi} \right\rangle_ J=\frac{1}{Z} \int \mathcal{D} \phi e^{iS[\phi] + i\int \phi J} \phi
  = \frac{\delta W[J]}{\delta J(x)}\equiv \varphi,
 $$
 
-Note the difference between $\phi$ and the so-called "varphi" $\varphi$, the former is a operator while the latter is a classical field. When compared to the classical mechanics of point particles, $W$ is similar to the Lagrangian $L$, $J$ to $\dot{q}$, and $\delta W / \delta J$ to $\partial L / \partial \dot{q}$ which define a new variable. 
+Note the difference between $\phi$ and the so-called "varphi" $\varphi$, the former is an operator while the latter is a classical field. In contrast to classical mechanics of point particles, $W$ is like Lagrangian $L$, $J$ is like $\dot{q}$, and $\delta W / \delta J$ is like $\partial L / \partial \dot{q}$, which introduces a new variable. 
 
 The generating functional $W[J]$ is a functional of $J$, we can perform Legendre transformation to define a new functional in terms of $\delta W / \delta J =: \varphi$. Behold, the quantum action:
 
@@ -81,10 +83,10 @@ $$
 ,  }
 $$
 
-which is indeed a functional of $\varphi$, and we have omitted the measure under the integral sign. We have
+which is indeed a functional of $\varphi$ and not $J$, since it is independent of variation $\delta J$ of $J$, as the readers can verify. Again we have omitted the measure under the integral sign. Some direct calculation shows that 
 
 $$
-  \frac{\delta\Gamma}{\delta\varphi} = -J.
+  \frac{\delta\Gamma[\phi]}{\delta\varphi(x)} = -J(x).
 $$
 
 **Summary.**
@@ -277,7 +279,7 @@ $$
 use the master formulae in QFT
 
 $$
-  \int\mathcal{D}\phi\exp\left\{ i \int d^4x (\phi M \phi) \right\} = \mathcal{N}\frac{1}{\text{det}^{{1/2}}{M}}
+  \int\mathcal{D}\phi\exp\left\{ i \int d^4x (\phi M \phi) \right\} = \mathcal{N}\frac{1}{\text{det}^{ {1/2} }{M}}
 $$
 
 we have

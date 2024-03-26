@@ -14,7 +14,7 @@ tags:								    # 标签
 The master formulae in QFT:
 
 $$
-  \int \mathcal{D}\phi^*\mathcal{D}\phi\exp\left\{ i \int d^4x (\phi^* M \phi + JM) \right\} = \frac{\mathcal{N}}{\det{M}} \exp(iJM^{-1}J)
+  \int \mathcal{D}\phi^*\mathcal{D}\phi\exp\left\lbrace i \int d^4x (\phi^* M \phi + JM) \right\rbrace = \frac{\mathcal{N}}{\det{M}} \exp(iJM^{-1}J)
 $$
 
 where $\mathcal{N}$ is some normalization factor.
@@ -22,14 +22,14 @@ where $\mathcal{N}$ is some normalization factor.
 For fermions,
 
 $$
-  \int \mathcal{D}\psi\mathcal{D}\overline{\psi}\exp\left\{ i \int d^4x (\overline{\psi} M \psi) \right\} = \mathcal{N}\det{M}.
+  \int \mathcal{D}\psi\mathcal{D}\overline{\psi}\exp\left\lbrace i \int d^4x (\overline{\psi} M \psi) \right\rbrace = \mathcal{N}\det{M}.
 $$
 
 Some conventions
 
 $$
 \begin{align}
-  g_{\mu\nu}&=\text{diag}\{1,-1,-1,-1\},\\
+  g_{\mu\nu}&=\text{diag}\lbrace1,-1,-1,-1\rbrace,\\
   \epsilon_{0123} &= 1,\\
   f(x) &= \int \frac{d^nk}{(2\pi)^n} \, e^{-ip\cdot x}\widetilde{f}(p),\\
   \widetilde{f}(p)&=\int dx \, e^{ip\cdot x}f(x),\\
@@ -239,7 +239,7 @@ The super-generalization of field strength is a left-chiral superfield,
 $$
   W_a \equiv \frac{1}{8} \bar{D}^2 D_a V,
 $$
-to derive it, go to $\{y^\mu, \theta, \theta\}$ coordinates and note that 
+to derive it, go to $\lbracey^\mu, \theta, \theta\rbrace$ coordinates and note that 
 
 $$
 \bar{D}_ {\dot{a}} \to -\bar\partial_ {\dot{a}}
