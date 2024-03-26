@@ -89,8 +89,14 @@ $$
   \frac{\delta\Gamma[\phi]}{\delta\varphi(x)} = -J(x).
 $$
 
+It is not supposed to be obvious, but the effective action $\Gamma$ is the generating functional for 1-particle irreducible (1PI) diagrams! The significance of 1PI diagrams is best explain by Coleman in his lecture note on QFT, which I quote:
+
+>If we treat the 1PI graphs as giving us effective interaction vertices, then to find the full Green’s functions we only have to sum up tree graphs, never any loops, because all the loops have been stuffed inside the definition of the propagators and the 1PI graphs. This marvelous property of the 1PI graphs is important. Taking the 1PI graph generating functional for a quantum action enables us to turn the combinatorics of building up full Green’s functions from 1PI Green’s functions into an analytic statement, and we end up with the correct expressions for the full Green’s functions. We’re turning a topological statement of one-particle irreducibility into an analytic statement that we will find easy to handle.
+
+
+
 **Summary.**
-- $\Gamma[\varphi]$ generates the 1-particle irreducible (1PI) diagrams;
+- $\Gamma[\varphi]$ generates the 1PI diagrams;
 - $W[J]$ generates connected diagrams;
 - $Z[J]$ generates all kinds of diagrams.
 
