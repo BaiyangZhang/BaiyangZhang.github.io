@@ -308,7 +308,7 @@ When the kink and antikink are separated far away from each other, the interacti
 
 $$
 \phi_ {K \overline{K}}(t,x)= \tanh\left( \frac{x-(-a+vt)}{\sqrt{ 2 }\sqrt{ 1-v^{2} }} \right)
-+\tanh\left( \frac{x-(a-vt)}{\sqrt{ 2 }\sqrt{ 1-v^{2} }} \right) -1,\tag{1}
++\tanh\left( \frac{x-(a-vt)}{\sqrt{ 2 }\sqrt{ 1-v^{2} }} \right) -1,
 $$
 
 Note the last term $-1$ which is there to make sure the correct boundary condition is satisfied. 

@@ -334,14 +334,13 @@ We can see from the definition that $p<0$ but $q$ is not necessarily so. If we s
 
 $$
 x_ {\text{min}}=\frac{i \left(\sqrt{3}+i\right) \sqrt[3]{\sqrt{12 p^3+81 q^2}-9 q}}{2 \sqrt[3]{2} 3^{2/3}}+\frac{p+i \sqrt{3} p}{2^{2/3} \sqrt[3]{3} \sqrt[3]{\sqrt{12 p^3+81 q^2}-9 q}}+\frac{2}{3} \sqrt{ -3p }
-\tag{3}
 $$
 
 which simplifies to (by hand mostly) 
 
 $$
 \boxed { x_ {\text{min}} = \frac{4}{\sqrt{ 3 }}\sqrt{ -p }\,\sin ^{2}\left( \frac{\theta}{6}\right)} ,\quad  \theta=\arctan \left( \frac{\sqrt{-12 p^3-81 q^2}}{-9q} \right)
-\tag{4}.
+.
 $$
 
 This is as simple as I can get. I check it numerically, it works out. A natural question to ask is, what is the range of $\theta$? We could choose the principal value of the Arctan function, but the most reliable method to fix the ambiguities is still to compare the numerical results. 

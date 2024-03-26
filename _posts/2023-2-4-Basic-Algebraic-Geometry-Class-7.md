@@ -210,7 +210,6 @@ Recall that the sheaf on $U_ {f}$ is
 
 $$
 \mathcal{O}_ {X}(U_ {f}) = \left\{ \frac{g(x)}{f^{n}(x)} \,\middle\vert\, g(x)\in \mathcal{O}(X) \right\} 
-\tag{1}
 $$
 
 and the localization of $\mathcal{O}(X)$ at $f$ is 
@@ -223,7 +222,6 @@ sometimes denoted
 
 $$
 \mathcal{O}(X)_ {f}:= \left\{ \frac{g}{f^{n}} \,\middle\vert\, g\in \mathcal{O}(X) \right\} \text{ with equivalence relation},
-\tag{2}
 $$
 
 comparing Eq. (1) with Eq.(2) we find they formally look the same, which is actually kind of misleading since the quotient has different meanings in different context. However, thanks to the equivalence equation defined in ring localization, one can show that there indeed exists a bijection between $\mathcal{O}_ {X}(U_ {f})$ and the localization of $\mathcal{O}(X)$ at $f$. 

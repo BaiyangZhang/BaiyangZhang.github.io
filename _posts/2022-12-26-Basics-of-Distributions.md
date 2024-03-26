@@ -585,7 +585,6 @@ $$
 &= \int_{0}^{1} dx \, x^\alpha [\phi(x)-\phi(0)] +  \int_{1}^{\infty} dx \, x^\alpha \phi(x) +\int_{0}^{1} dx \, x^\alpha \phi(0) \\
 &= \boxed{\int_{0}^{1} dx \, x^\alpha [\phi(x)-\phi(0)]} +  \int_{1}^{\infty} dx \, x^\alpha \phi(x) + \frac{\phi(0)}{\alpha+1}
 \end{align}
-\tag{1}
 $$
 
 Here comes the interesting part: the integral in the box is analytic not in $\text{Re }\alpha>-1$, but in $\text{Re }\alpha>-2$! To see that, note
@@ -723,7 +722,6 @@ We leave it to the readers to prove that
 
 $$
 \left\langle \text{Pf. } \frac{1}{x^{2}}, \phi \right\rangle= \int_{0}^{\infty} dx \, \frac{\phi(x)+\phi(-x)-2\phi(0)}{x^{2}}.
-\tag{2}
 $$
 
 - - -

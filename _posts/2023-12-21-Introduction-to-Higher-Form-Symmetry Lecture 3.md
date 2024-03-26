@@ -19,7 +19,6 @@ Let's start with the ordinary symmetry once again on a $D$-dimensional manifold.
 
 $$
 \delta S = \int d^{D}x \, J^{\mu}\partial_ {\mu}\epsilon(x)
-\tag{1}
 $$
 
 under $e^{ iQ_ {\Sigma} }$ the charged operators with non-trivial linking $\text{Link}(\Sigma,x)$ transform as 
@@ -38,7 +37,6 @@ In terms of differential forms, function $\epsilon(x)$ is a $0$-form and constan
 
 $$
 \delta S = \int_ {M^{(D)}} (\star J)\wedge d\epsilon,
-\tag{2}
 $$
 
 where $\star J$ is a $(D-1)$-form, $d \epsilon$ is a $1$-form (since $\epsilon$ is a zero form), hence their wedge product is a $D$-form, something can be integrated over $D$-dimensional manifold $M$ (whose boundary is $\Sigma$). 

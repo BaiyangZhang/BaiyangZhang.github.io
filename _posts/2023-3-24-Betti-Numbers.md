@@ -95,7 +95,6 @@ $\Delta_ {2}$ is an `ordered` simplex, that is, it is ordered by the given order
 
 $$
 \int_ {\partial \Delta} \, \alpha = \int _ {\Delta} \,   d\alpha.
-\tag{1}
 $$
 
 If we write the integral in a different form, define some kind of a "inner product" between a differential form and a simplex on which it integrate, 

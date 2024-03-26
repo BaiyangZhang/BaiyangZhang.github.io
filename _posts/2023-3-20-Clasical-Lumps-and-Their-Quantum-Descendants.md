@@ -40,7 +40,6 @@ The energy is given by a Legendre transformation $H = L - p\dot{q}$, we get
 
 $$
 H = \int d x \,  \left[  \frac{1}{2}(\partial _ {0}\phi)^{2}+\frac{1}{2} (\partial _ {1}\phi)^{2}+U(\phi) \right].
-\tag{1}
 $$
 
 We sometimes write the total energy as the sum of kinetic and potential energy,

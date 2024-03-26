@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "949fb283ee618e4a",
+        "id": "f976f6c3e024ac76",
         "type": "tabs",
         "children": [
           {
-            "id": "05ba130ef1a8fe34",
+            "id": "dafaa5b043431268",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,18 +20,19 @@
             }
           },
           {
-            "id": "21aff28309230ec3",
+            "id": "91baed3955e7b828",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
+                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,8 +86,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md"
+                "file": "_posts/2022-7-17-Conventions-and-Formula.md"
               }
             }
           },
@@ -190,13 +190,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "05ba130ef1a8fe34",
+  "active": "91baed3955e7b828",
   "lastOpenFiles": [
-    "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
     "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+    "Trash.md",
+    "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
+    "Untitled 4.md",
+    "Untitled 1.md",
+    "Untitled 3.md",
+    "Untitled 2.md",
+    "Untitled.md",
+    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_posts/2023-2-1-Minkowski Space.md",
     "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
-    "Trash.md",
     "_posts/2023-1-13-Thermodynamics-in-Terms-of-Foliations.md",
     "_posts/2022-12-26-Basics-of-Distributions.md",
     "_posts/2022-12-20-Manifesto-of-the-Communist-Party.md",
@@ -212,12 +218,6 @@
     "_posts/2022-11-25-Basic-Cumutative-Algebra-4.md",
     "_posts/2022-11-22-Confinement-in-Toy-Models-I.md",
     "_posts/2022-11-21-Basic-Cumutative-Algebra-3.md",
-    "_posts/2022-11-18-Basic-Cumutative-Algebra-2.md",
-    "_posts/2022-11-17-Basic-Cumutative-Algebra-1.md",
-    "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md",
-    "_posts/2023-3-12-The-Geometry-of-Surfaces-in-R3.md",
-    "_posts/2023-3-16-Covariant-Differentiation-and-Curvature.md",
-    "_posts/2023-3-17-Riemanns-Theorem-and-the-Horizontal-Distribution.md",
     "img/rhokmarNew.png",
     "img/kink/movingWall.png",
     "img/kink/kinkWorldLine.png",

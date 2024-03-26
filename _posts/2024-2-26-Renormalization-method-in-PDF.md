@@ -24,7 +24,6 @@ We want a well behaved function $\mathbb{R} \to \mathbb{R}$ so we begin with Gau
 
 $$
   \dot{g}(t) + 2 \lambda t g(t) = 0,
-  \tag{1}
 $$
 
 which is a homogeneous first order ODE.

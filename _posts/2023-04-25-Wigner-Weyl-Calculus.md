@@ -48,7 +48,6 @@ The question we wanna ask is, given a classical observable as a function of $x$ 
 
 $$
 xp \to \frac{1}{2} (\hat{x}\hat{p}+\hat{p}\hat{x}),
-\tag{1}
 $$
 
 this is called the `Weyl ordering`.

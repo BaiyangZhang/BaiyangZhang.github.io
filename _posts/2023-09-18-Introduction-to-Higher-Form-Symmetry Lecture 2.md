@@ -125,7 +125,6 @@ The quantum consequence of symmetry is the Ward identity, so let's see what it g
 
 $$
 \left\langle \partial_ {\mu}J^{\mu}(x) \phi(y)\right\rangle = \delta(x-y)\left\langle \Delta\phi(y) \right\rangle.
-\tag{0}
 $$
 
 with 
@@ -140,7 +139,6 @@ In term of differential form,
 
 $$
 \left\langle \partial_ {\mu}J^{\mu}(x)\phi(y) \right\rangle = \left\langle d\star J\phi(y) \right\rangle = \left\langle d[(\star J) \phi(y)] \right\rangle = d\left\langle (\star J)\phi(y) \right\rangle
-\tag{1}
 $$
 
 where $d$ only acts on coordinate $x$, $\phi(y)$ is to be regarded as a constant to $d_ {x}$. That is why we can write $(d \star J)\phi(y)$ as $d[(\star J)\phi(y)]$. 

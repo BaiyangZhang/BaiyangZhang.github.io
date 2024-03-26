@@ -24,7 +24,6 @@ The canonical momentum is
 
 $$
 \pi_ {i} = \frac{\partial T}{\partial b_ {i}} = \alpha b_ {i} + \beta b^{2} b_ {i},\quad  b^{2}:=b_ {i}b_ {i}.
-\tag{5}
 $$
 
 The question is, what is $T(\pi_ {i})$? And the next question, I guess, is how to quantize it?
@@ -120,7 +119,6 @@ and the canonical momentum reads
 
 $$
 \pi_ {i} = \frac{\partial T}{\partial b_ {i}} = \alpha b_ {i} + \beta b^{2} b_ {i},\quad  b^{2}:=b_ {i}b_ {i}.
-\tag{5}
 $$
 
 Perform the Legendre transform to $T$ we get 
@@ -143,7 +141,6 @@ This suffices as long as we don't have to deal with $b_ {i}$ components individu
 
 $$
 t = \beta^{2} x^{3}+2\alpha \beta x^{2}+\alpha^{2} x,
-\tag{6}
 $$
 
 which is 

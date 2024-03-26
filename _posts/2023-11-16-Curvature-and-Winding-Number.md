@@ -111,7 +111,6 @@ $$
 &= 1 + \sum_ {i}\lambda_ {i} + \sum_ {i<j} \lambda _ {i} \lambda _ {j} +\dots+\prod_ {i=1}^{N}\lambda_ {i} \\
 &= 1 + \mathrm{Tr}\,A + \mathrm{Tr}\, \bigwedge^{2}A +\dots+\mathrm{Tr}\,\bigwedge^{N}A
 \end{align*}
-\tag{1}
 $$
 
 where the big wedges are called the `elementary symmetric functions` of he eigenvalues of $A$. The reason for this notation is as follows. Since

@@ -223,7 +223,7 @@ Occasionally we shall write $\nabla^{2}=-\Delta$, different from the convention 
 In components we have 
 
 $$
-\Delta \alpha = (- \nabla^{i}\nabla_ {i}\alpha_ {j}\,dx^{j}) + (\alpha_ {k}R^{k}_ {\;\;j}\;dx^{j})\tag{Weizenbock}
+\Delta \alpha = (- \nabla^{i}\nabla_ {i}\alpha_ {j}\,dx^{j}) + (\alpha_ {k}R^{k}_ {\;\;j}\;dx^{j})
 $$
 
 where $R^{k}_ {\;j}$ is the Ricci tensor. Note that we have covariant derivative $\nabla$ instead of partial derivative $\partial$. 

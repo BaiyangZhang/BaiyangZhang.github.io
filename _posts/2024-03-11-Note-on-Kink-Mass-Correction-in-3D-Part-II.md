@@ -64,7 +64,6 @@ $$
 \int dx \,  \frac{1}{\lambda} V(\tilde{f}) &= \frac{m^{3}}{8\lambda}\int dt \, (\tanh ^{2}(t)-1) ^{2}\\
 &= \frac{m^{3}}{8\lambda} \int dt \, \frac{1}{\cosh^{4}t} \\
 &= \frac{m^{3}}{6\lambda},
-\tag{1} 
 \end{align*}
 $$
 
@@ -82,7 +81,6 @@ $$
 &= \frac{m^{3}}{8\lambda} \int dt \,  \frac{1}{\cosh^{4}t} \\
 &= \frac{m^{3}}{6\lambda}.
 \end{align*}
-\tag{2} 
 $$
 
 Putting Eq. (1) and Eq. (2) together, we have 
@@ -146,8 +144,7 @@ The formalism we developed in generic dimension $d$ surely also applies to $d=2$
 
 $$
  \tilde{\mathfrak{g} }_ {k_ {x},k_ {y}} (\vec{p})= \int d^{2}x \,   \mathfrak{g} _ {k}(\vec{x}) e^{ -i\vec{k}\cdot \vec{x} } = (2\pi)\delta(k_ {y}+p_ {y}) \times   \tilde{\mathfrak{g}} _ k (p_ {x}).
- \tag{3} 
-$$
+ $$
 
 Again we see the factorization in $x$ and $y$, the $\delta$-function in $y$ direction is due to the plane wave expansion. 
 
@@ -181,7 +178,6 @@ Q_ {1} &= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \frac{\;d^{2}k}{(2\pi)^{2}} \,  
 &= - \frac{L_ {\text{DM}}}{4}\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dk_ {y}}{2\pi}  \int \frac{dp_ {x}}{2\pi} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k_ {x} p_ {y}}-\omega_ {p})^{2}}{\omega_ {p}} \\
 &= L_ {\text{DM}} \times (\text{tension correction}).
 \end{align*}
-\tag{4} 
 $$
 
 In the above equation we have set the dimensionality $d$ to $2$. $\omega_ {k}$ is the short-handed form for $\omega_ {k_ {x}k_ {y}}$, the same for $\omega_ {p}$. Note that **starting from the third line**, we have $\omega_ {k}=\omega_ {k_ {x} p_ {y}}$ due to the Dirac-$\delta$ function. The integral regarding $y$-coordinate gives as a term proportional to $(2\pi)\delta(0)$, which is the total length of the $y$-direction. $L_ {\text{DM}}$ is the length of the domain wall, $L_ {\text{DM}}=\int dy$. It is understood that in the final result $p_ {y}=-k_ {y}$. It agrees with our naive expectation that the correction is proportional to the total length of the domain wall. 
@@ -195,7 +191,6 @@ Q_ {1} &= -\frac{1}{4} \sum\!\!\!\!\!\!\!\!\int \; \frac{dk_ {x}}{2\pi} \int \fr
 &= \int dy \,  \left( - \frac{1}{4} \right)\sum\!\!\!\!\!\!\!\!\int \;\frac{dk_ {x}}{2\pi} \int \frac{dp^{2}}{(2\pi)^{2}} \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \frac{(\omega_ {k}-\omega_ {p})^{2}}{\omega_ {p}} \\
 &= : \int dy \, \rho_ {1}(y). 
 \end{align*}
-\tag{5} 
 $$
 
 Here again $\omega_ {k}$ is understood to be $\omega_ {k_ {x} k_ {y}}$, and we have defined the one-loop correction $\rho_ {1}$ to the tension. Note that *one-loop correction comes not from the interaction, as in QFT models in the vacuum sector, but rather comes from the non-trivial soliton background.*
@@ -334,10 +329,10 @@ where
 
 $$
 \begin{align*}
-\rho_ {1B} &=  - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi}\, \frac{(\omega_ {k_ {B}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},  \tag{6}      \\
-\rho_ {1S} &= -\frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {S}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi} \, \frac{(\omega_ {k_ {S}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},    \tag{7}   \\
+\rho_ {1B} &=  - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi}\, \frac{(\omega_ {k_ {B}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},        \\
+\rho_ {1S} &= -\frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {S}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi} \, \frac{(\omega_ {k_ {S}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},       \\
 \rho_ {1C} &=  \int \, \frac{dk_ {x}}{2\pi} \left( - \frac{1}{4} \right)  \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} 
-\int \frac{dp_ {y}}{2\pi} \,  \frac{(\omega_ {k_ {x}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ { p_ {x}p_ {y}}} \tag{8} \\
+\int \frac{dp_ {y}}{2\pi} \,  \frac{(\omega_ {k_ {x}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ { p_ {x}p_ {y}}} \\
 &=: \int \frac{dk_ {x}}{2\pi} \,  \rho_ {1k_ {x}}.
 \end{align*}
 $$
@@ -380,7 +375,7 @@ We have
 
 $$
 \begin{align*}
-\rho_ {1B} &=  - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi}\, \frac{(\omega_ {k_ {B}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},  \tag{6'}      \\
+\rho_ {1B} &=  - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \int \frac{dp_ {y}}{2\pi}\, \frac{(\omega_ {k_ {B}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ {p_ {x}p_ {y}}},       \\
 &= - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \mathcal{I}(0,m^{2}+p^{2}_ {x}) \\
 &= - \frac{1}{4} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} \frac{m^{2}+p^{2}_ {x}}{2\pi} \\
 &= - \frac{1}{8\pi} \int \frac{dp_ {x}}{2\pi} \, (\tilde{ \mathfrak{g} }_ {B}(p_ {x}))^{2} (m^{2}+p^{2}_ {x})\\
@@ -429,7 +424,7 @@ $$
 All of this gives us 
 
 $$
-\rho_ {1S} = -\frac{1}{4} \int_ {\infty}^{\infty} \frac{m dt}{2\pi} \, \left\lvert \tilde{ \mathfrak{g} }_ {S}(t) \right\rvert^{2} \, \mathcal{I}(t) = -0.00725 m^{2}. \tag{7'}  
+\rho_ {1S} = -\frac{1}{4} \int_ {\infty}^{\infty} \frac{m dt}{2\pi} \, \left\lvert \tilde{ \mathfrak{g} }_ {S}(t) \right\rvert^{2} \, \mathcal{I}(t) = -0.00725 m^{2}.   
 $$
 
 - - -
@@ -440,7 +435,7 @@ $$
 \begin{align*}
 \rho_ {1C} &=  - \frac{1}{4} \int \, \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} 
 \int \frac{dp_ {y}}{2\pi} \,  \frac{(\omega_ {k_ {x}p_ {y}}-\omega_ {p_ {x}p_ {y}})^{2}}{\omega_ { p_ {x}p_ {y}}} \\
-&= - \frac{1}{4} \int \, \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \, \mathcal{I}(m^{2}+k_ {x}^{2},m^{2}+p_ {x}^{2})  \tag{8'} 
+&= - \frac{1}{4} \int \, \frac{dk_ {x}}{2\pi} \int \frac{dp_ {x}}{2\pi}\, \left\lvert  \tilde{\mathfrak{g}}_ {k_ {x}}  (p_ {x})\right\rvert ^{2} \, \mathcal{I}(m^{2}+k_ {x}^{2},m^{2}+p_ {x}^{2})   
 \end{align*}
 $$
 
@@ -468,7 +463,6 @@ Again we have to turn to numerical methods, and again we need to cook up some di
 
 $$
 \frac{\rho_ {1k_ {x}}(\kappa)}{m} =  \int d \rho \, (-9 \rho ^2) \frac{ \left(\left(\kappa ^2+1\right) \log \left(\frac{\kappa ^2+1}{\rho ^2+1}\right)-\kappa ^2+\rho ^2\right) }{4 \left(4 \kappa ^4+5 \kappa ^2+1\right)} \, \text{csch}^2(\pi  (\kappa +\rho )).
-\tag{9} 
 $$
 
 The figure of the integral is shown in the below.
