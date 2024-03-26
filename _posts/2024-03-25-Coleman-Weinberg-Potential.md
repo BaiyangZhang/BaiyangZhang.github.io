@@ -116,9 +116,9 @@ $$
   Z_ \Gamma[J] = \int \mathcal{D}\phi e^{i\Gamma +i\int \phi J}.
 $$
 
-It will generate Feynman diagrams with sources, just like the original action $S$ does, only this time the tree diagrams alone is enough to give the complete information of the original theory. Thus $\Gamma$ must gives us exact propagators and exact n-point vertices, while the original action $S$ gives us the ordinary propagator and ordinary vertex. Also in order to calculate the exact n-point vertex, we need not consider the 1-particle reducible diagrams since any contribution from connected diagram can be written as a tree diagram comprised of two or more sub 1 particle IRREDUCIBLE diagrams.
+It will generate Feynman diagrams with sources, just like the original action $S$ does, only this time the tree diagrams alone is enough to give the complete information of the original theory. Thus $\Gamma$ must gives us exact propagators and exact $n$-point vertices, while the original action $S$ gives us the ordinary propagator and ordinary vertex. Also in order to calculate the exact n-point vertex, we need not consider the 1-particle reducible diagrams since any contribution from connected diagram can be written as a tree diagram comprised of two or more sub 1 particle IRREDUCIBLE diagrams.
 
-**Remark.** The generating functionals such as $W[J]$ and $\Gamma[\varphi]$ are classical. In fact the language of path integral has a feeling of classical field theory, in the sense that each path we take into consideration is a c-field in space-time, instead of q-field.
+**Remark.** The generating functionals such as $W[J]$ and $\Gamma[\varphi]$ are classical. In fact, the language of path integral has a feeling of classical field theory, in the sense that each path we take into consideration is a c-field in space-time, instead of q-field.
 
 #### Tree-level Example
 

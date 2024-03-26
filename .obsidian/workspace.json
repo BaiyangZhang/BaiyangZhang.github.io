@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-7-17-Conventions-and-Formula.md"
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md"
               }
             }
           },
@@ -190,10 +189,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "91baed3955e7b828",
+  "active": "dafaa5b043431268",
   "lastOpenFiles": [
-    "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
     "_posts/2022-7-17-Conventions-and-Formula.md",
+    "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
     "Trash.md",
     "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
     "Untitled 4.md",
