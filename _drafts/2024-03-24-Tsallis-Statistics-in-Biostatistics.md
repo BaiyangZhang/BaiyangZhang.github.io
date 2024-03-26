@@ -190,7 +190,13 @@ $$
 We can apply the Lagrange multiplier method to find the optimizing distribution with the constraint, together with the normalization condition $\int dx \, p(x)=1$. The Lagrangian functional that we want to extremize reads now 
 
 $$
-\Phi[p(x)] = S_ {BG} - \alpha \int dx \, p(x) - \beta \int dx \, x \, p(x).  
+\Phi[p(x)] = S_ {BG} - \alpha \int dx \, p(x) - \beta \int dx \, x \, p(x)
+$$
+
+where we have neglected some constant terms since they don't appear in the Euler-Lagrange equation, that is to say, they don't affect the final result; and
+
+$$
+S_ {BG} = -\int dx \, p(x)\ln p(x). 
 $$
 
 Using the method of variation, we get 
@@ -199,5 +205,27 @@ $$
 p(x) = \frac{1}{\overline{x}} e^{ -x / \overline{x} }.
 $$
 
-**Imposing the Mean Squared Value**
+**Imposing the Mean value and the Mean Squared Value**
+
+Supposed that we not only know the mean value $\overline{x}=\left\langle x \right\rangle$, but also the mean square value $\left\langle x^{2} \right\rangle$:
+
+$$
+\left\langle x^{2} \right\rangle \equiv \int dx \, (x-\left\langle x \right\rangle )^{2} p(x) 
+$$
+
+This time the Lagrangian reads
+
+$$
+\Phi[p(x)] = S_ {BG} - \alpha \int dx \, p(x) - \beta_ {1}\int dx \, xp(x) - \beta_ {2} \int dx \, (x-\left\langle x \right\rangle )^{2}p(x).  
+$$
+
+Exactly as before, the variational method gives us 
+
+$$
+p(x) = \sqrt{ \frac{\beta_ {2}}{\pi} } \exp \left\lbrace -\beta_ {2}(x-\left\langle x \right\rangle )^{2} \right\rbrace 
+$$
+
+which is just the Gaussian distribution! This tells us that the Gaussian distribution maximizes the entropy with fixed mean and variance. 
+
+# Nonextensive Statistical Mechanics
 
