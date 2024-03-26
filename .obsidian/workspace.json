@@ -1,19 +1,31 @@
 {
   "main": {
-    "id": "fcae1b431975bfbb",
+    "id": "6bd24154e78dbf09",
     "type": "split",
     "children": [
       {
-        "id": "3163fec0c9df29cc",
+        "id": "f976f6c3e024ac76",
         "type": "tabs",
         "children": [
           {
-            "id": "b66263de2453f537",
+            "id": "dafaa5b043431268",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "91baed3955e7b828",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2022-7-17-Conventions-and-Formula.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +37,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "99542e857b636bf4",
+    "id": "62ee1b8f7fb8be74",
     "type": "split",
     "children": [
       {
-        "id": "675e606f77e9217c",
+        "id": "29c2ee8e75be6c88",
         "type": "tabs",
         "children": [
           {
-            "id": "64f38d0fe9abaf57",
+            "id": "957cfa2362e38596",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,12 +55,12 @@
             }
           },
           {
-            "id": "f83948130a1d4e67",
+            "id": "2f11af2c6dde2321",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "\\tag",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +70,15 @@
             }
           },
           {
-            "id": "08603ad0a9951551",
+            "id": "e1e3b9eeb40d5006",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "87e34159ec646579",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -73,20 +93,20 @@
     "collapsed": true
   },
   "right": {
-    "id": "c169abf707c1049c",
+    "id": "5f16c9608f79f67e",
     "type": "split",
     "children": [
       {
-        "id": "5922be76fed11910",
+        "id": "e66e9811e83cbd89",
         "type": "tabs",
         "children": [
           {
-            "id": "a9faa47f743caa72",
+            "id": "03a27f6b06c37378",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,19 +118,19 @@
             }
           },
           {
-            "id": "5f4adafcb2bb355c",
+            "id": "d138c67792dc588f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "00a4cd61ca489616",
+            "id": "4c9bf76b3fd9086e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -121,7 +141,17 @@
             }
           },
           {
-            "id": "3899f4ba479e6538",
+            "id": "6664d3c3c1b838e2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md"
+              }
+            }
+          },
+          {
+            "id": "7964bcd68d6ce503",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -133,60 +163,79 @@
             }
           },
           {
-            "id": "4483119d6089f0f3",
+            "id": "28c7a5ec342e7752",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md"
-              }
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "b66263de2453f537",
+  "active": "dafaa5b043431268",
   "lastOpenFiles": [
-    "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2022-7-17-Conventions-and-Formula.md",
     "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
-    "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2024-03-06-Domain-Wall.md",
+    "Trash.md",
+    "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
+    "Untitled 4.md",
+    "Untitled 1.md",
+    "Untitled 3.md",
+    "Untitled 2.md",
+    "Untitled.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
-    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
-    "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
-    "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
-    "_posts/2023-11-16-Curvature-and-Winding-Number.md",
-    "_posts/2023-09-18-Introduction-to-Higher-Form-Symmetry Lecture 2.md",
-    "_posts/2023-07-07-Quartic-Time-Derivative.md",
-    "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
-    "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
-    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-05-12-Lie-Groups.md",
-    "_posts/2023-04-25-Wigner-Weyl-Calculus.md",
-    "_posts/2023-04-20-Harmonic-Forms.md",
-    "_posts/2023-04-04-Confinement-in-Toy-Models-Lecture-2.md",
-    "_posts/2023-3-24-Betti-Numbers.md",
-    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md",
-    "_posts/2023-2-4-Basic-Algebraic-Geometry-Class-7.md",
-    "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
+    "_posts/2023-2-1-Minkowski Space.md",
+    "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
+    "_posts/2023-1-13-Thermodynamics-in-Terms-of-Foliations.md",
     "_posts/2022-12-26-Basics-of-Distributions.md",
-    "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md"
+    "_posts/2022-12-20-Manifesto-of-the-Communist-Party.md",
+    "_posts/2022-12-15-《师哲回忆录》.md",
+    "_posts/2023-2-4-Basic-Algebraic-Geometry-6.md",
+    "_posts/2023-2-2-Basic-Algebraic-Geometry-5.md",
+    "_posts/2023-1-12-Basic-Category-Theory-Class-1.md",
+    "_posts/2023-1-10-Holonomic and Nonholonomic Constraints.md",
+    "_posts/2023-1-9-US-Political-System.md",
+    "_posts/2022-12-29-Hobbes-Moral-and-Political-Philosophy.md",
+    "_posts/2022-12-27-Thomas-Hobbes.md",
+    "_posts/2022-12-10-The-Poncare-Lemma-and-Potentials.md",
+    "_posts/2022-11-25-Basic-Cumutative-Algebra-4.md",
+    "_posts/2022-11-22-Confinement-in-Toy-Models-I.md",
+    "img/rhokmarNew.png",
+    "img/kink/movingWall.png",
+    "img/kink/kinkWorldLine.png",
+    "img/kink",
+    "img/kinkMassvsCoupling.png",
+    "img/boxPlot.png",
+    "_includes/video.liquid",
+    "_includes/social.liquid",
+    "_includes/selected_papers.liquid",
+    "_includes/related_posts.liquid",
+    "_includes/projects_horizontal.liquid",
+    "_includes/projects.liquid",
+    "_includes/pagination.liquid",
+    "_includes/news.liquid",
+    "_includes/metadata.liquid",
+    "img/kinkLevel.png",
+    "img/hom.png",
+    "img/relaxationMethod - Copy.jpg",
+    "img/boundaryMap.png",
+    "img/boundaryHomo.png"
   ]
 }

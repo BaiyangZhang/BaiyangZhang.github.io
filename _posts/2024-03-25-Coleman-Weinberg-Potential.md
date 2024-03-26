@@ -48,30 +48,32 @@ For the rest of the note, we will confine our discussion to $\phi^4$ model with 
 
 ### Quantum Action
 
-The partition function of a scalar field $\phi$ (with source) reads
+To keep the notation simple, consider a single real scalar field $\phi$, with possibly mass term and self interaction. The partition function (with source) reads
 
 $$
  Z[J] = \int \mathcal{D} \phi e^{iS[\phi] + i\int \phi J},
 $$
 
-where $S$ is the action, $J$ is the source, $\int \phi J$ is short for $\int dx^4 \phi(x) J(x)$. $\phi$ field is integrated out hence $Z$ is a functional of $J$ only.
+where $S$ is the action, $J$ is the source, $\int \phi J$ is short for $\int_ {M} \phi(x) J(x)$. $\phi$ is integrated out hence $Z$ is a functional of $J$ only.
 
-From it we can define the generating function $W[J]$ by
+From it we define the generating function $W[J]$ by
 
 $$
   Z[J] = e^{iW[J]} \implies W[J] = -i \ln Z[J],
 $$
 
-$W[J]$ is the summation of connected diagrams with source, refer to Mark Srednicki's text book on quantum field theory. It generate *connected diagrams*, due to the exponential form of the path integral representation.
+$W[J]$ is the summation of *connected diagrams* with source, connected roughly because if you consider all the diagrams, the disconnected but replica-forming (namely the disconnected diagrams formed by putting two or more replicas of the same diagrams together) diagrams can be arranged into forms of $\bullet^{n}/n!$, where $\bullet$ is (the expression of) some connected diagram. Then we can organized them into an exponential function $e^{ \bullet }$, now $\bullet$ contains information only about connected diagrams. For more details, please refer to Mark Srednicki's text book on quantum field theory. To repeat, $W[J]$ generates *connected diagrams* only.
+
+- - -
 
 The expectation value of $\phi$ in the presence of a source $J$ is given by
 
 $$
- \left\langle {\phi}_ J \right\rangle=\frac{1}{Z} \int \mathcal{D} \phi e^{iS[\phi] + i\int \phi J} \phi
+ \left\langle {\phi} \right\rangle_ J=\frac{1}{Z} \int \mathcal{D} \phi e^{iS[\phi] + i\int \phi J} \phi
  = \frac{\delta W[J]}{\delta J(x)}\equiv \varphi,
 $$
 
-Note the difference between $\phi$ and the so-called "varphi" $\varphi$, the former is a operator while the latter is a classical field. When compared to the classical mechanics of point particles, $W$ is similar to the Lagrangian $L$, $J$ to $\dot{q}$, and $\delta W / \delta J$ to $\partial L / \partial \dot{q}$ which define a new variable. 
+Note the difference between $\phi$ and the so-called "varphi" $\varphi$, the former is an operator while the latter is a classical field. In contrast to classical mechanics of point particles, $W$ is like Lagrangian $L$, $J$ is like $\dot{q}$, and $\delta W / \delta J$ is like $\partial L / \partial \dot{q}$, which introduces a new variable. 
 
 The generating functional $W[J]$ is a functional of $J$, we can perform Legendre transformation to define a new functional in terms of $\delta W / \delta J =: \varphi$. Behold, the quantum action:
 
@@ -81,14 +83,20 @@ $$
 ,  }
 $$
 
-which is indeed a functional of $\varphi$, and we have omitted the measure under the integral sign. We have
+which is indeed a functional of $\varphi$ and not $J$, since it is independent of variation $\delta J$ of $J$, as the readers can verify. Again we have omitted the measure under the integral sign. Some direct calculation shows that 
 
 $$
-  \frac{\delta\Gamma}{\delta\varphi} = -J.
+  \frac{\delta\Gamma[\phi]}{\delta\varphi(x)} = -J(x).
 $$
+
+It is not supposed to be obvious, but the effective action $\Gamma$ is the generating functional for 1-particle irreducible (1PI) diagrams! The significance of 1PI diagrams is best explain by Coleman in his lecture note on QFT, which I quote:
+
+>If we treat the 1PI graphs as giving us effective interaction vertices, then to find the full Green’s functions we only have to sum up tree graphs, never any loops, because all the loops have been stuffed inside the definition of the propagators and the 1PI graphs. This marvelous property of the 1PI graphs is important. Taking the 1PI graph generating functional for a quantum action enables us to turn the combinatorics of building up full Green’s functions from 1PI Green’s functions into an analytic statement, and we end up with the correct expressions for the full Green’s functions. We’re turning a topological statement of one-particle irreducibility into an analytic statement that we will find easy to handle.
+
+
 
 **Summary.**
-- $\Gamma[\varphi]$ generates the 1-particle irreducible (1PI) diagrams;
+- $\Gamma[\varphi]$ generates the 1PI diagrams;
 - $W[J]$ generates connected diagrams;
 - $Z[J]$ generates all kinds of diagrams.
 
@@ -108,9 +116,9 @@ $$
   Z_ \Gamma[J] = \int \mathcal{D}\phi e^{i\Gamma +i\int \phi J}.
 $$
 
-It will generate Feynman diagrams with sources, just like the original action $S$ does, only this time the tree diagrams alone is enough to give the complete information of the original theory. Thus $\Gamma$ must gives us exact propagators and exact n-point vertices, while the original action $S$ gives us the ordinary propagator and ordinary vertex. Also in order to calculate the exact n-point vertex, we need not consider the 1-particle reducible diagrams since any contribution from connected diagram can be written as a tree diagram comprised of two or more sub 1 particle IRREDUCIBLE diagrams.
+It will generate Feynman diagrams with sources, just like the original action $S$ does, only this time the tree diagrams alone is enough to give the complete information of the original theory. Thus $\Gamma$ must gives us exact propagators and exact $n$-point vertices, while the original action $S$ gives us the ordinary propagator and ordinary vertex. Also in order to calculate the exact n-point vertex, we need not consider the 1-particle reducible diagrams since any contribution from connected diagram can be written as a tree diagram comprised of two or more sub 1 particle IRREDUCIBLE diagrams.
 
-**Remark.** The generating functionals such as $W[J]$ and $\Gamma[\varphi]$ are classical. In fact the language of path integral has a feeling of classical field theory, in the sense that each path we take into consideration is a c-field in space-time, instead of q-field.
+**Remark.** The generating functionals such as $W[J]$ and $\Gamma[\varphi]$ are classical. In fact, the language of path integral has a feeling of classical field theory, in the sense that each path we take into consideration is a c-field in space-time, instead of q-field.
 
 #### Tree-level Example
 
@@ -277,7 +285,7 @@ $$
 use the master formulae in QFT
 
 $$
-  \int\mathcal{D}\phi\exp\left\{ i \int d^4x (\phi M \phi) \right\} = \mathcal{N}\frac{1}{\text{det}^{{1/2}}{M}}
+  \int\mathcal{D}\phi\exp\left\{ i \int d^4x (\phi M \phi) \right\} = \mathcal{N}\frac{1}{\text{det}^{ {1/2} }{M}}
 $$
 
 we have
