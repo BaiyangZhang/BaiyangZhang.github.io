@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md"
+                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md"
               }
             }
           },
@@ -191,10 +190,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21aff28309230ec3",
+  "active": "05ba130ef1a8fe34",
   "lastOpenFiles": [
-    "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
     "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
+    "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
     "_posts/2023-2-1-Minkowski Space.md",
     "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
     "Trash.md",

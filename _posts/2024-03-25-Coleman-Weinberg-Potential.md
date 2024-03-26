@@ -48,21 +48,21 @@ For the rest of the note, we will confine our discussion to $\phi^4$ model with 
 
 ### Quantum Action
 
-The partition function of a scalar field $\phi$ (with source) reads
+To keep the notation simple, consider a single real scalar field $\phi$, with possibly mass term and self interaction. The partition function (with source) reads
 
 $$
  Z[J] = \int \mathcal{D} \phi e^{iS[\phi] + i\int \phi J},
 $$
 
-where $S$ is the action, $J$ is the source, $\int \phi J$ is short for $\int dx^4 \phi(x) J(x)$. $\phi$ field is integrated out hence $Z$ is a functional of $J$ only.
+where $S$ is the action, $J$ is the source, $\int \phi J$ is short for $\int_ {M} \phi(x) J(x)$. $\phi$ is integrated out hence $Z$ is a functional of $J$ only.
 
-From it we can define the generating function $W[J]$ by
+From it we define the generating function $W[J]$ by
 
 $$
   Z[J] = e^{iW[J]} \implies W[J] = -i \ln Z[J],
 $$
 
-$W[J]$ is the summation of connected diagrams with source, refer to Mark Srednicki's text book on quantum field theory. It generate *connected diagrams*, due to the exponential form of the path integral representation.
+$W[J]$ is the summation of *connected diagrams* with source, connected roughly because if you consider all the diagrams, the disconnected but replica-forming (namely the disconnected diagrams formed by putting two or more replicas of the same diagrams together) diagrams can be arranged into forms of $\bullet^{n}/n!$, where $\bullet$ is some expression. Then we can organized them into an exponential function $e^{ \bullet }$. For more details, please refer to Mark Srednicki's text book on quantum field theory. $W[J]$ generates *connected diagrams*, due to the exponential form of the path integral representation.
 
 The expectation value of $\phi$ in the presence of a source $J$ is given by
 
