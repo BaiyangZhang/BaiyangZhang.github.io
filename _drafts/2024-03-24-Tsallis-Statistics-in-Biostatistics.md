@@ -193,10 +193,11 @@ $$
 \Phi[p(x)] = S_ {BG} - \alpha \int dx \, p(x) - \beta \int dx \, x \, p(x).  
 $$
 
-We get 
+Using the method of variation, we get 
 
 $$
 p(x) = \frac{1}{\overline{x}} e^{ -x / \overline{x} }.
 $$
 
 **Imposing the Mean Squared Value**
+
