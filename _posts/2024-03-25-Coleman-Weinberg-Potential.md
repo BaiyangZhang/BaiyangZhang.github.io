@@ -89,13 +89,43 @@ $$
   \frac{\delta\Gamma[\varphi_ {J}]}{\delta\varphi_ {J}(x)} = -J(x).
 $$
 
-It is not supposed to be obvious, but the effective action $\Gamma$ is the generating functional for 1-particle irreducible (1PI) diagrams! The significance of 1PI diagrams is best explain by Coleman in his lecture note on QFT, which I quote:
+It is not supposed to be obvious, but the effective action $\Gamma$ is the generating functional for 1-particle irreducible (1PI) diagrams! The significance of 1PI diagrams is best explained by Coleman in his lecture note on QFT, which I quote:
 
 >If we treat the 1PI graphs as giving us effective interaction vertices, then to find the full Green’s functions we only have to sum up tree graphs, never any loops, because all the loops have been stuffed inside the definition of the propagators and the 1PI graphs. This marvelous property of the 1PI graphs is important. Taking the 1PI graph generating functional for a quantum action enables us to turn the combinatorics of building up full Green’s functions from 1PI Green’s functions into an analytic statement, and we end up with the correct expressions for the full Green’s functions. We’re turning a topological statement of one-particle irreducibility into an analytic statement that we will find easy to handle.
 
+To see that $\Gamma[\varphi]$ indeed generates the 1PI diagrams, it is easiest (for myself) to inverse the chain of reasoning, first we define an effective action such that its tree level diagrams reproduces the quantum result (which is easier than it looks), then show that such constructed action satisfies the same equation as $\Gamma[\phi_ {J}]$, so they are the same (up to some insignificant constant, such as the normalization constant). Next we will proceed in this direction.
 
+Given a classical field $\phi_ {c}$, let's define the effective action $\Gamma[\phi_ {c}]$ such that, if we treat $\Gamma[\phi_ {c}]$ as the classical action $S[\phi]$, and calculate $Z[J]$ (or equivalently $W[J]$), using **only the tree diagrams**, then we get exact $Z[J]$ with every bit of the quantum correction! At first glance, this might seem almost too convenient, making our calculations significantly simpler, too good to be true. However, there's no shortcut to the truth; ultimately, we still need to buckle down and work through the loop diagrams. Essentially, the effective action is a clever reorganization of the contributions from these loop diagrams. Even though the effective action doesn't simplify the calculations, it is still quite valuable to us since it provides a new perspective.
+
+Note that $\phi_ {c}$ is some arbitrary classical field configuration, not $\phi_ {J}$ (yet) that we talked about before, that's why I used a different notation. Only at the end of the argument that we have convinced ourselves that they are indeed the same thing, will I write $\Gamma[\phi_ {J}]$.
+
+So how should $\Gamma[\phi_ {c}]$  be constructed? For any function $\phi_ {c}$, the effective action $\Gamma[\phi_ {c}]$ has a functional Taylor expansion:
+
+$$
+i\Gamma[\phi_ {c}] = \sum_ {n} \frac{1}{n!} \int d^{d}x_ {1}\cdots d^{d}x_ {n} \,  \Gamma^{(n)} (x_ {1},\cdots ,x_ {n}) \phi_ {c}(x_ {1})\cdots \phi_ {c}(x_ {n}).
+$$
+
+For example, if $\Gamma[\phi_ {c}] = \int  \, \phi_ {c}^{2}$, then the only non-zero component in the functional Taylor expansion is $\Gamma^{(2)}(x_ {1},x_ {2}) = 2\delta^{d}(x_ {1}-x_ {2})$. 
+
+When talking about Feynman diagrams, it is more convenient to go to momentum representation, hence we define a modified version of the Fourier transform of $\Gamma^{(n)}$, such that
+
+$$
+\Gamma^{(n)}(x_ {1},\cdots x_ {n}) := \int \frac{dp_ {1}}{(2\pi)^{d}}\cdots  \frac{dp_ {n}}{(2\pi)^{d}}\,  \tilde{\Gamma}^{(n)} (p_ {1},\cdots ,p_ {n} ) (2\pi)^{d}\delta^{d}(p_ {1}+\cdots +p_ {n} ) .
+$$
+
+This definition contains extra $\delta$-function for future convenience. 
+
+Recall that a 
+
+
+
+
+
+
+- - -
 
 **Summary.**
+
 - $\Gamma[\varphi]$ generates the 1PI diagrams;
 - $W[J]$ generates connected diagrams;
 - $Z[J]$ generates all kinds of diagrams.
