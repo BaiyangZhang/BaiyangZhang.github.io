@@ -70,23 +70,23 @@ The expectation value of $\phi$ in the presence of a source $J$ is given by
 
 $$
  \left\langle {\phi} \right\rangle_ J=\frac{1}{Z} \int \mathcal{D} \phi e^{iS[\phi] + i\int \phi J} \phi
- = \frac{\delta W[J]}{\delta J(x)}\equiv \varphi,
+ = \frac{\delta W[J]}{\delta J(x)}\equiv \varphi_ {J},
 $$
 
-Note the difference between $\phi$ and the so-called "varphi" $\varphi$, the former is an operator while the latter is a classical field. In contrast to classical mechanics of point particles, $W$ is like Lagrangian $L$, $J$ is like $\dot{q}$, and $\delta W / \delta J$ is like $\partial L / \partial \dot{q}$, which introduces a new variable. 
+Note the difference between $\phi$ and the so-called "varphi" $\varphi$, the former is an operator while the latter is a classical field. The subscript $J$ in $\varphi_ {J}$ is to emphasize that the vev of $\phi$ depends on the source $J$. In comparison to classical mechanics of point particles, $W$ is like Lagrangian $L$, $J$ is like $\dot{q}$, and $\delta W / \delta J$ is like $\partial L / \partial \dot{q}$, which introduces a new variable. 
 
-The generating functional $W[J]$ is a functional of $J$, we can perform Legendre transformation to define a new functional in terms of $\delta W / \delta J =: \varphi$. Behold, the quantum action:
+Since the generating functional $W[J]$ is a functional of $J$, we can perform Legendre transform to define a new functional in terms of $\delta W / \delta J =: \varphi_ {J}$. The result is the quantum action:
 
 $$
 \boxed{
-  \Gamma[\varphi] = W[J] - \int J\varphi
+  \Gamma[\varphi_ {J}] = W[J] - \int J\varphi_ {J}
 ,  }
 $$
 
-which is indeed a functional of $\varphi$ and not $J$, since it is independent of variation $\delta J$ of $J$, as the readers can verify. Again we have omitted the measure under the integral sign. Some direct calculation shows that 
+which is indeed a functional of $\varphi_ {J}$ and not $J$, since it is independent of variation $\delta J$ of $J$, as the readers can verify. Again we have omitted the measure under the integral sign. Some direct calculation shows that 
 
 $$
-  \frac{\delta\Gamma[\phi]}{\delta\varphi(x)} = -J(x).
+  \frac{\delta\Gamma[\varphi_ {J}]}{\delta\varphi_ {J}(x)} = -J(x).
 $$
 
 It is not supposed to be obvious, but the effective action $\Gamma$ is the generating functional for 1-particle irreducible (1PI) diagrams! The significance of 1PI diagrams is best explain by Coleman in his lecture note on QFT, which I quote:
