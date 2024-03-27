@@ -93,13 +93,11 @@ It is not supposed to be obvious, but the effective action $\Gamma$ is the gener
 
 >If we treat the 1PI graphs as giving us effective interaction vertices, then to find the full Green’s functions we only have to sum up tree graphs, never any loops, because all the loops have been stuffed inside the definition of the propagators and the 1PI graphs. This marvelous property of the 1PI graphs is important. Taking the 1PI graph generating functional for a quantum action enables us to turn the combinatorics of building up full Green’s functions from 1PI Green’s functions into an analytic statement, and we end up with the correct expressions for the full Green’s functions. We’re turning a topological statement of one-particle irreducibility into an analytic statement that we will find easy to handle.
 
-To see that $\Gamma[\varphi]$ indeed generates the 1PI diagrams, it is easiest (for myself) to inverse the chain of reasoning, first we define an effective action such that its tree level diagrams reproduces the quantum result (which is easier than it looks), then show that such constructed action satisfies the same equation as $\Gamma[\phi_ {J}]$, so they are the same (up to some insignificant constant, such as the normalization constant). Next we will proceed in this direction.
+To see that $\Gamma[\varphi]$ indeed generates the 1PI diagrams, it is easiest (for myself) to inverse the chain of reasoning, first we define an effective action such that its tree level diagrams reproduces the quantum result (which is easier than it looks), then show that such constructed action satisfies the same equation as $\Gamma[\phi_ {J}]$, so they are the same (up to some insignificant constant, such as the normalization constant). We will proceed in this direction.
 
-Given a classical field $\phi_ {c}$, let's define the effective action $\Gamma[\phi_ {c}]$ such that, if we treat $\Gamma[\phi_ {c}]$ as the classical action $S[\phi]$, and calculate $Z[J]$ (or equivalently $W[J]$), using **only the tree diagrams**, then we get exact $Z[J]$ with every bit of the quantum correction! At first glance, this might seem almost too convenient, making our calculations significantly simpler, too good to be true. However, there's no shortcut to the truth; ultimately, we still need to buckle down and work through the loop diagrams. Essentially, the effective action is a clever reorganization of the contributions from these loop diagrams. Even though the effective action doesn't simplify the calculations, it is still quite valuable to us since it provides a new perspective.
+For now, forget about $\varphi_ {J}$. Let's starting from defining the an effective action $\Gamma[\phi_ {c}]$, which is a functional of of some classical field $\phi_ {c}$. The role of $\phi_ {c}$ in $\Gamma[\phi_ {c}]$ is the same as the role of $\phi$ in the classical action $S[\phi]$, where we usually don't bother to emphasize that $\phi$ is classical rather than a quantum field, but here we do. $\Gamma[\phi_ {c}]$ is defined such that, if we treat $\Gamma[\phi_ {c}]$ as the classical action $S[\phi]$, substitute $\Gamma$ with $S$ in the path integral, and calculate $Z[J]$ (or equivalently $W[J]$), using **only the tree diagrams**, then we get exact $Z[J]$ with every bit of the quantum correction! At first glance, this might seem almost too convenient, making our calculations significantly simpler, too good to be true. However, there's no shortcut to the truth; ultimately, we still need to buckle down and work through the loop diagrams. Essentially, the effective action is a clever reorganization of the contributions from these loop diagrams. Even though the effective action doesn't simplify the calculations per se, it is still quite valuable to us since it provides a new perspective, serving as a powerful tool in quantum field theory, enabling the study of quantum phenomena with a formalism that extends the classical action to include quantum effects.
 
-Note that $\phi_ {c}$ is some arbitrary classical field configuration, not $\phi_ {J}$ (yet) that we talked about before, that's why I used a different notation. Only at the end of the argument that we have convinced ourselves that they are indeed the same thing, will I write $\Gamma[\phi_ {J}]$.
-
-So how should $\Gamma[\phi_ {c}]$  be constructed? For any function $\phi_ {c}$, the effective action $\Gamma[\phi_ {c}]$ has a functional Taylor expansion:
+So how should $\Gamma[\phi_ {c}]$ be constructed? For any function $\phi_ {c}$, the effective action $\Gamma[\phi_ {c}]$ has a functional Taylor expansion:
 
 $$
 i\Gamma[\phi_ {c}] = \sum_ {n} \frac{1}{n!} \int d^{d}x_ {1}\cdots d^{d}x_ {n} \,  \Gamma^{(n)} (x_ {1},\cdots ,x_ {n}) \phi_ {c}(x_ {1})\cdots \phi_ {c}(x_ {n}).
@@ -115,7 +113,23 @@ $$
 
 This definition contains extra $\delta$-function for future convenience. 
 
-Recall that a 
+Recall that the filed $\phi_ {c}(x_ {i})$ themselves in the action eventually becomes **amputated** external legs, amputated in the sense that no propagator is associated to it. All the information is contained in $\tilde{\Gamma}$! We can brutally stuff all the 1PI diagrams, including loop corrections from $S[\phi]$, into $\tilde{\Gamma}$ so that we only need to take into consider the tree diagrams of $\Gamma$. For example, we can draw all the 1PI diagrams with three external legs, calculate them, and define it to be $\tilde{\Gamma}^{(3)}$. If we regard $\Gamma[\phi_ {c}]$ as a machine that takes a function $\phi_ {c}$ as input and spits out a number, then $\tilde{\Gamma}$'s are like its components.
+
+To summarize, for $n\geq 2$, the $\tilde{\Gamma}^{(n)}$ are **defined** by the sum of 1PI diagrams with $n$ external legs. As usual the external legs are amputated.  The external momenta need not be conserved, that point is taken care of by the $\delta$-function in the definition of $\tilde{\Gamma}$. For $n=2$ the case is slightly more complicated, we need to include a propagator into the definition, but the philosophy is the same. 
+
+Next we combine the tree-level exactness of $\Gamma[\phi_ {c}]$ with another concept: loop expansion. Loop expansion is equivalent to both semi-classical expansion (expansion in $\hbar$) and perturbative expansion (expansion in coupling $g$), should the right $\hbar$-dependence be made. Sidney Coleman thinks that $\hbar$ expansion is rubbish for two reasons (that I know of), 1) $\hbar$ is dimensional, with dimension of energy multiplies time, therefore is not a good expanding parameter and 2) if we make $\hbar$ dimensionless like we did with natural units, we could always change the units such that $\hbar=1$. In loop expansion, the tree level diagrams dominates the partition function $Z[J]$ when $\hbar$ is small, and becomes exact at $\hbar\to 0$. I am tempted to write
+
+$$
+\text{tree diagrams} = \lim_ { \hbar \to 0 } \int \mathcal{D}\phi_ {c} \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi_ {c}] + \int J\phi_ {c}   \right\rbrace  .
+$$
+
+I used to think of $\phi_ {c}$ as some pre-determined classical function, which has caused me a lot of confusion. 
+
+Thanks to the $\hbar\to 0$ limit, the path-integral can be worked out using the stationary point method, up to some normalization constant we have 
+
+$$
+\lim_ { \hbar \to 0 } \int \mathcal{D}\phi_ {c} \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi_ {c}] + \int J\phi_ {c}   \right\rbrace   = \exp \left\lbrace  \right\rbrace 
+$$
 
 
 
