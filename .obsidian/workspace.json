@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-25-Coleman-Weinberg-Potential.md"
+                "file": "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md"
               }
             }
           }
@@ -162,10 +162,10 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
+    "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
     "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
     "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
     "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-03-06-Domain-Wall.md",
