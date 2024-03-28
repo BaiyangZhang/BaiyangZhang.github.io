@@ -120,15 +120,16 @@ To summarize, for $n\geq 2$, the $\tilde{\Gamma}^{(n)}$ are **defined** by the s
 Next we combine the tree-level exactness of $\Gamma[\phi_ {c}]$ with another concept: loop expansion. Loop expansion is equivalent to both semi-classical expansion (expansion in $\hbar$) and perturbative expansion (expansion in coupling $g$), should the right $\hbar$-dependence be made. Sidney Coleman thinks that $\hbar$ expansion is rubbish for two reasons (that I know of), 1) $\hbar$ is dimensional, with dimension of energy multiplies time, therefore is not a good expanding parameter and 2) if we make $\hbar$ dimensionless like we did with natural units, we could always change the units such that $\hbar=1$. In loop expansion, the tree level diagrams dominates the partition function $Z[J]$ when $\hbar$ is small, and becomes exact at $\hbar\to 0$. I am tempted to write
 
 $$
-\text{tree diagrams} = \lim_ { \hbar \to 0 } \int \mathcal{D}\phi_ {c} \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi_ {c}] + \int J\phi_ {c}   \right\rbrace  .
+\text{tree diagrams} = \lim_ { \hbar \to 0 } \int \mathcal{D}\phi_ {c} \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi_ {c}] + \int J\phi_ {c}   \right\rbrace  
 $$
 
-I used to think of $\phi_ {c}$ as some pre-determined classical function, which has caused me a lot of confusion. 
 
-Thanks to the $\hbar\to 0$ limit, the path-integral can be worked out using the stationary point method, up to some normalization constant we have 
+And this turns out to be correct. I used to think of $\phi_ {c}$ as some pre-determined classical function, which has caused me a lot of confusion. From now on let's get rid of the subscript $c$ in $\phi_ {c}$, since fields appear under the path integral are always classical field. We will put the subscript back when possible confusion could rise. 
+
+Thanks to the $\hbar\to 0$ limit, the path-integral can be worked out using the method of stationary phase, up to some normalization constant we have 
 
 $$
-\lim_ { \hbar \to 0 } \int \mathcal{D}\phi_ {c} \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi_ {c}] + \int J\phi_ {c}   \right\rbrace   = \exp \left\lbrace  \right\rbrace 
+\lim_ { \hbar \to 0 } \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi] + \int J\phi   \right\rbrace   = \exp \left\lbrace \frac{i}{\hbar}\Gamma[\overline{\phi}]+\int \, J\overline{\phi}  \right\rbrace ,
 $$
 
 
