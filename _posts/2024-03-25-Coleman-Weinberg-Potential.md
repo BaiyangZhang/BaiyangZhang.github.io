@@ -13,7 +13,7 @@ tags:
   - effectivePotential
 ---
 
-### Quantum Effective Action
+# Quantum Effective Action
 
 The goal of this chapter is to introduce the quantum action and quantum potential. There are (at least) two kinds of quantum actions, one is the `Wilsonian quantum action`, where the higher momentum modes are integrated out to focus on the low-energy, long-distance behavior of a system. It embodies the effective interactions of a quantum system a*t a certain scale*, accounting for the influence of fluctuations at smaller scales. This potential is central to understanding how physical phenomena emerge at different length scales from the underlying quantum fields, particularly in the study of critical phenomena and phase transitions. Take a scalar field theory $\phi$ for example. The "integrating out" procedure is done using the path integral approach, it involves *separating the field into high and low energy parts*. To be more specific, the scalar field is split into $\phi = \phi_ {\text{low}} + \phi_ {\text{high}}$, where $\phi_ {\text{low}}$ contains modes below a certain energy scale $\Lambda$ and $\phi_ {\text{high}}$ contains modes above $\Lambda$. $\phi_ {\text{high}}$ can be thought of as a thin shell in the momentum space. The path integral over the full field is then re-written as a path integral over these two components of fields. The crucial step is to integrate out the high-energy modes $\phi_ {\text{high}}$. This can be done perturbatively by treating $\phi_ {\text{high}}$ as a different field from $\phi_ {\text{low}}$, using Feynman diagram techniques. The resulting effective action should only depends on the low-energy modes. The Wilsonian effective action captures the dynamics of the field *at energies below* $\Lambda$. It will typically have a form different from the original action, often with new interactions generated as a result of integrating out the high-energy modes. New scale could even emerge, as in the case of dimensional transmutation, which we will not talk too much about in this note.
 
@@ -46,7 +46,7 @@ The first try, before all the three mentioned above, is usually an educated gues
 
 For the rest of the note, we will confine our discussion to $\phi^4$ model with real scalar fields.
 
-### Quantum Action
+## Quantum Action
 
 To keep the notation simple, consider a single real scalar field $\phi$, with possibly mass term and self interaction. The partition function (with source) reads
 
@@ -73,7 +73,7 @@ $$
  = \frac{\delta W[J]}{\delta J(x)}\equiv \varphi_ {J},
 $$
 
-Note the difference between $\phi$ and the so-called "varphi" $\varphi$, the former is an operator while the latter is a classical field. The subscript $J$ in $\varphi_ {J}$ is to emphasize that the vev of $\phi$ depends on the source $J$. In comparison to classical mechanics of point particles, $W$ is like Lagrangian $L$, $J$ is like $\dot{q}$, and $\delta W / \delta J$ is like $\partial L / \partial \dot{q}$, which introduces a new variable. 
+Note the difference between $\phi$ and the so-called `varphi` $\varphi$, the former is an operator while the latter is a classical field. The subscript $J$ in $\varphi_ {J}$ is to emphasize that the vev of $\phi$ depends on the source $J$. In comparison to classical mechanics of point particles, $W$ is like Lagrangian $L$, $J$ is like $\dot{q}$, and $\delta W / \delta J$ is like $\partial L / \partial \dot{q}$, which introduces a new variable. 
 
 Since the generating functional $W[J]$ is a functional of $J$, we can perform Legendre transform to define a new functional in terms of $\delta W / \delta J =: \varphi_ {J}$. The result is the quantum action:
 
@@ -129,107 +129,123 @@ And this turns out to be correct. I used to think of $\phi_ {c}$ as some pre-det
 Thanks to the $\hbar\to 0$ limit, the path-integral can be worked out using the method of stationary phase, up to some normalization constant we have 
 
 $$
-\lim_ { \hbar \to 0 } \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi] + \int J\phi   \right\rbrace   = \exp \left\lbrace \frac{i}{\hbar}\Gamma[\overline{\phi}]+\int \, J\overline{\phi}  \right\rbrace ,
+\lim_ { \hbar \to 0 } \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi] +\frac{i}{\hbar} \int J\phi   \right\rbrace   = \exp \left\lbrace \frac{i}{\hbar}\Gamma[\overline{\phi}]+ \frac{i}{\hbar} \int \, J\overline{\phi}  \right\rbrace ,
 $$
 
-where $\overline{\phi}$ is the solution that **extremizes** the exponent
+where $\overline{\phi}$ is the solution that **extremizes** the exponent on the LHS, 
 
+$$
+ \frac{\delta \Gamma[\phi]}{\delta \phi}{\Large\mid}_ {\phi=\overline{\phi}}   \equiv\frac{\delta \Gamma[\overline{\phi}]}{\delta \overline{\phi}} = -J(x).
+$$
 
+This is exactly the same functional equation we got for $\varphi_ {J}$ before! They might differ by a constant, but that can be absorbed into the normalization factors and cancels out eventually. Now we can comfortably write $\overline{\phi} =\phi_ {J}$ in the quantum action. This equation connects the quantum action we obtained before via a Legendre transform from $iW[J]$ with the generating functional for 1PI diagrams, identifying these two seemingly different quantities. To show the connection ever more clearly, recall that the partition function in terms of $\Gamma$ is 
 
+$$
+Z[J] = \exp \left\lbrace \frac{i}{\hbar} \left( \Gamma [\varphi_ {J}]+\int \, J\varphi_ {J}  \right)  \right\rbrace =\exp \left\lbrace \frac{i}{\hbar}W[J] \right\rbrace 
+$$
 
-- - -
+we have 
+
+$$
+W[J] = \Gamma[\phi_ {J}] + \int  \, J\phi_ {J}, \quad J \text{ given a priori.}
+$$
+
+Note that we could equally write $W$ as $W+2\pi \mathbb{N}$ but the additive constant can be absorbed into the partition functions as well. This is the Legendre transform we wrote down before!
+
+For the sake of completeness we put the pair of Legendre transforms below,
+
+$$
+\begin{align*}
+W[J] &=  \Gamma[\varphi_ {J}] +\int  \, J\varphi_ {J} ,\quad  -J = \frac{\delta \Gamma[\varphi_ {J}]}{\delta \varphi_ {J}},   \\
+\Gamma[\varphi] &= W[J_ {\varphi}] - \int  \,  J_ {\varphi} \varphi, \quad  \varphi=\frac{\delta W[J_ {\varphi}]}{\delta J_ {\varphi}},
+\end{align*}
+$$
+
+where $\varphi_ {J}$ means that $\varphi$ is determined by $J$, or $\varphi$ is a (non-local) function of $J$, while $J_ {\varphi}$ means the opposite. Also keep in mind that $\phi_ {J}$ is the vev of quantum operator $\phi$ in the presence of $J$.
 
 **Summary.**
 
-- $\Gamma[\varphi]$ generates the 1PI diagrams;
+- $\Gamma[\varphi]$ generates 1PI diagrams;
 - $W[J]$ generates connected diagrams;
 - $Z[J]$ generates all kinds of diagrams.
 
-- - -
+**Remark.** The generating functionals such as $W[J]$ and $\Gamma[\varphi]$ are classical functional, dealing with c-numbered functions, no operators and commutation relations involved. In fact, the language of path integral has a close connection with classical, statistical field theory, and many concepts exists in both disciplines, for example, people dealing with statistical field theory also talk about renormalization flow (Wilsonian), and QFT-ists also talk about critical exponents. A great textbook on statistical field theory is that by [`Nigel Goldenfeld`](https://guava.physics.ucsd.edu/~nigel/). 
 
-There are superficially two different ways to define the quantum effective action, 1) by requiring that the tree diagrams of the effective action reproduce the quantum effects of the original action, and 2) by Legendre transformation. It is not meant to be obvious, but they are equivalent to each other. To see it, we can first **define** $\Gamma[\phi]$ to be whose tree diagrams gives us all the quantum effects, then since $iW[J]$ also gives all the quantum effects with loops, we have
+**A Tree-level Example**
 
-$$
-e^{iW[J]} = \lim_ {\hbar\to 0} \int \mathcal{D}\phi e^{i\Gamma[\phi]/\hbar}
-$$
-
-where the limiting process isolates out the tree contribution, then use the fastest descent approximation we find $\Gamma$ can be written as the Legendre transformation of $W[J]$.
-
-To see that $\Gamma$ generates only the 1PI diagrams, recall that quantum effective action has the property that the tree-level graphs generated by it gives the complete scattering amplitude. Putting $\Gamma[\varphi]$ at the position of action $S$, we will have a new path integral
+In the classical limit, that is in the limit $\hbar \to 0$, the partition function 
 
 $$
-  Z_ \Gamma[J] = \int \mathcal{D}\phi e^{i\Gamma +i\int \phi J}.
+Z = \int \mathcal{D}\phi e^{ \frac{i}{\hbar} \left( S + \int \phi J \right)}
 $$
 
-It will generate Feynman diagrams with sources, just like the original action $S$ does, only this time the tree diagrams alone is enough to give the complete information of the original theory. Thus $\Gamma$ must gives us exact propagators and exact $n$-point vertices, while the original action $S$ gives us the ordinary propagator and ordinary vertex. Also in order to calculate the exact n-point vertex, we need not consider the 1-particle reducible diagrams since any contribution from connected diagram can be written as a tree diagram comprised of two or more sub 1 particle IRREDUCIBLE diagrams.
-
-**Remark.** The generating functionals such as $W[J]$ and $\Gamma[\varphi]$ are classical. In fact, the language of path integral has a feeling of classical field theory, in the sense that each path we take into consideration is a c-field in space-time, instead of q-field.
-
-#### Tree-level Example
-
-In the classical limit, taking the limit $\hbar \to 0$, the partition function become
-
-$$
-  Z = \int \mathcal{D}\phi e^{iS + i\int \phi J}
-$$
-
-which receives dominant contribution from the stationary configuration, given by
+receives dominant contribution from the stationary configuration, given by
 
 $$
   \frac{\delta}{\delta\phi}\left( S + \int \phi J \right) = 0
   \implies \frac{\delta S}{\delta\phi} = - J
 $$
 
-which has a solution $\varphi$. Thus the partition function is
+which has a solution $\varphi_ {J}$. This is exactly the euqation satisfied by the quantum action $\Gamma[\phi]$! Anyway, we can carry on to talk about the partition function which is now
 
 $$
-  Z = e^{iS+i\int \varphi J}
+  Z = e^{iS[\varphi_ {J}]+i\int \varphi_ {J} J}
 $$
 
-up to a normalization factor. Since
+up to a normalization factor. We have
 
 $$
-  W[J] = -i \ln Z = S + \int \varphi J,
-$$
-
-we have
-
-$$
-\varphi = \frac{\delta W}{\delta J} = \left\langle {\phi}_ J \right\rangle
+  W[J] = -i \ln Z = S[\varphi_ {J}] + \int \varphi_ {J} J,
 $$
 
 thus
 
 $$
-  \Gamma[\varphi] = W - \int \varphi J = S[\varphi].
+  \Gamma[\varphi] = W - \int \varphi_ {J} J = S[\varphi].
 $$
 
-At the tree-level, the quantum effective action and the original action are the same.
+As expected, at the tree-level, the quantum effective action and the original action are the same.
 
-### Effective Potential
+## Effective Potential
 
-In the classical dynamics, the vacuum (lowest energy state) configuration of the system is given by the minimum of the potential. In the quantum theory, we are sometimes interested in the vacuum expectation value (VEV) of the field operator $\phi$. In a quantum field theory, there is also have a potential term whose minimum gives the classical vacuum field configuration, however that's not the full story, since in a quantum theory the field always fluctuates around the vacuum, giving rise to a correction to $\left\langle \phi \right\rangle$.
+In the classical dynamics, the vacuum (lowest energy state) configuration of the system is given by the minimum of the potential, which fixes the value of the field in spacetime (usually a constant in spacetime). In the quantum theory, everything receives quantum correction, including the vacuum expectation value (VEV) $\left\langle \phi \right\rangle$ of the field operator $\phi$. In a QFT, the potential term in the Lagrangian or Hamiltonian has minima given by the classical vacuum field configuration, however that's not the full story, since the field always fluctuates around the vacuum, giving rise to a correction to $\left\langle \phi \right\rangle$. That's when the effective potential comes to rescue.
 
-We want a quantum effective potential which works like the classical potential, in the sense that its minimum corresponds to the field configuration of the vacuum, quantum corrections included. Luckily we already have something like that, i.e. the quantum effective action.
+The effective potential in QFT is a crucial concept, especially when studying systems with spontaneous symmetry breaking, phase transitions, and nonperturbative dynamics. It represents a modification of the classical potential to include quantum corrections, providing a more accurate description of the dynamics of quantum fields. Its application include:
+
+1. **Spontaneous Symmetry Breaking**: The effective potential is instrumental in understanding spontaneous symmetry breaking, a phenomenon where the ground state (vacuum) of a system does not inherit the symmetry of the action. In the context of the Higgs mechanism in the Standard Model of particle physics, the effective potential reveals how the Higgs field acquires a nonzero vacuum expectation value, leading to the generation of masses for the $W$ and $Z$ bosons.
+
+2. **Phase Transitions**: In the study of early universe cosmology or condensed matter physics, the effective potential reveals how a system transitions between different phases. For example, it can describe the transition from a symmetric phase to a broken-symmetry phase as the universe cools. The shape of the effective potential changes with temperature, and these changes can indicate phase transitions, such as from a high-temperature symmetric phase to a low-temperature phase where symmetry is broken.
+
+3. **Quantum Corrections and Renormalization**: The effective potential incorporates quantum corrections to the classical potential, which are crucial for making precise predictions in QFT. These corrections can significantly alter the behavior of the system, especially at high energies or short distances. The process of renormalization is deeply connected to the effective potential, ensuring that physical quantities remain finite and meaningful.
+
+4. **Nonperturbative Effects**: The effective potential can capture nonperturbative effects, which are not accessible through standard perturbative techniques. For instance, in theories with strong coupling or in situations where the perturbative series does not converge (actually it doesn't converge in any cases), the effective potential can provide insights into the structure and dynamics of the vacuum, solitonic solutions, and other nonperturbative phenomena like instantons and tunneling effects.
+
+5. **Dynamical Mass Generation**: In theories where particles are massless at the classical level, the effective potential can show how interactions lead to dynamical mass generation. This is particularly significant in quantum chromodynamics (QCD) and models of dynamical symmetry breaking, where the vacuum structure induced by strong interactions gives rise to constituent masses for particles.
+
+6. **Vacuum Stability and Tunneling**: The effective potential allows for the analysis of vacuum stability in various field theories. It can be used to study the probability of tunneling between different vacua, which has implications for the stability of our universe and the decay of false vacuum states.
+
+Overall, the effective potential is a powerful tool in quantum field theory, providing deep insights into the quantum dynamics of fields, the structure of the vacuum, and the various nonperturbative phenomena that arise in complex quantum systems. Next let's dig into it.
+
+- - -
 
 Recall that the quantum effective action
 
-- is a functional of $\varphi$, and $\varphi = \left\langle {\phi}_ J \right\rangle$, meaning $\varphi$ is the expectation value of $\phi$ in the presence of a source term $J$, and
-- satisfies ${\delta \Gamma}/{\delta \varphi} = J$
-thus
-- when $J=0$, the solution to ${\delta \Gamma}/{\delta \varphi} = J$ is the vev of $\phi$.
+- is a functional of $\varphi_ {J}$ where $\varphi_ {J} = \left\langle {\phi} \right\rangle_ J$, namely $\varphi$ is the expectation value of $\phi$ in the presence of a source term $J$, and
+- satisfies ${\delta \Gamma}/{\delta \varphi} = J$.
 
-Furthermore, assume that the vacuum has translation symmetry, meaning $\left\langle \phi \right\rangle$ is a constant in space and time, then we just need one number to denote the field configuration, we can define a function $\mathcal{V} _ {\text{eff}}$ whose minimum is the vev of $\phi$,
+Thus **when $J=0$, the solution to ${\delta \Gamma}/{\delta \varphi} = J$ is the vev of $\phi$.**
+
+Additionally, let's assume the vacuum exhibits translational symmetry, meaning that the vacuum expectation value (vev) of $\phi$ remains constant across space and time. Under this condition, we only require a single number to describe the field configuration. Consequently, we can introduce a function, $\mathcal{V}_{\text{eff}}$, the minimum of which represents the vev of $\phi$,
 
 $$
   \Gamma[\varphi]|_ {\varphi = \text{const}} = -VT \mathcal{V}_ {\text{eff}}(\varphi)
 $$
 
-where $V$ is the volume of the space and $T$ the extension of time, $\mathcal{V} _ {\text{eff}}(\varphi)$ is the quantum effective potential. We can see that $\mathcal{V} _ {\text{eff}}$ is a intensive quantity while $\Gamma$ is a extensive quantity, and ${\partial\mathcal{V}}/{\partial\phi} = 0$ reproduces ${\delta \Gamma}/{\delta \varphi} = 0$.
+where $V$ is the volume of the space and $T$ the extension of time, $\mathcal{V} _ {\text{eff}}(\varphi)$ is the quantum effective potential. Apparently $\mathcal{V} _ {\text{eff}}$ is an intensive, and ${\partial\mathcal{V}}/{\partial\phi} = 0$ reproduces ${\delta \Gamma}/{\delta \varphi} = 0$.
 
-## Coleman-Weinberg Potential
+# Coleman-Weinberg Potential
 
-### Background Fields
+## Background Fields
 
 The method of background method is very useful for calculating beta functions and effective action. For a real scalar field $\phi$, the general idea is as following
 
