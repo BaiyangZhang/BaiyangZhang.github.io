@@ -132,7 +132,7 @@ $$
 \lim_ { \hbar \to 0 } \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi] + \int J\phi   \right\rbrace   = \exp \left\lbrace \frac{i}{\hbar}\Gamma[\overline{\phi}]+\int \, J\overline{\phi}  \right\rbrace ,
 $$
 
-
+where $\overline{\phi}$ is the solution that **extremizes** the exponent
 
 
 
