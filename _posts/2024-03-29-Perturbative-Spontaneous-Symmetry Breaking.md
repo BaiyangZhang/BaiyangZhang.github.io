@@ -139,10 +139,12 @@ $$
 \Gamma[\overline{\phi}] = S[\left\langle \phi \right\rangle] + \text{loops}= S[\overline{\phi}] + \text{loops},
 $$
 
-since a swap between $\overline{\phi}$ and $\left\langle \phi \right\rangle$ introduces loop corrections only. Write the action in terms of the Lagrangian we have 
+since a swap between $\overline{\phi}$ and $\left\langle \phi \right\rangle$ introduces loop corrections only. But so far let's stick with $S[\left\langle \phi \right\rangle]$ instead of $S[\overline{\phi}]$, since $\left\langle \phi \right\rangle$ is the quantum vev thus unknown, while $\left\langle \phi \right\rangle$ is the classical vev thus easily known, one just need to solve for the equation of motion. 
+
+Write the action in terms of the Lagrangian we have 
 
 $$
-\Gamma[\overline{\phi}] = \int d^{d}x \, \mathcal{L}(\overline{\phi}) + \text{loops}.
+\Gamma[\overline{\phi}] = \int d^{d}x \, \mathcal{L}(\left\langle \phi \right\rangle ) + \text{loops}.
 $$
 
 We have
@@ -151,5 +153,10 @@ $$
 \mathcal{L} = \frac{1}{2} (\partial \phi)^{2}  - U(\phi) + \mathcal{L}_ {\text{ct}},
 $$
 
-where $U$ is the classical potential and $\mathcal{L}_ {\text{ct}}$ are the counter terms.
+where $U$ is the classical potential and $\mathcal{L}_ {\text{ct}}$ are the counter terms. Then, since $\overline{\phi}$ is constant we have 
+
+$$
+V(\overline{\phi}) = U(\left\langle \phi \right\rangle ) + \text{loops},
+$$
+
 
