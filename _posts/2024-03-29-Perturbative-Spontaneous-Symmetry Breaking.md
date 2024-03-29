@@ -2,7 +2,7 @@
 layout: post
 title: Perturbative Spontaneous Symmetry Breaking
 subtitle: 
-date: 2024-03-25
+date: 2024-03-29
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -105,7 +105,7 @@ Note that **spontaneous symmetry breaking does not affect the renormalization**,
 
 >After we do the shift, of course, a $\phi^{3}$ interaction will appear in the effective action, but we still don’t need a $\phi^{3}$ counterterm, because we’ve already gotten rid of all infinities in computing $\Gamma$ before we’ve made the shift. The shift is a purely algebraic operation without a single integration over internal momenta, and therefore cannot possibly introduce new ultraviolet infinities.
 
-
+Say we are doing renormalization in the original theory. What are the renormalization conditions? It is not a good idea to adopt the mass shell renormalization since in the original theory $m^{2}<0$. 
 
 
 
