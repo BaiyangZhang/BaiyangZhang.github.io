@@ -91,6 +91,19 @@ The significance of the theorem is this: it doesn’t matter if you say there’
 
 In the following we will need to make use of quantum effective action $\Gamma[\varphi]$, for details on this topic see my other note [here](https://www.mathlimbo.net/blog/2024/Coleman-Weinberg-Potential/). 
 
+As explained by Coleman, 
+
+>...(using perturbation theory), but with the effective action $\Gamma[\overline{\phi}]$ substituted for the classical action $S[\phi]$. Instead of trying to find minima by finding the stationary points of the classical action, I **find ground states by looking at the stationary points of the effective action**; instead of finding effective coupling constants and masses by expanding about the minima of the classical action, I **find 1PI Green’s functions by expanding about the minima of the effective action**. It’s exactly the same game in the quantum and classical theories.
+
+Sometimes Coleman talks about classical vev of $\phi$ and quantum vev of $\phi$. By his definition, the classical vev of $\phi$, i.e. $\left\langle \phi \right\rangle$ classical, usually denoted as just $\left\langle \phi \right\rangle$, is the vev of $\phi$ without loop corrections, the quantum one, usually denoted as $\overline{\phi}$, is that with loop corrections. In any cases, $\left\langle \phi \right\rangle$ is supposedly a constant in spacetime. This means that both classical and quantum vacuum preserves the translational symmetry.
+
+In solitonic quantum field theory we constantly deal with ground states that are not translations symmetric. Regarding the possibility of SSB of spontaneous translational symmetry breaking, Coleman comment
+
+>There’s no reason why translation invariance should not be spontaneously broken in a theory that describes the real world. It occurs in statistical mechanics, for example, where the phenomenon is called `crystallization`. There, *instead of changing the square of the mass to cause the manifest symmetry to break spontaneously, one changes the temperature*. Let’s take a typical material such as iron, and imagine an iron universe, spatially infinite. If the temperature is above a certain point, the ground state (in the sense of statistical mechanics) is spatially homogeneous; it’s iron vapor. We lower the temperature below the freezing point of iron, and the ground state becomes an infinite iron crystal, which does not have spatial homogeneity. If we now consider the rotation of a crystal somewhere in the frozen iron, how it rotates depends on its position relative to a central lattice point. That’s an example of spontaneous symmetry breakdown of translational invariance.
+
+Note that **spontaneous symmetry breaking does not affect the renormalization**, SSB is essentially a shift of field, has nothing to do with regularization and renormalization. A SSB model has exactly the same counter terms as the original one. Thus we could renormalize first and shift the field later. This is useful in $\phi^{4}$ model with spontaneous symmetry breaking, since the original theory has no $\phi^{3}$ terms but the symmetry broken theory has, so naturally one could ask, do we need a counter term for $\phi^{3}$ interaction, like Mark Srednicki did in his textbook? The answer is no since such a counter term is not needed in the original theory. Then what about the divergence introduced by $\phi^{3}$ theory? Well, if we had done everything correctly, it should be taken care of by itself, by some destined cancellation. Like Coleman said,
+
+>After we do the shift, of course, a $\phi^{3}$ interaction will appear in the effective action, but we still don’t need a $\phi^{3}$ counterterm, because we’ve already gotten rid of all infinities in computing $\Gamma$ before we’ve made the shift. The shift is a purely algebraic operation without a single integration over internal momenta, and therefore cannot possibly introduce new ultraviolet infinities.
 
 
 
