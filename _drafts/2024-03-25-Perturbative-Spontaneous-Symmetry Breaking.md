@@ -89,7 +89,9 @@ The significance of the theorem is this: it doesn’t matter if you say there’
 
 - - -
 
-In the 
+In the following we will need to make use of quantum effective action $\Gamma[\varphi]$, for details on this topic see my other note [here](https://www.mathlimbo.net/blog/2024/Coleman-Weinberg-Potential/). 
+
+
 
 
 
