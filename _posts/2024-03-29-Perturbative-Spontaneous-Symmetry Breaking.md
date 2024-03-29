@@ -105,8 +105,51 @@ Note that **spontaneous symmetry breaking does not affect the renormalization**,
 
 >After we do the shift, of course, a $\phi^{3}$ interaction will appear in the effective action, but we still don’t need a $\phi^{3}$ counterterm, because we’ve already gotten rid of all infinities in computing $\Gamma$ before we’ve made the shift. The shift is a purely algebraic operation without a single integration over internal momenta, and therefore cannot possibly introduce new ultraviolet infinities.
 
-Say we are doing renormalization in the original theory. What are the renormalization conditions? It is not a good idea to adopt the mass shell renormalization since in the original theory $m^{2}<0$. 
+Say we are doing renormalization in the original theory. What are the renormalization conditions? We have MS, $\overline{\text{MS}}$, Pauli-Villas, mass-shell, lattice, Momentum Subtraction, etc. It is not a good idea to adopt the mass shell renormalization since in the original theory $m^{2}<0$. Then we could choose a tentative renormalization condition, then adjust it in the kink sector so that the renormalized parameters are physical. The vev of field $\overline{\phi}$ will depend on the renormalization condition, but different condition will describe the same physics.
 
+Recall that the effective action $\Gamma[\overline{\phi}]$ is made of 1PI diagrams, where $\overline{\phi}(x)$ itself serves as the external legs, just like the source term $J(x)$ with classical action $S$. We have assumed the $\overline{\phi}$ is a const in spacetime, which translates to zero momentum after we Fourier transform it to the momentum space. So we only need to consider the case where the external legs has zero momenta. Next let's dive into calculation.
 
+- - -
 
+Let $V(\overline{\phi})$ be the `effective action` of $\overline{\phi}$, which if you recall is the quantum vev of $\phi$. For the details of effective action see my other note mentioned at the beginning of this note, here we only present the definition,
+
+$$
+\Gamma[\overline{\phi}] =: -V(\overline{\phi}) \cdot \text{Vol}^{d},
+$$
+
+where $\text{Vol}^{d}$ is the total space of the $d$-dimensional spacetime manifold. 
+
+The connection between $\Gamma[\overline{\phi}]$ and $S[\overline{\phi}]$ is that, at tree level, that is if you forget about quantum corrections, $\Gamma$ is equal go $S$. When the quantum corrections are included, since $\Gamma$ is exact (incorporates all the quantum effects in path integral) at tree level, we have 
+
+$$
+ Z[J] = \lim_ { \hbar \to 0 } \int \mathcal{D}\phi \,  \exp \left\lbrace \frac{i}{\hbar}\left( \Gamma[\phi]+\int  J\phi  \right) \right\rbrace  = \exp \left\lbrace i\Gamma[\overline{\phi}]+\int dJ\overline{\phi} \,   \right\rbrace ,
+$$
+
+it is understood that the last equality is up to multiplicative constants. Also note that in the last expression it is not just any $\phi$, but $\overline{\phi}$ that satisfies certain functional equation, which is exactly the $\overline{\phi}$ we have been using.
+
+However we also have
+
+$$
+Z[J] = \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\left( S[\phi] +\int J\phi  \right) \right\rbrace   = \exp \left\lbrace iS[\left\langle \phi \right\rangle ] + \text{loops} \right\rbrace 
+$$
+
+where loops are a result of the fluctuations about the classical field configuration $\left\langle \phi \right\rangle$. Thus we have 
+
+$$
+\Gamma[\overline{\phi}] = S[\left\langle \phi \right\rangle] + \text{loops}= S[\overline{\phi}] + \text{loops},
+$$
+
+since a swap between $\overline{\phi}$ and $\left\langle \phi \right\rangle$ introduces loop corrections only. Write the action in terms of the Lagrangian we have 
+
+$$
+\Gamma[\overline{\phi}] = \int d^{d}x \, \mathcal{L}(\overline{\phi}) + \text{loops}.
+$$
+
+We have
+
+$$
+\mathcal{L} = \frac{1}{2} (\partial \phi)^{2}  - U(\phi) + \mathcal{L}_ {\text{ct}},
+$$
+
+where $U$ is the classical potential and $\mathcal{L}_ {\text{ct}}$ are the counter terms.
 
