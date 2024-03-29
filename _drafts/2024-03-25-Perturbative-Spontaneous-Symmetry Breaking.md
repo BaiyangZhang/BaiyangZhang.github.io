@@ -87,7 +87,9 @@ We'll neglect the proof of the theorem here, just mention that it involves trans
 
 The significance of the theorem is this: it doesn’t matter if you say there’s one vacuum or many; there are always good vacua. It shows that, even if we don’t know anything about spontaneous symmetry breaking, and we’ve chosen a bad set of vacua, by a systematic constructive procedure we can always find a good choice of bases for the vacuum subspace, such that no local operator can connect one vacuum to another.
 
+- - -
 
+In the 
 
 
 
