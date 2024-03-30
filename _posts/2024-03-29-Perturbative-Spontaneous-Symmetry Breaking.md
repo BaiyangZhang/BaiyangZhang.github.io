@@ -2,7 +2,7 @@
 layout: post
 title: Perturbative Spontaneous Symmetry Breaking
 subtitle: 
-date: 2024-03-25
+date: 2024-03-29
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -87,9 +87,76 @@ We'll neglect the proof of the theorem here, just mention that it involves trans
 
 The significance of the theorem is this: it doesn’t matter if you say there’s one vacuum or many; there are always good vacua. It shows that, even if we don’t know anything about spontaneous symmetry breaking, and we’ve chosen a bad set of vacua, by a systematic constructive procedure we can always find a good choice of bases for the vacuum subspace, such that no local operator can connect one vacuum to another.
 
+- - -
 
+In the following we will need to make use of quantum effective action $\Gamma[\varphi]$, for details on this topic see my other note [here](https://www.mathlimbo.net/blog/2024/Coleman-Weinberg-Potential/). 
 
+As explained by Coleman, 
 
+>...(using perturbation theory), but with the effective action $\Gamma[\overline{\phi}]$ substituted for the classical action $S[\phi]$. Instead of trying to find minima by finding the stationary points of the classical action, I **find ground states by looking at the stationary points of the effective action**; instead of finding effective coupling constants and masses by expanding about the minima of the classical action, I **find 1PI Green’s functions by expanding about the minima of the effective action**. It’s exactly the same game in the quantum and classical theories.
 
+Sometimes Coleman talks about classical vev of $\phi$ and quantum vev of $\phi$. By his definition, the classical vev of $\phi$, i.e. $\left\langle \phi \right\rangle$ classical, usually denoted as just $\left\langle \phi \right\rangle$, is the vev of $\phi$ without loop corrections, the quantum one, usually denoted as $\overline{\phi}$, is that with loop corrections. In any cases, $\left\langle \phi \right\rangle$ is supposedly a constant in spacetime. This means that both classical and quantum vacuum preserves the translational symmetry.
+
+In solitonic quantum field theory we constantly deal with ground states that are not translations symmetric. Regarding the possibility of SSB of spontaneous translational symmetry breaking, Coleman comment
+
+>There’s no reason why translation invariance should not be spontaneously broken in a theory that describes the real world. It occurs in statistical mechanics, for example, where the phenomenon is called `crystallization`. There, *instead of changing the square of the mass to cause the manifest symmetry to break spontaneously, one changes the temperature*. Let’s take a typical material such as iron, and imagine an iron universe, spatially infinite. If the temperature is above a certain point, the ground state (in the sense of statistical mechanics) is spatially homogeneous; it’s iron vapor. We lower the temperature below the freezing point of iron, and the ground state becomes an infinite iron crystal, which does not have spatial homogeneity. If we now consider the rotation of a crystal somewhere in the frozen iron, how it rotates depends on its position relative to a central lattice point. That’s an example of spontaneous symmetry breakdown of translational invariance.
+
+Note that **spontaneous symmetry breaking does not affect the renormalization**, SSB is essentially a shift of field, has nothing to do with regularization and renormalization. A SSB model has exactly the same counter terms as the original one. Thus we could renormalize first and shift the field later. This is useful in $\phi^{4}$ model with spontaneous symmetry breaking, since the original theory has no $\phi^{3}$ terms but the symmetry broken theory has, so naturally one could ask, do we need a counter term for $\phi^{3}$ interaction, like Mark Srednicki did in his textbook? The answer is no since such a counter term is not needed in the original theory. Then what about the divergence introduced by $\phi^{3}$ theory? Well, if we had done everything correctly, it should be taken care of by itself, by some destined cancellation. Like Coleman said,
+
+>After we do the shift, of course, a $\phi^{3}$ interaction will appear in the effective action, but we still don’t need a $\phi^{3}$ counterterm, because we’ve already gotten rid of all infinities in computing $\Gamma$ before we’ve made the shift. The shift is a purely algebraic operation without a single integration over internal momenta, and therefore cannot possibly introduce new ultraviolet infinities.
+
+Say we are doing renormalization in the original theory. What are the renormalization conditions? We have MS, $\overline{\text{MS}}$, Pauli-Villas, mass-shell, lattice, Momentum Subtraction, etc. It is not a good idea to adopt the mass shell renormalization since in the original theory $m^{2}<0$. Then we could choose a tentative renormalization condition, then adjust it in the kink sector so that the renormalized parameters are physical. The vev of field $\overline{\phi}$ will depend on the renormalization condition, but different condition will describe the same physics.
+
+Recall that the effective action $\Gamma[\overline{\phi}]$ is made of 1PI diagrams, where $\overline{\phi}(x)$ itself serves as the external legs, just like the source term $J(x)$ with classical action $S$. We have assumed the $\overline{\phi}$ is a const in spacetime, which translates to zero momentum after we Fourier transform it to the momentum space. So we only need to consider the case where the external legs has zero momenta. Next let's dive into calculation.
+
+- - -
+
+Let $V(\overline{\phi})$ be the `effective action` of $\overline{\phi}$, which if you recall is the quantum vev of $\phi$. For the details of effective action see my other note mentioned at the beginning of this note, here we only present the definition,
+
+$$
+\Gamma[\overline{\phi}] =: -V(\overline{\phi}) \cdot \text{Vol}^{d},
+$$
+
+where $\text{Vol}^{d}$ is the total space of the $d$-dimensional spacetime manifold. 
+
+The connection between $\Gamma[\overline{\phi}]$ and $S[\overline{\phi}]$ is that, at tree level, that is if you forget about quantum corrections, $\Gamma$ is equal go $S$. When the quantum corrections are included, since $\Gamma$ is exact (incorporates all the quantum effects in path integral) at tree level, we have 
+
+$$
+ Z[J] = \lim_ { \hbar \to 0 } \int \mathcal{D}\phi \,  \exp \left\lbrace \frac{i}{\hbar}\left( \Gamma[\phi]+\int  J\phi  \right) \right\rbrace  = \exp \left\lbrace i\Gamma[\overline{\phi}]+\int dJ\overline{\phi} \,   \right\rbrace ,
+$$
+
+it is understood that the last equality is up to multiplicative constants. Also note that in the last expression it is not just any $\phi$, but $\overline{\phi}$ that satisfies certain functional equation, which is exactly the $\overline{\phi}$ we have been using.
+
+However we also have
+
+$$
+Z[J] = \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\left( S[\phi] +\int J\phi  \right) \right\rbrace   = \exp \left\lbrace iS[\left\langle \phi \right\rangle ] + \text{loops} \right\rbrace 
+$$
+
+where loops are a result of the fluctuations about the classical field configuration $\left\langle \phi \right\rangle$. Thus we have 
+
+$$
+\Gamma[\overline{\phi}] = S[\left\langle \phi \right\rangle] + \text{loops}= S[\overline{\phi}] + \text{loops},
+$$
+
+since a swap between $\overline{\phi}$ and $\left\langle \phi \right\rangle$ introduces loop corrections only. But so far let's stick with $S[\left\langle \phi \right\rangle]$ instead of $S[\overline{\phi}]$, since $\left\langle \phi \right\rangle$ is the quantum vev thus unknown, while $\left\langle \phi \right\rangle$ is the classical vev thus easily known, one just need to solve for the equation of motion. 
+
+Write the action in terms of the Lagrangian we have 
+
+$$
+\Gamma[\overline{\phi}] = \int d^{d}x \, \mathcal{L}(\left\langle \phi \right\rangle ) + \text{loops}.
+$$
+
+We have
+
+$$
+\mathcal{L} = \frac{1}{2} (\partial \phi)^{2}  - U(\phi) + \mathcal{L}_ {\text{ct}},
+$$
+
+where $U$ is the classical potential and $\mathcal{L}_ {\text{ct}}$ are the counter terms. Then, since $\overline{\phi}$ is constant we have 
+
+$$
+V(\overline{\phi}) = U(\left\langle \phi \right\rangle ) + \text{loops},
+$$
 
 
