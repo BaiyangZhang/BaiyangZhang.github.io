@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c169abf707c1049c",
@@ -160,7 +159,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b66263de2453f537",
+  "active": "64f38d0fe9abaf57",
   "lastOpenFiles": [
     "_posts/2024-03-29-Perturbative-Spontaneous-Symmetry Breaking.md",
     "_posts/2024-03-28-Coleman-Weinberg-Potential.md",
