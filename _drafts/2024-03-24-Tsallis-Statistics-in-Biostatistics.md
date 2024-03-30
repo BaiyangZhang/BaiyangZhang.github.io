@@ -229,3 +229,63 @@ which is just the Gaussian distribution! This tells us that the Gaussian distrib
 
 # Nonextensive Statistical Mechanics
 
+Tsallis is convinced that there exists no logical-deductive procedure for generalizing any physical theory. As a possible motivation to generalize the exponential function $e^{ x }$, he started from the equation that $e^{ x }$ satisfies, which is fairly simple:
+
+$$
+\frac{dy}{dx} = y.
+$$
+
+A possible generalization of the equation is to writhe the RHS as $a+by$, we have 
+
+$$
+\frac{dy}{dx} = a+by \implies \frac{dy}{a+by}=dx\implies y=\frac{1}{b}(e^{ b(x+c) }-a),
+$$
+
+which does look very promising. Then Tsallis considered a non-linear generalization:
+
+$$
+\frac{dy}{dx} = y^{q}, \quad  q\in \mathbb{R},\quad y(0)=1.
+$$
+
+The boundary condition $y(0)=1$ is such that is agrees with the usual exponential function $e^{ 0 }=1$. Solving it we get
+
+$$
+(1-q) (x+c) = y^{1-q} ,
+$$
+the boundary condition translates to 
+
+$$
+c = \frac{1}{1-q},
+$$
+
+thus 
+
+$$
+\boxed{ 
+y = (1+(1-q)x)^{1/(1-q)} =: e_ {q}^{x}.
+}
+$$
+
+When $1+(1-q)x<0$, $e_ {q}(x)$ is defined to be zero (**why don't complexify it**?). Also note that $e^{ x }_ {q}$ goes to $e^{ x }$ at $q\to 1$ since, writing $q = 1-\epsilon$, we have 
+
+$$
+\lim_ { q \to 1 } e^{ x }_ {q} = \lim_ { \epsilon \to 0 } (1+\epsilon x)^{1/\epsilon} = e^{ x }.
+$$
+
+From the same equation that we got the definition of $e^{ x }_ {q}$, we also get the inverse function of $x$ in terms of $y$:
+
+$$
+\boxed{ 
+x = \frac{y^{1-q}-1}{1-q} =: \log_ {q} y.
+}
+$$
+
+They are referred to as $q$-exponential functions and $q$-logarithmic functions respectively.
+
+Recall that logarithmic functions turns multiplication into addition, $\log(AB)=\log(A)+\log(B)$, for $q$-logarithmic functions we have something similar,
+
+$$
+\log_ {q}(AB) = \log_ {q}(A) + \log_ {q}(B) + (1-q) \log_ {q}(A)\log_ {q}(A).
+$$
+
+
