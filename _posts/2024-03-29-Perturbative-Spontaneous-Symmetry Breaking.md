@@ -74,7 +74,6 @@ A = \int d^{d}x \,   f(x_ {1},\cdots,x_ {n}) \phi(x_ {1})\cdots\phi(x_ {n})
 $$
 where $f(x_ {1},\cdots,x_ {n})$ is a function with finite support (support is the closure of the points where $f$ is nonzero).
 
-
 Now coming back to vacua. There is a basis where all the vacua are *globally independent*, where one vacua can not be transformed into another using some local (or quasi-local, as Coleman called it) operator. Such a basis is called **good** vacuum states. For a set of good vacua, different vacuum states are not just distinct but are fundamentally separate in the sense that you cannot use a simple, localized operation to move from one to another. By construction, the vev of any quasilocal operators between two distinct good vacua is zero, 
 
 **Theroem 1** There exists a basis for the vacuum states $\left\lvert{0,\alpha}\right\rangle$, so called good vacuum states, such that for any quasilocal operator $A$, we have 
@@ -159,4 +158,23 @@ $$
 V(\overline{\phi}) = U(\left\langle \phi \right\rangle ) + \text{loops},
 $$
 
+where loop contribution is of form $\hbar(\text{1-loops})+h^{2}(\text{2-loops})+\cdots$. Note that $V(\overline{\phi})$ is not a functional but rather a function of $\overline{\phi}$, it is the negative of the constant density of $\Gamma[\overline{\phi}]$. Since $\Gamma$ generates all the 1PI diagrams, $V(\overline{\phi})$ represents the collection of all the 1PI diagrams with all the external momenta equal to zero and with the $(2\pi)^{d}\delta^{d}(0)$ from overall energy-momentum conservation divided out. That's just the Fourier space equivalent of the integral $\int d^dx$. 
+
+As Coleman explained in his lecture notes,
+
+>The rule for computing $V[\overline{\phi}]$ is very simple. You don’t have to worry about any external momentum. You just have external lines each carrying zero momentum. Sum up all those graphs to one loop or two loops or however many loops you’re going to do.
+
+## Calculating the Effective Potential
+
+With a general renormalizable potential, we start with the Lagrangian that reads
+
+$$
+\mathcal{L} = \frac{1}{2} (\partial \phi)^{2} -U(\phi)+\mathcal{L}_ {\text{ct}}.
+$$
+
+If there is a mass term it goes to $U$. As a result, the propagator is 
+
+$$
+\frac{i}{k^{2}+i\epsilon}
+$$
 
