@@ -127,7 +127,6 @@ $$
 \text{tree diagrams} = \lim_ { \hbar \to 0 } \int \mathcal{D}\phi_ {c} \, \exp \left\lbrace \frac{i}{\hbar}\Gamma[\phi_ {c}] + \int J\phi_ {c}   \right\rbrace  
 $$
 
-
 And this turns out to be correct. I used to think of $\phi_ {c}$ as some pre-determined classical function, which has caused me a lot of confusion. From now on let's get rid of the subscript $c$ in $\phi_ {c}$, since fields appear under the path integral are always classical field. We will put the subscript back when possible confusion could rise. 
 
 Thanks to the $\hbar\to 0$ limit, the path-integral can be worked out using the method of stationary phase, up to some normalization constant we have 
@@ -258,16 +257,32 @@ G_ {c}^{(3)}(x,y,z) &= \frac{\delta^{3}W}{\delta J(x)\delta J(y)\delta J(z)} \\
 &= i \int d^{d}w \, D(z,w) \frac{\delta}{\delta\varphi(w)} \frac{\delta^{2}W[J]}{\delta J(y) \delta J(x)} \\
 &= - i \int d^{d}w \, D(z,w) \frac{\delta}{\delta\varphi(w)}\left( \frac{\delta^{2}\Gamma[\varphi]}{\delta \varphi(x)\delta \varphi(y)} \right)^{-1}\\
 &= -i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) \left( \frac{\delta^{2}\Gamma}{\delta\varphi(x)\delta\varphi(w')} \right)^{-1}  \frac{\delta^{3}\Gamma}{\delta\varphi(w)\delta\varphi(w')\delta\varphi(w'')} \left( \frac{\delta \Gamma}{\delta\varphi(w'')\delta\varphi(y)} \right)^{-1} \\
-&= i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) D(x-w') D(y-w'') \frac{\delta^{3}\Gamma[\varphi]}{\delta\varphi(w)\delta\varphi(w')\delta\varphi(w'')} \\
-&= i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) D(x-w') D(y-w'') \Gamma^{(3)}(w,w',w'').
+&=  - i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) D(x-w') D(y-w'') \frac{\delta^{3}\Gamma[\varphi]}{\delta\varphi(w)\delta\varphi(w')\delta\varphi(w'')} \\
+&= -i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) D(x-w') D(y-w'') \Gamma^{(3)}(w,w',w'').
 \end{align*}
 $$
 
 Now, $G_ {c}^{3}(x,y,z)$ is the connected 3-point function defined at $x,y$ and $z$, with its external legs **not amputated**! On the LHS, since all the three external legs are accounted for by the three propagators $D(z-2)$ etc., $\Gamma^{(3)}(w,w',w'')$ has its external legs **amputated**! As we dig deeper, you'll find that this is a general conclusion: the external legs of $\Gamma[\varphi]$ are amputated.
 
+We have been sloppy with factor of $i$'s. Taking care of it, the n-point correlation function reads
 
+$$
+\left( i\frac{\delta}{\delta J} \right)^{n} (iW[J]) = \left\langle T \,\phi_ {1}\cdots \phi _ {n}  \right\rangle _ {J} =: G^{(n)}_ {\text{c}}(x_ {1},\cdots ,x_ {n}),
+$$
 
+where $c$ is for connected. Since $\Gamma[\varphi]$ generates 1PI diagrams, 
 
+$$
+G^{(3)}_ {\text{1PI,am}}(x,y,z) = \frac{\delta^{3} i\Gamma[\varphi]}{\delta\varphi(x) \delta\varphi(y) \delta\varphi(z)}
+$$
+
+where $\text{am}$ for amputated. We have found the relation between connected, not-amputated 3-point functions between 3-point 1PI connections:
+
+$$
+G^{(n)}_ {c}(x,y,z) = \int d^{d}w \, d^{d}w' \, d^{d}w'' \,  D(x-w)D(y-w')D(z-w'') G^{(3)}_ {\text{1PI,am}}(w,w',w'').
+$$
+
+Note that $G^{(n)}_ {\text{1PI,am}}$ is nothing but the same $\Gamma^{(n)}$ in the functional Taylor expansion of $\Gamma$ (by construction). The generalization to $n>3$ is straightforward.
 
 **A Tree-level Example**
 
