@@ -223,8 +223,6 @@ where $\mu^{2}$ is the mass of the particle and $\lambda$ the coupling. Of cours
 
 To include the 1-loop corrections, we need to consider 1PI diagrams shown in Fig. (1). 
 
-
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="/img/effectiveAction/1Loop.png" class="img-fluid rounded z-depth-1" %}
