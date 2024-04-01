@@ -2,7 +2,7 @@
 layout: post
 title: Perturbative Spontaneous Symmetry Breaking
 subtitle: 
-date: 2024-03-29
+date: 2024-04-01
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
@@ -178,10 +178,4 @@ $$
 \frac{i}{k^{2}+i\epsilon}.
 $$
 
-Recall that when calculating $\Gamma[\overline{\phi}]$, we are practically calculating the 1PI diagrams with external legs replaced by a factor of $\overline{\phi}$, the external propagator is amputated (or truncated, the same). Why are they amputated? We know that when calculating the S-matrix the external legs are also truncated due to the LSZ theorem, but here there is no LSZ theorem so why does it happen? The reason is mostly that 1PI diagrams are used to represent the interaction vertices or the "effective vertices" in the theory, rather than full scattering processes. In the context of effective theory you usually don't hear things like asymptotic states, scattering matrix, things that you must discuss when talking about S-matrix. The 1PI diagrams contribute to the n-point functions, which are essentially the building blocks of the full scattering amplitudes. These vertex functions describe how particles interact at a point, disregarding the propagation of particles to and from this point. In the renormalization process, 1PI diagrams are essential because they contain the divergences that need to be renormalized. The external propagators do not need to be renormalized in the same way, so they are not included in the 1PI diagrams. The renormalization of the theory focuses on the interactions themselves, which are represented by the 1PI diagrams without the external propagators. More specifically and mathematically, recall that $\Gamma[\overline{\phi}]$ has a functional Taylor expansion form
-
-$$
-\Gamma[\overline{\phi}] = \sum_ {n} \frac{1}{n!} \int d^{d}x_ {1}\cdots d^{d}x_ {n} \, \Gamma^{(n)}(x_ {1},\cdots ,x_ {n}) \overline{\phi}(x_ {1}) \cdots \overline{\phi}(x_ {n})
-$$
-
-where $\Gamma^{(n)}(x_ {1},\cdots,x_ {n})$ are the n-point 1PI diagrams with 
+Recall that calculating $\Gamma[\overline{\phi}]$ means calculating the 1PI diagrams with external legs amputated and replaced by a factor of $\overline{\phi}$. Why are they amputated? We know that when calculating the S-matrix the external legs are also truncated due to the LSZ theorem, but here there is no LSZ theorem so why does it happen? The reason is mostly that 1PI diagrams are used to represent the interaction vertices or the "effective vertices" in the theory, rather than full scattering processes. In the context of effective theory you usually don't hear things like asymptotic states, scattering matrix, things that you must discuss when talking about S-matrix. The 1PI diagrams contribute to the n-point functions, which are essentially the building blocks of the full scattering amplitudes. These vertex functions describe how particles interact at a point, disregarding the propagation of particles to and from this point. In the renormalization process, 1PI diagrams are essential because they contain the divergences that need to be renormalized. The external propagators do not need to be renormalized in the same way, so they are not included in the 1PI diagrams. The renormalization of the theory focuses on the interactions themselves, which are represented by the 1PI diagrams without the external propagators. For details please refer to note here

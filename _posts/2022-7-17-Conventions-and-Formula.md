@@ -25,16 +25,28 @@ $$
   \int \mathcal{D}\psi\mathcal{D}\overline{\psi}\exp\left\lbrace i \int d^4x (\overline{\psi} M \psi) \right\rbrace = \mathcal{N}\det{M}.
 $$
 
-Some conventions
+Some conventions. Metric:
 
 $$
-\begin{align}
+\begin{align*}
   g_{\mu\nu}&=\text{diag}\lbrace1,-1,-1,-1\rbrace,\\
-  \epsilon_{0123} &= 1,\\
+  \epsilon_{0123} &= 1, \\
+\end{align*}
+$$
+
+Fourier transform:
+
+$$
+\begin{align*}
   f(x) &= \int \frac{d^nk}{(2\pi)^n} \, e^{-ip\cdot x}\widetilde{f}(p),\\
-  \widetilde{f}(p)&=\int dx \, e^{ip\cdot x}f(x),\\
-  \delta^{(n)}(k) &= \frac{1}{(2\pi)^n}\int d^nx \, e^{i k x}.
-\end{align}
+  \widetilde{f}(p)&=\int dx \, e^{ip\cdot x}f(x),
+\end{align*}
+$$
+
+and $\delta$-function:
+
+$$
+  \delta^{(n)}(k) = \frac{1}{(2\pi)^n}\int d^nx \, e^{i k x}.
 $$
 
 The gauge Lie group $G$ has an underlying Lie algebra $\mathfrak{g}$, whose generator satisfies
