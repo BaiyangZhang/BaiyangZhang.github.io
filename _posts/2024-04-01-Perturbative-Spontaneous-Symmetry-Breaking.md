@@ -12,7 +12,7 @@ tags:
 
 This note is based on Chapter 44 of *Lectures of Sidney Coleman on Quantum Field Theory*. 
 
-# "Spontaneous" symmetry breaking
+# *Spontaneous* symmetry breaking
 
 The word *spontaneous* used to baffle me. It doesn't seem so "spontaneous" in the context of quantum field theory, such as $\phi^{4}$ model. At least not spontaneous enough in comparison with that in the Ising model. In Ising model, starting from high temperature, above Curie temperature to be specific, the ferromagnetic system is in a rotational symmetric phase, all the little spins point to random directions. As the temperature drops, at the Curie temperature the system undergoes a second order phase transition, the system picks a direction and all of a sudden, most of the spins are aligned in that directions,as a result the rotational symmetry is broken, without any external manipulation, hence the word spontaneous. To be more specific, take 2D (spatial) Ising model for example, which is  famously solved by Lars Onsager. We don't choose 1D Ising model because in 1D, spontaneous symmetry breaking doesn't occur due to the lack of a phase transition at finite temperatures, there is a critical dimension under which the free energy is dominated by entropy, so the order phase is not preferred, according to the so-called energy-entropy argument. 
 
@@ -231,6 +231,6 @@ To include the 1-loop corrections, we need to consider 1PI diagrams shown in Fig
     </div>
 </div>
 <div class="caption">
-    One loop contributions to the effctive action $\Gamma[\varphi]$ in the $\phi^4$ model. Credit of the figure goes go Gustavo Burdman.
+    Fig.1. One loop contributions to the effective action $\Gamma[\varphi]$ in the $\phi^4$ model. Credit of the figure goes go Gustavo Burdman.
 </div>
 
