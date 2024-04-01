@@ -229,6 +229,6 @@ To include the 1-loop corrections, we need to consider 1PI diagrams shown in Fig
     </div>
 </div>
 <div class="caption">
-    Fig.1. One loop contributions to the effective action $\Gamma[\varphi]$ in the $\phi^4$ model. Credit of the figure goes go Gustavo Burdman.
+    Fig.1. One loop contributions to the effective action $\Gamma[\varphi]$ in the $\phi^4$ model. The first diagram contributes to $\Gamma^{2}$, the second $\Gamma^{4}$, etc. Diagrams with odd number of external legs vanish due to the $\mathbb{Z}_2$ symmetry. Credit: Professor Gustavo Burdman.
 </div>
 
