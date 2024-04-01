@@ -180,3 +180,57 @@ $$
 
 Recall that calculating $\Gamma[\overline{\phi}]$ means calculating the 1PI diagrams with external legs amputated and replaced by a factor of $\overline{\phi}$. Why are they amputated? We know that when calculating the S-matrix the external legs are also truncated due to the LSZ theorem, but here there is no LSZ theorem so why does it happen? The reason is mostly that 1PI diagrams are used to represent the interaction vertices or the "effective vertices" in the theory, rather than full scattering processes. In the context of effective theory you usually don't hear things like asymptotic states, scattering matrix, things that you must discuss when talking about S-matrix. The 1PI diagrams contribute to the n-point functions, which are essentially the building blocks of the full scattering amplitudes. These vertex functions describe how particles interact at a point, disregarding the propagation of particles to and from this point. In the renormalization process, 1PI diagrams are essential because they contain the divergences that need to be renormalized. The external propagators do not need to be renormalized in the same way, so they are not included in the 1PI diagrams. The renormalization of the theory focuses on the interactions themselves, which are represented by the 1PI diagrams without the external propagators. For details please refer to note [here](https://www.mathlimbo.net/blog/2024/Coleman-Weinberg-Potential/), at the paragraph before Eq. (15).
 
+From the functional Taylor expansion of $i\Gamma[\varphi]$ in momentum space,
+
+$$
+\begin{align*}
+i\Gamma[\varphi] &= \sum_ {n} \frac{1}{n!} \int \frac{dk_ {1}^{d}}{(2\pi)^{d}} \cdots  \frac{dk_ {n}^{d}}{(2\pi)^{d}}\,  \tilde{\varphi}(-k_ {1})\cdots \tilde{\varphi}(-k_ {n} )\tilde{\Gamma}^{(n)}(k_ {1},\cdots, k_ {n} )\\
+&\;\;\;\; \times (2\pi)^{d}\delta^{d}(k_ {1}+\cdots +k_ {n} ),
+\end{align*}
+$$
+
+we can expand $\tilde{\Gamma}^{(n)}(k_ {1},\cdots,k_ {n})$ in terms of $k$'s, while keeping the $\tilde{\varphi}$'s untouched, the reason why we don't expand $\tilde{\varphi}$ is purely technical, because an expansion in $\Gamma^{(n)}$ suffices. If we do that, at the leading order where $k=0$ for all $k$, then we get
+
+$$
+i\Gamma[\varphi] = \sum_ {n} \frac{1}{n!} \int d^{d}x \,  \tilde{\Gamma}^{(n)}(0,\cdots ,0) \varphi^{n}(x) + \mathcal{O}(k).
+$$
+
+Note that $\varphi(x)$ are functions of $x$, not its Fourier transformed $\tilde{\varphi}$, which is a result from *not* expanding $\tilde{\varphi}(k)$ in $k$.
+
+By the definition of effective action 
+
+$$
+\Gamma[\varphi] = -\int d^{d}x \,   V_ {\text{eff}}(\overline{\phi}) + \mathcal{O}(\text{derivatives}),
+$$
+
+we have 
+
+$$
+\boxed { 
+V_ {\text{eff}}(\overline{\phi}) = i\sum_ {n} \frac{1}{n!} \int d^{d}x \,  \tilde{\Gamma}^{(n)}(0,\cdots ,0) \overline{\phi}^{n}(x) .
+}
+$$
+
+note we have replaced $\varphi$, a generic classical field to $\overline{\phi}$, the vacuum solution we want to expand about. It doesn't change the logic or the derivation, just replacing the general case with a special case.
+
+In $\phi^{4}$ model, at tree level, we have 
+
+$$
+\Gamma^{(2)} (0,0) = -i \mu^{2},\quad  \Gamma^{(4)}(0,0,0,0) = -i \lambda,
+$$
+
+where $\mu^{2}$ is the mass of the particle and $\lambda$ the coupling. Of course it depends on how you write the Lagrangian, could differ a factor of $3!$ or something like that. 
+
+To include the 1-loop corrections, we need to consider 1PI diagrams shown in Fig. (1). 
+
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/effectiveAction/1Loop.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    One loop contributions to the effctive action $\Gamma[\varphi]$ in the $\phi^4$ model. Credit of the figure goes go Gustavo Burdman.
+</div>
+

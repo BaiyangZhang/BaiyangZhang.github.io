@@ -162,6 +162,10 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
+    "Templates/figures.md",
+    "img/effectiveAction/1Loop.png",
+    "img/effectiveAction",
+    "img/新建文件夹",
     "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
     "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
     "_posts/2022-7-17-Conventions-and-Formula.md",
@@ -186,7 +190,6 @@
     "_posts/2023-04-25-Wigner-Weyl-Calculus.md",
     "_posts/2023-04-20-Harmonic-Forms.md",
     "_posts/2023-04-04-Confinement-in-Toy-Models-Lecture-2.md",
-    "_posts/2023-3-24-Betti-Numbers.md",
-    "_posts/2023-3-20-Clasical-Lumps-and-Their-Quantum-Descendants.md"
+    "_posts/2023-3-24-Betti-Numbers.md"
   ]
 }
