@@ -256,8 +256,10 @@ $$
 G_ {c}^{(3)}(x,y,z) &= \frac{\delta^{3}W}{\delta J(x)\delta J(y)\delta J(z)} \\
 &= i \int d^{d}w \, D(z,w) \frac{\delta}{\delta\varphi(w)} \frac{\delta^{2}W[J]}{\delta J(y) \delta J(x)} \\
 &= - i \int d^{d}w \, D(z,w) \frac{\delta}{\delta\varphi(w)}\left( \frac{\delta^{2}\Gamma[\varphi]}{\delta \varphi(x)\delta \varphi(y)} \right)^{-1}\\
-&= -i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) \left( \frac{\delta^{2}\Gamma}{\delta\varphi(x)\delta\varphi(w')} \right)^{-1}  \frac{\delta^{3}\Gamma}{\delta\varphi(w)\delta\varphi(w')\delta\varphi(w'')} \left( \frac{\delta \Gamma}{\delta\varphi(w'')\delta\varphi(y)} \right)^{-1} \\
-&=  - i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) D(x-w') D(y-w'') \frac{\delta^{3}\Gamma[\varphi]}{\delta\varphi(w)\delta\varphi(w')\delta\varphi(w'')} \\
+&= -i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) \left( \frac{\delta^{2}\Gamma}{\delta\varphi(x)\delta\varphi(w')} \right)^{-1} \\
+&\;\;\;\;\;\times  \frac{\delta^{3}\Gamma}{\delta\varphi(w)\delta\varphi(w')\delta\varphi(w'')} \left( \frac{\delta \Gamma}{\delta\varphi(w'')\delta\varphi(y)} \right)^{-1} \\
+&=  - i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) D(x-w') D(y-w'')\\
+&\;\;\;\;\;\times \frac{\delta^{3}\Gamma[\varphi]}{\delta\varphi(w)\delta\varphi(w')\delta\varphi(w'')} \\
 &= -i \int d^{d}w d^{d}w' d^{d}w'' \, D(z-w) D(x-w') D(y-w'') \Gamma^{(3)}(w,w',w'').
 \end{align*}
 $$
