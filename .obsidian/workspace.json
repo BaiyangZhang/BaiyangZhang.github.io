@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c169abf707c1049c",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md"
+                "file": "_posts/2024-03-31-Coleman-Weinberg-Potential.md"
               }
             }
           }
@@ -161,17 +162,16 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
-    "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
-    "Templates/plots.md",
-    "Templates/figures.md",
     "img/effectiveAction/1Loop.png",
     "img/effectiveAction",
-    "img/新建文件夹",
-    "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
-    "_posts/2022-7-17-Conventions-and-Formula.md",
+    "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
+    "Templates/plots.md",
+    "_posts/2024-03-29-Perturbative-Spontaneous-Symmetry-Breaking.md",
     "_drafts/2024-03-24-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2024-03-28-Coleman-Weinberg-Potential.md",
+    "_posts/2024-03-29-Perturbative-Spontaneous-Symmetry Breaking.md",
+    "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
     "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
+    "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
@@ -188,7 +188,6 @@
     "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
     "_posts/2023-05-12-Lie-Groups.md",
     "_posts/2023-04-25-Wigner-Weyl-Calculus.md",
-    "_posts/2023-04-20-Harmonic-Forms.md",
-    "_posts/2023-04-04-Confinement-in-Toy-Models-Lecture-2.md"
+    "_posts/2023-04-20-Harmonic-Forms.md"
   ]
 }
