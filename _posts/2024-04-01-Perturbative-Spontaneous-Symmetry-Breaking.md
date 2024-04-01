@@ -72,6 +72,7 @@ Recall that operators correspond to observable quantities or actions that can be
 $$
 A = \int d^{d}x \,   f(x_ {1},\cdots,x_ {n}) \phi(x_ {1})\cdots\phi(x_ {n})
 $$
+
 where $f(x_ {1},\cdots,x_ {n})$ is a function with finite support (support is the closure of the points where $f$ is nonzero).
 
 Now coming back to vacua. There is a basis where all the vacua are *globally independent*, where one vacua can not be transformed into another using some local (or quasi-local, as Coleman called it) operator. Such a basis is called **good** vacuum states. For a set of good vacua, different vacuum states are not just distinct but are fundamentally separate in the sense that you cannot use a simple, localized operation to move from one to another. By construction, the vev of any quasilocal operators between two distinct good vacua is zero, 
@@ -225,10 +226,11 @@ To include the 1-loop corrections, we need to consider 1PI diagrams shown in Fig
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/effectiveAction/1Loop.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="img/effectiveAction/1Loop.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     Fig.1. One loop contributions to the effective action $\Gamma[\varphi]$ in the $\phi^4$ model. The first diagram contributes to $\Gamma^{2}$, the second $\Gamma^{4}$, etc. Diagrams with odd number of external legs vanish due to the $\mathbb{Z}_2$ symmetry. Credit: Professor Gustavo Burdman.
 </div>
+
 
