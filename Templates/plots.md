@@ -1,3 +1,8 @@
+---
+layout:     post   				   
+title:     figure
+---
+
 
 
 ```python
