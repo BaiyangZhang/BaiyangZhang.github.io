@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c169abf707c1049c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md"
+                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md"
               }
             }
           }
@@ -162,8 +161,8 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
-    "Templates/plots.md",
     "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
+    "Templates/plots.md",
     "Templates/figures.md",
     "img/effectiveAction/1Loop.png",
     "img/effectiveAction",
