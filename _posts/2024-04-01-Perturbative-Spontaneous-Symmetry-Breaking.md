@@ -14,6 +14,8 @@ This note is based on Chapter 44 of *Lectures of Sidney Coleman on Quantum Field
 
 # *Spontaneous* symmetry breaking
 
+This section can be neglected.
+
 The word *spontaneous* used to baffle me. It doesn't seem so "spontaneous" in the context of quantum field theory, such as $\phi^{4}$ model. At least not spontaneous enough in comparison with that in the Ising model. In Ising model, starting from high temperature, above Curie temperature to be specific, the ferromagnetic system is in a rotational symmetric phase, all the little spins point to random directions. As the temperature drops, at the Curie temperature the system undergoes a second order phase transition, the system picks a direction and all of a sudden, most of the spins are aligned in that directions,as a result the rotational symmetry is broken, without any external manipulation, hence the word spontaneous. To be more specific, take 2D (spatial) Ising model for example, which is  famously solved by Lars Onsager. We don't choose 1D Ising model because in 1D, spontaneous symmetry breaking doesn't occur due to the lack of a phase transition at finite temperatures, there is a critical dimension under which the free energy is dominated by entropy, so the order phase is not preferred, according to the so-called energy-entropy argument. 
 
 - - -
@@ -61,7 +63,7 @@ The Higgs mechanism is a well-known example of spontaneous symmetry breaking in 
 
 The "spontaneous" aspect is that there's no external force or parameter explicitly breaking the symmetry; it's the intrinsic dynamics of the field settling into a minimum energy state that breaks the symmetry. Spontaneous in the context of QFT is not in the dynamical sense, as it is in Ising model.
 
-# Degenerate Vacua
+# Degenerate Vacua, Good and Bad
 
 In a simple quantum system, you might expect a unique ground state. However, in systems where spontaneous symmetry breaking occurs, there can be multiple degenerate ground states, all having the same energy but different physical configurations.
 
@@ -165,7 +167,7 @@ As Coleman explained in his lecture notes,
 
 >The rule for computing $V[\overline{\phi}]$ is very simple. You don’t have to worry about any external momentum. You just have external lines each carrying zero momentum. Sum up all those graphs to one loop or two loops or however many loops you’re going to do.
 
-## Calculating the Effective Potential
+## Calculating the 1-Loop Effective Potential
 
 With a general renormalizable potential, we start with the Lagrangian that reads
 
@@ -236,15 +238,170 @@ To include the 1-loop corrections, we need to consider 1PI diagrams shown in Fig
 The $2n$-point amplitude shown in Fig. 1 read
 
 $$
-\Gamma^{(2n)} (0,\cdots,0) = \frac{(2n)!}{(2)^{n}(2n)} \int \frac{d^{d}k}{(2\pi)^{d}} \,  \left( \frac{i}{k^{2}+i\epsilon}(-i\lambda) \right)^{n}.
+\Gamma^{(2n)} (0,\cdots,0) = \frac{(2n)!}{2^{n}(2n)} \int \frac{d^{d}k}{(2\pi)^{d}} \,  \left( \frac{i}{k^{2}+i\epsilon}(-i\lambda) \right)^{n}.
 $$
 
-Some explanation is in order: for $2n$ external legs, there will be $n$ propagators with the same momentum $k$ (since the external legs all carry zero momentum by construction), and there are $n$ vertices. There are $(2n)!$ different ways to assign $x_ {1},\cdots,x_ {2n}$ (in coordinate representation of course) to the $2n$ "bulbs", hence the factor $(2n)!$. If you are confused about this, just think of what we did with $iW[J]$ when using it to generate connected diagrams, where for a diagram with $n$ external legs, there are $n!$ ways to assign it. For more details refer to Chapter 13 in *lectures of Sidney Coleman on quantum field theory*, here I just quote a short passage from Coleman that is relevant to our discussion:
+Some explanation is in order: for $2n$ external legs, there will be $n$ propagators with the same momentum $k$ (since the external legs all carry zero momentum by construction), and there are $n$ vertices. $2^{n}$ is the symmetry factor for each vertex (for the two external legs), $2n$ in the denominator is the symmetry factor for the entire loop, for $n$ rotations and $n$ reflections. There are $(2n)!$ different ways to assign $x_ {1},\cdots,x_ {2n}$ (in coordinate representation of course) to the $2n$ "bulbs", hence the factor $(2n)!$. If you are confused about this, just think of what we did with $iW[J]$ when using it to generate connected diagrams, where for a diagram with $n$ external legs, there are $n!$ ways to assign it. For more details refer to Chapter 13 in *lectures of Sidney Coleman on quantum field theory*, here I just quote a short passage from Coleman that is relevant to our discussion:
 
 >If we imagine restricting ourselves to the case where the first $\rho$ gives up momentum $k_ {1}$, the second gives a momentum $k_ {2}$, etc., then all of our lines are well-defined, and we have no factor of $1/n!$. On the other hand, when we integrate over all $k$’s in this expression, we overcount each those terms $n!$ times, corresponding to the $n!$ permutations of a given set of $k$’s, and therefore we need a $1/n!$ to cancel it out. I know combinatoric arguments are often not clear the first time you hear them, but after a little thought, they become clear.
 
-Note that even we are talking about 1-loop only, there is arbitrary high power of coupling $\lambda$. This is different from what I am used to in calculating loops, where higher power of coupling usually implies higher number of loops. This is not a problem though.
+Coleman also emphasized that here we are **not** normal ordering anything. Normal ordering tend to cause some problems, including 1) it is not compatible with gauge transform, 2) it is not compatible with field shift and 3) it sometimes messes up the symmetry.
 
-We can go beyond $\phi^{4}$ model to a general polynomial potential $U(\phi)$ (recall that $V$ is preserved for quantum potential), then each vertex on the circle would contribute $-iU''(\phi)$, where prime means the derivative w.r.t. $\phi$ field,
+Also note that even we are talking about 1-loop only, there is arbitrary high power of coupling $\lambda$. This is different from what I am used to in calculating loops, where higher power of coupling usually implies higher number of loops. This is not a problem though.
+
+We can go beyond $\phi^{4}$ model to a general polynomial potential $U(\phi)$ (recall that $V$ is preserved for quantum potential), then each vertex on the circle would contribute $-iU''(\phi)$, where prime means the derivative w.r.t. $\phi$ field. Then for loops with $n$ vertices as shown in Fig.1 we have 
+
+$$
+\text{circle with }n \text{ vertices} = \frac{1}{(2n)} \int \frac{d^{d}k}{(2\pi)^{d}} \,  \left( \frac{U''(\overline{\phi})}{k^{2}+i\epsilon} \right)^{n}.
+$$
+
+To obtain $\Gamma[\overline{\phi}]$ we just need to sum them up together, we have 
+
+$$
+\text{loop correction} = \sum_ {n} \frac{i}{2n} \int \frac{d^{d}k}{(2\pi)^{d}} \,  \left( \frac{U''(\overline{\phi})}{k^{2}+i\epsilon} \right)^{n}
+$$
+
+which is the Taylor expansion of $-\ln(1-\bullet)$, if we forget about convergence for now,
+
+$$
+\sum_ {n} \frac{i}{2n} \int \frac{d^{d}k}{(2\pi)^{d}} \,  \left( \frac{U''(\overline{\phi})}{k^{2}+i\epsilon} \right)^{n} = - \frac{i}{2}  \int \frac{d^{d}k}{(2\pi)^{d}} \,   \ln\left( 1-\frac{U''(\overline{\phi})}{k^{2}+i\epsilon} \right),
+$$
+
+to proceed we need to go to Euclidean space by performing Wick rotation, 
+
+$$
+\text{loops} =  \frac{1}{2}  \int \frac{d^{d}k_ {E}}{(2\pi)^{d}} \,   \ln\left( 1-\frac{U''(\overline{\phi})}{-k_ {E}^{2}+i\epsilon} \right),
+$$
+
+where $d^{d}k_ {E} = dk_ {E} k^{d-1}_ {E } \Omega_ {d-1}$ for spherically symmetric functions, $\Omega_ {d-1}$ is the area of unit $(d-1)$-sphere. We are only interested in what depends on $\overline{\phi}$, not the constant part (w.r.t $\overline{\phi}$), infinite or not. 
+
+Cut off $k_ {E}$ at $\Lambda$ and discard some additive infinite stuff which we can absorb into the normalization, we get
+
+$$
+\begin{align*}
+\text{loops} &=  \frac{1}{2}  \int^{\Lambda}_ {0} \frac{d^{d}k_ {E}}{(2\pi)^{d}} \,   \ln\left( 1 +\frac{U''(\overline{\phi})}{k_ {E}^{2}-i\epsilon} \right) \\
+&=  \frac{1}{2}  \int_ {0}^{\Lambda} \frac{d^{d}k_ {E}}{(2\pi)^{d}} \,   \ln\left( \frac{k_ {E}^{2}+U''(\overline{\phi})-i\epsilon}{k_ {E}^{2}-i\epsilon} \right) \\
+&= \frac{1}{2}  \int_ {0}^{\Lambda} \frac{d^{d}k_ {E}}{(2\pi)^{d}} \, \ln(k_ {E}^{2}+U''(\overline{\phi})-i\epsilon) + \text{Const} \\
+&= \frac{1}{2(2\pi)^{d}}  \int_ {0}^{\Lambda} d^{d}k_ {E} \, k_ {E}^{d-1} \Omega_ {d-1} \ln(k_ {E}^{2}+U''(\overline{\phi})-i\epsilon) 
+\end{align*}
+$$
+
+where in the last step we have carelessly thrown away the constant term. Since 
+
+$$
+\Omega_ {d-1} = \frac{2\pi^{d/2}}{\Gamma\left( \frac{d}{2} \right)}, \quad  \Gamma\left( \frac{1}{2} \right) = \sqrt{ \pi } ,
+$$
+
+we have 
+
+$$
+\text{loops} = \frac{1}{2^{d} \pi^{d/2}\Gamma\left( \frac{d}{2} \right)}  \int_ {0}^{\Lambda} d k_ {E} \,  k_ {E}^{d-1} \ln(k_ {E}^{2}+U''(\overline{\phi})-i\epsilon).
+$$
+
+For now let's assume $U''(\overline{\phi})$ is a positive constant, and neglect $-i\epsilon$, for whenever we need it we can always put it after $U''$. Define two dimensionless new variables to replace $k_ {E}$ and $U''$:
+
+$$
+\boxed{
+ u := \frac{k_ {E}}{\Lambda},\quad  t := \frac{U''(\overline{\phi})}{\Lambda^{2}},
+} 
+$$
 
 
+note that since $U''(\overline{\phi})$ is supposed to be a constant, **$t$ goes to zero at the $\Lambda\to \infty$ limit, making it possible for as to expand in powers of it**. We have 
+
+$$
+\begin{align*}
+\text{loops} &= \frac{\Lambda^{d}}{2^{d} \pi^{d/2}\Gamma\left( \frac{d}{2} \right)}  \int_ {0}^{1} d u \,  u^{d-1} [2\ln \Lambda+\ln(u^{2}+t)] \\
+&= \frac{\Lambda^{d}}{2^{d} \pi^{d/2}\Gamma\left( \frac{d}{2} \right)} \left[ \frac{2}{d} \ln \Lambda+\int_ {0}^{1} du \, u^{d-1} \ln(u^{2}+t)  \right].
+\end{align*}
+$$
+
+Regarding the integral in the line line, if we perform an integral by part first then use Mathematica code 
+
+```mathematica
+Integrate[u^(d + 1)/(u^2 + t) , {u, 0, 1}, Assumptions -> {t > 0, t \[Element] Reals, d \[Element] Integers, d > 0}]
+```
+
+then we get an expression with Gaussian hypergeometric function\brace
+
+$$
+\text{loops} = \frac{\Lambda^{d}}{d\,2^{d} \pi^{d/2}\Gamma\left( \frac{d}{2} \right)} \left\lbrace  2 \ln \Lambda + \left[ \ln(1+t)-2 \times  \left( _ {2}F_ {1}\left( 1,\frac{2+d}{2}, \frac{4+d}{2},- \frac{1}{t} \right) \right) \right] \right\rbrace.
+$$
+
+So ugly. So I decided to just put the whole integral into Mathematica, I got instead
+
+$$
+\boxed{ 
+\text{loops} = \frac{\Lambda^{d}}{d\,2^{d} \pi^{d/2}\Gamma\left( \frac{d}{2} \right)}\left[ 2\ln \Lambda+\ln(1+t)- \frac{1}{t} \Phi\left( -\frac{1}{t},1,1+d/2\right) \right],
+}
+$$
+
+where $\Phi(-1,1,1+d / 2)$ is the Lerch transcendent function, defined as:
+
+$$
+\Phi(z, s, a) = \sum_ {n=0}^{\infty} \frac{z^n}{(n+a)^s}
+$$
+
+where $z$ and $a$ are complex numbers, and $s$ is a complex parameter. The function is defined for $\left\lvert z \right\rvert < 1$ or $\left\lvert z \right\rvert = 1$ with $\Re(a) > 0$. Roughly speaking,
+
+- $z$ is the value at which the series is evaluated.
+- $s$ is a parameter that controls the power in the denominator.
+- $a$ is a shift parameter in the denominator, which affects the starting point of the summation.
+
+After we fix a dimension $d$, we would have fixed all two parameters of Lerch function, then we can expand $\Phi\left( -\frac{1}{t},1,1+\frac{d}{2} \right)$ at $-\infty$. It certainly feels weird but if you have experience with resurgence theory, it wouldn't be your first time to expand something at infinity. One way to make you more comfortable with expanding at infinity is to consider the complex plane, compactify all the points at infinity to get a Riemann surface, then infinity becomes just another point on the sphere, and expanding about it is no less natural than expanding about any point.
+
+- - -
+
+**Special case at $d=4$:**
+
+In this case we have 
+
+$$
+\begin{align*}
+u &:= \frac{k_ {E}}{\Lambda},\quad  t := \frac{U''(\overline{\phi})}{\Lambda^{2}}, \\
+\text{loops} &= \frac{\Lambda^{d}}{d\,2^{d} \pi^{d/2}\Gamma\left( \frac{d}{2} \right)}\left[ 2\ln \Lambda+\ln(1+t)- \frac{1}{t} \Phi\left( -\frac{1}{t},1,3\right) \right].
+\end{align*}
+$$
+
+Let $x:= 1 / t$ and the last term concerning Lerch function becomes 
+
+$$
+- x\, \Phi\left( - x,1,3 \right),\quad  x \to \infty.
+$$
+
+I like to drag the minus sign wherever the term goes, harder to make mistakes with a minus sign this way. Using Mathematica command to expand it at infinity
+
+```mathematica
+Series[LerchPhi[-x, 1, 3], {x, \[Infinity], 8}] // Normal
+```
+
+we get
+
+$$
+- x\, \Phi\left( - x,1,3 \right)= - \frac{1}{2} + \frac{1}{x} - \frac{\ln(x)}{x^{2}} - \frac{1}{x^{3}}+\mathcal{O}(x^{-4}),
+$$
+
+insert this into the expression of loops we have 
+
+$$
+\text{loops} = \frac{\Lambda^{d}}{d\,2^{d} \pi^{d/2}\Gamma\left( \frac{d}{2} \right)}\left[ \ln(1+t) + t +t^{2} \ln t \right],
+$$
+
+where $d=4$ and $d 2^{d}\pi^{d/2} \Gamma(d / 2)=64\pi^{2}$. We have discarded surely irrelevant terms such as $\frac{1}{2}$, $2\ln \Lambda$ (they will be absorbed into the renormalization factor), and wrote $x$ in $t$. Next expand 
+
+$$
+\ln(1+t) = t - \frac{t^{2}}{2} + \frac{t^{3}}{3} + \mathcal{O}(t^{4})
+$$
+
+we get 
+
+$$
+\begin{align*}
+\text{loops} &= \frac{\Lambda^{4}}{64\pi^{2}}\left[ \ln(1+t) + t +t^{2} \ln t \right] \\
+&= \frac{\Lambda^{4}}{64\pi^{2}}\left[ t-\frac{t^{2}}{2}  + t +t^{2} \ln t \right] \\
+&= \frac{\Lambda^{4}}{64\pi^{2}}\left[ 2t + t^{2}\left( \ln t-\frac{1}{2} \right)\right] \\
+&=\frac{1}{64\pi^{2}}\left[ 2\Lambda^{2} U''(\overline{\phi}) + (U''(\overline{\phi}))^{2} \left( \ln \frac{U''}{\Lambda^{2}} -\frac{1}{2} \right)\right].
+\end{align*}
+$$
+
+The last result agrees with Coleman's 1-loop correction, which is shown in Eq. (44.51) in *Lectures of Sidney Coleman on Quantum Field Theory*, page 976.
