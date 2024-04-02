@@ -226,11 +226,25 @@ To include the 1-loop corrections, we need to consider 1PI diagrams shown in Fig
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="img/effectiveAction/1Loop.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="/img/effectiveAction/1Loop.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     Fig.1. One loop contributions to the effective action $\Gamma[\varphi]$ in the $\phi^4$ model. The first diagram contributes to $\Gamma^{2}$, the second $\Gamma^{4}$, etc. Diagrams with odd number of external legs vanish due to the $\mathbb{Z}_2$ symmetry. Credit: Professor Gustavo Burdman.
 </div>
+
+The $2n$-point amplitude shown in Fig. 1 read
+
+$$
+\Gamma^{(2n)} (0,\cdots,0) = \frac{(2n)!}{(2)^{n}(2n)} \int \frac{d^{d}k}{(2\pi)^{d}} \,  \left( \frac{i}{k^{2}+i\epsilon}(-i\lambda) \right)^{n}.
+$$
+
+Some explanation is in order: for $2n$ external legs, there will be $n$ propagators with the same momentum $k$ (since the external legs all carry zero momentum by construction), and there are $n$ vertices. There are $(2n)!$ different ways to assign $x_ {1},\cdots,x_ {2n}$ (in coordinate representation of course) to the $2n$ "bulbs", hence the factor $(2n)!$. If you are confused about this, just think of what we did with $iW[J]$ when using it to generate connected diagrams, where for a diagram with $n$ external legs, there are $n!$ ways to assign it. For more details refer to Chapter 13 in *lectures of Sidney Coleman on quantum field theory*, here I just quote a short passage from Coleman that is relevant to our discussion:
+
+>If we imagine restricting ourselves to the case where the first $\rho$ gives up momentum $k_ {1}$, the second gives a momentum $k_ {2}$, etc., then all of our lines are well-defined, and we have no factor of $1/n!$. On the other hand, when we integrate over all $k$’s in this expression, we overcount each those terms $n!$ times, corresponding to the $n!$ permutations of a given set of $k$’s, and therefore we need a $1/n!$ to cancel it out. I know combinatoric arguments are often not clear the first time you hear them, but after a little thought, they become clear.
+
+Note that even we are talking about 1-loop only, there is arbitrary high power of coupling $\lambda$. This is different from what I am used to in calculating loops, where higher power of coupling usually implies higher number of loops. This is not a problem though.
+
+We can go beyond $\phi^{4}$ model to a general polynomial potential $U(\phi)$ (recall that $V$ is preserved for quantum potential), then each vertex on the circle would contribute $-iU''(\phi)$, where prime means the derivative w.r.t. $\phi$ field,
 
 
