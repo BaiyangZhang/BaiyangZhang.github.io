@@ -469,7 +469,7 @@ The figure of the integral is shown in the below.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/rhokmarNew.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="img/rhokmarNew.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
