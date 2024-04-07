@@ -2,7 +2,7 @@
 layout: post
 title: Tsallis Statistics in Biostatistics
 subtitle: 
-date: 2024-03-24
+date: 2024-04-07
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
