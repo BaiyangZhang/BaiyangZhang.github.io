@@ -338,3 +338,48 @@ $$
 This solves the problem that the expectation value of identity $1$ is not $1$. The probability derived from is also becomes invariant under an overall shift. 
 
 
+# Useful Mathematical Formulae
+
+The definition of $q$-logarithm and $q$-exponential, $x>0, q \in\mathbb{R}$:
+
+$$
+\begin{align*}
+\ln_ {q}x &:= \frac{x^{1-q}-1}{1-q}, \\
+e^{ x }_ {q} &:= (1+(1-q)x)^{1/(1-q)}, 
+\end{align*}
+$$
+
+in the definition of the exponential it is required that $1+(1-q)x>0$, otherwise it is defined to be zero. It is easily checked that they are indeed inverse to each other. 
+
+many formula for $q$-logarithms reminds us of that for the regular $q$-logarithms. 
+
+$$
+\begin{align*}
+\ln_ {q}(xy) &= \ln_ {q}(x)+ \ln_ {q}(y) + (1-q)\ln_ {q}(x)\ln_ {q}(x) , \\
+\ln_ {q}(1+x) &= \sum_ {1}^{\infty} (-1)^{n-1} \frac{(q)_ {n}}{n!} x^{n}, \\
+(q)_ {n} &= \frac{\Gamma(q+k)}{\Gamma(q)} = q(q+1)\cdots(q+k-1), \\
+\ln_ {q}\prod_ {k=1}^{n}x_ {k} &= \sum_ {k=1}^{n} (1-q)^{k-1}\sum_ {i_ {k} >\cdots>i_ {1}=1}^{n} \ln_ {q}x_ {i_ {1}}\cdots\ln_ {q}x_ {i_ {k}}.
+\end{align*}
+$$
+
+We also have 
+
+$$
+\begin{align*}
+\ln_ {q} x &= x^{1-q}\ln_ {2-q}x , \\
+q \ln_ {1-q}x^{a} &= a \ln_ {1-a} x^{q} .
+\end{align*}
+$$
+
+Regarding the $q$-exponentials,
+
+$$
+\begin{align*}
+\left( e_ {q}^{f(x)} \right) ^{a} &= e^{ af(x) }_ {1-(1-q)/a},\\
+\frac{d}{dx} e_ {q}^{f(x)}  &= (e_ {q}^{f(x)})^{q} \times f'(x)
+\end{align*}
+$$
+
+For more details, refer to the textbook by Tsallis himself and [https://doi.org/10.1016/S0378-4371(01)00567-2](https://doi.org/10.1016/S0378-4371(01)00567-2 "Persistent link using digital object identifier").
+
+
