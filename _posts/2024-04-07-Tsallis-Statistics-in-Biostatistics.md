@@ -2,13 +2,22 @@
 layout: post
 title: Tsallis Statistics in Biostatistics
 subtitle: 
-date: 2024-03-24
+date: 2024-04-07
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
   - tsallis
 ---
+
+# Table of Content
+
+- The Basics of Boltzmann-Gibbs Extensive Entropy
+- Generalization to non-Extensive entropy
+- Three different forms of BG entropy
+- Properties of BG entropy
+- Constraints and Entropy Optimization
+- Mean Value in Tsallis Statistics
 
 # Introduction
 
@@ -287,5 +296,99 @@ Recall that logarithmic functions turns multiplication into addition, $\log(AB)=
 $$
 \log_ {q}(AB) = \log_ {q}(A) + \log_ {q}(B) + (1-q) \log_ {q}(A)\log_ {q}(A).
 $$
+
+## Mean Value in Tsallis Statistics
+
+There are three types of Tsallis statistics, depending on how they take the mean value. Next we will discuss each of them in chronological order.
+
+Throughout the note we will assume that probabilities are normalized in the usual way,
+
+$$
+\sum_ {i} p_ {i} = 1.
+$$
+
+Given an observable $\mathcal{O}$, what could be the expected value $\left\langle \mathcal{O} \right\rangle$? The most naive guess, which is also the default definition, is to define 
+
+$$
+\left\langle \mathcal{O} \right\rangle  := \sum_ {i}  p _ {i} O_ {i}
+$$
+
+where $\mathcal{O}_ {i}$ is the $i$-th possible value of $\mathcal{O}$ with probability $p_ {i}$. However, this definition yields and ill-defined thermodynamic distribution, *some energy states will not be allowed due to mathematical rather than physical reasons, and the distribution is not invariant under an overall shift in energy*. Normally only the energy difference matter, the only situation that I know of where the absolute energy matters is from gravity, which is clearly not the case here. Thus it is not a good definition for taking average. 
+
+- - -
+
+Another way to define the average, known as Tsallis type II, is 
+
+$$
+\left\langle \mathcal{O} \right\rangle := \sum_ {i} p_ {i}^{q} \mathcal{O}_ i.
+$$
+The problem is similar with type I, the sample space is constraint due to some un-natural reason, which I tend to interpret as the evidence of an ill-defined theory. Some divergence that occurs in type I does not occur here, but it introduces new problems, most of all the expected value of unity $\mathbb{1}$ is not $1$. 
+
+However there is a remedy. Arguing from the point of view of information theory on incomplete probability distributions, Q. A. Wang suggested modifying the normalization of probability as 
+
+$$
+\sum_ {i} p_ {i}^{q} = 1.
+$$
+
+This can be rewritten by defining $P_ {i}:= p_ {i}^{1}$, then 
+
+$$
+\left\langle \mathcal{O} \right\rangle := \sum_ {i} P_ {i} \mathcal{O}_ {i} .
+$$
+
+- - -
+
+Type III assumes that the average is defined as type II but with an normalization factor:
+
+$$
+\left\langle \mathcal{O} \right\rangle  := N \sum_ {i} p_ {i}^{q}\mathcal{O}_ {i},\quad  N = \sum_ {i}p_ {i}.
+$$
+
+This solves the problem that the expectation value of identity $1$ is not $1$. The probability derived from is also becomes invariant under an overall shift. 
+
+
+# Useful Mathematical Formulae
+
+The definition of $q$-logarithm and $q$-exponential, $x>0, q \in\mathbb{R}$:
+
+$$
+\begin{align*}
+\ln_ {q}x &:= \frac{x^{1-q}-1}{1-q}, \\
+e^{ x }_ {q} &:= (1+(1-q)x)^{1/(1-q)}, 
+\end{align*}
+$$
+
+in the definition of the exponential it is required that $1+(1-q)x>0$, otherwise it is defined to be zero. It is easily checked that they are indeed inverse to each other. 
+
+many formula for $q$-logarithms reminds us of that for the regular $q$-logarithms. 
+
+$$
+\begin{align*}
+\ln_ {q}(xy) &= \ln_ {q}(x)+ \ln_ {q}(y) + (1-q)\ln_ {q}(x)\ln_ {q}(x) , \\
+\ln_ {q}(1+x) &= \sum_ {1}^{\infty} (-1)^{n-1} \frac{(q)_ {n}}{n!} x^{n}, \\
+(q)_ {n} &= \frac{\Gamma(q+k)}{\Gamma(q)} = q(q+1)\cdots(q+k-1), \\
+\ln_ {q}\prod_ {k=1}^{n}x_ {k} &= \sum_ {k=1}^{n} (1-q)^{k-1}\sum_ {i_ {k} >\cdots>i_ {1}=1}^{n} \ln_ {q}x_ {i_ {1}}\cdots\ln_ {q}x_ {i_ {k}}.
+\end{align*}
+$$
+
+We also have 
+
+$$
+\begin{align*}
+\ln_ {q} x &= x^{1-q}\ln_ {2-q}x , \\
+q \ln_ {1-q}x^{a} &= a \ln_ {1-a} x^{q} .
+\end{align*}
+$$
+
+Regarding the $q$-exponentials,
+
+$$
+\begin{align*}
+\left( e_ {q}^{f(x)} \right) ^{a} &= e^{ af(x) }_ {1-(1-q)/a},\\
+\frac{d}{dx} e_ {q}^{f(x)}  &= (e_ {q}^{f(x)})^{q} \times f'(x)
+\end{align*}
+$$
+
+For more details, refer to the textbook by Tsallis himself and [https://doi.org/10.1016/S0378-4371(01)00567-2](https://doi.org/10.1016/S0378-4371(01)00567-2 "Persistent link using digital object identifier").
 
 
