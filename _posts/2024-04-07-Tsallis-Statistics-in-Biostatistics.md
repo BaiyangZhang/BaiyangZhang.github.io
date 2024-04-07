@@ -12,12 +12,12 @@ tags:
 
 # Table of Content
 
-- [[#The Basics of Boltzmann-Gibbs Extensive Entropy|The Basics of Boltzmann-Gibbs Extensive Entropy]]
-- [[#Generalization to non-Extensive entropy|Generalization to non-Extensive entropy]]
-- [[#Three different forms of BG entropy|Three different forms of BG entropy]]
-- [[#Properties of BG entropy|Properties of BG entropy]]
-- [[#Constraints and Entropy Optimization|Constraints and Entropy Optimization]]
-- [[#Mean Value in Tsallis Statistics|Mean Value in Tsallis Statistics]]
+- The Basics of Boltzmann-Gibbs Extensive Entropy
+- Generalization to non-Extensive entropy
+- Three different forms of BG entropy
+- Properties of BG entropy
+- Constraints and Entropy Optimization
+- Mean Value in Tsallis Statistics
 
 # Introduction
 
