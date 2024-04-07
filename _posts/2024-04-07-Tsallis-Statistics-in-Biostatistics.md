@@ -10,6 +10,14 @@ tags:
   - tsallis
 ---
 
+
+- [[#The Basics of Boltzmann-Gibbs Extensive Entropy|The Basics of Boltzmann-Gibbs Extensive Entropy]]
+- [[#Generalization to non-Extensive entropy|Generalization to non-Extensive entropy]]
+- [[#Three different forms of BG entropy|Three different forms of BG entropy]]
+- [[#Properties of BG entropy|Properties of BG entropy]]
+- [[#Constraints and Entropy Optimization|Constraints and Entropy Optimization]]
+- [[#Mean Value in Tsallis Statistics|Mean Value in Tsallis Statistics]]
+
 # Introduction
 
 `Tsallis statistics` is a generalization of traditional statistical mechanics, devised by *Constantino Tsallis*, to better characterize complex systems. It involves a collection of mathematical functions and associated probability distributions that can be derived by optimizing the `Tsallis entropic form`, a generalization of familiar Boltzmann entropy. A key aspect of Tsallis statistics is the introduction of a real parameter $q$, which adjusts the distributions to exhibit properties intermediate between Gaussian and Levy distributions, reflecting the degree of non-extensivity of the system.
