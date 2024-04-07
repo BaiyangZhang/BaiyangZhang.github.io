@@ -10,7 +10,18 @@ tags:
   - biostatistics
 ---
 
-*Disclaimer: Nothing in this note is original.*
+- [Introduction](#introduction)
+- [Basic Statistical Methods](#basic-statistical-methods)
+	- [t-Test and ANOVA (Analysis of Variance)](#t-test-and-anova-analysis-of-variance)
+		- [t-test](#t-test)
+		- [Two-sided Hypothesis Test](#two-sided-hypothesis-test)
+		- [F-test](#f-test)
+		- [Robustness](#robustness)
+- [Correlation](#correlation)
+- [Linear Regression Method](#linear-regression-method)
+- [Logistic Regression method](#logistic-regression-method)
+- [Entropy in Statistics](#entropy-in-statistics)
+
 # Introduction
 
 In life some questions are too important to be left to opinion, superstition, or conjecture. For example, which drug should a doctor prescribe to treat an illness? What factors increase the risk of an individual developing coronary heart attack? To answer these questions (even remotely), we need *objective, evidence-based* decision making method. 

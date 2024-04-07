@@ -11,6 +11,12 @@ tags:
 description:
 ---
 
+- [1. Domain wall in phi-fourth model](#domain-wall-in-phi-fourth-model)
+- [2. Normal Modes](#normal-modes)
+- [3. Fourier Transform](#fourier-transform)
+- [4. Numeric Results](#numeric-results)
+	- [4.1 Summation method](#summation-method)
+
 # Domain wall in phi-fourth model
 
 Recall that we are working in $D = d+1$ dimensional space-time, the space-dimension is $d$. For now let's consider $d=2$. In 2-dimensional space, a kink can extend to form a domain wall, for more info about domain walls see my other [note](https://www.mathlimbo.net/blog/2024/Domain-Wall/). The world line of such a domain wall would be world sheet. Now let's try to calculate the quantum corrections to the tension of such a domain wall.

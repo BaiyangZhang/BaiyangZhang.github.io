@@ -18,9 +18,7 @@ A Hahn series is a generalization of a power series where the exponents are allo
 
 Hahn series introduce more flexibility in exponents, which can come from a broader class (ordered abelian groups), allowing for a more nuanced expression of asymptotic behaviors. We will talk more about this later. Hahn series also provide a framework for analyzing functions at points where traditional power series fail, such as at singularities or when considering behavior at infinity.  These tools are particularly valuable in areas like differential equations, analytic number theory, and dynamical systems, where understanding the precise behavior of functions in extreme conditions is crucial.
 
-First, let us begin with an *ordered abelian group* ${\frak M}$, called the `monomial group` (or `value group`). Let's break it down.
-
-To understand monomial groups, it's crucial to first clarify what a monomial is. A monomial is a product of powers of variables with *non-negative integer* exponents. For example, $x^2y$ and $z^5$ are monomials in the variables $x, y$ and $z$.
+First, let us begin with an *ordered abelian group* ${\frak M}$, called the `monomial group` (or `value group`). To understand monomial groups, it's crucial to first clarify what a monomial is. A monomial is a product of powers of variables with *non-negative integer* exponents. For example, $x^2y$ and $z^5$ are monomials in the variables $x, y$ and $z$.
 
 The study of monomial groups typically revolves around the operation of multiplication. This focus on multiplication rather than addition sets monomial groups apart from other algebraic structures like vector spaces or additive groups. A monomial group is simply a set of monomials closed under the operation of multiplication. Of course the group must satisfy four fundamental properties, namely closure, associativity, the existence of identity element and the existence of inverses. 
 
