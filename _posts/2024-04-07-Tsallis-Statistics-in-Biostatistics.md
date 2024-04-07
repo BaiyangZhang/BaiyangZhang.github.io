@@ -10,6 +10,7 @@ tags:
   - tsallis
 ---
 
+# Table of Content
 
 - [[#The Basics of Boltzmann-Gibbs Extensive Entropy|The Basics of Boltzmann-Gibbs Extensive Entropy]]
 - [[#Generalization to non-Extensive entropy|Generalization to non-Extensive entropy]]
