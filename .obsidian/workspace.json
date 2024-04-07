@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-04-07-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c169abf707c1049c",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-04-07-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-04-07-Tsallis-Statistics-in-Biostatistics.md",
+                "file": "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-04-07-Tsallis-Statistics-in-Biostatistics.md"
+                "file": "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md"
               }
             }
           }
@@ -162,16 +161,19 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
-    "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "img/effectiveAction_1Loop.png",
+    "img/effectiveAction/effectiveAction_1Loop.png",
     "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
-    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
+    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
     "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
+    "_posts/2024-04-07-Tsallis-Statistics-in-Biostatistics.md",
+    "Untitled.md",
+    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
     "img/effectiveAction/1Loop.png",
     "img/effectiveAction",
     "Templates/plots.md",
     "_posts/2024-03-29-Perturbative-Spontaneous-Symmetry-Breaking.md",
-    "_posts/2024-04-07-Tsallis-Statistics-in-Biostatistics.md",
     "_posts/2024-03-29-Perturbative-Spontaneous-Symmetry Breaking.md",
     "_posts/2024-03-25-Coleman-Weinberg-Potential.md",
     "_drafts/2024-03-25-Perturbative-Spontaneous-Symmetry Breaking.md",
@@ -187,8 +189,6 @@
     "_posts/2023-07-07-Quartic-Time-Derivative.md",
     "_posts/2023-06-30-Note-on-Quantization-of-Skyrme-Model.md",
     "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
-    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2023-05-12-Lie-Groups.md",
-    "_posts/2023-04-25-Wigner-Weyl-Calculus.md"
+    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md"
   ]
 }

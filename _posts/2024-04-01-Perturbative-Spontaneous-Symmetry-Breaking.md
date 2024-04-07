@@ -228,7 +228,7 @@ To include the 1-loop corrections, we need to consider 1PI diagrams shown in Fig
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/effectiveAction/1Loop.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="/img/effectiveAction_1Loop.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
