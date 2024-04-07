@@ -10,6 +10,11 @@ tags:
   - kink
 ---
 
+
+```table-of-contents
+includeLinks:false
+```
+
 # 1 Introduction 
 
 ## 1.1 Background 
