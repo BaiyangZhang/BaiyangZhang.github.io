@@ -10,7 +10,7 @@ tags:
  - transseries
 ---
 
-## Hahn Series
+# Hahn Series
 
 Hahn series are used in the field of `non-standard analysis`, which is a branch of mathematical logic and analysis that deals with the rigorous treatment of infinitesimals. They are named after the Austrian mathematician Hans Hahn. 
 

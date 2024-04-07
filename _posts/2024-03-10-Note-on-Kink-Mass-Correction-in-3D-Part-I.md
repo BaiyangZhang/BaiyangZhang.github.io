@@ -10,10 +10,17 @@ tags:
   - kink
 ---
 
-
-```table-of-contents
-includeLinks:false
-```
+1. [1 Introduction](#1-introduction)
+	1. [1.1 Background](#11-background)
+	1. [1.2 Digression on $\hbar$-expansion](#12-digression-on-%5Chbar-expansion)
+	1. [1.3 Review of Kink mass quantization](#13-review-of-kink-mass-quantization)
+1. [2 Kinks in 3D](#2-kinks-in-3d)
+	1. [2.1. Normal modes and quantization](#21-normal-modes-and-quantization)
+	1. [2.2 Renormalization methods review](#22-renormalization-methods-review)
+	1. [2.3. Lattice quantization](#23-lattice-quantization)
+		1. [2.3.1 Latticization of scalar field](#231-latticization-of-scalar-field)
+		1. [2.3.2 Second quantization in the vacuum sector](#232-second-quantization-in-the-vacuum-sector)
+		1. [2.4 (2+1)-dimensional](#24-21-dimensional)
 
 # 1 Introduction 
 

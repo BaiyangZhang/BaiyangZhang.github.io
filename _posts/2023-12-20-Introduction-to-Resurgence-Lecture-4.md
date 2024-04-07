@@ -12,7 +12,7 @@ tags:
 
 ### Introduction
 
-This part follows from a lecture by Maxim Kontsevich.
+This part follows from a lecture by *Maxim Kontsevich*.
 
 There are roughly speaking three perspectives of resurgence,
 - Borel plane,
