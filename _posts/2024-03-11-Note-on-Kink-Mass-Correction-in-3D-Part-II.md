@@ -17,7 +17,7 @@ description:
 - [4. Numeric Results](#numeric-results)
 	- [4.1 Summation method](#summation-method)
 
-# Domain wall in phi-fourth model
+# 1. Domain wall in phi-fourth model
 
 Recall that we are working in $D = d+1$ dimensional space-time, the space-dimension is $d$. For now let's consider $d=2$. In 2-dimensional space, a kink can extend to form a domain wall, for more info about domain walls see my other [note](https://www.mathlimbo.net/blog/2024/Domain-Wall/). The world line of such a domain wall would be world sheet. Now let's try to calculate the quantum corrections to the tension of such a domain wall.
 
@@ -105,7 +105,7 @@ $$
 
 hence in $2+1$ dimension the coupling has dimension of mass. 
 
-# Normal Modes
+# 2. Normal Modes
 
 Since we assumed the domain wall to be flatly lying in the $y$-plane, the normal modes in 2-d space can be *factorized* into $x$ and $y$ components,
 
@@ -201,7 +201,7 @@ $$
 
 Here again $\omega_ {k}$ is understood to be $\omega_ {k_ {x} k_ {y}}$, and we have defined the one-loop correction $\rho_ {1}$ to the tension. Note that *one-loop correction comes not from the interaction, as in QFT models in the vacuum sector, but rather comes from the non-trivial soliton background.*
 
-# Fourier Transform
+# 3. Fourier Transform
 
 We still need to evaluate the one-loop correction 
 
@@ -490,7 +490,7 @@ $$
 
 which is slightly different from that in the draft where $\rho_ {1C}=−0.03156 m^{2}$. We will explain how we get the numerical result and how reliable they are in the following section.
 
-# Numeric Results
+# 4. Numeric Results
 
 **Result Using Mathematica function `NIntegral`**
 
@@ -644,7 +644,7 @@ $\rho \in(-\kappa-5,-\kappa+5)$:
 
 For $\rho \in(\kappa-4,\kappa+4)$, the relative error is negligible. *Hence we will used the cutoff version.*
 
-## Summation method
+## 4.1. Summation method
 
 At lower values of $\kappa$ we can afford finer step size, the basic Mathematica code we are gonna use is (ignore it or copy to a note book to read)
 

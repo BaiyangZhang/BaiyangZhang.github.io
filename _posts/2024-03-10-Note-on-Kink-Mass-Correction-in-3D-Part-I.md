@@ -12,15 +12,15 @@ tags:
 
 - [1 Introduction](#1-introduction)
 	- [1.1 Background](#11-background)
-	-  [1.2 Digression on $\hbar$-expansion](#12-digression-on-%5Chbar-expansion)
-	-  [1.3 Review of Kink mass quantization](#13-review-of-kink-mass-quantization)
-- [2 Kinks in 3D](#2-kinks-in-3d)
-	-  [2.1. Normal modes and quantization](#21-normal-modes-and-quantization)
-	-  [2.2 Renormalization methods review](#22-renormalization-methods-review)
-	-  [2.3. Lattice quantization](#23-lattice-quantization)
-		-  [2.3.1 Latticization of scalar field](#231-latticization-of-scalar-field)
-		-  [2.3.2 Second quantization in the vacuum sector](#232-second-quantization-in-the-vacuum-sector)
-		-  [2.4 (2+1)-dimensional](#24-21-dimensional)
+	- [1.2 Digression on $\hbar$-expansion](#12-digression-on-%5Chbar-expansion)
+	- [1.3 Review of Kink mass quantization](#13-review-of-kink-mass-quantization)
+- [2 Kinks in d-Dimension](#2-kinks-in-d-dimension)
+	- [2.1. Normal modes and quantization](#21-normal-modes-and-quantization)
+	- [2.2 Renormalization methods review](#22-renormalization-methods-review)
+	- [2.3. Lattice quantization](#23-lattice-quantization)
+		- [2.3.1 Latticization of scalar field](#231-latticization-of-scalar-field)
+		- [2.3.2 Second quantization in the vacuum sector](#232-second-quantization-in-the-vacuum-sector)
+	- [2.4 Kink in (2+1)-dimension](#24-kink-in-21-dimension)
 
 # 1 Introduction 
 
@@ -185,7 +185,7 @@ Fore more details please refer to Brodsky and Hoyer's paper mentioned above.
 
 
 
-# 2 Kinks in 3D
+# 2 Kinks in d-Dimension
 
 In R. Jackiw's [1976 paper](https://www.sciencedirect.com/science/article/abs/pii/037015737690048X), he made three assumption:
 1. The energy (mass) is finite;
@@ -540,7 +540,7 @@ $$
 $$
 
 The next question is how to inverse it on a lattice...
-### 2.4 (2+1)-dimensional 
+## 2.4 Kink in (2+1)-dimension
 
 If we adopt (1) the ultraviolet cutoff $\Lambda$ and (2) the harmonic quantization *in the trivial vacuum sector* and translate it to the physical spacetime. As a result we get a non-local commutation relation in spacetime,
 
