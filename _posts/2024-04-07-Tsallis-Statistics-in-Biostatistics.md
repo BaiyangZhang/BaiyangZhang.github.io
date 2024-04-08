@@ -10,16 +10,19 @@ tags:
   - tsallis
 ---
 
-# Table of Content
+- [1. Introduction](#1-introduction)
+	- [1.1. The Basics of Boltzmann-Gibbs Extensive Entropy](#11-the-basics-of-boltzmann-gibbs-extensive-entropy)
+	- [1.2. Generalization to non-Extensive entropy](#12-generalization-to-non-extensive-entropy)
+- [2. Boltzmann-Gibbs Statistical Mechanics](#2-boltzmann-gibbs-statistical-mechanics)
+	- [2.1. Three different forms of BG entropy](#21-three-different-forms-of-bg-entropy)
+	- [2.2. Properties of BG entropy](#22-properties-of-bg-entropy)
+	- [2.3. Constraints and Entropy Optimization](#23-constraints-and-entropy-optimization)
+- [3. Nonextensive Statistical Mechanics](#3-nonextensive-statistical-mechanics)
+	- [3.1. Mean Value in Tsallis Statistics](#31-mean-value-in-tsallis-statistics)
+- [4. Useful Mathematical Formulae](#4-useful-mathematical-formulae)
 
-- The Basics of Boltzmann-Gibbs Extensive Entropy
-- Generalization to non-Extensive entropy
-- Three different forms of BG entropy
-- Properties of BG entropy
-- Constraints and Entropy Optimization
-- Mean Value in Tsallis Statistics
 
-# Introduction
+# 1. Introduction
 
 `Tsallis statistics` is a generalization of traditional statistical mechanics, devised by *Constantino Tsallis*, to better characterize complex systems. It involves a collection of mathematical functions and associated probability distributions that can be derived by optimizing the `Tsallis entropic form`, a generalization of familiar Boltzmann entropy. A key aspect of Tsallis statistics is the introduction of a real parameter $q$, which adjusts the distributions to exhibit properties intermediate between Gaussian and Levy distributions, reflecting the degree of non-extensivity of the system.
 
@@ -56,7 +59,7 @@ While the application of Tsallis statistics to biostatistics is an intriguing pr
 
 - - -
 
-## The Basics of Boltzmann-Gibbs Extensive Entropy
+## 1.1. The Basics of Boltzmann-Gibbs Extensive Entropy
 
 *The whole theory of Tsallis statistics is based on a single concept: the modified Boltzmann-Gibbs (B-G) entropy* $S_ {q}$. $q$ is some index show how much $S_ {q}$ differs from the $BG$ entropy, if $q=1$ then there is no difference. 
 
@@ -99,7 +102,7 @@ This demonstrates the additivity of entropy for independent systems. *The crucia
 
 Tsallis in his book compared his generalization of B-G statistics to $q$-statistics to the generalization of a circle to ellipses in explaining the motion of celestial objects. In both cases a single parameter changes everything. However I would argue that in the case of Kepler and others, more physics was revealed then in Tsallis' case. 
 
-## Generalization to non-Extensive entropy
+## 1.2. Generalization to non-Extensive entropy
 
 In his book Tsallis listed some reasons for considering non-extensive, non-Boltzmann-Gibbs entropy, which can be roughly translated into:
 
@@ -107,9 +110,9 @@ In his book Tsallis listed some reasons for considering non-extensive, non-Boltz
 2. A statistical description of a system should be based on the dynamics of the system, the macroscopic theory should come from a microscopic one. This opens the way, especially for complex systems, for other than Boltzmann statistics.
 3. The existence of long-range interactions on the microscopic level.
 
-# Boltzmann-Gibbs Statistical Mechanics
+# 2. Boltzmann-Gibbs Statistical Mechanics
 
-## Three different forms of BG entropy
+## 2.1. Three different forms of BG entropy
 
 No we need to come back to one of the most important concept in physics, statistics and information theory: **entropy**. It appears in various fields, each with its unique perspective but underlying similarities in concept. 
 
@@ -149,7 +152,7 @@ $$
 S_ {BF} = -k\,\mathrm{Tr}\, (\rho \ln \rho).
 $$
 
-## Properties of BG entropy
+## 2.2. Properties of BG entropy
 
 We will list without proof some of the key properties of BG entropy.
 
@@ -186,7 +189,7 @@ $$
 
 The theorem's significance lies in its establishment of entropy as a **unique measure** that satisfies these intuitive and necessary properties for quantifying information. It solidified the concept of entropy as the foundational metric in information theory, leading to profound implications for communication, coding theory, and even other disciplines like statistics and thermodynamics.
 
-## Constraints and Entropy Optimization
+## 2.3. Constraints and Entropy Optimization
 
 **Imposing the Mean Value**
 
@@ -236,7 +239,7 @@ $$
 
 which is just the Gaussian distribution! This tells us that the Gaussian distribution maximizes the entropy with fixed mean and variance. 
 
-# Nonextensive Statistical Mechanics
+# 3. Nonextensive Statistical Mechanics
 
 Tsallis is convinced that there exists no logical-deductive procedure for generalizing any physical theory. As a possible motivation to generalize the exponential function $e^{ x }$, he started from the equation that $e^{ x }$ satisfies, which is fairly simple:
 
@@ -297,7 +300,7 @@ $$
 \log_ {q}(AB) = \log_ {q}(A) + \log_ {q}(B) + (1-q) \log_ {q}(A)\log_ {q}(A).
 $$
 
-## Mean Value in Tsallis Statistics
+## 3.1. Mean Value in Tsallis Statistics
 
 There are three types of Tsallis statistics, depending on how they take the mean value. Next we will discuss each of them in chronological order.
 
@@ -347,7 +350,7 @@ $$
 This solves the problem that the expectation value of identity $1$ is not $1$. The probability derived from is also becomes invariant under an overall shift. 
 
 
-# Useful Mathematical Formulae
+# 4. Useful Mathematical Formulae
 
 The definition of $q$-logarithm and $q$-exponential, $x>0, q \in\mathbb{R}$:
 

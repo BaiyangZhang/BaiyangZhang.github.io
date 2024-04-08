@@ -10,6 +10,13 @@ tags:
   - kink
 ---
 
+- [Quantization procedure](#quantization-procedure)
+- [Introduce the particles](#introduce-the-particles)
+- [Sign of the leading order correction](#sign-of-the-leading-order-correction)
+- [Boson-fermion connection](#boson-fermion-connection)
+- [Equivalence of sine-Gordon and massive Thirring models](#equivalence-of-sine-gordon-and-massive-thirring-models)
+
+
 Since the details of calculation can be found in other notes, here I will only talk about the broad outline. I will use as few as formula as possible. 
 
 We does it mean to *quantize* the kink? It is similar to what we mean by *quantizing the free theory*? Generally speaking, there exist two different but equivalent methods, the canonical quantization and path integral quantization. Regarding the canonical quantization, 
@@ -30,7 +37,7 @@ It turns out that quantum corrections always reduces the kink energy.
 
 We will adopt perturbative methods to study the quantization of kinks. As we all know, perturbation stops working at strong coupling, $\lambda \gg 1$. What happens to $\mathcal{Z}_ {2}$ and sine-Gordon kinks when the coupling is large? From the classical kink solution we know that the mass of a kink is proportional to $1 / \lambda$, so the kink mass decreases as $\lambda$ increases. Eventually kinks will be even lighter than mesons. At large $\lambda$ we know much more in sine-Gordon model than $\mathcal{Z}_ {2}$ model. In sine-Gordon, we have a dual theory, namely the massive Thirring model. 
 
-# Quantization procedure
+# 1. Quantization procedure
 
 The broad outline is as following. 
 
@@ -48,7 +55,7 @@ To consistently compare the energy difference between trivial vacuum sector (jus
 
 $\mathcal{Z}_ {2}$ kink has two bound states, sine-Gordon has only one, the translational zero mode. The leading order correction to kink mass are quite close in these two cases. 
 
-# Introduce the particles 
+# 2. Introduce the particles
 
 As in the second quantization of a free quantum field theory, particle creation and annihilation operators are introduced for each of the excitation modes of the kink. This is straightforward, except for the zero mode. The final result is a quantum theory with both kinks and particles, which are sometimes referred to as mesons. 
 
@@ -66,10 +73,10 @@ $$
 
 and $c_ {0}^{\dagger}=c_ {0}$. It is classical since it commutes with everything (that is $c_ {0}$ itself and all the other ladder operators). 
 
-# Sign of the leading order correction
+# 3. Sign of the leading order correction
 
 In both $\mathcal{Z}_ {2}$ and sine-Gordon models, the leading order quantum correction reduces the energy of the kink. A argument by Coleman in his private communication show that this observation holds quite true in 1+1 dimension, with boson only. However I am not convinced by the argument. I am not gonna put the argument here, interested readers can refer to section 4.5 of Tanmay Vachaspati's textbook. 
-# Boson-fermion connection
+# 4. Boson-fermion connection
 
 Boson and fermion operators satisfy different (equal time) commutation relations. It is remarkable that in 1+1 dimension, it is possible to construct explicitly a fermionic operator from bosonic operators. Let $\phi$ be a scalar bosonic field and $\psi_ {1}, \psi_ {2}$ the two components of Dirac spinor (there are only two components allowed in 1D space), then 
 
@@ -83,7 +90,7 @@ Note that normal ordering should be treated carefully -- normal ordering should 
 
 This transformation between fermionic and bosonic operators hold on the level of quantum operators, not just on the level of expectation values. Furthermore, this transformation holds independent of interactions. However, when the bosonic model is sine-Gordon model, the dual fermionic model turn out to be another well-known model -- the massive Thirring model.
 
-# Equivalence of sine-Gordon and massive Thirring models
+# 5. Equivalence of sine-Gordon and massive Thirring models
 
 
 The sine-Gordon model is an important field theory model in both classical and quantum physics, known for its rich structure of soliton solutions. The difference between the classical and quantum versions of the sine-Gordon model, particularly in the context of ground states for various parameter values, can be understood in terms of quantization and the effects of quantum fluctuations.

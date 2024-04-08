@@ -13,7 +13,14 @@ tags:
   - effectivePotential
 ---
 
-# Quantum Effective Action
+- [1. Quantum Effective Action](#1-quantum-effective-action)
+	- [1.1. Quantum Action](#11-quantum-action)
+	- [1.2. Effective Potential](#12-effective-potential)
+- [2. Coleman-Weinberg Potential](#2-coleman-weinberg-potential)
+	- [2.1. Background Fields](#21-background-fields)
+	- [2.2. Coleman-Weinberg Potential](#22-coleman-weinberg-potential)
+
+# 1. Quantum Effective Action
 
 The goal of this chapter is to introduce the quantum action and quantum potential. There are (at least) two kinds of quantum actions, one is the `Wilsonian quantum action`, where the higher momentum modes are integrated out to focus on the low-energy, long-distance behavior of a system. It embodies the effective interactions of a quantum system *at a certain scale*, accounting for the influence of fluctuations at smaller scales. This potential is central to understanding how physical phenomena emerge at different length scales from the underlying quantum fields, particularly in the study of critical phenomena and phase transitions. Take a scalar field theory $\phi$ for example. The "integrating out" procedure is done using the path integral approach, it involves *separating the field into high and low energy parts*. To be more specific, the scalar field is split into $\phi = \phi_ {\text{low}} + \phi_ {\text{high}}$, where $\phi_ {\text{low}}$ contains modes below a certain energy scale $\Lambda$ and $\phi_ {\text{high}}$ contains modes above $\Lambda$. $\phi_ {\text{high}}$ can be thought of as a thin shell in the momentum space. The path integral over the full field is then re-written as a path integral over these two components of fields. The crucial step is to integrate out the high-energy modes $\phi_ {\text{high}}$. This can be done perturbatively by treating $\phi_ {\text{high}}$ as a different field from $\phi_ {\text{low}}$, using Feynman diagram techniques. The resulting effective action should only depends on the low-energy modes. The Wilsonian effective action captures the dynamics of the field *at energies below* $\Lambda$. It will typically have a form different from the original action, often with new interactions generated as a result of integrating out the high-energy modes. New scale could even emerge, as in the case of dimensional transmutation, which we will not talk too much about in this note.
 
@@ -50,7 +57,7 @@ The first try, before all the three mentioned above, is usually an educated gues
 
 For the rest of the note, we will confine our discussion to $\phi^4$ model with real scalar fields.
 
-## Quantum Action
+## 1.1. Quantum Action
 
 To keep the notation simple, consider a single real scalar field $\phi$, with possibly mass term and self interaction. The partition function (with source) reads
 
@@ -321,7 +328,7 @@ $$
 
 As expected, at the tree-level, the quantum effective action and the original action are the same.
 
-## Effective Potential
+## 1.2. Effective Potential
 
 In the classical dynamics, the vacuum (lowest energy state) configuration of the system is given by the minimum of the potential, which fixes the value of the field in spacetime (usually a constant in spacetime). In the quantum theory, everything receives quantum correction, including the vacuum expectation value (VEV) $\left\langle \phi \right\rangle$ of the field operator $\phi$. In a QFT, the potential term in the Lagrangian or Hamiltonian has minima given by the classical vacuum field configuration, however that's not the full story, since the field always fluctuates around the vacuum, giving rise to a correction to $\left\langle \phi \right\rangle$. That's when the effective potential comes to rescue.
 
@@ -358,9 +365,9 @@ $$
 
 where $V$ is the volume of the space and $T$ the extension of time, $\mathcal{V} _ {\text{eff}}(\varphi)$ is the quantum effective potential. Apparently $\mathcal{V} _ {\text{eff}}$ is an intensive, and ${\partial\mathcal{V}}/{\partial\phi} = 0$ reproduces ${\delta \Gamma}/{\delta \varphi} = 0$.
 
-# Coleman-Weinberg Potential
+# 2. Coleman-Weinberg Potential
 
-## Background Fields
+## 2.1. Background Fields
 
 The method of background field is very useful for calculating beta functions and effective action. For a real scalar field $\phi$, the general idea is as following
 
@@ -428,7 +435,7 @@ $$
 
 so for example if we want to calculate $\Gamma[\eta(x)]$, we can set $\phi_ b = \eta,\,\varphi = 0$ and use that to simplify calculations.
 
-## Coleman-Weinberg Potential
+## 2.2. Coleman-Weinberg Potential
 
 Consider the real scalar Lagrangian
 

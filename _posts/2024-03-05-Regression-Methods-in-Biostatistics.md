@@ -10,19 +10,19 @@ tags:
   - biostatistics
 ---
 
-- [Introduction](#introduction)
-- [Basic Statistical Methods](#basic-statistical-methods)
-	- [t-Test and ANOVA (Analysis of Variance)](#t-test-and-anova-analysis-of-variance)
-		- [t-test](#t-test)
-		- [Two-sided Hypothesis Test](#two-sided-hypothesis-test)
-		- [F-test](#f-test)
-		- [Robustness](#robustness)
-- [Correlation](#correlation)
-- [Linear Regression Method](#linear-regression-method)
-- [Logistic Regression method](#logistic-regression-method)
-- [Entropy in Statistics](#entropy-in-statistics)
+- [1. Introduction](#1-introduction)
+- [2. Basic Statistical Methods](#2-basic-statistical-methods)
+	- [2.1. t-Test and ANOVA (Analysis of Variance)](#21-t-test-and-anova-analysis-of-variance)
+		- [2.1.1. t-test](#211-t-test)
+		- [2.1.2. Two-sided Hypothesis Test](#212-two-sided-hypothesis-test)
+		- [2.1.3. F-test](#213-f-test)
+		- [2.1.4. Robustness](#214-robustness)
+- [3. Correlation](#3-correlation)
+- [4. Linear Regression Method](#4-linear-regression-method)
+- [5. Logistic Regression method](#5-logistic-regression-method)
+- [6. Entropy in Statistics](#6-entropy-in-statistics)
 
-# Introduction
+# 1. Introduction
 
 In life some questions are too important to be left to opinion, superstition, or conjecture. For example, which drug should a doctor prescribe to treat an illness? What factors increase the risk of an individual developing coronary heart attack? To answer these questions (even remotely), we need *objective, evidence-based* decision making method. 
 
@@ -172,15 +172,15 @@ Regression analysis involves selecting the appropriate model for the data, estim
 
 In practice, the choice of regression method depends on the nature of the dependent variable, the shape of the relationship, and the distribution of the residuals, among other factors. Proper model selection, diagnostic testing, and validation are crucial steps in ensuring that the regression model provides reliable and accurate predictions or insights.
 
-# Basic Statistical Methods
+# 2. Basic Statistical Methods
 
-## t-Test and ANOVA (Analysis of Variance)
+## 2.1. t-Test and ANOVA (Analysis of Variance)
 
 My time is really limited here so I'll direct jump to a short review of some mostly commonly used statistical methods. 
 
 The basic $t$-test is used to compare two independent samples. The t-statistic on which the test is based is the difference between the two sample averages, divided by the standard error of that difference. The t-test is designed to work in small samples, whereas Z-tests are not. 
 
-### t-test
+### 2.1.1. t-test
 
 Below is the gist of the derivation of the t-distribution. Assume we have a population that follows a normal distribution with mean $\mu$ and standard deviation $\sigma$. We take a random sample of size $n$ from this population, and we calculate the sample mean $\bar{x}$. The sample mean $\bar{x}$ is also normally distributed (due to the Central Limit Theorem) with mean $\mu$ and standard deviation $\sigma / \sqrt{n}$. We standardize $\bar{x}$ to transform it into a standard normal variable $Z$:
 
@@ -227,7 +227,7 @@ It's important to note that *statistical significance does not necessarily imply
 
 - - -
 
-### Two-sided Hypothesis Test
+### 2.1.2. Two-sided Hypothesis Test
 
 In biostatistics, the two-sided t-test (also known as the two-tailed t-test) is commonly used to determine whether there is a significant difference between the means of two groups, *without specifying the direction of the difference*. This type of test is employed when the research question is concerned with whether there is any difference at all, rather than predicting which group will have a higher or lower mean.
 
@@ -250,7 +250,7 @@ In a two-sided t-test, the p-value represents the probability of observing a tes
 
 A significant result in a two-sided t-test suggests that there is enough evidence to conclude that a difference exists between the two group means, but it does not indicate which group has the higher mean. This approach is particularly useful in biostatistics, where establishing the existence of a difference can be crucial for further research, clinical decisions, or policy-making, even before the direction of the difference is fully understood.
 
-### F-test
+### 2.1.3. F-test
 
 Suppose that we need to compare sample averages across the arms of a clinical trial with multiple treatments, or more generally across more than two independent samples. For this purpose, one-way analysis of variance (ANOVA) and the F-test take the place of the t-test. F-test technique extends the t-test, which compares only two means, by allowing comparisons among multiple groups simultaneously, thus providing a holistic view of the data.
 
@@ -310,13 +310,13 @@ If the computed F-statistic is greater than the critical value, the null hypothe
 
 - - -
 
-### Robustness 
+### 2.1.4. Robustness
 
 We have assumed normal distribution for the distribution of random variables. However, both the t-test and the F-test are pretty robust to violations of the normality assumption, especially in large samples, similar to the central limit theorem. *By robust we mean that the type-I error rate, which is the mistake of rejecting the null hypothesis when it actually holds, is not seriously affected.* They are, however, primarily sensitive to outliers, which will mess up the variation. 
 
 Specifically for the independent two-sample t-test, there's an important assumption known as the **equal variance assumption** or **homoscedasticity**. This assumption states that the variance within each of the groups being compared should be approximately equal. The t-test is less robust to violations to this assumption, which can seriously affect the type-I error rate (and not always in conservative direction). In contrast, the overall F-test in ANOVA loses efficiency, but the error rate of type-I is use seriously increases. If the assumption of equal variances is violated, adjustments to the t-test can be made to account for the difference in variances. One common approach is to use Welch's t-test, which does not assume equal population variances. Welch's t-test adjusts the degrees of freedom of the t-test based on the sample sizes and variances of the two groups, making it more reliable when the variances are unequal.
 
-# Correlation
+# 3. Correlation
 
 Pearson correlation coefficient, often symbolized as $r$, is a measure of the linear correlation between two variables $X$ and $Y$. In biostatistics, it's widely used to quantify the degree to which two biological or health-related variables are linearly related. The value of $r$ ranges from -1 to +1, where:
 
@@ -416,7 +416,7 @@ Interpretation: Since Kendall's tau is negative, it suggests a slight negative a
 
 Kendall's tau is widely used in various fields, especially when dealing with ranked or ordinal data, as it provides a robust measure of association that is not sensitive to the specific values of the ranks.
 
-# Linear Regression Method 
+# 4. Linear Regression Method
 
 Linear regression methods in biostatistics are used to describe the relationship between one or more independent (predictor or explanatory) variables and a continuous dependent (outcome) variable. These methods are fundamental in biostatistical analysis for understanding associations, predicting outcomes, and identifying potential causal relationships in health sciences. The primary methods include:
 
@@ -470,7 +470,7 @@ The name "Lasso regression" comes from the term "Least Absolute Shrinkage and Se
 
 The term "Lasso" itself is a metaphor, likening the method to a cowboy's lasso used to catch and select specific components (in this case, variables or features in a model). The lasso wraps around the most important features while discarding the less important ones, making it a valuable tool for models with a large number of features, many of which might be irrelevant or redundant.
 
-# Logistic Regression method
+# 5. Logistic Regression method
 
 Logistic regression in biostatistics is a statistical analysis method used to model the relationship between one or multiple independent variables and a dependent variable that is binary (i.e., it takes on two possible outcomes, often coded as 0 and 1). It's particularly useful in the field of biostatistics for analyzing and predicting the probability of a binary outcome based on one or more risk factors or predictor variables. 
 
@@ -480,7 +480,7 @@ The logistic function, also called the sigmoid function, is an S-shaped curve th
 
 
 
-# Entropy in Statistics
+# 6. Entropy in Statistics
 
 In statistics and machine learning, entropy is a measure of uncertainty, randomness, or unpredictability in a set of outcomes. The concept of entropy, borrowed from thermodynamics and information theory, is particularly useful in model fitting and various statistical analyses for quantifying the amount of information, selecting models, and even in decision tree algorithms. Here's how entropy is applied in these contexts:
 

@@ -11,7 +11,12 @@ tags:
   - domainWall
 ---
 
-# Kink in 1+1 dimension
+- [1. Kink in 1+1 dimension](#1-kink-in-11-dimension)
+- [2. Walls in 3 + 1 dimensions](#2-walls-in-3--1-dimensions)
+- [3. Some solutions](#3-some-solutions)
+
+
+# 1. Kink in 1+1 dimension
 
 Domain walls in theoretical physics are fascinating phenomena that arise in a variety of contexts, from condensed matter physics to cosmology. They are a type of topological soliton that occurs when a discrete symmetry is spontaneously broken. In simpler terms, domain walls can be thought of as boundaries between different phases or domains where the order parameter (some scalar degree of freedom) differs on either side.
 
@@ -182,7 +187,7 @@ the first order of $\psi$ disappears due to the fact that $\phi_ {k}$ is a solut
 Note that the leading term in the effective action $\int d\tau$ is proportional to the world volume. This result can easily be extended to walls (and strings) propagating in higher dimensions. Even if the self-gravity of the domain wall is taken into account, the dominant contribution to the effective action is still the Nambu-Goto action. 
 
 
-# Walls in 3 + 1 dimensions
+# 2. Walls in 3 + 1 dimensions
 
 In $3+1$ dimension, the position of domain wall, being a co-dimension one object in space, is described by $2+1$ dimensional coordinates. To be more specific, a domain wall in 3-dimensional space is a 2D plane, hence is parametrized by two parameters, call them $\xi^{1}$ and $\xi^{2}$. As a consequence the world-volume of such a domain wall is 2+1 dimensional hence should be parametrized by three parameters. This is reflected in how we describe the location of domain wall. Let the location of the domain wall be 
 
@@ -233,7 +238,7 @@ We could also start with this formula and arrive at the same result.
 
 Instead of giving the full derivation of the equation of notion, we only mention here that the equation is highly non-linear since $h_ {ab}$ itself is defined as a quadratic in derivative of $X^{\mu}$. 
 
-# Some solutions
+# 3. Some solutions
 
 The effective action of domain wall, or Nambu-Goto action, is valid when the domain wall is not curved too much, and separate walls (or different parts of the same wall) are not placed too closely. Otherwise the single kink solution would not be a very good approximation. In addition, in the center of mass frame, the velocity of the wall should be relatively small. If these conditions are met, we can use Nambu-Goto effective action to study the properties of walls. 
 
