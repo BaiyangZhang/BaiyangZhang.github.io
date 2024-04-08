@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Untitled
+title: Discussion Notes
 subtitle: 
-date: 2023-12-29
+date: 2024-04-01
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
