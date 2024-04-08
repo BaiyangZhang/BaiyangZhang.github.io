@@ -113,6 +113,8 @@ Recall that the effective action $\Gamma[\overline{\phi}]$ is made of 1PI diagra
 
 - - -
 
+# Effective Action
+
 Let $V(\overline{\phi})$ be the `effective action` of $\overline{\phi}$, which if you recall is the quantum vev of $\phi$. For the details of effective action see my other note mentioned at the beginning of this note, here we only present the definition,
 
 $$
@@ -405,3 +407,63 @@ $$
 $$
 
 The last result agrees with Coleman's 1-loop correction, which is shown in Eq. (44.51) in *Lectures of Sidney Coleman on Quantum Field Theory*, page 976.
+
+For a 4D scalar theory, renormalizability strongly constraints the powers you could have on the interactions, it can be no more than $4$, otherwise some terms, such as $(U'')^{2} \ln \Lambda^{2}$ will generate divergent terms proportional to $(\phi''^{5})^{2}\sim \phi^{6}$, with no counter terms in the Lagrangian to absorb it, hence non-renormalizable. Coleman remarked in his lecture that 
+
+>Non-renormalizable theories are sick no matter how you look at them; they’re no healthier from this vantage point.
+
+However this is the old-fashioned point of view, Wilson will have something more to say on that. But that's not for this note, here we proceed in the old-fashioned way, to continue to renormalized $\phi^{4}$ theory in 4D.
+
+Including the counter terms, the effective potential reads
+
+$$
+V(\overline{\phi}) = U(\overline{\phi})+U_ {ct}(\overline{\phi}) + \frac{1}{64\pi^{2}}(U''(\overline{\phi}))^{2}\ln[U''(\overline{\phi})]+(\Lambda\text{-dependent}),
+$$
+
+where $U_ {ct}$ include all the counter terms and we have written all the divergent terms as $\Lambda$-dependent. After using $U_ {ct}$ to counter the divergence, there could still be some finite part of $U_ {ct}$ left, depending on the renormalization condition. Also, to be mathematically strict, the parameter of $\ln$ function should be dimensionless, while $U''$ is not. Anyway, this can be easily fixed by introducing another parameter $\mu$ with dimension of mass, and write $\ln(U'' / \mu^{2})$, this $\mu$ will be fixed once the renormalization condition is fixed. 
+
+This formula (also with the generalization to $n$ different scalars) was first derived by Coleman and Weinberg: this Coleman and the other Weinberg, Erick Weinberg. Steve Weinberg refers to this work as “that paper with pseudo-Goldstone bosons and a pseudo-Weinberg.”
+
+
+# The Physical Meaning of the Effective Potential
+
+Roughly speaking, the quantum effective potential $V(\overline{\phi})$ is the quantum generalization of classical potential $U(\phi)$, and $\overline{\phi}$ is the quantum generalization of the $\phi_ {c}$ (or $\left\langle \phi \right\rangle$ as Coleman used), the classical solution to the equation of motion. They agree at tree level and quantum correction kicks in at higher loops, as well the divergences, hence counter terms. Mathematically, $\left\langle \phi \right\rangle$ is the stationary point of the classical action, $\delta S / \delta \phi=0$ at $\left\langle \phi \right\rangle$; $\overline{\phi}$ is the same thing with quantum corrections, meaning it is the expectation value of $\phi$ with quantum corrections, it is the stationary point of the quantum effective action $\Gamma$, $\delta \Gamma / \delta \phi=0$ at $\overline{\phi}$. Physically, $V(\overline{\phi})$ gives the energy density of the vacuum in which expectation value of $\phi$ is $\overline{\phi}$.
+
+When $V(\overline{\phi})$ has two local minima, things become interesting. Take the tilted double well for example, there are two local minima but the one with higher energy density is a false vacuum. If we start in the false vacuum, we expect to quantum tunnel (barrier penetration) into the true vacuum eventually. This tunneling phenomenon is non-perturbative. 
+
+What we are interested in is finding the vacuum state of a QFT model, then it is helpful to look into a similar situation in quantum mechanics. Let's say we have some Hamiltonian $H$ with interaction, and we want to find the vacuum state $\left\lvert{\psi}\right\rangle$ that minimizes $\left\langle{\psi}\right\rvert H\left\lvert{\psi}\right\rangle$. We further want the the state to be corrected normalized, namely $\left\langle \psi \middle\vert \psi \right\rangle=1$. But that's not enough, since in the case of QFT we require that the vev of $\phi$ is some certain value, denoted $\overline{\phi}$, here in the quantum mechanical example we also require the vev of some operator $A$ to be $\overline{A}$. To account for these two constraints, we use the Lagrangian multiplier method, defining the Lagrange function to be
+
+$$
+L = \left\langle{\psi}\right\rvert H\left\lvert \psi\right\rangle-E\left\langle \psi \middle\vert \psi \right\rangle -J\left\langle{\psi}\right\rvert A\left\lvert{\psi}\right\rangle  ,
+$$
+
+where $E$ and $J$ are Lagrange multipliers, and minimize it. We solve this variational problem with arbitrary $J$, and then eliminate $J$ from the problem to satisfy the constraint condition. We could define a function 
+
+$$
+\mathcal{W}(J) = \left\langle{\psi}\right\rvert  -H+JA\left\lvert{\psi}\right\rangle ,
+$$
+
+now we assume $\left\lvert{\psi}\right\rangle$ is the ground state with all the constraints. Or, equivalently, $\left\lvert{\psi}\right\rangle$ is the ground state of a modified Hamiltonian $H-JA$. This is similar to the field theoretic $S+\int J \phi$. Now we can replace $J$ by another variable using Legendre transform, define a new variable 
+
+$$
+\frac{d W(J)}{dJ} = \left\langle{\psi}\right\rvert A \left\lvert{\psi}\right\rangle  = \overline{A}
+$$
+
+and the Legendre transformed function
+
+$$
+\Gamma := \mathcal{W}- J\overline{A},
+$$
+
+what would this $\Gamma$ be? Turns out, it is just the negative energy,
+
+$$
+\Gamma = \left\langle{\psi}\right\rvert -H \left\lvert{\psi}\right\rangle  = -E.
+$$
+
+Just like $\Gamma[\varphi]$ in QFT. The above quantum mechanical example is very similar to the field theoretical effective method of effective theory.
+
+As remarked by Coleman, the method of effective action may be unreliable under certain circumstances, as he explained in his lecture,
+
+>...we may run into trouble if level crossing takes place. When the coupling constants are weak, another state that is not the ground state may come up and cross that energy level, and we may find ourselves following the wrong state as we sum up our Feynman graphs. If perturbation theory cannot tell us the true ground state energy, then we won’t get the true ground state energy for the constrained problem, either. On the other hand if perturbation theory serves to give the true ground state energy without constraint, it will also give us the true ground state energy with constraints.
+
