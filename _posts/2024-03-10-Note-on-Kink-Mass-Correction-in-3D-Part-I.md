@@ -4,7 +4,7 @@ title: Note on the kink mass correction in 3D Part I
 subtitle: 
 date: 2024-03-10
 author: Baiyang Zhang
-header-img: img/background1.jpg
+header-img: 
 catalog: true
 tags:
   - kink
@@ -13,7 +13,6 @@ tags:
 - [1 Introduction](#1-introduction)
 	- [1.1 Background](#11-background)
 	- [1.2 Digression on $\hbar$-expansion](#12-digression-on-%5Chbar-expansion)
-	- [1.3 Review of Kink mass quantization](#13-review-of-kink-mass-quantization)
 - [2 Kinks in d-Dimension](#2-kinks-in-d-dimension)
 	- [2.1. Normal modes and quantization](#21-normal-modes-and-quantization)
 	- [2.2 Renormalization methods review](#22-renormalization-methods-review)
@@ -180,10 +179,6 @@ that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ 
 This derivation is equivalent to the standard one of, for example, Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume the parameters appearing in the action to be independent of $\hbar$. 
 
 Fore more details please refer to Brodsky and Hoyer's paper mentioned above. 
-
-## 1.3 Review of Kink mass quantization
-
-
 
 # 2 Kinks in d-Dimension
 

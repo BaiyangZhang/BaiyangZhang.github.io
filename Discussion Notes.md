@@ -9,38 +9,65 @@ catalog: true
 tags:
 ---
 
-BPS equation for $\phi^{4}$ theory:
 
 $$
-\phi' = \sqrt{ 2V } \implies \phi'= \pm \frac{\sqrt{ \lambda }}{\sqrt{ 2 }}\left( \phi^{2}-\frac{m^{2}}{\lambda} \right).
+\mathcal{L} = \frac{1}{2}(\partial_ {\mu}\phi)^{2}  - V(\phi)
 $$
 
-Eventually the plus sign gives the anti-kink equation, while the minus sign gives the kink equation. But for the sake of notation simplicity, let's carry on with plus sign. After some arrangement and put things under integral, we get 
 
 $$
-\int d\phi \,  \sqrt{ \frac{2}{\lambda} } \frac{1}{\phi^{2}-m^{2} / \lambda} = \int  \,   dx
+\mathcal{L} = \frac{1}{2} \pi^{2} - \frac{1}{2}( \vec{\nabla} \phi)^{2} - \frac{1}{\lambda}V(\sqrt{ \lambda }\phi)
 $$
 
 define 
 
 $$
-t:= \frac{\sqrt{ \lambda }}{m} \phi
+\tilde{\phi}:= \sqrt{ \lambda }\phi,\quad  \tilde{\pi}:= \pi \sqrt{ \lambda }
 $$
 
-we have 
-
 $$
-\int d(x+c)  = \frac{\sqrt{ 2 }}{m} \int  \,  dt \frac{1}{t^{2}-1},
+\pi^{2} = \left( \frac{\tilde{\pi}}{\sqrt{ \lambda }} \right)^{2} = \frac{1}{\lambda} \tilde{\pi}^{2}
 $$
 
-where $c$ is the constant of integral. The lower limit of $t$-integral is arbitrary as long as it's not zero, since we are only interested in the differentials. Perform the integral This gives us 
-
 $$
-x+c = - \frac{\sqrt{ 2 }}{m} \mathrm{arctanh}\,\left( \frac{\sqrt{ \lambda }}{m}\phi \right)
+\frac{1}{2} (\partial \phi)^{2} = \frac{1}{2} (\partial \tilde{\phi})^{2} \frac{1}{\lambda}
 $$
 
-which is 
+$$
+\mathcal{L}= \frac{1}{\lambda}\left( \frac{1}{2}\tilde{\pi}^{2} - \frac{m^{2}}{2}\tilde{\phi}^{2} + V(\tilde{\phi}) \right)
+$$
 
 $$
-\phi = \frac{m}{\sqrt{ \lambda }} \tanh\left( -\frac{m}{\sqrt{ 2 }}(x+c) \right).
+S = \int  \, \mathcal{L}  \to \frac{1}{\lambda} \int  \, \mathcal{L}(\tilde{\phi},\tilde{\pi}) 
 $$
+
+$$
+Z= \int \mathcal{D}\phi \, \exp \left\lbrace  \frac{i}{\lambda}\int \mathcal{L}   \right\rbrace  
+$$
+
+$$
+\tilde{\phi} \sim \lambda^{0}\implies  \phi \sim  \,\lambda^{-1/2}
+$$
+
+$$
+S = \frac{1}{g^{2}} \int  \, \cdots 
+$$
+$$
+\hat{\phi}\quad  m_ {0}^{2}= m_ {p}^{2}+\mathcal{O}(\lambda)
+$$
+
+$$
+\frac{1}{2} m^{2} \phi^{2} 
+$$
+
+$$
+\phi := \sqrt{ \lambda } \tilde{\phi} \implies \phi \sim \lambda^{-1/2}
+$$
+
+$$
+m_ {0}^{2} = m^{2} + \mathcal{O}(\lambda) + \mathcal{O}(\lambda^{2})
+$$
+
+
+
+pole mass = physical mass

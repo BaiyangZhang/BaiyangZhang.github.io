@@ -1,6 +1,6 @@
 {
-  "findText": "_*",
-  "replaceText": "_ *",
+  "findText": "\\\\\\( | \\\\\\)",
+  "replaceText": "\\$",
   "useRegEx": true,
   "selOnly": false,
   "caseInsensitive": false,
