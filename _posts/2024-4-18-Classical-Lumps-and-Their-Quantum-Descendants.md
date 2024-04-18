@@ -1,20 +1,20 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:    Note on Clasical Lumps and Their Quantum Descendants		# 标题 
-subtitle:   Lecture 1
-date:       2023-3-20 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/background1.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - Duality
-    - QFT
-    - Notes
+layout: post
+title: Note on Clasical Lumps and Their Quantum Descendants
+subtitle: 
+date: 2023-3-20
+author: Baiyang Zhang
+header-img: 
+catalog: true
+tags:
+  - Duality
+  - QFT
+  - Notes
 ---
 
-## An introduction to unitary symmetry
+# An introduction to unitary symmetry
 
-The waves in real world usually dissipates in the course of time. As the energy propagates to infinite far in the form of waves, the energy density goes to zero uniformly in spacetime. The same is true for the solutions of wave equations, except for some singular solutions at least. We give a more rigorous definition for dissipation here, a solution of the classical equations of motion is dissipative if 
+The waves in real world usually dissipate over time. As the energy propagates to infinite far in the form of waves, the energy density goes to zero uniformly in spacetime. The same is true for the solutions of wave equations, except for some singular solutions at least. We give a more rigorous definition for dissipation: a solution of the classical equations of motion is dissipative if 
 
 $$
 \lim_{ t \to \infty } \text{max } \mathcal{E}(\mathbf{x},t)=0,
@@ -28,7 +28,7 @@ The interesting thing is that there exists wave functions that allows for non-si
 
 ### Some time-independent example in one space dimension
 
-First some conventions. The metric is taken to be $g = \text{diag}(1,-1)$, $i,j, \dots$ denote space dimensions, $a,b, \dots$ denotes internal symmetry. 
+First some conventions. The metric is taken to be $g = \text{diag}(1,-1,-1,\cdots)$, $i,j, \dots$ denote space dimensions, $a,b, \dots$ denotes internal symmetry. 
 
 Let us consider the simplest relativistic example: theories of a single scalar field in one space and one time dimension, with non-derivative interactions. The dynamics of such a theory are describe by the Lagrangian density
 
@@ -48,7 +48,7 @@ $$
 E = T+V
 $$
 
-where $T$ is the term quadratic in time derivatives, namely the first term in Eq.(1), and $V$ is the term involving no time derivatives. 
+where $T$ is the term quadratic in *time derivatives*, and $V$ is the term involving no time derivatives. 
 
 - - -
 
@@ -128,3 +128,4 @@ E = \frac{8\alpha^{1/2}}{\beta^{2}}.
 $$
 
 The lumps of sine-Gordon theory are frequently called `solitons` in the literature. In both cases the antilumps are obtained simply by multiplying by minus one.
+
