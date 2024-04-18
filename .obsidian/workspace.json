@@ -11,8 +11,12 @@
             "id": "b66263de2453f537",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md"
+              }
             }
           }
         ]
@@ -154,17 +162,17 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
+    "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
     "_drafts/2024-04-09-Effects-of-Different-Clustering-Algorithms.md",
     "2024-04-09.md",
     "_drafts/DiscussionLetters/2022-09-22-HuiDiscussion1.md",
     "_drafts/DiscussionLetters/AndyJarahDiscussion1.md",
-    "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
     "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
     "Discussion Notes.md",
     "2024-04-08-Counterterms-for-Soliton-Sectors-of-3D-phi-Fourth-Theory.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2024-04-07-Tsallis-Statistics-in-Biostatistics.md",
+    "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
     "_posts/2024-03-06-Domain-Wall.md",
     "_posts/2024-03-31-Coleman-Weinberg-Potential.md",

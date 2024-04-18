@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Tsallis Statistics in Biostatistics
+title: Tsallis Statistics in Logistic Regression
 subtitle: 
-date: 2024-04-07
+date: 2024-04-17
 author: Baiyang Zhang
-header-img: img/background1.jpg
+header-img: 
 catalog: true
 tags:
   - tsallis
@@ -350,7 +350,14 @@ $$
 This solves the problem that the expectation value of identity $1$ is not $1$. The probability derived from is also becomes invariant under an overall shift. 
 
 
-# 4. Useful Mathematical Formulae
+# 4. Tsallis in Logistic Regression Methods
+
+This part will be presented in a much less pedagogical manner, we will just introduce the functions whenever we encounter them along the way, with little or none explanation. 
+
+Say we are given a matrix $X_ {nm}$ of the expression of  $p$ genes in $n$ samples, from microarray or RNA-seq or some other fancy technologies. Denote the response, or dependent variables as $\vec{y} = (y_ {1},\cdots,y_ {n})$, which is a $n$-tuple. 
+
+
+# Appendix. Useful Mathematical Formulae
 
 The definition of $q$-logarithm and $q$-exponential, $x>0, q \in\mathbb{R}$:
 
