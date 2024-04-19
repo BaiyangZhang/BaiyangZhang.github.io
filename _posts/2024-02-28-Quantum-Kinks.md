@@ -17,7 +17,7 @@ tags:
 - [Equivalence of sine-Gordon and massive Thirring models](#equivalence-of-sine-gordon-and-massive-thirring-models)
 
 
-Since the details of calculation can be found in other notes, here I will only talk about the broad outline. I will use as few as formula as possible. 
+Since the details of calculation can be found in other notes, here I will only talk about the broad outline. I will use as few formula as possible. 
 
 We does it mean to *quantize* the kink? It is similar to what we mean by *quantizing the free theory*? Generally speaking, there exist two different but equivalent methods, the canonical quantization and path integral quantization. Regarding the canonical quantization, 
 

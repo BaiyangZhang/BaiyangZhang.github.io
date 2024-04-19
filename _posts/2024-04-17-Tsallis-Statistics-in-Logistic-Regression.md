@@ -352,9 +352,109 @@ This solves the problem that the expectation value of identity $1$ is not $1$. T
 
 # 4. Tsallis in Logistic Regression Methods
 
-This part will be presented in a much less pedagogical manner, we will just introduce the functions whenever we encounter them along the way, with little or none explanation. 
+This part will be presented in a much less pedagogical manner, we will just introduce the functions whenever we encounter them along the way, with little or none explanation. Before I could apply the Tsallis statistics, I need to first figure out how the traditional method works.
 
-Say we are given a matrix $X_ {nm}$ of the expression of  $p$ genes in $n$ samples, from microarray or RNA-seq or some other fancy technologies. Denote the response, or dependent variables as $\vec{y} = (y_ {1},\cdots,y_ {n})$, which is a $n$-tuple. 
+## 4.1 Traditional logistic regression method
+
+Say we are given a matrix $X_ {nm}$ of the expression of  $p$ genes in $n$ samples, from microarray or RNA-seq or some other fancy technologies. It is assumed that $p\gg n$, knows as the *big $p$, small $n$ problem*. Denote the response, or dependent variables, as a $n$-tuple $\vec{y} = (y_ {1},\cdots,y_ {n})$. $y_ {i}$ can only take value $1$ or $0$, making it a binary, or logistic variable. Each sample is a patient, $y_ {i}=1$ if patient $i$ is treated of some disease, $y_ {i}=0$ if otherwise. The value of $\vec{y}$ is modeled by the Bernoulli function, as we will see shortly. We can organize the $n$-observations, each with $p$ genes into a matrix $X$ as 
+
+$$
+X = \begin{pmatrix}
+x_ {11}  & \cdots  & x_ {1p} \\
+x_ {21}  &  \cdots & x_ {2p}  \\
+\vdots   &  \ddots  &  \vdots  \\
+x_ {n1}   &  \cdots  & x_ {np} 
+\end{pmatrix}.
+$$
+
+Furthermore, we use $X_ {i}$ to denote the $i$-th gene observed in $n$ samples, namely the $i$-th column of $X$; we use $X_ {(j)}$ to denote the genes observed in $j$-th sample (patient $j$), namely the $j$-th row. In general, $X$ is our data and $\vec{y}$ the dependent variable. We already know which patients are treated and which are not, thus we already know the observed result of $\vec{y}$, the problem is to need to find a way to **predict** $\vec{y}$ using $X$, when given a new set of data. 
+
+Let $\pi_ {i}$ be the probability of $y_ {i}=1$. Following the standard procedure of logistic regression method, define the logit (log here is used as a verb, *log* it) function of $\pi_ {i}$,
+
+$$
+\text{logit}(\pi_ {i} ) := \ln\left( \frac{\pi_ {i}}{1-\pi_ {i}} \right), \quad  \text{logit}: [0,1]\to \mathbb{R}.
+$$
+
+$\pi$ is the probability, hence $\pi / (1-\pi)$ is the odd, with range $\mathbb{R}^{+}:=[0,\infty)$. 
+
+By assumption, write the logit function in linear form,
+
+$$
+\text{logit}(\pi_ {i}) := \beta_ {0}+X_ {(i)}\cdot\beta, \quad  \beta=(\beta_ {1},\cdots,\beta_ {p})^{T}.
+$$
+
+$\beta$ is the parameter vector to be fixed later. Note that our convention here is slightly different from that in Shun-Jie's paper, where $X_ {(i)}$ is defined to be a column vector; here $X_ {(i)}$ is a row vector with $p$ components. That's why I can simply put $X \cdot \beta$, where the dot denote multiplication between vectors. 
+
+Some simple derivation shows that 
+
+$$
+\pi^{i} = \frac{1}{1+\exp(-\beta_ {0}-X_ {(i)}\cdot \beta)}=:\text{sigm}(X_ {(i)}\cdot \beta),
+$$
+
+where $\text{sigm}$ is the sigmoid function, literally means a function that has a $S$-shape,. In our particular case the sigmoid function is give by 
+
+$$
+\text{sigm}(t) := \frac{1}{1-e^{ -t }}.
+$$
+
+I am not sure if there exists other definitions, there are other functions with an S-shape, such as tanh and arctan, but I am not sure if they can be called sigmoids? Or maybe difference in the predictive power by introducing different choices of sigmoid functions are negligible, hence it only makes sense that we stuck with the simplest option?
+
+Now, the question is how can we fix the parameters? A natural answer is, by maximizing the likelihood, or equivalent minimizing the so-called loss function. The likelihood function, by definition, is the probability (likelihood) for a certain observation $y$. This function measures the probability of observing the actual given data under the model parameters being estimated. For instance, supposed there are three samples, then the likelihood of $y=(1,0,1)$ corresponds to the probability predicted by our model that the first and third patients are cured, the second not. Now, the probability for each $y_ {i}=1$ is $\pi_ {i}$, which is defined to be $1/(1-e^{ -t_ {i} })$ (where in our example $t=\beta_ {0}+X_ {(i)}\cdot \beta$), then the probability for $y_ {i}=0$ is just $1- 1/(1-e^{ -ti })$, which is $e^{ -t_ {i} }/(1-e^{ -t_ {i} })$, then the probability for observing $y=(1,0,1)$, namely the likelihood function is the product of each probability, 
+
+$$
+\text{lik}(1,0,1) = \frac{1}{1-e^{ -t_ {1} }} \frac{e^{ -t_ {2} }}{1-e^{ -t_ {2} }} \frac{1}{1-e^{ -t_ {3} }}.
+$$
+
+This looks ugly, we can use the Bernoulli distribution to simplify it. The Bernoulli distribution is a simple discrete probability distribution having only two possible outcomes, 1 and 0, with a probability $p$ for $y=1$ and $1-p$ for $y=0$. This distribution is a special case of the binomial distribution where the number of trials $n$ is equal to 1. The **Probability Mass Function (PMF)** of Bernoulli distribution is defined as 
+
+$$
+  P(y = k) := \pi^k (1-\pi)^{1-k} \text{ for } k \in \{0, 1\},
+$$
+
+where $\pi$ is supposed to be given. The Expected Value is $E[X] = p$ and the variance is $\text{Var}(X) = p(1-p)$, you can verify it easily. This neat expression unites $y=0$ and $y=1$. Applying it to the likelihood function we get 
+
+$$
+\text{lik}(1,0,1) = \prod_ {i=1}^{3} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}}, \quad  \vec{y}=(1,0,1).
+$$
+
+Looks much better. More importantly makes it trivial to generalize to arbitrary output $\vec{y}$, in our large $n$ small $p$ problem, the likelihood function would be 
+
+$$
+\text{lik}(\vec{y}) := \prod_ {i=1}^{n} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}}, \quad  \vec{y}=(y_ {1},\cdots,y_ {n}).
+$$
+
+However, it can further simplified with the help of logarithm. Recall that logarithm is a monotonically increasing function, it means that $\log(\text{lik}(\vec{y}))$ is maximized iff (if and only if) $\text{lik}(\vec{y})$ is maximized. The reason why it is a good idea to take the logarithm of the likelihood include the following.
+
+1. **Numerical Stability**: The likelihood function in models like logistic regression involves products of probabilities, which can be very small numbers. When multiplying many such small probabilities, the result can become extremely small, potentially leading to numerical underflow (where values are so small that the computer treats them as zero). The logarithm of these small numbers turns them into more manageable, larger negative numbers, reducing the risk of numerical issues.
+
+2. **Simplification of Products into Sums**: The likelihood function involves taking the product of probability values across all data points. In contrast, the log-likelihood converts these products into sums by the property of logarithms (\(\log(ab) = \log(a) + \log(b)\)). Sums are much easier to handle analytically and computationally. This is especially useful when dealing with large datasets.
+
+3. **Convexity Properties**: The log-likelihood function often yields a convex optimization problem in cases where the likelihood itself is not convex. Convex problems are generally easier to solve reliably and efficiently. For logistic regression, the log-likelihood function is concave, and finding its maximum is a well-behaved optimization problem with nice theoretical properties regarding convergence and uniqueness of the solution.
+
+4. **Derivative Computation**: The derivatives of the log-likelihood (needed for optimization algorithms like gradient ascent or Newton-Raphson) are typically simpler to compute and work with than the derivatives of the likelihood function. This simplicity arises because the derivative of a sum (log-likelihood) is more straightforward than the derivative of a product (likelihood).
+
+5. **Interpretation and Link to Information Theory**: The log-likelihood connects directly to concepts in information theory, such as entropy and Kullback-Leibler divergence. Maximizing the log-likelihood is equivalent to minimizing the KL divergence between the empirical distribution defined by the data and the distribution defined by the model, thus achieving the best statistical fit in an information-theoretic sense.
+
+Last but not least,
+
+6. **Possibility to introduce the Tsallis statistics**: We have explain how the Tsallis statistics modified traditional exponential and logarithmic functions, *in our case the log-likelihood function can be generalized by adopting the Tsallis logarithm, namely $\log_ {q}$.* In the next section we will try to explain the advantage of such generalization, which will also serve as justification. But of course, being a phenomenological model, the true justification will be the power of prediction, which can only be tested in real-life practice. 
+
+But for now, let's forget about Tsallis and carry on on the road of conventional logic regression method. Taking the log of $lik$ we get 
+
+$$
+\text{loglik}:=\log(lik(\vec{y}))= \log \left\lbrace \prod_ {i=1}^{n} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}} \right\rbrace 
+$$
+
+
+
+
+## With Tsallis statistics
+
+
+
+
+
+
 
 
 # Appendix. Useful Mathematical Formulae
