@@ -76,7 +76,7 @@ Every motion of the particle in the potential corresponds to a time-independent 
 
 In the example of the phi-fourth theory, the potential takes the form of double-well. The minus version of the potential is of the form double hill. It would be helpful to draw some picture here but I am too lazy, interested readers should just read Coleman's book. The lump solution corresponds to the motion that the particle starts off from one of the hills and rolls over the valley and reaches the other hill and stays there.
 
-By convention, the solution for which $\phi$ is monotone increasing `lumps` and those for which it is monotone decreasing `antilumps`.
+By convention, we call the solution for which $\phi$ is monotone increasing `lumps` and those for which it is monotone decreasing `antilumps`.
 
 To find the exact expression of the solution, let's adopt the dynamic picture of a moving particle. The potential is now $-U(x)$ where $x$ is identified with $\phi$ in the static problem. The total energy is conserved to zero during the whole motion, thus 
 
@@ -128,4 +128,9 @@ E = \frac{8\alpha^{1/2}}{\beta^{2}}.
 $$
 
 The lumps of sine-Gordon theory are frequently called `solitons` in the literature. In both cases the antilumps are obtained simply by multiplying by minus one.
+
+- - -
+
+A few words on the stability of the kink solution. We know that the equation of motion in the kink background has solutions called normal modes, each with a eigen value corresponding to the energy. The kink is stable under fluctuation if all the eigen values are non-negative, otherwise the perturbation in the direction of the negative-eigenvalue normal mode would decrease the energy indefinitely, hence making the kink unstable. Hence, if we can prove that there exists no normal modes with negative eigen values, we can prove that the kink is stable. To do this, we need two ingredients:  zero mode and the node theorem. Zero mode is a result of translation symmetry of the model, or rather the breaking of it. Zero mode is a constant solution with no nodes, and the node theorem says that for 1-dimensional Schrodinger equation, the lowest wave function has zero node, the first excitation wave function has one nodes, etc. Then the zero mode is the lowest energy state, with energy zero! Hence there exists no negative eigen value.
+
 
