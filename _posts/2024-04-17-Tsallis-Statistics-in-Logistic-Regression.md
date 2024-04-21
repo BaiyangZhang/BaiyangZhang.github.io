@@ -439,11 +439,75 @@ Last but not least,
 
 6. **Possibility to introduce the Tsallis statistics**: We have explain how the Tsallis statistics modified traditional exponential and logarithmic functions, *in our case the log-likelihood function can be generalized by adopting the Tsallis logarithm, namely $\log_ {q}$.* In the next section we will try to explain the advantage of such generalization, which will also serve as justification. But of course, being a phenomenological model, the true justification will be the power of prediction, which can only be tested in real-life practice. 
 
-But for now, let's forget about Tsallis and carry on on the road of conventional logic regression method. Taking the log of $lik$ we get 
+But for now, let's forget about Tsallis and carry on on the road of conventional logic regression method. Taking the natural log of likelihood function we get 
 
 $$
-\text{loglik}:=\log(lik(\vec{y}))= \log \left\lbrace \prod_ {i=1}^{n} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}} \right\rbrace 
+\begin{align*}
+\text{loglik} &:=\log(\text{lik}(\vec{y}))= \ln \left\lbrace \prod_ {i=1}^{n} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}} \right\rbrace \\
+&=\sum_ {i} \left\lbrace  y_ {i} \ln\pi_ {i}+(1-y_ {i}) \ln(1-\pi_ {i}) \right\rbrace. 
+\end{align*}
 $$
+
+In logistic regression, people often use the loss function, defined as the negative of the likelihood function, rather than the likelihood function itself, the reason primarily revolves around convention and practicality in optimization processes.
+Most optimization algorithms and tools are designed to minimize functions rather than maximize them. This is a common convention in mathematical optimization and numerical methods. Since maximizing the likelihood is equivalent to minimizing the negative of the likelihood, formulating the problem as a minimization one allows the use of standard, widely available optimization software and algorithms without modification. In many statistical learning methods, the objective function is often interpreted as a "cost" or "loss" that needs to be minimized. When working with a loss function, the goal is to find parameter estimates that result in the smallest possible loss. Defining the loss function as the negative log-likelihood aligns with this interpretation because lower values of the loss function correspond to higher likelihoods of the data under the model. This concept is intuitive for loss minimization, where we intuitively understand and seek to reduce "costs" or "losses."
+
+Using a loss function that is to be minimized creates a consistent framework across various statistical learning methods, many of which inherently involve minimization (like least squares for linear regression, and more complex regularization methods in machine learning). This consistency is helpful not only from an educational and conceptual standpoint but also from a practical implementation standpoint.
+
+A `regularized loss function` is the loss function with penalty terms. Penalty terms in regression methods are essential for managing several challenges that arise in statistical modeling, particularly with high-dimensional data. These challenges include *overfitting*, *multicollinearity*, and *interpretability*. 
+
+One of the primary reasons for using penalty terms is to prevent overfitting. Overfitting occurs when a model captures not just the true underlying pattern but also the random fluctuations (noise) in the data. This makes the model very accurate on the training data but *poorly generalized to new, unseen data*. By adding a penalty term, which increases as the model complexity increases (e.g., as coefficients become larger), the optimization process is biased towards simpler models. This helps to ensure that the model generalizes well to new data by focusing on the most significant predictors and shrinking the others.
+
+Multicollinearity occurs when two or more predictor variables in a regression model are highly correlated. This can make the model estimation unstable and the estimates of the coefficients unreliable and highly sensitive to small changes in the model or the data. Penalty terms, especially those like Lasso regression (L1 penalty) or Ridge regression (L2 penalty), can reduce the impact of multicollinearity by penalizing the size of the coefficients, thus stabilizing the estimates. In high-dimensional datasets where the number of predictors $p$ exceeds the number of observations $n$ or when there are many irrelevant features, selecting the most relevant features becomes crucial. Lasso regression (L1 penalty) is particularly useful for this purpose because it can shrink some coefficients to exactly zero, effectively performing variable selection. This helps in identifying which predictors are most important for the outcome, simplifying the model and improving interpretability.
+
+By shrinking coefficients or reducing the number of variables, penalty terms help in simplifying the model. A simpler model with fewer variables or smaller coefficients is easier to understand and interpret. This is particularly valuable in domains like medical science or policy-making, where understanding the influence of predictors is as important as the prediction itself.
+
+However it is also important to realize the disadvantages of introducing penalty terms, that is the bias-variance tradeoff. Adding a penalty term introduces bias into the estimator for the coefficients (the estimates are "shrunk" towards zero or towards each other in the case of Ridge). However, this can lead to a significant reduction in variance (the estimates are less sensitive to fluctuations in the data). This trade-off can lead to better predictive performance on new data, which is the ultimate goal of most predictive modeling tasks.
+
+In our work with ShunJie, we consider the regularized loss function as following.
+
+$$
+l(\beta_ {0}, \vec{\beta}) := -\sum_ {i}^{n} \left\lbrace y_ {i}\ln(\pi_ {i})+(1-y_ {i})\ln(1-\pi_ {i}) \right\rbrace  +h(\vec{\beta}),
+$$
+
+where $h(\vec{\beta})$ is the penalty terms and is a function of $\vec{\beta}$ only, $\beta_ {0}$ does not affect the penalty, by assumption. $h(\vec{\beta})$ could be the Lasso (Least Absolute Shrinkage and Selection Operator) term, or ridge term.
+
+- - -
+
+**Group Lasso regression**
+
+Group Lasso regression is an extension of Lasso that is particularly useful in the context of biostatistics, especially when dealing with models that incorporate multiple predictors which naturally group into clusters. This method not only encourages sparsity in the coefficients, like traditional Lasso, but also takes into account the structure of the data by promoting or penalizing entire groups of coefficients together. Here’s an introduction to how Group Lasso works and why it’s valuable in biostatistics:
+
+In many biostatistical applications, predictors can be inherently grouped based on biological function, measurement type, or other domain-specific knowledge. For example, genes might be grouped into pathways, or clinical measurements might be grouped by the type of instrument used or the biological system they measure.
+
+The key idea behind Group Lasso is to *perform regularization and variable selection at the group level*. The formulation of Group Lasso is similar to that of Lasso, but instead of summing the absolute values of coefficients, it sums the norms of the coefficients for each group. The objective function for Group Lasso can be written as:
+
+$$
+\text{Minimize:} \quad \text{loss function} + \lambda \sum_ {g=1}^G w_ g \left\lVert \beta_{g} \right\rVert 
+$$
+
+where $y$ is the response vector, $X$ is the design matrix, $\beta$ represents the coefficient vector, $\beta_{g}$ is the sub-vector of coefficients corresponding to group $g$, $G$ is the total number of groups, $w_g$ are weights that can be used to scale the penalty for different groups, often based on group size or other criteria, $\left\lVert \beta_{g} \right\rVert$ is typically the Euclidean norm (L2 norm) of the coefficients in group $g$ or, as is shown in ShunJie's paper, the PCC (Pearson correlation coefficient) distance or shape-based distance. $\lambda$ is a tuning parameter that controls the overall strength of the penalty.
+
+The penalty term for group Lasso is defined as 
+
+$$
+h(\beta) = \lambda \sum_ {g=1}^{G} \sqrt{ d_ {g} } \left\lVert \beta_ {g} \right\rVert _ {2}
+$$
+
+where $d_ {g}$ is the number of genes in group $g$, and $\beta_ {g}$ is a $d_ {g}$-tuple of parameters, corresponding to the genes in group $g$. Naturally it is a subset of $\beta$.
+
+- - -
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
