@@ -58,6 +58,7 @@ The Euler-Lagrange equation, or the equation of motion, is
 $$
 \frac{\partial \mathcal{L}}{\partial \phi}= \partial_ {\mu} \frac{\partial \mathcal{L}}{\partial (\partial _ {\mu}\phi)}
 $$
+
 which in terms of $U(\phi)$ becomes 
 
 $$
@@ -257,11 +258,11 @@ $$
 and we can write the Jacobi elliptic functions in terms of $\phi$,
 
 $$
-\begin{align}
+\begin{align*}
 sn(u,k)&=\sin \phi\equiv\sin(\text{amp}(u,k)), \\
 cn(u,k)&=\cos\phi=\cos(\text{amp}(u,k)), \\
 dn(u,k)&=\sqrt{ 1-k^{2}\sin ^{2}\phi }.
-\end{align}
+\end{align*}
 $$
 
 These functions are *doubly periodic* generalizations of the trigonometric functions satisfying
