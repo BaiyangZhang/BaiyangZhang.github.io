@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f87e78dedbe38ff5",
+        "id": "3163fec0c9df29cc",
         "type": "tabs",
         "children": [
           {
-            "id": "abf049fbc0fc870b",
+            "id": "b66263de2453f537",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lump",
+                "query": "tag: #transseries  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -141,23 +141,12 @@
                 "file": "_posts/2024-4-18-Classical-Lumps-and-Their-Quantum-Descendants.md"
               }
             }
-          },
-          {
-            "id": "79f55fce0a1a13a3",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "_posts/2024-4-18-Classical-Lumps-and-Their-Quantum-Descendants.md"
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -171,37 +160,36 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "abf049fbc0fc870b",
+  "active": "b66263de2453f537",
   "lastOpenFiles": [
-    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
-    "_posts/2024-4-18-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
-    "_posts/2024-02-28-Quantum-Kinks.md",
-    "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
-    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
-    "_posts/2024-03-06-Domain-Wall.md",
+    "_posts/2024-4-18-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "Untitled.md",
-    "Discussion Notes.md",
-    "README.md",
-    "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "2015-05-15-images.md",
-    "Untitled 1.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
-    "_posts/2024-04-07-Tsallis-Statistics-in-Biostatistics.md",
-    "_posts/2023-12-30-The-Best-Way-to-Make-Math-Notes.md",
     "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
-    "img/effectiveAction_1Loop.png",
-    "img/effectiveAction/effectiveAction_1Loop.png",
-    "_drafts/2024-03-06-Basics-of-Algebraic-QFT-Part-I.md",
+    "_drafts/2024-04-09-Effects-of-Different-Clustering-Algorithms.md",
+    "2024-04-09.md",
+    "_drafts/DiscussionLetters/2022-09-22-HuiDiscussion1.md",
+    "_drafts/DiscussionLetters/AndyJarahDiscussion1.md",
+    "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
+    "Discussion Notes.md",
+    "2024-04-08-Counterterms-for-Soliton-Sectors-of-3D-phi-Fourth-Theory.md",
+    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+    "_posts/2024-03-06-Domain-Wall.md",
+    "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
+    "_posts/2023-12-7-Transseries-Lecture-2.md",
+    "Untitled 1.md",
     "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
+    "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
+    "_posts/2023-12-30-The-Best-Way-to-Make-Math-Notes.md",
+    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
+    "_posts/2024-04-01-Perturbative-Spontaneous-Symmetry-Breaking.md",
+    "img/effectiveAction_1Loop.png",
     "img/effectiveAction/1Loop.png",
     "img/effectiveAction",
-    "Templates/plots.md",
-    "_posts/2024-03-29-Perturbative-Spontaneous-Symmetry-Breaking.md",
-    "_posts/2024-03-29-Perturbative-Spontaneous-Symmetry Breaking.md",
-    "_posts/2024-03-25-Coleman-Weinberg-Potential.md"
+    "Templates/plots.md"
   ]
 }
