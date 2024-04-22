@@ -12,7 +12,7 @@ tags:
   - Notes
 ---
 
-# An introduction to unitary symmetry
+# Solitonic waves
 
 The waves in real world usually dissipate over time. As the energy propagates to infinite far in the form of waves, the energy density goes to zero uniformly in spacetime. The same is true for the solutions of wave equations, except for some singular solutions at least. We give a more rigorous definition for dissipation: a solution of the classical equations of motion is dissipative if 
 
@@ -26,7 +26,7 @@ The interesting thing is that there exists wave functions that allows for non-si
 
 - - - 
 
-### Some time-independent example in one space dimension
+## Some time-independent example in one space dimension
 
 First some conventions. The metric is taken to be $g = \text{diag}(1,-1,-1,\cdots)$, $i,j, \dots$ denote space dimensions, $a,b, \dots$ denotes internal symmetry. 
 
@@ -129,8 +129,12 @@ $$
 
 The lumps of sine-Gordon theory are frequently called `solitons` in the literature. In both cases the antilumps are obtained simply by multiplying by minus one.
 
-- - -
-
 A few words on the stability of the kink solution. We know that the equation of motion in the kink background has solutions called normal modes, each with a eigen value corresponding to the energy. The kink is stable under fluctuation if all the eigen values are non-negative, otherwise the perturbation in the direction of the negative-eigenvalue normal mode would decrease the energy indefinitely, hence making the kink unstable. Hence, if we can prove that there exists no normal modes with negative eigen values, we can prove that the kink is stable. To do this, we need two ingredients:  zero mode and the node theorem. Zero mode is a result of translation symmetry of the model, or rather the breaking of it. Zero mode is a constant solution with no nodes, and the node theorem says that for 1-dimensional Schrodinger equation, the lowest wave function has zero node, the first excitation wave function has one nodes, etc. Then the zero mode is the lowest energy state, with energy zero! Hence there exists no negative eigen value.
 
+A kink in $\phi^{4}$ theory can be very well regarded as a almost-localized classical particle, with one major difference: the condition for patching adjacent kink solutions together must be ...kink-antikink-kink..., otherwise it would not be a solution to the equation of motion. 
+
+
+# With gauge field
+
+Let $\phi$ be a vector of scalar field with gauge group $G$ and gauge field $A$. The covariant derivative and field strength are defined in the usual way, you can pick your favorited convention. Let $\phi=\phi_ {0}$, $A =0$ be the ground state. Due to the gauge invariance (or more precisely, gauge redundancy), there might exist a subset $H$ of $G$ such that it leaves $\phi=\phi_ {0},A=0$ unchanged. It is usually written as $H<G$, then for any $h\in H$ we have $h\phi_ {0}=\phi_ {0}$, $H$ is the little group of $\phi_ {0}$, $\phi_ {0}$ is the fixed point of $H$. If we study the fluctuation near $\phi_ {0}$, we find that the gauge fields associated with the generators of $H$ remains massless. The vacuum manifold would be the coset space $G/H$, for reasons that I have no time to explain here. This is under the assumption that the vacuum manifold is connected and on which the gauge group acts transitively. This excludes both the case of accidental degeneracy and existence of ordinary (non-gauge) symmetry. Accidental degeneracy refers to a situation where two or more energy levels have the same energy not due to an obvious symmetry of the system, but rather due to a more subtle or hidden symmetry, or as a result of a specific mathematical coincidence, such as the accidental degeneracy in the hydrogen atom. This differs from the usual degeneracy associated with the symmetries of the system's Hamiltonian, such as those arising from rotational or translational invariance. 
 
