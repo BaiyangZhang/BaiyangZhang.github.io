@@ -146,7 +146,7 @@ $$
 \pi_ {2}(G) \to \pi_ {1}(H)
 $$
 
-is brilliant! I strongly recommend section 3.7 to everyone. I've learnt about homotopy groups from other places, mostly from a pure mathematical perspective, and I've learnt how to use the short exact sequence to evaluate the homotopy group, but Coleman's introduction is more intuitive and straightforward. It serves as a pretty good supplement to short exact sequence argument. Coleman's section 3.7 can be regarded as a special case of 
+is brilliant! I strongly recommend section 3.7 to everyone. I've learnt about homotopy groups from other places, mostly from a pure mathematical perspective, and I've learnt how to use the short exact sequence to evaluate the homotopy group, but Coleman's introduction is more intuitive and straightforward. It serves as a pretty good supplement to short exact sequence argument. Coleman's section 3.7 can be regarded as a special case of Theorem. 22.27 in Frankel's textbook.
 
 - - -
 
