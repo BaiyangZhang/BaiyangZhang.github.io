@@ -169,13 +169,25 @@ where under the $\cos$ function, $\beta$ cancels the dimension of $\phi$ and ren
 We can rescale field such that the parameter $\beta$ factors out of the Lagrangian. Since $\beta \phi$ appears together under $\cos$ function, let's define 
 
 $$
-\tilde{\phi} := \phi \beta
+\widetilde{\phi} := \phi \beta
 $$
 
 then the Lagrangian in term it reads
 
 $$
-\mathcal{L} = \frac{1}{\beta^{2}} \left[ \frac{1}{2}(\partial \tilde{\phi})^{2}+\alpha(\cos \tilde{\phi}-1) \right].
+\mathcal{L} = \frac{1}{\beta^{2}} \left[ \frac{1}{2}(\partial \widetilde{\phi})^{2}+\alpha(\cos \widetilde{\phi}-1) \right].
 $$
 
-If you write down the equation of motion corresponding to the above Lagrangian, you'll find that 
+If you write down the equation of motion corresponding to the above Lagrangian, you'll find that $\beta$ does not enter the equation *at all*! Since classically all the info is given by the equation of motion, it is safe to say that $\beta$ drops out from the classical theory. Of course when you are calculating Hamiltonian, which is just the Legendre transform of the Lagrangian, $\beta$ appears again, but the dependence is trivial. It is similar to study the motion of a point object in gravitational force only, $\beta$ would be similar to the mass of the object, the mass does not change the motion, only trivially changes the gravitational potential. 
+
+However when we quantize it, things will be different. Follow the path of path integral, recall that the stuff that decides all the physics is the partition function 
+
+$$
+Z = \int D\phi \, \exp \left\lbrace \frac{i}{\hbar} \int \mathcal{L(\phi)} \,   \right\rbrace
+= \int D\phi \, \exp \left\lbrace \frac{i}{\boxed{ \hbar \beta^{2}}} \int \mathcal{L(\widetilde{\phi})} \,   \right\rbrace,
+$$
+
+note that $\beta^{2}$ always appears together with $\hbar$, and $\hbar\to 0$ corresponds to the classical limit, so $\beta\to 0$ also corresponds to the classical limit! I will not talk too much about it here for this matter is addressed in more details in my other notes. 
+
+
+
