@@ -187,7 +187,33 @@ Z = \int D\phi \, \exp \left\lbrace \frac{i}{\hbar} \int \mathcal{L(\phi)} \,   
 = \int D\phi \, \exp \left\lbrace \frac{i}{\boxed{ \hbar \beta^{2}}} \int \mathcal{L(\widetilde{\phi})} \,   \right\rbrace,
 $$
 
-note that $\beta^{2}$ always appears together with $\hbar$, and $\hbar\to 0$ corresponds to the classical limit, so $\beta\to 0$ also corresponds to the classical limit! I will not talk too much about it here for this matter is addressed in more details in my other notes. 
+note that $\beta^{2}$ always appears together with $\hbar$, and $\hbar\to 0$ corresponds to the classical limit, so $\beta\to 0$ also corresponds to the classical limit! I will not talk too much about it here for this matter is addressed in more details in my other notes. we just mention that the same argument goes for the phi-4th theory with the replacement $\beta^{2}\to \lambda$. A quote from Coleman:
 
+>These manipulations are trivial, but they teach us something important: if there are particles in the quantum theory that correspond to classical lumps, they are most likely to resemble their classical ancestors for weakly coupled theories. (Conversely, there is no more reason to trust classical analysis for strongly coupled theories than there is to trust the Born approximation.) This suggests that the most direct way to construct quantum lumps is by an expansion in powers of the coupling constant. The leading term in such an expansion should give the classical results, appropriately reinterpreted in quantum language, and the higher terms should give quantum corrections
+
+The canonical momentum (density) associated to $\widetilde{\phi}$ is 
+
+$$
+\widetilde{\pi} := \frac{\partial \mathcal{L}}{\partial (\partial_ {0}\widetilde{\phi})} = \frac{\partial_ {0}\widetilde{\phi}}{\beta^{2}},
+$$
+
+and the Hamiltonian is
+
+$$
+\begin{align*}
+\beta^{2}\mathcal{H}(\tilde{\phi}) &= \widetilde{\pi} \, \partial_ {0}\widetilde{\phi}-\mathcal{L}(\widetilde{\phi}) = \int dx \, \left( \frac{\beta^{4}\widetilde{\pi}^{2}}{2} + V[\widetilde{\phi}] \right) \\
+&\equiv \int dx \,  \frac{1}{2}(\partial_ {0}\widetilde{\phi})^{2}+\frac{1}{2}(\partial _ {i} \widetilde{\phi})^{2} + V(\widetilde{\phi})
+\end{align*}
+$$
+
+Let $\widetilde{f}(x-b)$ be a kink solution, and $\widetilde{E}_ {0}$ be the rescaled classical (leading-order) kink energy,
+
+$$
+\widetilde{E}_ {0} := \beta^{2} V(\widetilde{f}(x)).
+$$
+
+Note that all the quantities with a tilde on it are rescaled quantities, constructed so that they are independent of $\beta$. 
+
+The peculiar thing with $\beta^{2}\mathcal{H}$ is that, in terms of $\widetilde{\pi}$, the small quantity $\beta$ multiplies the kinetic term, namely $\beta^{4}\widetilde{\pi}^{2}$, while leaving the potential untouched. This is opposite to the Lagrangian with a small coupling! Sidney Coleman compared it with the case in diatomic molecules.
 
 
