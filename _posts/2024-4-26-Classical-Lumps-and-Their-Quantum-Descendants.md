@@ -214,6 +214,185 @@ $$
 
 Note that all the quantities with a tilde on it are rescaled quantities, constructed so that they are independent of $\beta$. 
 
-The peculiar thing with $\beta^{2}\mathcal{H}$ is that, in terms of $\widetilde{\pi}$, the small quantity $\beta$ multiplies the kinetic term, namely $\beta^{4}\widetilde{\pi}^{2}$, while leaving the potential untouched. This is opposite to the Lagrangian with a small coupling! Sidney Coleman compared it with the case in diatomic molecules.
+The peculiar thing with $\beta^{2}\mathcal{H}$ is that, in terms of $\widetilde{\pi}$, the small quantity $\beta$ multiplies the kinetic term, namely $\beta^{4}\widetilde{\pi}^{2}$, while leaving the potential untouched. This is opposite to the Lagrangian with a small coupling! Sidney Coleman compared it with the case in diatomic molecules, where the kinetic term is also perturbatively small, reduced by a factor of $\frac{1}{M}$, where $M$ is the nuclear reduced mass. The same perturbation method is adopted to calculate the correction to energy eigen value and eigen states. The final result is divergent, maybe not surprisingly, since we have not introduced any renormalization techniques yet. 
 
+- - -
+
+## Coherent-state variational method for time-independent lumps
+
+Another non-relativistic quantum mechanical method we can use to study the quantum lumps is the variational method, with some trial states. The `Rayleigh-Ritz` method is based on the variational principle, which states that for a given Hamiltonian $H$ and a trial wave function $\psi$, the expectation value of the Hamiltonian, $\langle \psi \rvert H \lvert \psi \rangle$, provides an **upper bound** to the ground state energy of the system. The goal is to *choose a trial wave function that minimizes this expectation value*, which then approximates the ground state energy as closely as possible. To do that, we first choose a set of basis functions $\lbrace \phi_ 1, \phi_ 2, \dots, \phi_ n \rbrace$ that are believed to closely resemble the true wave functions of the system. These can be functions that satisfy boundary conditions or other physical considerations of the problem. Then we construct a trial wave function $\psi$ as a linear combination of these basis functions:
+  
+$$
+   \psi = \sum_ {i=1}^n c_ i \phi_ i
+$$
+  
+where $c_ i$ are coefficients to be determined. We can calculate the matrix elements of the Hamiltonian in the basis of the chosen functions. Each element $H_ {ij}$ of the matrix is given by:
+
+$$
+  H_ {ij} = \langle \phi_ i \rvert  H \lvert \phi_ j \rangle
+$$
+
+The variational principle leads to the matrix equation
+
+$$
+   H\mathbf{c} = E\mathbf{c}
+$$
+
+where $H,E$ are now regarded as matrices, $\mathbf{c}$ is the vector of coefficients $c_i$, and $E$ is the energy eigenvalue. Solving this eigenvalue problem gives us the approximate energy levels and the corresponding coefficients for the wave functions.
+
+As a quick example, consider a particle in a one-dimensional box of length $L$, with infinitely high walls at $x = 0$ and $x = L$. The Hamiltonian for this system is
+
+$$
+H = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2}
+$$
+
+with boundary conditions $\psi(0) = \psi(L) = 0$.
+
+We choose sine functions that satisfy the boundary conditions as basis functions:
+
+$$
+\phi_ n(x) = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi x}{L}\right), \quad n = 1, 2, 3, \dots
+$$
+
+
+We could start with a simple trial function using the first two basis functions
+
+$$
+\psi(x) = c_ 1 \phi_ 1(x) + c_ 2 \phi_2(x)
+$$
+
+to calculate elements $H_{ij}$
+
+$$
+H_ {ij} = \frac{\hbar^2}{2m} \left(\frac{n\pi}{L}\right)^2 \delta_ {ij}
+$$
+
+For this simplified example, since the Hamiltonian matrix is diagonal (due to orthogonality and the properties of sine functions), the energy eigenvalues are directly given by:
+
+$$
+E_ n = \frac{\hbar^2}{2m} \left(\frac{n\pi}{L}\right)^2
+$$
+
+- - -
+
+Coleman talked about one advantage of 1+1 dimensional scalar theory: it is `locally Fock`, meaning that when put in a finite box, the exact energy eigenstates are in ordinary Fock space, and this is connected to the mild UV divergence in 2D. How come? If this were true then this indeed facilitates the variational method, since all the trial states are also in Fock space.
+
+Another advantage is that in 2D we can write the Hamiltonian in terms of finite parameters (renormalized parameters) alone, in closed form. This avoids us writing the final results in bare parameters. 
+
+Consider the Hamiltonian (with canonical fields $\phi$, nor rescaled field $\widetilde{\phi}$) 
+
+$$
+\mathcal{H} = \frac{1}{2} \pi^{2} + \frac{1}{2}(\partial_ {x}\phi)^{2} + U(\phi),
+$$
+
+There is only one type of divergence: the diagrams with one loop and one internal line (propagator) only. Thus we need only one condition to cancel it: the normal ordering of the Hamiltonian. 
+
+We will go on with our calculation of variational method in the Schrodinger picture, where the wave functions are time dependent while the operator are not. In Schrodinger picture the Hamiltonian is not given in $\phi$ and $\dot{\phi}$, but $\phi$ and $\pi$, there is no such thing as $\dot{\phi}$. 
+
+We are all familiar with the time ordering in interaction picture, however here we are talking about normal ordering in Schrodinger picture. The generalization is trivial: we just forget about the time parameter $t$ in interaction picture. We **define** the creation and annihilation part of $\phi$ and $\pi$ as if they are free operators, since the interaction evolves the states not the operators:
+
+$$
+\phi^{\pm }(x) := \frac{1}{2} \left[ \phi(x) \mp  \frac{i}{\sqrt{ -\nabla^{2}+m^{2} }}\pi(x) \right]
+$$
+
+and 
+
+$$
+\pi^{\pm }(x) := \mp i\sqrt{ -\nabla^{2}+m^{2} }\phi^{\pm }(x),
+$$
+
+where $\phi^{+}$ is the creation part and $\phi^{-}$ the annihilation part, the same for $\pi$. We then define the normal-ordered version of any function of these operators as the function rearranged with all the creation operators on the left and all the annihilation operators on the right. Here $m$ is to be regarded as a free parameter, we should choose the most convenient value of it, usually the pole mass. Different choice of $m$ represents different choice of renormalization condition. 
+
+We can use Wick's theorem to perform the normal ordering. In Coleman's textbook the normal ordering depends on $m$, but in our work it also depends on which sector we are working in. 
+
+Take the simplest case for an instructive example. Consider the perversely defined Hamiltonian
+
+$$
+\mathcal{H} = \mathcal{N}_ {m}\left\lbrace \mathcal{H}_ {0} + \frac{1}{2} M^{2}\phi^{2} \right\rbrace ,
+$$
+
+perversely in the sense that the mass parameter of the field is clearly $M$ but we are normal-ordering with respect to $m$, and $m\neq M$. This is a free field model so exactly solvable, and serves as a good test ground for our method. 
+
+Yet we introduce a third mass-parameter $\mu$, which is used to define the vacuum. Assume that the vacuum is such that annihilated by the field with mass $\mu$,
+
+$$
+\phi^{-}(x,\mu) \left\lvert{0,\mu}\right\rangle = \pi^{-}(x,\mu)\left\lvert{0,\mu}\right\rangle =0.
+$$
+
+Then in order to find the Hamiltonian density, we need to normal-order the Hamiltonian in terms of $\mu$, and a change from $\mathcal{N}_ {m}$ to $\mathcal{N}_ {\mu}$ can be again achieved by Wick's theorem. We'll skip the details and just present the final result. Eventually the Hamiltonian will look like 
+
+$$
+\mathcal{H} = \mathcal{N}_ {\mu}\left\lbrace \cdots  \right\rbrace  + f(\mu,M,m)
+$$
+
+where $f(\mu,M,m)$ is a scalar function of $\mu,M$ and $m$, which is the non-zero Hamiltonian density.
+
+This completes the first step of the `Rayleigh-Ritz` method, the computation of the expectation value of $H$ in the trial state $\left\lvert{0,\mu}\right\rangle$. The next step is to differentiate this with respect to the variational parameter $\mu$, find the minimum. I'll again skip the details, just mention that it indeed gives the correct answer, saying that the best trial state is $\left\lvert{0,M}\right\rangle$. 
+
+- - -
+
+If we adopt exactly the same method to sine-Gordon model, something strange happens: The energy vev of the trial state is not bounded from below for $\beta^{2}>8\pi$. The variational method always gives a rigorous upper bound on the ground-state energy; in this case the upper bound is minus infinity. Thus we conclude that *the energy of the sine-Gordon theory is unbounded below if* $\beta^{2}>8\pi$.
+
+- - -
+
+We have been working with the vacuum states as the trial state, of course it is not gonna be enough, especially when classic kink background is involved. We need to consider trial states where the vev of $\phi$ is not zero. They are called `coherent states`.
+
+What are coherent states? Consider the familiar harmonic oscillator,
+
+$$
+H = \frac{1}{2}(p^{2}+q^{2})
+$$
+
+where $q$ is the general coordinate and we have set $\omega,m,\hbar$ to be identity. The ladder operators (raising and lower operators) are constructed as 
+
+$$
+\begin{align*}
+a &= \frac{1}{\sqrt{ 2 }}(q+ip), \\
+a^{\dagger} &= \frac{1}{\sqrt{ 2 }}(q-ip).
+\end{align*}
+$$
+
+A coherent state is labeled by a complex number $z$ and constructed from the ground state as 
+
+$$
+\left\lvert{z}\right\rangle  = D(z)\left\lvert{0}\right\rangle = e^{ - z^{\ast }z/2 } e^{ za^{^{\dagger}} }\left\lvert{0}\right\rangle = e^{ - z^{\ast }z/2 } \sum_ {n\geq 0} \frac{z^{n}}{\sqrt{ n! }}\left\lvert{n}\right\rangle   .
+$$
+
+It is most of all the (normalized) eigen vector of the lower operator,
+
+$$
+a\left\lvert{z}\right\rangle  = z\left\lvert{z}\right\rangle ,\quad  \left\langle{z}\right\rvert a^{\dagger}=\left\langle{z}\right\rvert z^{\ast }.
+$$
+
+Due to this property, coherent states are extremely convenient to deal with normal-ordered functions, since normal ordering ensures that $a^{\dagger}$ always acts on $\left\langle{z}\right\rvert$ from the right and $a$ acts on $\left\lvert{z}\right\rangle$ from left. Let $f(p,q)$ be a normal ordered function of $p$ and $q$, we have 
+
+$$
+\left\langle : f(p,q) : \right\rangle = f(\left\langle p \right\rangle,\left\langle q \right\rangle),
+$$
+
+where $\left\langle p \right\rangle$ is $\left\langle{z}\right\rvert \;p \left\lvert{z}\right\rangle$, the same for $q$. 
+
+Now we can generalize it to the scalar quantum field theory. In scalar quantum field theory, fields themselves are treated as quantum mechanical operators. In Schrodinger picture one can consider a scalar field $\phi(x)$ is similar to $x$ in the quantum mechanical example above. A coherent state $\lvert\alpha \rangle$ in the field theory context is characterized by: 
+
+$$
+a(f) \lvert \alpha \rangle = \alpha(f) \lvert\alpha \rangle
+$$
+
+for all test functions $f$, where $a(f)$ is the annihilation operator *smeared with* $f$, and $\alpha(f)$ is a function defining the coherent state. The smeared annihilation operator is given by:
+
+$$
+a(f) = \int dx \, f(x) a(x)
+$$
+
+where $a(x)$ is the annihilation operator at position $x$, and it relates to the field operators as:
+
+$$
+a(x) = \sqrt{\frac{1}{2}} \phi(x) + \frac{i}{\sqrt{2}} \pi(x).
+$$
+
+Here, $\omega$ is a characteristic frequency, which can be thought of as a parameter from the dispersion relation of the field.
+
+Just like in quantum mechanics, the coherent states in QFT are superpositions of the eigenstates of the field Hamiltonian, which represent different quantum states of the field. Coherent states in QFT are used to describe states of the field that behave in a manner closest to classical fields. This is because they minimize the uncertainty relations between field operators and their conjugate momenta, akin to the minimum uncertainty states of quantum harmonic oscillators.
+
+Next we can use the coherent states as trial states. I'll not go into details here, interested readers can refer to Coleman's original writings. 
 
