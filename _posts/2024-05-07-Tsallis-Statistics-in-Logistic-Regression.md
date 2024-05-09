@@ -558,7 +558,7 @@ $$
 
 where we first write $l(\vec{\beta})$ in terms of sigmoid function for future convenience. To be specific, in future work we will consider generalization for sigmoid function with Tsallis q-logarithms, so we might just write the loss functions explicitly in terms of it as well. $h(\beta)$ is the Lasso penalty term given by $\lambda \sum_ {g=1}^{G} \sqrt{ d_ {g} } \left\lVert \vec{\beta}_ {g} \right\rVert _ {2}$. 
 
-
+As usual, the loss function is convex and non-linear. Due to the nature of $\left\lVert \vec{\beta}_ {g} \right\rVert$, the loss function is not smooth at $\vec{\beta}=0$. 
 
 
 
