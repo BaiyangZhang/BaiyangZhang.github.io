@@ -2,12 +2,12 @@
 layout: post
 title: "Note on The Moral\rFoundations\rof Politics"
 subtitle: by Ian Shapiro
-date: 2024-2-25
+date: 2024-05-05
 author: Baiyang Zhang
-header-img: img/background1.jpg
+header-img: 
 catalog: true
 tags:
- - politics
+  - politics
 ---
 
 # Enlightenment Politics
