@@ -1,8 +1,8 @@
 {
-  "findText": "\\[",
-  "replaceText": "\\$\\$",
+  "findText": "\\\\\\( | \\\\\\)",
+  "replaceText": "$",
   "useRegEx": true,
-  "selOnly": true,
+  "selOnly": false,
   "caseInsensitive": false,
   "processLineBreak": false,
   "processTab": false,

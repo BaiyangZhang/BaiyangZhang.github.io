@@ -2,7 +2,7 @@
 layout: post
 title: Tsallis Statistics in Logistic Regression
 subtitle: 
-date: 2024-04-17
+date: 2024-05-07
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -19,7 +19,11 @@ tags:
 	- [2.3. Constraints and Entropy Optimization](#23-constraints-and-entropy-optimization)
 - [3. Nonextensive Statistical Mechanics](#3-nonextensive-statistical-mechanics)
 	- [3.1. Mean Value in Tsallis Statistics](#31-mean-value-in-tsallis-statistics)
-- [4. Useful Mathematical Formulae](#4-useful-mathematical-formulae)
+- [4. Tsallis in Logistic Regression Methods](#4-tsallis-in-logistic-regression-methods)
+	- [4.1 Traditional logistic regression method](#41-traditional-logistic-regression-method)
+	- [With Tsallis statistics](#with-tsallis-statistics)
+- [Appendix. Useful Mathematical Formulae](#appendix-useful-mathematical-formulae)
+
 
 
 # 1. Introduction
@@ -356,7 +360,9 @@ This part will be presented in a much less pedagogical manner, we will just intr
 
 ## 4.1 Traditional logistic regression method
 
-Say we are given a matrix $X_ {nm}$ of the expression of  $p$ genes in $n$ samples, from microarray or RNA-seq or some other fancy technologies. It is assumed that $p\gg n$, knows as the *big $p$, small $n$ problem*. Denote the response, or dependent variables, as a $n$-tuple $\vec{y} = (y_ {1},\cdots,y_ {n})$. $y_ {i}$ can only take value $1$ or $0$, making it a binary, or logistic variable. Each sample is a patient, $y_ {i}=1$ if patient $i$ is treated of some disease, $y_ {i}=0$ if otherwise. The value of $\vec{y}$ is modeled by the Bernoulli function, as we will see shortly. We can organize the $n$-observations, each with $p$ genes into a matrix $X$ as 
+Say we are given a matrix $X_ {n\times p}$ of the expression of $p$ genes in $n$ samples, measured by microarray or RNA-seq or some other fancy technologies. It is assumed that $p\gg n$, this sets the stage for so-called *big $p$, small $n$ problem*. Denote the response (or dependent variables, observables) as a $n$-vector $\vec{y} = (y_ {1},\cdots,y_ {n})$. $y_ {i}$ can only take value from $1$ and $0$, hence is called `binary variable`, or `logistic variable`. Think of each sample as a patient, $y_ {i}=1$ if patient $i$ is cured of certain disease, or has a certain disease; $y_ {i}=0$ otherwise. For now we are talking about a mathematical model, not yet a biostatistics model, so we don't need to know what $y=1$ actually means in real life, the meaning of it remains to be defined. The value of $\vec{y}$ is modeled by the Bernoulli function, as we will see shortly. 
+
+We can organize the $n$-observations, each with $p$ genes, into a matrix $X$,
 
 $$
 X = \begin{pmatrix}
@@ -367,93 +373,103 @@ x_ {n1}   &  \cdots  & x_ {np}
 \end{pmatrix}.
 $$
 
-Furthermore, we use $X_ {i}$ to denote the $i$-th gene observed in $n$ samples, namely the $i$-th column of $X$; we use $X_ {(j)}$ to denote the genes observed in $j$-th sample (patient $j$), namely the $j$-th row. In general, $X$ is our data and $\vec{y}$ the dependent variable. We already know which patients are treated and which are not, thus we already know the observed result of $\vec{y}$, the problem is to need to find a way to **predict** $\vec{y}$ using $X$, when given a new set of data. 
+Each row is a vector of different genes of one patient, each column is vector of different patients with one type of gene. We use $X_ {i}$ to denote the $i$-th gene observed in $n$ samples, namely the $i$-th column of $X$; we use $X_ {(j)}$ to denote the genes observed in $j$-th sample (one patient $j$), namely the $j$-th row. Note that the notational difference is just a pair of parenthesis. In general, $X$ is our data and $\vec{y}$ the dependent variable. In practice, it is known which patients are treated and which are not, hence we know the observed value of $\vec{y}$. The problem is to find a way to **predict** $y_ {a}$ from an observed vector of genes expressions $X_ {(a)}$. But first, we need to know the role played by each gene expression in different patients, that is we need to know how to interpret $X_ {a}$ for gene $a$. For example, if $X_ {a}$ is a constant vector for all the patients, then we know gene $a$ most likely has nothing to do with the disease of study.
 
-Let $\pi_ {i}$ be the probability of $y_ {i}=1$. Following the standard procedure of logistic regression method, define the logit (log here is used as a verb, *log* it) function of $\pi_ {i}$,
+Let us now delve into the mathematical foundations of the model.
+
+Let $\pi_ {i}$ be the probability of $y_ {i}=1$, which we aim to predict. Following the standard logistic regression method, we define the logit (log here is used as a verb, *log*-it) function of $\pi_ {i}$,
 
 $$
 \text{logit}(\pi_ {i} ) := \ln\left( \frac{\pi_ {i}}{1-\pi_ {i}} \right), \quad  \text{logit}: [0,1]\to \mathbb{R}.
 $$
 
-$\pi$ is the probability, hence $\pi / (1-\pi)$ is the odd, with range $\mathbb{R}^{+}:=[0,\infty)$. 
+$\pi$ is the probability, and $\pi / (1-\pi)$ is called `odd` whose range is $\mathbb{R}^{+}:=[0,\infty)$. Note that in our convention zero is included in $\mathbb{R}^{+}$. 
 
-By assumption, write the logit function in linear form,
-
-$$
-\text{logit}(\pi_ {i}) := \beta_ {0}+X_ {(i)}\cdot\beta, \quad  \beta=(\beta_ {1},\cdots,\beta_ {p})^{T}.
-$$
-
-$\beta$ is the parameter vector to be fixed later. Note that our convention here is slightly different from that in Shun-Jie's paper, where $X_ {(i)}$ is defined to be a column vector; here $X_ {(i)}$ is a row vector with $p$ components. That's why I can simply put $X \cdot \beta$, where the dot denote multiplication between vectors. 
-
-Some simple derivation shows that 
+Since we have constructed a continuous function $\text{logit}(\pi)$ from a probability function $\pi$, we can now adopt familiar *linear regression method* and apply it to the logit function. Parametrize the logit function in a linear form
 
 $$
-\pi^{i} = \frac{1}{1+\exp(-\beta_ {0}-X_ {(i)}\cdot \beta)}=:\text{sigm}(X_ {(i)}\cdot \beta),
+\text{logit}(\pi_ {i}) := \beta_ {0}+X_ {(i)}\cdot\beta, \quad  \beta=(\beta_ {1},\cdots,\beta_ {p}).
 $$
 
-where $\text{sigm}$ is the sigmoid function, literally means a function that has a $S$-shape,. In our particular case the sigmoid function is give by 
+$\beta$ is the parameter vector to be fixed later. Note that $X \cdot \beta:= X^{T} \beta$, the dot denote multiplication between vectors. 
+
+Direct derivation shows that 
 
 $$
-\text{sigm}(t) := \frac{1}{1-e^{ -t }}.
+\pi_ {i} = \frac{1}{1+\exp(-\beta_ {0}-X_ {(i)}\cdot \beta)}=:\text{sigm}(\beta_ {0}+X_ {(i)}\cdot \beta),
 $$
 
-I am not sure if there exists other definitions, there are other functions with an S-shape, such as tanh and arctan, but I am not sure if they can be called sigmoids? Or maybe difference in the predictive power by introducing different choices of sigmoid functions are negligible, hence it only makes sense that we stuck with the simplest option?
-
-Now, the question is how can we fix the parameters? A natural answer is, by maximizing the likelihood, or equivalent minimizing the so-called loss function. The likelihood function, by definition, is the probability (likelihood) for a certain observation $y$. This function measures the probability of observing the actual given data under the model parameters being estimated. For instance, supposed there are three samples, then the likelihood of $y=(1,0,1)$ corresponds to the probability predicted by our model that the first and third patients are cured, the second not. Now, the probability for each $y_ {i}=1$ is $\pi_ {i}$, which is defined to be $1/(1-e^{ -t_ {i} })$ (where in our example $t=\beta_ {0}+X_ {(i)}\cdot \beta$), then the probability for $y_ {i}=0$ is just $1- 1/(1-e^{ -ti })$, which is $e^{ -t_ {i} }/(1-e^{ -t_ {i} })$, then the probability for observing $y=(1,0,1)$, namely the likelihood function is the product of each probability, 
+where $\text{sigm}$ stands for sigmoid function, which literally means a function that has a $S$-shape. In our particular case the sigmoid function is give by 
 
 $$
-\text{lik}(1,0,1) = \frac{1}{1-e^{ -t_ {1} }} \frac{e^{ -t_ {2} }}{1-e^{ -t_ {2} }} \frac{1}{1-e^{ -t_ {3} }}.
+\text{sigm}(t) := \frac{1}{1+e^{ -t }}.
 $$
 
-This looks ugly, we can use the Bernoulli distribution to simplify it. The Bernoulli distribution is a simple discrete probability distribution having only two possible outcomes, 1 and 0, with a probability $p$ for $y=1$ and $1-p$ for $y=0$. This distribution is a special case of the binomial distribution where the number of trials $n$ is equal to 1. The **Probability Mass Function (PMF)** of Bernoulli distribution is defined as 
+Note that $\text{sigm}$ is the inverse of $\text{logit}$, 
 
 $$
-  P(y = k) := \pi^k (1-\pi)^{1-k} \text{ for } k \in \{0, 1\},
+\text{logit}(\pi)=x \Longleftrightarrow  \pi = \text{logit}^{-1}(x) = \text{sigm}(x).
 $$
 
-where $\pi$ is supposed to be given. The Expected Value is $E[X] = p$ and the variance is $\text{Var}(X) = p(1-p)$, you can verify it easily. This neat expression unites $y=0$ and $y=1$. Applying it to the likelihood function we get 
+I am not sure if there exists other widely-applied definitions for sigmoid function except for that given above. There surely are other functions with an S-shape, such as tanh and arctan, but I am not sure if they can be called sigmoids? Or maybe difference in the predictive power by introducing different choices of sigmoid functions are negligible, hence it only makes sense that we stuck with the simplest option?
+
+Now, the question is how can we fix the parameters? The natural answer is: by maximizing the likelihood, or equivalent by minimizing the loss function. The likelihood function, by definition, is the probability (likelihood) for a certain observation $\vec{y}$. This function measures the probability of observing the given data under the model parameters being estimated. For instance, supposed there are three samples (binary), then the likelihood of $y=(1,0,1)$ corresponds to the probability predicted by our model that the first and third patients have got some disease, while the second does not. Now, the probability for each $y_ {i}=1$ is $\pi_ {i}$, which is by definition $\text{sigm}(t_ {i})\equiv1/(1-e^{ -t_ {i} })$, where $t=\beta_ {0}+X_ {(i)}\cdot \beta$, and $\beta$'s are the parameters. The probability for $y_ {i}=0$ is hence $1- 1/(1-e^{ -ti })$, which is $e^{ -t_ {i} }/(1-e^{ -t_ {i} })$. Then, the likelihood for observing $y=(1,0,1)$ is simply the product of each probability, 
+
+$$
+\text{lik}(1,0,1) = \frac{1}{1-e^{ -t_ {1} }} \frac{e^{ -t_ {2} }}{1-e^{ -t_ {2} }} \frac{1}{1-e^{ -t_ {3} }},
+$$
+
+which is a function of parameters $\beta$'s and observed gene expression $X_ {i}$. 
+
+Likelihood function can also be written using the `Bernoulli distribution` function, which is a probability distribution function (PDF) that has only two possible outcomes, 1 and 0, with probability $\pi$ for $y=1$ and $1-\pi$ for $y=0$. This distribution is a special case of the binomial distribution where the number of trials $n$ is equal to 1. The **Probability Mass Function (PMF)** of Bernoulli distribution is defined as 
+
+$$
+  P(y) := \pi^y (1-\pi)^{1-y}, \quad  y=0 \text{ or }1,
+$$
+
+where $\pi$ is given *a priori*. The Expected Value is $\left\langle y \right\rangle=\pi$ and the variance is $\text{Var}(y) = \pi(1-\pi)$, you can verify it easily. This neat expression unites both cases $y=0$ and $y=1$. Applying it to the likelihood function we get 
 
 $$
 \text{lik}(1,0,1) = \prod_ {i=1}^{3} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}}, \quad  \vec{y}=(1,0,1).
 $$
 
-Looks much better. More importantly makes it trivial to generalize to arbitrary output $\vec{y}$, in our large $n$ small $p$ problem, the likelihood function would be 
+Generalization to arbitrary $\vec{y}$ is trivial, 
 
 $$
 \text{lik}(\vec{y}) := \prod_ {i=1}^{n} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}}, \quad  \vec{y}=(y_ {1},\cdots,y_ {n}).
 $$
 
-However, it can further simplified with the help of logarithm. Recall that logarithm is a monotonically increasing function, it means that $\log(\text{lik}(\vec{y}))$ is maximized iff (if and only if) $\text{lik}(\vec{y})$ is maximized. The reason why it is a good idea to take the logarithm of the likelihood include the following.
+The above expression can be further simplified using logarithms. Recall that logarithm is a *monotonically increasing* function, it means that $\log(\text{lik}(\vec{y}))$ is maximized iff (if and only if) $\text{lik}(\vec{y})$ is maximized. The reason why it is a good idea to take the logarithm of the likelihood is the following.
 
 1. **Numerical Stability**: The likelihood function in models like logistic regression involves products of probabilities, which can be very small numbers. When multiplying many such small probabilities, the result can become extremely small, potentially leading to numerical underflow (where values are so small that the computer treats them as zero). The logarithm of these small numbers turns them into more manageable, larger negative numbers, reducing the risk of numerical issues.
 
-2. **Simplification of Products into Sums**: The likelihood function involves taking the product of probability values across all data points. In contrast, the log-likelihood converts these products into sums by the property of logarithms (\(\log(ab) = \log(a) + \log(b)\)). Sums are much easier to handle analytically and computationally. This is especially useful when dealing with large datasets.
+2. **Simplification of Products into Sums**: The likelihood function involves taking the product of probability values across all data points. In contrast, the log-likelihood converts these products into sums by the property of logarithms $\ln(ab) = \ln(a) + \ln(b)$. Sums are much easier to handle analytically and computationally. This is especially useful when dealing with large datasets.
 
 3. **Convexity Properties**: The log-likelihood function often yields a convex optimization problem in cases where the likelihood itself is not convex. Convex problems are generally easier to solve reliably and efficiently. For logistic regression, the log-likelihood function is concave, and finding its maximum is a well-behaved optimization problem with nice theoretical properties regarding convergence and uniqueness of the solution.
 
 4. **Derivative Computation**: The derivatives of the log-likelihood (needed for optimization algorithms like gradient ascent or Newton-Raphson) are typically simpler to compute and work with than the derivatives of the likelihood function. This simplicity arises because the derivative of a sum (log-likelihood) is more straightforward than the derivative of a product (likelihood).
 
-5. **Interpretation and Link to Information Theory**: The log-likelihood connects directly to concepts in information theory, such as entropy and Kullback-Leibler divergence. Maximizing the log-likelihood is equivalent to minimizing the KL divergence between the empirical distribution defined by the data and the distribution defined by the model, thus achieving the best statistical fit in an information-theoretic sense.
-
 Last but not least,
 
 6. **Possibility to introduce the Tsallis statistics**: We have explain how the Tsallis statistics modified traditional exponential and logarithmic functions, *in our case the log-likelihood function can be generalized by adopting the Tsallis logarithm, namely $\log_ {q}$.* In the next section we will try to explain the advantage of such generalization, which will also serve as justification. But of course, being a phenomenological model, the true justification will be the power of prediction, which can only be tested in real-life practice. 
 
-But for now, let's forget about Tsallis and carry on on the road of conventional logic regression method. Taking the natural log of likelihood function we get 
+But for now, let's forget about Tsallis and carry on on the road of conventional logic regression method. 
+
+Taking the natural log of likelihood function gets us 
 
 $$
 \begin{align*}
-\text{loglik} &:=\log(\text{lik}(\vec{y}))= \ln \left\lbrace \prod_ {i=1}^{n} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}} \right\rbrace \\
+\text{loglik}(\vec{y}) &:=\log(\text{lik}(\vec{y}))= \ln \left\lbrace \prod_ {i=1}^{n} \pi_ {i}^{y_ {i}}(1-\pi_ {i})^{1-y_ {i}} \right\rbrace \\
 &=\sum_ {i} \left\lbrace  y_ {i} \ln\pi_ {i}+(1-y_ {i}) \ln(1-\pi_ {i}) \right\rbrace. 
 \end{align*}
 $$
 
-In logistic regression, people often use the loss function, defined as the negative of the likelihood function, rather than the likelihood function itself, the reason primarily revolves around convention and practicality in optimization processes.
-Most optimization algorithms and tools are designed to minimize functions rather than maximize them. This is a common convention in mathematical optimization and numerical methods. Since maximizing the likelihood is equivalent to minimizing the negative of the likelihood, formulating the problem as a minimization one allows the use of standard, widely available optimization software and algorithms without modification. In many statistical learning methods, the objective function is often interpreted as a "cost" or "loss" that needs to be minimized. When working with a loss function, the goal is to find parameter estimates that result in the smallest possible loss. Defining the loss function as the negative log-likelihood aligns with this interpretation because lower values of the loss function correspond to higher likelihoods of the data under the model. This concept is intuitive for loss minimization, where we intuitively understand and seek to reduce "costs" or "losses."
 
-Using a loss function that is to be minimized creates a consistent framework across various statistical learning methods, many of which inherently involve minimization (like least squares for linear regression, and more complex regularization methods in machine learning). This consistency is helpful not only from an educational and conceptual standpoint but also from a practical implementation standpoint.
+In the context of logistic regression, people often use the loss function, defined as the negative of the likelihood function, rather than the likelihood function itself. This is primarily due to convention and practical considerations in optimization processes, since most optimization algorithms and tools are designed to minimize functions rather than maximize them. This is a common convention in mathematical optimization and numerical methods. Since maximizing the likelihood is equivalent to minimizing the negative of the likelihood, formulating the problem as a minimization problem allows us the application of standard, widely available optimization software and algorithms without modification. In many statistical learning methods, the objective function is often interpreted as a "cost" or "loss" that needs to be minimized. When working with a loss function, the goal is to find parameter estimates that result in the smallest possible loss. Defining the loss function as the negative log-likelihood aligns with this interpretation because lower values of the loss function correspond to higher likelihoods of the data under the model. 
 
-A `regularized loss function` is the loss function with penalty terms. Penalty terms in regression methods are essential for managing several challenges that arise in statistical modeling, particularly with high-dimensional data. These challenges include *overfitting*, *multicollinearity*, and *interpretability*. 
+Furthermore, using a loss function that is to be minimized creates a consistent framework across various statistical learning methods, many of which inherently involve minimization (like least squares for linear regression, and more complex regularization methods in machine learning). This consistency is helpful not only from an educational and conceptual standpoint but also from a practical implementation standpoint.
+
+A `regularized loss function` is the loss function with `penalty terms`. Penalty terms in regression methods are essential for managing several challenges that arise in statistical modeling, particularly with high-dimensional data. These challenges include *overfitting*, *multicollinearity*, and *interpretability*. 
 
 One of the primary reasons for using penalty terms is to prevent overfitting. Overfitting occurs when a model captures not just the true underlying pattern but also the random fluctuations (noise) in the data. This makes the model very accurate on the training data but *poorly generalized to new, unseen data*. By adding a penalty term, which increases as the model complexity increases (e.g., as coefficients become larger), the optimization process is biased towards simpler models. This helps to ensure that the model generalizes well to new data by focusing on the most significant predictors and shrinking the others.
 
@@ -463,40 +479,86 @@ By shrinking coefficients or reducing the number of variables, penalty terms hel
 
 However it is also important to realize the disadvantages of introducing penalty terms, that is the bias-variance tradeoff. Adding a penalty term introduces bias into the estimator for the coefficients (the estimates are "shrunk" towards zero or towards each other in the case of Ridge). However, this can lead to a significant reduction in variance (the estimates are less sensitive to fluctuations in the data). This trade-off can lead to better predictive performance on new data, which is the ultimate goal of most predictive modeling tasks.
 
-In our work with ShunJie, we consider the regularized loss function as following.
+- - -
+
+In our project, we consider the regularized loss function as following.
 
 $$
 l(\beta_ {0}, \vec{\beta}) := -\sum_ {i}^{n} \left\lbrace y_ {i}\ln(\pi_ {i})+(1-y_ {i})\ln(1-\pi_ {i}) \right\rbrace  +h(\vec{\beta}),
 $$
 
-where $h(\vec{\beta})$ is the penalty terms and is a function of $\vec{\beta}$ only, $\beta_ {0}$ does not affect the penalty, by assumption. $h(\vec{\beta})$ could be the Lasso (Least Absolute Shrinkage and Selection Operator) term, or ridge term.
+where $h(\vec{\beta})$ is the penalty terms and is independent of $\beta_ {0}$, which is simply a shift. $h(\vec{\beta})$ could be the Lasso (`Least Absolute Shrinkage and Selection Operator`) term, or ridge term.
 
 - - -
 
-**Group Lasso regression**
-
-Group Lasso regression is an extension of Lasso that is particularly useful in the context of biostatistics, especially when dealing with models that incorporate multiple predictors which naturally group into clusters. This method not only encourages sparsity in the coefficients, like traditional Lasso, but also takes into account the structure of the data by promoting or penalizing entire groups of coefficients together. Here’s an introduction to how Group Lasso works and why it’s valuable in biostatistics:
+We now introduce the **Group Lasso regression** method. Group Lasso regression is an extension of Lasso that is particularly useful in the context of biostatistics, especially when dealing with models that incorporate multiple predictors which naturally group into clusters. This method not only encourages sparsity in the coefficients, like traditional Lasso, but also takes into account the structure of the data by promoting or penalizing entire groups of coefficients together. Here’s an introduction to how Group Lasso works and why it’s valuable in biostatistics:
 
 In many biostatistical applications, predictors can be inherently grouped based on biological function, measurement type, or other domain-specific knowledge. For example, genes might be grouped into pathways, or clinical measurements might be grouped by the type of instrument used or the biological system they measure.
 
 The key idea behind Group Lasso is to *perform regularization and variable selection at the group level*. The formulation of Group Lasso is similar to that of Lasso, but instead of summing the absolute values of coefficients, it sums the norms of the coefficients for each group. The objective function for Group Lasso can be written as:
 
 $$
-\text{Minimize:} \quad \text{loss function} + \lambda \sum_ {g=1}^G w_ g \left\lVert \beta_{g} \right\rVert 
+\text{Minimize:} \quad \text{loss function} + h(\vec{\beta}), \quad  h(\vec{\beta}):= \lambda \sum_ {g=1}^G w_ g \left\lVert \vec{\beta}_{g} \right\rVert_ {2} 
 $$
 
-where $y$ is the response vector, $X$ is the design matrix, $\beta$ represents the coefficient vector, $\beta_{g}$ is the sub-vector of coefficients corresponding to group $g$, $G$ is the total number of groups, $w_g$ are weights that can be used to scale the penalty for different groups, often based on group size or other criteria, $\left\lVert \beta_{g} \right\rVert$ is typically the Euclidean norm (L2 norm) of the coefficients in group $g$ or, as is shown in ShunJie's paper, the PCC (Pearson correlation coefficient) distance or shape-based distance. $\lambda$ is a tuning parameter that controls the overall strength of the penalty.
+where $\vec{\beta}$ represents the coefficient vector, $\vec{\beta}_{g}$ is the sub-vector of coefficients corresponding to group $g$, $G$ is the total number of groups, $w_g$ are weights that can be used to scale the penalty for different groups, often based on group size or other criteria, $\left\lVert \vec{\beta}_{g} \right\rVert$ is typically the Euclidean norm (L2 norm) of the coefficients in group $g$ or, as is shown in ShunJie's paper, the PCC (Pearson correlation coefficient) distance, or shape-based distance. $\lambda$ is a **global** tuning parameter that controls the overall strength of the penalty.
 
-The penalty term for group Lasso is defined as 
+In our current project, we use square root of the degree of freedom (dof) as the weight for different groups. The penalty term is then
 
 $$
-h(\beta) = \lambda \sum_ {g=1}^{G} \sqrt{ d_ {g} } \left\lVert \beta_ {g} \right\rVert _ {2}
+h(\beta) = \lambda \sum_ {g=1}^{G} \sqrt{ d_ {g} } \left\lVert \vec{\beta}_ {g} \right\rVert _ {2}
 $$
 
-where $d_ {g}$ is the number of genes in group $g$, and $\beta_ {g}$ is a $d_ {g}$-tuple of parameters, corresponding to the genes in group $g$. Naturally it is a subset of $\beta$.
+where $d_ {g}$ is the number of genes in group $g$, or dimension of $\vec{\beta}_ {g}$, where $\vec{\beta}_ {g}$ is treated as a $d_ {g}$-vector of parameters. Naturally it is a subset of $\beta$.
+
+Recall that $\sqrt{ d_ {g} }$ is the expected length of $d_ {g}$ i.i.d. variables, independent and identically distributed variables. The factor $\sqrt{d_ g}$ is to adjust for the size of each group, it scales up the penalty proportional to the group size. This means that larger groups, which naturally have a potentially larger norm due to more coefficients, receive a proportionally larger penalty. By multiplying the norm by $\sqrt{d_ g}$, the intention is to make the penalty fair by ensuring that the regularization is proportional to the number of parameters in the group. Without this scaling, smaller groups could be unfairly penalized in relative terms because their norms are naturally smaller due to fewer components. For example, consider two groups in a regression setting:
+
+- Group 1: Contains 1 coefficient, $\mathbf{w}_ 1 = (3)$.
+- Group 2: Contains 4 coefficients, $\mathbf{w}_ 2 = (1, 1, 1, 1)$.
+
+Without any normalization, we have
+
+- The norm for Group 1 is $\left\lVert w_ {1} \right\rVert_ 2 = |3| = 3$.
+- The norm for Group 2 is $\left\lVert w_ {2} \right\rVert_ 2 = \sqrt{1^2 + 1^2 + 1^2 + 1^2} = 2$.
+
+Here, the raw norms suggest that Group 1 might be more significant, which could distort the model's view. Using $d_ g$ for normalization instead, we have:
+
+- For Group 1: $1 \times \left\lvert 3 \right\rvert= 3$.
+- For Group 2: $4 \times 2 = 8$.
+
+This overcorrects, making the penalty overly sensitive to the number of components, and could lead to under-penalizing smaller groups. Thus we decide to use $\sqrt{d_ g}$ for normalization:
+
+- For Group 1: $\sqrt{1} \times 3 = 3$.
+- For Group 2: $\sqrt{4} \times 2 = 2 \times 2 = 4$.
+
+This balances the penalties more reasonably, reflecting that while Group 2 is larger, its collective contribution should be seen in proportion to the natural growth of norms with group size, not exponentially with each addition.
 
 - - -
 
+We recall that $X_ {(i)}$ is the expression of different genes for one patient $i$, in terms of which is given the probability:
+ 
+$$
+\pi_ {i} = \frac{1}{1+\exp(-\beta_ {0}-X_ {(i)}\cdot \beta)}=\text{sigm}(\beta_ {0}+X_ {(i)}\cdot \beta),
+$$
+
+where the sigmoid function is give by 
+
+$$
+\text{sigm}(t_ {i} ) := \frac{1}{1+e^{ -t_ {i}  }}, \quad  t_ {i}  := \beta_ {0}+X_ {(i)}\cdot \beta.
+$$
+
+The loss function is given by the negative log-likelihood function plus the penalty term, in our case a L2-norm one:
+
+$$
+\begin{align*}
+l(\beta) &=  -\sum_ {i} \left\lbrace y_ {i}\ln\left( \frac{\text{sigm}(t_ {i} )}{\text{sigm}(-t_ {i} )}  \right) + \ln\, \text{sigm}(t_ {i} ) \right\rbrace  + h(\beta) \\
+&= -\sum_ {i}[y_ {i}t_ {i} -\ln(1+e^{ -t_ {i}  })] + h(\beta),
+\end{align*}
+$$
+
+where we first write $l(\vec{\beta})$ in terms of sigmoid function for future convenience. To be specific, in future work we will consider generalization for sigmoid function with Tsallis q-logarithms, so we might just write the loss functions explicitly in terms of it as well. $h(\beta)$ is the Lasso penalty term given by $\lambda \sum_ {g=1}^{G} \sqrt{ d_ {g} } \left\lVert \vec{\beta}_ {g} \right\rVert _ {2}$. 
+
+As usual, the loss function is convex and non-linear. Due to the nature of $\left\lVert \vec{\beta}_ {g} \right\rVert$, the loss function is not smooth at $\vec{\beta}=0$. 
 
 
 
@@ -510,9 +572,7 @@ where $d_ {g}$ is the number of genes in group $g$, and $\beta_ {g}$ is a $d_ {g
 
 
 
-
-
-## With Tsallis statistics
+## 4.2 With Tsallis statistics
 
 
 
