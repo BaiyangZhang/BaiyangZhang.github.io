@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-4-26-Classical-Lumps-and-Their-Quantum-Descendants.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-4-26-Classical-Lumps-and-Their-Quantum-Descendants.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-4-26-Classical-Lumps-and-Their-Quantum-Descendants.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-4-26-Classical-Lumps-and-Their-Quantum-Descendants.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -160,10 +160,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b66263de2453f537",
+  "active": "64f38d0fe9abaf57",
   "lastOpenFiles": [
-    "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-4-26-Classical-Lumps-and-Their-Quantum-Descendants.md",
+    "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "Untitled.md",
     "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
