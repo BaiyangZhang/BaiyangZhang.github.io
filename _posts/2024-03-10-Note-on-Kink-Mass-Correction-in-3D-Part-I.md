@@ -14,9 +14,9 @@ tags:
 	- [1.1 Background](#11-background)
 	- [1.2 Digression on $\hbar$-expansion](#12-digression-on-%5Chbar-expansion)
 - [2 Kinks in d-Dimension](#2-kinks-in-d-dimension)
-	- [2.1. Normal modes and quantization](#21-normal-modes-and-quantization)
+	- [2.1 Normal modes and quantization](#21-normal-modes-and-quantization)
 	- [2.2 Renormalization methods review](#22-renormalization-methods-review)
-	- [2.3. Lattice quantization](#23-lattice-quantization)
+	- [2.3 Lattice quantization](#23-lattice-quantization)
 		- [2.3.1 Latticization of scalar field](#231-latticization-of-scalar-field)
 		- [2.3.2 Second quantization in the vacuum sector](#232-second-quantization-in-the-vacuum-sector)
 	- [2.4 Kink in (2+1)-dimension](#24-kink-in-21-dimension)
@@ -235,7 +235,7 @@ with definition
 $$
 V^{(n)} := \frac{ \partial^{n } V(\tilde{\phi})}{ \partial \tilde{\phi}^{n} }. 
 $$
-## 2.1. Normal modes and quantization
+## 2.1 Normal modes and quantization
 
 When kink solutions are placed in more than one spatial dimension, they become extended planar structures called “domain walls.” 
 
@@ -367,7 +367,7 @@ Different sectors also seem to give different perspectives regarding the relatio
 
 A natural question that follows is, if there exists a regularization method that applies to all the sectors (unlike the momentum cutoff renormalization) equally well? If so, which one? Apparently the space-time itself is the common ground of all sectors, since the lattice regularization is dependent on spacetime alone, it is independent of the specific mode-expansion we adopt for fields, so it seems reasonable to use it as the renormalization scheme. Other advantages of lattice renormalization includes, 1) it made obvious the Wilsonian RG flow, which is continuous change of various parameters in the theory depending on a continuous change of the lattice size. 2) The connection between the lattice quantization and momentum-cutoff renormalization is already know in the trivial vacuum sector. We just need to find a way to generalize it to other sectors.  
 
-## 2.3. Lattice quantization
+## 2.3 Lattice quantization
 
 In our work we will start with the lattice quantization. Recall that the canonical quantization relation in a continuous $d$-dimensional spacetime reads
 

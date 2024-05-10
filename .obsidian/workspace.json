@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
               }
             }
           }
@@ -160,14 +160,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "64f38d0fe9abaf57",
+  "active": "b66263de2453f537",
   "lastOpenFiles": [
+    "Untitled.md",
     "_posts/2024-5-5-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-05-07-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-4-26-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
-    "Untitled.md",
     "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
     "_drafts/2024-04-09-Effects-of-Different-Clustering-Algorithms.md",
     "2024-04-09.md",
