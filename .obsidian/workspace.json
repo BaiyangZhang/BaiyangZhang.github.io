@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md"
               }
             }
           }
@@ -162,10 +162,17 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
-    "Untitled.md",
     "_posts/2024-5-5-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
+    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
+    "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-05-07-Tsallis-Statistics-in-Logistic-Regression.md",
-    "_posts/2024-4-26-Classical-Lumps-and-Their-Quantum-Descendants.md",
+    "Untitled.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
+    "Discussion Notes.md",
+    "README.md",
     "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
@@ -173,21 +180,14 @@
     "2024-04-09.md",
     "_drafts/DiscussionLetters/2022-09-22-HuiDiscussion1.md",
     "_drafts/DiscussionLetters/AndyJarahDiscussion1.md",
-    "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
-    "Discussion Notes.md",
     "2024-04-08-Counterterms-for-Soliton-Sectors-of-3D-phi-Fourth-Theory.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
     "_posts/2024-03-06-Domain-Wall.md",
-    "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
     "_posts/2023-12-7-Transseries-Lecture-2.md",
     "Untitled 1.md",
     "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
     "_posts/2023-12-20-Introduction-to-Resurgence-Lecture-4.md",
     "_posts/2023-12-30-The-Best-Way-to-Make-Math-Notes.md",
-    "_posts/2024-2-25-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "img/effectiveAction_1Loop.png",
     "img/effectiveAction/1Loop.png",
     "img/effectiveAction"
