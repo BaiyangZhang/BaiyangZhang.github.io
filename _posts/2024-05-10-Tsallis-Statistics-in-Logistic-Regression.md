@@ -2,7 +2,7 @@
 layout: post
 title: Tsallis Statistics in Logistic Regression
 subtitle: 
-date: 2024-05-07
+date: 2024-05-10
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -498,10 +498,10 @@ In many biostatistical applications, predictors can be inherently grouped based 
 The key idea behind Group Lasso is to *perform regularization and variable selection at the group level*. The formulation of Group Lasso is similar to that of Lasso, but instead of summing the absolute values of coefficients, it sums the norms of the coefficients for each group. The objective function for Group Lasso can be written as:
 
 $$
-\text{Minimize:} \quad \text{loss function} + h(\vec{\beta}), \quad  h(\vec{\beta}):= \lambda \sum_ {g=1}^G w_ g \left\lVert \vec{\beta}_{g} \right\rVert_ {2} 
+\text{Minimize:} \quad \text{loss function} + h(\vec{\beta}), \quad  h(\vec{\beta}):= \lambda \sum_ {g=1}^G w_ g \left\lVert \vec{\beta}_{(g)} \right\rVert_ {2} 
 $$
 
-where $\vec{\beta}$ represents the coefficient vector, $\vec{\beta}_{g}$ is the sub-vector of coefficients corresponding to group $g$, $G$ is the total number of groups, $w_g$ are weights that can be used to scale the penalty for different groups, often based on group size or other criteria, $\left\lVert \vec{\beta}_{g} \right\rVert$ is typically the Euclidean norm (L2 norm) of the coefficients in group $g$ or, as is shown in ShunJie's paper, the PCC (Pearson correlation coefficient) distance, or shape-based distance. $\lambda$ is a **global** tuning parameter that controls the overall strength of the penalty.
+where $\vec{\beta}$ represents the coefficient vector, $\vec{\beta}_{(g)}$ is the sub-vector of coefficients corresponding to group $g$. Note the difference between $\beta_ {g}$ and $\beta_ {(g)}$, the former is a component of $\vec{\beta}$ thus a number, while the latter is a sub-vector of $\vec{\beta}$. $G$ is the total number of groups, $w_g$ are weights that can be used to scale the penalty for different groups, often based on group size or other criteria, $\left\lVert \vec{\beta}_{(g)} \right\rVert$ is typically the Euclidean norm (L2 norm) of the coefficients in group $g$ or, as is shown in ShunJie's paper, the PCC (Pearson correlation coefficient) distance, or shape-based distance. $\lambda$ is a **global** tuning parameter that controls the overall strength of the penalty.
 
 In our current project, we use square root of the degree of freedom (dof) as the weight for different groups. The penalty term is then
 
@@ -552,13 +552,15 @@ The loss function is given by the negative log-likelihood function plus the pena
 $$
 \begin{align*}
 l(\beta) &=  -\sum_ {i} \left\lbrace y_ {i}\ln\left( \frac{\text{sigm}(t_ {i} )}{\text{sigm}(-t_ {i} )}  \right) + \ln\, \text{sigm}(t_ {i} ) \right\rbrace  + h(\beta) \\
-&= -\sum_ {i}[y_ {i}t_ {i} -\ln(1+e^{ -t_ {i}  })] + h(\beta),
+&= -\sum_ {i}[y_ {i}t_ {i} -\ln(1+e^{ -t_ {i}  })] + h(\beta)\\
+&=: J(\beta)+h(\beta),
 \end{align*}
 $$
 
-where we first write $l(\vec{\beta})$ in terms of sigmoid function for future convenience. To be specific, in future work we will consider generalization for sigmoid function with Tsallis q-logarithms, so we might just write the loss functions explicitly in terms of it as well. $h(\beta)$ is the Lasso penalty term given by $\lambda \sum_ {g=1}^{G} \sqrt{ d_ {g} } \left\lVert \vec{\beta}_ {g} \right\rVert _ {2}$. 
+where in the first line we write $l(\vec{\beta})$ in terms of sigmoid function for future convenience. To be specific, in future work we will consider generalization for sigmoid function with Tsallis q-logarithms, so we might just write the loss functions explicitly in terms of it as well. $h(\beta)$ is the Lasso penalty term given by $\lambda \sum_ {g=1}^{G} \sqrt{ d_ {g} } \left\lVert \vec{\beta}_ {g} \right\rVert _ {2}$. $J(\beta)$ is the minus likelihood function, introduced for future convenience.
 
-As usual, the loss function is convex and non-linear. Due to the nature of $\left\lVert \vec{\beta}_ {g} \right\rVert$, the loss function is not smooth at $\vec{\beta}=0$. 
+As usual, the loss function is convex and non-linear. Since we took the absolute value of $\left\lVert \vec{\beta}_ {g} \right\rVert$, it is not smooth at $\vec{\beta}=0$. Define the 
+
 
 
 
