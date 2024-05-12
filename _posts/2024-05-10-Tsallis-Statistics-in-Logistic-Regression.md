@@ -518,7 +518,7 @@ Recall that $\sqrt{ d_ {g} }$ is the expected length of $d_ {g}$ i.i.d. variable
 
 Without any normalization, we have
 
-- The norm for Group 1 is $\left\lVert w_ {1} \right\rVert_ 2 = |3| = 3$.
+- The norm for Group 1 is $\left\lVert w_ {1} \right\rVert_ 2 = \left\lvert 3 \right\rvert = 3$.
 - The norm for Group 2 is $\left\lVert w_ {2} \right\rVert_ 2 = \sqrt{1^2 + 1^2 + 1^2 + 1^2} = 2$.
 
 Here, the raw norms suggest that Group 1 might be more significant, which could distort the model's view. Using $d_ g$ for normalization instead, we have:

@@ -2,7 +2,7 @@
 layout: post
 title: Note on Classical Lumps and Their Quantum Descendants
 subtitle: 
-date: 2024-04-26
+date: 2024-05-08
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -12,8 +12,16 @@ tags:
   - Notes
 ---
 
-# Classical lumps
-## Solitonic waves
+- [1. Classical lumps](#1-classical-lumps)
+	- [1.1. Solitonic waves](#11-solitonic-waves)
+		- [1.1.1. Some time-independent example in one space dimension](#111-some-time-independent-example-in-one-space-dimension)
+	- [1.2. With gauge field](#12-with-gauge-field)
+- [2. Quantum lumps](#2-quantum-lumps)
+	- [2.1. Power expansion of the time-independent lumps](#21-power-expansion-of-the-time-independent-lumps)
+	- [2.2. Coherent-state variational method for time-independent lumps](#22-coherent-state-variational-method-for-time-independent-lumps)
+
+# 1. Classical lumps
+## 1.1. Solitonic waves
 
 The waves in real world usually dissipate over time. As the energy propagates to infinite far in the form of waves, the energy density goes to zero uniformly in spacetime. The same is true for the solutions of wave equations, except for some singular solutions at least. We give a more rigorous definition for dissipation: a solution of the classical equations of motion is dissipative if 
 
@@ -27,7 +35,7 @@ The interesting thing is that there exists wave functions that allows for non-si
 
 - - - 
 
-### Some time-independent example in one space dimension
+### 1.1.1. Some time-independent example in one space dimension
 
 First some conventions. The metric is taken to be $g = \text{diag}(1,-1,-1,\cdots)$, $i,j, \dots$ denote space dimensions, $a,b, \dots$ denotes internal symmetry. 
 
@@ -135,7 +143,7 @@ A few words on the stability of the kink solution. We know that the equation of 
 A kink in $\phi^{4}$ theory can be very well regarded as a almost-localized classical particle, with one major difference: the condition for patching adjacent kink solutions together must be ...kink-antikink-kink..., otherwise it would not be a solution to the equation of motion. 
 
 
-## With gauge field
+## 1.2. With gauge field
 
 Let $\phi$ be a vector of scalar field with gauge group $G$ and gauge field $A$. The covariant derivative and field strength are defined in the usual way, you can pick your favorite convention. Let $\phi=\phi_ {0}$, $A =0$ be the ground state. Due to the gauge invariance (or more precisely, gauge redundancy), there might exist a subset $H$ of $G$ such that it leaves $\phi=\phi_ {0},A=0$ unchanged. It is usually written as $H<G$, then for any $h\in H$ we have $h\phi_ {0}=\phi_ {0}$, $H$ is the little group of $\phi_ {0}$, $\phi_ {0}$ is the fixed point of $H$. If we study the fluctuation near $\phi_ {0}$, we find that the gauge fields associated with the generators of $H$ remains massless. The vacuum manifold would be the coset space $G/H$, for reasons that I have no time to explain here. This is under the assumption that the vacuum manifold is connected and on which the gauge group acts transitively. This excludes both the case of accidental degeneracy and existence of ordinary (non-gauge) symmetry. Accidental degeneracy refers to a situation where two or more energy levels have the same energy not due to an obvious symmetry of the system, but rather due to a more subtle or hidden symmetry, or as a result of a specific mathematical coincidence, such as the accidental degeneracy in the hydrogen atom. This differs from the usual degeneracy associated with the symmetries of the system's Hamiltonian, such as those arising from rotational or translational invariance. 
 
@@ -151,8 +159,8 @@ is brilliant! I strongly recommend section 3.7 to everyone. I've learnt about ho
 
 - - -
 
-# Quantum lumps
-## Power expansion of the time-independent lumps
+# 2. Quantum lumps
+## 2.1. Power expansion of the time-independent lumps
 
 The quantization of kink is a fascinating topic. We start from the classical solution and consider the small perturbations about it, order by order. 
 
@@ -218,7 +226,7 @@ The peculiar thing with $\beta^{2}\mathcal{H}$ is that, in terms of $\widetilde{
 
 - - -
 
-## Coherent-state variational method for time-independent lumps
+## 2.2. Coherent-state variational method for time-independent lumps
 
 Another non-relativistic quantum mechanical method we can use to study the quantum lumps is the variational method, with some trial states. The `Rayleigh-Ritz` method is based on the variational principle, which states that for a given Hamiltonian $H$ and a trial wave function $\psi$, the expectation value of the Hamiltonian, $\langle \psi \rvert H \lvert \psi \rangle$, provides an **upper bound** to the ground state energy of the system. The goal is to *choose a trial wave function that minimizes this expectation value*, which then approximates the ground state energy as closely as possible. To do that, we first choose a set of basis functions $\lbrace \phi_ 1, \phi_ 2, \dots, \phi_ n \rbrace$ that are believed to closely resemble the true wave functions of the system. These can be functions that satisfy boundary conditions or other physical considerations of the problem. Then we construct a trial wave function $\psi$ as a linear combination of these basis functions:
   

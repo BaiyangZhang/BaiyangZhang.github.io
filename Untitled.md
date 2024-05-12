@@ -1,6 +1,9 @@
 
-If a vacuum sector Hamiltonian is regularized by an energy cutoff, how is the one-kink sector Hamiltonian regularized? We find that it is not regularized by an energy cutoff, indeed normal modes of all energies are present in the kink Hamiltonian, but rather the decomposition of the field into normal mode operators yields coefficients which lie on a constrained surface that forces them to become small for energies above the cutoff. This explains the old observation that an energy cutoff of the kink Hamiltonian leads to an incorrect one-loop kink mass. To arrive at our conclusion, we impose that the regularized kink sector Hamiltonian is unitarily equivalent to the regularized vacuum sector Hamiltonian. This condition implies that the two regularized Hamiltonians have the same spectrum and so guarantees that the kink Hamiltonian yields the correct kink mass.
+$$
+\left\langle \mathcal{O} \right\rangle=\sum_ {i\in \mathbb{N} }(g\hbar)^{i} C_ {i} + e^{ -4\pi /g } \sum_ {i\in \mathbb{N} }(g\hbar)^{i} C'_ {i} + e^{ -8\pi /g } \sum_ {i\in \mathbb{N} }(g\hbar)^{i} C''_ {i}+\cdots
+$$
 
+<<<<<<< HEAD
 In the context of quantum field theory, the expectation value of any observable receives contribution from 1) perturbative expansion in coupling constant, which is an asymptotic power series and 2) non-perturbative sectors, based on topologically non-trivial solutions of the model, such as kinks, vortices, etc. The quantum corrections to classical solitonic solutions form yet another asymptotic power series. Latest developments regarding the non-perturbative nature of quantum field theory has revealed profound connections between perturbative expansion and classical topological contribution, in our talk we will emphasize on the equally profound connection between perturbative sector and quantum corrections in kink sector, and we argue that such connection is best described by the language of category theory. Further we propose that the the inverse quantization functor can be used to define a groupoid fiberation of quantum category over classical category, yet it is unclear if such structure satisfies pullback theorem and thus form a discrete stack.
 
 - - -
@@ -14,3 +17,5 @@ In 1+1-dimensional phi-fourth theory with spontaneous symmetry breaking, the kin
 $$
 \oplus + O=
 $$
+=======
+>>>>>>> 28c090f41367b41814fa01947cdf9bc319277bdd
