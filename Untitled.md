@@ -10,3 +10,7 @@ In 1+1 dimensional phi-fourth theory with spontaneous symmetry breaking, the kin
 - - -
 
 In 1+1-dimensional phi-fourth theory with spontaneous symmetry breaking, the kink mass receives quantum corrections around the classical kink solution, forming an asymptotic series in the coupling constant, akin to perturbative expansions. Recent advances in resurgence theory have unveiled a deep connection between perturbative and solitonic contributions, but typically at leading order. Our talk will explore the crucial connection between perturbative contributions and higher-order quantum corrections around the kink, focusing on the ground state Hamiltonian. We will construct a bridge between two superselection sectors, i.e., the trivial vacuum sector and kink sector, with proper normalization. We argue that category theory provides the optimal framework for describing this relationship, where the inverse quantization functors define a groupoid fibration over the category of Poisson manifolds.
+
+$$
+\oplus + O=
+$$
