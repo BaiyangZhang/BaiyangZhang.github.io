@@ -3,6 +3,7 @@ $$
 \left\langle \mathcal{O} \right\rangle=\sum_ {i\in \mathbb{N} }(g\hbar)^{i} C_ {i} + e^{ -4\pi /g } \sum_ {i\in \mathbb{N} }(g\hbar)^{i} C'_ {i} + e^{ -8\pi /g } \sum_ {i\in \mathbb{N} }(g\hbar)^{i} C''_ {i}+\cdots
 $$
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 In the context of quantum field theory, the expectation value of any observable receives contribution from 1) perturbative expansion in coupling constant, which is an asymptotic power series and 2) non-perturbative sectors, based on topologically non-trivial solutions of the model, such as kinks, vortices, etc. The quantum corrections to classical solitonic solutions form yet another asymptotic power series. Latest developments regarding the non-perturbative nature of quantum field theory has revealed profound connections between perturbative expansion and classical topological contribution, in our talk we will emphasize on the equally profound connection between perturbative sector and quantum corrections in kink sector, and we argue that such connection is best described by the language of category theory. Further we propose that the the inverse quantization functor can be used to define a groupoid fiberation of quantum category over classical category, yet it is unclear if such structure satisfies pullback theorem and thus form a discrete stack.
 
@@ -19,3 +20,12 @@ $$
 $$
 =======
 >>>>>>> 28c090f41367b41814fa01947cdf9bc319277bdd
+=======
+$$
+\frac{1}{\hbar g^{2}} \left\lbrace \frac{1}{2}\widetilde{\pi}^{2}+\frac{1}{2}(\partial \widetilde{\phi})^{2}+V(\tilde{\phi}) \right\rbrace 
+$$
+
+$$
+\widetilde{\pi}:= g\pi,\quad  \widetilde{\phi}:= g \phi.
+$$
+>>>>>>> Stashed changes
