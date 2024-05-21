@@ -2,7 +2,7 @@
 layout: post
 title: Tsallis Statistics in Logistic Regression
 subtitle: 
-date: 2024-05-10
+date: 2024-05-20
 author: Baiyang Zhang
 header-img: 
 catalog: true
