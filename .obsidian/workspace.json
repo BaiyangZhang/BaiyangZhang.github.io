@@ -13,7 +13,11 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Untitled.md",
+=======
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
+>>>>>>> Stashed changes
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +73,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c169abf707c1049c",
@@ -85,7 +90,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Untitled.md",
+=======
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
+>>>>>>> Stashed changes
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Untitled.md",
+=======
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
+>>>>>>> Stashed changes
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< Updated upstream
                 "file": "Untitled.md"
+=======
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md"
+>>>>>>> Stashed changes
               }
             }
           }
@@ -161,6 +178,7 @@
   },
   "active": "b66263de2453f537",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     "README.md",
     "Untitled.md",
@@ -172,14 +190,19 @@
     "_posts/2024-4-18-Classical-Lumps-and-Their-Quantum-Descendants.md",
 =======
     "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
+=======
+    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2024-03-06-Domain-Wall.md",
+    "Untitled.md",
+>>>>>>> Stashed changes
     "_posts/2024-05-10-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-5-5-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
     "_posts/2024-05-07-Tsallis-Statistics-in-Logistic-Regression.md",
-    "Untitled.md",
     "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
     "Discussion Notes.md",
     "README.md",
@@ -194,12 +217,15 @@
 <<<<<<< HEAD
     "Discussion Notes.md",
     "2024-04-08-Counterterms-for-Soliton-Sectors-of-3D-phi-Fourth-Theory.md",
+<<<<<<< Updated upstream
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
 =======
     "2024-04-08-Counterterms-for-Soliton-Sectors-of-3D-phi-Fourth-Theory.md",
 >>>>>>> 28c090f41367b41814fa01947cdf9bc319277bdd
     "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
     "_posts/2024-03-06-Domain-Wall.md",
+=======
+>>>>>>> Stashed changes
     "_posts/2023-12-7-Transseries-Lecture-2.md",
     "Untitled 1.md",
     "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
