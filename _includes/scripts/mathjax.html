@@ -1,30 +1,59 @@
-  {%- if site.enable_math -%} 
-  
-  
+{%- if site.enable_math -%}
+
+<!-- Load Polyfill for older browsers if necessary -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<!-- MathJax Configuration -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'],  ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'],  ["\\[","\\]"] ]
+    },
+    svg: {
+      fontCache: 'global'
+    },
+    loader: {load: ['input/tex', 'output/svg']}
+  };
+</script>
+
+<!-- Load MathJax Script -->
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+{%- endif %}
+
+
+<!--   {%- if site.enable_math -%}  -->
+    
   <!-- 数学公式 -->
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
-<script type="text/x-mathjax-config">
+<!--    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+  
+  
+<!-- <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [ ['$','$'] ],
+      inlineMath: [ ['$','$'],  ["\\(","\\)"] ],
       displayMath: [ ['$$','$$'],  ["\\[","\\]"] ],
     }
   });
-</script>
+</script> -->
   
-  <!-- MathJax -->
-  <script type="text/javascript">
+  
+<!--   <script type="text/javascript">
     window.MathJax = {
       tex: {
         tags: 'ams'
-		inlineMath: [['$', '$']],
-        displayMath: [['$$', '$$']]
+		inlineMath: [ ['$','$'],  ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'],  ["\\[","\\]"] ],
       }
     };
-  </script>
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script>
+  </script> -->
+  
+<!--   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script>
   <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  {%- endif %}
+  {%- endif %} -->
+
+
