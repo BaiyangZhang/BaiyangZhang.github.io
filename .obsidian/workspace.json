@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/publications.md",
+                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_pages/publications.md",
+                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_pages/publications.md",
+                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_pages/publications.md"
+                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md"
               }
             }
           }
@@ -159,8 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "85934409c70af44e",
+  "active": "eea223e51b8ca2f2",
   "lastOpenFiles": [
+    "_posts/2022-08-22-Finite-ring-extensions.md",
+    "_pages/publications.md",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
@@ -171,9 +173,7 @@
     "_includes/scripts/misc.html",
     "_includes/scripts/mathjaxBackup.html",
     "_includes/scripts/mathjax.html",
-    "_includes/scripts/masonry.html",
     "_posts/2022-7-17-Conventions-and-Formula.md",
-    "_pages/publications.md",
     "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
     "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",
     "_posts/2023-06-16-Representables-in-Category-Theory.md",
