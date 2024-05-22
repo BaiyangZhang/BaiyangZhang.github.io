@@ -13,14 +13,24 @@
     },
     svg: {
       fontCache: 'global'  // Ensures SVG fonts are cached for better performance
+    },
+	startup: {
+      ready: function () {
+        MathJax.startup.defaultReady();
+        console.log("MathJax is ready!");
+      }
     }
   };
 </script>
 
+
 <!-- Load MathJax Script -->
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script> -->
 
 {%- endif %}
+
  
 
 
