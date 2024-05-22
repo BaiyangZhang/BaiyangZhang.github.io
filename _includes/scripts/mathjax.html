@@ -14,14 +14,6 @@
       tagIndent: '0.8em',  // Indentation of equation numbers from the margin
       processEscapes: true
     },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      ignoreHtmlClass: 'tex2jax_ignore',
-      processHtmlClass: 'tex2jax_process'
-    },
-    svg: {
-      fontCache: 'global'  // Ensures SVG fonts are cached for better performance
-    },
     startup: {
       ready: function() {
         console.log("MathJax is ready and configured for automatic equation numbering.");
