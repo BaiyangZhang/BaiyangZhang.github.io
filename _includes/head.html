@@ -3,11 +3,13 @@
 
     <!-- math LaTeX-->
 	
-    <script type="text/x-mathjax-config">
+	{% include scripts/mathjax.html %}
+	
+    <!-- <script type="text/x-mathjax-config">
     MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
-    </script>
+    </script> -->
 
-	<script type="text/x-mathjax-config">
+	<!-- <script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
 			tex2jax: {
 			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -18,9 +20,8 @@
 			tagIndent: '0.8em', // Indentation of equation numbers from the margin
 		}
 	});
-	</script>
+	</script> -->
 
-	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
     <!-- Bootstrap & MDB -->
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
