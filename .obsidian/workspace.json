@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -160,8 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd8639d9e4985376",
+  "active": "85934409c70af44e",
   "lastOpenFiles": [
+    "_includes/scripts/wechatModal.liquid",
+    "_includes/scripts/vega.liquid",
+    "_includes/scripts/typograms.liquid",
+    "_includes/scripts/tikzjax.liquid",
+    "_includes/scripts/pseudocode.liquid",
+    "_includes/scripts/progressBar.liquid",
+    "_includes/scripts/misc.liquid",
+    "_includes/scripts/mermaid.liquid",
+    "_includes/scripts/mathjax.liquid",
+    "_includes/scripts/masonry.liquid",
+    "_includes/scripts/leaflet.liquid",
     "_posts/2022-7-17-Conventions-and-Formula.md",
     "_pages/publications.md",
     "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
