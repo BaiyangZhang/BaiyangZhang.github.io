@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Representables in Category Theory
+title: Basic Category Theory Lecture 3
 subtitle: What do objects see?
-date: 2024-01-10
+date: 2024-05-22
 author: Baiyang Zhang
 header-img: img/background2.jpg
 catalog: true
 tags:
- - categoryTheory
+  - categoryTheory
 ---
 
 ### Representables

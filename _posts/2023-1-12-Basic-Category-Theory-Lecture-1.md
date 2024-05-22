@@ -1,15 +1,15 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     Basic Category Theory Class 1			# 标题 
-subtitle:   
-date:       2023-1-12 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/mathArt1.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - PureMath
-    - CategoryTheory
-    - Notes
+layout: post
+title: Basic Category Theory Lecture 1
+subtitle: 
+date: 2023-1-12
+author: Baiyang Zhang
+header-img: img/mathArt1.jpg
+catalog: true
+tags:
+  - PureMath
+  - CategoryTheory
+  - Notes
 ---
 
 ### The Universal property

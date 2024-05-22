@@ -1,13 +1,12 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     Basic Category Theory 			# 标题 
-subtitle:   Adjoints
-date:       2023-06-04 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/background4.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - 
+layout: post
+title: Basic Category Theory Lecture 2
+subtitle: Adjoints
+date: 2023-06-04
+author: Baiyang Zhang
+header-img: img/background4.jpg
+catalog: true
+tags:
 ---
 
 ### Adjoints
