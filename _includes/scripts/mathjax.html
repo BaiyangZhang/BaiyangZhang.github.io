@@ -9,7 +9,7 @@
   MathJax.Hub.Config({
     tex2jax: {
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      inlineMath: [ ['$','$'] ],
       displayMath: [ ['$$','$$'],  ["\\[","\\]"] ],
     }
   });
@@ -20,6 +20,8 @@
     window.MathJax = {
       tex: {
         tags: 'ams'
+		inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
       }
     };
   </script>
