@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " { site.scholar.bibliography",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 262.5
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -160,7 +160,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eea223e51b8ca2f2",
+  "active": "fd8639d9e4985376",
   "lastOpenFiles": [
     "_posts/2022-7-17-Conventions-and-Formula.md",
     "_pages/publications.md",
