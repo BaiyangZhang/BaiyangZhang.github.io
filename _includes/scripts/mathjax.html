@@ -7,9 +7,23 @@
 <script type="text/javascript">
   window.MathJax = {
     tex: {
-      tags: 'ams',
       inlineMath: [ ['$','$'],  ["\\(","\\)"] ],
       displayMath: [ ['$$','$$'],  ["\\[","\\]"] ],
+	  tags: 'ams', // Enables automatic equation numbering
+      tagSide: 'right', // Position of equation numbers, 'left' or 'right'
+      tagIndent: '0.8em', // Indentation of equation numbers from the margin
+      processEscapes: true, // Continue to process escaped sequences
+      // Set up automatic equation numbering
+      autoload: {
+        color: [],
+        colorV2: ['color']
+    },
+	packages: { '[+]': ['noerrors'] }
+    },
+	options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
     },
     svg: {
       fontCache: 'global'  // Ensures SVG fonts are cached for better performance
@@ -25,7 +39,10 @@
 
 
 <!-- Load MathJax Script -->
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
 
 <!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script> -->
 
