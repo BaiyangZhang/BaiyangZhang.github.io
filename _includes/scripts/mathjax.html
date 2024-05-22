@@ -12,25 +12,14 @@
       tags: 'ams',  // Enables automatic AMS-style equation numbering
       tagSide: 'right',  // Position of equation numbers ('left' or 'right')
       tagIndent: '0.8em',  // Indentation of equation numbers from the margin
-      processEscapes: true,  // Continue to process escaped sequences
-      autoload: {
-        color: [],
-        colorV2: ['color']
-      },
-      packages: { '[+]': ['noerrors'] }  // Load additional MathJax packages as needed
-    },
-	options: {
-	skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],  // HTML tags to skip processing
-      ignoreHtmlClass: 'tex2jax_ignore',  // Class to ignore during processing
-      processHtmlClass: 'tex2jax_process'  // Class to process during MathJax parsing
     },
     svg: {
       fontCache: 'global'  // Ensures SVG fonts are cached for better performance
     },
 	startup: {
-      ready: function () {
+      ready: function() {
+        console.log("MathJax is ready and configured for automatic equation numbering.");
         MathJax.startup.defaultReady();
-        console.log("MathJax is ready!");
       }
     }
   };
@@ -41,9 +30,11 @@
 
 <!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
  -->
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
-
-<!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script> -->
+ 
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+ -->
+ 
+ <script defer src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script> 
 
 {%- endif %}
 
