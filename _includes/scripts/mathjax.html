@@ -3,23 +3,18 @@
 <!-- Polyfill for ES6 features -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
 <!-- MathJax Configuration -->
 <script>
   window.MathJax = {
     tex: {
-	  inlineMath: [ ['$','$'], ['\\(', '\\)'] ],  // Define inline math delimiters
-      displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],  // Define display math delimiters
+      inlineMath: [['$', '$'], ['\\(', '\\)']],  // Define inline math delimiters
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],  // Define display math delimiters
       tags: 'ams',  // Enables automatic AMS-style equation numbering
       tagSide: 'right',  // Position of equation numbers ('left' or 'right')
       tagIndent: '0.8em',  // Indentation of equation numbers from the margin
-	  processEscapes: true
+      processEscapes: true
     },
-	 options: {
-      // Configuration to skip certain HTML tags
+    options: {
       skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
       ignoreHtmlClass: 'tex2jax_ignore',
       processHtmlClass: 'tex2jax_process'
@@ -27,7 +22,7 @@
     svg: {
       fontCache: 'global'  // Ensures SVG fonts are cached for better performance
     },
-	startup: {
+    startup: {
       ready: function() {
         console.log("MathJax is ready and configured for automatic equation numbering.");
         MathJax.startup.defaultReady();
@@ -36,55 +31,7 @@
   };
 </script>
 
-
 <!-- Load MathJax Script -->
-
-<!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
- -->
- 
-<!-- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
- -->
- 
- <script defer src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script> 
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 {%- endif %}
-
- 
-
-
-
-
-
-<!--  {%- if site.enable_math -%}  -->
-    
-  <!-- 数学公式 -->
-  
-<!--    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
-  
-  
-<!-- <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [ ['$','$'],  ["\\(","\\)"] ],
-      displayMath: [ ['$$','$$'],  ["\\[","\\]"] ],
-    }
-  });
-</script> -->
-  
-  
-<!--   <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        tags: 'ams',
-		inlineMath: [ ['$','$'],  ["\\(","\\)"] ],
-      displayMath: [ ['$$','$$'],  ["\\[","\\]"] ],
-      }
-    };
-  </script>  
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  {%- endif %} -->
-
-
