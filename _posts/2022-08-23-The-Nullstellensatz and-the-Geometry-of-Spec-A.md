@@ -22,7 +22,7 @@ $$
 
 For example, $\mathbb{Z}_{5}$ has characteristic 5 since $1+1+1+1+1 = 5 = 0$, $\mathbb{Q}$ has characteristic zero.
 
-Let $k\subset K$ be both fields, we shall say that $K$ is an *extension* of $k$ and $k$ a subfield of $K$. 
+Let $k\subset K$ both be fields, we say that $K$ is an *extension* of $k$ and $k$ a subfield of $K$.
 
 If $K,K'$ are two fields, then any homomorphism $\phi: K \to K'$ is either isomorphism or trivial. It is because $\text{ker} \phi$ is an ideal in $K$, and only ideals in $K$ are either 0 or $K$ itself. 
 
