@@ -52,7 +52,7 @@ $$
 which is not the same as $Y$. The induced map $\text{Ad}_ {\ast}$ should give the difference between $Y'$ and $Y$, which are both element of ${\frak g}$, hence so should be their difference, 
 
 $$
-\text{Ad}_ {{\ast }}: X \mapsto \text{some linear transform of } Y.
+\text{Ad}_ { {\ast } }: X \mapsto \text{some linear transform of } Y.
 $$
 
 Specific calculation shows that 
