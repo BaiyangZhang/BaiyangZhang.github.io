@@ -3,15 +3,26 @@
 <!-- Polyfill for ES6 features -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 <!-- MathJax Configuration -->
-<script type="text/javascript">
+<script>
   window.MathJax = {
     tex: {
-	inlineMath: [ ['$','$'], ['\\(', '\\)'] ],  // Define inline math delimiters
+	  inlineMath: [ ['$','$'], ['\\(', '\\)'] ],  // Define inline math delimiters
       displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],  // Define display math delimiters
       tags: 'ams',  // Enables automatic AMS-style equation numbering
       tagSide: 'right',  // Position of equation numbers ('left' or 'right')
       tagIndent: '0.8em',  // Indentation of equation numbers from the margin
+	  processEscapes: true
+    },
+	 options: {
+      // Configuration to skip certain HTML tags
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
     },
     svg: {
       fontCache: 'global'  // Ensures SVG fonts are cached for better performance
