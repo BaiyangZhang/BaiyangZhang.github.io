@@ -1,39 +1,52 @@
 {
   "main": {
-    "id": "c2c3d7f9d1c26367",
+    "id": "fcae1b431975bfbb",
     "type": "split",
     "children": [
       {
-        "id": "fa78c8819433c87c",
+        "id": "3163fec0c9df29cc",
         "type": "tabs",
         "children": [
           {
-            "id": "eea223e51b8ca2f2",
+            "id": "b66263de2453f537",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
+                "file": "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b667e28cdb53130d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "3d69f11a27d1c57a",
+    "id": "99542e857b636bf4",
     "type": "split",
     "children": [
       {
-        "id": "0def6dbc4397018c",
+        "id": "675e606f77e9217c",
         "type": "tabs",
         "children": [
           {
-            "id": "85934409c70af44e",
+            "id": "64f38d0fe9abaf57",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,12 +56,12 @@
             }
           },
           {
-            "id": "fd8639d9e4985376",
+            "id": "f83948130a1d4e67",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag: #transseries  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,7 +71,7 @@
             }
           },
           {
-            "id": "c477d7f7e018c8dc",
+            "id": "08603ad0a9951551",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +82,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
-    "id": "e8fe099fa9a555a5",
+    "id": "c169abf707c1049c",
     "type": "split",
     "children": [
       {
-        "id": "ae21f459b03405e3",
+        "id": "5922be76fed11910",
         "type": "tabs",
         "children": [
           {
-            "id": "793a8d91657c47ea",
+            "id": "a9faa47f743caa72",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
+                "file": "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +111,19 @@
             }
           },
           {
-            "id": "1ae73e86536fcbb9",
+            "id": "5f4adafcb2bb355c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
+                "file": "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "404a4462ba54417f",
+            "id": "00a4cd61ca489616",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,7 +134,7 @@
             }
           },
           {
-            "id": "a1f56d09bbc3dadd",
+            "id": "3899f4ba479e6538",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -132,12 +146,12 @@
             }
           },
           {
-            "id": "eaa3f6af7b40bdeb",
+            "id": "4483119d6089f0f3",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md"
+                "file": "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md"
               }
             }
           }
@@ -150,36 +164,45 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "eea223e51b8ca2f2",
+  "active": "b667e28cdb53130d",
   "lastOpenFiles": [
-    "_posts/2022-08-22-Finite-ring-extensions.md",
-    "_pages/publications.md",
-    "_includes/New folder",
-    "_includes/head.html",
-    "_includes/header.html",
-    "_includes/scripts/New folder",
-    "_includes/scripts/analytics.html",
-    "_includes/scripts/wechatModal.html",
-    "_includes/scripts/progressBar.html",
-    "_includes/scripts/misc.html",
-    "_includes/scripts/mathjaxBackup.html",
-    "_includes/scripts/mathjax.html",
-    "_posts/2022-7-17-Conventions-and-Formula.md",
-    "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
+    "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
+    "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
     "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",
-    "_posts/2023-06-16-Representables-in-Category-Theory.md",
-    "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
-    "_posts/2023-1-12-Basic-Category-Theory-Lecture-1.md",
     "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
-    "_posts/Constructing-a-Finite-Tension-Domain-Wall-in-4D.md"
+    "_posts/2023-1-12-Basic-Category-Theory-Lecture-1.md",
+    "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
+    "Templates/DateNote.md",
+    "Templates/plots.md",
+    "_posts/2024-03-05-Regression-Methods-in-Biostatistics.md",
+    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2024-03-06-Domain-Wall.md",
+    "Untitled.md",
+    "_posts/2024-05-10-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/2024-5-5-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-03-31-Coleman-Weinberg-Potential.md",
+    "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
+    "_posts/2024-05-07-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/2023-11-23-Introduction-to-Resurgence-Lecture-3.md",
+    "Discussion Notes.md",
+    "README.md",
+    "_posts/2024-04-17-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
+    "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
+    "_drafts/2024-04-09-Effects-of-Different-Clustering-Algorithms.md",
+    "2024-04-09.md",
+    "img/effectiveAction_1Loop.png",
+    "img/effectiveAction/1Loop.png",
+    "img/effectiveAction"
   ]
 }
