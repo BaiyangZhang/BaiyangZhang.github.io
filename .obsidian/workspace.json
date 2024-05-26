@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
+                "file": "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
+                "file": "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
+                "file": "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md"
+                "file": "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md"
               }
             }
           }
@@ -161,6 +162,8 @@
   },
   "active": "eea223e51b8ca2f2",
   "lastOpenFiles": [
+    "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",
+    "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
     "_posts/2022-08-22-Finite-ring-extensions.md",
     "_pages/publications.md",
     "_includes/New folder",
@@ -175,7 +178,6 @@
     "_includes/scripts/mathjax.html",
     "_posts/2022-7-17-Conventions-and-Formula.md",
     "_posts/2023-09-02-Connections-in-Associated-Bundles.md",
-    "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",
     "_posts/2023-06-16-Representables-in-Category-Theory.md",
     "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
     "_posts/2023-1-12-Basic-Category-Theory-Lecture-1.md",

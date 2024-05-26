@@ -1,7 +1,7 @@
 {
-  "findText": "\\\\\\(|\\\\\\)",
-  "replaceText": "$",
-  "useRegEx": true,
+  "findText": "_",
+  "replaceText": "_ ",
+  "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,
   "processLineBreak": false,

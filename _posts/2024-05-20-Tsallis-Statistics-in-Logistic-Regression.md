@@ -21,7 +21,7 @@ tags:
 	- [3.1. Mean Value in Tsallis Statistics](#31-mean-value-in-tsallis-statistics)
 - [4. Tsallis in Logistic Regression Methods](#4-tsallis-in-logistic-regression-methods)
 	- [4.1 Traditional logistic regression method](#41-traditional-logistic-regression-method)
-	- [With Tsallis statistics](#with-tsallis-statistics)
+	- [4.2 With Tsallis statistics](#with-tsallis-statistics)
 - [Appendix. Useful Mathematical Formulae](#appendix-useful-mathematical-formulae)
 
 
@@ -586,7 +586,132 @@ Several methods can be used to solve the Group LASSO problem efficiently:
 
 4. Primal-Dual Methods: These methods work by simultaneously updating primal and dual variables to find a solution that satisfies the optimality conditions for both. They can be very efficient for problems like Group LASSO, where the structure of the groups can be exploited to simplify the dual problem.
 
-Among these methods, **Proximal Gradient Methods** and **Block Coordinate Descent** are often the most effective for solving Group LASSO due to their ability to directly handle the group-wise structure and non-smoothness of the regularization term. The choice between these methods may depend on the specific structure of your problem and the size of your data.
+Among these methods, **Proximal Gradient Methods** and **Block Coordinate Descent** are often the most effective for solving Group LASSO due to their ability to directly handle the group-wise structure and non-smoothness of the regularization term. The choice between these methods may depend on the specific structure of your problem and the size of your data. In the following, we will go through some basic methods leading to the proximal gradient method. For a more detailed introduction see the wonderful online course [here](https://youtu.be/Clw24Fajnqg?si=9h3i6pSmAqpamLfl).
+
+- - -
+
+**Gradient Descent (GD) method**
+
+Gradient Descent is an iterative optimization algorithm used to minimize an objective function, which is often used in various statistical and machine learning methods. In biostatistics, it is commonly used for fitting models such as linear regression, logistic regression, and many others.
+
+Key Concepts:
+
+1. Objective Function: The function you want to minimize, usually representing the error or cost associated with the model. For instance, in linear regression, it is the sum of squared errors.
+
+2. Gradient: The gradient of the objective function at a given point indicates the direction of the steepest ascent. Since we want to minimize the function, we move in the opposite direction of the gradient.
+
+3. Learning Rate: A hyperparameter that controls the size of the steps taken to reach the minimum. If it's too large, the algorithm might overshoot the minimum; if too small, convergence might be slow.
+
+The basic steps of the gradient descent algorithm are:
+
+1. Initialize: Start with an initial guess for the parameters.
+2. Compute Gradient: Calculate the gradient of the objective function with respect to the parameters.
+3. Update Parameters: Adjust the parameters in the opposite direction of the gradient.
+4. Repeat: Continue until convergence (i.e., when the changes in the parameters become very small).
+
+Mathematically, the update rule for the parameter $\beta$ is:
+
+$$
+\beta^{(t+1)} = \beta^{(t)} - \alpha \nabla f(\beta^{(t)}),
+$$
+
+where $\alpha$ is the learning rate, and $\nabla f(\beta^{(t)})$ is the gradient of the objective function at $\beta^{(t)}$.
+
+Let's go through a simple example of fitting a linear regression model using gradient descent. Suppose we have a dataset with $n$ observations and one predictor. The objective function (mean squared error) is:
+
+$$
+f(\beta_ 0, \beta_ 1) = \frac{1}{2n} \sum_ {i=1}^n (y_ i - (\beta_ 0 + \beta_ 1 x_ i))^2,
+$$
+
+where $(x_ i, y_ i)$ are the data points, and $\beta_ 0$ and $\beta_ 1$ are the parameters to be estimated.
+
+1. Gradient Calculation:
+   - The gradient with respect to $\beta_ 0$ is:
+
+     $$
+     \frac{\partial f}{\partial \beta_ 0} = -\frac{1}{n} \sum_ {i=1}^n (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
+     $$
+ 
+   - The gradient with respect to $\beta_ 1$ is:
+
+     $$
+     \frac{\partial f}{\partial \beta_ 1} = -\frac{1}{n} \sum_ {i=1}^n x_ i (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
+     $$
+
+2. Update Rules:
+   - Update $\beta_ 0$:
+
+     $$
+     \beta_ 0^{(t+1)} = \beta_ 0^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 0}.
+     $$
+ 
+   - Update $\beta_ 1$:
+
+    $$
+     \beta_ 1^{(t+1)} = \beta_ 1^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 1}.
+    $$
+
+- - -
+
+**Subgradient Method**
+
+The subgradient method is an optimization technique used for minimizing non-differentiable convex functions. It is a generalization of the gradient descent method. Instead of using gradients, it uses subgradients, which are generalizations of gradients for non-differentiable functions.
+
+Key Concepts:
+
+1. Subgradient: For a convex function $f$ at a point $x$, a vector $g$ is a subgradient if:
+   
+$$
+   f(y) \geq f(x) + g^T (y - x) \quad \text{for all } y \in \mathbb{R}^n.
+$$
+
+2. Subdifferential: The set of all subgradients at $x$, denoted $\partial f(x)$.
+
+3. Update Rule: The algorithm iteratively updates the solution using
+   
+$$
+   x^{(k+1)} = x^{(k)} - \alpha_ k g^{(k)},
+$$
+   
+   where $g^{(k)} \in \partial f(x^{(k)})$ and $\alpha_ k$ is the step size.
+
+Example: Minimizing $f(x) = \left\lvert x \right\rvert$
+
+1. Function Definition: $f(x) = \left\lvert x \right\rvert$
+
+2. Subgradient Calculation:
+   - For $x > 0$, $\partial f(x) = \{ 1 \}$
+   - For $x < 0$, $\partial f(x) = \{ -1 \}$
+   - For $x = 0$, $\partial f(x) = \{ t \mid -1 \leq t \leq 1 \}$
+
+3. Subgradient Method Steps:
+   - Initialize $x^{(0)} = 2$
+   - Choose a step size $\alpha = 0.1$
+   - Iterate the update rule:
+     
+$$
+     x^{(k+1)} = x^{(k)} - \alpha \cdot g^{(k)}
+$$
+   - Suppose $g^{(k)} = 1$ for simplicity.
+
+   - First iteration:
+     
+$$
+     x^{(1)} = 2 - 0.1 \cdot 1 = 1.9
+$$
+   - Second iteration:
+     
+$$
+     x^{(2)} = 1.9 - 0.1 \cdot 1 = 1.8
+$$
+
+   - Continue iterating until $x$ converges to 0. However, there might be some convergence problem. Instead of converging to the actual minimum $x=0$, the iteration might oscillate around it. We will talk more about it later.
+
+
+
+
+
+
 
 
 
