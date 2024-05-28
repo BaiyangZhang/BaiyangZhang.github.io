@@ -2,7 +2,7 @@
 layout: post
 title: Tsallis Statistics in Logistic Regression
 subtitle: 
-date: 2024-05-29
+date: 2024-05-28
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -820,7 +820,7 @@ The plot is given in the below.
     The test function we want to minimize with proximal gradient method.
 </div>
 
-
+The minimum is at $\beta=1$, as can be seen from $0 \in \partial f(\beta){\Large\mid}_ {\beta=1}$. 
 
 
 
