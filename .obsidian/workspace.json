@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-29-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-29-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-29-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-29-Tsallis-Statistics-in-Logistic-Regression.md"
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md"
               }
             }
           }
@@ -163,7 +163,7 @@
   "active": "eea223e51b8ca2f2",
   "lastOpenFiles": [
     "Templates/plots.md",
-    "_posts/2024-05-29-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
     "img/compositeFunction.png",
     "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
     "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",

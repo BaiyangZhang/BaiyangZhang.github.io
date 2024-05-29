@@ -820,8 +820,61 @@ The plot is given in the below.
     The test function we want to minimize with proximal gradient method.
 </div>
 
-The minimum is at $\beta=1$, as can be seen from $0 \in \partial f(\beta){\Large\mid}_ {\beta=1}$. 
+The minimum is at $\beta=1$, as $0 \in \partial f(\beta){\Large\mid}_ {\beta=1}$. Now let's try to use the proximal gradient method to solve it. Let us start with 
 
+$$
+\beta^{(0)} = 0,
+$$
+
+Use the gradient method with $h(x)=\frac{1}{2} \beta^{2}$ to update the result only, we get
+
+$$
+\beta_ {h}^{(1)} = \beta^{0}-\alpha \nabla h(0) = \beta^{(0)} = 0,
+$$
+
+this is because $h(\beta)$ has zero derivative at $\beta=0$. Next we use proximal operator to update $\beta_ {h}^{(1)}$,
+
+$$
+\begin{align*}
+\beta^{(1)} &= \text{prox}_ {\left\lvert \bullet-1 \right\rvert,\alpha }(\beta^{(1)}_ {g}) \\
+&=\text{arg min}_ {z} \left\lbrace \frac{1}{2\alpha}(z-\beta^{(1)}_ {g})^{2}+\left\lvert z-1 \right\rvert  \right\rbrace \\
+&= \text{arg min}_ {z} \left\lbrace \frac{1}{2\alpha}z^{2}+\left\lvert z-1 \right\rvert  \right\rbrace.
+\end{align*}
+$$
+
+Now we can use the sub-gradient method to find the minimum. The subgradient reads
+
+$$
+\partial \left( \frac{1}{2\alpha}z^{2}+\left\lvert z-1 \right\rvert  \right)= \begin{cases}
+\frac{z}{\alpha}+1 & z>1 \\ 
+[ \frac{1}{\alpha}-1, \frac{1}{\alpha}+1] & z=1 \\
+\frac{z}{\alpha}-1 & z<1
+\end{cases}
+$$
+
+it is clear that for any $\alpha$ satisfying $\frac{1}{\alpha}-1<0$ and $\frac{1}{\alpha}+1>0$, zero subgradient is obtained at $z=1$. That is to say, for any $\alpha>0$m we gave 
+
+$$
+\beta^{(1)} =1
+$$
+
+which is precisely the result we are looking for. Along the way we have also found a constraint for the value of step size $\alpha$.
+
+- - -
+
+Another thing which might be useful is the so-called `soft-thresholding` operator, defined as:
+
+$$ S_ {\lambda}(x) = \text{sign}(x) \cdot \max(|x| - \lambda, 0) $$
+
+where $\lambda$ is a non-negative threshold parameter, $\text{sign}(x)$ returns the sign of $x$, and $\max(|x| - \lambda, 0)$ essentially shrinks $x$ towards zero by $\lambda$, setting it to zero if $x$ is within $\lambda$ of zero.
+
+To minimize this function using the soft-thresholding operator, we need to follow these steps:
+
+$$ 
+S_ {\lambda}(\theta) = \text{sign}(\theta) \cdot \max(\left\lvert \theta \right\rvert - \lambda, 0) 
+$$
+
+- - -
 
 
 
