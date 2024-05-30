@@ -876,10 +876,78 @@ $$
 
 - - -
 
+For future use, we need to find the Hessian of the loss function $J(\beta)$ from logistic regression, we need to compute the second-order partial derivatives of $J(\beta)$ with respect to the components of the parameter vector $\beta$. Given
 
+$$ 
+J(\beta) := -\sum_ {i} \left[ y_ i t_ i - \ln(1 + e^{t_ i}) \right], \quad t_ i = \beta_ 0 + \beta \cdot X_ {(i)}. 
+$$
 
+where
 
+$$ 
+t_ i = \beta_ 0 + \sum_ {j=1}^{p} \beta_ j X_ {ij}
+$$
 
+and $\beta = (\beta_ 1, \beta_ 2, \ldots, \beta_ p)$, $X_ {(i)} = (X_ {i1}, X_ {i2}, \ldots, X_ {ip})$.
+
+First, we compute the gradient of $J(\beta)$ with respect to $\beta_ 0$ and $\beta_ j$.
+
+$$ 
+\frac{\partial J(\beta)}{\partial \beta_ 0} = -\sum_ {i} \left[ y_ i - \frac{e^{t_ i}}{1 + e^{t_ i}} \right]. 
+$$
+
+Let $p_ i = \frac{e^{t_ i}}{1 + e^{t_ i}} = \sigma(t_ i)$, the sigmoid function. Then,
+
+$$ 
+\frac{\partial J(\beta)}{\partial \beta_ 0} = -\sum_ {i} \left[ y_ i - p_ i \right]. 
+$$
+
+$$ \frac{\partial J(\beta)}{\partial \beta_ j} = -\sum_ {i} \left[ y_ i X_ {ij} - \frac{e^{t_ i}}{1 + e^{t_ i}} X_ {ij} \right]. $$
+
+Using $p_ i = \sigma(t_ i)$, this becomes:
+
+$$ \frac{\partial J(\beta)}{\partial \beta_ j} = -\sum_ {i} \left[ y_ i X_ {ij} - p_ i X_ {ij} \right] = -\sum_ {i} X_ {ij} \left[ y_ i - p_ i \right]. $$
+
+Now we compute the second-order partial derivatives to form the Hessian matrix.
+
+Second partial derivative with respect to $\beta_ 0$:
+
+$$ \frac{\partial^2 J(\beta)}{\partial \beta_ 0^2} = -\sum_ {i} \left[ - \frac{\partial p_ i}{\partial t_ i} \frac{\partial t_ i}{\partial \beta_ 0} \right] = \sum_ {i} p_ i (1 - p_ i). $$
+
+Mixed partial derivative with respect to $\beta_ 0$ and $\beta_ j$:
+
+$$ 
+\frac{\partial^2 J(\beta)}{\partial \beta_ 0 \partial \beta_ j} = -\sum_ {i} \left[ - \frac{\partial p_ i}{\partial t_ i} \frac{\partial t_ i}{\partial \beta_ j} \right] = \sum_ {i} p_ i (1 - p_ i) X_ {ij}. 
+$$
+
+Second partial derivative with respect to $\beta_ j$ and $\beta_ k$:
+
+$$ 
+\begin{align*}
+\frac{\partial^2 J(\beta)}{\partial \beta_ j \partial \beta_ k} &= -\sum_ {i} \left[ - \frac{\partial p_ i}{\partial t_ i} \frac{\partial t_ i}{\partial \beta_ j} \frac{\partial t_ i}{\partial \beta_ k} \right] = \sum_ {i} p_ i (1 - p_ i) X_ {ij} X_ {ik}\\
+&= (X^{T} Q X)_ {jk}
+\end{align*}$$
+
+where $Q_ {mn} = \delta_ {mn}p_ {m}(1-p_ {m})$.
+
+The full Hessian matrix $H$ is composed of these second-order partial derivatives. It can be written in block form as follows:
+
+$$ H = \begin{bmatrix}
+\frac{\partial^2 J(\beta)}{\partial \beta_ 0^2} & \frac{\partial^2 J(\beta)}{\partial \beta_ 0 \partial \beta_ 1} & \cdots & \frac{\partial^2 J(\beta)}{\partial \beta_ 0 \partial \beta_ p} \\
+\frac{\partial^2 J(\beta)}{\partial \beta_ 1 \partial \beta_ 0} & \frac{\partial^2 J(\beta)}{\partial \beta_ 1^2} & \cdots & \frac{\partial^2 J(\beta)}{\partial \beta_ 1 \partial \beta_ p} \\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial^2 J(\beta)}{\partial \beta_ p \partial \beta_ 0} & \frac{\partial^2 J(\beta)}{\partial \beta_ p \partial \beta_ 1} & \cdots & \frac{\partial^2 J(\beta)}{\partial \beta_ p^2}
+\end{bmatrix}. $$
+
+Using the derived second-order partial derivatives, the Hessian matrix can be written as:
+
+$$ H = \sum_ {i} p_ i (1 - p_ i) \begin{bmatrix}
+1 & X_ {i1} & X_ {i2} & \cdots & X_ {ip} \\
+X_ {i1} & X_ {i1}^2 & X_ {i1}X_ {i2} & \cdots & X_ {i1}X_ {ip} \\
+X_ {i2} & X_ {i2}X_ {i1} & X_ {i2}^2 & \cdots & X_ {i2}X_ {ip} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+X_ {ip} & X_ {ip}X_ {i1} & X_ {ip}X_ {i2} & \cdots & X_ {ip}^2
+\end{bmatrix}. $$
 
 
 

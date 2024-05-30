@@ -1,8 +1,8 @@
 {
-  "findText": "\\)",
-  "replaceText": "$",
+  "findText": "_",
+  "replaceText": "_ ",
   "useRegEx": false,
-  "selOnly": false,
+  "selOnly": true,
   "caseInsensitive": false,
   "processLineBreak": false,
   "processTab": false,
