@@ -2,7 +2,7 @@
 layout: post
 title: Tsallis Statistics in Logistic Regression
 subtitle: 
-date: 2024-05-20
+date: 2024-05-28
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -21,7 +21,7 @@ tags:
 	- [3.1. Mean Value in Tsallis Statistics](#31-mean-value-in-tsallis-statistics)
 - [4. Tsallis in Logistic Regression Methods](#4-tsallis-in-logistic-regression-methods)
 	- [4.1 Traditional logistic regression method](#41-traditional-logistic-regression-method)
-	- [4.2 With Tsallis statistics](#with-tsallis-statistics)
+	- [4.2 With Tsallis statistics](#42-with-tsallis-statistics)
 - [Appendix. Useful Mathematical Formulae](#appendix-useful-mathematical-formulae)
 
 
@@ -615,7 +615,25 @@ $$
 \beta^{(t+1)} = \beta^{(t)} - \alpha \nabla f(\beta^{(t)}),
 $$
 
-where $\alpha$ is the learning rate, and $\nabla f(\beta^{(t)})$ is the gradient of the objective function at $\beta^{(t)}$.
+where $\alpha$ is the learning rate or step length, and $\nabla f(\beta^{(t)})$ is the gradient of the objective function at $\beta^{(t)}$. The derivation of above iteration formula is not as straightforward as, e.g. Newton method, especially it is not clear where the step length comes from. Given a function $f(\beta)$ that we want to minimize, at $\beta^{(k)}$ we are actually approximating it with a quadratic functon
+
+$$
+g(\beta) = f(\beta^{(k)}) + \nabla f(\beta^{(k)})(\beta-\beta^{(k)}) + \frac{1}{2\alpha}(\beta-\beta^{(k)})^{2},
+$$
+
+note we have introduced the step-size parameter $\alpha$ to control the strength of the quadratic term. To find the minimum of $g(\beta)$ around $\beta^{(k)}$, we ask its derivative to be zero, leading to 
+
+$$
+g'(\beta) = \nabla f(\beta^{(k)}) + \frac{1}{\alpha} (\beta-\beta^{(k)}) =0 
+$$
+
+whose solution reads
+
+$$
+\Delta \beta := \beta-\beta^{(k)} = -\alpha \nabla f(\beta^{(k)}).
+$$
+
+We use $\Delta \beta$ to update $\beta$, namely $\beta^{(k+1)}:= \beta^{(k)}+\Delta \beta$. That's where the step size parameter comes from. In practice, we usually choose $\alpha=\nabla^{2}f(\beta^{k})$. To make the iteration procedure convergent, there is usually an upper limit for $\alpha$, which is clearly shown in the example of $f(\beta)=\beta^{2}-3\beta+4$, which I'll skip here, interested readers can take it as a homework. 
 
 Let's go through a simple example of fitting a linear regression model using gradient descent. Suppose we have a dataset with $n$ observations and one predictor. The objective function (mean squared error) is:
 
@@ -655,12 +673,12 @@ where $(x_ i, y_ i)$ are the data points, and $\beta_ 0$ and $\beta_ 1$ are the 
 
 **Subgradient Method**
 
-The subgradient method is an optimization technique used for minimizing non-differentiable convex functions. It is a generalization of the gradient descent method. Instead of using gradients, it uses subgradients, which are generalizations of gradients for non-differentiable functions.
+The subgradient method is an optimization technique used for minimizing non-differentiable convex functions. It is a generalization of the gradient descent method. Instead of using gradients, it uses subgradients, which are generalizations of gradients for non-differentiable functions. A very nice introduction of subgradients and subdifferential can be found [here](https://web.stanford.edu/class/ee364b/lectures/subgradients_notes.pdf), in the following we only outline the key concepts.
 
 Key Concepts:
 
 1. Subgradient: For a convex function $f$ at a point $x$, a vector $g$ is a subgradient if:
-   
+
 $$
    f(y) \geq f(x) + g^T (y - x) \quad \text{for all } y \in \mathbb{R}^n.
 $$
@@ -688,30 +706,248 @@ Example: Minimizing $f(x) = \left\lvert x \right\rvert$
    - Initialize $x^{(0)} = 2$
    - Choose a step size $\alpha = 0.1$
    - Iterate the update rule:
-     
+
 $$
      x^{(k+1)} = x^{(k)} - \alpha \cdot g^{(k)}
 $$
+
    - Suppose $g^{(k)} = 1$ for simplicity.
 
    - First iteration:
-     
+
 $$
      x^{(1)} = 2 - 0.1 \cdot 1 = 1.9
 $$
+
    - Second iteration:
-     
+
 $$
      x^{(2)} = 1.9 - 0.1 \cdot 1 = 1.8
 $$
 
-   - Continue iterating until $x$ converges to 0. However, there might be some convergence problem. Instead of converging to the actual minimum $x=0$, the iteration might oscillate around it. We will talk more about it later.
+   - Continue iterating until $x$ converges to 0. 
 
+However, there might be some convergence problem in the last step. Instead of converging to the actual minimum $x=0$, the iteration might oscillate around it. In this case, we will need to look for the point where the subdifferential includes zero. This is the generalization of the familiar method of finding the minimum by looking for the zero-gradient point, only that the relation gradient=0 is replaced by $0 \in$ subdifferential. To be specific, a point $x^\ast$ is a minimizer of a function $f(x)$ (no necessarily convex) iff $f(x)$ is subdifferentiable at $x^\ast$ and 
 
+$$
+0 \in \partial f(x^\ast ),
+$$
 
+i.e. $0$ is a subgradient at $x^\ast$. Using this method it is easy to see that $x=0$ is indeed the minimizer of $\left\lvert x \right\rvert$. 
 
+- - -
 
+**Proximal gradient methods**
 
+Proximal gradient methods are a generalized form of projection used to solve non-differentiable [convex optimization](https://en.wikipedia.org/wiki/Convex_optimization "Convex optimization") problems.
+
+The function we want to minimize is a composite function
+
+$$
+f(x) = g(x) + h(x),
+$$
+
+where $g(x)$ is supposed to be differentiable while $g(x)$ is not. For example, $h(x)$ could be the LASSO punish term $\left\lVert x \right\rVert_ {2}$. Since $h(x)$ is not differential, we can't use the gradient descent method directly to $g+h$. However, we can use $g(x)$ to define the gradient method, then somehow include the effect of $h(x)$. The $g$-gradient descent iteration will decrease the value of $g(x)$, then we do something to also decrease the value of $h(x)$, thus the final result will decrease both $g(x)$ and $h(x)$. That's the general idea of proximal gradient methods, we will explain the word proximal later. 
+
+Say we start with some intermediate value $x^{(k)}$. First let's consider $g(x)$ only, and define the quadratic approximation function $\overline{g}^{(l)}(x)$ of $g(x)$ at $x^{(k)}$, that is we use a quadratic function $\overline{g}^{(k)}$ (which is concave) to approximate $g$ around $x^{(k)}$, $\overline{g}$ is constructed such that it is tangent to $g$ at $x^{(k)}$. Specifically, 
+
+$$
+\overline{g}^{(k)}(z) = g(x^{(k)}) + (z-x^{(k)}) \nabla g(x^{(k)}) + \frac{1}{2\alpha} (z-x^{(k)})^{2}.
+$$
+
+Gradient descent method using $g(x)$ alone will update it as
+
+$$
+x^{(k+1)}_ {g} := \text{arg min}_ {z}\, \overline{g}^{(k)}(z) = x^{(k)} - \alpha \nabla g(x^{(k)}).
+$$
+
+This is the first step. In the next step, we take into consideration $h(x)$ function and minimize the so-called composite function, which is the sum of the quadratic approximation $\overline{g}$ and the non-differentiable function $h(x)$, the result would be $x^{(k+1)}$, the real $(k+1)$-th iteration:
+
+$$
+x^{(k+1)} := \text{arg min}_ {z}\left\lbrace \overline{g}^{(k)}(z) + h(z) \right\rbrace .
+$$
+
+The logic is
+
+$$
+x^{(k)} \to x^{(k+1)}_ {g} \to x^{(k+1)}.
+$$
+
+I hope it is intuitive. Now let's try to solve it,
+
+$$
+\begin{align*}
+x^{(k+1)} &:= \text{arg min}_ {z}\left\lbrace \overline{g}^{(k)}(z) + h(z) \right\rbrace \\
+&= \text{arg min}_ {z}\left\lbrace g(x^{(k)}) + (z-x^{(k)}) \nabla g(x^{(k)}) + \frac{1}{2\alpha} (z-x^{(k)})^{2} + h(z) \right\rbrace \\
+&= \text{arg min}_ {z}\left\lbrace \frac{1}{2\alpha}[z^{2}-2z(x^{(k)}-\alpha \nabla g)+2 \alpha (g- x^{(k)} \nabla g)] + h(z) \right\rbrace \\
+&=  \text{arg min}_ {z}\left\lbrace \frac{1}{2\alpha}([z-(x^{(k)}-\alpha\nabla g )]^{2} + C_ {1}) + h(z) \right\rbrace \\
+&=  \text{arg min}_ {z}\left\lbrace \frac{1}{2\alpha}[z-x^{(k+1)}_ {g}]^{2} + h(z) \right\rbrace,
+\end{align*}
+$$
+
+where in the fourth line we completed the square and in the last line we got rid of a constant term (independent of $z$) in $\text{arg min}$, since adding to a function a constant term does not change the minimizer of it.
+
+Notice that the form of $x^{(k+1)}$ is very similar to the gradient descent method with step size $\alpha$. Regarding $x^{(k+1)}$ we are minimizing some function plus $\frac{1}{2\alpha}(z-x_ {g}^{(k)})^{2}$, while in the gradient descent method where we are minimizing some **linear** function plus $\frac{1}{2\alpha}(z-x^{k})^{2}$. This inspires us to look at $x^{(k+1)}$ with another perspective: we are trying to minimize $h(z)$, in the mean while **trying to stay close to** $x_ {g}^{(k+1)}$. In other words, we are looking for the minimizer of $h(z)$ which is also **proximal** to $x^{(k+1)}_ {g}$. Now it is a good time to introduce `proximal operator` $\text{prox}_ {h,\alpha}(x)$, which aims to find the minimizer of function $h$, with step length $\alpha$, proximal to $x$,
+
+$$
+\boxed{ 
+\text{prox}_ {h,\alpha}(x) := \text{arg min}_ {z} \left\lbrace \frac{1}{2\alpha} \left\lVert x-z \right\rVert _ {2}^{2}+h(z) \right\rbrace .
+}
+$$
+
+The `proximal gradient method` works as follows. Given the composite function $f=g+h$ where $g$ is differentiable and $h$ is not. We choose initial value $x^{(0)}$ of $x$, iterate it by repeating 
+
+$$
+x^{(k)} := \text{prox}_ {h,\alpha^{(k)}}(x^{(k+1)}_ {g}), \quad  x_ {g}^{(k+1)} := x^{(k)} - \alpha^{(k)} \nabla g(x^{(k)}),
+$$
+
+where $\alpha^{(k)}$ is the $k$-th step length. 
+
+As an example, let's start with a simple problem that we already know how to solve, apply the proximal gradient method and see how it works. Say we want to minimize a function $f(\beta)$ with only one variable $\beta$,
+
+$$
+f(\beta) = \frac{1}{2} \beta^{2} + \left\lvert \beta-1 \right\rvert .
+$$
+
+The plot is given in the below. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/compositeFunction.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The test function we want to minimize with proximal gradient method.
+</div>
+
+The minimum is at $\beta=1$, as $0 \in \partial f(\beta){\Large\mid}_ {\beta=1}$. Now let's try to use the proximal gradient method to solve it. Let us start with 
+
+$$
+\beta^{(0)} = 0,
+$$
+
+Use the gradient method with $h(x)=\frac{1}{2} \beta^{2}$ to update the result only, we get
+
+$$
+\beta_ {h}^{(1)} = \beta^{0}-\alpha \nabla h(0) = \beta^{(0)} = 0,
+$$
+
+this is because $h(\beta)$ has zero derivative at $\beta=0$. Next we use proximal operator to update $\beta_ {h}^{(1)}$,
+
+$$
+\begin{align*}
+\beta^{(1)} &= \text{prox}_ {\left\lvert \bullet-1 \right\rvert,\alpha }(\beta^{(1)}_ {g}) \\
+&=\text{arg min}_ {z} \left\lbrace \frac{1}{2\alpha}(z-\beta^{(1)}_ {g})^{2}+\left\lvert z-1 \right\rvert  \right\rbrace \\
+&= \text{arg min}_ {z} \left\lbrace \frac{1}{2\alpha}z^{2}+\left\lvert z-1 \right\rvert  \right\rbrace.
+\end{align*}
+$$
+
+Now we can use the sub-gradient method to find the minimum. The subgradient reads
+
+$$
+\partial \left( \frac{1}{2\alpha}z^{2}+\left\lvert z-1 \right\rvert  \right)= \begin{cases}
+\frac{z}{\alpha}+1 & z>1 \\ 
+[ \frac{1}{\alpha}-1, \frac{1}{\alpha}+1] & z=1 \\
+\frac{z}{\alpha}-1 & z<1
+\end{cases}
+$$
+
+it is clear that for any $\alpha$ satisfying $\frac{1}{\alpha}-1<0$ and $\frac{1}{\alpha}+1>0$, zero subgradient is obtained at $z=1$. That is to say, for any $\alpha>0$m we gave 
+
+$$
+\beta^{(1)} =1
+$$
+
+which is precisely the result we are looking for. Along the way we have also found a constraint for the value of step size $\alpha$.
+
+- - -
+
+Another thing which might be useful is the so-called `soft-thresholding` operator, defined as:
+
+$$ S_ {\lambda}(x) = \text{sign}(x) \cdot \max(|x| - \lambda, 0) $$
+
+where $\lambda$ is a non-negative threshold parameter, $\text{sign}(x)$ returns the sign of $x$, and $\max(|x| - \lambda, 0)$ essentially shrinks $x$ towards zero by $\lambda$, setting it to zero if $x$ is within $\lambda$ of zero.
+
+To minimize this function using the soft-thresholding operator, we need to follow these steps:
+
+$$ 
+S_ {\lambda}(\theta) = \text{sign}(\theta) \cdot \max(\left\lvert \theta \right\rvert - \lambda, 0) 
+$$
+
+- - -
+
+For future use, we need to find the Hessian of the loss function $J(\beta)$ from logistic regression, we need to compute the second-order partial derivatives of $J(\beta)$ with respect to the components of the parameter vector $\beta$. Given
+
+$$ 
+J(\beta) := -\sum_ {i} \left[ y_ i t_ i - \ln(1 + e^{t_ i}) \right], \quad t_ i = \beta_ 0 + \beta \cdot X_ {(i)}. 
+$$
+
+where
+
+$$ 
+t_ i = \beta_ 0 + \sum_ {j=1}^{p} \beta_ j X_ {ij}
+$$
+
+and $\beta = (\beta_ 1, \beta_ 2, \ldots, \beta_ p)$, $X_ {(i)} = (X_ {i1}, X_ {i2}, \ldots, X_ {ip})$.
+
+First, we compute the gradient of $J(\beta)$ with respect to $\beta_ 0$ and $\beta_ j$.
+
+$$ 
+\frac{\partial J(\beta)}{\partial \beta_ 0} = -\sum_ {i} \left[ y_ i - \frac{e^{t_ i}}{1 + e^{t_ i}} \right]. 
+$$
+
+Let $p_ i = \frac{e^{t_ i}}{1 + e^{t_ i}} = \sigma(t_ i)$, the sigmoid function. Then,
+
+$$ 
+\frac{\partial J(\beta)}{\partial \beta_ 0} = -\sum_ {i} \left[ y_ i - p_ i \right]. 
+$$
+
+$$ \frac{\partial J(\beta)}{\partial \beta_ j} = -\sum_ {i} \left[ y_ i X_ {ij} - \frac{e^{t_ i}}{1 + e^{t_ i}} X_ {ij} \right]. $$
+
+Using $p_ i = \sigma(t_ i)$, this becomes:
+
+$$ \frac{\partial J(\beta)}{\partial \beta_ j} = -\sum_ {i} \left[ y_ i X_ {ij} - p_ i X_ {ij} \right] = -\sum_ {i} X_ {ij} \left[ y_ i - p_ i \right]. $$
+
+Now we compute the second-order partial derivatives to form the Hessian matrix.
+
+Second partial derivative with respect to $\beta_ 0$:
+
+$$ \frac{\partial^2 J(\beta)}{\partial \beta_ 0^2} = -\sum_ {i} \left[ - \frac{\partial p_ i}{\partial t_ i} \frac{\partial t_ i}{\partial \beta_ 0} \right] = \sum_ {i} p_ i (1 - p_ i). $$
+
+Mixed partial derivative with respect to $\beta_ 0$ and $\beta_ j$:
+
+$$ 
+\frac{\partial^2 J(\beta)}{\partial \beta_ 0 \partial \beta_ j} = -\sum_ {i} \left[ - \frac{\partial p_ i}{\partial t_ i} \frac{\partial t_ i}{\partial \beta_ j} \right] = \sum_ {i} p_ i (1 - p_ i) X_ {ij}. 
+$$
+
+Second partial derivative with respect to $\beta_ j$ and $\beta_ k$:
+
+$$ 
+\begin{align*}
+\frac{\partial^2 J(\beta)}{\partial \beta_ j \partial \beta_ k} &= -\sum_ {i} \left[ - \frac{\partial p_ i}{\partial t_ i} \frac{\partial t_ i}{\partial \beta_ j} \frac{\partial t_ i}{\partial \beta_ k} \right] = \sum_ {i} p_ i (1 - p_ i) X_ {ij} X_ {ik}\\
+&= (X^{T} Q X)_ {jk}
+\end{align*}$$
+
+where $Q_ {mn} = \delta_ {mn}p_ {m}(1-p_ {m})$.
+
+The full Hessian matrix $H$ is composed of these second-order partial derivatives. It can be written in block form as follows:
+
+$$ H = \begin{bmatrix}
+\frac{\partial^2 J(\beta)}{\partial \beta_ 0^2} & \frac{\partial^2 J(\beta)}{\partial \beta_ 0 \partial \beta_ 1} & \cdots & \frac{\partial^2 J(\beta)}{\partial \beta_ 0 \partial \beta_ p} \\
+\frac{\partial^2 J(\beta)}{\partial \beta_ 1 \partial \beta_ 0} & \frac{\partial^2 J(\beta)}{\partial \beta_ 1^2} & \cdots & \frac{\partial^2 J(\beta)}{\partial \beta_ 1 \partial \beta_ p} \\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial^2 J(\beta)}{\partial \beta_ p \partial \beta_ 0} & \frac{\partial^2 J(\beta)}{\partial \beta_ p \partial \beta_ 1} & \cdots & \frac{\partial^2 J(\beta)}{\partial \beta_ p^2}
+\end{bmatrix}. $$
+
+Using the derived second-order partial derivatives, the Hessian matrix can be written as:
+
+$$ H = \sum_ {i} p_ i (1 - p_ i) \begin{bmatrix}
+1 & X_ {i1} & X_ {i2} & \cdots & X_ {ip} \\
+X_ {i1} & X_ {i1}^2 & X_ {i1}X_ {i2} & \cdots & X_ {i1}X_ {ip} \\
+X_ {i2} & X_ {i2}X_ {i1} & X_ {i2}^2 & \cdots & X_ {i2}X_ {ip} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+X_ {ip} & X_ {ip}X_ {i1} & X_ {ip}X_ {i2} & \cdots & X_ {ip}^2
+\end{bmatrix}. $$
 
 
 
