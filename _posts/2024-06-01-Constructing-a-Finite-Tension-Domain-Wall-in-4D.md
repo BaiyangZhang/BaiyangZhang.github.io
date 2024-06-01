@@ -2,7 +2,7 @@
 layout: post
 title: Constructing A Finite Tension Domain Wall in 4D phi-Fourth Model
 subtitle: 
-date: 2024-05-23
+date: 2024-06-01
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -125,6 +125,8 @@ Perturbative expansion:
 
 $$
 \begin{align*}
+\delta m^{2}&\sim \mathcal{O}(\lambda)\sim \mathcal{O}(g^{2}),   \\
+\delta g &\sim \mathcal{O}(g^{3}),\\
 H &= \sum_ {i=01}^{\infty} H_ {i},\quad  H_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 A &= \sum_ {i=0}^{\infty}A_ {i}, \quad  A_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 \delta v &= \sum_ {i=1}^{\infty} \delta v_ {i} ,\quad  v_ {i} \sim \mathcal{O}(g^{i}) \\
