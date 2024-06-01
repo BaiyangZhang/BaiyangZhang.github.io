@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "eea223e51b8ca2f2",
   "lastOpenFiles": [
+    "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
     "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",
     "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
@@ -182,7 +183,6 @@
     "_posts/2023-06-16-Representables-in-Category-Theory.md",
     "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
     "_posts/2023-1-12-Basic-Category-Theory-Lecture-1.md",
-    "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/Constructing-a-Finite-Tension-Domain-Wall-in-4D.md"
   ]
 }
