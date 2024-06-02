@@ -68,7 +68,7 @@ In some theories, especially those involving non-linear sigma models and certain
 
 # Conventions
 
-we are not interested in the interaction picture but in the Schrodinger picture. It is for a bunch of reasons, one of them is that it is easy to see what the normal-ordering prescription corresponds to in this picture. We begin with a phi-fourth theory in Schrodinger picture, normal ordered at mass scale $m_ {0}$:
+we are not interested in the interaction picture but in the Schrodinger picture. It is for a bunch of reasons, one of them is that it is easy to see what the normal-ordering prescription corresponds to in this picture. Schrodinger-picture operators are given as functions of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate, not the Lorentzian spacetime coordinate $x^{\mu}$. We begin with a phi-fourth theory in Schrodinger picture, normal ordered at mass scale $m_ {0}$:
 
 $$
 \begin{align*}
