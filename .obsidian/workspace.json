@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fa78c8819433c87c",
+        "id": "8f98adb4f05fe3d9",
         "type": "tabs",
         "children": [
           {
-            "id": "eea223e51b8ca2f2",
+            "id": "d27d91a855f7f209",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md"
               }
             }
           }
@@ -160,14 +160,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eea223e51b8ca2f2",
+  "active": "d27d91a855f7f209",
   "lastOpenFiles": [
-    "img/compositeFunction.png",
     "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
+    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+    "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",
+    "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
+    "Untitled.md",
+    "img/compositeFunction.png",
     "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
-    "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",
     "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
     "_posts/2022-08-22-Finite-ring-extensions.md",
     "_pages/publications.md",

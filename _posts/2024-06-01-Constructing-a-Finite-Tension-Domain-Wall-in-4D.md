@@ -87,8 +87,8 @@ In the Schrodinger picture, the field operator and canonical momentum operator c
 
 $$
 \begin{align*}
-\phi(\vec{x})&= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} } \left( A_ {p}^{\ddagger}+\frac{A_ {-p}}{2\omega_ {p}} \right),  \\
-\pi(\vec{x})&= i \int \frac{d^{3}p}{(2\pi)^{3}} \,  e^{ -i\vec{p}\cdot \vec{x} } \left( \omega_ {p} A_ {p}^{\ddagger}-\frac{A_ {-p}}{2} \right) .
+\phi(\vec{x},m)&= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} } \left( A_ {p}^{\ddagger}+\frac{A_ {-p}}{2\omega_ {p}} \right),  \\
+\pi(\vec{x},m)&= i \int \frac{d^{3}p}{(2\pi)^{3}} \,  e^{ -i\vec{p}\cdot \vec{x} } \left( \omega_ {p} A_ {p}^{\ddagger}-\frac{A_ {-p}}{2} \right) .
 \end{align*}
 $$
 
@@ -96,12 +96,18 @@ and
 
 $$
 \begin{align*}
-\omega_ {p}&= \sqrt{ m_ {0}^{2}+\vec{p}^{2} },\\
+\omega_ {p}&= \sqrt{ m^{2}+\vec{p}^{2} },\\
 A_ {p}^{\ddagger} &= \frac{A_ {p}^{\dagger}}{2\omega_ {p}}.
 \end{align*}
 $$
 
-In the decomposition, every thing is defined at mass scale $m_ {0}$. In the paper the creation and annihilation operators are written as $A_ {\vec{p}}^{(0)}$, I have simplified the notation a little.
+with commutation relation 
+
+$$
+[A_ {p_ {1} },A^{\ddagger}_ {p_ {2} }] = (2\pi)^{d}\delta^{d}(p_ {1}-p_ {2}).
+$$
+
+In the decomposition, every thing is defined at mass scale $m$. In the paper the creation and annihilation operators are sometime written as $A_ {\vec{p}}^{(0)}$, with an extra superscript $(0)$, it has to do with the normal ordering we choose. If we are normal ordering w.r.t. some bare mass $m_ {0}$, then we put the superscript $(0)$ to remind us of that. We will go to details later.
 
 The renormalized quantities are define as 
 
@@ -133,6 +139,41 @@ A &= \sum_ {i=0}^{\infty}A_ {i}, \quad  A_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 \left\lvert{\Psi}\right\rangle  &= \sum_ {i}^{\infty} \left\lvert{\Psi_ {i}}\right\rangle , \quad  \left\lvert{\Psi}\right\rangle _ {i} \sim \mathcal{O}(g^{i})
 \end{align*}
 $$
+
+## Normal ordering 
+
+We can define the **normal ordering at scale $m$** by decomposing the Schrodinger picture fields and momenta into creation and annihilation part:
+
+$$
+\begin{align*}
+\phi^{+}(\vec{x},m)  &= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  \frac{A^{\dagger}_ {p}}{2\sqrt{ \vec{p}^{2}+m^{2} }},    \\
+\phi^{-}(\vec{x},m) &=  \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  \frac{A_ {-p}}{2\sqrt{ \vec{p}^{2}+m^{2} }}, 
+\end{align*}
+$$
+
+similarly for the canonical momenta
+
+$$
+\pi^{\pm }(\vec{x},m)  = \pm   i\sqrt{ -\nabla^{2}+m^{2} }\phi^{\pm }(\vec{x},m) .
+$$
+
+It is easy to verify that 
+
+$$
+\begin{align*}
+\phi(\vec{x},m) &=  \phi^{+}(\vec{x},m)  + \phi^{-}(\vec{x},m) , \\
+\pi(\vec{x},m) &=  \pi^{+}(\vec{x},m)  + \pi^{-}(\vec{x},m) , 
+\end{align*}
+
+$$
+
+We can arrange a sting of field operators using the Wick's theorem, which states that any product of field operators can be rewritten as the sum of all possible ways of contracting pairs of operators, plus the normal ordered product of the operators. For example, 
+
+$$
+\phi(\vec{x})\phi(\vec{y}) = :\phi(\vec{x})\phi(\vec{y}): + \text{ contraction}(\phi(\vec{x})\phi(\vec{y})) .
+$$
+
+
 
 
 
