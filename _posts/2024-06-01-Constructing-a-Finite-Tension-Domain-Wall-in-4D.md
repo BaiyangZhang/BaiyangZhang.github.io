@@ -68,7 +68,7 @@ In some theories, especially those involving non-linear sigma models and certain
 
 # Conventions
 
-We begin with a phi-fourth theory in Schrodinger picture, normal ordered at mass scale $m_ {0}$:
+we are not interested in the interaction picture but in the Schrodinger picture. It is for a bunch of reasons, one of them is that it is easy to see what the normal-ordering prescription corresponds to in this picture. We begin with a phi-fourth theory in Schrodinger picture, normal ordered at mass scale $m_ {0}$:
 
 $$
 \begin{align*}
@@ -142,6 +142,33 @@ $$
 
 ## Normal ordering 
 
+This section is based on Sidney Coleman's [1975 paper](http://users.physik.fu-berlin.de/%7Ekamecke/ps/coleman.pdf) and his lecture note on the aspects of symmetry, while I have adopted notations and convention according to our paper. 
+
+In Coleman's 1975 paper mentioned above, he studied the sine-Gordon model
+
+$$
+\mathcal{L} = \frac{1}{2} (\partial_ {\mu}\phi)^{2} + \frac{\alpha_ {0}}{\beta^{2}}\cos \beta \phi+\gamma_ {0}, 
+$$
+
+and famously pointed out:
+
+1. As for any theory of a scalar field with nonderivative interaction in 2 dimensional spacetime, normal ordering the Hamiltonian alone is enough to cancel all the divergences at any loop order;
+2. If the $\beta$-parameter exceeds $8\pi$, the Hamiltonian density is not bounded below. 
+3. If $\beta<8\pi$, the model is equivalent to the charge-zero sector of almost-massive Thirring model. 
+4. The fermion in the Thirring model is massless if $\beta=4\pi$. 
+
+But sine-Gordon model is what we are here to talk about, so we will stop here and move on to normal ordering. 
+
+- - -
+
+A crucial property is that expectation values of normal-ordered operators vanish in the free theory: 
+
+$$
+\left\langle{0}\right\rvert : \mathcal{O} :\left\lvert{0}\right\rangle =0
+$$
+
+for any operator $\mathcal{O}$ and free vacuum $\left\lvert{0}\right\rangle$. There are various formulations of this notion [^Polchinski] , including creation-annihilation operator normal ordering, conformal normal ordering, functional integral normal ordering, etc
+
 We can define the **normal ordering at scale $m$** by decomposing the Schrodinger picture fields and momenta into creation and annihilation part:
 
 $$
@@ -181,6 +208,7 @@ $$
 
 
 
+[^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
 
 - - -
 
@@ -205,3 +233,6 @@ $$
 As $\Lambda \to \infty$, if $Z \to \infty$ (which is the case for $\phi^4$ theory in 4D), the renormalized coupling $\lambda$ must go to zero to keep $\lambda_ 0$ fixed.
 
 In summary, saying that $\phi^4$ theory is "trivial" means that, after accounting for the effects of renormalization, the theory becomes non-interacting as the UV cutoff is taken to infinity. This implies that any interacting $\phi^4$ theory in four dimensions cannot remain interacting at all energy scales and instead becomes a free theory at very high energies. This phenomenon is an important aspect of understanding the limitations and behaviors of quantum field theories in different dimensions.
+
+
+
