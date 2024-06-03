@@ -208,6 +208,22 @@ $$
 
 
 
+
+For a free theory of mass $m$, and for any source function $J(x)$, we have 
+
+$$
+\begin{align*}
+\exp \left\lbrace i \int \, J(x)\phi(x) d^{2}x  \right\rbrace  &=\; :\exp \left\lbrace i \int d^{2}x   \, J(x)\phi(x)  \right\rbrace:_ {m} \\
+&\;\;\;\;\;\times \exp \left\lbrace -\frac{1}{2}\int d^{2}x  d^{2}y J(x) \, \Delta(x-y)J(y)  \right\rbrace 
+\end{align*}
+$$
+
+where $\Delta(x-y)$ is the Wightman function. If we go to interaction picture and adopt time ordering, the Wightman functions become Feynman propagators.
+
+
+
+
+
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
 
 - - -

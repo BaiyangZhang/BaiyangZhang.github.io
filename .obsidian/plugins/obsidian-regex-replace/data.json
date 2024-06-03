@@ -1,6 +1,6 @@
 {
-  "findText": "_",
-  "replaceText": "_ ",
+  "findText": "E_ {\\mathbf{{k}}",
+  "replaceText": "\\omega_{k,m}",
   "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,
