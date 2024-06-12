@@ -108,7 +108,36 @@ $$
 [A_ {p_ {1} },A^{\ddagger}_ {p_ {2} }] = (2\pi)^{d}\delta^{d}(p_ {1}-p_ {2}).
 $$
 
-In the decomposition, every thing is defined at mass scale $m$. In the paper the creation and annihilation operators are sometime written as $A_ {\vec{p}}^{(0)}$, with an extra superscript $(0)$, it has to do with the normal ordering we choose. If we are normal ordering w.r.t. some bare mass $m_ {0}$, then we put the superscript $(0)$ to remind us of that. We will go to details later.
+In the decomposition, every thing is defined at mass scale $m$. In the paper the creation and annihilation operators are sometime written as $A_ {\vec{p}}^{(0)}$, with an extra naught, it has to do with the definition of normal ordering we choose. If we are normal ordering at some bare mass $m_ {0}$, then we put the superscript $(0)$ to remind us of that. We will go to details later.
+
+- - -
+
+It would be helpful to mention the connection between our convention and that widely adopted in various textbooks. In Schrodinger picture it reads
+
+$$
+\phi(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{2 \omega_ {p} }} (a_ {p} \, e^{ i\vec{p}\cdot \vec{x} } + a^{\dagger}_ {p}\,e^{ -i\vec{p}\cdot \vec{x} }).
+$$
+
+The canonical commutation relation reads
+
+$$
+[a_ {p},a^{\dagger}_ {k}] = (2\pi)^{d}\delta^{d}(\vec{p}-\vec{k}).
+$$
+
+Comparing to our convention, we have 
+
+$$
+\boxed{ 
+\begin{align*}
+A_ {p} &\equiv \sqrt{ 2\omega_ {p} }\,a_ {p},\quad  A^{\dagger}_ {p} \equiv \sqrt{ 2\omega_ {p} }\,a^{\dagger}_ {p}, \\
+A^{\ddagger}_ {p} &:= \frac{A^{\dagger}_ {p}}{2\omega_ {p}} = \frac{a^{\dagger}_ {p}}{\sqrt{ 2\omega_ {p} }}, \\
+[A_ {p},A^{\ddagger}_ {k}] &= (2\pi)^{d}\,\delta^{d}(\vec{p}-\vec{k}).
+\end{align*}
+}
+$$
+
+
+- - -
 
 The renormalized quantities are define as 
 
