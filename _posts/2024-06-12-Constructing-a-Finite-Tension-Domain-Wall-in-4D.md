@@ -88,8 +88,8 @@ In the Schrodinger picture, the field operator and canonical momentum operator c
 
 $$
 \begin{align*}
-\phi(\vec{x},m)&= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} } \left( A_ {p}^{\ddagger}+\frac{A_ {-p}}{2\omega_ {p}} \right),  \\
-\pi(\vec{x},m)&= i \int \frac{d^{3}p}{(2\pi)^{3}} \,  e^{ -i\vec{p}\cdot \vec{x} } \left( \omega_ {p} A_ {p}^{\ddagger}-\frac{A_ {-p}}{2} \right) .
+\phi(\vec{x})&= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} } \left( A_ {p}^{\ddagger}+\frac{A_ {-p}}{2\omega_ {p}} \right),  \\
+\pi(\vec{x})&= i \int \frac{d^{3}p}{(2\pi)^{3}} \,  e^{ -i\vec{p}\cdot \vec{x} } \left( \omega_ {p} A_ {p}^{\ddagger}-\frac{A_ {-p}}{2} \right) .
 \end{align*}
 $$
 
@@ -141,7 +141,7 @@ A &= \sum_ {i=0}^{\infty}A_ {i}, \quad  A_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 \end{align*}
 $$
 
-# Normal ordering 
+# Normal ordering with mass m
 
 This section is based on Sidney Coleman's [1975 paper](http://users.physik.fu-berlin.de/%7Ekamecke/ps/coleman.pdf) and his lecture note on the aspects of symmetry, the chapter about classical and quantum lumps. In the meanwhile I have adopted notations and convention according to previous chapter. 
 
@@ -174,7 +174,13 @@ Something that is less mentioned is that, normal ordering involves a mass scale 
 
 So, how does all this relate to normal ordering? Normal ordering is a procedure that rearranges creation and annihilation operators. These operators inherently depend on the free mass of the particle. $a^{\dagger}_ {p}$ creates a particle of momentum $\vec{p}$ **with mass $m$**, the energy of the particle is $\sqrt{ \vec{p}^{2}+m^{2} }$. I repeat, **the choice of $m$ depends on what you choose to call the free Hamiltonian, and that choice is somehow arbitrary.** The result of changing $m$ can be absorbed in a redefinition of the theory parameters.
 
-My conjecture is, the field operator $\phi(x)$ itself is independent of the aforementioned choice of mass parameter $m$, while the stuff that do depend on $m$ are 1) creation and annihilation operators and 2) the energy $\omega=\sqrt{ \vec{p}^{2}+m^{2} }$. So we better write them as $a_ {p,m}$, $a^{\dagger}_ {p,m}$ and $\omega_ {p,m}$. Recall that the field operator can be expanded in terms of these two things, to be specific
+My conjecture is, the field operator $\phi(x)$ itself is independent of the aforementioned choice of mass parameter $m$, while the stuff that do depend on $m$ are
+
+1. creation and annihilation operators $a_ {p,m}$ and $a^{\dagger}_ {p,m}$,
+2. the energy $\omega=\sqrt{ \vec{p}^{2}+m^{2} }$, written as $\omega_ {p,m}$ for short and
+3. states in Fock space. For example, the free vacuum $\left\lvert{0,m}\right\rangle$ is by definition annihilated by $a_ {p,m}$. Since the states in the Fock space are constructed by applying $a^{\dagger}_ {p,m}$ consecutively, a re-definition of $a^{\dagger}_ {p,m}$ to, say $a^{\dagger}_ {p,\mu}$ will also change the states themselves.
+
+Recall that the field operator can be expanded in terms of these two things, to be specific
 
 $$
 \phi(\vec{x}) = \int \frac{d^{d}k}{(2\pi)^{d}}\,  \frac{1}{\sqrt{ 2\omega_ {k,m} }} (a_ {p,m} \, e^{ i\vec{k}\cdot \vec{x} } + a^{\dagger}_ {p,m}\,e^{ -i\vec{k}\cdot \vec{x} })
