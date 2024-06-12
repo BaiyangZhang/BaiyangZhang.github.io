@@ -2,12 +2,13 @@
 layout: post
 title: Constructing A Finite Tension Domain Wall in 4D phi-Fourth Model
 subtitle: 
-date: 2024-06-01
+date: 2024-06-12
 author: Baiyang Zhang
 header-img: 
 catalog: true
 tags:
   - "#domainWall"
+  - kink
 ---
 
 
@@ -140,9 +141,9 @@ A &= \sum_ {i=0}^{\infty}A_ {i}, \quad  A_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 \end{align*}
 $$
 
-## Normal ordering 
+# Normal ordering 
 
-This section is based on Sidney Coleman's [1975 paper](http://users.physik.fu-berlin.de/%7Ekamecke/ps/coleman.pdf) and his lecture note on the aspects of symmetry, while I have adopted notations and convention according to our paper. 
+This section is based on Sidney Coleman's [1975 paper](http://users.physik.fu-berlin.de/%7Ekamecke/ps/coleman.pdf) and his lecture note on the aspects of symmetry, the chapter about classical and quantum lumps. In the meanwhile I have adopted notations and convention according to previous chapter. 
 
 In Coleman's 1975 paper mentioned above, he studied the sine-Gordon model
 
@@ -150,24 +151,37 @@ $$
 \mathcal{L} = \frac{1}{2} (\partial_ {\mu}\phi)^{2} + \frac{\alpha_ {0}}{\beta^{2}}\cos \beta \phi+\gamma_ {0}, 
 $$
 
-and famously pointed out:
+where things with a nought are bare (not renormalized), and famously pointed out:
 
-1. As for any theory of a scalar field with nonderivative interaction in 2 dimensional spacetime, normal ordering the Hamiltonian alone is enough to cancel all the divergences at any loop order;
+1. As for any theory of a **scalar field** with **nonderivative interaction** in **2 dimensional spacetime**, normal ordering the Hamiltonian alone is enough to cancel all the divergences at any loop order;
 2. If the $\beta$-parameter exceeds $8\pi$, the Hamiltonian density is not bounded below. 
 3. If $\beta<8\pi$, the model is equivalent to the charge-zero sector of almost-massive Thirring model. 
 4. The fermion in the Thirring model is massless if $\beta=4\pi$. 
 
-But sine-Gordon model is what we are here to talk about, so we will stop here and move on to normal ordering. 
+Turns out there are more details to normal ordering than I thought. In textbooks such that by Peskin&Schroeder, or that by Mark Srednicki, normal ordering is regarded as a simple, even trivial, ad hoc procedure that puts all the creation operators to the left of all the annihilation operators, in order to eliminate the zero point energy of the trivial vacuum. But, as we dig deeper, more details begin to surface. 
 
 - - -
 
-A crucial property is that expectation values of normal-ordered operators vanish in the free theory: 
+A crucial property of normal ordering is that expectation values of normal-ordered operators vanish in the free theory: 
 
 $$
 \left\langle{0}\right\rvert : \mathcal{O} :\left\lvert{0}\right\rangle =0
 $$
 
-for any operator $\mathcal{O}$ and free vacuum $\left\lvert{0}\right\rangle$. There are various formulations of this notion [^Polchinski] , including creation-annihilation operator normal ordering, conformal normal ordering, functional integral normal ordering, etc
+for any operator $\mathcal{O}$ and free vacuum $\left\lvert{0}\right\rangle$. There are various formulations of this notion [^Polchinski] , such as `creation-annihilation operator normal ordering`, `conformal normal ordering`, `functional integral normal ordering`, etc. In this note we will only talk about familiar creation-annihilation operator normal ordering.
+
+Something that is less mentioned is that, normal ordering involves a mass scale $m$. In most cases, it is rather obvious what $m$ we should choose, that is the mass of the free particle, let's call it free mass. However, in order to tell what the free mass is, we need to what the Hamiltonian is, for example if we can unambiguously separate the Hamiltonian into $\mathcal{H}_ {0}+U(\phi)$, where $\mathcal{H}_ {0}=\pi^{2} / 2+(\partial_ {x}\phi)^{2} /2+m^{2}\phi^{2} /2$, then $m$ is the free mass. Sometimes the situation is not so straightforward, for sometimes it is more convenient to put $m^{2}\phi^{2} /2$ into the interaction part, such as in the case of sine-Gordon model, as a result the free Hamiltonian only contains the kinetic part, and the free particles appears to be massless. In general, given a quadratic term of form $a \phi^{2}$ where $a$ is some real parameter, we can choose how much of it is to be put into the free Hamiltonian part, and the rest goes to the interaction. For example, we can pick a number such as $m=0.511$ MeV and say that $m^{2}\phi^{2}/2$ goes to the free Hamiltonian, such that the free particle has mass $m$, as a result, $(a-\frac{m^{2}}{2})\phi^{2}$ will go to the interaction. This is just a matter of convenience, the observables should not depend on such arbitrary choices.
+
+So, how does all this relate to normal ordering? Normal ordering is a procedure that rearranges creation and annihilation operators. These operators inherently depend on the free mass of the particle. $a^{\dagger}_ {p}$ creates a particle of momentum $\vec{p}$ **with mass $m$**, the energy of the particle is $\sqrt{ \vec{p}^{2}+m^{2} }$. I repeat, **the choice of $m$ depends on what you choose to call the free Hamiltonian, and that choice is somehow arbitrary.** The result of changing $m$ can be absorbed in a redefinition of the theory parameters.
+
+My conjecture is, the field operator $\phi(x)$ itself is independent of the aforementioned choice of mass parameter $m$, while the stuff that do depend on $m$ are 1) creation and annihilation operators and 2) the energy $\omega=\sqrt{ \vec{p}^{2}+m^{2} }$. So we better write them as $a_ {p,m}$, $a^{\dagger}_ {p,m}$ and $\omega_ {p,m}$. Recall that the field operator can be expanded in terms of these two things, to be specific
+
+$$
+\phi(\vec{x}) = \int \frac{d^{d}k}{(2\pi)^{d}}\,  \frac{1}{\sqrt{ 2\omega_ {k,m} }} (a_ {p,m} \, e^{ i\vec{k}\cdot \vec{x} } + a^{\dagger}_ {p,m}\,e^{ -i\vec{k}\cdot \vec{x} })
+$$
+and the $m$-dependence in $\omega_ {p,m}$, $a_ {p,m}$ and $a^{\dagger}_ {p,m}$ should cancel out so that $\phi(\vec{x})$ itself is $m$-independent.
+
+- - -
 
 We can define the **normal ordering at scale $m$** by decomposing the Schrodinger picture fields and momenta into creation and annihilation part:
 

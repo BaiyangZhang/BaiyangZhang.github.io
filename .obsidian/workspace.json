@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
+                "file": "_posts/2024-06-12-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
+                "file": "_posts/2024-06-12-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
+                "file": "_posts/2024-06-12-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md"
+                "file": "_posts/2024-06-12-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md"
               }
             }
           }
@@ -162,13 +163,14 @@
   },
   "active": "d27d91a855f7f209",
   "lastOpenFiles": [
+    "Discussion Notes.md",
+    "Untitled.md",
+    "_posts/2024-06-12-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2024-06-01-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-05-22-Basic-Category-Theory-Lecture-3.md",
     "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
-    "Untitled.md",
     "img/compositeFunction.png",
     "_posts/2024-05-20-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-05-23-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
