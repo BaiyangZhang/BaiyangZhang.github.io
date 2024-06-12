@@ -136,7 +136,6 @@ A^{\ddagger}_ {p} &:= \frac{A^{\dagger}_ {p}}{2\omega_ {p}} = \frac{a^{\dagger}_
 }
 $$
 
-
 - - -
 
 The renormalized quantities are define as 
@@ -218,27 +217,27 @@ and the $m$-dependence in $\omega_ {p,m}$, $a_ {p,m}$ and $a^{\dagger}_ {p,m}$ s
 
 - - -
 
-We can define the **normal ordering at scale $m$** by decomposing the Schrodinger picture fields and momenta into creation and annihilation part:
+We can define the **normal ordering at $m$** by decomposing the Schrodinger picture fields and momenta into creation and annihilation part:
 
 $$
 \begin{align*}
-\phi^{+}(\vec{x},m)  &= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  \frac{A^{\dagger}_ {p}}{2\sqrt{ \vec{p}^{2}+m^{2} }},    \\
-\phi^{-}(\vec{x},m) &=  \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  \frac{A_ {-p}}{2\sqrt{ \vec{p}^{2}+m^{2} }}, 
+\phi^{+}(\vec{x})  &= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  \frac{A^{\dagger}_ {p}}{2\sqrt{ \vec{p}^{2}+m^{2} }},    \\
+\phi^{-}(\vec{x}) &=  \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  \frac{A_ {-p}}{2\sqrt{ \vec{p}^{2}+m^{2} }}, 
 \end{align*}
 $$
 
 similarly for the canonical momenta
 
 $$
-\pi^{\pm }(\vec{x},m)  = \pm   i\sqrt{ -\nabla^{2}+m^{2} }\phi^{\pm }(\vec{x},m) .
+\pi^{\pm }(\vec{x})  = \pm   i\sqrt{ -\nabla^{2}+m^{2} }\phi^{\pm }(\vec{x}) .
 $$
 
 It is easy to verify that 
 
 $$
 \begin{align*}
-\phi(\vec{x},m) &=  \phi^{+}(\vec{x},m)  + \phi^{-}(\vec{x},m) , \\
-\pi(\vec{x},m) &=  \pi^{+}(\vec{x},m)  + \pi^{-}(\vec{x},m) , 
+\phi(\vec{x}) &=  \phi^{+}(\vec{x})  + \phi^{-}(\vec{x}) , \\
+\pi(\vec{x}) &=  \pi^{+}(\vec{x})  + \pi^{-}(\vec{x}) , 
 \end{align*}
 
 $$
@@ -246,14 +245,16 @@ $$
 We can arrange a sting of field operators using the Wick's theorem, which states that any product of field operators can be rewritten as the sum of all possible ways of contracting pairs of operators, plus the normal ordered product of the operators. For example, 
 
 $$
-\phi(\vec{x})\phi(\vec{y}) = :\phi(\vec{x})\phi(\vec{y}): + \text{ contraction}(\phi(\vec{x})\phi(\vec{y})) .
+\phi(\vec{x})\phi(\vec{x}) = :\phi(\vec{x})\phi(\vec{x}): + \text{ contraction}(\phi(\vec{x})\phi(\vec{x})) .
 $$
 
+The contraction is where different choice of $m$ generates different results. Let's write the contraction at $m$ as $C_ {m}\left\lbrace \cdots \right\rbrace$, we have 
 
-
-
-
-
+$$
+\begin{align*}
+\phi^{2}(\vec{x}) &= :\phi^{2}(\vec{x}):_ {m} + 
+\end{align*}
+$$
 
 
 
