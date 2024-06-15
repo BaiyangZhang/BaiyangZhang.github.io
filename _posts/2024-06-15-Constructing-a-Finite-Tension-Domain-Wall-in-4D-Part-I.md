@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Constructing A Finite Tension Domain Wall in 4D phi-Fourth Model
+title: Quantum Domain Wall in 4D Part I
 subtitle: 
-date: 2024-06-12
+date: 2024-06-15
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -254,7 +254,7 @@ $$
 We can arrange a sting of field operators using the Wick's theorem, which says that a string of product of field operators can be rewritten as the sum of all the possible contractions of operators, all of them normal ordered. For example, 
 
 $$
-\phi(\vec{x})\phi(\vec{x}) = :\phi(\vec{x})\phi(\vec{x}): + \text{ contraction}(\phi(\vec{x})\phi(\vec{x})) .
+\phi(\vec{x})\phi(\vec{x}) = :\phi(\vec{x})\phi(\vec{x}): + \text{ contraction}\left\lbrace \phi(\vec{x})\phi(\vec{x}) \right\rbrace  .
 $$
 
 The contraction is where different choice of $m$ generates different results. Let's write the contraction at $m$ as $C_ {m}\left\lbrace \cdots \right\rbrace$, we have 
@@ -281,7 +281,15 @@ $$
 \end{align*}
 $$
 
-where $C_ {m}$ is short for $C_ {m}(\phi^{2})$, a short-handed notation that we will use extensively for the rest of the note. $C_ {m}$ is a c-number, usually given by a divergent integral.
+where $C_ {m}$ is short for $C_ {m}(\phi^{2})$, a short-handed notation we will use extensively for the rest of the note. $C_ {m}$ is a c-number, usually given by a divergent integral.
+
+Similarly, 
+
+$$
+\boxed{ 
+\pi^{2}(\vec{x}) =  :\pi^{2}(\vec{x}):_ {m} + \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p,m}.
+}
+$$
 
 Let's look at another example which is slightly more complicated, that is the normal ordering of four field operators $\phi^{4}(\vec{x})$,
 
