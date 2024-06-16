@@ -74,7 +74,7 @@ we are not interested in the interaction picture but in the Schrodinger picture.
 $$
 \begin{align*}
 H &= \int d^{3}x: \hat{\mathcal{H}}^{0}(\vec{x}) :_ {m_ {0}} \\
-\hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}(\pi(\vec{x})^{2}+(\partial_ {i}\phi(\vec{x})\partial_ {i}\phi(\vec{x}))) + \frac{1}{4}(\lambda_ {0}\phi^{4}(\vec{x})-m_ {0}^{2}\phi^{2}(\vec{x}))+A.
+\hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}(\pi(\vec{x})^{2}+(\partial_ {i}\phi(\vec{x})^{2}) + \frac{1}{4}(\lambda_ {0}\phi^{4}(\vec{x})-m_ {0}^{2}\phi^{2}(\vec{x}))+A.
 \end{align*}
 $$
 
@@ -349,12 +349,30 @@ For the sake of completeness, we compare the normal ordering of $\phi^{2}(\vec{x
 
 $$
 \begin{align*}
-:\phi^{2}(\vec{x}):_ {m_ {0}} &=  :\phi^{2}(\vec{x}):_ {m} + \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, \left( \frac{1}{\omega_ {p,m}} - \frac{1}{\omega_ {p,m_ {0}}} \right) , \\
+:\phi^{2}(\vec{x}):_ {m_ {0}} &=  :\phi^{2}(\vec{x}):_ {m} + I , \\
 :\pi^{2}(\vec{x}):_ {m_ {0}} &= :\pi^{2}(\vec{x}):_ {m} + \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}} \, (\omega_ {p,m}-\omega_ {p,m_ {0}}), \\
 :( \vec{\nabla}\phi )\cdot(\vec{\nabla}\phi):_ {m_ {0}} &= :( \vec{\nabla}\phi )\cdot(\vec{\nabla}\phi):_ {m} +  \int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{\vec{p}^{2}}{2} \left( \frac{1}{\omega_ {p,m}}-\frac{1}{\omega_ {p,m_ {0}}} \right) , \\
 :\phi^{4}(\vec{x}):_ {m_ {0}} &= :\phi^{4}(\vec{x}):_ {m} + 6 I :\phi^{2}:_ {m} +3I^{2}, \\
 I &=  C_ {m}-C_ {m_ {0}} = \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{1}{\omega_ {p,m}}-\frac{1}{\omega_ {p,m_ {0}}} \right).
 \end{align*}
+$$
+
+Recall that the **un-normal ordered Hamiltonian** desntity reads
+
+$$
+\begin{align*}
+\hat{H}(\vec{x}) &= \int d^{3}x \,  :\mathcal{H}(\vec{x}):_ {m_ {0}}, \\
+\hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m_ {0}^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda_ {0}}{4} \phi^{4}(\vec{x}) + A,
+\end{align*}
+$$
+
+We want to normal order it to get rid of the infinite zero point energy. The thing is, there are two obvious options for the mass scale at which the normal ordering is done: the bare mass $m_ {0}$ and the "physical" mass $m$. They are connected by 
+
+$$
+\begin{align*}
+  :\hat{H}^{0}(\vec{x}):_ {m_ {0}} &= :\hat{H}^{0}(\vec{x}):_ {m} + \frac{3}{2}\lambda_ {0} I :\phi^{2}(\vec{x}):_ {m} + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2} \\
+  &\;\;\;\; + \frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) .
+\end{align*} 
 $$
 
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
@@ -384,4 +402,29 @@ As $\Lambda \to \infty$, if $Z \to \infty$ (which is the case for $\phi^4$ theor
 In summary, saying that $\phi^4$ theory is "trivial" means that, after accounting for the effects of renormalization, the theory becomes non-interacting as the UV cutoff is taken to infinity. This implies that any interacting $\phi^4$ theory in four dimensions cannot remain interacting at all energy scales and instead becomes a free theory at very high energies. This phenomenon is an important aspect of understanding the limitations and behaviors of quantum field theories in different dimensions.
 
 
+# Perturbative Expansion of the Hamiltonian
+
+Since we want to cancel divergences in a perturbative way, that is, order-by-order in terms of the coupling $\lambda$, it makes sense that when $\Lambda$ is involved, we should still first count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group everything of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
+
+A simple Taylor expansion tells us that 
+
+$$
+\omega_ {p,m} = \omega_ {p,m_ {0}} + \frac{1}{2} \frac{\delta m^{2}}{\omega_ {p,m_ {0}}} + \mathcal{O}(\delta m^{2})^{2},
+$$
+
+thus 
+
+$$
+\omega_ {p,m} - \omega_ {p,m_ {0}} \sim \mathcal{O}(\lambda) 
+$$
+
+since $\delta m^{2}=(\cdots)\lambda+(\cdots)\lambda^{2}+\cdots$. Similarly, 
+
+$$
+\begin{align*}
+I &= \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{1}{\omega_ {p,m}}-\frac{1}{\omega_ {p,m_ {0}}} \right) \\
+&= \int \frac{d^{3}p}{(2\pi)^{3}} \, \left( - \frac{\delta m^{2}}{2 \omega^{3}_ {p,m_ {0}}} +\cdots \right)\\
+&\sim \mathcal{O}(\lambda)
+\end{align*}
+$$
 
