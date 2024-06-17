@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "25d3f3cda6b12922",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,8 +160,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "25d3f3cda6b12922",
+  "active": "8740933b930dad3c",
   "lastOpenFiles": [
+    "_posts/2024-06-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "2024-06-12.md",
     "_posts/2024-06-12-Constructing-a-Finite-Tension-Domain-Wall-in-4D.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",

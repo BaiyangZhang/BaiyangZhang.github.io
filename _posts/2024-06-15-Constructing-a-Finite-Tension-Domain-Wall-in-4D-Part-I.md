@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Constructing A Finite Tension Domain Wall in 4D phi-Fourth Model
+title: Quantum Domain Wall in 4D Part I
 subtitle: 
-date: 2024-06-12
+date: 2024-06-15
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -73,12 +73,12 @@ we are not interested in the interaction picture but in the Schrodinger picture.
 
 $$
 \begin{align*}
-H &= \int d^{3}x: \hat{\mathcal{H}}^{0}(\vec{x}) :_ {m_ {0}} \\
-\hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}(\pi(\vec{x})^{2}+(\partial_ {i}\phi(\vec{x})\partial_ {i}\phi(\vec{x}))) + \frac{1}{4}(\lambda_ {0}\phi^{4}(\vec{x})-m_ {0}^{2}\phi^{2}(\vec{x}))+A.
+\hat{H}(\vec{x}) &= \int d^{3}x: \hat{\mathcal{H}}^{0}(\vec{x}) :_ {m_ {0}} \\
+\hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}(\pi(\vec{x})^{2}+(\partial_ {i}\phi(\vec{x})^{2}) + \frac{1}{4}(\lambda_ {0}\phi^{4}(\vec{x})-m_ {0}^{2}\phi^{2}(\vec{x}))+A.
 \end{align*}
 $$
 
-Note the factor $-m_ {0}^{2} /4$ in the mass term, and the last $A$ is a c-number to cancel the zero point energy in the vacuum sector. We also define coupling $g_ {0}$ as 
+The hat denotes that the vacuum of the Hamiltonian is not obtained at $\phi=0$ yet. To be more specific, the Hamiltonian undergoes spontaneous symmetry breaking, as a result the minimum of the Hamiltonian is obtained at $\phi=v_ {0}$ for some $v_ {0}$. Later we will shift the field operator from $\phi$ to $\phi'$, such that the vacuum is indeed obtained at $\phi'=0$, the Hamiltonian in terms of $\phi'$ will be denoted without the hat. Note the factor $-m_ {0}^{2} /4$ in the mass term, and the last $A$ is a c-number to cancel the zero point energy in the vacuum sector. We also define coupling $g_ {0}$ as 
 
 $$
 g_ {0}^{2} := \lambda_ {0}^{2}.
@@ -205,15 +205,16 @@ So, how does all this relate to normal ordering? Normal ordering is a procedure 
 My conjecture is, the field operator $\phi(x)$ itself is independent of the aforementioned choice of mass parameter $m$, while the stuff that do depend on $m$ are
 
 1. creation and annihilation operators $a_ {p,m}$ and $a^{\dagger}_ {p,m}$,
-2. the energy $\omega=\sqrt{ \vec{p}^{2}+m^{2} }$, written as $\omega_ {p,m}$ for short and
+2. the energy $\omega=\sqrt{ \vec{p}^{2}+m^{2} }$, we will write it as $\omega_ {p,m}$ explicitly,
 3. states in Fock space. For example, the free vacuum $\left\lvert{0,m}\right\rangle$ is by definition annihilated by $a_ {p,m}$. Since the states in the Fock space are constructed by applying $a^{\dagger}_ {p,m}$ consecutively, a re-definition of $a^{\dagger}_ {p,m}$ to, say $a^{\dagger}_ {p,\mu}$ will also change the states themselves.
 
-Recall that the field operator can be expanded in terms of these two things, to be specific
+Recall that the field operator can be expanded in terms of energy and ladder operators, 
 
 $$
-\phi(\vec{x}) = \int \frac{d^{d}k}{(2\pi)^{d}}\,  \frac{1}{\sqrt{ 2\omega_ {k,m} }} (a_ {p,m} \, e^{ i\vec{k}\cdot \vec{x} } + a^{\dagger}_ {p,m}\,e^{ -i\vec{k}\cdot \vec{x} })
+\phi(\vec{x}) = \int \frac{d^{d}k}{(2\pi)^{d}}\,  \frac{1}{\sqrt{ 2\omega_ {k,m} }} (a_ {k,m} \, e^{ i\vec{k}\cdot \vec{x} } + a^{\dagger}_ {k,m}\,e^{ -i\vec{k}\cdot \vec{x} })
 $$
-and the $m$-dependence in $\omega_ {p,m}$, $a_ {p,m}$ and $a^{\dagger}_ {p,m}$ should cancel out so that $\phi(\vec{x})$ itself is $m$-independent.
+
+and the $m$-dependence in $\omega_ {k,m}$, $a_ {k,m}$ and $a^{\dagger}_ {k,m}$ should cancel out so that $\phi(\vec{x})$ itself is $m$-independent.
 
 - - -
 
@@ -221,15 +222,24 @@ We can define the **normal ordering at $m$** by decomposing the Schrodinger pict
 
 $$
 \begin{align*}
-\phi^{+}(\vec{x})  &= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  \frac{A^{\dagger}_ {p}}{2\sqrt{ \vec{p}^{2}+m^{2} }},    \\
-\phi^{-}(\vec{x}) &=  \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  \frac{A_ {-p}}{2\sqrt{ \vec{p}^{2}+m^{2} }}, 
+\phi^{+}(\vec{x})  &= \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} }  A^{\ddagger}_ {p,m} \\
+\phi^{-}(\vec{x}) &=  \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ i\vec{p}\cdot \vec{x} }  \frac{A_ {p,m}}{2\omega_ {p,m}}, 
 \end{align*}
 $$
 
 similarly for the canonical momenta
 
 $$
-\pi^{\pm }(\vec{x})  = \pm   i\sqrt{ -\nabla^{2}+m^{2} }\phi^{\pm }(\vec{x}) .
+\pi^{\pm }(\vec{x})  = \pm   i\sqrt{ -\nabla^{2}+m^{2} }\phi^{\pm }(\vec{x}) ,
+$$
+
+which implies
+
+$$
+\begin{align*}
+\pi^{-}&= - \frac{i}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ i\vec{p}\cdot \vec{x} } A_ {p,m}    ,\\
+\pi^{+} &= i \int \frac{d^{3}p}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} } \omega_ {p,m}A^{\ddagger}_ {p,m}  .
+\end{align*}
 $$
 
 It is easy to verify that 
@@ -237,27 +247,90 @@ It is easy to verify that
 $$
 \begin{align*}
 \phi(\vec{x}) &=  \phi^{+}(\vec{x})  + \phi^{-}(\vec{x}) , \\
-\pi(\vec{x}) &=  \pi^{+}(\vec{x})  + \pi^{-}(\vec{x}) , 
+\pi(\vec{x}) &=  \pi^{+}(\vec{x})  + \pi^{-}(\vec{x}) . 
 \end{align*}
-
 $$
 
-We can arrange a sting of field operators using the Wick's theorem, which states that any product of field operators can be rewritten as the sum of all possible ways of contracting pairs of operators, plus the normal ordered product of the operators. For example, 
+We can arrange a sting of field operators using the Wick's theorem, which says that a string of product of field operators can be rewritten as the sum of all the possible contractions of operators, all of them normal ordered. For example, 
 
 $$
-\phi(\vec{x})\phi(\vec{x}) = :\phi(\vec{x})\phi(\vec{x}): + \text{ contraction}(\phi(\vec{x})\phi(\vec{x})) .
+\phi(\vec{x})\phi(\vec{x}) = :\phi(\vec{x})\phi(\vec{x}): + \text{ contraction}\left\lbrace \phi(\vec{x})\phi(\vec{x}) \right\rbrace  .
 $$
 
 The contraction is where different choice of $m$ generates different results. Let's write the contraction at $m$ as $C_ {m}\left\lbrace \cdots \right\rbrace$, we have 
 
 $$
 \begin{align*}
-\phi^{2}(\vec{x}) &= :\phi^{2}(\vec{x}):_ {m} + 
+\phi^{2}(\vec{x}) &= :\phi^{2}(\vec{x}):_ {m} + C_ {m}\left\lbrace \phi^{2}(\vec{x}) \right\rbrace , \\
+C_ {m}\left\lbrace \phi^{2}(\vec{x}) \right\rbrace &= [\phi^{-},\phi^{+}] = \int \frac{d^3p}{(2\pi)^{3}} \, \frac{1}{2\omega_ {p,m}}. 
 \end{align*}
 $$
 
+Recall that $\phi^{2}$ is $m$-independent, while the normal ordering and the contraction are $m$-dependent. This gives us a means to connect normal ordering at different mass $m$ and $m_ {0}$, since 
 
+$$
+\phi^{2}(\vec{x}) = :\phi^{2}(\vec{x}):_ {m} + C_ {m}(\phi^{2}(\vec{x})) = :\phi^{2}(\vec{x}):_ {m_ {0}} + C_ {m_ {0}}(\phi^{2}(\vec{x})),
+$$
 
+which implies that 
+
+$$
+\begin{align*}
+:\phi^{2}(\vec{x}):_ {m_ {0}} &= :\phi^{2}(\vec{x}):_ {m} + C_ {m}-C_ {m_ {0}} \\ 
+&= :\phi^{2}(\vec{x}):_ {m} + \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, \left( \frac{1}{\omega_ {p,m}} - \frac{1}{\omega_ {p,m_ {0}}} \right) .
+\end{align*}
+$$
+
+where $C_ {m}$ is short for $C_ {m}(\phi^{2})$, a short-handed notation we will use extensively for the rest of the note. $C_ {m}$ is a c-number, usually given by a divergent integral.
+
+Similarly, 
+
+$$
+\boxed{ 
+\pi^{2}(\vec{x}) =  :\pi^{2}(\vec{x}):_ {m} + \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p,m}.
+}
+$$
+
+Let's look at another example which is slightly more complicated, that is the normal ordering of four field operators $\phi^{4}(\vec{x})$,
+
+$$
+\begin{align*}
+\phi^{4}(\vec{x}) &= :\phi^{4}(\vec{x})+\text{all contractions}:_ {m} \\ 
+&= :\phi^{4}(\vec{x})+6C_ {m}\phi^{2}(\vec{x})+3C^{2}_ {m}:_ {m}
+\end{align*}
+$$
+
+where the factor $6$ comes from $6$ distinct ways to contract two fields out of four, and the factor $3$ comes from 3 distinct ways to contract all the fields. Take $6C_ {m}\phi^{2}$ for example, it (including the combinatoric factors) can be conveniently written as
+
+$$
+\frac{1}{2} C_ {m} \frac{d^{2}}{d\phi^{2}} \phi^{4} = 6 C_ {m} \phi^{2},
+$$
+
+where the factor of $\frac{1}{2}$ is to cancel the double counting of any contraction. Similarly, for the full contraction, we can write it as 
+
+$$
+\frac{1}{2}\left( \frac{1}{2}C_ {m} \frac{d^{2}}{d\phi^{2}} \right)^{2} \phi^{4} = 3C_ {m}^{2}.
+$$
+
+The symmetry factors need some explanation. Each $C_ {m}$ comes with a symmetry factor $1/2$, since $C_ {m}$ is the contraction of $\phi^{2}$, which is always double counted. There are two pairs of contraction out of four $\phi$'s, hence the extra symmetry factor $1/2$. 
+
+If there were six $\phi$'s to contract, the total contraction of $\phi^{6}(\vec{x})$ comprises of three pairs of $C_ {m}$. We can calculate the total contraction using 
+
+$$
+\frac{1}{3!}\left( \frac{1}{2}C_ {m} \frac{d^{2}}{d\phi^{2}}  \right)^{3} \phi^{6}(\vec{x}) = 15 C_ {m}^{3}.
+$$
+
+The symmetry factor $1/n!$ reminds us of the Taylor expansion of exponents. We can assemble all the contractions together in a neat formula. In general, given any polynomial function $U(\phi)$ of $\phi$, we have 
+
+$$
+\boxed{ 
+U(\phi) = :\exp \left\lbrace \frac{1}{2}C_ {m} \frac{d^{2}}{d\phi^{2}} \right\rbrace U(\phi):_ {m}.
+}
+$$
+
+Note it is the double derivative $d^{2}/d\phi^{2}$, not single derivative $d/d(\phi^{2})$. 
+
+- - -
 
 For a free theory of mass $m$, and for any source function $J(x)$, we have 
 
@@ -270,9 +343,37 @@ $$
 
 where $\Delta(x-y)$ is the Wightman function. If we go to interaction picture and adopt time ordering, the Wightman functions become Feynman propagators.
 
+- - -
 
+For the sake of completeness, we compare the normal ordering of $\phi^{2}(\vec{x})$, $\pi^{2}$, $(\partial_ {i}\phi)^{2}$ and $\phi^{4}$ at different mass, namely $m$ and $m_ {0}$. The result is given below. 
 
+$$
+\begin{align*}
+:\phi^{2}(\vec{x}):_ {m_ {0}} &=  :\phi^{2}(\vec{x}):_ {m} + I , \\
+:\pi^{2}(\vec{x}):_ {m_ {0}} &= :\pi^{2}(\vec{x}):_ {m} + \frac{1}{2}\int \frac{d^{3}p}{(2\pi)^{3}} \, (\omega_ {p,m}-\omega_ {p,m_ {0}}), \\
+:( \vec{\nabla}\phi )\cdot(\vec{\nabla}\phi):_ {m_ {0}} &= :( \vec{\nabla}\phi )\cdot(\vec{\nabla}\phi):_ {m} +  \int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{\vec{p}^{2}}{2} \left( \frac{1}{\omega_ {p,m}}-\frac{1}{\omega_ {p,m_ {0}}} \right) , \\
+:\phi^{4}(\vec{x}):_ {m_ {0}} &= :\phi^{4}(\vec{x}):_ {m} + 6 I :\phi^{2}:_ {m} +3I^{2}, \\
+I &=  C_ {m}-C_ {m_ {0}} = \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{1}{\omega_ {p,m}}-\frac{1}{\omega_ {p,m_ {0}}} \right).
+\end{align*}
+$$
 
+Recall that the **defining expression** for the Hamiltonian density reads
+
+$$
+\begin{align*}
+\hat{H}(\vec{x}) &= \int d^{3}x \,  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}}, \\
+\hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m_ {0}^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda_ {0}}{4} \phi^{4}(\vec{x}) + A,
+\end{align*}
+$$
+
+We want to normal order it to get rid of the infinite zero point energy. The thing is, there are two obvious options for the mass scale at which the normal ordering is done: the bare mass $m_ {0}$ and the "physical" mass $m$. They are connected by 
+
+$$
+\begin{align*}
+  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}} &= :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m} + \frac{3}{2}\lambda_ {0} I :\phi^{2}(\vec{x}):_ {m} + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2} \\
+  &\;\;\;\; + \frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) .
+\end{align*} 
+$$
 
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
 
@@ -301,4 +402,82 @@ As $\Lambda \to \infty$, if $Z \to \infty$ (which is the case for $\phi^4$ theor
 In summary, saying that $\phi^4$ theory is "trivial" means that, after accounting for the effects of renormalization, the theory becomes non-interacting as the UV cutoff is taken to infinity. This implies that any interacting $\phi^4$ theory in four dimensions cannot remain interacting at all energy scales and instead becomes a free theory at very high energies. This phenomenon is an important aspect of understanding the limitations and behaviors of quantum field theories in different dimensions.
 
 
+# Perturbative Expansion of the Hamiltonian
 
+Since we want to cancel divergences in a perturbative way, that is, order-by-order in terms of the coupling $\lambda$, it makes sense that when $\Lambda$ is involved, we should still first count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group everything of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
+
+I copy the Hamiltonian here:
+
+$$
+\begin{align*}
+\hat{H}(\vec{x}) &= \int d^{3}x \, \left\lbrace   :\hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2}:_ {m}  \right\rbrace \\
+  &\;\;\;\; +  \int d^{3}x \,\frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) .
+\end{align*}
+$$
+
+A simple Taylor expansion tells us that 
+
+$$
+\omega_ {p,m} = \omega_ {p,m_ {0}} + \frac{1}{2} \frac{\delta m^{2}}{\omega_ {p,m_ {0}}} + \mathcal{O}(\delta m^{2})^{2},
+$$
+
+thus 
+
+$$
+\omega_ {p,m} - \omega_ {p,m_ {0}} \sim \mathcal{O}(\lambda) 
+$$
+
+since $\delta m^{2}=(\cdots)\lambda+(\cdots)\lambda^{2}+\cdots$. Similarly, 
+
+$$
+\begin{align*}
+I &= \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{1}{\omega_ {p,m}}-\frac{1}{\omega_ {p,m_ {0}}} \right) \\
+&= \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, \left( - \frac{\delta m^{2}}{2 \omega^{3}_ {p,m_ {0}}} +\cdots \right)\\
+&= -\frac{\delta m^{2}}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,   \frac{1}{\omega^{3}_ {p,m_ {0}} }   + \cdots\\
+&\sim \mathcal{O}(\lambda)
+\end{align*}
+$$
+
+The last term in the Hamiltonian density reads
+
+$$
+\frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) = \frac{m_ {0}^{2}\delta m^{2}}{8} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \frac{1}{\omega^{3}_ {p,m_ {0}}} +\cdots.
+$$
+
+There is another constant term that is of order $\lambda$: 
+
+$$
+- \frac{1}{4}I\,m_ {0}^{2}  = \frac{m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega^{3}_ {p,m_ {0}}} +\cdots.
+$$
+
+This is too bad, since I hoped that the above equation will cancel the above above equation. I probably made a mistake somewhere... Now I have no choice but to put everything together, at leading order of $\lambda$ we have 
+
+$$
+\begin{align*}
+\hat{H}(\vec{x}) &= \int d^{3}x \, \left\lbrace   :\hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) :_ {m}  \right\rbrace \\
+  &\;\;\;\; +  \int d^{3}x \,   \frac{3m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega_ {p,m_ {0}}}  .
+\end{align*}
+$$
+
+If we write the bare parameters in terms of renormalized ones, we have 
+
+$$
+\begin{align*}
+\hat{H}(\vec{x}) &= \int d^{3}x \,    : \frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4}:_ {m}  \\
+ &\;\;\;\; + \int d^{3}x \, :\frac{1}{2}m^{2}\delta m^{2}\phi^{2} -\frac{1}{4}(\delta m^{2})^{2}\phi^{2}-\frac{1}{2} g\delta g\phi^{4} :_ {m}     \\
+ &\;\;\;\; + \int d^{3}x \, :\frac{1}{4} (\delta g)^{2} \phi^{4} + \frac{3}{2}g^{2}I\phi^{2}-3g\delta gI\phi^{2}+A   :_ {m} \\
+  &\;\;\;\; +  \int d^{3}x \,   \frac{3m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega_ {p,m_ {0}}}  .
+\end{align*}
+$$
+
+where $g:= \sqrt{ \lambda }$ for both bare and renormalized cases.
+
+- - -
+
+# Spontaneous Symmetry Breaking
+
+In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we need to introduce the displacement operator:
+
+$$
+D_ {f} := 
+$$
