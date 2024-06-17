@@ -66,6 +66,7 @@ Key aspects of syndicalism include:
 Syndicalism was particularly influential in the early 20th century and played a significant role in labor movements in Europe, notably in Italy, France, and Spain, where it was linked with large-scale social and political upheavals. It is less prominent today but still exists as a current in labor and leftist movements around the world.
 
 Rocker would take for granted that
+
 >the serious, final, complete liberation of the workers is possible only upon one condition: that of the appropriation of capital, that is, of raw material and all the tools of labor, including land, by the whole body of the workers.
 
 Anarcho-syndicalist are convinced that a Socialist economic order cannot be created by the decrees and statues of government, but only by the solidaric collaboration of the workers with hand and brain in each special branch of production; that is, through the taking over of the management of all plants by the producers themselves under such form that the separate groups, plants, and branches of industry are independent members of the general economic organism and systematically carry on production and the distribution of the products in the interest of the community on the basis of free mutual agreements.
@@ -76,4 +77,9 @@ The Spanish Revolution of `1936` was a profound social upheaval triggered by a m
 
 This radical restructuring of society unfolded amidst a brutal civil war that would last until 1939. Workers, armed and organized into militias, not only fought on the front lines against the Nationalist forces but also transformed the rear guard into a laboratory of social innovation. Land was redistributed, industries were self-managed by employees, and many societal structures were reorganized according to libertarian socialist principles, particularly those championed by the Confederación Nacional del Trabajo (CNT) and the Federación Anarquista Ibérica (FAI). However, the revolution was marred by internal conflicts, as the diverse Republican factions had conflicting goals and ideologies. The Communist Party of Spain, backed by Soviet aid, sought to stabilize the Republic and undermine the anarchists' influence, leading to intra-Republican strife that culminated in the violent May Days of 1937 in Barcelona. Meanwhile, the Nationalists steadily gained ground, aided significantly by military support from Nazi Germany and Fascist Italy, while the policy of non-intervention adopted by democratic powers effectively isolated the Republican forces. The internal dissension, coupled with the steady advance of Franco’s forces, spelled doom for the Republican cause. By 1939, the Nationalist victory had snuffed out the revolution, and Franco established a dictatorship that would endure for decades, rolling back the revolution's reforms and ruthlessly suppressing any remnants of opposition.
 
+- - -
+
+`Devolution` in the context of US politics refers to the process of transferring powers and responsibilities from the federal government to state or local governments. It's a concept often associated with federalism, where power is shared between the national government and the states.
+
+Devolution can take various forms, such as the delegation of specific policy areas (like education or transportation) to state governments, or the allocation of funding with fewer federal restrictions, allowing states more autonomy in how they use those resources.
 
