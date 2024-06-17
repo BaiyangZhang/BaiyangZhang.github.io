@@ -73,12 +73,12 @@ we are not interested in the interaction picture but in the Schrodinger picture.
 
 $$
 \begin{align*}
-H &= \int d^{3}x: \hat{\mathcal{H}}^{0}(\vec{x}) :_ {m_ {0}} \\
+\hat{H}(\vec{x}) &= \int d^{3}x: \hat{\mathcal{H}}^{0}(\vec{x}) :_ {m_ {0}} \\
 \hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}(\pi(\vec{x})^{2}+(\partial_ {i}\phi(\vec{x})^{2}) + \frac{1}{4}(\lambda_ {0}\phi^{4}(\vec{x})-m_ {0}^{2}\phi^{2}(\vec{x}))+A.
 \end{align*}
 $$
 
-Note the factor $-m_ {0}^{2} /4$ in the mass term, and the last $A$ is a c-number to cancel the zero point energy in the vacuum sector. We also define coupling $g_ {0}$ as 
+The hat denotes that the vacuum of the Hamiltonian is not obtained at $\phi=0$ yet. To be more specific, the Hamiltonian undergoes spontaneous symmetry breaking, as a result the minimum of the Hamiltonian is obtained at $\phi=v_ {0}$ for some $v_ {0}$. Later we will shift the field operator from $\phi$ to $\phi'$, such that the vacuum is indeed obtained at $\phi'=0$, the Hamiltonian in terms of $\phi'$ will be denoted without the hat. Note the factor $-m_ {0}^{2} /4$ in the mass term, and the last $A$ is a c-number to cancel the zero point energy in the vacuum sector. We also define coupling $g_ {0}$ as 
 
 $$
 g_ {0}^{2} := \lambda_ {0}^{2}.
@@ -357,11 +357,11 @@ I &=  C_ {m}-C_ {m_ {0}} = \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left(
 \end{align*}
 $$
 
-Recall that the **un-normal ordered Hamiltonian** desntity reads
+Recall that the **defining expression** for the Hamiltonian density reads
 
 $$
 \begin{align*}
-\hat{H}(\vec{x}) &= \int d^{3}x \,  :\mathcal{H}(\vec{x}):_ {m_ {0}}, \\
+\hat{H}(\vec{x}) &= \int d^{3}x \,  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}}, \\
 \hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m_ {0}^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda_ {0}}{4} \phi^{4}(\vec{x}) + A,
 \end{align*}
 $$
@@ -370,7 +370,7 @@ We want to normal order it to get rid of the infinite zero point energy. The thi
 
 $$
 \begin{align*}
-  :\hat{H}^{0}(\vec{x}):_ {m_ {0}} &= :\hat{H}^{0}(\vec{x}):_ {m} + \frac{3}{2}\lambda_ {0} I :\phi^{2}(\vec{x}):_ {m} + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2} \\
+  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}} &= :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m} + \frac{3}{2}\lambda_ {0} I :\phi^{2}(\vec{x}):_ {m} + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2} \\
   &\;\;\;\; + \frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) .
 \end{align*} 
 $$
@@ -406,6 +406,15 @@ In summary, saying that $\phi^4$ theory is "trivial" means that, after accountin
 
 Since we want to cancel divergences in a perturbative way, that is, order-by-order in terms of the coupling $\lambda$, it makes sense that when $\Lambda$ is involved, we should still first count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group everything of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
 
+I copy the Hamiltonian here:
+
+$$
+\begin{align*}
+\hat{H}(\vec{x}) &= \int d^{3}x \, \left\lbrace   :\hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2}:_ {m}  \right\rbrace \\
+  &\;\;\;\; +  \int d^{3}x \,\frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) .
+\end{align*}
+$$
+
 A simple Taylor expansion tells us that 
 
 $$
@@ -423,8 +432,52 @@ since $\delta m^{2}=(\cdots)\lambda+(\cdots)\lambda^{2}+\cdots$. Similarly,
 $$
 \begin{align*}
 I &= \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{1}{\omega_ {p,m}}-\frac{1}{\omega_ {p,m_ {0}}} \right) \\
-&= \int \frac{d^{3}p}{(2\pi)^{3}} \, \left( - \frac{\delta m^{2}}{2 \omega^{3}_ {p,m_ {0}}} +\cdots \right)\\
+&= \frac{1}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, \left( - \frac{\delta m^{2}}{2 \omega^{3}_ {p,m_ {0}}} +\cdots \right)\\
+&= -\frac{\delta m^{2}}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,   \frac{1}{\omega^{3}_ {p,m_ {0}} }   + \cdots\\
 &\sim \mathcal{O}(\lambda)
 \end{align*}
 $$
 
+The last term in the Hamiltonian density reads
+
+$$
+\frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) = \frac{m_ {0}^{2}\delta m^{2}}{8} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \frac{1}{\omega^{3}_ {p,m_ {0}}} +\cdots.
+$$
+
+There is another constant term that is of order $\lambda$: 
+
+$$
+- \frac{1}{4}I\,m_ {0}^{2}  = \frac{m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega^{3}_ {p,m_ {0}}} +\cdots.
+$$
+
+This is too bad, since I hoped that the above equation will cancel the above above equation. I probably made a mistake somewhere... Now I have no choice but to put everything together, at leading order of $\lambda$ we have 
+
+$$
+\begin{align*}
+\hat{H}(\vec{x}) &= \int d^{3}x \, \left\lbrace   :\hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) :_ {m}  \right\rbrace \\
+  &\;\;\;\; +  \int d^{3}x \,   \frac{3m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega_ {p,m_ {0}}}  .
+\end{align*}
+$$
+
+If we write the bare parameters in terms of renormalized ones, we have 
+
+$$
+\begin{align*}
+\hat{H}(\vec{x}) &= \int d^{3}x \,    : \frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4}:_ {m}  \\
+ &\;\;\;\; + \int d^{3}x \, :\frac{1}{2}m^{2}\delta m^{2}\phi^{2} -\frac{1}{4}(\delta m^{2})^{2}\phi^{2}-\frac{1}{2} g\delta g\phi^{4} :_ {m}     \\
+ &\;\;\;\; + \int d^{3}x \, :\frac{1}{4} (\delta g)^{2} \phi^{4} + \frac{3}{2}g^{2}I\phi^{2}-3g\delta gI\phi^{2}+A   :_ {m} \\
+  &\;\;\;\; +  \int d^{3}x \,   \frac{3m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega_ {p,m_ {0}}}  .
+\end{align*}
+$$
+
+where $g:= \sqrt{ \lambda }$ for both bare and renormalized cases.
+
+- - -
+
+# Spontaneous Symmetry Breaking
+
+In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we need to introduce the displacement operator:
+
+$$
+D_ {f} := 
+$$
