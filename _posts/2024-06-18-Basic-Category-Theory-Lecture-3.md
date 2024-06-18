@@ -1,16 +1,14 @@
 ---
 layout: post
 title: Basic Category Theory Lecture 3
-subtitle: What do objects see?
-date: 2024-05-22
+date: 2024-06-18
 author: Baiyang Zhang
-header-img: img/background2.jpg
 catalog: true
 tags:
   - categoryTheory
 ---
 
-### Representables
+# Representables
 
 A category is a world of objects, all looking at one another. Each sees the world from a different viewpoint. Take the category of topological spaces for example, consider the object with only one point, denoted $\star$, given another topological space $T$, a map 
 
@@ -18,9 +16,9 @@ $$
 \star\to T
 $$
 
-can be regarded as $\star$ looking at $T$. What does $\star$ see? Since $\star$ itself is a point, the image given by a continuous map (by definitions the morphisms in the category of topological spaces are continuous maps) of $\star$ is another point in $T$, that's to say, a point can only see points! It can't see any other structures, limited by what it is. This is similar to what happens in a society with real people in it. A curve, on the other hand, could see much more. It can see a point if it wants, but it can also see another curve in other objects. In the language of category theory, all the things an object could see translates into *the set of arrow going out from it*.
+can be regarded as $\star$ looking at $T$. What does $\star$ see? Since $\star$ itself is a point, the image given by a continuous map (by definitions the morphisms in the category of topological spaces are continuous maps) of $\star$ is another point in $T$, that's to say, a point can only see other points! $\star$ can't see any other structures, limited by its nature. This is similar to what happens in a society, with real people in it as objects. A curve, on the other hand, could see much more. It can see a point if it wants (a constant map), but it can also see another curve in other objects. In the language of category theory, $A$ seeing $B$ means a map from $A$ to $B$, and all the perspectives an from $A$ of $B$ translates into *the set of arrows $\mathcal{M}(A,B)$*.
 
-We can also ask the dual question: *fixing an object of a category, what are maps into it*? Take the category $\text{Set}$ of sets for example. Consider a set with only two elements. Given any set $X$, the maps from $X$ to the two element set is the subset of $X$! 
+We can also ask the dual question: *fixing an object in a category, what the set of all the maps into it*? Take the category $\text{Set}$ of sets for example. Consider a set with only two elements. Given any set $X$, the maps from $X$ to the two element set is the subset of $X$. 
 
 In the following we will talk about how each object sees and is seen by the category. This naturally leads to the notion of `representable functors`, or just `representables`. 
 
