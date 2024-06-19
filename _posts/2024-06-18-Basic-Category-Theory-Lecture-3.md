@@ -252,9 +252,6 @@ $$
 $$
 is defined by the following diagram,
 
-
-
-
 ```python
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -277,4 +274,6 @@ Let $A$ be a locally small category. A `Generalized element` of $A$ is a map wit
 
 For example, a generalized element of a set $S$ of shape $\mathbb{N}$ is nothing but a sequence in $S$. In the category of topological spaces, the generalized elements of shape $1$ (the one point space) are points, and the generalized elements of shape $\mathbb{S}^{1}$ are loops. 
 
+
+# Yoneda Lemma
 
