@@ -1,6 +1,6 @@
 ---
 layout: post
-title: figure
+title: The Yoneda Lemma
 date: 2024-06-18
 author: Baiyang Zhang
 catalog: true
@@ -254,7 +254,6 @@ $$
 
 is defined by the following diagram,
 
-```python
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="/img/hom.png" class="img-fluid rounded z-depth-1" %}
@@ -263,8 +262,6 @@ is defined by the following diagram,
 <div class="caption">
    $\text{Hom}_ {\mathcal{A}}: \mathcal{A}^{\text{op}}\times \mathcal{A}\to\text{Set}.$
 </div>
-
-```
 
 This is like a generalization of $\text{Hom}(A,B)$ that we have encountered before. Recall that $\text{Hom}(A,B)$ is the set of the morphisms from $A$ to $B$, now $\text{Hom}_ {\mathcal{A}}$ is generalized such that it can also take two maps $f,g$ as well.
 
