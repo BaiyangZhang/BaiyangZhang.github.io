@@ -273,6 +273,57 @@ Let $A$ be a locally small category. A `Generalized element` of $A$ is a map wit
 
 For example, a generalized element of a set $S$ of shape $\mathbb{N}$ is nothing but a sequence in $S$. In the category of topological spaces, the generalized elements of shape $1$ (the one point space) are points, and the generalized elements of shape $\mathbb{S}^{1}$ are loops. 
 
+- - -
+
+**Theorem.**
+
+If $H_ A \cong H_ {A'}$ where $A, A'$ are objects of a category $\mathcal{A}$ and $H_ A$ is the Yoneda embedding, then $A \cong A'$.
+
+**Proof.**
+
+To prove this theorem, we need to show that if the Yoneda embeddings $H_ A$ and $H_ {A'}$ are isomorphic as functors, then the objects $A$ and $A'$ must be isomorphic in the category $\mathcal{A}$.
+
+Recall that the Yoneda embedding $H_ A$ is defined as the functor:
+
+$$ H_ A = \text{Hom}_ {\mathcal{A}}(-, A) $$
+
+Similarly,
+
+$$ H_ {A'} = \text{Hom}_ {\mathcal{A}}(-, A') $$
+
+Given $H_ A \cong H_ {A'}$, there exists a natural isomorphism $\eta: H_ A \to H_ {A'}$. This means for each object $X$ in $\mathcal{A}$, there is an isomorphism $\eta_ X: \text{Hom}_ {\mathcal{A}}(X, A) \to \text{Hom}_ {\mathcal{A}}(X, A')$ that is natural in $X$.
+
+We need to show there exists an isomorphism $f: A \to A'$ in $\mathcal{A}$.
+
+Consider the identity morphism $\text{id}_ A \in \text{Hom}_ {\mathcal{A}}(A, A)$. The natural isomorphism $\eta$ gives us an isomorphism:
+
+$$ \eta_ A: \text{Hom}_ {\mathcal{A}}(A, A) \to \text{Hom}_ {\mathcal{A}}(A, A') $$
+
+Applying $\eta_ A$ to $\text{id}_ A$, we get a morphism $f \in \text{Hom}_ {\mathcal{A}}(A, A')$:
+
+$$ f = \eta_ A(\text{id}_ A) $$
+
+Since $\eta$ is a natural isomorphism, there exists an inverse natural transformation $\eta^{-1}$ such that $\eta^{-1} \eta = \text{id}$.
+
+Applying $\eta^{-1}_ {A'}$ to the identity morphism $\text{id}_ {A'} \in \text{Hom}_ {\mathcal{A}}(A', A')$, we get:
+
+$$ g = \eta^{-1}_ {A'}(\text{id}_ {A'}) \in \text{Hom}_ {\mathcal{A}}(A', A) $$
+
+We now have morphisms $f: A \to A'$ and $g: A' \to A$. We need to show that these morphisms are inverses of each other.
+
+Consider $f \circ g \in \text{Hom}_ {\mathcal{A}}(A', A')$. Since $\eta$ is a natural isomorphism, we have:
+
+$$ \eta_ {A'}(g) = \eta_ {A'}(\eta^{-1}_ {A'}(\text{id}_ {A'})) = \text{id}_ {A'} $$
+
+Thus, $f \circ g = \text{id}_ {A'}$.
+
+Similarly, consider $g \circ f \in \text{Hom}_ {\mathcal{A}}(A, A)$. By the natural isomorphism $\eta$, we have:
+
+$$ \eta_ A(g \circ f) = \eta_ A(\eta_ A^{-1}(\text{id}_ {A})) = \text{id}_ A $$
+
+Thus, $g \circ f = \text{id}_ A$.
+
+Since $f \circ g = \text{id}_ {A'}$ and $g \circ f = \text{id}_ A$, it follows that $f$ and $g$ are indeed inverses of each other. Therefore, $f: A \to A'$ is an isomorphism in $\mathcal{A}$.
 
 # Yoneda Lemma
 
