@@ -325,5 +325,8 @@ Thus, $g \circ f = \text{id}_ A$.
 
 Since $f \circ g = \text{id}_ {A'}$ and $g \circ f = \text{id}_ A$, it follows that $f$ and $g$ are indeed inverses of each other. Therefore, $f: A \to A'$ is an isomorphism in $\mathcal{A}$.
 
+If the above proof is too abstract for you, it is always a good idea to come up with a simple example through which to see in real time how the logic works. In this case, a good example is to consider the category $\text{Set}$ of sets and let $A=\left\lbrace 1,2 \right\rbrace$, $A'=\left\lbrace a,b \right\rbrace$. 
+
 # Yoneda Lemma
+
 
