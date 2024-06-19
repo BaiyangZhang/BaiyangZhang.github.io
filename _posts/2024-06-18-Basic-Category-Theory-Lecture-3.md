@@ -224,10 +224,10 @@ Try to convince yourself with it, better with some simple examples. Thus we say 
 
 - - -
 
-Just as we assembled the covariant representables $H^{A}$s into a big functor $H^{-}$, we can do the same for the contravariant representables. If $f: A \to A'$ is a map in $\mathcal{A}$, there is an induced natural transformation $H_ {f}$:
+Just as we assembled the covariant representables $H^{A}$'s into a big functor $H^{-}$, we can do the same for the contravariant representables $H_ {A}$. If $f: A \to A'$ is a map in $\mathcal{A}$, there is an induced natural transformation $H_ {f}$:
 
 $$
-H_ {f}: H_ {A} \to H_ {A'},\quad  H_ {A,A'}: \mathcal{A}\to\text{Set}.
+H_ {f}: H_ {A} \to H_ {A'},\quad  H_ {A},H_ {A'}: \mathcal{A}\to\text{Set}.
 $$
 
 - - -
@@ -242,14 +242,16 @@ defined on objects $A \in \mathcal{A}$ as $H_ {-}(A)=H_ {A}$ and arrows $H_ {-}(
 
 Note that in $[\mathcal{A}^{\text{op}},\text{Set}]$, the objects are functors from $\mathcal{A}^{\text{op}}$ to $\text{Set}$ and the arrows are natural transformations.
 
-For each object $A\in\mathcal{A}$, the Yoneda embedding assigns a functor $H_ {A}$, it is sometimes called the Yoneda functor. In a sense, the Yoneda embedding allows as to regard each $A$ as arrows. Or, more precisely, it allows us to represent each $A$ as a set-valued functor. Yoneda embedding is a one-to-one correspondence between objects in $\mathcal{A}$ and functors in $[\mathcal{A},\text{Set}]$. In a sense to be explained, $H_ {-}$ embeds $\mathcal{A}$ into $[\mathcal{A},\text{Set}]$. 
+The Yoneda embedding provides a way to represent objects in a category as sets of morphisms (arrows) from other objects in the category to them. For each object $A\in\mathcal{A}$, the Yoneda embedding assigns a functor $H_ {A}$, it is sometimes called the Yoneda functor. In a sense, the Yoneda embedding allows as to regard each $A$ as arrows. Or, more precisely, it allows us to represent each $A$ as a set-valued functor. Yoneda embedding is a one-to-one correspondence between objects in $\mathcal{A}$ and functors in $[\mathcal{A},\text{Set}]$. In a sense to be explained, $H_ {-}$ embeds $\mathcal{A}$ into $[\mathcal{A},\text{Set}]$. 
 
 - - -
 
 Let $\mathcal{A}$ be a locally small category, the functor
+
 $$
 \text{Hom}_ {\mathcal{A}}: \mathcal{A}^{\text{op}}\times \mathcal{A}\to\text{Set}
 $$
+
 is defined by the following diagram,
 
 ```python
