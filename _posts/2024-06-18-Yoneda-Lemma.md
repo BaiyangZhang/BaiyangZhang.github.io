@@ -319,7 +319,9 @@ Thus, $f \circ g = \text{id}_ {A'}$.
 
 Similarly, consider $g \circ f \in \text{Hom}_ {\mathcal{A}}(A, A)$. By the natural isomorphism $\eta$, we have:
 
-$$ \eta_ A(g \circ f) = \eta_ A(\eta_ A^{-1}(\text{id}_ {A})) = \text{id}_ A $$
+$$ 
+\eta_ A(g \circ f) = \eta_ A(\eta_ A^{-1}(\text{id}_ {A})) = \text{id}_ A .
+$$
 
 Thus, $g \circ f = \text{id}_ A$.
 
@@ -329,4 +331,99 @@ If the above proof is too abstract for you, it is always a good idea to come up 
 
 # Yoneda Lemma
 
+Let $\mathcal{A}$ be a locally small category so that the arrows from one object to another actually form a set. Let $X$ be a **set-valued contravariant functor** $X: \mathcal{A}^{\text{op}}\to\text{Set}$, let $H_ {A}$ be the Yoneda embedding, that is $H_ {A}(B)$ for all $B\in\mathcal{A}$ is the set of the arrows $\mathcal{A}[B,A]$. Now we have two distinct contravariant functor, the question is, what is the nature of the set of arrows from $H_ {A}$ to $X$? Recall that functors $\mathcal{A}^{\text{op}}\to\text{Set}$ is a presheaf, pre- in the sense that we haven't talked about how can they be glued together to form a global sheaf. We can rephase the question: for each $A\in\mathcal{A}$ we have a representable presheaf $H_ {A}$, if $X$ is another presheaf, what are the maps $H_ {A}\to X$?
+
+Since $H_ {A}$ and $X$ are both objects of the presheaf category $\text{PSh}:=[\mathcal{A}^{\text{op}},\text{Set}]$, the maps from $H_ {A}$ to $X$ are maps in $\text{PSh}$. Since $H_ {A}$ and $X$ are also functors, a map between them is a natural transformation, denoted $\text{Hom}(H_ {A},X)$. 
+
+There is an informal principle of general category theory that allows us to guess the answer. In category theory, many conditions are indeed designed to ensure that different ways of composing arrows yield essentially the same result. This concept is central to the coherence conditions that appear in various categorical structures. Now, given all the ingredients, that is a locally small category $\mathcal{A}$, any element $A\in\mathcal{A}$, two presheaves $H_  {A}$ and $X$, we can construct two sets:
+
+1. $\text{Hom}(H_  {A},X)$, the set of the natural transformations from $H_  {A}$ to $X$ and,
+2. $X(A)$, the value of $A$ acted by $X$. 
+
+The informal principle suggests that these two sets are the same:
+
+$$
+\text{Hom}(H_  {A},X) \cong X(A).
+$$
+
+This should hold for all $A\in\mathcal{A}$ and $X\in \text{PSh}$. 
+
+This is the informal statement of the Yoneda lemma. The formal statement is
+
+**The Yoneda Lemma.** For any functor $X: \mathcal{A}^{\text{op}} \to \text{Set}$ and any object $A$ in $\mathcal{A}$, there is a **natural isomorphism**:
+
+$$ \text{Hom}(H_ A, X) \cong X(A), $$
+
+where $\text{Hom}(H_ A, X)$ is the set of natural transformations from $H_ A$ to $X$.
+
+A few comments. The set $\text{Hom}(H_ A, X)$ consists of all ways you can map the functor $H_ A$ to $X$ while respecting the structure of the category. The isomorphism $\text{Hom}(H_ A, X) \cong X(A)$ means that understanding these natural transformations is equivalent to simply looking at the set $X(A)$.
+
+Think of $H_ A$ as a way to "probe" the structure of the category $\mathcal{A}$ using the object $A$. The Yoneda Lemma tells us that instead of looking at all possible ways to probe the category (which could be complicated), we can focus on the specific set $X(A)$, which contains all the information we need about the functor $X$.
+
+Now it would be helpful to look at a concrete example. Let's use the category of sets, $\text{Set}$, and consider the set $A = \left\lbrace 1,2 \right\rbrace$. We'll use the power set functor $P$, which maps each set to its power set (the set of all its subsets) and each function to the corresponding image function. For a set $B$, the Yoneda embedding $H_ A$ is defined as:
+   
+$$
+  H_ A(B) = \text{Set}(B, A).
+$$
+
+This is the set of all functions from $B$ to $A$.
+
+For the functor $P: \text{Set}^{\text{op}} \to \text{Set}$ and the set $A$, the Yoneda Lemma states that there is a natural isomorphism:
+
+$$
+ \text{Hom}(H_ A, P) \cong P(A).
+$$
+
+Let's apply Yoneda lemma. The Yoneda Embedding $H_ A$ reads
+
+$$
+ H_ A(B) = \text{Set}(B, \left\lbrace 1,2 \right\rbrace).
+$$
+
+For any set $B$, this is the set of all functions from $B$ to $\left\lbrace 1,2 \right\rbrace$. The power set functor $P$ acting on $B$ reads
+   
+$$
+P(B) = \left\lbrace \text{Subsets of } B  \right\rbrace .
+$$
+
+For example, if $B = \left\lbrace a,b \right\rbrace$, then $P(B) = \left\lbrace \emptyset ,\left\lbrace a \right\rbrace ,\left\lbrace b \right\rbrace ,\left\lbrace a,b \right\rbrace   \right\rbrace$. A natural transformation $\eta: H_ A \rightarrow P$ assigns to each set $B$ a function $\eta_ B: H_ A(B) \to P(B)$, satisfying a naturality condition.
+
+Let's use $B = \left\lbrace a,b \right\rbrace$ and see how a natural transformation works in practice. The Yoneda Embedding $H_ A(B)$ reads
+
+$$
+   H_ A(\left\lbrace a,b \right\rbrace) = \text{Set}(\left\lbrace a,b \right\rbrace, \left\lbrace 1,2 \right\rbrace),
+$$
+
+ this is the set of all functions from $\left\lbrace a,b \right\rbrace$ to $\left\lbrace 1,2 \right\rbrace$. There are $2^2 = 4$ such functions:
+ 
+$$
+   f_ 1(a) = 1, f_ 1(b) = 1; \quad f_ 2(a) = 1, f_ 2(b) = 2;
+   \quad f_ 3(a) = 2, f_ 3(b) = 1; \quad f_ 4(a) = 2, f_ 4(b) = 2.
+$$
+
+The power set functor $P(\left\lbrace a,b \right\rbrace)$ is
+   
+$$
+P(\left\lbrace a,b \right\rbrace) = \left\lbrace \emptyset ,\left\lbrace a \right\rbrace ,\left\lbrace b \right\rbrace ,\left\lbrace a,b \right\rbrace   \right\rbrace.
+$$
+
+A natural transformation $\eta$ would map each function in $H_ A(B)$ to a subset of $B$.
+
+Let's define $\eta$ by mapping each function to the subset of $B$ where the function value is 1:
+
+$$
+\eta_ {\left\lbrace a,b \right\rbrace}(f) = \left\lbrace   x \in \left\lbrace a,b \right\rbrace \,\middle\vert\, f(x) = 1  \right\rbrace  
+$$
+
+For each $f_ i$:
+- $\eta(f_ 1) = \left\lbrace a,b \right\rbrace$
+- $\eta(f_ 2) = \{a\}$
+- $\eta(f_ 3) = \{b\}$
+- $\eta(f_ 4) = \emptyset$
+
+This mapping respects the structure of $P(B)$, and the action of $\eta$ on morphisms (functions between sets) respects naturality.
+
+The Yoneda Lemma tells us that for our functor $P$, there is a one-to-one correspondence between the natural transformations $\text{Hom}(H_ A, P)$ and the elements of $P(A)$.
+
+- - -
 
