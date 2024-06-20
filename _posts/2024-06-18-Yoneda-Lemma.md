@@ -424,9 +424,11 @@ For each $f_ i$:
 This mapping respects the structure of $P(B)$, and the action of $\eta$ on morphisms (functions between sets) respects naturality.
 
 
-To have a better feeling about "naturality" in Yoneda lemma, lets yet look at a third example. 
+To have a better feeling about "naturality" in Yoneda lemma, lets yet look at one last example. 
 
-## The Proof of Yoneda Lemma
+
+
+# The Proof of Yoneda Lemma
 
 Let $\text{PSh}$ be the category of presheaves, that is the category of set-valued, contravariant functor with domain $\mathcal{A}$. It is also written as $[\mathcal{A}^{\text{op}},\text{Set}]$ or $\text{Hom}(\mathcal{A}^{\text{op}},\text{Set})$.
 

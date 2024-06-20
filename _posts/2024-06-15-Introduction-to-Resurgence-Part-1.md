@@ -8,7 +8,14 @@ tags:
   - resurgence
 ---
 
-# Motivation
+# Table of Contents
+
+- [1. Motivation](#1-motivation)
+- [2. Analytic Continuation and Monodromy](#2-analytic-continuation-and-monodromy)
+- [3. An example by Poincare](#3-an-example-by-poincare)
+- [4. The differential algebra](#4-the-differential-algebra)
+
+# 1. Motivation
 
 The following is an incomplete list of the potential applications of resurgence theory.
 
@@ -52,7 +59,7 @@ First we will speak of the `Borel-Laplace sumamtion`, which obtains a function f
 
 - - -
 
-# Analytic Continuation and Monodromy
+# 2. Analytic Continuation and Monodromy
 
 `Formal power series` is a generalization of normal power series, or polynomial, in the sense that we consider a power series of infinite order and don't care if it is convergent or not. Provided a ring $R$, consider the set of formal power series in $X$, denoted by $R[[X]]$, is another ring, in the same sense that all the polynomials over $R$ forms another ring (for example, multiply one polynomial to another gives as another polynomial). It is called the **ring of formal power series in the variable $X$ over $R$**.
 
@@ -214,7 +221,7 @@ $$
 
 where $A$ is a $p \times p$ matrix.
 
-# An example by Poincare
+# 3. An example by Poincare
 
 To get some feeling about resurgence, let's start with an example first given by Poincare. This example shows **how an divergent series emerges from a function.** 
 
@@ -318,7 +325,7 @@ There has been some recent work in the physics literature suggesting the possibi
 
 In the next note we will dive into the details of resurgence theory, beginning with the differential algebra $(\mathbb{C}[[1 / z]],\partial)$. 
 
-# The differential algebra
+# 4. The differential algebra
 
 
 It will be convenient for us to set $z = 1/t$ in order to “work at $\infty$” rather than at the origin, since we will often talk about compactified spaces. This means that we shall deal with expansions involving *non-positive* integer powers of the indeterminate. We denote the set of all the `formal power series`, i.e., polynomials in $1 / z$ by 

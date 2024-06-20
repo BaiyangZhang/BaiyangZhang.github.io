@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-06-18-Yoneda-Lemma.md",
+                "file": "_posts/2024-06-15-Introduction-to-Resurgence-Part-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-06-18-Yoneda-Lemma.md",
+                "file": "_posts/2024-06-15-Introduction-to-Resurgence-Part-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-06-18-Yoneda-Lemma.md",
+                "file": "_posts/2024-06-15-Introduction-to-Resurgence-Part-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-06-18-Yoneda-Lemma.md"
+                "file": "_posts/2024-06-15-Introduction-to-Resurgence-Part-1.md"
               }
             }
           }
@@ -161,10 +162,10 @@
   },
   "active": "d27d91a855f7f209",
   "lastOpenFiles": [
+    "_posts/2024-06-18-Yoneda-Lemma.md",
     "_posts/2024-06-15-Introduction-to-Resurgence-Part-1.md",
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-3.md",
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-2.md",
-    "_posts/2024-06-18-Yoneda-Lemma.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_posts/2023-12-6-Transseries-Lecture-1.md",
     "_posts/2024-06-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
