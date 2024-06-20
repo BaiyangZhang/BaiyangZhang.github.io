@@ -457,21 +457,40 @@ $$ X(f) : X(A) \to X(B) \quad \text{is a function mapping } x \text{ to either }
 
 Suppose $X(f)(x) = y_ 1$.
 
-### Yoneda Lemma in this Context
-
 Now, consider the Yoneda embedding $H_ {A}$:
 
 $$ H_ {A}(A) = \text{Hom}_ {\mathcal{A}}(A, A) = \left\lbrace  \text{id}_ A \right\rbrace $$
 $$ H_ {A}(B) = \text{Hom}_ {\mathcal{A}}(B, A) = \left\lbrace  f \right\rbrace $$
 
-A natural transformation $\eta : H_ {A} \to X$ consists of functions $\eta_ B: H_ {A}(B) \to X(B)$ and $\eta_ A: H_ {A}(A) \to X(A)$ such that for any morphism $g: C \to B$ in $\mathcal{A}$:
+A natural transformation $\eta : H_ {A} \to X$ consists of functions $\eta_ B: H_ {A}(B) \to X(B)$ and $\eta_ A: H_ {A}(A) \to X(A)$ such that the following diagram commutes:
 
-$$ X(g) \circ \eta_ B = \eta_ C \circ H_ {A}(g) $$
+$$
+\begin{array}{c} X(A) \xrightarrow{X(f)} X(B) \\  
+\uparrow{\eta_A} \quad \quad \uparrow{\eta_B} \\
+H_ {A}(A) \xrightarrow{H_ {A}(f)} H_ {A}(B) 
+\end{array}
+$$
+
+More explicitly, it is 
+
+$$
+\begin{array}{c}  
+\left\lbrace x \right\rbrace  \xrightarrow{X(f)} \left\lbrace y_ {1},y_ {2} \right\rbrace  \\  
+\uparrow{\eta_A} \quad \quad \quad \uparrow{\eta_B} \\
+\mathbb{1}_ {A} \;\;\xrightarrow{H_ {A}(f)}\;\;f \;\;\;\;\;
+\end{array}
+$$
+
+where $\mathbb{1}_ {A}$ is another way to write $\text{id}_ {A}$, we will use them interchangeably.
 
 In our example, the components of $\eta$ are:
 
 $$ \eta_ A : H_ {A}(A) \to X(A) \quad \text{with} \quad \eta_ A(\text{id}_ A) = x $$
 $$ \eta_ B : H_ {A}(B) \to X(B) \quad \text{with} \quad \eta_ B(f) = y_ 1 $$
+
+
+
+
 
 The naturality condition is trivially satisfied here since there is only one non-identity morphism to consider.
 

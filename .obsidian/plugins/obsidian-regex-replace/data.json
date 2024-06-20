@@ -1,6 +1,6 @@
 {
-  "findText": "\\lbrace",
-  "replaceText": "\\lbrace ",
+  "findText": "\\\\",
+  "replaceText": "\\",
   "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,
