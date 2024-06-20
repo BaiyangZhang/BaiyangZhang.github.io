@@ -481,22 +481,26 @@ $$
 \end{array}
 $$
 
-where $\mathbb{1}_ {A}$ is another way to write $\text{id}_ {A}$, we will use them interchangeably.
+where $\mathbb{1}_ {A}$ is another way to write $\text{id}_ {A}$, we will use them interchangeably. The naturality condition requires that
+
+$$
+X(f)\,\circ\,\eta_ {A} = \eta_ {B} \,\circ\,H_ {A}(f).
+$$
 
 In our example, the components of $\eta$ are:
 
-$$ \eta_ A : H_ {A}(A) \to X(A) \quad \text{with} \quad \eta_ A(\text{id}_ A) = x $$
-$$ \eta_ B : H_ {A}(B) \to X(B) \quad \text{with} \quad \eta_ B(f) = y_ 1 $$
+$$ \eta_ A : H_ {A}(A) \to X(A), \text{ which is } \quad \eta_ A(\text{id}_ A) = x $$
+$$ \eta_ B : H_ {A}(B) \to X(B), \text{ which is } \quad \eta_ B(f) = y_ 1 $$
 
+then the naturality condition requires that 
 
+$$
+\eta_ {B}: f\mapsto y_ {1},
+$$
 
+not $y_ {2}$, since we defined $X(f)$ to map $x$ to $y_ {1}$. This is the power of naturality condition!
 
-
-The naturality condition is trivially satisfied here since there is only one non-identity morphism to consider.
-
-Hence, $\text{Hom}(H_ {A}, X)$ consists of a single natural transformation corresponding to the element $x \in X(A)$.
-
-
+Then, the Yoneda lemma says that $\text{Hom}(H_ {A}, X)$ is isomorphic to $X(A)=\left\lbrace x \right\rbrace$, that is, $\text{Hom}(H_ {A},X)$ consists of a single natural transformation $\eta$. There is no other way to construct a natural transformation, for example $\eta'$ such that $\eta'_ {B}:f\mapsto y_ {2}$, since it will violate the naturality condition. 
 
 # The Proof of Yoneda Lemma
 
