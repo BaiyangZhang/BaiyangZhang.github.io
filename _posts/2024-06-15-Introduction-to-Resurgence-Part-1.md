@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Introduction to Resurgence Part 1
-subtitle: 
 date: 2024-06-15
 author: Baiyang Zhang
 catalog: true
@@ -9,7 +8,7 @@ tags:
   - resurgence
 ---
 
-### Motivation
+# Motivation
 
 The following is an incomplete list of the potential applications of resurgence theory.
 
@@ -53,7 +52,7 @@ First we will speak of the `Borel-Laplace sumamtion`, which obtains a function f
 
 - - -
 
-### Analytic Continuation and Monodromy
+# Analytic Continuation and Monodromy
 
 `Formal power series` is a generalization of normal power series, or polynomial, in the sense that we consider a power series of infinite order and don't care if it is convergent or not. Provided a ring $R$, consider the set of formal power series in $X$, denoted by $R[[X]]$, is another ring, in the same sense that all the polynomials over $R$ forms another ring (for example, multiply one polynomial to another gives as another polynomial). It is called the **ring of formal power series in the variable $X$ over $R$**.
 
@@ -104,12 +103,13 @@ and the $n+1$ numbers are call `homogeneous coordinates` and is denoted by $[z^0
 A `domain` in $\mathbb{C}$ is a connected non-empty open subset of $\mathbb{C}$.
 
 - - -
+
 **Riemann Sphere**
 
 There are two ways to think of $\overline{C} \equiv \mathbb{C} \cup \left\lbrace\infty\right\rbrace$, i.e. the complex plane compactified, by adding a point called infinity, $\infty$ is not included in $\mathbb{C}$.
 
 - complex projective plane $\mathbb{C}P^1$.
-- a 2D sphere $\mathbb{S}^2$. The coordinates is given by the stereographic projection, except for the north pole $N$, $\pi : \mathbb{S}^2-\left\lbraceN\right\rbrace \to \mathbb{C}$.
+- a 2D sphere $\mathbb{S}^2$. The coordinates is given by the stereographic projection, except for the north pole $N$, $\pi : \mathbb{S}^2-\left\lbrace N \right\rbrace \to \mathbb{C}$.
 
 The space $\overline{\mathbb{C}}$ has the structure of e Riemann surface and it is called the `Riemann sphere`. We can introduce two charts on the Riemann sphere,
 
@@ -213,4 +213,187 @@ $$
 $$
 
 where $A$ is a $p \times p$ matrix.
+
+# An example by Poincare
+
+To get some feeling about resurgence, let's start with an example first given by Poincare. This example shows **how an divergent series emerges from a function.** 
+
+Fix $w\in \mathbb{C}$ and $\left\lvert w \right\rvert<1$. Consider the series of functions of the complex variable $t$,
+
+$$
+\phi_ {k}(t) := \frac{w^{k}}{1+kt},\quad  \phi(t):= \sum_ {k\geq 0} \phi_ {k}(t).
+$$
+
+This series is uniformly convergent on
+
+$$
+U:=C^{\ast } - \left\lbrace -1,-\frac{1}{2},-\frac{1}{3},\dots \right\rbrace .
+$$
+
+Hence the sum $\phi$ is `holomorphic` in $U$. Actually $\phi$ is meromorphic on $\mathbb{C}^{\ast}$ (not on $\mathbb{C}$ since the origin would be a limiting point of the poles) with simple poles at $1 / \mathbb{N}$.
+
+We now show how this function $\phi$ gives rise to a divergent formal series when $t$ approaches $0$. The idea is to expand each $\phi_ {k}$ first in terms of $t$. For each $k \in \mathbb{N}$, we have a *convergent* Taylor expansion at $t=0$,
+
+$$
+\phi_ {k}(t) = w^{k}\sum_ {n\geq 0}(-1)^{n}(kt)^{n}, \quad  \left\lvert t \right\rvert< \frac{1}{k} .
+$$
+
+One might be tempted to recombine the (convergent) Taylor expansion of $\phi_ {k}$ to give $\phi(t)$. It amounts to considering the well-defined **formal series**
+
+$$
+\tilde{\phi}(t) := \sum_ {n\geq 0}(-1)^{n} b_ {n} t^{n}, \quad b_ {n}:= \sum_ {k\geq 0}k^{n} w^{k}.
+$$
+
+We see that $b_ {n}$ is convergent since
+
+$$
+\lim_ { k \to \infty } \frac{(k+1)^{n}w^{k+1}}{k^{n}w^{k}} = w <1 \text{ by construction}.
+$$
+
+However, it turns out that **this formal series is divergent!**
+
+To see this, make the substitution $w = e^{ s }$. Then, since $\text{Re }w <1$, we have 
+
+$$
+b_ {0}=(1-w)^{-1} = (1-e^{ s })^{-1}
+$$
+
+and
+
+$$
+b_ {n} = \left( w \frac{d}{dw}  \right)^{n}b_ {0} = \left( \frac{d}{ds} \right)^{n} b_ {0}.
+$$
+
+There is an easy way to tell if a series has non-zero radius of convergence, by some kind of a "dominance criterion". If the series of study $a_ {n}$ is dominated by $AB^{n}$ where $A,B$ are real and $A,B>0$, namely for all but finite $n$ we have $\left\lvert a_ {n} \right\rvert \leq AB^{n}$. Then the formal series 
+
+$$
+F(\xi) := \sum(-1)^{n} a_ {n} \frac{\xi^{n}}{n!}
+$$
+
+would have infinite radius of convergence. **$F$ can be seen as a map of the formal series to a function of $\xi$, note that we have inserted a factor of $1 / n!$ into the sum to make is more convergent**. In our case of $b_ {n}$, we see that 
+
+$$
+F(\xi) = \sum(-1)^{n} b_ {n} \frac{\xi^{n}}{n!} = \sum(-1)^{n} \frac{\xi^{n}}{n!}\left( \frac{d}{d s}  \right)^{n} b_ {0}(s) = b_ {0}(s-\xi) = \frac{1}{1-e^{ s-\xi }} .
+$$
+
+This functions has finite radius of convergence, since the last expression in the equation above diverges at $\xi=s+2\pi i \mathbb{Z}$. The radius of convergence is not infinite! Thus $\tilde{\phi}$ must have zero radius of convergence.
+
+- - -
+
+Now the question is to understand the relation between $\tilde{\phi}$ and $\phi$. We shall see in this note that the `Borel-Laplace` summation is a way of going from the divergent formal series $\tilde{\phi}$ to the finite function $\phi$. $\tilde{\phi}$ is actually the `asymptotic expansion` of $\phi(t)$  at $t=0$. We shall explain what it means next. 
+
+We can already observe that the moduli of the coefficients $b_ {n}$ satisfy
+
+$$
+\left\lvert b_ {n} \right\rvert <AB^{n}  n! ,\quad  n \in \mathbb{N}
+$$
+
+for some $A,B>0$. Such inequalities are called `1-Gevrey estimates` for the formal series $\tilde{\phi}(t)=\sum b_ {n}t^{n}$. 
+
+We remark that, since the original function $\phi(t)$ is not holomorphic (nor meromorphic) in any neighborhood of 0, because of the accumulation at the origin of the sequence of simple poles $- \frac{1}{k}$. Thus it would be very surprising to find a positive radius of convergence for $\tilde{\phi}$.
+
+- - -
+
+Resurgence theory can also be used to study power series of the form 
+
+$$
+\sum_ {i} \left( \sum_ {j} a_ {ij}t^{j} \right) e^{ -c_ {j} / t }
+$$
+
+note that the variable $t$ appears at two places, once in the series and once in the exponent. The exponent term is the small correction that is invisible to Taylor expansion at $t=0$, and the formal series in the parenthesis diverges. 
+
+There are many examples of such series in physics. For example, the series could represent the solution of an ordinary differential equation, or the value of some integral, or the perturbative results. In the below is a list of where you might find series like this:
+
+- Normal forms for dynamical systems 
+- Gauge theory of singular connections
+- Quantization of symplectic and Poisson manifolds
+- Floer homology and Fukaya categories
+- Knot invariants
+- Wall-crossing and stability conditions in algebraic geometry
+- Spectral networks
+- WKB approximation in quantum mechanics
+- Perturbative expansions in quantum field theory (QFT).
+
+There has been some recent work in the physics literature suggesting the possibility that the divergent series obtained from the perturbative expansion may have more information about the true nature of the QFT that one might naively expect.
+
+In the next note we will dive into the details of resurgence theory, beginning with the differential algebra $(\mathbb{C}[[1 / z]],\partial)$. 
+
+# The differential algebra
+
+
+It will be convenient for us to set $z = 1/t$ in order to “work at $\infty$” rather than at the origin, since we will often talk about compactified spaces. This means that we shall deal with expansions involving *non-positive* integer powers of the indeterminate. We denote the set of all the `formal power series`, i.e., polynomials in $1 / z$ by 
+
+$$
+\mathbb{C}[\![z^{-1}]\!] = \left\{ \phi=\sum_ {n\geq 0}a_ {n}z^{-n} \,\middle\vert\, a_ {i} \in \mathbb{C} \right\}.
+$$
+
+This is a vector space with basis $1, z^{-1},z^{-2}$, etc. It is also an algebra when we take into account the Cauchy product
+
+$$
+\left( \sum a_ {n}z^{-n} \right) \left( \sum b_ {n} z^{-n} \right) = \sum c_ {n} z^{-n}, \quad  c_ {n} = \sum_ {p+q=n} a_ {p} b_ {q}.
+$$
+
+The derivation
+
+$$
+\partial  = \frac{d}{d z}
+$$
+
+further makes it a *differential algebra*, which simply means $\partial$ is a linear map which satisfied the Leibniz rules. 
+
+This is the derivative in terms of $z$, it is natural to ask what is the derivative in terms of $t$. The answer is straightforward,
+
+$$
+\partial  = \frac{d}{d z} = \frac{d}{d t^{-1}}  = \frac{d}{-t^{-2}dt} =-t^{2} \frac{d}{d t} .
+$$
+
+Then, in mathematical terminology, there is an isomorphism of differential algebra between $(\mathbb{C}[[z^{-1}]],\partial)$ and $(\mathbb{C}[[t]],\partial)$. 
+
+- - -
+
+The `standard valuation`, or sometimes called the `order`, on $\mathbb{C}[[z^{-1}]]$ is the map
+
+$$
+\text{val}: \mathbb{C}[\![z^{-1}]\!] \to \mathbb{N} \cup \infty
+$$
+
+defined by $\text{val }(0)=\infty$ and 
+
+$$
+\boxed{
+\text{val }(\phi) := \text{min } \left\{ n\in \mathbb{N} \,\middle\vert\, a_ {n}\neq 0 \right\} ,\quad  \phi =\sum a_ {n} z^{-n} \neq 0.
+}
+$$
+
+For $\nu \in\mathbb{N}$, we will use the notation 
+
+$$
+z^{-\nu}\mathbb{C}[\![z^{-1}]\!] = \left\{ \sum_ {n\geq \nu} a_ {n}z^{-n} \,\middle\vert\, a_ {\nu},a_ {n+1},\dots \in  \mathbb{C} \right\}.
+$$
+
+This is the set of all the complex polynomials in $z^{-1}$ such that the standard valuation is no less than $\nu$. 
+
+From the viewpoint of the ring structure, ${\frak I} = z^{-1}\mathbb{C}[[z^{-1}]]$ is the maximal ideal of the ring $\mathbb{C}[[z^{-1}]]$. It is often referred to as the *formal series without constant term*. 
+
+It is obvious that 
+
+$$
+\text{val }(\partial \phi) \geq  \text{val }(\phi)+1
+$$
+
+with equality iff there is no constant term.
+
+- - -
+
+With the help of the standard valuation, we can introduce the concept of `distance` into the ring of the formal series. Define
+
+$$
+d(\phi,\psi) := 2^{-\text{val }(\phi-\psi)},\quad  \phi,\psi \in \mathbb{C}[\![z^{-1}]\!]
+$$
+
+as the distance between $\phi$ and $\psi$. It can only take discrete values, such as $1, 1 / 2, 1 / 4,$ etc. 
+
+With the definition of distance, $\mathbb{C}[[z^{-1}]]$ becomes a `complete metric space`. The topology induced by this distance is called the `Krull topology` or the `topology of the formal convergence` (or the ${\frak I}$-adic topology). It provides a simple way of using the language of topology to describe certain algebraic properties.
+
+We mention that a sequence $\phi_ {n}$ of formal series is a Cauchy sequence iff for each $i\in\mathbb{N}$, the $i$-the coefficient is stationary, namely the $i$-th coefficient of $\phi_ {n}$ becomes a constant when $n$ is larger than certain natural number. 
 
