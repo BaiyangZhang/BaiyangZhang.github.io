@@ -348,13 +348,17 @@ $$
 
 This should hold for all $A\in\mathcal{A}$ and $X\in \text{PSh}$. 
 
-This is the informal statement of the Yoneda lemma. The formal statement is
+This is the informal statement of the Yoneda lemma. The formal statement is the following.
+
+- - -
 
 **The Yoneda Lemma.** For any functor $X: \mathcal{A}^{\text{op}} \to \text{Set}$ and any object $A$ in $\mathcal{A}$, there is a **natural isomorphism**:
 
 $$ \text{Hom}(H_ A, X) \cong X(A), $$
 
 where $\text{Hom}(H_ A, X)$ is the set of natural transformations from $H_ A$ to $X$.
+
+- - -
 
 A few comments. The set $\text{Hom}(H_ A, X)$ consists of all ways you can map the functor $H_ A$ to $X$ while respecting the structure of the category. The isomorphism $\text{Hom}(H_ A, X) \cong X(A)$ means that understanding these natural transformations is equivalent to simply looking at the set $X(A)$.
 
@@ -412,19 +416,66 @@ A natural transformation $\eta$ would map each function in $H_ A(B)$ to a subset
 Let's define $\eta$ by mapping each function to the subset of $B$ where the function value is 1:
 
 $$
-\eta_ {\left\lbrace a,b \right\rbrace}(f) = \left\lbrace   x \in \left\lbrace a,b \right\rbrace \,\middle\vert\, f(x) = 1  \right\rbrace  
+\eta_ {\left\lbrace  a,b \right\rbrace}(f) = \left\lbrace    x \in \left\lbrace  a,b \right\rbrace \,\middle\vert\, f(x) = 1  \right\rbrace  
 $$
 
 For each $f_ i$:
-- $\eta(f_ 1) = \left\lbrace a,b \right\rbrace$
-- $\eta(f_ 2) = \{a\}$
-- $\eta(f_ 3) = \{b\}$
+- $\eta(f_ 1) = \left\lbrace  a,b \right\rbrace$
+- $\eta(f_ 2) = \left\lbrace a\right\rbrace$
+- $\eta(f_ 3) = \left\lbrace b\right\rbrace$
 - $\eta(f_ 4) = \emptyset$
 
 This mapping respects the structure of $P(B)$, and the action of $\eta$ on morphisms (functions between sets) respects naturality.
 
 
-To have a better feeling about "naturality" in Yoneda lemma, lets yet look at one last example. 
+To have a better feeling about "naturality" in Yoneda lemma, lets yet look at one last example. Let's consider a simple category $\mathcal{A}$ with two objects and a few morphisms. Let $\mathcal{A}$ have objects $A$ and $B$, with the following morphisms:
+
+- $\text{Hom}_ {\mathcal{A}}(A, A) = \left\lbrace  \text{id}_ A \right\rbrace$
+- $\text{Hom}_ {\mathcal{A}}(B, B) = \left\lbrace  \text{id}_ B \right\rbrace$
+- $\text{Hom}_ {\mathcal{A}}(B, A) = \left\lbrace  f \right\rbrace$
+
+We have $\mathcal{A}$ defined as follows:
+
+$$
+\begin{array}{c|cc}
+\mathcal{A} & A & B \\
+\hline
+A & \text{id}_ A & f \\
+B & \varnothing & \text{id}_ B \\
+\end{array}
+$$
+
+Define a contravariant functor $X: \mathcal{A}^{\text{op}} \to \text{Set}$. Let:
+
+$$ X(A) = \left\lbrace  x \right\rbrace \quad \text{and} \quad X(B) = \left\lbrace  y_ 1, y_ 2 \right\rbrace $$
+
+Now, let's define how $X$ acts on morphisms. $X$ reverses the direction of morphisms, so we have:
+
+$$ X(\text{id}_ A) = \text{id}_ {X(A)} = \text{id}_ {\left\lbrace x\right\rbrace} $$
+$$ X(\text{id}_ B) = \text{id}_ {X(B)} = \text{id}_ {\left\lbrace y_ 1, y_ 2\right\rbrace} $$
+$$ X(f) : X(A) \to X(B) \quad \text{is a function mapping } x \text{ to either } y_ 1 \text{ or } y_ 2 $$
+
+Suppose $X(f)(x) = y_ 1$.
+
+### Yoneda Lemma in this Context
+
+Now, consider the Yoneda embedding $H_ {A}$:
+
+$$ H_ {A}(A) = \text{Hom}_ {\mathcal{A}}(A, A) = \left\lbrace  \text{id}_ A \right\rbrace $$
+$$ H_ {A}(B) = \text{Hom}_ {\mathcal{A}}(B, A) = \left\lbrace  f \right\rbrace $$
+
+A natural transformation $\eta : H_ {A} \to X$ consists of functions $\eta_ B: H_ {A}(B) \to X(B)$ and $\eta_ A: H_ {A}(A) \to X(A)$ such that for any morphism $g: C \to B$ in $\mathcal{A}$:
+
+$$ X(g) \circ \eta_ B = \eta_ C \circ H_ {A}(g) $$
+
+In our example, the components of $\eta$ are:
+
+$$ \eta_ A : H_ {A}(A) \to X(A) \quad \text{with} \quad \eta_ A(\text{id}_ A) = x $$
+$$ \eta_ B : H_ {A}(B) \to X(B) \quad \text{with} \quad \eta_ B(f) = y_ 1 $$
+
+The naturality condition is trivially satisfied here since there is only one non-identity morphism to consider.
+
+Hence, $\text{Hom}(H_ {A}, X)$ consists of a single natural transformation corresponding to the element $x \in X(A)$.
 
 
 
