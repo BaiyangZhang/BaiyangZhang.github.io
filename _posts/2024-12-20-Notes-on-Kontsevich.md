@@ -1,16 +1,13 @@
 ---
 layout: post
-title: Introduction to Resurgence and Transseries 4
-subtitle: The formal Borel transform and the space of 1-Gevrey formal series
+title: Notes on Kontsevich
 date: 2023-12-20
 author: Baiyang Zhang
-header-img: img/mathArt2.jpg
 catalog: true
 tags:
   - resurgence
 ---
 
-### Introduction
 
 This part follows from a lecture by *Maxim Kontsevich*.
 

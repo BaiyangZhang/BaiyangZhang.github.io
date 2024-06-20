@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Introduction to Resurgence Lecture 3
-subtitle: 
-date: 2023-11-23
+title: Introduction to Resurgence Part 3
+date: 2024-06-16
 author: Baiyang Zhang
-header-img: img/mathArt10.jpg
 catalog: true
 tags:
   - pureMath

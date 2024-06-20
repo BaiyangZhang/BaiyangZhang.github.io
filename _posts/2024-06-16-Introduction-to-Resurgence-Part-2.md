@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Introduction to Resurgence Lecture 2
-subtitle: 
-date: 2023-11-23
+title: Introduction to Resurgence Part 2
+date: 2024-06-16
 author: Baiyang Zhang
-header-img: img/mathArt1.jpg
 catalog: true
 tags:
   - resurgence
@@ -23,7 +21,7 @@ $$
 This series is uniformly convergent on
 
 $$
-U:=C^{\ast } - \left\{ -1,-\frac{1}{2},-\frac{1}{3},\dots \right\} .
+U:=C^{\ast } - \left\lbrace -1,-\frac{1}{2},-\frac{1}{3},\dots \right\rbrace .
 $$
 
 Hence the sum $\phi$ is `holomorphic` in $U$. Actually $\phi$ is meromorphic on $\mathbb{C}^{\ast}$ (not on $\mathbb{C}$ since the origin would be a limiting point of the poles) with simple poles at $1 / \mathbb{N}$.
@@ -43,7 +41,7 @@ $$
 We see that $b_ {n}$ is convergent since
 
 $$
-\lim_{ k \to \infty } \frac{(k+1)^{n}w^{k+1}}{k^{n}w^{k}} = w <1 \text{ by construction}.
+\lim_ { k \to \infty } \frac{(k+1)^{n}w^{k+1}}{k^{n}w^{k}} = w <1 \text{ by construction}.
 $$
 
 However, it turns out that **this formal series is divergent!**

@@ -1,20 +1,15 @@
 ---
 layout: post
-title: Introduction to Resurgence Lecture 1
+title: Introduction to Resurgence Part 1
 subtitle: 
-date: 2023-11-22
+date: 2024-06-15
 author: Baiyang Zhang
-header-img: img/mathArt15.jpg
 catalog: true
 tags:
   - resurgence
 ---
 
 ### Motivation
-
-Why do I want to spend time on this subject? Because they are super interesting!
-
-But I should maybe say more about it, so that in the future if I were to apply for some research grant, when someone who knows absolutely nothing about resurgence and its application but who decides whether to give me the money, asks me why is this project important, what use does it have and, eventually, why should I give you the money, then I can come back here and just copy the answer. I would say that god knows I have already wasted too much time on grant applications... but thank god I am atheist. 
 
 The following is an incomplete list of the potential applications of resurgence theory.
 
@@ -68,16 +63,16 @@ We say a complex-valued function $f:\Omega \to \mathbb{C}$ is `holomorphic` iff 
 
 A differential manifold is a topological space (given by closed sets and all that stuff) with differential structure, which practically means that you can find a way to do derivatives on the manifold. A n-Dimensional real (Complex) manifold is locally homeomorphic to $\mathbb{R}^N (\mathbb{C}^n)$, plus the condition that the transition from one chart (coordinate system) to another is `homeomorphic (holomorphic)` and vice versa.
 
-An `open disk` of radius $r$ around $z_0$ is the set of points $z$ on $\mathbb{C}$ that satisfies
+An `open disk` of radius $r$ around $z_ 0$ is the set of points $z$ on $\mathbb{C}$ that satisfies
 
 $$
-|z-z_0| < r.
+\left\lvert z-z_ 0 \right\rvert  < r.
 $$
 
-A **open deleted disk of radius $r$ around $z_0$** is the set of points with
+A **open deleted disk of radius $r$ around $z_ 0$** is the set of points with
 
 $$
-0 < |z-z_0| < r.
+0 < \left\lvert z-z_ 0 \right\rvert  < r.
 $$
 
 a deleted disk is also called a punctured disk.
@@ -99,7 +94,7 @@ $$
 then
 
 $$
-\mathbb{C} P^{n} \equiv (\mathbb{C}^{n+1}-\{0\})/\sim,
+\mathbb{C} P^{n} \equiv (\mathbb{C}^{n+1}-\left\lbrace0\right\rbrace)/\sim,
 $$
 
 and the $n+1$ numbers are call `homogeneous coordinates` and is denoted by $[z^0,\cdots,z^n]$. We can make one of them constantly equal to 1, then only the rest are really coordinates, it is called `inhomogeneous coordinates`.
@@ -111,22 +106,22 @@ A `domain` in $\mathbb{C}$ is a connected non-empty open subset of $\mathbb{C}$.
 - - -
 **Riemann Sphere**
 
-There are two ways to think of $\overline{C} \equiv \mathbb{C} \cup \{\infty\}$, i.e. the complex plane compactified, by adding a point called infinity, $\infty$ is not included in $\mathbb{C}$.
+There are two ways to think of $\overline{C} \equiv \mathbb{C} \cup \left\lbrace\infty\right\rbrace$, i.e. the complex plane compactified, by adding a point called infinity, $\infty$ is not included in $\mathbb{C}$.
 
 - complex projective plane $\mathbb{C}P^1$.
-- a 2D sphere $\mathbb{S}^2$. The coordinates is given by the stereographic projection, except for the north pole $N$, $\pi : \mathbb{S}^2-\{N\} \to \mathbb{C}$.
+- a 2D sphere $\mathbb{S}^2$. The coordinates is given by the stereographic projection, except for the north pole $N$, $\pi : \mathbb{S}^2-\left\lbraceN\right\rbrace \to \mathbb{C}$.
 
 The space $\overline{\mathbb{C}}$ has the structure of e Riemann surface and it is called the `Riemann sphere`. We can introduce two charts on the Riemann sphere,
 
 $$
-\mathfrak{U}_1 = \mathbb{C},\quad \mathfrak{U}_2 = \mathbb{C}^\ast \cup \{\infty\}
+\mathfrak{U}_ 1 = \mathbb{C},\quad \mathfrak{U}_ 2 = \mathbb{C}^\ast \cup \left\lbrace\infty\right\rbrace
 $$
 
-where $\mathbb{C}^\ast$ is the punctured complex plane, $\mathbb{C}^\ast \equiv \mathbb{C} - \{0\}$. 
+where $\mathbb{C}^\ast$ is the punctured complex plane, $\mathbb{C}^\ast \equiv \mathbb{C} - \left\lbrace0\right\rbrace$. 
 
 **Theorem.** A function is meromorphic on $\mathbb{C}$ iff its restriction on $\mathbb{C}$ is a rational function.
 
-By the restriction of a function, we mean that to restrict the domain so that the it is well defined, no singularities. For example, the function $f:x\to 1/x$ has a singularity at $x=0$, then if we want something which is just like $f$ but has no singularity, we can just restrict the domain to $\mathbb{R} - \{0\}$, which is said to be a restriction of $f$.
+By the restriction of a function, we mean that to restrict the domain so that the it is well defined, no singularities. For example, the function $f:x\to 1/x$ has a singularity at $x=0$, then if we want something which is just like $f$ but has no singularity, we can just restrict the domain to $\mathbb{R} - \left\lbrace0\right\rbrace$, which is said to be a restriction of $f$.
 
 A `germ` of functions at a point $\mathbb{C}$ is a set of function defined in the neighborhood of $a$ which all have the same Taylor expansion. A more mathematical definition is as following.
 
@@ -152,9 +147,9 @@ A `pair` $(U,f)$ is a non-zero open disk $U\subset \mathbb{C}$ (why does it has 
 
 Another concept is adjacency, two pairs $(U,f)$ and $(V,g)$ are said to be `adjacent` if $U\cap V \neq 0$ and $f \equiv g$ on $U\cap V$.
 
-If there is a `finite` sequence of pairs $(U_i,f_i),\quad i = 0,1,\cdots, n$ so that for all $i$, $(U_i,f_i)$ is adjacent to $(U_{i\pm 1},f_{i\pm 1})$, then $(U_0,f_0)$ is said to be the analytical continuation of $(U_n,f_n)$.
+If there is a `finite` sequence of pairs $(U_ i,f_ i),\quad i = 0,1,\cdots, n$ so that for all $i$, $(U_ i,f_ i)$ is adjacent to $(U_ {i\pm 1},f_ {i\pm 1})$, then $(U_ 0,f_ 0)$ is said to be the analytical continuation of $(U_ n,f_ n)$.
 
-We can define a analytical continuation along a curve $\gamma: [0,1] \to \mathbb{C}$. The definition is kind of intuitive so I will skip it here. Now the question is, is the analytical continued function $(U_n,f_n)$ dependent on the path? The answer is the monodromy theorem:
+We can define a analytical continuation along a curve $\gamma: [0,1] \to \mathbb{C}$. The definition is kind of intuitive so I will skip it here. Now the question is, is the analytical continued function $(U_ n,f_ n)$ dependent on the path? The answer is the monodromy theorem:
 
 **Theorem.** If the two path are homotopic, then the analytical continuation results to the same functions.
 
@@ -169,9 +164,9 @@ A `linear system` is short for a complex linear ordinary differential system. A 
 $$
 \frac{dy(x)}{dx} = A(x) y(x),\quad y(x) =
   \begin{pmatrix}
-    y_1(x)\\
+    y_ 1(x)\\
     \vdots \\
-    y_p(x)
+    y_ p(x)
   \end{pmatrix}
 $$
 
@@ -184,19 +179,19 @@ A `fundamental solution` of $(S)$ is a $p\times p$ matrix whose columns are $\ma
 The `Wronskian` for $n$ functions are defined to be
 
 $$
-W(f_1,\cdots, f_n)(x) \equiv
+W(f_ 1,\cdots, f_ n)(x) \equiv
   \begin{vmatrix}
-    f_1(x) & \cdots & f_n(x)\\
-    f'_1(x)& \cdots & f'_n(x)\\
+    f_ 1(x) & \cdots & f_ n(x)\\
+    f'_ 1(x)& \cdots & f'_ n(x)\\
     \cdots \\
     f^{(n-1)}(x) & \cdots & f^{(n-1)}(x)
   \end{vmatrix}.
 $$
 
-Let $\Sigma= \{ a_1,\cdots,a_n \}\subset \overline{\mathbb{C}}$ be the set of singular points of $(S)$. Let $U_\Sigma \equiv \overline{\mathbb{C}}\backslash \Sigma$.
+Let $\Sigma= \left\lbrace a_ 1,\cdots,a_ n \right\rbrace\subset \overline{\mathbb{C}}$ be the set of singular points of $(S)$. Let $U_ \Sigma \equiv \overline{\mathbb{C}}\backslash \Sigma$.
 
 Recall a nice property of Wronskian:
-Let $\mathscr{D}$ a domain in $U_\Sigma$, $W$ a $p\times p$ solution of $(S)$, the following are equivalent:
+Let $\mathscr{D}$ a domain in $U_ \Sigma$, $W$ a $p\times p$ solution of $(S)$, the following are equivalent:
 
 - W is a fundamental solution of $(S)$
 - $\det{W(x)}\neq 0$ for some $x \in \mathscr{D}$
@@ -209,7 +204,7 @@ In other words, the Wronskian is either nonzero on the entire domain, or identic
 **Differential Galois Theory**
 
 A `differential field` $(k,\partial)$ is a field $k$ with derivation.
-A \hl{differential homomorphism} $\phi:(k_1,\partial)\to(k_2,\partial)$ from $k_1$ to $k_2$ is a field homomorphism that commutates with $\partial$. A triple $(k_1, \phi, k_2)$ is called a differential extension. $k_2$ is also called a differential extension of $k_1$.
+A \hl{differential homomorphism} $\phi:(k_ 1,\partial)\to(k_ 2,\partial)$ from $k_ 1$ to $k_ 2$ is a field homomorphism that commutates with $\partial$. A triple $(k_ 1, \phi, k_ 2)$ is called a differential extension. $k_ 2$ is also called a differential extension of $k_ 1$.
 
 A differential system
 

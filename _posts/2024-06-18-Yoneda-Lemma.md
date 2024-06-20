@@ -331,7 +331,7 @@ If the above proof is too abstract for you, it is always a good idea to come up 
 
 # Yoneda Lemma
 
-Let $\mathcal{A}$ be a locally small category so that the arrows from one object to another actually form a set. Let $X$ be a **set-valued contravariant functor** $X: \mathcal{A}^{\text{op}}\to\text{Set}$, let $H_ {A}$ be the Yoneda embedding, that is $H_ {A}(B)$ for all $B\in\mathcal{A}$ is the set of the arrows $\mathcal{A}[B,A]$. Now we have two distinct contravariant functor, the question is, what is the nature of the set of arrows from $H_ {A}$ to $X$? Recall that functors $\mathcal{A}^{\text{op}}\to\text{Set}$ is a presheaf, pre- in the sense that we haven't talked about how can they be glued together to form a global sheaf. We can rephase the question: for each $A\in\mathcal{A}$ we have a representable presheaf $H_ {A}$, if $X$ is another presheaf, what are the maps $H_ {A}\to X$?
+Let $\mathcal{A}$ be a locally small category so that the arrows from one object to another actually form a set. Let $X$ be a **set-valued contravariant functor** $X: \mathcal{A}^{\text{op}}\to\text{Set}$, let $H_ {A}$ be the Yoneda embedding, that is $H_ {A}(B)$ for all $B\in\mathcal{A}$ is the set of the arrows $\mathcal{A}[B,A]$. Now we have two distinct contravariant functor, the question is, what is the nature of the set of arrows from $H_ {A}$ to $X$? Recall that functors $\mathcal{A}^{\text{op}}\to\text{Set}$ is a presheaf, pre- in the sense that we haven't talked about how can they be glued together to form a global sheaf. We can rephrase the question: for each $A\in\mathcal{A}$ we have a representable presheaf $H_ {A}$, if $X$ is another presheaf, what are the maps $H_ {A}\to X$?
 
 Since $H_ {A}$ and $X$ are both objects of the presheaf category $\text{PSh}:=[\mathcal{A}^{\text{op}},\text{Set}]$, the maps from $H_ {A}$ to $X$ are maps in $\text{PSh}$. Since $H_ {A}$ and $X$ are also functors, a map between them is a natural transformation, denoted $\text{Hom}(H_ {A},X)$. 
 
@@ -423,7 +423,12 @@ For each $f_ i$:
 
 This mapping respects the structure of $P(B)$, and the action of $\eta$ on morphisms (functions between sets) respects naturality.
 
-The Yoneda Lemma tells us that for our functor $P$, there is a one-to-one correspondence between the natural transformations $\text{Hom}(H_ A, P)$ and the elements of $P(A)$.
 
-- - -
+To have a better feeling about "naturality" in Yoneda lemma, lets yet look at a third example. 
+
+## The Proof of Yoneda Lemma
+
+Let $\text{PSh}$ be the category of presheaves, that is the category of set-valued, contravariant functor with domain $\mathcal{A}$. It is also written as $[\mathcal{A}^{\text{op}},\text{Set}]$ or $\text{Hom}(\mathcal{A}^{\text{op}},\text{Set})$.
+
+In order to prove the Yoneda lemma, we need to show that for any $a\in\mathcal{A}$ and $X\in \text{PSh}$, there exists a bijection (isomorphism) between $\text{Hom}(\mathcal{A}^{\text{op}},X)$ and $X(A)$. 
 
