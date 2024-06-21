@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Yoneda Lemma
+title: figure
 date: 2024-06-18
 author: Baiyang Zhang
 catalog: true
@@ -507,4 +507,61 @@ Then, the Yoneda lemma says that $\text{Hom}(H_ {A}, X)$ is isomorphic to $X(A)=
 Let $\text{PSh}$ be the category of presheaves, that is the category of set-valued, contravariant functor with domain $\mathcal{A}$. It is also written as $[\mathcal{A}^{\text{op}},\text{Set}]$ or $\text{Hom}(\mathcal{A}^{\text{op}},\text{Set})$.
 
 In order to prove the Yoneda lemma, we need to show that for any $a\in\mathcal{A}$ and $X\in \text{PSh}$, there exists a bijection (isomorphism) between $\text{Hom}(\mathcal{A}^{\text{op}},X)$ and $X(A)$. 
+
+Let's define two maps:
+
+- sharp map: 
+
+$$
+\begin{align*}
+\bullet^{\sharp}: \text{Hom}(H_ {A},X) &\to X(A),\\
+f &\mapsto f^{\sharp},
+\end{align*}
+$$
+
+- flat map:
+
+$$
+\begin{align*}
+\bullet^{\flat}: X(A) &\to\text{Hom}(H_ {A},X),\\
+x &\mapsto x^{\flat}.
+\end{align*}
+$$
+
+We will first construct ${\sharp}$ and $\flat$ maps, then demonstrate that they are mutually inverse, that is $\sharp\,\circ\,\flat=\flat\,\circ\,\sharp=\mathbb{1}$. 
+
+Given $\alpha: H_ {A}\to X$, $\alpha ^{\sharp}\in X(A)$. We need find an element in $X(A)$ so that we can identify $\alpha ^{\sharp}$ with it, that is how we construct the sharp map. Now, we don't know anything about $X(A)$, except that $\alpha_ {A}$, namely the $A$-component of $\alpha$, maps $H_ {A}(A)$ to $X(A)$. Now we need to find an element in $H_ {A}(A)$ so we can apply $\alpha_ {A}$ on it, an obvious choice is simply $\mathbb{1}_ {A}$. $H_ {A}(\mathbb{1}_ {A})\in X(A)$, so we define 
+
+$$
+\boxed{ 
+\alpha ^{\sharp} := \alpha_ {A}(\mathbb{1}_ {A}).
+}
+$$
+
+In a sense, we are using $\alpha$ to define $\alpha ^{\sharp}$. 
+
+- - -
+
+Next we move on to construct the flat map that maps $X(A)$ to $\text{Hom}(H_ {A},X)$. Let $x\in X(A)$, $x^{\flat} \in H_ {A}\to X$. If you draw all the relations down and stare at it for long enough, you will eventually find the way to construct $x^{\flat}$ from all the ingredients we have. To define $x^{\flat}$ we need to define each component of $x^{\flat}$. Let $B\in \mathcal{A}$ be any object, the $B$-component of $x^{\flat}$ (recall that $x^{\flat}$ is a natural transformation) maps $H_ {A}(B)$ to $X(B)$. Let $f\in H_ {A}(B)$, $f: B\to A$, thus $X(f):X(A)\to X(B)$. Write $X(f)$ as $X_ {f}$ for short. $X_ {f}(x)\in X(B)$, it is just what we needed, namely an element in $X(B)$, to define $x^{\flat}$! Now we can let 
+
+$$
+\begin{align*}
+x^{\flat}_ {B}: H_ {A}(B)  &\to  X(B), \\
+f &\mapsto X_ {f}(x).
+\end{align*}
+$$
+
+Next we need to show that the naturality condition is satisfied. Naturality means that for any $B,B'\in\mathcal{A}$, in the following diagram the blue part commutes. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/Yoneda1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+   Naturality condition means that the blue square commutes.
+</div>
+
+
+
 
