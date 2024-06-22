@@ -1,6 +1,6 @@
 ---
 layout: post
-title: figure
+title: Yoneda Lemma
 date: 2024-06-18
 author: Baiyang Zhang
 catalog: true
@@ -562,6 +562,15 @@ Next we need to show that the naturality condition is satisfied. Naturality mean
    Naturality condition means that the blue square commutes.
 </div>
 
+Follow the left-top path, $x^{\flat}_ {B}$ sends $f$ to $X_ {f}(x)$, then $X_ {g}$ sends it to $X_ {g}\,\circ\,X_ {f}(x)$. Follow the bottom-right path, $H_ {A}(g)=-\,\circ\,g$ sends $f$ to $f\,\circ\,g$, then $x^{\flat}_ {B'}$ sends it to $X_ {f\,\circ\,g}(x)$. Since $X$ is a contravariant functor, $X_ {f\,\circ\,g}=X_ {g}\,\circ\,X_ {f}$, thus these two different ways to compose arrows are the same!
 
+- - -
 
+Next, we show that $\sharp\,\circ\,\flat$ is identity map. Given any $x\in X(A)$, we need to show that 
+
+$$
+(x^{\flat})^{\sharp}=x.
+$$
+
+Let $B\in\mathcal{A}$, 
 
