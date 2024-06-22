@@ -566,7 +566,7 @@ Follow the left-top path, $x^{\flat}_ {B}$ sends $f$ to $X_ {f}(x)$, then $X_ {g
 
 - - -
 
-Next, we show that $\sharp\,\circ\,\flat$ is identity map. Given any $x\in X(A)$, we need to show that 
+Next, we show that $\sharp\,\circ\,\flat$ is identity map, which means that given any $x\in X(A)$,
 
 $$
 (x^{\flat})^{\sharp}=x.
