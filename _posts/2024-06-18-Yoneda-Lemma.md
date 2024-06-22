@@ -636,7 +636,6 @@ $$
 (\alpha ^{\sharp})^{\flat}_ {B}(f) = \alpha_ {B(f)} \implies (\alpha ^{\sharp})^{\flat} = \alpha.
 $$
 
-Q.E.D.
-
 - - -
 
+For the last part, we need to show that both sharp and flat maps are natural. 
