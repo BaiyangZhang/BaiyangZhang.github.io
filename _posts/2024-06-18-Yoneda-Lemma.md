@@ -572,5 +572,71 @@ $$
 (x^{\flat})^{\sharp}=x.
 $$
 
-Let $B\in\mathcal{A}$, 
+Recall that, by construction for $\alpha \in \text{Hom}(H_ {A},X(A))$, $\alpha ^{\sharp}=\alpha_ {A}(\mathbb{1}_ {A})$. Apply this to $x^{\flat}$ we have 
+
+$$
+x^{\flat}=x^{\flat}_ {A}(\mathbb{1}_ {A}).
+$$
+
+Then 
+
+$$
+(x^{\flat})^{\sharp}=x^{\flat}_ {A}(\mathbb{1}_ {A}).
+$$
+
+How does the sharp map work? Given $y\in X_ {A}$ and any $B\in\mathcal{A}$, $y^{\flat}: f\mapsto X_ {f}(y)$, where $f\in \text{Hom}(B,A)$. Apply this to the above equation, let $f=\mathbb{1}_ {A}$ and $y=x$, we have 
+
+$$
+(x^{\flat})^{\sharp}=x^{\flat}_ {A}(\mathbb{1}_ {A}) = X_ {\mathbb{1}_ {A}}(x),
+$$
+
+Since $X$ as a functor must map $\mathbb{1}_ {A}$ to $\mathbb{1}_ {X(A)}$, 
+
+$$
+(x^{\flat})^{\sharp}=x^{\flat}_ {A}(\mathbb{1}_ {A}) = X_ {\mathbb{1}_ {A}}(x) = \mathbb{1}_ {X(A)}(x)=x.
+$$
+
+- - -
+
+Next we need to show that $\flat\,\circ\,\sharp=\mathbb{1}$, that is 
+
+$$
+(\alpha ^{\sharp})^{\flat}=\mathbb{1}.
+$$
+
+First regard $\alpha ^{\sharp}$ as whole and perform the flat map. Let $B\in\mathcal{A}$ and $f\in H_ {A}(B)$, for the $B$-component of natural transformation $(\alpha ^{\sharp})^{\flat}$ we have 
+
+$$
+(\alpha ^{\sharp})^{\flat}_ {B}: f\mapsto X_ {f}(\alpha ^{\sharp}).
+$$
+
+Then performing the sharp map, $\alpha ^{\sharp}:\alpha\mapsto \alpha_ {A}(\mathbb{1}_ {A})$, thus
+
+$$
+(\alpha ^{\sharp})^{\flat}_ {B}: f\mapsto X_ {f}(\alpha ^{\sharp}) = X_ {f}(\alpha_ {A}(\mathbb{1}_ {A})).
+$$
+
+To evaluate $X_ {f}(\alpha_ {A}(\mathbb{1}_ {A}))$ we need to use the naturality condition between $A,B\in\mathcal{A}$ and $f:B\to A$, which says the following two maps are identical:
+
+$$
+\begin{align*}
+H_ {A}(A) &\xrightarrow{H_ {A}(f) =-\,\circ\,f}H_ {A}(B) \xrightarrow{\alpha_ {B}} X(B), \\
+H_ {A}(A) & \xrightarrow{\alpha_ {A}}X(A)\xrightarrow{X_ {f}}X(B).
+\end{align*}
+$$
+
+Then 
+$$
+X_ {f}(\alpha_ {A}(\mathbb{1}_ {A})) = \alpha_ {B(f)}.
+$$
+
+Thus we have 
+
+$$
+(\alpha ^{\sharp})^{\flat}_ {B}(f) = \alpha_ {B(f)} \implies (\alpha ^{\sharp})^{\flat} = \alpha.
+$$
+
+Q.E.D.
+
+- - -
 
