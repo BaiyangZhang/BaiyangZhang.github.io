@@ -627,7 +627,7 @@ $$
 
 Then 
 $$
-X_ {f}(\alpha_ {A}(\mathbb{1}_ {A})) = \alpha_ {B(f)}.
+X_ {f}(\alpha_ {A}(\mathbb{1}_ {A})) = \alpha_ {B}(f).
 $$
 
 Thus we have 
@@ -638,4 +638,17 @@ $$
 
 - - -
 
-For the last part, we need to show that both sharp and flat maps are natural. 
+We have established the bijection between $\text{Hom}(H_ {A},X)$ and $X$, for each $A$ and $X$. For the last part of our proof, we need to show that this bijection is natural for all the $A$ and $X$. 
+
+Naturality in $A$ states that for all $X$ and $B\in\mathcal{A}$, let $f\in H_ {A}(B)$, the following square commutes.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/naturalityInA.png" class="img-fluid rounded z-depth-1" style="width: 90%;" %}
+    </div>
+</div>
+<div class="caption">
+    The naturality condition in $A$, where $H_f=H(f)$.
+</div>
+
+
