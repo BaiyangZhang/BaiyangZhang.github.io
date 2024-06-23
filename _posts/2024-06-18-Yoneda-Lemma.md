@@ -555,7 +555,7 @@ Next we need to show that the naturality condition is satisfied. Naturality mean
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/Yoneda1.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+        {% include figure.liquid path="/img/Yoneda1.png" class="img-fluid rounded z-depth-1" style="width: 70%;" %}
     </div>
 </div>
 <div class="caption">
@@ -651,4 +651,49 @@ Naturality in $A$ states that for all $X$ and $B\in\mathcal{A}$, let $f\in H_ {A
     The naturality condition in $A$, where $H_f=H(f)$.
 </div>
 
+Natural transformation is a map between two functors, so when we talk about naturality in $A$, what functors are we talking about? One of them is the functor that maps $A$ to $\text{Hom}(H_ {A},X)$, let's denote it by $\text{Hom}(H_ {\bullet},X)$; The other functor is just $X$. 
 
+Let $\alpha \in \text{Hom}(H_ {A},X)$, recall that we constructed $A^{\sharp}$ by $A^{\sharp}=\alpha_ {A}(\mathbb{1}_ {A})$. The element-version of naturality in $A$ reads
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/natAele.png" class="img-fluid rounded z-depth-1" style="width: 90%;" %}
+    </div>
+</div>
+<div class="caption">
+	    The naturality condition in $A$ written in elements. Strictly speaking the arrows should be $\mapsto$.
+</div>
+
+Now we need to show that in the right-bottom corner, the equality holds. Since $H_ {f}:= f\,\circ\,-$, 
+
+$$
+H_ {f}(\mathbb{1}_ {B}) = f\,\circ\mathbb{1}_ {B}=f.
+$$
+
+Thus 
+
+$$
+(\alpha \,\circ\,H_ {f})(\mathbb{1}_ {B}) = \alpha_ {B}(f).
+$$
+
+The naturality in $X$ is easier. It states that the following diagram commutes.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/naturalityInX.png" class="img-fluid rounded z-depth-1" style="width: 90%;" %}
+    </div>
+</div>
+<div class="caption">
+    The naturality condition in $X$.
+</div>
+ 
+in terms of elements, we have the following diagram. It is obvious to see that it indeed commutes.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/natXele.png" class="img-fluid rounded z-depth-1" style="width: 90%;" %}
+    </div>
+</div>
+<div class="caption">
+	    The naturality condition in $X$ written in elements. Strictly speaking the arrows should be $\mapsto$.
+</div>
