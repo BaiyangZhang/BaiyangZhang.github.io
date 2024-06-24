@@ -8,7 +8,14 @@ tags:
   - categoryTheory
 ---
 
-# Representables
+# Table of Contents
+
+- [1. Representables](#1-representables)
+- [2. Yoneda Lemma](#2-yoneda-lemma)
+- [3. The Proof of Yoneda Lemma](#3-the-proof-of-yoneda-lemma)
+- [4. Consequences of the Yoneda Lemma](#4-consequences-of-the-yoneda-lemma)
+
+# 1. Representables
 
 A category is a world of objects, all looking at one another. Each sees the world from a different viewpoint. Take the category of topological spaces for example, consider the object with only one point, denoted $\star$, given another topological space $T$, a map 
 
@@ -329,7 +336,7 @@ Since $f \circ g = \text{id}_ {A'}$ and $g \circ f = \text{id}_ A$, it follows t
 
 If the above proof is too abstract for you, it is always a good idea to come up with a simple example through which to see in real time how the logic works. In this case, a good example is to consider the category $\text{Set}$ of sets and let $A=\left\lbrace 1,2 \right\rbrace$, $A'=\left\lbrace a,b \right\rbrace$. 
 
-# Yoneda Lemma
+# 2. Yoneda Lemma
 
 Let $\mathcal{A}$ be a locally small category so that the arrows from one object to another actually form a set. Let $X$ be a **set-valued contravariant functor** $X: \mathcal{A}^{\text{op}}\to\text{Set}$, let $H_ {A}$ be the Yoneda embedding, that is $H_ {A}(B)$ for all $B\in\mathcal{A}$ is the set of the arrows $\mathcal{A}[B,A]$. Now we have two distinct contravariant functor, the question is, what is the nature of the set of arrows from $H_ {A}$ to $X$? Recall that functors $\mathcal{A}^{\text{op}}\to\text{Set}$ is a presheaf, pre- in the sense that we haven't talked about how can they be glued together to form a global sheaf. We can rephrase the question: for each $A\in\mathcal{A}$ we have a representable presheaf $H_ {A}$, if $X$ is another presheaf, what are the maps $H_ {A}\to X$?
 
@@ -502,7 +509,7 @@ not $y_ {2}$, since we defined $X(f)$ to map $x$ to $y_ {1}$. This is the power 
 
 Then, the Yoneda lemma says that $\text{Hom}(H_ {A}, X)$ is isomorphic to $X(A)=\left\lbrace x \right\rbrace$, that is, $\text{Hom}(H_ {A},X)$ consists of a single natural transformation $\eta$. There is no other way to construct a natural transformation, for example $\eta'$ such that $\eta'_ {B}:f\mapsto y_ {2}$, since it will violate the naturality condition. 
 
-# The Proof of Yoneda Lemma
+# 3. The Proof of Yoneda Lemma
 
 Let $\text{PSh}$ be the category of presheaves, that is the category of set-valued, contravariant functor with domain $\mathcal{A}$. It is also written as $[\mathcal{A}^{\text{op}},\text{Set}]$ or $\text{Hom}(\mathcal{A}^{\text{op}},\text{Set})$.
 
@@ -697,3 +704,18 @@ in terms of elements, we have the following diagram. It is obvious to see that i
 <div class="caption">
 	    The naturality condition in $X$ written in elements. Strictly speaking the arrows should be $\mapsto$.
 </div>
+
+
+# 4. Consequences of the Yoneda Lemma
+
+The Yoneda lemma is fundamental in category theory. Here we look at some important consequences. 
+
+Let $\mathcal{A}$ be a locally small category. Let $X$ be a presheaf on $\mathcal{A}$. A representation of $X$ is an object $A\in\mathcal{A}$ together with one element $u\in X(A)$, such that for all $B\in \mathcal{A}$ and $x \in X(B)$, there is a unique map $\overline{x}:B\to A$ such that $X_ {\overline{x}}(u)=x$. 
+
+Recall that by definition, a representation is an $A\in \mathcal{A}$ and a natural isomorphism 
+
+$$
+\alpha: H_ {A} \xrightarrow{\sim}X
+$$
+
+where $\xrightarrow{\sim}$ means an isomorphism. 
