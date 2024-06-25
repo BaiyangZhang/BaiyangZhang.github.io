@@ -814,4 +814,6 @@ $$
 \phi \,\circ\,F_ {R} = F_ {S} \,\circ\, \phi
 $$
 
-holds for **all rings** and **all homomorphisms**, then $F=P$ for some polynomial form $P\in \mathbb{Z}[ n ]$. 
+holds for **all rings** and **all homomorphisms**, then $F=P$ for some polynomial form $P\in \mathbb{Z}[ [n] ]$. Note that $F$ could be **any functions**, but as long as it satisfies the condition, then it must be a **polynomial function**. 
+
+To better understand the statement, let's set $A=\mathbb{Z}[\! [ n ]\! ]$, 
