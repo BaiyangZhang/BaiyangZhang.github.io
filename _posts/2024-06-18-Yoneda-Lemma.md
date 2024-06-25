@@ -710,7 +710,7 @@ in terms of elements, we have the following diagram. It is obvious to see that i
 
 The Yoneda lemma is fundamental in category theory. Here we look at some important consequences. 
 
-Let $\mathcal{A}$ be a locally small category. Let $X$ be a presheaf on $\mathcal{A}$. A representation of $X$ is an object $A\in\mathcal{A}$ together with one element $u\in X(A)$, such that for all $B\in \mathcal{A}$ and $x \in X(B)$, there is a unique map $\overline{x}:B\to A$ such that $X_ {\overline{x}}(u)=x$. 
+**Corollary 1.**  Let $\mathcal{A}$ be a locally small category. Let $X$ be a presheaf on $\mathcal{A}$. A representation of $X$ is an object $A\in\mathcal{A}$ together with one element $u\in X(A)$, such that for all $B\in \mathcal{A}$ and $x \in X(B)$, there is a unique map $\overline{x}:B\to A$ such that $X_ {\overline{x}}(u)=x$. 
 
 Recall that by definition, a representation is an $A\in \mathcal{A}$ and a natural isomorphism 
 
@@ -718,4 +718,82 @@ $$
 \alpha: H_ {A} \xrightarrow{\sim}X
 $$
 
-where $\xrightarrow{\sim}$ means an isomorphism. 
+where $\xrightarrow{\sim}$ means an isomorphism. The corollary then says that such pairs $(X,\alpha)$ are in natural bijection with pairs $(A,\mu)$, such that 
+
+$$
+X_ {\overline{x}}(u) = x.
+$$
+
+Pairs $(B,x)$ with $B\in\mathcal{A}$ are sometimes called elements of $X$. The element $u$ is sometimes called a universal element of $X$, since $u$ can point to anything in $X(B)$. 
+
+To prove the corollary, we need only to show that the natural transformation $u^{\flat}: H_ {A}\to X$ is an isomorphism, which means that $X$ indeed has a representation, namely $(A, u^{\flat})$, iff for all $B$ and $x\in X(B)$, there exists a unique $\overline{x}: B\to A$ such that 
+
+$$
+X_ {\overline{x}}(u) = x.
+$$
+
+By definition, $u^{\flat}$ is an isomorphism iff for all $B$, 
+
+$$
+u^{\flat}(B): H_ {A} (B) \xrightarrow{\sim} X(B).
+$$
+
+But we already have 
+
+$$
+u^{\flat}_ {B}(\overline{x}) = X_ {\overline{x}}(u)
+$$
+
+by construction, thus we have proved the corollary. 
+
+- - -
+
+Another consequence of the Yoneda lemma is the following. 
+
+**Corollary 2.** For any locally small category $\mathcal{A}$, the Yoneda embedding 
+
+$$
+H_ {\bullet}: \mathcal{A} \to  \text{Hom}(\mathcal{A}^{\text{op}},\text{Set})
+$$
+
+is full and faithful. 
+
+Informally, this says that for any $A,A'\in\mathcal{A}$, a map $H_ {A}\to H_ {A'}$ is the same thing as a map $A \to A'$.
+
+We will now write down the detailed proof, but just mention that the key point is let $X$ in the Yoneda lemma
+
+$$
+\text{Hom}(H_ {A},X) \cong  X(A)
+$$
+
+to be $H_ {A'}$. 
+
+The word "embedding" is used to mean a map $A\to B$ that makes $A$ isomorphic to its image in $B$. For example, a bijection $F: A\to B$ may be called an embedding, for $A$ is isomorphic to its image $f(A)$ in $B$. Corollary 2 says that a full and faithful functor $F: \mathcal{A}\to \mathcal{B}$ can be reasonably called an embedding, as it makes $\mathcal{A}$ equivalent to its image in $\mathcal{B}$. 
+
+- - -
+
+The third consequence of the Yoneda lemma is the following. 
+
+**Corollary 3.** Let $\mathcal{A}$ be a locally small category, and $A,A'\in\mathcal{A}$. Then 
+
+$$
+H_ {A}\cong H_ {A'} \Longleftrightarrow A\cong A' \Longleftrightarrow H^{A}\cong H^{A'}.
+$$
+
+We will also neglect the proof here. 
+
+- - -
+
+Another interesting application of the Yoneda lemma can be found in Terrence Tao's blog [here](https://terrytao.wordpress.com/2023/08/25/yonedas-lemma-as-an-identification-of-form-and-function-the-case-study-of-polynomials/), titled *Yoneda’s lemma as an identification of form and function: the case study of polynomials*. In his blog, Terrence Tao talked about formal polynomials, or polynomial forms $\mathbb{Z}[\![n]\!]$ and polynomial functions $\mathbb{Z}[n]$. In the former, the indeterminate $n$ is a purely formal object, while in the latter, $n$ can take value in any ring $R$. Terrence Tao mentioned that 
+
+> ... one only interprets polynomial forms in a specific ring $R$, then some information about the polynomial could be lost (and some features of the polynomial, such as roots, may be “invisible” to that interpretation). But this turns out not to be the case if one considers interpretations in all rings simultaneously...
+
+For example, consider the simplest linear formal polynomial $f=n$, it is different from $f=-n$. However, in the two-element ring $\mathbb{Z}_ {2}$, since for $a\in\mathbb{Z}_ {2}$, $a\equiv-a$. 
+
+Given a Polynomial form $P$ which can act on different rings, such as $R$ and $S$, we have 
+
+$$
+P: R\to  R  \quad \text{or} \quad  S\to S.
+$$
+
+It is obvious, since given a formal polynomial $P(n)\in \mathbb{Z}[\![n]\!]$, 
