@@ -830,7 +830,7 @@ is the evaluation map, and let $x\in R$. For example, the action of $\phi_ {x}$ 
     </div>
 </div>
 <div class="caption">
-    Commutation relation. We have picked an element $n\ele \mathbb{Z}[[n]]$.
+    Commutation relation. We have picked an element $n\in \mathbb{Z}[[n]]$.
 </div>
 
 Now the Yoneda lemma comes into play. There are two categories at play here: $\text{Ring}$ and $\text{Set}$, and the forgetful
