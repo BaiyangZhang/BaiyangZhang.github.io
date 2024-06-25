@@ -860,4 +860,33 @@ The commutation relation between $\phi$ and $F$ is equivalent to the naturality 
     The naturality condition is equivalent to the commutation relation.
 </div>
 
+The identification between the polynomial forms and functions can now be written as 
+
+$$
+U(\mathbb{Z}[[n]])\cong \text{Hom}(U,U)\equiv F.
+$$
+
+On the other hand, given an element $x\in R$, the evaluation map provides a map $\phi_ {x}: \mathbb{Z}[[n]] \to R$. Conversely, given an evaluation map $\phi$, we can identify an element $x\in R$ by evaluate $n$, that is $x_ {\phi}:=\phi(n)$. Thus the evaluation homomorphism provides a 1-2-1 correspondence between $R$ and maps in $\mathbb{Z}[[n]]\to R$. This correspondence is, again, at the level of sets $U(R)$ and $\text{Hom}(\mathbb{Z}[[n]],R)$.  We write the correspondence in a form that applies for all the rings:
+
+$$
+U(-) \cong  \text{Hom}(\mathbb{Z}[[n]],-).
+$$
+
+Now come back to the last-last equation, in the second term in $\text{Hom}(U,U)$ we can rewrite the first $U$ as 
+
+$$
+U \cong  \text{Hom}(\mathbb{Z}[[n]],-) = H^{\mathbb{Z}[[n]]},
+$$
+
+the identification between functions and polynomial forms can be written as 
+
+$$
+U(\mathbb{Z}[[n]]) ~===~ \text{Hom}(H^{\mathbb{Z}[[n]]},U),
+$$
+
+which is the familiar Yoneda lemma
+
+$$
+X(A) \cong  \text{Hom}(H^{A},X).
+$$
 
