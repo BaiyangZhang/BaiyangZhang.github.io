@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -159,7 +160,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "85934409c70af44e",
+  "active": "d27d91a855f7f209",
   "lastOpenFiles": [
     "img/naturalityInX.png",
     "img/natXele.png",

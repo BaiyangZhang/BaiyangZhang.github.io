@@ -796,4 +796,22 @@ $$
 P: R\to  R  \quad \text{or} \quad  S\to S.
 $$
 
-It is obvious, since given a formal polynomial $P(n)\in \mathbb{Z}[\![n]\!]$, 
+It is obvious, since given a formal polynomial $P(n)\in \mathbb{Z}[\![n]\!]$, we can turn it into a **polynomial  function** on ring $R$, which is a map $R\to R$, if we let $n=x$ for some $x\in R$, let's denote it by $P_ {R}$. Similarly for ring $S$. Let $\phi: R\to S$ be a ring homomorphism, then we have the following commutation relation:
+
+$$
+\phi \,\circ\, P_ {R} = P_ {S} \,\circ\, \phi
+$$
+
+It means that the ring homomorphism is compatible to polynomial functions, which is not so surprising. The surprising part is that the converse statement is also true: Let $F$ be a function that can act on different rings, for example if $F$ acts on a ring $R$, then we write 
+
+$$
+F_ {R} : R\to  R,
+$$
+
+Similarly for ring $S$, $F_ {S}: S\to S$. Let $\phi: R\to S$ be a ring homomorphism. The statement is that, if 
+
+$$
+\phi \,\circ\,F_ {R} = F_ {S} \,\circ\, \phi
+$$
+
+holds for **all rings** and **all homomorphisms**, then $F=P$ for some polynomial form $P\in \mathbb{Z}[\![ n ]\!]$. 
