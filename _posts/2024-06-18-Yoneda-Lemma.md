@@ -784,7 +784,7 @@ We will also neglect the proof here.
 
 - - -
 
-Another interesting application of the Yoneda lemma can be found in Terrence Tao's blog [here](https://terrytao.wordpress.com/2023/08/25/yonedas-lemma-as-an-identification-of-form-and-function-the-case-study-of-polynomials/), titled *Yoneda’s lemma as an identification of form and function: the case study of polynomials*. In his blog, Terrence Tao talked about formal polynomials, or polynomial forms $\mathbb{Z}[\! [n]\! ]$ and polynomial functions $\mathbb{Z}[n]$. In the former, the indeterminate $n$ is a purely formal object, while in the latter, $n$ can take value in any ring $R$. Terrence Tao mentioned that 
+Another interesting application of the Yoneda lemma can be found in Terrence Tao's blog [here](https://terrytao.wordpress.com/2023/08/25/yonedas-lemma-as-an-identification-of-form-and-function-the-case-study-of-polynomials/), titled *Yoneda’s lemma as an identification of form and function: the case study of polynomials*. In his blog, Terrence Tao talked about formal polynomials, or polynomial forms $\mathbb{Z}[n]$ and polynomial functions $\mathbb{Z}[n]$. In the former, the indeterminate $n$ is a purely formal object, while in the latter, $n$ can take value in any ring $R$. Terrence Tao mentioned that 
 
 > ... one only interprets polynomial forms in a specific ring $R$, then some information about the polynomial could be lost (and some features of the polynomial, such as roots, may be “invisible” to that interpretation). But this turns out not to be the case if one considers interpretations in all rings simultaneously...
 
@@ -796,7 +796,7 @@ $$
 P: R\to  R  \quad \text{or} \quad  S\to S.
 $$
 
-It is obvious, since given a formal polynomial $P(n)\in \mathbb{Z}[\! [n]\! ]$, we can turn it into a **polynomial  function** on ring $R$, which is a map $R\to R$, if we let $n=x$ for some $x\in R$, let's denote it by $P_ {R}$. Similarly for ring $S$. Let $\phi: R\to S$ be a ring homomorphism, then we have the following commutation relation:
+It is obvious, since given a formal polynomial $P(n)\in \mathbb{Z}[n]$, we can turn it into a **polynomial  function** on ring $R$, which is a map $R\to R$, if we let $n=x$ for some $x\in R$, let's denote it by $P_ {R}$. Similarly for ring $S$. Let $\phi: R\to S$ be a ring homomorphism, then we have the following commutation relation:
 
 $$
 \phi \,\circ\, P_ {R} = P_ {S} \,\circ\, \phi
@@ -814,4 +814,4 @@ $$
 \phi \,\circ\,F_ {R} = F_ {S} \,\circ\, \phi
 $$
 
-holds for **all rings** and **all homomorphisms**, then $F=P$ for some polynomial form $P\in \mathbb{Z}[\! [ n ]\! ]$. 
+holds for **all rings** and **all homomorphisms**, then $F=P$ for some polynomial form $P\in \mathbb{Z}[ n ]$. 
