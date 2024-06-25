@@ -816,4 +816,48 @@ $$
 
 holds for **all rings** and **all homomorphisms**, then $F=P$ for some polynomial form $P\in \mathbb{Z}[ [n] ]$. Note that $F$ could be **any functions**, but as long as it satisfies the condition, then it must be a **polynomial function**. 
 
-To better understand the statement, let's set $A=\mathbb{Z}[\! [ n ]\! ]$, 
+To better understand the statement, let's set $A=\mathbb{Z}[[ n ]]$, turns out, $\mathbb{Z}[[ n ]]$ as an object in the category $\text{Ring}$ of rings is quite powerful, for the reason that we can construct a lot of arrows from it to other rings, it can see a lot, like the big brother from *1984*.Apply the commutation relation between any function $F$ and $\phi$, where 
+
+$$
+\phi: \mathbb{Z}[[ n ]] \to R
+$$
+
+is the evaluation map, and let $x\in R$. For example, the action of $\phi_ {x}$ on $n$ is to give $n$ the value of $x$. The commutation relation is shown in the following figure, both in sets and in elements. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/commutePolynomial.png" class="img-fluid rounded z-depth-1" style="width: 90%;" %}
+    </div>
+</div>
+<div class="caption">
+    Commutation relation. We have picked an element $n\ele \mathbb{Z}[[n]]$.
+</div>
+
+Now the Yoneda lemma comes into play. There are two categories at play here: $\text{Ring}$ and $\text{Set}$, and the forgetful
+
+$$
+U: \text{Ring} \to  \text{Set}
+$$
+
+is defined to map a ring $R$ to its underlying set $U(R)$, and maps a ring homomorphism $\phi$ to the corresponding function between sets $U(\phi)$. 
+
+Here is a change of perspective: the function $F$ can be regarded as a natural transformation! And we will show that the naturality condition is nothing but the commutation relation. As a natural transformation, it maps underling functor to underlying functor, for example, we said that
+
+$$
+F_ {\mathbb{Z}[[ n ]] } : \mathbb{Z}[[n]] \to  \mathbb{Z}[[n]]
+$$
+
+Now regard $F_ {\mathbb{Z}[[n]]}$ as the $\mathbb{Z}[[n]]$-component of $F$, and the right-hand-side actually should be a function not between $\mathbb{Z}[[n]]$, but between the underlying sets $U(\mathbb{Z}[[n]])$. Take $F_ {R}$ for example, $F_ {R}: R\to R$ should be in fact a function $F_ {R}: U(R) \to U(R)$. 
+
+The commutation relation between $\phi$ and $F$ is equivalent to the naturality condition, as is shown in the figure below. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/naturalityCommute.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    The naturality condition is equivalent to the commutation relation.
+</div>
+
+

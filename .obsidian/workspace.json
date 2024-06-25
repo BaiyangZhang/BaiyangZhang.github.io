@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -162,6 +161,8 @@
   },
   "active": "d27d91a855f7f209",
   "lastOpenFiles": [
+    "img/naturalityCommute.png",
+    "img/commutePolynomial.png",
     "img/naturalityInX.png",
     "img/natXele.png",
     "img/natAele.png",
