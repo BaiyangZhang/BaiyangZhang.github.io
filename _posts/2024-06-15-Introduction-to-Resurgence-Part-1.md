@@ -29,25 +29,25 @@ The following is an incomplete list of the potential applications of resurgence 
 -   WKB approximation in quantum mechanics
 -   **Perturbative expansions in quantum field theory (QFT)**
 
-The most surprising result, at least for me, of resurgence theory in QFT is that one can uncover the non-perturbative results from perturbative expansion alone! Usually to find the non-perturbative results one need to use anything but perturbative results, such as the topology of the vacuum manifold, the homotopy of the solutions to the equation of motion (instanton solutions, etc.), on and on. But resurgence theory lets us to get the non-perturbative results, for instance the contribution of instantons, from analytical continuation of the perturbative results! On the one hand, it is like black magic; on the other hand, I guess I shouldn't be too surprised since if we know all the perturbative expansions then we know everything about the equation of motion, which eventually contains all the non-perturbative results, so in principal the perturbative expansion should be able to generate the non-perturbative results. But that is only in principal. It is still jaw-dropping to see it actually happen.
+The most surprising result, at least for me, of resurgence theory in QFT is that one can uncover the non-perturbative results from perturbative expansion alone! Typically, calculating non-perturbative results requires every possible resource—like the topology of the vacuum manifold—anything but perturbative methods. However, resurgence theory enables us to derive non-perturbative results, such as instanton contributions, through the analytical continuation of perturbative data! In one sense, it feels like black magic; yet, perhaps I shouldn’t be so surprised, for if we fully understand the perturbative expansions to all orders, we essentially grasp everything about the equation of motion, which inherently includes all non-perturbative information. In theory, then, perturbative expansions should be capable of yielding non-perturbative insights. However, this is only in theory. It's still utterly astonishing to witness it in practice.
 
-And I guess it is impossible to make sense out of perturbation theory **without** knowing some of the resurgence theory. After all, is we consider enough terms in perturbative expansion, the power series in coupling actually diverges, so why would it make any sense to just consider the first few terms? Claiming they give the dominant results would also be ridiculous. The answer lies in resurgence theory.
+Speaking of understanding the quantum field theory, it is impossible to make sense of perturbation theory **without** knowing at least some facets of the resurgence theory. After all, considering that if we include more and more perturbative terms in any perturbative power expansion, the power series eventually diverges, so what sense does it make to just consider the first few terms? Claiming they give the dominant results would be ridiculous. However the miraculous agreement between perturbative QED and experiments clearly suggests that perturbation expansion makes sense, it is by no chance a coincidence. The answer to this question lies in resurgence theory.
 
 - - -
 
-H. Poincare mentions the so-called "a kind of misunderstanding between geometers and astronomers about the meaning of the word convergence", He proposed a simple example, the two series
+H. Poincare mentions the so-called "a kind of misunderstanding between geometers and astronomers about the meaning of the word convergence", He proposed a simple example: consider the following series
 
 $$
 \sum \frac{1000^{n}}{n!} \text{ and }\sum \frac{n!}{1000^{n}},
 $$
 
-Poincare says that for geometers, namely mathematicians in his time, the first one converges because at large $n$ the terms gets smaller and smaller. But for astronomers the first one is as good as divergent since the next terms doesn't get smaller until $n$ is larger than $1000$. For them the second series diverges because the first $1000$ terms decreases quickly. 
+Poincare said that for geometers, i.e. mathematicians in his time, the first one converges because at large $n$ the terms gets smaller and smaller. But for astronomers the first one is as good as divergent since the next terms doesn't get smaller until $n$ is larger than $1000$. For astronomers the second series diverges because the first $1000$ terms decreases quickly. 
 
 He then proposes to reconcile both points of view by clarifying the role that divergent series (in the sense of geometers) can play in the approximation of certain functions. This is the origin of the modern theory of asymptotic expansion. 
 
 - - -
 
-In this note we shall focus on `formal power series`, such as the Stirling series. Thus the previous example should be written as 
+In this note we shall focus on `formal power series`, sometimes also called the polynomial forms, such as the Stirling series. Thus the previous example should be written as 
 
 $$
 \sum \frac{1000^{n}}{n!}t^{n} \quad  \text{ and } \quad  \sum \frac{n!}{1000^{n}}t^{n}
@@ -55,19 +55,18 @@ $$
 
 where the first one has **infinite** **radius of convergence** while the second one has **zero radius of convergence**. For us, `divergent series` will usually mean a formal power series with zero radius of convergence.
 
-First we will speak of the `Borel-Laplace sumamtion`, which obtains a function from a divergent formal series. The relation between the obtained function and the original power series is an example of `asymptotic expansion of Gevrey type`. We shall also introduce the phenomenon for which J. `Ecalle` coined the name  `resurgence` at the beginning of the 1980s.
-
-- - -
-
+First we will introduce the `Borel-Laplace sumamtion`, which obtains a function from a divergent formal series. The relation between the obtained function and the original power series is an example of `asymptotic expansion of Gevrey type`. We shall also introduce the phenomenon for which `J. Ecalle` coined the name `resurgence` at the beginning of the 1980s.
 # 2. Analytic Continuation and Monodromy
 
-`Formal power series` is a generalization of normal power series, or polynomial, in the sense that we consider a power series of infinite order and don't care if it is convergent or not. Provided a ring $R$, consider the set of formal power series in $X$, denoted by $R[[X]]$, is another ring, in the same sense that all the polynomials over $R$ forms another ring (for example, multiply one polynomial to another gives as another polynomial). It is called the **ring of formal power series in the variable $X$ over $R$**.
+`Formal power series` is a generalization of normal power series, or polynomial, in the sense that we consider a power series of infinite order as a formal object and don't worry about evaluation yet, let alone if it is convergent. Provided a ring $R$, consider the set of formal power series in $X$ with coefficients from $R$, denoted by $R[[X]]$, is another ring, for example, multiply one polynomial to another and we have a new polynomial. It is called the **ring of formal power series in the variable $X$ over $R$**.
+
+First we run through some definitions and concepts that might be used in the future.
 
 We say a complex-valued function $f:\Omega \to \mathbb{C}$ is `analytic` if $f$ is represented by a convergent power series expansion on a neighborhood around every point $a\in\Omega$. 
 
 We say a complex-valued function $f:\Omega \to \mathbb{C}$ is `holomorphic` iff it satisfied Cauchy-Riemann relation, which is equivalent to $\partial f/\partial \overline{z}=0$ . If we regard $z$ and $\overline{z}$ as independent variables, a holomorphic function $f$ is only a function of $z$ not $\overline{z}$.
 
-A differential manifold is a topological space (given by closed sets and all that stuff) with differential structure, which practically means that you can find a way to do derivatives on the manifold. A n-Dimensional real (Complex) manifold is locally homeomorphic to $\mathbb{R}^N (\mathbb{C}^n)$, plus the condition that the transition from one chart (coordinate system) to another is `homeomorphic (holomorphic)` and vice versa.
+A differential manifold is a topological space (given by closed sets and all that stuff) with differential structure, which practically means that you can find a way to do derivatives on the manifold. A n-Dimensional real (Complex) manifold is locally homeomorphic to $\mathbb{R}^N (\mathbb{C}^n)$, plus the condition that the transition from one chart (coordinate system) to another is `homeomorphic (holomorphic)`.
 
 An `open disk` of radius $r$ around $z_ 0$ is the set of points $z$ on $\mathbb{C}$ that satisfies
 
@@ -81,9 +80,41 @@ $$
 0 < \left\lvert z-z_ 0 \right\rvert  < r.
 $$
 
-a deleted disk is also called a punctured disk.
+a deleted disk is also called a punctured disk, since the origin $z_  {0}$ has been taken out.
 
-A `complex atlas` on a 2-dimensional manifold is a set of holomorphically compatible charts which cover the manifold. Two complex charts $\mathfrak{U}$, $\mathfrak{U}'$ are said to be `analytically equivalent` if any atlas in $\mathfrak{U}$ is holomorphically compatible with any other atlas in $\mathfrak{U}'$.
+- - -
+
+A complex atlas on a 2-dimensional manifold is a collection of charts that cover the manifold, where each chart maps a portion of the manifold to an open subset of the complex plane $\mathbb{C}$, and the transition functions between overlapping charts are holomorphic (complex differentiable).
+
+Take the Riemann sphere (which we will talk about in more detail later) for example. The Riemann sphere $\mathbb{C}P^1$ is a classic example of a 2-dimensional complex manifold. It can be visualized as the complex plane plus a point at infinity. To see that all the infinities on a complex plain can be identified as a single point, notice that in $[z_ {0},z_ {1}]$ when $z_ {1}\to \infty e^{ i\theta }$ it is equivalent to $\left[ \frac{z_ {0}}{\infty e^{ i\theta }},1 \right]$, and no matter the angle $\theta$ it always goes to $[0,1]$. To construct a complex atlas for the Riemann sphere, we use two charts:
+
+1. **Chart $U_ 1$**: This chart covers the sphere minus the point at infinity. It maps each point $z$ in the complex plane $\mathbb{C}$ to itself:
+   $$
+   \phi_ 1: U_ 1 \rightarrow \mathbb{C}, \quad \phi_ 1(z) = z
+   $$
+   Here, $U_ 1 = \mathbb{C}$.
+
+2. **Chart $U_ 2$**: This chart covers the sphere minus the origin. It maps each point $z$ in the complex plane, excluding the origin, to its reciprocal:
+   $$
+   \phi_ 2: U_ 2 \rightarrow \mathbb{C}, \quad \phi_ 2(z) = \frac{1}{z}
+   $$
+   Here, $U_ 2 = \mathbb{C} \setminus \{0\}$.
+
+The two charts overlap on $U_ 1 \cap U_ 2 = \mathbb{C} \setminus \{0\}$. The transition functions between these charts are:
+- From $U_ 1$ to $U_ 2$:
+  $$
+  \phi_ 2 \circ \phi_ 1^{-1}(z) = \frac{1}{z}
+  $$
+- From $U_ 2$ to $U_ 1$:
+  $$
+  \phi_ 1 \circ \phi_ 2^{-1}(z) = \frac{1}{z}
+  $$
+
+Both transition functions are holomorphic, as the function $f(z) = \frac{1}{z}$ is complex differentiable wherever $z \neq 0$.
+
+To say that two complex atlases on a manifold are `analytically equivalent` means that the combined atlas they form (by taking all the charts from both atlases) is itself a complex atlas. This implies that the transition functions between the charts of one atlas and the charts of the other atlas are holomorphic wherever they overlap.
+
+- - -
 
 By a `complex structure` on a manifold, we mean an equivalent class of analytically equivalent complex atlases on the manifold. If we give a manifold a complex atlas, then we have given it a complex structure.
 
@@ -94,7 +125,7 @@ A Riemann surface is a pair $(X,\Sigma)$ where $X$ is a connected 2-dimensional 
 - $\mathbb{C} P^n$ Model: The (n+1)-tuple $z = (z^0,\cdots,z^n)$ defines a vector in space $\mathbb{C}^{n+1}$. Define a equivalence relation $\sim$ between two vectors,
 
   $$
-(u^0,\cdots,u^n) \sim (v^0,\cdots,v^n) \text{ if } \exists \lambda\neq 0 \in \mathbb{C} \text{ so that } \mathbf{u} = \lambda \mathbf{}{v}
+(u^0,\cdots,u^n) \sim (v^0,\cdots,v^n) \text{ if } \exists \lambda\neq 0 \in \mathbb{C} \text{ so that } \mathbf{u} = \lambda \mathbf{v}
 $$
 
 then
@@ -105,7 +136,7 @@ $$
 
 and the $n+1$ numbers are call `homogeneous coordinates` and is denoted by $[z^0,\cdots,z^n]$. We can make one of them constantly equal to 1, then only the rest are really coordinates, it is called `inhomogeneous coordinates`.
 
-`Meromouphic functions` are functions holomorphic except at poles. 
+`Meromouphic functions` are functions holomorphic except at a discrete set of isolated poles. 
 
 A `domain` in $\mathbb{C}$ is a connected non-empty open subset of $\mathbb{C}$.
 
@@ -113,7 +144,7 @@ A `domain` in $\mathbb{C}$ is a connected non-empty open subset of $\mathbb{C}$.
 
 **Riemann Sphere**
 
-There are two ways to think of $\overline{C} \equiv \mathbb{C} \cup \left\lbrace\infty\right\rbrace$, i.e. the complex plane compactified, by adding a point called infinity, $\infty$ is not included in $\mathbb{C}$.
+There are two ways to think of $\overline{C} \equiv \mathbb{C} \cup \left\lbrace\infty\right\rbrace$, namely the compactified complex plane, by adding a point called infinity $\infty$.
 
 - complex projective plane $\mathbb{C}P^1$.
 - a 2D sphere $\mathbb{S}^2$. The coordinates is given by the stereographic projection, except for the north pole $N$, $\pi : \mathbb{S}^2-\left\lbrace N \right\rbrace \to \mathbb{C}$.
@@ -126,11 +157,11 @@ $$
 
 where $\mathbb{C}^\ast$ is the punctured complex plane, $\mathbb{C}^\ast \equiv \mathbb{C} - \left\lbrace0\right\rbrace$. 
 
-**Theorem.** A function is meromorphic on $\mathbb{C}$ iff its restriction on $\mathbb{C}$ is a rational function.
+**Theorem.** A function is meromorphic on $\overline{\mathbb{C}}$ iff its restriction on $\mathbb{C}$ is a rational function.
 
 By the restriction of a function, we mean that to restrict the domain so that the it is well defined, no singularities. For example, the function $f:x\to 1/x$ has a singularity at $x=0$, then if we want something which is just like $f$ but has no singularity, we can just restrict the domain to $\mathbb{R} - \left\lbrace0\right\rbrace$, which is said to be a restriction of $f$.
 
-A `germ` of functions at a point $\mathbb{C}$ is a set of function defined in the neighborhood of $a$ which all have the same Taylor expansion. A more mathematical definition is as following.
+A `germ` of functions at a point $a\in\mathbb{C}$ is a set of function defined in the neighborhood of $a$ which all have the same Taylor expansion. A more mathematical definition is as following.
 
 Use $\mathcal{O}(a)$ to denote the set of functions which are defined in a neighborhood of $a$ and is holomorphic at $a$. Define an equivalence relation $\sim$ so that if $f\sim g$ for $f,g \in \mathcal{O}(a)$, then $f,g$ are identical on some neighborhood of a. The equivalence class is called a germ of holomorphic functions at $a$.
 

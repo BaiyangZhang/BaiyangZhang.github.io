@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-06-18-Yoneda-Lemma.md",
+                "file": "_posts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-06-18-Yoneda-Lemma.md",
+                "file": "_posts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-06-18-Yoneda-Lemma.md",
+                "file": "_posts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-06-18-Yoneda-Lemma.md"
+                "file": "_posts/2024-06-26-Introduction-to-Resurgence-Part-2.md"
               }
             }
           }
@@ -161,6 +162,15 @@
   },
   "active": "d27d91a855f7f209",
   "lastOpenFiles": [
+    "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
+    "reports/psresultmobile.svg",
+    "reports/psresultdesktop.svg",
+    "Templates/DateNote.md",
+    "Templates/plots.md",
+    "_posts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
+    "_posts/2024-06-15-Introduction-to-Resurgence-Part-1.md",
+    "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
+    "_posts/2024-06-18-Yoneda-Lemma.md",
     "img/naturalityCommute.png",
     "img/commutePolynomial.png",
     "img/naturalityInX.png",
@@ -169,8 +179,6 @@
     "img/naturalityInA.png",
     "img/Yoneda1.png",
     "Pasted image 20240621161152.png",
-    "_posts/2024-06-15-Introduction-to-Resurgence-Part-1.md",
-    "_posts/2024-06-18-Yoneda-Lemma.md",
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-3.md",
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-2.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
@@ -190,11 +198,6 @@
     "_posts/2023-07-20-Gauss-Bonnet-and-Index-Theorem.md",
     "_posts/2023-07-18-Mikhail-Bakunin.md",
     "_posts/2023-07-17-历史笔记若干.md",
-    "_posts/2023-07-12-Coset-Spaces.md",
-    "_posts/2023-07-09-Fiber-Bundles-and-Principal-Bundles.md",
-    "_posts/2023-07-07-Quartic-Time-Derivative.md",
-    "_posts/2023-07-03-The-Electromagnetic-Connection.md",
-    "img/compositeFunction.png",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",

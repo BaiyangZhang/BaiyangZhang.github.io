@@ -1,6 +1,6 @@
 {
-  "findText": "\\\\",
-  "replaceText": "\\",
+  "findText": "_",
+  "replaceText": "_ ",
   "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,
