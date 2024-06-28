@@ -266,10 +266,12 @@ $$
 The contraction is where different choice of $m$ generates different results. Let's write the contraction at $m$ as $C_ {m}\left\lbrace \cdots \right\rbrace$, we have 
 
 $$
+\boxed{ 
 \begin{align*}
 \phi^{2}(\vec{x}) &= :\phi^{2}(\vec{x}):_ {m} + C_ {m}\left\lbrace \phi^{2}(\vec{x}) \right\rbrace , \\
 C_ {m}\left\lbrace \phi^{2}(\vec{x}) \right\rbrace &= [\phi^{-},\phi^{+}] = \int \frac{d^3p}{(2\pi)^{3}} \, \frac{1}{2\omega_ {p,m}}. 
 \end{align*}
+}
 $$
 
 Recall that $\phi^{2}$ is $m$-independent, while the normal ordering and the contraction are $m$-dependent. This gives us a means to connect normal ordering at different mass $m$ and $m_ {0}$, since 
@@ -290,6 +292,14 @@ $$
 where $C_ {m}$ is short for $C_ {m}(\phi^{2})$, a short-handed notation we will use extensively for the rest of the note. $C_ {m}$ is a c-number, usually given by a divergent integral.
 
 Similarly, 
+
+$$
+\boxed{ 
+(\partial_ {i}\phi)^{2} = :(\partial_ {i}\phi)^{2} : +  \int \frac{d^{3}p}{(2\pi)^{3}} \,\left( \frac{\vec{p}^{2}}{2\omega_ {p,m}} \right)
+}
+$$
+
+and
 
 $$
 \boxed{ 
@@ -367,19 +377,38 @@ Recall that the **defining expression** for the Hamiltonian density reads
 
 $$
 \begin{align*}
-\hat{H}(\vec{x}) &= \int d^{3}x \,  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}}, \\
+\hat{H}(\vec{x}) &= \int d^{3}x \,  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}} = \int d^{3}x \, :\hat{\mathcal{H}}:_ {m} , \\
 \hat{\mathcal{H}}^{0}(\vec{x}) &= \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m_ {0}^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda_ {0}}{4} \phi^{4}(\vec{x}) + A,
 \end{align*}
 $$
 
-We want to normal order it to get rid of the infinite zero point energy. The thing is, there are two obvious options for the mass scale at which the normal ordering is done: the bare mass $m_ {0}$ and the "physical" mass $m$. They are connected by 
+We want to normal order it to get rid of the infinite zero point energy. The thing is, there are two obvious options for the mass scale at which the normal ordering is done: the bare mass $m_ {0}$ and the "physical" mass $m$. At $m_ {0}$ we have 
 
 $$
 \begin{align*}
-  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}} &= :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m} + \frac{3}{2}\lambda_ {0} I :\phi^{2}(\vec{x}):_ {m} + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2} \\
+\hat{\mathcal{H}}^{0}(\vec{x}) &= :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}}  + \frac{3}{2}\lambda_ {0} C_ {m_ {0}} :\phi^{2}(\vec{x}):_ {m_ {0}} + \frac{3}{4} \lambda_ {0} C_ {m_ {0}}^{2} - \frac{m_ {0}^{2}}{4}C_ {m_ {0}} \\
+  &\;\;\;\; + \frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,   \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  .
+\end{align*} 
+$$
+
+It is connected with the normal ordering at $m$ by
+
+$$
+\begin{align*}
+  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}} &= :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m} + \frac{3}{2}\lambda_ {0} I :\phi^{2}(\vec{x}):_ {m} + \frac{3}{4} \lambda_ {0} I^{2} - \frac{m_ {0}^{2}}{4}I \\
   &\;\;\;\; + \frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) .
 \end{align*} 
 $$
+
+Since, by definition, $:\hat{\mathcal{H}}:_ {m}=:\hat{\mathcal{H}}^{0}:_ {m_ {0}}$, we have 
+
+$$
+\begin{align*}
+\hat{\mathcal{H}}(\vec{x})&= \hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) + \frac{3}{4} \lambda_ {0} I^{2} - \frac{m_ {0}^{2}}{4}I \\
+  &\;\;\;\; + \frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) 
+\end{align*}
+$$
+
 
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
 
