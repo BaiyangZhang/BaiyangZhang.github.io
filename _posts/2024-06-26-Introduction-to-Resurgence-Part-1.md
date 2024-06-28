@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Resurgence Part 1
-date: 2024-06-15
+date: 2024-06-26
 author: Baiyang Zhang
 catalog: true
 tags:
