@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md"
+                "file": "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md"
               }
             }
           }
@@ -160,12 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d27d91a855f7f209",
+  "active": "85934409c70af44e",
   "lastOpenFiles": [
+    "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2024-06-26-Introduction-to-Resurgence-Part-1.md",
     "2024-06-02.md",
     "_posts/2024-06-18-Yoneda-Lemma.md",
-    "_posts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
+    "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "reports/psresultmobile.svg",
     "reports/psresultdesktop.svg",
@@ -184,7 +184,6 @@
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-2.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_posts/2023-12-6-Transseries-Lecture-1.md",
-    "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
     "_posts/2024-06-18-Basic-Category-Theory-Lecture-3.md",
     "Untitled 1.md",

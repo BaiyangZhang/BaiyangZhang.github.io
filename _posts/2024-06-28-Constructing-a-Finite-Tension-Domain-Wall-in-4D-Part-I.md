@@ -406,8 +406,6 @@ $$
 As $\Lambda \to \infty$, if $Z \to \infty$ (which is the case for $\phi^4$ theory in 4D), the renormalized coupling $\lambda$ must go to zero to keep $\lambda_ 0$ fixed.
 
 In summary, saying that $\phi^4$ theory is "trivial" means that, after accounting for the effects of renormalization, the theory becomes non-interacting as the UV cutoff is taken to infinity. This implies that any interacting $\phi^4$ theory in four dimensions cannot remain interacting at all energy scales and instead becomes a free theory at very high energies. This phenomenon is an important aspect of understanding the limitations and behaviors of quantum field theories in different dimensions.
-
-
 # Perturbative Expansion of the Hamiltonian
 
 Since we want to cancel divergences in a perturbative way, that is, order-by-order in terms of the coupling $\lambda$, it makes sense that when $\Lambda$ is involved, we should still first count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group everything of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
@@ -479,6 +477,7 @@ $$
 where $g:= \sqrt{ \lambda }$ for both bare and renormalized cases.
 
 - - -
+
 
 # Spontaneous Symmetry Breaking
 
