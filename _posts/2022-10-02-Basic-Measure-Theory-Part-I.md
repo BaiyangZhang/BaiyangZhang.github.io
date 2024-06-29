@@ -24,33 +24,33 @@ tags:								#标签
 At the end of the 19th century, mathematicians extensively discussed weather you could take the limit out of the integral (Riemannian integral, to be exact), namely weather we have 
 
 $$
-\int_{-\infty}^{\infty} \lim_{ n \to \infty } f_{n}(x) \, dx 
-=\lim_{ n \to \infty } \int_{-\infty}^{\infty} f_{n}(x) \, dx.
+\int_ {-\infty}^{\infty} \lim_ { n \to \infty } f_ {n}(x) \, dx 
+=\lim_ { n \to \infty } \int_ {-\infty}^{\infty} f_ {n}(x) \, dx.
 $$
 
 
-Here $f_{n}$ is a **non-uniformly** convergent sequence of functions which are Riemann-integrable. Recall the meaning of uniformly convergence,
+Here $f_ {n}$ is a **non-uniformly** convergent sequence of functions which are Riemann-integrable. Recall the meaning of uniformly convergence,
 
 **Definition.** A sequence of functions 
 
-$$\{ f_{n}(x) \}$$
+$$\{ f_ {n}(x) \}$$
 
 is said to converge uniformly to $f$ on a set $S$ if for every $\epsilon > 0$ there exists an N such that for all $n>N$ we have 
 
 $$
-\text{sup} \left\lvert f_{n}(x) - f(x) \right\rvert < \epsilon \, \text{ for all } x\in S, 
+\text{sup} \left\lvert f_ {n}(x) - f(x) \right\rvert < \epsilon \, \text{ for all } x\in S, 
 $$
 
-where sup is the supremum. Uniform convergence means that for a given $\epsilon$, one $N$ works for every $x$. You can regard $\left\lvert f_{n}(x) - f(x) \right\rvert$ as a set where each element is given by different $x$, then sup$\left\lvert f_{n}(x) - f(x) \right\rvert$ is the supremum of this set. 
+where sup is the supremum. Uniform convergence means that for a given $\epsilon$, one $N$ works for every $x$. You can regard $\left\lvert f_ {n}(x) - f(x) \right\rvert$ as a set where each element is given by different $x$, then sup$\left\lvert f_ {n}(x) - f(x) \right\rvert$ is the supremum of this set. 
 
-*Uniform convergence* is in contrast to *pointwise convergence*. Pointwise convergence means that  $\lim_{ n \to \infty } f_{n}(x) = f(x)$ for every $x$ in the domain of $f$. Note that, this limit process is defined at each point, namely for every $x$, there exists $N(x)$ which depends on $x$, such that $\left\lvert f_{n} - f \right\rvert,\,n>N$ is smaller than a given $\epsilon$. This is different from the uniform convergence, where the $N$ is independent of $x$, once $N$ is given it must apply for all $x$ in the domain. 
+*Uniform convergence* is in contrast to *pointwise convergence*. Pointwise convergence means that  $\lim_ { n \to \infty } f_ {n}(x) = f(x)$ for every $x$ in the domain of $f$. Note that, this limit process is defined at each point, namely for every $x$, there exists $N(x)$ which depends on $x$, such that $\left\lvert f_ {n} - f \right\rvert,\,n>N$ is smaller than a given $\epsilon$. This is different from the uniform convergence, where the $N$ is independent of $x$, once $N$ is given it must apply for all $x$ in the domain. 
 
 Uniform convergence is a stronger condition than pointwise convergence, especially that uniform convergence preserves the **continuity**,
 
-**Theorem.** If the functions $f_{n}$ are continuous and they uniformly converges to $f(x)$, namely 
+**Theorem.** If the functions $f_ {n}$ are continuous and they uniformly converges to $f(x)$, namely 
 
 $$
-\lim_{ n \to \infty } \text{sup} \left\lvert f_{n}(x) - f(x) \right\rvert = 0,
+\lim_ { n \to \infty } \text{sup} \left\lvert f_ {n}(x) - f(x) \right\rvert = 0,
 $$
 
 Then $f(x)$ is also continuous on the domain.
@@ -61,11 +61,11 @@ On the other hand, pointwise convergence does not preserve continuity. We will g
 
 Consider function
 
-$$f_{n}(x) : x \mapsto x^n$$
+$$f_ {n}(x) : x \mapsto x^n$$
 
-defined on $[0,1)$ . Since as long as $x<1$, there exists $N$ such that $x^n < \epsilon$, $f_{n}$ pointwise converges to step function $x \mapsto 0$ on $[0,1)$ and $f(1) = 1$. However, we know that that can't be the case for uniform convergence since $f_{n}(x)$ is continuous on $[0,1]$ but the step function is not, and uniform convergence must preserve the continuity. Indeed, given $N\in \mathbb{N}$, no matter how large it is, there exists $\delta$ small enough such that $(1-\delta)^N = f_{N}(1-\delta)$ is some value between 0 and 1. So, the set made by $f_{N}(x) - 0$ on $[0,1)$, namely 
+defined on $[0,1)$ . Since as long as $x<1$, there exists $N$ such that $x^n < \epsilon$, $f_ {n}$ pointwise converges to step function $x \mapsto 0$ on $[0,1)$ and $f(1) = 1$. However, we know that that can't be the case for uniform convergence since $f_ {n}(x)$ is continuous on $[0,1]$ but the step function is not, and uniform convergence must preserve the continuity. Indeed, given $N\in \mathbb{N}$, no matter how large it is, there exists $\delta$ small enough such that $(1-\delta)^N = f_ {N}(1-\delta)$ is some value between 0 and 1. So, the set made by $f_ {N}(x) - 0$ on $[0,1)$, namely 
 
-$$\{ f_{N}(x) - 0 \mid x \in [0,1)  \}$$
+$$\{ f_ {N}(x) - 0 \mid x \in [0,1)  \}$$
 
 is $[0,1)$ and the supremum of it is not zero everywhere, hence there is no uniform convergence. 
 
@@ -114,10 +114,10 @@ Accordingly, given a map $f$ from $(\mathcal{A},X)$ to $(\mathcal{B},Y)$, it is 
 
 **Theorem.** Let $f:(X,\mathcal{A}) \to (Y,\mathcal{B})$, and let $\mathcal{E}$ be a class of subsets of $Y$ generating the $\sigma$-algebra on $\mathcal{B}$; then $f$ is measurable if $f^{-1}(\mathcal{E})$ is a subset of $\mathcal{A}$.
 
-We already know that the $\sigma$-algebra generated by $\mathcal{E}$ is made from countable times of union, intersection and complement operations, and the inverse map $f^{-1}$ preserves these operations, for instance, for $B_{1,2} \subset Y$, we have
+We already know that the $\sigma$-algebra generated by $\mathcal{E}$ is made from countable times of union, intersection and complement operations, and the inverse map $f^{-1}$ preserves these operations, for instance, for $B_ {1,2} \subset Y$, we have
 
 $$
-f^{-1} (B_{1} \cup B_{2}) = f^{-1} (B_{1}) \cup F^{-1}(B_{2}) .
+f^{-1} (B_ {1} \cup B_ {2}) = f^{-1} (B_ {1}) \cup F^{-1}(B_ {2}) .
 $$
 
 Hence we have 
@@ -128,14 +128,16 @@ $$
 f^{-1}(S(\mathcal{E})) = S(f^{-1} (\mathcal{E})).
 $$
 
-We can define the product of the measurable spaces. Let $(X,\mathcal{A}), (Y,\mathcal{B})$ be two measurable spaces, then the space $(X \times Y)$ with $\sigma$-algebra generated by $\mathcal{A} \times \mathcal{B}$ is called the product of the measurable spaces. In the product space, the measurable sets are given by the products of two measurable sets, that is intuitive. 
+- - -
+
+We can also define the product of the measurable spaces. Let $(X,\mathcal{A})$ and $(Y,\mathcal{B})$ be two measurable spaces, then the space $(X \times Y)$ with $\sigma$-algebra generated by $\mathcal{A} \times \mathcal{B}$ is called the product of the measurable spaces. In the product space, the measurable sets are given by the products of two measurable sets, that is intuitive. 
 
 
-After all the definitions and theorems, let's actually try to construct a $\sigma$-algebra. One of the most famous example is the *Borel set*. Given a topological space $X$ with a set $\mathcal{O}$ of open sets, the $\sigma$-algebra $\mathcal{B}$ of $X$ is defined to be generated by $\mathcal{O}$.  The measurable set in $\mathcal{B}$ are called Borel sets of $X$. Since the complement of open sets are close sets, and the complement of a measurable set is also measurable, it follows that the close sets are also measurable.  So are all the countable intersection and unions of the open and closed sets. If $X = \mathbb{R}$, the $\sigma$-algebra $\mathcal{B}$ is generated by the set $(a,\infty)$.
+After all the definitions and theorems, let's actually try to construct a $\sigma$-algebra. One of the most famous example is the *Borel set*. Given a topological space $X$ with a set $\mathcal{O}$ of open sets, the $\sigma$-algebra $\mathcal{B}$ of $X$ is defined as the sigma algebra generated by $\mathcal{O}$.  The measurable set in $\mathcal{B}$ are called Borel sets of $X$. Since the complement of open sets are close sets, and the complement of a measurable set is also measurable, it follows that the close sets are also measurable.  So are all the countable intersection and unions of open and closed sets. If $X = \mathbb{R}$, the $\sigma$-algebra $\mathcal{B}$ is generated by the sets of form $(a,\infty)$.
 
 Any topological space can be regarded as measurable sets where the Borel sets play the role of $\sigma$-algebra. Let $X,Y$ be two topological spaces, a measurable map $f:X\to Y$ is said to be Borel measurable. For instance, any continuous map is Borel measurable. 
 
-A function is in general a map from any space $X$ to $\mathbb{R},\mathbb{C}$. Convince yourself that a function is measurable if for any $a \in \mathbb{R}$, the set 
+A function is in general a map from a space $X$ to $\mathbb{R},\mathbb{C}$. Convince yourself that a function is measurable if for any $a \in \mathbb{R}$, the set 
 
 $$\{ x \mid f(x) >a \}$$
 
@@ -149,17 +151,17 @@ $$\{ x\mid f(x) = a \}$$
 
 is a Borel set.
 
-**Definition.** The characteristic function $1_{A}$ of a set $A$ is defined as
+**Definition.** The characteristic function $1_ {A}$ of a set $A$ is defined as
 
 $$
-1_{A}(x) = 
+1_ {A}(x) = 
 \begin{cases}
 1  & x\in A, \\
 0  & x \notin A.
 \end{cases}
 $$
 
-And $1_{A}$ is only measurable if $A$ is measurable. 
+And $1_ {A}$ is only measurable if $A$ is measurable. 
 
 A complex function is measurable if both the real and imaginary parts are measurable respectively. 
 
@@ -169,23 +171,23 @@ A complex function is measurable if both the real and imaginary parts are measur
 2. if ${1}/{f}$ is defined everywhere, it is also measurable,
 3. $f+g, fg$ are both measurable. 
 
-Before we continue with more measure theory, we stop to introduce some more terminologies. Given a partially ordered set $P$. Partially ordered sets, or posets, means that  not every pair of elements needs to be comparable, as compare to total orders, in which every pair of elements are comparable. For a subset $S$ of $P$, we define
+Before we continue with more measure theory, we stop to introduce some more terminologies. Let $P$ be a partially ordered set. A partially ordered sets, or poset for short, means that  not every pair of elements needs to be comparable, in contrast to a total ordered set (such as a real number axis with order $\leq$), in which every pair of elements are comparable. For a subset $S$ of $P$, we define
 
 - Supremum. The supremum of $S$, $\text{sup } S$ is the least element of $P$ that is greater than or equal to each element in $S$. It is sometimes referred to as the least upper bound (LUB).
 - Infimum. The infimum of $S$, $\text{inf } S$ is the largest element of P that is smaller than or equal to each element in $S$. It is sometimes referred to as the greatest lower bound (GLB). 
 
-Note that neither $\text{sup } S$ or $\text{inf }S$ needs not to be in $S$, as contrast to minimum and maximum.  Supremum and infimum are more useful in analysis because they apply to special sets which may not have maximum or minimum. For example, the set of positive real numbers $\mathbb{R}^+$ (not including 0) does not have a minimum, since any element in $\mathbb{R}^+$ can be divided by two resulting in a smaller number still in $\mathbb{R}^+$. However $\mathbb{R}^+$ does has exactly one infimum, 0.
+Note that neither $\text{sup } S$ nor $\text{inf }S$ need to be contained in $S$, in contrast to minimum and maximum.  Supremum and infimum are more useful in analysis because they apply to special sets which may not have maximum or minimum. For example, the set of positive real numbers $\mathbb{R}^+$ (not including 0) does not have a minimum, since any element in $\mathbb{R}^+$ can be divided by two resulting in a smaller number still in $\mathbb{R}^+$. However $\mathbb{R}^+$ does has exactly one infimum, 0.
 
-There are a pair of related concepts, lim sup and lim inf. Let $s_{n}$ be a sequence in $\mathbb{R}$, we define 
+There are a pair of related concepts, lim sup and lim inf. Let $s_ {n}$ be a sequence in $\mathbb{R}$, we define 
 
 $$
-\text{lim sup } s_{n} = \lim_{ N \to \infty } \text{sup } \{ s_{n} \mid n \geq  N \}
+\text{lim sup } s_ {n} = \lim_ { N \to \infty } \text{sup } \{ s_ {n} \mid n \geq  N \}
 $$
 
 and 
 
 $$
-\text{lim inf } s_{n} = \lim_{ N \to \infty } \text{inf } \{ s_{n} \mid n\geq N \}.
+\text{lim inf } s_ {n} = \lim_ { N \to \infty } \text{inf } \{ s_ {n} \mid n\geq N \}.
 $$
 
 In other words, lim sup and lim inf of a sequence is the supremum or infimum of all the terms larger than $N$, where $N$ is taken to be $\infty$ eventually. 
@@ -195,7 +197,7 @@ In other words, lim sup and lim inf of a sequence is the supremum or infimum of 
 2. only takes finite number of values,   
 then $\phi$ is said to be a simple function. 
 
-For instance, if $A$ is a measurable set, then the characteristic function $1_{A}$ is a simple function. 
+For instance, if $A$ is a measurable set, then the characteristic function $1_ {A}$ is a simple function. 
 
 The sum and product of two simple functions are simple functions. 
 
@@ -205,18 +207,14 @@ This is similar in the case of Riemann integral of a function.
 
 # 3. Positive Measure
 
-Measure is the generalization of concepts such as length, weight, probability. Thus it is natural to supposed the the measure assign to a set to be positive definite. 
+Measure is the generalization of concepts such as length, weight, probability. It is natural to supposed that the measure assigned to a set should be positive definite. 
 
 **Definition.**  Let $(X,\mathcal{A})$ be a measurable space, a *positive measure* on $(X,\mathcal{A})$ is a mapping $\mu:\mathcal{A}\to \mathbb{R}^+$ such that
 1. the measure of the empty set is zero, $\mu(\emptyset) = 0$.
-2. If 
-
-$$\{A_{n}\}$$
-
-is a countable collection of pairwise disjoint elements of $\mathcal{A}$, then 
+2. If $\left\lbrace A_  {n} \right\rbrace$ is a countable collection of pairwise disjoint elements of $\mathcal{A}$, then 
 
 $$
-\mu\left(\bigcup_{n}A_{n}\right) = \sum_{n} \mu(A_{n}).
+\mu\left(\bigcup_ {n}A_ {n}\right) = \sum_ {n} \mu(A_ {n}).
 $$
 
 The triple $(X,\mathcal{A},\mu)$ is called a measure space. Recall that $(X, \mathcal{A})$ , namely a space with a sigma algebra, is called a measurable space. A tiny and perhaps insignificant difference in naming. 
@@ -234,18 +232,18 @@ There are different quantities which can be used as measure, may it be the lengt
 
 - - -
 
-- **Lebesgue measure**. Lebesgue measure is essential to define Lebesgue integral. Given a function from $\mathbb{R}$ to $\mathbb{R}$, we need to generalized the concept of length for a given subset of $\mathbb{R}$, no matter how weird it is, such as the set of all the rational points. On the other hand, the generalized concept of length should be invariant under translation, and satisfy other naturalness requirements. Let $A$ be a subset of $\mathbb{R}$, we first find some open sets to cover $A$ fully, namely find $I_{j},j\in J$ so that $A \subset \cup_{j\in J} I_{j}$, where $J$ is some index set. Note that $I_{j}, j\in J$ is *not* a partition of $A$, far from it, the unions of all the $I_{j}$ just need to cover $A$. As you can imagine, the unions of all the $I$'s will most likely over-cover $A$, then if we sum the measure of all $I$'s, we will get a measure which is larger than the measure of actual $A$. The real size, or measure, of $A$ is roughly speaking given by the lower bound of the measure of all the possible $I_{j}$'s. Out of this spirit we define the outer measure of $A$,
+- **Lebesgue measure**. Lebesgue measure is essential to define Lebesgue integral. Given a function from $\mathbb{R}$ to $\mathbb{R}$, we need to generalized the concept of length for a given subset of $\mathbb{R}$, no matter how weird it is, such as the set of all the rational points. On the other hand, the generalized concept of length should be invariant under translation, and satisfy other naturalness requirements. Let $A$ be a subset of $\mathbb{R}$, we first find some open sets to cover $A$ fully, namely find $I_ {j},j\in J$ so that $A \subset \cup_ {j\in J} I_ {j}$, where $J$ is some index set. Note that $I_ {j}, j\in J$ is *not* a partition of $A$, far from it, the unions of all the $I_ {j}$ just need to cover $A$. As you can imagine, the unions of all the $I$'s will most likely over-cover $A$, then if we sum the measure of all $I$'s, we will get a measure which is larger than the measure of actual $A$. The real size, or measure, of $A$ is roughly speaking given by the lower bound of the measure of all the possible $I_ {j}$'s. Out of this spirit we define the outer measure of $A$,
 
 $$
-m^\ast (A) = \text{inf } \sum_{j\in J} l(I_{j})
+m^\ast (A) = \text{inf } \sum_ {j\in J} l(I_ {j})
 $$
 
 
 where $l(I)$ denotes the length of $I$, and the infimum is taken over all finite or countable collections of open intervals 
 
-$$\{ I_{j} \mid j\in J \}$$
+$$\{ I_ {j} \mid j\in J \}$$
 
-such that $A\subseteq \cup_{j\in J} I_{j}$. Although the outer measure is not really a measure, it still satisfies some of the properties that real measures satisfy, for instance,
+such that $A\subseteq \cup_ {j\in J} I_ {j}$. Although the outer measure is not really a measure, it still satisfies some of the properties that real measures satisfy, for instance,
 1. $m^\ast(\emptyset) = 0$,
 2. $m^\ast(A) \geq 0$,  
 3. 
@@ -259,15 +257,15 @@ Note that the outer measure is defined for all subsets of $\mathbb{R}$, no matte
 We then define the inner measure of $A$, which in a sense is the dual notion of outer measure. The outer notion approaches the real size of $A$ from above, and the inner measure approaches the real size of $A$ from below. The inner measure of $A$ is 
 
 $$
-	m_{\ast } (A) = \text{sup } m^\ast (K), \quad K \text{ is closed and } K\subseteq A, 
+	m_ {\ast } (A) = \text{sup } m^\ast (K), \quad K \text{ is closed and } K\subseteq A, 
 $$
 
-The supremum is taken over all such subsets $K$. For any $A$ we have $m_{\ast} A \leq m^\ast(A)$.
+The supremum is taken over all such subsets $K$. For any $A$ we have $m_ {\ast} A \leq m^\ast(A)$.
 
 A subset $A\subset \mathbb{R}$ is said to be Lebesgue measurable if 
 
 $$
-m_{\ast } A = m^\ast  A < \infty.
+m_ {\ast } A = m^\ast  A < \infty.
 $$
 
 This finite number is called the Lebesgue measure of $A$. It is denoted $m(A)$, $m$ for measure.   
@@ -292,27 +290,27 @@ Note that this is different from the set of all the irrational numbers in $[0,1]
 
 Each equivalence class is $(x+\mathbb{Q})\cap [0,1]$ for some $x\in [0,1]$. Any element in an equivalence class can be the representation of that class. The set $V$ can also be seen as the set of all the representative elements, one for each equivalence class. We shall prove that $V$ is not Lebesgue measurable. 
 
-$V$ is an example of so-called Vitali set. a Vitali set is an elementary example of a set of [real numbers](https://en.wikipedia.org/wiki/Real_number "Real number") that is not [Lebesgue measurable](https://en.wikipedia.org/wiki/Lebesgue_measure "Lebesgue measure"), found by [Giuseppe Vitali](https://en.wikipedia.org/wiki/Giuseppe_Vitali "Giuseppe Vitali") in 1905.[^1] The Vitali theorem is the [existence theorem](https://en.wikipedia.org/wiki/Existence_theorem "Existence theorem") that there are such sets. There are [uncountably many](https://en.wikipedia.org/wiki/Uncountably_many "Uncountably many") Vitali sets, and their existence depends on the [axiom of choice](https://en.wikipedia.org/wiki/Axiom_of_choice "Axiom of choice").
+$V$ is an example of so-called Vitali set. a Vitali set is an elementary example of a set of [real numbers](https://en.wikipedia.org/wiki/Real_ number "Real number") that is not [Lebesgue measurable](https://en.wikipedia.org/wiki/Lebesgue_ measure "Lebesgue measure"), found by [Giuseppe Vitali](https://en.wikipedia.org/wiki/Giuseppe_ Vitali "Giuseppe Vitali") in 1905.[^1] The Vitali theorem is the [existence theorem](https://en.wikipedia.org/wiki/Existence_ theorem "Existence theorem") that there are such sets. There are [uncountably many](https://en.wikipedia.org/wiki/Uncountably_ many "Uncountably many") Vitali sets, and their existence depends on the [axiom of choice](https://en.wikipedia.org/wiki/Axiom_ of_ choice "Axiom of choice").
 
-[^1]: https://en.wikipedia.org/wiki/Vitali_set#cite_note-1
+[^1]: https://en.wikipedia.org/wiki/Vitali_ set#cite_ note-1
 
-Let $\mathbb{Q}_ {[-1,1]}$ be the set of rational numbers belonging to the interval $[-1,1]$. Let $r_{n},\, n \in \mathbb{N}$ be the elements in $\mathbb{Q}_ {[-1,1]}$, it is possible to label rational numbers using $\mathbb{N}$ because rational numbers are *countably* infinite. Denote $V_{n}:=V + r_{n}$, namely shifting $V$ by some rational number, we have
-1. $m^\ast(V_{n}) = m^\ast (V)$, due to the translational invariance of outer measure,
-2. $[0,1]\subset \cup_{n=1}^\infty V_{n} \subset [-1,2]$,
-3. if $n\neq m$, then $V_{n} \neq V_{m}$.
+Let $\mathbb{Q}_  {[-1,1]}$ be the set of rational numbers belonging to the interval $[-1,1]$. Let $r_ {n},\, n \in \mathbb{N}$ be the elements in $\mathbb{Q}_  {[-1,1]}$, it is possible to label rational numbers using $\mathbb{N}$ because rational numbers are *countably* infinite. Denote $V_ {n}:=V + r_ {n}$, namely shifting $V$ by some rational number, we have
+1. $m^\ast(V_ {n}) = m^\ast (V)$, due to the translational invariance of outer measure,
+2. $[0,1]\subset \cup_ {n=1}^\infty V_ {n} \subset [-1,2]$,
+3. if $n\neq m$, then $V_ {n} \neq V_ {m}$.
 
 Now the question is, is the set $V$ measurable. As you might have guessed, the answer is no, but it is not supposed to be obvious. We will prove this by proof of contradiction. 
 
-Suppose $V$ is Lebesgue measurable, then each $V_{i}$ is also measurable since they are just $V$ translated by $r_{i}$. We know from the property $[0,1]\subset \cup_{n=1}^\infty V_{n} \subset [-1,2]$, take the measure of these sets we get 
+Suppose $V$ is Lebesgue measurable, then each $V_ {i}$ is also measurable since they are just $V$ translated by $r_ {i}$. We know from the property $[0,1]\subset \cup_ {n=1}^\infty V_ {n} \subset [-1,2]$, take the measure of these sets we get 
 
 $$
-1 \leq \sum_{n}^\infty V_{n} \leq 3,
+1 \leq \sum_ {n}^\infty V_ {n} \leq 3,
 $$
 
-But we have $m(V_{n}) = m(V)$, thus
+But we have $m(V_ {n}) = m(V)$, thus
 
 $$
-1 \leq \sum_{n}^\infty V = m(V) \times \infty \leq 3,
+1 \leq \sum_ {n}^\infty V = m(V) \times \infty \leq 3,
 $$
 
 However, the infinite copy of any constant can only be zero or infinity, thus $m(V)$ does not exist. In other words, $V$ is not Lebesgue measurable.
