@@ -13,7 +13,14 @@ tags:								#标签
     - measureTheory
 ---
 
-### Integral of Measurable Functions
+# Table of Contents
+
+- [1. Integral of Measurable Functions](#1-integral-of-measurable-functions)
+- [2. Lebesgue's Dominated Convergence Theorem](#2-lebesgues-dominated-convergence-theorem)
+- [3. Fubini's Theorem](#3-fubinis-theorem)
+		- [3.1. Notes](#31-notes)
+
+# 1. Integral of Measurable Functions
 
 In what follows, we suppose that all function are measurable and defined on the measure space $(X,\mathcal{A},\mu)$. 
 
@@ -169,7 +176,7 @@ is not integrable with respect to the Lebesgue measure on $\mathbb{R}^+$ since $
 
 We know that $\frac{\sin x}{x}$ is conditionally convergent, such notion does not exist in Lebesgue theory of integral. 
 
-### Lebesgue's Dominated Convergence Theorem
+# 2. Lebesgue's Dominated Convergence Theorem
 
 According to my mathematical friends, the dominated convergence theorem is one of the most important results of Lebesgue's integration theorem. It tells us how to deal with the limit of a sequence of functions under the integral sign, and it might be trickier than some physicist might have thought.
 
@@ -379,7 +386,7 @@ $$
 
 and the absolute value is where the problem arises. This function is not differentiable at $x=0$ but infinitely differentiable at the complement of the origin.
 
-### Fubini's Theorem
+# 3. Fubini's Theorem
 
 We often meet double integrals, that is integrals of measurable functions defined on some product space $X \times Y$ where both $X$ and $Y$ are measurable spaces, $(X,\mathcal{A},\mu)$ and $(Y, \mathcal{B},\nu)$. The product $\sigma$-algebra is denoted $\mathcal{A} \otimes \mathcal{B}$ and product measure $\mu \otimes \nu$. 
 
@@ -613,7 +620,7 @@ As we can see, Lebesgue's theory is kind of a generalization of Riemann's theory
 
 **Theorem** A function defined on a *bounded* interval $[a,b]$ is Riemann integrable if and only if it is bounded and continuous *almost everywhere*.
 
-### Notes
+### 3.1. Notes
 
 Given a map $f$ from a set $X$ into a set $Y$, the preimage of a $\sigma$-algebra in $Y$ is a $\sigma$-algebra in $X$ but the inverse is not necessary true. However, if $\mathcal{A}$ is a $\sigma$-algebra in $X$, the set of all the subsets of $Y$ such that their preimage is in $\mathcal{A}$ forms as $\sigma$-algebra and is called the induced $\sigma$-algebra.
 

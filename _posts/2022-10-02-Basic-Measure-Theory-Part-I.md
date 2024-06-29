@@ -13,7 +13,13 @@ tags:								#标签
     - measureTheory
 ---
 
-### Pointwise Convergence vs. Uniform Convergence
+# Table of Contents
+
+- [1. Pointwise Convergence vs. Uniform Convergence](#1-pointwise-convergence-vs-uniform-convergence)
+- [2. When is a Function Measurable?](#2-when-is-a-function-measurable)
+- [3. Positive Measure](#3-positive-measure)
+
+# 1. Pointwise Convergence vs. Uniform Convergence
 
 At the end of the 19th century, mathematicians extensively discussed weather you could take the limit out of the integral (Riemannian integral, to be exact), namely weather we have 
 
@@ -67,7 +73,7 @@ Anyway, after some close analysis of integrals, Lebesgue and others came up with
 
 The concept of **measure** plays a crucial role in Lebesgue's definition of the integral. A measure is a generalization of the concept of length, and there are more than one way to define measure, they all need to satisfy certain conditions, the so-called $\sigma$-algebra.
 
-### When is a Function Measurable?
+# 2. When is a Function Measurable?
 
 In physics, it is very unlikely that one would have to deal with nonmeasurable functions, but still, we should rigorously define what is means to be measurable. 
 
@@ -197,7 +203,7 @@ The sum and product of two simple functions are simple functions.
 
 This is similar in the case of Riemann integral of a function. 
 
-### Positive Measure
+# 3. Positive Measure
 
 Measure is the generalization of concepts such as length, weight, probability. Thus it is natural to supposed the the measure assign to a set to be positive definite. 
 
