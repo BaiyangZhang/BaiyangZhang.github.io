@@ -1,15 +1,14 @@
 ---
-layout:     post   				                    # 使用的布局（不需要改）
-title:      Basic Commutative Algebra		# 标题 
-subtitle:   Class 2
-date:       2022-11-18 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/mathArt9.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - Math
-    - Commutative Algebra
-    - Notes
+layout: post
+title: Basic Commutative Algebra II
+date: 2022-11-18
+author: Baiyang Zhang
+catalog: true
+tags:
+  - Math
+  - Commutative
+  - Algebra
+  - Notes
 ---
 
 **Theorem.** If $f:A\to B$ is a ring homomorphism, then the kernel of $f$ ($:= f^{-1}(0)$) is an ideal of $A$, since $f$ preserves multiplication. The image of $f$ is a subring of $B$. Since $\text{ker}(f)$ is a ring of $A$, we can construct a quotient ring $A / \text{ker}(f)$, which is isomorphic to $\text{img} f$.

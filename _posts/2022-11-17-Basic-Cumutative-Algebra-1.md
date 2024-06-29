@@ -1,15 +1,14 @@
 ---
-layout:     post   				            # 使用的布局（不需要改）
-title:      Basic Commutative Algebra       # 标题 
-subtitle:   Class 1
-date:       2022-11-17 				        # 时间
-author:     Baiyang Zhang 					# 作者
-header-img: img/mathArt5.jpg 	            # 这篇文章标题背景图片
-catalog: true 						        # 是否归档
-tags:								        # 标签
-    - Math
-    - Commutative Algebra
-    - Notes
+layout: post
+title: Basic Commutative Algebra I
+date: 2022-11-17
+author: Baiyang Zhang
+catalog: true
+tags:
+  - Math
+  - Commutative
+  - Algebra
+  - Notes
 ---
 
 >It is the mark of the educated mind to use for each subject the degree of exactitude which it admits.
