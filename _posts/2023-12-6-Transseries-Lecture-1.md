@@ -1,16 +1,19 @@
 ---
 layout: post
 title: Introduction to Transseries Lecture 1
-subtitle: 
 date: 2023-12-06
 author: Baiyang Zhang
-header-img: img/background2.jpg
 catalog: true
 tags:
- - transsereis
+  - transsereis
 ---
 
-## Introduction
+- [1. Introduction](#1-introduction)
+- [2. Formal Constructions](#2-formal-constructions)
+- [3. Dickson's lemma](#3-dicksons-lemma)
+- [4. Convergence of sets](#4-convergence-of-sets)
+
+# 1. Introduction
 
 In history, formal power series are used extensively for finding the resolution of differential equations. If the resulting power series is convergent, it gives rise to a germ which can be analytically continued to (multi-valued) functions on a Riemann surface. However, very often, the power series we found from solving a differential equation is divergent, then it is not clear *a prior* how to attach reasonable sums to them.
 
@@ -90,7 +93,7 @@ A general transseries is obtained by substitution of some $\log_ {m}x$ for $x$ i
 
 *A lot of functions can now be regarded as a transseries*. For example, e hyperbolic sine is a two-term transseries.
 
-## Formal Constructions
+# 2. Formal Constructions
 
 In mathematics, the move towards higher levels of formality entails adopting rigorous and precise language, definitions, and proofs, which brings clarity and precision, ensuring that mathematical concepts are universally understood and applied correctly. It allows for the development of solid, gap-free proofs, having a deeper understanding of mathematical structures and providing a robust foundation for complex theories. This precision in communication is critical in a global context, where scientists from different fields rely on universally recognized formalisms to understand each other effectively. 
 
@@ -172,7 +175,7 @@ In our convention, the set of natural numbers $\mathbb{N}$ include zero.
 
 - - -
 
-### Dickson's lemma
+# 3. Dickson's lemma
 
 It turns out that the set $J_ {m}$ is `well-partially-ordered`, sometimes called `Noetherian`. A partially ordered set (poset) is said to be well-partially-ordered if it satisfies two conditions:
    - It contains no *infinite strictly descending sequences*. This means there cannot be an infinite sequence of elements $a_1, a_2, a_3, \ldots$ in the set such that $a_1 > a_2 > a_3 > \ldots$.
@@ -187,9 +190,7 @@ The primary difference between the two concepts is that being well-partially-ord
 **Proposition.** Let $E$ from the previous proposition be infinite, then there is an infinite sequence $k_ {i}\subset E$ such that $k_ {0}<k_ {1}<\dots$. 
 
 **Proposition.** For the same $E$, the set of all the minimal elements $\text{min}(E)$ is finite. For every element $k\in E$ there is a $k_ {0} \in \text{min}(E)$ such that $k_ {0} \le k$. 
-
-
-### Convergence of sets
+# 4. Convergence of sets
 
 First let's introduce the symmetric difference of two sets, which is a mathematical operation that results in a new set containing elements that are in **either** of the two sets, but **not in their intersection**. In other words, it combines the elements of each set that are not shared by both. The symmetric difference is denoted by the symbol $\Delta$.
 
