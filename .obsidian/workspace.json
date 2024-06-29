@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
+                "file": "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
+                "file": "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
+                "file": "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md"
+                "file": "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md"
               }
             }
           }
@@ -163,6 +162,7 @@
   },
   "active": "d27d91a855f7f209",
   "lastOpenFiles": [
+    "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
     "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
     "_posts/2022-11-21-Basic-Cumutative-Algebra-3.md",
     "_posts/2022-11-18-Basic-Cumutative-Algebra-2.md",
@@ -198,7 +198,6 @@
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
     "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
-    "_posts/2023-10-26-Poincare-Duality.md",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
