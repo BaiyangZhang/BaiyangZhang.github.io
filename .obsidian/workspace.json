@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
+                "file": "_posts/2023-12-6-Transseries-Lecture-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Basic measure theory",
+                "query": "transseries",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
+                "file": "_posts/2023-12-6-Transseries-Lecture-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
+                "file": "_posts/2023-12-6-Transseries-Lecture-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md"
+                "file": "_posts/2023-12-6-Transseries-Lecture-1.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "d27d91a855f7f209",
   "lastOpenFiles": [
-    "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
     "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
+    "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
     "_posts/2022-11-21-Basic-Cumutative-Algebra-3.md",
     "_posts/2022-11-18-Basic-Cumutative-Algebra-2.md",
     "_posts/2022-11-17-Basic-Cumutative-Algebra-1.md",

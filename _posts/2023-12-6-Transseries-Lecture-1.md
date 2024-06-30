@@ -8,8 +8,11 @@ tags:
   - transsereis
 ---
 
+# Table of Contents
+
 - [1. Introduction](#1-introduction)
 - [2. Formal Constructions](#2-formal-constructions)
+	- [2.1 Basics of Orderings](#21-basics-of-orderings)
 - [3. Dickson's lemma](#3-dicksons-lemma)
 - [4. Convergence of sets](#4-convergence-of-sets)
 
@@ -110,7 +113,7 @@ $$
 the generated group has elements of form
 
 $$
-\left\{ \mu_ {1}^{k_ {1}}\times \mu_ {2}^{k_ {2}}\times \dots \times \mu_ {n}^{k_ {n}} \,\middle\vert\, k_ {1},\dots,k_ {n} \in \mathbb{Z} \right\} .
+\left\lbrace \mu_ {1}^{k_ {1}}\times \mu_ {2}^{k_ {2}}\times \dots \times \mu_ {n}^{k_ {n}} \,\middle\vert\, k_ {1},\dots,k_ {n} \in \mathbb{Z} \right\rbrace .
 $$
 
 Note that the exponents must be integers. 
@@ -174,6 +177,89 @@ $$
 In our convention, the set of natural numbers $\mathbb{N}$ include zero. 
 
 - - -
+
+## 2.1 Basics of Orderings
+
+The asymptotic magnitude of transseries refers to the growth rate of a transseries as its argument tends to infinity, for example, how fast does $e^{ x }$ grows as $x\to \infty$. The asymptotic magnitude can be regarded as a kind or ordering. 
+
+We have already introduced ordering and partial ordering. An easy way to memorize ordering is to **regard ordering as categories**. Take $a\leq b$ for example, we can regard $a$ and $b$ as objects in a category, and regard $a\leq b$ as $a\to b$, an arrow from $a$ to $b$. For partial ordering, not all pairs need to me comparable, it means that if regarded as a category, not all pairs of objects need to have arrows. In category theory, every object is required to have an identity map, $a\to a$, this corresponds to the reflexivity of ordering, $a\leq a$ always. Antisymmetry means that $a\to b$ and $b\to a$ implies $a=a$. Transitivity for ordering is automatically taken care of in the language of category theory, by composition of arrow. 
+
+Now let's introduce `quasi ordering`. A quasi-order (or `preorder`) is a binary relation that is **reflexive and transitive**. It is a generalization of a partial order, but it does not necessarily satisfy antisymmetry. **A quasi-order is nothing but a category, where arrows represent the ordering relation.** Here are the formal properties:
+
+1. **Reflexive**: For every element $a$ in a set $S$, $a \leq a$.
+
+2. **Transitive**: For every $a, b, c$ in $S$, if $a \leq b$ and $b \leq c$, then $a \leq c$.
+
+As an example, consider the set $S = \lbrace a, b, c\rbrace$ with the relation $\leq$ defined as follows:
+- $a \leq a, b \leq b, c \leq c$ (reflexivity)
+- $a \leq b$
+- $b \leq c$
+- $a \leq c$ (transitivity)
+
+This relation is a quasi-order because it is reflexive and transitive. However, it is not necessarily antisymmetric. For instance, if we had both $a \leq b$ and $b \leq a$, but $a \neq b$, this would still be a quasi-order but not a partial order.
+
+- **Partial Order**: A binary relation that is reflexive, transitive, and antisymmetric.
+- **Quasi-Order**: A binary relation that is reflexive and transitive, but not necessarily antisymmetric.
+
+A common real-life example of a quasi-order is the divisibility relation among integers. For a set of integers $\lbrace1, 2, 3, 4\rbrace$:
+- $1 \mid 1, 2 \mid 2, 3 \mid 3, 4 \mid 4$ (reflexivity)
+- $1 \mid 2, 1 \mid 3, 1 \mid 4$
+- $2 \mid 4$
+- $1 \mid 4$ (transitivity)
+
+The divisibility relation is reflexive and transitive, but not antisymmetric because, for example, $1 \mid 2$ and $2 \mid 1$ are not both true unless the integers are the same.
+
+As an example for quasi-order that is not necessarily a partial order is the relation of "being at least as easy to learn as" among different subjects. This relation can be reflexive and transitive, but it might not be antisymmetric because two subjects can be equally easy to learn without being identical subjects.
+
+- - -
+
+A set is said to be `well-ordered` if it is equipped with a total order such that **every non-empty subset has a least element**. To be exact, a set $S$ with a total order $\leq$ is well-ordered if every non-empty subset $T \subseteq S$ has a least element. That is, there exists an element $m \in T$ such that for all $t \in T$, $m \leq t$.
+
+A classic example of a well-ordered set is the set of natural numbers $\mathbb{N}$ with the usual order $\leq$. Given any non-empty subset of $\mathbb{N}$, there is always a smallest element.
+
+The `well-ordering theorem` states that every set can be well-ordered. This theorem is equivalent to the Axiom of Choice and Zorn's Lemma in the sense that any one of these statements implies the others in the context of Zermelo-Fraenkel set theory.
+
+- - -
+
+If we regard ordered sets as objects in an category, no matter quasi or partial or well ordered; a morphism between these objects should preserve the ordering. A morphism is also called an arrow. Morphisms can be used to compare different orderings, as we will see below. 
+
+Let $\leq_1$ and $\leq_2$ be two binary relations on a set $S$. The relation $\leq_1$ is said to be finer than $\leq_2$ if for all $a, b \in S$,
+
+$$ 
+a \leq_1 b \implies a \leq_2 b. 
+$$
+
+Namely there exists a morphism $\phi:(S,\leq_ {1})\to(S,\leq_ {2})$. 
+
+**Ex.** Let $S = \lbrace1, 2, 3\rbrace$, and consider two different orderings on the power set of $S$ (the set of all subsets of $S$), 1) the subset inclusion Ordering $\subseteq$ and 2) the lexicographic ordering $leq_{\text{lex}}$. For example, for the power set $\mathcal{P}(S) = \lbrace\emptyset, \lbrace1\rbrace, \lbrace2\rbrace, \lbrace3\rbrace, \lbrace1, 2\rbrace, \lbrace1, 3\rbrace, \lbrace2, 3\rbrace, \lbrace1, 2, 3\rbrace\rbrace$, the inclusion ordering is defined as
+
+   - $\emptyset \subseteq \lbrace1\rbrace$
+   - $\lbrace1\rbrace \subseteq \lbrace1, 2\rbrace$
+   - $\lbrace2\rbrace \subseteq \lbrace2, 3\rbrace$
+   - etc.
+
+The lexicographic ordering, on the other hand, is based on comparing the elements of subsets lexicographically, treating subsets as ordered tuples of their elements, and we compare first the first element, if they are equal we compare the second, etc. For example, we can define an ordering such that:
+
+   - $\emptyset \leq_{\text{lex}} \lbrace1\rbrace$
+   - $\lbrace1\rbrace \leq_{\text{lex}} \lbrace1, 2\rbrace$
+   - $\lbrace1\rbrace \leq_{\text{lex}} \lbrace1, 3\rbrace$
+   - $\lbrace1, 2\rbrace \leq_{\text{lex}} \lbrace1, 3\rbrace$
+   - $\lbrace2\rbrace \leq_{\text{lex}} \lbrace2, 3\rbrace$
+   - etc.
+
+The subset inclusion ordering is finer than the lexicographic ordering on the power set $\mathcal{P}(S)$. This means that whenever $A \subseteq B$, it must also be true that $A \leq_{\text{lex}} B$, but the converse does not necessarily hold. Comparing $\lbrace1\rbrace$ and $\lbrace1, 2\rbrace$,
+
+   - $\lbrace1\rbrace \subseteq \lbrace1, 2\rbrace$
+   - $\lbrace1\rbrace \leq_{\text{lex}} \lbrace1, 2\rbrace$
+
+Comparing $\lbrace1, 2\rbrace$ and $\lbrace1, 3\rbrace$:
+
+   - Neither $\lbrace1, 2\rbrace \subseteq \lbrace1, 3\rbrace$ nor $\lbrace1, 3\rbrace \subseteq \lbrace1, 2\rbrace$
+   - But in lexicographic ordering, $\lbrace1, 2\rbrace \leq_{\text{lex}} \lbrace1, 3\rbrace$.
+
+- - -
+
+
 
 # 3. Dickson's lemma
 
