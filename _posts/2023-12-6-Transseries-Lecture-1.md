@@ -178,7 +178,9 @@ In our convention, the set of natural numbers $\mathbb{N}$ include zero.
 
 - - -
 
-## 2.1 Basics of Orderings
+## 2.1 Basics Order Theory
+
+The basic unit of analysis in order theory is `binary relation`. Given a set $S$ with elements $s$'s, and a binary relation denoted $\mathscr{R}$, any two elements $s_ {1}$ and $s_ {2}$ either have this relation or they don not. If they the specified relation, we write $s_ {1}\mathscr{R}s_ {2}$. Note that the order also matters, $s_ {1}\mathscr{R}s_ {2}$ is in general not the same as $s_ {2}\mathscr{R}s_ {1}$, just think of $\leq$ as an example. 
 
 The asymptotic magnitude of transseries refers to the growth rate of a transseries as its argument tends to infinity, for example, how fast does $e^{ x }$ grows as $x\to \infty$. The asymptotic magnitude can be regarded as a kind or ordering. 
 
@@ -210,6 +212,8 @@ A common real-life example of a quasi-order is the divisibility relation among i
 The divisibility relation is reflexive and transitive, but not antisymmetric because, for example, $1 \mid 2$ and $2 \mid 1$ are not both true unless the integers are the same.
 
 As an example for quasi-order that is not necessarily a partial order is the relation of "being at least as easy to learn as" among different subjects. This relation can be reflexive and transitive, but it might not be antisymmetric because two subjects can be equally easy to learn without being identical subjects.
+
+If a partial order also satisfies the condition of completeness, meaning that any pair of the set is comparable, then it is called a `total order`, or a `linear order`.
 
 - - -
 
