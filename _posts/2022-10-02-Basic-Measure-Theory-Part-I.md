@@ -232,7 +232,7 @@ There are different quantities which can be used as measure, may it be the lengt
 
 - - -
 
-- **Lebesgue measure**. Lebesgue measure is essential to define Lebesgue integral. Given a function from $\mathbb{R}$ to $\mathbb{R}$, we need to generalized the concept of length for a given subset of $\mathbb{R}$, no matter how weird it is, such as the set of all the rational points. On the other hand, the generalized concept of length should be invariant under translation, and satisfy other naturalness requirements. Let $A$ be a subset of $\mathbb{R}$, we first find some open sets to cover $A$ fully, namely find $I_ {j},j\in J$ so that $A \subset \cup_ {j\in J} I_ {j}$, where $J$ is some index set. Note that $I_ {j}, j\in J$ is *not* a partition of $A$, far from it, the unions of all the $I_ {j}$ just need to cover $A$. As you can imagine, the unions of all the $I$'s will most likely over-cover $A$, then if we sum the measure of all $I$'s, we will get a measure which is larger than the measure of actual $A$. The real size, or measure, of $A$ is roughly speaking given by the lower bound of the measure of all the possible $I_ {j}$'s. Out of this spirit we define the outer measure of $A$,
+- **Lebesgue measure**. Lebesgue measure is essential to define Lebesgue integral. Given a function from $\mathbb{R}$ to $\mathbb{R}$, we need to generalized the concept of length for a given subset of $\mathbb{R}$, no matter how weird it is, such as the set of all the rational points. On the other hand, the generalized concept of length should be invariant under translation, and satisfy other naturalness requirements. Let $A$ be a subset of $\mathbb{R}$, we first find some open sets to cover $A$ fully, namely find $I_ {j},j\in J$ so that $A \subset \cup_ {j\in J} I_ {j}$, where $J$ is some index set. Note that $I_ {j}, j\in J$ is *not* a partition of $A$, far from it, the unions of all the $I_ {j}$ just need to cover $A$. As you can imagine, the unions of all the $I$'s will most likely over-cover $A$, then if we sum the measure of all $I$'s, we will get a measure which is larger than the measure of actual $A$. The true size, or measure, of $A$ is roughly speaking given by the lower bound of the measure of all the possible $I_ {j}$'s. Out of this spirit we define the outer measure of $A$,
 
 $$
 m^\ast (A) = \text{inf } \sum_ {j\in J} l(I_ {j})
@@ -254,7 +254,7 @@ the length of a single point is zero.
 
 Note that the outer measure is defined for all subsets of $\mathbb{R}$, no matter how weird they are, since any subset of $\mathbb{R}$ can be cover by some open sets. 
 
-We then define the inner measure of $A$, which in a sense is the dual notion of outer measure. The outer notion approaches the real size of $A$ from above, and the inner measure approaches the real size of $A$ from below. The inner measure of $A$ is 
+We then define the inner measure of $A$, which in a sense is the dual notion of outer measure. The outer notion approaches the true size of $A$ from above, and the inner measure approaches the true size of $A$ from below. The inner measure of $A$ is 
 
 $$
 	m_ {\ast } (A) = \text{sup } m^\ast (K), \quad K \text{ is closed and } K\subseteq A, 
