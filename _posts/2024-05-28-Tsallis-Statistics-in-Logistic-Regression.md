@@ -864,7 +864,9 @@ which is precisely the result we are looking for. Along the way we have also fou
 
 Another thing which might be useful is the so-called `soft-thresholding` operator, defined as:
 
-$$ S_ {\lambda}(x) = \text{sign}(x) \cdot \max(|x| - \lambda, 0) $$
+$$ 
+S_ {\lambda}(x) = \text{sign}(x) \cdot \max(\left\lvert x \right\rvert  - \lambda, 0) 
+$$
 
 where $\lambda$ is a non-negative threshold parameter, $\text{sign}(x)$ returns the sign of $x$, and $\max(|x| - \lambda, 0)$ essentially shrinks $x$ towards zero by $\lambda$, setting it to zero if $x$ is within $\lambda$ of zero.
 
@@ -972,7 +974,7 @@ X_ {ip} & X_ {ip}X_ {i1} & X_ {ip}X_ {i2} & \cdots & X_ {ip}^2
 
 
 
-
+- - -
 # Appendix. Useful Mathematical Formulae
 
 The definition of $q$-logarithm and $q$-exponential, $x>0, q \in\mathbb{R}$:

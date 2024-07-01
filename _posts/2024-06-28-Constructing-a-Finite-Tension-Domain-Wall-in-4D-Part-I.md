@@ -208,7 +208,7 @@ Something that is less mentioned is that, normal ordering involves a mass scale 
 
 So, how does all this relate to normal ordering? Normal ordering is a procedure that rearranges creation and annihilation operators. These operators inherently depend on the free mass of the particle. $a^{\dagger}_ {p}$ creates a particle of momentum $\vec{p}$ **with mass $m$**, the energy of the particle is $\sqrt{ \vec{p}^{2}+m^{2} }$. I repeat, **the choice of $m$ depends on what you choose to call the free Hamiltonian, and that choice is somehow arbitrary.** The result of changing $m$ can be absorbed in a redefinition of the theory parameters.
 
-My conjecture is, the field operator $\phi(x)$ itself is independent of the aforementioned choice of mass parameter $m$, while the stuff that do depend on $m$ are
+My assumption is, the field operator $\phi(x)$ itself is independent of the aforementioned choice of mass parameter $m$, while the stuff that do depend on $m$ are
 
 1. creation and annihilation operators $a_ {p,m}$ and $a^{\dagger}_ {p,m}$,
 2. the energy $\omega=\sqrt{ \vec{p}^{2}+m^{2} }$, we will write it as $\omega_ {p,m}$ explicitly,
@@ -391,7 +391,7 @@ $$
 \end{align*} 
 $$
 
-It is connected with the normal ordering at $m$ by
+We can also rewrite it into normal ordering at $m$:
 
 $$
 \begin{align*}
@@ -411,8 +411,6 @@ $$
 
 
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
-
-- - -
 
 # Triviality of phi-fourth theory
 
@@ -437,18 +435,18 @@ As $\Lambda \to \infty$, if $Z \to \infty$ (which is the case for $\phi^4$ theor
 In summary, saying that $\phi^4$ theory is "trivial" means that, after accounting for the effects of renormalization, the theory becomes non-interacting as the UV cutoff is taken to infinity. This implies that any interacting $\phi^4$ theory in four dimensions cannot remain interacting at all energy scales and instead becomes a free theory at very high energies. This phenomenon is an important aspect of understanding the limitations and behaviors of quantum field theories in different dimensions.
 # Perturbative Expansion of the Hamiltonian
 
-Since we want to cancel divergences in a perturbative way, that is, order-by-order in terms of the coupling $\lambda$, it makes sense that when $\Lambda$ is involved, we should still first count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group everything of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
+Since we want to cancel divergences in a perturbative manner, that is, order-by-order in the coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
 
 I copy the Hamiltonian here:
 
 $$
 \begin{align*}
-\hat{H}(\vec{x}) &= \int d^{3}x \, \left\lbrace   :\hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2}:_ {m}  \right\rbrace \\
+\hat{H}(\vec{x}) &= \int d^{3}x \, :\left\lbrace   \hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) + \frac{3}{4} \lambda_ {0} I^{2} - \frac{1}{4}I\,m_ {0}^{2} \right\rbrace :_ {m} \\
   &\;\;\;\; +  \int d^{3}x \,\frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) .
 \end{align*}
 $$
 
-A simple Taylor expansion tells us that 
+A simple Taylor expansion shows that 
 
 $$
 \omega_ {p,m} = \omega_ {p,m_ {0}} + \frac{1}{2} \frac{\delta m^{2}}{\omega_ {p,m_ {0}}} + \mathcal{O}(\delta m^{2})^{2},
@@ -483,7 +481,7 @@ $$
 - \frac{1}{4}I\,m_ {0}^{2}  = \frac{m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega^{3}_ {p,m_ {0}}} +\cdots.
 $$
 
-This is too bad, since I hoped that the above equation will cancel the above above equation. I probably made a mistake somewhere... Now I have no choice but to put everything together, at leading order of $\lambda$ we have 
+This is too bad, since I had hoped that the above equation will cancel the above above equation. I probably made a mistake somewhere... Now I have no choice but to put everything together. At the leading order of $\lambda$ we have 
 
 $$
 \begin{align*}
