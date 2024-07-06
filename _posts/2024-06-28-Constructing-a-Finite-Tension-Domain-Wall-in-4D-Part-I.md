@@ -435,7 +435,9 @@ As $\Lambda \to \infty$, if $Z \to \infty$ (which is the case for $\phi^4$ theor
 In summary, saying that $\phi^4$ theory is "trivial" means that, after accounting for the effects of renormalization, the theory becomes non-interacting as the UV cutoff is taken to infinity. This implies that any interacting $\phi^4$ theory in four dimensions cannot remain interacting at all energy scales and instead becomes a free theory at very high energies. This phenomenon is an important aspect of understanding the limitations and behaviors of quantum field theories in different dimensions.
 # Perturbative Expansion of the Hamiltonian
 
-Since we want to cancel divergences in a perturbative manner, that is, order-by-order in the coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
+Since we want to cancel divergences in a perturbative manner, that is, order-by-order in (renormalized) coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
+
+For the rest of this note, unless explicitly said otherwise, $\lambda$ stants for the *renormalized coupling* and $\lambda_ {0}$ the bare coupling.
 
 I copy the Hamiltonian here:
 
@@ -449,7 +451,7 @@ $$
 A simple Taylor expansion shows that 
 
 $$
-\omega_ {p,m} = \omega_ {p,m_ {0}} + \frac{1}{2} \frac{\delta m^{2}}{\omega_ {p,m_ {0}}} + \mathcal{O}(\delta m^{2})^{2},
+\omega_ {p,m} = \omega_ {p,m_ {0}} + \frac{1}{2} \frac{\delta m^{2}}{\omega_ {p,m_ {0}}} + \mathcal{O}(\delta m^{4}),
 $$
 
 thus 
@@ -481,7 +483,11 @@ $$
 - \frac{1}{4}I\,m_ {0}^{2}  = \frac{m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega^{3}_ {p,m_ {0}}} +\cdots.
 $$
 
-This is too bad, since I had hoped that the above equation will cancel the above above equation. I probably made a mistake somewhere... Now I have no choice but to put everything together. At the leading order of $\lambda$ we have 
+This is too bad, since I had hoped that the above equation will cancel the above above equation. I probably made a mistake somewhere... 
+
+The term $\frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x})$ needs some extra work. It seems to be of order $\lambda_ {0}I\sim \mathcal{O}(\lambda^{2})$, however, often times we need to replace the field operator $\phi$ by $\left\langle \phi \right\rangle+\phi'$, where $\left\langle \phi \right\rangle$ is the expectation valued for $\phi$ under certain circumstances, and it is uaually of order $\left\langle \phi \right\rangle\sim 1 / g$ where $g\equiv \sqrt{ \lambda }$. Thus this quadratic term is actually of order $\mathcal{O}(\lambda)$ and we need to keep it.
+
+Putting everything together. At the leading order of $\lambda$ we have 
 
 $$
 \begin{align*}
