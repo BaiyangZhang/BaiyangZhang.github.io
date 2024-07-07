@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
+                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
+                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
+                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md"
+                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md"
               }
             }
           }
@@ -162,12 +162,11 @@
   },
   "active": "d27d91a855f7f209",
   "lastOpenFiles": [
-    "_posts/2022-7-17-Conventions-and-Formula.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
-    "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_posts/2024-06-26-Introduction-to-Resurgence-Part-1.md",
     "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-06-18-Yoneda-Lemma.md",
+    "_posts/2024-06-26-Introduction-to-Resurgence-Part-1.md",
+    "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2023-12-6-Transseries-Lecture-1.md",
     "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
     "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
@@ -176,6 +175,7 @@
     "_posts/2022-11-17-Basic-Cumutative-Algebra-1.md",
     "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
     "Discussion Notes.md",
+    "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
     "2024-06-02.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "reports/psresultmobile.svg",

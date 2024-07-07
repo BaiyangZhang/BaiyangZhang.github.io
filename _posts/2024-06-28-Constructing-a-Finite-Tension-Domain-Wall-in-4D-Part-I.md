@@ -541,7 +541,51 @@ T_ {\vec{x}}\, \phi(\vec{y})\, T_ {\vec{x}}^{\dagger} &= \phi(\vec{y}-\vec{x}),\
 \end{align*}
 $$
 
-We can use the unitary $\mathcal{D}_ {f}$ to translate the Hilbert space. This is similar to a change of basis of a vector space, which is a **passive transformation**.
+The statement is that, we can use the unitary $\mathcal{D}_ {f}$ to translate the basis of the Hilbert space. 
+
+I find it helpful to use $T_ {\vec{x}}$ as an example to understand the properties of $\mathcal{D}_ {f}$. Let $\left\lvert{\psi}\right\rangle$ be any state in quantum mechanics, what is the resulting state of $T_ {\vec{x}}$ acting on it? $T_ {\vec{x}}\left\lvert{\psi}\right\rangle$ has two interpretations, the passive view and the active view. In the passive view, the translation operator is seen as a change in the coordinate system or reference frame rather than a change in the physical state itself. The state of the system remains unchanged, but the coordinates used to describe it are shifted. In the active view, the translation operator actively shifts the physical state of the system by a displacement. The coordinates remain fixed, but the state or the field configuration changes. The same goes for the displacement operator $\mathcal{D}_ {f}$, given any state (quantum field theory now, no longer quantum mechanics) $\left\lvert{\Psi}\right\rangle$, $\mathcal{D}_ {f}\left\lvert{\Psi}\right\rangle$ can be seen as either a new state (active perspective), or the same state but in different basis (passive perspective). When discussing kink states and trivial vacuum states in the future, it seems best to consider $\mathcal{D}_ {f}$ passively. This approach allows us to discuss the same states in different bases, or frames. We'll delve into the details shortly. However, before diving into quantum field theory, I would like to first address the nature of quantum states in quantum mechanics.
+
+---
+
+Quantum mechanics is defined over the spatial coordinates $\vec{x}$. The position eigenstates $\left\lvert{\vec{x}}\right\rangle$ form a complete basis of the Hilbert space. However, $\left\lvert{\vec{x}}\right\rangle$ is represented by a Dirac $\delta$-function, which does not belong to the Hilbert space of $L^{2}(\mathbb{R}^{d})$, where $d$ is the dimension of the space, as usually. It is a challenge to mathematical rigor of quantum mechanics. 
+
+Recall that the Hilbert space $L^{2}(\mathbb{R}^{d})$ consists of all square-integrable functions defined on $\mathbb{R}^{d}$, with an inner product $\left\langle f,g \right\rangle=\int dx \, f^{\ast}g$. This inner product also defines a norm, and with norm we can talk about Cauchy completeness. The space $L^{2}$ is indeed Cauchy complete, since we do not require functions in it to be smooth. The Cauchy completeness makes it a Hilbert space, not a pre-Hilbert space. 
+
+To deal with mathematical objects such as the Dirac $\delta$-function, quantum mechanics often uses the concept of `rigged Hilbert space`, also known as a `Gelfand triplet`. A rigged Hilbert space involves three components:
+
+1. Schwartz space $\mathcal{S}$, the space of **rapidly decreasing smooth** functions. 
+2. Hilbert space $L^{2}$. The Schwartz space $\mathcal{S}$ is a dense subset of $L^{2}$.
+3. Dual space $\mathcal{S}^{\ast}$. It includes functionals such as $\delta(x)$. 
+
+The relationship can be written as 
+
+$$
+\mathcal{S} \subset L^{2} \subset \mathcal{S}^{\ast }.
+$$
+
+Now, states $\left\lvert{\vec{x}}\right\rangle$ are elements of $\mathcal{S}^{\ast}$. 
+
+Actually, I don't think it makes a lot of sense physically to talk about $\left\lvert{\vec{x}}\right\rangle$, since in real life, due to the uncertainty principal, a particle will never be localized at a specific point, instead the position always smears about a certain region, so is its momentum. The role of $\left\lvert{\vec{x}}\right\rangle$ is more of giving us the value of the wave function at position $\vec{x}$, in other words, what naturally appears is the dual version $\left\langle{\vec{x}}\right\rvert$ of $\left\lvert{\vec{x}}\right\rangle$. $\left\langle{\vec{x}}\right\rvert$ is the map
+
+$$
+\begin{align*}
+\left\langle{\vec{x}}\right\rvert :  \mathcal{H} &\to \mathbb{C} \\
+\left\lvert{\psi}\right\rangle  &\mapsto \psi(\vec{x}),
+\end{align*}
+$$
+
+where $\mathcal{H}$ is not the Hamiltonian but the Hilbert space of quantum states. 
+
+Now let's come back to the passive perspective of the translation operator $T_ {\vec{x}}$ acting on some state $\left\lvert{\psi}\right\rangle$. 
+
+
+
+
+
+
+
+
+
 
 With our Lagrangian, the minimum of the potential is obtained at 
 
