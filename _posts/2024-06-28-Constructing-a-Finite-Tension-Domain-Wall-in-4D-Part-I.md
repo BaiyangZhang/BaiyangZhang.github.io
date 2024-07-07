@@ -87,7 +87,7 @@ $$
 The hat denotes that the vacuum of the Hamiltonian is not obtained at $\phi=0$ yet. To be more specific, the Hamiltonian undergoes spontaneous symmetry breaking, as a result the minimum of the Hamiltonian is obtained at $\phi=v_ {0}$ for some $v_ {0}$. Later we will shift the field operator from $\phi$ to $\phi'$, such that the vacuum is indeed obtained at $\phi'=0$, the Hamiltonian in terms of $\phi'$ will be denoted without the hat. Note the factor $-m_ {0}^{2} /4$ in the mass term, and the last $A$ is a c-number to cancel the zero point energy in the vacuum sector. We also define coupling $g_ {0}$ as 
 
 $$
-g_ {0}^{2} := \lambda_ {0}^{2}.
+g_ {0}^{2} := \lambda_ {0}.
 $$
 
 In the Schrodinger picture, the field operator and canonical momentum operator can be decomposed as 
@@ -448,6 +448,17 @@ $$
 \end{align*}
 $$
 
+p.s. **Jarah's version is written differently**, 
+
+$$
+\begin{align*}
+\hat{H}(\vec{x})   &=\int d^{3}x \, :\left\lbrace   \hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) + \frac{3}{4} \lambda_ {0} I^{2} - \frac{3}{4}I\,m_ {0}^{2} \right\rbrace :_ {m} \\
+  &\;\;\;\; +  \int d^{3}x \,\frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \frac{(\omega_ {p,m}-\omega_ {p,m_ {0}})^{2}}{\omega_ {p,m}} ,
+  \end{align*}
+$$
+
+which is equivalent to our expression. 
+
 A simple Taylor expansion shows that 
 
 $$
@@ -483,39 +494,63 @@ $$
 - \frac{1}{4}I\,m_ {0}^{2}  = \frac{m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega^{3}_ {p,m_ {0}}} +\cdots.
 $$
 
-This is too bad, since I had hoped that the above equation will cancel the above above equation. I probably made a mistake somewhere... 
+This is too bad, since I had hoped that the above equation will cancel the above above equation. But we can rearrange the terms proportional to $m_ {0}^{2}$ such that the integrals cancel each other and leaves us only one single term: $-\frac{3}{4} Im_ {0}^{2}$.
 
-The term $\frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x})$ needs some extra work. It seems to be of order $\lambda_ {0}I\sim \mathcal{O}(\lambda^{2})$, however, often times we need to replace the field operator $\phi$ by $\left\langle \phi \right\rangle+\phi'$, where $\left\langle \phi \right\rangle$ is the expectation valued for $\phi$ under certain circumstances, and it is uaually of order $\left\langle \phi \right\rangle\sim 1 / g$ where $g\equiv \sqrt{ \lambda }$. Thus this quadratic term is actually of order $\mathcal{O}(\lambda)$ and we need to keep it.
+The term $\frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x})$ needs some extra work. It seems to be of order $\lambda_ {0}I\sim \mathcal{O}(\lambda^{2})$, however, often times we need to replace the field operator $\phi$ by $\left\langle \phi \right\rangle+\phi'$, where $\left\langle \phi \right\rangle$ is the expectation valued for $\phi$ under certain circumstances, and it is usually of order $\left\langle \phi \right\rangle\sim 1 / g$ where $g\equiv \sqrt{ \lambda }$. Thus this quadratic term is actually of order $\mathcal{O}(\lambda)$ and we need to keep it.
 
 Putting everything together. At the leading order of $\lambda$ we have 
 
 $$
 \begin{align*}
-\hat{H}(\vec{x}) &= \int d^{3}x \, \left\lbrace   :\hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) :_ {m}  \right\rbrace \\
-  &\;\;\;\; +  \int d^{3}x \,   \frac{3m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega_ {p,m_ {0}}}  .
+\hat{H}(\vec{x}) &= \int d^{3}x \, \left\lbrace   :\hat{\mathcal{H}}^{0}(\vec{x}) + \frac{3}{2}\lambda_ {0} I \phi^{2}(\vec{x}) - \frac{3}{4} I m_ {0}^{2}  :_ {m}  \right\rbrace 
 \end{align*}
 $$
 
-If we write the bare parameters in terms of renormalized ones, we have 
+Then we write the bare parameters in terms of renormalized ones (recall that $g:= \sqrt{ \lambda }$ for both bare and renormalized parameters), at order $\mathcal{O}(\lambda)$ we have 
 
 $$
 \begin{align*}
-\hat{H}(\vec{x}) &= \int d^{3}x \,    : \frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4}:_ {m}  \\
- &\;\;\;\; + \int d^{3}x \, :\frac{1}{2}m^{2}\delta m^{2}\phi^{2} -\frac{1}{4}(\delta m^{2})^{2}\phi^{2}-\frac{1}{2} g\delta g\phi^{4} :_ {m}     \\
- &\;\;\;\; + \int d^{3}x \, :\frac{1}{4} (\delta g)^{2} \phi^{4} + \frac{3}{2}g^{2}I\phi^{2}-3g\delta gI\phi^{2}+A   :_ {m} \\
-  &\;\;\;\; +  \int d^{3}x \,   \frac{3m_ {0}^{2}\,\delta m^{2}}{16}\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega_ {p,m_ {0}}}  .
+\hat{H}(\vec{x}) &\supset \int d^{3}x \, : \frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4}:_ {m}  \\
+ &\;\;\;\; + \int d^{3}x \, : \frac{\delta m^{2}}{4}\phi^{2}-\frac{1}{2}g \delta g\phi^{4}+\frac{3}{2}g^{2}I\phi^{2}-\frac{3}{4}m^{2}I +A :_ {m}.
 \end{align*}
 $$
 
-where $g:= \sqrt{ \lambda }$ for both bare and renormalized cases.
+We have neglected higher order terms, for example a term $3g\delta g\sim \mathcal{O}(g^{4}) \sim\mathcal{O}(\lambda^{2})$ was dropped from the expression.
 
 - - -
 
 
+
 # Spontaneous Symmetry Breaking
 
-In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we need to introduce the displacement operator:
+In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we introduce the displacement operator. Given a function $f(\vec{x})$, the associated displacement operator is defined as 
 
 $$
-D_ {f} := 
+\mathcal{D}_ {f} := \exp \left\lbrace -i\pi(f) \right\rbrace , \quad \pi(f):=\int d^{3}x \,  f(\vec{x})\pi(\vec{x}).
 $$
+
+$\pi(f)$ is the **smeared** canonical momentum operator. This definition is similar to the space translation operator
+
+$$
+T_ {\vec{x}} = \exp \left\lbrace -i\hat{P}\cdot \vec{x} \right\rbrace .
+$$
+
+The translation operator changes the position, while the displacement operator changes the vev of the field operator itself. To be more specific, 
+
+$$
+\begin{align*}
+T_ {\vec{x}}\, \phi(\vec{y})\, T_ {\vec{x}}^{\dagger} &= \phi(\vec{y}-\vec{x}),\\
+\mathcal{D}_ {f} ^{\dagger} \, \phi(\vec{x})\, \mathcal{D}_ {f} &= \phi(\vec{x})+f(\vec{x}).
+\end{align*}
+$$
+
+We can use the unitary $\mathcal{D}_ {f}$ to translate the Hilbert space. This is similar to a change of basis of a vector space, which is a **passive transformation**.
+
+With our Lagrangian, the minimum of the potential is obtained at 
+
+$$
+\phi = \pm v, \quad  v = \frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}.
+$$
+
+We want to do the perturbation theory about, say, $-v$, and we can use the displacement operator to do that, by defining a passively transformed Hamiltonian:
+
