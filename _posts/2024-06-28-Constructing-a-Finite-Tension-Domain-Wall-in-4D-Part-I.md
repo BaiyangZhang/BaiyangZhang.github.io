@@ -32,16 +32,16 @@ $$
 where $f(x)$ is a smooth test function that **smears** the field operator over spacetime. Similarly, the annihilation operator can be smeared with a test function $g(x)$:
 
 $$
-\hat{a}(g) = \int d^4x \, g(x) \hat{a}(x)
+\hat{a}(g) = \int d^dx \, g(x) \hat{a}(x) := \int \frac{d^{d}p}{(2\pi)^{d}} \, \tilde{g}(p) a_ {p},
 $$
 
-Here, $\hat{a}(x)$ is the local annihilation operator at point $x$, and $\hat{a}(g)$ is the smeared annihilation operator. The eigen equation reads
+where $\widetilde{g}(p)$ is the Fourier transform of $g(x)$, and $\hat{a}(x)$ defined by the last integral in momentum space. The eigen equation reads
 
 $$
 \hat{a}(g) \left\lvert{\alpha}\right\rangle  = \alpha(g) \left\lvert{\alpha}\right\rangle 
 $$
 
-where $\alpha(g)$ is a complex function representing the eigenvalue associated with the test function $g(x)$. This definition ensures that coherent states retain their classical-like properties while respecting the distributional nature of field operators in QFT.
+where $\alpha(g)=(\alpha(\vec{x}),g(\vec{x}))$ is the inner product of these two functions.
 
 Consider a free scalar field $\hat{\phi}(x)$ in 4D. The field can be expanded in terms of creation and annihilation operators:
 
@@ -66,6 +66,8 @@ $$
 and $\tilde{g}(k)$ is the Fourier transform of the test function $g(x)$.
 
 In some theories, especially those involving non-linear sigma models and certain gauge theories, solitons can be seen as coherent states of the underlying field theory. This correspondence helps in understanding the non-perturbative aspects of the field theory.
+
+- - -
 
 At the end of section 4.3 in Coleman's note on classical and quantum lumps, he said and I quote
 
@@ -516,12 +518,7 @@ $$
 $$
 
 We have neglected higher order terms, for example a term $3g\delta g\sim \mathcal{O}(g^{4}) \sim\mathcal{O}(\lambda^{2})$ was dropped from the expression.
-
-- - -
-
-
-
-# Spontaneous Symmetry Breaking
+# Passive Transformation by $D_ {f}$
 
 In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we introduce the displacement operator. Given a function $f(\vec{x})$, the associated displacement operator is defined as 
 
