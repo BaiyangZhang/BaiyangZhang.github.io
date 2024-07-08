@@ -565,11 +565,11 @@ $$
 
 Now, states $\left\lvert{\vec{x}}\right\rangle$ are elements of $\mathcal{S}^{\ast}$. 
 
-Actually, I don't think it makes a lot of sense physically to talk about $\left\lvert{\vec{x}}\right\rangle$, since in real life, due to the uncertainty principal, a particle will never be localized at a specific point, instead the position always smears about a certain region, so is its momentum. The role of $\left\lvert{\vec{x}}\right\rangle$ is more of giving us the value of the wave function at position $\vec{x}$, in other words, what naturally appears is the dual version $\left\langle{\vec{x}}\right\rvert$ of $\left\lvert{\vec{x}}\right\rangle$. $\left\langle{\vec{x}}\right\rvert$ is the map
+Actually, I don't think it makes a lot of sense physically to talk about $\left\lvert{\vec{x}}\right\rangle$, since in real life, due to the uncertainty principal, a particle will never be localized at a specific point, instead the position always smears about a certain region, so is its momentum. The role of $\left\lvert{\vec{x}}\right\rangle$ is more of giving us the value of the wave function at position $\vec{x}$, in other words, what naturally appears is the dual version $\left\langle{\vec{x}}\right\rvert$ of $\left\lvert{\vec{x}}\right\rangle$. $\left\langle{\vec{x}}\right\rvert$ can be regarded as map that takes a state in the Hilbert space of quantum states, and spits out a complex number:
 
 $$
 \begin{align*}
-\left\langle{\vec{x}}\right\rvert :  \mathcal{H} &\to \mathbb{C} \\
+\left\langle{\vec{x}}\right\rvert : \quad  \mathcal{H} &\to \mathbb{C} \\
 \left\lvert{\psi}\right\rangle  &\mapsto \psi(\vec{x}),
 \end{align*}
 $$
