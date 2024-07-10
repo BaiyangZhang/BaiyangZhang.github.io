@@ -553,9 +553,9 @@ Recall that the Hilbert space $L^{2}(\mathbb{R}^{d})$ consists of all square-int
 
 To deal with mathematical objects such as the Dirac $\delta$-function, quantum mechanics often uses the concept of `rigged Hilbert space`, also known as a `Gelfand triplet`. A rigged Hilbert space involves three components:
 
-1. Schwartz space $\mathcal{S}$, the space of **rapidly decreasing smooth** functions. 
-2. Hilbert space $L^{2}$. The Schwartz space $\mathcal{S}$ is a dense subset of $L^{2}$.
-3. Dual space $\mathcal{S}^{\ast}$. It includes functionals such as $\delta(x)$. 
+1. Schwartz space $\mathcal{S}$, the space of **rapidly decreasing smooth** functions. It is a dense subspace of the Hilbert space that we talk about in the next paragraph. By working with $\mathcal{S}$, we can rigorously define unbounded operators and their domains. States here are smooth and decays faster than any polynomial, making them suitable for rigorous operator definitions.
+2. Hilbert space $L^{2}$. The Schwartz space $\mathcal{S}$ is a dense subset of $L^{2}$. Here is where all the quantum states reside. These states are normalizable and have finite norm. 
+3. Dual space $\mathcal{S}^{\ast}$. It includes functionals, also called generalized states. The Dirac delta function represents the position eigenstate, while plane waves represent momentum eigenstates, we can't fit them into the Hilbert space $L^{2}$, here is where these pathological states reside.
 
 The relationship can be written as 
 
@@ -563,9 +563,7 @@ $$
 \mathcal{S} \subset L^{2} \subset \mathcal{S}^{\ast }.
 $$
 
-Now, states $\left\lvert{\vec{x}}\right\rangle$ are elements of $\mathcal{S}^{\ast}$. 
-
-Actually, I don't think it makes a lot of sense physically to talk about $\left\lvert{\vec{x}}\right\rangle$, since in real life, due to the uncertainty principal, a particle will never be localized at a specific point, instead the position always smears about a certain region, so is its momentum. The role of $\left\lvert{\vec{x}}\right\rangle$ is more of giving us the value of the wave function at position $\vec{x}$, in other words, what naturally appears is the dual version $\left\langle{\vec{x}}\right\rvert$ of $\left\lvert{\vec{x}}\right\rangle$. $\left\langle{\vec{x}}\right\rvert$ can be regarded as map that takes a state in the Hilbert space of quantum states, and spits out a complex number:
+Actually, I don't think it makes a lot of sense to regard $\left\lvert{\vec{x}}\right\rangle$ as a physical state, since in real life, due to the uncertainty principal, a particle will never be localized at a specific point. Instead, the position always smears about a certain region, so is its momentum. The role of $\left\lvert{\vec{x}}\right\rangle$ is more of giving us the value of the wave function at position $\vec{x}$, in other words, what naturally appears is the dual version $\left\langle{\vec{x}}\right\rvert$ of $\left\lvert{\vec{x}}\right\rangle$. $\left\langle{\vec{x}}\right\rvert$ can be regarded as map that takes a state in the Hilbert space of quantum states, and spits out a complex number:
 
 $$
 \begin{align*}
@@ -576,7 +574,78 @@ $$
 
 where $\mathcal{H}$ is not the Hamiltonian but the Hilbert space of quantum states. 
 
-Now let's come back to the passive perspective of the translation operator $T_ {\vec{x}}$ acting on some state $\left\lvert{\psi}\right\rangle$. 
+For a state $\left\lvert{\psi}\right\rangle$ to be a physical state, it should be sensible to talk about 
+
+$$
+\left\langle{\psi}\right\rvert \mathcal{O} \left\lvert{\psi}\right\rangle ,\quad  \mathcal{O}\text{ is an observable.}
+$$
+
+$\left\lvert{\vec{x}}\right\rangle$ fails this requirement since $\left\langle{\vec{x}}\right\rvert \hat{x} \left\lvert{\vec{x}}\right\rangle=\infty$, this is another reason to say that $\left\lvert{\vec{x}}\right\rangle$ is not a physical state. 
+
+- - -
+
+We distinguish two concepts, `states` and `wave function`. In quantum mechanics, they are sometimes used interchangeably, but they have distinct meanings. A quantum state contains all the information about the system. It can be described in different representations, depending on what information we want to know. For example, if we want to know information about the position, we go to the physical space representation expanded by $\left\lvert{\vec{x}}\right\rangle$. Quantum states can be represented as vectors in a Hilbert space, and there exists pure and mixed states. On the other hand, the wave function is a specific representation of a quantum state in the position (or sometimes momentum) basis. It is a complex-valued function that gives the probability amplitude of finding a particle in a particular position in space. The wave function of a state $\left\lvert{\psi}\right\rangle$ is denoted by $\psi(x)$, where $x$ is the position. 
+
+In the passive perspective, a state before and after spatial translation is the same state, they just have different wave functions, because in order to get the wave function we need two things: bases and a state, even though the state is unchanged but the bases are changed now, thus the final expression is also changed.
+
+- - -
+
+Coming back to the passive perspective regarding the displacement operator $\mathcal{D}_ {f}$ acting on a state, for example the kink state $\left\lvert{K}\right\rangle$. We regard $\mathcal{D}_ {f}\left\lvert{K}\right\rangle$ (or is it $D_ {f}^{\dagger}\left\lvert{K}\right\rangle$? I don't remember, anyways the argument works the same) as the same state as $\left\lvert{K}\right\rangle$, but "shifted". In the case of quantum mechanics, the things that get shifted are wave functions; in quantum field theory, it should be **wave functional**, the quantum field theoretical counterpart of wave functions. Let's dive into the details.
+
+Consider a scalar field theory. The "coordinate" for such a theory would not be $\vec{x},\vec{y}$ but field configurations $\phi(\vec{x})$. Instead of the position of a single particle, we now consider the entire configuration of the field $\phi(x)$ at a particular time. The wave functional $\Psi[\phi]$ describes the quantum state of the entire field configuration $\phi(x)$ at a given time.  Recall how the quantization is done in quantum mechanics: classically a particle occupies a specific position $\vec{x}(t)$ at any given time $t$, after quantization, instead of $\vec{x}(t)$ we have a wave function $\psi$ that maps each $\vec{x}$ to a complex number. This is just to say that the wave function is a function of spacetime. Similarly, in QFT, let $\Psi[\phi]$ be a functional, then by definition it assigns a complex number to each field configuration $\phi(\vec{x})$,
+
+$$
+\Psi: \phi(\vec{x}) \mapsto \mathbb{C}.
+$$
+
+Similar to $\left\lvert{\vec{x}}\right\rangle$ is the eigen state of $\hat{x}$, $\hat{x}\left\lvert{\vec{x}}\right\rangle=\vec{x}$, we can construct the eigen state of field operator $\hat{\phi}$ by 
+
+$$
+\hat{\phi}(\vec{x})\left\lvert{\phi}\right\rangle  = \phi(\vec{x})\left\lvert{\phi}\right\rangle ,
+$$
+
+Any wave functional can be given as a superposition of such eigen states. Let $\left\lvert{\Psi}\right\rangle$ be a well-behaved wave functions, it can be formally written as 
+
+$$
+\left\lvert{\Psi}\right\rangle  = \int D\phi(\vec{x}) \, \Psi[\phi(\bullet)] \left\lvert{\phi(\bullet)}\right\rangle  ,
+$$
+
+where the bullet in $\phi(\bullet)$ indicates a spatial coordinate, it is here to remind us that $\phi$ is a function, but I don't want to waste another Latin letter. 
+
+Given the quantum state $\left\lvert{\Psi}\right\rangle$, the wave functional corresponding to this state is given by
+
+$$
+\Psi [\phi(\bullet)] = \left\langle \phi \middle\vert \Psi \right\rangle \in \mathbb{C}.
+$$
+
+Time evolution is generated by the Hamiltonian, yielding a functional Schrodinger equation:
+
+$$
+i\hbar \left\lvert{\Psi[\phi]}\right\rangle  = \hat{H}\left\lvert{\Psi[\phi]}\right\rangle ,
+$$
+
+- - -
+
+For the ground state (or vacuum state) of the free scalar field, the wave functional $\Psi_0[\phi]$ has a Gaussian form, it is basically an infinite lattice of harmonic oscillators. It can be written as:
+$$
+\Psi_0[\phi] = N \exp \left( -\frac{1}{2} \int d^3x \, d^3y \, \phi(x) K(x,y) \phi(y) \right)
+$$
+where $N$ is a normalization constant, and $K(x,y)$ is a kernel that depends on the mass $m$ of the scalar field and the spatial separation $|x - y|$.
+
+For a free scalar field, $K(x,y)$ can be written in terms of the Fourier transform:
+$$
+K(x,y) = \int \frac{d^3k}{(2\pi)^3} \, \omega_k \, e^{i k \cdot (x - y)}
+$$
+with $\omega_k = \sqrt{k^2 + m^2}$.
+
+The wave functional $\Psi_0[\phi]$ provides the probability amplitude for the field configuration $\phi(x)$. The exponential form indicates that the ground state is a Gaussian distribution centered around $\phi(x) = 0$, reflecting the fact that the vacuum state has no preferred field configuration (zero field on average).
+
+For more information please refer to this [post](https://physics.stackexchange.com/questions/746099/schroedinger-equation-for-wave-functional-qft).
+
+- - -
+
+Now we can talk about passive perspective of the action of the displacement operator $D_ {f}$, in a more rigorous way. 
+
 
 
 
