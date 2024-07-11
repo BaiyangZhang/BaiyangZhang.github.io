@@ -646,15 +646,19 @@ $$
 - - -
 
 For the ground state (or vacuum state) of the free scalar field, the wave functional $\Psi_0[\phi]$ has a Gaussian form, it is basically an infinite lattice of harmonic oscillators. It can be written as:
+
 $$
 \Psi_0[\phi] = N \exp \left( -\frac{1}{2} \int d^3x \, d^3y \, \phi(x) K(x,y) \phi(y) \right)
 $$
+
 where $N$ is a normalization constant, and $K(x,y)$ is a kernel that depends on the mass $m$ of the scalar field and the spatial separation $|x - y|$.
 
 For a free scalar field, $K(x,y)$ can be written in terms of the Fourier transform:
+
 $$
 K(x,y) = \int \frac{d^3k}{(2\pi)^3} \, \omega_k \, e^{i k \cdot (x - y)}
 $$
+
 with $\omega_k = \sqrt{k^2 + m^2}$.
 
 The wave functional $\Psi_0[\phi]$ provides the probability amplitude for the field configuration $\phi(x)$. The exponential form indicates that the ground state is a Gaussian distribution centered around $\phi(x) = 0$, reflecting the fact that the vacuum state has no preferred field configuration (zero field on average).
@@ -676,18 +680,7 @@ $$
 $$
 
 as we showed before. We can regard $\mathcal{D}_ {f}\left\lvert{\Psi}\right\rangle$ as the same state as $\left\lvert{\Psi}\right\rangle$, just measured with different basis: instead of $\left\langle \varphi \middle\vert \Psi \right\rangle$, we have $\left\langle \varphi+f \middle\vert \Psi \right\rangle$. 
-
-
-
-
-
-
-
-
-
-
-
-
+# Spontaneous Symmetry Breaking
 
 With our Lagrangian, the minimum of the potential is obtained at 
 
@@ -695,5 +688,5 @@ $$
 \phi = \pm v, \quad  v = \frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}.
 $$
 
-We want to do the perturbation theory about, say, $-v$, and we can use the displacement operator to do that, by defining a passively transformed Hamiltonian:
+We want to do the perturbation theory about, say, $+v$, and we can use the displacement operator to do that, by defining a passively transformed Hamiltonian:
 
