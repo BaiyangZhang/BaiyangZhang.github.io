@@ -1,37 +1,53 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     Fractal Geometry in Physics 			# 标题 
-subtitle:   Basied on a 2000 paper by H. KroKger
-date:       2023-06-07 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/background5.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - 
+layout: post
+title: Fractal Geometry in Physics
+date: 2024-07-11
+author: Baiyang Zhang
+catalog: true
+tags:
+  - fractal
 ---
 
-### Introduction
 
-A fractal is defined as an object with two properties: 
-1. self-similarity;
-2. its fractal dimension being different from its topological dimension. 
+# Introduction
+
+I am writing a paper with Zhi-PengShen on the [Diophatine approximation](## [Diophantine](https://en.wikipedia.org/wiki/Diophantine_approximation)),here is a short introduction on fractal that is prerequisited.
+
+A fractal, such as the [middle third Cantor set](https://brilliant.org/wiki/cantor-set/), usually have the following properties: 
+
+1. Self-similarity;
+2. Has a "fine structure". It contains details at arbitrarily small scales. 
+3. Its fractal dimension being different from its topological dimension. 
+4. The geometry of the fractal can not be described simply by the zero locus of some defining condition. 
+5. The size of a fractal is usually not quntified by the usual measure, such as length, area. 
 
 In the theory of phase transition we have two notions quite similar to it:
+
 1. the system is scale-invariant at the critical point;
 2. there exists non-integer critical exponents at the critical point.
 
 Two examples of fractals are 
-1. Koch's curve, obtained from a segment of a straight line, by repeating a pattern that gives the line an angle, see the figure below. It is self-similar by construction, the length goes to infinity by a power law as $n\to \infty$.
 
-![KochCurve](/img/KochCcurve.png)
+`Koch's curve`, obtained from a segment of a straight line, by repeating a pattern that gives the line an angle, see the figure below. It is self-similar by construction, the length goes to infinity by a power law as $n\to \infty$.
 
-2. Another example is the coastal line of England, whose length $L(\epsilon)$ depends on the length $\epsilon$ of the yardstick, assumed to have the power law form,
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/KochCcurve.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    The von Koch curve.
+</div>
+
+Another example is the coastal line of England, whose length $L(\epsilon)$ depends on the length $\epsilon$ of the yardstick. The coastal length is assumed to have the power law form,
 
 $$
 L(\epsilon)\sim ~L_ {0}\epsilon^{-\alpha}.
 $$
 
-The power-law behavior reminds us with the critical exponents near the critical point, for example the magnetization of a ferromagnet near the critical temperature. The fractal dimension $d_ {\text{frac}}$ of the coastal line is defined to be 
+The power-law behavior reminds us with the critical exponents near the critical point in statistical field theory, for example the magnetization of a ferromagnet near the critical temperature. 
+
+We will talk more about dimension of a fractal, how to define and calculate it, in the future of the note. Now I only mention that the fractal dimension $d_ {\text{frac}}$ of the coastal line is defined to be 
 
 $$
 \alpha=d_ {\text{frac}}-d_ {\text{top}}
@@ -44,6 +60,15 @@ d_ {\text{frac}}\sim 1.25.
 $$
 
 - - -
+
+
+
+
+
+
+
+
+
 
 How should we think of the dimension of a fractal? Consider some regular geometric object, such as a regular two dimensional square $\square$. If we double the size of it, its area is multiplied by $2^{d}$ where $d$ is the dimension. In general, if the size of an object is multiplied by a factor $\lambda$, its area, or length, or whatever quantity that measures the "content" of the object, should be multiplied by a factor $\lambda^{d}$, where $d$ can be regarded as (one of the many) definitions of dimension.
 
@@ -59,7 +84,7 @@ $$
 L(\epsilon) \sim \left( \frac{4}{3} \right)^{-\ln\epsilon},\quad  \epsilon\to 0.
 $$
 
-Clearly something is off here。
+Clearly something is wrong.
 
 - - -
 
