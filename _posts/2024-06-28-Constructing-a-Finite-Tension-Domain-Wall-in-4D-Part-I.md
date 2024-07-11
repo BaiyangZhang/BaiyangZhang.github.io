@@ -11,8 +11,16 @@ tags:
   - kink
 ---
 
+# Table of Contents
 
-# Coherent state and solitonic state
+- [1. Coherent state and solitonic state](#1-coherent-state-and-solitonic-state)
+- [2. Conventions](#2-conventions)
+- [3. Normal ordering with mass m](#3-normal-ordering-with-mass-m)
+- [4. Triviality of phi-fourth theory](#4-triviality-of-phi-fourth-theory)
+- [5. Perturbative Expansion of the Hamiltonian](#5-perturbative-expansion-of-the-hamiltonian)
+- [6. Passive Transformation by $D_ {f}$](#6-passive-transformation-by-d_-f)
+
+# 1. Coherent state and solitonic state
 
 In quantum field theory (QFT), a **coherent state** is a specific type of quantum state that exhibits classical-like behavior. These states are widely used to describe states that most closely resemble classical waves. To understand it, it's best to start with quantum mechanics.
 
@@ -75,7 +83,7 @@ At the end of section 4.3 in Coleman's note on classical and quantum lumps, he s
 
 We will see if this is correct in 3+1 dimension. 
 
-# Conventions
+# 2. Conventions
 
 we are not interested in the interaction picture but in the Schrodinger picture. It is for a bunch of reasons, one of them is that it is easy to see what the normal-ordering prescription corresponds to in this picture. Schrodinger-picture operators are given as functions of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate, not the Lorentzian spacetime coordinate $x^{\mu}$. We begin with a phi-fourth theory in Schrodinger picture, normal ordered at mass scale $m_ {0}$:
 
@@ -177,7 +185,7 @@ A &= \sum_ {i=0}^{\infty}A_ {i}, \quad  A_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 \end{align*}
 $$
 
-# Normal ordering with mass m
+# 3. Normal ordering with mass m
 
 This section is based on Sidney Coleman's [1975 paper](http://users.physik.fu-berlin.de/%7Ekamecke/ps/coleman.pdf) and his lecture note on the aspects of symmetry, the chapter about classical and quantum lumps. In the meanwhile I have adopted notations and convention according to previous chapter. 
 
@@ -414,7 +422,7 @@ $$
 
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
 
-# Triviality of phi-fourth theory
+# 4. Triviality of phi-fourth theory
 
 Renormalization is the process by which the parameters of a quantum field theory (like the mass and coupling constant) are adjusted to account for the effects of interactions at different energy scales. This involves introducing a cutoff $\Lambda$ to regulate divergences and then taking the limit $\Lambda \to \infty$.
 
@@ -435,7 +443,7 @@ $$
 As $\Lambda \to \infty$, if $Z \to \infty$ (which is the case for $\phi^4$ theory in 4D), the renormalized coupling $\lambda$ must go to zero to keep $\lambda_ 0$ fixed.
 
 In summary, saying that $\phi^4$ theory is "trivial" means that, after accounting for the effects of renormalization, the theory becomes non-interacting as the UV cutoff is taken to infinity. This implies that any interacting $\phi^4$ theory in four dimensions cannot remain interacting at all energy scales and instead becomes a free theory at very high energies. This phenomenon is an important aspect of understanding the limitations and behaviors of quantum field theories in different dimensions.
-# Perturbative Expansion of the Hamiltonian
+# 5. Perturbative Expansion of the Hamiltonian
 
 Since we want to cancel divergences in a perturbative manner, that is, order-by-order in (renormalized) coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
 
@@ -518,7 +526,7 @@ $$
 $$
 
 We have neglected higher order terms, for example a term $3g\delta g\sim \mathcal{O}(g^{4}) \sim\mathcal{O}(\lambda^{2})$ was dropped from the expression.
-# Passive Transformation by $D_ {f}$
+# 6. Passive Transformation by $D_ {f}$
 
 In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we introduce the displacement operator. Given a function $f(\vec{x})$, the associated displacement operator is defined as 
 
@@ -680,13 +688,6 @@ $$
 $$
 
 as we showed before. We can regard $\mathcal{D}_ {f}\left\lvert{\Psi}\right\rangle$ as the same state as $\left\lvert{\Psi}\right\rangle$, just measured with different basis: instead of $\left\langle \varphi \middle\vert \Psi \right\rangle$, we have $\left\langle \varphi+f \middle\vert \Psi \right\rangle$. 
-# Spontaneous Symmetry Breaking
 
-With our Lagrangian, the minimum of the potential is obtained at 
-
-$$
-\phi = \pm v, \quad  v = \frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}.
-$$
-
-We want to do the perturbation theory about, say, $+v$, and we can use the displacement operator to do that, by defining a passively transformed Hamiltonian:
+In the following notes, we will talk about the spontaneous symmetry breaking, and enter the main part of the projcet. 
 
