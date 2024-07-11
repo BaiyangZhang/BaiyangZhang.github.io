@@ -15,9 +15,9 @@ I am writing a paper with Zhi-PengShen on the [Diophatine approximation](## [Dio
 
 A fractal, such as the [middle third Cantor set](https://brilliant.org/wiki/cantor-set/), usually have the following properties: 
 
-1. Self-similarity;
+1. Self-similarity; sometimes the self similarity is not strict, it is quasi-self-similar in that arbitrarily small portions of the set can be magnified and then distorted smoothly to coincide with a large part of the set, take the [Julia set](https://en.wikipedia.org/wiki/Julia_set) for example. Or it could be ever weaker, as the statistical self-similarity for random von Koch curve.
 2. Has a "fine structure". It contains details at arbitrarily small scales. 
-3. Its fractal dimension being different from its topological dimension. 
+3. Its fractal dimension being different from its `topological dimension` (The topological dimension of a set is always an integer and is 0 if it is totally disconnected, 1 if each point has arbitrarily small neighbourhoods with boundary of dimension 0, and so on). 
 4. The geometry of the fractal can not be described simply by the zero locus of some defining condition. 
 5. The size of a fractal is usually not quntified by the usual measure, such as length, area. 
 
@@ -26,7 +26,11 @@ In the theory of phase transition we have two notions quite similar to it:
 1. the system is scale-invariant at the critical point;
 2. there exists non-integer critical exponents at the critical point.
 
-Two examples of fractals are 
+It seems fractal does not have a mathematcially rigor definition. Kenneth Falconer mentioned in his textbook that,
+
+>My personal feeling is that the definition of a ‘fractal’ should be regarded in the same way as a biologist regards the definition of ‘life’. There is no hard and fast definition, but just a list of properties characteristic of a living thing, such as the ability to reproduce or to move or to exist to some extent independently of the environment. Most living things have most of the characteristics on the list, though there are living objects that are exceptions to each of them.
+
+So it's best to learn fractal by studying some examples. Two examples of fractals are:
 
 `Koch's curve`, obtained from a segment of a straight line, by repeating a pattern that gives the line an angle, see the figure below. It is self-similar by construction, the length goes to infinity by a power law as $n\to \infty$.
 
@@ -61,16 +65,7 @@ $$
 
 - - -
 
-
-
-
-
-
-
-
-
-
-How should we think of the dimension of a fractal? Consider some regular geometric object, such as a regular two dimensional square $\square$. If we double the size of it, its area is multiplied by $2^{d}$ where $d$ is the dimension. In general, if the size of an object is multiplied by a factor $\lambda$, its area, or length, or whatever quantity that measures the "content" of the object, should be multiplied by a factor $\lambda^{d}$, where $d$ can be regarded as (one of the many) definitions of dimension.
+How should we think of the dimension of a fractal? Consider some regular geometric object, such as a familiar two dimensional square $\square$. If we double the side length of it, its area is multiplied by $2^{d}$ where $d$ is the dimension. In general, if the size of an object is multiplied by a factor $\lambda$, its area, or length, or whatever quantity that measures the "content" of the object, should be multiplied by a factor $\lambda^{d}$, where $d$ can be regarded as (one of the many) definitions of dimension. The number obtained in this way is usually referred to as the `similarity dimension` of the set.
 
 Let's try to apply this definition to Koch's curve. It is self-similar, if we shrink it by a factor of $3$, then it reduces to one of its four "components". This component should have length that is one quarter of the original one. In other words, if we multiply Koch's curve by factor $\lambda=\frac{1}{3}$, then the length should be multiplied by $\frac{1}{4}$, the before-mentioned definition of dimension should give
 
@@ -78,13 +73,7 @@ $$
 \text{new length}=\text{new size}^{d}\implies \frac{1}{4}=\left( \frac{1}{3} \right)^{d}\implies d\sim 1.26.
 $$
 
-It is very closed to the fractal dimension of the coastal line of England, is it a coincidence? Plus, I don't see the connection between above definition of dimension and the dimension given for the coastal line of England. In the case of Koch's curve, if we assume that each iteration requires a finer ruler to measure the total length, since a rule must be able to see all the zig-zags. We can set the needed ruler's length to be the length of the shortest line segment in the Koch's curve. Then the ruler's length decrease to $\epsilon=\frac{1}{3^{n}}L_ {0}$ in the n-th iteration, where $L_ {0}$ is the original length. Then the total length of the curve approaches infinity not according to the power law, but rather
-
-$$
-L(\epsilon) \sim \left( \frac{4}{3} \right)^{-\ln\epsilon},\quad  \epsilon\to 0.
-$$
-
-Clearly something is wrong.
+However, similarity dimension can not be applied to fractals which lack strict self similarity. There are other definitions of dimension that are much more widely applicable, such the famous Hausdorff dimension (which will be the centeral idea of the note), or box-counting dimension. Very roughly, a dimension provides a description of how much space a set fills. It is a measure of the prominence of the irregularities of a set when viewed at very small scales. 
 
 - - -
 
@@ -94,17 +83,18 @@ The fractal dimension is used to quantify this roughness and complexity. The hig
 
 The earliest known measure of roughness of an object is the Hausdorff dimension (also known as Hausdorff-Besicovitch dimension) introduced by Felix Hausdorff in 1918, even before fractal geometry was a thing. 
 
-- - -
-
-### Brownian motion
+## Case study: Brownian motion
 
 It seems that, in Brownian motion, the momentum change of a molecule at a collision depends only upon the last collision. It is a Gaussian stochastic process. 
 
 Consider a lattice in $D$ dimension, with space and time discretization $\Delta x$ and $\Delta t$. Supposed the molecule of study can only hop from one site to the neighbor site, with direction chosen at random. One can then ask for the probability
+
 $$
 P(x_ {1},t_ {1};x_ {0},t_ {0}) = \text{molecure move from }(x_ {0},t_ {0}) \text{ to } (x_ {1},t_ {1}).
 $$
+
 The probability should satisfy three conditions,
+
 1. If $t_ {0}=t_ {1}$ then the particle does not move, $P=\delta(x_ {0},x_ {1})$.
 2. The total probability is normalized to one.
 3. At successive times, it can arrive only from neighbor sites.
