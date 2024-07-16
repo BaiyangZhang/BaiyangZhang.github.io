@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Introduction to Resurgence Part 2
-date: 2024-06-26
+date: 2024-07-13
 author: Baiyang Zhang
 catalog: true
-tags: resurgence
+tags:
+  - resurgence
 ---
 
 # An Example: Euler's Equation

@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "bdeb560c1ad9120d",
+        "id": "ae8f65a03b65a4bd",
         "type": "tabs",
         "children": [
           {
-            "id": "afdffd4ed97e5ff0",
+            "id": "2e017099d4e2dad5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "30255c0dede3e821",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.5"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -59,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "transseries",
+                "query": "fractal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md"
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
               }
             }
           }
@@ -171,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30255c0dede3e821",
+  "active": "2e017099d4e2dad5",
   "lastOpenFiles": [
+    "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
+    "_posts/2024-07-11-Fractal-Geometry.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
     "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-06-18-Yoneda-Lemma.md",
     "_posts/2024-06-26-Introduction-to-Resurgence-Part-1.md",
@@ -207,8 +197,6 @@
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
     "_posts/2024-06-18-Basic-Category-Theory-Lecture-3.md",
-    "Untitled 1.md",
-    "_posts/2024-02-26-Note-on-Classical-Kinks.md",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
