@@ -60,7 +60,7 @@ $$
 }
 $$
 
-It inspires us to define a new Hamiltonian in exatly the same fashion, 
+It inspires us to define a new Hamiltonian in exactly the same fashion, 
 
 $$
 \mathcal{H} := \mathcal{D}_ {v_ {0}}^{\dagger} \hat{\mathcal{H}} \mathcal{D}_ {v_ {0}}.
@@ -73,7 +73,8 @@ We are interested in the spectrum of the Hamiltonian. The good news is that, a u
 A comparison between what we have said to the case of regular functions might be helpful. 
 
 
-|                                                                           functions                                                                            |                                                                                                                                                                      QFT                                                                                                                                                                      |
+
+|                                                                           Functions                                                                            |                                                                                                                                                                      QFT                                                                                                                                                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                      A functions $f(x)$, a special position $x_ {0}$ where the interesting things happen.                                      |                                                                                                             A Hilbert state represented by a functional $\left\lvert{\Psi}\right\rangle$, and some operator $\mathcal{O}(\phi)$.                                                                                                              |
 |                                            We want to study the function $f(x_ {0})$ about $x_ {0}$ perturbatively,                                            |                                                                                                                We want to study the $\left\langle{\Psi}\right\rvert\mathcal{O}\left\lvert{\Psi}\right\rangle$ perturbatively,                                                                                                                 |
@@ -81,7 +82,11 @@ A comparison between what we have said to the case of regular functions might be
 | **In a passive perspective, we shift the origin** to $x_ {0}$, then small deviation from $x_ {0}$ can now be studied using Maclaurin expansion perturbatively. | In a passive perspective, we shift the operators, especially the field operator $\phi$ since it is usually the building block of other operators. The expectation value of the new, shifted operator $\phi'$ should be zero, $\left\langle{\Psi}\right\rvert \phi'\left\lvert{\Psi}\right\rangle =0$. Now we can treat $\phi$ perturbatively. |
 |                We are using a new, shifted coordinate system $\left\lbrace \overline{x} \right\rbrace$ to study the same old functions $f(x)$.                 |                                                                                                  We are using shifted operators $\mathcal{D}^{\dagger}\mathcal{O}\mathcal{D}$ to study the same old states $\left\lvert{\Psi}\right\rangle$.                                                                                                  |
 
+- - -
 
+In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively. 
+
+- - -
 
 In renormalized parameters the Hamiltonian reads
 
