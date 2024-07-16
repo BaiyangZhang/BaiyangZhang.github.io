@@ -68,9 +68,17 @@ $$
 
 We are interested in the spectrum of the Hamiltonian. The good news is that, a unitary transformation preserves the spectrum! Now, to study the quantum corrections, instead of working with $\hat{H}, \phi$ and $\left\lvert{0^{+}}\right\rangle$ where perturbative methods fail, we can work with $H, \phi'$ and $\left\lvert{0^{+}}\right\rangle$ where $\phi'$ can be dealt with perturbatively. 
 
-**Remarks.** Generally speaking, let $\mathcal{O}$ be any operator and $\left\lvert{\psi}\right\rangle$ its eigen state. If $\mathcal{O}'=\mathcal{D}^{\dagger}\mathcal{O} \mathcal{D}$ is the unitary transformation of $\mathcal{O}$, then its eigen state is $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$, not $\left\lvert{\psi}\right\rangle$. It maybe seems weird to some people to team up $\mathcal{O}'$ and $\left\lvert{\psi}\right\rangle$, not $\mathcal{O}'$ and $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$. In fact, it is the point! If we pair $\mathcal{O}'$ with $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$ it would be a trivially-transformed version of working with $\mathcal{O}$ and $\left\lvert{\psi}\right\rangle$, we would not get anything new! However, since $\left\lvert{\psi}\right\rangle$ is not the eigen state of $\mathcal{O}'$, it indeed raise some problems, the first and formost is that now $\mathcal{O}'$ is not diagonalized in $\left\lvert{\psi}\right\rangle$, we need to find a way to diagonalized it. That would be the other half the the project. 
+**Remarks.** Generally speaking, let $\mathcal{O}$ be any operator and $\left\lvert{\psi}\right\rangle$ its eigen state. If $\mathcal{O}'=\mathcal{D}^{\dagger}\mathcal{O} \mathcal{D}$ is the unitary transformation of $\mathcal{O}$, then its eigen state is $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$, not $\left\lvert{\psi}\right\rangle$. It maybe seems weird to some people to team up $\mathcal{O}'$ and $\left\lvert{\psi}\right\rangle$, not $\mathcal{O}'$ and $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$. In fact, it is the point! If we pair $\mathcal{O}'$ with $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$ it would be a trivially-transformed version of working with $\mathcal{O}$ and $\left\lvert{\psi}\right\rangle$, we would not get anything new! However, since $\left\lvert{\psi}\right\rangle$ is not the eigen state of $\mathcal{O}'$, it indeed raise some problems, the first and foremost is that now $\mathcal{O}'$ is not diagonalized in $\left\lvert{\psi}\right\rangle$, we need to find a way to diagonalized it. That would be the other half the the project. 
 
-A comparison between 
+A comparison between what we have said to the case of regular functions might be helpful. 
+
+
+|                                      functions                                       |                                                      QFT                                                       |
+| :----------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+| A functions $f(x)$, a special position $x_ {0}$ where the interesting things happen. | A Hilbert state represented by a functional $\left\lvert{\Psi}\right\rangle$, and some operator $\mathcal{O}$. |
+|       We want to study the function $f(x_ {0})$ about $x_ {0}$ perturbatively,       | We want to study the $\left\langle{\Psi}\right\rvert\mathcal{O}\left\lvert{\Psi}\right\rangle$ perturbatively. |
+|                                                                                      |                                                                                                                |
+
 
 
 In renormalized parameters the Hamiltonian reads

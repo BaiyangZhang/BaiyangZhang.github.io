@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "ae8f65a03b65a4bd",
+        "id": "bdeb560c1ad9120d",
         "type": "tabs",
         "children": [
           {
-            "id": "2e017099d4e2dad5",
+            "id": "afdffd4ed97e5ff0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30255c0dede3e821",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fractal",
+                "query": "transseries",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -140,13 +154,21 @@
                 "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
               }
             }
+          },
+          {
+            "id": "9f0d880fa5a611cd",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,12 +181,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e017099d4e2dad5",
+  "active": "30255c0dede3e821",
   "lastOpenFiles": [
-    "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
-    "_posts/2024-07-11-Fractal-Geometry.md",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-11-Fractal-Geometry.md",
+    "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+    "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
     "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-06-18-Yoneda-Lemma.md",
     "_posts/2024-06-26-Introduction-to-Resurgence-Part-1.md",
@@ -196,7 +219,6 @@
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-2.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
-    "_posts/2024-06-18-Basic-Category-Theory-Lecture-3.md",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
