@@ -72,8 +72,6 @@ We are interested in the spectrum of the Hamiltonian. The good news is that, a u
 
 A comparison between what we have said to the case of regular functions might be helpful. 
 
-
-
 |                                                                           Functions                                                                            |                                                                                                                                                                      QFT                                                                                                                                                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                      A functions $f(x)$, a special position $x_ {0}$ where the interesting things happen.                                      |                                                                                                             A Hilbert state represented by a functional $\left\lvert{\Psi}\right\rangle$, and some operator $\mathcal{O}(\phi)$.                                                                                                              |
@@ -84,15 +82,27 @@ A comparison between what we have said to the case of regular functions might be
 
 - - -
 
-In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively. 
+In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively. For the value of $v$, we could choose it to be the bare parameter or renormalized parameter, for example $v_ {0}=-\frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}$ is given by a bunch of other bare parameters hence itself is also a bare parameter. The renormalized version would be $v:= -\frac{m}{\sqrt{ 2\lambda} }$. The final result should not depend on the convention we choose, so for now we let it be bare, the associated displacement operator is $\mathcal{D}_ {v_ {0}}$. The expansion is given by 
 
-- - -
+$$
+v_ {0} = v+\delta v, \quad  \delta v = \delta v_ {1}+\delta v_ {2}+\cdots,
+$$
+
+and $\delta v_ {i} \sim \mathcal{O}(g^{i})$.
 
 In renormalized parameters the Hamiltonian reads
 
 $$
 \begin{align*} 
 \hat{H}(\vec{x}) &\supset \int d^{3}x \, : \frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4}:_ {m} \\ &\;\;\;\; + \int d^{3}x \, : \frac{\delta m^{2}}{4}\phi^{2}-\frac{1}{2}g \delta g\phi^{4}+\frac{3}{2}g^{2}I\phi^{2}-\frac{3}{4}m^{2}I +A :_ {m}. 
+\end{align*}
+$$
+
+From this we have $\mathcal{H}$ by straightforward calculation. Make use of the expansion of $v_ {0}$, we will expand the Hamiltonian density in powers of $\lambda=g^{2}$. We find
+
+$$
+\begin{align*}
+\mathcal{H} &:= 
 \end{align*}
 $$
 

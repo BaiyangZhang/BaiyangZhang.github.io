@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Quantum Domain Wall in 4D Part I
-subtitle: 
-date: 2024-06-28
+date: 2024-07-15
 author: Baiyang Zhang
-header-img: 
 catalog: true
 tags:
   - "#domainWall"
@@ -180,7 +178,7 @@ $$
 \delta g &\sim \mathcal{O}(g^{3}),\\
 H &= \sum_ {i=01}^{\infty} H_ {i},\quad  H_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 A &= \sum_ {i=0}^{\infty}A_ {i}, \quad  A_ {i} \sim \mathcal{O}(g^{i-2}) , \\
-\delta v &= \sum_ {i=1}^{\infty} \delta v_ {i} ,\quad  v_ {i} \sim \mathcal{O}(g^{i}) \\
+\delta v &= \sum_ {i=1}^{\infty} \delta v_ {i} ,\quad  \delta v_ {i} \sim \mathcal{O}(g^{i}) \\
 \left\lvert{\Psi}\right\rangle  &= \sum_ {i}^{\infty} \left\lvert{\Psi_ {i}}\right\rangle , \quad  \left\lvert{\Psi}\right\rangle _ {i} \sim \mathcal{O}(g^{i})
 \end{align*}
 $$
