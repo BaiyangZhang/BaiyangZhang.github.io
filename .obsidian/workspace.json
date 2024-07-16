@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "30255c0dede3e821",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -160,7 +171,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "afdffd4ed97e5ff0",
+  "active": "30255c0dede3e821",
   "lastOpenFiles": [
     "_posts/2024-06-28-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
