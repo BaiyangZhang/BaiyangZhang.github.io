@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md"
               }
             }
           },
@@ -184,8 +183,8 @@
   },
   "active": "30255c0dede3e821",
   "lastOpenFiles": [
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2024-07-11-Fractal-Geometry.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",

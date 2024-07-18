@@ -176,12 +176,15 @@ $$
 \begin{align*}
 \delta m^{2}&\sim \mathcal{O}(\lambda)\sim \mathcal{O}(g^{2}),   \\
 \delta g &\sim \mathcal{O}(g^{3}),\\
-H &= \sum_ {i=01}^{\infty} H_ {i},\quad  H_ {i} \sim \mathcal{O}(g^{i-2}) , \\
+H &= \sum_ {i=0}^{\infty} H_ {i},\quad  H_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 A &= \sum_ {i=0}^{\infty}A_ {i}, \quad  A_ {i} \sim \mathcal{O}(g^{i-2}) , \\
-\delta v &= \sum_ {i=1}^{\infty} \delta v_ {i} ,\quad  \delta v_ {i} \sim \mathcal{O}(g^{i}) \\
-\left\lvert{\Psi}\right\rangle  &= \sum_ {i}^{\infty} \left\lvert{\Psi_ {i}}\right\rangle , \quad  \left\lvert{\Psi}\right\rangle _ {i} \sim \mathcal{O}(g^{i})
+\delta v &= \sum_ {i=1}^{\infty} \delta v_ {i} ,\quad  \delta v_ {i} \sim \mathcal{O}(g^{i}), \\
+\left\lvert{\Psi}\right\rangle  &= \sum_ {i=0}^{\infty} \left\lvert{\Psi_ {i}}\right\rangle , \quad  \left\lvert{\Psi}\right\rangle _ {i} \sim \mathcal{O}(g^{i}), \\
+I &\sim \mathcal{O}(g^{2}).
 \end{align*}
 $$
+
+Where $I$ is some variable which will be define later, I put it here for the sake of completeness.
 
 # 3. Normal ordering with mass m
 

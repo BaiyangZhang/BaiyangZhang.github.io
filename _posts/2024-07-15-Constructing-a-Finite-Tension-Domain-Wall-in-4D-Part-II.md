@@ -98,7 +98,7 @@ $$
 \end{align*}
 $$
 
-From this we have $\mathcal{H}$ by straightforward calculation. Make use of the expansion of $v_ {0}$, we will expand the Hamiltonian density in powers of $\lambda=g^{2}$. We find
+We need to sandwich it by $\mathcal{D}_ {v_ {0}}$ to get $\mathcal{H}$. Makeing use of the expansion of $v_ {0}$, we will expand the Hamiltonian density in powers of $\lambda=g^{2}$. We find
 
 $$
 \begin{align*}
