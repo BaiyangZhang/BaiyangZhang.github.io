@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fractal Geometry in Physics
-date: 2024-07-11
+title: Hausdorff Measure of Fractals
+date: 2024-07-22
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -9,24 +9,24 @@ tags:
 ---
 
 
-# Introduction
+# Background
 
-I am writing a paper with Zhi-PengShen on the [Diophatine approximation](## [Diophantine](https://en.wikipedia.org/wiki/Diophantine_approximation)),here is a short introduction on fractal that is prerequisited.
+I am writing a paper with Zhi-Peng on the [Diophatine approximation](## [Diophantine](https://en.wikipedia.org/wiki/Diophantine_approximation)),here is a short introduction on fractal as prerequisites.
 
 A fractal, such as the [middle third Cantor set](https://brilliant.org/wiki/cantor-set/), usually have the following properties: 
 
 1. Self-similarity; sometimes the self similarity is not strict, it is quasi-self-similar in that arbitrarily small portions of the set can be magnified and then distorted smoothly to coincide with a large part of the set, take the [Julia set](https://en.wikipedia.org/wiki/Julia_set) for example. Or it could be ever weaker, as the statistical self-similarity for random von Koch curve.
 2. Has a "fine structure". It contains details at arbitrarily small scales. 
-3. Its fractal dimension being different from its `topological dimension` (The topological dimension of a set is always an integer and is 0 if it is totally disconnected, 1 if each point has arbitrarily small neighbourhoods with boundary of dimension 0, and so on). 
+3. Its fractal dimension being different from its `topological dimension` (The topological dimension of a set is always an integer and is 0 if it is totally disconnected, 1 if each point has arbitrarily small neighborhoods with boundary of dimension 0, and so on). 
 4. The geometry of the fractal can not be described simply by the zero locus of some defining condition. 
-5. The size of a fractal is usually not quntified by the usual measure, such as length, area. 
+5. The size of a fractal is usually not quantified by the usual measure, such as length, area. 
 
 In the theory of phase transition we have two notions quite similar to it:
 
 1. the system is scale-invariant at the critical point;
 2. there exists non-integer critical exponents at the critical point.
 
-It seems fractal does not have a mathematcially rigor definition. Kenneth Falconer mentioned in his textbook that,
+It seems fractal does not have a mathematically rigor definition. Kenneth Falconer mentioned in his textbook that,
 
 >My personal feeling is that the definition of a ‘fractal’ should be regarded in the same way as a biologist regards the definition of ‘life’. There is no hard and fast definition, but just a list of properties characteristic of a living thing, such as the ability to reproduce or to move or to exist to some extent independently of the environment. Most living things have most of the characteristics on the list, though there are living objects that are exceptions to each of them.
 
@@ -73,7 +73,7 @@ $$
 \text{new length}=\text{new size}^{d}\implies \frac{1}{4}=\left( \frac{1}{3} \right)^{d}\implies d\sim 1.26.
 $$
 
-However, similarity dimension can not be applied to fractals which lack strict self similarity. There are other definitions of dimension that are much more widely applicable, such the famous Hausdorff dimension (which will be the centeral idea of the note), or box-counting dimension. Very roughly, a dimension provides a description of how much space a set fills. It is a measure of the prominence of the irregularities of a set when viewed at very small scales. 
+However, similarity dimension can not be applied to fractals which lack strict self similarity. There are other definitions of dimension that are much more widely applicable, such the famous Hausdorff dimension (which will be the central idea of the note), or box-counting dimension. Very roughly, a dimension provides a description of how much space a set fills. It is a measure of the prominence of the irregularities of a set when viewed at very small scales. 
 
 - - -
 
@@ -103,11 +103,66 @@ The last conditions gives us the dynamics of the particle, it tells how the part
 
 It shouldn't surprise us that at the continuum limit, the probability distribution adopt a Gaussian form.
 
-The probability naturally satisfies the so-called `Kolmogorov equation`, 
+The probability satisfies the so-called `Kolmogorov equation`, 
 
 $$
 \int d^{d}x_ {1} \,  P(x_ {2},t_ {2};x_ {1},t_ {1})P(x_ {1},t_ {1};x_ {0},t_ {0})=P(x_ {2},t_ {2};x_ {0},t_ {0}).
 $$
 
 **This will give us a path-integral interpretation of the probability.**
+
+# Hausdorff Measure
+
+For a more detailed introduction on measure theory please refer to my two previous notes, [Basic Measure Theory Part I](https://www.mathlimbo.net/blog/2022/Basic-Measure-Theory-Part-I/) and [Part II](https://www.mathlimbo.net/blog/2022/Basic-Measure-Theory-Part-II/). Here we assume the basic knowledge of measure theory.
+
+To build up some intuition, let's return to the example of Cantor sets. If we measure it using dimension one, then it has total length zero. The set is too "small" to be measured with dimension one. However, if we measure it using dimension zero, that is just count how many points it contains, then the dimension becomes infinity. The set is too "large" to be measured with dimension zero. The question is, is there a dimension between zero and one, that we can somehow "use" to measure the size of Cantor set, which gives us neither zero nor infinity? Turns out, we can find such a number! That is what Hausdorff measure gives us, as we will dive into details.
+
+The idea behind the Hausdorff dimension is to measure how a set scales as you cover it with balls of decreasing radius. In more technical terms, it quantifies how the number of these small balls (or other shapes) needed to cover the set scales as the size of the balls decreases. So first, we need to define how to **cover a set** in rigorous mathematical language.
+
+Recall that if $U$ is a subset of $\mathbb{R}^{n}$ (or any other metric space), then the `diameter` of $U$, denoted $\left\lvert U \right\rvert$, is defined to be the greatest distance between any two points in it, that is 
+
+$$
+\left\lvert U \right\rvert := \text{sup }\left\lbrace \left\lvert x-y \right\rvert : x,y\in U \right\rbrace .
+$$
+
+If $\left\lbrace U_ {i} \right\rbrace$ is a countable (or finite) collection of sets of diameter at most $\delta$, that is $\left\lvert U_ {i} \right\rvert\leq \delta$. If $\left\lbrace U_ {i} \right\rbrace$ covers $F$, i.e.
+
+$$
+F \subset \bigcup_ {i} U_ {i} ,
+$$
+
+Then $\left\lbrace U_ {i} \right\rbrace$ is said to be a $\delta$-cover of $F$. 
+
+Let $F$ be the subset of $\mathbb{R}^{n}$, we introduce a non-negative number $s$ which will play the role of dimension in the future. For any diameter $\delta>0$ we define 
+
+$$
+\mathcal{H}^{s}_ {\delta}(F) := \text{inf } \left\lbrace \sum\left\lvert U_ {i}  \right\rvert ^{s}  \,\middle\vert\, \left\lbrace U_ {i}  \right\rbrace \text{ is a } \delta \text{-cover of } F \right\rbrace .
+$$
+
+Thus we look at all the $\delta$-cover of $F$ and seek to minimize the sum of the $s$th powers of the diameters. This sum goes to a limit as $\delta$ goes to zero, we define
+
+$$
+\mathcal{H}^{s}(F) := \lim_ { \delta \to 0 } \mathcal{H}_ {\delta}^{s}(F).
+$$
+
+The idea is illustrated in the figure below.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/fractal/deltaCover.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    The plot is copied from Falconer's textbook. It shows two different $\delta$-cover of $F$. 
+</div>
+
+
+
+
+
+# Hausdorff Dimension
+
+The notion of dimension is central to fractal geometry. Roughly speaking, dimension indicates how much space a set occupies **near to each of its points**. The keyword here is *near*, dimension, when interpreted in this way, is a local notion, not global. The global size a set occupies might has nothing to do with dimension, for example, given two different line segments, one is longer than the other hence occupies more space, but they are both dimension one, and length is the global size. On the other hand, if you pick a point and look at what happens in its small neighbor, then these two lines appears the same. That is to say, the local size of these to lines are the same, reflecting the fact that they are of the same dimension.
+
+Of the wide variety of "fractal dimensions" in use, the Hausdorff dimension is the oldest and probably the most important. It has the advantage of being defined for any set, not just strictly self-similar ones. It is also mathematically convenient, as it is based on measures, which are relatively easy to manipulate. However, a major disadvantage is that it can be sometimes hard to calculate **by numerical methods**. 
 

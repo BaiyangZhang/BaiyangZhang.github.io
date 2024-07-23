@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_posts/2024-07-11-Hausdorff-Dimension-of-Fractals.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,9 +30,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5c5d4e44bb1457b3",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -99,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-11-Hausdorff-Dimension-of-Fractals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-11-Hausdorff-Dimension-of-Fractals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
+                "file": "_posts/2024-07-11-Hausdorff-Dimension-of-Fractals.md"
               }
             }
           },
@@ -182,11 +190,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30255c0dede3e821",
+  "active": "85934409c70af44e",
   "lastOpenFiles": [
+    "img/fractal/deltaCover.png",
+    "img/fractal",
+    "img/新建文件夹",
+    "_pages/about.md",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_posts/2024-07-11-Fractal-Geometry.md",
+    "Confining Modeling of Quark Propagator.md",
+    "_posts/2024-07-11-Hausdorff-Dimension-of-Fractals.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
     "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
@@ -217,9 +230,6 @@
     "img/Yoneda1.png",
     "Pasted image 20240621161152.png",
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-3.md",
-    "_posts/2024-06-16-Introduction-to-Resurgence-Part-2.md",
-    "_posts/2023-12-20-Notes-on-Kontsevich.md",
-    "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
@@ -227,8 +237,6 @@
     "_includes/scripts/analytics.html",
     "_includes/scripts/wechatModal.html",
     "_includes/scripts/progressBar.html",
-    "_includes/scripts/misc.html",
-    "_includes/scripts/mathjaxBackup.html",
-    "_includes/scripts/mathjax.html"
+    "_includes/scripts/misc.html"
   ]
 }

@@ -34,7 +34,7 @@ but only include $\phi'\sim 0$.
 
 How can we do the same thing but with Hamiltonian formalism? Anything that can be done with one formalism can equally be done in the other, it is just a matter of which formalism is more convenient. 
 
-The problem is that, with Hamiltonian formalism, perturbative methods are just not applicable, because the expectation values $\left\langle \phi \right\rangle := \left\langle{0^{+}}\right\rvert \phi \left\lvert{0^{+}}\right\rangle$ is by no means a small quantity, in fact $\left\langle \phi \right\rangle$ sclaes as $1 / \sqrt{ \lambda_ {0} }$, it actually blows up as $\lambda_ {0}\to 0$. Then, we need to find some new field operator $\phi'$ such that $\left\langle \phi' \right\rangle=0$, then we can study the effects of fluctualtion of $\left\langle \phi' \right\rangle$ perturbative in $\left\lvert{0^{+}}\right\rangle$ state. Turns out, $\phi'$ is connected to $\phi$ by a unitary transformation, and in the case at hand the unitary operator turns out to be the displacement operator $\mathcal{D}_ {v_ {0}}$, where $v_ {0}$ is some parameter to be determined. Note that we have replaced the arbitrary function $f(\vec{x})$ with a constant function $v_ {0}$. We will explain it in the following.
+The problem is that, with Hamiltonian formalism, perturbative methods are just not applicable, because the expectation values $\left\langle \phi \right\rangle := \left\langle{0^{+}}\right\rvert \phi \left\lvert{0^{+}}\right\rangle$ is by no means a small quantity, in fact $\left\langle \phi \right\rangle$ scales as $1 / \sqrt{ \lambda_ {0} }$, it actually blows up as $\lambda_ {0}\to 0$. Then, we need to find some new field operator $\phi'$ such that $\left\langle \phi' \right\rangle=0$, then we can study the effects of fluctuation of $\left\langle \phi' \right\rangle$ perturbative in $\left\lvert{0^{+}}\right\rangle$ state. Turns out, $\phi'$ is connected to $\phi$ by a unitary transformation, and in the case at hand the unitary operator turns out to be the displacement operator $\mathcal{D}_ {v_ {0}}$, where $v_ {0}$ is some parameter to be determined. Note that we have replaced the arbitrary function $f(\vec{x})$ with a constant function $v_ {0}$. We will explain it in the following.
 
 Recall the defining property of displacement operator, $\mathcal{D}_ {f}^{\dagger}\phi \mathcal{D}_ {f}=\phi+f$. Thus if we let 
 
@@ -85,20 +85,21 @@ A comparison between what we have said to the case of regular functions might be
 In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively. For the value of $v$, we could choose it to be the bare parameter or renormalized parameter, for example $v_ {0}=-\frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}$ is given by a bunch of other bare parameters hence itself is also a bare parameter. The renormalized version would be $v:= -\frac{m}{\sqrt{ 2\lambda} }$. The final result should not depend on the convention we choose, so for now we let it be bare, the associated displacement operator is $\mathcal{D}_ {v_ {0}}$. The expansion is given by 
 
 $$
-v_ {0} = v+\delta v, \quad  \delta v = \delta v_ {1}+\delta v_ {2}+\cdots,
+v_ {0} = v+\delta v, \quad  \delta v = \delta v_ {1}+\delta v_ {2}+\cdots, \quad \delta v_ {i} \sim \mathcal{O}(g^{i}).
 $$
 
-and $\delta v_ {i} \sim \mathcal{O}(g^{i})$.
+This can be seen from expanding $v_ {0}$ in terms of $m_ {0}$ and $g_ {0}$.
 
 In renormalized parameters the Hamiltonian reads
 
 $$
 \begin{align*} 
-\hat{H}(\vec{x}) &\supset \int d^{3}x \, : \frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4}:_ {m} \\ &\;\;\;\; + \int d^{3}x \, : \frac{\delta m^{2}}{4}\phi^{2}-\frac{1}{2}g \delta g\phi^{4}+\frac{3}{2}g^{2}I\phi^{2}-\frac{3}{4}m^{2}I +A :_ {m}. 
+\hat{H}(\vec{x}) &\supset \int d^{3}x \, : \frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4}:_ {m} \\ 
+&\;\;\;\; + \int d^{3}x \, : \frac{\delta m^{2}}{4}\phi^{2}-\frac{1}{2}g \delta g\phi^{4}+\frac{3}{2}g^{2}I\phi^{2}-\frac{3}{4}m^{2}I +A :_ {m}. 
 \end{align*}
 $$
 
-We need to sandwich it by $\mathcal{D}_ {v_ {0}}$ to get $\mathcal{H}$. Makeing use of the expansion of $v_ {0}$, we will expand the Hamiltonian density in powers of $\lambda=g^{2}$. We find
+We need to sandwich it by $\mathcal{D}_ {v_ {0}}$ to get $\mathcal{H}$. Making use of the expansion of $v_ {0}$, we will expand the Hamiltonian density in powers of $\lambda=g^{2}$. With some help from Mathematica, we find
 
 $$
 \begin{align*}
@@ -106,3 +107,36 @@ $$
 \end{align*}
 $$
 
+
+
+- - -
+
+I have the following expression for Hamiltonian density:
+
+$$
+\mathcal{H}=\frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4} + \frac{\delta m^{2}}{4}\phi^{2}-\frac{1}{2}g \delta g\phi^{4}+\frac{3}{2}g^{2}I\phi^{2}-\frac{3}{4}m^{2}I +A
+$$
+
+where $\phi$ is a scalar field, $\delta m^{2}$ is the counter term, $g$ is the coupling. I want to first replace all $\phi$ with $\phi+v_ {0}$, then replace some parameters in the expression order-by-order as the following:
+
+$$
+\begin{align*} 
+\delta m^{2}&\to \delta m^{2}_ {1} g^{2} + \delta m^{2}_ {2}  g^{3} + \delta m^{2}_ {3}g^{4}+\delta m^{2}_ {4}g^{5}, \\
+\delta g &\to  \delta g_ {1} (g^{3})+,\\
+A &\to  A_ {0} g^{-2}+A_ {1} g^{-1}+ A_ {2} + A_ {3} g+A_ {4}g^{2}+A_ {5}g^{3},\\ 
+v_ {0}&\to v+\delta v_ {1}g+\delta v_ {2} g^{2}+\delta v_ {3} g^{3},\\ 
+I &\to  I_ {1} g^{2} + I_ {2} g^{3}.
+\end{align*}
+$$
+
+I want the expression, and then group all the terms order-by-order in the powers of the coupling $g$, namely I want to collect all the terms proportional to $g^{-2}$, $g^{-1}$, $g^{0}$, $g$, etc., all the way to $g^{3}$ terms, discard higher-order term. 
+
+Please give me the Mathematica code to achieve this
+
+I have some terms of different implicit orders in coupling $g$. For example, in the following expression,
+
+$$
+g^{2}v^{4}+v^{2}+m^{2} ,
+$$
+
+$v$ is implicitly of order $g^{-1}$, and $m$ is implicitly of order $g^{0}$. Now I want to use Mathematica to group things by order of $g$, for example $g^{2}v^{4}$ should be grouped with $v^{2}$ together, which is the group of order $g^{-2}$. $m^{2}$ belongs to another group. How can I use Mathematica to do that?
