@@ -115,7 +115,7 @@ $$
 
 For a more detailed introduction on measure theory please refer to my two previous notes, [Basic Measure Theory Part I](https://www.mathlimbo.net/blog/2022/Basic-Measure-Theory-Part-I/) and [Part II](https://www.mathlimbo.net/blog/2022/Basic-Measure-Theory-Part-II/). Here we assume the basic knowledge of measure theory.
 
-To build up some intuition, let's return to the example of Cantor sets. If we measure it using dimension one, then it has total length zero. The set is too "small" to be measured with dimension one. However, if we measure it using dimension zero, that is just count how many points it contains, then the dimension becomes infinity. The set is too "large" to be measured with dimension zero. The question is, is there a dimension between zero and one, that we can somehow "use" to measure the size of Cantor set, which gives us neither zero nor infinity? Turns out, we can find such a number! That is what Hausdorff measure gives us, as we will dive into details.
+To build up some intuition, let's return to the example of Cantor sets. If we measure it using dimension one, then it has total length zero. The set is too "small" to be measured with dimension one. However, if we measure it using dimension zero, that is just count how many points it contains, then the dimension becomes infinity. The set is too "large" to be measured with dimension zero. The question is, is there a dimension between zero and one, that we can somehow "use" to measure the size of Cantor set, which gives us neither zero nor infinity? Or, if this requirement is too strong, we can weaken it by asking if there is a number, below which the measurement gives infinity, above which the measurement gives zero, this critical point perhaps can be regarded as the dimension? Turns out, we can find such a number! That is what Hausdorff measure gives us, as we will dive into details.
 
 The idea behind the Hausdorff dimension is to measure how a set scales as you cover it with balls of decreasing radius. In more technical terms, it quantifies how the number of these small balls (or other shapes) needed to cover the set scales as the size of the balls decreases. So first, we need to define how to **cover a set** in rigorous mathematical language.
 
@@ -145,7 +145,7 @@ $$
 \mathcal{H}^{s}(F) := \lim_ { \delta \to 0 } \mathcal{H}_ {\delta}^{s}(F).
 $$
 
-The idea is illustrated in the figure below.
+The limit always exists for any set $F$, but it need not be any finite number, it can (and usually is) $0$ or $\infty$. We call $\mathcal{H}^{s}(F)$ the $s$`-dimensional Hausdorff measure of` $F$
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
