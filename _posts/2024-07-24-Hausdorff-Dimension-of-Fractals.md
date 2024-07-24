@@ -222,10 +222,7 @@ The graph of Hausdorff measure $\mathcal{H}^{s}$ vs $s$ is shown below. Below th
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kink/movingWall.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/Rosa.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="/img/fractal/Hs.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
     </div>
 </div>
 <div class="caption">
@@ -273,7 +270,25 @@ As for the importance of bi-Lipschitz maps, I quote Falconer here:
 
 Next let's used the famous mid-third Cantor set as an examples to illustrate how to calculate the Hausdorff dimension. 
 
-Recall that the mid-third Cantor set $F$ (Cantor set for short) is divided into the left part and right part, each similar to the whole. Denote them as $F_ {L}$ and $F_ {R}$ respectively. Apparently we have $\mathcal{H}^{s}(F_ {L}) = \mathcal{H}^{s}(F_ {R})$. We can find the relation between $\mathcal{H}^{s}(F)$ (the whole) and $\mathcal{H}^{s}(F_ {R})$ (the part) by noticing that, if $\left\lbrace U_ {i} \right\rbrace$ is a $\delta$-cover of $F$, then $\frac{1}{3}\left\lbrace U_ {i} \right\rbrace$ is a $\delta/3$-cover of $F_ {L}$, this gives us 
+Recall that the mid-third Cantor set $F$ (Cantor set for short) is divided into the left part and right part, each similar to the whole. Denote them as $F_ {L}$ and $F_ {R}$ respectively. It is shown in the figure below.
+
+
+
+
+```python
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/fractal/CantorSet.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    Construction of the middle-third Cantor set $F$, by repeated removal of the middle third of intervals. $E_k$ is what we got after $k$th removal.
+</div>
+
+```
+
+
+Apparently we have $\mathcal{H}^{s}(F_ {L}) = \mathcal{H}^{s}(F_ {R})$. We can find the relation between $\mathcal{H}^{s}(F)$ (the whole) and $\mathcal{H}^{s}(F_ {R})$ (the part) by noticing that, if $\left\lbrace U_ {i} \right\rbrace$ is a $\delta$-cover of $F$, then $\frac{1}{3}\left\lbrace U_ {i} \right\rbrace$ is a $\delta/3$-cover of $F_ {L}$, this gives us 
 
 $$
 \mathcal{H}^{s}_ {\delta/3}(F_ {L}) = \text{inf }\left\lbrace \sum_ {i}\left\lvert \frac{U_ {i}}{3} \right\rvert^{s}  \right\rbrace =  \frac{1}{3^{s}}\text{inf }\left\lbrace \sum_ {i}\left\lvert U_ {i} \right\rvert^{s}  \right\rbrace  = \frac{1}{3^{s}}\mathcal{H}^{s}_ {\delta}(F).
@@ -299,4 +314,4 @@ The equation $\mathcal{H}^{s} (F) = \frac{2}{3^{s}} \mathcal{H}^{s}(F)$ has thre
 
 This agrees with the picture given before, suggesting that the Hausdorff measure is infinity when the dimension is below $\log_ {3}2$, and zero above, so $\log_ {3}2$ is a critical point, hence the Hausdorff dimension of the Cantor set. However, the story is not over yet, in the last case we have assumed that $\mathcal{H}^{s}(F)$ at $s=\log_ {3}2$ is a finite quantity, which needs justification.
 
-Recall from 
+Recall from Fig. that $E_ {k}$ is what we got after cutting it for $k$-times. 

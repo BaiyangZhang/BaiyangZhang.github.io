@@ -30,16 +30,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5c5d4e44bb1457b3",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
           }
         ]
       }
@@ -193,6 +183,7 @@
   },
   "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
+    "img/fractal/CantorSet.png",
     "img/fractal/Hs.png",
     "img/fractal/deltaCover.png",
     "img/fractal",
@@ -229,7 +220,6 @@
     "img/natXele.png",
     "img/natAele.png",
     "img/naturalityInA.png",
-    "img/Yoneda1.png",
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-3.md",
     "_includes/New folder",
     "_includes/head.html",
