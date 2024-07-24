@@ -156,9 +156,61 @@ The limit always exists for any set $F$, but it need not be any finite number, i
     The plot is copied from Falconer's textbook. It shows two different $\delta$-cover of $F$. 
 </div>
 
+To show that $\mathcal{H}^{s}$ is indeed a measure, we must show that it satisfies all the properties a measure must have, for example $\mathcal{H}^{s}(\emptyset)$ is zero, the measure of a subset is always no larger than the original set, etc. We will not provide a proof here.
 
+- - -
 
+Hausdorff measure is a generalization of more familiar measures, such as length, area and volume. Specifically, it can be shown that for a Borel subset $F$ of $\mathbb{R}^{n}$, $\mathcal{H}^{s}(F)$ is equal to its Lebesgue measure, namely $n$-volume up to a multiplicative constant,
 
+$$
+\mathcal{H}^{n}(F) = c_ {n}^{-1} \text{vol}^{n(F)},
+$$
+
+where $c_ {n}$ is the volume of an $n$-dimensional ball if diameter $1$. 
+
+Similarly, for a nice lower dimensional subset of $\mathbb{R}^{n}$, we have that $\mathcal{H}^{0}$ is the number of points in $F$, $\mathcal{H}^{1}$ is the length of a smooth curve $F$, $\mathcal{H}^{2}$ is $\frac{1}{\pi}$ times the area of $F$, etc.
+
+- - -
+
+We know that one of the defining concept of dimension is revealed under scaling of a subset. On magnification by a scale $\lambda$, the length of a curve is multiplied by $\lambda$, the area of a surface is multiplied by $\lambda^{2}$, the volume of an object is multiplied by $\lambda^{3}$. If Hausdorff measure is truly a generalization of length, area and volume, then $s$-Hausdorff measure should be multiplied by $\lambda^{s}$. It turns out to be true.
+
+**Scaling Property.** Let $S$ be a similarity transformation of scale factor $\lambda>0$. If $F\subset \mathbb{R}^{n}$, then 
+
+$$
+\boxed{ 
+\mathcal{H}^{s}(S(F)) = \lambda^{s}\mathcal{H}^{s}(F).
+}
+$$
+
+Proof. The similarity transformation $S$ also transfers a $\delta$-cover of $F$ to a $\lambda \delta$-cover of $S(F)$, for everything is scaled by a factor of $\lambda$. By definition of $\mathcal{H}^{s}_ {\delta}$ we have, after the scaling,
+
+$$
+\mathcal{H}^{s}_ {\lambda \cdot\delta}(SF) = \text{inf }\left\lbrace \sum \left\lvert SU_ {i}  \right\rvert^{s}  \right\rbrace  = \text{inf }\left\lbrace \lambda^{s} \sum \left\lvert U_ {i}  \right\rvert^{s}  \right\rbrace = \lambda^{s}\mathcal{H}^{s}_ {\delta}(F),
+$$
+
+where $\left\lbrace U_ {i} \right\rbrace$ is a $\delta$-cover of $F$ thus $\left\lbrace SU_ {i} \right\rbrace$ is a $\lambda\delta$-cover of $S(F)$. On taking the limit $\delta\to 0$ we have
+
+$$
+\mathcal{H}^{s}(SF) = \lambda^{s}\mathcal{H}^{s}(F).
+$$
+
+Q.E.D.
+
+- - -
+
+A similar argument gives the following result. Let $F\subset\mathbb{R}^{n}$ and $f: F\to \mathbb{R}^{m}$ be a map such that 
+
+$$
+\left\lvert f(x)-f(y) \right\rvert \leq  c\left\lvert x-y \right\rvert ^{\alpha}, \quad  c,\alpha>0.
+$$
+
+Which is called the `Holder condition of exponent` $\alpha$. Then for each $s$ 
+
+$$
+\mathcal{H}^{s/\alpha} (f(F)) \leq c^{s/\alpha} \mathcal{H}^{s}(F).
+$$
+
+Particularly important is the case $\alpha=1$, when the map is called `Lipschitz`. This case can be used to prove that $\mathcal{H}^{s}$ is translational and rotational invariant, we will not go to the details though. 
 
 # Hausdorff Dimension
 
