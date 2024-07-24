@@ -218,3 +218,85 @@ The notion of dimension is central to fractal geometry. Roughly speaking, dimens
 
 Of the wide variety of "fractal dimensions" in use, the Hausdorff dimension is the oldest and probably the most important. It has the advantage of being defined for any set, not just strictly self-similar ones. It is also mathematically convenient, as it is based on measures, which are relatively easy to manipulate. However, a major disadvantage is that it can be sometimes hard to calculate **by numerical methods**. 
 
+The graph of Hausdorff measure $\mathcal{H}^{s}$ vs $s$ is shown below. Below the critical value it is infinity, above the critical value it is zero, at the critical point it jumps from $\infty$ to $0$. We define this critical value as the `Hausdorff dimension`, denoted $\text{dim}_ {H}$. It is also called Hausdorff-Besicovitch dimension. The Hausdorff dimension of a set $F$ is denoted $\text{dim}_ {H}F$. We state without proof that, Hausdorff dimension exists for any subset of $\mathbb{R}^{n}$. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/movingWall.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/Rosa.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+	    The graph of $\mathcal{H}^{s}(F)$ vs $s$. Below the critical value it is infinity, above the critical value it is zero, at the critical point it jumps from $\infty$ to $0$. This critical value is defined to be the Hausdorff dimension of $F$.
+</div>
+
+Formally, 
+
+$$
+\mathcal{H}^{s}F = 
+\begin{cases}
+\infty & 0\leq s < \text{dim}_ {H}F, \\
+0      & s > \text{dim}_ {H}F.
+\end{cases}
+$$
+
+If $s=\text{dim}_ {H}F$, then $\mathcal{H}^{s}F$ may be zero, $\infty$ or some finite number in between. In the last case, a Borel set satisfying this condition is called an $s$-set. Mathematically they are convenient to study and occurs surprisingly often. 
+
+Hausdorff dimension satisfies the following (rather well expected) properties. 
+
+- Monotonicity. If $E\subset F$ then $\text{dim}_ {H}E\leq \text{dim}_ {H}F$. 
+- Countable stability. If $F_ {1},F_ {2},\cdots$ is a sequence of countable sets, then the Hausdorff dimension of $\cup_ {i}F_ {i}$ is the supremum of $\left\lbrace \text{dim}_ {H}F_ {i} \right\rbrace$. 
+
+If follows from countable stability that if $F$ is a countable set then it has Hausdorff dimension zero. 
+
+If $F\subset\mathbb{R}^{n}$ is an open set, then $\text{dim}_ {H}F=n$, since $F$ can be covered by countable open balls, each has dimension $n$. 
+
+The Hausdorff dimension is preserved by bi-Lipschitz maps $f$, which are maps satisfy
+
+$$
+c_ {1}\left\lvert x-y \right\rvert \leq \left\lvert f(x)-f(y) \right\rvert \leq c_ {2}\left\lvert x-y \right\rvert ,
+$$
+
+where 
+
+$$
+0 <  c_ {1} \leq  c_ {2} < \infty.
+$$
+
+As for the importance of bi-Lipschitz maps, I quote Falconer here:
+
+>In topology two sets are regarded as ‘the same’ if there is a homeomorphism between them. One approach to fractal geometry is to regard two sets as ‘the same’ if there is a bi-Lipschitz mapping between them. Just as topological invariants are used to distinguish between non-homeomorphic sets, we may seek parameters, including dimension, to distinguish between sets that are not bi-Lipschitz equivalent. Since bi-Lipschitz transformations are necessarily homeomorphisms, topological parameters provide a start in this direction, and Hausdorff dimension (and other definitions of dimension) provide further distinguishing characteristics between fractals.
+
+- - -
+
+Next let's used the famous mid-third Cantor set as an examples to illustrate how to calculate the Hausdorff dimension. 
+
+Recall that the mid-third Cantor set $F$ (Cantor set for short) is divided into the left part and right part, each similar to the whole. Denote them as $F_ {L}$ and $F_ {R}$ respectively. Apparently we have $\mathcal{H}^{s}(F_ {L}) = \mathcal{H}^{s}(F_ {R})$. We can find the relation between $\mathcal{H}^{s}(F)$ (the whole) and $\mathcal{H}^{s}(F_ {R})$ (the part) by noticing that, if $\left\lbrace U_ {i} \right\rbrace$ is a $\delta$-cover of $F$, then $\frac{1}{3}\left\lbrace U_ {i} \right\rbrace$ is a $\delta/3$-cover of $F_ {L}$, this gives us 
+
+$$
+\mathcal{H}^{s}_ {\delta/3}(F_ {L}) = \text{inf }\left\lbrace \sum_ {i}\left\lvert \frac{U_ {i}}{3} \right\rvert^{s}  \right\rbrace =  \frac{1}{3^{s}}\text{inf }\left\lbrace \sum_ {i}\left\lvert U_ {i} \right\rvert^{s}  \right\rbrace  = \frac{1}{3^{s}}\mathcal{H}^{s}_ {\delta}(F).
+$$
+
+Taking the limit $\delta\to0$ we have
+
+$$
+\mathcal{H}^{s}(F_ {L}) = \frac{1}{3^{s}}\mathcal{H}^{s}(F).
+$$
+
+Also we have $F = F_ {L} \cup F_ {R}$, thus
+
+$$
+\mathcal{H}^{s} (F) =  \mathcal{H}^{s}(F_ {L}) + \mathcal{H}^{s}(F_ {R}) = \frac{2}{3^{s}} \mathcal{H}^{s}(F).
+$$
+
+The equation $\mathcal{H}^{s} (F) = \frac{2}{3^{s}} \mathcal{H}^{s}(F)$ has three solutions, 
+
+- $\mathcal{H}^{s}(F)=0$,
+- $\mathcal{H}^{s}(F)=\infty$
+- $0<\mathcal{H}^{s}(F)<\infty$ and $s=\log_ {3}2$.
+
+This agrees with the picture given before, suggesting that the Hausdorff measure is infinity when the dimension is below $\log_ {3}2$, and zero above, so $\log_ {3}2$ is a critical point, hence the Hausdorff dimension of the Cantor set. However, the story is not over yet, in the last case we have assumed that $\mathcal{H}^{s}(F)$ at $s=\log_ {3}2$ is a finite quantity, which needs justification.
+
+Recall from 
