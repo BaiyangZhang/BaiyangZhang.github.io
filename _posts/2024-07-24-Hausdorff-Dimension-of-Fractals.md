@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hausdorff Measure of Fractals
-date: 2024-07-22
+date: 2024-07-24
 author: Baiyang Zhang
 catalog: true
 tags:
