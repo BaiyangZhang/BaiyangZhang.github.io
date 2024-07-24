@@ -314,4 +314,17 @@ The equation $\mathcal{H}^{s} (F) = \frac{2}{3^{s}} \mathcal{H}^{s}(F)$ has thre
 
 This agrees with the picture given before, suggesting that the Hausdorff measure is infinity when the dimension is below $\log_ {3}2$, and zero above, so $\log_ {3}2$ is a critical point, hence the Hausdorff dimension of the Cantor set. However, the story is not over yet, in the last case we have assumed that $\mathcal{H}^{s}(F)$ at $s=\log_ {3}2$ is a finite quantity, which needs justification.
 
-Recall from Fig. that $E_ {k}$ is what we got after cutting it for $k$-times. 
+Recall from Fig. that $E_ {k}$ is what we got after cutting it for $k$-times. $E_ {k}$ consists of $2^{k}$ intervals each of length $3^{-k}$, thus we can regard it as the $3^{-k}$-cover of $F$. It gives as 
+
+$$
+\mathcal{H}^{s}_ {3^{-k}}(F) \leq  \sum_ {i=1}^{2^{k}}\left\lvert 3^{-k} \right\rvert ^{s} = 2^{k} 3^{-ks}.
+$$
+
+At $s=\log_ {3}2$, in the $k\to \infty$ limit we have 
+
+$$
+\mathcal{H}^{s}(F) \leq  1.
+$$
+
+It is slighter harder to find an infimum of $\mathcal{H}^{s}$, so we will neglect it here. With even more effort one can show that $\mathcal{H}^{s}F=1$. 
+
