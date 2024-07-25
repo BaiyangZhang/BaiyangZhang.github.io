@@ -139,4 +139,7 @@ $$
 g^{2}v^{4}+v^{2}+m^{2} ,
 $$
 
-$v$ is implicitly of order $g^{-1}$, and $m$ is implicitly of order $g^{0}$. Now I want to use Mathematica to group things by order of $g$, for example $g^{2}v^{4}$ should be grouped with $v^{2}$ together, which is the group of order $g^{-2}$. $m^{2}$ belongs to another group. How can I use Mathematica to do that?
+$v$ is implicitly of order $g^{-1}$, and $m$ is implicitly of order $g^{0}$. Now I want to use Mathematica to group things by order of $g$, for example $g^{2}v^{4}$ should be grouped with $v^{2}$ together, which is the group of order $g^{-2}$. $m^{2}$ belongs to another group. I used Mathematica to do that. The final results read
+
+
+

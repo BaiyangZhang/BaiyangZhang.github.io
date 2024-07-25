@@ -182,10 +182,16 @@ $$
 }
 $$
 
-Proof. The similarity transformation $S$ also transfers a $\delta$-cover of $F$ to a $\lambda \delta$-cover of $S(F)$, for everything is scaled by a factor of $\lambda$. By definition of $\mathcal{H}^{s}_ {\delta}$ we have, after the scaling,
+Proof. The similarity transformation $S$ also transfers a $\delta$-cover of $F$ to a $\lambda \delta$-cover of $S(F)$, for everything is scaled by a factor of $\lambda$. By definition of Hausdorff measure we have, after the scaling,
 
 $$
-\mathcal{H}^{s}_ {\lambda \cdot\delta}(SF) = \text{inf }\left\lbrace \sum \left\lvert SU_ {i}  \right\rvert^{s}  \right\rbrace  = \text{inf }\left\lbrace \lambda^{s} \sum \left\lvert U_ {i}  \right\rvert^{s}  \right\rbrace = \lambda^{s}\mathcal{H}^{s}_ {\delta}(F),
+\mathcal{H}^{s}_ {\lambda \cdot\delta}(SF) = \text{inf}\left\lbrace \sum \left\lvert A_ {i}   \right\rvert^{s}  \right\rbrace  
+$$
+
+and I claim that each element $A_ {i}$ of $\lambda \delta$-covers of $SF$ is obtained by $\lambda U_ {i}$ for a unique $U_ {i}$ which is a $\delta$-cover of $F$. I will not prove it here due to lack of words. Then we have 
+
+$$
+\mathcal{H}^{s}_ {\lambda \cdot\delta}(SF) = \text{inf }\left\lbrace \sum \left\lvert A_ {i}  \right\rvert^{s}  \right\rbrace  = \text{inf }\left\lbrace \lambda^{s} \sum \left\lvert U_ {i}  \right\rvert^{s}  \right\rbrace = \lambda^{s}\mathcal{H}^{s}_ {\delta}(F),
 $$
 
 where $\left\lbrace U_ {i} \right\rbrace$ is a $\delta$-cover of $F$ thus $\left\lbrace SU_ {i} \right\rbrace$ is a $\lambda\delta$-cover of $S(F)$. On taking the limit $\delta\to 0$ we have
