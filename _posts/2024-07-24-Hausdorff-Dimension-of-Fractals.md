@@ -188,10 +188,13 @@ $$
 \mathcal{H}^{s}_ {\lambda \cdot\delta}(SF) = \text{inf}\left\lbrace \sum \left\lvert A_ {i}   \right\rvert^{s}  \right\rbrace  
 $$
 
-and I claim that each element $A_ {i}$ of $\lambda \delta$-covers of $SF$ is obtained by $\lambda U_ {i}$ for a unique $U_ {i}$ which is a $\delta$-cover of $F$. I will not prove it here due to lack of words. Then we have 
+and I claim that each element $A_ {i}$ of $\lambda \delta$-covers of $SF$ is obtained by $\lambda U_ {i}$ for a unique $U_ {i}$ which is a $\delta$-cover of $F$. Roughly speaking, it is because 1) each $\delta$-cover of $F$ gives a $\lambda\delta$-cover of $SF$, it means that $S$ is an injection; 2) since $\lambda \neq 0$, there always exists an inverse scaling map $S^{-1}$ which scales $SF$ back to $F$, i.e. scaling by $\lambda ^{-1}$, $S^{-1}$ is also an injection just like $S$, since they are essentially the same kind of operation; 3) since $S$ and $S^{-1}$ are both injections, **$S$ is a bijection**. And their measures, $\mathcal{H}^{s}_ {\lambda \delta}(A_ {i})$ and $\mathcal{H}^{s}_ {\delta}(U_ {i})$ where $A_ {i}=SU_ {i}$ differs only by a multiplicative constant, which turns out to be $\lambda^{s}$, as we will see later. It means that $S$ preserves the order, if $U\leq U'$ then $\sum\left\lvert SU \right\rvert^{s}\leq \sum\left\lvert SU' \right\rvert^{s}$. Thus all the $A_ {i}$s and all the $U_ {i}$s (and their Hausdorff measures) are 1-2-1 correspondent, with the ordering preserved. Then we have 
 
 $$
-\mathcal{H}^{s}_ {\lambda \cdot\delta}(SF) = \text{inf }\left\lbrace \sum \left\lvert A_ {i}  \right\rvert^{s}  \right\rbrace  = \text{inf }\left\lbrace \lambda^{s} \sum \left\lvert U_ {i}  \right\rvert^{s}  \right\rbrace = \lambda^{s}\mathcal{H}^{s}_ {\delta}(F),
+\begin{align*}
+\mathcal{H}^{s}_ {\lambda \cdot\delta}(SF) &= \text{inf }\left\lbrace \sum \left\lvert A_ {i}  \right\rvert^{s}  \right\rbrace  = \text{inf }\left\lbrace \sum \left\lvert SU_ {i}  \right\rvert^{s}  \right\rbrace  \\
+&= \text{inf }\left\lbrace \lambda^{s} \sum \left\lvert U_ {i}  \right\rvert^{s}  \right\rbrace = \lambda^{s}\mathcal{H}^{s}_ {\delta}(F),
+\end{align*}
 $$
 
 where $\left\lbrace U_ {i} \right\rbrace$ is a $\delta$-cover of $F$ thus $\left\lbrace SU_ {i} \right\rbrace$ is a $\lambda\delta$-cover of $S(F)$. On taking the limit $\delta\to 0$ we have
@@ -201,6 +204,8 @@ $$
 $$
 
 Q.E.D.
+
+Note that the proof here is slightly different than what Falconer gave in his textbook. There to prove $\text{inf}\left\lbrace A \right\rbrace=\text{inf}\left\lbrace B \right\rbrace$ he essentially proves that 1) $\text{inf}\left\lbrace A \right\rbrace\leq \text{inf}\left\lbrace B \right\rbrace$ and 2) $\text{inf}\left\lbrace A \right\rbrace\geq \text{inf}\left\lbrace B \right\rbrace$, then it follows $\text{inf}\left\lbrace A \right\rbrace=\text{inf}\left\lbrace B \right\rbrace$. Our proof is a little big different, it says that 1) $S:A\to B$ is a injection and 2) $S^{-1} B\to A$ is also an injection, so $S$ is a bijection. Furthermore, $S$ preserves the ordering, so $\text{inf}\left\lbrace A \right\rbrace=\text{inf}\left\lbrace B \right\rbrace$.
 
 - - -
 
