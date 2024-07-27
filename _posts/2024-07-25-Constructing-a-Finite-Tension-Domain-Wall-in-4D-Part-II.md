@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quantum Domain Wall in 4D Part II
-date: 2024-07-15
+date: 2024-07-25
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -99,47 +99,14 @@ $$
 \end{align*}
 $$
 
-We need to sandwich it by $\mathcal{D}_ {v_ {0}}$ to get $\mathcal{H}$. Making use of the expansion of $v_ {0}$, we will expand the Hamiltonian density in powers of $\lambda=g^{2}$. With some help from Mathematica, we find
+We need to sandwich it by $\mathcal{D}_ {v_ {0}}$ to get $\mathcal{H}$. Making use of the expansion of $v_ {0}$, we will expand the Hamiltonian density in powers of $\lambda=g^{2}$. With some help from Mathematica, we find the following results.
+
+At leading order 
 
 $$
 \begin{align*}
 \mathcal{H} &:= 
 \end{align*}
 $$
-
-
-
-- - -
-
-I have the following expression for Hamiltonian density:
-
-$$
-\mathcal{H}=\frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4} + \frac{\delta m^{2}}{4}\phi^{2}-\frac{1}{2}g \delta g\phi^{4}+\frac{3}{2}g^{2}I\phi^{2}-\frac{3}{4}m^{2}I +A
-$$
-
-where $\phi$ is a scalar field, $\delta m^{2}$ is the counter term, $g$ is the coupling. I want to first replace all $\phi$ with $\phi+v_ {0}$, then replace some parameters in the expression order-by-order as the following:
-
-$$
-\begin{align*} 
-\delta m^{2}&\to \delta m^{2}_ {1} g^{2} + \delta m^{2}_ {2}  g^{3} + \delta m^{2}_ {3}g^{4}+\delta m^{2}_ {4}g^{5}, \\
-\delta g &\to  \delta g_ {1} (g^{3})+,\\
-A &\to  A_ {0} g^{-2}+A_ {1} g^{-1}+ A_ {2} + A_ {3} g+A_ {4}g^{2}+A_ {5}g^{3},\\ 
-v_ {0}&\to v+\delta v_ {1}g+\delta v_ {2} g^{2}+\delta v_ {3} g^{3},\\ 
-I &\to  I_ {1} g^{2} + I_ {2} g^{3}.
-\end{align*}
-$$
-
-I want the expression, and then group all the terms order-by-order in the powers of the coupling $g$, namely I want to collect all the terms proportional to $g^{-2}$, $g^{-1}$, $g^{0}$, $g$, etc., all the way to $g^{3}$ terms, discard higher-order term. 
-
-Please give me the Mathematica code to achieve this
-
-I have some terms of different implicit orders in coupling $g$. For example, in the following expression,
-
-$$
-g^{2}v^{4}+v^{2}+m^{2} ,
-$$
-
-$v$ is implicitly of order $g^{-1}$, and $m$ is implicitly of order $g^{0}$. Now I want to use Mathematica to group things by order of $g$, for example $g^{2}v^{4}$ should be grouped with $v^{2}$ together, which is the group of order $g^{-2}$. $m^{2}$ belongs to another group. I used Mathematica to do that. The final results read
-
 
 

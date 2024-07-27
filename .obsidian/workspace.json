@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md"
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
               }
             }
           },
@@ -183,8 +183,8 @@
   },
   "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
+    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/fractal/CantorSet.png",
     "img/fractal/Hs.png",
     "img/fractal/deltaCover.png",
