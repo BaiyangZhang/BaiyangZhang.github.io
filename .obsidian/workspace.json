@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30255c0dede3e821",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
               }
             }
           },
@@ -171,10 +183,16 @@
   },
   "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
+    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
+    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "img/fractal/CantorSet.png",
+    "img/fractal/Hs.png",
+    "img/fractal/deltaCover.png",
+    "img/fractal",
+    "img/新建文件夹",
+    "_pages/about.md",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "Untitled.md",
-    "_posts/2024-07-11-Fractal-Geometry.md",
+    "Confining Modeling of Quark Propagator.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
     "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
@@ -201,12 +219,7 @@
     "img/naturalityInX.png",
     "img/natXele.png",
     "img/natAele.png",
-    "img/naturalityInA.png",
-    "img/Yoneda1.png",
-    "Pasted image 20240621161152.png",
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-3.md",
-    "_posts/2024-06-16-Introduction-to-Resurgence-Part-2.md",
-    "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
@@ -214,8 +227,6 @@
     "_includes/scripts/analytics.html",
     "_includes/scripts/wechatModal.html",
     "_includes/scripts/progressBar.html",
-    "_includes/scripts/misc.html",
-    "_includes/scripts/mathjaxBackup.html",
-    "_includes/scripts/mathjax.html"
+    "_includes/scripts/misc.html"
   ]
 }
