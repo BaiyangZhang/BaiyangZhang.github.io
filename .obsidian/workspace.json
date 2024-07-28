@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "30255c0dede3e821",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,10 +169,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30255c0dede3e821",
+  "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "Untitled.md",
     "_posts/2024-07-11-Fractal-Geometry.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
@@ -219,7 +207,6 @@
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-3.md",
     "_posts/2024-06-16-Introduction-to-Resurgence-Part-2.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
-    "_posts/2023-06-04-Basic-Category-Theory-Lecture-2.md",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
