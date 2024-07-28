@@ -90,12 +90,12 @@ $$
 
 This can be seen from expanding $v_ {0}$ in terms of $m_ {0}$ and $g_ {0}$.
 
-In renormalized parameters the Hamiltonian reads
+In renormalized parameters the Hamiltonian reads (up to $\mathcal{O}(g^{3})$)
 
 $$
 \begin{align*} 
 \hat{H}(\vec{x}) &\supset \int d^{3}x \, : \frac{1}{2}\pi^{2}+\frac{1}{2}(\partial_ {i}\phi)^{2} - \frac{m^{2}}{4}\phi^{2}+\frac{g^{2}}{4}\phi^{4}:_ {m} \\ 
-&\;\;\;\; + \int d^{3}x \, : \frac{\delta m^{2}}{4}\phi^{2}-\frac{1}{2}g \delta g\phi^{4}+\frac{3}{2}g^{2}I\phi^{2}-\frac{3}{4}m^{2}I +A :_ {m}. 
+&\;\;\;\; + \int d^{3}x \, : \frac{\delta m^{2}}{4}\phi^{2}-\frac{1}{2}g \delta g\phi^{4} + \frac{(\delta g)^{2}}{4}\phi^{4} + \frac{3}{2}(g-\delta g)^{2}I\phi^{2}-\frac{3}{4}m^{2}I +A :_ {m}. 
 \end{align*}
 $$
 
@@ -105,8 +105,19 @@ At leading order
 
 $$
 \begin{align*}
-\mathcal{H} &:= 
+\mathcal{H}_ {0} &:= 
 \end{align*}
 $$
 
 
+- - -
+
+In comparison, Jarah's results for the shifted Hamiltonian density reads
+
+$$
+\begin{align*}
+\mathcal{H} &=\frac{1}{2}\pi^{2}+\frac{1}{2}(\partial \phi)^{2}+ \frac{\lambda}{4}(\phi-v+\delta v)^{4}- \frac{m^{2}}{4} (\phi-v+\delta v)^{2} \\
+&\;\;\;\;\; + \frac{1}{4}(-2g\delta g+(\delta g)^{2})(\phi-v+\delta v)^{4}\\
+&\;\;\;\;\; + \frac{1}{4} (\delta m^{2}+4(g-\delta g)^{2}I) (\phi-v+\delta v)^{2} + \frac{3I}{4}(-m^{2}+\delta m^{2}) +A.
+\end{align*}
+$$

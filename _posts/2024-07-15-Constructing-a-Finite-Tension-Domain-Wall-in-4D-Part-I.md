@@ -174,8 +174,8 @@ Perturbative expansion:
 
 $$
 \begin{align*}
-\delta m^{2}&\sim \mathcal{O}(\lambda)\sim \mathcal{O}(g^{2}),   \\
-\delta g &\sim \mathcal{O}(g^{3}),\\
+\delta m^{2}& =\sum_ {i=1}^{\infty} \delta m^{2}_ {i} , \quad  \delta m^{2}_ {i}\sim  \mathcal{O}(g^{i+1}),   \\
+\delta g &= \sum_ {i=1}^{\infty} \delta g_ {i}, \quad \delta g_ {i}  \sim \mathcal{O}(g^{i+2}),\\
 H &= \sum_ {i=0}^{\infty} H_ {i},\quad  H_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 A &= \sum_ {i=0}^{\infty}A_ {i}, \quad  A_ {i} \sim \mathcal{O}(g^{i-2}) , \\
 \delta v &= \sum_ {i=1}^{\infty} \delta v_ {i} ,\quad  \delta v_ {i} \sim \mathcal{O}(g^{i}), \\
