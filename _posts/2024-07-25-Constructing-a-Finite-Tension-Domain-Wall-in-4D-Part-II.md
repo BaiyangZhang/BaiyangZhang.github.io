@@ -108,12 +108,13 @@ $$
 \mathcal{H}_ {2} &= \frac{\pi^{2}}{2} + \frac{(\partial \phi)^{2}}{2} + \frac{m^{2}\phi^{2}}{2} + \frac{m^{4}}{8g^{2}}\left( -\frac{\delta g_ {1}}{g} + \frac{\delta m^{2}_ {1}}{m^{2}} + \frac{\delta m^{4}_ {1}}{8g^{2}} \right) + A_ {2}, \\ 
 \mathcal{H}_ {3} &= - \frac{mg}{\sqrt{ 2 }} \phi^{3} + \phi\left( m^{2}\delta v_ {1}+\frac{m^{3}}{\sqrt{ 2 }g} \left( \frac{\delta g_ {1}}{g} - \frac{\delta m^{2}_ {1}}{2m^{2}} - \frac{\delta m^{4}_ {1}}{2g^{2}} \right) \right) + A_ {3}, \\
 \mathcal{H}_ {4} &= \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{3gm\delta v_ {1}}{\sqrt{ 2 }} - \frac{3m^{2}\delta g_ {1}}{2g} + \frac{\delta m^{2}_ {1}}{4} + \frac{3m^{2}\delta m_ {1}^{4}}{4g^{2}} \right) \\
-&\;\;\;\; + \phi(m^{2}\delta v_ {2}) + \frac{m^{3}\delta v_ {1}}{\sqrt{ 2 }g}\left( \frac{g}{\sqrt{ 2 }m} \delta v_ {1} + \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} \right) + A_ 4， \\
-\mathcal{H}_  {5} &=  \phi^{3}\left( g^{2}\delta v_ {1}+\sqrt{2}m\delta g_ {1}- \frac{m\delta m_ {1}^{4}}{4g^{2}}  \right) - \phi^{2}\left( \frac{3mg \delta v_ {2}}{\sqrt{2}} \right) \\
-&\;\;\;\; +\phi\left( m^{2}\delta v_ {3} - \frac{3gm\delta v_ {1}^{2}}{\sqrt{2}} - \frac{3m^{2}\delta g_ {1}\delta v_ {1}}{g}+ \frac{1}{2}\delta m_ {1}^{2}\delta v_ {1} - \frac{3mg I_ {1}}{\sqrt{2}} + \frac{3m^{2}\delta m_ {1}^{4}\delta v_ {1}}{2g^{2}} \right) \\
+&\;\;\;\; + \phi(m^{2}\delta v_ {2}) + \frac{m^{3}\delta v_ {1}}{\sqrt{ 2 }g}\left( \frac{g}{\sqrt{ 2 }m} \delta v_ {1} + \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} \right) + A_ 4, \\
+\mathcal{H}_  {5} &=  \phi^{3}\left( g^{2}\delta v_ {1}+\sqrt{2}m\delta g_ {1}- \frac{m\delta m_ {1}^{4}}{\sqrt{2}g}  \right) - \phi^{2}\left( \frac{3mg \delta v_ {2}}{\sqrt{2}} \right) \\
+&\;\;\;\; + \phi\left( m^{2}\delta v_ {3} - \frac{3gm\delta v_ {1}^{2}}{\sqrt{2}} - \frac{3m^{2}\delta g_ {1}\delta v_ {1}}{g}+ \frac{1}{2}\delta m_ {1}^{2}\delta v_ {1} - \frac{3mg I_ {1}}{\sqrt{2}} + \frac{3m^{2}\delta m_ {1}^{4}\delta v_ {1}}{2g^{2}} \right) \\
 &\;\;\;\; + \frac{m^{3}\delta v_ {2}}{\sqrt{2}g}\left( \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} + \frac{\sqrt{2}g\delta v_ {1}}{m} \right) + A_ {5}. 
 \end{align*}
 $$
+
 
 
 - - -
