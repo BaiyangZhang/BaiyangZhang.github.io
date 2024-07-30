@@ -82,13 +82,11 @@ A comparison between what we have said to the case of regular functions might be
 
 - - -
 
-In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively. For the value of $v$, we could choose it to be the bare parameter or renormalized parameter, for example $v_ {0}=-\frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}$ is given by a bunch of other bare parameters hence itself is also a bare parameter. The renormalized version would be $v:= -\frac{m}{\sqrt{ 2\lambda} }$. The final result should not depend on the convention we choose, so for now we let it be bare, the associated displacement operator is $\mathcal{D}_ {v_ {0}}$. The expansion is given by 
+In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively. For the value of $v$, we could choose it to be the bare parameter or renormalized parameter. $v_ {0}=-\frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}$ is given by a bunch of other bare parameters hence itself is also a bare parameter. The renormalized version would be $v:= -\frac{m}{\sqrt{ 2\lambda} }$. The final result should not depend on the convention we choose, so for now we let it be renormalized, the associated displacement operator is $\mathcal{D}_ {v}$. Still $v$ receives quantum corrections order by order, the full expression for $v$ would be an expansion in $g$:
 
 $$
-v_ {0} = v+\delta v, \quad  \delta v = \delta v_ {1}+\delta v_ {2}+\cdots, \quad \delta v_ {i} \sim \mathcal{O}(g^{i}).
+v = -\frac{m}{\sqrt{ 2 }g} +\delta v, \quad  \delta v = \delta v_ {1}+\delta v_ {2}+\cdots, \quad \delta v_ {i} \sim \mathcal{O}(g^{i}).
 $$
-
-This can be seen from expanding $v_ {0}$ in terms of $m_ {0}$ and $g_ {0}$.
 
 In renormalized parameters the Hamiltonian reads (up to $\mathcal{O}(g^{3})$)
 
