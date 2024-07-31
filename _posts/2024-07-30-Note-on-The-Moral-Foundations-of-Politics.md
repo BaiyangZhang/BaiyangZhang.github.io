@@ -2,7 +2,7 @@
 layout: post
 title: "Note on The Moral\rFoundations\rof Politics"
 subtitle: by Ian Shapiro
-date: 2024-05-05
+date: 2024-07-30
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -183,5 +183,9 @@ Jeremy Bentham famously wrote that
 
 >Nature has placed mankind under the governance of two sovereign masters, *pain* and *pleasure*. It is for them alone to point out what we ought to do, as well as to determine what we shall do. On the one hand the standard of right and wrong, on the other the chain of causes and effects, are fastened to their throne. They govern us in all we do, in all we say, in all we think: every effort we can make to throw off our subjection, will serve but to demonstrate and confirm it. In words a man may pretend to abjure their empire: but in reality he will remain subject to it all the while. The principle of utility recognizes this subjection, and assumes it for the foundation of that system, the object of which is to rear the fabric of felicity by the hands of reason and law. Systems which attempt to question it, deal in sounds instead of senses, in caprice instead of reason, in darkness instead of light.
 
-The `principle of utility`, as Bentham explains, ‘‘approves or disapproves of every action whatsoever, according to the tendency which it appears to have to augment or diminish the happiness of the party whose interest is in question: or, what is the same thing in other words, to promote or to oppose that happiness.’’ 
+The `principle of utility`, as Bentham explains, "approves or disapproves of every action whatsoever, according to the tendency which it appears to have to augment or diminish the happiness of the party whose interest is in question: or, what is the same thing in other words, to promote or to oppose that happiness."
+
+Bentham's happiness principal, when applied to governments, requires us to maximize the greatest happiness of the greatest number in the community.
+
+Bentham defended an extensive system of political rights, but he saw rights as human artifacts, created by the legal system and enforced by the sovereign. He insisted that there are no rights without enforcement and no enforcement without government, a blunt statement of the view that would subsequently become known as legal positivism.
 

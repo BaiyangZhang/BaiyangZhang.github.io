@@ -152,6 +152,8 @@ This behaviour, in which the function defined by a divergent series jumps along 
 
 # Borel (re)summation
 
+## A rough idea
+
 The Borel summation procedure is roughly as follows. Given a power series in $x$ (without constant term), 
 
 $$
@@ -175,4 +177,6 @@ $$
 If the whole procedure works, does not encouter any further infinity, then we say that $f$ is `Borel summable`. 
 
 In general, there will be certain directions in which the singulariti lies, such as $\mathbb{R}^{-}$ in the previous example. In most examples of physical interest, there will be infinitely many such singularities. These singularities carry important information about the functions that are defined by the divergent series. The theory of resurgence is about understanding the singularities, and how they affect the summation process.
+
+## Integral Transform
 
