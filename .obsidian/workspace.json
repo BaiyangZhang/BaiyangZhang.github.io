@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
+                "file": "_posts/Untitled.md"
               }
             }
           },
@@ -183,12 +182,16 @@
   },
   "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
+    "assets/Mathematica/ExampleHarmonicOscillator.nb",
+    "assets/Mathematica",
+    "assets/新建文件夹",
+    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/Untitled.md",
     "img/resurgence/negativeRealContour.png",
     "img/resurgence",
     "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "Untitled.md",
     "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
-    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/fractal/CantorSet.png",
     "img/fractal/Hs.png",
     "img/fractal/deltaCover.png",
@@ -216,18 +219,14 @@
     "reports/psresultmobile.svg",
     "reports/psresultdesktop.svg",
     "Templates/DateNote.md",
-    "Templates/plots.md",
     "img/naturalityCommute.png",
     "img/commutePolynomial.png",
     "img/naturalityInX.png",
     "img/natXele.png",
-    "img/natAele.png",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
     "_includes/scripts/New folder",
-    "_includes/scripts/analytics.html",
-    "_includes/scripts/wechatModal.html",
-    "_includes/scripts/progressBar.html"
+    "_includes/scripts/analytics.html"
   ]
 }
