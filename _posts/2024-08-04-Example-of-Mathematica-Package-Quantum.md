@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 
-date: 
+title: Example of Mathematica Package Quantum
+date: 2024-08-04
 author: Baiyang Zhang
 catalog: true
 tags:
