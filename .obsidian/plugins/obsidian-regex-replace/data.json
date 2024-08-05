@@ -1,6 +1,6 @@
 {
-  "findText": "$x $",
-  "replaceText": "$x_ 0$",
+  "findText": "g_ 1",
+  "replaceText": "g",
   "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,

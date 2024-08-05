@@ -144,26 +144,47 @@ $$
 \end{align*}
 $$
 
-The Hamiltonian renormalization conditions are as follows. 
+The Hamiltonian renormalization conditions (HRC) are as follows. 
 
 1. Vacuum condition: $H\left\lvert{\Psi}\right\rangle=0$ at all orders.
 2. Theory is defined at mass $m$: $H\left\lvert{\vec{p}}\right\rangle = \omega_ {p,m}\left\lvert{\vec{p}}\right\rangle$. We will just neglect $m$.
 3. States at different orders are orthogonal, $\left\langle \bullet_ {i} \middle\vert \bullet_ {j} \right\rangle=0$ for $i\neq j$.
 4. No tadpole, $\left\langle{\Omega}\right\rvert\phi \left\lvert{\Omega}\right\rangle=0$. 
 
-Here $\left\lvert{\Omega}\right\rangle$ is the vacuum with interaction, sometimes called physical vacuum. $\left\lvert{\vec{p}_ {1}\cdots\vec{p}_ {n}}\right\rangle$ is an $n$-meson momenta eigenstate. We define the leading order of the vacuum to be:
+These are non-perturbative conditions, meaning they apply to all the orders, and the states involved are in general non-perturbative states, they can be expanded order by order. $\left\lvert{\Omega}\right\rangle$ is the full vacuum state with interaction, sometimes called physical vacuum. $\left\lvert{\vec{p}_ {1}\cdots\vec{p}_ {n}}\right\rangle$ is an $n$-meson momenta eigenstate. We define the leading order of the vacuum to be:
 
 $$
 A_ {p} \left\lvert{\Omega_ {0}}\right\rangle =0.
 $$
 
-Normalization conditions: 
+Similarly $\left\lvert{\vec{p}}\right\rangle$ is the full momentum eigenstate, $\left\lvert{\vec{p}}\right\rangle=\left\lvert{\vec{p}_ {0}}\right\rangle + \left\lvert{\vec{p}_ {1}}\right\rangle+\cdots$. Recall that **in the interaction picture** we have $\left\lvert{\vec{p}}\right\rangle=\frac{a^{\dagger}}{\sqrt{2\omega_ {p,m}}}\left\lvert{0}\right\rangle$, it is because in the interaction picture the operator $\phi$ is exactly solvable, the solution is by construction the same as if interaction does not exist. However we are working in Schrodinger picture, so this simple relation only holds at leading order,
+
+$$
+\left\lvert{\vec{p}_ {0}}\right\rangle  = A^{\ddagger}_ {p}\left\lvert{\Omega_ {0}}\right\rangle .
+$$
+
+The non-perturbative definition, $H\left\lvert{\vec{p}}\right\rangle=\vec{p}\left\lvert{\vec{p}}\right\rangle$, holds at each and every order.
+
+The orthonormal conditions are: 
 
 $$
 \begin{align*}
-\left\langle \Omega_ {0} \middle\vert \Omega_ {0} \right\rangle &= 0,\\
+\left\langle \Omega_ {0} \middle\vert \Omega_ {0} \right\rangle &= 1,\\
 \left\lvert{\vec{p}_ {1}\cdots \vec{p}_ {n} }\right\rangle_ {0}  &= A^{\ddagger}_ {p_ {1}}\cdots A^{\ddagger}_ {p_ {n} }\left\lvert{\Omega_ {0}}\right\rangle .
 \end{align*}
 $$
 
 In this note I will use $\left\lvert{\Omega_ {i}}\right\rangle$ and $\left\lvert{\Omega}\right\rangle_ {i}$ interchangeably. 
+
+- - -
+
+## The First HRC
+
+The first Hamiltonian renormalization condition (RC) is expanded to 
+
+$$
+H\left\lvert{\Omega}\right\rangle = \sum_ {i}^{\infty}H_ {i=0} \sum_ {j=0}^{\infty} \left\lvert{\Omega _ {j} }\right\rangle  = \sum_ {i,j=0}^{\infty} H_ {i} \left\lvert{\Omega _ {j} }\right\rangle ,
+$$
+
+where each term is of order $\sim g^{i+j-2}$. 
+
