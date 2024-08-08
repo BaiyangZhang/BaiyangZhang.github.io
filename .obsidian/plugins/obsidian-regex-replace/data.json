@@ -1,6 +1,6 @@
 {
-  "findText": "g_ 1",
-  "replaceText": "g",
+  "findText": "\\delta g_ {1}",
+  "replaceText": "\\delta g",
   "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,

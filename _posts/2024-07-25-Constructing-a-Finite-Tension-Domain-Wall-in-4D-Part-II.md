@@ -123,13 +123,13 @@ $$
 \begin{align*}
 \mathcal{H}_ {0} &= A_ 0-\frac{m^4}{16 g^2}, \\
 \mathcal{H}_ {1} &= A_ {1} \equiv 0, \\
-\mathcal{H}_ {2} &= \frac{\pi^{2}}{2} + \frac{(\partial \phi)^{2}}{2} + \frac{m^{2}\phi^{2}}{2} + \frac{m^{4}}{8g^{2}}\left( -\frac{\delta g_ {1}}{g} + \frac{\delta m^{2}_ {1}}{m^{2}} + \frac{\delta m^{4}_ {1}}{8g^{2}} \right) + A_ {2}, \\ 
-\mathcal{H}_ {3} &= - \frac{mg}{\sqrt{ 2 }} \phi^{3} + \phi\left( m^{2}\delta v_ {1}+\frac{m^{3}}{\sqrt{ 2 }g} \left( \frac{\delta g_ {1}}{g} - \frac{\delta m^{2}_ {1}}{2m^{2}} - \frac{\delta m^{4}_ {1}}{2g^{2}} \right) \right) + A_ {3}, \\
-\mathcal{H}_ {4} &= \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{3gm\delta v_ {1}}{\sqrt{ 2 }} - \frac{3m^{2}\delta g_ {1}}{2g} + \frac{\delta m^{2}_ {1}}{4} + \frac{3m^{2}\delta m_ {1}^{4}}{4g^{2}} \right) \\
+\mathcal{H}_ {2} &= \frac{\pi^{2}}{2} + \frac{(\partial \phi)^{2}}{2} + \frac{m^{2}\phi^{2}}{2} + \frac{m^{4}}{8g^{2}}\left( -\frac{\delta g}{g} + \frac{\delta m^{2}_ {1}}{m^{2}} + \frac{\delta m^{4}_ {1}}{8g^{2}} \right) + A_ {2}, \\ 
+\mathcal{H}_ {3} &= - \frac{mg}{\sqrt{ 2 }} \phi^{3} + \phi\left( m^{2}\delta v_ {1}+\frac{m^{3}}{\sqrt{ 2 }g} \left( \frac{\delta g}{g} - \frac{\delta m^{2}_ {1}}{2m^{2}} - \frac{\delta m^{4}_ {1}}{2g^{2}} \right) \right) + A_ {3}, \\
+\mathcal{H}_ {4} &= \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{3gm\delta v_ {1}}{\sqrt{ 2 }} - \frac{3m^{2}\delta g}{2g} + \frac{\delta m^{2}_ {1}}{4} + \frac{3m^{2}\delta m_ {1}^{4}}{4g^{2}} \right) \\
 &\;\;\;\; + \phi(m^{2}\delta v_ {2}) + \frac{m^{3}\delta v_ {1}}{\sqrt{ 2 }g}\left( \frac{g}{\sqrt{ 2 }m} \delta v_ {1} + \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} \right) + A_ 4, \\
 \mathcal{H}_  {5} &=  \phi^{3}\left( g^{2}\delta v_ {1}+\sqrt{2}m\delta g_ {1}- \frac{m\delta m_ {1}^{4}}{\sqrt{2}g}  \right) - \phi^{2}\left( \frac{3mg \delta v_ {2}}{\sqrt{2}} \right) \\
 &\;\;\;\; + \phi\left( m^{2}\delta v_ {3} - \frac{3gm\delta v_ {1}^{2}}{\sqrt{2}} - \frac{3m^{2}\delta g_ {1}\delta v_ {1}}{g}+ \frac{1}{2}\delta m_ {1}^{2}\delta v_ {1} - \frac{3mg I_ {1}}{\sqrt{2}} + \frac{3m^{2}\delta m_ {1}^{4}\delta v_ {1}}{2g^{2}} \right) \\
-&\;\;\;\; + \frac{m^{3}\delta v_ {2}}{\sqrt{2}g}\left( \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} + \frac{\sqrt{2}g\delta v_ {1}}{m} \right) + A_ {5}. 
+&\;\;\;\; + \frac{m^{3}\delta v_ {2}}{\sqrt{2}g}\left( \frac{\delta g}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} + \frac{\sqrt{2}g\delta v_ {1}}{m} \right) + A_ {5}. 
 \end{align*}
 $$
 
@@ -176,15 +176,101 @@ $$
 
 In this note I will use $\left\lvert{\Omega_ {i}}\right\rangle$ and $\left\lvert{\Omega}\right\rangle_ {i}$ interchangeably. 
 
+The first Hamiltonian renormalization condition (HRC) is expanded to 
+
+$$
+\boxed{
+H\left\lvert{\Omega}\right\rangle = \sum_ {i}^{\infty}H_ {i=0} \sum_ {j=0}^{\infty} \left\lvert{\Omega _ {j} }\right\rangle  = \sum_ {i,j=0}^{\infty} H_ {i} \left\lvert{\Omega _ {j} }\right\rangle\sim g^{i+j-2}.
+} 
+$$
+
+The non-perturbed Fock states consists a full basis of Hilbert space, the $n$-meson states is defined to be 
+
+$$
+\left\lvert{\vec{p}_ {1}\cdots\vec{p}_ {n}}\right\rangle := A_ {p_ {1}}^{\ddagger}\cdots A_ {p_ {n} }^{\ddagger} \left\lvert{\Omega_ {0}}\right\rangle .
+$$
+
+We will use them to expand states of higher order in $g$, for example $\left\lvert{\Omega_ {n}}\right\rangle$ is the $g^{n}$-order vacuum correction, we will expand it as 
+
+$$
+\left\lvert{\Omega_ {n}}\right\rangle  = \sum_ {i=0}^{\infty} \left\lvert{\Omega_ {n}^{(i)}}\right\rangle , \quad  \left\lvert{\Omega^{(i)}}\right\rangle \in i\text{-meson Fock space.}
+$$
+
+We have two things to match: 1)different orders of the coupling and 2)different Fock space.
+
+**Order $g^{-2}$:**
+
+At the lowest order, the Hamiltonian density is just a constant without ladder operators, so $H_ {0}\left\lvert{\Omega_ {0}}\right\rangle=0$ gives as $\mathcal{H}_ {0}=0$, which implies $A_ {0} = m^{4} / 16g^{2}$. 
+
+**Order $g^{-1}$:**
+
+By construction we have $H_ {1}=0$.
+
+Take away:
+
+$$
+\boxed{
+H_ {0}=H_ {1}=0.
+} 
+$$
+
+**Order $g^{0}$:**
+
+The first HRC (HRC1), namely $H\left\lvert{\Omega}\right\rangle=0$ implies that
+
+$$
+H_ {2}\left\lvert{\Omega_ {0}}\right\rangle = 0 ,
+$$
+
+which in turn implies 
+
+$$
+A_ {2} = - \frac{m^{4}}{8g^{2}}\left( -\frac{\delta g}{g} + \frac{\delta m_ {1}^{2}}{m^{2}}+ \frac{\delta m_ {1}^{4}}{\delta g^{2}} \right),
+$$
+
+as a result 
+
+$$
+\begin{align*}
+\mathcal{H}_ {2} &= \frac{\pi^{2}}{2} + \frac{(\partial \phi)^{2}}{2} + \frac{1}{2}m^{2}\phi^{2},\\
+H_ {2} &=\int d^{3}x \,   : \mathcal{H}_ {2} :_ {m} = \int \frac{d^{3}p}{(2\pi)^{3}} \,  \omega_ {p} A^{\ddagger}_ {p} A_ {p} .
+\end{align*}
+$$
+
+**Order $g^{1}$:
+
+Similar to order $g^{0}$, HRC1 implies that 
+
+$$
+H_ {2}\left\lvert{\Omega_ {1}}\right\rangle = -H_ {3} \left\lvert{\Omega_ {0}}\right\rangle .
+$$
+
+Now we need to expand $\left\lvert{\Omega_ {1}}\right\rangle$ in Fock states,
+
+$$
+\left\lvert{\Omega_ {1}}\right\rangle = \left\lvert{\Omega_ {1}^{(0)}}\right\rangle + \left\lvert{\Omega_ {1}^{(1)}}\right\rangle  + \cdots
+$$
+where 
+
+$$
+\left\lvert{\Omega^{(0)}_ {1}}\right\rangle = c_ {1,0} \left\lvert \Omega_ {0} \right\rangle , \quad  c_ {1,0}\in \mathbb{C}.
+$$
+
+and
+
+$$
+\left\lvert \Omega_ {1}^{(1)} \right\rangle = \sum c_ {1,i} \left\lvert p_ {i} \right\rangle , \quad  c_ {1,i}\in \mathbb{C}.
+$$
+
 - - -
 
-## The First HRC
-
-The first Hamiltonian renormalization condition (RC) is expanded to 
+Regarding $0$-meson Fock space, 
 
 $$
-H\left\lvert{\Omega}\right\rangle = \sum_ {i}^{\infty}H_ {i=0} \sum_ {j=0}^{\infty} \left\lvert{\Omega _ {j} }\right\rangle  = \sum_ {i,j=0}^{\infty} H_ {i} \left\lvert{\Omega _ {j} }\right\rangle ,
+H_ {2}\left\lvert{\Omega_ {1}}\right\rangle \supset H_ {2}(\cdots)\left\lvert{\Omega_ {0}}\right\rangle =0,
 $$
 
-where each term is of order $\sim g^{i+j-2}$. 
+Since $H_ {2}$ is normal ordered. On the right hand side, the zero-meson part of $-H_ {3}\left\lvert \Omega_ {0} \right\rangle$ is 
+
+
 
