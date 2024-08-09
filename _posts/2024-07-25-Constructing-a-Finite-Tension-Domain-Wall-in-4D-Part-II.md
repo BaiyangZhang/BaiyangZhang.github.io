@@ -214,6 +214,8 @@ H_ {0}=H_ {1}=0.
 } 
 $$
 
+- - -
+
 **Order $g^{0}$:**
 
 The first HRC (HRC1), namely $H\left\lvert{\Omega}\right\rangle=0$ implies that
@@ -225,7 +227,7 @@ $$
 which in turn implies 
 
 $$
-A_ {2} = - \frac{m^{4}}{8g^{2}}\left( -\frac{\delta g}{g} + \frac{\delta m_ {1}^{2}}{m^{2}}+ \frac{\delta m_ {1}^{4}}{\delta g^{2}} \right),
+A_ {2} = - \frac{m^{4}}{8g^{2}} \left( -\frac{\delta g}{g} + \frac{\delta m_ {1}^{2}}{m^{2}}+ \frac{\delta m_ {1}^{4}}{\delta g^{2}} \right),
 $$
 
 as a result 
@@ -236,6 +238,8 @@ $$
 H_ {2} &=\int d^{3}x \,   : \mathcal{H}_ {2} :_ {m} = \int \frac{d^{3}p}{(2\pi)^{3}} \,  \omega_ {p} A^{\ddagger}_ {p} A_ {p} .
 \end{align*}
 $$
+
+- - -
 
 **Order $g^{1}$:
 
@@ -262,8 +266,6 @@ $$
 \left\lvert \Omega_ {1}^{(1)} \right\rangle = \sum c_ {1,i} \left\lvert p_ {i} \right\rangle , \quad  c_ {1,i}\in \mathbb{C}.
 $$
 
-- - -
-
 Regarding $0$-meson Fock space, 
 
 $$
@@ -272,5 +274,6 @@ $$
 
 Since $H_ {2}$ is normal ordered. On the right hand side, the zero-meson part of $-H_ {3}\left\lvert \Omega_ {0} \right\rangle$ is 
 
-
-
+$$
+\int \frac{d^{3}p}{(2\pi)^{3}} \frac{d^{3}q}{(2\pi)^{3}} \, f(p)g(q) \delta^{3}(p-q)
+$$
