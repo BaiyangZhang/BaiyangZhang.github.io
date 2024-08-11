@@ -249,12 +249,24 @@ $$
 H_ {2}\left\lvert{\Omega_ {1}}\right\rangle = -H_ {3} \left\lvert{\Omega_ {0}}\right\rangle .
 $$
 
-Now we need to expand $\left\lvert{\Omega_ {1}}\right\rangle$ in Fock states,
+Now we need to expand $\left\lvert{\Omega_ {1}}\right\rangle$ in vacuum sector, free field Fock states. Such state are created by free creation operators acting on free vacuum state,
+
+$$
+\left\lvert \vec{p} \right\rangle = A^{\ddagger}_ {p} \left\lvert \Omega_ {0} \right\rangle 
+$$
+
+and 
+
+$$
+\left\lvert \vec{p}_ {1}\cdots \vec{p}_ {n} \right\rangle = A_ {p_ {1}}^{\ddagger}\cdots A^{\ddagger}_ {p_ {n} }\left\lvert \Omega_ {0} \right\rangle .
+$$
+
+The free Fock space consist a full basis of Hilbert space. We can expand the first order correction to the vacuum states in these basis,
 
 $$
 \left\lvert{\Omega_ {1}}\right\rangle = \left\lvert{\Omega_ {1}^{(0)}}\right\rangle + \left\lvert{\Omega_ {1}^{(1)}}\right\rangle  + \cdots
 $$
-where 
+where the superscript indicates the number of mesons, $\left\lvert \Omega_ {1}^{(n)} \right\rangle$ means the $n$-meson Fock space component of $\left\lvert \Omega_ {1} \right\rangle$ state. Explicitly we have
 
 $$
 \left\lvert{\Omega^{(0)}_ {1}}\right\rangle = c_ {1,0} \left\lvert \Omega_ {0} \right\rangle , \quad  c_ {1,0}\in \mathbb{C}.
@@ -266,14 +278,60 @@ $$
 \left\lvert \Omega_ {1}^{(1)} \right\rangle = \sum c_ {1,i} \left\lvert p_ {i} \right\rangle , \quad  c_ {1,i}\in \mathbb{C}.
 $$
 
-Regarding $0$-meson Fock space, 
+Generalizing it to multi-meson Fock space, we have 
+
+$$
+\left\lvert \Omega_ {1}^{(n)} \right\rangle =\sum_ {I} c_ {1,I} \left\lvert p_ {I} \right\rangle , \quad  I = i_ {1}\cdots i_ {n},\; n>1,
+$$
+
+where $I$ is the general index, $\left\lvert p_ {I} \right\rangle=\left\lvert p_ {i_ {1}}p_ {i_ {2}}\cdots p_ {i_ {n}} \right\rangle$. 
+
+Are states from different Fock spaces orthogonal to each other? It will look something like 
+
+$$
+\left\langle \vec{p}_ {I} \middle\vert \vec{p}_ {J} \right\rangle   =\left\langle \Omega_ {0} \right\rvert A\cdots A A^{\ddagger}\cdots A^{\ddagger}\left\lvert \Omega \right\rangle .
+$$
+
+According to the equal-time Wick theorem, a string of ladder operators is equal to the normal ordering of all its contraction, which, when sandwiched between vacuum state, can only be non-zero if it is a full contraction, where there are equal number of creation and annihilation operators. It means that these two states must have same number of particles in it, hence belong to the same order of Fock subspace. Thus 
+
+$$
+\left\langle \Psi^{(m)} \middle\vert \Psi^{(n)} \right\rangle =0 \text{ if } m \neq J.
+$$
+
+Coming back to $\left\lvert \Omega_ {1} \right\rangle$. Focusing on the $0$-meson sub Fock space, we have
 
 $$
 H_ {2}\left\lvert{\Omega_ {1}}\right\rangle \supset H_ {2}(\cdots)\left\lvert{\Omega_ {0}}\right\rangle =0,
 $$
 
-Since $H_ {2}$ is normal ordered. On the right hand side, the zero-meson part of $-H_ {3}\left\lvert \Omega_ {0} \right\rangle$ is 
+Since $H_ {2}$ is normal ordered. On the right hand side, the zero-meson part of $-H_ {3}\left\lvert \Omega_ {0} \right\rangle$ is what? $H_ {3}$ can be written as 
 
 $$
-\int \frac{d^{3}p}{(2\pi)^{3}} \frac{d^{3}q}{(2\pi)^{3}} \, f(p)g(q) \delta^{3}(p-q)
+H_ {3} = \int d^{3}x \,  : \frac{mg}{\sqrt{2}} \phi^{3}+\phi m^{2} \delta v_ {1}' + A_ {3} :_ {m},
 $$
+
+where $\delta v_ {1}'$ is some combination of counter terms. Since both $\phi^{3}$ and $\phi$ preserved the particle number, the zero-meson part is obtained by acting $H_ {3}$ on $\left\lvert \Omega_ {0} \right\rangle$, and thanks to the normal ordering, only $A_ {3}$ survives, hence
+
+$$
+H_ {3}\left\lvert \Omega_ {0} \right\rangle =A_ {3}\left\lvert \Omega_ {0} \right\rangle \implies A_ {3}=0 .
+$$
+
+To study what is going on with multi-mesons states, we need to expand the Hamiltonians $H_ {2}$ and $H_ {3}$ in ladder operators. According to the convention we introduced in the first part of the note, we have 
+
+
+$$
+H_ {2} = \int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p} A^{\ddagger}_ {p} A_ {p} 
+$$
+
+and 
+
+$$
+\begin{align*}
+H_ {3} &= -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
+ &+ \frac{1}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
+&+\frac{1}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} + + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
+& + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace , \\
+p_ {3} &= -p_ {1}-p_ {2}.
+\end{align*}
+$$
+

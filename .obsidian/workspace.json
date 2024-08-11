@@ -183,14 +183,14 @@
   },
   "active": "85934409c70af44e",
   "lastOpenFiles": [
-    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
-    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
-    "assets/新建文件夹",
-    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "img/resurgence/negativeRealContour.png",
     "img/resurgence",
+    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "Untitled.md",
     "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
     "img/fractal/CantorSet.png",
@@ -199,7 +199,6 @@
     "img/fractal",
     "img/新建文件夹",
     "_pages/about.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "Confining Modeling of Quark Propagator.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
@@ -227,6 +226,7 @@
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
-    "_includes/scripts/New folder"
+    "_includes/scripts/New folder",
+    "_includes/scripts/analytics.html"
   ]
 }
