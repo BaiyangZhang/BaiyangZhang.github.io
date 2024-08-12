@@ -117,7 +117,7 @@ $$
 \end{align*}
 $$
 
-We need to sandwich it by $\mathcal{D}_ {v}$ to get the shifted Hamiltonian density $\mathcal{H}$. We will expand $\mathcal{H}$ in powers of $g=\sqrt{ \lambda }$. With some help from Mathematica, we find the following results.
+We need to sandwich it by $\mathcal{D}_ {v}$ to get the shifted Hamiltonian density $\mathcal{H}$. We will expand $\mathcal{H}$ in the powers of of $g=\sqrt{ \lambda }$. With some help from Mathematica, we find the following results.
 
 $$
 \begin{align*}
@@ -261,7 +261,15 @@ $$
 \left\lvert \vec{p}_ {1}\cdots \vec{p}_ {n} \right\rangle_ {0} = A_ {p_ {1}}^{\ddagger}\cdots A^{\ddagger}_ {p_ {n} }\left\lvert \Omega_ {0} \right\rangle .
 $$
 
-For the simplicity of notation, we will usually omit the subscript $0$ in $\left\lvert \cdots \right\rangle_ {0}$. The free Fock space consist a full basis of Hilbert space. We can expand the first order correction to the vacuum states in these basis,
+For the simplicity of notation, we will usually omit the subscript $0$ in $\left\lvert \cdots \right\rangle_ {0}$, unless when talking about higher order corrections. 
+
+What is the norm of $\left\lvert \vec{p} \right\rangle$? We have $\left\langle \vec{p} \right\rvert=\left\langle \Omega_ {0} \right\rvert (A_ {p}^{\ddagger})^{\dagger}=\left\langle \Omega_ {0} \right\rvert(A_ {p})/2\omega_ {p}$ and $[A_ {p},A^{\ddagger}q]=(2\pi)^{3} \delta^{3}(\vec{p}-\vec{q})$, thus
+
+$$
+\left\langle \vec{p} \middle\vert \vec{q} \right\rangle = \frac{(2\pi)^{3}}{2\omega _ {p} }(2\pi)^{3} \delta^{(3)}(\vec{p}-\vec{q}).
+$$
+
+The free Fock states consist a full basis of Hilbert space. We can expand the first order correction to the vacuum states in these basis,
 
 $$
 \left\lvert{\Omega_ {1}}\right\rangle = \left\lvert{\Omega_ {1}^{(0)}}\right\rangle + \left\lvert{\Omega_ {1}^{(1)}}\right\rangle  + \cdots
@@ -289,7 +297,7 @@ where $I$ is the general index, $\left\lvert p_ {I} \right\rangle=\left\lvert p_
 Are states from different Fock spaces orthogonal to each other? It will look something like 
 
 $$
-\left\langle \vec{p}_ {I} \middle\vert \vec{p}_ {J} \right\rangle   =\left\langle \Omega_ {0} \right\rvert A\cdots A A^{\ddagger}\cdots A^{\ddagger}\left\lvert \Omega \right\rangle .
+\left\langle \vec{p}_ {I} \middle\vert \vec{p}_ {J} \right\rangle  \propto to \left\langle \Omega_ {0} \right\rvert A\cdots A A^{\ddagger}\cdots A^{\ddagger}\left\lvert \Omega \right\rangle .
 $$
 
 According to the equal-time Wick theorem, a string of ladder operators is equal to the normal ordering of all its contraction, which, when sandwiched between vacuum state, can only be non-zero if it is a full contraction, where there are equal number of creation and annihilation operators. It means that these two states must have same number of particles in it, hence belong to the same order of Fock subspace. Thus 
@@ -307,7 +315,7 @@ $$
 Since $H_ {2}$ is normal ordered. On the right hand side, the zero-meson part of $-H_ {3}\left\lvert \Omega_ {0} \right\rangle$ is what? $H_ {3}$ can be written as 
 
 $$
-H_ {3} = \int d^{3}x \,  : \frac{mg}{\sqrt{2}} \phi^{3}+\phi m^{2} \delta v_ {1}' + A_ {3} :_ {m},
+H_ {3} = \int d^{3}x \,  :- \frac{mg}{\sqrt{2}} \phi^{3}+\phi m^{2} \delta v_ {1}' + A_ {3} :_ {m},
 $$
 
 where $\delta v_ {1}'$ is some combination of counter terms. Since both $\phi^{3}$ and $\phi$ preserved the particle number, the zero-meson part is obtained by acting $H_ {3}$ on $\left\lvert \Omega_ {0} \right\rangle$, and thanks to the normal ordering, only $A_ {3}$ survives, hence
@@ -359,7 +367,62 @@ Substitute the expression for $H_ {3}$, we have (after some trivial rearrangemen
 
 $$
 \begin{align*}
-\left\lvert \Omega_ {1} \right\rangle  &=     \\
-&= 
+\left\lvert \Omega_ {1} \right\rangle  =&  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle }{(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})}      \\
+ &- m\delta v_ {1}' \left\lvert \vec{p}=0 \right\rangle ,\\
+ \vec{p}_ {3} =& -\vec{p}_ {1}-\vec{p}_ {2}.
+\end{align*}
+$$
+
+The no-tadpole rule demands that $\left\langle \Omega \right\rvert\phi \left\lvert \Omega \right\rangle=0$, expand $\left\lvert \Omega \right\rangle$ up to $\left\lvert \Omega_ {1} \right\rangle$ we get 
+
+$$
+\begin{align*}
+\left\langle \Omega \right\rvert \phi \left\lvert \Omega \right\rangle  &= (\left\langle \Omega_ {0} \right\rvert +\left\langle \Omega_ {1} \right\rvert ) \phi (\left\lvert \Omega_ {0} \right\rangle +\left\lvert \Omega_ {1} \right\rangle ) \\
+&= 2 \left\langle \Omega_ {0} \right\rvert  \int \frac{d^{3}k}{(2\pi)^{3}} \,  e^{ -i\vec{k}\cdot \vec{x} } \frac{A_ {-k}}{2\omega_ {k}} (-m\delta v_ {1}')A^{\ddagger}_ {p=0} \left\lvert \Omega_ {0} \right\rangle \\
+&= -\delta v_ {1}'\\
+&=0.
+\end{align*}
+$$
+
+The long-ass expression for $\delta v_ {1}'$ turns out to be zero.
+
+Putting everything so far together, we find 
+
+$$
+\mathcal{H}_ {3}(\vec{x}) = -\frac{mg}{\sqrt{2}} \phi^{3}(\vec{x}),
+$$
+
+everything else disappears.
+
+We are not quite done yet, we need to find the interaction correction to the momentum eigenstates. At lowest order we have $H_ {0}\left\lvert \vec{p} \right\rangle_ {0}=\omega_ {p}\left\lvert \vec{p} \right\rangle_ {0}$, and after we include all orders we require that $H\left\lvert \vec{p} \right\rangle=\omega_ {p}\left\lvert p \right\rangle$. Our task is to find the difference between $\left\lvert - \right\rangle_ {0}$ and $\left\lvert - \right\rangle$ order by order. 
+
+In order to make it easier to keep tracks of the number of mesons, let's introduce the following notation. 
+
+
+
+
+
+
+
+
+
+
+- - -
+
+Summary of HRC-updated Hamiltonian densities:
+
+$$
+\begin{align*}
+\mathcal{H}_ {0} =& \mathcal{H}_ {1}=0, \\
+\mathcal{H}_ {2} =& \frac{\pi^{2}}{2} + \frac{(\partial \phi)^{2}}{2} + \frac{1}{2}m^{2}\phi^{2} \\
+H_ {2} =& \int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p} A^{\ddagger}_ {p} A_ {p} , \\
+\mathcal{H}_ {3} =& -\frac{mg}{\sqrt{2}} \phi^{3} \\
+H_ {3} =& H_ {3}^{(3)}+H_ {3}^{(1)}+H_ {3}^{(-1)} + H_ {3}^{(-3)}  \\
+&= -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
+ &+ \frac{3}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} \\
+&+\frac{3}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} \\
+& + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace, \\
+\vec{p}_ {3} =& -\vec{p}_ {1}-\vec{p}_ {2},\\
+\mathcal{H}_ {4} =& ???
 \end{align*}
 $$
