@@ -252,16 +252,16 @@ $$
 Now we need to expand $\left\lvert{\Omega_ {1}}\right\rangle$ in vacuum sector, free field Fock states. Such state are created by free creation operators acting on free vacuum state,
 
 $$
-\left\lvert \vec{p} \right\rangle = A^{\ddagger}_ {p} \left\lvert \Omega_ {0} \right\rangle 
+\left\lvert \vec{p} \right\rangle_ {0} = A^{\ddagger}_ {p} \left\lvert \Omega_ {0} \right\rangle 
 $$
 
 and 
 
 $$
-\left\lvert \vec{p}_ {1}\cdots \vec{p}_ {n} \right\rangle = A_ {p_ {1}}^{\ddagger}\cdots A^{\ddagger}_ {p_ {n} }\left\lvert \Omega_ {0} \right\rangle .
+\left\lvert \vec{p}_ {1}\cdots \vec{p}_ {n} \right\rangle_ {0} = A_ {p_ {1}}^{\ddagger}\cdots A^{\ddagger}_ {p_ {n} }\left\lvert \Omega_ {0} \right\rangle .
 $$
 
-The free Fock space consist a full basis of Hilbert space. We can expand the first order correction to the vacuum states in these basis,
+For the simplicity of notation, we will usually omit the subscript $0$ in $\left\lvert \cdots \right\rangle_ {0}$. The free Fock space consist a full basis of Hilbert space. We can expand the first order correction to the vacuum states in these basis,
 
 $$
 \left\lvert{\Omega_ {1}}\right\rangle = \left\lvert{\Omega_ {1}^{(0)}}\right\rangle + \left\lvert{\Omega_ {1}^{(1)}}\right\rangle  + \cdots
@@ -327,13 +327,13 @@ and
 
 $$
 \begin{align*}
-H_ {3} &= -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
+H_ {3} = &-\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
  &+ \frac{1}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
 &+\frac{1}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
 & + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace  \\
 &+ m^{2}\delta v_ {1}'\left( A^{\ddagger}_ {p=0}+\frac{A_ {p=0}}{2m} \right), \\
-p_ {3} &= -p_ {1}-p_ {2},\\
-\delta v_ {1}' &= \delta v_ {1}+\frac{m}{\sqrt{2}g} \left( \frac{\delta g}{g} - \frac{\delta m^{2}_ {1}}{2m^{2}} - \frac{\delta m^{4}_ {1}}{2g^{2}}\right).
+p_ {3} =& -p_ {1}-p_ {2},\\
+\delta v_ {1}' =& \delta v_ {1}+\frac{m}{\sqrt{2}g} \left( \frac{\delta g}{g} - \frac{\delta m^{2}_ {1}}{2m^{2}} - \frac{\delta m^{4}_ {1}}{2g^{2}}\right).
 \end{align*}
 $$
 
@@ -349,8 +349,17 @@ $$
 \frac{1}{ H_ {2}} \left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle = \frac{1}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}}} \left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle.
 $$
 
-Since we have established that $\left\lvert \Omega_ {1} \right\rangle$ does not contain $\Omega_ {0}$ component, that is $\Omega_ {1}$ does not contain the kernel of $H_ {2}$, we can write 
+Since we have established that $\left\lvert \Omega_ {1} \right\rangle$ does not contain $\Omega_ {0}$ component, that is $\Omega_ {1}$ does not contain the kernel of $H_ {2}$, we can write formally
 
 $$
 \left\lvert \Omega_ {1} \right\rangle = - \frac{1}{H_ {2}} H_ {3} \left\lvert \Omega_ {0} \right\rangle 
+$$
+
+Substitute the expression for $H_ {3}$, we have (after some trivial rearrangement)
+
+$$
+\begin{align*}
+\left\lvert \Omega_ {1} \right\rangle  &=     \\
+&= 
+\end{align*}
 $$
