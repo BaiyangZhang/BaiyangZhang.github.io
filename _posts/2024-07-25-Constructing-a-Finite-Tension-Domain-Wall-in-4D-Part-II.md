@@ -329,9 +329,28 @@ $$
 \begin{align*}
 H_ {3} &= -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
  &+ \frac{1}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
-&+\frac{1}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} + + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
-& + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace , \\
-p_ {3} &= -p_ {1}-p_ {2}.
+&+\frac{1}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
+& + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace  \\
+&+ m^{2}\delta v_ {1}'\left( A^{\ddagger}_ {p=0}+\frac{A_ {p=0}}{2m} \right), \\
+p_ {3} &= -p_ {1}-p_ {2},\\
+\delta v_ {1}' &= \delta v_ {1}+\frac{m}{\sqrt{2}g} \left( \frac{\delta g}{g} - \frac{\delta m^{2}_ {1}}{2m^{2}} - \frac{\delta m^{4}_ {1}}{2g^{2}}\right).
 \end{align*}
 $$
 
+In order to solve the order $g$ HRC1 equation 
+
+$$
+H_ {2}\left\lvert{\Omega_ {1}}\right\rangle = -H_ {3} \left\lvert{\Omega_ {0}}\right\rangle 
+$$
+
+for $\left\lvert \Omega_ {1} \right\rangle$, we would like to find the inverse of $H_ {2}$. The kernel of $H_ {2}$ is $\left\lvert \Omega_ {0} \right\rangle$, of course inverse of $H_ {2}$ does not exist on $\left\lvert \Omega_ {0} \right\rangle$. But we can always define the inverse on other Fock states. For example, consider a 3-meson state $\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle$, since $H_ {2}$ is diagonalized in these basis, the inverse can be trivially written as $\frac{1}{H_ {2}}$ where $H_ {2}$ is to be understood as its eigenvalues, 
+
+$$
+\frac{1}{ H_ {2}} \left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle = \frac{1}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}}} \left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle.
+$$
+
+Since we have established that $\left\lvert \Omega_ {1} \right\rangle$ does not contain $\Omega_ {0}$ component, that is $\Omega_ {1}$ does not contain the kernel of $H_ {2}$, we can write 
+
+$$
+\left\lvert \Omega_ {1} \right\rangle = - \frac{1}{H_ {2}} H_ {3} \left\lvert \Omega_ {0} \right\rangle 
+$$
