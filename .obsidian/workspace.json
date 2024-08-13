@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -183,6 +182,7 @@
   },
   "active": "85934409c70af44e",
   "lastOpenFiles": [
+    "img/kink/3_0_Vacuum.png",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",

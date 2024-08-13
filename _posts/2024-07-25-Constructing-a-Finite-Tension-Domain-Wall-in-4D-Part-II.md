@@ -398,6 +398,83 @@ We are not quite done yet, we need to find the interaction correction to the mom
 
 In order to make it easier to keep tracks of the number of mesons, let's introduce the following notation. 
 
+- For a state, we use a superscript in parenthesis to denote how many meson it contains, $\left\lvert \psi \right\rangle^{(m)}$ indicates $\left\lvert \psi \right\rangle$ contains $m$ mesons, hence belongs to the $m$-meson Fock (sub)space. The superscript is sometimes inside the ket notation, sometimes out (as in here), I will in general not pay too much attention to it as long as it is clear what is meant;
+- For an operator, we use the same notation to denote **how many mesons it creates** when acting on a state, for example $\mathcal{O}^{(m)}$ means that $\mathcal{O}^{(m)}\left\lvert \psi(n) \right\rangle$ as a whole has $m+n$ states. 
+
+There is also a nice diagrammatic symbol that Jarah created to indicate different contributions. I will just copy Jarah's explanation here shamelessly. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/3_0_Vacuum.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    This graph represents the calculation of $\left\lvert \Omega_ {1} \right\rangle ^{3}$, which is $-H_ {2}^{-1} H_ {3}\left\lvert \Omega_ {0} \right\rangle ^{(0)}$.  The vertex represents the operator $-H_ {2}^{-1} H_ {3}$. The order $i$ of $\left\lvert \Omega_ {i} \right\rangle$ increases as one moves to the left.  Consider a vertical slice.  It intersects some number of lines $n$.  This represents the $n$-meson Fock space.  To the right of the vertex there are no lines, reflecting the fact that $\left\lvert \Omega_ {0} \right\rangle=\left\lvert \Omega_ {0} \right\rangle^{(0)}$ lives in the zero-meson Fock space.  To the left, there are three lines, as we are calculating a contribution $\left\lvert \Omega_ {1} \right\rangle^{(3)}$ to $\left\lvert \Omega_ {1} \right\rangle$ in the three-meson Fock space.
+</div>
+
+As an application of the notation we talked about, consider $H_ {3}$. It has different parts creating different numbers of operators, we write them as 
+
+$$
+H_ {3}= H_ {3}^{(-3)} + H_ {3}^{(-1)}+H_ {3}^{(1)}+H_ {3}^{(3)},
+$$
+
+where $H^{(-3)}$ is the part with three annihilation operators hence decrease the number of mesons by 3, etc. All these are summarized in the last chapter. 
+
+- - -
+
+Now we can make use of the second HRC that defines the momenta eigenstates. It says 
+
+$$
+H _ {\text{full}} \left\lvert \vec{p} \right\rangle  = \omega_ {p} \left\lvert \vec{p} \right\rangle ,
+$$
+
+we do the following expansion:
+
+$$
+H_ {\text{full}} = \sum_ {i\geq 2} H_ {i} , \quad  
+\left\lvert \vec{p} \right\rangle  = \left\lvert \vec{p} \right\rangle_ {0}+\sum_ {j\geq 1} \left\lvert \vec{p} \right\rangle_ {1}^{(j)}
+$$
+
+since $H_ {2}\left\lvert \vec{p} \right\rangle_ {0}=\omega_ {0}\left\lvert \vec{p} \right\rangle_ {0}$, after some rearrangement we have the master formula 
+
+$$
+\boxed{
+\sum_ {i\geq 3} H_ {i} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} 
+= \left( \omega_ {p}-\sum_ {i\geq 2}H_ {i}  \right)\sum_ {j\geq 1} \left\lvert \vec{p} \right\rangle_ {1}^{(j)}.
+
+} 
+$$
+
+Besides matching the orders in coupling, we also match the number of mesons. Let's see what happens at leading order, in the RHS the lowest order part is
+
+$$
+(\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{n},\quad  \text{with n mesons.}
+$$
+
+As $1$ in $\left\lvert - \right\rangle_ {1}$ suggests, they are of order $g$. The same order on the left hand side is 
+
+$$
+H_ {3} \left\lvert \vec{p} \right\rangle_ {0},
+$$
+
+there is nothing else since $H_ {4}$ is of order $g^{2}$ already. 
+
+Next we expand in Fock spaces, 
+
+$$
+H_ {3}^{(-3)+(-1)+(1)+(3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = (\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{n},
+$$
+
+balancing the superscripts we get 
+
+$$
+\begin{align*}
+H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} =& (\omega _ {p} -H_ {2}) \left\lvert \vec{p} \right\rangle_ {1}^{(2)}, \\
+H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} =& (\omega _ {p} -H_ {2}) \left\lvert \vec{p} \right\rangle_ {1}^{(4)}.
+\end{align*}
+$$
+
+Substitute the expression for $H_ {3}$ in terms of ladder operator and contract, by the end of the day we get 
 
 
 
@@ -418,7 +495,7 @@ $$
 H_ {2} =& \int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p} A^{\ddagger}_ {p} A_ {p} , \\
 \mathcal{H}_ {3} =& -\frac{mg}{\sqrt{2}} \phi^{3} \\
 H_ {3} =& H_ {3}^{(3)}+H_ {3}^{(1)}+H_ {3}^{(-1)} + H_ {3}^{(-3)}  \\
-&= -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
+=& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
  &+ \frac{3}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} \\
 &+\frac{3}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} \\
 & + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace, \\
