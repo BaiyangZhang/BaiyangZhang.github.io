@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "transseries",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "file": "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md"
+                "file": "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md"
               }
             }
           },
@@ -182,23 +183,24 @@
   },
   "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
+    "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
-    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
-    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+    "img/kink/3_0_Vacuum.png",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
-    "assets/新建文件夹",
+    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "img/resurgence/negativeRealContour.png",
     "img/resurgence",
+    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "Untitled.md",
+    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
     "img/fractal/CantorSet.png",
     "img/fractal/Hs.png",
     "img/fractal/deltaCover.png",
     "img/fractal",
     "img/新建文件夹",
     "_pages/about.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "Confining Modeling of Quark Propagator.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
@@ -222,10 +224,10 @@
     "img/naturalityCommute.png",
     "img/commutePolynomial.png",
     "img/naturalityInX.png",
-    "img/natXele.png",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
-    "_includes/scripts/New folder"
+    "_includes/scripts/New folder",
+    "_includes/scripts/analytics.html"
   ]
 }

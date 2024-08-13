@@ -2,12 +2,14 @@
 layout: post
 title: Basics of Algebraic QFT-Part-I
 subtitle: 
-date: 2024-03-06
+date: 2024-08-06
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
 tags:
 ---
+
+# Introduction
 
 Algebraic Quantum Field Theory (AQFT) is an approach to quantum field theory that emphasizes the algebraic structure of quantum observables and their relationships. At its core, quantum field theory (QFT) is the framework that combines classical field theory (like electromagnetism or fluid dynamics, where fields are functions defined at every point in space and time) with quantum mechanics (where physical quantities are described by probabilities and observables are operators with uncertainties). In the algebraic approach, instead of focusing on fields and their dynamics directly, *we concentrate on the algebra of observables*. Observables are quantities that can be measured, such as energy, momentum, or electric charge. In AQFT, these observables are represented by mathematical objects in an algebra, which is a collection of elements equipped with algebraic operations like addition and multiplication that follow certain rules.
 
