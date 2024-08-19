@@ -386,13 +386,13 @@ $$
 
 The long-ass expression for $\delta v_ {1}'$ turns out to be zero.
 
-Putting everything so far together, we find 
+Putting everything together, we find 
 
 $$
 \mathcal{H}_ {3}(\vec{x}) = -\frac{mg}{\sqrt{2}} \phi^{3}(\vec{x}),
 $$
 
-everything else disappears.
+everything else has disappeared.
 
 We are not quite done yet, we need to find the interaction correction to the momentum eigenstates. At lowest order we have $H_ {0}\left\lvert \vec{p} \right\rangle_ {0}=\omega_ {p}\left\lvert \vec{p} \right\rangle_ {0}$, and after we include all orders we require that $H\left\lvert \vec{p} \right\rangle=\omega_ {p}\left\lvert p \right\rangle$. Our task is to find the difference between $\left\lvert - \right\rangle_ {0}$ and $\left\lvert - \right\rangle$ order by order. 
 
@@ -401,7 +401,18 @@ In order to make it easier to keep tracks of the number of mesons, let's introdu
 - For a state, we use a superscript in parenthesis to denote how many meson it contains, $\left\lvert \psi \right\rangle^{(m)}$ indicates $\left\lvert \psi \right\rangle$ contains $m$ mesons, hence belongs to the $m$-meson Fock (sub)space. The superscript is sometimes inside the ket notation, sometimes out (as in here), I will in general not pay too much attention to it as long as it is clear what is meant;
 - For an operator, we use the same notation to denote **how many mesons it creates** when acting on a state, for example $\mathcal{O}^{(m)}$ means that $\mathcal{O}^{(m)}\left\lvert \psi(n) \right\rangle$ as a whole has $m+n$ states. 
 
-There is also a nice diagrammatic symbol that Jarah created to indicate different contributions. I will just copy Jarah's explanation here shamelessly. 
+There is also a nice diagrammatic symbol that Jarah created (Jarah diagram) to indicate different contributions. An explanation of how such diagrams work is given in the figure below. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/jarahDiagram.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    The diagram is separated into two parts, the vertex lies in the middle. First, look at the equation at the bottum, where the left hand side is the higher order correction that we want to calculate, the right hand side is how we calculate it, by acting on a lower-order state by some operator. The operator is represented by the bullet in the middle, that's why $\mathcal{O}$ is placed right under the bullet. The diagram can be separated into two parts, the left panel corresponds to the left hand side of the equation, the right panel shows on what states the operator acts. The arrowed lines are not fermion, the arrow shows the direction in which the coupling-order increases. The coupling order always increases from right to the left. We will usualy neglect the bullet symbol, since there will always be only one vertex in one diagram, and it is always placed at the center.
+</div>
+
+In the case of vacuum correction, I copy Jarah's explanation here shamelessly. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -411,6 +422,8 @@ There is also a nice diagrammatic symbol that Jarah created to indicate differen
 <div class="caption">
     This graph represents the calculation of $\left\lvert \Omega_ {1} \right\rangle ^{3}$, which is $-H_ {2}^{-1} H_ {3}\left\lvert \Omega_ {0} \right\rangle ^{(0)}$.  The vertex represents the operator $-H_ {2}^{-1} H_ {3}$. The order $i$ of $\left\lvert \Omega_ {i} \right\rangle$ increases as one moves to the left.  Consider a vertical slice.  It intersects some number of lines $n$.  This represents the $n$-meson Fock space.  To the right of the vertex there are no lines, reflecting the fact that $\left\lvert \Omega_ {0} \right\rangle=\left\lvert \Omega_ {0} \right\rangle^{(0)}$ lives in the zero-meson Fock space.  To the left, there are three lines, as we are calculating a contribution $\left\lvert \Omega_ {1} \right\rangle^{(3)}$ to $\left\lvert \Omega_ {1} \right\rangle$ in the three-meson Fock space.
 </div>
+
+
 
 As an application of the notation we talked about, consider $H_ {3}$. It has different parts creating different numbers of operators, we write them as 
 
@@ -445,27 +458,38 @@ $$
 } 
 $$
 
-Besides matching the orders in coupling, we also match the number of mesons. Let's see what happens at leading order, in the RHS the lowest order part is
+Now, both parts will have contribution from different Fock space, for example $H_ {4}$ acting on $\left\lvert \vec{p} \right\rangle_ {0}^{(1)}$ may yield something with $2,3,\cdots$ free mesons. Now, besides matching the orders in coupling, we will also match the number of mesons. 
+
+Let's see what happens at leading order $\sim g$ of the coupling. At this order, with regards to the Hamiltonian, we only need up to $H_ {3}$, thus the master formula reads 
 
 $$
-(\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{n},\quad  \text{with n mesons.}
+H_ {3}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} = (\omega _ {p} -H_ {2}) \left\lvert \vec{p} \right\rangle_ {1}.
 $$
 
-As $1$ in $\left\lvert - \right\rangle_ {1}$ suggests, they are of order $g$. The same order on the left hand side is 
+There is not $H_ {3}\left\lvert \vec{p} \right\rangle_ {1}$ since $\left\lvert \vec{p} \right\rangle_ {1}\sim g$. Out goal is to express $\left\lvert \vec{p} \right\rangle_ {1}$ in terms of $\left\lvert \vec{p} \right\rangle_ {0}$.
+
+The RHS adopts an expansion in Fock space:
 
 $$
-H_ {3} \left\lvert \vec{p} \right\rangle_ {0},
+(\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{(n)},\quad  \text{with n mesons.}
 $$
 
-there is nothing else since $H_ {4}$ is of order $g^{2}$ already. 
-
-Next we expand in Fock spaces, 
+The same expansion on the left hand side reads 
 
 $$
-H_ {3}^{(-3)+(-1)+(1)+(3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = (\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{n},
+H_ {3} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = 
+H_ {3}^{(-3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} + H_ {3}^{(-1)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} + H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} + H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} ,
 $$
 
-balancing the superscripts we get 
+Again, there is nothing else since $H_ {4}$ is of order $g^{2}$ already. To see how many particles (we will use particle and meson interchangeably in this note) are there, we just add all the upstairs number together, for example $H^{(3)}\left\lvert \vec{p} \right\rangle^{(1)}$ has $3+1=4$ particles in it. 
+
+Putting The LHS and RHS together we have 
+
+$$
+\sum_ {i}H_ {3}^{(i)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = (\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{(n)}, \quad  i\in \left\lbrace -3,-1,1,3 \,\middle\vert\,  \right\rbrace .
+$$
+
+Balancing the superscripts, namely require $i+1=n$, we get 
 
 $$
 \begin{align*}
@@ -474,7 +498,7 @@ H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} =& (\omega _ {p} -H_ {2
 \end{align*}
 $$
 
-Substitute the expression for $H_ {3}$ in terms of ladder operator and contract, by the end of the day we get 
+Next we need to substitute the expression for $H_ {3}$ in terms of ladder operator and contract, which can be found in the last section of the note. By the end of the day we get 
 
 
 
@@ -486,7 +510,9 @@ Substitute the expression for $H_ {3}$ in terms of ladder operator and contract,
 
 - - -
 
-Summary of HRC-updated Hamiltonian densities:
+# Summary of Hamiltonians
+
+In the below is the summary of Hamiltonians updated by Hamiltonian Renormalization Conditions (HRC):
 
 $$
 \begin{align*}

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md"
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
               }
             }
           },
@@ -183,6 +183,8 @@
   },
   "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
+    "img/kink/jarahDiagram.png",
+    "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/kink/3_0_Vacuum.png",
@@ -217,10 +219,8 @@
     "Discussion Notes.md",
     "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
     "2024-06-02.md",
-    "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "reports/psresultmobile.svg",
     "reports/psresultdesktop.svg",
-    "Templates/DateNote.md",
     "img/naturalityCommute.png",
     "img/commutePolynomial.png",
     "img/naturalityInX.png",
