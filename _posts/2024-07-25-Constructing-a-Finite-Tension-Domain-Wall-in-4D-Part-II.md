@@ -266,7 +266,9 @@ For the simplicity of notation, we will usually omit the subscript $0$ in $\left
 What is the norm of $\left\lvert \vec{p} \right\rangle$? We have $\left\langle \vec{p} \right\rvert=\left\langle \Omega_ {0} \right\rvert (A_ {p}^{\ddagger})^{\dagger}=\left\langle \Omega_ {0} \right\rvert(A_ {p})/2\omega_ {p}$ and $[A_ {p},A^{\ddagger}q]=(2\pi)^{3} \delta^{3}(\vec{p}-\vec{q})$, thus
 
 $$
+\boxed{ 
 \left\langle \vec{p} \middle\vert \vec{q} \right\rangle = \frac{(2\pi)^{3}}{2\omega _ {p} }(2\pi)^{3} \delta^{(3)}(\vec{p}-\vec{q}).
+}
 $$
 
 The free Fock states consist a full basis of Hilbert space. We can expand the first order correction to the vacuum states in these basis,
@@ -297,7 +299,7 @@ where $I$ is the general index, $\left\lvert p_ {I} \right\rangle=\left\lvert p_
 Are states from different Fock spaces orthogonal to each other? It will look something like 
 
 $$
-\left\langle \vec{p}_ {I} \middle\vert \vec{p}_ {J} \right\rangle  \propto to \left\langle \Omega_ {0} \right\rvert A\cdots A A^{\ddagger}\cdots A^{\ddagger}\left\lvert \Omega \right\rangle .
+\left\langle \vec{p}_ {I} \middle\vert \vec{p}_ {J} \right\rangle  \propto  \left\langle \Omega_ {0} \right\rvert A\cdots A A^{\ddagger}\cdots A^{\ddagger}\left\lvert \Omega \right\rangle .
 $$
 
 According to the equal-time Wick theorem, a string of ladder operators is equal to the normal ordering of all its contraction, which, when sandwiched between vacuum state, can only be non-zero if it is a full contraction, where there are equal number of creation and annihilation operators. It means that these two states must have same number of particles in it, hence belong to the same order of Fock subspace. Thus 
@@ -500,8 +502,28 @@ Next we need to substitute the expression for $H_ {3}$ in terms of ladder operat
 
 $$
 \begin{align*}
-\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &= (\omega _ {p} -H_ {2})^{-1}H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)}  \\
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &= (\omega _ {p} -H_ {2})^{-1}H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)}，  \\
 \left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= (\omega _ {p} -H_ {2})^{-1} H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)}.
+\end{align*}
+$$
+
+Substitute the expression for $H_ {3}$ in terms of ladder operators, after some simplification we get
+
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {p_ {1}}+\omega_ {p_ {2}}-\omega_ {p}} \left\lvert \vec{p}_ {1} \vec{p}_ {2} \right\rangle^{(2)}_ {0},\\
+\vec{p}_ {2} &= \vec{p}-\vec{p}_ {1}.
+\end{align*}
+$$
+
+Let's take a closer look at $\left\lvert \vec{p} \right\rangle_ {1}^{(2)}$. Since $\omega(p)$ is not a linear function in $p$, considering $\vec{p}_ {1}+\vec{p}_ {2}=\vec{p}$, we have $\omega(\vec{p}_ {1})+\omega (\vec{p_ {2}}) \neq \omega(\vec{p})$, thus the integrand does not go to zero, hence is free of singularities. 
+
+Another component is 
+
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}\vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle_ {0}^{(4)}}{\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {3}}}, \\
+\vec{p}_ {3} &= - \vec{p}_ {1}-\vec{p}_ {2}.
 \end{align*}
 $$
 
