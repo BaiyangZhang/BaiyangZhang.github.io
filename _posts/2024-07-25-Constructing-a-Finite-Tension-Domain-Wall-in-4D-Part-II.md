@@ -405,7 +405,7 @@ There is also a nice diagrammatic symbol that Jarah created (Jarah diagram) to i
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kink/jarahDiagram.png" class="img-fluid rounded z-depth-1" style="width: 60%;" %}
+        {% include figure.liquid path="/img/kink/jarahDiagram.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
     </div>
 </div>
 <div class="caption">
@@ -416,7 +416,7 @@ In the case of vacuum correction, I copy Jarah's explanation here shamelessly.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kink/3_0_Vacuum.png" class="img-fluid rounded z-depth-1" style="width: 60%;" %}
+        {% include figure.liquid path="/img/kink/3_0_Vacuum.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
     </div>
 </div>
 <div class="caption">
@@ -496,7 +496,14 @@ H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} =& (\omega _ {p} -H_ {2
 \end{align*}
 $$
 
-Next we need to substitute the expression for $H_ {3}$ in terms of ladder operator and contract, which can be found in the last section of the note. By the end of the day we get 
+Next we need to substitute the expression for $H_ {3}$ in terms of ladder operator and contract, which can be found in the last section of the note. By the end of the day we get two components of $\left\lvert \vec{p} \right\rangle_ {1}$, namely the 2-free-meson and 4-free-meson components, as shown below:
+
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &= (\omega _ {p} -H_ {2})^{-1}H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)}  \\
+\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= (\omega _ {p} -H_ {2})^{-1} H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)}.
+\end{align*}
+$$
 
 
 
