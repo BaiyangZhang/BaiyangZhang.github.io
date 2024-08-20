@@ -405,7 +405,7 @@ There is also a nice diagrammatic symbol that Jarah created (Jarah diagram) to i
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kink/jarahDiagram.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+        {% include figure.liquid path="/img/kink/jarahDiagram.png" class="img-fluid rounded z-depth-1" style="width:70%;" %}
     </div>
 </div>
 <div class="caption">
