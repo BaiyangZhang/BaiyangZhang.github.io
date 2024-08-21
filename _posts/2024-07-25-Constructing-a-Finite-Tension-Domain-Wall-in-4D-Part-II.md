@@ -266,7 +266,9 @@ For the simplicity of notation, we will usually omit the subscript $0$ in $\left
 What is the norm of $\left\lvert \vec{p} \right\rangle$? We have $\left\langle \vec{p} \right\rvert=\left\langle \Omega_ {0} \right\rvert (A_ {p}^{\ddagger})^{\dagger}=\left\langle \Omega_ {0} \right\rvert(A_ {p})/2\omega_ {p}$ and $[A_ {p},A^{\ddagger}q]=(2\pi)^{3} \delta^{3}(\vec{p}-\vec{q})$, thus
 
 $$
+\boxed{ 
 \left\langle \vec{p} \middle\vert \vec{q} \right\rangle = \frac{(2\pi)^{3}}{2\omega _ {p} }(2\pi)^{3} \delta^{(3)}(\vec{p}-\vec{q}).
+}
 $$
 
 The free Fock states consist a full basis of Hilbert space. We can expand the first order correction to the vacuum states in these basis,
@@ -297,7 +299,7 @@ where $I$ is the general index, $\left\lvert p_ {I} \right\rangle=\left\lvert p_
 Are states from different Fock spaces orthogonal to each other? It will look something like 
 
 $$
-\left\langle \vec{p}_ {I} \middle\vert \vec{p}_ {J} \right\rangle  \propto to \left\langle \Omega_ {0} \right\rvert A\cdots A A^{\ddagger}\cdots A^{\ddagger}\left\lvert \Omega \right\rangle .
+\left\langle \vec{p}_ {I} \middle\vert \vec{p}_ {J} \right\rangle  \propto  \left\langle \Omega_ {0} \right\rvert A\cdots A A^{\ddagger}\cdots A^{\ddagger}\left\lvert \Omega \right\rangle .
 $$
 
 According to the equal-time Wick theorem, a string of ladder operators is equal to the normal ordering of all its contraction, which, when sandwiched between vacuum state, can only be non-zero if it is a full contraction, where there are equal number of creation and annihilation operators. It means that these two states must have same number of particles in it, hence belong to the same order of Fock subspace. Thus 
@@ -386,13 +388,13 @@ $$
 
 The long-ass expression for $\delta v_ {1}'$ turns out to be zero.
 
-Putting everything so far together, we find 
+Putting everything together, we find 
 
 $$
 \mathcal{H}_ {3}(\vec{x}) = -\frac{mg}{\sqrt{2}} \phi^{3}(\vec{x}),
 $$
 
-everything else disappears.
+everything else has disappeared.
 
 We are not quite done yet, we need to find the interaction correction to the momentum eigenstates. At lowest order we have $H_ {0}\left\lvert \vec{p} \right\rangle_ {0}=\omega_ {p}\left\lvert \vec{p} \right\rangle_ {0}$, and after we include all orders we require that $H\left\lvert \vec{p} \right\rangle=\omega_ {p}\left\lvert p \right\rangle$. Our task is to find the difference between $\left\lvert - \right\rangle_ {0}$ and $\left\lvert - \right\rangle$ order by order. 
 
@@ -401,7 +403,18 @@ In order to make it easier to keep tracks of the number of mesons, let's introdu
 - For a state, we use a superscript in parenthesis to denote how many meson it contains, $\left\lvert \psi \right\rangle^{(m)}$ indicates $\left\lvert \psi \right\rangle$ contains $m$ mesons, hence belongs to the $m$-meson Fock (sub)space. The superscript is sometimes inside the ket notation, sometimes out (as in here), I will in general not pay too much attention to it as long as it is clear what is meant;
 - For an operator, we use the same notation to denote **how many mesons it creates** when acting on a state, for example $\mathcal{O}^{(m)}$ means that $\mathcal{O}^{(m)}\left\lvert \psi(n) \right\rangle$ as a whole has $m+n$ states. 
 
-There is also a nice diagrammatic symbol that Jarah created to indicate different contributions. I will just copy Jarah's explanation here shamelessly. 
+There is also a nice diagrammatic symbol that Jarah created (Jarah diagram) to indicate different contributions. An explanation of how such diagrams work is given in the figure below. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/jarahDiagram.png" class="img-fluid rounded z-depth-1" style="width:70%;" %}
+    </div>
+</div>
+<div class="caption">
+    The diagram is separated into two parts, the vertex lies in the middle. First, look at the equation at the bottum, where the left hand side is the higher order correction that we want to calculate, the right hand side is how we calculate it, by acting on a lower-order state by some operator. The operator is represented by the bullet in the middle, that's why $\mathcal{O}$ is placed right under the bullet. The diagram can be separated into two parts, the left panel corresponds to the left hand side of the equation, the right panel shows on what states the operator acts. The arrow-lines are not fermions but mesons, the arrow shows the direction in which the coupling-order increases. The coupling order always increases from right to the left. We will usually neglect the bullet symbol, since there will always be only one vertex in one diagram, and it is always placed at the center. We will also neglect the vertical dashed lines that intersect meson lines.
+</div>
+
+In the case of vacuum correction, I copy Jarah's explanation here shamelessly. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -445,27 +458,38 @@ $$
 } 
 $$
 
-Besides matching the orders in coupling, we also match the number of mesons. Let's see what happens at leading order, in the RHS the lowest order part is
+Now, both parts will have contribution from different Fock space, for example $H_ {4}$ acting on $\left\lvert \vec{p} \right\rangle_ {0}^{(1)}$ may yield something with $2,3,\cdots$ free mesons. Now, besides matching the orders in coupling, we will also match the number of mesons. 
+
+Let's see what happens at leading order $\sim g$ of the coupling. At this order, with regards to the Hamiltonian, we only need up to $H_ {3}$, thus the master formula reads 
 
 $$
-(\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{n},\quad  \text{with n mesons.}
+H_ {3}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} = (\omega _ {p} -H_ {2}) \left\lvert \vec{p} \right\rangle_ {1}.
 $$
 
-As $1$ in $\left\lvert - \right\rangle_ {1}$ suggests, they are of order $g$. The same order on the left hand side is 
+There is not $H_ {3}\left\lvert \vec{p} \right\rangle_ {1}$ since $\left\lvert \vec{p} \right\rangle_ {1}\sim g$. Out goal is to express $\left\lvert \vec{p} \right\rangle_ {1}$ in terms of $\left\lvert \vec{p} \right\rangle_ {0}$.
+
+The RHS adopts an expansion in Fock space:
 
 $$
-H_ {3} \left\lvert \vec{p} \right\rangle_ {0},
+(\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{(n)},\quad  \text{with n mesons.}
 $$
 
-there is nothing else since $H_ {4}$ is of order $g^{2}$ already. 
-
-Next we expand in Fock spaces, 
+The same expansion on the left hand side reads 
 
 $$
-H_ {3}^{(-3)+(-1)+(1)+(3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = (\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{n},
+H_ {3} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = 
+H_ {3}^{(-3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} + H_ {3}^{(-1)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} + H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} + H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} ,
 $$
 
-balancing the superscripts we get 
+Again, there is nothing else since $H_ {4}$ is of order $g^{2}$ already. To see how many particles (we will use particle and meson interchangeably in this note) are there, we just add all the upstairs number together, for example $H^{(3)}\left\lvert \vec{p} \right\rangle^{(1)}$ has $3+1=4$ particles in it. 
+
+Putting The LHS and RHS together we have 
+
+$$
+\sum_ {i}H_ {3}^{(i)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = (\omega_ {p}-H_ {2})\sum_ {n\geq 1}\left\lvert \vec{p} \right\rangle_ {1}^{(n)}, \quad  i\in \left\lbrace -3,-1,1,3 \,\middle\vert\,  \right\rbrace .
+$$
+
+Balancing the superscripts, namely require $i+1=n$, we get 
 
 $$
 \begin{align*}
@@ -474,7 +498,34 @@ H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} =& (\omega _ {p} -H_ {2
 \end{align*}
 $$
 
-Substitute the expression for $H_ {3}$ in terms of ladder operator and contract, by the end of the day we get 
+Next we need to substitute the expression for $H_ {3}$ in terms of ladder operator and contract, which can be found in the last section of the note. By the end of the day we get two components of $\left\lvert \vec{p} \right\rangle_ {1}$, namely the 2-free-meson and 4-free-meson components, as shown below:
+
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &= (\omega _ {p} -H_ {2})^{-1}H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)}，  \\
+\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= (\omega _ {p} -H_ {2})^{-1} H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)}.
+\end{align*}
+$$
+
+Substitute the expression for $H_ {3}$ in terms of ladder operators, after some simplification we get
+
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {p_ {1}}+\omega_ {p_ {2}}-\omega_ {p}} \left\lvert \vec{p}_ {1} \vec{p}_ {2} \right\rangle^{(2)}_ {0},\\
+\vec{p}_ {2} &= \vec{p}-\vec{p}_ {1}.
+\end{align*}
+$$
+
+Let's take a closer look at $\left\lvert \vec{p} \right\rangle_ {1}^{(2)}$. Since $\omega(p)$ is not a linear function in $p$, considering $\vec{p}_ {1}+\vec{p}_ {2}=\vec{p}$, we have $\omega(\vec{p}_ {1})+\omega (\vec{p_ {2}}) \neq \omega(\vec{p})$, thus the integrand does not go to zero, hence is free of singularities. 
+
+Another component is 
+
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}\vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle_ {0}^{(4)}}{\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {3}}}, \\
+\vec{p}_ {3} &= - \vec{p}_ {1}-\vec{p}_ {2}.
+\end{align*}
+$$
 
 
 
@@ -486,7 +537,9 @@ Substitute the expression for $H_ {3}$ in terms of ladder operator and contract,
 
 - - -
 
-Summary of HRC-updated Hamiltonian densities:
+# Summary of Hamiltonians
+
+In the below is the summary of Hamiltonians updated by Hamiltonian Renormalization Conditions (HRC):
 
 $$
 \begin{align*}

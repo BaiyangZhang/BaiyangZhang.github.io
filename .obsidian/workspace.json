@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "afdffd4ed97e5ff0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "30255c0dede3e821",
             "type": "leaf",
             "state": {
@@ -169,8 +181,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30255c0dede3e821",
+  "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
+    "img/kink/jarahDiagram.png",
     "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
@@ -206,7 +219,6 @@
     "Discussion Notes.md",
     "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
     "2024-06-02.md",
-    "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "reports/psresultmobile.svg",
     "reports/psresultdesktop.svg",
     "img/naturalityCommute.png",
