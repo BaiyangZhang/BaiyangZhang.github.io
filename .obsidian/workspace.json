@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
                 "mode": "source",
                 "source": false
               }
@@ -183,10 +183,11 @@
   },
   "active": "afdffd4ed97e5ff0",
   "lastOpenFiles": [
+    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/kink/jarahDiagram.png",
     "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
-    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/kink/3_0_Vacuum.png",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
@@ -194,7 +195,6 @@
     "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "img/resurgence/negativeRealContour.png",
     "img/resurgence",
-    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "Untitled.md",
     "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
     "img/fractal/CantorSet.png",
@@ -223,7 +223,6 @@
     "reports/psresultdesktop.svg",
     "img/naturalityCommute.png",
     "img/commutePolynomial.png",
-    "img/naturalityInX.png",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",

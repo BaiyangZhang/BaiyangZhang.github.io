@@ -183,7 +183,13 @@ Jeremy Bentham famously wrote that
 
 >Nature has placed mankind under the governance of two sovereign masters, *pain* and *pleasure*. It is for them alone to point out what we ought to do, as well as to determine what we shall do. On the one hand the standard of right and wrong, on the other the chain of causes and effects, are fastened to their throne. They govern us in all we do, in all we say, in all we think: every effort we can make to throw off our subjection, will serve but to demonstrate and confirm it. In words a man may pretend to abjure their empire: but in reality he will remain subject to it all the while. The principle of utility recognizes this subjection, and assumes it for the foundation of that system, the object of which is to rear the fabric of felicity by the hands of reason and law. Systems which attempt to question it, deal in sounds instead of senses, in caprice instead of reason, in darkness instead of light.
 
+Some regimes indeed deals "in sounds instead of senses, in caprice instead of reason," yet as long as they get only one thing right, as long as they supress the alternative, their reign will continue.
+
 The `principle of utility`, as Bentham explains, "approves or disapproves of every action whatsoever, according to the tendency which it appears to have to augment or diminish the happiness of the party whose interest is in question: or, what is the same thing in other words, to promote or to oppose that happiness."
+
+>>A century later Marx and Engels would write of a uto pian order in which politics could be replaced by administration.≥ Bentham believed that it could be done in eighteenth-century England.
+
+Funny enoguh, Marx thought very little of Jeremy Benthem.Marx wrote, in *Das Capita*, that Bentham was a "panegyrist of bourgeois society," and "With the driest naiveté he (Bentham) takes the modern shopkeeper, especially the English shopkeeper, as the normal man. Whatever is useful to this queer normal man, and to his world, is absolutely useful. This yard-measure, then, he applies to past, present, and future. The Christian religion, for example, is 'useful,' 'because it forbids in the name of religion the same faults which the penal code condemns in the name of the law.' Artistic criticism is 'harmful,' because it disturbs worthy people in their enjoyment of Martin Tupper, etc."
 
 Bentham's happiness principal, when applied to governments, requires us to maximize the greatest happiness of the greatest number in the community.
 

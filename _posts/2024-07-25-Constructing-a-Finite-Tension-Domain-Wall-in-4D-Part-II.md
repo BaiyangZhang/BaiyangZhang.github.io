@@ -193,7 +193,7 @@ $$
 We will use them to expand states of higher order in $g$, for example $\left\lvert{\Omega_ {n}}\right\rangle$ is the $g^{n}$-order vacuum correction, we will expand it as 
 
 $$
-\left\lvert{\Omega_ {n}}\right\rangle  = \sum_ {i=0}^{\infty} \left\lvert{\Omega_ {n}^{(i)}}\right\rangle , \quad  \left\lvert{\Omega^{(i)}}\right\rangle \in i\text{-meson Fock space.}
+\left\lvert{\Omega_ {n}}\right\rangle  = \sum_ {i=0}^{\infty} \left\lvert{\Omega_ {n}}\right\rangle^{(i)} , \quad  \left\lvert{\Omega}\right\rangle^{(i)} \in i\text{-meson Fock space.}
 $$
 
 We have two things to match: 1)different orders of the coupling and 2)different Fock space.
@@ -246,10 +246,10 @@ $$
 Similar to order $g^{0}$, HRC1 implies that 
 
 $$
-H_ {2}\left\lvert{\Omega_ {1}}\right\rangle = -H_ {3} \left\lvert{\Omega_ {0}}\right\rangle .
+H_ {2}\left\lvert{\Omega_ {1}}\right\rangle = -H_ {3} \left\lvert{\Omega_ {0}}\right\rangle . \tag{HRC1}  
 $$
 
-Now we need to expand $\left\lvert{\Omega_ {1}}\right\rangle$ in vacuum sector, free field Fock states. Such state are created by free creation operators acting on free vacuum state,
+Now we need to expand $\left\lvert{\Omega_ {1}}\right\rangle$ in $\left\lvert \Omega_ {0} \right\rangle$ and free field Fock states. Such state are created by free creation operators acting on free vacuum state,
 
 $$
 \left\lvert \vec{p} \right\rangle_ {0} = A^{\ddagger}_ {p} \left\lvert \Omega_ {0} \right\rangle 
@@ -261,13 +261,11 @@ $$
 \left\lvert \vec{p}_ {1}\cdots \vec{p}_ {n} \right\rangle_ {0} = A_ {p_ {1}}^{\ddagger}\cdots A^{\ddagger}_ {p_ {n} }\left\lvert \Omega_ {0} \right\rangle .
 $$
 
-For the simplicity of notation, we will usually omit the subscript $0$ in $\left\lvert \cdots \right\rangle_ {0}$, unless when talking about higher order corrections. 
-
-What is the norm of $\left\lvert \vec{p} \right\rangle$? We have $\left\langle \vec{p} \right\rvert=\left\langle \Omega_ {0} \right\rvert (A_ {p}^{\ddagger})^{\dagger}=\left\langle \Omega_ {0} \right\rvert(A_ {p})/2\omega_ {p}$ and $[A_ {p},A^{\ddagger}q]=(2\pi)^{3} \delta^{3}(\vec{p}-\vec{q})$, thus
+What is the norm of $\left\lvert \vec{p} \right\rangle_ {0}$? We have $_ {0}\left\langle \vec{p} \right\rvert=\left\langle \Omega_ {0} \right\rvert (A_ {p}^{\ddagger})^{\dagger}=\left\langle \Omega_ {0} \right\rvert(A_ {p})/2\omega_ {p}$ and $[A_ {p},A^{\ddagger}q]=(2\pi)^{3} \delta^{3}(\vec{p}-\vec{q})$, thus
 
 $$
 \boxed{ 
-\left\langle \vec{p} \middle\vert \vec{q} \right\rangle = \frac{(2\pi)^{3}}{2\omega _ {p} }(2\pi)^{3} \delta^{(3)}(\vec{p}-\vec{q}).
+_ {0}\left\langle \vec{p} \middle\vert \vec{q} \right\rangle_ {0} = \frac{(2\pi)^{3}}{2\omega _ {p} }(2\pi)^{3} \delta^{(3)}(\vec{p}-\vec{q}).
 }
 $$
 
@@ -276,13 +274,14 @@ The free Fock states consist a full basis of Hilbert space. We can expand the fi
 $$
 \left\lvert{\Omega_ {1}}\right\rangle = \left\lvert{\Omega_ {1}^{(0)}}\right\rangle + \left\lvert{\Omega_ {1}^{(1)}}\right\rangle  + \cdots
 $$
-where the superscript indicates the number of mesons, $\left\lvert \Omega_ {1}^{(n)} \right\rangle$ means the $n$-meson Fock space component of $\left\lvert \Omega_ {1} \right\rangle$ state. Explicitly we have
+
+where $\left\lvert{\Omega_ {1}^{(0)}}\right\rangle$ isthe same as $\left\lvert{\Omega_ {1}}\right\rangle^{(0)}$, the superscript indicates the number of mesons, $\left\lvert \Omega_ {1}^{(n)} \right\rangle$ means the $n$-meson Fock space component of $\left\lvert \Omega_ {1} \right\rangle$ state. Explicitly we have
 
 $$
 \left\lvert{\Omega^{(0)}_ {1}}\right\rangle = c_ {1,0} \left\lvert \Omega_ {0} \right\rangle , \quad  c_ {1,0}\in \mathbb{C}.
 $$
 
-and
+I will assume that $c_ {1,0}=0$, which is quite reasonalble since the correction should be something new. And
 
 $$
 \left\lvert \Omega_ {1}^{(1)} \right\rangle = \sum c_ {1,i} \left\lvert p_ {i} \right\rangle , \quad  c_ {1,i}\in \mathbb{C}.
@@ -305,7 +304,7 @@ $$
 According to the equal-time Wick theorem, a string of ladder operators is equal to the normal ordering of all its contraction, which, when sandwiched between vacuum state, can only be non-zero if it is a full contraction, where there are equal number of creation and annihilation operators. It means that these two states must have same number of particles in it, hence belong to the same order of Fock subspace. Thus 
 
 $$
-\left\langle \Psi^{(m)} \middle\vert \Psi^{(n)} \right\rangle =0 \text{ if } m \neq J.
+\left\langle \Psi^{(m)} \middle\vert \Psi^{(n)} \right\rangle =0 \text{ if } m \neq n.
 $$
 
 Coming back to $\left\lvert \Omega_ {1} \right\rangle$. Focusing on the $0$-meson sub Fock space, we have
@@ -314,16 +313,16 @@ $$
 H_ {2}\left\lvert{\Omega_ {1}}\right\rangle \supset H_ {2}(\cdots)\left\lvert{\Omega_ {0}}\right\rangle =0,
 $$
 
-Since $H_ {2}$ is normal ordered. On the right hand side, the zero-meson part of $-H_ {3}\left\lvert \Omega_ {0} \right\rangle$ is what? $H_ {3}$ can be written as 
+since $H_ {2}$ is normal ordered. On the right hand side, the zero-meson part of $-H_ {3}\left\lvert \Omega_ {0} \right\rangle$ is what? $H_ {3}$ can be written as 
 
 $$
 H_ {3} = \int d^{3}x \,  :- \frac{mg}{\sqrt{2}} \phi^{3}+\phi m^{2} \delta v_ {1}' + A_ {3} :_ {m},
 $$
 
-where $\delta v_ {1}'$ is some combination of counter terms. Since both $\phi^{3}$ and $\phi$ preserved the particle number, the zero-meson part is obtained by acting $H_ {3}$ on $\left\lvert \Omega_ {0} \right\rangle$, and thanks to the normal ordering, only $A_ {3}$ survives, hence
+where $\delta v_ {1}'$ is some combination of counter terms. Thanks to the normal ordering, in $0$-Fock subspace we have
 
 $$
-H_ {3}\left\lvert \Omega_ {0} \right\rangle =A_ {3}\left\lvert \Omega_ {0} \right\rangle \implies A_ {3}=0 .
+0\text{-meson:}\quad H_ {3}\left\lvert \Omega_ {0} \right\rangle =A_ {3}\left\lvert \Omega_ {0}\right\rangle=0  \implies A_ {3}=0 .
 $$
 
 To study what is going on with multi-mesons states, we need to expand the Hamiltonians $H_ {2}$ and $H_ {3}$ in ladder operators. According to the convention we introduced in the first part of the note, we have 
@@ -380,7 +379,7 @@ The no-tadpole rule demands that $\left\langle \Omega \right\rvert\phi \left\lve
 $$
 \begin{align*}
 \left\langle \Omega \right\rvert \phi \left\lvert \Omega \right\rangle  &= (\left\langle \Omega_ {0} \right\rvert +\left\langle \Omega_ {1} \right\rvert ) \phi (\left\lvert \Omega_ {0} \right\rangle +\left\lvert \Omega_ {1} \right\rangle ) \\
-&= 2 \left\langle \Omega_ {0} \right\rvert  \int \frac{d^{3}k}{(2\pi)^{3}} \,  e^{ -i\vec{k}\cdot \vec{x} } \frac{A_ {-k}}{2\omega_ {k}} (-m\delta v_ {1}')A^{\ddagger}_ {p=0} \left\lvert \Omega_ {0} \right\rangle \\
+&= 2 \left\langle \Omega_ {1} \right\rvert  \int \frac{d^{3}k}{(2\pi)^{3}} \,  e^{ -i\vec{k}\cdot \vec{x} } \frac{A_ {-k}}{2\omega_ {k}} (-m\delta v_ {1}')A^{\ddagger}_ {p=0} \left\lvert \Omega_ {0} \right\rangle \\
 &= -\delta v_ {1}'\\
 &=0.
 \end{align*}
