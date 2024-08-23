@@ -301,7 +301,9 @@ $$
 \left\langle \vec{p}_ {I} \middle\vert \vec{p}_ {J} \right\rangle  \propto  \left\langle \Omega_ {0} \right\rvert A\cdots A A^{\ddagger}\cdots A^{\ddagger}\left\lvert \Omega \right\rangle .
 $$
 
-According to the equal-time Wick theorem, a string of ladder operators is equal to the normal ordering of all its contraction, which, when sandwiched between vacuum state, can only be non-zero if it is a full contraction, where there are equal number of creation and annihilation operators. It means that these two states must have same number of particles in it, hence belong to the same order of Fock subspace. Thus 
+According to the equal-time Wick theorem, a string of ladder operators is equal to the normal ordering of all its contraction, which, when sandwiched between vacuum state, can only be non-zero if it is a full contraction, where there are equal number of creation and annihilation operators. It means that these two states must
+
+have same number of particles in it, hence belong to the same order of Fock subspace. Thus 
 
 $$
 \left\langle \Psi^{(m)} \middle\vert \Psi^{(n)} \right\rangle =0 \text{ if } m \neq n.
@@ -379,7 +381,7 @@ The no-tadpole rule demands that $\left\langle \Omega \right\rvert\phi \left\lve
 $$
 \begin{align*}
 \left\langle \Omega \right\rvert \phi \left\lvert \Omega \right\rangle  &= (\left\langle \Omega_ {0} \right\rvert +\left\langle \Omega_ {1} \right\rvert ) \phi (\left\lvert \Omega_ {0} \right\rangle +\left\lvert \Omega_ {1} \right\rangle ) \\
-&= 2 \left\langle \Omega_ {1} \right\rvert  \int \frac{d^{3}k}{(2\pi)^{3}} \,  e^{ -i\vec{k}\cdot \vec{x} } \frac{A_ {-k}}{2\omega_ {k}} (-m\delta v_ {1}')A^{\ddagger}_ {p=0} \left\lvert \Omega_ {0} \right\rangle \\
+&= 2 \left\langle \Omega_ {0} \right\rvert  \int \frac{d^{3}k}{(2\pi)^{3}} \,  e^{ -i\vec{k}\cdot \vec{x} } \frac{A_ {-k}}{2\omega_ {k}} (-m\delta v_ {1}')A^{\ddagger}_ {p=0} \left\lvert \Omega_ {0} \right\rangle \\
 &= -\delta v_ {1}'\\
 &=0.
 \end{align*}
@@ -390,7 +392,9 @@ The long-ass expression for $\delta v_ {1}'$ turns out to be zero.
 Putting everything together, we find 
 
 $$
+\boxed{
 \mathcal{H}_ {3}(\vec{x}) = -\frac{mg}{\sqrt{2}} \phi^{3}(\vec{x}),
+} 
 $$
 
 everything else has disappeared.
@@ -511,7 +515,7 @@ Substitute the expression for $H_ {3}$ in terms of ladder operators, after some 
 $$
 \begin{align*}
 \left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {p_ {1}}+\omega_ {p_ {2}}-\omega_ {p}} \left\lvert \vec{p}_ {1} \vec{p}_ {2} \right\rangle^{(2)}_ {0},\\
-\vec{p}_ {2} &= \vec{p}-\vec{p}_ {1}.
+\vec{p}&=\vec{p}_ {2}+\vec{p}_ {2} .
 \end{align*}
 $$
 
@@ -522,9 +526,27 @@ Another component is
 $$
 \begin{align*}
 \left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}\vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle_ {0}^{(4)}}{\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {3}}}, \\
-\vec{p}_ {3} &= - \vec{p}_ {1}-\vec{p}_ {2}.
+0 &=  \vec{p}_ {1} + \vec{p}_ {2} + \vec{p}_ {3}.
 \end{align*}
 $$
+
+**Order $g^{2}$:
+
+The Hamiltonian density reads
+
+$$
+\begin{align*}
+\mathcal{H}_ {4} &= \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{3gm\delta v_ {1}}{\sqrt{ 2 }} - \frac{3m^{2}\delta g}{2g} + \frac{\delta m^{2}_ {1}}{4} + \frac{3m^{2}\delta m_ {1}^{4}}{4g^{2}} \right) \\
+&\;\;\;\; + \phi(m^{2}\delta v_ {2}) + \frac{m^{3}\delta v_ {1}}{\sqrt{ 2 }g}\left( \frac{g}{\sqrt{ 2 }m} \delta v_ {1} + \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} \right) + A_ 4,
+\end{align*}
+$$
+
+Let's re-write it as 
+
+$$
+\mathcal{H}_ {4} = \frac{g^{2}}{4} \phi^{4} + C_ {2} \phi^{2} + C_ {1} \phi + C_ {0}.
+$$
+
 
 
 
