@@ -265,7 +265,7 @@ What is the norm of $\left\lvert \vec{p} \right\rangle_ {0}$? We have $_ {0}\lef
 
 $$
 \boxed{ 
-_ {0}\left\langle \vec{p} \middle\vert \vec{q} \right\rangle_ {0} = \frac{(2\pi)^{3}}{2\omega _ {p} }(2\pi)^{3} \delta^{(3)}(\vec{p}-\vec{q}).
+_ {0}\left\langle \vec{p} \middle\vert \vec{q} \right\rangle_ {0} = \frac{(2\pi)^{3}}{2\omega _ {p} } \delta^{(3)}(\vec{p}-\vec{q}).
 }
 $$
 
@@ -331,16 +331,16 @@ To study what is going on with multi-mesons states, we need to expand the Hamilt
 
 
 $$
-H_ {2} = \int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p} A^{\ddagger}_ {p} A_ {p} 
+H_ {2} = \int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p} A^{\ddagger}_ {p} A_ {p} .
 $$
 
-and 
+Let $(123)$ be the permutation action that maps 1st element to 2nd, 2nd to 3rd, and 3rd to 1st, we have
 
 $$
 \begin{align*}
 H_ {3} = &-\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
- &+ \frac{1}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
-&+\frac{1}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} + (1\to 2\to 3\to 1)+(1\to 2\to 3\to 1) \\
+ &+ \frac{1}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} + (123)+(123)^{2} \\
+&+\frac{1}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} + (123)+(123)^{2} \\
 & + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace  \\
 &+ m^{2}\delta v_ {1}'\left( A^{\ddagger}_ {p=0}+\frac{A_ {p=0}}{2m} \right), \\
 p_ {3} =& -p_ {1}-p_ {2},\\
@@ -397,7 +397,14 @@ $$
 } 
 $$
 
-everything else has disappeared.
+everything else has disappeared. The first order correction to vacuum state is 
+
+$$
+\boxed{
+\left\lvert \Omega_ {1} \right\rangle  =  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle }{(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})}, \quad 
+\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}=0
+} 
+$$
 
 We are not quite done yet, we need to find the interaction correction to the momentum eigenstates. At lowest order we have $H_ {0}\left\lvert \vec{p} \right\rangle_ {0}=\omega_ {p}\left\lvert \vec{p} \right\rangle_ {0}$, and after we include all orders we require that $H\left\lvert \vec{p} \right\rangle=\omega_ {p}\left\lvert p \right\rangle$. Our task is to find the difference between $\left\lvert - \right\rangle_ {0}$ and $\left\lvert - \right\rangle$ order by order. 
 
@@ -414,7 +421,8 @@ There is also a nice diagrammatic symbol that Jarah created (Jarah diagram) to i
     </div>
 </div>
 <div class="caption">
-    The diagram is separated into two parts, the vertex lies in the middle. First, look at the equation at the bottum, where the left hand side is the higher order correction that we want to calculate, the right hand side is how we calculate it, by acting on a lower-order state by some operator. The operator is represented by the bullet in the middle, that's why $\mathcal{O}$ is placed right under the bullet. The diagram can be separated into two parts, the left panel corresponds to the left hand side of the equation, the right panel shows on what states the operator acts. The arrow-lines are not fermions but mesons, the arrow shows the direction in which the coupling-order increases. The coupling order always increases from right to the left. We will usually neglect the bullet symbol, since there will always be only one vertex in one diagram, and it is always placed at the center. We will also neglect the vertical dashed lines that intersect meson lines.
+    The diagram is separated into two parts, the vertex lies in the middle. First, look at the equation at the bottum, where the left hand side is the higher order correction that we want to calculate, the right hand side is how we calculate it, by acting on a lower-order state by some operator. The operator is represented by the bullet in the middle, that's why $\mathcal{O}$ is placed right under the bullet. The diagram can be separated into two parts, the left panel corresponds to the left hand side of the equation, the right panel shows on what states the operator acts. The arrow-lines are not fermions but mesons, the arrow shows the direction in which the coupling-order increases. The coupling order always increases from right to the left. Note that in vacuum sector, momenta are conserved at each vertex.
+     We will omit the vertical dashed lines that intersect meson lines.
 </div>
 
 In the case of vacuum correction, I copy Jarah's explanation here shamelessly. 
@@ -532,7 +540,13 @@ $$
 
 **Order $g^{2}$:
 
-The Hamiltonian density reads
+The Hamiltonian is 
+
+$$
+H_ {4}=\int  : \mathcal{H}_ {4}: 
+$$
+
+where the Hamiltonian density reads
 
 $$
 \begin{align*}
@@ -547,9 +561,34 @@ $$
 \mathcal{H}_ {4} = \frac{g^{2}}{4} \phi^{4} + C_ {2} \phi^{2} + C_ {1} \phi + C_ {0}.
 $$
 
+The vacuum renormalization condition at order $g^{2}$ reads
 
+$$
+H_ {4}\left\lvert \Omega_ {0} \right\rangle+H_ {3}\left\lvert \Omega_ {1} \right\rangle+H_ {2}\left\lvert \Omega_ {2} \right\rangle=0.
+$$
 
+Due to the normal ordering in $H_ {4}$, we have 
 
+$$
+H_ {4}\left\lvert \Omega_ {0} \right\rangle = C_ {0}\left\lvert \Omega_ {0} \right\rangle.
+$$
+
+This is a 0-meson state, so let's look into other zero-meosn states. Recall that higher order corrections are orthogonal to $\left\lvert \Omega_ {0} \right\rangle$. We have 
+
+$$
+H_ {3}\left\lvert \Omega_ {1} \right\rangle = H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{(3)} +\cdots,
+$$
+
+subsitute theor expressions in terms of ladder operators, we have 
+
+$$
+\begin{align*}
+H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{3} =& -\frac{mg}{\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}\\
+&\times  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}'}{(2\pi)^{3}} \frac{d^{3}p_ {2}'}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}'\vec{p}_ {2}'\vec{p}_ {3}' \right\rangle }{(\omega_ {p_ {1}'}\omega_ {p_ {2}'}\omega_ {p_ {3}}')}\\ 
+=& -\delta^{3}(0) \frac{m^{2}g^{2}}{2}    \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{(2\pi)^{3}}{8\omega^{2}_ {p_ {1}}\omega^{2}_ {p_ {2}}\omega^{2}_ {p_ {3}}} \left\lvert \Omega_ {0} \right\rangle,  \\
+0=&\vec{p}_ {1}'+\vec{p}_ {2}'+\vec{p}_ {3}'
+\end{align*}
+$$
 
 
 
@@ -567,7 +606,7 @@ $$
 \mathcal{H}_ {0} =& \mathcal{H}_ {1}=0, \\
 \mathcal{H}_ {2} =& \frac{\pi^{2}}{2} + \frac{(\partial \phi)^{2}}{2} + \frac{1}{2}m^{2}\phi^{2} \\
 H_ {2} =& \int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p} A^{\ddagger}_ {p} A_ {p} , \\
-\mathcal{H}_ {3} =& -\frac{mg}{\sqrt{2}} \phi^{3} \\
+\mathcal{H}_ {3} =& -\frac{mg}{\sqrt{2}} \phi^{3}, \\
 H_ {3} =& H_ {3}^{(3)}+H_ {3}^{(1)}+H_ {3}^{(-1)} + H_ {3}^{(-3)}  \\
 =& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
  &+ \frac{3}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} \\
