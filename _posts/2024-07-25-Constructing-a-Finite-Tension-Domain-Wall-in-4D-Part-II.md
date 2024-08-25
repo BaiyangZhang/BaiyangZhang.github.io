@@ -125,8 +125,8 @@ $$
 \mathcal{H}_ {1} &= A_ {1} \equiv 0, \\
 \mathcal{H}_ {2} &= \frac{\pi^{2}}{2} + \frac{(\partial \phi)^{2}}{2} + \frac{m^{2}\phi^{2}}{2} + \frac{m^{4}}{8g^{2}}\left( -\frac{\delta g}{g} + \frac{\delta m^{2}_ {1}}{m^{2}} + \frac{\delta m^{4}_ {1}}{8g^{2}} \right) + A_ {2}, \\ 
 \mathcal{H}_ {3} &= - \frac{mg}{\sqrt{ 2 }} \phi^{3} + \phi\left( m^{2}\delta v_ {1}+\frac{m^{3}}{\sqrt{ 2 }g} \left( \frac{\delta g}{g} - \frac{\delta m^{2}_ {1}}{2m^{2}} - \frac{\delta m^{4}_ {1}}{2g^{2}} \right) \right) + A_ {3}, \\
-\mathcal{H}_ {4} &= \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{3gm\delta v_ {1}}{\sqrt{ 2 }} - \frac{3m^{2}\delta g}{2g} + \frac{\delta m^{2}_ {1}}{4} + \frac{3m^{2}\delta m_ {1}^{4}}{4g^{2}} \right) \\
-&\;\;\;\; + \phi(m^{2}\delta v_ {2}) + \frac{m^{3}\delta v_ {1}}{\sqrt{ 2 }g}\left( \frac{g}{\sqrt{ 2 }m} \delta v_ {1} + \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} \right) + A_ 4, \\
+\mathcal{H}_ {4} &= \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{3gm\delta v_ {1}}{\sqrt{ 2 }} - \frac{3m^{2}\delta g}{2g} + \frac{\delta m^{2}_ {1}}{4} + \frac{3m^{2}\delta m_ {1}^{4}}{4g^{2}} \right)+ \phi(m^{2}\delta v_ {2}) \\
+&\;\;\;\; + \frac{m^{4}(\delta g)^{2}}{16g^{4}} + \frac{m^{3}\delta v_ {1}}{\sqrt{ 2 }g}\left( \frac{g}{\sqrt{ 2 }m} \delta v_ {1} + \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} \right) + A_ 4, \\
 \mathcal{H}_  {5} &=  \phi^{3}\left( g^{2}\delta v_ {1}+\sqrt{2}m\delta g_ {1}- \frac{m\delta m_ {1}^{4}}{\sqrt{2}g}  \right) - \phi^{2}\left( \frac{3mg \delta v_ {2}}{\sqrt{2}} \right) \\
 &\;\;\;\; + \phi\left( m^{2}\delta v_ {3} - \frac{3gm\delta v_ {1}^{2}}{\sqrt{2}} - \frac{3m^{2}\delta g_ {1}\delta v_ {1}}{g}+ \frac{1}{2}\delta m_ {1}^{2}\delta v_ {1} - \frac{3mg I_ {1}}{\sqrt{2}} + \frac{3m^{2}\delta m_ {1}^{4}\delta v_ {1}}{2g^{2}} \right) \\
 &\;\;\;\; + \frac{m^{3}\delta v_ {2}}{\sqrt{2}g}\left( \frac{\delta g}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} + \frac{\sqrt{2}g\delta v_ {1}}{m} \right) + A_ {5}. 
@@ -387,7 +387,13 @@ $$
 \end{align*}
 $$
 
-The long-ass expression for $\delta v_ {1}'$ turns out to be zero.
+The long-ass expression for $\delta v_ {1}'$ turns out to be zero. This can be translated into a relation for $\delta v_ {1}$, which will help us to simplify the higher order Hamiltonians:
+
+$$
+\boxed{
+\delta v_ {1}=- \frac{m}{\sqrt{2}g} \left( \frac{\delta g}{g}- \frac{\delta m_ {1}^{2}}{2m^{2}}- \frac{\delta m_ {1}^{4}}{2g^{2}} \right).
+} 
+$$
 
 Putting everything together, we find 
 
@@ -537,22 +543,20 @@ $$
 0 &=  \vec{p}_ {1} + \vec{p}_ {2} + \vec{p}_ {3}.
 \end{align*}
 $$
+- - -
 
 **Order $g^{2}$:
 
 The Hamiltonian is 
 
 $$
-H_ {4}=\int  : \mathcal{H}_ {4}: 
+H_ {4}=\int d^{3}x : \mathcal{H}_ {4}: 
 $$
 
-where the Hamiltonian density reads
+where the Hamiltonian density reads (**we have used the relation for $\delta v_ {1}$**)
 
 $$
-\begin{align*}
-\mathcal{H}_ {4} &= \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{3gm\delta v_ {1}}{\sqrt{ 2 }} - \frac{3m^{2}\delta g}{2g} + \frac{\delta m^{2}_ {1}}{4} + \frac{3m^{2}\delta m_ {1}^{4}}{4g^{2}} \right) \\
-&\;\;\;\; + \phi(m^{2}\delta v_ {2}) + \frac{m^{3}\delta v_ {1}}{\sqrt{ 2 }g}\left( \frac{g}{\sqrt{ 2 }m} \delta v_ {1} + \frac{\delta g_ {1}}{g} - \frac{\delta m_ {1}^{2}}{2m^{2}} - \frac{\delta m_ {1}^{4}}{2g^{2}} \right) + A_ 4,
-\end{align*}
+\mathcal{H}_ {4} = \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{\delta m_ {1}^{2}}{2} \right) + \phi(m^{2}\delta v_ {2})+ \frac{m^{4}(\delta g)^{2}}{16g^{4}} - \frac{m^{2}\delta v_ {1}^{2}}{2} + A_ 4,
 $$
 
 Let's re-write it as 
@@ -567,13 +571,105 @@ $$
 H_ {4}\left\lvert \Omega_ {0} \right\rangle+H_ {3}\left\lvert \Omega_ {1} \right\rangle+H_ {2}\left\lvert \Omega_ {2} \right\rangle=0.
 $$
 
+We need to decompose $H_ {4}$ into Fock subspace. We already know how to do that for $\phi^{3}$, we just need to workout $\phi^{4}$. The same calculation we did for $H_ {3}$ gets us 
+
+$$
+\begin{align*}
+:\phi^{4}: =& :\phi^{4}:^{(4)}+:\phi^{4}:^{(2)}+:\phi^{4}:^{(0)}+:\phi^{4}:^{(-2)}+:\phi^{4}:^{(-4)},\\
+:\phi^{4}:^{(4)} =& \int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}}A^{\ddagger}_ {p_ {4}}  ,\\
+:\phi^{4}:^{(2)} =& 4\int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }  
+A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}} \frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} ,\\
+
+:\phi^{4}:^{(0)} =& 6\int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}} A^{\ddagger}_ {p_ {2}} \frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} ,\\
+
+:\phi^{4}:^{(-2)} =& 4\int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}} \frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} ,\\
+
+:\phi^{4}:^{(-4)} =& \int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }
+\frac{A_ {-p_ {1}}}{2\omega_ {p_ {1}}}\frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} .
+\end{align*}
+$$
+
+Let's look at the 1-meson subspace first. There is no such contribution from $H_ {3}$. What about from $H_ {4}$? For $H_ {4}\left\lvert \Omega_ {0} \right\rangle^{(0)}$ to have one meson, we need $H_ {4}^{(1)}$ to act on $\left\lvert \Omega_ {0} \right\rangle$. We have
+
+$$
+\begin{align*}
+\left\lvert \Omega_ {2} \right\rangle^{(1)} &= - H_ {2}^{-1} H_ {4}^{(1)} \left\lvert \Omega_ {0} \right\rangle, \\
+&= - C_ {1} H_ {2}^{-1} :\phi:\left\lvert \Omega_ {0} \right\rangle \\
+&= - \frac{C_ {1}}{m} \left\lvert \vec{p} \right\rangle, \quad  \vec{p}=0.
+\end{align*}
+$$
+The last condition, $p=0$, is required by momentum conservation. 
+
+The no-tadpole rule at order $g^{2}$ gives as that 
+
+$$
+\text{no-tadpole at }g^{2}: - \frac{C_ {1}}{m^{2}}+ \left\langle \Omega_ {1} \right\rvert\phi \left\lvert \Omega_ {1} \right\rangle=0,
+$$
+
+however $\left\lvert \Omega_ {1} \right\rangle$ has only 3-meson component, thus the second term in the above equation is zero, we have $C_ {1}=0$. This fixes another counter term: 
+
+$$
+\boxed{
+\delta v_ {2}=0.
+} 
+$$
+
+It simplifies the Hamiltonian to
+
+$$
+\mathcal{H}_ {4}=\frac{g^{2}}{4} \phi^{4} - \frac{\delta m_ {1}^{2}}{2} \phi^{2} + C_ {0}.
+$$
+
+In general the no-tadpole rule require the linear term in $\phi$ to vanish, and the true-vacuum condition require the constant term to vanish, which we will check later.
+
+Let's decompose $H_ {4}$ by meson numbers, we have 
+
+$$
+\begin{align*}
+H_ {4} =& \sum_ {n=0}^{4} H_ {4}(4-2n), \\
+
+H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}}A^{\ddagger}_ {p_ {4}}                ,\\
+
+H_ {4}^{(2)} =& g^{2} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }  
+A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}} \frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}                 \\
+&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {p_ {1}}^{\ddagger}A_ {-p_ {1}}^{\ddagger},\\ 
+
+H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}} A^{\ddagger}_ {p_ {2}} \frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} \\
+&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}}{2\omega_ {p_ {1}}}+C_ {0} ,\\
+
+H_ {4}^{(-2)} =& g^{2}\int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}} \frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}  \\
+& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}A_ {-p_ {1}}}{(2\omega_ {p_ {1}})^{2}} , \\
+
+H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }
+\frac{A_ {-p_ {1}}}{2\omega_ {p_ {1}}}\frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}               ,\\
+\end{align*}
+$$
+
+where it is understood that $\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}+\vec{p}_ {4}$, 
+
+
+
+
+
+
+
+
+
+
+
 Due to the normal ordering in $H_ {4}$, we have 
 
 $$
 H_ {4}\left\lvert \Omega_ {0} \right\rangle = C_ {0}\left\lvert \Omega_ {0} \right\rangle.
 $$
 
-This is a 0-meson state, so let's look into other zero-meosn states. Recall that higher order corrections are orthogonal to $\left\lvert \Omega_ {0} \right\rangle$. We have 
+This is a 0-meson state. So, let's look into other zero-meson states. Recall that higher order corrections are orthogonal to $\left\lvert \Omega_ {0} \right\rangle$. We have 
 
 $$
 H_ {3}\left\lvert \Omega_ {1} \right\rangle = H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{(3)} +\cdots,
