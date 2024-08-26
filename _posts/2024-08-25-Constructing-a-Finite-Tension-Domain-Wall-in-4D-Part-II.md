@@ -623,28 +623,32 @@ $$
 
 In general the no-tadpole rule require the linear term in $\phi$ to vanish, and the true-vacuum condition require the constant term to vanish, which we will check later.
 
-Let's decompose $H_ {4}$ by meson numbers, we have 
+- - -
+
+**Introduce the shorthand notation $\left\lvert \vec{p}_ {-1-2} \right\rangle:=\left\lvert -\vec{p}_ {1}-\vec{p}_ {2} \right\rangle$, $\left\lvert \vec{p}_ {-1'-2'} \right\rangle:=\left\lvert -\vec{p}'_ {1}-\vec{p}'_ {2} \right\rangle$ and $\left\lvert \vec{p}_ {1,2} \right\rangle:=\left\lvert \vec{p}_ {1}\vec{p}_ {2} \right\rangle$. Also let's write $\omega_ {1}=\omega_ {p_ {1}},\, \omega_ {1'}=\omega_ {\vec{p}_ {1}'},\,\omega_ {1+2}=\omega_ {p_ {1}+p_ {2}}$ and** 
+
+$$
+\frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} := \frac{d^{3}p_ {1}}{(2\pi)^{3}}\frac{d^{3}p_ {2}}{(2\pi)^{3}}\frac{d^{3}p'_ {1}}{(2\pi)^{3}}\frac{d^{3}p'_ {2}}{(2\pi)^{3}}.
+$$
+
+
+The decomposition of $H_ {4}$ by meson numbers reads
 
 $$
 \begin{align*}
 H_ {4} =& \sum_ {n=0}^{4} H_ {4}(4-2n), \\
-H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
-A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}}A^{\ddagger}_ {p_ {4}}  ,\\
-H_ {4}^{(2)} =& g^{2} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }  
-A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}} \frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}    \\
-&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {p_ {1}}^{\ddagger}A_ {-p_ {1}}^{\ddagger},\\ 
-H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
-A^{\ddagger}_ {p_ {1}} A^{\ddagger}_ {p_ {2}} \frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} \\
-&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}}{2\omega_ {p_ {1}}}+C_ {0} ,\\
-H_ {4}^{(-2)} =& g^{2}\int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
-A^{\ddagger}_ {p_ {1}} \frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}  \\
-& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}A_ {-p_ {1}}}{(2\omega_ {p_ {1}})^{2}} , \\
-H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }
-\frac{A_ {-p_ {1}}}{2\omega_ {p_ {1}}}\frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}  ,
+H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3}A^{\ddagger}_ {-1-2-3}  ,\\
+H_ {4}^{(2)} =& g^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3} \frac{A_ {1+2+3}}{2\omega_ {1+2+3}}    \\
+&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
+H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} A^{\ddagger}_ {2} \frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} \\
+&- \delta m_ {1}^{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+C_ {0} ,\\
+H_ {4}^{(-2)} =& g^{2}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  \\
+& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
+H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  ,
 \end{align*}
 $$
 
-where it is understood that $\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}+\vec{p}_ {4}=0$. 
+where we have used the condition that $\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}+\vec{p}_ {4}=0$. 
 
 We have now all the ingredients needed to solve 
 
@@ -656,12 +660,6 @@ $$
 $$
 
 one meson number at a time. We will go from $6$ mesons and down to $0$ mesons. 
-
-**Introduce the shorthand notation $\left\lvert \vec{p}_ {-1-2} \right\rangle:=\left\lvert -\vec{p}_ {1}-\vec{p}_ {2} \right\rangle$, $\left\lvert \vec{p}_ {-1'-2'} \right\rangle:=\left\lvert -\vec{p}'_ {1}-\vec{p}'_ {2} \right\rangle$, $\omega_ {1}=\omega_ {p_ {1}}, \omega_ {1'}=\omega_ {\vec{p}_ {1}'},\omega_ {1+2}=\omega_ {p_ {1}+p_ {2}}$ and** 
-
-$$
-\frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} := \frac{d^{3}p_ {1}}{(2\pi)^{3}}\frac{d^{3}p_ {2}}{(2\pi)^{3}}\frac{d^{3}p'_ {1}}{(2\pi)^{3}}\frac{d^{3}p'_ {2}}{(2\pi)^{3}}.
-$$
 
 In $6$-meson Fock space we have 
 
@@ -689,17 +687,6 @@ This is represented by the figure below. Note the manifestation of momentum cons
 <div class="caption">
     Here we have some operator (vertex) acting on a state with three mesons, namele $\left\lvert \Omega_ {1} \right\rangle^{(3)}$. The three momenta $\vec{p}_ {1}, \vec{p}_ {2}$ and $\vec{p}_ {3}=-\vec{p}_ {1}-\vec{p}_ {2}$ in the "initial" states are passed on to the "final" state, that's why we have the three long arrows arossing the left and right panel. Momentum conservation demands $\vec{p}_ {1} + \vec{p}_ {2} +\vec{p}_ {3}=0$. The so-called vertex creats another three mesons, that's why we have three meson lines starting in the middle of the plot. Momentum conservation also applies to primed momenta.
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -737,6 +724,14 @@ $$
 
 # Summary of Hamiltonians
 
+I use the shorthand notation $\left\lvert \vec{p}_ {-1-2} \right\rangle:=\left\lvert -\vec{p}_ {1}-\vec{p}_ {2} \right\rangle$, $\left\lvert \vec{p}_ {-1'-2'} \right\rangle:=\left\lvert -\vec{p}'_ {1}-\vec{p}'_ {2} \right\rangle$, $\omega_ {1}=\omega_ {p_ {1}}, \omega_ {1'}=\omega_ {\vec{p}_ {1}'},\omega_ {1+2}=\omega_ {p_ {1}+p_ {2}}$. Multiple indices usually denote tensor product, for example $\left\lvert \vec{p}_ {1,2} \right\rangle:=\left\lvert \vec{p}_ {1} \right\rangle\left\lvert \vec{p}_ {2} \right\rangle=\left\lvert \vec{p}_ {1}\vec{p}_ {2} \right\rangle$, and
+
+$$
+\frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} := \frac{d^{3}p_ {1}}{(2\pi)^{3}}\frac{d^{3}p_ {2}}{(2\pi)^{3}}\frac{d^{3}p'_ {1}}{(2\pi)^{3}}\frac{d^{3}p'_ {2}}{(2\pi)^{3}}.
+$$
+
+We also simplify $A_ {p_ {1}}^{\ddagger}$ as $A_ {1}^{\ddagger}$ and $A_ {-p_ {1}-p_ {2}}$ as $A_ {-1-2}$.
+
 In the below is the summary of Hamiltonians updated by Hamiltonian Renormalization Conditions (HRC):
 
 $$
@@ -745,34 +740,37 @@ $$
 \mathcal{H}_ {2} =& \frac{\pi^{2}}{2} + \frac{(\partial \phi)^{2}}{2} + \frac{1}{2}m^{2}\phi^{2} \\
 H_ {2} =& \int \frac{d^{3}p}{(2\pi)^{3}} \, \omega_ {p} A^{\ddagger}_ {p} A_ {p} , \\
 \mathcal{H}_ {3} =& -\frac{mg}{\sqrt{2}} \phi^{3}, \\
-H_ {3} =& H_ {3}^{(3)}+H_ {3}^{(1)}+H_ {3}^{(-1)} + H_ {3}^{(-3)}  \\
-=& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \bigg\{ A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}^{\ddagger}A_ {p_ {3}}^{\ddagger}      \\
- &+ \frac{3}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} \\
-&+\frac{3}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} \\
-& + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace, \\
-\vec{p}_ {3} =& -\vec{p}_ {1}-\vec{p}_ {2},
+H_ {3} =& H_ {3}^{(3)}+H_ {3}^{(1)}+H_ {3}^{(-1)} + H_ {3}^{(-3)} 
 \end{align*}
 $$
+
+
+where
+
+$$
+\begin{align*}
+H_ {3}^{(3)} =& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \bigg\{ A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {-1-2}^{\ddagger}      \\
+H_ {3}^{(1)} =& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{3}{2\omega_ {3}}A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2} \\
+H_ {3}^{(-1)} =& -\frac{mg}{\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\,\frac{3}{2\omega_ {2}} \frac{1}{2\omega_ {3}}  A_ {1}^{\ddagger}A_ {-2} A_ {1+2} \\
+H_ {3}^{(-3)} =& -\frac{mg}{\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \left.\frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {3}} A_ {-1}A_ {-2}A_ {1+2}   \right\rbrace.
+\end{align*}
+$$
+
+In each term the momentum conservation is suggested by the fact that, if we treat the subscript of creation operators as plus momenta, that of the annihilation operators as negative momenta, then their summation gives zero, for example in $A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2}$ the total momentum would be (1+2-1-2) which is zero. 
 
 and 
 
 $$
 \begin{align*}
 H_ {4} =& \sum_ {n=0}^{4} H_ {4}(4-2n), \\
-H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
-A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}}A^{\ddagger}_ {p_ {4}},\\
-H_ {4}^{(2)} =& g^{2} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }  
-A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}} \frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} \\
-&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {p_ {1}}^{\ddagger}A_ {-p_ {1}}^{\ddagger},\\ 
-H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
-A^{\ddagger}_ {p_ {1}} A^{\ddagger}_ {p_ {2}} \frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} \\
-&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}}{2\omega_ {p_ {1}}}+C_ {0} ,\\
-H_ {4}^{(-2)} =& g^{2}\int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
-A^{\ddagger}_ {p_ {1}} \frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}  \\
-& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}A_ {-p_ {1}}}{(2\omega_ {p_ {1}})^{2}} , \\
-H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }
-\frac{A_ {-p_ {1}}}{2\omega_ {p_ {1}}}\frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} ,\\
-\vec{p}_ {4} =& -\vec{p}_ {1}-\vec{p}_ {2}-\vec{p}_ {3}
+H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3}A^{\ddagger}_ {-1-2-3}  ,\\
+H_ {4}^{(2)} =& g^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3} \frac{A_ {1+2+3}}{2\omega_ {1+2+3}}    \\
+&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
+H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} A^{\ddagger}_ {2} \frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} \\
+&- \delta m_ {1}^{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+C_ {0} ,\\
+H_ {4}^{(-2)} =& g^{2}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  \\
+& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
+H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  ,
 \end{align*}
 $$
 
