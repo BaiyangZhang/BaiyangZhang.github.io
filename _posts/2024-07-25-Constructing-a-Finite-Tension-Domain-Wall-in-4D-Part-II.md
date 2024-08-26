@@ -543,6 +543,7 @@ $$
 0 &=  \vec{p}_ {1} + \vec{p}_ {2} + \vec{p}_ {3}.
 \end{align*}
 $$
+
 - - -
 
 **Order $g^{2}$:
@@ -580,13 +581,10 @@ $$
 A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}}A^{\ddagger}_ {p_ {4}}  ,\\
 :\phi^{4}:^{(2)} =& 4\int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }  
 A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}} \frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} ,\\
-
 :\phi^{4}:^{(0)} =& 6\int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
 A^{\ddagger}_ {p_ {1}} A^{\ddagger}_ {p_ {2}} \frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} ,\\
-
 :\phi^{4}:^{(-2)} =& 4\int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
 A^{\ddagger}_ {p_ {1}} \frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} ,\\
-
 :\phi^{4}:^{(-4)} =& \int \prod_ {i=1}^{4} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }
 \frac{A_ {-p_ {1}}}{2\omega_ {p_ {1}}}\frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} .
 \end{align*}
@@ -630,28 +628,38 @@ Let's decompose $H_ {4}$ by meson numbers, we have
 $$
 \begin{align*}
 H_ {4} =& \sum_ {n=0}^{4} H_ {4}(4-2n), \\
-
 H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
-A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}}A^{\ddagger}_ {p_ {4}}                ,\\
-
+A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}}A^{\ddagger}_ {p_ {4}}  ,\\
 H_ {4}^{(2)} =& g^{2} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }  
-A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}} \frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}                 \\
+A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}} \frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}    \\
 &- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {p_ {1}}^{\ddagger}A_ {-p_ {1}}^{\ddagger},\\ 
-
 H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
 A^{\ddagger}_ {p_ {1}} A^{\ddagger}_ {p_ {2}} \frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} \\
 &- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}}{2\omega_ {p_ {1}}}+C_ {0} ,\\
-
 H_ {4}^{(-2)} =& g^{2}\int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
 A^{\ddagger}_ {p_ {1}} \frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}  \\
 & -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}A_ {-p_ {1}}}{(2\omega_ {p_ {1}})^{2}} , \\
-
 H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }
-\frac{A_ {-p_ {1}}}{2\omega_ {p_ {1}}}\frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}               ,\\
+\frac{A_ {-p_ {1}}}{2\omega_ {p_ {1}}}\frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}  ,
 \end{align*}
 $$
 
-where it is understood that $\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}+\vec{p}_ {4}$, 
+where it is understood that $\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}+\vec{p}_ {4}=0$. 
+
+We have now all the ingredients needed to solve 
+
+$$
+\boxed{
+\left\lvert \Omega_ {2} \right\rangle=-H_ {2}^{-1} H_ {4}\left\lvert \Omega_ {0} \right\rangle 
+- H_ {2}^{-1} H_ {3}\left\lvert \Omega_ {1} \right\rangle,
+} 
+$$
+
+one meson number at a time. We will go from $6$ mesons and down to $0$ mesons. 
+
+In $6$-meson Fock space we have 
+
+
 
 
 
@@ -708,7 +716,43 @@ H_ {3} =& H_ {3}^{(3)}+H_ {3}^{(1)}+H_ {3}^{(-1)} + H_ {3}^{(-3)}  \\
  &+ \frac{3}{2\omega_ {p_ {3}}}A_ {p_ {1}}^{\ddagger}A_ {p_ {2}}^{\ddagger}A_ {-p_ {3}} \\
 &+\frac{3}{2\omega_ {p_ {2}}} \frac{1}{2\omega_ {p_ {3}}}  A_ {p_ {1}}^{\ddagger}A_ {-p_ {2}} A_ {-p_ {3}} \\
 & + \left.\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}   \right\rbrace, \\
-\vec{p}_ {3} =& -\vec{p}_ {1}-\vec{p}_ {2},\\
-\mathcal{H}_ {4} =& ???
+\vec{p}_ {3} =& -\vec{p}_ {1}-\vec{p}_ {2},
+\end{align*}
+$$
+
+and 
+
+$$
+\begin{align*}
+H_ {4} =& \sum_ {n=0}^{4} H_ {4}(4-2n), \\
+H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}}A^{\ddagger}_ {p_ {4}},\\
+H_ {4}^{(2)} =& g^{2} \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }  
+A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {p_ {3}} \frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} \\
+&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {p_ {1}}^{\ddagger}A_ {-p_ {1}}^{\ddagger},\\ 
+H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}} A^{\ddagger}_ {p_ {2}} \frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} \\
+&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}^{\ddagger}A_ {p_ {1}}}{2\omega_ {p_ {1}}}+C_ {0} ,\\
+H_ {4}^{(-2)} =& g^{2}\int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} } 
+A^{\ddagger}_ {p_ {1}} \frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}}  \\
+& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}A_ {-p_ {1}}}{(2\omega_ {p_ {1}})^{2}} , \\
+H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \prod_ {i=1}^{3} \frac{d^{3}p_ {i}}{(2\pi)^{3}} \, e^{ -i\vec{x}\cdot \sum_ {i=1}^{4}\vec{p}_ {i} }
+\frac{A_ {-p_ {1}}}{2\omega_ {p_ {1}}}\frac{A_ {-p_ {2}}}{2\omega_ {p_ {2}}}\frac{A_ {-p_ {3}}}{2\omega_ {p_ {3}}}\frac{A_ {-p_ {4}}}{2\omega_ {p_ {4}}} ,\\
+\vec{p}_ {4} =& -\vec{p}_ {1}-\vec{p}_ {2}-\vec{p}_ {3}
+\end{align*}
+$$
+
+- - -
+
+The corrections to states:
+
+$$
+\begin{align*}
+\left\lvert \Omega_ {1} \right\rangle^{(3)}  &=  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle }{(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})}, \quad 
+\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}=0, \\
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {p_ {1}}+\omega_ {p_ {2}}-\omega_ {p}} \left\lvert \vec{p}_ {1} \vec{p}_ {2} \right\rangle^{(2)}_ {0},\\
+\vec{p}&=\vec{p}_ {2}+\vec{p}_ {2} \\
+\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}\vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle_ {0}^{(4)}}{\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {3}}}, \\
+0 &=  \vec{p}_ {1} + \vec{p}_ {2} + \vec{p}_ {3},
 \end{align*}
 $$
