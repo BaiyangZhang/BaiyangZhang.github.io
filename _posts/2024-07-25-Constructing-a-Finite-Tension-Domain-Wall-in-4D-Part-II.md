@@ -657,7 +657,41 @@ $$
 
 one meson number at a time. We will go from $6$ mesons and down to $0$ mesons. 
 
+**Introduce the shorthand notation $\left\lvert \vec{p}_ {-1-2} \right\rangle:=\left\lvert -\vec{p}_ {1}-\vec{p}_ {2} \right\rangle$, $\left\lvert \vec{p}_ {-1'-2'} \right\rangle:=\left\lvert -\vec{p}'_ {1}-\vec{p}'_ {2} \right\rangle$, $\omega_ {1}=\omega_ {p_ {1}}, \omega_ {1'}=\omega_ {\vec{p}_ {1}'},\omega_ {1+2}=\omega_ {p_ {1}+p_ {2}}$ and** 
+
+$$
+\frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} := \frac{d^{3}p_ {1}}{(2\pi)^{3}}\frac{d^{3}p_ {2}}{(2\pi)^{3}}\frac{d^{3}p'_ {1}}{(2\pi)^{3}}\frac{d^{3}p'_ {2}}{(2\pi)^{3}}.
+$$
+
 In $6$-meson Fock space we have 
+
+$$
+\begin{align*}
+\left\lvert \Omega_ {2} \right\rangle^{(6)} =&
+\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} \,(\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {1}'+\omega_ {2}'+\omega_ {1'+2'})\\
+&\times\frac{\left\lvert \vec{p}_ {1,2,-1-2}\;\vec{p}'_ {1,2,-1-2} \right\rangle}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}
+\end{align*}
+$$
+
+where, for instance, 
+
+$$
+\left\lvert \vec{p}'_ {1,2,-1-2} \right\rangle := \left\lvert \vec{p}'_ {1},\vec{p}'_ {2},\vec{p}'_ {-1-2} \right\rangle := \left\lvert \vec{p}'_ {1},\vec{p}'_ {2},-\vec{p}'_ {1}-\vec{p}'_ {2} \right\rangle.
+$$
+
+This is represented by the figure below. Note the manifestation of momentum conservation. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/p63.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    Here we have some operator (vertex) acting on a state with three mesons, namele $\left\lvert \Omega_ {1} \right\rangle^{(3)}$. The three momenta $\vec{p}_ {1}, \vec{p}_ {2}$ and $\vec{p}_ {3}=-\vec{p}_ {1}-\vec{p}_ {2}$ in the "initial" states are passed on to the "final" state, that's why we have the three long arrows arossing the left and right panel. Momentum conservation demands $\vec{p}_ {1} + \vec{p}_ {2} +\vec{p}_ {3}=0$. The so-called vertex creats another three mesons, that's why we have three meson lines starting in the middle of the plot. Momentum conservation also applies to primed momenta.
+</div>
+
+
+
 
 
 
