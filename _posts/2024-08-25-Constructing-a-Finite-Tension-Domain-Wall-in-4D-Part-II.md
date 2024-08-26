@@ -370,7 +370,7 @@ Substitute the expression for $H_ {3}$, we have (after some trivial rearrangemen
 
 $$
 \begin{align*}
-\left\lvert \Omega_ {1} \right\rangle  =&  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle }{(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})}      \\
+\left\lvert \Omega_ {1} \right\rangle  =&  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle }{(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {3}})}      \\
  &- m\delta v_ {1}' \left\lvert \vec{p}=0 \right\rangle ,\\
  \vec{p}_ {3} =& -\vec{p}_ {1}-\vec{p}_ {2}.
 \end{align*}
@@ -407,7 +407,7 @@ everything else has disappeared. The first order correction to vacuum state is
 
 $$
 \boxed{
-\left\lvert \Omega_ {1} \right\rangle  =  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle }{(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})}, \quad 
+\left\lvert \Omega_ {1} \right\rangle  =  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle }{(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {3}})}, \quad 
 \vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}=0
 } 
 $$
@@ -688,7 +688,29 @@ This is represented by the figure below. Note the manifestation of momentum cons
     Here we have some operator (vertex) acting on a state with three mesons, namele $\left\lvert \Omega_ {1} \right\rangle^{(3)}$. The three momenta $\vec{p}_ {1}, \vec{p}_ {2}$ and $\vec{p}_ {3}=-\vec{p}_ {1}-\vec{p}_ {2}$ in the "initial" states are passed on to the "final" state, that's why we have the three long arrows arossing the left and right panel. Momentum conservation demands $\vec{p}_ {1} + \vec{p}_ {2} +\vec{p}_ {3}=0$. The so-called vertex creats another three mesons, that's why we have three meson lines starting in the middle of the plot. Momentum conservation also applies to primed momenta.
 </div>
 
+In the case of 4-mesons, both $H_ {3}$ and $H_ {4}$ contribute. The contribution from $H_ {4}$ is simpler:
 
+$$
+- H_ {2}^{-1} H_ {4}\left\lvert \Omega_ {0} \right\rangle= - \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}} ,
+$$
+
+while the contribution from $H_ {3}\left\lvert \Omega_ {1} \right\rangle$ is more complicated due to the expansion of $\left\lvert \Omega_ {1} \right\rangle$,
+
+$$
+\begin{align*}
+-H_ {2}^{-1} H_ {3}\left\lvert \Omega_ {1} \right\rangle =& \left( \frac{3mg}{2} \right)^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{1}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})} \\
+&\times \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3})}.
+\end{align*}
+$$
+
+Putting them together we have 
+
+$$
+\begin{align*}
+\left\lvert \Omega_ {2} \right\rangle^{(4)} = & \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{9m^{2}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})} \right) -1  \\
+&\times \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle}{\omega_ {1}+\omega {2}+\omega_ {3}+\omega_ {1+2+3}} 
+\end{align*}
+$$
 
 
 
@@ -749,10 +771,10 @@ where
 
 $$
 \begin{align*}
-H_ {3}^{(3)} =& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \bigg\{ A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {-1-2}^{\ddagger}      \\
-H_ {3}^{(1)} =& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{3}{2\omega_ {3}}A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2} \\
-H_ {3}^{(-1)} =& -\frac{mg}{\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\,\frac{3}{2\omega_ {2}} \frac{1}{2\omega_ {3}}  A_ {1}^{\ddagger}A_ {-2} A_ {1+2} \\
-H_ {3}^{(-3)} =& -\frac{mg}{\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \left.\frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {3}} A_ {-1}A_ {-2}A_ {1+2}   \right\rbrace.
+H_ {3}^{(3)} =& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {-1-2}^{\ddagger}      \\
+H_ {3}^{(1)} =& -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{3}{2\omega_ {1+2}}A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2} \\
+H_ {3}^{(-1)} =& -\frac{mg}{\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\,\frac{3}{2\omega_ {2}} \frac{1}{2\omega_ {1+2}}  A_ {1}^{\ddagger}A_ {-2} A_ {1+2} \\
+H_ {3}^{(-3)} =& -\frac{mg}{\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {1+2}} A_ {-1}A_ {-2}A_ {1+2} .
 \end{align*}
 $$
 
@@ -762,7 +784,7 @@ and
 
 $$
 \begin{align*}
-H_ {4} =& \sum_ {n=0}^{4} H_ {4}(4-2n), \\
+H_ {4} =& \sum_ {n=0}^{4} H_ {4}^{(4-2n)}, \\
 H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3}A^{\ddagger}_ {-1-2-3}  ,\\
 H_ {4}^{(2)} =& g^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3} \frac{A_ {1+2+3}}{2\omega_ {1+2+3}}    \\
 &- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
@@ -780,11 +802,8 @@ The corrections to states:
 
 $$
 \begin{align*}
-\left\lvert \Omega_ {1} \right\rangle^{(3)}  &=  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle }{(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})}, \quad 
-\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}=0, \\
-\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {p_ {1}}+\omega_ {p_ {2}}-\omega_ {p}} \left\lvert \vec{p}_ {1} \vec{p}_ {2} \right\rangle^{(2)}_ {0},\\
-\vec{p}&=\vec{p}_ {2}+\vec{p}_ {2} \\
-\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}\vec{p}_ {1}\vec{p}_ {2}\vec{p}_ {3} \right\rangle_ {0}^{(4)}}{\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {3}}}, \\
-0 &=  \vec{p}_ {1} + \vec{p}_ {2} + \vec{p}_ {3},
+\left\lvert \Omega_ {1} \right\rangle^{(3)}  &=  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1,2,-1-2}\right\rangle_ {0} }{(\omega_ {1}+\omega_ {2}+\omega_ {3})}, \\
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {1}+\omega_ {2}-\omega_ {p}} \left\lvert \vec{p}_ {1,-1} \right\rangle^{(2)}_ {0},\\
+\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,3} \right\rangle_ {0}^{(4)}}{\omega_ {p1}+\omega_ {2}+\omega_ {1+2}}. 
 \end{align*}
 $$
