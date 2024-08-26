@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
+                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md"
               }
             }
           },
@@ -181,10 +182,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "afdffd4ed97e5ff0",
+  "active": "30255c0dede3e821",
   "lastOpenFiles": [
-    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "img/kink/jarahDiagram.png",
     "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
