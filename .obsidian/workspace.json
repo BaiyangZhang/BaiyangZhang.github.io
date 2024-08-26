@@ -8,31 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "afdffd4ed97e5ff0",
+            "id": "30255c0dede3e821",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "30255c0dede3e821",
+            "id": "837e5d5da3563c1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+                "file": "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md"
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
               }
             }
           },
@@ -184,7 +183,14 @@
   },
   "active": "30255c0dede3e821",
   "lastOpenFiles": [
-    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
+    "Untitled 1.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_news/announcement_3.md",
+    "_news/announcement_2.md",
+    "_news/announcement_1.md",
+    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
+    "img/kink/p63.png",
     "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "img/kink/jarahDiagram.png",
     "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
@@ -193,7 +199,6 @@
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
-    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "img/resurgence/negativeRealContour.png",
     "img/resurgence",
     "Untitled.md",
@@ -216,14 +221,9 @@
     "_posts/2022-11-21-Basic-Cumutative-Algebra-3.md",
     "_posts/2022-11-18-Basic-Cumutative-Algebra-2.md",
     "_posts/2022-11-17-Basic-Cumutative-Algebra-1.md",
-    "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
-    "Discussion Notes.md",
-    "_drafts/2024-06-26-Introduction-to-Resurgence-Part-2.md",
-    "2024-06-02.md",
     "reports/psresultmobile.svg",
     "reports/psresultdesktop.svg",
     "img/naturalityCommute.png",
-    "img/commutePolynomial.png",
     "_includes/New folder",
     "_includes/head.html",
     "_includes/header.html",
