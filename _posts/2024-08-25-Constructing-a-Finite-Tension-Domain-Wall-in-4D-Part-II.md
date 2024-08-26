@@ -804,6 +804,6 @@ $$
 \begin{align*}
 \left\lvert \Omega_ {1} \right\rangle^{(3)}  &=  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1,2,-1-2}\right\rangle_ {0} }{(\omega_ {1}+\omega_ {2}+\omega_ {3})}, \\
 \left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {1}+\omega_ {2}-\omega_ {p}} \left\lvert \vec{p}_ {1,-1} \right\rangle^{(2)}_ {0},\\
-\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,3} \right\rangle_ {0}^{(4)}}{\omega_ {p1}+\omega_ {2}+\omega_ {1+2}}. 
+\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,3} \right\rangle_ {0}^{(4)}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}. 
 \end{align*}
 $$
