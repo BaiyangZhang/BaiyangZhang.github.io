@@ -13,18 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "837e5d5da3563c1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
                 "mode": "source",
                 "source": false
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
+                "file": "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md"
               }
             }
           },
@@ -183,15 +171,25 @@
   },
   "active": "30255c0dede3e821",
   "lastOpenFiles": [
+    "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
+    "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
+    "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
+    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
+    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
+    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
+    "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
+    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
+    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+    "img/kink/p63.png",
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "Untitled 1.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_news/announcement_3.md",
-    "_news/announcement_2.md",
-    "_news/announcement_1.md",
-    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
-    "img/kink/p63.png",
-    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/kink/jarahDiagram.png",
     "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
@@ -199,10 +197,10 @@
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
+    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "img/resurgence/negativeRealContour.png",
     "img/resurgence",
     "Untitled.md",
-    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
     "img/fractal/CantorSet.png",
     "img/fractal/Hs.png",
     "img/fractal/deltaCover.png",
@@ -210,17 +208,7 @@
     "img/新建文件夹",
     "_pages/about.md",
     "Confining Modeling of Quark Propagator.md",
-    "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
-    "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
-    "_posts/2024-06-18-Yoneda-Lemma.md",
-    "_posts/2024-06-26-Introduction-to-Resurgence-Part-1.md",
-    "_posts/2023-12-6-Transseries-Lecture-1.md",
-    "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
-    "_posts/2022-10-9-Basic-Measure-Theory-Part-II.md",
-    "_posts/2022-11-21-Basic-Cumutative-Algebra-3.md",
-    "_posts/2022-11-18-Basic-Cumutative-Algebra-2.md",
-    "_posts/2022-11-17-Basic-Cumutative-Algebra-1.md",
     "reports/psresultmobile.svg",
     "reports/psresultdesktop.svg",
     "img/naturalityCommute.png",
