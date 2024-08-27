@@ -706,11 +706,19 @@ $$
 Putting them together we have 
 
 $$
+\boxed{ 
 \begin{align*}
 \left\lvert \Omega_ {2} \right\rangle^{(4)} = & \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{9m^{2}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})} -1\right)   \\
-&\times \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle}{\omega_ {1}+\omega {2}+\omega_ {3}+\omega_ {1+2+3}} 
+&\times \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}} 
 \end{align*}
+}
 $$
+
+
+
+
+
+
 
 Due to the normal ordering in $H_ {4}$, we have 
 
