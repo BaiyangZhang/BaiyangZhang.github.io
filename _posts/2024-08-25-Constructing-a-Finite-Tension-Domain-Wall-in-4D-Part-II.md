@@ -639,11 +639,11 @@ $$
 H_ {4} =& \sum_ {n=0}^{4} H_ {4}(4-2n), \\
 H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3}A^{\ddagger}_ {-1-2-3}  ,\\
 H_ {4}^{(2)} =& g^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3} \frac{A_ {1+2+3}}{2\omega_ {1+2+3}}    \\
-&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
+&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
 H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} A^{\ddagger}_ {2} \frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} \\
-&- \delta m_ {1}^{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+C_ {0} ,\\
+&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+C_ {0} ,\\
 H_ {4}^{(-2)} =& g^{2}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  \\
-& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
+& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
 H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  ,
 \end{align*}
 $$
@@ -665,13 +665,13 @@ In $6$-meson Fock space we have
 
 $$
 \begin{align*}
-\left\lvert \Omega_ {2} \right\rangle^{(6)} =&
-\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} \,(\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {1}'+\omega_ {2}'+\omega_ {1'+2'})\\
-&\times\frac{\left\lvert \vec{p}_ {1,2,-1-2}\;\vec{p}'_ {1,2,-1-2} \right\rangle}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}
+\left\lvert \Omega_ {2} \right\rangle^{(6)} =& -H_ {2}^{-1}  H_ {3}^{(3)}\left\lvert \Omega_ {1} \right\rangle^{(3)}  \\
+=&\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} \, \\
+&\times \frac{\left\lvert \vec{p}_ {1,2,-1-2}\;\vec{p}'_ {1,2,-1-2} \right\rangle}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {1}'+\omega_ {2}'+\omega_ {1'+2'})}
 \end{align*}
 $$
 
-where, for instance, 
+where
 
 $$
 \left\lvert \vec{p}'_ {1,2,-1-2} \right\rangle := \left\lvert \vec{p}'_ {1},\vec{p}'_ {2},\vec{p}'_ {-1-2} \right\rangle := \left\lvert \vec{p}'_ {1},\vec{p}'_ {2},-\vec{p}'_ {1}-\vec{p}'_ {2} \right\rangle.
@@ -712,8 +712,6 @@ $$
 \end{align*}
 $$
 
-
-
 Due to the normal ordering in $H_ {4}$, we have 
 
 $$
@@ -731,8 +729,8 @@ subsitute theor expressions in terms of ladder operators, we have
 $$
 \begin{align*}
 H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{3} =& -\frac{mg}{\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}\\
-&\times  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}'}{(2\pi)^{3}} \frac{d^{3}p_ {2}'}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}'\vec{p}_ {2}'\vec{p}_ {3}' \right\rangle }{(\omega_ {p_ {1}'}\omega_ {p_ {2}'}\omega_ {p_ {3}}')}\\ 
-=& -\delta^{3}(0) \frac{m^{2}g^{2}}{2}    \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{(2\pi)^{3}}{8\omega^{2}_ {p_ {1}}\omega^{2}_ {p_ {2}}\omega^{2}_ {p_ {3}}} \left\lvert \Omega_ {0} \right\rangle,  \\
+&\times  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}'}{(2\pi)^{3}} \frac{d^{3}p_ {2}'}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}'\vec{p}_ {2}'\vec{p}_ {3}' \right\rangle }{(\omega_ {p_ {1}'}+\omega_ {p_ {2}'}+\omega_ {p_ {3}}')}\\ 
+=& -\delta^{3}(0) \frac{m^{2}g^{2}}{2}    \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{(2\pi)^{3}}{8(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})(\omega_ {p_ {1}'}+\omega_ {p_ {2}'}+\omega_ {p_ {3}}')} \left\lvert \Omega_ {0} \right\rangle,  \\
 0=&\vec{p}_ {1}'+\vec{p}_ {2}'+\vec{p}_ {3}'
 \end{align*}
 $$
