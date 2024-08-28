@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "bdeb560c1ad9120d",
+        "id": "7f351ecc00ea8250",
         "type": "tabs",
         "children": [
           {
-            "id": "30255c0dede3e821",
+            "id": "c562bb95e4288947",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b6f5857e802ea8ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,9 +181,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30255c0dede3e821",
+  "active": "c562bb95e4288947",
   "lastOpenFiles": [
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
+    "Untitled 2.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
@@ -185,7 +199,6 @@
     "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
     "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "img/kink/p63.png",
     "Untitled 1.md",
@@ -208,7 +221,6 @@
     "img/新建文件夹",
     "_pages/about.md",
     "Confining Modeling of Quark Propagator.md",
-    "_drafts/2024-07-03-Introduction-to-Resurgence-Part-2.md",
     "reports/psresultmobile.svg",
     "reports/psresultdesktop.svg",
     "img/naturalityCommute.png",

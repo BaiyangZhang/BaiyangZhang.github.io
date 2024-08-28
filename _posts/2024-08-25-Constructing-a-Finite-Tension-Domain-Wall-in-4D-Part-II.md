@@ -641,7 +641,7 @@ H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\
 H_ {4}^{(2)} =& g^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3} \frac{A_ {1+2+3}}{2\omega_ {1+2+3}}    \\
 &- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
 H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} A^{\ddagger}_ {2} \frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} \\
-&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+C_ {0} ,\\
+&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+\int d^{3}x \,  C_ {0} ,\\
 H_ {4}^{(-2)} =& g^{2}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  \\
 & -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
 H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  ,
@@ -694,7 +694,19 @@ $$
 - H_ {2}^{-1} H_ {4}\left\lvert \Omega_ {0} \right\rangle= - \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}} ,
 $$
 
-while the contribution from $H_ {3}\left\lvert \Omega_ {1} \right\rangle$ is more complicated due to the expansion of $\left\lvert \Omega_ {1} \right\rangle$,
+while the contribution from $H_ {3}\left\lvert \Omega_ {1} \right\rangle$ is more complicated due to the expansion of $\left\lvert \Omega_ {1} \right\rangle$, we have
+
+$$
+\begin{align*}
+H_ {3}^{(1)}\left\lvert \Omega_ {1} \right\rangle^{(3)} =&  -\frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{3}{2\omega_ {1+2}}A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2} \times  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1',2'}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1',2',-1'-2'}\right\rangle_ {0} }{(\omega_ {1'}+\omega_ {2'}+\omega_ {3'})}\\
+=& - \frac{m^{2}g^{2}}{2}\int \frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} \,  \frac{3A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2}A_ {1'}^{\ddagger}A^{\ddagger}_ {2'}A^{\ddagger}_ {-1'-2'}\left\lvert \Omega_ {0} \right\rangle}{2\omega_ {1+2}(\omega_ {1'}+\omega_ {2'}+\omega_ {3'})}\\
+=& - \frac{9m^{2}g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})}
+\end{align*}
+$$
+
+where all the contractions offer a factor of 3 and $\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle$ is a short-handed notation for $\left\lvert \vec{p}_ {1} \vec{p}_ {2} \vec{p}_ {3},-\vec{p}_ {1} -\vec{p}_ {2} -\vec{p}_ {3}\right\rangle$.
+
+Thus
 
 $$
 \begin{align*}
@@ -714,32 +726,54 @@ $$
 }
 $$
 
+- - -
 
-
-
-
-
-
-Due to the normal ordering in $H_ {4}$, we have 
-
-$$
-H_ {4}\left\lvert \Omega_ {0} \right\rangle = C_ {0}\left\lvert \Omega_ {0} \right\rangle.
-$$
-
-This is a 0-meson state. So, let's look into other zero-meson states. Recall that higher order corrections are orthogonal to $\left\lvert \Omega_ {0} \right\rangle$. We have 
-
-$$
-H_ {3}\left\lvert \Omega_ {1} \right\rangle = H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{(3)} +\cdots,
-$$
-
-subsitute theor expressions in terms of ladder operators, we have 
+We move on to calculate $\left\lvert \Omega_ {2} \right\rangle^{(2)}=-H_ {2}^{-1} H_ {4}^{(2)}\left\lvert \Omega_ {0} \right\rangle - H_ {2}^{-1} H_ {3}^{(-1)}\left\lvert \Omega_ {1}\right\rangle^{(3)}$. We get
 
 $$
 \begin{align*}
-H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{3} =& -\frac{mg}{\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {3}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {-p_ {3}}\\
-&\times  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}'}{(2\pi)^{3}} \frac{d^{3}p_ {2}'}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}'\vec{p}_ {2}'\vec{p}_ {3}' \right\rangle }{(\omega_ {p_ {1}'}+\omega_ {p_ {2}'}+\omega_ {p_ {3}}')}\\ 
-=& -\delta^{3}(0) \frac{m^{2}g^{2}}{2}    \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{(2\pi)^{3}}{8(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})(\omega_ {p_ {1}'}+\omega_ {p_ {2}'}+\omega_ {p_ {3}}')} \left\lvert \Omega_ {0} \right\rangle,  \\
-0=&\vec{p}_ {1}'+\vec{p}_ {2}'+\vec{p}_ {3}'
+- \frac{1}{H_ {2}}H_ {4}^{(2)}\left\lvert \Omega_ {0} \right\rangle =& \frac{1}{2}\delta m^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{2\omega_ {1}}  \\
+- \frac{1}{H_ {2}}H_ {3}^{(-1)}\left\lvert \Omega_ {1}\right\rangle^{(3)} =& \frac{27m^{2}g^{2}}{4} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})2\omega_ {1}}.
+\end{align*}
+$$
+
+Putting them together we get
+
+$$
+\left\lvert \Omega \right\rangle^{(2)}_ {2}=\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lbrace \frac{\delta m^{2}}{4}+\frac{27m^{2}g^{2}}{8} \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {2}+\omega_ {2}+\omega_ {1+2})}  \right\rbrace \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{\omega_ {1}} .
+$$
+
+The integral over $p_ {2}$ has superfacial degree of divergent $3-3=0$, thus adopts logarithmic divergence. **This divergence ought to be canceled by $\delta m^{2}$**, as we will check later.
+
+- - -
+
+**$0$-Fock space:**
+
+The HRC equation reads
+
+$$
+H_ {4}^{0}\left\lvert \Omega_ {0} \right\rangle+H_ {3}^{(-3)}\left\lvert \Omega_ {1}^{(3)} \right\rangle+H_ {2}\left\lvert \Omega_ {2} \right\rangle^{(0)}=0,
+$$
+
+but $\left\lvert \Omega_ {2} \right\rangle^{(0)}$ does not exist by construction, if $\left\lvert \Omega_ {2} \right\rangle$ has any $\left\lvert \Omega_ {0} \right\rangle$ component we can absorbe it into the $\left\lvert \Omega_ {0} \right\rangle$ itself. So we are left with
+
+$$
+H_ {4}^{(0)}\left\lvert \Omega_ {0} \right\rangle+H_ {3}^{(-3)}\left\lvert \Omega_ {1}^{(3)} \right\rangle=0,
+$$
+
+This essentially becomes an equation to fix the counter terms. The contribution from $H_ {4}^{(0)}$ is a divergent constant:
+
+$$
+H_ {4}^{(0)}\left\lvert \Omega_ {0} \right\rangle = 
+$$
+
+Similar to the cauclations before, we have 
+
+$$
+\begin{align*}
+H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{3} =& -\frac{mg}{\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {1}+p_ {2}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {p_ {1}+p_ {2}}\\
+&\times  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}'}{(2\pi)^{3}} \frac{d^{3}p_ {2}'}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}'\vec{p}_ {2}',-\vec{p}_ {1}'-p_ {2}' \right\rangle }{(\omega_ {p_ {1}'}+\omega_ {p_ {2}'}+\omega_ {p_ {1}'+p_ {2}'})}\\ 
+=& -\delta^{3}(0) \frac{m^{2}g^{2}}{2}    \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{(2\pi)^{3}}{8(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})(\omega_ {p_ {1}'}+\omega_ {p_ {2}'}+\omega_ {p_ {3}}')} \left\lvert \Omega_ {0} \right\rangle,  
 \end{align*}
 $$
 
@@ -793,9 +827,9 @@ $$
 H_ {4} =& \sum_ {n=0}^{4} H_ {4}^{(4-2n)}, \\
 H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3}A^{\ddagger}_ {-1-2-3}  ,\\
 H_ {4}^{(2)} =& g^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3} \frac{A_ {1+2+3}}{2\omega_ {1+2+3}}    \\
-&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
+&- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
 H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} A^{\ddagger}_ {2} \frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} \\
-&- \delta m_ {1}^{2} \int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+C_ {0} ,\\
+&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+\int d^{3}x \, C_ {0} ,\\
 H_ {4}^{(-2)} =& g^{2}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  \\
 & -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
 H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  ,

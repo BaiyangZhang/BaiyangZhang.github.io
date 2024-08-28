@@ -120,3 +120,35 @@ $$
 
 This gives us the asymptotic expansion $I(\epsilon) \sim \frac{\sqrt{\pi \epsilon}}{2}$ as $\epsilon \rightarrow 0$.
 
+# Talk 2
+
+The below ODE
+
+$$
+y'' + a(x)y' + b(x) y =0
+$$
+is a linear equation, but it is fantastically difficult to solve. It can always be reduced to 
+
+$$
+\xi''+d\xi=0.
+$$
+
+This facilitates the use of method of power series.
+
+Actually there is anothe way to work it out. Let $D$ be the differential operator, the original ODE can be written as 
+
+$$
+(D^{2}+aD+b)y(x)=0.
+$$
+
+A quadratic form can be factorized, so we in principal can write 
+
+$$
+(D^{2}+aD+b)y(x) = (D+\alpha)(D+\beta)y,
+$$
+
+where $\alpha,\beta$ are functions of $x$. Expand it we get some equations, one of which is the so-called Riccati equation, and there already exists a procedure of how to solve it. 
+
+The problem is that this method works only for finite $x$, not the entire plane. 
+
+
