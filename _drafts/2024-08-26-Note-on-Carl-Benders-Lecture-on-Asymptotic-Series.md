@@ -151,4 +151,15 @@ where $\alpha,\beta$ are functions of $x$. Expand it we get some equations, one 
 
 The problem is that this method works only for finite $x$, not the entire plane. 
 
+Perturbation method fails when you try to use it to solve the Schrodinger equation for anharmonic osscilator. The reason is that, in perturbation theory we put $\epsilon$ to $\phi^{4}$, the potential reads
+
+$$
+V(x)=\frac{m\omega^{2}}{2}x^{2}+\epsilon x^{4},
+$$
+
+but something abrupt happens at $\epsilon$, when $\epsilon>0$ the potential is bounded from below, but when $\epsilon\leq$ it is not. 
+
+> Quantum mechanics is not just about a bunch of isolated eigenvalues, there is really just one energy eigenvalue, with different sheets of Riemann surface! 
+
+# Talk 3
 

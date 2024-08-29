@@ -733,14 +733,14 @@ We move on to calculate $\left\lvert \Omega_ {2} \right\rangle^{(2)}=-H_ {2}^{-1
 $$
 \begin{align*}
 - \frac{1}{H_ {2}}H_ {4}^{(2)}\left\lvert \Omega_ {0} \right\rangle =& \frac{1}{2}\delta m^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{2\omega_ {1}}  \\
-- \frac{1}{H_ {2}}H_ {3}^{(-1)}\left\lvert \Omega_ {1}\right\rangle^{(3)} =& \frac{27m^{2}g^{2}}{4} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})2\omega_ {1}}.
+- \frac{1}{H_ {2}}H_ {3}^{(-1)}\left\lvert \Omega_ {1}\right\rangle^{(3)} =& \frac{9m^{2}g^{2}}{4} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})2\omega_ {1}}.
 \end{align*}
 $$
 
 Putting them together we get
 
 $$
-\left\lvert \Omega \right\rangle^{(2)}_ {2}=\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lbrace \frac{\delta m^{2}}{4}+\frac{27m^{2}g^{2}}{8} \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {2}+\omega_ {2}+\omega_ {1+2})}  \right\rbrace \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{\omega_ {1}} .
+\left\lvert \Omega \right\rangle^{(2)}_ {2}=\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lbrace \frac{\delta m^{2}}{4}+\frac{9 m^{2}g^{2}}{8} \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {2}+\omega_ {2}+\omega_ {1+2})}  \right\rbrace \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{\omega_ {1}} .
 $$
 
 The integral over $p_ {2}$ has superfacial degree of divergent $3-3=0$, thus adopts logarithmic divergence. **This divergence ought to be canceled by $\delta m^{2}$**, as we will check later.
@@ -764,21 +764,32 @@ $$
 This essentially becomes an equation to fix the counter terms. The contribution from $H_ {4}^{(0)}$ is a divergent constant:
 
 $$
-H_ {4}^{(0)}\left\lvert \Omega_ {0} \right\rangle = 
+H_ {4}^{(0)}\left\lvert \Omega_ {0} \right\rangle = \int d^{3}x \, C_ {0} \left\lvert \Omega_ {0} \right\rangle.
+$$
+
+So the contribution from $H_ {3}$ must cancel it. In order to compare the above result, we need to keep the $\int d^{3}x$ integral, writing $H_ {3}^{(-3)}$ as
+
+$$
+H_ {3}^{(-3)} = -\frac{mg}{\sqrt{2}} \int d^{3}x \, e^{ -i\vec{x}\cdot(\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}) } \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {3}} A_ {-1}A_ {-2}A_ {-3} .
 $$
 
 Similar to the cauclations before, we have 
 
 $$
 \begin{align*}
-H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{3} =& -\frac{mg}{\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {1}+p_ {2}}} A_ {-p_ {1}}A_ {-p_ {2}}A_ {p_ {1}+p_ {2}}\\
+H_ {3}^{(-3)} \left\lvert \Omega_ {1} \right\rangle^{3} =& -\frac{mg}{\sqrt{2}} \int d^{3}x   \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {3}} A_ {-1}A_ {-2}A_ {-3}\\
 &\times  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1}'}{(2\pi)^{3}} \frac{d^{3}p_ {2}'}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1}'\vec{p}_ {2}',-\vec{p}_ {1}'-p_ {2}' \right\rangle }{(\omega_ {p_ {1}'}+\omega_ {p_ {2}'}+\omega_ {p_ {1}'+p_ {2}'})}\\ 
-=& -\delta^{3}(0) \frac{m^{2}g^{2}}{2}    \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \frac{d^{3}p_ {2}}{(2\pi)^{3}}\, \frac{(2\pi)^{3}}{8(\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {3}})(\omega_ {p_ {1}'}+\omega_ {p_ {2}'}+\omega_ {p_ {3}}')} \left\lvert \Omega_ {0} \right\rangle,  
+=& -\frac{3g^{2}m^{2}}{8} \int d^{3}x \int \frac{d^{3}p_ {1}d^{3}p_ {2}}{(2\pi)^{6}} \, \frac{\left\lvert \Omega \right\rangle_ {0}}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {1}+p_ {2}}(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {1}+p_ {2}})}   .  
 \end{align*}
 $$
 
+To cancel the divergence, we obviously need 
 
-
+$$
+\boxed{
+C_ {0} \equiv -\frac{3g^{2}m^{2}}{8} \int \frac{d^{3}p_ {1}d^{3}p_ {2}}{(2\pi)^{6}} \, \frac{\left\lvert \Omega \right\rangle_ {0}}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {1}+p_ {2}}(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {1}+p_ {2}})} .
+} 
+$$
 
 
 
