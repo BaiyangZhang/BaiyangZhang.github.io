@@ -198,11 +198,11 @@ $$
 
 We have two things to match: 1)different orders of the coupling and 2)different Fock space.
 
-**Order $g^{-2}$:**
+## Order $g^{-2}$ and $g^{-1}$
 
 At the lowest order, the Hamiltonian density is just a constant without ladder operators, so $H_ {0}\left\lvert{\Omega_ {0}}\right\rangle=0$ gives as $\mathcal{H}_ {0}=0$, which implies $A_ {0} = m^{4} / 16g^{2}$. 
 
-**Order $g^{-1}$:**
+- - -
 
 By construction we have $H_ {1}=0$.
 
@@ -213,10 +213,7 @@ $$
 H_ {0}=H_ {1}=0.
 } 
 $$
-
-- - -
-
-**Order $g^{0}$:**
+## Order $g^{0}$
 
 The first HRC (HRC1), namely $H\left\lvert{\Omega}\right\rangle=0$ implies that
 
@@ -241,7 +238,7 @@ $$
 
 - - -
 
-**Order $g^{1}$:
+## Order $g^{1}$
 
 Similar to order $g^{0}$, HRC1 implies that 
 
@@ -528,8 +525,8 @@ Substitute the expression for $H_ {3}$ in terms of ladder operators, after some 
 
 $$
 \begin{align*}
-\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {p_ {1}}+\omega_ {p_ {2}}-\omega_ {p}} \left\lvert \vec{p}_ {1} \vec{p}_ {2} \right\rangle^{(2)}_ {0},\\
-\vec{p}&=\vec{p}_ {2}+\vec{p}_ {2} .
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{\left\lvert \vec{p}_ {1},\vec{p}+ \vec{p}_ {2} \right\rangle^{(2)}_ {0}}{\omega_ {p_ {1}}+\omega_ {p-p_ {1}}-\omega_ {p}} ,\\
+0&=\vec{p}_ {1}+\vec{p}_ {2} .
 \end{align*}
 $$
 
@@ -546,7 +543,7 @@ $$
 
 - - -
 
-**Order $g^{2}$:
+## Order $g^{2}$
 
 The Hamiltonian is 
 
@@ -786,16 +783,41 @@ $$
 To cancel the divergence, we obviously need 
 
 $$
-\boxed{
-C_ {0} \equiv -\frac{3g^{2}m^{2}}{8} \int \frac{d^{3}p_ {1}d^{3}p_ {2}}{(2\pi)^{6}} \, \frac{\left\lvert \Omega \right\rangle_ {0}}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {1}+p_ {2}}(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {1}+p_ {2}})} .
-} 
+C_ {0} = A_ {4}  \equiv -\frac{3g^{2}m^{2}}{8} \int \frac{d^{3}p_ {1}d^{3}p_ {2}}{(2\pi)^{6}} \, \frac{\left\lvert \Omega \right\rangle_ {0}}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {1}+p_ {2}}(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {1}+p_ {2}})} .
 $$
-
-
 
 - - -
 
-# Summary of Hamiltonians
+Next we turn to the renormalization condition for the momentum eigenstates. At order $g^{2}$ this conditions reads
+
+$$
+(\omega_ {p}-H_ {2})\left\lvert p \right\rangle_ {2} = H_ {4} \left\lvert \vec{p} \right\rangle_ {0} +H_ {3}\left\lvert p \right\rangle_ {1} .
+$$
+
+Again we start from the highest meson number and go downwards. The highest possible particle number comes from $H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}$, which is simple since there is only creation operator. I'll directly put the final result:
+
+$$
+\left\lvert \vec{p} \right\rangle_ {2}^{(7)} = \frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4}}.
+$$
+
+The next Fock space is $5$, coming from the following contributions:
+
+$$
+H_ {4}^{(4)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = ,
+$$
+
+$$
+H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {1}^{(2)} = \frac{3g^{2}m^{2}}{4\omega_ {p}}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\left\lvert \vec{p}-\vec{p}_ {1}, \vec{p}_ {1,2,3,-2-3} \right\rangle}{\omega _ {p}-\omega_ {1}-\omega_ {p-p_ {1}}}
+$$
+
+and
+
+$$
+H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {1}^{(4)} = 
+$$
+
+
+# Summary of results
 
 I use the shorthand notation $\left\lvert \vec{p}_ {-1-2} \right\rangle:=\left\lvert -\vec{p}_ {1}-\vec{p}_ {2} \right\rangle$, $\left\lvert \vec{p}_ {-1'-2'} \right\rangle:=\left\lvert -\vec{p}'_ {1}-\vec{p}'_ {2} \right\rangle$, $\omega_ {1}=\omega_ {p_ {1}}, \omega_ {1'}=\omega_ {\vec{p}_ {1}'},\omega_ {1+2}=\omega_ {p_ {1}+p_ {2}}$. Multiple indices usually denote tensor product, for example $\left\lvert \vec{p}_ {1,2} \right\rangle:=\left\lvert \vec{p}_ {1} \right\rangle\left\lvert \vec{p}_ {2} \right\rangle=\left\lvert \vec{p}_ {1}\vec{p}_ {2} \right\rangle$, and
 
@@ -843,18 +865,40 @@ H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\
 &- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+\int d^{3}x \, C_ {0} ,\\
 H_ {4}^{(-2)} =& g^{2}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  \\
 & -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
-H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  ,
+H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} .
 \end{align*}
 $$
 
 - - -
 
-The corrections to states:
+The corrections to vacuum states:
 
 $$
 \begin{align*}
-\left\lvert \Omega_ {1} \right\rangle^{(3)}  &=  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1,2,-1-2}\right\rangle_ {0} }{(\omega_ {1}+\omega_ {2}+\omega_ {3})}, \\
-\left\lvert \vec{p} \right\rangle_ {1}^{(2)} &=   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{1}{\omega_ {1}+\omega_ {2}-\omega_ {p}} \left\lvert \vec{p}_ {1,-1} \right\rangle^{(2)}_ {0},\\
-\left\lvert \vec{p} \right\rangle_ {1}^{(4)} &= \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,3} \right\rangle_ {0}^{(4)}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}. 
+\left\lvert \Omega_ {1} \right\rangle^{(3)}  =&  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1,2,-1-2}\right\rangle_ {0} }{(\omega_ {1}+\omega_ {2}+\omega_ {3})}, \\
+\left\lvert \Omega_ {2} \right\rangle^{(6)} =&\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} \, \\
+&\times \frac{\left\lvert \vec{p}_ {1,2,-1-2}\;\vec{p}'_ {1,2,-1-2} \right\rangle}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {1}'+\omega_ {2}'+\omega_ {1'+2'})} \\
+\left\lvert \Omega_ {2} \right\rangle^{(4)} =& \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{9m^{2}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})} -1\right)   \\
+&\times \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}} ,\\
+\left\lvert \Omega \right\rangle^{(2)}_ {2}=&\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lbrace \frac{\delta m^{2}}{4}+\frac{9 m^{2}g^{2}}{8} \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {2}+\omega_ {2}+\omega_ {1+2})}  \right\rbrace \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle}{\omega_ {1}},
+\end{align*}
+$$
+
+The momentum eigenstates:
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} =&   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{\left\lvert \vec{p}_ {1},\vec{p} -\vec{p}_ {1} \right\rangle^{(2)}_ {0}}{\omega_ {p_ {1}}+\omega_ {p-p_ {1}}-\omega_ {p}} , \\
+\left\lvert \vec{p} \right\rangle_ {1}^{(4)} =& \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,-1-2} \right\rangle_ {0}^{(4)}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}, \\
+\left\lvert \vec{p} \right\rangle_ {2}^{(7)} =& \frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4}}.
+\end{align*}
+$$
+
+The counter terms:
+
+$$
+\begin{align*}
+\delta v_ {1}= &- \frac{m}{\sqrt{2}g} \left( \frac{\delta g}{g}- \frac{\delta m_ {1}^{2}}{2m^{2}}- \frac{\delta m_ {1}^{4}}{2g^{2}} \right) \\
+\delta v_ {2} =& 0, \\
+A_ {4} \equiv& -\frac{3g^{2}m^{2}}{8} \int \frac{d^{3}p_ {1}d^{3}p_ {2}}{(2\pi)^{6}} \, \frac{\left\lvert \Omega \right\rangle_ {0}}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {1}+p_ {2}}(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {1}+p_ {2}})} ,\\
 \end{align*}
 $$
