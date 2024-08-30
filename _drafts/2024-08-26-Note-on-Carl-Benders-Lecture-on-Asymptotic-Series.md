@@ -27,7 +27,7 @@ $$
 x^{5} +\epsilon x=1
 $$
 
-so that when $\epsilon=1$ we rocover the original problem. The solution at $\epsilon=0$ is $x=1$, well at least one of the solution. We next expand $x$ in a powe series of $\epsilon$, writine $x=1+\sum_  {i\geq1}c_  {i}\epsilon_  {i}$, substitute it into the equation and work out the coefficients. This works pretty neatly.
+so that when $\epsilon=1$ we rocover the original problem. The solution at $\epsilon=0$ is $x=1$, well at least one of the solution. We next expand $x$ in a powe series of $\epsilon$, writine $x=1+\sum_   {i\geq1}c_   {i}\epsilon_   {i}$, substitute it into the equation and work out the coefficients. This works pretty neatly.
 
 However there is another way to introduce the $\epsilon$-parameter, that is to put it in the $x^{5}$ term:
 
@@ -45,7 +45,7 @@ Carl Bender said "nothing is ever asymptotic to zero", but isn't a lot of things
 
 $x\ll y$ in our context means $x$ is negligible compare to $y$. 
 
-As $x\to x_  {0}$, if $\frac{f(x)}{g(x)}$ goes to $1$, we say $f(x)$ is asymptotic to $g(x)$ at $x_  {0}$; if $\frac{f(x)}{g(x)}$ goes to zero, we say $f(x)$ is negligible compare to $g(x)$. 
+As $x\to x_   {0}$, if $\frac{f(x)}{g(x)}$ goes to $1$, we say $f(x)$ is asymptotic to $g(x)$ at $x_   {0}$; if $\frac{f(x)}{g(x)}$ goes to zero, we say $f(x)$ is negligible compare to $g(x)$. 
 
 - - -
 
@@ -99,7 +99,7 @@ Thus, the leading order solution is $y(x) \sim e^x$. To refine this, we could lo
 As another example, consider the integral:
 
 $$
-I(\epsilon) = \int_ 0^\infty e^{-\frac{x^2}{\epsilon}} \, dx.
+I(\epsilon) = \int_  0^\infty e^{-\frac{x^2}{\epsilon}} \, dx.
 $$
 
 For small $\epsilon$, we expect the main contribution to the integral to come from the region near $x = 0$.
@@ -107,12 +107,12 @@ For small $\epsilon$, we expect the main contribution to the integral to come fr
 The exponential term $-\frac{x^2}{\epsilon}$ suggests that for large $x$, the integrand decays rapidly. We balance the term inside the exponential by scaling $x$ as $x = \sqrt{\epsilon} u$, which leads to:
 
 $$
-I(\epsilon) = \sqrt{\epsilon} \int_ 0^\infty e^{-u^2} \, du.
+I(\epsilon) = \sqrt{\epsilon} \int_  0^\infty e^{-u^2} \, du.
 $$
 
 This change of variables is consistent as it simplifies the integral to a Gaussian integral that does not depend on $\epsilon$ (aside from the overall factor).
 
-The integral $\int_ 0^\infty e^{-u^2} \, du$ is known and equals $\frac{\sqrt{\pi}}{2}$. Thus,
+The integral $\int_  0^\infty e^{-u^2} \, du$ is known and equals $\frac{\sqrt{\pi}}{2}$. Thus,
 
 $$
 I(\epsilon) \sim \sqrt{\epsilon} \cdot \frac{\sqrt{\pi}}{2}.
@@ -162,4 +162,57 @@ but something abrupt happens at $\epsilon$, when $\epsilon>0$ the potential is b
 > Quantum mechanics is not just about a bunch of isolated eigenvalues, there is really just one energy eigenvalue, with different sheets of Riemann surface! 
 
 # Talk 3
+
+The different eigenvalues of a Hamiltonian can be seen as coming from different sheets of the same function! Take 
+
+$$
+H=\begin{pmatrix}
+E & \epsilon \\
+\epsilon  &  E
+\end{pmatrix}, \quad  \epsilon \in \mathbb{C}
+$$
+
+for example. When we smoothly move $\epsilon$ in the complex plane, we can move from one eigenvalue to another!
+
+The `Shanks transform` is a sequence transformation technique used to accelerate the convergence of a series or to sum divergent series. It’s particularly useful when dealing with slowly converging sequences.
+
+Consider a sequence $S_ n$ that converges to a limit $S$. If the convergence is slow, applying the Shanks transform can often yield a new sequence that converges faster to $S$. The transform is defined as:
+
+$$
+S'_ n = \frac{S_ {n+1} S_ {n-1} - S_ n^2}{S_ {n+1} + S_ {n-1} - 2S_ n}
+$$
+
+Where $S'_  n$ is the transformed sequence.
+
+The series you mentioned is the alternating harmonic series:
+
+$$
+S = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} - \frac{1}{6} + \cdots
+$$
+
+This series converges to $\ln(2)$. We can apply the Shanks transform to accelerate its convergence.
+
+First, we calculate the partial sums of the series:
+
+   - $S_ 1 = 1$
+   - $S_ 2 = 1 - \frac{1}{2} = \frac{1}{2}$
+   - $S_ 3 = 1 - \frac{1}{2} + \frac{1}{3} = \frac{5}{6}$
+   - $S_ 4 = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} = \frac{7}{12}$
+   - $S_ 5 = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} = \frac{47}{60}$
+
+Use the Shanks formula, let's apply it to our problem and we get:
+
+$$
+S'_ 3 = \frac{-29}{72} \times \frac{12}{-7} = \frac{348}{504} = \frac{29}{42}
+$$
+
+Finally,
+
+$$
+S'_ 3 = \frac{29}{42} \approx 0.69048
+$$
+
+The actual value of $\ln(2) \approx 0.69315$.
+
+After applying the Shanks transform, the new sequence $S'_ 3 \approx 0.69048$ is closer to the actual value $\ln(2)$ compared to the original partial sum $S_ 3 = 0.83333$. The Shanks transform effectively accelerates the convergence of the alternating harmonic series to its limit.
 

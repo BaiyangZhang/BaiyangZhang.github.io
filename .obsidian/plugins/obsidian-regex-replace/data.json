@@ -1,6 +1,6 @@
 {
-  "findText": "p_ {3}",
-  "replaceText": "3",
+  "findText": "_",
+  "replaceText": "_ ",
   "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,

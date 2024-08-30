@@ -803,19 +803,20 @@ $$
 The next Fock space is $5$, coming from the following contributions:
 
 $$
-H_ {4}^{(4)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = ,
+H_ {4}^{(4)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)9} \, \left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} ,
 $$
 
 $$
-H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {1}^{(2)} = \frac{3g^{2}m^{2}}{4\omega_ {p}}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\left\lvert \vec{p}-\vec{p}_ {1}, \vec{p}_ {1,2,3,-2-3} \right\rangle}{\omega _ {p}-\omega_ {1}-\omega_ {p-p_ {1}}}
+H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {1}^{(2)} = \frac{3g^{2}m^{2}}{4\omega_ {p}}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\left\lvert \vec{p}-\vec{p}_ {1}, \vec{p}_ {1,2,3,-2-3} \right\rangle_ {0}}{\omega _ {p}-\omega_ {1}-\omega_ {p-p_ {1}}}
 $$
 
 and
 
 $$
-H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {1}^{(4)} = 
+H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {1}^{(4)} = - \frac{3g^{2}m^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{3\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}  +  \frac{\left\lvert \vec{p}_ {1,2,3,-1-2},\vec{p}-\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}  \right) 
 $$
 
+where the first term agrees with Jarah's under substitution $3\to 1, 1\to -2$; the second term is fine as it is.
 
 # Summary of results
 
