@@ -251,3 +251,17 @@ Given any summation machine $\mathcal{S}$, there should be two properties that a
 
 These two properties, combined together, prove that both Euler's method and Borel's method, when applied to $1-1+1-1\cdots$, give the same result.
 
+- - -
+
+Why is it that when we sum infinite positive numbers, throught some summation machine it is possible to obtain a negative number? One way to think of it is to compactify the real number line into a circle using sterographic projection. When we add infinite positive numbers, the sum goes to positive infinite on the real axis, but on the compactified circle it runs to the north pole. The thing is, on a circle it is possible that as the summation continues, the sum could pass the north pole and goes through to reach the negative part of the real number circle. 
+
+Another thing is that, the summation machine really works on a Riemann surface, with complex coordinates. Between complex numbers there is no greater or smaller than relation. 
+
+On the complex plane, the infinity really should be regarded as a single number, unlike on the real line. one way to see that is to recall the inverse is a bijection, $z_ {1}^{-1} = z_ {2}^{-1}$ implies taht $z_ {1}=z_ {2}$, vise versa. The complex infinite is the inverse of zero, we can suggestively write 
+
+$$
+\lim_ { \epsilon \to 0 }(  \epsilon e^{ i\theta })^{-1} = \infty.
+$$
+
+For different $\theta$ we get infinity at different direction. But since different $\theta$ all goes to the same zero, and inverse map is bijective, hence infinity in different direction should all be identified as one point. So the compolex sterotype projection is not just a convenient tool but reflects the essential topology of complex plane. 
+

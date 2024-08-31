@@ -830,7 +830,7 @@ $$
 3-Fock space comes from
 
 $$
-(\omega_ {p}-H_ {2})\left\lvert p \right\rangle_ {2}^{(3)} = H_ {4}^{(2)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} +H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} +H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}.
+(\omega_ {p}-H_ {2})\left\lvert \vec{p} \right\rangle_ {2}^{(3)} = H_ {4}^{(2)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} +H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} +H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}.
 $$
 
 Same as before, we get:
@@ -840,10 +840,17 @@ $$
 H_ {4}^{(2)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} =& \frac{g^{2}}{2\omega_ {p}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\left\lvert \vec{p}-\vec{p}_ {1}-\vec{p}_ {2},\vec{p}_ {1,2} \right\rangle_ {0} -\frac{\delta m^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}_ {1,-1} \right\rangle_ {0}, \\
 H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} =& - \frac{9g^{2}m^{2}}{4\omega_ {p}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}-\vec{p}_ {1}-\vec{p}_ {2},\vec{p}_ {1,2} \right\rangle}{\omega_ {1+2}(-\omega _ {p} +\omega_ {p-p_ {1}-p_ {2}}+\omega_ {1+2})}   ,\\
 H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} =& - \frac{9m^{2}g^{2}}{4} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,-1} \right\rangle_ {0}}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}\\
-&- \frac{9m^{2}g^{2}}{4\omega _ {p} } \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}-\vec{p}_ {1}-\vec{p}_ {2},\vec{p}_ {1+2}  \right\rangle_ {0}}{\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} 
+&- \frac{9m^{2}g^{2}}{4\omega _ {p} } \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}-\vec{p}_ {1}-\vec{p}_ {2},\vec{p}_ {1,2}  \right\rangle_ {0}}{\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} 
 \end{align*}
 $$
 
+Inverting $\omega _ {p}-H_ {2}$ we get 
+
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {2}^{(3)} =& 
+\end{align*}
+$$
 # Summary of results
 
 I use the shorthand notation $\left\lvert \vec{p}_ {-1-2} \right\rangle:=\left\lvert -\vec{p}_ {1}-\vec{p}_ {2} \right\rangle$, $\left\lvert \vec{p}_ {-1'-2'} \right\rangle:=\left\lvert -\vec{p}'_ {1}-\vec{p}'_ {2} \right\rangle$, $\omega_ {1}=\omega_ {p_ {1}}, \omega_ {1'}=\omega_ {\vec{p}_ {1}'},\omega_ {1+2}=\omega_ {p_ {1}+p_ {2}}$. Multiple indices usually denote tensor product, for example $\left\lvert \vec{p}_ {1,2} \right\rangle:=\left\lvert \vec{p}_ {1} \right\rangle\left\lvert \vec{p}_ {2} \right\rangle=\left\lvert \vec{p}_ {1}\vec{p}_ {2} \right\rangle$, and
@@ -917,7 +924,7 @@ $$
 \left\lvert \vec{p} \right\rangle_ {1}^{(2)} =&   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{\left\lvert \vec{p}_ {1},\vec{p} -\vec{p}_ {1} \right\rangle^{(2)}_ {0}}{\omega_ {p_ {1}}+\omega_ {p-p_ {1}}-\omega_ {p}} , \\
 \left\lvert \vec{p} \right\rangle_ {1}^{(4)} =& \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,-1-2} \right\rangle_ {0}^{(4)}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}, \\
 \left\lvert \vec{p} \right\rangle_ {2}^{(7)} =& \frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4}}, \\
-\left\lvert \vec{p}\right\rangle_ {2}^{5}  =& \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}}\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} 
+\left\lvert \vec{p}\right\rangle_ {2}^{(5)}  =& \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}}\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} 
 + \frac{3m^{2}\left\lvert \vec{p}_ {1,2,-1-2,-3},\vec{p}+\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}.
 \end{align*}
 $$
