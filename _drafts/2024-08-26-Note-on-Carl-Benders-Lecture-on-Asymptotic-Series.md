@@ -216,3 +216,38 @@ The actual value of $\ln(2) \approx 0.69315$.
 
 After applying the Shanks transform, the new sequence $S'_ 3 \approx 0.69048$ is closer to the actual value $\ln(2)$ compared to the original partial sum $S_ 3 = 0.83333$. The Shanks transform effectively accelerates the convergence of the alternating harmonic series to its limit.
 
+# Talk 4
+
+First Bender introduced the Richardson extrapolation to accelarate the speed of convergence when summing a convergent series. 
+
+Richardson extrapolation can be combined with the trapezoid rule when doing numerical integral. Maybe it can be applied to our project?
+
+The rules in arithmetics that we are so familiar with, the law of associativity, commutivity, are only true **finitely**. They are not true infinitely. For exampole, Bender explained that if they were true, then the following series:
+
+$$
+1- \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots
+$$
+
+can add up to **any** numbe, such as $\pi$, $52$, etc. The law of distribution is more robust then the law of associativety and commutivity; the latter two have to do with grouping, re-arranging, while the former has to do with multiplication.
+
+
+
+`Euler summation` is a technique used to accelerate the convergence of a series, particularly when dealing with slowly converging or divergent series. The method works by transforming the original series into a new series that converges more quickly, making it useful in both theoretical and applied contexts. It works as
+
+$$
+\sum_ {i\in \mathbb{N}} a_ {n} \to \sum_ {i\in \mathbb{N}} a_ {n}  x^{n}\to f(x)
+$$
+
+then assigning the original summation (supposed divergent) to be $f(1)$. It can be used to sum, for example, $1-1+1-1+1\cdots$. 
+
+Then Bender introduced Borel summation method, which we will not repeat here for it is already cover in author's other notes. 
+
+- - -
+
+Given any summation machine $\mathcal{S}$, there should be two properties that all of them should satisfy:
+
+1. They should behave like a sum. For example, $\mathcal{S}(a_ {0}+a_ {1}+a_ {2}+\cdots)$ should be equal to $a_ {0}+\mathcal{S}(a_ {1}+a_ {2}+\cdots)$.
+2. Linearity. $\mathcal{S}\left( \sum \lambda a_ {i} + \mu b_ {i} \right)$ should be equal to $\lambda \mathcal{S}\left( \sum a_ {i} \right)+\mu \mathcal{S}\left( \sum b_ {i} \right)$. 
+
+These two properties, combined together, prove that both Euler's method and Borel's method, when applied to $1-1+1-1\cdots$, give the same result.
+
