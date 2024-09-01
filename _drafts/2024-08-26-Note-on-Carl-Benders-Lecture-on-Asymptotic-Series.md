@@ -230,7 +230,7 @@ $$
 
 can add up to **any** numbe, such as $\pi$, $52$, etc. The law of distribution is more robust then the law of associativety and commutivity; the latter two have to do with grouping, re-arranging, while the former has to do with multiplication.
 
-
+# Talk 5
 
 `Euler summation` is a technique used to accelerate the convergence of a series, particularly when dealing with slowly converging or divergent series. The method works by transforming the original series into a new series that converges more quickly, making it useful in both theoretical and applied contexts. It works as
 
@@ -265,3 +265,18 @@ $$
 
 For different $\theta$ we get infinity at different direction. But since different $\theta$ all goes to the same zero, and inverse map is bijective, hence infinity in different direction should all be identified as one point. So the compolex sterotype projection is not just a convenient tool but reflects the essential topology of complex plane. 
 
+`Continued functions` are like continuted fractals. Turns out, continued exponentials $\exp(x\exp(x\exp(x\cdots)))$ has very interesting convergence behaviour, with fractal structure.
+
+# Talk 6
+
+An example of the connection between continued functin (exponential functions in this case) and Taylor series:
+
+$$
+e^{ ze^{ ze^{ \cdots } } } = \sum_ {n=0}^{\infty}  \frac{(n+1)^{n-1}}{n!}z^{n}.
+$$
+
+The infinite series has a radius of convergence $\frac{1}{e}$, while the continued exponential function has a much bigger area of convergence in the complex plane. 
+
+- - -
+
+divergent series can sometimes be turned into continued fractions which is convergent. 
