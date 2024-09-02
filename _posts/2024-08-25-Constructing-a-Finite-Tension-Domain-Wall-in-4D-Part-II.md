@@ -31,7 +31,7 @@ Now we want to study the quantum physics around one of the vacua, say $\left\lan
 Another thing we need to keep in mind is the difference between bare and renormalized parameters, eventually we need to write down the observables in terms of not bare, but renormalized parameters. Following the philosophy of *renormalized perturbative method*, we should 1) separate the Hamiltonian into renormalized terms and counter terms, 2) use the counter terms to cancel the divergence from loops, which are now written in terms of renormalized parameters. We wrote the vev of $\phi$ in terms of bare parameters, but that is only for pedagogical reasons, what we should really do it first write the Hamiltonian into the renormalized perturbation theory form, 
 
 $$
-\hat{\mathcal{H}} =  \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda}{4} \phi^{4}(\vec{x}) + A + \text{couter terms,}
+\hat{\mathcal{H}} =  \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda}{4} \phi^{4}(\vec{x}) + A + \text{counter terms,}
 $$
 
 then look for the minimum of the double-well potential, now $\left\langle \phi \right\rangle = m / \sqrt{ 2 }g$, with out naught subscript. 
@@ -117,7 +117,7 @@ $$
 \end{align*}
 $$
 
-We need to sandwich it by $\mathcal{D}_ {v}$ to get the shifted Hamiltonian density $\mathcal{H}$. We will expand $\mathcal{H}$ in the powers of of $g=\sqrt{ \lambda }$. With some help from Mathematica, we find the following results.
+Recall that $I$ is some integral of higher order of the coupling, we defined it in part I of the note. We need to sandwich the Hamiltonian by $\mathcal{D}_ {v}$ to get the shifted Hamiltonian density $\mathcal{H}$. We will expand $\mathcal{H}$ in the powers of of $g=\sqrt{ \lambda }$. With some help from Mathematica, we find the following results.
 
 $$
 \begin{align*}
@@ -318,7 +318,7 @@ $$
 H_ {3} = \int d^{3}x \,  :- \frac{mg}{\sqrt{2}} \phi^{3}+\phi m^{2} \delta v_ {1}' + A_ {3} :_ {m},
 $$
 
-where $\delta v_ {1}'$ is some combination of counter terms. Thanks to the normal ordering, in $0$-Fock subspace we have
+where $\delta v_ {1}'$ is some function of counter terms. Thanks to the normal ordering, in $0$-Fock subspace we have
 
 $$
 0\text{-meson:}\quad H_ {3}\left\lvert \Omega_ {0} \right\rangle =A_ {3}\left\lvert \Omega_ {0}\right\rangle=0  \implies A_ {3}=0 .
@@ -881,24 +881,90 @@ $$
 
 In the last term if we write $\delta^{3}(0)=\int d^{3}x$ then it cancels with the $A_ {4}'$ term. 
 
-Now recall that due to the conservation of momentum, $(\omega_ {p}-H_ {2})\left\lvert \vec{p} \right\rangle_ {2}^{(1)} =0$, this allows as to calculate $\delta m^{2}$. 
-
-
-
-
-
-
-
-
-
-
-
-
-We need to write
+Another approach is to use
 
 $$
 \int d^{3}x \, \left(  - \frac{\delta m^{2}}{2} :\phi^{2}: \right)  = - \frac{\delta m^{2}}{2}\int d^{3}x  \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  e^{ -i\vec{x}\cdot(\vec{p}_ {1}+\vec{p}_ {2}) } \left( A^{\ddagger}_ {1,2}+2A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {1}}+\frac{A_ {-1,-2}}{2\omega_ {1}2\omega_ {2}} \right).
 $$
+
+Now recall that due to the conservation of momentum, $(\omega_ {p}-H_ {2})\left\lvert \vec{p} \right\rangle_ {2}^{(1)} =0$, this allows as to calculate $\delta m^{2}$,
+
+$$
+\begin{align*}
+\frac{\delta m^{2}}{2\omega _ {p} }  =&- \frac{9m^{2}g^{2}}{8\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {p+p_ {1}}(-\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})} \\
+&- \frac{9g^{2}m^{2}}{8\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {p+ {p_ {1}}}(\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})}  \\
+=& - \frac{9m^{2}g^{2}}{8\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {p+p_ {1}}} \left( \frac{2(\omega_ {1}+\omega_ {p+p_ {1}})}{(\omega_ {1}+\omega_ {p+p_ {1}})^{2}-\omega p^{2}} \right)\\
+\approx &- \frac{9g^{2}m^{2}}{16\pi^{2}\omega _ {p} }\ln\left( \frac{\Lambda}{m} \right) + \text{const},\\
+\implies \delta m^{2} =& - \frac{9g^{2}m^{2}}{8\pi^{2}}\ln\left( \frac{\Lambda}{m} \right) + \text{const}
+\end{align*}
+$$
+
+The constant part can be fixed later. 
+
+- - -
+
+As for the orthogonal condition, we can check that $_ {0}\left\langle \vec{p}_ {1,2} \middle\vert \vec{p}\right\rangle_ {2}$ indeed is zero. 
+
+## Coupling counter term at order $g^{3}$
+
+The 3rd-order Hamiltonian density reads
+
+$$
+\mathcal{H}_  {5} =  C_ {3}\phi^{3}+ C_ {1}\phi + C_ {0}. 
+$$
+
+where 
+
+$$
+\begin{align*}
+C_ {3}=& \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}, \\
+C_ {1}=& m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{3m^{3}\delta g^{2}}{2\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} +\delta m^{4}_ {1}\left( -\frac{1}{8\sqrt{2}gm}-\frac{3m^{2}\delta g^{2}}{2\sqrt{2}g^{4}} \right)+\frac{m\delta m^{6}_ {1}}{4\sqrt{2}g^{3}}+ \frac{3m^{2}\delta m^{8}_ {1}}{8\sqrt{2}g^{5}},\\
+C_ {0}=& A_ {5}.
+\end{align*}
+$$
+
+We have the renormalization condition saying that the interaction vacuum is really a vacuum, $H\left\lvert \Omega \right\rangle=0$, the $\left\lvert \Omega_ {0} \right\rangle$ component of it then requires that $C_ {0}=A_ {5}=0$.
+
+Since we have 
+
+$$
+\begin{align*}
+\int d^{3}x : \phi^{3}:^{(3)} =& \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {-1-2}^{\ddagger}      \\
+\int d^{3}x:\phi^{3}:^{(1)} =&  \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{3}{2\omega_ {1+2}}A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2}\\
+\int d^{3}x:\phi^{3}:^{(-1)} =& \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\,\frac{3}{2\omega_ {2}} \frac{1}{2\omega_ {1+2}}  A_ {1}^{\ddagger}A_ {-2} A_ {1+2} \\
+\int d^{3}x:\phi^{3}:^{(-3)} =& \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {1+2}} A_ {-1}A_ {-2}A_ {1+2} 
+\end{align*}
+$$
+
+we have 
+
+$$
+\begin{align*}
+H_ {5}=& H_ {5}^{(3)}+H_ {5}^{(1)}+H_ {5}^{(-1)}+H_ {5}^{(-3)} ,\\
+H_ {5}^{(3)}=& C_ {3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {-1-2}^{\ddagger}      ,\\
+H_ {5}^{(1)}=& C_ {3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{3}{2\omega_ {1+2}}A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2}    +C_ {1}A_ {0}^{\ddagger}  ,\\
+H_ {5}^{(-1)}=&C_ {3} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\,\frac{3}{2\omega_ {2}} \frac{1}{2\omega_ {1+2}}  A_ {1}^{\ddagger}A_ {-2} A_ {1+2}   + C_ {1} \frac{A_ {0}}{2m}   ,\\
+H_ {5}^{(-3)}=& C_ {3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {1+2}} A_ {-1}A_ {-2}A_ {1+2}      ,\\
+\end{align*}
+$$
+
+
+
+
+
+
+
+
+
+I am told that in order to get the expression for $\delta g$, we need to do the calculation that realized the orthogonal condition $_ {0}\left\langle \vec{p}_ {1,2} \middle\vert \vec{p}\right\rangle_ {2}$ that involves $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$. 
+
+
+
+
+
+
+
+
 
 
 
@@ -997,3 +1063,17 @@ A_ {4}'  \equiv& \frac{3g^{2}m^{2}}{8} \int d^{3}x\,\frac{d^{3}p_ {1}d^{3}p_ {2}
 $$
 
 where $A_ {4}'$ is the constant part of $H_ {4}$.
+
+$$
+\mathcal{H}_  {5} =  C_ {3}\phi^{3}+ C_ {1}\phi + C_ {0}. 
+$$
+
+where 
+
+$$
+\begin{align*}
+C_ {3}=& \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}, \\
+C_ {1}=& m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{3m^{3}\delta g^{2}}{2\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} +\delta m^{4}_ {1}\left( -\frac{1}{8\sqrt{2}gm}-\frac{3m^{2}\delta g^{2}}{2\sqrt{2}g^{4}} \right)+\frac{m\delta m^{6}_ {1}}{4\sqrt{2}g^{3}}+ \frac{3m^{2}\delta m^{8}_ {1}}{8\sqrt{2}g^{5}},\\
+C_ {0}=& A_ {5}.
+\end{align*}
+$$
