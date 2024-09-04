@@ -768,7 +768,7 @@ $$
 H_ {3}^{(-3)} = -\frac{mg}{\sqrt{2}} \int d^{3}x \, e^{ -i\vec{x}\cdot(\vec{p}_ {1}+\vec{p}_ {2}+\vec{p}_ {3}) } \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {3}} A_ {-1}A_ {-2}A_ {-3} .
 $$
 
-Similar to the cauclations before, we have 
+Similar to the calculation before, we have 
 
 $$
 \begin{align*}
