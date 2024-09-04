@@ -279,4 +279,14 @@ The infinite series has a radius of convergence $\frac{1}{e}$, while the continu
 
 - - -
 
-divergent series can sometimes be turned into continued fractions which is convergent. 
+divergent series can sometimes be turned into continued fractions which is convergent. Given a divergent asymptotic series which we can't directly sum up, we can sometimes turn it into a sequence, which makes up certain continued functions, it may be continued fraction.
+
+An example of it is the `Pade sequence`. Pade summation seems to be quite magical. Pade doesn't have to converge on a circle too, it is smarter than power series. Pade summation can converge on a area except for a line. 
+
+# Talk 7
+
+
+
+
+
+

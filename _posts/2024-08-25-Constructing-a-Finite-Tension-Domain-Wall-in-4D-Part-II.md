@@ -28,7 +28,7 @@ Now we want to study the quantum physics around one of the vacua, say $\left\lan
 
 - - -
 
-Another thing we need to keep in mind is the difference between bare and renormalized parameters, eventually we need to write down the observables in terms of not bare, but renormalized parameters. Following the philosophy of *renormalized perturbative method*, we should 1) separate the Hamiltonian into renormalized terms and counter terms, 2) use the counter terms to cancel the divergence from loops, which are now written in terms of renormalized parameters. We wrote the vev of $\phi$ in terms of bare parameters, but that is only for pedagogical reasons, what we should really do it first write the Hamiltonian into the renormalized perturbation theory form, 
+Another thing we need to keep in mind is the difference between bare and renormalized parameters, eventually we need to write down the observables in terms of not bare, but renormalized parameters. Following the philosophy of *renormalized perturbative method*, we should 1) separate the Hamiltonian into renormalized terms and counter terms, then 2) use the counter terms to cancel the divergence from loops, which are now written in terms of renormalized parameters. We wrote the vev of $\phi$ in terms of bare parameters, but that is only for pedagogical reasons, what we should really do it first write the Hamiltonian into the renormalized perturbation theory form, 
 
 $$
 \hat{\mathcal{H}} =  \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda}{4} \phi^{4}(\vec{x}) + A + \text{counter terms,}
@@ -117,7 +117,7 @@ $$
 \end{align*}
 $$
 
-Recall that $I$ is some integral of higher order of the coupling, we defined it in part I of the note. We need to sandwich the Hamiltonian by $\mathcal{D}_ {v}$ to get the shifted Hamiltonian density $\mathcal{H}$. We will expand $\mathcal{H}$ in the powers of of $g=\sqrt{ \lambda }$. With some help from Mathematica, we find the following results.
+Recall that $I$ is some integral of higher order of the coupling, we defined it in part I of the note. We need to sandwich the Hamiltonian by $\mathcal{D}_ {v}$ to get the shifted Hamiltonian density $\mathcal{H}$. We will expand $\mathcal{H}$ in power of $g=\sqrt{ \lambda }$. With some help from Mathematica, we find the following results.
 
 $$
 \begin{align*}
@@ -557,7 +557,7 @@ $$
 \mathcal{H}_ {4} = \frac{g^{2}}{4}\phi^{4} + \phi^{2}\left( - \frac{\delta m_ {1}^{2}}{2} \right) + \phi(m^{2}\delta v_ {2})+ \frac{m^{4}(\delta g)^{2}}{16g^{4}} - \frac{m^{2}\delta v_ {1}^{2}}{2} + A_ 4,
 $$
 
-Let's re-write it as 
+Let's rewrite it as 
 
 $$
 \mathcal{H}_ {4} = \frac{g^{2}}{4} \phi^{4} + C_ {2} \phi^{2} + C_ {1} \phi + C_ {0}.
@@ -740,7 +740,7 @@ $$
 \left\lvert \Omega \right\rangle^{(2)}_ {2}=\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lbrace \delta m^{2}+\frac{9 m^{2}g^{2}}{2} \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}  \right\rbrace \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle_ {0}}{4\omega_ {1}} .
 $$
 
-The integral over $p_ {2}$ has superfacial degree of divergent $3-3=0$, thus adopts logarithmic divergence. **This divergence ought to be canceled by $\delta m^{2}$**, as we will check later.
+The integral over $p_ {2}$ has superfacial degree of divergent $3-3=0$, thus adopts logarithmic divergence. **This divergence ought to be canceled by $\delta m^{2}$**, as we will check later. If that's true then $\left\lvert \Omega \right\rangle^{(2)}_ {2}=0.$
 
 - - -
 
@@ -901,8 +901,6 @@ $$
 
 The constant part can be fixed later. 
 
-- - -
-
 As for the orthogonal condition, we can check that $_ {0}\left\langle \vec{p}_ {1,2} \middle\vert \vec{p}\right\rangle_ {2}$ indeed is zero. 
 
 ## Coupling counter term at order $g^{3}$
@@ -924,6 +922,12 @@ C_ {0}=& A_ {5}.
 $$
 
 We have the renormalization condition saying that the interaction vacuum is really a vacuum, $H\left\lvert \Omega \right\rangle=0$, the $\left\lvert \Omega_ {0} \right\rangle$ component of it then requires that $C_ {0}=A_ {5}=0$.
+
+The no-tadpole rule says that 
+
+$$
+
+$$
 
 Since we have 
 
@@ -948,7 +952,23 @@ H_ {5}^{(-3)}=& C_ {3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{1}{2\omega_ 
 \end{align*}
 $$
 
+where $C_ {3},C_ {1}$ are parameters to be determined. As before the equation for $\left\lvert \Omega \right\rangle_ {3}$ is :
 
+$$
+\left\lvert \Omega \right\rangle_ {3} = -H_ {2}^{-1}(H_ {5}\left\lvert \Omega \right\rangle_ {0}+H_ {4}\left\lvert \Omega \right\rangle_ {1}+H_ {3}\left\lvert \Omega \right\rangle_ {2}),
+$$
+
+if separate into different Fock spadfces we get 
+
+$$
+\begin{align*}
+\left\lvert \Omega \right\rangle_ {3}^{(9)} =& H_ {3}^{(3)} \left\lvert \Omega \right\rangle_ {2}^{(6)},\\
+\left\lvert \Omega \right\rangle_ {3}^{(7)} =& H_ {3}^{(3)} \left\lvert \Omega \right\rangle_ {2}^{(4)}+H_ {3}^{(1)} \left\lvert \Omega \right\rangle_ {2}^{(6)}+H_ {4}^{(4)}\left\lvert \Omega \right\rangle_ {1}^{(3)},\\
+\left\lvert \Omega \right\rangle_ {3}^{(5)} =& H_ {3}^{(1)}\left\lvert \Omega \right\rangle_ {2}^{(4)}  +H_ {3}^{(-1)}\left\lvert \Omega \right\rangle_ {2}^{(6)} +H_ {4}^{(2)}\left\lvert \Omega \right\rangle_ {1}^{(3)},  \\
+\left\lvert \Omega \right\rangle_ {3}^{(3)} =&  H_ {3}^{(-1)}\left\lvert \Omega \right\rangle_ {2}^{(4)}  +H_ {3}^{(-3)}\left\lvert \Omega \right\rangle_ {2}^{(6)}  +H_ {4}^{(0)} \left\lvert \Omega \right\rangle_ {1}^{(3)},   \\
+\left\lvert \Omega \right\rangle_ {3}^{(1)} =& H_ {3}^{(-3)}\left\lvert \Omega \right\rangle_ {2}^{(4)}+H_ {4}^{(-2)}\left\lvert \Omega_ {1}^{(3)} \right\rangle+H_ {5}^{(1)}\left\lvert \Omega \right\rangle_ {0}. &   
+\end{align*}
+$$
 
 
 
@@ -1018,7 +1038,7 @@ H_ {4}^{(4)} =&  \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\
 H_ {4}^{(2)} =& g^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {1}A^{\ddagger}_ {2}A^{\ddagger}_ {3} \frac{A_ {1+2+3}}{2\omega_ {1+2+3}}    \\
 &- \frac{\delta m_ {1}^{2}}{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, A_ {1}^{\ddagger}A_ {-1}^{\ddagger},\\ 
 H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} A^{\ddagger}_ {2} \frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} \\
-&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+\int d^{3}x \, C_ {0} ,\\
+&- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+\int d^{3}x \, A_ {4}' ,\\
 H_ {4}^{(-2)} =& g^{2}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  \\
 & -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
 H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} .
@@ -1033,14 +1053,16 @@ $$
 \begin{align*}
 \left\lvert \Omega_ {1} \right\rangle^{(3)}  =&  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1,2,-1-2}\right\rangle_ {0} }{(\omega_ {1}+\omega_ {2}+\omega_ {3})}, \\
 \left\lvert \Omega_ {2} \right\rangle^{(6)} =&\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} \, \\
-&\times \frac{\left\lvert \vec{p}_ {1,2,-1-2}\;\vec{p}'_ {1,2,-1-2} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {1}'+\omega_ {2}'+\omega_ {1'+2'})} \\
+&\times \frac{\left\lvert \vec{p}_ {1,2,-1-2}\;\vec{p}'_ {1,2,-1-2} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {1'}+\omega_ {2'}+\omega_ {1'+2'})} \\
 \left\lvert \Omega_ {2} \right\rangle^{(4)} =& \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{9m^{2}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})} -1\right)   \\
 &\times \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}} ,\\
-\left\lvert \Omega \right\rangle^{(2)}_ {2}=&\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lbrace \frac{\delta m^{2}}{4}+\frac{9 m^{2}g^{2}}{8} \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {2}+\omega_ {2}+\omega_ {1+2})}  \right\rbrace \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle_ {0}}{\omega_ {1}},
+\left\lvert \Omega \right\rangle^{(2)}_ {2}=&\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lbrace \frac{\delta m^{2}}{4}+\frac{9 m^{2}g^{2}}{8} \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {2}+\omega_ {2}+\omega_ {1+2})}  \right\rbrace \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle_ {0}}{\omega_ {1}}\\
+=&0,
 \end{align*}
 $$
 
 The momentum eigenstates:
+
 $$
 \begin{align*}
 \left\lvert \vec{p} \right\rangle_ {1}^{(2)} =&   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{\left\lvert \vec{p}_ {1},\vec{p} -\vec{p}_ {1} \right\rangle^{(2)}_ {0}}{\omega_ {p_ {1}}+\omega_ {p-p_ {1}}-\omega_ {p}} , \\
@@ -1058,22 +1080,9 @@ $$
 \delta v_ {1}= &- \frac{m}{\sqrt{2}g} \left( \frac{\delta g}{g}- \frac{\delta m_ {1}^{2}}{2m^{2}}- \frac{\delta m_ {1}^{4}}{2g^{2}} \right) \\
 \delta v_ {2} =& 0, \\
 A_ {4}'  \equiv& \frac{3g^{2}m^{2}}{8} \int d^{3}x\,\frac{d^{3}p_ {1}d^{3}p_ {2}}{(2\pi)^{6}} \, \frac{1}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {1}+p_ {2}}(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {1}+p_ {2}})} ,\\
-\delta m^{2} =& - \frac{9m^{2}g^{2}}{2}\int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})},
+\delta m^{2} =& - \frac{9m^{2}g^{2}}{2}\int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} \\
+=& - \frac{9g^{2}m^{2}}{8\pi^{2}}\ln\left( \frac{\Lambda}{m} \right) + \text{const}
 \end{align*}
 $$
 
 where $A_ {4}'$ is the constant part of $H_ {4}$.
-
-$$
-\mathcal{H}_  {5} =  C_ {3}\phi^{3}+ C_ {1}\phi + C_ {0}. 
-$$
-
-where 
-
-$$
-\begin{align*}
-C_ {3}=& \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}, \\
-C_ {1}=& m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{3m^{3}\delta g^{2}}{2\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} +\delta m^{4}_ {1}\left( -\frac{1}{8\sqrt{2}gm}-\frac{3m^{2}\delta g^{2}}{2\sqrt{2}g^{4}} \right)+\frac{m\delta m^{6}_ {1}}{4\sqrt{2}g^{3}}+ \frac{3m^{2}\delta m^{8}_ {1}}{8\sqrt{2}g^{5}},\\
-C_ {0}=& A_ {5}.
-\end{align*}
-$$
