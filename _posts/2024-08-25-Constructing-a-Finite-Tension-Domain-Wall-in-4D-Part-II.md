@@ -923,12 +923,6 @@ $$
 
 We have the renormalization condition saying that the interaction vacuum is really a vacuum, $H\left\lvert \Omega \right\rangle=0$, the $\left\lvert \Omega_ {0} \right\rangle$ component of it then requires that $C_ {0}=A_ {5}=0$.
 
-The no-tadpole rule says that 
-
-$$
-
-$$
-
 Since we have 
 
 $$
@@ -952,6 +946,8 @@ H_ {5}^{(-3)}=& C_ {3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{1}{2\omega_ 
 \end{align*}
 $$
 
+### The vacuum correction
+
 where $C_ {3},C_ {1}$ are parameters to be determined. As before the equation for $\left\lvert \Omega \right\rangle_ {3}$ is :
 
 $$
@@ -962,34 +958,190 @@ if separate into different Fock spadfces we get
 
 $$
 \begin{align*}
-\left\lvert \Omega \right\rangle_ {3}^{(9)} =& H_ {3}^{(3)} \left\lvert \Omega \right\rangle_ {2}^{(6)},\\
-\left\lvert \Omega \right\rangle_ {3}^{(7)} =& H_ {3}^{(3)} \left\lvert \Omega \right\rangle_ {2}^{(4)}+H_ {3}^{(1)} \left\lvert \Omega \right\rangle_ {2}^{(6)}+H_ {4}^{(4)}\left\lvert \Omega \right\rangle_ {1}^{(3)},\\
-\left\lvert \Omega \right\rangle_ {3}^{(5)} =& H_ {3}^{(1)}\left\lvert \Omega \right\rangle_ {2}^{(4)}  +H_ {3}^{(-1)}\left\lvert \Omega \right\rangle_ {2}^{(6)} +H_ {4}^{(2)}\left\lvert \Omega \right\rangle_ {1}^{(3)},  \\
-\left\lvert \Omega \right\rangle_ {3}^{(3)} =&  H_ {3}^{(-1)}\left\lvert \Omega \right\rangle_ {2}^{(4)}  +H_ {3}^{(-3)}\left\lvert \Omega \right\rangle_ {2}^{(6)}  +H_ {4}^{(0)} \left\lvert \Omega \right\rangle_ {1}^{(3)},   \\
-\left\lvert \Omega \right\rangle_ {3}^{(1)} =& H_ {3}^{(-3)}\left\lvert \Omega \right\rangle_ {2}^{(4)}+H_ {4}^{(-2)}\left\lvert \Omega_ {1}^{(3)} \right\rangle+H_ {5}^{(1)}\left\lvert \Omega \right\rangle_ {0}. &   
+- H_ {2}\left\lvert \Omega \right\rangle_ {3}^{(9)} =& H_ {3}^{(3)} \left\lvert \Omega \right\rangle_ {2}^{(6)},\\
+- H_ {2}\left\lvert \Omega \right\rangle_ {3}^{(7)} =& H_ {3}^{(3)} \left\lvert \Omega \right\rangle_ {2}^{(4)}+H_ {3}^{(1)} \left\lvert \Omega \right\rangle_ {2}^{(6)}+H_ {4}^{(4)}\left\lvert \Omega \right\rangle_ {1}^{(3)},\\
+- H_ {2}\left\lvert \Omega \right\rangle_ {3}^{(5)} =& H_ {3}^{(1)}\left\lvert \Omega \right\rangle_ {2}^{(4)}  +H_ {3}^{(-1)}\left\lvert \Omega \right\rangle_ {2}^{(6)} +H_ {4}^{(2)}\left\lvert \Omega \right\rangle_ {1}^{(3)},  \\
+- H_ {2}\left\lvert \Omega \right\rangle_ {3}^{(3)} =&  H_ {3}^{(-1)}\left\lvert \Omega \right\rangle_ {2}^{(4)}  +H_ {3}^{(-3)}\left\lvert \Omega \right\rangle_ {2}^{(6)}  +H_ {4}^{(0)} \left\lvert \Omega \right\rangle_ {1}^{(3)},   \\
+- H_ {2}\left\lvert \Omega \right\rangle_ {3}^{(1)} =& H_ {3}^{(-3)}\left\lvert \Omega \right\rangle_ {2}^{(4)}+H_ {4}^{(-2)}\left\lvert \Omega \right\rangle_ {1}^{(3)}+H_ {5}^{(1)}\left\lvert \Omega \right\rangle_ {0}. &   
+\end{align*}
+$$
+
+Sustitute the ingredients and simplify as before, we get the following results.
+
+#### $\left\lvert \Omega \right\rangle_ {3}^{(9)}:$
+
+$$
+\begin{align*}
+\left\lvert \Omega \right\rangle_ {3}^{(9)} =& \frac{g^{3}m^{3}}{2\sqrt{2}}\int \frac{d^{3}p_ {1,2,3,4,5,6}}{(2\pi)^{18}} \,  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4})} \\
+&\times  \frac{\left\lvert \vec{p}_ {1,2,3,4,5,6},-\vec{p}_ {1}-\vec{p}_ {2},-\vec{p}_ {3}-\vec{p}_ {4}，-\vec{p}_ {5}-\vec{p}_ {6} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {5}+\omega_ {6}+\omega_ {1+2}+\omega_ {3+4}+\omega_ {5+6})}
+\end{align*}
+$$
+#### $\left\lvert \Omega \right\rangle_ {3}^{(7)}:$
+
+$$
+\begin{align*}
+H_ {3}^{(3)}\left\lvert \Omega \right\rangle_ {2}^{(4)} =& -\frac{g^{3}m}{4\sqrt{2}}\int \frac{d^{3}p_ {1,2,3,4,5}}{(2\pi)^{15}} \, \frac{ \frac{9m^{2}}{\omega_ {3+4}(\omega_ {3+4}+\omega_ {5}+\omega_ {3+4+5})}-1 }{\omega_ {3}+\omega_ {4}+\omega_ {5}+\omega_ {3+4+5}} \left\lvert \vec{p}_ {1,2,3,4,5},\vec{p}_ {-1-2},\vec{p}_ {-3-4-5} \right\rangle_ {0},\\
+H_ {3}^{(1)}\left\lvert \Omega \right\rangle_ {2}^{(6)} =& -\frac{9 g^3 m^3}{4 \sqrt{2}} \int \frac{d^{3}p_ {1,2,3,4,5}}{(2\pi)^{15}} \, \frac{\left\lvert \vec{p}_ {1,2,3,4,5,-1-2-3,-4-5} \right\rangle_ {0}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})(\omega_ {4}+\omega_ {5}+\omega_ {4+5})}, \\
+H_ {4}^{(4)}\left\lvert \Omega \right\rangle_ {1}^{(3)} =& \frac{g^{3}m}{4\sqrt{2}} \int \frac{d^{3}p_ {1,2,3,4,5}}{(2\pi)^{15}} \, \frac{\left\lvert \vec{p}_ {1,2,3,4,5,-1-2-3,-4-5} \right\rangle_ {0}}{\omega_ {4}+\omega_ {5}+\omega_ {4+5}}. 
+\end{align*}
+$$
+
+Put altogether and inverse $-H_ {2}$, we get:
+
+$$
+\left\lvert \Omega \right\rangle_ {3}^{(7)} = \frac{g^{3}m}{4\sqrt{2}}\int \frac{d^{3}p_ {1,2,3,4,5}}{(2\pi)^{15}} \,  \frac{\left( \frac{9m^{2}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})}-1 \right)\left\lvert \vec{p}_ {1,2,3,4,5,-1-2-3,-4-5} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3})(\omega_ {4}+\omega_ {5}+\omega_ {4+5})}.
+$$
+
+#### $\left\lvert \Omega \right\rangle_ {3}^{(5)}:$
+
+we have 
+
+$$
+\begin{align*}
+H_ {3}^{(1)}\left\lvert \Omega \right\rangle_ {2}^{(4)} =& \frac{3 g^3 m}{4 \sqrt{2}} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p}_ {1,2,3,4,-1-2-3-4} \right\rangle_ {0}}{\omega_ {1+2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2+3+4}}   \\
+&\times  \left(2- \frac{9m^{2}}{\omega_ {3+4}(\omega_ {1+2}+\omega_ {3+4}+\omega_ {1+2+3+4})}-\frac{9m^{2}}{\omega_ {1+2+3}(\omega_ {1+2+3}+\omega_ {4}+\omega_ {1+2+3+4})}\right), \\
+H_ {3}^{(-1)}\left\lvert \Omega \right\rangle_ {2}^{(6)}=& -\frac{9g^{3}m^{3}}{4\sqrt{2}}\int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \left( \frac{\left\lvert \vec{p}_ {1,2,3,-1,-2-3} \right\rangle_ {0}}{\omega_ {4}\omega_ {1+4}(\omega_ {2}+\omega_ {3}+\omega_ {2+3})(\omega_ {1}+\omega_ {4}+\omega_ {1+4})} \right. \\
+&\left.  + \frac{3\left\lvert \vec{p}_ {2,4,-1-2,1+3,-3-4} \right\rangle_ {0}}{\omega_ {1}\omega_ {3}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {3}+\omega_ {4}+\omega_ {3+4})}\right) , \\
+H_ {4}^{(2)}\left\lvert \Omega \right\rangle_ {1}^{(3)} =& -\delta m^{2}\frac{gm}{2\sqrt{2}} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \frac{\left\lvert \vec{p}_ {1,2,3,-1,-2-3} \right\rangle_ {0}}{\omega_ {2}+\omega_ {3}+\omega_ {2+3}} \\
+&+ \frac{3g^{3}m}{2\sqrt{2}} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \,  \frac{\left\lvert \vec{p}_ {1,2,3,-3-4,-1-2+4} \right\rangle_ {0}}{\omega_ {4}(\omega_ {3}+\omega_ {4}+\omega_ {3+4})}.
+\end{align*}
+$$
+
+Next step would be inversing the $-H_ {2}$, put everything together and simplify, but I'll leave to later.
+
+#### $\left\lvert \Omega \right\rangle_ {3}^{(3)}$
+
+We have 
+
+$$
+\begin{align*}
+H_ {3}^{(-1)}\left\lvert \Omega \right\rangle_ {2}^{(4)} =&  \frac{8g^{2}m}{2\sqrt{2}}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left\lvert \vec{p}_ {1,3,-1-3} \right\rangle_ {0} \left( \frac{1}{2\omega_ {2}\omega_ {1+2}(\omega_ {2}+\omega_ {1+2}+\omega_ {3}+\omega_ {1+3})} \right. \\
+&+  \frac{3m^{2}}{\omega_ {2}\omega_ {1+2}\omega_ {1+2+3}(\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega_ {1+3})(\omega_ {2}+\omega_ {1+3}+\omega_ {1+2+3})}  \\
+&\left.+\frac{3m^{2}(2\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {3}+\omega_ {1+3})}{4\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {3}+\omega_ {1+3})(\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega_ {1+3})} \right), \\
+H_ {3}^{(-3)}\left\lvert \Omega \right\rangle_ {2}^{(6)} =&       \\
+H_ {4}^{(0)}\left\lvert \Omega \right\rangle_ {1}^{(3)}  =& \frac{gm}{4\sqrt{2}}\int d^{3}x \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\,  \left( \frac{-6\delta m^{2}}{\omega_ {1}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}+\frac{4A_ {4}'}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} \right)\left\lvert \vec{p}_ {1,2,-1-2} \right\rangle_ {0} \\
+&+ \frac{9mg^{3}}{4\sqrt{2}}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \frac{\left\lvert \vec{p}_ {1,2,-1-2} \right\rangle_ {0}}{\omega_ {3}\omega_ {1+2+3}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})} 
+\end{align*}
+$$
+
+#### $\left\lvert \Omega \right\rangle_ {3}^{(1)}$
+
+We have 
+
+$$
+\begin{align*}
+H_ {5}^{(1)} \left\lvert \Omega \right\rangle_ {0}^{(0)} =& C_ {1}\left\lvert \vec{p} \right\rangle {\Large\mid}_ {\vec{p}=0} ,  \\
+H_ {3}^{(-3)} \left\lvert  \Omega \right\rangle_ {2}^{(4)} =&  -\frac{3gm\delta m^{2}}{4\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}=0 \right\rangle_ {0}}{\omega_ {1}^{2}(m+2\omega_ {1})}+\frac{3g^{3}}{4\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}=0 \right\rangle_ {0}}{\omega_ {1}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}   \\
+H_ {4}^{(-2)} \left\lvert \Omega \right\rangle_ {1}^{(3)} =& - \delta m^{2}  \frac{3gm}{4\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)} \, \frac{\left\lvert \vec{p}=0 \right\rangle}{\omega_ {1}^{2}(m+2\omega_ {1})}+\frac{3g^{3}}{4\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,   \frac{\left\lvert \vec{p}=0 \right\rangle}{\omega_ {1}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}.
+\end{align*}
+$$
+
+Inverse $-H_ {2}$ and put everything altogether 
+
+$$
+\left\lvert \Omega \right\rangle_ {3}^{(1)} = - \frac{C_ {1}\left\lvert \vec{p}=0 \right\rangle_ {0}}{m}-\frac{3gm\delta m^{2}}{2\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}=0 \right\rangle_ {0}}{\omega_ {1}^{2}(m+2\omega_ {1})}+\frac{3g^{3}}{2\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}=0 \right\rangle_ {0}}{\omega_ {1}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} 
+$$
+
+- - -
+
+**Let's apply the no-tadpole condition.** Expand and match the coupling, we find the equation involving $H_ {5}$ is 
+
+$$
+_ {3}\left\langle \Omega \right\rvert \phi(\vec{x})\left\lvert \Omega \right\rangle_ {0} = - _ {2}\left\langle \Omega \right\rvert \phi(\vec{x})\left\lvert \Omega \right\rangle_ {1},
+$$
+
+This should allow us to fix a constant parameter ($C_ {1}$ specifically) in $H_ {5}$. The right hand side reduces to 
+
+$$
+\begin{align*}
+\left\langle \Omega_ {2} \right\rvert\phi(\vec{x})\left\lvert \Omega_ {1} \right\rangle =& \frac{e^{ -i\vec{k}\cdot \vec{x} }}{2m} C_ {1}     \\
+=&\left\langle \Omega_ {2}^{(4)} \right\rvert\phi(\vec{x})\left\lvert \Omega_ {1}^{(3)} \right\rangle \\
+=& -\frac{e^{ -i\vec{k}\cdot \vec{x} }3g^{3}m\left\lvert \Omega_  {0} \right\rangle}{2\sqrt{2}}\int \frac{d^{3}p_  {1,2}}{(2\pi)^{6}} \, 
+\frac{-9m^{2}+\omega_ {1}^{2}+\omega_ {1}(\omega_ {2}+\omega_ {1+2})}{\omega_ {1}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})^{2}(m+\omega_ {1}+\omega_ {2}+\omega_ {1+2})}\\
+&+ \frac{-9m^{2}+\omega_ {2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}{\omega_ {2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})^{2}(m+\omega_ {1}+\omega_ {2}+\omega_ {1+2})} \\
+&+ \frac{2(-9m^{2}+m\omega_ {1+2}+2\omega_ {1+2}^{2})}{\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(m+\omega_ {1}+\omega_ {2}+\omega_ {1+2})(m+2\omega_ {1+2})}
+\end{align*}
+$$
+
+Looks like the integral can not be simplified any more.
+
+- - -
+
+### Momentum state correction
+
+From $H\left\lvert \vec{p} \right\rangle=\omega _ {p}\left\lvert \vec{p} \right\rangle$, expand it, the $g^{3}$ order part reads
+
+$$
+(H_ {2}-\omega _ {p} )\left\lvert \vec{p} \right\rangle_ {3} = -H_ {3}\left\lvert \vec{p} \right\rangle_ {2}-H_ {4}\left\lvert \vec{p} \right\rangle_ {1} - H_ {5} \left\lvert \vec{p} \right\rangle_ {0},
+$$
+
+separate into different Fock spaces we get:
+
+$$
+\begin{align*}
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(10)} =&  H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} , \\
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(8)} =&  H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} + H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {4}^{(4)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} , \\
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(6)} =&  H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} + H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {4}^{(2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} , \\
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(4)} =&  H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} +H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}+ H_ {4}^{(2)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} +H_ {5}^{(3)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}, \\
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(2)} =&  H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} + H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} +H_ {5}^{(1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}, \\
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(0)} =& H_ {4}^{(-4)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}+H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)}+H_ {5}^{(-1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}=0. 
+\end{align*}
+$$
+
+#### $\left\lvert \vec{p} \right\rangle_ {3}^{(10)}$
+
+we have 
+
+$$
+H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} = - \frac{g^{3}m^{3}}{2\sqrt{2}} \int \frac{d^{3}p_ {1,2,3,4,5,6}}{(2\pi)^{18}} \,  \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,5,6,-1-2,-3-4,-5-6} \right\rangle_ {0}}{\omega_ {3}+\omega_ {4}+\omega_ {5}+\omega_ {5}+\omega_ {3+4}+\omega_ {5+6}}
+$$
+
+inverse $\omega _ {p}-H_ {2}$ we get
+
+$$
+\begin{align*}
+\left\lvert \vec{p} \right\rangle_ {3}^{10} =&- \frac{g^{3}m^{3}}{2\sqrt{2}} \int \frac{d^{3}p_ {1,2,3,4,5,6}}{(2\pi)^{18}} \,  \frac{1}{\omega_ {3}+\omega_ {4}+\omega_ {5}+\omega_ {5}+\omega_ {3+4}+\omega_ {5+6}} \\
+&\times \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,5,6,-1-2,-3-4,-5-6} \right\rangle_ {0}}{\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {5}+\omega_ {6}+\omega_ {1+2}+\omega_ {3+4}+\omega_ {5+6}}.
+\end{align*}
+$$
+
+#### $\left\lvert \vec{p} \right\rangle_ {3}^{(8)}$
+
+we get
+
+$$
+\begin{align*}
+H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} =&  \\
+ H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} =&  \\ 
+ H_ {4}^{(4)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} =&  
+\end{align*}
+$$
+
+
+#### $\left\lvert \vec{p} \right\rangle_ {3}^{(6)}$
+
+
+
+#### $\left\lvert \vec{p} \right\rangle_ {3}^{(4)}$
+
+
+
+#### $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$
+
+we have 
+
+$$
+\begin{align*}
+H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} =&  ,\\
+H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} =&  ,\\
+H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}=&  ,\\ 
+H_ {5}^{(1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}=& C_ {5,1} \left\lvert \vec{p},\vec{q}=0 \right\rangle + \frac{3C_ {5,3}}{2\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle_ {0}  ,
 \end{align*}
 $$
 
 
 
-
-
-
-
-I am told that in order to get the expression for $\delta g$, we need to do the calculation that realized the orthogonal condition $_ {0}\left\langle \vec{p}_ {1,2} \middle\vert \vec{p}\right\rangle_ {2}$ that involves $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$. 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### $\left\lvert \vec{p} \right\rangle_ {3}^{(0)}$
 
 
 
@@ -1002,6 +1154,8 @@ $$
 $$
 
 We also simplify $A_ {p_ {1}}^{\ddagger}$ as $A_ {1}^{\ddagger}$ and $A_ {-p_ {1}-p_ {2}}$ as $A_ {-1-2}$.
+
+## Hamiltonians:
 
 In the below is the summary of Hamiltonians updated by Hamiltonian Renormalization Conditions (HRC):
 
@@ -1040,24 +1194,42 @@ H_ {4}^{(2)} =& g^{2} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, A^{\ddagger}_ {
 H_ {4}^{(0)} =& \frac{3g^{2}}{2}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} A^{\ddagger}_ {2} \frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} \\
 &- \delta m_ {1}^{2} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}^{\ddagger}A_ {1}}{2\omega_ {1}}+\int d^{3}x \, A_ {4}' ,\\
 H_ {4}^{(-2)} =& g^{2}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, A^{\ddagger}_ {1} \frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}}  \\
-& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}1}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
+& -\frac{\delta m_ {1}^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{A_ {1}A_ {-1}}{(2\omega_ {1})^{2}} , \\
 H_ {4}^{(-4)} =& \frac{g^{2}}{4}  \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}}\, \frac{A_ {-1}}{2\omega_ {1}}\frac{A_ {-2}}{2\omega_ {2}}\frac{A_ {-3}}{2\omega_ {3}}\frac{A_ {1+2+3}}{2\omega_ {1+2+3}} .
 \end{align*}
 $$
 
-- - -
+and 
+
+$$
+\begin{align*}
+H_ {5}=& H_ {5}^{(3)}+H_ {5}^{(1)}+H_ {5}^{(-1)}+H_ {5}^{(-3)} ,\\
+H_ {5}^{(3)}=& C_ {5,3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {-1-2}^{\ddagger}      ,\\
+H_ {5}^{(1)}=& C_ {5,3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{3}{2\omega_ {1+2}}A_ {1}^{\ddagger}A_ {2}^{\ddagger}A_ {1+2}    +C_ {5,1}A_ {0}^{\ddagger}  ,\\
+H_ {5}^{(-1)}=&C_ {5,3} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\,\frac{3}{2\omega_ {2}} \frac{1}{2\omega_ {1+2}}  A_ {1}^{\ddagger}A_ {-2} A_ {1+2}   + C_ {5,1} \frac{A_ {0}}{2m}   ,\\
+H_ {5}^{(-3)}=& C_ {5,3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{1}{2\omega_ {1}2\omega_ {2}2\omega_ {1+2}} A_ {-1}A_ {-2}A_ {1+2}      ,\\
+\end{align*}
+$$
+
+where $C_ {5,i}$ are some combinations of counter terms, whose value will be given later.
+## Vacuum states corrections
 
 The corrections to vacuum states:
 
 $$
 \begin{align*}
-\left\lvert \Omega_ {1} \right\rangle^{(3)}  =&  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1,2,-1-2}\right\rangle_ {0} }{(\omega_ {1}+\omega_ {2}+\omega_ {3})}, \\
-\left\lvert \Omega_ {2} \right\rangle^{(6)} =&\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} \, \\
+\left\lvert \Omega \right\rangle_ {1}^{(3)}  =&  \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1,2,-1-2}\right\rangle_ {0} }{(\omega_ {1}+\omega_ {2}+\omega_ {3})}, \\
+\left\lvert \Omega \right\rangle_ {2}^{(6)} =&\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,1',2'}}{(2\pi)^{12}} \\
 &\times \frac{\left\lvert \vec{p}_ {1,2,-1-2}\;\vec{p}'_ {1,2,-1-2} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {1'}+\omega_ {2'}+\omega_ {1'+2'})} \\
-\left\lvert \Omega_ {2} \right\rangle^{(4)} =& \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{9m^{2}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})} -1\right)   \\
+\left\lvert \Omega \right\rangle_ {2}^{(4)} =& \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{9m^{2}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})} -1\right)   \\
 &\times \frac{\left\lvert \vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}} ,\\
-\left\lvert \Omega \right\rangle^{(2)}_ {2}=&\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lbrace \frac{\delta m^{2}}{4}+\frac{9 m^{2}g^{2}}{8} \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {2}+\omega_ {2}+\omega_ {1+2})}  \right\rbrace \frac{\left\lvert \vec{p}_ {1,-1} \right\rangle_ {0}}{\omega_ {1}}\\
-=&0,
+
+\left\lvert \Omega \right\rangle_ {3}^{(9)} =& \frac{g^{3}m^{3}}{2\sqrt{2}}\int \frac{d^{3}p_ {1,2,3,4,5,6}}{(2\pi)^{18}} \,  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4})} \\
+&\times  \frac{\left\lvert \vec{p}_ {1,2,3,4,5,6},-\vec{p}_ {1}-\vec{p}_ {2},-\vec{p}_ {3}-\vec{p}_ {4}，-\vec{p}_ {5}-\vec{p}_ {6} \right\rangle}{(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {5}+\omega_ {6}+\omega_ {1+2}+\omega_ {3+4}+\omega_ {5+6})}\\
+\left\lvert \Omega \right\rangle_ {3}^{(7)} =& \frac{g^{3}m}{4\sqrt{2}}\int \frac{d^{3}p_ {1,2,3,4,5}}{(2\pi)^{15}} \,  \frac{\left( \frac{9m^{2}}{\omega_ {1+2}(\omega_ {1+2}+\omega_ {3}+\omega_ {1+2+3})}-1 \right)\left\lvert \vec{p}_ {1,2,3,4,5,-1-2-3,-4-5} \right\rangle}{(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3})(\omega_ {4}+\omega_ {5}+\omega_ {4+5})},\\
+\left\lvert \Omega \right\rangle_ {3}^{(5)} =& \\
+\left\lvert \Omega \right\rangle_ {3}^{(3)} =& \\
+\left\lvert \Omega \right\rangle_ {3}^{(1)} =& - \frac{C_ {1}\left\lvert \vec{p}=0 \right\rangle}{m}-\frac{3gm\delta m^{2}}{2\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}=0 \right\rangle}{\omega_ {1}^{2}(m+2\omega_ {1})}+\frac{3g^{3}}{2\sqrt{2}}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}=0 \right\rangle}{\omega_ {1}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} 
 \end{align*}
 $$
 
@@ -1068,8 +1240,8 @@ $$
 \left\lvert \vec{p} \right\rangle_ {1}^{(2)} =&   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{\left\lvert \vec{p}_ {1},\vec{p} -\vec{p}_ {1} \right\rangle^{(2)}_ {0}}{\omega_ {p_ {1}}+\omega_ {p-p_ {1}}-\omega_ {p}} , \\
 \left\lvert \vec{p} \right\rangle_ {1}^{(4)} =& \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,-1-2} \right\rangle_ {0}^{(4)}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}, \\
 \left\lvert \vec{p} \right\rangle_ {2}^{(7)} =& \frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4}}, \\
-\left\lvert \vec{p}\right\rangle_ {2}^{(5)}  =& \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}}\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} 
-+ \frac{3m^{2}\left\lvert \vec{p}_ {1,2,-1-2,-3},\vec{p}+\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}.
+\left\lvert \vec{p}\right\rangle_ {2}^{(5)}  =& \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{\frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}}\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} 
++ \frac{3m^{2}\left\lvert \vec{p}_ {1,2,-1-2,-3},\vec{p}+\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}\right).
 \end{align*}
 $$
 
