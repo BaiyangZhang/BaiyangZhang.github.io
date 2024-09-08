@@ -1081,10 +1081,10 @@ $$
 \begin{align*}
 (\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(10)} =&  H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} , \\
 (\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(8)} =&  H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} + H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {4}^{(4)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} , \\
-(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(6)} =&  H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} + H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {4}^{(2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} , \\
-(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(4)} =&  H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} +H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}+ H_ {4}^{(2)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} +H_ {5}^{(3)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}, \\
-(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(2)} =&  H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} + H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} +H_ {5}^{(1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}, \\
-(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(0)} =& H_ {4}^{(-4)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}+H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)}+H_ {5}^{(-1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}=0. 
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(6)} =&  H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} + H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}+ H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {2}^{(3)} + H_ {4}^{(2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}+H_ {4}^{(4)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} , \\
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(4)} =&  H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(7)} +H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} + H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {2}^{(1)} + H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}+ H_ {4}^{(2)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} +H_ {5}^{(3)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}, \\
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(2)} =&  H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}+ H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(3)} + H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} + H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} +H_ {5}^{(1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}, \\
+(\omega _ {p} -H_ {2})\left\lvert \vec{p} \right\rangle_ {3}^{(0)} =&H_ {3}^{(-3)} \left\lvert \vec{p} \right\rangle_ {2}^{(3)} +H_ {4}^{(-4)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}+H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)}+H_ {5}^{(-1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}=0. 
 \end{align*}
 $$
 
@@ -1133,7 +1133,10 @@ we have
 $$
 \begin{align*}
 H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} =&  ,\\
-H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} =&  ,\\
+H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(3)} =&   ,\\
+H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} =& \frac{3gm A_ {4}'}{2\sqrt{2}\omega _ {p} }\int d^{3}x \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle}{-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}}} \\
+& - \frac{3gm\delta m^{2}}{2\sqrt{2}\omega _ {p} }  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})}  \\
+&+  \frac{9mg^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {2}\omega_ {p+p_ {2}}(-\omega _ {p} +\omega_ {2}+\omega_ {p+p_ {2}})}      \\
 H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}=&  ,\\ 
 H_ {5}^{(1)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)}=& C_ {5,1} \left\lvert \vec{p},\vec{q}=0 \right\rangle + \frac{3C_ {5,3}}{2\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle_ {0}  ,
 \end{align*}
@@ -1241,7 +1244,9 @@ $$
 \left\lvert \vec{p} \right\rangle_ {1}^{(4)} =& \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,-1-2} \right\rangle_ {0}^{(4)}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}, \\
 \left\lvert \vec{p} \right\rangle_ {2}^{(7)} =& \frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4}}, \\
 \left\lvert \vec{p}\right\rangle_ {2}^{(5)}  =& \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{\frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}}\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} 
-+ \frac{3m^{2}\left\lvert \vec{p}_ {1,2,-1-2,-3},\vec{p}+\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}\right).
++ \frac{3m^{2}\left\lvert \vec{p}_ {1,2,-1-2,-3},\vec{p}+\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}\right),\\
+\left\lvert \vec{p} \right\rangle_ {2}^{(3)} =& \frac{g^{2}}{4\omega _ {p} }\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \left( -2+\frac{9m^{2}}{\omega_ {1+2}}\left( \frac{1}{-\omega _ {p} +\omega_ {p-p_ {1}-p_ {2}}+\omega_ {1+2}} + \frac{1}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}} \right) \right)\\
+&\times \frac{\left\lvert \vec{p}_ {1,2},\vec{p}-\vec{p}_ {1}-\vec{p}_ {2} \right\rangle_ {0}}{-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}}} 
 \end{align*}
 $$
 
