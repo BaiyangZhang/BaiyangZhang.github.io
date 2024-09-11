@@ -14,5 +14,6 @@
   "livePreview": true,
   "alwaysUpdateLinks": true,
   "promptDelete": false,
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "showRibbon": false
 }
