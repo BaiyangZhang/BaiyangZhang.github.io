@@ -283,8 +283,17 @@ divergent series can sometimes be turned into continued fractions which is conve
 
 An example of it is the `Pade sequence`. Pade summation seems to be quite magical. Pade doesn't have to converge on a circle too, it is smarter than power series. Pade summation can converge on a area except for a line. 
 
-# Talk 7
+# Talk 9
 
+The Airy's equation
+
+$$
+y'' = xy
+$$
+
+has two solutions, the airy function $Ai(x)$ and $Bi(x)$. Using the method of dominance balance, we can get a really good asymptotic behavior of them. 
+
+Introduce the Stokes phenomenon, the Stokes wedge.Take the example of a simple function: $\sinh z$. 
 
 
 

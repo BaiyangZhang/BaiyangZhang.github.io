@@ -15,7 +15,18 @@ tags:
 
 *Disclaimer: Nothing in this note is original.*
 
-### Some Conventions
+- [1. Some Conventions](#1-some-conventions)
+- [2. A little bit more about differential forms](#2-a-little-bit-more-about-differential-forms)
+- [3. Orientation and Pseudo-forms](#3-orientation-and-pseudo-forms)
+- [4. Interior Products and Vector Analysis](#4-interior-products-and-vector-analysis)
+- [5. Dictionary](#5-dictionary)
+- [6. Charge and Current in Classical Electromagnetism](#6-charge-and-current-in-classical-electromagnetism)
+- [7. Maxwell's Equations](#7-maxwells-equations)
+- [8. Hodge Operator](#8-hodge-operator)
+	- [8.1. The Codifferential Operator $d^{\dagger}=d^{\star}=\delta$](#81-the-codifferential-operator-d%5E%5Cdaggerd%5E%5Cstar%5Cdelta)
+	- [8.2. Maxwell's Equations in Curved Space-Time](#82-maxwells-equations-in-curved-space-time)
+
+### 1. Some Conventions
 
 We will use capital Latin letters such as $I,J,$ etc. to denote sets of indices, for example $a_ {I}$ is the shorthand notation for $a_ {i_ {1}\dots i_ {p}}$. To get rid of annoying factorial factors that frequently appear in differential form calculation, we require the indices to be arranged in increasing order, the indices are denoted $I_ {<}$, 
 
@@ -53,7 +64,7 @@ $$
 (\alpha \wedge \beta)_ {I} = \delta_ {I}^{MN} \alpha_ {M_ {<}} \beta_ {N_ {<}}.
 $$
 
-where repeated indices are supposed to be summed over, as usual. In functional form
+where repeated indices are supposed to be summed over. Equivalently
 
 $$
 (\alpha \wedge \beta)(V_ {I}) = \delta^{MN}_ {I} \alpha(V_ {M_ {<}})\beta(V_ {N_ {<}}).
@@ -98,7 +109,7 @@ $$
 \sum_ {J_ {<}}\delta^{IJ}_ {M}\delta^{KL}_ {J} = \delta^{IKL}_ {J}.
 $$
 
-### A little bit more about differential forms
+### 2. A little bit more about differential forms
 
 Although forms can be expanded in any bases, the geometric meaning of differential forms is most obvious in terms of Cartesian coordinates. By Cartesian coordinates we just mean that the metric is that of the Euclidean space $\mathbb{R}^{n}$. In this case, the bases for the tangent vector space is $\partial_ {i}$ and the dual bases are given by $dx^{i}$. We already know that $dx^{i}$ reads off the i-th component of a vector $\mathbf{v}$, 
 
@@ -259,7 +270,7 @@ $$
 (d\alpha)_ {I} = \delta_ {I}^{jK_ {<}} \;\partial _ {j}\alpha_ {K}.
 $$
 
-### Orientation and Pseudo-forms
+### 3. Orientation and Pseudo-forms
 
 Let $\mathbf{e}=(\mathbf{e_ {1},\dots,e_ {n}})$ and $\mathbf{f} = (\mathbf{f_ {1},\dots,f_ {n}})$ be two sets of bases, with transition matrix $P:\mathbf{e}\mapsto \mathbf{f}$ acting from the right, according to our convention, namely $\mathbf{f}=\mathbf{e}P$. They are said to be of the same `orientation` iff $\det P>0$. Thus orientation can be seen as equivalences classes of bases, with only two elements. **We orient a vector space by declaring one of the two classes of bases to be positive**. In our 3-space it is usual to declare the right-handed bases to be positively oriented, but we could just as well have the left-handed bases as positive. 
 
@@ -309,7 +320,7 @@ $$
 
 It is traditional to omit the orientation function $o(y)$, and we shall do so when no confusion can arise.
 
-### Interior Products and Vector Analysis
+### 4. Interior Products and Vector Analysis
 
 We know that the contraction between a contravariant index and a covariant index gives us a scalar, the two indices cancel each other. The interior product between a form and a vector is the application of that idea. 
 
@@ -449,7 +460,7 @@ $$
 \end{align*}
 $$
 
-### Dictionary
+### 5. Dictionary
 
 Let 
 
@@ -478,7 +489,7 @@ $$
 
 - - -
 
-### Charge and Current in Classical Electromagnetism
+### 6. Charge and Current in Classical Electromagnetism
 
 
 Electromagnetic field is best described in the language of differential forms. However, *electric field and magnetic field are given by forms of different ranks*. 
@@ -686,7 +697,7 @@ $$
 
 is the electromagnetic field strength 2-form. It was first introduced by Minkowski in 1907. 
 
-### Maxwell's Equations
+### 7. Maxwell's Equations
 
 In Minkowski space we define a 4-dimensional exterior differentiation $d$ in terms of  the 3-dimensional exterior differentiation $\mathbf{d} = \sum_ {i}\partial_ {i}d^{i},i=x,y,z$ as
 
@@ -742,7 +753,7 @@ $$
 d\star F = 4\pi \mathcal{J}.
 $$
 
-### Hodge Operator
+### 8. Hodge Operator
 
 On a (pseudo-)Riemannian manifold $M$ we will first introduce a `pointwise scalar product` between $p$-forms, denoted by pointy brackets, then use it to define a `global` scalar product, denoted by parenthesis. 
 
@@ -881,7 +892,7 @@ $$
 It is sufficient to verify these for terms of the form $\sigma^{I}$ and to assume these are orthonormal. Remember that $\star\sigma^{I_ {<}} = \pm \sigma^{J_ {<}}$ where $J$ is the compliment of $I$, and the sign dependent on the nature of the metric. 
 
 
-#### The Codifferential Operator $d^{\dagger}=d^{\star}=\delta$
+#### 8.1. The Codifferential Operator $d^{\dagger}=d^{\star}=\delta$
 
 The codifferential operator $d^{\dagger}$ is the dual of exterior differential $d$ in the sense that, in the global inner product,
 
@@ -933,7 +944,7 @@ $$
 (d^{\dagger}\beta)_ {K} = - \beta^{i}_ {\;K;j}.
 $$
 
-#### Maxwell's Equations in Curved Space-Time 
+#### 8.2. Maxwell's Equations in Curved Space-Time
 
 We shall assume that the electromagnetic field is again described by an electromagnetic 2-form $F\in\Omega^{2}(M)$. In any local coordinates $(t,\mathbf{x})=(x^{0},x^{1},\dots,x^{4})$ we may decompose $F$ into part contain and doesn't contain $dt$. The relation between $F$ and the electric 1-form $E\in\Omega^{1}(M)$ and magnetic 2-form $B\in\Omega^{2}(M)$ is given by 
 

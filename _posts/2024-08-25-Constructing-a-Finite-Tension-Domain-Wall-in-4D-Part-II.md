@@ -524,7 +524,7 @@ $$
 Substitute the expression for $H_ {3}$ in terms of ladder operators, after some simplification we get
 
 $$
-\left\lvert \vec{p} \right\rangle_ {1}^{(2)} =   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{\left\lvert \vec{p}_ {1},\vec{p}+ \vec{p}_ {1} \right\rangle^{(2)}_ {0}}{\omega_ {p_ {1}}+\omega_ {p-p_ {1}}-\omega_ {p}} .
+\left\lvert \vec{p} \right\rangle_ {1}^{(2)} =   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{\left\lvert \vec{p}_ {1},\vec{p}- \vec{p}_ {1} \right\rangle^{(2)}_ {0}}{\omega_ {p_ {1}}+\omega_ {p-p_ {1}}-\omega_ {p}} .
 $$
 
 Let's take a closer look at $\left\lvert \vec{p} \right\rangle_ {1}^{(2)}$. Since $\omega(p)$ is not a linear function in $p$, considering $\vec{p}_ {1}+\vec{p}_ {2}=\vec{p}$, we have $\omega(\vec{p}_ {1})+\omega (\vec{p_ {2}}) \neq \omega(\vec{p})$, thus the integrand does not go to zero, hence is free of singularities. 
@@ -964,7 +964,7 @@ $$
 \end{align*}
 $$
 
-Sustitute the ingredients and simplify as before, we get the following results.
+Substitute the ingredients and simplify as before, we get the following results.
 
 #### $\left\lvert \Omega \right\rangle_ {3}^{(9)}:$
 
