@@ -34,7 +34,7 @@ These rules are currently being used by myself and no one else, it is by no mean
 </div>
 
 
-# Feynman-like Rules
+# Feynman-like Rules in General
 
 
 # An example

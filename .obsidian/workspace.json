@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -194,7 +193,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b7dfd8b1495a9180",
+  "active": "85934409c70af44e",
   "lastOpenFiles": [
     "img/kink/H3Rules.png",
     "img/kink/example.png",
