@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Version of Rules for Jarah Diagrams
+title: Another Version of Diagrammatic Rules for Jarah Diagrams
 date: 2024-09-18
 author: Baiyang Zhang
 catalog: true
