@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4e4279a8982dc70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md"
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
               }
             }
           },
@@ -184,8 +196,9 @@
   "active": "b6f5857e802ea8ee",
   "lastOpenFiles": [
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
-    "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
+    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "专家库管理制度报告.md",
     "Untitled 3.md",
     "Untitled 2.md",
@@ -213,7 +226,6 @@
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
-    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "img/resurgence/negativeRealContour.png",
     "img/resurgence",
     "img/fractal/CantorSet.png",
