@@ -78,7 +78,6 @@ For example, say we want to calculate $H_ {4}^{(2)}\left\lvert \Omega\right\rang
     Rules for two kinds of propagators, regular and circled ones. Each regular propagator contributes a factor of $\frac{1}{2\omega}$, in the mean while a circled propagator contributes an extra divergent factor of $\int d^3 x$, or $(2\pi)^3\delta^3(0)$ as I sometimes like to write.
 </div>
 
-```
 
 # Two examples
 
@@ -89,5 +88,6 @@ For example, say we want to calculate $H_ {4}^{(2)}\left\lvert \Omega\right\rang
     </div>
 </div>
 <div class="caption">
-    Here is an example of how to calculate $H_3^{(-3)}\lvert\Omega\rangle_1^{(3)}$.
+    Here is an example of how to calculate $H_ 3^{(-3)}\lvert\Omega\rangle_ 1^{(3)}$. Here the first factor $6$ comes from the 6 different ways to connect the circles. The top two circles are fully labeled, the buttom one has no label at all, thus there is no independent momentum to ballance against the circle. It contributes the spatial integral in the final expression. Since all the vertices preserve the momenta, and the top to propogators are labeled with $p_ 1$ and $p_ 2$, the last line is fixed to be $-p_ 1-p_ 2$. It is not common to encounter an irregular propagator. There is no external leg on the left-most of the diagram, hence we assign $\left\lvert \Omega \right\rangle_ {0}$ to it.
 </div>
+
