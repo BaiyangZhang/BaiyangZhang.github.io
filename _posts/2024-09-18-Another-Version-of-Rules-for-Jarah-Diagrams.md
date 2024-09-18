@@ -47,7 +47,7 @@ At leading order there is one vacuum state correction and two momentum eigenstat
     </div>
 </div>
 <div class="caption">
-    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
+States at leading order. The first panel gives the leading order correction to the vacuum state, while the second and third panel gives the leading order correction to momentum states.
 </div>
 
 # Feynman-like Rules
