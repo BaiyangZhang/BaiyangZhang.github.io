@@ -14,6 +14,7 @@ The rules are shown in the figures below. The numbers label the momentum, for ex
 
 In the following rules, some factors (such as a factor of 3) is perhaps better treated as symmetry factors, but for practical purpose I treat them as part of the definition of the the vertices.
 
+I note that the diagrams I have are used to calculate quantities such as $H_ {3}\left\lvert \vec{p} \right\rangle_ {1},H_ {4}\left\lvert \Omega \right\rangle_ {2}$ only, in order to obtain the final **state** we need to further invert some operators. The inversion is quite straightforward though.
 # Rules for $H_ {3}^{(-)}$
 
 <div class="row mt-3">
@@ -64,7 +65,7 @@ For example, say we want to calculate $H_ {4}^{(2)}\left\lvert \Omega\right\rang
 4. If a circle is connected to two independent labeled momenta, we'll call it "fully labeled." If it's connected to only one labeled momentum, we'll call it "half-labeled." Arrange the labels so that **as many circles as possible are fully labeled**. Each circle will cancel out a connected momentum, and you can cross them off simultaneously. If a circle isn’t connected to any labeled momentum, chance is they will survive the balancing process and give us a divergent factor. It's easier than it sounds. Once you've crossed them off, replace the circle with an arrow pointing in the direction of increasing coupling. A line with an arrow represents a regular propagator.
 5. If there is a circle that no matter how to label and re-label the independent momenta still can't be eliminated, keep it, a circle connected with two legs is an irregular propagator, it will contribute a factor of $\int d^{3}x$, or $(2\pi)^{3}\delta^{3}(0)$.
 6. Use the momentum conservation at each vertex to write down the momentum for each leg, external and internal. They should all be expressed in terms of independent momenta.
-7. Read from left to write, don't forget to write the symmetry factor. The left-most external legs give us the final state, each of them gives us an momentum eigenstate. Whenever you see an independent momentum, write the integral measure $\int d^3p / (2\pi)^{3}$. Whenever you see a propagator, write down the corresponding factor, which is listed in the figure below. Write down the expression for the vertex and the state. 
+7. Read from left to right, don't forget to write down the symmetry factor. The left-most external legs give us the final state, each of them gives us an momentum eigenstate. **If there is not a single leg then the state is $\left\lvert \Omega \right\rangle_ {0}$**. Whenever you see an independent momentum, write the integral measure $\int d^3p / (2\pi)^{3}$. Whenever you see a propagator, write down the corresponding factor, which is listed in the figure below. Write down the expression for the vertex and the state. 
 8. Simplify and check.
 
 
