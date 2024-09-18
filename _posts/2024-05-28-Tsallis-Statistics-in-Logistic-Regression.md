@@ -203,7 +203,7 @@ $$
 \left\langle x \right\rangle  := \int dx \, x \, p(x)  = \overline{x}  \quad  \text{ is known.}
 $$
 
-We can apply the Lagrange multiplier method to find the optimizing distribution with the constraint, together with the normalization condition $\int dx \, p(x)=1$. The Lagrangian functional that we want to extremize reads now 
+We can apply the Lagrange multiplier method to find the optimizing distribution with the constraint, together with the normalization condition $\int dx \, p(x)=1$. The Lagrangian functional that we want to extremize reads 
 
 $$
 \Phi[p(x)] = S_ {BG} - \alpha \int dx \, p(x) - \beta \int dx \, x \, p(x)

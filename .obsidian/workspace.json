@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md"
               }
             }
           },
@@ -183,9 +183,10 @@
   },
   "active": "b6f5857e802ea8ee",
   "lastOpenFiles": [
-    "专家库管理制度报告.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
+    "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "专家库管理制度报告.md",
     "Untitled 3.md",
     "Untitled 2.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
@@ -220,7 +221,6 @@
     "img/fractal/deltaCover.png",
     "img/fractal",
     "img/新建文件夹",
-    "_pages/about.md",
     "reports/psresultmobile.svg",
     "reports/psresultdesktop.svg",
     "img/naturalityCommute.png",
