@@ -299,3 +299,22 @@ Introduce the Stokes phenomenon, the Stokes wedge.Take the example of a simple f
 
 
 
+# Talk 11
+
+There is a class of functions called Stieltjes functions, 
+
+$$
+f(x) = \int_ {0}^{\infty} dt \,  \frac{\rho(t)}{1+xt}, \quad  \rho(t) \geq 0.
+$$
+Furthermore, the $n$-th moment of $\rho(t)$ must exist. It has the following properties:
+
+1. $f(x)$ is analytic on the cut plane without negative real axis;
+2. $f(x)\to 0$ as $x\to \infty$. 
+3. At $x\to 0$, the Stieltjes functions has asymptotic series $\sum_ {i}(-1)^{n}a_ {n}x^{n}$, called Stieltjes series,
+4. the negative $-f(x)$ is Herglotz, meaning that in the upper half plane the imaginary part of $f$ is positive, in the lower half plane the imaginary part of $f(x)$ is negative. The sign of the imaginary part of the function is the same as the sign of the imaginary part of the argument $x$.
+
+Herglotz property is a very powerful property. If a function is both entire (analytic everywhere) and Herglotz, it is trivially $c x$, where $c$ is a real constant. 
+
+- - -
+
+The point is, if $f(x)$ have the above four properties, then $f$ is Stieltjes. 

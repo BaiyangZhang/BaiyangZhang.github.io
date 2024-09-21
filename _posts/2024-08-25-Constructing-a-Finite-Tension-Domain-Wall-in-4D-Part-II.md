@@ -952,7 +952,7 @@ $$
 \left\lvert \Omega \right\rangle_ {3} = -H_ {2}^{-1}(H_ {5}\left\lvert \Omega \right\rangle_ {0}+H_ {4}\left\lvert \Omega \right\rangle_ {1}+H_ {3}\left\lvert \Omega \right\rangle_ {2}),
 $$
 
-if separate into different Fock spadfces we get 
+if separate into different Fock spaces we get 
 
 $$
 \begin{align*}
