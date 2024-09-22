@@ -41,10 +41,6 @@ I note that the diagrams I have are used to calculate quantities such as $H_ {3}
 
 ## Rules for $H_ {5}^{(-)}$
 
-
-
-
-```python
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="/img/kink/movingWall.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
@@ -56,9 +52,6 @@ I note that the diagrams I have are used to calculate quantities such as $H_ {3}
 <div class="caption">
     A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
 </div>
-
-```
-
 
 # Diagrams for States at Leading Order
 
