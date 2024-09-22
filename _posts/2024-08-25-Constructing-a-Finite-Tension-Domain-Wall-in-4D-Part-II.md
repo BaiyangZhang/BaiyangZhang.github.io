@@ -819,8 +819,10 @@ Does the first term agrees with Jarah's result? The second term is fine as it is
 Altogether these lead to 
 
 $$
-\left\lvert \vec{p}\right\rangle_ {2}^{(5)}  = \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}}\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} 
-+ \frac{3m^{2}\left\lvert \vec{p}_ {1,2,-1-2,-3},\vec{p}+\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}.
+\begin{align*}
+\left\lvert \vec{p}\right\rangle_ {2}^{(5)}  =& \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1 \right)  \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}} \\
+&+ \frac{3g^{2}m^{2}}{4\omega _ {p} }\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\left\lvert \vec{p}_ {1,2,3,-1-2},\vec{p}-\vec{p}_ {3} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}.
+\end{align*}
 $$
 
 - - -
@@ -914,7 +916,7 @@ where
 $$
 \begin{align*}
 C_ {3}=& \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}, \\
-C_ {1}=& m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{3m^{3}\delta g^{2}}{2\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} +\delta m^{4}_ {1}\left( -\frac{1}{8\sqrt{2}gm}-\frac{3m^{2}\delta g^{2}}{2\sqrt{2}g^{4}} \right)+\frac{m\delta m^{6}_ {1}}{4\sqrt{2}g^{3}}+ \frac{3m^{2}\delta m^{8}_ {1}}{8\sqrt{2}g^{5}},\\
+C_ {1}=& m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{m^{3}\delta g^{2}}{\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} -\frac{\delta m_ {1}^{4}}{8\sqrt{2}gm},\\
 C_ {0}=& A_ {5}.
 \end{align*}
 $$
@@ -1212,7 +1214,7 @@ H_ {5}^{(-3)}=& C_ {5,3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}\, \frac{1}{2\omega
 \end{align*}
 $$
 
-where $C_ {5,i}$ are some combinations of counter terms, whose value will be given later.
+where $C_ {5,i}$ are some combinations of counter terms whose value will be fixed later.
 ## Vacuum states corrections
 
 The corrections to vacuum states:
@@ -1241,8 +1243,8 @@ $$
 \left\lvert \vec{p} \right\rangle_ {1}^{(2)} =&   \frac{3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\,   \frac{\left\lvert \vec{p}_ {1},\vec{p} -\vec{p}_ {1} \right\rangle^{(2)}_ {0}}{\omega_ {p_ {1}}+\omega_ {p-p_ {1}}-\omega_ {p}} , \\
 \left\lvert \vec{p} \right\rangle_ {1}^{(4)} =& \frac{mg}{\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}}  \, \frac{\left\lvert \vec{p} \, \vec{p}_ {1,2,-1-2} \right\rangle_ {0}^{(4)}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}, \\
 \left\lvert \vec{p} \right\rangle_ {2}^{(7)} =& \frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4}}, \\
-\left\lvert \vec{p}\right\rangle_ {2}^{(5)}  =& \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{\frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}}\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} 
-+ \frac{3m^{2}\left\lvert \vec{p}_ {1,2,-1-2,-3},\vec{p}+\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}\right),\\
+\left\lvert \vec{p}\right\rangle_ {2}^{(5)}  =& \frac{g^{2}}{4}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left( \frac{9m^{2}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}-1 \right)  \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3}} \\
+&+ \frac{3g^{2}m^{2}}{4\omega _ {p} }\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\left\lvert \vec{p}_ {1,2,3,-1-2},\vec{p}-\vec{p}_ {3} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {3}+\omega_ {p+p_ {3}}-\omega_ {p})}.\\
 \left\lvert \vec{p} \right\rangle_ {2}^{(3)} =& \frac{g^{2}}{4\omega _ {p} }\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \left( -2+\frac{9m^{2}}{\omega_ {1+2}}\left( \frac{1}{-\omega _ {p} +\omega_ {p-p_ {1}-p_ {2}}+\omega_ {1+2}} + \frac{1}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}} \right) \right)\\
 &\times \frac{\left\lvert \vec{p}_ {1,2},\vec{p}-\vec{p}_ {1}-\vec{p}_ {2} \right\rangle_ {0}}{-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}}} 
 \end{align*}

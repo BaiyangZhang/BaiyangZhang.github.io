@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Another Version of Diagrammatic Rules for Jarah Diagrams
+title: Diagrammatic Rules for Jarah Diagrams
 date: 2024-09-18
 author: Baiyang Zhang
 catalog: true
@@ -15,7 +15,9 @@ The rules are shown in the figures below. The numbers label the momentum, for ex
 In the following rules, some factors (such as a factor of 3) is perhaps better treated as symmetry factors, but for practical purpose I treat them as part of the definition of the the vertices.
 
 I note that the diagrams I have are used to calculate quantities such as $H_ {3}\left\lvert \vec{p} \right\rangle_ {1},H_ {4}\left\lvert \Omega \right\rangle_ {2}$ only, in order to obtain the final **state** we need to further invert some operators. The inversion is quite straightforward though.
-# Rules for $H_ {3}^{(-)}$
+
+# Rules for Hamiltonians
+## Rules for $H_ {3}^{(-)}$
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -26,17 +28,37 @@ I note that the diagrams I have are used to calculate quantities such as $H_ {3}
     Rules for various components of $H_3$. I regard them as vertices. The meaning of graphical elements are explain later.
 </div>
 
-
-# Rules for $H_ {4}^{(-)}$
+## Rules for $H_ {4}^{(-)}$
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kink/H4Rules.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+        {% include figure.liquid path="/img/kink/H5Rules.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
     </div>
 </div>
 <div class="caption">
-    Rules for various components of $H_4$. 
+    Rules for various components of $H_5$. The coefficients $C_ {5,3}$ and $C_ {5,1}$ are made of counter terms. In specific we have $C_ {3}= \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}$ and $C_ {1}= m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{m^{3}\delta g^{2}}{\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} -\frac{\delta m_ {1}^{4}}{8\sqrt{2}gm}$.
 </div>
+
+## Rules for $H_ {5}^{(-)}$
+
+
+
+
+```python
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/movingWall.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/Rosa.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
+</div>
+
+```
+
 
 # Diagrams for States at Leading Order
 

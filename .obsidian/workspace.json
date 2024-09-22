@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,6 +38,18 @@
               "type": "markdown",
               "state": {
                 "file": "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "075d2b284501b886",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md"
               }
             }
           },
@@ -195,13 +207,15 @@
   },
   "active": "b6f5857e802ea8ee",
   "lastOpenFiles": [
-    "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+    "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
+    "img/kink/H5Rules.png",
     "Untitled.md",
     "Pasted image 20240920112930.png",
     "Pasted image 20240920111614.png",
     "Pasted image 20240920104058.png",
-    "_posts/2024-09-18-Another-Version-of-Rules-for-Jarah-Diagrams.md",
     "img/kink/jarahRules.png",
     "img/kink/example.png",
     "img/kink/LOStates.png",
@@ -229,7 +243,6 @@
     "img/kink/p63.png",
     "Untitled 1.md",
     "_posts/2024-07-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "img/kink/jarahDiagram.png",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
     "img/resurgence",
