@@ -50,7 +50,9 @@ I note that the diagrams I have are used to calculate quantities such as $H_ {3}
     A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
 </div>
 
-# Diagrams for States at Leading Order
+# Diagrams for States Order
+
+## Leading Order
 
 At leading order there is one vacuum state correction and two momentum eigenstate corrections, their diagrammatic expressions are given in the figure below. 
 
@@ -61,6 +63,19 @@ At leading order there is one vacuum state correction and two momentum eigenstat
 </div>
 <div class="caption">
 States at leading order. The first panel gives the leading order correction to the vacuum state, while the second and third panel gives the leading order correction to momentum states.
+</div>
+
+## Next Leading Order
+
+The fundamental diagrams for $\left\lvert \vec{p} \right\rangle_ {2}^{(-)}$ are shown in the below.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/p2Fundamental.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    Fundamental diagrams of $g^2$ corrections to $\left\lvert \vec{p} \right\rangle_ {2}^{(-)}$ States. By fundamental I mean the diagrams directly built up block-by-block by Hamiltonians and lower order states. Fundamental diagrams are good for study the cancelation between loops and counter terms. After the renormalization procedure is done, based on the number of extarnal legs, the fundamental diagrams can ben summed over to give more concise, summarized diagrams. 
 </div>
 
 # Feynman-like Rules
