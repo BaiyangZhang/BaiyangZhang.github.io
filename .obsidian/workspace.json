@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "075d2b284501b886",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "b6f5857e802ea8ee",
             "type": "leaf",
             "state": {
@@ -42,20 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "075d2b284501b886",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -207,10 +208,10 @@
   },
   "active": "b6f5857e802ea8ee",
   "lastOpenFiles": [
-    "img/kink/p2Fundamental.png",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+    "img/kink/p2Fundamental.png",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "img/kink/H5Rules.png",
     "Untitled.md",
@@ -241,7 +242,6 @@
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
     "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
     "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
-    "img/kink/p63.png",
     "Untitled 1.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
