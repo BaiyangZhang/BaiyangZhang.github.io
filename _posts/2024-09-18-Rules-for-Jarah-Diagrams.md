@@ -83,7 +83,7 @@ Let's number the diagrams left to right, top to bottom. The contributions are
 $$
 \begin{align*}
 (1) :\;&  H_ {4}^{(4)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} ,  \\
-(2) :\;&  H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {1}^{(2)} = \frac{3g^{2}m^{2}}{4\omega_ {p}}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\left\lvert \vec{p}-\vec{p}_ {1}, \vec{p}_ {1,2,3,-2-3} \right\rangle_ {0}}{\omega _ {p}-\omega_ {1}-\omega_ {p-p_ {1}}} , \\
+(2) :\;&  H_ {3}^{(3)} \left\lvert \vec{p} \right\rangle_ {1}^{(2)} = \frac{3g^{2}m^{2}}{4\omega_ {p}}\int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{\left\lvert \vec{p}-\vec{p}_ {3}, \vec{p}_ {1,2,3,-1-2} \right\rangle_ {0}}{\omega _ {p}-\omega_ {3}-\omega_ {p-p_ {3}}} , \\
 (3) :\;&  H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} = -\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}, \\
 (4) :\;&  H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {1}^{(4)} \supset - \frac{3g^{2}m^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{3\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}   ,   \\
 (5) :\;& H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} = - \frac{9g^{2}m^{2}}{4\omega_ {p}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}-\vec{p}_ {1}-\vec{p}_ {2},\vec{p}_ {1,2} \right\rangle_ {0}}{\omega_ {1+2}(-\omega _ {p} +\omega_ {p-p_ {1}-p_ {2}}+\omega_ {1+2})} ,   \\
@@ -97,6 +97,25 @@ $$
 \end{align*}
 $$
 
+But in order to turn them into diagrammatic rules, we need to convert them into components of $\left\lvert \vec{p} \right\rangle_ {2}$, eliminate the integral measures and deal with the creation operators. Hence, a**s diagrammatic rules we get**:
+
+
+$$
+\begin{align*}
+(1) :\;&  H_ {4}^{(4)} \left\lvert \vec{p} \right\rangle_ {0}^{(1)} = \frac{g^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0} ,  \\
+(2) :\; &\frac{3g^{2}m^{2}}{4\omega_ {p}} \frac{1}{(-\omega _ {p}+\omega_ {3}+\omega_ {p-p_ {3}})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega_ {p-p_ {3}})} , \\
+(3) :\;&  H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} = -\frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {1+2}}, \\
+(4) :\;&  H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {1}^{(4)} \supset - \frac{3g^{2}m^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{3\left\lvert \vec{p},\vec{p}_ {1,2,3,-1-2-3} \right\rangle_ {0}}{\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})}   ,   \\
+(5) :\;&  \frac{9g^{2}m^{2}}{4\omega_ {p}}\frac{1}{\omega_ {1+2}(-\omega _ {p} +\omega_ {p-p_ {1}-p_ {2}}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}})} ,   \\
+(6) :\;&  H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} \supset - \frac{3g^{2}m^{2}}{4} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \, \frac{\left\lvert \vec{p}_ {1,2,3,-1-2},\vec{p}-\vec{p}_ {3} \right\rangle_ {0}}{\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} ,    \\
+(7) :\;&  H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} = -\frac{9g^{2}m^{2}}{8\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{\left\lvert \vec{p} \right\rangle_ {0}}{\omega_ {1}\omega_ {p+p_ {1}}(-\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})},  \\
+(8) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} \supset  - \frac{9m^{2}g^{2}}{4\omega _ {p} } \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}-\vec{p}_ {1}-\vec{p}_ {2},\vec{p}_ {1,2}  \right\rangle_ {0}}{\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}  \\
+(9) :\;&  H_ {3}^{(-3)}\left\lvert p \right\rangle_ {1}^{(4)} \supset - \frac{3}{8}g^{2}m^{2}\left\lvert \vec{p} \right\rangle_ {0}\int d^{3}x \,   \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} \\
+(10) :\;& - H_ {3}^{(-3)}\left\lvert p \right\rangle_ {1}^{(4)} \supset  \frac{9g^{2}m^{2}\left\lvert \vec{p} \right\rangle_ {0}}{8\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}\omega_ {p+p_ {1}}(\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})} \\
+(11) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} \supset - \frac{9m^{2}g^{2}}{4} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,-1} \right\rangle_ {0}}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}   \\
+(12) :\;&  H_ {4}^{(0)}\left\lvert p \right\rangle_ {0}^{(1)} \supset \int d^{3}x \,  A_ {4}'  
+\end{align*}
+$$
 # Feynman-like Rules
 
 With above ingredients we may introduce the rules to connect them now.
@@ -138,3 +157,26 @@ For example, say we want to calculate $H_ {4}^{(2)}\left\lvert \Omega\right\rang
     Here is an example of how to calculate $H_ 3^{(-3)}\lvert\Omega\rangle_ 1^{(3)}$. Here the first factor $6$ comes from the 6 different ways to connect the circles. The top two circles are fully labeled, the buttom one has no label at all, thus there is no independent momentum to ballance against the circle. It contributes the spatial integral in the final expression. Since all the vertices preserve the momenta, and the top to propogators are labeled with $p_ 1$ and $p_ 2$, the last line is fixed to be $-p_ 1-p_ 2$. It is not common to encounter an irregular propagator. There is no external leg on the left-most of the diagram, hence we assign $\left\lvert \Omega \right\rangle_ {0}$ to it.
 </div>
 
+# 3rd Order States
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/3rdOrderReducible.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    The blob stands for all divergent diagrams. These three are the divergent contributions to $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$,  in the sense that they can be amputated by cutting an external leg.
+</div>
+
+For the reducible diagrams we have 
+
+$$
+\begin{align*}
+H_ {4}^{(0)} \left\lvert \vec{p} \right\rangle_ {1}^{(2)} =& - \frac{3m\delta m^{2}g}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{\left\lvert \vec{p}_ {1}, \vec{p}-\vec{p}_ {1} \right\rangle_ {0}}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})},\\
+H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(3)} =& - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p}  }\int \frac{d^{3}p_ {1}}{(2\pi^{3})} \,  \frac{\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle_ {0}}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ { p-p_ {1}})} \\
+&\times  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1+2}\omega_ {2}(-\omega _ {p} +\omega_ {1+2}+\omega_ {2}+\omega_ {p-p_ {1}})}, \\
+H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} &= - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}  \frac{\left\lvert \vec{p}_ {1}, \vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})} \\
+&\times  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {2}\omega_ {1+2}(-\omega _ {p} +2\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {p-p_ {1}})}
+\end{align*}
+$$
