@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -206,7 +205,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b6f5857e802ea8ee",
+  "active": "85934409c70af44e",
   "lastOpenFiles": [
     "img/kink/3rdOrderReducible.png",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",

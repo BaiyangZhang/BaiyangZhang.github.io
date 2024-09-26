@@ -180,3 +180,5 @@ H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)} &= - \frac{27m^{3}g^{3
 &\times  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {2}\omega_ {1+2}(-\omega _ {p} +2\omega_ {1}+\omega_ {2}+\omega_ {1+2}+\omega_ {p-p_ {1}})}
 \end{align*}
 $$
+
+
