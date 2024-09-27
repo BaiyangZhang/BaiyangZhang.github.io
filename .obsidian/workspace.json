@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md"
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md"
               }
             }
           },
@@ -205,11 +205,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "85934409c70af44e",
+  "active": "075d2b284501b886",
   "lastOpenFiles": [
-    "img/kink/3rdOrderReducible.png",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "img/kink/3rdOrderReducible.png",
     "img/kink/p2Fundamental.png",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
@@ -222,7 +222,6 @@
     "img/kink/example.png",
     "img/kink/LOStates.png",
     "img/kink/H4Rules.png",
-    "img/kink/H3Rules.png",
     "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "专家库管理制度报告.md",
