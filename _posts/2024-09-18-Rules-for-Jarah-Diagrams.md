@@ -190,6 +190,16 @@ $$
 
 - - -
 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/H3Minus3On2.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    The three diagrams given by $H_3^{(-1)}\times(2)$, where number $(2)$ means the panel (2) in the figure of the fundamental diagrams of $\left\lvert \vec{p} \right\rangle_ {2}$.
+</div>
+
 $$
 \begin{align*}
 (a) =& - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}}  \frac{\left\lvert \vec{p}_ {1}, \vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})} \\
@@ -201,14 +211,6 @@ $$
 \end{align*}
 $$
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/kink/H3Minus3On2.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
-    </div>
-</div>
-<div class="caption">
-    The three diagrams given by $H_3^(-1)(2)$, where number $(2)$ means the panel (2) in the figure of the fundamental diagrams of $\left\lvert \vec{p} \right\rangle_ {2}$.
-</div>
 
 - - -
 
