@@ -209,3 +209,6 @@ $$
 <div class="caption">
     The three diagrams given by $H_3^(-1)(2)$, where number $(2)$ means the panel (2) in the figure of the fundamental diagrams of $\left\lvert \vec{p} \right\rangle_ {2}$.
 </div>
+
+- - -
+
