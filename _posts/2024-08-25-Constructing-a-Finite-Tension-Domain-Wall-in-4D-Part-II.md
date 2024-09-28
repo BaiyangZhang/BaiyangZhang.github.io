@@ -1132,7 +1132,9 @@ $$
 
 #### $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$
 
-we have 
+
+
+In summary, we have 
 
 $$
 \begin{align*}
