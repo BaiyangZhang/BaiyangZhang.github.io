@@ -790,10 +790,10 @@ $$
 (\omega_ {p}-H_ {2})\left\lvert p \right\rangle_ {2} = H_ {4} \left\lvert \vec{p} \right\rangle_ {0} +H_ {3}\left\lvert p \right\rangle_ {1} .
 $$
 
-Again we start from the highest meson number and go downwards. The highest possible particle number comes from $H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}$, which is simple since there is only creation operator. I'll directly put the final result:
+Again we start from the highest meson number and go downwards. The highest possible particle number comes from $H_ {3}^{(3)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}$, which is simple since there only exists creation operators. It reads:
 
 $$
-\left\lvert \vec{p} \right\rangle_ {2}^{(7)} = \frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle_ {0}}{\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {4}+\omega_ {1+2}+\omega_ {3+4}}.
+\left\lvert \vec{p} \right\rangle_ {2}^{(7)} = \frac{m^{2}g^{2}}{2} \int \frac{d^{3}p_ {1,2,3,4}}{(2\pi)^{12}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,2,3,4,-1-2,-3-4} \right\rangle_ {0}}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_  {1}+\omega_ {2}+\omega_  {3}+\omega_  {4}+\omega_ {1+2}+\omega_ {3+4})}.
 $$
 
 - - -
@@ -874,12 +874,12 @@ $$
 \begin{align*}
 H_ {4}^{(0)}\left\lvert p \right\rangle_ {0}^{(1)} =& A_ {4}'\int d^{3}x \,  \left\lvert \vec{p} \right\rangle_ {0} - \frac{\delta m^{2}}{2\omega _ {p} }\left\lvert \vec{p} \right\rangle_ {0},\\
 H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} =& -\frac{9g^{2}m^{2}}{8\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{\left\lvert \vec{p} \right\rangle_ {0}}{\omega_ {1}\omega_ {p+p_ {1}}(-\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})},\\
-H_ {3}^{(-3)}\left\lvert p \right\rangle_ {1}^{(4)} =& - \frac{9g^{2}m^{2}\left\lvert \vec{p} \right\rangle_ {0}}{8\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}\omega_ {p+p_ {1}}(\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})}
-\\&- \frac{3}{8}g^{2}m^{2}\delta^{3}(0) \left\lvert \vec{p} \right\rangle_ {0} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}.
+H_ {3}^{(-3)}\left\lvert p \right\rangle_ {1}^{(4)} =& - \frac{9g^{2}m^{2}\left\lvert \vec{p} \right\rangle_ {0}}{8\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}\omega_ {p+p_ {1}}(\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})}\\
+&- \frac{3}{8}g^{2}m^{2}\delta^{3}(0) \left\lvert \vec{p} \right\rangle_ {0} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}.
 \end{align*}
 $$
 
-In the last term if we write $\delta^{3}(0)=\int d^{3}x$ then it cancels with the $A_ {4}'$ term. 
+In the last term if we write $(2\pi)^{3}\delta^{3}(0)=\int d^{3}x$ then it cancels with the $A_ {4}'$ term. 
 
 Another approach is to use
 
@@ -1124,11 +1124,17 @@ $$
 
 #### $\left\lvert \vec{p} \right\rangle_ {3}^{(4)}$
 
+We have 
 
+$$
+H_ {5}\left\lvert \vec{p} \right\rangle_ {0} = C_ {5,3}\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \left\lvert \vec{p},\vec{p}_ {1,2,-1-2} \right\rangle  + \frac{3C_ {5,3}}{2\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}-\vec{p}_ {f_ {1}},\vec{p}_ {1} \right\rangle + C_ {5,1} \left\lvert \vec{p},0 \right\rangle .
+$$
 
 #### $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$
 
-we have 
+
+
+In summary, we have 
 
 $$
 \begin{align*}
