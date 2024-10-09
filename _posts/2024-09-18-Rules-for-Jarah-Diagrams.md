@@ -46,7 +46,7 @@ I note that the diagrams I have are used to calculate quantities such as $H_ {3}
     </div>
 </div>
 <div class="caption">
-    ules for various components of $H_5$. The coefficients $C_ {5,3}$ and $C_ {5,1}$ are made of counter terms. In specific we have $C_ {3}= \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}$ and $C_ {1}= m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{m^{3}\delta g^{2}}{\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} -\frac{\delta m_ {1}^{4}}{8\sqrt{2}gm}$.
+    Rules for various components of $H_5$. The coefficients $C_ {5,3}$ and $C_ {5,1}$ are made of counter terms. In specific we have $C_ {3}= \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}$ and $C_ {1}= m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{m^{3}\delta g^{2}}{\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} -\frac{\delta m_ {1}^{4}}{8\sqrt{2}gm}$.
 </div>
 
 # Diagrams for States
@@ -74,7 +74,7 @@ The fundamental diagrams for $\left\lvert \vec{p} \right\rangle_ {2}^{(-)}$ are 
     </div>
 </div>
 <div class="caption">
-    Fundamental diagrams of $g^2$ corrections to $\left\lvert \vec{p} \right\rangle_ {2}^{(-)}$ States. By fundamental I mean the diagrams directly built up block-by-block by Hamiltonians and lower order states. Fundamental diagrams are good for study the cancelation between loops and counter terms. After the renormalization procedure is done, based on the number of extarnal legs, the fundamental diagrams can ben summed over to give more concise, summarized diagrams. 
+    Fig.(5). Fundamental diagrams of $g^2$ corrections to $\left\lvert \vec{p} \right\rangle_ {2}^{(-)}$ States. By fundamental I mean the diagrams directly built up block-by-block by Hamiltonians and lower order states. Fundamental diagrams are good for study the cancelation between loops and counter terms. After the renormalization procedure is done, based on the number of extarnal legs, the fundamental diagrams can ben summed over to give more concise, summarized diagrams. 
 </div>
 
 
@@ -119,6 +119,16 @@ $$
 
 
 ## 3rd Order States
+
+Let's start with momentum states. 
+
+### $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$
+
+$H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$:
+
+It include two contributions: $H_ {3}^{(-3)}$ acting on panel (4) and panel (6) from figure (5). Let's denote them by $H_ {3}^{(-3)}\cdot(4)$ and $H_ {3}^{(-3)}\cdot(6)$ respectively. We have 
+
+
 
 
 

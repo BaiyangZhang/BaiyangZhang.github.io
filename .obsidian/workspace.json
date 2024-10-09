@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md"
+                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md"
               }
             }
           },
@@ -208,9 +208,10 @@
   },
   "active": "b6f5857e802ea8ee",
   "lastOpenFiles": [
+    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+    "img/kink/H3Minus3On4.png",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/kink/H3Minus3On2.png",
-    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "img/kink/3rdOrderReducible.png",
     "img/kink/p2Fundamental.png",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
@@ -222,7 +223,6 @@
     "Pasted image 20240920104058.png",
     "img/kink/jarahRules.png",
     "img/kink/example.png",
-    "img/kink/LOStates.png",
     "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "专家库管理制度报告.md",
