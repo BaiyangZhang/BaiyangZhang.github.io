@@ -126,11 +126,46 @@ Let's start with momentum states.
 
 $H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$:
 
-It include two contributions: $H_ {3}^{(-3)}$ acting on panel (4) and panel (6) from figure (5). Let's denote them by $H_ {3}^{(-3)}\cdot(4)$ and $H_ {3}^{(-3)}\cdot(6)$ respectively. We have 
+It include two contributions: $H_ {3}^{(-3)}$ acting on panel (4) and panel (6) from figure (5). Let's denote them by $H_ {3}^{(-3)}\cdot(4)$ and $H_ {3}^{(-3)}\cdot(6)$ respectively. Regarding the former we have 
+
+$$
+\begin{align*}
+(a) =& - \frac{81m^{3}g^{3}}{8\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3} p_ {2}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega^{2}_ {1+2}} \\
+&\times \frac{1}{(\omega_ {1}+\omega_ {1+2}+\omega_ {2p_ {1}+2})(\omega_ {1}+\omega_ {1+2}+\omega_ {3}+\omega_ {2p_ {1}+2})},\\
+(b) =& - \frac{81m^{3} g^{3}}{16\sqrt{2}} \int  \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega _ {p} \omega^{2}_ {p-2}}  \\
+&\times  \frac{1}{(\omega_ {1}+\omega_ {2-p}+\omega_ {1+2-p})(\omega_ {1}+\omega_ {2}+\omega _ {p} +\omega_ {1+2-p})}, \\
+(c) &= - \frac{27m^{3}g^{3}}{16\sqrt{2}} \int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega_ {2+3}} \\
+&\times  \frac{1}{\omega_ {1+2}(\omega_ {3}+\omega_ {1+2}+\omega_ {1+2+3})(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3})}.
+\end{align*}
+$$
+
+Regarding the latter we have 
+
+$$
+\begin{align*}
+(d) =&  - \frac{3m^{3}g^{3}\left\lvert \vec{p},0 \right\rangle}{4\sqrt{2}} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}     \\
+&\times  \frac{1}{(-\omega _ {p} +\omega_ {1}+\omega_ {2}+2\omega_ {1+2}+\omega_ {p-p_ {1}-p_ {2}})},\\
+(e) =&  - \frac{9m^{3}g^{3}}{4\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega^{2} _ {p} } \\
+&\times  \frac{1}{ (\omega_ {2}+\omega_ {3}+\omega_ {2+3})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {2+3}+\omega_ {p-p_ {1}})} ,\\
+(f) =&   - \frac{9m^{3}g^{3}}{4\sqrt{2}} \int \frac{d ^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega _ {p} ^{2}} \\
+& \times  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega _ {p-p_ {3}} )} .\\
+\end{align*}
+$$\
+
+The diagrams are shown below. 
 
 
+```python
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/H3Minus3OnP25.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    The diagrams of $H_3^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$.
+</div>
 
-
+```
 
 
 # Feynman-like Rules

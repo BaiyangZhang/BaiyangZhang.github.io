@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md"
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md"
               }
             }
           },
@@ -206,11 +205,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b6f5857e802ea8ee",
+  "active": "075d2b284501b886",
   "lastOpenFiles": [
+    "img/kink/H3Minus3OnP25.png",
+    "_posts/2024-10-11-Asymptotic-Methods-Applied-on-Anharmonic-Oscillator.md",
+    "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
+    "_posts/2022-9-2-The-Lie-Derivative.md",
+    "_posts/2022-12-26-Basics-of-Distributions.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "img/kink/H3Minus3On4.png",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/kink/H3Minus3On2.png",
     "img/kink/3rdOrderReducible.png",
     "img/kink/p2Fundamental.png",
@@ -238,11 +243,6 @@
     "_drafts/2023-05-07-soliton-particle-duality.md",
     "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
-    "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
-    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
-    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
-    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
-    "Untitled 1.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
     "img/resurgence",

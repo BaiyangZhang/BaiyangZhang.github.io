@@ -257,7 +257,7 @@ $$
 \frac{dy}{dx} = a+by \implies \frac{dy}{a+by}=dx\implies y=\frac{1}{b}(e^{ b(x+c) }-a),
 $$
 
-which does look very promising. Then Tsallis considered a non-linear generalization:
+which does not look very promising. Then Tsallis considered a non-linear generalization:
 
 $$
 \frac{dy}{dx} = y^{q}, \quad  q\in \mathbb{R},\quad y(0)=1.

@@ -13,7 +13,19 @@ tags:								#标签
     - measureTheory
 ---
 
-## Preliminaries
+- [1. Preliminaries](#1-preliminaries)
+- [2. Distributions](#2-distributions)
+	- [2.1. Functions that can not be evaluated](#21-functions-that-can-not-be-evaluated)
+	- [2.2. What are distributions?](#22-what-are-distributions)
+	- [2.3. Test functions and distributions](#23-test-functions-and-distributions)
+- [3. Differentiation](#3-differentiation)
+	- [3.1. Convergence in $D^{\ast}$](#31-convergence-in-d%5E%5Cast)
+- [4. Convolution](#4-convolution)
+	- [4.1. Fourier Series](#41-fourier-series)
+- [5. Fourier Transform of Tempered Distribution](#5-fourier-transform-of-tempered-distribution)
+- [6. Laplace Transform](#6-laplace-transform)
+
+# 1. Preliminaries
 
 Let $X$ be a metric space, and $(x _ {n})$ be a sequence of points in $X$. We say that $(x_ {n})$ is a `Cauchy sequence` if for all $\epsilon$, there exists $N\in\mathbb{N}^{+}$ so that for any $i,j>N$ we have $d(x_{i},x_{j})<\epsilon$, where $d(x,y)$ is the distance between $x$ and $y$ given by the measure.
 
@@ -81,9 +93,9 @@ In other words, if two function only differ on $\mu$-negligible sets, then they 
 
 
 
-## Distributions
+# 2. Distributions
 
-### Functions that can not be evaluated
+## 2.1. Functions that can not be evaluated
 
 Classically, function are defined set-theoretically, I quote from Wiki:
 
@@ -109,7 +121,7 @@ is usually the functional space we are interested in. It reflects the spirit tha
 
 Having that in mind, let us move to distributions.
 
-### What are distributions?
+## 2.2. What are distributions?
 
 Distribution is some physics books are also called "singular functions" or "generalized function", the latter was used a lot by Russian mathematicians. Consider probably the most famous example of distribution for physicist, the Dirac $\delta$ function (defined on $\mathbb{R}$):
 
@@ -165,7 +177,7 @@ Why should we care? Because distribution theory provides simple yet rigorous jus
 
 - - -
 
-### Test functions and distributions
+## 2.3. Test functions and distributions
 
 In the theory of distributions $C_{c}^{\infty}(\mathbb{R})$ is usually denoted by $\mathcal{D}$ for simplicity. The elements of $\mathcal{D}$ are called `test functions`.
 
@@ -319,7 +331,7 @@ $$
 
 - - -
 
-## Differentiation
+# 3. Differentiation
 
 A function being locally integrable doesn't guarantee that it is differentiable at all points, sometimes it is not differentiable at all. On the contrary, a distribution is always differentiable by construction, and its derivative is a distribution. 
 
@@ -828,7 +840,7 @@ b. The finite part of a divergent integral is the analytical continuation of an 
 These properties are satisfies if non of the $\lambda_{i}$s are equal to $1$.
 
 
-## Convergence in $D^{\ast}$
+## 3.1. Convergence in $D^{\ast}$
 
 A distribution $T_{\lambda}$ is said to converge to $T_{\lambda_{0}}$ in $D^{\ast}$ if for any test functions $\phi$ in $D$ we have 
 
@@ -868,7 +880,7 @@ defines a sequence of distributions $T_{f_{n}}$, called the `Dirac sequence asso
 
 The proof is very simple thus skipped here. 
 
-## Convolution
+# 4. Convolution
 
 Convolution plays an essential rule in the theory of distribution. Many types of differential equations or integral equations are convolution equations. In the following we sometimes attach the variable as subscripts to avoid confusion, for example, if we need to specify that the variable is $x$, we shall denote $\mathcal{D}_{x}$ the usual space of test function.
 
@@ -1005,7 +1017,7 @@ We state without proof the theorem,
 **Theorem.** The space $\mathcal{D}$ regarded as a subset of $\mathcal{D}^{\ast}$ is `dense` in $\mathcal{D}^{\ast}$.
 
 
-## Fourier Series
+## 4.1. Fourier Series
 
 A distribution $T$ is said to be `periodic` if there exists a real number $a$, called the period of $T$, such that the translation of $T$ is the same as $T$, $\tau_{a} T = T$.
 
@@ -1037,7 +1049,7 @@ For example, the Fourier coefficient of $\delta$ is simply $1 / a$.
 
 After everything we have said about convolution of distributions, a natural question to ask is, what is the Fourier coefficients of the convolution of two distribution. A straight computation shows that i**t is equal to $a$ times the product of the corresponding Fourier coefficients of the two distributions.**
 
-## Fourier Transform of Tempered Distribution
+# 5. Fourier Transform of Tempered Distribution
 
 Recall that the` Fourier transform` of a function is 
 
@@ -1274,7 +1286,7 @@ $$
 \mathcal{F}\theta = \left.\frac{1}{ik}\right\rvert_{k>0} + \pi \delta.
 $$
 
-## Laplace Transform
+# 6. Laplace Transform
 
 Given a function $f$ whose support is in $\mathbb{R}^{+}$, the Laplace transform of $f$ is given by 
 
