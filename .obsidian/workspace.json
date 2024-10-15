@@ -20,24 +20,12 @@
             }
           },
           {
-            "id": "cbe95294f5668551",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b6f5857e802ea8ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
                 "mode": "source",
                 "source": false
               }
@@ -218,11 +206,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cbe95294f5668551",
+  "active": "b6f5857e802ea8ee",
   "lastOpenFiles": [
-    "img/kink/H40OnP12.png",
+    "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
+    "img/kink/H3Minus1OnP23.png",
+    "img/kink/H40OnP12.png",
     "img/kink/p2FundamentalDiagrams.png",
     "img/kink/H3Minus3OnP25.png",
     "_posts/2024-10-11-Asymptotic-Methods-Applied-on-Anharmonic-Oscillator.md",
@@ -230,7 +220,6 @@
     "_posts/2022-9-2-The-Lie-Derivative.md",
     "_posts/2022-12-26-Basics-of-Distributions.md",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_posts/2024-05-28-Tsallis-Statistics-in-Logistic-Regression.md",
     "img/kink/H3Minus3On4.png",
     "img/kink/H3Minus3On2.png",
     "img/kink/3rdOrderReducible.png",
@@ -239,8 +228,6 @@
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "img/kink/H5Rules.png",
     "Pasted image 20240920112930.png",
-    "Pasted image 20240920111614.png",
-    "Pasted image 20240920104058.png",
     "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "专家库管理制度报告.md",

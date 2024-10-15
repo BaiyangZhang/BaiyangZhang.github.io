@@ -17,7 +17,7 @@ tags:
     </div>
 </div>
 <div class="caption">
-    Fig.1. Rules for various components of $H_3$. I regard them as vertices. The meaning of graphical elements are explain later.
+    Fig 1. Rules for various components of $H_3$. I regard them as vertices. The meaning of graphical elements are explain later.
 </div>
 
 ## Rules for $H_ {4}^{(-)}$
@@ -28,7 +28,7 @@ tags:
     </div>
 </div>
 <div class="caption">
-    Fig.2. Rules for various components of $H_4$. 
+    Fig 2. Rules for various components of $H_4$. 
 </div>
 ## Rules for $H_ {5}^{(-)}$
 
@@ -38,7 +38,7 @@ tags:
     </div>
 </div>
 <div class="caption">
-    Fig.3. Rules for various components of $H_5$. The coefficients $C_ {5,3}$ and $C_ {5,1}$ are made of counter terms. In specific we have $C_ {3}= \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}$ and $C_ {1}= m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{m^{3}\delta g^{2}}{\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} -\frac{\delta m_ {1}^{4}}{8\sqrt{2}gm}$.
+    Fig 3. Rules for various components of $H_5$. The coefficients $C_ {5,3}$ and $C_ {5,1}$ are made of counter terms. In specific we have $C_ {3}= \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}$ and $C_ {1}= m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{m^{3}\delta g^{2}}{\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} -\frac{\delta m_ {1}^{4}}{8\sqrt{2}gm}$.
 </div>
 
 # Diagrams for States
@@ -53,7 +53,7 @@ At leading order there is one vacuum state correction and two momentum eigenstat
     </div>
 </div>
 <div class="caption">
-Fig.4. States at leading order. The first panel gives the leading order correction to the vacuum state, while the second and third panel gives the leading order correction to momentum states.
+Fig 4. States at leading order. The first panel gives the leading order correction to the vacuum state, while the second and third panel gives the leading order correction to momentum states.
 </div>
 
 ## Next Leading Order
@@ -66,7 +66,7 @@ The fundamental diagrams for $\left\lvert \vec{p} \right\rangle_ {2}^{(-)}$ are 
     </div>
 </div>
 <div class="caption">
-    Fig. 5. Fundamental diagrams of $g^2$ corrections to $\left\lvert \vec{p} \right\rangle_ {2}^{(-)}$ States. By fundamental I mean the diagrams directly built up block-by-block by Hamiltonians and lower order states. Fundamental diagrams are good for study the cancelation between loops and counter terms. After the renormalization procedure is done, based on the number of extarnal legs, the fundamental diagrams can ben summed over to give more concise, summarized diagrams. 
+    Fig 5. Fundamental diagrams of $g^2$ corrections to $\left\lvert \vec{p} \right\rangle_ {2}^{(-)}$ States. By fundamental I mean the diagrams directly built up block-by-block by Hamiltonians and lower order states. Fundamental diagrams are good for study the cancelation between loops and counter terms. After the renormalization procedure is done, based on the number of extarnal legs, the fundamental diagrams can ben summed over to give more concise, summarized diagrams. 
 </div>
 
 
@@ -97,7 +97,7 @@ But in order to turn them into diagrammatic rules, we need to inverse $(\omega _
     </div>
 </div>
 <div class="caption">
-   Diagrams for contributing $\mathcal{O}(g^2)$ diagrams as vertices. 
+   Fig 6. Diagrams for contributing $\mathcal{O}(g^2)$ diagrams as vertices. 
 </div>
 
 **As diagrammatic rules we get**:
@@ -121,11 +121,9 @@ $$
 
 Let's start with momentum states. 
 
-### $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$
-
 $H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$:
 
-It include two contributions: $H_ {3}^{(-3)}$ acting on panel (4) and panel (6) from figure (5). Let's denote them by $H_ {3}^{(-3)}\cdot(4)$ and $H_ {3}^{(-3)}\cdot(6)$ respectively. Regarding the former we have 
+It include two contributions: $H_ {3}^{(-3)}$ acting on panel 4,6 from figure (6). Let's denote them by $H_ {3}^{(-3)}\cdot(4)$ and $H_ {3}^{(-3)}\cdot(6)$ respectively. Regarding the former we have 
 
 $$
 \begin{align*}
@@ -159,7 +157,7 @@ The diagrams are shown below.
     </div>
 </div>
 <div class="caption">
-    Fig. 6. The diagrams of $H_3^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$.
+    Figure 7. The diagrams of $H_3^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$.
 </div>
 
 - - -
@@ -174,7 +172,7 @@ The diagrams are shown below.
     </div>
 </div>
 <div class="caption">
-    Diagrams for $H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)}$.
+    Figure 8. Diagrams for $H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)}$.
 </div>
 
 Their contributions correspondingly are 
@@ -184,6 +182,35 @@ $$
 (g) =& \frac{9mg^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {p-2}(\omega _ {p} -\omega_ {2}-\omega_ {p-p_ {2}})} , \\
 (h) =& -\frac{\delta m^{2} 3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{\left\lvert \vec{p}_ {1}, \vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})},  \\
 (i) =& \frac{3A_ {4}'mg}{2\sqrt{2}\omega _ {p} }\int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle}{-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}}}.
+\end{align*}
+$$
+
+- - -
+
+### $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$
+
+$H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(3)}:$
+
+It includes three parts: $H_ {3}^{(-1)}$ acting on panel (5), (8) and (11) in figure 6. The figure are shown below.
+
+First of all, $H_ {3}^{(-1)}$ acting on panel (5). They correspond to panel (j) and (k) in figure 9 below.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/H3Minus1OnP23.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 9. The diagrams for $H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(3)}$. 
+</div>
+
+Their contributions are 
+
+$$
+\begin{align*}
+(j) =&  - \frac{27g^{3}m^{3}}{8\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1-2}}   \\
+& \times  \frac{1}{(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {1-2})}, \\
+(k) =& 
 \end{align*}
 $$
 
