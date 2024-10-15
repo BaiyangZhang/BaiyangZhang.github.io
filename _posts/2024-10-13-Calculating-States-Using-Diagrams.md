@@ -38,7 +38,7 @@ tags:
     </div>
 </div>
 <div class="caption">
-    Fig 3. Rules for various components of $H_5$. The coefficients $C_ {5,3}$ and $C_ {5,1}$ are made of counter terms. In specific we have $C_ {3}= \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}$ and $C_ {1}= m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{m^{3}\delta g^{2}}{\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} -\frac{\delta m_ {1}^{4}}{8\sqrt{2}gm}$.
+    Fig 3. Rules for various components of $H_5$. The coefficients $C_ {5,3}$ and $C_ {5,1}$ are made of counter terms. In specific we have $C_ {5,3}= \frac{m\delta g}{\sqrt{2}} +\frac{g \delta m_ {1}^{2}}{2\sqrt{2}m} - \frac{m^{2}\delta m_ {1}^{4}}{2\sqrt{2}g}$ and $C_ {5,1}= m^{2}\delta v_ {3}-\frac{3gm\mathcal{I}_ {1}}{\sqrt{2}}+\frac{m^{3}\delta g^{2}}{\sqrt{2}g^{3}}-\frac{m \delta g\delta m_ {1}^{2}}{2\sqrt{2}g^{2}} -\frac{\delta m_ {1}^{4}}{8\sqrt{2}gm}$.
 </div>
 
 # Diagrams for States
@@ -121,6 +121,9 @@ $$
 
 Let's start with momentum states. 
 
+### $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}:$
+
+
 $H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$:
 
 It include two contributions: $H_ {3}^{(-3)}$ acting on panel 4,6 from figure (6). Let's denote them by $H_ {3}^{(-3)}\cdot(4)$ and $H_ {3}^{(-3)}\cdot(6)$ respectively. Regarding the former we have 
@@ -187,8 +190,6 @@ $$
 
 - - -
 
-### $\left\lvert \vec{p} \right\rangle_ {3}^{(2)}$
-
 $H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(3)}:$
 
 It includes three parts: $H_ {3}^{(-1)}$ acting on panel (5), (8) and (11) in figure 6. The figure are shown below.
@@ -210,9 +211,35 @@ $$
 \begin{align*}
 (j) =&  - \frac{27g^{3}m^{3}}{8\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1-2}}   \\
 & \times  \frac{1}{(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {1-2})}, \\
-(k) =& 
+(k) =&  -\frac{27m^{3}g^{3}}{4\sqrt2\omega _ {p}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}\omega_ {p-p_ {1}-p_ {2}}}  \\
+&\times  \frac{1}{(-\omega _ {p} +\omega_ {p-p_ {1}-p_ {1}}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}})},
 \end{align*}
 $$
+
+Then we move on to $H_ {3}^{(-1)}$ acting on panel (8), given by panel (l) and (m) in figure 9. The contributions are 
+
+$$
+\begin{align*}
+(l) =& - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \,  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1-2}}  \\
+& \times  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1-2})(-\omega _ {p} +\omega_ {p-p_ {1}}+\omega_ {2}+\omega_ {1-2})},  \\
+(m) =& - \frac{27m^{3}g^{3}}{4\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}\omega_ {p-p_ {1}-p_ {2}}} \\
+& \times  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}})}.
+\end{align*}
+$$
+
+Then $H_ {3}^{(-1)}$ acting on panel (11),given by panel (n,o):
+
+$$
+\begin{align*}
+(n) =& - \frac{27m^{3}g^{3}}{16\sqrt{2}} \left\lvert \vec{p},0 \right\rangle \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{1}{\omega_ {1}^{3}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})},      \\
+(o) =&    - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle \frac{1}{\omega_ {1}^{2}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} .
+\end{align*}
+$$
+
+It looks weird that we have a $\left\lvert \vec{p}=0 \right\rangle$ state... it just pops out from the vacuum. Anyway, let's move on.
+
+- - -
+
 
 
 
