@@ -110,11 +110,9 @@ $$
 (4) :\;&  H_ {3}^{(1)} \left\lvert \vec{p} \right\rangle_ {1}^{(4)} :  \frac{9g^{2}m^{2}}{4\omega_ {2+3}(\omega_ {1}+\omega_ {2+3}+\omega_ {1+2+3})(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3})}   ,   \\
 (5) : \;& H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)} : \frac{9g^{2}m^{2}}{4\omega_ {p}}\frac{1}{\omega_ {1+2}(-\omega _ {p} +\omega_ {p-p_ {1}-p_ {2}}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}})} ,   \\
 (6) :\;&  H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} :  \frac{3g^{2}m^{2}}{4\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega_ {p-p_ {3}})}  ,    \\
-(8) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} \supset  - \frac{9m^{2}g^{2}}{4\omega _ {p} } \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p}-\vec{p}_ {1}-\vec{p}_ {2},\vec{p}_ {1,2}  \right\rangle_ {0}}{\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}  \\
-(9) :\;&  H_ {3}^{(-3)}\left\lvert p \right\rangle_ {1}^{(4)} \supset - \frac{3}{8}g^{2}m^{2}\left\lvert \vec{p} \right\rangle_ {0}\int d^{3}x \,   \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} \\
-(10) :\;& - H_ {3}^{(-3)}\left\lvert p \right\rangle_ {1}^{(4)} \supset  \frac{9g^{2}m^{2}\left\lvert \vec{p} \right\rangle_ {0}}{8\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}\omega_ {p+p_ {1}}(\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})} \\
-(11) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} \supset - \frac{9m^{2}g^{2}}{4} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,-1} \right\rangle_ {0}}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}   \\
-(12) :\;&  H_ {4}^{(0)}\left\lvert p \right\rangle_ {0}^{(1)} \supset \int d^{3}x \,  A_ {4}'  
+(8) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} 
+:  \frac{9m^{2}g^{2}}{4\omega _ {p} } \, \frac{1}{\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {p-p_ {1}-p_ {2}}+\omega_ {1}+\omega_ {2})},  \\
+(11) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(8)} : \frac{9m^{2}g^{2}}{8} \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} .
 \end{align*}
 $$
 
@@ -135,7 +133,7 @@ $$
 &\times \frac{1}{(\omega_ {1}+\omega_ {1+2}+\omega_ {2p_ {1}+2})(\omega_ {1}+\omega_ {1+2}+\omega_ {3}+\omega_ {2p_ {1}+2})},\\
 (b) =& - \frac{81m^{3} g^{3}}{16\sqrt{2}} \int  \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega _ {p} \omega^{2}_ {p-2}}  \\
 &\times  \frac{1}{(\omega_ {1}+\omega_ {2-p}+\omega_ {1+2-p})(\omega_ {1}+\omega_ {2}+\omega _ {p} +\omega_ {1+2-p})}, \\
-(c) &= - \frac{27m^{3}g^{3}}{16\sqrt{2}} \int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega_ {2+3}} \\
+(c) =& - \frac{27m^{3}g^{3}}{16\sqrt{2}} \int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega_ {2+3}} \\
 &\times  \frac{1}{\omega_ {1+2}(\omega_ {3}+\omega_ {1+2}+\omega_ {1+2+3})(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3})}.
 \end{align*}
 $$
@@ -149,7 +147,7 @@ $$
 (e) =&  - \frac{9m^{3}g^{3}}{4\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega^{2} _ {p} } \\
 &\times  \frac{1}{ (\omega_ {2}+\omega_ {3}+\omega_ {2+3})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {2+3}+\omega_ {p-p_ {1}})} ,\\
 (f) =&   - \frac{9m^{3}g^{3}}{4\sqrt{2}} \int \frac{d ^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega _ {p} ^{2}} \\
-& \times  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega _ {p-p_ {3}} )} .\\
+& \times  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega _ {p-p_ {3}} )} .
 \end{align*}
 $$\
 
@@ -164,8 +162,33 @@ The diagrams are shown below.
     Fig. 6. The diagrams of $H_3^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$.
 </div>
 
-
 - - -
+
+$H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)}:$
+
+The diagrams are shown below. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/H40OnP12.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    Diagrams for $H_ {4}^{(0)}\left\lvert \vec{p} \right\rangle_ {1}^{(2)}$.
+</div>
+
+Their contributions correspondingly are 
+
+$$
+\begin{align*}
+(g) =& \frac{9mg^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {p-2}(\omega _ {p} -\omega_ {2}-\omega_ {p-p_ {2}})} , \\
+(h) =& -\frac{\delta m^{2} 3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{\left\lvert \vec{p}_ {1}, \vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})},  \\
+(i) =& \frac{3A_ {4}'mg}{2\sqrt{2}\omega _ {p} }\int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle}{-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}}}.
+\end{align*}
+$$
+
+
+
 
 ### Reducible Diagrams
 
