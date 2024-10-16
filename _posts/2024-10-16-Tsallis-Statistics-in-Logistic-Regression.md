@@ -2,7 +2,7 @@
 layout: post
 title: Tsallis Statistics in Logistic Regression
 subtitle: 
-date: 2024-05-28
+date: 2024-10-16
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -646,28 +646,28 @@ where $(x_ i, y_ i)$ are the data points, and $\beta_ 0$ and $\beta_ 1$ are the 
 1. Gradient Calculation:
    - The gradient with respect to $\beta_ 0$ is:
 
-     $$
-     \frac{\partial f}{\partial \beta_ 0} = -\frac{1}{n} \sum_ {i=1}^n (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
-     $$
+$$
+\frac{\partial f}{\partial \beta_ 0} = -\frac{1}{n} \sum_ {i=1}^n (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
+$$
  
    - The gradient with respect to $\beta_ 1$ is:
 
-     $$
-     \frac{\partial f}{\partial \beta_ 1} = -\frac{1}{n} \sum_ {i=1}^n x_ i (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
-     $$
+$$
+\frac{\partial f}{\partial \beta_ 1} = -\frac{1}{n} \sum_ {i=1}^n x_ i (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
+$$
 
 2. Update Rules:
    - Update $\beta_ 0$:
 
-     $$
-     \beta_ 0^{(t+1)} = \beta_ 0^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 0}.
-     $$
+$$
+\beta_ 0^{(t+1)} = \beta_ 0^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 0}.
+$$
  
    - Update $\beta_ 1$:
 
-    $$
-     \beta_ 1^{(t+1)} = \beta_ 1^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 1}.
-    $$
+$$
+\beta_ 1^{(t+1)} = \beta_ 1^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 1}.
+$$
 
 - - -
 
@@ -951,23 +951,95 @@ X_ {i2} & X_ {i2}X_ {i1} & X_ {i2}^2 & \cdots & X_ {i2}X_ {ip} \\
 X_ {ip} & X_ {ip}X_ {i1} & X_ {ip}X_ {i2} & \cdots & X_ {ip}^2
 \end{bmatrix}. $$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 4.2 With Tsallis statistics
 
+We note that the potential for applying Tsallis entropy is immense, mostly for two reasons: 
+
+1. Tsallis statistics modifies logarithmic and exponential functions, and they are ubiquitous in logistic regression methods;
+2. Tsallis entropy can seamlessly generalize the familiar Shannon entropy, which is closely connected to the cross entropy loss function, which is exactly the loss functions we used in regression method.
+
+As a starter, we will focus on the generalization of sigmoid function, keeping other components unchanged. But first, let's repeat the definition for Tsallis-modified log and exponential functions, so-called $q$-log and $q$-exponentials, for future convenience:
+
+$$
+\begin{align*}
+\log_ {q} (x) := & \frac{x^{1-q}-1}{1-q}, \\
+\exp_ {q}(x) :=& (1+(1-q))^{1/(1-q)}.
+\end{align*}
+$$
+
+As you can check, at the limit $q\to 1$ they regress to normal log and exp functions. 
+
+The regular sigmoid function reads
+
+$$
+\sigma(z) = \frac{1}{1+e^{ -z }},
+$$
+
+we generalized it to $q$-sigmoid function by 
+
+$$
+\boxed{ 
+\sigma_ {q}(z) := \frac{1}{1+\exp_ {q}(-z)}.
+}
+$$
+
+To ensure that the range is $[0,1]$ for all $q$, we might need to modified it a little bit, for example multiply by a constant or do some cut-off. 
+
+The $q$-sigmoid function satisfy the following relation:
+
+$$
+\frac{ \partial \sigma_ {q}(z) }{ \partial z }  = \beta(q,z)\sigma_ {q}(z)(1-\sigma_ {q}(z))
+$$
+
+where 
+
+$$
+\beta(q,z) = \frac{1}{1-z(1-q)}.
+$$
+
+This should be compared to the case of regular sigmoid function:
+
+$$
+\frac{ \partial \sigma(z) }{ \partial z }  = \sigma(z) (1-\sigma(z)).
+$$
+
+Everything else is the same as regular logistic regression method, without penalty terms. 
+
+The cross entropy loss function now reads
+
+$$
+\boxed{ 
+\xi= - \sum_ {i=1}^{n}(y_ {i}\log(\sigma _ {q_ {i} }))+(1-y_ {i})\log(1-\sigma_ {q_ {i} }).
+}
+$$
+
+here $q_ {i}$ is different for each sample, but for starters we can set it constant for all samples, varying close to $1$, for example from -0.8 to 1.2 or something. 
+
+We will use the gradient method to find the minimum value for parameters that minimized the loss function. Let $\theta$ be the vector of parameters,
+
+$$
+\hat{\theta} = \text{argmax}_ {\theta} \left\lbrace \xi(y,\sigma_ {q}(z)) \right\rbrace 
+$$
+
+is the optimal choice for $\theta$, then 
+
+$$
+\hat{\theta}_ {(t)} = \hat{\theta}^{(t-1)} - \alpha \frac{ \partial \xi(y,\sigma_ {q}(z)) }{ \partial z }
+$$
+
+where some simple derivation tells us that 
+
+$$
+\frac{ \partial \xi(y,\sigma_ {q}(z)) }{ \partial z }  = \beta(q,z)(\sigma_ {q}(z)-y),
+$$
+
+and $\beta(q,z)$ was defined before. 
+
+The learning rate $\alpha$ can be chosen according to the Lipschitz constant $L$ as 
+
+$$
+\alpha = \frac{1}{L}.
+$$
 
 
 

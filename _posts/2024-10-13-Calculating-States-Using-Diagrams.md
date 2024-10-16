@@ -85,11 +85,14 @@ $$
 (9) :\;&  H_ {3}^{(-3)}\left\lvert p \right\rangle_ {1}^{(4)} \supset - \frac{3}{8}g^{2}m^{2}\left\lvert \vec{p} \right\rangle_ {0}\int d^{3}x \,   \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} \\
 (10) :\;& - H_ {3}^{(-3)}\left\lvert p \right\rangle_ {1}^{(4)} \supset  \frac{9g^{2}m^{2}\left\lvert \vec{p} \right\rangle_ {0}}{8\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}\omega_ {p+p_ {1}}(\omega _ {p} +\omega_ {1}+\omega_ {p+p_ {1}})} \\
 (11) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} \supset - \frac{9m^{2}g^{2}}{4} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{\left\lvert \vec{p},\vec{p}_ {1,-1} \right\rangle_ {0}}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}   \\
-(12) :\;&  H_ {4}^{(0)}\left\lvert p \right\rangle_ {0}^{(1)} \supset \int d^{3}x \,  A_ {4}'  
+(12) :\;&  H_ {4}^{(0)}\left\lvert p \right\rangle_ {0}^{(1)} \supset \int d^{3}x \,  A_ {4}'  ,\\
+(13) : \;& H_ {4}^{(2)}\left\lvert p \right\rangle_ {0}^{(1)} \supset  \frac{g^{2}}{2\omega _ {p} }\int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \left\lvert \vec{p}_ {1,2},\vec{p}-\vec{p}_ {1}-\vec{p}_ {2} \right\rangle, \\
+(14) : \;& H_ {4}^{(2)}\left\lvert p \right\rangle_ {0}^{(1)} \supset - \frac{\delta m^{2}}{2}\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1,-1},\vec{p}\right\rangle ,\\
+(15) : \;& H_ {4}^{(0)}\left\lvert p \right\rangle_ {0}^{(1)} \supset - \frac{\delta m^{2}}{4\omega p^{2}}\left\lvert \vec{p} \right\rangle.
 \end{align*}
 $$
 
-But in order to turn them into diagrammatic rules, we need to inverse $(\omega _ {p}-H_ {2})$ to get components of $\left\lvert \vec{p} \right\rangle_ {2}$, eliminate the integral measures and deal with the creation operators. Note that *the 1-meson states will eventually cancel out*. Furthermore, we strip-off the propagators in the diagram since we are regarding them as a vertex as a whole, as shown below.
+But in order to turn them into diagrammatic rules for corresponding Hilbert states. We need to inverse $(\omega _ {p}-H_ {2})$ to get components of $\left\lvert \vec{p} \right\rangle_ {2}$, eliminate the integral measures and deal with the creation operators. Note that *the 1-meson states will eventually cancel out*. Furthermore, we strip-off the propagators in the diagram since we are regarding them as a vertex as a whole, as shown below.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -112,10 +115,11 @@ $$
 (6) :\;&  H_ {3}^{(1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} :  \frac{3g^{2}m^{2}}{4\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega_ {p-p_ {3}})}  ,    \\
 (8) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)} 
 :  \frac{9m^{2}g^{2}}{4\omega _ {p} } \, \frac{1}{\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {p-p_ {1}-p_ {2}}+\omega_ {1}+\omega_ {2})},  \\
-(11) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(8)} : \frac{9m^{2}g^{2}}{8} \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} .
+(11) :\;& H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {1}^{(8)} : \frac{9m^{2}g^{2}}{8} \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} ,\\
+(13): \;& H_ {4}^{(2)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} : - \frac{g^{2}}{2\omega _ {p} } \frac{1}{(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}})}, \\
+(14): \;& H_ {4}^{(2)}\left\lvert \vec{p} \right\rangle_ {0}^{(1)} : \frac{\delta m^{2}}{4\omega_ {1}}.
 \end{align*}
 $$
-
 
 ## 3rd Order States
 
