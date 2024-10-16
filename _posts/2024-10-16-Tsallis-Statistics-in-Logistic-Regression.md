@@ -2,7 +2,7 @@
 layout: post
 title: Tsallis Statistics in Logistic Regression
 subtitle: 
-date: 2024-05-28
+date: 2024-10-16
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -257,7 +257,7 @@ $$
 \frac{dy}{dx} = a+by \implies \frac{dy}{a+by}=dx\implies y=\frac{1}{b}(e^{ b(x+c) }-a),
 $$
 
-which does look very promising. Then Tsallis considered a non-linear generalization:
+which does not look very promising. Then Tsallis considered a non-linear generalization:
 
 $$
 \frac{dy}{dx} = y^{q}, \quad  q\in \mathbb{R},\quad y(0)=1.
@@ -362,7 +362,7 @@ Before I could apply Tsallis statistics to medical data, I need first to figure 
 
 ## 4.1 Traditional logistic regression method
 
-Consider a matrix $X_ {n \times p}$ representing the expression of $p$ genes from $n$ samples, obtained through technologies like microarray or RNA-seq. Here, $p \gg n$, which leads to the well-known *big $p$, small $n$* problem. The response, or dependent variables (observables), is denoted by an $n$-vector $\vec{y} = (y_ 1, \cdots, y_ n)$. Each $y_ i$ is a binary variable, taking values 0 or 1. For example, in a clinical context, think of each sample as a patient; $y_ i = 1$ might indicate that patient $i$ is cured of, or has, a certain disease, while $y_ i = 0$ indicates the opposite. Currently, we are focusing on a mathematical model, so the exact biological or clinical significance of $y = 1$ is not specified. The values of $\vec{y}$ follow a Bernoulli distribution, which will be discussed in more detail shortly.
+Consider a matrix $X_ {n \times p}$ representing the expression of $p$ genes from $n$ samples, obtained through technologies like microarray or RNA-seq. Here, $p \gg n$, hence the name *big $p$, small $n$* problem. The response, or dependent variables (observables), is denoted by an $n$-vector $\vec{y} = (y_ 1, \cdots, y_ n)$. Each $y_ i$ is a binary variable, taking values 0 or 1. For example, in a clinical context, think of each sample as a patient; $y_ i = 1$ might indicate that patient $i$ is cured of, or has, a certain disease, while $y_ i = 0$ indicates the opposite. Currently, we are focusing on a mathematical model, so the exact biological or clinical significance of $y = 1$ is not specified. The values of $\vec{y}$ follow a Bernoulli distribution, which will be discussed in more detail shortly.
 
 We can organize all the gene expressions from all the samples into a single matrix $X$,
 
@@ -375,7 +375,7 @@ x_ {n1}   &  \cdots  & x_ {np}
 \end{pmatrix}.
 $$
 
-In the above matrix, each row is a vector of different genes from one sample, while each column is vector of different patients with one type of gene. We use $X_ {i}$ to denote the expression of the $i$-th gene across $n$ samples, which corresponds to the $i$-th column of $X$. Conversely, $X^{T}_ {(j)}$ represents the genes expression observed in $j$-th sample (one patient $j$), namely the $j$-th row. The transpose is such that $X_ {(j)}$ is a column vector, just like $X_ {a}$. Be aware that the distinction in notation is merely the addition of parentheses. In general, $X$ is our data and $\vec{y}$ will be the dependent variable. In practice, it is known which patients are treated and which are not, hence we know the observed value of $\vec{y}$. The problem is to find a way to **predict** $y_ {a}$ from an observed vector of genes expressions $X_ {(a)}$. But first, we need to know the role played by each gene expressed in different patients, that is, we need to know how to interpret $X_ {a}$ for gene $a$. For example, if $X_ {a}$ is a constant vector for all the patients, then we know that gene $a$ most likely has nothing to do with the disease of study.
+In the above matrix, each row is a vector of different genes from one sample, while each column represents one type of gene from different patients. We use $X_ {i}$ to denote the expression of the $i$-th gene across $n$ samples, which corresponds to the $i$-th column of $X$. Conversely, $(X_ {(j)})^{T}$ represents the genes expression observed in $j$-th sample (or patient $j$), namely the $j$-th row of $X$. The transpose makes $X_ {(j)}$ a column vector, just like $X_ {a}$. Be aware that the distinction in notation is merely the addition of parentheses. In general, $X$ is our data and $\vec{y}$ will be the dependent variable. In practice, it is known which patients are treated and which are not, hence we know the observed value of $\vec{y}$. The problem is to find a way to **predict** $y_ {a}$ from an observed vector of genes expressions $X_ {(a)}$. But first, we need to know the role played by each gene expressed in different patients, that is, we need to know how to interpret $X_ {a}$ for gene $a$. For example, if $X_ {a}$ is a constant vector for all the patients, then we know that gene $a$ most likely has nothing to do with the disease of study.
 
 - - -
 
@@ -417,13 +417,13 @@ $$
 
 I am not sure if there exists other widely-applied definitions for sigmoid function except for that given above. There surely are other functions with an S-shape, such as tanh and arctan, but I am not sure if they can be called sigmoids? Or maybe difference in the predictive power by introducing different choices of sigmoid functions are negligible, hence it only makes sense that we stuck with the simplest option?
 
-Now, the question is how can we fix the parameters? The natural answer is: by maximizing the likelihood, or equivalent by minimizing the loss function. The likelihood function, by definition, is the probability (likelihood) for a certain observation $\vec{y}$. This function measures the probability of observing the given data under certain model, with parameters being estimated. For instance, supposed there are three samples (binary), then the likelihood of $y=(1,0,1)$ corresponds to the probability predicted by our model that the first and third patients have got some disease, while the second does not. Now, the probability for each $y_ {i}=1$ is $\pi_ {i}$, which is by definition $\text{sigm}(t_ {i})\equiv1/(1-e^{ -t_ {i} })$, where $t=\beta_ {0}+X_ {(i)}\cdot \beta$, and $\beta$'s are the parameters. The probability for $y_ {i}=0$ is $1- 1/(1-e^{ -ti })$, which is $e^{ -t_ {i} }/(1-e^{ -t_ {i} })$. Then, the likelihood for observing $y=(1,0,1)$ is simply the product of each probability, 
+Now, the question is how can we fix the parameters? The natural answer is: by maximizing the likelihood, or equivalent by minimizing the loss function. The likelihood function, by definition, is the probability (likelihood) for a certain observation $\vec{y}$. This function gives the probability of observing the given data within certain model, with some free parameters. For instance, supposed there are three samples (binary), then the likelihood of $y=(1,0,1)$ corresponds to the probability predicted by our model that the first and third patients have got some disease, while the second does not. Now, the probability for each $y_ {i}=1$ is $\pi_ {i}$, which is by definition $\text{sigm}(t_ {i})\equiv1/(1-e^{ -t_ {i} })$, where $t=\beta_ {0}+X_ {(i)}\cdot \beta$, and $\beta$'s are the parameters. The probability for $y_ {i}=0$ is $1- 1/(1-e^{ -ti })$, which is $e^{ -t_ {i} }/(1-e^{ -t_ {i} })$. Then, the likelihood for observing $y=(1,0,1)$ is simply the product of each probability, 
 
 $$
 \text{lik}(1,0,1) = \frac{1}{1-e^{ -t_ {1} }} \frac{e^{ -t_ {2} }}{1-e^{ -t_ {2} }} \frac{1}{1-e^{ -t_ {3} }},
 $$
 
-which is a function of parameters $\beta$'s and observed gene expression $X_ {(i)}$. 
+which is a function of  observed gene expression $X_ {(i)}$ with parameters $\beta$'s.
 
 Likelihood function can also be written using the `Bernoulli distribution` function, which is a probability distribution function (PDF) that has only two possible outcomes, 1 and 0, with probability $\pi$ for $y=1$ and $1-\pi$ for $y=0$. This distribution is a special case of the binomial distribution where the number of trials $n$ is equal to 1. The **Probability Mass Function (PMF)** of Bernoulli distribution is defined as 
 
@@ -468,7 +468,7 @@ $$
 \end{align*}
 $$
 
-In the context of logistic regression, people often use the loss function, defined as the negative of the likelihood function. This is primarily due to convention and practical considerations in optimization processes, since most optimization algorithms and tools are designed to minimize functions rather than maximize them. This is a common convention in mathematical optimization and numerical methods. Since maximizing the likelihood is equivalent to minimizing the negative of the likelihood, formulating the problem as a minimization problem allows us the application of standard, widely available optimization software and algorithms without modification. In many statistical learning methods, the objective function is often interpreted as a "cost" or "loss" that needs to be minimized. When working with a loss function, the goal is to find parameter estimates that result in the smallest possible loss. Defining the loss function as the negative log-likelihood aligns with this interpretation because lower values of the loss function correspond to higher likelihoods of the data under the model. 
+In the context of logistic regression, people often use the `loss function`, *defined as the negative of the likelihood function*. This is primarily due to convention and practical considerations in optimization processes, since most optimization algorithms and tools are designed to minimize functions rather than maximize them. This is a common convention in mathematical optimization and numerical methods. Since maximizing the likelihood is equivalent to minimizing the negative of the likelihood, formulating the problem as a minimization problem allows us the application of standard, widely available optimization software and algorithms without modification. In many statistical learning methods, the objective function is often interpreted as a "cost" or "loss" that needs to be minimized. When working with a loss function, the goal is to find parameter estimates that result in the smallest possible loss. Defining the loss function as the negative log-likelihood aligns with this interpretation because lower values of the loss function correspond to higher likelihoods of the data under the model. 
 
 Furthermore, using a loss function that is to be minimized creates a consistent framework across various statistical learning methods, many of which inherently involve minimization (like least squares for linear regression, and more complex regularization methods in machine learning). This consistency is helpful not only from an educational and conceptual standpoint but also from a practical implementation standpoint.
 
@@ -646,28 +646,28 @@ where $(x_ i, y_ i)$ are the data points, and $\beta_ 0$ and $\beta_ 1$ are the 
 1. Gradient Calculation:
    - The gradient with respect to $\beta_ 0$ is:
 
-     $$
-     \frac{\partial f}{\partial \beta_ 0} = -\frac{1}{n} \sum_ {i=1}^n (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
-     $$
+$$
+\frac{\partial f}{\partial \beta_ 0} = -\frac{1}{n} \sum_ {i=1}^n (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
+$$
  
    - The gradient with respect to $\beta_ 1$ is:
 
-     $$
-     \frac{\partial f}{\partial \beta_ 1} = -\frac{1}{n} \sum_ {i=1}^n x_ i (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
-     $$
+$$
+\frac{\partial f}{\partial \beta_ 1} = -\frac{1}{n} \sum_ {i=1}^n x_ i (y_ i - (\beta_ 0 + \beta_ 1 x_ i)).
+$$
 
 2. Update Rules:
    - Update $\beta_ 0$:
 
-     $$
-     \beta_ 0^{(t+1)} = \beta_ 0^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 0}.
-     $$
+$$
+\beta_ 0^{(t+1)} = \beta_ 0^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 0}.
+$$
  
    - Update $\beta_ 1$:
 
-    $$
-     \beta_ 1^{(t+1)} = \beta_ 1^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 1}.
-    $$
+$$
+\beta_ 1^{(t+1)} = \beta_ 1^{(t)} - \alpha \frac{\partial f}{\partial \beta_ 1}.
+$$
 
 - - -
 
@@ -951,23 +951,99 @@ X_ {i2} & X_ {i2}X_ {i1} & X_ {i2}^2 & \cdots & X_ {i2}X_ {ip} \\
 X_ {ip} & X_ {ip}X_ {i1} & X_ {ip}X_ {i2} & \cdots & X_ {ip}^2
 \end{bmatrix}. $$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 4.2 With Tsallis statistics
 
+We note that the potential for applying Tsallis entropy is immense, mostly for two reasons: 
+
+1. Tsallis statistics modifies logarithmic and exponential functions, and they are ubiquitous in logistic regression methods;
+2. Tsallis entropy can seamlessly generalize the familiar Shannon entropy, which is closely connected to the cross entropy loss function, which is exactly the loss functions we used in regression method.
+
+As a starter, we will focus on the generalization of sigmoid function, keeping other components unchanged. But first, let's repeat the definition for Tsallis-modified log and exponential functions, so-called $q$-log and $q$-exponentials, for future convenience:
+
+$$
+\begin{align*}
+\log_ {q} (x) := & \frac{x^{1-q}-1}{1-q}, \\
+\exp_ {q}(x) :=& (1+(1-q))^{1/(1-q)}.
+\end{align*}
+$$
+
+As you can check, at the limit $q\to 1$ they regress to normal log and exp functions. 
+
+The regular sigmoid function reads
+
+$$
+\sigma(z) = \frac{1}{1+e^{ -z }},
+$$
+
+we generalized it to $q$-sigmoid function by 
+
+$$
+\boxed{ 
+\sigma_ {q}(z) := \frac{1}{1+\exp_ {q}(-z)}.
+}
+$$
+
+To ensure that the range is $[0,1]$ for all $q$, we might need to modified it a little bit, for example multiply by a constant or do some cut-off. 
+
+The $q$-sigmoid function satisfy the following relation:
+
+$$
+\frac{ \partial \sigma_ {q}(z) }{ \partial z }  = \beta(q,z)\sigma_ {q}(z)(1-\sigma_ {q}(z))
+$$
+
+where 
+
+$$
+\beta(q,z) = \frac{1}{1-z(1-q)}.
+$$
+
+This should be compared to the case of regular sigmoid function:
+
+$$
+\frac{ \partial \sigma(z) }{ \partial z }  = \sigma(z) (1-\sigma(z)).
+$$
+
+Everything else is the same as regular logistic regression method, without penalty terms. 
+
+The cross entropy loss function now reads
+
+$$
+\boxed{ 
+\xi= - \sum_ {i=1}^{n}(y_ {i}\log(\sigma _ {q_ {i} }))+(1-y_ {i})\log(1-\sigma_ {q_ {i} }).
+}
+$$
+
+here $q_ {i}$ is different for each sample, but for starters we can set it constant for all samples, varying close to $1$, for example from -0.8 to 1.2 or something. 
+
+We will use the gradient method to find the minimum value for parameters that minimized the loss function. Let $\theta$ be the vector of parameters,
+
+$$
+\hat{\theta} = \text{argmax}_ {\theta} \left\lbrace \xi(y,\sigma_ {q}(z)) \right\rbrace 
+$$
+
+is the optimal choice for $\theta$, then 
+
+$$
+\hat{\theta}_ {(t)} = \hat{\theta}^{(t-1)} - \alpha \frac{ \partial \xi(y,\sigma_ {q}(z)) }{ \partial z }
+$$
+
+where $t$ is the iteration index, and some simple derivation tells us that 
+
+$$
+\frac{ \partial \xi(y,\sigma_ {q}(z)) }{ \partial z }  = \beta(q,z)(\sigma_ {q}(z)-y),
+$$
+
+and $\beta(q,z)$ was defined before. The key point is that now $\beta(q,z)$ plays a similar rule as $\alpha$, hence in a sense, using $q$-sigmoid naturally introduce the learning rate! We can even set $\alpha=1$ and get
+
+$$
+\hat{\theta}_ {(t)} = \hat{\theta}^{(t-1)} -\beta(q,z)(\sigma_ {q}(z)-y).
+$$
+
+The learning rate $\alpha$ can be chosen according to the Lipschitz constant $L$ as 
+
+$$
+\alpha = \frac{1}{L}.
+$$
 
 
 
