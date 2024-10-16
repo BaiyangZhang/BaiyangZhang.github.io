@@ -126,31 +126,55 @@ Let's start with momentum states.
 
 $H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$:
 
-It include two contributions: $H_ {3}^{(-3)}$ acting on panel 4,6 from figure (6). Let's denote them by $H_ {3}^{(-3)}\cdot(4)$ and $H_ {3}^{(-3)}\cdot(6)$ respectively. Regarding the former we have 
+It include four contributions: $H_ {3}^{(-3)}$ acting on panel (1), (2), (4) and (6) from figure 6. 
+
+The contributions $H_ {3}^{(-3)}\cdot(1)$ are shown in Figure 6 by panels (a1,a2). We have 
 
 $$
 \begin{align*}
-(a) =& - \frac{81m^{3}g^{3}}{8\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3} p_ {2}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega^{2}_ {1+2}} \\
+(a_ {1}) =&  \frac{3mg^{3}}{4\sqrt{2}}  \left\lvert \vec{p},0 \right\rangle \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(m+\omega_ {1}+\omega_ {2}+\omega_ {1+2})},    \\
+(a_ {2}) =& \frac{9mg^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \frac{1}{\omega_ {2}\omega_ {p+2}(\omega_ {1}+\omega_ {2}+\omega_ {p-1}+\omega_ {p+2})} .  
+\end{align*}
+$$
+
+The components of $H_ {3}^{(-3)}\cdot(2)$ is shown in panel (b1,b2,b3):
+
+$$
+\begin{align*}
+(b 1) =& - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1-2}}      \\
+ & \times  \frac{1}{(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})(-\omega _ {p}+2\omega_ {1} +\omega_ {2}+\omega_ {1+2}+\omega_ {p-p_ {1}})}, \\
+(b 2) =&  -  \frac{27m^{3}g^{3}}{16\sqrt{2}\omega _ {p} ^{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {p-p_ {2}}}     \\
+&\times  \frac{1}{(-\omega _ {p} +\omega_ {2}+\omega_ {p-p_ {2}})(\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}}+\omega_ {p-p_ {2}})} ,   \\
+(b 3) =&  - \frac{9m^{3}g^{3}}{16\sqrt{2}\omega _ {p} }\int d^{3}x \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega_ {2+3}}  \\
+&\times  \frac{1}{(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {2+3}+\omega_ {p-p_ {1}})}.
+\end{align*}
+$$
+
+Next we calculate $H_ {3}^{(-3)}\cdot(4)$, given in panel (c1,c2,c3) in figure 6: 
+
+$$
+\begin{align*}
+(c 1) =& - \frac{81m^{3}g^{3}}{8\sqrt{2}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3} p_ {2}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega^{2}_ {1+2}} \\
 &\times \frac{1}{(\omega_ {1}+\omega_ {1+2}+\omega_ {2p_ {1}+2})(\omega_ {1}+\omega_ {1+2}+\omega_ {3}+\omega_ {2p_ {1}+2})},\\
-(b) =& - \frac{81m^{3} g^{3}}{16\sqrt{2}} \int  \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega _ {p} \omega^{2}_ {p-2}}  \\
+(c 2) =& - \frac{81m^{3} g^{3}}{16\sqrt{2}} \int  \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega _ {p} \omega^{2}_ {p-2}}  \\
 &\times  \frac{1}{(\omega_ {1}+\omega_ {2-p}+\omega_ {1+2-p})(\omega_ {1}+\omega_ {2}+\omega _ {p} +\omega_ {1+2-p})}, \\
-(c) =& - \frac{27m^{3}g^{3}}{16\sqrt{2}} \int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega_ {2+3}} \\
+(c 3) =& - \frac{27m^{3}g^{3}}{16\sqrt{2}} \int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega_ {2+3}} \\
 &\times  \frac{1}{\omega_ {1+2}(\omega_ {3}+\omega_ {1+2}+\omega_ {1+2+3})(\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2+3})}.
 \end{align*}
 $$
 
-Regarding the latter we have 
+The contribution of  $H_ {3}^{(-3)}\cdot(6)$, given in panel (d1,d2,d3):
 
 $$
 \begin{align*}
-(d) =&  - \frac{3m^{3}g^{3}\left\lvert \vec{p},0 \right\rangle}{4\sqrt{2}} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}     \\
+(d 1) =&  - \frac{3m^{3}g^{3}\left\lvert \vec{p},0 \right\rangle}{4\sqrt{2}} \int \frac{d^{3}p_ {1,2,3}}{(2\pi)^{9}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}\omega_ {p}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}     \\
 &\times  \frac{1}{(-\omega _ {p} +\omega_ {1}+\omega_ {2}+2\omega_ {1+2}+\omega_ {p-p_ {1}-p_ {2}})},\\
-(e) =&  - \frac{9m^{3}g^{3}}{4\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega^{2} _ {p} } \\
+(d 2) =&  - \frac{9m^{3}g^{3}}{4\sqrt{2}}  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega^{2} _ {p} } \\
 &\times  \frac{1}{ (\omega_ {2}+\omega_ {3}+\omega_ {2+3})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {2+3}+\omega_ {p-p_ {1}})} ,\\
-(f) =&   - \frac{9m^{3}g^{3}}{4\sqrt{2}} \int \frac{d ^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega _ {p} ^{2}} \\
+(d 3) =&   - \frac{9m^{3}g^{3}}{4\sqrt{2}} \int \frac{d ^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle  \int \frac{d^{3}p_ {2,3}}{(2\pi)^{6}} \, \frac{1}{\omega_ {2}\omega_ {3}\omega _ {p} ^{2}} \\
 & \times  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {3}+\omega_ {1+2}+\omega _ {p-p_ {3}} )} .
 \end{align*}
-$$\
+$$
 
 The diagrams are shown below. 
 
@@ -182,9 +206,9 @@ Their contributions correspondingly are
 
 $$
 \begin{align*}
-(g) =& \frac{9mg^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {p-2}(\omega _ {p} -\omega_ {2}-\omega_ {p-p_ {2}})} , \\
-(h) =& -\frac{\delta m^{2} 3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{\left\lvert \vec{p}_ {1}, \vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})},  \\
-(i) =& \frac{3A_ {4}'mg}{2\sqrt{2}\omega _ {p} }\int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle}{-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}}}.
+(e 1) =& \frac{9mg^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {p-2}(\omega _ {p} -\omega_ {2}-\omega_ {p-p_ {2}})} , \\
+(e 2) =& -\frac{\delta m^{2} 3mg}{2\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{\left\lvert \vec{p}_ {1}, \vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})},  \\
+(e 3) =& \frac{3A_ {4}'mg}{2\sqrt{2}\omega _ {p} }\int d^{3}x \,  \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle}{-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}}}.
 \end{align*}
 $$
 
@@ -194,7 +218,7 @@ $H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(3)}:$
 
 It includes three parts: $H_ {3}^{(-1)}$ acting on panel (5), (8) and (11) in figure 6. The figure are shown below.
 
-First of all, $H_ {3}^{(-1)}$ acting on panel (5). They correspond to panel (j) and (k) in figure 9 below.
+First of all, $H_ {3}^{(-1)}$ acting on panel (5). They correspond to panel (f1) and (f2) in figure 9 below.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -209,30 +233,30 @@ Their contributions are
 
 $$
 \begin{align*}
-(j) =&  - \frac{27g^{3}m^{3}}{8\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1-2}}   \\
+(f 1) =&  - \frac{27g^{3}m^{3}}{8\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1-2}}   \\
 & \times  \frac{1}{(-\omega _ {p} +\omega_ {1}+\omega_ {p-p_ {1}})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {1-2})}, \\
-(k) =&  -\frac{27m^{3}g^{3}}{4\sqrt2\omega _ {p}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}\omega_ {p-p_ {1}-p_ {2}}}  \\
+(f 2) =&  -\frac{27m^{3}g^{3}}{4\sqrt2\omega _ {p}} \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}\omega_ {p-p_ {1}-p_ {2}}}  \\
 &\times  \frac{1}{(-\omega _ {p} +\omega_ {p-p_ {1}-p_ {1}}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}})},
 \end{align*}
 $$
 
-Then we move on to $H_ {3}^{(-1)}$ acting on panel (8), given by panel (l) and (m) in figure 9. The contributions are 
+Then we move on to $H_ {3}^{(-1)}$ acting on panel (8), given by panel (g1) and (g2) in figure 9. The contributions are 
 
 $$
 \begin{align*}
-(l) =& - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \,  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1-2}}  \\
+(g 1) =& - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \,  \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1-2}}  \\
 & \times  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1-2})(-\omega _ {p} +\omega_ {p-p_ {1}}+\omega_ {2}+\omega_ {1-2})},  \\
-(m) =& - \frac{27m^{3}g^{3}}{4\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}\omega_ {p-p_ {1}-p_ {2}}} \\
+(g 2) =& - \frac{27m^{3}g^{3}}{4\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}\omega_ {p-p_ {1}-p_ {2}}} \\
 & \times  \frac{1}{(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(-\omega _ {p} +\omega_ {1}+\omega_ {2}+\omega_ {p-p_ {1}-p_ {2}})}.
 \end{align*}
 $$
 
-Then $H_ {3}^{(-1)}$ acting on panel (11),given by panel (n,o):
+Then $H_ {3}^{(-1)}$ acting on panel (11),given by panel (h1,h2):
 
 $$
 \begin{align*}
-(n) =& - \frac{27m^{3}g^{3}}{16\sqrt{2}} \left\lvert \vec{p},0 \right\rangle \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{1}{\omega_ {1}^{3}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})},      \\
-(o) =&    - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle \frac{1}{\omega_ {1}^{2}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} .
+(h 1) =& - \frac{27m^{3}g^{3}}{16\sqrt{2}} \left\lvert \vec{p},0 \right\rangle \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{1}{\omega_ {1}^{3}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})},      \\
+(h 2) =&    - \frac{27m^{3}g^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle \frac{1}{\omega_ {1}^{2}\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} .
 \end{align*}
 $$
 

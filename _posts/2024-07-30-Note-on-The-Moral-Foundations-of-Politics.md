@@ -195,3 +195,10 @@ Bentham's happiness principal, when applied to governments, requires us to maxim
 
 Bentham defended an extensive system of political rights, but he saw rights as human artifacts, created by the legal system and enforced by the sovereign. He insisted that there are no rights without enforcement and no enforcement without government, a blunt statement of the view that would subsequently become known as legal positivism.
 
+## Individual Versus Collective Utility and the Need for Government
+
+In Bentham’s *Principles of the Civil Code*, he wrote
+
+>Law does not say to man, Work and I will reward you but it says: Labour, and by stopping the hand that would take them from you, I will ensure to you the fruits of your labour -- its natural and sufficient reward, which without me you cannot preserve. If industry creates, it is law which preserves; if at the first moment we owe everything to labour, at the second, and every succeeding moment, we owe everything to law.
+
+Law should limit itself to ensuring that people can pursue utility for themselves. 
