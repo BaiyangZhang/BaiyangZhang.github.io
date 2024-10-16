@@ -1027,13 +1027,17 @@ $$
 \hat{\theta}_ {(t)} = \hat{\theta}^{(t-1)} - \alpha \frac{ \partial \xi(y,\sigma_ {q}(z)) }{ \partial z }
 $$
 
-where some simple derivation tells us that 
+where $t$ is the iteration index, and some simple derivation tells us that 
 
 $$
 \frac{ \partial \xi(y,\sigma_ {q}(z)) }{ \partial z }  = \beta(q,z)(\sigma_ {q}(z)-y),
 $$
 
-and $\beta(q,z)$ was defined before. 
+and $\beta(q,z)$ was defined before. The key point is that now $\beta(q,z)$ plays a similar rule as $\alpha$, hence in a sense, using $q$-sigmoid naturally introduce the learning rate! We can even set $\alpha=1$ and get
+
+$$
+\hat{\theta}_ {(t)} = \hat{\theta}^{(t-1)} -\beta(q,z)(\sigma_ {q}(z)-y).
+$$
 
 The learning rate $\alpha$ can be chosen according to the Lipschitz constant $L$ as 
 
