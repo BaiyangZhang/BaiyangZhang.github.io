@@ -220,7 +220,7 @@ $$
 
 $H_ {3}^{(-1)}\left\lvert \vec{p} \right\rangle_ {2}^{(3)}:$
 
-It includes three parts: $H_ {3}^{(-1)}$ acting on panel (5), (8) and (11) in figure 6. The figure are shown below.
+It includes three parts: $H_ {3}^{(-1)}$ acting on panel (5,8,11,13,14) in figure 6. The figure are shown below.
 
 First of all, $H_ {3}^{(-1)}$ acting on panel (5). They correspond to panel (f1) and (f2) in figure 9 below.
 
@@ -265,6 +265,21 @@ $$
 $$
 
 It looks weird that we have a $\left\lvert \vec{p}=0 \right\rangle$ state... it just pops out from the vacuum. Anyway, let's move on.
+
+$H_ {3}^{(-1)}$ acting on panel (13),given by panel (i1):
+
+$$
+(i 1) = \frac{9mg^{3}}{4\sqrt{2}\omega _ {p} }\int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1-2}(-\omega _ {p} +\omega_ {2}+\omega_ {1-2}+\omega_ {p-p_ {1}})}  ,
+$$
+
+and $H_ {3}^{(-1)}$ acting on panel (13) represented by panel (j1,j2), whose contributions are 
+
+$$
+\begin{align*}
+(j 1) =& - \frac{3\delta m^{2}m g}{32\sqrt{2}} \left\lvert \vec{p},0 \right\rangle \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{1}{\omega^{3}_ {1}}, \\
+(j 2) =& - \frac{3mg\delta m^{2}}{4\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}^{2}}. 
+\end{align*}
+$$
 
 - - -
 
