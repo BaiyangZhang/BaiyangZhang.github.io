@@ -12,9 +12,16 @@ tags:								         # 标签
     - distribution
 ---
 
-### 1. $\frac{\sin x}{x}$ as a distribution
+- [1. $\frac{\sin x}{x}$ as a distribution](#1-%5Cfrac%5Csin-xx-as-a-distribution)
+	- [1.1 Principal value method](#11-principal-value-method)
+	- [1.2 Contour integral method](#12-contour-integral-method)
+- [2. $\text{csch} (x)$ as a distribution](#2-%5Ctextcsch-x-as-a-distribution)
+	- [2.1 Principal value and Hadamard's method](#21-principal-value-and-hadamards-method)
+	- [2.2 The contour integral method](#22-the-contour-integral-method)
 
-Sinc function, or sine cardinal function, also called the sampling function, is an important function in physics and engineering.  There are more than one definitions in common use, here we will adopt 
+# 1. $\frac{\sin x}{x}$ as a distribution
+
+Sinc function, or sine cardinal function, also called the sampling function, is an important function in physics and engineering.  There are more than one definitions in common use, here we will adopt the following,
 
 $$
 \text{sinc}(x) = 
@@ -24,7 +31,7 @@ $$
 \end{cases}
 $$
 
-where $\mathbb{R}^\ast := \mathbb{R} \backslash \{ 0 \}$. Thanks to the insertion $1$ at $x=1$, sinc function is continuous and smooth on $\mathbb{R}$. 
+where $\mathbb{R}^\ast := \mathbb{R} \backslash \{ 0 \}$. Thanks to the insertion of $1$ at $x=1$, the sinc function is continuous and smooth on $\mathbb{R}$. 
 
 The sinc function, like almost any other functions, defines a distribution, let's denote it by $T_{\text{sinc}}$. When acted on a function $f$ we have 
 
@@ -55,7 +62,7 @@ where we change the variable from $x$ to $z$ as a hint that the integral could b
 Let's try to calculate the first term in the last line using principal value method, then the contour integral.
 
 - - -
-#### 1.1 Principal value method
+## 1.1 Principal value method
 
 We want to evaluate
 
@@ -182,7 +189,7 @@ The last part is not important at all, since it is defined on $\omega = \pm 1$ w
 
 - - -
 
-#### 1.2 Contour integral method
+## 1.2 Contour integral method
 
 Writing 
 
@@ -207,9 +214,9 @@ We want the integral on the infinite semi-circle, namely arc D to vanish. If $\o
 
 I will not go to details since it can be easily found elsewhere, for example [here](https://eagle.lamost.org/2012/05/the-frourier-transform-of-a-sinc-function/) is a pretty clear note. I just wanna point out that the **results are the same as principal value method**, and I strongly suggest to start with contour integral in the first place.
 
-### 2. $\text{csch} (x)$ as a distribution
+# 2. $\text{csch} (x)$ as a distribution
 
-#### 2.1 Principal value and Hadamard's method
+## 2.1 Principal value and Hadamard's method
 
 Like $\text{sinc}(x)$, $\text{csch}(x)=1 / \sinh(x)$ is singular at $x=0$ and defines a singular distribution. Unlike $\text{sinc}(x)$ which approaches a constant at $x=0$, the limit 
 
@@ -406,7 +413,7 @@ Putting them together we get an infinite series form of the integral, but it see
 [^2_1]: Schaum's Mathematical Handbook of Formulas and Tables.
 [^2_2]: In the original reference it has $B_{n}$ instead of $B_{n+1}$ which seems to be a mistake since then the first few terms can not be obtained from the general term formula.
 
-#### 2.2 The contour integral method
+## 2.2 The contour integral method
 
 We could try to construct the same contour as we did for $\sin x /x$ function, which is shown in the figure previously, where the contour was divided in to four parts. However a major difference is that $\text{csch}(z)=1 / \sinh(z)$  has infinite poles on the upper-half imaginary axis, $z = i\pi \mathbb{N}$ where $\mathbb{N}$ denotes the natural numbers. Thus, even though the integral is zero on the great half-circle, namely part D in the figure, we still need to deal with an infinite sum from the residuals, complicating the situation unnecessarily. 
 
