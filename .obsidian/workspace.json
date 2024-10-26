@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md",
+                "file": "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md",
+                "file": "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md",
+                "file": "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md"
+                "file": "_posts/2024-10-13-Calculating-States-Using-Diagrams.md"
               }
             }
           },
@@ -208,6 +208,8 @@
   },
   "active": "b6f5857e802ea8ee",
   "lastOpenFiles": [
+    "img/kink/H4Minus2OnP14.png",
+    "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md",
     "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
@@ -242,8 +244,6 @@
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_drafts/2023-05-07-soliton-particle-duality.md",
-    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
-    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
     "img/resurgence",

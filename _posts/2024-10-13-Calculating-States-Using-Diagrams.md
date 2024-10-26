@@ -100,7 +100,7 @@ But in order to turn them into diagrammatic rules for corresponding Hilbert stat
     </div>
 </div>
 <div class="caption">
-   Fig 6. Diagrams for contributing $\mathcal{O}(g^2)$ diagrams as vertices. 
+   Fig 6. Diagrams for order $\mathcal{O}(g^2)$ diagrams as vertices. 
 </div>
 
 **As diagrammatic rules we get**:
@@ -130,14 +130,14 @@ Let's start with momentum states.
 
 $H_ {3}^{(-3)}\left\lvert \vec{p} \right\rangle_ {2}^{(5)}$:
 
-It include four contributions: $H_ {3}^{(-3)}$ acting on panel (1), (2), (4) and (6) from figure 6. 
+It includes four contributions: $H_ {3}^{(-3)}$ acting on panel (1), (2), (4) and (6) from figure 6. 
 
-The contributions $H_ {3}^{(-3)}\cdot(1)$ are shown in Figure 6 by panels (a1,a2). We have 
+The contributions $H_ {3}^{(-3)}\cdot(1)$ are shown in Figure 7 by panels (a1,a2). We have 
 
 $$
 \begin{align*}
-(a_ {1}) =&  \frac{3mg^{3}}{4\sqrt{2}}  \left\lvert \vec{p},0 \right\rangle \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(m+\omega_ {1}+\omega_ {2}+\omega_ {1+2})},    \\
-(a_ {2}) =& \frac{9mg^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \frac{1}{\omega_ {2}\omega_ {p+2}(\omega_ {1}+\omega_ {2}+\omega_ {p-1}+\omega_ {p+2})} .  
+(a1) =&  \frac{3mg^{3}}{4\sqrt{2}}  \left\lvert \vec{p},0 \right\rangle \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \,  \frac{1}{\omega_ {1}\omega_ {2}\omega_ {1+2}(m+\omega_ {1}+\omega_ {2}+\omega_ {1+2})},    \\
+(a2) =& \frac{9mg^{3}}{8\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \frac{1}{\omega_ {2}\omega_ {p+2}(\omega_ {1}+\omega_ {2}+\omega_ {p-1}+\omega_ {p+2})} .  
 \end{align*}
 $$
 
@@ -285,7 +285,25 @@ $$
 
 $H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}:$
 
+This contribution is relatively simple, including one contribution only: $H_ {4}^{(-2)}$ acting on panel 3 in Figure 4. The diagrams are given in Figure , with contributions
 
+$$
+\begin{align*}
+k 1=& \frac{3mg^{3}\left\lvert \vec{p},0 \right\rangle}{4\sqrt{2}} \int \frac{d^{3}p_ {1,2}}{(2\pi)^{6}} \, \frac{1}{\omega_ {1} \omega_ {2} \omega_ {3}(\omega_ {1} + \omega_ {2} + \omega_ {1+2})}   ,\\
+k 2=&  \frac{9 mg^{3}}{4\sqrt{2}\omega _ {p} } \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \left\lvert \vec{p},\vec{p}-\vec{p}_ {1} \right\rangle \int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})}     ,\\
+\ell 1=&  - \frac{3mg \delta m^{2} }{4\sqrt{2}} \left\lvert \vec{p},0 \right\rangle \int \frac{d^{3}p_ {1}}{(2\pi)^{3}} \,  \frac{1}{\omega_ {1}^{2}(2\omega_ {1}+m)}   ,\\
+\ell 2=&  - \frac{3mg \delta m^{2}}{4\sqrt{2}\omega^{2}_ {p} } \int  \frac{d^{3}p_ {1}}{(2\pi)^{3}} \, \frac{\left\lvert \vec{p}_ {1},\vec{p}-\vec{p}_ {1} \right\rangle}{\omega_ {1}+\omega _ {p} +\omega_ {p-1}}   .
+\end{align*}
+$$
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kink/H4Minus2OnP14.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    Fig. 10 Diagrams for $H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}$.
+</div>
 
 
 
