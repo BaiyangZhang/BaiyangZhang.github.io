@@ -30,7 +30,7 @@ tags:
 
 `Tsallis statistics` is a generalization of traditional statistical mechanics, devised by *Constantino Tsallis*, to better characterize complex systems. It involves a collection of mathematical functions and associated probability distributions that can be derived by optimizing the `Tsallis entropic form`, a generalization of familiar Boltzmann entropy. A key aspect of Tsallis statistics is the introduction of a real parameter $q$, which adjusts the distributions to exhibit properties intermediate between Gaussian and Levy distributions, reflecting the degree of non-extensivity of the system.
 
-Tsallis distributions  include various families like the $q$-Gaussian, $q$-exponential, and $q$-Weibull distributions. These distributions are notable for their heavy tails and have been applied across diverse fields such as statistical mechanics, geology, astronomy, economics, and machine learning, among others.
+Tsallis distributions include various families like the $q$-Gaussian, $q$-exponential, and $q$-Weibull distributions. These distributions are notable for their heavy tails and have been applied across diverse fields such as statistical mechanics, geology, astronomy, economics, and machine learning, among others.
 
 The adaptation of Tsallis statistics to these varied fields underscores its versatility in dealing with systems where traditional Boltzmann-Gibbs statistics might not be adequate, particularly in scenarios involving long-range interactions, memory effects, or multifractal structures. Tsallis statistics is particularly useful in the analysis of non-extensive systems, to `biostatistics` could offer a novel perspective on analyzing complex biological data. Tsallis statistics has been successfully applied in various complex physical systems, such as space plasmas, atmospheric dynamics, and seismogenesis, as well as in the analysis of brain and cardiac activity, showing excellent agreement between theoretical predictions and experimental data. This demonstrates the versatility and potential of Tsallis statistics in capturing the dynamics of complex systems, which could be beneficial in biostatistical applications.
 
@@ -38,7 +38,7 @@ Given the interdisciplinary nature of biostatistics, which often deals with comp
 
 To explore this possibility further, one could start by investigating specific biostatistical problems where the assumptions of traditional statistical mechanics are not met, and then applying Tsallis statistics to see if it offers better predictive power or insights. It would also be beneficial to collaborate with experts in biostatistics to identify the most pressing challenges where Tsallis statistics could be applied.
 
-While the application of Tsallis statistics to biostatistics is an intriguing prospect, it is an emerging area that would require substantial interdisciplinary research to fully understand its potential and limitations. Below is a list of potential applications, take it with a grain of salt.
+While the application of Tsallis statistics to biostatistics is an intriguing prospect, it is an emerging area that would require substantial interdisciplinary research to fully understand its potential and limitations. Below is a list of potential applications, which is to be taken with a grain of salt.
 
 1. **Epidemiological Modeling**: Tsallis statistics could be used to model the spread of diseases, especially in cases where traditional models fail to capture the long-range correlations between individuals in a population.
 
@@ -975,7 +975,7 @@ $$
 \sigma(z) = \frac{1}{1+e^{ -z }},
 $$
 
-we generalized it to $q$-sigmoid function by 
+we generalized it to $q$-sigmoid function: 
 
 $$
 \boxed{ 
@@ -1003,37 +1003,35 @@ $$
 \frac{ \partial \sigma(z) }{ \partial z }  = \sigma(z) (1-\sigma(z)).
 $$
 
-Everything else is the same as regular logistic regression method, without penalty terms. 
-
 The cross entropy loss function now reads
 
 $$
 \boxed{ 
-\xi= - \sum_ {i=1}^{n}(y_ {i}\log(\sigma _ {q_ {i} }))+(1-y_ {i})\log(1-\sigma_ {q_ {i} }).
+L= - \sum_ {i=1}^{n}(y_ {i}\log(\sigma _ {q_ {i} }(z_ {i} )))+(1-y_ {i})\log(1-\sigma_ {q_ {i} }(z_ {i} )).
 }
 $$
 
-here $q_ {i}$ is different for each sample, but for starters we can set it constant for all samples, varying close to $1$, for example from -0.8 to 1.2 or something. 
+where $z_ {i}=- \theta\cdot X^{(i)}$, $X^{(i)}$ the $i$-th observed data and the q-parameters $q_ {i}$ are different for each sample. Someone write it as $z_ {i}=-\theta^{T}X^{(i)}$, but I neglect the transpose symbol since now both $\theta$ and $X$ are to be understood as vectors. For starters we can set all the $q_ {i}$ as the same constant for all samples, varying about $1$, for example from -0.2 to 1.8 or something. This will greatly reduce the number of free parameters hence prevents over fitting.
 
-We will use the gradient method to find the minimum value for parameters that minimized the loss function. Let $\theta$ be the vector of parameters,
+We will use the gradient method to find the minimum value for parameters that minimized the loss function. Next we work out the derivative of loss function.
 
-$$
-\hat{\theta} = \text{argmax}_ {\theta} \left\lbrace \xi(y,\sigma_ {q}(z)) \right\rbrace 
-$$
-
-is the optimal choice for $\theta$, then 
+Some straightforward derivation shows that 
 
 $$
-\hat{\theta}_ {(t)} = \hat{\theta}^{(t-1)} - \alpha \frac{ \partial \xi(y,\sigma_ {q}(z)) }{ \partial z }
+\frac{ \partial L(y,\sigma_ {q}(z)) }{ \partial z }  = \beta(q,z)(\sigma_ {q}(z)-y),
 $$
 
-where $t$ is the iteration index, and some simple derivation tells us that 
+where $\beta(q,z) = \frac{1}{1-z(1-q)}$. The derivative of the loss function with respect to parameters can be readily written as 
 
 $$
-\frac{ \partial \xi(y,\sigma_ {q}(z)) }{ \partial z }  = \beta(q,z)(\sigma_ {q}(z)-y),
+\boxed{ 
+\frac{ \partial L(y,\theta) }{ \partial \theta ^{a} }  = \sum_ {i} \beta(q,z_ {i} )(\sigma_ {q}(z_ {i} )-y_ {i})X^{(i)}_ {a}, \quad  z_ {i} =\sum_ {a}\theta^{a} \cdot X^{(i)}_ {a} = \theta \cdot X^{(i)}.
+}
 $$
 
-and $\beta(q,z)$ was defined before. The key point is that now $\beta(q,z)$ plays a similar rule as $\alpha$, hence in a sense, using $q$-sigmoid naturally introduce the learning rate! We can even set $\alpha=1$ and get
+Note that I have replace $q_ {i}$ with an universal $q$. In contrast to the classical result, there is an extra $\beta$ factor which is nonlinear in both $q$ and $z$. 
+
+After we plugin this result to gradient method, $\beta(q,z)$ will play a similar rule as $\alpha$, hence in a sense, using $q$-sigmoid naturally introduce the learning rate! We can even set $\alpha=1$ and get
 
 $$
 \hat{\theta}_ {(t)} = \hat{\theta}^{(t-1)} -\beta(q,z)(\sigma_ {q}(z)-y).
@@ -1044,11 +1042,6 @@ The learning rate $\alpha$ can be chosen according to the Lipschitz constant $L$
 $$
 \alpha = \frac{1}{L}.
 $$
-
-
-
-
-
 
 - - -
 # Appendix. Useful Mathematical Formulae
