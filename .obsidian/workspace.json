@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
+                "file": "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md"
+                "file": "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md"
               }
             }
           },
@@ -208,13 +208,10 @@
   },
   "active": "b6f5857e802ea8ee",
   "lastOpenFiles": [
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
-    "img/kink/H4Minus2OnP14.png",
-    "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md",
-    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
+    "img/kink/H4Minus2OnP14.png",
+    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
@@ -226,10 +223,12 @@
     "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
     "_posts/2022-9-2-The-Lie-Derivative.md",
     "_posts/2022-12-26-Basics-of-Distributions.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/kink/H3Minus3On4.png",
     "img/kink/H3Minus3On2.png",
     "img/kink/3rdOrderReducible.png",
     "img/kink/p2Fundamental.png",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "img/kink/H5Rules.png",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "专家库管理制度报告.md",
@@ -243,6 +242,7 @@
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
     "img/resurgence",
