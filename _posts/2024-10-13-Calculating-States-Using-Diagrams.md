@@ -285,7 +285,7 @@ $$
 
 $H_ {4}^{(-2)}\left\lvert \vec{p} \right\rangle_ {1}^{(4)}:$
 
-This contribution is relatively simple, including one contribution only: $H_ {4}^{(-2)}$ acting on panel 3 in Figure 4. The diagrams are given in Figure , with contributions
+This contribution is relatively simple, including one contribution only: $H_ {4}^{(-2)}$ acting on panel 3 in Figure 4. The diagrams are given in Figure 10, with contributions
 
 $$
 \begin{align*}

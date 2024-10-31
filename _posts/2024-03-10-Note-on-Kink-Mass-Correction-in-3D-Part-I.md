@@ -128,19 +128,49 @@ In the partial natural units, I'd like to think there are two fundamental "ruler
 
 To appreciate the importance of $\hbar$, just recall that in canonical quantization $[x,p]=i\hbar$, $\hbar$ enters explicitly in the commutation relation, providing the fundamental basis of quantum theory. This is also true in the case of quantum field theory. Furthermore, at each order of an expansion in $\hbar$, the physical symmetries (Lorentz invariance, $U(1)$ symmetry, etc.) must be satisfied, otherwise there will be some special value of $\hbar$ only at which the symmetries are preserved, which is just strange. 
 
-In the unit where $c=1$, the Planck's constant $\hbar$ has the unit of action, or rather the action has the unit of $[\hbar]=ET$, where $E$ is the energy scale and $T$ the time. It turns out that there are more than one way to assign $\hbar$-dependence for quantities such as the mass $m$, the coupling $g,\lambda$ etc. A criterion for the "right" choice is that, at $\hbar\to 0$ limit, the quantum theory agrees with the classical theory. As an example, Stanley Brodsky and Paul Hoyer in their [paper](https://arxiv.org/pdf/1009.2313.pdf) used the quantum mechanical harmonic oscillator as an example in Eq.(1). The gist is that, you can rescale $x$ to $x / \sqrt{ \hbar }$, then the propagator is formally independent of $\hbar$. However, this will change how we view distance, in the $\hbar\to 0$ limit, for a fixed distance $L$, the "length" measure will increase as $1 / \sqrt{ \hbar }$, hence we are going to smaller and smaller area. 
+In the unit where $c=1$, the Planck's constant $\hbar$ has the unit of action, or rather the action has the unit of $[\hbar]=ET$, where $E$ is the energy scale and $T$ the time. The textbook proof of the equivalence between *loop expansion* and *semi-classical expansion*, i.e. $\hbar$-expansion usually goes as follows. First write the partition function (with the source term) with $\hbar$:
+
+$$
+Z[J(x)] = \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar} \int d^{d}x \, (\mathcal{L}+\hbar J \phi)  \right\rbrace  ,
+$$
+
+where $J=J(x)$ is the source term. Note that the source term has an $\hbar$ multiplied with it. Splitting the Lagrangian into free and interacting part (depends on the choice), we can extract out the interaction and put it in the front of the free partition function:
+
+$$
+Z[J] = \exp \left\lbrace \frac{i}{\hbar}\mathcal{L}_ {\text{int}}\left( \frac{1}{i} \frac{\delta}{\delta J} \right) \right\rbrace  Z_ {0}[J],
+$$
+
+where $\mathcal{L}_ {\text{int}}$ is the interacting Lagrangian and 
+
+$$
+Z_ {0}[J] = \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\int d^{d}x\, (\mathcal{L}_ {0}+ \hbar J\phi)  \right\rbrace
+$$
+
+is the free partition function with the source. It can be integrated out in the closed form (for the level of rigorous for a physicist) to give
+
+$$
+Z_ {0}[J] = N \exp \left\lbrace - \frac{i}{2}\hbar \int d^{d}x d^{d}y \, J(x) \Delta_ {F}(x-y)J(y)   \right\rbrace,
+$$
+
+where $\Delta_ {F}$ is the Feynman propagator. It shows that each propagator contributes a factor of $\hbar$. 
+
+Now, since each diagrammatic vertex is a result of a functional derivative $\frac{i}{\hbar }\mathcal{L}_ {\text{int}}\left( \frac{\delta}{\delta J} \right)$, each vertex contributes a factor of $\frac{1}{\hbar}$. Then, using some relations between the numbers of loops, propagators and vertices (it depends on the specific model), and **amputate the external legs**, it can usually be shown that: a general graph with $L$ loops is proportional to $\hbar^{L-1}$. Thus an expansion in the number of loops is also an expansion in powers of $\hbar$. 
+
+- - -
+
+It turns out that there are more than one way to assign $\hbar$-dependence for quantities such as the mass $m$, the coupling $g,\lambda$ etc. A criterion for the "right" choice is that, at $\hbar\to 0$ limit, the quantum theory agrees with the classical theory. As an example, Stanley Brodsky and Paul Hoyer in their [paper](https://arxiv.org/pdf/1009.2313.pdf) used the quantum mechanical harmonic oscillator as an example in Eq.(1). The gist is that, you can rescale $x$ to $x / \sqrt{ \hbar }$, then the propagator is formally independent of $\hbar$. However, this will change how we view distance, in the $\hbar\to 0$ limit, for a fixed distance $L$, the "length" measure will increase as $1 / \sqrt{ \hbar }$, hence we are going to smaller and smaller area. 
 
 It is generally understood that each loop contribution to amplitudes is associated with one factor of $\hbar$. However, to fully define the $\hbar\to 0$ limit one need to specify the $\hbar$ dependence of various quantities in the Lagrangian as mentioned before, such as the field operator, the mass, the coupling, etc. This is not as straightforward as one might think, for $\hbar$ not only appears in the action $iS / \hbar$ but also appears in the Lagrangian. In Brodsky's paper mentioned above, the authors proposed a way to establish the $\hbar$ dependence such that the loop and $\hbar$ expansions are equivalent. We will go to more details in the following.
 
 **First, regard $\hbar$ as a constant of nature with certain dimension, use $\hbar$ to make terms in the Lagrangian dimensionless.**
 
-Again, let's work with the assumption that $c = \epsilon_ {0} = 1$. Require $[S]=\hbar$, and $\alpha_ {s} = g^{2} / 4\pi \hbar$ is dimensionless, the latter implies that $[g]=\sqrt{ \hbar }=\sqrt{ ET }=\sqrt{ EL }$. From the self-energy of gluons $G_ {\mu \nu}G^{\mu \nu}$ where $G = \partial A - \partial A +ig / \hbar [A,A]$ we have  
+Again let's work with the assumption that $c = \epsilon_ {0} = 1$. Require $[S]=\hbar$, and $\alpha_ {s} = g^{2} / 4\pi \hbar$ is dimensionless, the latter implies that $[g]=\sqrt{ \hbar }=\sqrt{ ET }=\sqrt{ EL }$. From the self-energy of gluons $G_ {\mu \nu}G^{\mu \nu}$ where $G = \partial A - \partial A +ig / \hbar [A,A]$ we have  
 
 $$
 [A] = \sqrt{ \frac{E}{L} }.
 $$
 
-For the same reasons, in the scalar QED the classical electric charge $e$ and mass $m$ are divided by $\hbar$,
+Similarly, in scalar QED model the classical electric charge $e$ and mass $m$ are divided by $\hbar$,
 
 $$
 S_ {\text{sQED} } = \int d^{4}x \, \left\lbrace \left\lvert D\phi \right\rvert ^{2}-\frac{m^{2} }{\hbar^{2} }\left\lvert \phi \right\rvert ^{2} \right\rbrace , \quad  D = \partial +i \frac{e}{\hbar }A.
