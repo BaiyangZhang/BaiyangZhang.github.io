@@ -202,3 +202,7 @@ In Bentham’s *Principles of the Civil Code*, he wrote
 >Law does not say to man, Work and I will reward you but it says: Labour, and by stopping the hand that would take them from you, I will ensure to you the fruits of your labour -- its natural and sufficient reward, which without me you cannot preserve. If industry creates, it is law which preserves; if at the first moment we owe everything to labour, at the second, and every succeeding moment, we owe everything to law.
 
 Law should limit itself to ensuring that people can pursue utility for themselves. 
+
+The necessity for having a government comes down to two things.
+
+1. Selfish behavior can be self-defeating. The problem of funding the provision of public goods is one of a class of market failures, where the market’s invisible hand leads to sub-optimal outcomes for all concerned.
