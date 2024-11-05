@@ -1,5 +1,5 @@
 ---
-layoutost: post
+layout: post
 title: Some Thoughts on Entropy
 date: 2024-11-05
 author: Baiyang Zhang
@@ -102,6 +102,8 @@ The entropy is then the average value of so-called "surprise", or information co
 - - -
 
 Kullback and Leibler (1951) developed the principle of minimum cross entropy (POMCE) and in the late 1950s Jaynes (1957a,b) developed the principle of maximum entropy (POME). 
+
+The connection between likelihood function and cross entropy. 
 
 Note that the cross entropy is not a metric since it is not symmetric under the exchange between $p$ and $\hat{p}$. 
 
