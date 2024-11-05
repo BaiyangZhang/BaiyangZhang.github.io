@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/2024-11-05-Thougs-on-Entropy.md",
+                "file": "_posts/2024-11-05-Thougs-on-Entropy.md",
                 "mode": "source",
                 "source": false
               },
@@ -120,8 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -235,7 +234,7 @@
   "active": "69acaa58dc7c7036",
   "lastOpenFiles": [
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
-    "blog/2024-11-05-Thougs-on-Entropy.md",
+    "_posts/2024-11-05-Thougs-on-Entropy.md",
     "Discussion Notes.md",
     "Confining Modeling of Quark Propagator.md",
     "Pasted image 20240920104058.png",
