@@ -99,4 +99,10 @@ and make sense of $\ln(1 / p)$ directly. As far as I know, there are commonly tw
 
 The entropy is then the average value of so-called "surprise", or information content. It is a matter of taste of which you adopt.
 
+- - -
+
+Kullback and Leibler (1951) developed the principle of minimum cross entropy (POMCE) and in the late 1950s Jaynes (1957a,b) developed the principle of maximum entropy (POME). 
+
+Note that the cross entropy is not a metric since it is not symmetric under the exchange between $p$ and $\hat{p}$. 
+
 
