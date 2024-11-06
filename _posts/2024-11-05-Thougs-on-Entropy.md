@@ -99,6 +99,22 @@ and make sense of $\ln(1 / p)$ directly. As far as I know, there are commonly tw
 
 The entropy is then the average value of so-called "surprise", or information content. It is a matter of taste of which you adopt.
 
+In his work, Shannon was interested in finding a measure that could quantitatively capture the information content of a message source. He proposed several properties that this measure (which we now call entropy) should satisfy to be a useful and consistent measure of information. These properties included:
+
+1. **Additivity**: The entropy of two independent sources should be the sum of their individual entropies.
+2. **Continuity**: The measure should change continuously as the message probabilities change.
+3. **Symmetry**: The measure should not depend on the order of the messages.
+4. **Maximum**: The measure should be maximal for a uniform distribution, where all messages are equally likely.
+
+Shannon's Uniqueness Theorem essentially states that, given these properties (along with a few others), the entropy of a discrete random variable is unique and is given by the now-familiar formula:
+
+$$
+S = -\sum_{i} p(x_i) \ln p(x_i)
+$$
+
+The theorem's significance lies in its establishment of entropy as a **unique measure** that satisfies these intuitive and necessary properties for quantifying information. It solidified the concept of entropy as the foundational metric in information theory, leading to profound implications for communication, coding theory, and even other disciplines like statistics and thermodynamics.
+
+
 - - -
 
 Kullback and Leibler (1951) developed the principle of minimum cross entropy (POMCE) and in the late 1950s Jaynes (1957a,b) developed the principle of maximum entropy (POME). 

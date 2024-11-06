@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -218,10 +218,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a48425c7c6e9d0aa",
+  "active": "69acaa58dc7c7036",
   "lastOpenFiles": [
-    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
+    "img/tsallis/Youden1.png",
+    "img/tsallis",
+    "img/New folder",
+    "img/Youden1.png",
     "_posts/2024-11-05-Thougs-on-Entropy.md",
+    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "Discussion Notes.md",
     "Confining Modeling of Quark Propagator.md",
     "Pasted image 20240920104058.png",
@@ -230,7 +235,6 @@
     "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
     "img/kink/H4Minus2OnP14.png",
-    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
     "img/kink/H3Minus1OnP23.png",
@@ -243,7 +247,6 @@
     "_posts/2022-12-26-Basics-of-Distributions.md",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/kink/H3Minus3On4.png",
-    "img/kink/H3Minus3On2.png",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "专家库管理制度报告.md",
@@ -255,7 +258,6 @@
     "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
     "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
-    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
     "img/resurgence",
@@ -263,8 +265,6 @@
     "img/新建文件夹",
     "_includes/New folder",
     "_includes/head.html",
-    "_includes/header.html",
-    "_includes/scripts/New folder",
-    "_includes/scripts/analytics.html"
+    "_includes/header.html"
   ]
 }
