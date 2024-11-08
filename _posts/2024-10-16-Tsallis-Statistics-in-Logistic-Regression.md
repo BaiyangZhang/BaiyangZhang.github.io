@@ -24,8 +24,6 @@ tags:
 	- [4.2 With Tsallis statistics](#42-with-tsallis-statistics)
 - [Appendix. Useful Mathematical Formulae](#appendix-useful-mathematical-formulae)
 
-
-
 # 1. Introduction
 
 `Tsallis statistics` is a generalization of traditional statistical mechanics, devised by *Constantino Tsallis*, to better characterize complex systems. It involves a collection of mathematical functions and associated probability distributions that can be derived by optimizing the `Tsallis entropic form`, a generalization of familiar Boltzmann entropy. A key aspect of Tsallis statistics is the introduction of a real parameter $q$, which adjusts the distributions to exhibit properties intermediate between Gaussian and Levy distributions, reflecting the degree of non-extensivity of the system.
@@ -1044,6 +1042,20 @@ $$
 $$
 
 - - -
+
+Some preliminary results are Obtained and put in the following figure. 
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/tsallis/Youden1.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    Youden index of various regression methods.
+</div>
+
+
 # Appendix. Useful Mathematical Formulae
 
 The definition of $q$-logarithm and $q$-exponential, $x>0, q \in\mathbb{R}$:
@@ -1051,11 +1063,11 @@ The definition of $q$-logarithm and $q$-exponential, $x>0, q \in\mathbb{R}$:
 $$
 \begin{align*}
 \ln_ {q}x &:= \frac{x^{1-q}-1}{1-q}, \\
-e^{ x }_ {q} &:= (1+(1-q)x)^{1/(1-q)}, 
+e^{ x }_ {q} &:= (1+(1-q)x)^{1/(1-q)},\quad  0 \text{ if } 1+(1-q)x<0.
 \end{align*}
 $$
 
-in the definition of the exponential it is required that $1+(1-q)x>0$, otherwise it is defined to be zero. It is easily checked that they are indeed inverse to each other. 
+Note that in the definition of the exponential it is required that $1+(1-q)x>0$, otherwise it is defined to be zero. This is to make sure the the value of $e_ {q}$ is positive definite. It is easily checked that $\log _q$ and $\exp_ {q}$ are indeed inverse to each other. 
 
 many formula for $q$-logarithms reminds us of that for the regular $q$-logarithms. 
 
@@ -1089,17 +1101,6 @@ $$
 For more details, refer to the textbook by Tsallis himself and [https://doi.org/10.1016/S0378-4371(01)00567-2](https://doi.org/10.1016/S0378-4371(01)00567-2 "Persistent link using digital object identifier").
 
 
-Some preliminary results are Obtained and put in the following figure. 
 
 
 
-
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="/img/tsallis/Youden1.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
-    </div>
-</div>
-<div class="caption">
-    Youden index of various regression methods.
-</div>
