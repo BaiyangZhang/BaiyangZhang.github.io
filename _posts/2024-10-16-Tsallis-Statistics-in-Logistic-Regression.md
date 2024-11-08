@@ -958,7 +958,7 @@ We note that the potential for applying Tsallis entropy is immense, mostly for t
 1. Tsallis statistics modifies logarithmic and exponential functions, and they are ubiquitous in logistic regression methods;
 2. Tsallis entropy can seamlessly generalize the familiar Shannon entropy, which is closely connected to the cross entropy loss function, which is exactly the loss functions we used in regression method.
 
-As a starter, we will focus on the generalization of sigmoid function, keeping other components unchanged. But first, let's repeat the definition for Tsallis-modified log and exponential functions, so-called $q$-log and $q$-exponentials, for future convenience:
+As a starter, in this note we will only focus on the generalization of sigmoid function, keeping other components unchanged. But first, let's repeat the definition for Tsallis-modified log and exponential functions, so-called $q$-log and $q$-exponentials, for future convenience:
 
 $$
 \begin{align*}
@@ -968,6 +968,8 @@ $$
 $$
 
 As you can check, at the limit $q\to 1$ they regress to normal log and exp functions. 
+
+**q-sigma of the first kind**
 
 The regular sigmoid function reads
 
