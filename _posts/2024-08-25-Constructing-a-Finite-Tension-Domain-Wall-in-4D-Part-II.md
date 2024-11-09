@@ -1264,7 +1264,8 @@ $$
 \delta v_ {2} =& 0, \\
 A_ {4}'  \equiv& \frac{3g^{2}m^{2}}{8} \int d^{3}x\,\frac{d^{3}p_ {1}d^{3}p_ {2}}{(2\pi)^{6}} \, \frac{1}{\omega_ {p_ {1}}\omega_ {p_ {2}}\omega_ {p_ {1}+p_ {2}}(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {1}+p_ {2}})} ,\\
 \delta m^{2} =& - \frac{9m^{2}g^{2}}{2}\int \frac{d^{3}p_ {2}}{(2\pi)^{3}} \, \frac{1}{\omega_ {2}\omega_ {1+2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} \\
-=& - \frac{9g^{2}m^{2}}{8\pi^{2}}\ln\left( \frac{\Lambda}{m} \right) + \text{const}
+=& - \frac{9g^{2}m^{2}}{8\pi^{2}}\ln\left( \frac{\Lambda}{m} \right) + \text{finite}, \\
+\frac{\delta g}{g} =& - \frac{9g^{2}\ln \Lambda}{16\pi^{2}}+\text{finite}.
 \end{align*}
 $$
 
