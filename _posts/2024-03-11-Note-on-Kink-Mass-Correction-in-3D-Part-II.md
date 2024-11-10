@@ -107,7 +107,7 @@ hence in $2+1$ dimension the coupling has dimension of mass.
 
 # 2. Normal Modes
 
-Since we assumed the domain wall to be flatly lying in the $y$-plane, the normal modes in 2-d space can be *factorized* into $x$ and $y$ components,
+Since we assumed the domain wall to be lying flat in the $y$-plane, the normal modes in 2-d space can be *factorized* into $x$ and $y$ components,
 
 $$
 {\mathfrak g} _ {k_ {x}k_ {y}} (x,y) =  {\mathfrak g}_ {k_ {x}}(x) \times  e^{ -i y k_ {y}}.
@@ -154,7 +154,7 @@ $$
 
 Again we see the factorization in $x$ and $y$, the $\delta$-function in $y$ direction is due to the plane wave expansion. 
 
-Note that the infinite volume of a flat $\mathbb{R}$ can be written as Dirac-$\delta$ function $\delta(0)$. To see that, recall the Fourier transform of a function is written as 
+Note that the infinite volume of a flat $\mathbb{R}$ can be written as Dirac-$\delta$ function $\delta(0)$. To see it, recall the Fourier transform of a function is written as 
 
 $$
 \widetilde{f}(\vec{k}) = \int d^{d}x \, e^{ -i\vec{k}\cdot \vec{x} } f(\vec{x})
