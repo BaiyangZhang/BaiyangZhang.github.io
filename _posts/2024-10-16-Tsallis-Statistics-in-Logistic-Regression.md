@@ -26,7 +26,7 @@ tags:
 
 # 1. Introduction
 
-`Tsallis statistics` is a generalization of traditional statistical mechanics, devised by *Constantino Tsallis*, to better characterize complex systems. It involves a collection of mathematical functions and associated probability distributions that can be derived by optimizing the `Tsallis entropic form`, a generalization of familiar Boltzmann entropy. A key aspect of Tsallis statistics is the introduction of a real parameter $q$, which adjusts the distributions to exhibit properties intermediate between Gaussian and Levy distributions, reflecting the degree of non-extensivity of the system.
+`Tsallis statistics` is a generalization of traditional statistical mechanics, devised by *Constantino Tsallis*, to better characterize complex systems. It involves a collection of mathematical functions and associated probability distributions that can be derived by optimizing the `Tsallis entropic form`, a generalization of familiar Boltzmann entropy. A key aspect of Tsallis statistics is the introduction of a real parameter $q$, which adjusts the distributions to exhibit properties intermediate between Gaussian and Levy distributions, reflecting the degree of nonextensivity of the system.
 
 Tsallis distributions include various families like the $q$-Gaussian, $q$-exponential, and $q$-Weibull distributions. These distributions are notable for their heavy tails and have been applied across diverse fields such as statistical mechanics, geology, astronomy, economics, and machine learning, among others.
 
@@ -304,21 +304,21 @@ $$
 
 ## 3.1. Mean Value in Tsallis Statistics
 
-There are three types of Tsallis statistics, depending on how they take the mean value. Next we will discuss each of them in chronological order.
+There are at least three types of Tsallis statistics, depending on how they take the mean value. Next we will discuss each of them in chronological order.
 
-Throughout the note we will assume that probabilities are normalized in the usual way,
+Throughout the note we will assume that probabilities are normalized to one,
 
 $$
 \sum_ {i} p_ {i} = 1.
 $$
 
-Given an observable $\mathcal{O}$, what could be the expected value $\left\langle \mathcal{O} \right\rangle$? The most naive guess, which is also the default definition, is to define 
+Given an observable $\mathcal{O}$, what is the expected value $\left\langle \mathcal{O} \right\rangle$? In regular statistics
 
 $$
 \left\langle \mathcal{O} \right\rangle  := \sum_ {i}  p _ {i} O_ {i}
 $$
 
-where $\mathcal{O}_ {i}$ is the $i$-th possible value of $\mathcal{O}$ with probability $p_ {i}$. However, this definition yields and ill-defined thermodynamic distribution, *some energy states will not be allowed due to mathematical rather than physical reasons, and the distribution is not invariant under an overall shift in energy*. Normally only the energy difference matter, the only situation that I know of where the absolute energy matters is from gravity, which is clearly not the case here. Thus it is not a good definition for taking average. 
+where $\mathcal{O}_ {i}$ is the $i$-th possible value of $\mathcal{O}$ with probability $p_ {i}$. However, this definition yields an ill-defined thermodynamic distribution, *some energy states will not be allowed due to mathematical rather than physical reasons, and the distribution is not invariant under an overall shift in energy*. Normally only the energy difference matter, the only situation that I know of where the absolute energy matters is from gravity, which is clearly not the case here. Thus it is not a good definition in Tsallis statistics. 
 
 - - -
 
@@ -951,7 +951,7 @@ X_ {ip} & X_ {ip}X_ {i1} & X_ {ip}X_ {i2} & \cdots & X_ {ip}^2
 
 ## 4.2 With Tsallis statistics
 
-We note that the potential for applying Tsallis entropy is immense, mostly for two reasons: 
+There exist tremendous potential in applying Tsallis entropy to biostatistics, mostly for two reasons: 
 
 1. Tsallis statistics modifies logarithmic and exponential functions, and they are ubiquitous in logistic regression methods;
 2. Tsallis entropy can seamlessly generalize the familiar Shannon entropy, which is closely connected to the cross entropy loss function, which is exactly the loss functions we used in regression method.
@@ -967,7 +967,7 @@ $$
 
 As you can check, at the limit $q\to 1$ they regress to normal log and exp functions. 
 
-**q-sigma of the first kind**
+**q-sigmoid of the first kind**
 
 The regular sigmoid function reads
 
@@ -1007,25 +1007,25 @@ The cross entropy loss function now reads
 
 $$
 \boxed{ 
-L= - \sum_ {i=1}^{n}(y_ {i}\log(\sigma _ {q_ {i} }(z_ {i} )))+(1-y_ {i})\log(1-\sigma_ {q_ {i} }(z_ {i} )).
+L= - \sum_ {i=1}^{n}[y_ {i}\log(\sigma _ {q_ {i} }(z_ {i} ))+(1-y_ {i})\log(1-\sigma_ {q_ {i} }(z_ {i} ))].
 }
 $$
 
-where $z_ {i}=- \theta\cdot X^{(i)}$, $X^{(i)}$ the $i$-th observed data and the q-parameters $q_ {i}$ are different for each sample. Someone write it as $z_ {i}=-\theta^{T}X^{(i)}$, but I neglect the transpose symbol since now both $\theta$ and $X$ are to be understood as vectors. For starters we can set all the $q_ {i}$ as the same constant for all samples, varying about $1$, for example from -0.2 to 1.8 or something. This will greatly reduce the number of free parameters hence prevents over fitting.
+where $z_ {i}=\theta\cdot X^{(i)}$, $X^{(i)}$ the $i$-th observed data and the q-parameters $q_ {i}$ are different for each sample. Someone write it as $z_ {i}=\theta^{T}X^{(i)}$, but I neglect the transpose symbol since now both $\theta$ and $X$ are understood as vectors. For starters we can set all the $q_ {i}$ as the same constant for all samples, varying about $1$, for example from -0.2 to 1.8 or something. This will greatly reduce the number of free parameters hence prevents over fitting.
 
 We will use the gradient method to find the minimum value for parameters that minimized the loss function. Next we work out the derivative of loss function.
 
 Some straightforward derivation shows that 
 
 $$
-\frac{ \partial L(y,\sigma_ {q}(z)) }{ \partial z }  = \beta(q,z)(\sigma_ {q}(z)-y),
+\frac{ \partial L(y,\sigma_ {q}(z)) }{ \partial z }  = \beta_ {q}(z)(\sigma_ {q}(z)-y),
 $$
 
-where $\beta(q,z) = \frac{1}{1-z(1-q)}$. The derivative of the loss function with respect to parameters can be readily written as 
+where $\beta_ {q}(z) = \frac{1}{1-z(1-q)}$. The derivative of the loss function with respect to parameters can be readily written as 
 
 $$
 \boxed{ 
-\frac{ \partial L(y,\theta) }{ \partial \theta ^{a} }  = \sum_ {i} \beta(q,z_ {i} )(\sigma_ {q}(z_ {i} )-y_ {i})X^{(i)}_ {a}, \quad  z_ {i} =\sum_ {a}\theta^{a} \cdot X^{(i)}_ {a} = \theta \cdot X^{(i)}.
+\frac{ \partial L(y,\theta) }{ \partial \theta ^{a} }  = \sum_ {i} \beta_ {q}(z) (\sigma_ {q}(z_ {i} )-y_ {i})X^{(i)}_ {a}, \quad  z_ {i} =\sum_ {a}\theta^{a} \cdot X^{(i)}_ {a} = \theta \cdot X^{(i)}.
 }
 $$
 
@@ -1056,6 +1056,66 @@ Some preliminary results are Obtained and put in the following figure.
 <div class="caption">
     Youden index of various regression methods.
 </div>
+
+- - -
+
+**q-sigmoid of the second kind**
+
+Another equivalent expression for the regular sigmoid function reads
+
+$$
+\sigma(z) = \frac{e^{ z }}{e^{ z }+1},
+$$
+
+substitute in the q-exponent function, we have the second kind of q-sigmoid function:
+
+$$
+\overline{\sigma}_ {q}(z) := \frac{\exp_ {q}(z)}{\exp_ {q}+1}. 
+$$
+
+This is inequivalent to the q-sigmoid of the first kind since q-exponent satisfy 
+
+$$
+\exp_ {q}(z)\exp_ {q}(-z) = \exp_ {q}((1-q)z^{2}) \neq 1.
+$$
+
+The second kind of q-sigmoid can be obtained in another way. The original logistic regression method works like the following: let $p(1\mid z)$ be the measured (real) probability for outcome $1$ and $\hat{p}(1\mid z)$ for the theoretical prediction. The logit function is the bridge between the microscopic information represented by $z$, and the predicted macroscopic measure result $\hat{p}(1\mid z)$, in a linear fashion:
+
+$$
+\text{logit}(\hat{p}) = \log\left( \frac{\hat{p}}{1-\hat{p}} \right)=z.
+$$
+
+We can directly generalize it to $q$-logit function by replacing the log with q-log, 
+
+$$
+\text{logit}_ {q}(\hat{p}) := \log_ {q}\left( \frac{\hat{p}}{1-\hat{p}} \right)=z.
+$$
+
+Invert the relation we have
+
+$$
+\hat{p}(1\mid z) := \frac{\exp_ {q}(z)}{\exp_ {q}(z)+1},
+$$
+
+which is the q-sigmoid function of the second kink. 
+
+We have
+
+$$
+\frac{d}{dz} \overline{\sigma}_ {q}(z) = \overline{\sigma}_ {q} (z)(1-\overline{\sigma}_ {q} (z))\beta _ {q} (-z), \quad  \beta _ {q} (-z)=\frac{1}{1+(1-q)z}.
+$$
+
+Note the difference from the q-sigmoid of the first kind, where in the derivative, we have $\beta _ {q}(z)$ instead. 
+
+The derivative of cross-entropy loss function with respect to the parameters reads
+
+$$
+\boxed{ 
+\frac{ \partial L }{ \partial \theta_ {a} } = - \sum_ {i}^{n} (\overline{\sigma}_ {q} (z_ {i} )-y_ {i}) \beta _ {q} (-z_ {i} )X^{(i)}_ {a}, \quad z_ {i} =\sum_ {a}\theta_ {a}X^{(i)}_ {a}= \vec{\theta}\cdot \vec{X}^{(i)}.
+}
+$$
+
+
 
 
 # Appendix. Useful Mathematical Formulae
