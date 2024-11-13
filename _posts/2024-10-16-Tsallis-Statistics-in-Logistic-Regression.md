@@ -1111,7 +1111,7 @@ The derivative of cross-entropy loss function with respect to the parameters rea
 
 $$
 \boxed{ 
-\frac{ \partial L }{ \partial \theta_ {a} } = - \sum_ {i}^{n} (\overline{\sigma}_ {q} (z_ {i} )-y_ {i}) \beta _ {q} (-z_ {i} )X^{(i)}_ {a}, \quad z_ {i} =\sum_ {a}\theta_ {a}X^{(i)}_ {a}= \vec{\theta}\cdot \vec{X}^{(i)}.
+\frac{ \partial L }{ \partial \theta_ {a} } =\sum_ {i=1}^{n} [\overline{\sigma}_ {q} (z_ {i} )-y_ {i}] \beta _ {q} (-z_ {i} )X^{(i)}_ {a}, \quad z_ {i} =\sum_ {a}\theta_ {a}X^{(i)}_ {a}= \vec{\theta}\cdot \vec{X}^{(i)}.
 }
 $$
 
