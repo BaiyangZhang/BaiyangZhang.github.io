@@ -13,40 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-11-05-Thougs-on-Entropy.md",
+                "file": "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-11-05-Thougs-on-Entropy"
+              "title": "2024-09-18-Rules-for-Jarah-Diagrams"
             }
           },
           {
-            "id": "4c26610c3f3ad300",
+            "id": "69acaa58dc7c7036",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-11-13-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
+                "file": "_drafts/papers/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-11-13-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III"
-            }
-          },
-          {
-            "id": "e4e53df4d782b717",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2024-11-06-Passive-Perspective-of-LSPT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2024-11-06-Passive-Perspective-of-LSPT"
+              "title": "Untitled"
             }
           },
           {
@@ -55,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+                "file": "_posts/2024-11-05-Thougs-on-Entropy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II"
+              "title": "2024-11-05-Thougs-on-Entropy"
             }
           }
         ],
@@ -120,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -137,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II"
+              "title": "Backlinks for 2024-07-30-Note-on-The-Moral-Foundations-of-Politics"
             }
           },
           {
@@ -156,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
+                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II"
+              "title": "Outgoing links from 2024-07-30-Note-on-The-Moral-Foundations-of-Politics"
             }
           },
           {
@@ -197,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md"
+                "file": "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II"
+              "title": "Outline of 2024-07-30-Note-on-The-Moral-Foundations-of-Politics"
             }
           },
           {
@@ -232,37 +217,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c26610c3f3ad300",
+  "active": "69acaa58dc7c7036",
   "lastOpenFiles": [
-    "2024-11-06-Passive-Perspective-of-LSPT.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
-    "2024-11-13-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
+    "_drafts/papers/Untitled.md",
+    "_drafts/papers",
     "_posts/2024-11-05-Thougs-on-Entropy.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
-    "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
-    "_posts/2024-10-11-Asymptotic-Methods-Applied-on-Anharmonic-Oscillator.md",
-    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+    "2024-11-13-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
+    "2024-11-06-Passive-Perspective-of-LSPT.md",
     "img/tsallis/Youden1.png",
     "img/tsallis",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+    "img/New folder",
+    "img/Youden1.png",
+    "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
+    "Discussion Notes.md",
+    "Confining Modeling of Quark Propagator.md",
+    "Pasted image 20240920104058.png",
+    "Pasted image 20240920112930.png",
+    "Pasted image 20240920111614.png",
+    "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
     "img/kink/H4Minus2OnP14.png",
-    "_posts/2022-11-10-Sinc-and-Csch-Function-as-Distributuions.md",
     "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
     "img/kink/H3Minus1OnP23.png",
     "img/kink/H40OnP12.png",
     "img/kink/p2FundamentalDiagrams.png",
     "img/kink/H3Minus3OnP25.png",
+    "_posts/2024-10-11-Asymptotic-Methods-Applied-on-Anharmonic-Oscillator.md",
     "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
     "_posts/2022-9-2-The-Lie-Derivative.md",
     "_posts/2022-12-26-Basics-of-Distributions.md",
-    "img/kink/H3Minus3On4.png",
-    "img/kink/H3Minus3On2.png",
-    "img/kink/3rdOrderReducible.png",
-    "img/kink/p2Fundamental.png",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "专家库管理制度报告.md",
     "Untitled 3.md",
@@ -277,8 +264,6 @@
     "img/fractal",
     "img/新建文件夹",
     "_includes/New folder",
-    "_includes/head.html",
-    "_includes/header.html",
-    "_includes/scripts/New folder"
+    "_includes/head.html"
   ]
 }
