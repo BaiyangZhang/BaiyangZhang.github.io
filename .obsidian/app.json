@@ -15,5 +15,6 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "useMarkdownLinks": false,
-  "showRibbon": false
+  "showRibbon": false,
+  "defaultViewMode": "source"
 }
