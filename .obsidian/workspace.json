@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/papers/Untitled.md",
+                "file": "_drafts/2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds"
             }
           },
           {
@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -219,8 +220,25 @@
   },
   "active": "69acaa58dc7c7036",
   "lastOpenFiles": [
+    "blog/2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
+    "_drafts/2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
+    "Discussion Notes.md",
+    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
+    "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
+    "_drafts/2022-12-30-Gauge-Gravity-Duality-I.md",
+    "_drafts/papers/Tsallis-in-Biostatistics.md",
+    "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
+    "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
+    "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
+    "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
+    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
+    "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
+    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
+    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
+    "_drafts/2023-05-07-Gauge-Theory-in-Two-Dimension.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
-    "_drafts/papers/Untitled.md",
     "_drafts/papers",
     "_posts/2024-11-05-Thougs-on-Entropy.md",
     "2024-11-13-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
@@ -230,7 +248,6 @@
     "img/New folder",
     "img/Youden1.png",
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
-    "Discussion Notes.md",
     "Confining Modeling of Quark Propagator.md",
     "Pasted image 20240920104058.png",
     "Pasted image 20240920112930.png",
@@ -238,26 +255,10 @@
     "_posts/2024-07-30-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
     "img/kink/H4Minus2OnP14.png",
-    "_drafts/2024-08-26-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
-    "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
     "img/kink/H3Minus1OnP23.png",
     "img/kink/H40OnP12.png",
     "img/kink/p2FundamentalDiagrams.png",
     "img/kink/H3Minus3OnP25.png",
-    "_posts/2024-10-11-Asymptotic-Methods-Applied-on-Anharmonic-Oscillator.md",
-    "_posts/2022-10-02-Basic-Measure-Theory-Part-I.md",
-    "_posts/2022-9-2-The-Lie-Derivative.md",
-    "_posts/2022-12-26-Basics-of-Distributions.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
-    "专家库管理制度报告.md",
-    "Untitled 3.md",
-    "Untitled 2.md",
-    "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
-    "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
-    "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
-    "_drafts/2023-mm-dd-Introduction-to-Transseries-Lecture-n.md",
     "assets/Mathematica/ExampleHarmonicOscillator.nb",
     "assets/Mathematica",
     "img/resurgence",

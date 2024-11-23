@@ -1,15 +1,15 @@
 ---
-layout:     post   				             # 使用的布局（不需要改）
-title:      Csch Function as a Distributuion # 标题 
-subtitle:                                    # 副标题
-date:       2022-11-10 				         # 时间
-author:     Baiyang Zhang 					 # 作者
-header-img: img/mathArt2.jpg                 # 这篇文章标题背景图片
-catalog: true 						         # 是否归档
-tags:								         # 标签
-    - math
-    - functionalAnalysis
-    - distribution
+layout: post
+title: Csch Function as a Distributuion
+subtitle: 
+date: 2022-11-10
+author: Baiyang Zhang
+header-img: img/mathArt2.jpg
+catalog: true
+tags:
+  - math
+  - functionalAnalysis
+  - distribution
 ---
 
 - [1. $\frac{\sin x}{x}$ as a distribution](#1-%5Cfrac%5Csin-xx-as-a-distribution)
@@ -129,7 +129,7 @@ $$
 \frac{d}{d \lambda}H(\lambda) = \frac{d}{d \lambda}H_{I}(\lambda) + \frac{d}{d \lambda}H_{I I}(\lambda),
 $$
 
-we just need to calculate one of them since they are complex conjugate to each other. Let's calculate $d H_{I} / d \lambda$, With the help of $\sin x = (e^{ ix } - e^{ -ix }) / 2i$, we have 
+we just need to calculate one of them since they are complex conjugate to each other. Let's calculate $d H_{I} / d \lambda$, since $\sin x = (e^{ ix } - e^{ -ix }) / 2i$ we have 
 
 $$
 \begin{align}
@@ -209,7 +209,15 @@ $$
 
 There is a pole at $z=0$, which we can by pass with a contour shown in the picture before, for our convenience I copy it here again. 
 
-![contour](/img/contour.png)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/contour.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    The contour of integral.
+</div>
+
 We want the integral on the infinite semi-circle, namely arc D to vanish. If $\omega-1>0$, with the help of [Jordan's Lemma](https://mathworld.wolfram.com/JordansLemma.html) we can show that the integral actually vanishes on D. If $\omega-1<0$ then we will need to choose another contour. 
 
 I will not go to details since it can be easily found elsewhere, for example [here](https://eagle.lamost.org/2012/05/the-frourier-transform-of-a-sinc-function/) is a pretty clear note. I just wanna point out that the **results are the same as principal value method**, and I strongly suggest to start with contour integral in the first place.
@@ -233,7 +241,7 @@ $$
 \end{align}
 $$
 
-where $\delta$ is less than the radius of convergence. In the last line both the first and last terms are finite, the divergence comes from the second term, so we expand the test function and $\text{csch}$ around $x=0$,
+where $\delta$ is less than the radius of convergence. In the last line, the first and last terms gives the principal value and is supposed to be finite, the divergence comes from the second term, so we expand the test function and $\text{csch}$ around $x=0$,
 
 $$
 \begin{align}
@@ -361,7 +369,7 @@ $$
 \left\langle \text{csch} ,\text{csch}  \right\rangle = \int_{-\infty}^{\infty} dx \, \text{csch} (x)\text{csch} (x) = \int_{-\infty}^{\infty} dx \, \text{csch} ^2(x). 
 $$
 
-There are two $\text{csch}$ functions in the integral, one is regarded as a singular distribution, the other a test function. Note that $\text{csch}$ function decays fast enough at large $\left\lvert {x} \right\rvert$ but is not locally integral at the neighborhood thus is not really a legit $L^1$ test function, but it does not change our argument. We can also circumvent this issue by either consider $\text{csch}^2$ as the singular distribution or confine the integral to $[\epsilon,\infty]$. 
+There are two $\text{csch}$ functions in the integral, one is regarded as a singular distribution, the other a test function. Note that $\text{csch}$ function decays fast enough at large $\left\lvert {x} \right\rvert$ but is not locally integrable at the neighborhood thus is not really a legit $L^1$ test function, but it does not change our argument. We can also circumvent this issue by either consider $\text{csch}^2$ as the singular distribution or confine the integral to $[\epsilon,\infty]$. 
 
 Since $\text{csch}^2$ is an even function on $[-\infty,\infty]$ we have 
 

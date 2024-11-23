@@ -1,7 +1,7 @@
 ---
-layout: Note on Carl Bender's Lecture on Asymptotic Series
+layout: Incomplete Note on Carl Bender's Lecture on Asymptotic Series
 title: 
-date: 2024-08-26
+date: 2024-11-21
 author: Baiyang Zhang
 catalog: true
 tags:

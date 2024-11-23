@@ -1,20 +1,29 @@
 ---
 layout: post
 title: A Passive Perspective of Linearized Soliton Perturbation Theory
-date: 
+date: 2024-11-14
 author: Baiyang Zhang
 catalog: true
 tags:
+  - kink
 ---
 
 
-In the context of Lagrangian formalism and path integral, the perturbation method is quite straightforward, we can redefine the field operator according to $\phi\to \frac{m }{\sqrt{ 2\lambda  }}+\phi'$, so that the classical vacuum is obtained at $\phi'$ equals zero. The small fluctuation about $\frac{m }{\sqrt{ 2\lambda  }}$ gives us the quantum effects, we will essentially calculate
+In the context of Lagrangian formalism and path integral, the perturbation method is relatively straightforward. For example, consider scalar $\phi^{4}$ theory with spontaneous symmetry breaking,
+
+$$
+\mathcal{L} = \frac{1}{2} (\partial_ {\mu}\phi)^{2} + \frac{1}{4} m^{2} + \frac{\lambda}{4}\phi^{4}.
+$$
+ 
+After the spontaneous symmetry breaking the vacuum is shifted from $\phi=0$ to $\phi= m / \sqrt{2\lambda}$. Now, we want to study the quantum fluctuation of real scalar field $\phi$ in the back ground of $\frac{m}{\sqrt{2}\lambda}$, what we do is we redefine the field operator as $\phi\to \frac{m }{\sqrt{ 2\lambda  }}+\phi'$, so that the new vacuum is obtained at $\phi'$ equals zero. We can now treat $\phi'$ as the fundamental quantum field. The small fluctuation about $\frac{m }{\sqrt{ 2\lambda  }}$ gives us the quantum effects via the partition function
 
 $$
 Z[J] = \int D\phi' \, \exp \left\lbrace iS[\phi']+i \int \phi' J   \right\rbrace ,
 $$
 
-but only include $\phi'\sim 0$. 
+but only about $\phi'\sim 0$. This partition function is perturbative about $\phi'=0$. 
+
+- - -
 
 How can we do the same thing but with Hamiltonian formalism? Anything that can be done with one formalism can equally be done in the other, it is just a matter of convenience. 
 
@@ -67,3 +76,6 @@ A comparison between displacement operator method to the case of regular functio
 |              We are using a new, shifted coordinate system $\left\lbrace \overline{x} \right\rbrace$ to study the same old functions $f(x)$.               |                                                                                                  We are using shifted operators $\mathcal{D}^{\dagger}\mathcal{O}\mathcal{D}$ to study the same old states $\left\lvert{\Psi}\right\rangle$.                                                                                                  |
 
 In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively.
+
+- - -
+
