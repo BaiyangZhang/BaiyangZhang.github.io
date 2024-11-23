@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
+                "file": "blog/2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
                 "mode": "source",
                 "source": false
               },
@@ -34,8 +34,23 @@
               "icon": "lucide-file",
               "title": "2024-11-05-Thougs-on-Entropy"
             }
+          },
+          {
+            "id": "a191df3d7a83f64d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -202,14 +217,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "85934409c70af44e",
+  "active": "a191df3d7a83f64d",
   "lastOpenFiles": [
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "_drafts/papers/Untitled.md",
     "blog/2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "_posts/2024-11-13-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
     "_drafts/papers/Tsallis-in-Biostatistics.md",
-    "_drafts/2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
+    "blog/2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
     "2024-11-14-Passive-Perspective-of-LSPT.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "_drafts/papers",
