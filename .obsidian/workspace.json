@@ -91,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -203,7 +202,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "075d2b284501b886",
+  "active": "85934409c70af44e",
   "lastOpenFiles": [
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "_drafts/papers/Untitled.md",

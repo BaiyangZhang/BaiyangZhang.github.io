@@ -102,9 +102,17 @@ That's how confinement is explain in pure Yang-Mills theory. However, it does no
 
 In QCD everything breaks down. The fundamental quarks need to satisfy certain boundary conditions on the compactified direction, but center symmetry will violate the boundary condition, hence is not allowed. Center symmetry is not a symmetry for QCD.
 
+- - -
 
+# With Solitons
 
+The interaction between two instantons is approximated by 
 
+$$
+S(\tau) = \pm \frac{A}{g} (e^{ -\tau }+e^{ -(\beta-\tau) })
+$$
 
+which accounts for the exponential 
 
+For certain quantum models, the Borel-Ecalle resummation introduces ambiguity, and the instanton-instanton interaction also introduces the ambiguity, and they cancel each other. **This probably can be explain by the displacement operator!** Another question is, *if we apply the unitary transformation between vacuum and kink sector realized by displacement operator into the vacuum-instanton ambiguity cancellation, what would we find?*
 
