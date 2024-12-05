@@ -866,7 +866,7 @@ $$
 S_ {\lambda}(x) = \text{sign}(x) \cdot \max(\left\lvert x \right\rvert  - \lambda, 0) 
 $$
 
-where $\lambda$ is a non-negative threshold parameter, $\text{sign}(x)$ returns the sign of $x$, and $\max(|x| - \lambda, 0)$ essentially shrinks $x$ towards zero by $\lambda$, setting it to zero if $x$ is within $\lambda$ of zero.
+where $\lambda$ is a non-negative threshold parameter, $\text{sign}(x)$ returns the sign of $x$, and $\max(\lvert x\rvert - \lambda, 0)$ essentially shrinks $x$ towards zero by $\lambda$, setting it to zero if $x$ is within $\lambda$ of zero.
 
 To minimize this function using the soft-thresholding operator, we need to follow these steps:
 
