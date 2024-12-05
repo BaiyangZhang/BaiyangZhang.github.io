@@ -1097,7 +1097,7 @@ $$
 \hat{p}(1\mid z) := \frac{\exp_ {q}(z)}{\exp_ {q}(z)+1},
 $$
 
-which is the q-sigmoid function of the second kink. 
+which is the q-sigmoid function of the second kind. 
 
 We have
 
