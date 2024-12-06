@@ -16,12 +16,7 @@ tags:
 ## 1. History of Non-Extensive Entropy: Rényi and Tsallis Entropy
 
 
-Classical entropy measures i.e. Shannon entropy or Boltzmann-Gibbs entropy, regardless of their immense success, are confined by their principle properties, such as the requirement of extensivity, which limited their application in describing complex systems exhibiting unusual properties, such as multifractal structure or non-equilibrium behavior. 
-
-Rényi
-
-Non-extensive entropy emerged as a modification of traditional entropy theories in response to complex systems that do not follow the additivity property of classical entropy. Tsallis entropy, a generalization of the Boltzmann-Gibbs entropy, became widely applied in various fields, including physics, biology, and information theory. Tsallis entropy is particularly useful in systems exhibiting long-range interactions, fractal structures, or complex dynamics, often characterized by non-extensive statistical behaviors.
-
+Classical entropy measures such as Shannon entropy or Boltzmann-Gibbs entropy, regardless of their immense success, are confined by their principle properties[Feinstein1958-FEIFOI], most importantly the requirement of additivity, which sometimes limited their application in describing complex systems exhibiting unusual properties including multifractal structure, non-equilibrium behavior, etc. This motivates various generalizations of traditional entropy, either preserving additivity like R\'enyi entropy [Rnyi1961OnMO] or breaking it explicitly. The mostly widely used nonextensive entropy measure is arguably Tsallis entropy[Tsallis1988], where a real parameter $q$ was introduced to characterize the deviation from extensiveness. 
 
 
 

@@ -7,6 +7,8 @@ catalog: true
 tags:
 ---
 
+# Boltzmann-Gibbs (BG) Entropy
+
 There are so many different interpretations of entropy and somehow there are all equivalent to each other. Conceptually there are different definitions for entropy in physics and information theory, but the mathematical expression are the same, it must mean that there is a deep connection underneath.
 
 Chronologically, the first definition for entropy is macroscopic, given by Rudolf Clausius in 1865, when Marx founded the first International. The increase of entropy is defined to be proportional to the heat $Q$ that enters a system at temperature $T$, 
@@ -33,7 +35,7 @@ $$
 S = - \sum_ {i} p_ {i} \ln(p_ {i}),
 $$
 
-where $p_ {i}$ is the probability for a microstate $\left\lvert i \right\rangle$. To see how to do it, consider an unfair coin with probability $p$ to give head and $1-p$ to give tail. Let's toss it $M$ times, or equivalently toss $M$ identical coins. We will calculate the total entropy for $M$ coins first. Then let's assume that entropy is additive (or extensive), that is, the total entropy of $M$ coins is given by $M$ times the entropy of a single coin. Here lies another fundamental assumption: entropies of independent systems are additive. 
+where $p_ {i}$ is the probability for a microstate $\left\lvert i \right\rangle$. To see how to do it, consider an unfair coin with probability $p$ to give head and $1-p$ to give tail. Let's toss it $M$ times, or equivalently toss $M$ identical coins. We will calculate the total entropy for $M$ coins first. Then let's assume that entropy is additive (or extensive), that is, the total entropy of $M$ coins is given by $M$ times the entropy of a single coin. Here lies another fundamental assumption: entropy of independent systems are additive. 
 
 Since the probability to give a head is $p$, among $M$ total incidents there are $pM$ heads. Let's denote it by $n$, which is assumed to be a big number. Now the question is: how many micro states there are that gives the macro state, namely with $N$ heads in total? The number $\Omega$ of such microstates is given by
 
@@ -84,6 +86,8 @@ Note that we have dealt with two kinds of entropies:
 
 They are connected by the assumption that entropy is **extensive**. As we will see that this assumption will be violated by Tsallis entropy.
 
+# Information Entropy
+
 - - -
 
 In information theory, the expression for entropy adopts an entirely different interpretation, however the mathematical expression is exactly the same, which is amazing! In information theory, people write the entropy as 
@@ -113,6 +117,31 @@ S = -\sum_{i} p(x_i) \ln p(x_i)
 $$
 
 The theorem's significance lies in its establishment of entropy as a **unique measure** that satisfies these intuitive and necessary properties for quantifying information. It solidified the concept of entropy as the foundational metric in information theory, leading to profound implications for communication, coding theory, and even other disciplines like statistics and thermodynamics.
+
+Different sets of postulates have been given, which characterize the Shannon entropy. The simplest such set of postulates is given by D. K. Fadeev and A. Feinstein in the late 1950s. Fadeev's postulates are as follows: Let $(p_ {1},\cdots,p_ {n})$ be a discrete probability distribution,
+
+1. $S(p_ {1},\cdots,p_ {n})$ is invariant under a permutation of its variables;
+2. $S(p,1-p)$ is a continuous function of $p$ for $0\leq p \leq 1$;
+3. $S\left( \frac{1}{2},\frac{1}{2} \right)=1$;
+4. $S(t p_ {1},(1-t)p_ {1},p_ {2},\cdots,p_ {n})=S(p_ {1},p_ {2},\cdots,p_ {n})+p_ {1}H(t,1-t)$ for $0\leq t \leq_ {1}$.
+
+The proof can be found in Rényi's original paper on Renyi entropy. Condition (4) is stronger than the additivity, which states that for two probability distributions $\mathcal{P}$ and $\mathcal{Q}$, we have 
+
+$$
+S(\mathcal{P}\times \mathcal{Q}) = S(\mathcal{P}) + S(\mathcal{Q}).
+$$
+
+As a matter of fact, if we relax condition (4) to the above expression, there will be a family of quantities satisfying them, for instance, all the quantities characterized by $\alpha>0$ and $\alpha \neq1$:
+
+$$
+H_ {\alpha}(p_ {1},\cdots,p_ {n} ) := \frac{1}{1-\alpha}\ln\left( \sum_ {k=1}^{\infty} p_ {k} ^{\alpha} \right),
+$$
+
+which reduces to Shannon's entropy at $\alpha=1$. 
+
+
+
+
 
 
 - - -
