@@ -1013,7 +1013,7 @@ $$
 
 where $z_ {i}=\theta\cdot X^{(i)}$, $X^{(i)}$ the $i$-th observed data and the q-parameters $q_ {i}$ are different for each sample. Someone write it as $z_ {i}=\theta^{T}X^{(i)}$, but I neglect the transpose symbol since now both $\theta$ and $X$ are understood as vectors. For starters we can set all the $q_ {i}$ as the same constant for all samples, varying about $1$, for example from -0.2 to 1.8 or something. This will greatly reduce the number of free parameters hence prevents over fitting.
 
-We will use the gradient method to find the minimum value for parameters that minimized the loss function. Next we work out the derivative of loss function.
+We will use the gradient method to find the optimal values of parameters that minimized the loss function. Next we work out the derivative of loss function.
 
 Some straightforward derivation shows that 
 
@@ -1061,7 +1061,7 @@ Some preliminary results are Obtained and put in the following figure.
 
 **q-sigmoid of the second kind**
 
-Another equivalent expression for the regular sigmoid function reads
+Another equivalent expression for the standard sigmoid function reads
 
 $$
 \sigma(z) = \frac{e^{ z }}{e^{ z }+1},
