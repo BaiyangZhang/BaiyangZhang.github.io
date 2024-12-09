@@ -10,8 +10,6 @@ tags:
 
 
 
-
-
 # Abstract
 
 
@@ -19,8 +17,6 @@ tags:
 
 
 ## 1. History of Non-Extensive Entropy: Rényi and Tsallis Entropy
-
-
 
 
 Classical entropy measures, such as Shannon entropy and Boltzmann-Gibbs entropy, have achieved immense success in various fields. However, they are constrained by certain inherent properties, most notably the requirement of additivity, which limits their applicability in describing complex systems that exhibit unusual behaviors, including multifractal structures and non-equilibrium dynamics \cite{Feinstein1958-FEIFOI}. This limitation has led to the development of several generalizations of traditional entropy, some of which preserve additivity, such as Rényi entropy \cite{Rnyi1961OnMO}, while others explicitly break it. Among the most widely used non-additive entropy measures is Tsallis entropy \cite{Tsallis1988}, which introduces a nonextensive parameter $q\in\mathbb{R}$ to characterize deviations from extensiveness. Tsallis entropy has found extensive applications in various fields, including high-energy physics \cite{PhysRevD.109.052008, ALICE:2022pbb, Baptista:2023btx}, machine learning \cite{Brochet2022, Hadzibeganovic2009}, and biostatistics \cite{Thilagaraj2019, Pardede2023, Brochet2022}, etc.
@@ -40,13 +36,12 @@ $$
 
 and recover the standard exponential and logarithmic functions as $q\to 1$. $q$-exponential captures the non-linear deformation from standard exponential, similarly for $q$-logarithmic, allowing for a more flexible description of systems that deviate from traditional, additive models. These functions have found widespread use in diverse fields, such as statistical mechanics, where they help describe systems far from equilibrium and systems with fractal-like properties \cite{Tsallis1988, Beck2001}. The application of $q$-exponential and $q$-logarithm has been explored to model phenomena such as gene expression variability and survival analysis, where the underlying data often exhibits heavy-tailed distributions or non-equilibrium dynamics \cite{Pardede2023, Thilagaraj2019}. These generalized functions have been incorporated into loss functions and optimization methods, offering a robust framework for modeling classification problems where traditional methods fail to capture complex dependencies in data \cite{Brochet2022, Hadzibeganovic2009}. The flexibility of the $q$-exponential and $q$-logarithm functions thus makes them valuable tools for extending traditional methods in both theoretical and applied research.
 
-## 2. Historical Development of Logistic Regression Method
+Logistic regression (LR) is a fundamental analytical tool in both the social and natural sciences. As a discriminative classification model, LR focuses on directly classifying the response variable. Compared to generative models like naive Bayes, LR has advantages in simplicity, interpretability, and roughly linear complexity \cite{Vapnik2000, Ng2001}. However, it has limitations, including the problem of unobserved heterogeneity \cite{Mood2010}, weak robustness to outliers such as corrupted data \cite{Feng2014, Carroll1993}, and bias based on maximum-likelihood estimation \cite{Sur2019}. These shortcomings motivated the potential for improvement, which can proceed in three possible directions: 1) generalizing the linear combination of input features, 2) generalizing the binary classifier, and 3) generalizing the entropy loss function. This paper focuses on the second approach, extending the binary classifier using Tsallis q-functions.
 
-Logistic regression is a widely used discriminative model in statistical learning, particularly effective for binary classification tasks. Its primary advantage lies in its simplicity and interpretability; the model estimates the probability of a binary outcome by applying the logistic function to a linear combination of input features, allowing for straightforward interpretation of feature coefficients. Additionally, logistic regression is computationally efficient and performs well when the relationship between the independent variables and the log-odds of the dependent variable is linear.
 
 However, logistic regression has notable limitations. It assumes a linear relationship between the input features and the log-odds of the outcome, which may not hold in complex real-world scenarios. This linearity constraint can lead to suboptimal performance when capturing intricate patterns in data. Moreover, logistic regression is sensitive to outliers and may struggle with multicollinearity among predictors, potentially leading to unstable estimates. In cases where classes are not linearly separable, the model's predictive accuracy can diminish. Furthermore, logistic regression is less effective with large feature sets or when interactions between features are present, as it does not inherently model such interactions.
 
-In summary, while logistic regression offers clarity and efficiency for binary classification under linear assumptions, its performance can degrade in the presence of non-linear relationships, outliers, multicollinearity, and complex feature interactions. These limitations necessitate careful consideration and, in some cases, the adoption of more flexible modeling approaches to adequately capture the underlying data structures.
+
 ## 3. Study of Sigmoid Function in Logistic Regression
 
 The sigmoid function is a cornerstone in logistic regression, used to map the linear output of the model into a probability. It transforms any real-valued input to a range between 0 and 1, enabling its interpretation as a probability. The study of the sigmoid function's properties and its adaptations has been an area of interest, particularly when extending logistic regression to complex applications, including gene expression data in biostatistics.
