@@ -7,6 +7,11 @@ catalog: true
 tags:
 ---
 
+
+
+
+
+
 # Abstract
 
 
@@ -20,32 +25,28 @@ tags:
 
 Classical entropy measures, such as Shannon entropy and Boltzmann-Gibbs entropy, have achieved immense success in various fields. However, they are constrained by certain inherent properties, most notably the requirement of additivity, which limits their applicability in describing complex systems that exhibit unusual behaviors, including multifractal structures and non-equilibrium dynamics \cite{Feinstein1958-FEIFOI}. This limitation has led to the development of several generalizations of traditional entropy, some of which preserve additivity, such as Rényi entropy \cite{Rnyi1961OnMO}, while others explicitly break it. Among the most widely used non-additive entropy measures is Tsallis entropy \cite{Tsallis1988}, which introduces a nonextensive parameter $q\in\mathbb{R}$ to characterize deviations from extensiveness. Tsallis entropy has found extensive applications in various fields, including high-energy physics \cite{PhysRevD.109.052008, ALICE:2022pbb, Baptista:2023btx}, machine learning \cite{Brochet2022, Hadzibeganovic2009}, and biostatistics \cite{Thilagaraj2019, Pardede2023, Brochet2022}, etc.
 
-**Here we should introduce the theoretical developments.**
-
 The key aspect of Tsallis statistics is the introduction of the so-called $q$-exponential and $q$-logarithmic functions, defined as \cite{Yamano2002}
 
 $$
 \begin{align}
 \exp⁡_ {q}(x) &=  
 \begin{cases}
-\left( 1 + (1 - q) x \right)^{\frac{1}{1 - q}} &  1 + (1 - q) x >0  \\
-0,  &\text{otherwise}
+\left( 1 + (1 - q) x \right)^{\frac{1}{1 - q}}, &  1 + (1 - q) x >0,  \\
+0,  &\text{otherwise},
 \end{cases} \\
-\log_q(x) &= \frac{x^{1 - q} - 1}{1 - q}
+\log_q(x) &= \frac{x^{1 - q} - 1}{1 - q},
 \end{align}
 $$
 
-and recover the standard exponential and logarithmic functions  as $q\to 1$. $q$-exponential enables the capture of non-linear scaling behavior, similarly $q$-logarithmic allows for a more flexible description of systems that deviate from traditional, additive models. These functions have found widespread use in diverse fields, such as statistical mechanics, where they help describe systems far from equilibrium and systems with fractal-like properties \cite{Tsallis1988, Beck2001}. In **biostatistics**, the application of qq-exponentials and qq-logarithms has been explored to model phenomena such as gene expression variability and survival analysis, where the underlying data often exhibits heavy-tailed distributions or non-equilibrium dynamics \cite{Pardede2023, Thilagaraj2019}. Moreover, in **machine learning**, these generalized functions have been incorporated into loss functions and optimization methods, offering a robust framework for modeling classification problems where traditional methods fail to capture complex dependencies in data \cite{Brochet2022, Hadzibeganovic2009}. The flexibility of the qq-exponential and qq-logarithmic functions thus makes them valuable tools for extending traditional methods in both theoretical and applied research, particularly when dealing with systems characterized by nonextensive entropy.
-
----
-
-This paragraph introduces the mathematical definitions and applications of the qq-exponential and qq-logarithmic functions, linking them to specific fields like statistical mechanics, biostatistics, and machine learning, and references related academic work.
+and recover the standard exponential and logarithmic functions as $q\to 1$. $q$-exponential captures the non-linear deformation from standard exponential, similarly for $q$-logarithmic, allowing for a more flexible description of systems that deviate from traditional, additive models. These functions have found widespread use in diverse fields, such as statistical mechanics, where they help describe systems far from equilibrium and systems with fractal-like properties \cite{Tsallis1988, Beck2001}. The application of $q$-exponential and $q$-logarithm has been explored to model phenomena such as gene expression variability and survival analysis, where the underlying data often exhibits heavy-tailed distributions or non-equilibrium dynamics \cite{Pardede2023, Thilagaraj2019}. These generalized functions have been incorporated into loss functions and optimization methods, offering a robust framework for modeling classification problems where traditional methods fail to capture complex dependencies in data \cite{Brochet2022, Hadzibeganovic2009}. The flexibility of the $q$-exponential and $q$-logarithm functions thus makes them valuable tools for extending traditional methods in both theoretical and applied research.
 
 ## 2. Historical Development of Logistic Regression Method
 
-Logistic regression is a statistical method used for binary classification. It has been widely employed in various fields, particularly in biostatistics, due to its simplicity and efficiency in modeling binary outcomes. Over the years, logistic regression has been extended to handle multi-class classification problems and to incorporate regularization techniques.
+Logistic regression is a widely used discriminative model in statistical learning, particularly effective for binary classification tasks. Its primary advantage lies in its simplicity and interpretability; the model estimates the probability of a binary outcome by applying the logistic function to a linear combination of input features, allowing for straightforward interpretation of feature coefficients. Additionally, logistic regression is computationally efficient and performs well when the relationship between the independent variables and the log-odds of the dependent variable is linear.
 
+However, logistic regression has notable limitations. It assumes a linear relationship between the input features and the log-odds of the outcome, which may not hold in complex real-world scenarios. This linearity constraint can lead to suboptimal performance when capturing intricate patterns in data. Moreover, logistic regression is sensitive to outliers and may struggle with multicollinearity among predictors, potentially leading to unstable estimates. In cases where classes are not linearly separable, the model's predictive accuracy can diminish. Furthermore, logistic regression is less effective with large feature sets or when interactions between features are present, as it does not inherently model such interactions.
 
+In summary, while logistic regression offers clarity and efficiency for binary classification under linear assumptions, its performance can degrade in the presence of non-linear relationships, outliers, multicollinearity, and complex feature interactions. These limitations necessitate careful consideration and, in some cases, the adoption of more flexible modeling approaches to adequately capture the underlying data structures.
 ## 3. Study of Sigmoid Function in Logistic Regression
 
 The sigmoid function is a cornerstone in logistic regression, used to map the linear output of the model into a probability. It transforms any real-valued input to a range between 0 and 1, enabling its interpretation as a probability. The study of the sigmoid function's properties and its adaptations has been an area of interest, particularly when extending logistic regression to complex applications, including gene expression data in biostatistics.
@@ -60,28 +61,43 @@ The gradient method, especially gradient descent, is a popular optimization tech
 ## Generalized sigmoid functions
 
 
-In this paper we focus on binary classification, specifically on the generalization of sigmoid function with Tsallis q-exponentials
-
+In this paper we focus on binary classification, specifically on the generalization of sigmoid function with Tsallis $q$-exponentials and $q$-logarithm. Recall that $q$-exponential is a non-linear generalization of standard exponential function, \cite{Yamano2002}
 $$
 \exp_ {q}(x) := \begin{cases}
 (1+(1-q)x)^{1/(1-q)},   &  1+(1-q)x>0 \\
-0, \text{otherwise}
+0, & \text{otherwise}
 \end{cases}
 $$
-
 which recovers to the regular exponential function at $q\to 1$ limit. Let $z$ be the linear combination of the input features. The standard sigmoid function $\sigma(z)$ bridges the weighted linear combination of features of the model, usually represent the microscopic information, with the conditional probability $\hat{p}(1\mid z)$ for a positive outcome,
 
 $$
 \hat{p}(1\mid z) \equiv \sigma(z) = \frac{1}{1+e^{ -z }}.
 $$
 
-As a concise and systematic way to introduce the nonextensive deviation, the sigmoid function can be directly generalized using Tsallis $q$-function \cite{Pardede2023}
+As a concise and systematic way to introduce the nonextensive deviation, the sigmoid function can be directly generalized using Tsallis $q$-function to \cite{Pardede2023}
 
 $$
-\sigma_ {q}(z) := \frac{1}{1+\exp_ {q}(-z)},
+\sigma_ {q}(z) := \frac{1}{1+\exp_ {q}(-z)}.
 $$
 
-which we call $q$-sigmoid function of the first kind, for reasons that will be clear later. It can be easily verified that 
+
+
+
+ However, this definition suffer from a major drawback, that is it adopts step-function like behavior at $z=1 / (1-q)$, due to discontinuity of $\exp _ {q}(z)$. In order to remedy this situation we have two options: 1) modify the definition of $\sigma_ {q}(z)$ by introducing upper and lower cutoffs which are chosen empirically, one example can be found in \cite{Pardede2023}; 2) modify the definition of $q$-exponential in Eq.~\ref{eq:qexp} in such a way that the resulting $\sigma_ {q}(z)$ adopts appropriate behavior. In theory both are acceptable, however in order to gain the maximal controllability of the classifier and minimize degrees of freedom, we choose to modify Eq.~\ref{eq:qexp} as the following,
+$$
+\exp_ {q}(z) := 
+\begin{cases}
+\infty,  &  q>1 \text{ and } z> 1/(q-1) ,  \\
+0,  &   q<1\text{ and }z<1/(q-1), \\
+(1+(1-q)x)^{1/(1-q)},  &  \text{otherwise}.
+\end{cases}
+$$
+  
+
+- - -
+
+
+ It can be easily verified that 
 
 $$
 \frac{ \partial \sigma_ {q}(z) }{ \partial z }  = \beta(q,z)\sigma_ {q}(z)(1-\sigma_ {q}(z))
