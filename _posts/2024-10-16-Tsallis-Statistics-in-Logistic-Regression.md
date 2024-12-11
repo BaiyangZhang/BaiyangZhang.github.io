@@ -866,7 +866,7 @@ $$
 S_ {\lambda}(x) = \text{sign}(x) \cdot \max(\left\lvert x \right\rvert  - \lambda, 0) 
 $$
 
-where $\lambda$ is a non-negative threshold parameter, $\text{sign}(x)$ returns the sign of $x$, and $\max(|x| - \lambda, 0)$ essentially shrinks $x$ towards zero by $\lambda$, setting it to zero if $x$ is within $\lambda$ of zero.
+where $\lambda$ is a non-negative threshold parameter, $\text{sign}(x)$ returns the sign of $x$, and $\max(\lvert x\rvert - \lambda, 0)$ essentially shrinks $x$ towards zero by $\lambda$, setting it to zero if $x$ is within $\lambda$ of zero.
 
 To minimize this function using the soft-thresholding operator, we need to follow these steps:
 
@@ -1013,7 +1013,7 @@ $$
 
 where $z_ {i}=\theta\cdot X^{(i)}$, $X^{(i)}$ the $i$-th observed data and the q-parameters $q_ {i}$ are different for each sample. Someone write it as $z_ {i}=\theta^{T}X^{(i)}$, but I neglect the transpose symbol since now both $\theta$ and $X$ are understood as vectors. For starters we can set all the $q_ {i}$ as the same constant for all samples, varying about $1$, for example from -0.2 to 1.8 or something. This will greatly reduce the number of free parameters hence prevents over fitting.
 
-We will use the gradient method to find the minimum value for parameters that minimized the loss function. Next we work out the derivative of loss function.
+We will use the gradient method to find the optimal values of parameters that minimized the loss function. Next we work out the derivative of loss function.
 
 Some straightforward derivation shows that 
 
@@ -1061,7 +1061,7 @@ Some preliminary results are Obtained and put in the following figure.
 
 **q-sigmoid of the second kind**
 
-Another equivalent expression for the regular sigmoid function reads
+Another equivalent expression for the standard sigmoid function reads
 
 $$
 \sigma(z) = \frac{e^{ z }}{e^{ z }+1},
@@ -1097,7 +1097,7 @@ $$
 \hat{p}(1\mid z) := \frac{\exp_ {q}(z)}{\exp_ {q}(z)+1},
 $$
 
-which is the q-sigmoid function of the second kink. 
+which is the q-sigmoid function of the second kind. 
 
 We have
 
