@@ -42,9 +42,46 @@ Logistic regression (LR) is a fundamental analytical tool in both the social and
 However, logistic regression has notable limitations. It assumes a linear relationship between the input features and the log-odds of the outcome, which may not hold in complex real-world scenarios. This linearity constraint can lead to suboptimal performance when capturing intricate patterns in data. Moreover, logistic regression is sensitive to outliers and may struggle with multicollinearity among predictors, potentially leading to unstable estimates. In cases where classes are not linearly separable, the model's predictive accuracy can diminish. Furthermore, logistic regression is less effective with large feature sets or when interactions between features are present, as it does not inherently model such interactions.
 
 
-## 3. Study of Sigmoid Function in Logistic Regression
+## 3. Study of binary classification
 
-The sigmoid function is a cornerstone in logistic regression, used to map the linear output of the model into a probability. It transforms any real-valued input to a range between 0 and 1, enabling its interpretation as a probability. The study of the sigmoid function's properties and its adaptations has been an area of interest, particularly when extending logistic regression to complex applications, including gene expression data in biostatistics.
+
+In this paper we focus on discriminative probabilistic classifiers. The training corpus comprises of $n$ independent pairs of input/output denoted by $(X^{(i)},y^{i})$, where each $X$ is the $p$-vector feature representation. In the training phase, in general the total loss takes the form \cite{Evgeniou2002}
+
+$$
+L(X) = \sum_ {i=1}^{n} \mathcal{L}(\hat{y}^{i},y^{i}) + \mathcal{P},\quad  \hat{y}^{i}=\hat{y}(z(X^{(i)}))
+$$
+
+where $\hat{y}$ is the predicted label, $\mathcal{P}$ is the penalty, $\sum\mathcal{L}$ is the loss function or empirical error that we want to minimize, and $z$ is the feature representation. In this paper we only consider the linear case where $z^{i}:=z(X^{(i)})=\beta^{T}X^{(i)}+\beta_ {0}$, where $\beta$ is the weight vector. 
+
+It is of key importance to choose the suitable classification function $\hat{y}(X^{(i)})$ that could faithfully represent the nature of the process understudy, or at least meets the requirement of Fisher consistency \cite{Fisher1922}. For binary classification $y\in\left\lbrace 0,1 \right\rbrace$. The most straightforward choice of loss function would be the 0-1 loss function $\mathcal{L}(\hat{y},y) = \theta(-\hat{y} y)$ where $\theta$ is the Heaviside step function. However, despite its conceptual clarity, 0-1 loss function is discontinuous and non-convex, making it computationally expensive. This raises the need for various types of surrogate loss functions (SLF). Among them the convex ones are particularly favored, such as hinge loss and square loss \cite{Lin2002}. Nevertheless, the computational virtues of convexity comes at the cost of, for example, compromised robustness \cite{Bartlett2003}. Therefore different non-convex loss functions, such as ramp loss or sigmoid loss, are proposed \cite{Zhao2010}. Various loss functions are compared in Ref.~\cite{Hastie2001}. In this paper, we combine the $q$-deformed sigmoid with cross entropy loss and propose a new form of q-deformed cross entropy loss, as will be shown below. We emphasize that this is not yet a Tsallis-entropic generalization of the standard cross entropy, for we have merely replaced the sigmoid while keeping the formalism of standard cross entropy. The performance of $q$-sigmoid enhanced cross entropy loss is compared with [other method]. 
+
+- - -
+
+Here is a more native and academic revision of the text:
+
+---
+
+In this paper, we focus on discriminative probabilistic classifiers. The training corpus consists of nn independent input-output pairs, denoted as $(X^{(i)}, y^{(i)}), where each $X$ represents a $p$-dimensional feature vector. During the training phase, the total loss typically takes the following form \cite{Evgeniou2002}:
+
+L(X)=∑i=1nL(y^(i),y(i))+P,y^(i)=y^(z(X(i))),L(X) = \sum_{i=1}^{n} \mathcal{L}(\hat{y}^{(i)}, y^{(i)}) + \mathcal{P}, \quad \hat{y}^{(i)} = \hat{y}(z(X^{(i)})),
+
+where y^\hat{y} denotes the predicted label, P\mathcal{P} is the penalty term, ∑L\sum \mathcal{L} represents the loss function or empirical error to be minimized, and zz denotes the feature representation. In this work, we focus on the linear case, where z(i):=z(X(i))=βTX(i)+β0z^{(i)} := z(X^{(i)}) = \beta^T X^{(i)} + \beta_0, with β\beta being the weight vector.
+
+A critical aspect of the learning process is the selection of an appropriate classification function y^(X(i))\hat{y}(X^{(i)}) that accurately represents the underlying process or, at the very least, satisfies the requirement of Fisher consistency \cite{Fisher1922}. For binary classification, we have y∈{0,1}y \in \{0, 1\}. The most straightforward choice of a loss function is the 0-1 loss function L(y^,y)=θ(−y^y)\mathcal{L}(\hat{y}, y) = \theta(-\hat{y} y), where θ\theta is the Heaviside step function. However, despite its conceptual simplicity, the 0-1 loss function is discontinuous and non-convex, making it computationally expensive to optimize. This motivates the use of surrogate loss functions (SLFs), particularly convex ones, such as hinge loss and squared loss \cite{Lin2002}.
+
+While convex loss functions are computationally advantageous, they come with trade-offs, such as reduced robustness \cite{Bartlett2003}. Consequently, various non-convex loss functions, such as ramp loss or sigmoid loss, have been proposed \cite{Zhao2010}. A comparison of different loss functions can be found in Ref.~\cite{Hastie2001}. In this paper, we introduce a novel formulation by combining the qq-deformed sigmoid function with cross-entropy loss, resulting in a new form of qq-deformed cross-entropy loss, as described below. It is important to note that this does not represent a Tsallis entropy-based generalization of the standard cross-entropy; instead, we have replaced the sigmoid function while preserving the formalism of the standard cross-entropy. We also provide a comparison of the performance of the qq-sigmoid-enhanced cross-entropy loss with [other method].
+
+---
+
+This version refines the sentence structure, enhances clarity, and improves flow, making it more suitable for an academic audience.
+
+
+- - -
+
+The remaining parts of this paper is organized as follows: Section \ref{sec2}reviews some important convex and nonconvex loss functions. In Section III we propose a new nonconvex loss function: smoothed 0-1 loss function. In Section IV, an optimization algorithm (QSM) that suitable for both smooth and non-smooth optimization problems are adopted, which makes it possible to compare different loss functions under the same framework. In Section V we develop two binary classification algorithms for both convex and nonconvex loss functions. Section VI describes the experimental settings and res
+
+
+
 
 ## 4. Gradient Method in Logistic Regression and Recent Developments
 
