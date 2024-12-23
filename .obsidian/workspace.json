@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/papers/Tsallis-in-Biostatistics.md",
+                "file": "Discussion Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tsallis-in-Biostatistics"
+              "title": "Discussion Notes"
             }
           },
           {
@@ -198,10 +198,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "85934409c70af44e",
+  "active": "075d2b284501b886",
   "lastOpenFiles": [
-    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "_drafts/papers/Tsallis-in-Biostatistics.md",
+    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-09-18-Rules-for-Jarah-Diagrams.md",
     "_posts/2024-10-13-Calculating-States-Using-Diagrams.md",
     "_posts/2024-11-05-Thoughts-on-Entropy.md",
