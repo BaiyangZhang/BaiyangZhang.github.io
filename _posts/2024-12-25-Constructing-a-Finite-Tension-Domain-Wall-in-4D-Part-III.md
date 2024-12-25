@@ -122,5 +122,5 @@ $$
 \end{align*}
 $$
 
-when need we can replace $\omega_ {1,2}$ with $\omega_ {1,2}-i\epsilon$. This is consistent with Mark Sredinickie's convention that $m^{2}$ are replaced by $m^{2}-i\epsilon$ when necessary. 
+whenever needed, we can replace $\omega_ {1,2}$ with $\omega_ {1,2}-i\epsilon$. This is consistent with Mark Sredinickie's convention that $m^{2}$ are to be replaced by $m^{2}-i\epsilon$ when necessary. 
 
