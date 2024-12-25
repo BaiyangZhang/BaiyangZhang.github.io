@@ -2,7 +2,7 @@
 layout: post
 title: Note on Coleman-Weinberg Potential
 subtitle: 
-date: 2024-03-31
+date: 2024-12-23
 author: Baiyang Zhang
 header-img: img/mathArt8.jpg
 catalog: true
