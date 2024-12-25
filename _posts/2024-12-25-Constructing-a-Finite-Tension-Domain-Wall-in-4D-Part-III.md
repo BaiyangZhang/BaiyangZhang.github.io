@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Constructing a Finite Tension Domain Wall in 4D Part III
-date: 2024-11-13
+date: 2024-12-25
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -93,4 +93,34 @@ $$
 \end{align*}
 $$
 
+
+# Renormalization with Quantum Action
+
+The three point function is given by 
+
+$$
+\begin{align*}
+\left\langle \Omega \right\rvert \mathcal{T} \phi(\vec{x}_ {1},E_ {1})\phi(\vec{x}_ {2},E_ {2})\phi(0) \left\lvert \Omega \right\rangle =& -i \int \frac{dE_ {1}dE_ {2}}{(2\pi)^{2}}  \frac{d^{d}p_ {1}d^{d}p_ {2}}{(2\pi)^{2d}}\,  \frac{e^{ -i(E_ {1}t_ {1}+E_ {2}t_ {2}+\vec{x}_ {1}\cdot \vec{p}_ {1}+\vec{x}_ {2}\cdot \vec{p}_ {2}) }}{(E_ {1}^{2}-\omega_ {1}^{2}+i\epsilon)(E_ {2}^{2}-\omega_ {2}^{2}+i\epsilon)} \\
+&\times \frac{\Gamma(\vec{p}_ {1},E_ {1},\vec{p}_ {2},E_ {2})}{(E_ {1}+E_ {2})^{2}-\omega_ {1+2}^{2}+i\epsilon}
+\end{align*}
+$$
+
+where $\omega_ {1}:=\omega_ {\vec{p}_ {1}}$, $\mathcal{T}$ stands for the time-ordered product. Does integrating over $E_ {1}$ gives us the time ordered product, similar to how we obtained the Feynman propagator? Or is it just the basis of Fourier transform? To see how it works, let's assume that $t_ {1}>t_ {2}>0$. We can perform the integral over $E_ {1}$ using the contour method, and get 
+
+$$
+\left\langle \Omega \right\rvert \mathcal{T} \phi(\vec{x}_ {1},E_ {1})\phi(\vec{x}_ {2},E_ {2})\phi(0) \left\lvert \Omega \right\rangle = \text{I}+\text{II},
+$$
+
+where 
+
+$$
+\begin{align*}
+\text{I} =& - \int \frac{d^{d}p_ {1} d^{d}p_ {2}}{(2\pi)^{2d}} \,  e^{ -i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}+\omega_ {1}t_ {1}) } \int \frac{dE_ {2}}{(2\pi)}  \frac{e^{ -iE_ {2}t_ {2} }}{2\omega_ {1}} \\
+&\times  \frac{\Gamma(E_ {1}=\omega_ {1})}{(E_ {2}+\omega_ {2}-i\epsilon)(E_ {2}-\omega_ {2}+i\epsilon)(E_ {2}+\omega_ {1}+\omega_ {1+2})(E_ {2}+\omega_ {1}-\omega_ {1+2})}, \\
+\text{II} =& - \int \frac{d^{d}p_ {1} d^{d}p_ {2}}{(2\pi)^{2d}} \,  e^{ -i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}+\omega_ {1+2}t_ {1}) } \int \frac{dE_ {2}}{2\pi} \frac{e^{ -i E_ {2}(t_ {2}-t_ {1}) }}{(E_ {2}+\omega_ {2})(E_ {2}-\omega_ {2})} \\
+&\times  \frac{\Gamma(E_ {1}=\omega_ {1+2}-E_ {2})}{2(\omega_ {1+2}+E_ {2})(E_ {2}-\omega_ {1+2}+\omega_ {1})(E_ {2}-\omega_ {1+2}-\omega_ {1})}, 
+\end{align*}
+$$
+
+when need we can replace $\omega_ {1,2}$ with $\omega_ {1,2}-i\epsilon$. This is consistent with Mark Sredinickie's convention that $m^{2}$ are replaced by $m^{2}-i\epsilon$ when necessary. 
 
