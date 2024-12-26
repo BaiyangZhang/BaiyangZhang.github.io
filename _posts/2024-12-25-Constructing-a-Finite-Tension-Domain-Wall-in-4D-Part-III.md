@@ -116,11 +116,36 @@ where
 $$
 \begin{align*}
 \text{I} =& - \int \frac{d^{d}p_ {1} d^{d}p_ {2}}{(2\pi)^{2d}} \,  e^{ -i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}+\omega_ {1}t_ {1}) } \int \frac{dE_ {2}}{(2\pi)}  \frac{e^{ -iE_ {2}t_ {2} }}{2\omega_ {1}} \\
-&\times  \frac{\Gamma(E_ {1}=\omega_ {1})}{(E_ {2}+\omega_ {2}-i\epsilon)(E_ {2}-\omega_ {2}+i\epsilon)(E_ {2}+\omega_ {1}+\omega_ {1+2})(E_ {2}+\omega_ {1}-\omega_ {1+2})}, \\
+&\times  \frac{\Gamma(E_ {1}=\omega_ {1})}{(E_ {2}+\omega_ {2}-i\epsilon)(E_ {2}-\omega_ {2}+i\epsilon)(E_ {2}+\omega_ {1}+\omega_ {1+2}-i\epsilon)(E_ {2}+\omega_ {1}-\omega_ {1+2})+i\epsilon}, \\
 \text{II} =& - \int \frac{d^{d}p_ {1} d^{d}p_ {2}}{(2\pi)^{2d}} \,  e^{ -i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}+\omega_ {1+2}t_ {1}) } \int \frac{dE_ {2}}{2\pi} \frac{e^{ -i E_ {2}(t_ {2}-t_ {1}) }}{(E_ {2}+\omega_ {2})(E_ {2}-\omega_ {2})} \\
-&\times  \frac{\Gamma(E_ {1}=\omega_ {1+2}-E_ {2})}{2(\omega_ {1+2}+E_ {2})(E_ {2}-\omega_ {1+2}+\omega_ {1})(E_ {2}-\omega_ {1+2}-\omega_ {1})}, 
+&\times  \frac{\Gamma(E_ {1}=\omega_ {1+2}-E_ {2})}{2(\omega_ {1+2}+E_ {2}-i\epsilon)(E_ {2}-\omega_ {1+2}+\omega_ {1}-i\epsilon)(E_ {2}-\omega_ {1+2}-\omega_ {1}+i\epsilon)}, 
 \end{align*}
 $$
 
 whenever needed, we can replace $\omega_ {1,2}$ with $\omega_ {1,2}-i\epsilon$. This is consistent with Mark Sredinickie's convention that $m^{2}$ are to be replaced by $m^{2}-i\epsilon$ when necessary. 
+
+Integrate $\text{I}$ with respect to $E_ {2}$ follow the lower semi-circle, we have 
+
+$$
+\begin{align*}
+\text{I} =& i \int \frac{d^{d}p_ {1}d^{d}p_ {2}}{(2\pi)^{2d}} \,  \frac{e^{ -i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}+\omega_ {1}t_ {1}) }}{2\omega_ {1}} \\
+& \times \left\lbrace  \frac{e^{ -it_ {2}\omega_ {2} }\Gamma(E_ {1}=\omega_ {1},E_ {2}=\omega_ {2})}{2\omega_ {2}(\omega_ {1}+\omega_ {2}+\omega_ {1+2})(\omega_ {1}+\omega_ {2}-\omega_ {1+2})}  \right. \\
+&+\left. \frac{e^{ -it_ {2}(\omega_ {1+2}-\omega_ {1})}\Gamma(E_ {1}=\omega_ {1},E_ {2}=\omega_ {1+2}-\omega_ {1})}{2\omega_ {1+2}(\omega_ {1+2}-\omega_ {1}+\omega_ {2})(\omega_ {1+2}-\omega_ {1}-\omega_ {2})} \right\rbrace 
+\end{align*}
+$$
+
+and 
+
+$$
+\begin{align*}
+\text{II} =& -i \int \frac{d^{d}p_ {1}d^{d}p_ {2}}{(2\pi)^{2d}} \,  e^{ -i(\vec{p}_ {1}\cdot \vec{x}1+\vec{p}_ {2}\cdot \vec{x}_ {2}+\omega_ {1+2}t_ {1}) } \\
+& \times  \left\lbrace \frac{e^{ -i(t_ {1}-t_ {2})\omega_ {2} } \Gamma(E_ {1}=\omega_ {1+2}-\omega_ {2},E_ {2}=-\omega_ {2})}{4\omega_ {2}(\omega_ {1+2}-\omega_ {2})(-\omega_ {1+2}-\omega_ {2}+\omega_ {1})(\omega_ {1}+\omega_ {2}+\omega_ {1+2})} \right.  \\
+&+ \frac{e^{ -i(t_ {1}-t_ {2})\omega_ {1+2} } \Gamma(E_ {1}=2\omega_ {1+2},E_ {2}=-\omega_ {1+2})}{2(\omega_ {1+2}-\omega_ {2})(\omega_ {1+2}+\omega_ {2})(2\omega_ {1+2}-\omega_ {1})(2\omega_ {1+2}+\omega_ {1})}\\
+&- \left. \frac{e^{ -i(t_ {1}-t_ {2})(\omega_ {1}-\omega_ {1+2}) }\Gamma(E_ {1}=\omega_ {1},E_ {2}=\omega_ {1+2}-\omega_ {1})}{4\omega_ {1}(\omega_ {1+2}-\omega_ {1}+\omega_ {2})(\omega_ {1+2}-\omega_ {1}-\omega_ {2})(2\omega_ {1+2}-\omega_ {1})} \right\rbrace .
+\end{align*}
+$$
+
+
+
+
 
