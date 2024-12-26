@@ -147,5 +147,45 @@ $$
 
 
 
+the difference is that between $E'^{2}-\omega'^{2}-m^{2}+i\epsilon$ and $\omega_ {\vec{p}}^{2}$, I think
 
+$$
+\int d^{d}x \,  \frac{\Delta+g}{(2\pi)^{d}}:\phi^{3}(\vec{x}):
+$$
+- - -
+
+
+Hi Jarah! In your note,
+
+$$
+\text{(2.4)} = -6g \int \frac{d^{d}p_ {1}d^{d}p_ {2}}{(2\pi)^{2d}} \, e^{ i(\vec{x}_ {1}\cdot \vec{p}_ {1}+ \vec{x}_ {2}\cdot \vec{p}_ {2}) } J,
+$$
+
+where
+
+$$
+J = \int \frac{dE_ {1}dE_ {2}}{(2\pi)^{2}} \, e^{ -i(E_ {1}t_ {1}+E_ {2}t_ {2}) }[(E_ {1}^{2}-\omega_ {1}^{2}+i\epsilon)(E_ {2}^{2}-\omega_ {2}^{2}+i\epsilon)((E_ {1}+E_ {2})^{2}-\omega_ {1+2}^{2}+i\epsilon)] .
+$$
+
+I use $\omega_ {1}$ as a short hand notation for $\omega_ {\vec{p}_ {1}}$.
+
+`Question 1:` the factor of $g$ in $(-6g)$ was not in the paper? 
+
+$$
+J = \frac{1}{8\omega_ {1}\omega_ {2}\omega_ {1+2}}K,
+$$
+
+$$
+K = \int \frac{dE_ {1}dE_ {2}}{(2\pi)^{2}} \, e^{ -i(E_ {1}t_ {1}+E_ {2}t_ {2}) }[\cdots] 
+$$
+
+For integrate contour, assume $t_ {1}>0$ and $t_ {2}>0$, we can close the lower half plane. At last we get
+
+$$
+J = 
+$$
+
+$$
+\frac{e^{ -i\omega_ {p_ {1}}t_ {1} }}{\omega_ {p_ {1}}-\frac{i\epsilon}{2\omega_ {p_ {1}}}+E_ {2}-\omega_ {p_ {1}+p_ {2}}+\frac{i\epsilon}{2\omega_ {p_ {1}+p_ {2}}}}
+$$
 
