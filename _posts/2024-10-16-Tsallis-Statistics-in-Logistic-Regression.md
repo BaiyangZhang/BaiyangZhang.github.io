@@ -276,7 +276,7 @@ thus
 
 $$
 \boxed{ 
-y = (1+(1-q)x)^{1/(1-q)} =: e_ {q}^{x}.
+y = (1+(1-q)x)^{1/(1-q)} =: \exp_ {q}(x).
 }
 $$
 
@@ -303,6 +303,12 @@ $$
 $$
 
 ## 3.1. Mean Value in Tsallis Statistics
+
+The Tsallis entropy is defined as 
+
+$$
+S_ {q} = \frac{1}{q-1} \sum_ {i} (p_ {i}-p_ {i}^{q})  = - \sum_ {i} p_ {i}  \ln_ {q} p_ {i}
+$$
 
 There are at least three types of Tsallis statistics, depending on how they take the mean value. Next we will discuss each of them in chronological order.
 

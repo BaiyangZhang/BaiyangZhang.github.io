@@ -123,7 +123,7 @@ Different sets of postulates have been given, which characterize the Shannon ent
 1. $S(p_ {1},\cdots,p_ {n})$ is invariant under a permutation of its variables;
 2. $S(p,1-p)$ is a continuous function of $p$ for $0\leq p \leq 1$;
 3. $S\left( \frac{1}{2},\frac{1}{2} \right)=1$;
-4. $S(t p_ {1},(1-t)p_ {1},p_ {2},\cdots,p_ {n})=S(p_ {1},p_ {2},\cdots,p_ {n})+p_ {1}H(t,1-t)$ for $0\leq t \leq_ {1}$.
+4. $S(t p_ {1},(1-t)p_ {1},p_ {2},\cdots,p_ {n})=S(p_ {1},p_ {2},\cdots,p_ {n})+p_ {1}H(t,1-t)$ for $0\leq t \leq {1}$.
 
 The proof can be found in Rényi's original paper on Renyi entropy. Condition (4) is stronger than the additivity, which states that for two probability distributions $\mathcal{P}$ and $\mathcal{Q}$, we have 
 
