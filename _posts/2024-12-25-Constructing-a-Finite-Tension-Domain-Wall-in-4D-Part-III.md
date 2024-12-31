@@ -189,3 +189,39 @@ $$
 \frac{e^{ -i\omega_ {p_ {1}}t_ {1} }}{\omega_ {p_ {1}}-\frac{i\epsilon}{2\omega_ {p_ {1}}}+E_ {2}-\omega_ {p_ {1}+p_ {2}}+\frac{i\epsilon}{2\omega_ {p_ {1}+p_ {2}}}}
 $$
 
+My extra terms to Eq.(2.6):
+
+$$
+\begin{align*}
+& - \frac{3g}{4} \int \frac{d^{d}p_ {1}}{(2\pi)^{d}}\frac{d^{d}p_ {2}}{(2\pi)^{d}} \,  \frac{e^{ i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}) }}{\omega_ {1}\omega_ {2}\omega_ {1+2}}\\
+&\times \left\lbrace \frac{e^{ -i(\omega_ {1}t_ {1}-\omega_ {1}t_ {2}+\omega_ {1+2}t_ {2}) }}{\omega_ {1}+\omega_ {2}-\omega_ {1+2}} + \frac{e^{ -i(\omega_ {1}t_ {1}-\omega_ {1}t_ {2}+\omega_ {1+2}t_ {2}) }}{\omega_ {1+2}+\omega_ {2}-\omega_ {1}} \right\rbrace ,
+\end{align*}
+$$
+
+it can be simplified to 
+
+$$
+\frac{3g}{2}\int \frac{d^{d}p_ {1}}{(2\pi)^{d}}\frac{d^{d}p_ {2}}{(2\pi)^{d}} \,  \frac{e^{ i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}) } e^{ -i(\omega_ {1}(t_ {1}-t_ {2})+\omega_ {1+2}t_ {2}) }}{\omega_ {1}\omega_ {1+2}[(\omega_ {1+2}-\omega_ {1})^{2}-\omega_ {2}^{2}]},
+$$
+
+Earlier today, by mistake I canceled them.
+# Jarah's note
+
+Derivation of Eq.(2.6) from the LHS of Eq. (2.4).
+
+The cubic Hamiltonian in terms of ladder operators:
+
+$$
+\begin{align*}
+H_ {3}^{(3)} =& g\int \frac{d^{3}p}{(2\pi)^{3}} \, A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {-p_ {1}-p_ {2}}, \\
+H_ {3}^{(1)} =& \frac{3g}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}} \frac{A_ {p_ {1}+p_ {2}}}{\omega_ {p_ {1}+p_ {2}}}, \\
+H_ {3}^{(-1)} =& \frac{3g}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  A^{\ddagger}_ {p_ {1}+p_ {2}} \frac{A_ {p_ {1}}}{\omega_ {p_ {1}}} \frac{A_ {p_ {2}}}{\omega_ {p_ {2}}}, \\
+H_ {3}^{(-3)} =& \frac{g}{8} \int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}}{\omega_ {p_ {1}}} \frac{A_ {p_ {2}}}{\omega_ {p_ {2}}} \frac{A_ {-p_ {1}-p_ {2}}}{\omega_ {p_ {1}+p_ {2}}}
+\end{align*}
+$$
+
+At $\mathcal{O}(g)$, we have 
+
+$$
+H_ {3}\left\lvert \Omega \right\rangle = g\int \frac{d^{3}p}{(2\pi)^{3}} \left\lvert \vec{p}_ {1},\vec{p}_ {2},-\vec{p}_ {1}-\vec{p}_ {2} \right\rangle
+$$
