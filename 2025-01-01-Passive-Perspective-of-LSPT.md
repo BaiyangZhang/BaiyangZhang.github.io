@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Passive Perspective of Linearized Soliton Perturbation Theory
-date: 2024-11-14
+date: 2025-01-01
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -79,3 +79,4 @@ In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal
 
 - - -
 
+#

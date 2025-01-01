@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Note on The Moral\rFoundations\rof Politics"
+title: "Note on The Moral\rFoundations\rof Politics by Ian Shapiro"
 subtitle: by Ian Shapiro
-date: 2024-07-30
+date: 2025-01-02
 author: Baiyang Zhang
 header-img: 
 catalog: true
@@ -206,3 +206,19 @@ Law should limit itself to ensuring that people can pursue utility for themselve
 The necessity for having a government comes down to two things.
 
 1. Selfish behavior can be self-defeating. The problem of funding the provision of public goods is one of a class of market failures, where the market’s invisible hand leads to sub-optimal outcomes for all concerned.
+
+# Synthesizing rights and Utility
+
+Contemptuous though he generally was of `normative inquiry`, for the most part the Pareto of the Manual saw it as superfluous. 
+
+Pareto’s denial of the possibility of interpersonal comparisons had the effect of importing a powerful doctrine of individual autonomy into the core logic of utilitarianism.
+
+- - -
+
+Although Pareto’s is not a normative theory, it nonetheless has normative implications. These derive from the pivotal role it ascribes to free individual choice as embodied in and expressed through market transactions.
+
+The core notion here is that of an indifference curve. Indifference means exactly what it says: someone is indifferent between two goods if exchanging one for the other would neither increase nor decrease his or her utility. 
+
+- - -
+
+John Stuart Mill.
