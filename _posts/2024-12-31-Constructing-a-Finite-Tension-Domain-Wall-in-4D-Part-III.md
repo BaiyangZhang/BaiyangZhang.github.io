@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Constructing a Finite Tension Domain Wall in 4D Part III
-date: 2024-12-31
+date: 2024-12-25
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -144,6 +144,9 @@ $$
 &- \left. \frac{e^{ -i(t_ {1}-t_ {2})(\omega_ {1}-\omega_ {1+2}) }\Gamma(E_ {1}=\omega_ {1},E_ {2}=\omega_ {1+2}-\omega_ {1})}{4\omega_ {1}(\omega_ {1+2}-\omega_ {1}+\omega_ {2})(\omega_ {1+2}-\omega_ {1}-\omega_ {2})(2\omega_ {1+2}-\omega_ {1})} \right\rbrace .
 \end{align*}
 $$
+
+
+
 the difference is that between $E'^{2}-\omega'^{2}-m^{2}+i\epsilon$ and $\omega_ {\vec{p}}^{2}$, I think
 
 $$
@@ -151,3 +154,74 @@ $$
 $$
 - - -
 
+
+Hi Jarah! In your note,
+
+$$
+\text{(2.4)} = -6g \int \frac{d^{d}p_ {1}d^{d}p_ {2}}{(2\pi)^{2d}} \, e^{ i(\vec{x}_ {1}\cdot \vec{p}_ {1}+ \vec{x}_ {2}\cdot \vec{p}_ {2}) } J,
+$$
+
+where
+
+$$
+J = \int \frac{dE_ {1}dE_ {2}}{(2\pi)^{2}} \, e^{ -i(E_ {1}t_ {1}+E_ {2}t_ {2}) }[(E_ {1}^{2}-\omega_ {1}^{2}+i\epsilon)(E_ {2}^{2}-\omega_ {2}^{2}+i\epsilon)((E_ {1}+E_ {2})^{2}-\omega_ {1+2}^{2}+i\epsilon)] .
+$$
+
+I use $\omega_ {1}$ as a short hand notation for $\omega_ {\vec{p}_ {1}}$.
+
+`Question 1:` the factor of $g$ in $(-6g)$ was not in the paper? 
+
+$$
+J = \frac{1}{8\omega_ {1}\omega_ {2}\omega_ {1+2}}K,
+$$
+
+$$
+K = \int \frac{dE_ {1}dE_ {2}}{(2\pi)^{2}} \, e^{ -i(E_ {1}t_ {1}+E_ {2}t_ {2}) }[\cdots] 
+$$
+
+For integrate contour, assume $t_ {1}>0$ and $t_ {2}>0$, we can close the lower half plane. At last we get
+
+$$
+J = 
+$$
+
+$$
+\frac{e^{ -i\omega_ {p_ {1}}t_ {1} }}{\omega_ {p_ {1}}-\frac{i\epsilon}{2\omega_ {p_ {1}}}+E_ {2}-\omega_ {p_ {1}+p_ {2}}+\frac{i\epsilon}{2\omega_ {p_ {1}+p_ {2}}}}
+$$
+
+My extra terms to Eq.(2.6):
+
+$$
+\begin{align*}
+& - \frac{3g}{4} \int \frac{d^{d}p_ {1}}{(2\pi)^{d}}\frac{d^{d}p_ {2}}{(2\pi)^{d}} \,  \frac{e^{ i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}) }}{\omega_ {1}\omega_ {2}\omega_ {1+2}}\\
+&\times \left\lbrace \frac{e^{ -i(\omega_ {1}t_ {1}-\omega_ {1}t_ {2}+\omega_ {1+2}t_ {2}) }}{\omega_ {1}+\omega_ {2}-\omega_ {1+2}} + \frac{e^{ -i(\omega_ {1}t_ {1}-\omega_ {1}t_ {2}+\omega_ {1+2}t_ {2}) }}{\omega_ {1+2}+\omega_ {2}-\omega_ {1}} \right\rbrace ,
+\end{align*}
+$$
+
+it can be simplified to 
+
+$$
+\frac{3g}{2}\int \frac{d^{d}p_ {1}}{(2\pi)^{d}}\frac{d^{d}p_ {2}}{(2\pi)^{d}} \,  \frac{e^{ i(\vec{p}_ {1}\cdot \vec{x}_ {1}+\vec{p}_ {2}\cdot \vec{x}_ {2}) } e^{ -i(\omega_ {1}(t_ {1}-t_ {2})+\omega_ {1+2}t_ {2}) }}{\omega_ {1}\omega_ {1+2}[(\omega_ {1+2}-\omega_ {1})^{2}-\omega_ {2}^{2}]},
+$$
+
+Earlier today, by mistake I canceled them.
+# Jarah's note
+
+Derivation of Eq.(2.6) from the LHS of Eq. (2.4).
+
+The cubic Hamiltonian in terms of ladder operators:
+
+$$
+\begin{align*}
+H_ {3}^{(3)} =& g\int \frac{d^{3}p}{(2\pi)^{3}} \, A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}}A^{\ddagger}_ {-p_ {1}-p_ {2}}, \\
+H_ {3}^{(1)} =& \frac{3g}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, A^{\ddagger}_ {p_ {1}}A^{\ddagger}_ {p_ {2}} \frac{A_ {p_ {1}+p_ {2}}}{\omega_ {p_ {1}+p_ {2}}}, \\
+H_ {3}^{(-1)} =& \frac{3g}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  A^{\ddagger}_ {p_ {1}+p_ {2}} \frac{A_ {p_ {1}}}{\omega_ {p_ {1}}} \frac{A_ {p_ {2}}}{\omega_ {p_ {2}}}, \\
+H_ {3}^{(-3)} =& \frac{g}{8} \int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{A_ {p_ {1}}}{\omega_ {p_ {1}}} \frac{A_ {p_ {2}}}{\omega_ {p_ {2}}} \frac{A_ {-p_ {1}-p_ {2}}}{\omega_ {p_ {1}+p_ {2}}}
+\end{align*}
+$$
+
+At $\mathcal{O}(g)$, we have 
+
+$$
+H_ {3}\left\lvert \Omega \right\rangle = g\int \frac{d^{3}p}{(2\pi)^{3}} \left\lvert \vec{p}_ {1},\vec{p}_ {2},-\vec{p}_ {1}-\vec{p}_ {2} \right\rangle
+$$
