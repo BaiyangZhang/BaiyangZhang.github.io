@@ -20,6 +20,11 @@ Given the CCR's, we need to find the associated Hilbert space, or the `represent
 
 
 
+
+- - -
+
+## The Hamiltonian 
+
 We will work in Schrodinger picture, where operators are dependent on position only. Why don't we work with the good old interaction picture? We will only consider real scalar field $\phi$, in Schrodinger picture, a generic operator $\mathcal{O}(\phi(\vec{x},\pi(\vec{x})))$ is given as a function of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate, not the Lorentzian spacetime coordinate $x^{\mu}$. 
 
 We begin with a phi-fourth theory in Schrodinger picture, normal ordered at mass scale $m_ {0}$:

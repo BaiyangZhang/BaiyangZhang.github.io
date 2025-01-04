@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-01-02-Note-on-The-Moral-Foundations-of-Politics.md",
+                "file": "2025-01-02-Passive-Perspective-of-LSPT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-02-Note-on-The-Moral-Foundations-of-Politics"
+              "title": "2025-01-02-Passive-Perspective-of-LSPT"
             }
           },
           {
@@ -91,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e8fe099fa9a555a5",
@@ -200,9 +201,11 @@
   },
   "active": "075d2b284501b886",
   "lastOpenFiles": [
+    "_posts/2025-01-02-Note-on-The-Moral-Foundations-of-Politics.md",
+    "2024-12-25.md",
+    "2024-11-13.md",
     "_posts/2024-12-31-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
     "2025-01-02-Passive-Perspective-of-LSPT.md",
-    "2024-12-25.md",
     "2025-01-01-Passive-Perspective-of-LSPT.md",
     "_drafts/2024-07-13-Introduction-to-Resurgence-Part-2.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
@@ -210,7 +213,6 @@
     "Discussion Notes.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-11-05-Thoughts-on-Entropy.md",
-    "2024-11-13.md",
     "_posts/2024-12-23-Coleman-Weinberg-Potential.md",
     "_posts/2024-04-08-Perturbative-Spontaneous-Symmetry-Breaking.md",
     "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
@@ -225,7 +227,6 @@
     "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_drafts/2023-05-07-soliton-particle-duality.md",
-    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
     "img/tsallis/Youden1.png",
     "img/tsallis",
     "img/kink/H4Minus2OnP14.png",
