@@ -10,15 +10,115 @@ tags:
 
 # The model
 
+## Unnecessary mathematical preliminaries
+
+*This section can be skipped.*
+
+An `algebra` over a field $k$ is a vector space $A$ over $k$, equipped with an additional structure: a bilinear multiplication $\cdot: A \times A \to A$ that makes $A$ a ring (not necessarily commutative). That is, $A$ has:
+
+- Addition $+$ and scalar multiplication $\cdot$, making $A$ a $k$-vector space,
+- A bilinear multiplication satisfying associativity.
+
+More formally, an algebra $A$ is a vector space over field $k$ together with a map:
+
+
+$$
+\mu: A \times A \to A, \quad (a, b) \mapsto ab
+$$
+
+that satisfies the ring axioms and is $k$-bilinear, meaning:
+
+$$
+(ab + c)d = ab \cdot d + c \cdot d, \quad a(b + c)d = ab \cdot d + ac \cdot d
+$$
+
+for all $a, b, c, d \in A$. Examples of Algebras include Matrix algebra (the space of $n \times n$ matrices over a field $k$, with matrix addition and multiplication), Polynomial algebra and Function algebra. 
+
+An algebra $A$ is said to be `unital` if it contains a multiplicative unit $1$. 
+
+- - -
+
+Denote by $\mathcal{E}$ a complex Hilbert space, with inner product $\left\langle - \middle\vert- \right\rangle$, and $\mathcal{B}(\mathcal{E})$ the set of all bounded operators. In is a Banach algebra with the `operator norm`, which is defined as
+
+$$
+\left\lVert A \right\rVert = \text{sup}\, \left\lVert Av \right\rVert \quad  \;\forall\;  \left\lVert v \right\rVert =1.
+$$
+
+Let $\xi_ {1},\xi_ {2} \in\mathcal{E}$. For $a\in \mathcal{B}(\mathcal{E})$, the adjoint operator $a^{\ast}$ is defined by 
+
+$$
+\left\langle a^{\ast }\xi_ {1} \middle\vert\xi_ {2} \right\rangle  = \left\langle \xi_ {1} \middle\vert a \xi_ {2} \right\rangle .
+$$
+
+The adjoint operation is an `involution`, i.e. it is anti-linear (meaning $(\lambda a)^{\ast}=\overline{\lambda} a^{\ast}$, where $\overline{\lambda}$ is the complex conjugate of $\lambda$) and satisfies $(ab)^{\ast}=b^{\ast}a^{\ast}$.
+
+For it to be a $\mathbb{C}^{\ast}$-algebra, it must satisfy the $\mathbb{C}^{\ast}$-identity
+
+$$
+\left\lVert a^{\ast }a \right\rVert = \lVert a \rVert ^{2}.
+$$
+
+If the $\mathbb{C}^{\ast}$-algebra is Cauchy-complete under the operator norm, then it is said to be a concrete $\mathbb{C}^{\ast}$-algebra. By default all the $\mathbb{C}^{\ast}$-algebras we talk about will be concrete, so we will ignore it.
+
+- - -
+
+A `module` over an algebra $A$ is a generalization of a vector space, where the scalars used for multiplication come from the algebra $A$ rather than a field. Te be precise, an $A$-module $M$ is an abelian group (under addition) together with a multiplication map:
+
+$$
+A \times M \to M, \quad (a, m) \mapsto a \cdot m
+$$
+
+satisfying the following conditions for all $a, b \in A$, $m, n \in M$, and $\lambda \in k$:
+
+1. Distributivity: $(a + b) \cdot m = a \cdot m + b \cdot m$,
+2. $a \cdot (m + n) = a \cdot m + a \cdot n$,
+3. $(\lambda a) \cdot m = \lambda (a \cdot m)$,
+4. $(ab) \cdot m = a \cdot (b \cdot m)$.
+
+Roughly speaking, a vector space is just a module over a field. A module over a commutative algebra $A$ can be thought of as a generalization of a vector space where scalars come from $A$ instead of $k$.
+
+Examples of modules over algebras include Module over matrix algebras, Polynomial modules, etc.
+
+A module is said to be `simple` if it does not have nonzero proper submodule.
+
+---
+
+**Definition.** `Endomorphism algebra`. If $V$ is a $k$-vector space, then $\text{End}(V)$ is an algebra formed of the the set of all linear maps from $V$ to $V$ itself (endomorphisms), where the multiplication of two elements is given by composition. 
+
+For example, let $V$ be $\mathbb{R}^{n}$, then the endomorphism algebra $\text{End}(V)$ is the $n\times n$ real matrices. 
+
+**Definition.** `Algebra representation`. Let $A$ be a $k$-algebra, a representation of $A$ is a homomorphism between algebras that maps $A$ to $\text{End}(V)$ for some $k$-module $V$. 
+
+In human's language, to define a representation of an abstract algebra, we first choose a module that the algebra act on, then define how exactly each element of the algebra acts on $V$. 
+
+- - -
+
+An introduction of category theory can be found in my blogs [here](https://www.mathlimbo.net/blog/2023/Basic-Category-Theory-Lecture-1/) and [here](https://www.mathlimbo.net/blog/2023/Basic-Category-Theory-Lecture-2/). A blog explicitly devoted to Yoneda lemma which is sometime useful in dealing with gauge theory can be found [here](https://www.mathlimbo.net/blog/2024/Yoneda-Lemma/), but I doubt we will need it in this note.
+
+
 ## Problems with interaction picture
 
 *This section can be entirely skipped for readers who are not interested in Haag's theorem.*
 
-There are some fundamental issues regarding the good old interaction picture that I haven't figured out, and I mean the so-called Haag's theorem, or more accurately Haag-Hall-Wightman (HHW) theorem, which roughly says that interaction picture is inconsistent, even in the case of neutral free scalar field with different masses. **It claims that the set of assumptions required to construct the interaction picture is only consistent when there is no interaction.** It also claims that **non-Fock representations have an important rule to play in QFT** (Earman and Fraser, 2006). Our work on kinks will provide an concrete example of that. To be more specific, quantum theories, no matter quantum field theory or quantum field theory are described by a bunch of canonical commutation relations (here we only consider bosonic case), such as $[x,p]=i\hbar$ or $[\phi(\vec{x}),\pi(\vec{y})]=(2\pi)^{d}\delta^{d}(\vec{x}-\vec{y})$. In quantum mechanics we have finite sets of independent CCR's (canonical commutation relation), while in quantum field theory we have an finite set of them. Things usually get quite messy when going from finite to infinity, properties that hold in the finite case may not hold for infinite case, for example a sum of finite positive numbers are always positive, but a sum of infinite positive numbers may not be positive anymore. The same thing happens with going from quantum mechanics to quantum field theory. 
-
-Given the CCR's, we need to find the associated Hilbert space, or the `representation` of CCR. This Hilbert space, or representation should be irreducible, other wise we can separate the theory into two different fields. The vacuum state can be specified in two ways: (1) it is the minimal energy state; (2) it is the unique state annihilated by particle number operator $a^{\dagger}a$. If these two specification don't coincide, the vacuum is said to be `polarized`. As we will see later, **the presence of a kink will polarize the trivial vacuum**. **Vacuum polarization lies at the core of HHW theorem, any interacting quantum field operator, or free fields of different masses, polarizes the vacuum**. 
+Recall how we quantize a classical theory with interactions. First, 
 
 
+There are some fundamental issues regarding the good old interaction picture that I haven't figured out, and I mean the so-called Haag's theorem, or more accurately Haag-Hall-Wightman (HHW) theorem, which roughly says that interaction picture is inconsistent, even in the case of neutral free scalar field with different masses. **It claims that the set of assumptions required to construct the interaction picture is only consistent when there is no interaction.** It also claims that **non-Fock representations have an important rule to play in QFT** (Earman and Fraser, 2006). Our work on kinks will provide an concrete example of that. 
+
+- - -
+
+Quantum theories, no matter quantum field theory or quantum field theory are described by a bunch of canonical commutation relations (here we only consider bosonic case), such as $[x,p]=i\hbar$ or $[\phi(\vec{x}),\pi(\vec{y})]=(2\pi)^{d}\delta^{d}(\vec{x}-\vec{y})$. In quantum mechanics we have finite sets of independent CCR's (canonical commutation relation), while in quantum field theory we have an finite set of them. Things usually get quite messy when going from finite to infinity, properties that hold in the finite case may not hold for infinite case, for example a sum of finite positive numbers are always positive, but a sum of infinite positive numbers may not be positive anymore. The same thing happens with going from quantum mechanics to quantum field theory. 
+
+Given the CCR's, we need to find the associated Hilbert space, or the `representation` of CCR. This Hilbert space, or representation should be irreducible, other wise we can separate the theory into two different fields. Regarding quantum mechanics, which is a finite dimensional CCR system, the `Stone-von Neumann theorem` tells us that the irreducible representation of 
+
+
+
+
+The vacuum state can be specified in two ways: (1) it is the minimal energy state; (2) it is the unique state annihilated by particle number operator $a^{\dagger}a$. If these two specification don't coincide, the vacuum is said to be `polarized`. As we will see later, **the presence of a kink will polarize the trivial vacuum**. **Vacuum polarization lies at the core of HHW theorem, any interacting quantum field operator, or free fields of different masses, polarizes the vacuum**. 
+
+
+
+## The Hamiltonian
 
 We will work in Schrodinger picture, where operators are dependent on position only. Why don't we work with the good old interaction picture? We will only consider real scalar field $\phi$, in Schrodinger picture, a generic operator $\mathcal{O}(\phi(\vec{x},\pi(\vec{x})))$ is given as a function of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate, not the Lorentzian spacetime coordinate $x^{\mu}$. 
 
