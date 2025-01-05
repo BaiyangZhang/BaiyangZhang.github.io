@@ -95,27 +95,49 @@ In human's language, to define a representation of an abstract algebra, we first
 
 An introduction of category theory can be found in my blogs [here](https://www.mathlimbo.net/blog/2023/Basic-Category-Theory-Lecture-1/) and [here](https://www.mathlimbo.net/blog/2023/Basic-Category-Theory-Lecture-2/). A blog explicitly devoted to Yoneda lemma which is sometime useful in dealing with gauge theory can be found [here](https://www.mathlimbo.net/blog/2024/Yoneda-Lemma/), but I doubt we will need it in this note.
 
-
 ## Problems with interaction picture
 
 *This section can be entirely skipped for readers who are not interested in Haag's theorem.*
 
-Recall how we quantize a classical theory with interactions. First, 
+Recall how we quantize a classical theory with interactions. We start from a classical theory defined by Lagrangian, or equivalently Hamiltonian, which are functions of canonical variables $q$ and $p$. The canonical variables satisfy certain Poisson brackets, which generates the dynamics of the model. 
 
+Let's ignore the interaction for now and deal with a free theory only. We will introduce interaction later and see that they cause fundamental difficulties in quantization. But without interaction, things are under control... more or less. To quantize a classical model we need to construct a Hilbert space in a systemic way. The simplest procedure is to generalize the generalized coordinates and canonical momenta to operators, and map the Poisson bracket to the so-called canonical commutation relation (CCR),
 
-There are some fundamental issues regarding the good old interaction picture that I haven't figured out, and I mean the so-called Haag's theorem, or more accurately Haag-Hall-Wightman (HHW) theorem, which roughly says that interaction picture is inconsistent, even in the case of neutral free scalar field with different masses. **It claims that the set of assumptions required to construct the interaction picture is only consistent when there is no interaction.** It also claims that **non-Fock representations have an important rule to play in QFT** (Earman and Fraser, 2006). Our work on kinks will provide an concrete example of that. 
+$$
+[q,p] = i\hbar.
+$$
+
+The Hilbert space we are looking for would be a representation of CCR. there exist different possible representations, for example $q,p$ could be represented by matrices; or we could let $q=q$ and $p=-i\hbar \frac{ \partial  }{ \partial q }$, the corresponding Hilbert space is the Lebesgue space $L^{2}(\mathbb{R}^{d})$, which is the square-integrable functions quotient functions with measure zero almost everywhere, such as the famous Dirichlet function.
+
+Classical functions $f(q,p)$ are quantized in a straightforward way, by replacing $q$ and $p$ by their corresponding operators. 
+
+This procedure has a number of problems. For example, it is not consistent in the sense that the quantization of $f(q,p)$ some times is not unique due to possible different orders of $p,q$. Later people proposed better, more sophisticated quantization methods, such as geometry quantization and deformation quantization. So it is safe to say that, given a free classical theory, we can quantize it to obtain a Hilbert space for free quantum theory.
+
+Since given a CCR we can find multiple different irreducible representations, then the question is, which is the correct one? In quantum mechanics we deal with finite dimensional CCR and this question is answered by the Stone-von Neumann theorem, which claims that all the representations are equivalent up to a unitary transform. This makes sure that whatever representation we choose, we will get the same prediction for observables. However, it turned out later that if $U(1)$ gauge field is included, this claim is no longer true. I am still not sure about this claim, but it seems to suggest that even in the finite dimensional case, a single irreducible representation, up to unitary transform, is already not enough when there is electro-magnetic field around.
 
 - - -
 
-Quantum theories, no matter quantum field theory or quantum field theory are described by a bunch of canonical commutation relations (here we only consider bosonic case), such as $[x,p]=i\hbar$ or $[\phi(\vec{x}),\pi(\vec{y})]=(2\pi)^{d}\delta^{d}(\vec{x}-\vec{y})$. In quantum mechanics we have finite sets of independent CCR's (canonical commutation relation), while in quantum field theory we have an finite set of them. Things usually get quite messy when going from finite to infinity, properties that hold in the finite case may not hold for infinite case, for example a sum of finite positive numbers are always positive, but a sum of infinite positive numbers may not be positive anymore. The same thing happens with going from quantum mechanics to quantum field theory. 
+One way to think of the quantization of quantum field theory is to start from quantum mechanics, generalize $p$ and $q$ to $\phi(\vec{x})$ and $\pi(\vec{x})$, going from finite dimensional CCR of quantum mechanics to infinite dimensional CCR of quantum field theory. This way we start from a well-established CCR algebra and generalize its dimension to infinity. Another way is to start from a classical field theory, say, a scalar classical Landau-Ginsberg model, with real scalar field $\phi(\vec{x})$. Let $M$ be the space manifold, the configuration space of a classical field theory is denoted as $\mathcal{C}(M,\mathbb{R})$ where $\mathbb{R}$ is the time direction. Regard $\vec{x}$ as continuous indices as in quantum field theory, then $\vec{x}$ labels different field operator, and each $\phi(\vec{x})$ can be considered as a functional, it is the evaluation functional on the configuration space, explicitly let $f\in\mathcal{C}$ then
 
-Given the CCR's, we need to find the associated Hilbert space, or the `representation` of CCR. This Hilbert space, or representation should be irreducible, other wise we can separate the theory into two different fields. Regarding quantum mechanics, which is a finite dimensional CCR system, the `Stone-von Neumann theorem` tells us that the irreducible representation of 
+$$
+\phi(\vec{x}): \mathcal{C} \to  \mathbb{R},\quad  f \mapsto f(\vec{x}).
+$$
 
+A general field is a function $F$ of the basic field $\phi$, $F=F(\phi)$. Then $F(\phi)$ is also a functional on $\mathcal{C}$. The advantage of this point of view is that, first, in particular in view of deformation quantization, it is a main advantage of our approach that the fields of both the classical and the quantum theory are defined in terms of the same space of functionals. Second, many of the most fundamental and profound phenomenon in quantum field theory, such as renormalization group flow or critical behavior, already takes place in classical field theory level. This approach greatly increases our understanding of quantum field theory.
 
+For quantum field theory, we can borrow the Hilbert space constructed in quantum mechanics and expand it to Fock space, sometimes know as second quantization. Compare to coming up to a Hilbert space from nothing, the construction of Fock space is quite straight forward, that's why Segal said something like the first quantization is a mystery and the second quantization is a functor. 
 
+However, recall that this Fock space is built out from free states, there is no interaction involved yet. The eigen states are supposed to be that of free particles with mass $m$, whose energy is $\sqrt{\vec{p}^{2}+m^{2}}$. To deal with interaction, the standard procedure is to turn to interaction picture, or Dirac picture. In interaction picture, the operators are evolved by free Hamiltonian without interaction, and the states alone are evolved by interact. This allows us to easily write down the time dependence of field operators, then it is easy to write down the Feynman propagators, etc. 
+
+There are some fundamental issues regarding the good old interaction picture that I haven't figured out, and I mean the so-called Haag's theorem, or more accurately Haag-Hall-Wightman (HHW) theorem, which roughly says that interaction picture is inconsistent, even in the case of neutral free scalar field with different masses. **It claims that the set of assumptions required to construct the interaction picture is only consistent when there is no interaction.** It also claims that **non-Fock representations have an important rule to play in QFT** (Earman and Fraser, 2006). Our work on kinks will provide an explicit example. 
+
+- - -
+
+As we mentioned before, quantum theories, no matter quantum field theory or quantum field theory are described by a bunch of canonical commutation relations (here we only consider bosonic case), such as $[x,p]=i\hbar$ or $[\phi(\vec{x}),\pi(\vec{y})]=(2\pi)^{d}\delta^{d}(\vec{x}-\vec{y})$. In quantum mechanics we have finite sets of independent CCR's (canonical commutation relation), while in quantum field theory we have infinite dimension. Things usually get quite messy when going from finite to infinity, properties that hold in the finite case may not hold for infinite case, for example a sum of finite positive numbers are always positive, but a sum of infinite positive numbers may not be positive anymore. The same thing happens with going from quantum mechanics to quantum field theory. 
 
 The vacuum state can be specified in two ways: (1) it is the minimal energy state; (2) it is the unique state annihilated by particle number operator $a^{\dagger}a$. If these two specification don't coincide, the vacuum is said to be `polarized`. As we will see later, **the presence of a kink will polarize the trivial vacuum**. **Vacuum polarization lies at the core of HHW theorem, any interacting quantum field operator, or free fields of different masses, polarizes the vacuum**. 
 
+The HHW theorem claims that 
 
 
 ## The Hamiltonian
