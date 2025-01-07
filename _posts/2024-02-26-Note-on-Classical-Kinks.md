@@ -28,9 +28,6 @@ $$
 
 Then we can write down the kink solution, so-called $\mathcal{Z}_ {2}$ kink. The nice thing about $\mathcal{Z}_ {2}$ kink is that almost everything, from the kink solution to its energy, can be written down in closed form, as we shall see in the next chapter. 
 
-
-
-
 One can rescale the field $\phi$ and the coordinate $y$ such that the Lagrangian reads 
 
 $$

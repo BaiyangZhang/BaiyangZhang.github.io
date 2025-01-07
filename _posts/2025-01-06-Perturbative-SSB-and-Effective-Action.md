@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Perturbative Spontaneous Symmetry Breaking
+title: Perturbative SSB and Effective Action
 subtitle: 
-date: 2024-04-08
+date: 2025-01-06
 author: Baiyang Zhang
 header-img: img/background1.jpg
 catalog: true
