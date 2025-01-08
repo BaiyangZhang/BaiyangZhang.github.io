@@ -187,9 +187,9 @@ Some regimes indeed deals "in sounds instead of senses, in caprice instead of re
 
 The `principle of utility`, as Bentham explains, "approves or disapproves of every action whatsoever, according to the tendency which it appears to have to augment or diminish the happiness of the party whose interest is in question: or, what is the same thing in other words, to promote or to oppose that happiness."
 
->>A century later Marx and Engels would write of a uto pian order in which politics could be replaced by administration.≥ Bentham believed that it could be done in eighteenth-century England.
+>A century later Marx and Engels would write of a utopian order in which politics could be replaced by administration. Bentham believed that it could be done in eighteenth-century England.
 
-Funny enoguh, Marx thought very little of Jeremy Benthem.Marx wrote, in *Das Capita*, that Bentham was a "panegyrist of bourgeois society," and "With the driest naiveté he (Bentham) takes the modern shopkeeper, especially the English shopkeeper, as the normal man. Whatever is useful to this queer normal man, and to his world, is absolutely useful. This yard-measure, then, he applies to past, present, and future. The Christian religion, for example, is 'useful,' 'because it forbids in the name of religion the same faults which the penal code condemns in the name of the law.' Artistic criticism is 'harmful,' because it disturbs worthy people in their enjoyment of Martin Tupper, etc."
+Funny enough, Marx thought very little of Jeremy Benthem. Marx wrote, in *Das Capita*, that Bentham was a "panegyric of bourgeois society," and "With the driest naiveté he (Bentham) takes the modern shopkeeper, especially the English shopkeeper, as the normal man. Whatever is useful to this queer normal man, and to his world, is absolutely useful. This yard-measure, then, he applies to past, present, and future. The Christian religion, for example, is 'useful,' 'because it forbids in the name of religion the same faults which the penal code condemns in the name of the law.' Artistic criticism is 'harmful,' because it disturbs worthy people in their enjoyment of Martin Tupper, etc."
 
 Bentham's happiness principal, when applied to governments, requires us to maximize the greatest happiness of the greatest number in the community.
 

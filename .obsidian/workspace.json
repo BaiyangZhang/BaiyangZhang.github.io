@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-26-Note-on-Classical-Kinks.md",
+                "file": "_posts/2024-06-18-Yoneda-Lemma.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-02-26-Note-on-Classical-Kinks"
+              "title": "2024-06-18-Yoneda-Lemma"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-01-02-Note-on-The-Moral-Foundations-of-Politics.md",
+                "file": "Referee report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-02-Note-on-The-Moral-Foundations-of-Politics"
+              "title": "Referee report"
             }
           }
         ],
@@ -202,9 +202,13 @@
   "active": "fc73270899283e42",
   "lastOpenFiles": [
     "_posts/2025-01-07-Passive-Perspective-of-LSPT.md",
+    "Referee report.md",
+    "_posts/2024-06-18-Yoneda-Lemma.md",
+    "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-02-26-Note-on-Classical-Kinks.md",
-    "_posts/2023-12-30-The-Best-Way-to-Make-Math-Notes.md",
     "_posts/2023-12-21-Introduction-to-Higher-Form-Symmetry Lecture 3.md",
+    "_posts/2025-01-02-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2023-12-30-The-Best-Way-to-Make-Math-Notes.md",
     "_posts/2023-12-20-Notes-on-Kontsevich.md",
     "_posts/2023-12-20-Note-on-Hamiltonian-Truncation.md",
     "_posts/2023-12-10-罗伯特议事规则.md",
@@ -213,7 +217,6 @@
     "_posts/2023-12-6-Transseries-Lecture-1.md",
     "_posts/2023-12-3-Homotopy-and-Chern-Forms.md",
     "_posts/2023-11-19-Higher-Homotopy-Groups.md",
-    "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2025-01-06-Perturbative-SSB-and-Effective-Action.md",
     "_posts/2024-2-26-Renormalization-method-in-PDF.md",
@@ -222,11 +225,8 @@
     "_posts/2024-03-06-Domain-Wall.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-06-26-Introduction-to-Resurgence-Part-1.md",
-    "_posts/2024-06-18-Yoneda-Lemma.md",
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2023-06-20-Note-on-Meson-Kink-Scattering.md",
-    "_posts/2023-06-17-The-Workers-and-the-Fatherland.md",
-    "_posts/2023-06-16-Complex-Line-Bundle.md",
     "img/tsallis/Youden1.png",
     "img/tsallis",
     "img/kink/H4Minus2OnP14.png",

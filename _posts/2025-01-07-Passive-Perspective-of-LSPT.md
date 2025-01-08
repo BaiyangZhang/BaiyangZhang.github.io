@@ -795,18 +795,53 @@ $$
 
 We are interested in the spectrum of the Hamiltonian. The good news is that, a unitary transformation preserves all the observables! Thus, in order to study the quantum correction, instead of working with the triplet $\hat{H}$, $\phi$ and $\left\lvert{0^{+}}\right\rangle$ where perturbative method fails, we can work with $H, \phi'$ and $\left\lvert{0^{+}}\right\rangle$ where $\phi'$ can be dealt with perturbatively. 
 
-**Remarks.** Generally speaking, let $\mathcal{O}$ be any operator and $\left\lvert{\psi}\right\rangle$ its eigenstate. If $\mathcal{O}'=\mathcal{D}^{\dagger}\mathcal{O} \mathcal{D}$ is the unitary transformation of $\mathcal{O}$, then its eigenstate is $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$, not $\left\lvert{\psi}\right\rangle$. It may seem weird to some people to put $\mathcal{O}'$ together with $\left\lvert{\psi}\right\rangle$ rather than $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$. In fact, it is exactly the point of our method! If we pair $\mathcal{O}'$ with $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$ it would be a trivial transformation, we will get nothing new! Paring up $\mathcal{O}'$ and $\left\lvert{\psi}\right\rangle$ makes it possible for perturbation methods. However, since $\left\lvert{\psi}\right\rangle$ is not the eigen state of $\mathcal{O}'$, it indeed raise some troubles, the first and foremost is that now $\mathcal{O}'$ is in general not diagonalized by $\left\lvert{\psi}\right\rangle$, we need to find a way to diagonalized it. In our current case, since the displacement operator only shifts the operators by a constant, it actually preserves the diagonalization, meaning if $\hat{\mathcal{H}}$ is diagonalized in $\left\lvert{\psi}\right\rangle$'s then $\mathcal{D}^{\dagger} \hat{\mathcal{H}}\mathcal{D}$ is also diagonalized in $\left\lvert{\psi}\right\rangle$'s. But for a generic $\mathcal{D}_ {f}$ with non-trivial $f$, this will no longer be true. That would be the topic for the other half the the note, after we introduce the kink solution. 
+Generally speaking, let $\mathcal{O}$ be any operator and $\left\lvert{\psi}\right\rangle$ its eigenstate. If $\mathcal{O}'=\mathcal{D}^{\dagger}\mathcal{O} \mathcal{D}$ is the unitary transformation of $\mathcal{O}$, then its eigenstate is $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$, not $\left\lvert{\psi}\right\rangle$. It may seem weird to some people to put $\mathcal{O}'$ together with $\left\lvert{\psi}\right\rangle$ rather than $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$. In fact, it is exactly the point of our method! If we pair $\mathcal{O}'$ with $\mathcal{D}^{\dagger}\left\lvert{\psi}\right\rangle$ it would be a trivial transformation, we will get nothing new! Paring up $\mathcal{O}'$ and $\left\lvert{\psi}\right\rangle$ makes it possible for perturbation methods. 
+
+However, since $\left\lvert{\psi}\right\rangle$ is not the eigen state of $\mathcal{O}'$, it indeed raise some troubles, the first and foremost is that now $\mathcal{O}'$ is in general not diagonalized by $\left\lvert{\psi}\right\rangle$, we need to find a way to diagonalized it. In our current case, since the displacement operator only shifts the operators by a constant, it actually preserves the diagonalization, meaning if $\hat{\mathcal{H}}$ is diagonalized in $\left\lvert{\psi}\right\rangle$'s then $\mathcal{D}^{\dagger} \hat{\mathcal{H}}\mathcal{D}$ is also diagonalized in $\left\lvert{\psi}\right\rangle$'s. But for a generic $\mathcal{D}_ {f}$ with non-trivial $f$, this will no longer be true. That would be the topic for the other half the the note, after we introduce the kink solution. 
 
 A comparison between displacement operator method to the case of regular functions might be helpful. 
 
 |                                                                         Functions                                                                          |                                                                                                                                                                      QFT                                                                                                                                                                      |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                            A functions $f(x)$, a neighborhood about a special locus $x_ 0$ where the interesting things happen.                            |                                                                           A Hilbert space, a quantum state  $\left\lvert{\Psi}\right\rangle$ of interest represented by a functional $\left\langle \Psi(x),- \right\rangle$, and some operator $\mathcal{O}(\phi)$.                                                                           |
-|                                             We want to study the function $f(x )$ about $x_ 0$ perturbatively,                                             |                                                                                                                We want to study the $\left\langle{\Psi}\right\rvert\mathcal{O}\left\lvert{\Psi}\right\rangle$ perturbatively,                                                                                                                 |
-|                             but $x_ 0$ is not a small quantity so Maclaurin expansion (Taylor expansion at the origin) fails.                              |                                                                                                      but $\left\langle{\Psi}\right\rvert\phi \left\lvert{\Psi}\right\rangle=:f(x)$ is too large for $\phi$ to be treated perturbatively.                                                                                                      |
+|                                              We want to study the function $f(x )$ at $x_ 0$ perturbatively,                                               |                                                                                                                We want to study the $\left\langle{\Psi}\right\rvert\mathcal{O}\left\lvert{\Psi}\right\rangle$ perturbatively,                                                                                                                 |
+|                             but $x_ 0$ too far from the origin, so Maclaurin expansion (Taylor expansion at the origin) fails.                             |                                                                                                      but $\left\langle{\Psi}\right\rvert\phi \left\lvert{\Psi}\right\rangle=:f(x)$ is too large for $\phi$ to be treated perturbatively.                                                                                                      |
 | **In a passive perspective, we shift the origin** to $x_ 0$, then small deviation from $x_ 0$ can now be studied using Maclaurin expansion perturbatively. | In a passive perspective, we shift the operators, especially the field operator $\phi$ since it is usually the building block of other operators. The expectation value of the new, shifted operator $\phi'$ should be zero, $\left\langle{\Psi}\right\rvert \phi'\left\lvert{\Psi}\right\rangle =0$. Now we can treat $\phi$ perturbatively. |
 |              We are using a new, shifted coordinate system $\left\lbrace \overline{x} \right\rbrace$ to study the same old functions $f(x)$.               |                                                                                                  We are using shifted operators $\mathcal{D}^{\dagger}\mathcal{O}\mathcal{D}$ to study the same old states $\left\lvert{\Psi}\right\rangle$.                                                                                                  |
 
 In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively.
+
+- - -
+
+Now let's apply this go kink background. Denote the generic kink solution as $f(\vec{x})$ in $d$ dimensional space, let the kink state be $\left\lvert K \right\rangle$ and the original field operator be $\phi$. We have 
+
+$$
+\left\langle K \right\rvert \phi(\vec{x}) \left\lvert K \right\rangle = f(\vec{x})
+$$
+
+at the leading order. In general $f(\vec{x})$ is inversely proportional to the coupling, for example for $\phi^{4}$ model we have $f\propto 1 / \sqrt{\lambda}$. 
+
+Denote the perturbative field operator in the kink sector as $\varphi$, it should satisfy
+
+$$
+\left\langle K \right\rvert\varphi \left\lvert K \right\rangle=0.
+$$
+
+You can verify that 
+
+$$
+\varphi = \mathcal{D}_ {f}^{\dagger} \phi \mathcal{D}_ {f},
+$$
+
+we will neglect the subscript $f$ is it is clear from the context. 
+
+If we write the same Hamiltonian (note that it has to be the same Hamiltonian no matter what perturbative basic field we choose to use, otherwise we would be solving a different problem) in terms of $\varphi$, we have 
+
+$$
+H[\phi] = H[\mathcal{D} \varphi \mathcal{D}^{\dagger}] = \mathcal{D}H[\varphi]\mathcal{D}^{\dagger} =: H'[\varphi].
+$$
+
+**This is the first part of the linearized solitonic perturbation theory**: define the triplet $(\varphi, H'[\varphi],\left\lvert K \right\rangle)$.
+
 
 ## Squeezing the coherent state
