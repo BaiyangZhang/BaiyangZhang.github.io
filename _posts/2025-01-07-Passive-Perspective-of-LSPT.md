@@ -11,8 +11,6 @@ tags:
 
 # (Unnecessary) mathematical preliminaries
 
-*This section can be skipped.*
-
 An `algebra` over a field $k$ is a vector space $A$ over $k$, equipped with an additional structure: a bilinear multiplication $\cdot: A \times A \to A$ that makes $A$ a ring (not necessarily commutative). That is, $A$ has:
 
 - Addition $+$ and scalar multiplication $\cdot$, making $A$ a $k$-vector space,
@@ -844,4 +842,7 @@ $$
 **This is the first part of the linearized solitonic perturbation theory**: define the triplet $(\varphi, H'[\varphi],\left\lvert K \right\rangle)$.
 
 
-## Squeezing the coherent state
+## The coherent state
+
+
+

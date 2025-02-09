@@ -12,11 +12,17 @@ tags:								#标签
     - Notes
 ---
 
-### Zariski Topology
+- [1. Zariski Topology](#1-zariski-topology)
+- [2. Connectedness and Irreducibility](#2-connectedness-and-irreducibility)
+- [3. Noetherian Topological Space](#3-noetherian-topological-space)
+- [4. Zariski Open Sets](#4-zariski-open-sets)
+- [5. Regular Functions on Open Sets](#5-regular-functions-on-open-sets)
 
-Rings are purely algebraic structures, it was to my surprise that, in a very direct manner, we can endow it with topological structures, called Zariski topology. This has a feeling of unity of algebra and geometry, with topology represents the geometry side. It makes people wonder why is it possible to define a topology on rings so naturally... The answer I do not know, let me know if you have any ideas.  
+### 1. Zariski Topology
 
-First, an overview of the ideal of topological space. Given a set $X$, we want to introduce a geometric structure on $X$ by defining what the it means for a subset to be `closed` and `open`. Namely we classify all the subsets of $X$ into two categories, open and closed. They don't have to me mutual exclusive, a subset can be both open and closed, contrary to people's common sense, such sets are sometimes called clopen but I seldom see living human being ever utter that word. No need to make the terminology more complicated than it already is.
+Rings are purely algebraic structures, it was to my surprise that, in a very direct way, we can endow it with topological structures, called Zariski topology. This has a feeling of unity of algebra and geometry, with topology represents the geometry side. It makes people wonder why is it possible to define a topology on rings so naturally...
+
+First, an overview of the ideal of topological space. Given a set $X$, we want to introduce a geometric structure on $X$ by defining what the it means for a subset to be `closed` and `open`. Namely we classify all the subsets of $X$ into two categories, open and closed. They don't have to me mutual exclusive, a subset can be both open and closed, contrary to people's common sense, such sets are sometimes called clopen but I seldom see people use it. No need to make the terminology more complicated than it already is.
 
 A topology on $X$ is a collection $\mathcal{T}$ of the subsets of $X$ called `closed` subsets, such that the following holds:
 1. The empty set $\emptyset$ and whole set $X$ are closed, 
@@ -39,15 +45,15 @@ This is how you define topology in terms of closed sets. More often the topology
 
 Once we have defined which sets are open, we can define which maps are `continuous.` A continuous map is a map between two topological spaces such that the pre-image of any closed sets is closed, equivalently (convince yourself of it) the pre-image of any open sets is open. 
 
-Then we can further define `homeomorphism` (note the spelling is different from homomorphism in, for example, group theory). A homeomorphism is a continuous map with continuous inverse. By the way, there is a nice article online discussing the difference and connection between homeomorphism and homomorphism, sadly I am too lazy to put the link here, interested readers can google it. 
+Then we can further define `homeomorphism` (note the spelling is different from "homomorphism" used in group theory). A homeomorphism is a continuous surjection with continuous inverse. By the way, there is a nice article online discussing the difference and connection between homeomorphism and homomorphism, interested readers can google it. 
 
-Whenever you need examples for these definitions, just think of $\mathbb{R}$ with usual topology. 
+Whenever you need examples for these definitions, just think of $\mathbb{R}$ with usual metric topology. 
 
 - - -
 
 Now let's come back to algebraic sets and try to endow it with a topological structure. There are two ways to define the topology, one geometric and one algebraic. We will start with the geometric one.
 
-**Proposition.** Let $X\subset \mathbb{A}^{n}$ ($\mathbb{A}$ for affine) be an `algebraic set` and $\mathcal{T}$ to be the collection of all `algebraic subsets` of $X$, then $\mathcal{T}$ is a topology of $X$ and $\mathcal{T}$ is the set of closed sets. 
+**Proposition.** Let $X\subset \mathbb{A}^{n}$ ($\mathbb{A}$ for affine) be an `algebraic set` and $\mathcal{T}$ to be the collection of all `algebraic subsets` of $X$, then $\mathcal{T}$ is a topology of $X$, and $\mathcal{T}$ is defined to be the set of closed sets. 
 
 In other words, a subset $U\subseteq X$ is closed if $U$ itself is algebraic, that is if $U$ is the variety of some ideals of $I(X)$, where $I(X)$ is the coordinate ring of $X$, namely the ring of non-zero polynomial functions on $X$.
 
@@ -79,7 +85,7 @@ However, this open ball is **not Zariski open** for if it were, its complement m
 
 - - -
 
-### Connectedness and Irreducibility
+### 2. Connectedness and Irreducibility
 
 The definition of connectedness is quite intuitive: if a set can be written as the disjoint union of two proper subsets, then it is said to be disconnected, otherwise it is said to be connected. To be more specific,
 
@@ -211,7 +217,7 @@ By definition, the coordinate ring $\mathcal{O}(X)$ is $R / I(X)$ where $R$ is t
 
 - - -
 
-### Noetherian Topological Space
+### 3. Noetherian Topological Space
 
 Recall that a ring is called Noetherian if the ideals satisfy the ascending chain condition (ACC). We can interpret it geometrically in the context of Zariski topology. 
 
@@ -243,7 +249,7 @@ this decomposition is unique up to permutation.
 
 - - -
 
-### Zariski Open Sets
+### 4. Zariski Open Sets
 
 We want to understand the open sets of a algebraic variety in Zariski topology in detail. First, we define a fundamental concept.
 
@@ -279,7 +285,7 @@ Thus, principal open subsets form a `base` for the Zariski topology on $X$.
 
 - - -
 
-### Regular Functions on Open Sets
+### 5. Regular Functions on Open Sets
 
 The closed sets and opens sets are very different in Zariski topology, much more so than in usual topology. To see that, consider the definition of coordinate ring of a algebraic subset $Z\subset X$,
 

@@ -17,7 +17,7 @@ tags:
 
 # 1. Motivation
 
-The following is an incomplete list of the potential applications of resurgence theory.
+The following are some examples of potential applications of resurgence theory.
 
 -   Normal forms for dynamical systems
 -   Gauge theory of singular connections

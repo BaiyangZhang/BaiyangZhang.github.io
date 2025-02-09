@@ -18,7 +18,7 @@ tags:
 Commutative algebra is the basic of many other topics in mathematics. The understanding of quite a portion of commutative algebra is needed as foundation for the understanding of topics such as algebraic geometry, which is essentially the study of the geometry of polynomial rings, number theory which I know nothing about, or the invariant theory which is a little out-fashioned nowadays.
 
 I assume the reader is familiar with the definition of commutative rings, which can be found easily on the internet. Two textbooks are strongly recommended for complete beginners,
-- [*A First Course in Abstract Algebra*](https://www.amazon.com/First-Course-Abstract-Algebra-7th/dp/0201763907) by  John Fraleigh,
+- [*A First Course in Abstract Algebra*](https://www.amazon.com/First-Course-Abstract-Algebra-7th/dp/0201763907) by John Fraleigh,
 - [*An Introductory Course in Commutative Algebra*](https://www.amazon.com/Introductory-Commutative-Algebra-Science-Publications/dp/0198501447/ref=sr_1_1?crid=GZ3K9KD5JH2I&keywords=an+introductory+course+in+commutative+algebra&qid=1661817436&s=books&sprefix=an+introductory+course+in+commutative+algeb%2Cstripbooks%2C446&sr=1-1) by A. W. Chatters and C. R. Hajanavis
 and the all-time most classic ,
 -  *Introduction to Commutative Algebra* by M.F.Atiyah and I.G.Macdonald.
