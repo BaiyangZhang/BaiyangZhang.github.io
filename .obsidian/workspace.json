@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Referee report"
             }
+          },
+          {
+            "id": "817eac92e73c782f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,7 +198,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fc73270899283e42",
+  "active": "817eac92e73c782f",
   "lastOpenFiles": [
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "_drafts/papers/Tsallis-in-Biostatistics.md",
