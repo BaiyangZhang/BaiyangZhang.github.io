@@ -29,13 +29,13 @@ The following are some examples of potential applications of resurgence theory.
 -   WKB approximation in quantum mechanics
 -   **Perturbative expansions in quantum field theory (QFT)**
 
-The most surprising result, at least for me, of resurgence theory in QFT is that one can uncover the non-perturbative results from perturbative expansion alone! Typically, calculating non-perturbative results requires every possible resource—like the topology of the vacuum manifold—anything but perturbative methods. However, resurgence theory enables us to derive non-perturbative results, such as instanton contributions, through the analytical continuation of perturbative data! In one sense, it feels like black magic; yet, perhaps I shouldn’t be so surprised, for if we fully understand the perturbative expansions to all orders, we essentially grasp everything about the equation of motion, which inherently includes all non-perturbative information. In theory, then, perturbative expansions should be capable of yielding non-perturbative insights. However, this is only in theory. It's still utterly astonishing to witness it in practice.
+One of the most astonishing achievements of resurgence theory in QFT is that one can uncover the non-perturbative results from perturbative expansion alone! Typically, calculating non-perturbative results requires every possible resource you can have, such as the topology of the vacuum manifold, some real special cancellation, but perturbative calculation is much more straightforward, how can it contain the information that was so hardly revealed by all kinds of non-perturbative techniques? Nevertheless, resurgence theory enables us to derive non-perturbative results, such as instanton contribution, through the analytical continuation of perturbative data! On the one hand, it feels like black magic; on the other hand, perhaps I shouldn’t be so surprised, since if we could obtain the full perturbative expansions to all orders, we can essentially reproduce the equation of motion, the Lagrangian, which inherently includes all non-perturbative information. At least in theory then, perturbative expansions should be capable of yielding non-perturbative insights. However, this is only in theory. It's still utterly astonishing to witness it happening in front of your eyes in practice. Rainbow doesn't become less beautiful just because you've learnt the science behind it.
 
-Speaking of understanding the quantum field theory, it is impossible to make sense of perturbation theory **without** knowing at least some facets of the resurgence theory. After all, considering that if we include more and more perturbative terms in any perturbative power expansion, the power series eventually diverges, so what sense does it make to just consider the first few terms? Claiming they give the dominant results would be ridiculous. However the miraculous agreement between perturbative QED and experiments clearly suggests that perturbation expansion makes sense, it is by no chance a coincidence. The answer to this question lies in resurgence theory.
+Actually, I would argue that it is impossible to make sense of perturbation theory **without** knowing at least some facets of resurgence theory. We include more and more perturbative terms in any perturbative power expansion, the power series eventually diverges, so what sense does it make to just consider the first few terms? Claiming that the first few terms of a divergent series give the dominant results would be ridiculous. However the miraculous agreement between perturbative QED and experiments clearly suggests that perturbation expansion makes sense, it is by no chance an accident. The answer to this question lies in resurgence theory.
 
 - - -
 
-H. Poincare mentions the so-called "a kind of misunderstanding between geometers and astronomers about the meaning of the word convergence", He proposed a simple example: consider the following series
+H. Poincare mentioned "a kind of misunderstanding between geometers and astronomers about the meaning of the word convergence", he proposed a simple example: consider the following series
 
 $$
 \sum \frac{1000^{n}}{n!} \text{ and }\sum \frac{n!}{1000^{n}},
@@ -45,18 +45,24 @@ Poincare said that for geometers, i.e. mathematicians in his time, the first one
 
 He then proposes to reconcile both points of view by clarifying the role that divergent series (in the sense of geometers) can play in the approximation of certain functions. This is the origin of the modern theory of asymptotic expansion. 
 
-- - -
+In physics, the divergence of power series can be shown via different approaches:
 
-In this note we shall focus on `formal power series`, sometimes also called the polynomial forms, such as the Stirling series. Thus the previous example should be written as 
+1. Dyson Freeman show it in a heuristic way, see his short paper;
+2. By combinatorial argument. The number of Feynman diagrams grows factorially as $n!$, while the contribution of each diagram decreases as $g^{n}$, then if there is no cancellation between different diagrams, the perturbative series grows as $g^{n} n!$, which eventually diverges. Lipatov[^1] first show that in scalar QFT the series indeed grows as $n!$. Similar growth are found in quantum mechanics[^2] and matrix models[^3].
+
+[^1]: Divergence of the Perturbation Theory Series and the Quasiclassical Theory, Published in: Sov.Phys.JETP 45 (1977), 216-223, Zh.Eksp.Teor.Fiz. 72 (1977), 411-427.
+[^2]: J. Zinn-Justin, “Perturbation Series at Large Orders in Quantum Mechanics and Field Theories: Application to the Problem of Resummation”, Phys. Rept., vol. 70, p. 109, 1981. doi: 10.1016/0370-1573(81)90016-8;C. M. Bender and T. T. Wu, “Anharmonic oscillator. 2: A Study of perturbation theory in large order”, Phys. Rev., vol. D7, pp. 1620–1636, 1973. doi: 10.1103/PhysRevD.7.1620.
+[^3]: M. Marino, R. Schiappa, and M. Weiss, “Nonperturbative E↵ects and the Large-Order Behavior of Matrix Models and Topological Strings”, Commun. Num. Theor. Phys., vol. 2, pp. 349–419, 2008. doi: 10.4310/CNTP.2008.v2.n2.a3. arXiv: 0711.1954 [hep-th].
+
+# 2. Analytic Continuation and Monodromy
+
+In this note we shall focus on `formal power series`, sometimes called the polynomial forms. The previous example should be written as (note the appearance of extra variable $t$)
 
 $$
 \sum \frac{1000^{n}}{n!}t^{n} \quad  \text{ and } \quad  \sum \frac{n!}{1000^{n}}t^{n}
 $$
 
-where the first one has **infinite** **radius of convergence** while the second one has **zero radius of convergence**. For us, `divergent series` will usually mean a formal power series with zero radius of convergence.
-
-First we will introduce the `Borel-Laplace sumamtion`, which obtains a function from a divergent formal series. The relation between the obtained function and the original power series is an example of `asymptotic expansion of Gevrey type`. We shall also introduce the phenomenon for which `J. Ecalle` coined the name `resurgence` at the beginning of the 1980s.
-# 2. Analytic Continuation and Monodromy
+where the first one has **infinite** **radius of convergence** w.r.t $t$, while the second one has **zero radius of convergence**. For us, `divergent series` will usually mean a formal power series with zero radius of convergence.
 
 `Formal power series` is a generalization of normal power series, or polynomial, in the sense that we consider a power series of infinite order as a formal object and don't worry about evaluation yet, let alone if it is convergent. Provided a ring $R$, consider the set of formal power series in $X$ with coefficients from $R$, denoted by $R[[X]]$, is another ring, for example, multiply one polynomial to another and we have a new polynomial. It is called the **ring of formal power series in the variable $X$ over $R$**.
 
@@ -88,13 +94,13 @@ A complex atlas on a 2-dimensional manifold is a collection of charts that cover
 
 Take the Riemann sphere (which we will talk about in more detail later) for example. The Riemann sphere $\mathbb{C}P^1$ is a classic example of a 2-dimensional complex manifold. It can be visualized as the complex plane plus a point at infinity. To see that all the infinities on a complex plain can be identified as a single point, notice that in $[z_ {0},z_ {1}]$ when $z_ {1}\to \infty e^{ i\theta }$ it is equivalent to $\left[ \frac{z_ {0}}{\infty e^{ i\theta }},1 \right]$, and no matter the angle $\theta$ it always goes to $[0,1]$. To construct a complex atlas for the Riemann sphere, we use two charts:
 
-1. **Chart $U_ 1$**: This chart covers the sphere minus the point at infinity. It maps each point $z$ in the complex plane $\mathbb{C}$ to itself:
+3. **Chart $U_ 1$**: This chart covers the sphere minus the point at infinity. It maps each point $z$ in the complex plane $\mathbb{C}$ to itself:
    $$
    \phi_ 1: U_ 1 \rightarrow \mathbb{C}, \quad \phi_ 1(z) = z
    $$
    Here, $U_ 1 = \mathbb{C}$.
 
-2. **Chart $U_ 2$**: This chart covers the sphere minus the origin. It maps each point $z$ in the complex plane, excluding the origin, to its reciprocal:
+4. **Chart $U_ 2$**: This chart covers the sphere minus the origin. It maps each point $z$ in the complex plane, excluding the origin, to its reciprocal:
    $$
    \phi_ 2: U_ 2 \rightarrow \mathbb{C}, \quad \phi_ 2(z) = \frac{1}{z}
    $$
@@ -435,3 +441,4 @@ With the definition of distance, $\mathbb{C}[[z^{-1}]]$ becomes a `complete metr
 
 We mention that a sequence $\phi_ {n}$ of formal series is a Cauchy sequence iff for each $i\in\mathbb{N}$, the $i$-the coefficient is stationary, namely the $i$-th coefficient of $\phi_ {n}$ becomes a constant when $n$ is larger than certain natural number. 
 
+[^2]: 
