@@ -283,7 +283,7 @@ $$
 
 - - -
 
-First, consider the case in 2D. Writing the filed as a kink background plus fluctuation, 
+First, consider the case of 2D spacetime. Writing the filed as a kink background plus fluctuation, 
 
 $$
 \phi(x,t) =: f(x) + {\mathfrak g}(x) e^{ -i\omega t }
@@ -297,7 +297,6 @@ $$
 
 As we mentioned before, there are three kinks of solutions: the zero mode, the shape mode and the continuum. 
 
-
 - - -
 
 The equation of motion is the Sturm-Liouville equation. A general Sturm-Liouville problem is typically written in the form:
@@ -306,7 +305,7 @@ $$
 \frac{d}{dx}\left[ p(x) \frac{dy}{dx} \right] - q(x)y + \lambda r(x)y = 0
 $$
 
-Here, $y$ is the function of the variable $x$ that we are solving for, and $p(x)$, $q(x)$, and $r(x)$ are known functions that specify the particular Sturm-Liouville problem. The parameter $\lambda$ is often referred to as the eigenvalue.
+Here, $y$ is the function of the variable $x$ that we are solving for, and $p(x)$, $q(x)$, $r(x)$ are known functions that specify the particular Sturm-Liouville problem. The parameter $\lambda$ is often referred to as the eigenvalue.
 
 Key characteristics and applications of the Sturm-Liouville equation include:
 
@@ -338,7 +337,7 @@ $$
 
 where $f$ is again the kink solution.
 
-We choose to expand in the $x$ direction in normal modes (in the kink background), while in the $y$ direction in plane waves. The 2D momentum $\vec{k}=\left\lbrace k_ {x},k_ {y} \right\rbrace$, where $k_ {x}=\left\lbrace B,S,k \right\rbrace$, $B$ for the zeromode (bounded solution), $S$ for the shape mode (also bounded) and $k$ for the continuum. A nice illustration of normal modes in the background of kink is shown in the figure below, which I shamelessly copied from Tanmay Vachaspati's book, all the credits goes to Vachaspati. 
+We choose to expand in the $x$ direction in normal modes (in the kink background), while expanding in the $y$ direction in plane waves. The 2D momentum is $\vec{k}=\left\lbrace k_ {x},k_ {y} \right\rbrace$, where $k_ {x}=\left\lbrace B,S,k \right\rbrace$, $B$ for the zero mode (bounded solution), $S$ for the shape mode (also bounded) and $k$ for the continuum. A nice illustration of normal modes in the background of kink is shown in the figure below, which I shamelessly copied from Tanmay Vachaspati's book, all the credits goes to Vachaspati. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -349,7 +348,7 @@ We choose to expand in the $x$ direction in normal modes (in the kink background
     A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
 </div>
 
-We want to expand the static fluctuation field $\phi(r)$ (defined by $\phi=f_ {\text{kink} }+g$) in terms of normal modes. Since we have defined the indices $k$ in ${\mathfrak g}_ {k}(x)$ to include everything, we can conveniently write the field expansion as
+We want to expand the static fluctuation field $\phi(r)$ in terms of normal modes. Since we have defined the indices $k$ in ${\mathfrak g}_ {k}(x)$ to include everything, we can conveniently write the field expansion as
 
 $$
 \begin{align*}
@@ -366,7 +365,7 @@ $$
 
 This helps us to switch between different conventions for the field expansion.
 
-We have omitted the vector sign (or bold font) in $r$ since it would not raise any misunderstanding. We assume (quite reasonably) the separation of variables $x$ and $y$ for 2D normal modes ${\mathfrak g}(r)$,
+We have omitted the vector sign (or bold font) in $r$ since it would not cause any misunderstanding. We assume (quite reasonably) the separation of variables $x$ and $y$ for 2D normal modes ${\mathfrak g}(r)$,
 
 $$
 {\mathfrak g}(r) = {\mathfrak g}_ {x}\times g_ {y},\quad  {\mathfrak g}_ {x} = \text{kink normal modes},\, {\mathfrak g}_ {y} = \text{plane waves.}
