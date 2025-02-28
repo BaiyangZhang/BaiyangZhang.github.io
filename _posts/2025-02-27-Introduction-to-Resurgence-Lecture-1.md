@@ -8,11 +8,12 @@ tags:
   - resurgence
 ---
 
-# Table of Contents
+# Table of Content
+
 
 - [1. Motivation](#1-motivation)
-- [2. Analytic Continuation and Monodromy](#2-analytic-continuation-and-monodromy)
-- [3. An example by Poincare](#3-an-example-by-poincare)
+- [2. Analytic continuation and monodromy](#2-analytic-continuation-and-monodromy)
+- [3. Another example by Poincare](#3-another-example-by-poincare)
 - [4. The differential algebra](#4-the-differential-algebra)
 
 # 1. Motivation
@@ -54,7 +55,7 @@ In physics, the divergence of power series can be shown via different approaches
 [^2]: J. Zinn-Justin, “Perturbation Series at Large Orders in Quantum Mechanics and Field Theories: Application to the Problem of Resummation”, Phys. Rept., vol. 70, p. 109, 1981. doi: 10.1016/0370-1573(81)90016-8;C. M. Bender and T. T. Wu, “Anharmonic oscillator. 2: A Study of perturbation theory in large order”, Phys. Rev., vol. D7, pp. 1620–1636, 1973. doi: 10.1103/PhysRevD.7.1620.
 [^3]: M. Marino, R. Schiappa, and M. Weiss, “Nonperturbative E↵ects and the Large-Order Behavior of Matrix Models and Topological Strings”, Commun. Num. Theor. Phys., vol. 2, pp. 349–419, 2008. doi: 10.4310/CNTP.2008.v2.n2.a3. arXiv: 0711.1954 [hep-th].
 
-# 2. Analytic Continuation and Monodromy
+# 2. Analytic continuation and monodromy
 
 In this note we shall focus on `formal power series`, sometimes called the `polynomial forms`. When regarded as formal power series with real coefficients of indeterminant $t$, denoted $\mathbb{R}[t]$, the previous example should be written as (note the appearance of extra variable $t$)
 
