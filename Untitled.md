@@ -8,7 +8,7 @@ tags:
 ---
 
 $$
-I_ {1} =\int_ {-\infty}^{\infty} dp \,    p^{2} (1+p^{2})^{3/2} \text{csch}^{2}(p)
+I(x) =\int_ {-\infty}^{\infty} dp \,    p^{2} (1+p^{2})^{x} \text{csch}^{2}(p)
 $$
 
 where $\text{csch}$ is the hyperbolic function 
@@ -19,10 +19,29 @@ $$
 
 - - -
 
-1. "Referee #2 wrote raised 3 criticisms", should we delete one of "wrote" and "raised"?
 
-2. You mentioned in the five to last line on page one:
+I was trying to turn the integral
 
-Refs [1,2] have been applied to cosmology in hep-th/0511166,...
+$$
+I =\int_ {-\infty}^{\infty} dp \,    p^{2} (1+p^{2})^{3/2} \text{csch}^{2}(p)
+$$
 
-I googled this paper and it is about quantum Hall effect, not cosmology? 
+into a function $I(x)$ of $x$ and look for the differential equations the $I(x)$ satisfies. For example, if define
+
+$$
+I(x) := I(x) =\int_ {-\infty}^{\infty} dp \,    p^{2} (1+p^{2})^{x} \text{csch}^{2}(p)
+$$
+
+and we can find the differential equation for $I(x)$, since we know the value of $I(0)$, there is a chance to workout $I\left( \frac{3}{2} \right)$. But I failed, the recursive relation 
+
+$$
+I^{(n)}(x) = \int_ {-\infty}^{\infty} dp \,  p^{2} (1+p^{2})^{x} \ln^{n}(1+p^{2}) \text{csch}^{2}(p)
+$$
+
+doesn't lead to anywhere... I tried different ways to insert $x$ into $I$ such as 
+
+$$
+\int_ {-\infty}^{\infty} dp \, p^{2} (1+p^{2})^{3/2} \text{csch}^{2}(xp),\quad  \int_ {-\infty}^{\infty} dp \,  (1+p^{2})^{3/2} \left( \frac{p}{\text{csch}(p)} \right)^{x},\cdots
+$$
+
+but none of them seem to work.
