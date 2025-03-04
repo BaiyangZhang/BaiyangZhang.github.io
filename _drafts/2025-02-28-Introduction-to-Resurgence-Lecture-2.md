@@ -1,18 +1,20 @@
 ---
 layout: post
-title: Introduction to Resurgence Part 2
-date: 2024-07-13
+title: Introduction to Resurgence Lecture 2
+date: 2025-02-28
 author: Baiyang Zhang
 catalog: true
 tags:
   - resurgence
 ---
 
-# An Example: Euler's Equation
 
-## Borel Sum
+>	Series don't just diverge for no reasons. The divergence of a series must reflect its cause....A divergent series is not meaningless, or a nuisance, but an essential and informative coded representation of the function. 	--- Michael Berry
+>
 
-As an mathematical example of the application of resurgence method, let's consider the Euler's equation,
+# One more example: Euler's equation
+
+Let's consider the Euler's equation,
 
 $$
 x^{2}f'-x+f=0
@@ -177,3 +179,11 @@ $$
 If the whole procedure works, does not encouter any further infinity, then we say that $f$ is `Borel summable`. 
 
 In general, there will be certain directions in which the singulariti lies, such as $\mathbb{R}^{-}$ in the previous example. In most examples of physical interest, there will be infinitely many such singularities. These singularities carry important information about the functions that are defined by the divergent series. The theory of resurgence is about understanding the singularities, and how they affect the summation process.
+
+
+# Appendix
+
+Here are some related definitions and concepts.
+
+A `resurgent function` is a an analytic function of $1$ complex variable obtained by Borel-Laplace summation method, from a resurgent series. This is not really a strict definition but rather an explanation. 
+
