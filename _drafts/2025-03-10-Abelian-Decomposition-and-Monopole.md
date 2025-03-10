@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Note on QCD Abelian Decomposition
+title: Abelian Decomposition and Monopole
 date: 2025-02-25
 author: Baiyang Zhang
 catalog: true
 tags:
 ---
+
 
 # The Gist of the Theory
 
