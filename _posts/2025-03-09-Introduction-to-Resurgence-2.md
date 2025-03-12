@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Resurgence Lecture 2
+title: Introduction to Resurgence Note 2
 date: 2025-03-09
 author: Baiyang Zhang
 catalog: true
