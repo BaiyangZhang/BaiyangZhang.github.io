@@ -64,7 +64,6 @@ $$
 not even an asymptotic series. Bob Dingle has a book on asymptotic methods of special functions but doesn't seem to help either.
 
 - - -
+$\sigma$-algebra
 
-
-
->>>>>>> f9089cb7320c4e949c04c85a5c2ce48eb47a8379
+$\sigma-$algebra

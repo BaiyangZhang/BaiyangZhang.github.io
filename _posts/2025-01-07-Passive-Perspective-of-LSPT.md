@@ -9,206 +9,6 @@ tags:
 ---
 
 
-# (Unnecessary) mathematical preliminaries
-
-An `algebra` over a field $k$ is a vector space $A$ over $k$, equipped with an additional structure: a bilinear multiplication $\cdot: A \times A \to A$ that makes $A$ a ring (not necessarily commutative). That is, $A$ has:
-
-- Addition $+$ and scalar multiplication $\cdot$, making $A$ a $k$-vector space,
-- A bilinear multiplication satisfying associativity.
-
-More formally, an algebra $A$ is a vector space over field $k$ together with a map:
-
-
-$$
-\mu: A \times A \to A, \quad (a, b) \mapsto ab
-$$
-
-that satisfies the ring axioms and is $k$-bilinear, meaning:
-
-$$
-(ab + c)d = ab \cdot d + c \cdot d, \quad a(b + c)d = ab \cdot d + ac \cdot d
-$$
-
-for all $a, b, c, d \in A$. Examples of Algebras include Matrix algebra (the space of $n \times n$ matrices over a field $k$, with matrix addition and multiplication), Polynomial algebra and Function algebra. 
-
-An algebra $A$ is said to be `unital` if it contains a multiplicative unit $1$. 
-
-- - -
-
-Denote by $\mathcal{E}$ a complex Hilbert space, with inner product $\left\langle - \middle\vert- \right\rangle$, and $\mathcal{B}(\mathcal{E})$ the set of all bounded operators. In is a Banach algebra with the `operator norm`, which is defined as
-
-$$
-\left\lVert A \right\rVert = \text{sup}\, \left\lVert Av \right\rVert \quad  \;\forall\;  \left\lVert v \right\rVert =1.
-$$
-
-Let $\xi_ {1},\xi_ {2} \in\mathcal{E}$. For $a\in \mathcal{B}(\mathcal{E})$, the adjoint operator $a^{\ast}$ is defined by 
-
-$$
-\left\langle a^{\ast }\xi_ {1} \middle\vert\xi_ {2} \right\rangle  = \left\langle \xi_ {1} \middle\vert a \xi_ {2} \right\rangle .
-$$
-
-The adjoint operation is an `involution`, i.e. it is anti-linear (meaning $(\lambda a)^{\ast}=\overline{\lambda} a^{\ast}$, where $\overline{\lambda}$ is the complex conjugate of $\lambda$) and satisfies $(ab)^{\ast}=b^{\ast}a^{\ast}$.
-
-For it to be a $\mathbb{C}^{\ast}$-algebra, it must satisfy the $\mathbb{C}^{\ast}$-identity
-
-$$
-\left\lVert a^{\ast }a \right\rVert = \lVert a \rVert ^{2}.
-$$
-
-If the $\mathbb{C}^{\ast}$-algebra is Cauchy-complete under the operator norm, then it is said to be a concrete $\mathbb{C}^{\ast}$-algebra. By default all the $\mathbb{C}^{\ast}$-algebras we talk about will be concrete, so we will ignore it.
-
-- - -
-
-A `module` over an algebra $A$ is a generalization of a vector space, where the scalars used for multiplication come from the algebra $A$ rather than a field. Te be precise, an $A$-module $M$ is an abelian group (under addition) together with a multiplication map:
-
-$$
-A \times M \to M, \quad (a, m) \mapsto a \cdot m
-$$
-
-satisfying the following conditions for all $a, b \in A$, $m, n \in M$, and $\lambda \in k$:
-
-1. Distributivity: $(a + b) \cdot m = a \cdot m + b \cdot m$,
-2. $a \cdot (m + n) = a \cdot m + a \cdot n$,
-3. $(\lambda a) \cdot m = \lambda (a \cdot m)$,
-4. $(ab) \cdot m = a \cdot (b \cdot m)$.
-
-Roughly speaking, a vector space is just a module over a field. A module over a commutative algebra $A$ can be thought of as a generalization of a vector space where scalars come from $A$ instead of $k$.
-
-Examples of modules over algebras include Module over matrix algebras, Polynomial modules, etc.
-
-A module is said to be `simple` if it does not have nonzero proper submodule.
-
----
-
-**Definition.** `Endomorphism algebra`. If $V$ is a $k$-vector space, then $\text{End}(V)$ is an algebra formed of the the set of all linear maps from $V$ to $V$ itself (endomorphisms), where the multiplication of two elements is given by composition. 
-
-For example, let $V$ be $\mathbb{R}^{n}$, then the endomorphism algebra $\text{End}(V)$ is the $n\times n$ real matrices. 
-
-**Definition.** `Algebra representation`. Let $A$ be a $k$-algebra, a representation of $A$ is a homomorphism between algebras that maps $A$ to $\text{End}(V)$ for some $k$-module $V$. 
-
-In human's language, to define a representation of an abstract algebra, we first choose a module that the algebra act on, then define how exactly each element of the algebra acts on $V$. 
-
-- - -
-
-An introduction of category theory can be found in my blogs [here](https://www.mathlimbo.net/blog/2023/Basic-Category-Theory-Lecture-1/) and [here](https://www.mathlimbo.net/blog/2023/Basic-Category-Theory-Lecture-2/). A blog explicitly devoted to Yoneda lemma which is sometime useful in dealing with gauge theory can be found [here](https://www.mathlimbo.net/blog/2024/Yoneda-Lemma/), but I doubt we will need it in this note.
-
-- - -
-
-
-Quantum mechanics is defined over the spatial coordinates $\vec{x}$. The position eigenstates $\left\lvert{\vec{x}}\right\rangle$ form a complete basis of the Hilbert space. However, $\left\lvert{\vec{x}}\right\rangle$ is represented by a Dirac $\delta$-function, which does not belong to the Hilbert space of $L^{2}(\mathbb{R}^{d})$, where $d$ is the dimension of the space, as usually. It is a challenge to mathematical rigor of quantum mechanics. 
-
-Recall that the Hilbert space $L^{2}(\mathbb{R}^{d})$ consists of all square-integrable functions defined on $\mathbb{R}^{d}$, with an inner product $\left\langle f,g \right\rangle=\int dx \, f^{\ast}g$. This inner product also defines a norm, and with norm we can talk about Cauchy completeness. The space $L^{2}$ is indeed Cauchy complete, since we do not require functions in it to be smooth. The Cauchy completeness makes it a Hilbert space, not a pre-Hilbert space. 
-
-To deal with mathematical objects such as the Dirac $\delta$-function, quantum mechanics often uses the concept of `rigged Hilbert space`, also known as a `Gelfand triplet`. A rigged Hilbert space involves three components:
-
-1. Schwartz space $\mathcal{S}$, the space of **rapidly decreasing smooth** functions. It is a dense subspace of the Hilbert space that we talk about in the next paragraph. By working with $\mathcal{S}$, we can rigorously define unbounded operators and their domains. States here are smooth and decays faster than any polynomial, making them suitable for rigorous operator definitions.
-2. Hilbert space $L^{2}$. The Schwartz space $\mathcal{S}$ is a dense subset of $L^{2}$. Here is where all the quantum states reside. These states are normalizable and have finite norm. 
-3. Dual space $\mathcal{S}^{\ast}$. It includes functionals, also called generalized states. The Dirac delta function represents the position eigenstate, while plane waves represent momentum eigenstates, we can't fit them into the Hilbert space $L^{2}$, here is where these pathological states reside.
-
-The relationship can be written as 
-
-$$
-\mathcal{S} \subset L^{2} \subset \mathcal{S}^{\ast }.
-$$
-
-Actually, I don't think it makes a lot of sense to regard $\left\lvert{\vec{x}}\right\rangle$ as a physical state, since in real life, due to the uncertainty principal, a particle will never be localized at a specific point. Instead, the position always smears about a certain region, so is its momentum. The role of $\left\lvert{\vec{x}}\right\rangle$ is more of giving us the value of the wave function at position $\vec{x}$, in other words, what naturally appears is the dual version $\left\langle{\vec{x}}\right\rvert$ of $\left\lvert{\vec{x}}\right\rangle$. $\left\langle{\vec{x}}\right\rvert$ can be regarded as map that takes a state in the Hilbert space of quantum states, and spits out a complex number:
-
-$$
-\begin{align*}
-\left\langle{\vec{x}}\right\rvert : \quad  \mathcal{H} &\to \mathbb{C} \\
-\left\lvert{\psi}\right\rangle  &\mapsto \psi(\vec{x}),
-\end{align*}
-$$
-
-where $\mathcal{H}$ is not the Hamiltonian but the Hilbert space of quantum states. 
-
-For a state $\left\lvert{\psi}\right\rangle$ to be a physical state, it should be sensible to talk about 
-
-$$
-\left\langle{\psi}\right\rvert \mathcal{O} \left\lvert{\psi}\right\rangle ,\quad  \mathcal{O}\text{ is an observable.}
-$$
-
-$\left\lvert{\vec{x}}\right\rangle$ fails this requirement since $\left\langle{\vec{x}}\right\rvert \hat{x} \left\lvert{\vec{x}}\right\rangle=\infty$, this is another reason to say that $\left\lvert{\vec{x}}\right\rangle$ is not a physical state. 
-
-- - -
-
-We distinguish two concepts, `states` and `wave function`. In quantum mechanics, they are sometimes used interchangeably, but they have distinct meanings. A quantum state contains all the information about the system. It can be described in different representations, depending on what information we want to know. For example, if we want to know information about the position, we go to the physical space representation expanded by $\left\lvert{\vec{x}}\right\rangle$. Quantum states can be represented as vectors in a Hilbert space, and there exists pure and mixed states. On the other hand, the wave function is a specific representation of a quantum state in the position (or sometimes momentum) basis. It is a complex-valued function that gives the probability amplitude of finding a particle in a particular position in space. The wave function of a state $\left\lvert{\psi}\right\rangle$ is denoted by $\psi(x)$, where $x$ is the position. 
-
-In the passive perspective, a state before and after spatial translation is the same state, they just have different wave functions, because in order to get the wave function we need two things: bases and a state, even though the state is unchanged but the bases are changed now, thus the final expression is also changed.
-
-Consider a scalar field theory. All the possible configuration of $\phi$ form the configuration space $\mathcal{C}$, each point represents a specific field function $(\mathcal{M}\times\mathbb{R})\to \mathbb{C}$, where $\mathcal{M}$ is the space manifold and $\mathbb{R}$ the time dimension. The wave functional $\Psi[f(x)]$ describes the quantum state at a given time, we have
-
-$$
-\Psi: \mathcal{C} \to  \mathbb{C}, \quad  f (\vec{x}) \mapsto \Psi[f].
-$$
-
-Similar to quantum mechanics where $\left\lvert{\vec{x}}\right\rangle$ is the eigen state of $\hat{x}$ and $\hat{x}\left\lvert{\vec{x}}\right\rangle=\vec{x}$, in QFT the eigen state of field operator $\hat{\phi}$ satisfy
-
-$$
-\hat{\phi}(\vec{x})\left\lvert{\phi}\right\rangle  = \phi(\vec{x})\left\lvert{\phi}\right\rangle ,
-$$
-
-Any wave functional can be given as a superposition of such eigen states. Let $\left\lvert{\Psi}\right\rangle$ be a well-behaved wave functions, it can be formally written as 
-
-$$
-\left\lvert{\Psi}\right\rangle  = \int D\phi(\vec{x}) \, \Psi[\phi(\vec{x})] \left\lvert{\phi(\vec{x})}\right\rangle  ,
-$$
-
-We will simply write $\phi$ and omit the spatial coordinate.
-
-Given the quantum state $\left\lvert{\Psi}\right\rangle$, the amplitude of a certain configuration $\phi$ is
-
-$$
-\Psi [\phi(\bullet)] = \left\langle \phi \middle\vert \Psi \right\rangle \in \mathbb{C}.
-$$
-
-As a consistency check, let's see if we can reproduce the result $\left\langle{\Psi}\right\rvert\hat{\phi}(\vec{x}) \left\lvert{\Psi}\right\rangle=\psi(\vec{x})$ for some classical field $\psi(\vec{x})$. We have 
-
-$$
-\begin{align*}
-\left\langle{\Psi}\right\rvert \hat{\phi}(\vec{x})\left\lvert{\Psi}\right\rangle &= 
-\int D\varphi \,  \Psi ^\ast [\varphi]\left\langle{\varphi}\right\rvert\,  \hat{\phi}(\vec{x})\,\int D\varphi' \, \Psi[\varphi']\left\lvert{\varphi'}\right\rangle   \\
-&= \int D\varphi \,  \Psi^\ast [\varphi] D\varphi' \, \Psi[\varphi']\left\langle{\varphi}\right\rvert\,  \varphi'(\vec{x})\left\lvert{\varphi'}\right\rangle   \\
-&= \int D\varphi \,  \Psi^\ast [\varphi] D\varphi' \, \Psi[\varphi'] \varphi'(\vec{x}) \delta(\varphi-\varphi') \\
-&= \int D\varphi \,  \Psi^\ast [\varphi]\, \Psi[\varphi] \varphi(\vec{x}) \\
-&= \int D\varphi \,  \left\lvert \Psi[\varphi] \right\rvert^{2}  \varphi(\vec{x}),
-\end{align*}
-$$
-
-and recall that $\left\lvert \Psi[\varphi] \right\rvert^{2}$ is the probability of finding $\varphi$ in $\Psi$, thus indeed we have 
-
-$$
-\int D\varphi \,  \left\lvert \Psi[\varphi] \right\rvert^{2}  \varphi(\vec{x}) = \left\langle \hat{\phi}(\vec{x}) \right\rangle =: \psi(\vec{x}).
-$$
-
-Time evolution is generated by the Hamiltonian, yielding a functional Schrodinger equation:
-
-$$
-i\hbar \left\lvert{\Psi[\phi]}\right\rangle  = \hat{H}\left\lvert{\Psi[\phi]}\right\rangle ,
-$$
-
-- - -
-
-For the ground state (or vacuum state) of the free scalar field, the wave functional $\Psi_0[\phi]$ has a Gaussian form, it is basically an infinite lattice of harmonic oscillators. It can be written as:
-
-$$
-\Psi_0[\phi] = N \exp \left( -\frac{1}{2} \int d^3x \, d^3y \, \phi(x) K(x,y) \phi(y) \right)
-$$
-
-where $N$ is a normalization constant, and $K(x,y)$ is a kernel that depends on the mass $m$ of the scalar field and the spatial separation $|x - y|$.
-
-For a free scalar field, $K(x,y)$ can be written in terms of the Fourier transform:
-
-$$
-K(x,y) = \int \frac{d^3k}{(2\pi)^3} \, \omega_k \, e^{i k \cdot (x - y)}
-$$
-
-with $\omega_k = \sqrt{k^2 + m^2}$.
-
-The wave functional $\Psi_0[\phi]$ provides the probability amplitude for the field configuration $\phi(x)$. The exponential form indicates that the ground state is a Gaussian distribution centered around $\phi(x) = 0$, reflecting the fact that the vacuum state has no preferred field configuration (zero field on average).
-
-For more information refer to this [post](https://physics.stackexchange.com/questions/746099/schroedinger-equation-for-wave-functional-qft).
-
 # Quantization and Haag Theorem
 
 *This section can be entirely skipped for readers who are not interested in Haag's theorem.*
@@ -846,3 +646,203 @@ $$
 
 
 
+# Appendix 
+
+## Some Mathematical Preliminaries
+
+An `algebra` over a field $k$ is a vector space $A$ over $k$, equipped with an additional structure: a bilinear multiplication $\cdot: A \times A \to A$ that makes $A$ a ring (not necessarily commutative). That is, $A$ has:
+
+- Addition $+$ and scalar multiplication $\cdot$, making $A$ a $k$-vector space,
+- A bilinear multiplication satisfying associativity.
+
+More formally, an algebra $A$ is a vector space over field $k$ together with a map:
+
+
+$$
+\mu: A \times A \to A, \quad (a, b) \mapsto ab
+$$
+
+that satisfies the ring axioms and is $k$-bilinear, meaning:
+
+$$
+(ab + c)d = ab \cdot d + c \cdot d, \quad a(b + c)d = ab \cdot d + ac \cdot d
+$$
+
+for all $a, b, c, d \in A$. Examples of Algebras include Matrix algebra (the space of $n \times n$ matrices over a field $k$, with matrix addition and multiplication), Polynomial algebra and Function algebra. 
+
+An algebra $A$ is said to be `unital` if it contains a multiplicative unit $1$. 
+
+- - -
+
+Denote by $\mathcal{E}$ a complex Hilbert space, with inner product $\left\langle - \middle\vert- \right\rangle$, and $\mathcal{B}(\mathcal{E})$ the set of all bounded operators. In is a Banach algebra with the `operator norm`, which is defined as
+
+$$
+\left\lVert A \right\rVert = \text{sup}\, \left\lVert Av \right\rVert \quad  \;\forall\;  \left\lVert v \right\rVert =1.
+$$
+
+Let $\xi_ {1},\xi_ {2} \in\mathcal{E}$. For $a\in \mathcal{B}(\mathcal{E})$, the adjoint operator $a^{\ast}$ is defined by 
+
+$$
+\left\langle a^{\ast }\xi_ {1} \middle\vert\xi_ {2} \right\rangle  = \left\langle \xi_ {1} \middle\vert a \xi_ {2} \right\rangle .
+$$
+
+The adjoint operation is an `involution`, i.e. it is anti-linear (meaning $(\lambda a)^{\ast}=\overline{\lambda} a^{\ast}$, where $\overline{\lambda}$ is the complex conjugate of $\lambda$) and satisfies $(ab)^{\ast}=b^{\ast}a^{\ast}$.
+
+For it to be a $\mathbb{C}^{\ast}$-algebra, it must satisfy the $\mathbb{C}^{\ast}$-identity
+
+$$
+\left\lVert a^{\ast }a \right\rVert = \lVert a \rVert ^{2}.
+$$
+
+If the $\mathbb{C}^{\ast}$-algebra is Cauchy-complete under the operator norm, then it is said to be a concrete $\mathbb{C}^{\ast}$-algebra. By default all the $\mathbb{C}^{\ast}$-algebras we talk about will be concrete, so we will ignore it.
+
+- - -
+
+A `module` over an algebra $A$ is a generalization of a vector space, where the scalars used for multiplication come from the algebra $A$ rather than a field. Te be precise, an $A$-module $M$ is an abelian group (under addition) together with a multiplication map:
+
+$$
+A \times M \to M, \quad (a, m) \mapsto a \cdot m
+$$
+
+satisfying the following conditions for all $a, b \in A$, $m, n \in M$, and $\lambda \in k$:
+
+1. Distributivity: $(a + b) \cdot m = a \cdot m + b \cdot m$,
+2. $a \cdot (m + n) = a \cdot m + a \cdot n$,
+3. $(\lambda a) \cdot m = \lambda (a \cdot m)$,
+4. $(ab) \cdot m = a \cdot (b \cdot m)$.
+
+Roughly speaking, a vector space is just a module over a field. A module over a commutative algebra $A$ can be thought of as a generalization of a vector space where scalars come from $A$ instead of $k$.
+
+Examples of modules over algebras include Module over matrix algebras, Polynomial modules, etc.
+
+A module is said to be `simple` if it does not have nonzero proper submodule.
+
+---
+
+**Definition.** `Endomorphism algebra`. If $V$ is a $k$-vector space, then $\text{End}(V)$ is an algebra formed of the the set of all linear maps from $V$ to $V$ itself (endomorphisms), where the multiplication of two elements is given by composition. 
+
+For example, let $V$ be $\mathbb{R}^{n}$, then the endomorphism algebra $\text{End}(V)$ is the $n\times n$ real matrices. 
+
+**Definition.** `Algebra representation`. Let $A$ be a $k$-algebra, a representation of $A$ is a homomorphism between algebras that maps $A$ to $\text{End}(V)$ for some $k$-module $V$. 
+
+In human's language, to define a representation of an abstract algebra, we first choose a module that the algebra act on, then define how exactly each element of the algebra acts on $V$. 
+
+- - -
+
+An introduction of category theory can be found in my blogs [here](https://www.mathlimbo.net/blog/2023/Basic-Category-Theory-Lecture-1/) and [here](https://www.mathlimbo.net/blog/2023/Basic-Category-Theory-Lecture-2/). A blog explicitly devoted to Yoneda lemma which is sometime useful in dealing with gauge theory can be found [here](https://www.mathlimbo.net/blog/2024/Yoneda-Lemma/), but I doubt we will need it in this note.
+
+- - -
+
+Quantum mechanics is defined over the spatial coordinates $\vec{x}$. The position eigenstates $\left\lvert{\vec{x}}\right\rangle$ form a complete basis of the Hilbert space. However, $\left\lvert{\vec{x}}\right\rangle$ is represented by a Dirac $\delta$-function, which does not belong to the Hilbert space of $L^{2}(\mathbb{R}^{d})$, where $d$ is the dimension of the space, as usually. It is a challenge to mathematical rigor of quantum mechanics. 
+
+Recall that the Hilbert space $L^{2}(\mathbb{R}^{d})$ consists of all square-integrable functions defined on $\mathbb{R}^{d}$, with an inner product $\left\langle f,g \right\rangle=\int dx \, f^{\ast}g$. This inner product also defines a norm, and with norm we can talk about Cauchy completeness. The space $L^{2}$ is indeed Cauchy complete, since we do not require functions in it to be smooth. The Cauchy completeness makes it a Hilbert space, not a pre-Hilbert space. 
+
+To deal with mathematical objects such as the Dirac $\delta$-function, quantum mechanics often uses the concept of `rigged Hilbert space`, also known as a `Gelfand triplet`. A rigged Hilbert space involves three components:
+
+1. Schwartz space $\mathcal{S}$, the space of **rapidly decreasing smooth** functions. It is a dense subspace of the Hilbert space that we talk about in the next paragraph. By working with $\mathcal{S}$, we can rigorously define unbounded operators and their domains. States here are smooth and decays faster than any polynomial, making them suitable for rigorous operator definitions.
+2. Hilbert space $L^{2}$. The Schwartz space $\mathcal{S}$ is a dense subset of $L^{2}$. Here is where all the quantum states reside. These states are normalizable and have finite norm. 
+3. Dual space $\mathcal{S}^{\ast}$. It includes functionals, also called generalized states. The Dirac delta function represents the position eigenstate, while plane waves represent momentum eigenstates, we can't fit them into the Hilbert space $L^{2}$, here is where these pathological states reside.
+
+The relationship can be written as 
+
+$$
+\mathcal{S} \subset L^{2} \subset \mathcal{S}^{\ast }.
+$$
+
+Actually, I don't think it makes a lot of sense to regard $\left\lvert{\vec{x}}\right\rangle$ as a physical state, since in real life, due to the uncertainty principal, a particle will never be localized at a specific point. Instead, the position always smears about a certain region, so is its momentum. The role of $\left\lvert{\vec{x}}\right\rangle$ is more of giving us the value of the wave function at position $\vec{x}$, in other words, what naturally appears is the dual version $\left\langle{\vec{x}}\right\rvert$ of $\left\lvert{\vec{x}}\right\rangle$. $\left\langle{\vec{x}}\right\rvert$ can be regarded as map that takes a state in the Hilbert space of quantum states, and spits out a complex number:
+
+$$
+\begin{align*}
+\left\langle{\vec{x}}\right\rvert : \quad  \mathcal{H} &\to \mathbb{C} \\
+\left\lvert{\psi}\right\rangle  &\mapsto \psi(\vec{x}),
+\end{align*}
+$$
+
+where $\mathcal{H}$ is not the Hamiltonian but the Hilbert space of quantum states. 
+
+For a state $\left\lvert{\psi}\right\rangle$ to be a physical state, it should be sensible to talk about 
+
+$$
+\left\langle{\psi}\right\rvert \mathcal{O} \left\lvert{\psi}\right\rangle ,\quad  \mathcal{O}\text{ is an observable.}
+$$
+
+$\left\lvert{\vec{x}}\right\rangle$ fails this requirement since $\left\langle{\vec{x}}\right\rvert \hat{x} \left\lvert{\vec{x}}\right\rangle=\infty$, this is another reason to say that $\left\lvert{\vec{x}}\right\rangle$ is not a physical state. 
+
+- - -
+
+We distinguish two concepts, `states` and `wave function`. In quantum mechanics, they are sometimes used interchangeably, but they have distinct meanings. A quantum state contains all the information about the system. It can be described in different representations, depending on what information we want to know. For example, if we want to know information about the position, we go to the physical space representation expanded by $\left\lvert{\vec{x}}\right\rangle$. Quantum states can be represented as vectors in a Hilbert space, and there exists pure and mixed states. On the other hand, the wave function is a specific representation of a quantum state in the position (or sometimes momentum) basis. It is a complex-valued function that gives the probability amplitude of finding a particle in a particular position in space. The wave function of a state $\left\lvert{\psi}\right\rangle$ is denoted by $\psi(x)$, where $x$ is the position. 
+
+In the passive perspective, a state before and after spatial translation is the same state, they just have different wave functions, because in order to get the wave function we need two things: bases and a state, even though the state is unchanged but the bases are changed now, thus the final expression is also changed.
+
+Consider a scalar field theory. All the possible configuration of $\phi$ form the configuration space $\mathcal{C}$, each point represents a specific field function $(\mathcal{M}\times\mathbb{R})\to \mathbb{C}$, where $\mathcal{M}$ is the space manifold and $\mathbb{R}$ the time dimension. The wave functional $\Psi[f(x)]$ describes the quantum state at a given time, we have
+
+$$
+\Psi: \mathcal{C} \to  \mathbb{C}, \quad  f (\vec{x}) \mapsto \Psi[f].
+$$
+
+Similar to quantum mechanics where $\left\lvert{\vec{x}}\right\rangle$ is the eigen state of $\hat{x}$ and $\hat{x}\left\lvert{\vec{x}}\right\rangle=\vec{x}$, in QFT the eigen state of field operator $\hat{\phi}$ satisfy
+
+$$
+\hat{\phi}(\vec{x})\left\lvert{\phi}\right\rangle  = \phi(\vec{x})\left\lvert{\phi}\right\rangle ,
+$$
+
+Any wave functional can be given as a superposition of such eigen states. Let $\left\lvert{\Psi}\right\rangle$ be a well-behaved wave functions, it can be formally written as 
+
+$$
+\left\lvert{\Psi}\right\rangle  = \int D\phi(\vec{x}) \, \Psi[\phi(\vec{x})] \left\lvert{\phi(\vec{x})}\right\rangle  ,
+$$
+
+We will simply write $\phi$ and omit the spatial coordinate.
+
+Given the quantum state $\left\lvert{\Psi}\right\rangle$, the amplitude of a certain configuration $\phi$ is
+
+$$
+\Psi [\phi(\bullet)] = \left\langle \phi \middle\vert \Psi \right\rangle \in \mathbb{C}.
+$$
+
+As a consistency check, let's see if we can reproduce the result $\left\langle{\Psi}\right\rvert\hat{\phi}(\vec{x}) \left\lvert{\Psi}\right\rangle=\psi(\vec{x})$ for some classical field $\psi(\vec{x})$. We have 
+
+$$
+\begin{align*}
+\left\langle{\Psi}\right\rvert \hat{\phi}(\vec{x})\left\lvert{\Psi}\right\rangle &= 
+\int D\varphi \,  \Psi ^\ast [\varphi]\left\langle{\varphi}\right\rvert\,  \hat{\phi}(\vec{x})\,\int D\varphi' \, \Psi[\varphi']\left\lvert{\varphi'}\right\rangle   \\
+&= \int D\varphi \,  \Psi^\ast [\varphi] D\varphi' \, \Psi[\varphi']\left\langle{\varphi}\right\rvert\,  \varphi'(\vec{x})\left\lvert{\varphi'}\right\rangle   \\
+&= \int D\varphi \,  \Psi^\ast [\varphi] D\varphi' \, \Psi[\varphi'] \varphi'(\vec{x}) \delta(\varphi-\varphi') \\
+&= \int D\varphi \,  \Psi^\ast [\varphi]\, \Psi[\varphi] \varphi(\vec{x}) \\
+&= \int D\varphi \,  \left\lvert \Psi[\varphi] \right\rvert^{2}  \varphi(\vec{x}),
+\end{align*}
+$$
+
+and recall that $\left\lvert \Psi[\varphi] \right\rvert^{2}$ is the probability of finding $\varphi$ in $\Psi$, thus indeed we have 
+
+$$
+\int D\varphi \,  \left\lvert \Psi[\varphi] \right\rvert^{2}  \varphi(\vec{x}) = \left\langle \hat{\phi}(\vec{x}) \right\rangle =: \psi(\vec{x}).
+$$
+
+Time evolution is generated by the Hamiltonian, yielding a functional Schrodinger equation:
+
+$$
+i\hbar \left\lvert{\Psi[\phi]}\right\rangle  = \hat{H}\left\lvert{\Psi[\phi]}\right\rangle ,
+$$
+
+- - -
+
+For the ground state (or vacuum state) of the free scalar field, the wave functional $\Psi_0[\phi]$ has a Gaussian form, it is basically an infinite lattice of harmonic oscillators. It can be written as:
+
+$$
+\Psi_0[\phi] = N \exp \left( -\frac{1}{2} \int d^3x \, d^3y \, \phi(x) K(x,y) \phi(y) \right)
+$$
+
+where $N$ is a normalization constant, and $K(x,y)$ is a kernel that depends on the mass $m$ of the scalar field and the spatial separation $|x - y|$.
+
+For a free scalar field, $K(x,y)$ can be written in terms of the Fourier transform:
+
+$$
+K(x,y) = \int \frac{d^3k}{(2\pi)^3} \, \omega_k \, e^{i k \cdot (x - y)}
+$$
+
+with $\omega_k = \sqrt{k^2 + m^2}$.
+
+The wave functional $\Psi_0[\phi]$ provides the probability amplitude for the field configuration $\phi(x)$. The exponential form indicates that the ground state is a Gaussian distribution centered around $\phi(x) = 0$, reflecting the fact that the vacuum state has no preferred field configuration (zero field on average).
+
+For more information refer to this [post](https://physics.stackexchange.com/questions/746099/schroedinger-equation-for-wave-functional-qft).

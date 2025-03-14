@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Introduction to Resurgence Lecture 2
-date: 2025-02-28
+title: Introduction to Resurgence Note 2
+date: 2025-03-09
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -12,6 +12,7 @@ tags:
 >	Series don't just diverge for no reasons. The divergence of a series must reflect its cause....A divergent series is not meaningless, or a nuisance, but an essential and informative coded representation of the function. 	--- Michael Berry
 >
 
+Resurgence aim to seeing things *sub specie totius*, from the perspective of the whole. It does not only re-sums divergent series, but also regenerates non-perturbative information from perturbative, and connects topological sector with trivial sector.
 # One more example: Euler's equation
 
 Let's consider the Euler's equation,
@@ -156,7 +157,7 @@ This behaviour, in which the function defined by a divergent series jumps along 
 
 ## A rough idea
 
-The Borel summation procedure is roughly as follows. Given a power series in $x$ (without constant term), 
+The Borel summation procedure is roughly as follows. Given a power series in $x$ (without a constant term), 
 
 $$
 f= \sum_ {k=0}^{\infty} a_ {k} x^{k+1},
@@ -176,9 +177,94 @@ $$
 f(x) := \int_ {0}^{\infty} dt \, \hat{f}(t) e^{ -t/x }. 
 $$
 
-If the whole procedure works, does not encouter any further infinity, then we say that $f$ is `Borel summable`. 
+If the whole procedure works, for example if the integral does not encounter any singularity and does not involve further infinity, then we say that $f$ is `Borel summable`. 
 
-In general, there will be certain directions in which the singulariti lies, such as $\mathbb{R}^{-}$ in the previous example. In most examples of physical interest, there will be infinitely many such singularities. These singularities carry important information about the functions that are defined by the divergent series. The theory of resurgence is about understanding the singularities, and how they affect the summation process.
+In general, there will be certain directions in which the singularities lie, such as $\mathbb{R}^{-}$ in the previous example. In most examples of physical interest, there will be infinitely many such singularities. These singularities carry important information about the functions that are defined by the divergent series. The theory of resurgence is about understanding the singularities, and how they affect the summation process.
+
+## Formal Borel transform
+
+Here we follow the notation by Sauzin. Use $\mathbb{C}\left\lbrace z^{-1} \right\rbrace$ to denote polynomial with finite radius of convergence, they give as a holomorphic germ. Let $z^{-1}\mathbb{C}[[z^{-1}]]$ be formal power series without constant term, and let $\widetilde{\phi}$ be an element with it. The reason to exclude the constant term is so that it is more compatible with inverse Borel transform, as we will see shortly.
+
+Borel transform takes $\widetilde{\phi}$ and tries to make it *more convergent*, by dividing the $n$-th coefficient by $n!$. To be exact, the Borel transform is the linear map
+
+$$
+\mathcal{B}:\quad  \widetilde{\phi}:=\sum_ {n\geq 0}a_ {n} z^{-n-1} \mapsto  \hat{\phi} := \sum_ {n\geq 0} \frac{a_ {n}}{n!} \zeta^{n}.
+$$
+
+The notation tilde and hat are used by Sauzin, and the change of indeterminate from $z$ to $\zeta$ is customary. Note that the power is shifted, $a_ {0} z^{-1}$ is mapped to $a_ {0} \zeta_ {0}=a_ {0}$, a constant term in $\hat{\phi}$. 
+
+If $\widetilde{\phi}$ is already convergent with a finite radius of convergence, then $\hat{\phi}$ converges even better, its radius of convergence is $\infty$. To see this, note that if $\widetilde{\phi}$ is convergent, its terms must be bounded by 
+
+$$
+a_ {n} \leq A c^{n}, \quad  A,c>0.
+$$
+
+The resulting $\hat{\phi}$ is a exponentially bounded function, it is $\leq Ae^{ c\left\lvert \zeta \right\rvert }$ on the entire complex plane. 
+
+To prove the inverse, that if $\hat{\phi}$ is an entire function of bounded exponential type then $\widetilde{\phi}$ defines a germ, we need to use Cauchy's inequality that gives an upper bound of the derivative of a holomorphic function. We will not go to details here.
+
+## Gevrey classes
+
+The `Gevrey classes` of formal power series describe different levels of growth for the coefficients of a formal power series. A formal power series
+
+$$
+\hat{f}(\zeta) = \sum_ {n=0}^{\infty} a_ n \zeta^n
+$$
+
+
+is said to be of Gevrey order $s$, or Gevrey type $s$, where $s > 0$, if there exists constant $A,B > 0$ such that:
+
+$$
+\left\lvert a_ {n}  \right\rvert \leq A B^{n} (n!)^{s} \quad  \;\forall\; n\geq 0.
+$$
+
+If $s = 1$, the series is called 1-Gevrey (or simply Gevrey). If $s < 1$, the series is closer to an **analytic** function (with a better convergence rate). Many divergent but resummable functions are of Gevrey type 1.
+
+1-Gevrey formal power series constitutes a vector space, which we will denote by $\mathbb{C}[[z^{-1}]]_ {1}$. These formal power series can be Borel-resummed to give a holomorphic germ. In more mathematical terms, we have the following:
+
+Let $\widetilde{\phi}\in z^{-1} \mathbb{C}[[z^{-1}]]_ {1}$, note that there is no constant term. Then the Borel transformed series $\hat{\phi}$ gives a holomorphic germ (having a positive radius of convergence), namely $\hat{\phi}\in \mathbb{C}\left\lbrace z^{-1} \right\rbrace$. Vise versa.
+
+Sometimes we will denote $z^{-1} \mathbb{C}[[z^{-1}]]_ {1}$ as $\mathcal{B}^{-1}(\mathbb{C}\left\lbrace z^{-1} \right\rbrace)$. 
+
+Let $T_ {c}$ be the translation operator, defined by 
+
+$$
+T_ {c} f(z) := f(z+c),
+$$
+
+it can be shown that 
+
+$$
+\mathcal{B} T_ {c}\widetilde{\phi} = e^{ -c\zeta } \mathcal{B}\widetilde{\phi}.
+$$
+
+So far we haven't talked about why it has to be without constant terms. Another question is, why doesn't 1-Gevrey formal power series $\mathbb{C}[[z^{-1}]]_ {1}$ form an algebra? That is to ask, why doesn't the multiplication of two 1-Gevrey series 1-Gevrey? To study that we need the concept of convolution.
+
+## Convolution 
+
+Let $\widetilde{\phi}, \widetilde{\psi}$ be Borel transformed to $\hat{\phi}$, $\hat{\psi}$ respectively. The convolution is defined between Borel-transformed objects, between $\hat{\phi}$ and $\hat{\psi}$. The convolution $\ast$ is defined as
+
+$$
+\hat{\phi}\ast \hat{\psi} := \mathcal{B}\left\lbrace \widetilde{\phi}\widetilde{\psi} \right\rbrace .
+$$
+
+In other words, convolution is defined as the image of Borel transform of multiplication.
+
+If $\hat{\phi}$ and $\hat{\psi}$ define two holomorphic germs, denoted as $\Phi$ and $\Psi$ respectively, then the convolution appears as the familiar form:
+
+$$
+\Phi \ast  \Psi(\zeta) = \int_ {0}^{\zeta} \,  \Phi(t)\Psi(\zeta-t) dt.
+$$
+
+A difference between convolution $\ast$ and multiplication is that, so far we haven't defined a unit element with respect to convolution. The functional form of convolution inspires as to introduce the delta function $\delta$ as an abstract unit element,
+
+$$
+\delta \ast  \Psi (\zeta) = \Psi(\zeta). 
+$$
+
+Then $\delta \oplus \mathbb{C}[[\zeta]]$ form an algebra under convolution. We also define the preimage of $\delta$ under Borel transform to be $1$ in $z^{-1}\mathbb{C}[[z]]$.
+
+
 
 
 # Appendix

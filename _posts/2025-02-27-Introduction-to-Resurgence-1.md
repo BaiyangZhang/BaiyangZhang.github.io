@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Resurgence Part 1
+title: Introduction to Resurgence Note 1
 date: 2025-02-27
 author: Baiyang Zhang
 catalog: true
