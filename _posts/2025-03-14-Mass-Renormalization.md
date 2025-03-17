@@ -223,3 +223,4 @@ The contractions are called propagators, which is not really some particle propa
 
 # Feynman diagrams in Model 3 to order $g^{2}$
 
+·
