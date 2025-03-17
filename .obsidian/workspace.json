@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-03-14-Mass-Renormalization.md",
+                "file": "_drafts/2025-03-10-Abelian-Decomposition-and-Monopole.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-14-Mass-Renormalization"
+              "title": "2025-03-10-Abelian-Decomposition-and-Monopole"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f8485d28afe14f44",
@@ -201,6 +200,7 @@
   },
   "active": "89ad31bdaeec8028",
   "lastOpenFiles": [
+    "_posts/2025-03-14-Mass-Renormalization.md",
     "_drafts/2025-03-10-Abelian-Decomposition-and-Monopole.md",
     "_drafts/2024-12-15-HHW-Theorem-101.md",
     "_drafts/2024-10-11-Asymptotic-Methods-Applied-on-Anharmonic-Oscillator.md",
@@ -222,7 +222,6 @@
     "Referee report.md",
     "README.md",
     "2025-02-25.md",
-    "_posts/2025-03-14-Mass-Renormalization.md",
     "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
     "_posts/2025-02-27-Introduction-to-Resurgence-1.md"
   ]
