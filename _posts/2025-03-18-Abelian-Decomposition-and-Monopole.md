@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Abelian Decomposition and Monopole
-date: 2025-02-25
+date: 2025-03-18
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -398,7 +398,7 @@ After Abelian projection,
 2. Magnetic Monopoles Appear Naturally: The gauge fixing makes topological excitations like magnetic monopoles manifest. 
     
 3. Supports the Dual Superconductor Picture: In a superconductor, electric charges form Cooper pairs that condense, leading to the **Meissner effect** (expulsion of magnetic fields). In QCD, the dual of this process suggests that **monopoles condense**, leading to the confinement of quarks via the dual Meissner effect.
-    
+
 
 # Abelian Decomposition
 
