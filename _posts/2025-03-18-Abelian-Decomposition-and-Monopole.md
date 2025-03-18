@@ -225,8 +225,7 @@ for example, if $\phi = v T^3, \, a_ \mu = A_ \mu^3$.
 
 The unbroken U(1) component is a vector in the Lie-algebra whose direction, after choosing a $\phi$ vacuum, is parallel to $\phi$. For example, if $\phi$ vacuum is chosen to be $vT^3$, then the unbroken U(1) group is proportional to $T^3$. In the case of a monopole solution, the U(1) direction is position-dependent.
 
-
-Let's look at the covariant derivative. In order to make sure $|D_ \mu\phi| = |\partial_ \mu\phi-i[A_ \mu,\phi]| \to 0$, we need to find a corresponding $A_ \mu$ that can cancel the $\partial_ \mu \phi$, for $\phi = v \hat{\phi}$. 
+Let's look at the covariant derivative. In order to make sure that $\left\lvert D_ \mu\phi \right\rvert^{2} = \left\lvert \partial_ \mu\phi-i[A_ \mu,\phi] \right\rvert^{2} \to 0$, we need to find a corresponding $A_ \mu$ that can cancel the $\partial_ \mu \phi$, for $\phi = v \hat{\phi}$. 
 
 The following identities might be helpful:
 
@@ -249,11 +248,12 @@ $$
 thus
 
 $$
-  \left\lbrace \partial_ \mu \phi,\phi \right\rbrace  = -2\phi\partial_ \mu \phi
+   [\partial_ \mu \phi,\phi] = -2\phi\partial_ \mu \phi
 $$
 
 
 and
+
 $$
   \left[ [\partial_ \mu \phi,\phi],\phi  \right] = v^2 \partial_ \mu \phi.
 $$
@@ -403,3 +403,4 @@ After Abelian projection,
 # Abelian Decomposition
 
 In QCD, the $\mathfrak{g}$-valued gauge potential is decomposed to the abelian sub-algebra, so-called Cartan subalgebra, and the rest. 
+
