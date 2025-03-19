@@ -127,12 +127,12 @@ Magnetic Monopole solutions in Yang-Mills theory with adjoint bosons appears mor
 
 Gauge symmetry is not really a symmetry but a redundancy, a change of basis, so here we don't count it. Sometimes, a symmetry is preserved in the Lagrangian but not the vacuum, meaning that the symmetry will change the vacuum, e.g. the double well potential in quantum mechanics, the $x \leftrightarrow -x$ symmetry doesn't change the Lagrangian, but it turn one vacuum to the other, thus it is not a symmetry of the vacuum. In this case we say this symmetry is spontaneously broken. Of course, since the spontaneously broken symmetry is still a symmetry of the Hamiltonian, it only takes one vacuum to another. In more mathematical terms, let $H$ be the broken symmetry and $\phi_ {0}$ be any vacuum configuration, the orbit of $H$ acting on $\phi_ {0}$ is the vacuum manifold, or at least a connected submanifold of vacuum. 
 
-Why should we start with SU(2) monopole? because 
+Why should we start with $SU(2)$ monopole? because 
 
 - it is the simplest monopole in Yang-Mills theory, and
 - $SU(2)$ monopole solution is the building block for monopole solutions in larger groups.
 
-In SU(2) Yang-Mills theory, the generator is $T^a = \frac{1}{2}\sigma^a$, where $\sigma$'s are the Pauli matrices, with inner product defined by the trace:
+In $SU(2)$ Yang-Mills theory, the generator is $T^a = \frac{1}{2}\sigma^a$, where $\sigma$'s are the Pauli matrices, with inner product defined by the trace:
 
 $$
   \left\langle T^{a} \middle\vert T^b \right\rangle  := \text{Tr }{T^a T^b} = \frac{1}{2}\delta^{ab}
@@ -170,7 +170,7 @@ $$
   \left\langle \phi^{1} \right\rangle = \left\langle \phi^2 \right\rangle = 0,\, \left\langle \phi^3 \right\rangle = v,\, \left\langle A \right\rangle = 0.
 $$
 
-The VEV of $\vec{\phi}$ field points to the $z$-direction. Now the gauge symmetry SU(2) is broken to $U(1)$, since the vacuum for the Higgs is $\left\langle \phi \right\rangle=\phi^{3}T^{3}$ and only the gauge transform given by $e^{i\theta^3 T^3}$ preserves the vacuum:
+The VEV of $\vec{\phi}$ field points to the $z$-direction. Now the gauge symmetry $SU(2)$ is broken to $U(1)$, since the vacuum for the Higgs is $\left\langle \phi \right\rangle=\phi^{3}T^{3}$ and only the gauge transform given by $e^{i\theta^3 T^3}$ preserves the vacuum:
 
 $$
 SU(2) \to  U(1).
@@ -215,7 +215,7 @@ $$
 
 The trivial vacuum where $\phi = \text{const}$ everywhere obviously has $n = 0$.
 
-Consider the case winding number $n=1$. $\left\langle \phi \right\rangle$ at infinity depends on the direction. The residual U(1) symmetry of SU(2) consists of the elements that commutes with $\left\langle \phi \right\rangle$, thus U(1) also depends on the direction. Recall that $A_ \mu = A_ \mu^a T^a$ as a $\mathfrak{su}(2)$-valued field, the components of $A_ {\mu}$ that commutes with $\phi$ can be projected out (in any direction) via
+Consider the case winding number $n=1$. $\left\langle \phi \right\rangle$ at infinity depends on the direction. The residual U(1) symmetry of $SU(2)$ consists of the elements that commutes with $\left\langle \phi \right\rangle$, thus U(1) also depends on the direction. Recall that $A_ \mu = A_ \mu^a T^a$ as a $\mathfrak{su}(2)$-valued field, the components of $A_ {\mu}$ that commutes with $\phi$ can be projected out (in any direction) via
 
 $$
   a_ \mu = \frac{2}{v} \text{Tr }{\phi A_ \mu},
@@ -400,7 +400,13 @@ After Abelian projection,
 3. Supports the Dual Superconductor Picture: In a superconductor, electric charges form Cooper pairs that condense, leading to the **Meissner effect** (expulsion of magnetic fields). In QCD, the dual of this process suggests that **monopoles condense**, leading to the confinement of quarks via the dual Meissner effect.
 
 
-# Abelian Decomposition
+# Abelian Decomposition in SU(2)
 
-In QCD, the $\mathfrak{g}$-valued gauge potential is decomposed to the abelian sub-algebra, so-called Cartan subalgebra, and the rest. 
+The Cho-Duan-Ge decomposition is a covariant separation of the gauge field into abelian and non-abelian components. Roughly speaking, the gauge potential is separated into
+- abelian, restricted gauge potential. It is further separated into
+	- topologically trivial part, or Maxwell part, or `neurons`. And
+	- topological part, or Dirac part. Monopole?
+- valance gauge field which describes colored gluons, or `chromons`.
+
+For the sake of simplicity we will consider $SU(2)$ Consider The $\mathfrak{g}$-valued gauge potential is decomposed to the abelian sub-algebra, so-called Cartan subalgebra, and the rest part that is orthogonal to it. Let $\hat{n}$ be a unit vector, $\hat{n}=(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ and $\hat{n}^{i}\hat{n}^{i}=1$. Let's put it in the Lie algebra $\mathfrak{g}$, by assigning each component $\hat{n}^{i}$ to a basis $T^{a}\in\mathfrak{g}$, $T^{a} = \frac{\sigma^{2}}{2}$ for $SU(2)$. Let $N$ be the $\mathfrak{g}$-valued unit vector $\hat{n}$, i.e. $N:= \hat{n}^{i}T^{i}$. Now we can act the covariant derivative on $N$, just how we act covariant derivative on $\mathfrak{g}$-valued scalar fields. 
 

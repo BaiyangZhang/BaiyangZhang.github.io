@@ -149,11 +149,11 @@ $$
 f_ {+}-f_ {-} = 2\pi i \text{Res}(t=-1) = 2\pi i e^{ 1/x }.
 $$
 
-Here pops up a non-perturbative term! Recall that the difference between two solutions is itself another solution, thus $e^{ 1/x }$ is another solution to the Euler equaiton. This is exactly the missing solutiong we were talking about. It is hidden in the complex structure of the Borel resummed functions.
+Here pops up a non-perturbative term! Recall that the difference between two solutions is itself another solution, thus $e^{ 1/x }$ is another solution to the Euler equation. This is exactly the missing solution we were talking about. It is hidden in the complex structure of the Borel resummed functions.
 
-This behaviour, in which the function defined by a divergent series jumps along a ray, is an example of the `Stokes phenomenon`. It is the key to resurgence theory: the crucial missing term $e^{ 1/x }$ has “resurged”.
+This behavior, in which the function defined by a divergent series jumps along a ray, is an example of the `Stokes phenomenon`. It is the key to resurgence theory: the crucial missing term $e^{ 1/x }$ has “resurged”.
 
-# Borel (re)summation
+# Borel (re)summation along $\mathbb{R}^{+}$
 
 ## A rough idea
 
@@ -264,6 +264,27 @@ $$
 
 Then $\delta \oplus \mathbb{C}[[\zeta]]$ form an algebra under convolution. We also define the preimage of $\delta$ under Borel transform to be $1$ in $z^{-1}\mathbb{C}[[z]]$.
 
+## The fine Borel-Laplace summation
+
+Let $S_ {\delta}$ be a half strip of width $2\delta$:
+
+$$
+S_ {\delta} := \left\lbrace \zeta \in \mathbb{C} \,\middle\vert\, \text{dist}(\zeta,\mathbb{R}^{+}) <\delta\right\rbrace ,
+$$
+
+where $\text{dist(a,S)}$ is the distance between element $a$ and set $S$. 
+
+Let $\mathcal{N}_ {c_ {0}}(\mathbb{R}^{+})$ be the sheaf of analytic functions $\hat{\phi}(\zeta)$ on $S_ {\delta}$ which is bounded by 
+
+$$
+\left\lvert \hat{\phi}(\zeta) \right\rvert  \leq Ae^{ c_ {0}\left\lvert \zeta \right\rvert  }.
+$$
+
+We also define 
+
+$$
+\mathcal{N}(\mathbb{R}^{+}) := \bigcup_ {c_ {0}\in \mathbb{R}}\mathcal{N}_ {c_ {0}}(\mathbb{R}^{+}).
+$$
 
 
 

@@ -223,4 +223,14 @@ The contractions are called propagators, which is not really some particle propa
 
 # Feynman diagrams in Model 3 to order $g^{2}$
 
-·
+The Feynman rules for model three are shown in the figure below.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/FeynmanRulesModel3.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+Feynman rules for model 3, in the coordinate representation, not momentum representation.
+</div>
+
