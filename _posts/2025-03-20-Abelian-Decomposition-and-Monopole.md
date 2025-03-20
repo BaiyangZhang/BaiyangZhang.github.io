@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Abelian Decomposition and Monopole
-date: 2025-03-19
+title: Bare Minimum of Abelian Decomposition and Monopole
+date: 2025-03-20
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -408,5 +408,5 @@ The Cho-Duan-Ge decomposition is a covariant separation of the gauge field into 
 	- topological part, or Dirac part. Monopole?
 - valance gauge field which describes colored gluons, or `chromons`.
 
-For the sake of simplicity we will consider $SU(2)$ Consider The $\mathfrak{g}$-valued gauge potential is decomposed to the abelian sub-algebra, so-called Cartan subalgebra, and the rest part that is orthogonal to it. Let $\hat{n}$ be a unit vector, $\hat{n}=(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ and $\hat{n}^{i}\hat{n}^{i}=1$. Let's put it in the Lie algebra $\mathfrak{g}$, by assigning each component $\hat{n}^{i}$ to a basis $T^{a}\in\mathfrak{g}$, $T^{a} = \frac{\sigma^{2}}{2}$ for $SU(2)$. Let $N$ be the $\mathfrak{g}$-valued unit vector $\hat{n}$, i.e. $N:= \hat{n}^{i}T^{i}$. Now we can act the covariant derivative on $N$, just how we act covariant derivative on $\mathfrak{g}$-valued scalar fields. 
+For the sake of simplicity we will consider $SU(2)$ Consider The $\mathfrak{g}$-valued gauge potential is decomposed to the abelian sub-algebra, so-called Cartan subalgebra, and the rest part that is orthogonal to it. Let $\hat{n}$ be a unit vector, $\hat{n}=(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ and $\hat{n}^{i}\hat{n}^{i}=1$. Let's put it in the Lie algebra $\mathfrak{g}$, by assigning each component $\hat{n}^{i}$ to a basis $T^{a}\in\mathfrak{g}$, $T^{a} = \frac{\sigma^{2}}{2}$ for $SU(2)$. Let $N$ be the $\mathfrak{g}$-valued unit vector $\hat{n}$, i.e. $N:= \hat{n}^{i}T^{i}$. Now we can act the covariant derivative on $N$, just how we act covariant derivative on $\mathfrak{g}$-valued scalar fields. Similar to what we did at the presence of a monopole, we can 
 
