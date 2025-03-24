@@ -221,7 +221,14 @@ See page 256 of Coleman's lecture.
 
 The contractions are called propagators, which is not really some particle propagating in spacetime. Factors like $i / (q^{2}-\mu^{2}+i\epsilon)$ give the probability amplitude, in this metaphorical language, for the virtual particle going between two vertices. They describe how a virtual particle propagates from one vertex to another. For this reason, they are called Feynman propagators. The language, I stress, is purely metaphorical. If you don’t want to use it, don’t use it. But then you’ll find 90% of the physicists in the world will be unintelligible to you when they give seminars. It’s very convenient, but it should not be taken too seriously.
 
+- - -
+
+**March 24th**
+
+- - -
 # Feynman diagrams in Model 3 to order $g^{2}$
+
+The a counterterm is just a number. I don’t need a special diagrammatic rule for that. The a counterterm has no momentum associated with it, and its delta function has an argument of zero. If the system were in a box, the term $(2\pi)^{4}\delta^{4}(0)$ would turn into $VT$, the volume of spacetime in the box. This counterterm is designed to cancel all the vacuum bubble diagrams, those without external lines, which you will see also have a factor of $(2\pi)^{4}\delta^{4}(0)$. Like the counterterm a, the counterterms $b$ and $c$ will be expressed as infinite power series in the coupling constant $g$. I will explain to you shortly how we determine them order by order.
 
 The Feynman rules for model three are shown in the figure below.
 
@@ -231,6 +238,24 @@ The Feynman rules for model three are shown in the figure below.
     </div>
 </div>
 <div class="caption">
-Feynman rules for model 3, in the coordinate representation, not momentum representation.
+Feynman rules for model 3, in the momentum representation, not momentum representation.
 </div>
+
+For Feynman diagrams, see Page 261 in Sydney Coleman's book.
+
+Regarding the $\mathcal{O}(g^{2})$ correction to meson mass. Here is where we need counterterm $b$. The renormalization condition that fixes be is define as following: there is no phase mismatch between one-meson states $\left\lvert \vec{q} \right\rangle$ and $\left\lvert \vec{q}' \right\rangle$,
+
+$$
+\left\langle \vec{q} \right\rvert S \left\lvert \vec{q}' \right\rangle = \delta^{3}(\vec{q}-\vec{q}').
+$$
+
+which in terms of invariant amplitude reads
+
+$$
+\left\langle \vec{q} \right\rvert S-1 \left\lvert \vec{q}' \right\rangle =0.
+$$
+
+It means that the sum of two diagrams is zero.
+
+It is nearly the same story for the nucleon. See page 262. 
 
