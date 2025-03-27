@@ -3,5 +3,6 @@
   "cssTheme": "Shimmering Focus",
   "baseFontSize": 25,
   "accentColor": "#0e00cc",
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "showRibbon": false
 }

@@ -435,19 +435,25 @@ $$
 thus the non-trivial part of the solution for $A_ {\mu}$, call it $\mathcal{C}_ {\mu}$, reads 
 
 $$
+\boxed{ 
 \mathcal{C}_ {\mu} = i[\mathfrak{n},\partial_ {\mu} \mathfrak{n}] .
+}
 $$
 
 This is a $\mathfrak{g}$-valued quantity, in terms of components in basis $T^{a}$ it can be written as 
 
 $$
+\boxed{ 
 \mathcal{C}_ {\mu} = -\hat{n} \times (\partial_ {\mu}\hat{n}) \text{ in }\mathfrak{g} .
+}
 $$
 
 The trivial part of the solution that is proportional to $\mathfrak{n}$, call it $\mathcal{A}$, is given by 
 
 $$
+\boxed{ 
 \mathcal{A}_ {\mu} =  a \mathfrak{n},\quad a\in \mathbb{R}.
+}
 $$
 
 Put together, the total solution $\hat{A}$ is called the restricted gauge field or restricted gauge potential, 
@@ -468,5 +474,47 @@ $$
 [\hat{D}_ {\mu},\hat{D}_ {\nu}]\mathfrak{n} =-i[\hat{F}_ {\mu \nu},\hat{n}]=0,
 $$
 
-where $\hat{D}_ {\mu}$ is the covariant derivative w.r.t. $\hat{H}$, $\hat{D}=\partial-i[\hat{A},-]$. Specific calculation shows that 
+where $\hat{D}_ {\mu}$ is the covariant derivative w.r.t. $\hat{H}$, $\hat{D}=\partial-i[\hat{A},-]$. 
+
+The following identities might be helpful:
+
+$$
+\begin{align*}
+\mathfrak{n} \mathfrak{n} = \hat{n}^{a}\hat{n}^{b}\frac{1}{2}\sigma^{a} \frac{1}{2}\sigma^{b} &= \frac{1}{4}, \\
+[\mathfrak{n} ,[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= \partial_ {\mu}\mathfrak{n}, \\
+[[\mathfrak{n},\partial_ {\nu}\mathfrak{n}  ],[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= - \partial_ {\nu}\mathfrak{n} \partial_ {\mu}\mathfrak{n} .
+\end{align*}
+$$
+
+We have 
+
+$$
+\begin{align*}
+\hat{F}:= & \partial_ {\mu}\hat{A}_ {\nu}-\partial_ {\nu}\hat{A}_ {\mu}-i[\hat{A}_ {\mu},\hat{A}_ {\nu}]\\
+=& (\partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu})\mathfrak{n} +i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ]\\
+=&: f_ {\mu \nu}\mathfrak{n} +H_ {\mu \nu}\mathfrak{n} .
+\end{align*}
+$$
+
+It is not obvious that $[\partial_ {\mu}\mathfrak{n},\partial_ {\nu}\mathfrak{n}]$ is proportional to $\hat{n}$. But after some derivation we find 
+
+$$
+[\partial_ {\mu}\mathfrak{n},\partial_ {\nu}\mathfrak{n}] = -(\partial_ {\mu}\hat{n}^{a})(\partial_ {\nu}\hat{n}^{b})\epsilon^{abc}T^{c},
+$$
+
+which in $\mathfrak{g}$ is just $-(\partial_ {\mu}\hat{n})\times(\partial_ {\nu}\hat{n})$. Since $\partial \hat{n}$ is orthodox to $\hat{n}$, their cross product is aligned with $\hat{n}$. So indeed $\hat{F}$ is aligned with $\mathfrak{n}$. 
+
+In summary, we have 
+
+$$
+\begin{align*}
+\hat{F} &= f_ {\mu \nu}\mathfrak{n} +H_ {\mu \nu}\mathfrak{n} ,\\
+f_ {\mu \nu} &= \partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu},\\
+H_ {\mu \nu} &= - (\partial_ {\mu}\hat{n})\times (\partial_ {\nu}\hat{n}).
+\end{align*}
+$$
+
+If we further define $H_ {\mu \nu}=: \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}$, we have $C_ {\mu}=i\mathfrak{n}\partial_ {\mu}\mathfrak{n}$. You can verify that $C_ {\mu}$ indeed reproduces $H_ {\mu \nu}$. 
+
+- - -
 
