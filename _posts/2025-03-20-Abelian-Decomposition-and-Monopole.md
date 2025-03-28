@@ -401,6 +401,7 @@ After Abelian projection,
 
 
 # Abelian Decomposition in SU(2)
+## Decomposition into $\mathcal{A},\mathcal{C}$ and $X$
 
 The Cho-Duan-Ge decomposition is a covariant separation of the gauge field into abelian and non-abelian components. Roughly speaking, the gauge potential is separated into
 - abelian, restricted gauge potential. It is further separated into
@@ -519,4 +520,35 @@ $$
 If we further define $H_ {\mu \nu}=: \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}$, we have $C_ {\mu}=i\mathfrak{n}\partial_ {\mu}\mathfrak{n}$. You can verify that $C_ {\mu}$ indeed reproduces $H_ {\mu \nu}$. 
 
 - - -
+
+We have talked about the monopole-like background $\mathcal{C}$ and the free, massless $U(1)$ field $\mathcal{A}$. The rest of the total $SU(N)$ gauge field can be symbolically denoted as $X$, thus we have 
+
+$$
+A = \mathcal{A}+\mathcal{C}+X
+$$
+
+where 
+
+- $A$ is the entire $SU(N)$ field. This is denoted $\vec{A}$ in some papers.
+- $\mathcal{A}$ is the free, massless $U(1)$ gauge field, called neuron by some.
+- $\mathcal{C}$ is the monopole-like back ground field defined by $\hat{n}$, for example if $\hat{n}$ is chosen to be hedgehog-form, $\mathcal{C}$ is the monopole field configuration.
+- $X$ is the rest of $A$.
+
+## Gauge transform
+
+To keep our notation in agree with others, let's denote the gauge transformation as $\Omega=e^{ i\alpha }$, where $\alpha=\alpha^{a}T^{a}$ is a $\mathfrak{g}$-valued **infinitesimal** vector. The gauge field $A$ transforms as 
+
+$$
+A \to A+ D_ {\mu}\alpha,\quad  D_ {\mu}=\partial_ {\mu}-i[A_ {\mu},-].
+$$
+
+What about $\mathfrak{n}=\hat{n}^{a}T^{a}$? This $\mathfrak{g}$-valued field is not a part of the Lagrangian so it is not obvious how it should transform under gauge transform, or if it should transform at all. For example at the beginning I thought that since $\hat{n}$ is a vector in physical space, why should it be affected by gauge transformation? Then again, since $\mathfrak{n}$ plays a similar rule to the Higgs boson, maybe it should transform as a adjoint scalar. That is what was adopted by Cho and other people, so I'll stick to it. 
+
+The Higgs-like field $\mathfrak{n}$ transforms under an infinitesimal gauge transform as
+
+$$
+\mathfrak{n}  \to  \mathfrak{n} +i[\alpha,\mathfrak{n} ] = \mathfrak{n} -\vec{\alpha}\times \hat{n}{\Large\mid}_ {\mathfrak{g} }.
+$$
+
+The notation $\vec{\alpha}\times \hat{n}{\Large\mid}_ {\mathfrak{g}}$ means that $\vec{\alpha}\times \hat{n}$ is a vector in Lie algebra.
 
