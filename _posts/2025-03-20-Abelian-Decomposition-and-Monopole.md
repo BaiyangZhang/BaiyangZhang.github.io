@@ -552,3 +552,4 @@ $$
 
 The notation $\vec{\alpha}\times \hat{n}{\Large\mid}_ {\mathfrak{g}}$ means that $\vec{\alpha}\times \hat{n}$ is a vector in Lie algebra.
 
+
