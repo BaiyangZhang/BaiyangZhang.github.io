@@ -531,9 +531,16 @@ where
 
 - $A$ is the entire $SU(N)$ field. This is denoted $\vec{A}$ in some papers.
 - $\mathcal{A}$ is the free, massless $U(1)$ gauge field, called neuron by some.
-- $\mathcal{C}$ is the monopole-like back ground field defined by $\hat{n}$, for example if $\hat{n}$ is chosen to be hedgehog-form, $\mathcal{C}$ is the monopole field configuration.
-- $X$ is the rest of $A$.
+- $\mathcal{C}$ is the monopole-like background field defined by $\hat{n}$, for example if $\hat{n}$ is chosen to be hedgehog-form, $\mathcal{C}$ is the monopole field configuration. It can not fluctuated, for it is bond to $\mathfrak{n}$.
+- $X$ is the rest of $A$. I'd like to think of it as the non-abelian fluctuation about the background $\mathcal{C}$.
 
+**Question**: Let $\hat{n}_ {\infty}$ be the asymptotic field configuration at the spatial boundary $\partial\mathbb{R}^{3}=\mathbb{S}^{2}$. Since $\hat{n}$ takes value in all unit-norm vectors in all directions, the collection of all $\hat{n}$ is homeomorphic to $\mathbb{S}^{2}$, think of it as the set of the end points of all possible $\hat{n}$. Thus,
+
+$$
+\hat{n}_ {\infty}: \mathbb{S}^{2} \to  \mathbb{S}^{2}.
+$$
+
+If the winding number of $\hat{n}_ {\infty}$ is nonzero, then it can not be continuously deformed into a unit map. Then $\hat{n}$ can not be well-defined everywhere, there must be at least one singularity, where the direction of $\hat{n}$ is not defined. If $\hat{n}$ were a scalar field, we usually let it go to zero to avoid this problem, like in vortices. But here we can't let $\hat{n}$ be zero, so how do you solve this problem?
 ## Gauge transform
 
 To keep our notation in agree with others, let's denote the gauge transformation as $\Omega=e^{ i\alpha }$, where $\alpha=\alpha^{a}T^{a}$ is a $\mathfrak{g}$-valued **infinitesimal** vector. The gauge field $A$ transforms as 
