@@ -667,6 +667,13 @@ With this great simplification, the extended Lagrangian reads
 
 $$
 \begin{align*}
-\mathcal{L}_ {\text{ECD}} = 
+\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,F^{2} \\
+=& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2iF_ {\mu \nu}[X_ {\mu}X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2} \right. \\
+&\left. - [X_ {\mu},X_ {\nu}]^{2}-2i(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})[X_ {\mu},X_ {\nu}]   \right\rbrace. 
 \end{align*}
 $$
+
+We are using the convention in Swartz's QFT textbook that we do not distinct the upper indices and lower indices when summed.
+
+- - -
+
