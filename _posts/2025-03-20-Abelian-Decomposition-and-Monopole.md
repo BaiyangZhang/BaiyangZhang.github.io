@@ -605,4 +605,68 @@ How the field transforms tells us what gauge invariant terms we could construct 
 
 ## Lagrangian of R(estricted)CD and E(xtended)CD
 
-The restricted QCD, RCD for short, 
+The `restricted QCD`, `RCD` for short, is the self-energy of restricted gauge field $\hat{A}$, 
+
+$$
+\mathcal{L}_ {\text{RCD}} = - \frac{1}{2g^{2}} \mathrm{Tr}\,\hat{F}_ {\mu \nu}^{2}.
+$$
+
+Substitute in 
+
+$$
+\begin{align*}
+\hat{F} &= f_ {\mu \nu}\mathfrak{n} +H_ {\mu \nu}\mathfrak{n} ,\\
+f_ {\mu \nu} &= \partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu},\\
+H_ {\mu \nu} \mathfrak{n}  &=i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ].
+\end{align*}
+$$
+
+we have 
+
+$$
+\begin{align*}
+\mathcal{L}_ {\text{RCD}} =& - \frac{1}{4g^{2}}f_ {\mu \nu}^{2} - \frac{1}{2g^{2}}\mathrm{Tr}\,H^{2}-\frac{1}{g^{2}}\mathrm{Tr}\,f_ {\mu \nu}H^{\mu \nu}\\
+=& - \frac{1}{4g^{2}} (\partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu})^{2}\\
+& - \frac{1}{4g^{2}}(\partial_ {\mu}\hat{n}^{a}\partial_ {\nu}\hat{n}^{b}-(a\longleftrightarrow b))^{2}\\
+&+ \frac{1}{2g^{2}} \epsilon^{abc}f_ {\mu \nu}\hat{n}^{a}\partial^{\mu}\hat{n}^{b}\partial^{\nu}\hat{n}^{c}
+\end{align*}.
+$$
+
+OK, now let's include final piece, the non-abelian fluctuation $X$. The total field strength $F_ {\mu \nu}$ is 
+
+$$
+F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}],
+$$
+
+where we see the anticipated covariant derivative term $\hat{D}X$. $X$ behaves like an adjoint scalar, but has a Lorentz index. 
+
+Take the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho calls Extended QCD, ECD for short. But it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $f_ {\mu \nu}\mathfrak{n}$ is orthodox to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {ny}=0$ for all $\mu$, then we have 
+
+$$
+\partial \mathrm{Tr}\,\mathfrak{n} X=0=\mathrm{Tr}\,(\partial \mathfrak{n} X+\mathfrak{n} \partial X)\implies \mathrm{Tr}\,\partial \mathfrak{n} X=-\mathrm{Tr}\,\mathfrak{n}\partial X. 
+$$
+
+Note that this "exchange the derivative and change the sign" operation is only valid under the trace. 
+
+Also take into consideration the cyclic property of trace, we can simplify the following term:
+
+$$
+\begin{align*}
+\mathrm{Tr}\,\left\lbrace \hat{F}_ {\mu \nu} \hat{D}_ {\mu}X_ {\nu} \right\rbrace =& f_ {\mu \nu} \mathrm{Tr}\,\left\lbrace \mathfrak{n}(\partial_ {\mu}X_ {\nu}-i[\hat{A}_ {\mu},X_ {\nu}])  \right\rbrace \\
+=& f_ {\mu \nu} \mathrm{Tr}\,\left\lbrace \mathfrak{n} \partial_ {\mu}X_ {\nu}-\mathfrak{n} i(\hat{A}_ {\mu}X_ {\nu}-X_ {\nu}\hat{A}_ {\mu}) \right\rbrace \\
+=& f_ {\mu \nu}\mathrm{Tr}\,\left\lbrace -\partial_ {\mu}\mathfrak{n}X_ {\nu} -i\mathfrak{n} \hat{A}_ {\mu}X_ {\nu}+i\mathfrak{n} X_ {\nu}\hat{A}_ {\mu} \right\rbrace \\
+=& f_ {\mu \nu}\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} X_ {\nu} -i\hat{A}_ {\mu}\mathfrak{n} X_ {\nu}+i\mathfrak{n} \hat{A}_ {\mu}X_ {\nu})\right\rbrace \\
+=& f_ {\mu \nu}\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} -i(\hat{A}_ {\mu}\mathfrak{n} -\mathfrak{n} \hat{A}_ {\mu})X_ {\nu}) \right\rbrace \\
+=& f_ {\mu \nu}\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} -i[\hat{A}_ {\mu},\mathfrak{n} ])X_ {\nu} \right\rbrace \\
+=&f_ {\mu \nu} \mathrm{Tr}\,\left\lbrace -(\hat{D}_ {\mu}\mathfrak{n} )X_ {\nu} \right\rbrace \\
+=&0.
+\end{align*}
+$$
+
+With this great simplification, the extended Lagrangian reads
+
+$$
+\begin{align*}
+\mathcal{L}_ {\text{ECD}} = 
+\end{align*}
+$$
