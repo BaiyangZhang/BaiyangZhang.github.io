@@ -677,3 +677,12 @@ We are using the convention in Swartz's QFT textbook that we do not distinct the
 
 - - -
 
+Another gauge symmetry reads (In Cho's notation)
+
+$$
+\begin{align*}
+\delta \hat{n} &=0, \quad \delta A_ {\mu} = \frac{1}{g} \hat{n}\cdot D_ {\mu}\vec{\alpha},\\
+\delta \hat{A}_ {\mu} &= \frac{1}{g}(\hat{n}\cdot D_ {\mu}\hat{\alpha})\hat{n},\\
+\delta \vec{X}_ {\mu} &= \frac{1}{g}[D_ {\mu}\vec{\alpha}-(\hat{n}\cdot D_ {\mu} \vec{\alpha})\hat{n}].
+\end{align*}
+$$
