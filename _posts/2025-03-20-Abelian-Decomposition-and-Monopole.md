@@ -170,7 +170,7 @@ $$
   \left\langle \phi^{1} \right\rangle = \left\langle \phi^2 \right\rangle = 0,\, \left\langle \phi^3 \right\rangle = v,\, \left\langle A \right\rangle = 0.
 $$
 
-The VEV of $\vec{\phi}$ field points to the $z$-direction. Now the gauge symmetry $SU(2)$ is broken to $U(1)$, since the vacuum for the Higgs is $\left\langle \phi \right\rangle=\phi^{3}T^{3}$ and only the gauge transform given by $e^{i\theta^3 T^3}$ preserves the vacuum:
+The VEV of $\vec{\phi}$ field points to the $z$-direction. Now the gauge symmetry $SU(2)$ is broken to $U(1)$, since the vacuum for the Higgs is $\left\langle \phi \right\rangle=\phi^{3}T^{3}$ and only the gauge transformation given by $e^{i\theta^3 T^3}$ preserves the vacuum:
 
 $$
 SU(2) \to  U(1).
@@ -505,7 +505,7 @@ $$
 [\partial_ {\mu}\mathfrak{n},\partial_ {\nu}\mathfrak{n}] = -(\partial_ {\mu}\hat{n}^{a})(\partial_ {\nu}\hat{n}^{b})\epsilon^{abc}T^{c},
 $$
 
-which in $\mathfrak{g}$ is just $-(\partial_ {\mu}\hat{n})\times(\partial_ {\nu}\hat{n})$. Since $\partial \hat{n}$ is orthodox to $\hat{n}$, their cross product is aligned with $\hat{n}$. So indeed $\hat{F}$ is aligned with $\mathfrak{n}$. 
+which in $\mathfrak{g}$ is just $-(\partial_ {\mu}\hat{n})\times(\partial_ {\nu}\hat{n})$. Since $\partial \hat{n}$ is orthogonal to $\hat{n}$, their cross product is aligned with $\hat{n}$. So indeed $\hat{F}$ is aligned with $\mathfrak{n}$. 
 
 In summary, we have 
 
@@ -551,7 +551,7 @@ S=\frac{1}{g^{2}}\int d^{4}x \, \mathcal{L}(\mathcal{A},\mathcal{C},X) \to S=\fr
 $$
 ## Gauge transform
 
-If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$, where $U(1)$ is the little group of $\mathfrak{n}(x)$, which depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? The original $SU(2)$ gauge symmetry would still be intact, and under gauge transform $\mathfrak{n}$ will rotate in a $x$-dependent way. 
+If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$, where $U(1)$ is the little group of $\mathfrak{n}(x)$, which depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? The original $SU(2)$ gauge symmetry would still be intact, and under gauge transformation $\mathfrak{n}$ will rotate in a $x$-dependent way. 
 
 To keep our notation in agree with others, let's denote the gauge transformation as $\Omega=e^{ i\alpha }$, where $\alpha=\alpha^{a}T^{a}$ is a $\mathfrak{g}$-valued **infinitesimal** vector. The gauge field $A$ transforms as 
 
@@ -561,7 +561,7 @@ $$
 
 What about $\mathfrak{n}=\hat{n}^{a}T^{a}$? This $\mathfrak{g}$-valued field is not a part of the Lagrangian so it is not obvious how it should transform under gauge transform, or if it should transform at all. For example at the beginning I thought that since $\hat{n}$ is a vector in physical space, why should it be affected by gauge transformation? Then again, since $\mathfrak{n}$ plays a similar rule to the Higgs boson, maybe it should transform as a adjoint scalar. That is what was adopted by Cho and other people, so I'll stick to it. 
 
-The Higgs-like field $\mathfrak{n}$ transforms under an infinitesimal gauge transform as
+The Higgs-like field $\mathfrak{n}$ transforms under an infinitesimal gauge transformation as
 
 $$
 \mathfrak{n}  \to  \mathfrak{n} +i[\alpha,\mathfrak{n} ] = \mathfrak{n} -\vec{\alpha}\times \hat{n}{\Large\mid}_ {\mathfrak{g} }.
@@ -577,7 +577,7 @@ $$
 
 The advantage is that now $\hat{A}$ is the solution to $\mathcal{D}_ {\mu}\mathfrak{n}=0$ in a **gauge independent** way: If $\hat{A}$ is a solution, after gauge transform, let $\mathfrak{n}\to\mathfrak{n}'$ be the transformed vector field, the transformed $\hat{A}'$ is still a solution to $D_ {\mu}\mathfrak{n}'=0$.
 
-What about the gauge transform of $\mathcal{A}$ and $\mathcal{C}$ respectively? Expand the gauge transform for $\hat{A}$, we have 
+What about the gauge transformation of $\mathcal{A}$ and $\mathcal{C}$ respectively? Expand the gauge transformation for $\hat{A}$, we have 
 
 $$
 \hat{A}=\mathcal{A}+\mathcal{C}\to \Omega(\mathcal{A}+\mathcal{C}+i\partial)\Omega ^{\dagger}
@@ -640,7 +640,7 @@ $$
 
 where we see the anticipated covariant derivative term $\hat{D}X$. $X$ behaves like an adjoint scalar, but has a Lorentz index. 
 
-Take the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho calls Extended QCD, ECD for short. But it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $f_ {\mu \nu}\mathfrak{n}$ is orthodox to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {ny}=0$ for all $\mu$, then we have 
+Take the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho calls Extended QCD, ECD for short. But it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $f_ {\mu \nu}\mathfrak{n}$ is orthogonal to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {ny}=0$ for all $\mu$, then we have 
 
 $$
 \partial \mathrm{Tr}\,\mathfrak{n} X=0=\mathrm{Tr}\,(\partial \mathfrak{n} X+\mathfrak{n} \partial X)\implies \mathrm{Tr}\,\partial \mathfrak{n} X=-\mathrm{Tr}\,\mathfrak{n}\partial X. 
@@ -677,7 +677,7 @@ We are using the convention in Swartz's QFT textbook that we do not distinct the
 
 - - -
 
-Another gauge symmetry reads (In Cho's notation)
+Another possible gauge symmetry reads (in Cho's notation)
 
 $$
 \begin{align*}
@@ -687,4 +687,29 @@ $$
 \end{align*}
 $$
 
-where $A_ {\mu}:=\hat{n}\cdot \vec{A}_ {\mu}$.
+where $A_ {\mu}:=\hat{n}\cdot \vec{A}_ {\mu}$. 
+
+**This seems to be the gauge symmetry that preserves the monopole-like background field solution $\mathfrak{n}$**, as I will explain in the following. Since in the hedgehog ansatz, the monopole solution for the scalar $\phi_ {\text{m}}$ reads $\phi_ {\text{m}}\propto  \mathfrak{n}$ at the boundary, and $\phi$ gauge transforms as $\phi\to\Omega \phi \Omega ^{\dagger}$, the gauge transformation that leaves $\phi_ {\text{m}}$ invariant is whatever $\Omega$ that commutes with $\phi_ {\text{m}}$, then it has to be proportional to $\mathfrak{n}$ too. Write it $\Omega_ {n}=e^{ i\omega \mathfrak{n} }$. The covariant derivative $D_ {\mu}(\omega \mathfrak{n})$ is not necessarily proportional to $\mathfrak{n}$, to see that, note
+
+$$
+D_ {\mu}(\omega \mathfrak{n} ) = \partial(\omega \mathfrak{n} )-i[A_ {\mu},\omega \mathfrak{n} ]=(\partial_ {\mu} \omega)\mathfrak{n} +\omega \partial_ {\mu}\mathfrak{n}  -i\omega[A_ {\mu},\mathfrak{n} ].
+$$
+
+The first term is proportional to $\mathfrak{n}$, while the second and last is orthogonal to $\mathfrak{n}$ (just think of $\mathfrak{n}$ as a vector and commutator as a cross product). 
+
+The gauge transformation for $U(1)$ component $\mathcal{A}$ is just like a photon (the part proportional to $\mathfrak{n}$)
+
+$$
+\mathcal{A}\to \mathcal{A}+\partial_ {\mu}\omega \mathfrak{n} ,
+$$
+
+while the $X$ transforms as a $SU(N)$ field (the part orthogonal to $\mathfrak{n}$):
+
+$$
+X\to X+\omega D_ {\mu}\mathfrak{n}.
+$$
+
+But is this a gauge transformation really? 
+
+- - -
+
