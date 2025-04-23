@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-20-Abelian-Decomposition-and-Monopole"
+              "title": "Untitled"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f8485d28afe14f44",
@@ -186,9 +185,17 @@
   },
   "active": "7c9f74c6062926ce",
   "lastOpenFiles": [
+    "Templates/date.md",
+    "README.md",
     "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
-    "_posts/2025-03-14-Mass-Renormalization.md",
+    "_posts/2025-02-27-Introduction-to-Resurgence-1.md",
+    "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
     "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
+    "_drafts/2023-04-dd-Confinement-in-Toy-Models-Lecture-4.md",
+    "_drafts/2023-05-07-soliton-particle-duality.md",
+    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
+    "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
+    "_posts/2025-03-14-Mass-Renormalization.md",
     "_drafts/2024-10-11-Asymptotic-Methods-Applied-on-Anharmonic-Oscillator.md",
     "_news/announcement_5.md",
     "_news/announcement_4 - Copy.md",
@@ -196,8 +203,6 @@
     "img/FeynmanRulesModel3.png",
     "_drafts/2024-12-15-HHW-Theorem-101.md",
     "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
-    "_drafts/2024-08-06-Basics-of-Algebraic-QFT-Part-I.md",
-    "_drafts/2023-09-14-The-Geometry-of-WKB-Method.md",
     "_drafts/2024-04-15-Two-Loop-Corrections-in-Kink-Model.md",
     "_drafts/2024-04-08-Introduction-to-Transseries-Lecture-3.md",
     "_drafts/2023-mm-dd-Introduction-to-Higher-Form-Symmetry.md",
@@ -206,12 +211,6 @@
     "backups/2015-10-20-math.md",
     "backups/2018-12-22-distill.md",
     "backups/2015-10-20-disqus-comments.md",
-    "backups/2015-07-15-code.md",
-    "backups/2015-05-15-images.md",
-    "backups/2015-03-15-formatting-and-links.md",
-    "Untitled.md",
-    "Referee report.md",
-    "README.md",
-    "2025-02-25.md"
+    "backups/2015-07-15-code.md"
   ]
 }
