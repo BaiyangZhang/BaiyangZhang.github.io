@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Passive Perspective of Linearized Soliton Perturbation Theory
-date: 2025-01-07
+date: 2025-03-31
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -89,7 +89,7 @@ HHW theorem does not imply that it's impossible to treat interactions in the sta
 
 - - -
 
-With all the reasons above, in our calculation we will adopt Schrodinger's picture instead of standard interaction picture. 
+With the reasons stated above, in our calculation we will adopt Schrodinger's picture instead of standard interaction picture. 
 
 # Loop expansion, semi-classical expansion and coupling expansion
 
