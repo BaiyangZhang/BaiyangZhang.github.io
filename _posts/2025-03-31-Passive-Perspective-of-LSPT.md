@@ -12,7 +12,6 @@ tags:
 # Quantization and Haag Theorem
 
 *This section can be entirely skipped for readers who are not interested in Haag's theorem.*
-
 ## Quantization
 
 Start with a classical theory with Lagrangian $\mathcal{L}$, or equivalently Hamiltonian $H$. There may be some symmetry group $G$ acting on the Lagrangian. The theory can be separated into free part and interacting part. Upon quantization, the interaction will introduce an UV energy scale $\Lambda_ {\text{UV}}$ above which the theory becomes invalid. The symmetry group $G$ might break, if it is solely due to the quantization procedure then we say the symmetry is anomalous. The classical Hamiltonian are functions of canonical variables $q$ and $p$. The canonical variables satisfy certain Poisson brackets, which generates the dynamics of the model. 
@@ -90,111 +89,6 @@ HHW theorem does not imply that it's impossible to treat interactions in the sta
 - - -
 
 With the reasons stated above, in our calculation we will adopt Schrodinger's picture instead of standard interaction picture. 
-
-# Loop expansion, semi-classical expansion and coupling expansion
-
-There are three different but expansions that we usually don't extinguish:
-
-- Loop expansion, the expansion parameter is the number of loop. The leading contributions are tree diagrams.
-- Semi-classical expansion, the expansion parameter is the Plank constant $\hbar$. At leading order, $\hbar=0$, we are left with classical contributions.
-- Coupling expansion, the expansion parameter is the coupling $g,\lambda, \cdots$.
-
-Set the speed of light $c=1$. The action functional $S[\phi]$ has the unit of $[\hbar]=ET$, where $E$ is the energy unit and $T$ the time. The textbook proof of the equivalence between *loop expansion* and *semi-classical expansion*, i.e. $\hbar$-expansion usually goes as follows. First write the partition function (with the source term) with $\hbar$:
-
-$$
-Z[J(x)] = \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar} \int d^{d}x \, (\mathcal{L}+ J \phi)  \right\rbrace  ,
-$$
-
-where $J=J(x)$ is the source term. Note that the source term is on the same basis of $\mathcal{L}$. Splitting the Lagrangian into free and interacting part, we can rewrite the interaction using functional derivative and put it in the front of the free partition function:
-
-$$
-Z[J] = \exp \left\lbrace \frac{i}{\hbar}\mathcal{L}_ {\text{int}}\left( \frac{1}{i} \frac{\delta}{\delta J} \right) \right\rbrace  Z_ {0}[J],
-$$
-
-where $\mathcal{L}_ {\text{int}}$ is the interacting Lagrangian and 
-
-$$
-Z_ {0}[J] = \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\int d^{d}x\, (\mathcal{L}_ {0}+ J\phi)  \right\rbrace
-$$
-
-is the free partition function with the source. It can be integrated out in the closed form (for the level of rigorous for a physicist) to give
-
-$$
-Z_ {0}[J] = N \exp \left\lbrace - \frac{i}{2}\hbar \int d^{d}x d^{d}y \, J(x) \Delta_ {F}(x-y)J(y)   \right\rbrace,
-$$
-
-where $\Delta_ {F}$ is the Feynman propagator. It shows that each propagator contributes a factor of $\hbar$. 
-
-Next, since each diagrammatic vertex is a result of a functional derivative $\frac{i}{\hbar }\mathcal{L}_ {\text{int}}\left( \frac{\delta}{\delta J} \right)$, each vertex contributes a factor of $\frac{1}{\hbar}$. Then, using some relations between the numbers of loops, propagators and vertices (it depends on the specific model), **amputate the external legs**, it can be shown that: a general graph with $L$ loops is proportional to $\hbar^{L-1}$. Thus an expansion in the number of loops is also an expansion in powers of $\hbar$. 
-
-- - -
-
-It turns out that there are more than one way to assign $\hbar$-dependence to parameters in the Lagrangian, such as mass $m$, the coupling $g,\lambda$, etc. A criterion for the "right" choice is that, at $\hbar\to 0$, the quantum theory agrees with the classical theory. As an example, Stanley Brodsky and Paul Hoyer in their [paper](https://arxiv.org/pdf/1009.2313.pdf) used the quantum mechanical harmonic oscillator as an example in Eq.(1). The gist is that you can rescale $x$ to $x / \sqrt{ \hbar }$, then the propagator is formally independent of $\hbar$. However, this will change how we view distance, in the $\hbar\to 0$ limit, for a fixed distance $L$, the "length" measure will increase as $1 / \sqrt{ \hbar }$, hence we are going to smaller and smaller area. 
-
-It is generally understood that each loop contribution to amplitudes is associated with one factor of $\hbar$. However, to fully define the $\hbar\to 0$ limit one need to specify the $\hbar$ dependence of various quantities in the Lagrangian as mentioned before, such as the field operator, the mass, the coupling, etc. This is not as straightforward as one might think, for $\hbar$ not only appears in the action $iS / \hbar$ but also appears in the Lagrangian. In Brodsky's paper mentioned above, the authors proposed a way to establish the $\hbar$ dependence such that the loop and $\hbar$ expansions are equivalent. We will go to more details in the following.
-
-**First, regard $\hbar$ as a constant of nature with certain dimension, use $\hbar$ to make terms in the Lagrangian dimensionless.**
-
-Again let's work with the assumption that $c = \epsilon_ {0} = 1$. Require $[S]=\hbar$, and $\alpha_ {s} = g^{2} / 4\pi \hbar$ is dimensionless, the latter implies that $[g]=[\sqrt{ \hbar }]=\sqrt{ ET }=\sqrt{ EL }$. From the self-energy of gluons $G_ {\mu \nu}G^{\mu \nu}$ where $G = \partial A - \partial A +ig / \hbar [A,A]$ we have  
-
-$$
-[A] = \sqrt{ \frac{E}{L} }.
-$$
-
-Similarly, in scalar QED model the classical electric charge $e$ and mass $m$ are divided by $\hbar$,
-
-$$
-S_ {\text{sQED} } = \int d^{4}x \, \left\lbrace \left\lvert D\phi \right\rvert ^{2}-\frac{m^{2} }{\hbar^{2} }\left\lvert \phi \right\rvert ^{2} \right\rbrace , \quad  D = \partial +i \frac{e}{\hbar }A.
-$$
-
-The boson field dimension 
-
-$$
-[\phi]=[A]= \sqrt{ \frac{E}{L} }.
-$$
-
-Fermion fields are more complicated, since they have no classical counterparts, their dimensions are convention-dependent. We will deal with fermions in a different note perhaps.
-
-**Second step is to specify $\hbar$ dependence of all quantities appearing in the action.**
-
-The choice made by Brodsky and Hoyer is as following. Define
-
-$$
-\widetilde{A}:= \frac{A}{\sqrt{ \hbar } },\quad \tilde{\phi}:= \frac{\phi}{\sqrt{ \hbar } }
-$$
-
-where $\widetilde{A},\tilde{\phi}$ are $\hbar$-independent. Similarly, define the following $\hbar$-independent quantities
-
-$$
-\widetilde{g}:= \frac{g}{\hbar},\quad  \widetilde{e}:= \frac{e}{\hbar},\quad  \widetilde{m}:= \frac{m}{\hbar}.
-$$
-
-Then one can write the Lagrangian in terms of these $\hbar$-independent quantities to check the $\hbar$ dependence explicitly. It turns out that, at least in the simple models discussion in the paper, $\hbar$ always appears in the combination 
-
-$$
-\widetilde{g}\sqrt{ \hbar } \quad \text{and}\quad \widetilde{e}\sqrt{ \hbar }
-$$
-
-that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ will be of order $\hbar$. 
-
-This derivation is equivalent to the standard textbook treatments, for example in Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume that the parameters appearing in the action are independent of $\hbar$. 
-
-Fore more details refer to Brodsky and Hoyer's paper mentioned above. The takeaway is that, the correspondence between loop expansion and $\hbar$ expansion is widely accepted, taken for granted, but convention dependent.
-
-The semi-classical approximation is also a result of small fluctuation about certain classical background. This can be seen from the `Steepest descent method`. For an amazing introduction, see chapter 6 of the book by Carl Bender and Orszag [Advanced Mathematical Methods for Scientists and Engineers I](http://link.springer.com/10.1007/978-1-4757-3069-2). The gist is that the integral can be approximated by an asymptotic power expansion, the leading term is given by its stationary value:
-
-$$
-\int_ {-\infty}^{\infty} dx \, e^{ -S(x) / \hbar } f(x) \sim e^{ -S(x_ {0}) / \hbar }f(x_ {0}) \frac{\sqrt{2\pi \hbar}}{\sqrt{\partial^{2}S{\Large\mid}_ {x_ {0}} }} \, A(\hbar)
-$$
-
-where $x_ {0}$ is the stationary point and $A(\hbar)$ is an asymptotic power series in $\hbar$,
-
-$$
-A(\hbar) = 1+A_ {1} \hbar + A_ {2} \hbar^{2} + \cdots
-$$
-
-which, being an asymptotic series, eventually diverges. The coefficients, $A_ {1}, A_ {2}$, etc, can be calculated using loop expansion.
-
 # Vacuum sector of quantum theory
 
 We will work in Schrodinger picture, where operators are dependent on position only. From time to time we will come back to interaction picture as a consistency check. We will only consider real scalar field $\phi$ in $d+1$ dimension. In Schrodinger picture, a generic operator $\mathcal{O}(\phi(\vec{x}),\pi(\vec{x}))$ is given as a function of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate. Note that since it is not the interaction picture, we don't deal with the Lorentz covariant four-vector $x^{\mu}$. 
@@ -286,7 +180,7 @@ $$
 
 Where $I$ is some variable which will be define later, I put it here for the sake of completeness.
 
-**Discussion on normal ordering**
+## Normal ordering revisited
 
 Reference: Sidney Coleman's [1975 paper](http://users.physik.fu-berlin.de/%7Ekamecke/ps/coleman.pdf) and his lecture note title *Aspects of Symmetry*, the chapter about classical and quantum lumps. 
 
@@ -402,7 +296,6 @@ where $C_ {m}$ is short for $C_ {m}(\phi^{2})$, a short-handed notation we will 
 
 Similarly, we can get normal order all the terms in the Lagrangian at all the mass scales. For details see my other notes. 
 
-
 If we start with a Hamiltonian normal ordered at $m_ {0}$, we can shift it to that normal ordered at the physical mass $m$, the difference is 
 
 $$
@@ -414,9 +307,7 @@ $$
 
 where $\hat{\mathcal{H}}^{0}$ is normal ordered at $m_ {0}$.
 
-
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
-
 ## Perturbative Expansion of the Hamiltonian
 
 Since we want to cancel divergences in a perturbative manner, that is, order-by-order in (renormalized) coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
@@ -505,7 +396,19 @@ $$
 T_ {\vec{x}} = \exp \left\lbrace -i\hat{P}\cdot \vec{x} \right\rbrace .
 $$
 
-The translation operator changes the position, while the displacement operator changes the vev of the field operator itself. To be specific, 
+The translation operator changes the position, while the displacement operator changes the vev of the field operator itself. In other words, $T_ {\vec{x}}$ translates in the configuration space, while $\mathcal{D}_ {f}$ translates in the function space. To be more specific, we have
+
+$$
+[\phi(\vec{x}),\mathcal{D}_ {f}] = e^{ -i\pi(f) } [\phi(\vec{x}),-i\pi(f)] =f(\vec{x}) \mathcal{D}_ {f},
+$$
+
+hence 
+
+$$
+\mathcal{D} \phi \mathcal{D}^{\dagger}=\phi-f.
+$$
+
+Since $\mathcal{D}_ {f}^{-1}=\mathcal{D}_ {-f}$, we have the following comparison:
 
 $$
 \begin{align*}
@@ -514,20 +417,18 @@ T_ {\vec{x}}^{\dagger}\, \phi(\vec{y})\, T_ {\vec{x}} &= \phi(\vec{y}+\vec{x}),\
 \end{align*}
 $$
 
-The point is we can use the unitary $\mathcal{D}_ {f}$ to translate the basis of the Hilbert space. 
+The point is that **we can use the unitary $\mathcal{D}_ {f}$ to translate the basis of the Hilbert space.** 
 
-I find it helpful to consider $T_ {\vec{x}}$ as an example to understand the properties of $\mathcal{D}_ {f}$. Let $\left\lvert{\psi}\right\rangle$ be any state in quantum mechanics, what happens if $T_ {\vec{x}}$ acts on it? $T_ {\vec{x}}\left\lvert{\psi}\right\rangle$ has two interpretations, the passive and the active view. 
+I find it helpful to take $T_ {\vec{x}}$ as an analogy to understand $\mathcal{D}_ {f}$. Let $\left\lvert{\psi}\right\rangle$ be any state, the resulting state of $T_ {\vec{x}}$ acting on $\left\lvert \psi \right\rangle$, namely the state $T_ {\vec{x}}\left\lvert{\psi}\right\rangle$, has two interpretations: the passive view and the active view. In the passive view, the translation is seen as a change to the coordinate system or reference frame, rather than a change to the state itself. The state of the system remains unchanged, but the coordinates used to describe it are shifted. In contrast, in the active view, the translation actively shifts the state, while the coordinate system remains the same. The coordinates stay fixed, but the state (or field configuration) changes.
 
-In the passive view, the translation operator is seen as a change in the coordinate system or reference frame, rather than a change in the physical state itself. The state of the system remains unchanged, but the coordinates used to describe it are shifted. In contrast, in the active view, the translation operator actively shifts the physical state of the system by a displacement. The coordinates stay fixed, but the state (or field configuration) changes.
+The same applies to the displacement operator $\mathcal{D}_ {f}$, given any state (now we are working in the context of quantum field theory, rather than quantum mechanics) $\left\lvert{\Psi}\right\rangle$, $\mathcal{D}_ {f}\left\lvert{\Psi}\right\rangle$ can be interpreted either as a new state (active perspective), or as the same state but in different basis (passive perspective). 
 
-The same applies to the displacement operator $\mathcal{D}_ {f}$, given any state (now in quantum field theory, rather than quantum mechanics) $\left\lvert{\Psi}\right\rangle$, $\mathcal{D}_ {f}\left\lvert{\Psi}\right\rangle$ can be interpreted either as a new state (active perspective), or as the same state but in different basis (passive perspective). 
-
-When it comes to the discussion about kink states and trivial vacuum states, my personal taste is to consider $\mathcal{D}_ {f}$ passively. This approach allows us to discuss the same states in different bases or frames.
+When it comes to the discussion about kink states and trivial vacuum states, my personal taste is to think of $\mathcal{D}_ {f}$ passively. This approach allows us to discuss the same states in different bases, or "frames".
 
 $\mathcal{D}_ {f}$ "shifts" $\left\lvert{\varphi}\right\rangle$ by $f(\vec{x})$ as
 
 $$
-\mathcal{D}_ {f}\left\lvert{\varphi(\vec{x})}\right\rangle  = \left\lvert{\varphi(\vec{x})+f(\vec{x})}\right\rangle .
+\mathcal{D}_ {f}\left\lvert{h(\vec{x})}\right\rangle  = \left\lvert{h(\vec{x})+f(\vec{x})}\right\rangle .
 $$
 
 As you can verify, we also have 
@@ -537,9 +438,29 @@ $$
 $$
 
 as we showed before. We can regard $\mathcal{D}_ {f}\left\lvert{\Psi}\right\rangle$ as the same state as $\left\lvert{\Psi}\right\rangle$, just measured with different basis: instead of $\left\langle \varphi \middle\vert \Psi \right\rangle$, we have $\left\langle \varphi+f \middle\vert \Psi \right\rangle$. 
-## Perturbation theory in the kink Hamiltonian
 
-In the context of Lagrangian formalism and path integral, the perturbation method is relatively straightforward. For example, consider scalar $\phi^{4}$ theory with spontaneous symmetry breaking,
+- - -
+
+From the expansion 
+
+$$
+\phi(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}\sqrt{2\omega_ {p}}} \,  (a_ {p} e^{ i\vec{p}\cdot \vec{x} }+h.c.)
+$$
+
+and $\mathcal{D}\phi \mathcal{D}^{\dagger}=\phi-f$, we can determine how $\mathcal{D}$ sandwiches $a_ {p}$:
+
+$$
+\mathcal{D}_ {f} a_ {p} \mathcal{D}_ {f}^{\dagger} = a_ {p} - \widetilde{a}_ {p}
+$$
+
+where $\widetilde{a}$ is the coefficient of the kink solution,
+
+$$
+f(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}\sqrt{2\omega _ {p} }} \, (\widetilde{a}_ {p}e^{ i\vec{p}\cdot \vec{x} }+\widetilde{a}_ {p}^{\dagger}e^{ -i\vec{p}\cdot \vec{x} }) .
+$$
+## Perturbative field operator in the kink sector
+
+In the context of Lagrangian formalism and path integral, the perturbation method is relatively straightforward. For example, consider the scalar $\phi^{4}$ theory with spontaneous symmetry breaking,
 
 $$
 \mathcal{L} = \frac{1}{2} (\partial_ {\mu}\phi)^{2} + \frac{1}{4} m^{2} - \frac{\lambda}{4}\phi^{4}.
@@ -639,15 +560,122 @@ $$
 H[\phi] = H[\mathcal{D} \varphi \mathcal{D}^{\dagger}] = \mathcal{D}H[\varphi]\mathcal{D}^{\dagger} =: H'[\varphi].
 $$
 
-**This is the first part of the linearized solitonic perturbation theory**: define the triplet $(\varphi, H'[\varphi],\left\lvert K \right\rangle)$.
+
+## Need for a new set of ladder operators
 
 
-## The coherent state
+## Squeeze!
 
+
+# Linearized soliton perturbation method (LSPT) 
+
+Here we summarize the linearized soliton perturbation theory associated with generic solitonic classic solutions $f_ {\text{sol}}$
 
 
 # Appendix 
+## Loop expansion, semi-classical expansion and coupling expansion
 
+There are three different but expansions that we usually don't extinguish:
+
+- Loop expansion, the expansion parameter is the number of loop. The leading contributions are tree diagrams.
+- Semi-classical expansion, the expansion parameter is the Plank constant $\hbar$. At leading order, $\hbar=0$, we are left with classical contributions.
+- Coupling expansion, the expansion parameter is the coupling $g,\lambda, \cdots$.
+
+Set the speed of light $c=1$. The action functional $S[\phi]$ has the unit of $[\hbar]=ET$, where $E$ is the energy unit and $T$ the time. The textbook proof of the equivalence between *loop expansion* and *semi-classical expansion*, i.e. $\hbar$-expansion usually goes as follows. First write the partition function (with the source term) with $\hbar$:
+
+$$
+Z[J(x)] = \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar} \int d^{d}x \, (\mathcal{L}+ J \phi)  \right\rbrace  ,
+$$
+
+where $J=J(x)$ is the source term. Note that the source term is on the same basis of $\mathcal{L}$. Splitting the Lagrangian into free and interacting part, we can rewrite the interaction using functional derivative and put it in the front of the free partition function:
+
+$$
+Z[J] = \exp \left\lbrace \frac{i}{\hbar}\mathcal{L}_ {\text{int}}\left( \frac{1}{i} \frac{\delta}{\delta J} \right) \right\rbrace  Z_ {0}[J],
+$$
+
+where $\mathcal{L}_ {\text{int}}$ is the interacting Lagrangian and 
+
+$$
+Z_ {0}[J] = \int \mathcal{D}\phi \, \exp \left\lbrace \frac{i}{\hbar}\int d^{d}x\, (\mathcal{L}_ {0}+ J\phi)  \right\rbrace
+$$
+
+is the free partition function with the source. It can be integrated out in the closed form (for the level of rigorous for a physicist) to give
+
+$$
+Z_ {0}[J] = N \exp \left\lbrace - \frac{i}{2}\hbar \int d^{d}x d^{d}y \, J(x) \Delta_ {F}(x-y)J(y)   \right\rbrace,
+$$
+
+where $\Delta_ {F}$ is the Feynman propagator. It shows that each propagator contributes a factor of $\hbar$. 
+
+Next, since each diagrammatic vertex is a result of a functional derivative $\frac{i}{\hbar }\mathcal{L}_ {\text{int}}\left( \frac{\delta}{\delta J} \right)$, each vertex contributes a factor of $\frac{1}{\hbar}$. Then, using some relations between the numbers of loops, propagators and vertices (it depends on the specific model), **amputate the external legs**, it can be shown that: a general graph with $L$ loops is proportional to $\hbar^{L-1}$. Thus an expansion in the number of loops is also an expansion in powers of $\hbar$. 
+
+- - -
+
+It turns out that there are more than one way to assign $\hbar$-dependence to parameters in the Lagrangian, such as mass $m$, the coupling $g,\lambda$, etc. A criterion for the "right" choice is that, at $\hbar\to 0$, the quantum theory agrees with the classical theory. As an example, Stanley Brodsky and Paul Hoyer in their [paper](https://arxiv.org/pdf/1009.2313.pdf) used the quantum mechanical harmonic oscillator as an example in Eq.(1). The gist is that you can rescale $x$ to $x / \sqrt{ \hbar }$, then the propagator is formally independent of $\hbar$. However, this will change how we view distance, in the $\hbar\to 0$ limit, for a fixed distance $L$, the "length" measure will increase as $1 / \sqrt{ \hbar }$, hence we are going to smaller and smaller area. 
+
+It is generally understood that each loop contribution to amplitudes is associated with one factor of $\hbar$. However, to fully define the $\hbar\to 0$ limit one need to specify the $\hbar$ dependence of various quantities in the Lagrangian as mentioned before, such as the field operator, the mass, the coupling, etc. This is not as straightforward as one might think, for $\hbar$ not only appears in the action $iS / \hbar$ but also appears in the Lagrangian. In Brodsky's paper mentioned above, the authors proposed a way to establish the $\hbar$ dependence such that the loop and $\hbar$ expansions are equivalent. We will go to more details in the following.
+
+**First, regard $\hbar$ as a constant of nature with certain dimension, use $\hbar$ to make terms in the Lagrangian dimensionless.**
+
+Again let's work with the assumption that $c = \epsilon_ {0} = 1$. Require $[S]=\hbar$, and $\alpha_ {s} = g^{2} / 4\pi \hbar$ is dimensionless, the latter implies that $[g]=[\sqrt{ \hbar }]=\sqrt{ ET }=\sqrt{ EL }$. From the self-energy of gluons $G_ {\mu \nu}G^{\mu \nu}$ where $G = \partial A - \partial A +ig / \hbar [A,A]$ we have  
+
+$$
+[A] = \sqrt{ \frac{E}{L} }.
+$$
+
+Similarly, in scalar QED model the classical electric charge $e$ and mass $m$ are divided by $\hbar$,
+
+$$
+S_ {\text{sQED} } = \int d^{4}x \, \left\lbrace \left\lvert D\phi \right\rvert ^{2}-\frac{m^{2} }{\hbar^{2} }\left\lvert \phi \right\rvert ^{2} \right\rbrace , \quad  D = \partial +i \frac{e}{\hbar }A.
+$$
+
+The boson field dimension 
+
+$$
+[\phi]=[A]= \sqrt{ \frac{E}{L} }.
+$$
+
+Fermion fields are more complicated, since they have no classical counterparts, their dimensions are convention-dependent. We will deal with fermions in a different note perhaps.
+
+**Second step is to specify $\hbar$ dependence of all quantities appearing in the action.**
+
+The choice made by Brodsky and Hoyer is as following. Define
+
+$$
+\widetilde{A}:= \frac{A}{\sqrt{ \hbar } },\quad \tilde{\phi}:= \frac{\phi}{\sqrt{ \hbar } }
+$$
+
+where $\widetilde{A},\tilde{\phi}$ are $\hbar$-independent. Similarly, define the following $\hbar$-independent quantities
+
+$$
+\widetilde{g}:= \frac{g}{\hbar},\quad  \widetilde{e}:= \frac{e}{\hbar},\quad  \widetilde{m}:= \frac{m}{\hbar}.
+$$
+
+Then one can write the Lagrangian in terms of these $\hbar$-independent quantities to check the $\hbar$ dependence explicitly. It turns out that, at least in the simple models discussion in the paper, $\hbar$ always appears in the combination 
+
+$$
+\widetilde{g}\sqrt{ \hbar } \quad \text{and}\quad \widetilde{e}\sqrt{ \hbar }
+$$
+
+that is, with the coupling. Hence loop correction of $\mathcal{O}(g^{2},e^{2})$ will be of order $\hbar$. 
+
+This derivation is equivalent to the standard textbook treatments, for example in Mark Srednicki's textbook, which  associates a factor $\hbar$ to each propagator and $h^{-1}$ with each vertex, and assume that the parameters appearing in the action are independent of $\hbar$. 
+
+Fore more details refer to Brodsky and Hoyer's paper mentioned above. The takeaway is that, the correspondence between loop expansion and $\hbar$ expansion is widely accepted, taken for granted, but convention dependent.
+
+The semi-classical approximation is also a result of small fluctuation about certain classical background. This can be seen from the `Steepest descent method`. For an amazing introduction, see chapter 6 of the book by Carl Bender and Orszag [Advanced Mathematical Methods for Scientists and Engineers I](http://link.springer.com/10.1007/978-1-4757-3069-2). The gist is that the integral can be approximated by an asymptotic power expansion, the leading term is given by its stationary value:
+
+$$
+\int_ {-\infty}^{\infty} dx \, e^{ -S(x) / \hbar } f(x) \sim e^{ -S(x_ {0}) / \hbar }f(x_ {0}) \frac{\sqrt{2\pi \hbar}}{\sqrt{\partial^{2}S{\Large\mid}_ {x_ {0}} }} \, A(\hbar)
+$$
+
+where $x_ {0}$ is the stationary point and $A(\hbar)$ is an asymptotic power series in $\hbar$,
+
+$$
+A(\hbar) = 1+A_ {1} \hbar + A_ {2} \hbar^{2} + \cdots
+$$
+
+which, being an asymptotic series, eventually diverges. The coefficients, $A_ {1}, A_ {2}$, etc, can be calculated using loop expansion.
 ## Some Mathematical Preliminaries
 
 An `algebra` over a field $k$ is a vector space $A$ over $k$, equipped with an additional structure: a bilinear multiplication $\cdot: A \times A \to A$ that makes $A$ a ring (not necessarily commutative). That is, $A$ has:
@@ -846,3 +874,117 @@ with $\omega_k = \sqrt{k^2 + m^2}$.
 The wave functional $\Psi_0[\phi]$ provides the probability amplitude for the field configuration $\phi(x)$. The exponential form indicates that the ground state is a Gaussian distribution centered around $\phi(x) = 0$, reflecting the fact that the vacuum state has no preferred field configuration (zero field on average).
 
 For more information refer to this [post](https://physics.stackexchange.com/questions/746099/schroedinger-equation-for-wave-functional-qft).
+
+## Kink modes $\mathfrak{g}(\vec{x})$ 
+
+Since we assumed the domain wall to be lying flat in the $y$-plane, the normal modes in 2-d space can be *factorized* into $x$ and $y$ components,
+
+$$
+{\mathfrak g} _ {k_ {x}k_ {y}} (x,y) =  {\mathfrak g}_ {k_ {x}}(x) \times  e^{ -i y k_ {y}}.
+$$
+
+The normal modes are the solution of the equation of motion in the kink background, or Poschl-Teller potential. These modes include a continuum
+
+$$
+ {\mathfrak g} _ {k}(x) = \frac{e^{-ikx}}{\omega_ {k} \sqrt{m^2+4k^2}}\left[2k^2-m^2+(3/2)m^2\text{sech}^2(m x/2)-3im k\tanh(m x/2)\right]
+$$
+
+with eigenvalue $\omega_ {k} = \sqrt{ k^{2}+m^{2} }$, a zero mode 
+
+$$
+{\mathfrak g}_ {B} = -\sqrt{ \frac{3m}{8} } \text{sech}^{2}\left( \frac{mx}{2} \right)
+$$
+
+with eigenvalue $0$, and a shape mode
+
+$$
+ {\mathfrak g} _ {S} = \frac{\sqrt{ 3m }}{2} \tanh \frac{mx}{2} \text{sech} \frac{mx}{2},\quad  \omega_ {S} = \frac{\sqrt{ 3 }}{2}m
+$$
+
+with eigenvalue less then the rest mass of excited particle. 
+
+Momentum in the $y$-direction also contributes to the total energy, putting them together with the zero modes, shape modes and continuum in the $x$ direction we have 
+
+$$
+\boxed { 
+\omega_ {k_ {B}k_ {y}} = \left\lvert k_ {y} \right\rvert ,\quad  \omega_ {k_ {S}k_ {y}} = \sqrt{ \frac{3m^{2}}{4}+k_ {y}^{2} },\quad  \omega_ {k_ {x} k_ {y}} = \sqrt{ m^{2}+k_ {x}^{2}+k_ {y}^{2} }.
+}
+$$
+
+Note that 
+
+- there is a zero mode corresponding to $k_ {B},k_ {y}=0$,
+- the mass gap disappears, due to the mass-gap-less of $y$-momentum.
+
+The formalism we developed in generic dimension $d$ surely also applies to $d=2$. Let $\vec{p}=(p_ {x},p_ {y})$ and $\vec{k}=(k_ {x},k_ {y})$. The Fourier transform is 
+
+$$
+ \tilde{\mathfrak{g} }_ {k_ {x},k_ {y}} (\vec{p})= \int d^{2}x \,   \mathfrak{g} _ {k}(\vec{x}) e^{ -i\vec{k}\cdot \vec{x} } = (2\pi)\delta(k_ {y}+p_ {y}) \times   \tilde{\mathfrak{g}} _ k (p_ {x}).
+ $$
+
+Again we see the factorization in $x$ and $y$, the $\delta$-function in $y$ direction is due to the plane wave expansion. 
+
+Note that the infinite volume of a flat $\mathbb{R}$ can be written as Dirac-$\delta$ function $\delta(0)$. To see it, recall the Fourier transform of a function is written as 
+
+$$
+\widetilde{f}(\vec{k}) = \int d^{d}x \, e^{ -i\vec{k}\cdot \vec{x} } f(\vec{x})
+$$
+
+which means if we set $f(\vec{x})=1$ then
+
+$$
+\tilde{f}(\vec{k}) = \int d^{d}x \,  e^{ -i \vec{k}\cdot\vec{x} } = (2\pi)^{d} \delta^{d}(k),
+$$
+
+If we further set $k=0$ then the integral becomes
+
+$$
+\int d^{d}x \, 1\,   = \text{Vol}^{d} = (2\pi)^{d}\delta^{d}(0).
+$$
+
+In the case of 1-dimension, say coordinated by $y$, the total length would be $2\pi \delta(0)$.
+
+
+Define the Fourier transformation $\tilde{f}$ of function $f(x)$ to be 
+
+$$
+\tilde{f}(\vec{p}) := \int d^{d}x \,   f(\vec{x})e^{ -i\vec{p}\cdot \vec{x} }.
+$$
+
+The Fourier transformation of normal modes reads
+
+$$
+\tilde{ {\mathfrak g} }_ {k}(p) = \int d^{d} x \, {\mathfrak g}_ {k}( \vec{x} ) 
+e^{-i\vec{p} \cdot \vec{x} }
+$$
+
+which satisfies relation
+
+$$
+\tilde{ {\mathfrak g} }_ {k}^{\ast}(\vec{p}) = \tilde{ {\mathfrak g} }_ {-k}(-\vec{p}) .
+$$
+
+Sometime this relation can help to make the numerical calculation easier. 
+
+The normalization relations for ${\mathfrak g}$ reads
+
+$$
+\begin{align*}
+\int d^{d}x \, {\mathfrak g}^{\ast }_ {k}(\vec{x}){\mathfrak g}_ {k'}(\vec{x}) &=(2\pi)^{d}\delta ^{d}(\vec{k}-\vec{k}'), \\
+\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(\vec{k}+\vec{k}'), \\  
+\int \frac{d^{d}p}{(2\pi)^{d} } \tilde{ {\mathfrak g} }_ {k}(\vec{p}) \tilde{ {\mathfrak g} }^{\ast }_ {k'}(\vec{p}) &= (2\pi)^{d}\delta ^{d}(\vec{k}-\vec{k}') ,
+\end{align*}
+$$
+
+and the completeness condition (in both spacetime and momentum space)
+
+$$
+\begin{align*}
+\int \frac{d^{d}k}{(2\pi)^{2}} \, {\mathfrak g}_ {k}(\vec{x})  {\mathfrak g}^{\ast }_ {k}(\vec{y}) 
+&=\delta ^{d}(\vec{x}-\vec{y}), \\
+\sum\!\!\!\!\!\!\!\!\int \; \frac{d^{d}k}{(2\pi)^{d}} \, \tilde{ {\frak g} }_ {k}(\vec{p}_ {1}) \tilde{ {\frak g} }^{\ast} _ {k}(\vec{p}_ {2}) 
+&= (2\pi)^{d} \delta^{d}(\vec{p}_ {1} - \vec{p}_ {2}).
+\end{align*}
+$$
+
+Note that in our convention of Fourier transformation, instead of $+i\vec{p}\cdot \vec{x}$ we have minus sign. This is only the spatial part of the Fourier transformation (recall that our spacetime is $d+1$ dimensional).
