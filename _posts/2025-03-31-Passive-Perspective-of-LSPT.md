@@ -549,7 +549,9 @@ $$
 You can verify that 
 
 $$
+\boxed{ 
 \varphi = \mathcal{D}_ {f}^{\dagger} \phi \mathcal{D}_ {f},
+}
 $$
 
 we will neglect the subscript $f$ is it is clear from the context. 
