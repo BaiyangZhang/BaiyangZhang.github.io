@@ -382,6 +382,8 @@ $$
 We have neglected higher order terms, for example a term $3g\delta g\sim \mathcal{O}(g^{4}) \sim\mathcal{O}(\lambda^{2})$ was dropped from the expression.
 # Kink sector
 
+## Classic kink solution
+
 ## Displacement operator
 
 In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we introduce the displacement operator. Given a function $f(\vec{x})$, the associated displacement operator is defined as 
@@ -456,11 +458,11 @@ $$
 where $\widetilde{a}$ is the coefficient of the kink solution,
 
 $$
-f(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}\sqrt{2\omega _ {p} }} \, (\widetilde{a}_ {p}e^{ i\vec{p}\cdot \vec{x} }+\widetilde{a}_ {p}^{\dagger}e^{ -i\vec{p}\cdot \vec{x} }) .
+f(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}\sqrt{2\omega _ {p} }} \, (\widetilde{a}_ {p}e^{ i\vec{p}\cdot \vec{x} }+\widetilde{a}_ {p}^\ast e^{ -i\vec{p}\cdot \vec{x} }) .
 $$
-## Perturbative field operator in the kink sector
+## Field operator in the kink sector
 
-In the context of Lagrangian formalism and path integral, the perturbation method is relatively straightforward. For example, consider the scalar $\phi^{4}$ theory with spontaneous symmetry breaking,
+In the language of Lagrangian or path integral, perturbation method is relatively straightforward. Consider the scalar $\phi^{4}$ theory with spontaneous symmetry breaking,
 
 $$
 \mathcal{L} = \frac{1}{2} (\partial_ {\mu}\phi)^{2} + \frac{1}{4} m^{2} - \frac{\lambda}{4}\phi^{4}.
@@ -520,15 +522,15 @@ However, since $\left\lvert{\psi}\right\rangle$ is not the eigen state of $\math
 
 A comparison between displacement operator method to the case of regular functions might be helpful. 
 
-|                                                                         Functions                                                                          |                                                                                                                                                                      QFT                                                                                                                                                                      |
+|                                                                         Functions                                                                          |                                                                                                                                                               perturbative QFT                                                                                                                                                                |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                            A functions $f(x)$, a neighborhood about a special locus $x_ 0$ where the interesting things happen.                            |                                                                           A Hilbert space, a quantum state  $\left\lvert{\Psi}\right\rangle$ of interest represented by a functional $\left\langle \Psi(x),- \right\rangle$, and some operator $\mathcal{O}(\phi)$.                                                                           |
 |                                              We want to study the function $f(x )$ at $x_ 0$ perturbatively,                                               |                                                                                                                We want to study the $\left\langle{\Psi}\right\rvert\mathcal{O}\left\lvert{\Psi}\right\rangle$ perturbatively,                                                                                                                 |
 |                             but $x_ 0$ too far from the origin, so Maclaurin expansion (Taylor expansion at the origin) fails.                             |                                                                                                      but $\left\langle{\Psi}\right\rvert\phi \left\lvert{\Psi}\right\rangle=:f(x)$ is too large for $\phi$ to be treated perturbatively.                                                                                                      |
 | **In a passive perspective, we shift the origin** to $x_ 0$, then small deviation from $x_ 0$ can now be studied using Maclaurin expansion perturbatively. | In a passive perspective, we shift the operators, especially the field operator $\phi$ since it is usually the building block of other operators. The expectation value of the new, shifted operator $\phi'$ should be zero, $\left\langle{\Psi}\right\rvert \phi'\left\lvert{\Psi}\right\rangle =0$. Now we can treat $\phi$ perturbatively. |
-|              We are using a new, shifted coordinate system $\left\lbrace \overline{x} \right\rbrace$ to study the same old functions $f(x)$.               |                                                                                                  We are using shifted operators $\mathcal{D}^{\dagger}\mathcal{O}\mathcal{D}$ to study the same old states $\left\lvert{\Psi}\right\rangle$.                                                                                                  |
+|                                             Shifted coordinate system to study the same old functions $f(x)$.                                              |                                                                                                        Shifted operators $\mathcal{D}^{\dagger}\mathcal{O}\mathcal{D}$ to study the same old states $\left\lvert{\Psi}\right\rangle$.                                                                                                         |
 
-In summary, now $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively.
+In summary, $\mathcal{H}=\mathcal{D}^{\dagger}_ {v}\hat{\mathcal{H}}\mathcal{D}_ {v}$ is a operator-valued function of $\phi' = \mathcal{D}_ {v}^{\dagger} \phi \mathcal{D}_ {v}$, and $\phi'$ can be dealt with perturbatively.
 
 - - -
 
@@ -556,11 +558,161 @@ $$
 
 we will neglect the subscript $f$ is it is clear from the context. 
 
+As you can easily check, the kinky field operator $\varphi$ satisfies the same commutation relation with $\mathcal{D}$ as $\phi$:
+
+$$
+[\varphi,\mathcal{D}_ {f}] = f \mathcal{D}_ {f}. 
+$$
+## Kink field operator and kink Hamiltonian
+
 If we write the same Hamiltonian (note that it has to be the same Hamiltonian no matter what perturbative basic field we choose to use, otherwise we would be solving a different problem) in terms of $\varphi$, we have 
 
 $$
 H[\phi] = H[\mathcal{D} \varphi \mathcal{D}^{\dagger}] = \mathcal{D}H[\varphi]\mathcal{D}^{\dagger} =: H'[\varphi].
 $$
+
+**Things to put here:**
+**Define the free (quadratic) Hamiltonian of kink Hamiltonian.**
+
+- - -
+
+Assume the kink $f(x)$ as a static, classical background, about which we expand the field operator as fluctuation. Write the fluctuation as $\mathfrak{g}(x,t)$ and assume that we can separate the time ans position coordinates,
+
+$$
+\phi(x,t) =: f(x) + {\mathfrak g}(x) e^{-i\omega t},
+$$
+
+The equation of motion of ${\mathfrak g}$ reads
+
+$$
+[-\omega^{2}-\partial_ {x}^{2}+V^{(2)}(\sqrt{ \lambda }f(x))]\, {\mathfrak g}(x) = 0,
+$$
+
+Which is the Sturm-Liouville equation. A general Sturm-Liouville problem is typically written in the form:
+
+$$
+\frac{d}{dx}\left[ p(x) \frac{dy}{dx} \right] - q(x)y + \lambda r(x)y = 0
+$$
+
+Here, $y$ is the function of the variable $x$ that we are solving for, and $p(x)$, $q(x)$, $r(x)$ are known functions that specify the particular Sturm-Liouville problem. The parameter $\lambda$ is often referred to as the eigenvalue.
+
+A few more words on the equation. Key characteristics and applications of the Sturm-Liouville equation include:
+
+1. **Eigenvalue Problem**: The Sturm-Liouville equation is an eigenvalue problem. The solutions $y(x)$ are eigenfunctions, and the associated values of $\lambda$ are eigenvalues. These eigenvalues are typically discrete and can be ordered as a sequence $\lambda_1, \lambda_2, \lambda_3, \ldots$, where each $\lambda_n$ corresponds to a particular eigenfunction $y_n(x)$.
+
+2. **Orthogonality and Completeness**: The eigenfunctions of a Sturm-Liouville problem are orthogonal with respect to the weight function $r(x)$. This property is crucial in solving partial differential equations, as it allows the expansion of functions in terms of these eigenfunctions (similar to Fourier series).
+
+3. **Boundary Conditions**: Sturm-Liouville problems are typically accompanied by boundary conditions that the solutions must satisfy. These conditions are usually specified at the endpoints of the interval in which the equation is defined.
+
+In our case, the weight function is trivial. 
+
+We will denote the zero mode (eigenfunction with eigenvalue zero) by ${\mathfrak g}_ {B}$ and the shape mode (the next level up to zero mode) by ${\mathfrak g}_ {S}$. The $B$ in ${\mathfrak g}_ {B}$ has a historical reason (B stands for bounded state), but in our note it is just part of the name. These modes include a continuum
+
+$$
+ {\mathfrak g} _ {k}(x) = \frac{e^{-ikx}}{\omega_ {k} \sqrt{m^2+4k^2}}\left[2k^2-m^2+(3/2)m^2\text{sech}^2(m x/2)-3im k\tanh(m x/2)\right]
+$$
+
+with eigenvalue $\omega_ {k} = \sqrt{ k^{2}+m^{2} }$, a zero mode 
+
+$$
+{\mathfrak g}_ {B} = -\sqrt{ \frac{3m}{8} } \text{sech}^{2}\left( \frac{mx}{2} \right)
+$$
+
+with eigenvalue $0$, and a shape mode
+
+$$
+ {\mathfrak g} _ {S} = \frac{\sqrt{ 3m }}{2} \tanh \frac{mx}{2} \text{sech} \frac{mx}{2},\quad  \omega_ {S} = \frac{\sqrt{ 3 }}{2}m
+$$
+
+with eigenvalue less then the rest mass of excited particle. 
+
+The normalization conditions are
+
+$$
+\int dx \, {\mathfrak g}_ {S}^{2} = \int dx \, {\mathfrak g}_ {B}^{2} = 1 , \quad \int dx \, {\mathfrak g}_ {B}{\mathfrak g}_ {S} = 0 ,\quad \int dx \, {\mathfrak g}_ {k}(x){\mathfrak g}_ {p}(x) =  2\pi i\delta(p-k). 
+$$
+
+The completion condition reads
+
+$$
+\sum\!\!\!\!\!\!\!\!\int \; \frac{dk}{2\pi} \,  \mathfrak{g} _ {k} (x)\mathfrak{g} _ {k} ^\ast (y)=\delta(x-y).
+$$
+
+and $\mathfrak{g}_ {k}^\ast(x)=\mathfrak{g}_ {-k}(x)$.
+
+The sign of ${\mathfrak g}_ {B}$ is fixed using 
+
+$$
+{\mathfrak g}_ {B}(x) = - \frac{f'(x)}{\sqrt{ Q_ {0} } },
+$$
+
+where $f$ is again the kink solution.
+
+This can be generalized to more than one spatial dimension. Take two dimension for example, without loss of generality, we can choose to lie the kink in the $x$ direction.
+
+The important thing is that, the free kink Hamiltonian is diagonalized by normal mode. what I mean is that, if we expand the kink field in terms of normal modes:
+
+$$
+\begin{align*}
+\varphi(x) &= \sum\!\!\!\!\!\!\!\!\int \frac{ dk}{(2\pi )\sqrt{2\omega _ {k} } } \,  \left( b_ {k} {\mathfrak g}_ {k} (x)+h.c. \right),\\
+\pi(x) &=  \sum\!\!\!\!\!\!\!\!\int \frac{dk}{(2\pi ) } \frac{-i\sqrt{\omega_ {k}}}{\sqrt{2}}\,  \left( b_ {k}\mathfrak{g}_ {k} (x) - b_ {k}^{\dagger}\mathfrak{g}_ {k}  ^\ast (x)  \right){\mathfrak g}_ {k} (x),
+\end{align*}
+$$
+
+where
+
+$$
+\sum\!\!\!\!\!\!\!\!\int \, dk  := \sum_ {B,S}+\int \frac{dk}{2\pi}.
+$$
+
+it can be verified that 
+
+$$
+[b_ {k} ,\mathcal{D}_ {f}] = \mathcal{D}_ {f} \frac{\mathfrak{f} _ {k}+\mathfrak{f} _ {-k}^\ast }{2},
+$$
+
+where $\mathfrak{f}_ {k}$ is the coefficient in spanning $f(x)$ in terms of $\mathfrak{g}_ {k}(x)$:
+
+$$
+f(x)=\sum\!\!\!\!\!\!\!\!\int \; \frac{dk}{2\pi} \, \frac{1}{\sqrt{2\omega _ {k} }}(\mathfrak{f} _ {k} \mathfrak{g} _ {k} (x)+\text{c.c.}),
+$$
+
+where c.c. stands for complex conjugation. From this commutation relation we can see that if $\left\lvert 0 \right\rangle$ is a state annihilated by $b_ {k}$, then $\mathcal{D}_ {f}\left\lvert 0 \right\rangle$ is a coherent state regarding $b_ {k}$ since 
+
+$$
+b_ {k} \mathcal{D}_ {f}\left\lvert 0 \right\rangle = \mathcal{D}_ {f}\mathcal{D}_ {f}^{\dagger}b_ {k} \mathcal{D}_ {f} \left\lvert 0 \right\rangle= \mathcal{D}_ {f}(b_ {k} +(\cdots))\left\lvert 0 \right\rangle =(\cdots) \mathcal{D}_ {f}\left\lvert 0 \right\rangle,
+$$
+
+where $(\cdots)=\frac{\mathfrak{f} _ {k}+\mathfrak{f} _ {-k}^\ast }{2}$ is a c-number.
+
+- - -
+
+in normal modes (in the kink background), while expanding in the $y$ direction in plane waves. The 2D momentum is $\vec{k}=\left\lbrace k_ {x},k_ {y} \right\rbrace$, where $k_ {x}=\left\lbrace B,S,k \right\rbrace$, $B$ for the zero mode (bounded solution), $S$ for the shape mode (also bounded) and $k$ for the continuum. A nice illustration of normal modes in the background of kink is shown in the figure below, which I shamelessly copied from Tanmay Vachaspati's book, all the credits goes to Vachaspati. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/kinkLevel.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    A trivial potential on a periodic space with period $L$ is shown on the left, while the normal modes in the background of a kink solution is shown on the right. What used to be the $n=0$ mode in the trivial potential (on the left) becomes the lowest bound state, the zero mode, in the non-trivial potential. Similarly a linear combination of the $n=\pm 1$ modes in the trivial case may become the second bound state ($n=+1$ in the illustration), and the other states remain unbounded but shift in form. 
+</div>
+
+
+
+We have omitted the vector sign (or bold font) in $r$ since it would not cause any misunderstanding. We assume (quite reasonably) the separation of variables $x$ and $y$ for 2D normal modes ${\mathfrak g}(r)$,
+
+$$
+{\mathfrak g}(r) = {\mathfrak g}_ {x}\times g_ {y},\quad  {\mathfrak g}_ {x} = \text{kink normal modes},\, {\mathfrak g}_ {y} = \text{plane waves.}
+$$
+
+The quantization in terms of $\phi$ and $\pi$ reads
+
+$$
+[\phi(r),\pi(r')] = i\delta^{(d)}(r-r').
+$$
+
+This represents the fundamental quantization relation, unaffected by the selection of sectors. We haven't given a formal definition of sectors, roughly speaking, within each sector, there exists a distinct set of normal modes for expanding both $\phi$ and $\pi$. Each mode must conform to the aforementioned relation, namely the quantization relation given in space-time positions $r$. Ultimately, the difference across different sectors lies in the diverse backgrounds (regarded as classical functions) used for field expansion. However, as we are analyzing the same theory within the same space-time, the theory should be quantized only once, and, all sectors must consistently align with the same quantization process. 
 
 
 ## Need for a new set of ladder operators
@@ -574,6 +726,7 @@ $$
 Here we summarize the linearized soliton perturbation theory associated with generic solitonic classic solutions $f_ {\text{sol}}$
 
 
+- - -
 # Appendix 
 ## Loop expansion, semi-classical expansion and coupling expansion
 
@@ -877,7 +1030,7 @@ The wave functional $\Psi_0[\phi]$ provides the probability amplitude for the fi
 
 For more information refer to this [post](https://physics.stackexchange.com/questions/746099/schroedinger-equation-for-wave-functional-qft).
 
-## Kink modes $\mathfrak{g}(\vec{x})$ 
+## Kink modes $\mathfrak{g}(\vec{x})$ in 2D
 
 Since we assumed the domain wall to be lying flat in the $y$-plane, the normal modes in 2-d space can be *factorized* into $x$ and $y$ components,
 
