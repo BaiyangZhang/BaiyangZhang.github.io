@@ -9,7 +9,7 @@ tags:
 ---
 
 
->	Series don't just diverge for no reasons. The divergence of a series must reflect its cause....A divergent series is not meaningless, or a nuisance, but an essential and informative coded representation of the function. 	--- Michael Berry
+>Series don't just diverge for no reasons. The divergence of a series must reflect its cause....A divergent series is not meaningless, or a nuisance, but an essential and informative coded representation of the function. 	--- Michael Berry
 >
 
 Resurgence aim to seeing things *sub specie totius*, from the perspective of the whole. It does not only re-sums divergent series, but also regenerates non-perturbative information from perturbative, and connects topological sector with trivial sector.
