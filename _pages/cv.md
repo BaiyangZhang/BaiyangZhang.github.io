@@ -5,7 +5,7 @@ title: cv
 nav: true
 nav_order: 4
 cv_pdf: Baiyang_CV.pdf
-description: updated on Feb 2023
+description: updated: May 2025
 toc:
   sidebar: left
 ---
