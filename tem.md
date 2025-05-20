@@ -7,41 +7,17 @@ catalog: true
 tags:
 ---
 
-### 什么是 Tsallis 统计？
 
-在临床检测、疾病筛查这些领域，我们经常用到统计方法来帮助做决策，比如判断病人是阳性还是阴性。大多数情况下，我们使用的是经典统计，比如常见的**正态分布**、**对数函数**、**交叉熵**这些东西，背后的理论都是基于一种叫*玻尔兹曼-吉布斯统计*（BG统计）的经典框架。
+Hi Hui,
 
-但现实数据，特别是一些**复杂、异常、带有强烈噪声的数据（比如癌症早筛、基因检测等）**，往往偏离了这些经典规律。这时候，如果还用传统的统计方法，模型可能就不够稳健、容易受异常值影响、预测不够稳定。
+This is done in Eq (38).  In the last equality, the substitute in for phi the classical solution, but using m and lambda.  This would be justified if you were acting on a phi eigenstate whose eigenvalues are the classical solution using the renormalized parameters.  But here it is suspicious for many reasons, including:
 
-Tsallis 统计就是一种**更灵活、更宽容、更稳健的统计工具**，它在经典统计的基础上做了改进，专门用来处理这些复杂情况。
+1) The soliton is BPS, so the kinetic and potential energies should be the same.  So why shift just the potential energy?
 
----
+2) Why m and lambda?  Maybe if they imposed the no-tadpole condition, the renormalized m and lambda would somehow give the right solution , but under (32) they write "without the no-tadpole condition".
 
-### Tsallis 统计和常规统计的区别
+3) If there is a subleading correction to the solution, then you got a contribution by plugging it into the leading part of the Hamiltonian.  It will be of the same order as (38), which is the leading solution in the subleading Hamiltonian.
 
-可以类比一下：
+Their big claim, you can see on Table IV.  The answer E_ELZ is made by adding the scheme-independent result from the first line of tables 1 and 2 to the DeltaE_CT column, which is eq (38).  So thee only affect that the scheme has on the mass is Eq (38).  So it also hinges on (38) and in particular on which phi(x) you should plug into (38) ... also there is the question of whether subleading corrections to the solution change the answers in Tables I and II ...
 
-- **经典统计**好比医生根据标准指南给所有病人开同样剂量的药。
-    
-- **Tsallis 统计**则允许医生根据病人个体差异，灵活调整剂量，更好地适应不同的情况。
-    
-
-数学上，Tsallis 统计引入了一个**q 参数**，可以理解成一个"调节旋钮"，你可以通过这个参数调整模型对异常值、极端情况的容忍度。当 q=1 时，它就是常规统计；当 q<1 或 q>1 时，它可以更稳健或更灵敏地处理数据。
-
----
-
-### 在临床检测中的应用
-
-举个例子：
-
-- 在肿瘤标志物筛查中，数据往往有很多噪声、假阳、假阴。如果直接用传统逻辑回归模型，模型可能对这些异常值很敏感，预测不稳定。
-    
-- 如果引入 Tsallis 统计，可以构建一种**q-Logistic 回归**，这种方法可以更好地抵抗这些噪声，提高模型的稳健性，让模型更加可靠。
-    
-
----
-
-### 一句话总结
-
-Tsallis 统计是一种**更智能的统计方法**，特别适合处理**异常值多、样本复杂、数据分布不规则的临床检测场景**，它就像给你的分析工具装上了一个可以调节灵敏度的"智能按钮"。
-
+Jarah
