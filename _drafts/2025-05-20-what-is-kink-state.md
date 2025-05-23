@@ -104,7 +104,7 @@ $$
 -\int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\omega^{3}_ {p}}\,  \left\lvert j_ {p} \right\rvert ^{2}
 $$
 
-which is well defined as long as $j_ {p}$ decreases fast enough. The Hilbert space now should be chosen as the Fock representation corresponding to $\widetilde{a}_ {p}$, for example the ground state $\left\lvert 0_ {J} \right\rangle$ at the presence of a source term is no longer that annihilated by $a_ {p}$ for all $p$, but rather $\widetilde{a}_ {p}$ for all $p$:
+which is well defined as long as $j_ {p}$ decreases fast enough, otherwise we need to introduce an counterterm to cancel the divergence. The Hilbert space now should be chosen as the Fock representation corresponding to $\widetilde{a}_ {p}$, for example the ground state $\left\lvert 0_ {J} \right\rangle$ at the presence of a source term is no longer that annihilated by $a_ {p}$ for all $p$, but rather $\widetilde{a}_ {p}$ for all $p$:
 
 $$
 \widetilde{a}_ {p} \left\lvert 0_ {J} \right\rangle =0 \;\forall\;  p.
@@ -127,10 +127,12 @@ $$
 Then we define the smeared ladder operators as 
 
 $$
+\boxed{ 
 \begin{align*}
 a^{\dagger}(f) :=& \int \frac{d^{d}p}{(2\pi)^{d}} \, f_ {p} a^{\dagger}_ {p}, \\
-a(f) :=& \int \frac{d^{d}p}{(2\pi)^{d}} \, f_ {p}^\ast  a^{\dagger}_ {p}.
+a(f) :=& \int \frac{d^{d}p}{(2\pi)^{d}} \, f_ {p}^\ast  a_ {p}.
 \end{align*}
+}
 $$
 
 Note the complex conjugate in the definition of $a(f)$. This definition might seem a bit weird at the beginning, but it has the benefit of notation-wise consistency: $a^{\dagger}(f)$ is indeed the hermitian conjugate of $a(f)$, $a^{\dagger}(f) = (a(f))^{\dagger}$. If we define the smeared ladder operator by the Fourier transformation of $f(\vec{x})$: (as adopted in the book by `Franco Strocchi`)
@@ -196,6 +198,28 @@ where
 $$
 J'(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\sqrt{2\omega _ {p} }} \, (j'_ {p} e^{ i\vec{p}\cdot \vec{x} }+\text{h.c.}), \quad  j'_ {p} := \frac{j_ {p} }{\omega _ {p} ^{2}}. 
 $$
+
+- - -
+
+The Euclidean symmetry $E(\vec{a},R)$ is implemented by a unitary operator $U(\vec{a},R)$, where $\vec{a}$ is the translation vector and $R$ the rotation. Euclidean group is a semidirect product of translation $T(\vec{a})$ and rotation $R$, $E=T\rtimes R$. Let's focus on translation for now. 
+
+Under translation the field operator transforms as $T(\vec{a})\phi(\vec{x})T^{-1}(\vec{a})=\phi(\vec{x}+\vec{a})$, hence the original ladder operator transforms as $T(\vec{a})a_ {p}T^{-1}(\vec{a})=a_ {p} e^{ i\vec{p}\cdot \vec{a} }$, i.e. $a_ {p}$ acquires a phase under translation. Similarly for $j_ {p}$. Since $\widetilde{a}=a-{j}/{\omega^{2}_ {p}}$, we have $T(\vec{a})\,\widetilde{a}_ {p}\,T^{-1}(\vec{a})=\widetilde{a}_ {p}e^{ i\vec{p}\cdot \vec{a} }$.
+
+Since the source term explicitly breaks the Euclidean symmetry, a natural question is how does $T(\vec{a})$ acting on $\left\lvert 0_ {J} \right\rangle$ affects it? Does $\left\lvert 0_ {J} \right\rangle$ just acquires a phase as well? Direct calculation shows that 
+
+$$
+T(\vec{a}) \left\lvert 0_ {J} \right\rangle = e^{ i\vec{p}\cdot \vec{a} }\left\lvert 0_ {J} \right\rangle.
+$$
+
+
+- - -
+
+An important question is, can the polarized (or displaced) vacuum $\left\lvert 0_ {J} \right\rangle$ be expanded in original Fock states? Starting from the simplest case, let's try to calculate the superposition between vacuum states with and without source:
+
+$$
+\left\langle 0 \middle\vert 0_ {J} \right\rangle  = 
+$$
+
 
 
 # The setups
