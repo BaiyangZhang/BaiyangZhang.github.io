@@ -36,7 +36,7 @@ $$
 \end{align*}
 $$
 
-where $\text{h.c.}$ stands for hermitian conjugate. 
+where $\text{h.c.}$ stands for Hermitian conjugate. 
 
 Not mathematically rigorous, but there are two "definitions" for vacuum state, 1) the zero-occupation state $\left\lvert 0 \right\rangle$ in the Fock representation, namely the state that is annihilated by $a_ {p}$ for all $p$; 2) the lowest energy state $\left\lvert \Omega_ {0} \right\rangle$, where the subscript $0$ indicates that this is only the lowest energy state of the free Hamiltonian. When these two descriptions do not coincide, we say the vacuum is polarized. The energy difference is sometimes called the vacuum polarization energy. 
 
@@ -53,7 +53,7 @@ $$
 H_ {0}= \int \frac{d^{d}p}{(2\pi)^{d}} \, \omega_ {p} a_ {p} ^{\dagger} a_ {p} . 
 $$
 
-In other words, $H_ {0}$ is diagonalized by $a, a^{\dagger}$, so there is no vacuum polarization. 
+In other words, $H_ {0}$ is diagonalized by $a$ and $a^{\dagger}$, so there is no vacuum polarization. 
 
 ## Vacuum polarization by a classical source
 
@@ -210,7 +210,6 @@ Since the source term explicitly breaks the Euclidean symmetry, a natural questi
 $$
 T(\vec{a}) \left\lvert 0_ {J} \right\rangle = e^{ i\vec{p}\cdot \vec{a} }\left\lvert 0_ {J} \right\rangle.
 $$
-
 
 - - -
 
