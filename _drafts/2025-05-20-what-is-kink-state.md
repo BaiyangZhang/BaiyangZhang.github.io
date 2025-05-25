@@ -217,7 +217,11 @@ $$
 An important question is, can the polarized (or displaced) vacuum $\left\lvert 0_ {J} \right\rangle$ be expanded in original Fock states? Starting from the simplest case, let's try to calculate the superposition between vacuum states with and without source:
 
 $$
-\left\langle 0 \middle\vert 0_ {J} \right\rangle  = 
+\begin{align*}
+\left\langle 0 \middle\vert 0_ {J} \right\rangle  =& \left\langle 0 \right\rvert\exp \left\lbrace -i\pi(J') \right\rbrace \left\lvert 0 \right\rangle \\
+=& \left\langle 0 \right\rvert \exp \left\lbrace a^{\dagger}(J') - a(J') \right\rbrace \left\lvert 0 \right\rangle\\
+=& \left\langle 0 \right\rvert \sum_ {n\in \mathbb{N}} \frac{1}{n!}(a^{\dagger}(J')-a(J')^{n})\left\lvert 0 \right\rangle
+\end{align*}
 $$
 
 
