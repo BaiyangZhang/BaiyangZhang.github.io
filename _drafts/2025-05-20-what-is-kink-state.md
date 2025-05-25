@@ -135,7 +135,25 @@ a(f) :=& \int \frac{d^{d}p}{(2\pi)^{d}} \, f_ {p}^\ast  a_ {p}.
 }
 $$
 
-Note the complex conjugate in the definition of $a(f)$. This definition might seem a bit weird at the beginning, but it has the benefit of notation-wise consistency: $a^{\dagger}(f)$ is indeed the hermitian conjugate of $a(f)$, $a^{\dagger}(f) = (a(f))^{\dagger}$. If we define the smeared ladder operator by the Fourier transformation of $f(\vec{x})$: (as adopted in the book by `Franco Strocchi`)
+Note $f_ {p}^\ast$ in the definition of $a(f)$. This definition might seem a bit weird at the beginning, but it has the benefit of notation-wise consistency: $a^{\dagger}(f)$ is indeed the hermitian conjugate of $a(f)$, $a^{\dagger}(f) = (a(f))^{\dagger}$. 
+
+The commutation relation:
+
+$$
+\boxed{
+[a(f),a^{\dagger}(g)] = \int \frac{d^{d}p}{(2\pi)^{d}} \,  f_ {p} ^\ast g_ {p} ,
+} 
+$$
+
+particularly we have 
+
+$$
+\boxed{
+[a(f),a^{\dagger}(f)] = \int \frac{d^{d}p}{(2\pi)^{d}} \, \left\lvert f_ {p}  \right\rvert ^{2}. 
+} 
+$$
+
+Often times the smeared ladder operator are defined by the Fourier transformation of $f(\vec{x})$: (as adopted in the book by `Franco Strocchi`)
 
 $$
 a(f) := \int \frac{d^{d}p}{(2\pi)^{d}} \,   \widetilde{f}(\vec{p}) a_ {p} ,\quad  \widetilde{f}(\vec{p}) := \int d^{d}x \,  f(\vec{x}) e^{ -i \vec{p}\cdot \vec{x} }
@@ -211,7 +229,6 @@ $$
 T(\vec{a}) \left\lvert 0_ {J} \right\rangle = e^{ i\vec{p}\cdot \vec{a} }\left\lvert 0_ {J} \right\rangle.
 $$
 
-
 - - -
 
 An important question is, can the polarized (or displaced) vacuum $\left\lvert 0_ {J} \right\rangle$ be expanded in original Fock states? Starting from the simplest case, let's try to calculate the superposition between vacuum states with and without source:
@@ -220,12 +237,56 @@ $$
 \begin{align*}
 \left\langle 0 \middle\vert 0_ {J} \right\rangle  =& \left\langle 0 \right\rvert\exp \left\lbrace -i\pi(J') \right\rbrace \left\lvert 0 \right\rangle \\
 =& \left\langle 0 \right\rvert \exp \left\lbrace a^{\dagger}(J') - a(J') \right\rbrace \left\lvert 0 \right\rangle\\
-=& \left\langle 0 \right\rvert \sum_ {n\in \mathbb{N}} \frac{1}{n!}(a^{\dagger}(J')-a(J')^{n})\left\lvert 0 \right\rangle
+=& \left\langle 0 \right\rvert \sum_ {n\in \mathbb{N}} \frac{1}{n!}(a^{\dagger}(J')-a(J')^{n})\left\lvert 0 \right\rangle,
 \end{align*}
 $$
 
+where the $n$-th term can be calculated via Wick's theorem,
+
+$$
+\text{string of }a,a^{\dagger} = \mathcal{N}_ {a}\left\lbrace \text{all possible contractions} \right\rbrace.
+$$
+
+The vev is nonzero only for $n$ even, 
+
+$$
+\left\langle 0 \right\rvert(a^{\dagger}(f)-a(f))^{n} \left\lvert 0 \right\rangle= [a(f),a(f)^{\dagger}] (n-1)!! = (n-1)!! S_ {f} ^{n}
+$$
+
+where 
+
+$$
+S_ {f} :=- \int \frac{d^{d}p}{(2\pi)^{d}} \, \left\lvert f_ {p}  \right\rvert ^{2} .
+$$
+
+Hence,
+
+$$
+\left\langle 0 \middle\vert 0_ {J} \right\rangle  = \sum_ {n\in 2\mathbb{N}} \frac{(n-1)!!}{n!} (S_ {J'})^{n} = e^{ S_ {J'}^{2}/2 }.
+$$
+
+where 
+
+$$
+S_ {j'} =- \int \frac{d^{d}p}{(2\pi)^{d}} \,  \frac{\left\lvert j_ {p}\right\rvert ^{2}}{\omega _ {p} ^{4}}.
+$$
+
+However, without a cutoff, the integral in the definition of $S_ {j'}$ might be divergent. For example, consider a delta-function source, $J(\vec{x})=\delta(\vec{x})$, then $j_ {p}\sim \sqrt{\omega _ {p}}$ and $S_ {j'}=-\infty$ for $d\geq 3$. In this case, 
 
 
 # The setups
 
 A passive perspective is adopted in this note, meaning that states are all independent of the frames chosen, a change a frame will unitarily change the field operator, which is used as a perturbative "probe" for various states. 
+
+
+# Appendix
+
+The Parseval's identity with our convention: for a real $L^{2}$ function $f(\vec{x})$,
+
+$$
+\int d^{d}x \, f(\vec{x})^{2}  = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{2}{\omega _ {p} }\left\lvert f_ {p}  \right\rvert ^{2}. 
+$$
+
+$$
+
+$$
