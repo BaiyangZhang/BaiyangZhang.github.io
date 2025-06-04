@@ -38,7 +38,7 @@ $$
 
 where $\text{h.c.}$ stands for Hermitian conjugate. 
 
-Not mathematically rigorous, but there are two "definitions" for vacuum state, 1) the zero-occupation state $\left\lvert 0 \right\rangle$ in the Fock representation, namely the state that is annihilated by $a_ {p}$ for all $p$; 2) the lowest energy state $\left\lvert \Omega_ {0} \right\rangle$, where the subscript $0$ indicates that this is only the lowest energy state of the free Hamiltonian. When these two descriptions do not coincide, we say the vacuum is polarized. The energy difference is sometimes called the vacuum polarization energy. 
+Not mathematically rigorous, but there are two "definitions" for vacuum state, 1) the zero-occupation state $\left\lvert 0 \right\rangle$ in the Fock representation, namely the state that is annihilated by $a_ {p}$ for all $p$; 2) the lowest energy state $\left\lvert \Omega \right\rangle$, which is the lowest energy state of the total Hamiltonian. When these two descriptions do not coincide, we say the vacuum is polarized. The energy difference is sometimes called the vacuum polarization energy. 
 
 Ignore the counter terms and potential for now, 
 
@@ -98,7 +98,7 @@ $$
 
 is the original annihilation operator shifted by a c-number. A shift in c-number would not affect the commutation relation, thus $\widetilde{a}$ also satisfies the equal-time canonical commutation relation.
 
-The spectrum is shifted by a constant
+The spectrum is shifted by a constant (vacuum polarization energy, VPE)
 
 $$
 -\int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\omega^{3}_ {p}}\,  \left\lvert j_ {p} \right\rvert ^{2}
@@ -199,16 +199,16 @@ $$
 \mathcal{D}_ {f}:= e^{ -i\pi(f) } = e^{ a^{\dagger}(f) - a(f) }.
 $$
 
-$D_ {f}$ is a unitary operator that satisfies 
+$\mathcal{D}_ {f}$ is a unitary operator that satisfies 
 
 $$
-D_ {f}^{\dagger} a_ {p}  D_ {f} = a_ {p} + f_ {p}.
+\mathcal{D}_ {f}^{\dagger} a_ {p}  \mathcal{D}_ {f} = a_ {p} + f_ {p}.
 $$
 
-$D_ {f}$ can be used to create $\left\lvert 0_ {J} \right\rangle$ from $\left\lvert 0 \right\rangle$:
+$\mathcal{D}_ {f}$ can be used to create $\left\lvert 0_ {J} \right\rangle$ from $\left\lvert 0 \right\rangle$: 
 
 $$
- \left\lvert 0_ {J} \right\rangle = D_ {J'} \left\lvert 0 \right\rangle, 
+ \left\lvert 0_ {J} \right\rangle = \mathcal{D}_ {J'} \left\lvert 0 \right\rangle, 
 $$
 
 where 
@@ -268,7 +268,7 @@ $$
 where 
 
 $$
-S_ {j'} =- \int \frac{d^{d}p}{(2\pi)^{d}} \,  \frac{\left\lvert j_ {p}\right\rvert ^{2}}{\omega _ {p} ^{4}}.
+S_ {J'} =- \int \frac{d^{d}p}{(2\pi)^{d}} \,  \frac{\left\lvert j_ {p}\right\rvert ^{2}}{\omega _ {p} ^{4}}.
 $$
 
 However, without a cutoff, the integral in the definition of $S_ {j'}$ might be divergent. For example, consider a delta-function source, $J(\vec{x})=\delta(\vec{x})$, then $j_ {p}\sim \sqrt{\omega _ {p}}$ and $S_ {j'}=-\infty$ for $d\geq 3$. In this case, 
