@@ -1122,7 +1122,13 @@ $$
 $$
 
 
+- - -
 
+Future work:
+
+1. Parametar gradation. The hierachy of parameters. Tsallis parameter depends on Higher-level parameters; 
+2. A range of q-value goes into the Boltzmann statistics. 
+3. Renormalization in higher dimensional data.
 
 # Appendix. Useful Mathematical Formulae
 
