@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2025-06-04-Displacement-in-Classical-Physics.md",
+                "file": "tem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-04-Displacement-in-Classical-Physics"
+              "title": "tem"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f8485d28afe14f44",
@@ -186,8 +185,8 @@
   },
   "active": "7c9f74c6062926ce",
   "lastOpenFiles": [
-    "_drafts/2025-05-20-what-is-kink-state.md",
     "_drafts/2025-06-04-Displacement-in-Classical-Physics.md",
+    "_drafts/2025-05-20-what-is-kink-state.md",
     "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
     "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
     "backups/2022-02-01-redirect.md",
