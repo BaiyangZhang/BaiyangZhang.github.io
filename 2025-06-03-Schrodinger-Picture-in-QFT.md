@@ -10,7 +10,7 @@ tags:
 # 
 
 
-We define the tree level vacuum |Omega> to be the state annihilated by all annihilation operators
+We define the tree level vacuum $\Omega$ to be the state annihilated by all annihilation operators
 
 $$
 a_p \left\lvert \Omega \right\rangle=0
