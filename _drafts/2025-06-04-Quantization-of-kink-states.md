@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Classical correspondence of displacement operation
+title: Quantization of Kink States
 date: 2025-06-04
 author: Baiyang Zhang
 catalog: true
@@ -36,7 +36,15 @@ For a set of real scalar fields, the phase space is thus equivalent to a set of 
 
 ## Symplectic manifold
  
-Let $V$ be a finite-dimensional vector space. Consider a 2-form (sometimes called 2-covector) $\omega$, given a vector $v\in V$, the interior product $i_ {v}\omega$ defines a map $\hat{\omega}:V\to V^\ast$ by $v \mapsto i_ {v}\omega := \omega(v,-)$. If $\hat{\omega}_ {v}$ is invertible (surjective and bijective), then $\omega$ is said to be non-degenerate. $\hat{\omega}_ {v}$ being invertible implies that $\text{ker}(\hat{\omega}_ {v})=0$, thus if $i_ {v}\omega$ sends all the vectors $w\in V$ to zero, then $i_ {v}\omega$ is the zero element in $V^\ast$, then since the kernel has only one element zero, $v$ must be zero. $\hat{\omega}_ {v}$ defines a 1-2-1 correspondence between $V$ and $V^\ast$. 
+Let $V$ be a finite-dimensional vector space. Consider a 2-form (sometimes called 2-covector) $\omega$, given a vector $v\in V$, the interior product $i_ {v}\omega$ defines a map $\hat{\omega}:V\to V^\ast$ by $v \mapsto i_ {v}\omega := \omega(v,-)$. If $\hat{\omega}_ {v}$ is invertible (surjective and bijective), then $\omega$ is said to be `non-degenerate`. $\hat{\omega}_ {v}$ being invertible implies that $\text{ker}(\hat{\omega}_ {v})=0$, thus if $i_ {v}\omega$ sends all the vectors $w\in V$ to zero, then $i_ {v}\omega$ is the zero element in $V^\ast$, then since the kernel has only one element zero, $v$ must be zero. $\hat{\omega}_ {v}$ defines a 1-2-1 correspondence between $V$ and $V^\ast$. 
 
-A non-degenerate 2-form is called a symplectic tensor, or symplectic form. A vector space $V$ endowed with a specific symplectic tensor is called a symplectic vector space.
+A non-degenerate 2-form is called a `symplectic tensor`, or `symplectic form`. A vector space $V$ endowed with a specific symplectic tensor is called a `symplectic vector space`.
+
+Let $S\subseteq V$ be a subspace, let $S^{\perp}$ be the `symplectic complement` of $S$ w.r.t. the symplectic covector $\omega$:
+
+$$
+S^{\perp}:= \left\lbrace v\in V \,\middle\vert\, i_ {v}\omega(S)=0 \right\rbrace .
+$$
+
+Unlike orthogonal complements, symplectic completion is not usually exclusive with respect to each other. Although it can be shown using the rank-nullity theorem that $\text{dim}(S)+\text{dim}(S^{\perp})=\text{dim}(V)$, the dimension add up, but it is not necessary that $S \cap S^{\perp}=0$. However, when it is, the subspace $S$ is said to be `symplectic`. 
 
