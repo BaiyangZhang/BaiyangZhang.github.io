@@ -48,3 +48,22 @@ $$
 
 Unlike orthogonal complements, symplectic completion is not usually exclusive with respect to each other. Although it can be shown using the rank-nullity theorem that $\text{dim}(S)+\text{dim}(S^{\perp})=\text{dim}(V)$, the dimension add up, but it is not necessary that $S \cap S^{\perp}=0$. However, when it is, the subspace $S$ is said to be `symplectic`. 
 
+Given $\omega$ and a $2n$ dimensional vector space $V$, there is always a basis for $V^\ast$ in which $\omega$ has the canonical form:
+
+$$
+\omega = \sum_ {i=1}^{n} \alpha^{i}\wedge \beta^{i}.
+$$
+
+The corresponding basis, defined by $\left\langle \alpha ^{i} \middle\vert A_ {j} \right\rangle=\delta^{i}_ {j}$  and $\left\langle \beta ^{i} \middle\vert B_ {j} \right\rangle=\delta^{i}_ {j}$, is called a `symplectic basis` for $V$. Every symplectic vector space has a symplectic basis.
+
+Given a 2-covector $\omega$, there is an easy way to see if it is degenerate (hence a symplectic form) or not: $\omega$ is symplectic iff $\omega^{n}:= \omega \wedge\cdots\wedge\omega \neq 0$. 
+
+- - -
+
+Now let's turn to manifolds instead of vector spaces. Let $\omega$ be a 2-form on $2n$ dimensional manifold $M$. $\omega$ is said to be a symplectic form if it is 1) degenerate and 2) closed. A smooth manifold endowed with a specific choice of symplectic form is called a `symplectic manifold`. A choice of symplectic form is also sometimes called a `symplectic structure`. 
+
+For a symplectic manifold, $\omega^{n}$ is a $2n$ dimensional non-vanishing form, it naturally defines an orientation on $M$, hence every symplectic manifold is orientable. A diffeomorphism that is compatible with the symplectic structure is called a `symplectomorphism`. The study of properties of symplectic manifolds that are invariant under symplectomorphisms is known as `symplectic geometry` or `symplectic topology`.
+
+- - -
+
+The most important symplectic manifolds are the total spaces of cotangent bundles. They carry the so-called canonical symplectic structure, defined as the following. 
