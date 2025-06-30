@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
+                "file": "_posts/2023-06-21-Phase-Space-of-Classical-Mechanics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2023-06-13-Introduction-to-Higher-Form-Symmetry"
+              "title": "2023-06-21-Phase-Space-of-Classical-Mechanics"
             }
           }
         ]
@@ -186,18 +186,20 @@
   },
   "active": "7c9f74c6062926ce",
   "lastOpenFiles": [
+    "_posts/2023-06-15-Complex-Vector-Space.md",
+    "Discussion with Xuewen.md",
+    "Referee report.md",
+    "2025-06-03-Schrodinger-Picture-in-QFT.md",
+    "Pasted image 20250605143417.png",
+    "README.md",
+    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
     "_drafts/2025-06-04-Quantization-of-kink-states.md",
     "_drafts/2025-05-20-what-is-kink-state.md",
     "tem.md",
-    "Pasted image 20250605143417.png",
     "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
     "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
     "backups/2022-02-01-redirect.md",
-    "2025-06-03-Schrodinger-Picture-in-QFT.md",
-    "README.md",
-    "2025-02-25.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
-    "Referee report.md",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/BaiyangZhangCV_merged.pdf",
     "assets/pdf/BaiyangZhangCV.pdf",
@@ -214,7 +216,6 @@
     "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "_posts/2024-06-18-Yoneda-Lemma.md",
-    "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "img/FeynmanRulesModel3.png"
   ]
 }
