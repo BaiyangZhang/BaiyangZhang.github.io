@@ -60,10 +60,28 @@ Given a 2-covector $\omega$, there is an easy way to see if it is degenerate (he
 
 - - -
 
-Now let's turn to manifolds instead of vector spaces. Let $\omega$ be a 2-form on $2n$ dimensional manifold $M$. $\omega$ is said to be a symplectic form if it is 1) degenerate and 2) closed. A smooth manifold endowed with a specific choice of symplectic form is called a `symplectic manifold`. A choice of symplectic form is also sometimes called a `symplectic structure`. 
+Now let's turn to manifolds instead of vector spaces. Let $\omega$ be a 2-form on $2n$ dimensional manifold $M$. $\omega$ is said to be a symplectic form if it is 1) `degenerate` and 2) `closed`. A smooth manifold endowed with a specific choice of symplectic form is called a `symplectic manifold`. A choice of symplectic form is also sometimes called a `symplectic structure`. 
 
 For a symplectic manifold, $\omega^{n}$ is a $2n$ dimensional non-vanishing form, it naturally defines an orientation on $M$, hence every symplectic manifold is orientable. A diffeomorphism that is compatible with the symplectic structure is called a `symplectomorphism`. The study of properties of symplectic manifolds that are invariant under symplectomorphisms is known as `symplectic geometry` or `symplectic topology`.
 
 - - -
 
-The most important symplectic manifolds are the total spaces of cotangent bundles. They carry the so-called canonical symplectic structure, defined as the following. 
+The most important symplectic manifolds are the total spaces of cotangent bundles. They carry the so-called canonical symplectic structure. Let $E\to M$ be a cotangent bundle, namely $E_ {p}=T_ {p}^\ast M$, where $E_ {p}$ is the shorthand notation for the fiber at $p$, $\pi ^{-1}(p)$. Let $\pi:E\to M$ be the projection map. The pullback map $(d\pi)^\ast$ can take on a 1-form in $T^\ast M$, and pull it back on $T^\ast E$. Given a point on $E=(p,\varphi)$, where $p\in M$ and $\phi \in E_ {p}$. Since $\phi \in E_ {p}=T_ {p}^\ast M$, we can also regard $\varphi$ as a 1-form in the cotangent space of $T_ {p}^\ast M$, Then we can pull it back use $(d\pi)^\ast$, this defines the `tautological` 1-form,
+
+$$
+\tau:=\pi^\ast_{p,\varphi} \varphi.
+$$
+
+$\tau$ and $\varphi$ only differ in the vector space they act on, $\tau$ is in a sense tautological to $\varphi$, hence the name. The `canonical symplectic form` is defined as 
+
+$$
+\omega := - d \tau.
+$$
+
+Let $(x^{i},\xi_ {i})$ be the natural coordinates on $T^\ast M$ that is associated with coordinate $(x^{i})$, then we have $\tau=\pi ^\ast (\xi_ {i}dx^{i})=\xi_ {i}dx^{i}$, and
+
+$$
+-d\tau=-d(\xi_ {i}dx^{i}) = - d(\xi_ {i})\wedge dx^{i} = \sum_ {i}dx^{i}\wedge d\xi_ {i}.
+$$
+
+
