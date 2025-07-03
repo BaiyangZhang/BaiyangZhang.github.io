@@ -1,41 +1,41 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     The Phase Space 			# 标题 
-subtitle:   A geometric perspective
-date:       2023-06-21 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/background18.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - phaseSpace
-    - quantization
+layout: post
+title: Phase Space of Classical Mechanics
+subtitle: A geometric perspective
+date: 2023-06-21
+author: Baiyang Zhang
+header-img: img/background18.jpg
+catalog: true
+tags:
+  - phaseSpace
+  - quantization
 ---
 
 The first step to understand quantization fully, especially the geometric quantization, is to understand the familiar phase space but from a more geometric point of view.
 
 ### The Phase Space in Mechanics
 
-Let $M$ be the n-dimensional `configuration space` of a dynamical system, with local coordinates $q^{1},\dots,q^{n}$ which are the generalized coordinates. The Lagrangian is a function of $q$ and $\dot{q}$, which are the generalized velocity. For example $q$ would be an angle and the generalized velocity would be the angular velocity. We have 
+Let $M$ be the n-dimensional `configuration space` of a dynamical system, with local coordinates $q^{1},\dots,q^{n}$ which are the generalized coordinates. The Lagrangian is a function of $q$'s and $\dot{q}$'s, where $\dot{q}$'s are generalized velocities. For example, $q$ could be the azimuthal angle, then the corresponding generalized velocity is the angular velocity. We have 
 
 $$
 L = L(q,\dot{q}).
 $$
 
-But there is a more beautiful way to say the same thing, if you are familiar with tangent bundles $TM$, then you see that the *Lagrangian is nothing but a real-valued function defined on the tangent bundle to $M$*. A point in the tangent bundle is given by a $2n$-tuple, consisting of a $n$-tuple $q^{i}$, which pinpoint a position on the base space, and another $n$-tuple of generalized velocity $\dot{q}$, which gives as an element of the fiber at that point. In face $\dot{q}$ in this sense should be written as 
+But there is a more beautiful way to say the same thing, if you are familiar with tangent bundles $TM$, then you see that the *Lagrangian is nothing but a real-valued function defined on the tangent bundle to $M$.* A point in the tangent bundle is expressed by a $2n$-tuple, consisting of a $n$-vector $q^{i}$, which pinpoint a position in the base space, and another $n$-tuple of generalized velocity $\dot{q}$, which gives as an element of the fiber at that point. In face $\dot{q}$ in this sense should be written as 
 
 $$
 \dot{q} = \frac{dq}{dt} \partial _ {q}, \quad  \dot{q}(f) = \frac{df}{dt} = \frac{dq}{dt} \partial _ {q}(f),
 $$
 
-then it is obvious that $\dot{q}$ is a tangent vector to $M$. 
+then it is obvious that $\dot{q}$ is a tangent vector to $M$ with bases $\partial_ {q}$.
 
-In summary 
+The Lagrangian is
 
 $$
 L : TM \to \mathbb{R}.
 $$
 
-Note that $q$ and $\dot{q}$ are regarded us two *independent variables*. When given a specific path $q(t)$ then we can connect $\dot{q}$ with $q$ by the time derivative. 
+Note that $q$ and $\dot{q}$ are *independent w.r.to each other*. When given a specific path $q(t)$ then we can connect $\dot{q}$ with $q$ by the time derivative. 
 
 Now consider the transition from the Lagrangian to the `Hamiltonian formulation` of dynamics. Hamilton defined the functions, so-called `canonical momenta` or `generalized momenta`
 

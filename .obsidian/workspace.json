@@ -183,8 +183,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "36da8009d9fc09b4",
+  "active": "7c9f74c6062926ce",
   "lastOpenFiles": [
+    "_posts/2023-06-21-Phase-Space-of-Classical-Mechanics.md",
+    "Discussion with Xuewen.md",
     "tem.md",
     "README.md",
     "QA Report.md",
@@ -213,8 +215,6 @@
     "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
     "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_posts/2024-06-18-Yoneda-Lemma.md",
-    "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "img/FeynmanRulesModel3.png"
   ]
 }
