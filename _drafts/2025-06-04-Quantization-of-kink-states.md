@@ -134,8 +134,3 @@ In general, a symplectic manifold $(M,\omega)$ together with a smooth Hamiltonia
 $$
 \dot{x} = \frac{ \partial H }{ \partial y_ {i} } , \quad \dot{y}=-\frac{ \partial H }{ \partial x^{i} } .
 $$
-
-
-
-
-
