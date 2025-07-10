@@ -11,14 +11,10 @@
             "id": "7c9f74c6062926ce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "QA Report.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "QA Report"
+              "title": "New tab"
             }
           }
         ]
@@ -185,18 +181,24 @@
   },
   "active": "7c9f74c6062926ce",
   "lastOpenFiles": [
-    "_posts/2023-06-21-Phase-Space-of-Classical-Mechanics.md",
+    "投简历情况.md",
+    "blog/2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
+    "blog/2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "Discussion with Xuewen.md",
+    "_drafts/2025-06-04-Quantization-of-kink-states.md",
+    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
+    "Pasted image 20250704230817.png",
+    "2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
+    "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
+    "2025-06-03-Schrodinger-Picture-in-QFT.md",
     "tem.md",
     "README.md",
     "QA Report.md",
+    "_posts/2023-06-21-Phase-Space-of-Classical-Mechanics.md",
     "Untitled.md",
-    "2025-06-03-Schrodinger-Picture-in-QFT.md",
     "Pasted image 20250605143417.png",
-    "_drafts/2025-06-04-Quantization-of-kink-states.md",
     "_drafts/2025-05-20-what-is-kink-state.md",
     "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
-    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
     "backups/2022-02-01-redirect.md",
     "2025-02-25.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
@@ -210,11 +212,6 @@
     "_posts/2023-07-28-Topological-Quantization.md",
     "_posts/2023-07-18-Mikhail-Bakunin.md",
     "_posts/2023-07-17-历史笔记若干.md",
-    "_posts/2023-07-07-Quartic-Time-Derivative.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
-    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
     "img/FeynmanRulesModel3.png"
   ]
 }
