@@ -29,7 +29,6 @@ $$
 For a set of real scalar fields, the phase space is thus equivalent to a set of initial data $\left\lbrace \phi_ {r}(\vec{x},t_ {0}),\pi_ {r}(\vec{x},t_ {0}) \right\rbrace$, where $r$ labels other particle properties, such as spin. And since $t_ {0}$ is entirely arbitrary we can just ignore it, writing just $\left\lbrace \phi_ {r}(\vec{x}),\pi_ {r}(\vec{x}) \right\rbrace$. 
 
 
-
 - - -
 
 # Appendix 
@@ -84,4 +83,54 @@ $$
 -d\tau=-d(\xi_ {i}dx^{i}) = - d(\xi_ {i})\wedge dx^{i} = \sum_ {i}dx^{i}\wedge d\xi_ {i}.
 $$
 
+- - -
 
+Given a function $f\in C^{\infty}(M)$ on manifold $M$, Let $\omega(-,-)$ be the symplectic form that takes two vectors and spits out a real number. $\omega$ allows us to define a vector field from $f$. 
+
+We know that $df$ is a one-form, hence by definition $df(-)$ takes a vector $V$ and spits out a real number, $df(V)\in\mathbb{R}$. Given $V$, the symplectic 2-form maps another vector $W$ to real number, $\omega(V,W)\in\mathbb{R}$. Thus we have two ways to map $V$ to a real number:
+
+$$
+\begin{align*}
+df(-):& \quad  TM \to  \mathbb{R}  \\
+\omega(W,-) :&  \quad TM \to  \mathbb{R}
+
+\end{align*}
+$$
+
+Hence we can connect $W$ and $f$ by asking the above two kinds of maps to give the same result (for all vectors) everywhere on $M$. This defines a vector $X$ from $f$, called the `Hamiltonian vector field` of $f$, usually denoted $X_ {f}$:
+
+$$
+\omega(X_ {f}, V) := df(V)\quad  \;\forall\; V\in  TM.
+$$
+
+It can be written as 
+
+$$
+X_ {f} \lrcorner\, \omega := df.
+$$
+
+Given a vector field, we can talk about the integral curve associated with it. Turns out, the integral curve are such that on which $f$ is a constant! 
+
+Choose the coordinate system (so-called Darboux coordinates) such that the symplectic form can be written as 
+
+$$
+\omega =\sum_ {i} dx^{i}\wedge  dy_ {i},
+$$
+
+then 
+
+$$
+df = \frac{ \partial f }{ \partial x^{i} }  dx^{i} + \frac{ \partial f }{ \partial y_ {i} } dy_ {i},
+$$
+
+by comparing the coefficients we find that 
+
+$$
+ X_ {f} = \frac{ \partial f }{ \partial y_ {i} } \frac{ \partial  }{ \partial x^{i} } -\frac{ \partial f }{ \partial x^{i} } \frac{ \partial  }{ \partial y_ {i} } .
+$$
+
+In general, a symplectic manifold $(M,\omega)$ together with a smooth Hamiltonian function $H$ is called a Hamiltonian system. The Hamiltonian vector $X_ {H}$ generates a flow, called the Hamiltonian flow. The integral curve of $X_ {H}$ is called the orbits or trajectories of the system. Let $\gamma(t)$ be a Hamiltonian flow, in Darboux coordinates $\gamma(t)=x(t),y(t)$ satisfy the equations of motion:
+
+$$
+\dot{x} = \frac{ \partial H }{ \partial y_ {i} } , \quad \dot{y}=-\frac{ \partial H }{ \partial x^{i} } .
+$$
