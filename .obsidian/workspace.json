@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-06-03-Schrodinger-Picture-in-QFT.md",
+                "file": "投简历情况.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-03-Schrodinger-Picture-in-QFT"
+              "title": "投简历情况"
             }
           }
         ]
@@ -185,8 +185,9 @@
   },
   "active": "7c9f74c6062926ce",
   "lastOpenFiles": [
-    "投简历情况.md",
     "Pasted image 20250704230817.png",
+    "2025-06-03-Schrodinger-Picture-in-QFT.md",
+    "投简历情况.md",
     "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
     "2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "QA Report.md",
@@ -202,7 +203,6 @@
     "_posts/2023-06-15-Complex-Vector-Space.md",
     "Discussion with Xuewen.md",
     "Referee report.md",
-    "2025-06-03-Schrodinger-Picture-in-QFT.md",
     "Pasted image 20250605143417.png",
     "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
     "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
@@ -215,7 +215,6 @@
     "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
     "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
     "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
-    "_posts/2023-07-28-Topological-Quantization.md",
     "img/FeynmanRulesModel3.png"
   ]
 }
