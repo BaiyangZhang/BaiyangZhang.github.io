@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "投简历情况.md",
+                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "投简历情况"
+              "title": "2025-07-20-Abelian-Decomposition-and-Monopole"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f8485d28afe14f44",
@@ -185,6 +186,7 @@
   },
   "active": "7c9f74c6062926ce",
   "lastOpenFiles": [
+    "投简历情况.md",
     "Pasted image 20250714150208.png",
     "Untitled.md",
     "Untitled 1.md",
@@ -192,7 +194,6 @@
     "QA Report.md",
     "README.md",
     "Pasted image 20250704230817.png",
-    "投简历情况.md",
     "2025-06-03-Schrodinger-Picture-in-QFT.md",
     "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
     "2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
@@ -206,7 +207,7 @@
     "Referee report.md",
     "Pasted image 20250605143417.png",
     "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
+    "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
     "backups/2022-02-01-redirect.md",
     "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
     "assets/pdf/Baiyang_CV.pdf",
