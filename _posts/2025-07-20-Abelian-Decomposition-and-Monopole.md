@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bare Minimum of Abelian Decomposition and Monopole
-date: 2025-03-20
+date: 2025-07-20
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -12,7 +12,7 @@ tags:
 The gauge Lie group $G$ has Lie algebra $\mathfrak{g}\in T_ {e}G$, where $e$ is the unit element of $G$. The generators $T^{a}$ of $G$ satisfy
 
 $$
-  [T^a,T^b] = i f^{ab}_ {c} T^c
+  [T^a,T^b] = i {f^{ab}}_ {c} T^c
 $$
 
 where $f^{abc}$ is the structure constant. The indices can be lowered or raised by the Cartan-Killing metric $g^{ab} = \text{Tr }{T^a T^b}$, for our discussion $g^{ab} = \delta^{ab}$, so it doesn't matter where we put the indices.
@@ -32,10 +32,12 @@ $$
 The $\mathfrak{g}$-valued field strength is
 
 $$
-  F_ {\mu\nu} = \partial_ \mu A_ \nu - \partial_ \nu A_ \mu -i[A_ \mu, A_ \nu],
+  F_ {\mu\nu} = \partial_ \mu A_ \nu - \partial_ \nu A_ \mu -i[A_ \mu, A_ \nu].
 $$
 
-our convention for covariant derivative acting on a field in the fundamental representation is
+The advantage of using commutators is that we can avoid using the explicit matrix form of generators in the adjoint representation, which is $(N^{2}-1)\times(N^{2}-1)$ dimensional. 
+
+Our convention for covariant derivative acting on a field in the fundamental representation is
 
 $$
   D_ {\mu}\psi := \partial_ \mu \psi -i A_ \mu \psi,
@@ -92,20 +94,19 @@ $$
 }.
 $$
 
-
 The action for pure Yang-Mills field is
 
 $$
   S_ {YM} = - \frac{1}{2g^2} \int d^4 x\, \text{Tr }{F_ {\mu\nu}F^{\mu\nu}},
 $$
 
-where $g^2$ is the Yang-Mills coupling constant, but $g$ is not a constant at all. The fact that it appears in the denominator instead of numerator (like in Peskin&Schroeder), is due to a rescaling of the Yang-Mills field $A$. We can reproduce the Yang-Mills action used in Peskin&Schroeder by the following substitution in our convention:
+where $g^2$ is the Yang-Mills coupling. The fact that it appears in the denominator instead of numerator (like in Peskin&Schroeder), is due to a rescaling of the Yang-Mills field $A$. We can reproduce the Yang-Mills action used in Peskin&Schroeder by the following substitution in our convention:
 
 $$
-A \to g A,\, F \to g\partial A -g\partial A -ig^{2}[A,A].
+A \to g A \implies F \to g\partial A -g\partial A -ig^{2}[A,A].
 $$
 
-The advantage of putting the coupling in the front of action is that $g$ is factored out from the Lagrangian, and sits where $\hbar$ does, it implies that in the weak coupling limit, the paths that contribute most to the path integral are the solution to the classical equation of motion, we have the classical limit. If $g\to \infty$, then all path contribute almost equally, we would be living in an entirely quantum world.
+The advantage of putting the coupling in the front of action is that $g$ is factored out from the Lagrangian, and sits where $\hbar$ does, it implies that in the weak coupling limit, the paths that contribute most to the path integral are the solution to the classical equation of motion, hence the classical limit. If $g\to \infty$, then all paths contribute almost equally, we would be living in an entirely quantum world.
 
 Introduce the Hodge star operator on the field strength,
 
@@ -120,12 +121,14 @@ $$
 $$
 # 't Hooft-Polyakov Monopole
 
-Magnetic Monopole solutions in Yang-Mills theory with adjoint bosons appears more naturally than in U(1) theory. Whenever the **non-abelian** gauge group is broken to its **Cartan subgroup** (Cartan subalgebra is spanned by a maximal set of Lie algebra) by adjoint Higgs bosons, we have magnetic monopoles. The **adjoint** Higgs fields have non-zero vacuum expectation values (VEV for short, denoted by $\left\langle \bullet \right\rangle$), breaking the gauge symmetry. Those gauge transformations that leave $\left\langle \phi \right\rangle$ invariant are symmetries not spontaneously broken by the Higgs bosons. Loosely speaking there are two kinds of symmetries:
+Magnetic Monopole solutions in $SU(2)$ Yang-Mills theory with adjoint bosons appears more naturally than that in U(1) theory. Whenever the **non-abelian** gauge group is broken to its **Cartan subgroup** (Cartan subalgebra is spanned by a maximal mutual-commuting basis of Lie algebra) by adjoint Higgs bosons, we have magnetic monopoles. The **adjoint** Higgs fields have non-zero vacuum expectation values (VEV for short, denoted by $\left\langle \bullet \right\rangle$), breaking the gauge symmetry. Those gauge transformations that leave $\left\langle \phi \right\rangle$ invariant are symmetries not broken by the Higgs bosons. Loosely speaking there are two kinds of symmetries:
 
 - the symmetry of the Lagrangian,
 - the symmetry of the vacuum.
 
-Gauge symmetry is not really a symmetry but a redundancy, a change of basis, so here we don't count it. Sometimes, a symmetry is preserved in the Lagrangian but not the vacuum, meaning that the symmetry will change the vacuum, e.g. the double well potential in quantum mechanics, the $x \leftrightarrow -x$ symmetry doesn't change the Lagrangian, but it turn one vacuum to the other, thus it is not a symmetry of the vacuum. In this case we say this symmetry is spontaneously broken. Of course, since the spontaneously broken symmetry is still a symmetry of the Hamiltonian, it only takes one vacuum to another. In more mathematical terms, let $H$ be the broken symmetry and $\phi_ {0}$ be any vacuum configuration, the orbit of $H$ acting on $\phi_ {0}$ is the vacuum manifold, or at least a connected submanifold of vacuum. 
+What about gauge symmetry? Gauge symmetry is not really a symmetry, rather it is a redundancy, corresponds to the freedom of a change of basis. 
+
+Sometimes, a symmetry is preserved in the Lagrangian but not the vacuum, meaning that the symmetry will change the vacuum, e.g. the double well potential in quantum mechanics, the $x \leftrightarrow -x$ symmetry doesn't change the Lagrangian, but it turn one vacuum to the other, thus it is not a symmetry of the vacuum. In this case we say this symmetry is spontaneously broken. Of course, since the spontaneously broken symmetry is still a symmetry of the Hamiltonian, it only takes one vacuum (minimal energy) to another. In more mathematical terms, let $H$ be the broken symmetry and $\phi_ {0}$ be any vacuum configuration, the orbit of $H$ acting on $\phi_ {0}$ is the vacuum manifold, or at least a connected submanifold of vacuum. 
 
 Why should we start with $SU(2)$ monopole? because 
 
@@ -144,7 +147,7 @@ $$
   \phi = \frac{\sigma^a}{2}\phi^a
 $$
 
-with convention $\left\lvert \phi \right\rvert^{2} := \phi^a \phi^a = 2\text{Tr }(\phi^a T^a)^2$. In our convention, if $\phi$ without absolute value notation is squared, we are simply squaring the matrix field itself, while if $\left\lvert \phi \right\rvert $ is squared, we are doing the module square.
+with convention $\left\lvert \phi \right\rvert^{2} := \phi^a \phi^a = 2\text{Tr }(\phi^2)$. In our convention, if $\phi$ without absolute value notation is squared, we are simply squaring the matrix field itself, while if $\left\lvert \phi \right\rvert$ is squared, we are doing the module square.
 
 The action is
 
@@ -185,7 +188,7 @@ $$
 \end{align*}
 $$
 
-Note that in Yang-Mills theory, $B$ and $E$ are matrices and they are not gauge invariant as in $U(1)$ theory. It means that $B,E$ are no longer physical observables which must be gauge invariant, such as the trace of $F_ {\mu\nu}^2$ or the Wilson loops.
+Note that in Yang-Mills theory, $B$ and $E$ are matrices and they are not gauge invariant, in contrast to $U(1)$ theory. It means that $B,E$ are no longer physical observables (which must be gauge invariant), such as the trace of $F_ {\mu\nu}^2$ or the Wilson loops.
 
 Since we have chosen the vacuum to be $\left\langle \phi \right\rangle = v T^3$, in the unitary gauge, the degrees of freedom are
 - two massive gauge bosons, $W_ \mu^\pm = \frac{1}{\sqrt{2}}(A_ \mu^1 \pm i A_ \mu^2)$. The mass comes solely from the covariant derivative $\left\lvert D_ \mu \phi \right\rvert^2$, after shifting $\phi^3$ to $\phi^3 + v$, the coupling between A and $\phi^3$ is
@@ -197,15 +200,15 @@ $$
 - $A^3$ remains massless, it is the "photon" decoupled from $\phi^3$
 - $\phi^3$ particle is electrically neutral.
 
-For the total energy to be finite, we must have that at spatial infinity the field configuration goes to a vacuum configuration fast enough:
+For the total energy to be finite, it must be that at spatial infinity, the field configuration goes to a vacuum configuration fast enough:
 
 $$
   \left\lvert \phi \right\rvert  \to v,\quad \left\lvert D_ \mu \phi \right\rvert ^2 \to 0, \quad A \to i \Omega \partial_ \mu\Omega^{-1}.
 $$
 
-Note that $\left\lvert D_ \mu \phi \right\rvert^2$ must drop to zero faster than $r^{-3/2}$ to make the energy integral finite.
+Note that $\left\lvert D_ \mu \phi \right\rvert^2$ must drop to zero faster than $r^{-3/2}$ to make the total energy finite.
 
-The topology of the space boundary is $\mathbb{S}^2$ since $\partial \mathbb{R}^3 = \mathbb{S}^2$. The vacuum manifold of the Higgs field is also $\mathbb{S}^2$, thus the Higgs field at $r \to \infty$ is a map $\mathbb{S}^2 \to \mathbb{S}^2$, which is classified by homotopy group $\pi_ 2(S^2) = \mathbb{Z}$, where $\mathbb{Z}$ is the addition group of integers. We can use homotopy to classify topologically different solutions, labeling any finite energy Higgs configuration by an integer $n$, which counts the winding number of Higgs field at infinity. Given a $\phi$ field configuration, Let $\hat{\phi}^{i} \equiv \phi^{i} / \left\lvert \phi \right\rvert$ be the unit field vector, the winding number give by integrating the pullback of the volume in $\phi$ configuration space:
+The topology of the space boundary is $\mathbb{S}^2$ since $\partial \mathbb{R}^3 = \mathbb{S}^2$. The vacuum manifold of the Higgs field is also $\mathbb{S}^2$, thus the Higgs field at $r \to \infty$ is a map $\mathbb{S}^2 \to \mathbb{S}^2$, which is classified by homotopy group $\pi_ 2(S^2) = \mathbb{Z}$, where $\mathbb{Z}$ is the addition group of integers. We can use homotopy to classify topologically different solutions, labeling any finite energy Higgs configuration by an integer $n$, which counts the winding number of Higgs field at infinity. Given a $\phi$ field configuration, Let $\hat{\phi}^{i} \equiv \phi^{i} / \left\lvert \phi \right\rvert$ be the unit field vector, the winding number is give by integrating the *pullback* of the volume in $\phi$ configuration space:
 
 $$
 \boxed{
@@ -215,7 +218,7 @@ $$
 
 The trivial vacuum where $\phi = \text{const}$ everywhere obviously has $n = 0$.
 
-Consider the case winding number $n=1$. $\left\langle \phi \right\rangle$ at infinity depends on the direction. The residual U(1) symmetry of $SU(2)$ consists of the elements that commutes with $\left\langle \phi \right\rangle$, thus U(1) also depends on the direction. Recall that $A_ \mu = A_ \mu^a T^a$ as a $\mathfrak{su}(2)$-valued field, the components of $A_ {\mu}$ that commutes with $\phi$ can be projected out (in any direction) via
+Consider the case where the winding number $n=1$. $\left\langle \phi \right\rangle$ at infinity depends on the direction. The residual U(1) symmetry of $SU(2)$ consists of the elements that commutes with $\left\langle \phi \right\rangle$, thus the unbroken $U(1)$ direction also depends on the position. Recall that $A_ \mu = A_ \mu^a T^a$ as a $\mathfrak{su}(2)$-valued field, the components of $A_ {\mu}$ that commutes with $\phi$ can be projected out (in any direction) via
 
 $$
   a_ \mu = \frac{2}{v} \text{Tr }{\phi A_ \mu},
@@ -223,14 +226,14 @@ $$
 
 for example, if $\phi = v T^3, \, a_ \mu = A_ \mu^3$.
 
-The unbroken U(1) component is a vector in the Lie-algebra whose direction, after choosing a $\phi$ vacuum, is parallel to $\phi$. For example, if $\phi$ vacuum is chosen to be $vT^3$, then the unbroken U(1) group is proportional to $T^3$. In the case of a monopole solution, the U(1) direction is position-dependent.
+The unbroken U(1) component can be regarded as a vector in the Lie-algebra whose direction, after choosing a vacuum $\phi_ {0}$, is parallel to $\phi_ {0}$. For example, if $\phi_ {0}$ is chosen to be $vT^3$, then the unbroken U(1) group is proportional to $T^3$. Again, in the case of a monopole solution, the U(1) direction is position-dependent.
 
 Let's look at the covariant derivative. In order to make sure that $\left\lvert D_ \mu\phi \right\rvert^{2} = \left\lvert \partial_ \mu\phi-i[A_ \mu,\phi] \right\rvert^{2} \to 0$, we need to find a corresponding $A_ \mu$ that can cancel the $\partial_ \mu \phi$, for $\phi = v \hat{\phi}$. 
 
 The following identities might be helpful:
 
 $$
-  \phi^2 = \phi^a T^a \phi^b T^b = \frac{1}{2}\phi^a\phi^b \left\lbrace  T^a ,T^b  \right\rbrace=  \frac{v^2}{4}.
+  \phi^2 = \phi^a T^a \phi^b T^b = \frac{1}{2}\phi^a\phi^b \left\lbrace  T^a ,T^b  \right\rbrace= \boxed{  \frac{v^2}{4}=\phi^{2}}.
 $$
 
 For Pauli matrices we have 
@@ -262,7 +265,7 @@ Let
 
 $$
 \boxed{
- A_ \mu \to -\frac{i}{v^2} [\partial_ \mu \phi,\phi]+\frac{a_ \mu}{v}\phi,
+ A_ \mu = -\frac{i}{v^2} [\partial_ \mu \phi,\phi]+\frac{a_ \mu}{v}\phi,
  }
 $$
 
@@ -272,7 +275,7 @@ $$
   -i [A_ \mu,\phi] = - \partial_ \mu \phi,
 $$
 
-$a_ \mu$ above is the same as the unbroken U(1) field.
+$a_ \mu$ above is the same as the unbroken U(1) field. We see that $A_ {\mu}$ is the asymptotic gauge field.
 
 Knowing the asymptotic form of the gauge field, we can work out the asymptotic form of $F_ {\mu\nu}$, however we are mostly interested in the U(1) part, that is the field strength in the same direction of $\phi$,
 
@@ -361,9 +364,7 @@ There is strong evidence that confinement may be related to the concept of dual 
 
 The idea behind the Abelian projection is that even though QCD is a non-Abelian theory, its **long-distance behavior** might be dominated by Abelian degrees of freedom, similar to how superconductors exhibit Abelian gauge behavior.
 
-The Abelian projection involves fixing the gauge partially, such that only the maximal Abelian subgroup (Cartan subgroup) remains unbroken.
-
-Take $SU(3)$ QCD for example. The Lie algebra $\mathfrak{su}(3)$ consists of eight generators $T^a (a=1,…,8a = 1, \dots, 8)$, corresponding to eight gluon fields $A_ \mu^a$. Its Cartan subgroup consists of diagonal elements that form a maximal Abelian subgroup:
+The Abelian projection involves fixing the gauge partially, such that only the maximal Abelian subgroup (Cartan subgroup) remains unbroken. Take $SU(3)$ QCD for example. The Lie algebra $\mathfrak{su}(3)$ consists of eight generators $T^a (a=1,…,8)$, corresponding to eight gluon fields $A_ \mu^a$. Its Cartan subgroup consists of diagonal elements that form a maximal Abelian subgroup:
 
 $$
 U(1)^{N-1} \subset SU(N).
@@ -406,10 +407,10 @@ After Abelian projection,
 The Cho-Duan-Ge decomposition is a covariant separation of the gauge field into abelian and non-abelian components. Roughly speaking, the gauge potential is separated into
 - abelian, restricted gauge potential. It is further separated into
 	- topologically trivial part, or Maxwell part, or `neurons`. And
-	- topological part, or Dirac part. Monopole?
+	- topological part, or Dirac part. Similar to the monopole scalar solution.
 - valance gauge field which describes colored gluons, or `chromons`.
 
-For the sake of simplicity we will consider $SU(2)$ Consider The $\mathfrak{g}$-valued gauge potential is decomposed to the abelian sub-algebra, so-called Cartan subalgebra, and the rest part that is orthogonal to it. Let $\hat{n}$ be a **right-handed orthonormal frame**, $\hat{n}=(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ and $\hat{n}^{i}\hat{n}^{i}=1$. Let's put it in the Lie algebra $\mathfrak{g}$, by assigning each component $\hat{n}^{i}$ to a basis $T^{a}\in\mathfrak{g}$, $T^{a} = \frac{\sigma^{a}}{2}$ for $SU(2)$. To cling to the convention that we use fraktur letters to denote Lie algebra, let $\mathfrak{n}$ be the $\mathfrak{g}$-valued unit vector $\hat{n}$, i.e. $\mathfrak{n}:= \hat{n}^{i}T^{i}$. Now we can act the covariant derivative on $\mathfrak{n}$, just how we act covariant derivative on $\mathfrak{g}$-valued scalar fields. Similar to what we did at the presence of a monopole, we can decompose the gauge field into two parts, 1) the part that satisfies $D_ {\mu}\mathfrak{n}=0$ and 2) the part that does not. With the help of the following matrix identities:
+For the sake of simplicity we will begin with $SU(2)$. Consider The $\mathfrak{g}$-valued gauge potential, decompose it to the abelian sub-algebra, namely the Cartan subalgebra, and the rest part that is orthogonal to it. Introduce a **right-handed orthonormal frame**, define the unit vector $\hat{n}=(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ and $\hat{n}^{i}\hat{n}^{i}=1$. Let's put it in the Lie algebra $\mathfrak{g}$, by assigning each component $\hat{n}^{i}$ to a basis $T^{a}\in\mathfrak{g}$, $T^{a} = \frac{\sigma^{a}}{2}$ for $SU(2)$. In order to cling to the convention that fraktur letters are used to denote Lie algebra, let's write $\mathfrak{n}$ for the $\mathfrak{g}$-valued unit vector $\hat{n}$, i.e. $\mathfrak{n}:= \hat{n}^{i}T^{i}$. Now we can treat $\mathfrak{n}$ as a static adjoint field, and act the covariant derivative on $\mathfrak{n}$, just as acting covariant derivative on $\mathfrak{g}$-valued scalar fields. Furthermore, similar to what we did at the presence of a monopole, we can decompose the gauge field into two parts, that satisfies $D_ {\mu}\mathfrak{n}=0$ and that does not. With the help of the following matrix identities:
 
 $$
 \mathfrak{n}^{2}=\mathfrak{n}\cdot \mathfrak{n}=\hat{n}^{a}\hat{n}^{b}T^{a}T^{b}=\frac{1}{4},\quad  T:=\frac{1}{2}\sigma
@@ -465,7 +466,7 @@ $$
 
 where we have omitted the spacetime index $\mu$, which can be put back whenever needed. 
 
-Recall that if we want to convert to the other convention, we need to substitute $A\to gA$. **This is the same for $\mathcal{C}$, we need to substitute $\mathcal{C}\to g\mathcal{C}$ while remembering that there is a factor of $\frac{1}{g^{2}}$ in our convention.** Let $\mathcal{C}$ be that define in Cho's paper, we have $\mathcal{C}=C/g$. 
+Recall that if we want to convert to the other convention, we need to substitute $A\to gA$. Thus our solutions in the conventional notation reads is $gA = \mathcal{A} +\mathcal{C}$, then $A = \frac{1}{g}\mathcal{A} + \frac{1}{g} \mathcal{C}$. **That's why in Cho's paper the solution $\mathcal{C}=\frac{i}{g}[\mathfrak{n},\partial \mathfrak{n}]$.** 
 
 If the symmetry is broken to the subgroup $N$ that is generated by $\mathfrak{n}$, then $\mathcal{A}$ is the massless $U(1)$ component that can propagate for long distance. $\mathcal{A}$ Geometrically, $\hat{A}$ is the component of the connection that leaves $\mathfrak{n}$ invariant during parallel transport. 
 

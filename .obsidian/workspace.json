@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "bfc16aea90928448",
+    "id": "3028bc779ec50f3b",
     "type": "split",
     "children": [
       {
-        "id": "c44aebe905779215",
+        "id": "13c2829a8e2ed077",
         "type": "tabs",
         "children": [
           {
-            "id": "7c9f74c6062926ce",
+            "id": "b59bef98381ecb4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "供水系统.md",
+                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "供水系统"
+              "title": "2025-07-20-Abelian-Decomposition-and-Monopole"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "bb36b5a1e93fe1e5",
+    "id": "f33e7c5091997b40",
     "type": "split",
     "children": [
       {
-        "id": "55559f846b7cd581",
+        "id": "2406439c7182770e",
         "type": "tabs",
         "children": [
           {
-            "id": "36da8009d9fc09b4",
+            "id": "e64600cc1b1207d7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "b06e84f7ff83d146",
+            "id": "b33d85d3d86006ef",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "06dc9447370fe053",
+            "id": "8db75d2039a66385",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +78,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
-    "id": "f8485d28afe14f44",
+    "id": "862c7c927b43a428",
     "type": "split",
     "children": [
       {
-        "id": "946e885ca121d61f",
+        "id": "e4537cd8a0c8b48c",
         "type": "tabs",
         "children": [
           {
-            "id": "a0fbc9421b4717f6",
+            "id": "711b6f848ba96e7e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2025-03-14-Mass-Renormalization.md",
+                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +105,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-03-14-Mass-Renormalization"
+              "title": "Backlinks for 2025-07-20-Abelian-Decomposition-and-Monopole"
             }
           },
           {
-            "id": "c2cb1b6652016c33",
+            "id": "a3f523f4b5fd35be",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2025-03-14-Mass-Renormalization.md",
+                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-03-14-Mass-Renormalization"
+              "title": "Outgoing links from 2025-07-20-Abelian-Decomposition-and-Monopole"
             }
           },
           {
-            "id": "b86235055b6770fc",
+            "id": "6c39ef6e719d04c6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +138,7 @@
             }
           },
           {
-            "id": "03ec5fc39e095794",
+            "id": "d6a78bf1f4d64235",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,18 +152,18 @@
             }
           },
           {
-            "id": "6adeeb93f8d531f2",
+            "id": "5bfa53ef3eeff881",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2025-03-14-Mass-Renormalization.md",
+                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-03-14-Mass-Renormalization"
+              "title": "Outline of 2025-07-20-Abelian-Decomposition-and-Monopole"
             }
           }
         ]
@@ -183,39 +184,6 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7c9f74c6062926ce",
-  "lastOpenFiles": [
-    "投简历情况.md",
-    "Pasted image 20250714150208.png",
-    "供水系统.md",
-    "Untitled 1.md",
-    "tem.md",
-    "QA Report.md",
-    "README.md",
-    "Pasted image 20250704230817.png",
-    "2025-06-03-Schrodinger-Picture-in-QFT.md",
-    "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
-    "2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
-    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
-    "_drafts/2025-06-04-Quantization-of-kink-states.md",
-    "_drafts/2025-05-20-what-is-kink-state.md",
-    "_drafts/2025-07-06-Note-on-Geometric-Quantization.md",
-    "_posts/2023-06-21-Phase-Space-of-Classical-Mechanics.md",
-    "_posts/2023-06-15-Complex-Vector-Space.md",
-    "Discussion with Xuewen.md",
-    "Referee report.md",
-    "Pasted image 20250605143417.png",
-    "_posts/2023-06-13-Introduction-to-Higher-Form-Symmetry.md",
-    "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
-    "backups/2022-02-01-redirect.md",
-    "_drafts/2022-09-22-Introduction-to-Topological-Field-Theory.md",
-    "assets/pdf/Baiyang_CV.pdf",
-    "assets/pdf/BaiyangZhangCV_merged.pdf",
-    "assets/pdf/BaiyangZhangCV.pdf",
-    "_drafts/2025-05-13-Note-on-Spectral-method-with-Kinks.md",
-    "_posts/2024-03-11-Note-on-Kink-Mass-Correction-in-3D-Part-II.md",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2024-3-1-Excerpt-From-On-Anarchism.md",
-    "img/FeynmanRulesModel3.png"
-  ]
+  "active": "b59bef98381ecb4d",
+  "lastOpenFiles": []
 }
