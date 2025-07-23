@@ -556,12 +556,12 @@ S=\frac{1}{g^{2}}\int d^{4}x \, \mathcal{L}(\mathcal{A},\mathcal{C},X) \to S=\fr
 $$
 ## Gauge transform
 
-If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$, where $U(1)$ is the little group of $\mathfrak{n}(x)$, which depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? The original $SU(2)$ gauge symmetry would still be intact, and under gauge transformation $\mathfrak{n}$ will rotate in a $x$-dependent way. 
+If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$, where $U(1)$ is the little group of $\mathfrak{n}(x)$, which depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? Then, under gauge transformation $\mathfrak{n}$ will rotate in a $x$-dependent way. 
 
 To keep our notation in agree with others, let's denote the gauge transformation as $\Omega=e^{ i\alpha }$, where $\alpha=\alpha^{a}T^{a}$ is a $\mathfrak{g}$-valued **infinitesimal** vector. The gauge field $A$ transforms as 
 
 $$
-A \to A+ D_ {\mu}\alpha,\quad  D_ {\mu}=\partial_ {\mu}-i[A_ {\mu},-].
+A \to A+ D\alpha,\quad  D_ {\mu}=\partial_ {\mu}-i[A_ {\mu},-].
 $$
 
 What about $\mathfrak{n}=\hat{n}^{a}T^{a}$? This $\mathfrak{g}$-valued field is not a part of the Lagrangian so it is not obvious how it should transform under gauge transform, or if it should transform at all. For example at the beginning I thought that since $\hat{n}$ is a vector in physical space, why should it be affected by gauge transformation? Then again, since $\mathfrak{n}$ plays a similar rule to the Higgs boson, maybe it should transform as a adjoint scalar. That is what was adopted by Cho and other people, so I'll stick to it. 
@@ -574,7 +574,7 @@ $$
 
 The notation $\vec{\alpha}\times \hat{n}{\Large\mid}_ {\mathfrak{g}}$ means that $\vec{\alpha}\times \hat{n}$ is a vector in Lie algebra.
 
-The background $\mathcal{C}$ together with $\mathcal{A}$ is the so-called restricted gauge field that is bonded to the "Higgs" field $\mathfrak{n}$, it is better to make it gauge transform like a gauge field, that is, under gauge transform
+The background $\mathcal{C}$ together with $\mathcal{A}$ is the so-called restricted gauge field that is bonded to the adjoint field $\mathfrak{n}$, it is better to make it gauge transform like a gauge field, that is, under gauge transform
 
 $$
 \hat{A}\to \hat{A}'=\Omega(\hat{A}+i\partial)\Omega ^{\dagger}.
