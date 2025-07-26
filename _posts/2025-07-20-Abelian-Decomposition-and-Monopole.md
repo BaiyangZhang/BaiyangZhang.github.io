@@ -508,6 +508,12 @@ $$
 
 which in $\mathfrak{g}$ is just $-(\partial_ {\mu}\hat{n})\times(\partial_ {\nu}\hat{n})$. Since $\partial \hat{n}$ is orthogonal to $\hat{n}$, their cross product is aligned with $\hat{n}$. So indeed $\hat{F}$ is aligned with $\mathfrak{n}$. 
 
+$H_ {\mu \nu}\mathfrak{n}$ is in matrix form, if we want to "project out" the components $H_ {\mu \nu}$, we can do that, the result is 
+
+$$
+H_ {\mu \nu} = 
+$$
+
 In summary, we have 
 
 $$
@@ -574,15 +580,49 @@ $$
 
 The notation $\vec{\alpha}\times \hat{n}{\Large\mid}_ {\mathfrak{g}}$ means that $\vec{\alpha}\times \hat{n}$ is a vector in Lie algebra.
 
-The background $\mathcal{C}$ together with $\mathcal{A}$ is the so-called restricted gauge field that is bonded to the adjoint field $\mathfrak{n}$, it is better to make it gauge transform like a gauge field, that is, under gauge transform
+- - -
+
+The background $\mathcal{C}$ together with $\mathcal{A}$ constitute the so-called restricted gauge field $\hat{A}$ that is bonded to the adjoint field $\mathfrak{n}$, in the sense that $\hat{A}$ is given by the solution of $D\mathfrak{n}=0$. After a gauge transformation, $\mathfrak{n}\to\mathfrak{n}'$ and $\hat{A}\to\hat{A}'$, but we would like the equation to hold independent of the gauge transformation, that is we would like 
+
+$$
+D'\mathfrak{n} ' := (\partial-i[\hat{A}',-])\,\mathfrak{n}' =\partial \mathfrak{n}' -i[\hat{A}',\mathfrak{n}' ]=0.
+$$
+
+This is guaranteed if we set $\hat{A}$ to transform as a regular gauge field,
 
 $$
 \hat{A}\to \hat{A}'=\Omega(\hat{A}+i\partial)\Omega ^{\dagger}.
 $$
 
-The advantage is that now $\hat{A}$ is the solution to $\mathcal{D}_ {\mu}\mathfrak{n}=0$ in a **gauge independent** way: If $\hat{A}$ is a solution, after gauge transform, let $\mathfrak{n}\to\mathfrak{n}'$ be the transformed vector field, the transformed $\hat{A}'$ is still a solution to $D_ {\mu}\mathfrak{n}'=0$.
+Now, as we wanted, $\hat{A}$ is the solution to $\mathcal{D}_ {\mu}\mathfrak{n}=0$ in a **gauge independent** way: If $\hat{A}$ is a solution, after gauge transform, the transformed field $\hat{A}'$ is still a solution to $D'_ {\mu}\mathfrak{n}'=0$.
 
-What about the gauge transformation of $\mathcal{A}$ and $\mathcal{C}$ respectively? Expand the gauge transformation for $\hat{A}$, we have 
+The decomposition $\hat{A}=\mathcal{A}\mathfrak{n}+\mathcal{C}$ better be gauge independent as well, that is, after a gauge transformation we would like 
+
+$$
+\hat{A}' = \mathcal{A}' \mathfrak{n}' + \mathcal{C}'.
+$$
+
+Let's focus on $\mathcal{A}$ first. It is the $\mathfrak{n}$-direction projection of $\hat{A}$, that is
+
+$$
+\mathcal{A} = 2\mathrm{Tr}\,(\mathfrak{n} \hat{A}) \equiv \hat{n} \cdot \hat{A},
+$$
+
+the factor of $2$ is due to the normalization $\mathrm{Tr}\,T^{a}T^{b}=2\delta^{ab}$. **This should be treated as the definition of $\mathcal{A}$, and this definition better be gauge independent**, hence after gauge transformation we want
+
+$$
+\mathcal{A}'=2\mathrm{Tr}\,(\mathfrak{n} '\hat{A}').
+$$
+
+This will fix the gauge transformation for $\mathcal{A}$. Let the gauge transformation be given by $\Omega=e^{ i\alpha }$ where $\alpha=\alpha^{a}T^{a}$, then the infinitesimal form reads
+
+$$
+\mathcal{A}\to \mathcal{A}' = \mathcal{A}+2\mathrm{Tr}\,(\mathfrak{n}\partial \alpha )\equiv \mathcal{A}+\hat{n}\cdot \partial \vec{\alpha}.
+$$
+
+Note that it is no longer a total derivative, but the projection of a total derivative in $\hat{n}$ direction. 
+
+Since the restricted field has to transform as
 
 $$
 \hat{A}=\mathcal{A}+\mathcal{C}\to \Omega(\mathcal{A}+\mathcal{C}+i\partial)\Omega ^{\dagger}
@@ -594,7 +634,23 @@ $$
 \mathcal{C}\to \Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}.
 $$
 
-Now, there is only one $i\partial$ term, since it has already be assigned to $\mathcal{C}$, the rest of the $\hat{A}$, that is $\mathcal{A}$, will have to transform like a adjoint scalar field:
+which makes sense if you recall that $\mathcal{C}\sim \mathfrak{n}\partial \mathfrak{n}$ is a pure gauge in $SU(2)$, naturally it should transform as a gauge field.
+
+There are two ways to determine the gauge transform of $\mathcal{C}$, one of them is given above, the other one is to start from the definition: 
+
+$$
+\mathcal{C} = i[\mathfrak{n} ,\partial \mathfrak{n} ] = 2i\mathfrak{n}  \partial \mathfrak{n}. 
+$$
+
+Under a gauge transform, $\mathfrak{n}\to \mathfrak{n}'=\Omega \mathfrak{n}\Omega ^{\dagger}$, consequently the transform of $\mathcal{C}$ in terms of $\mathfrak{n}$ should be
+
+$$
+\mathcal{C}\to  \mathcal{C}'=2i \mathfrak{n}' \partial (\mathfrak{n}') = 2i\Omega \mathfrak{n} \Omega ^{\dagger}\partial(\Omega \mathfrak{n}  \Omega ^{\dagger}).
+$$
+
+However the right-hand-side of the above equation is only equal to $\Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}$ when they are both under a trace, otherwise they are not equal to each other. 
+
+Note that there is only one $i\partial$ term, since it has already be assigned to $\mathcal{C}$, the rest of the $\hat{A}$, namely $\mathcal{A}$, will have to transform like an adjoint scalar field:
 
 $$
 \mathcal{A}\to \Omega \mathcal{A}\Omega ^{\dagger}.
@@ -748,5 +804,23 @@ $$
 \mathfrak{n} \mathfrak{n} = \hat{n}^{a}\hat{n}^{b}\frac{1}{2}\sigma^{a} \frac{1}{2}\sigma^{b} &= \frac{1}{4}, \\
 [\mathfrak{n} ,[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= \partial_ {\mu}\mathfrak{n}, \\
 [[\mathfrak{n},\partial_ {\nu}\mathfrak{n}  ],[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= - \partial_ {\nu}\mathfrak{n} \partial_ {\mu}\mathfrak{n} .
+\end{align*}
+$$
+
+Let $d^{abc}$ be the total symmetric tensor of $SU(N)$ defined by 
+
+$$
+\left\lbrace T^{a},T^{b} \right\rbrace  = \frac{\delta^{ab}}{N} \mathbb{1} + d^{abc}T^{c},
+$$
+equivalently 
+
+$$
+d^{abc} = 2\mathrm{Tr}\,(\left\lbrace T^{a},T^{b} \right\rbrace T^{c})
+$$
+below are some useful identities about $SU(N)$ group:
+
+$$
+\begin{align*}
+\mathrm{Tr}\,(T^{a}T^{b}T^{c}) =& \frac{1}{4}(d^{abc}+if^{abc}).
 \end{align*}
 $$
