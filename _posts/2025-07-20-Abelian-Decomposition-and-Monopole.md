@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bare Minimum of Abelian Decomposition and Monopole
-date: 2025-07-20
+date: 2025-08-08
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -410,10 +410,10 @@ The Cho-Duan-Ge decomposition is a covariant separation of the gauge field into 
 	- topological part, or Dirac part. Similar to the monopole scalar solution.
 - valance gauge field which describes colored gluons, or `chromons`.
 
-For the sake of simplicity we will begin with $SU(2)$. Consider The $\mathfrak{g}$-valued gauge potential, decompose it to the abelian sub-algebra, namely the Cartan subalgebra, and the rest part that is orthogonal to it. Introduce a **right-handed orthonormal frame**, define the unit vector $\hat{n}=(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ and $\hat{n}^{i}\hat{n}^{i}=1$. Let's put it in the Lie algebra $\mathfrak{g}$, by assigning each component $\hat{n}^{i}$ to a basis $T^{a}\in\mathfrak{g}$, $T^{a} = \frac{\sigma^{a}}{2}$ for $SU(2)$. In order to cling to the convention that fraktur letters are used to denote Lie algebra, let's write $\mathfrak{n}$ for the $\mathfrak{g}$-valued unit vector $\hat{n}$, i.e. $\mathfrak{n}:= \hat{n}^{i}T^{i}$. Now we can treat $\mathfrak{n}$ as a static adjoint field, and act the covariant derivative on $\mathfrak{n}$, just as acting covariant derivative on $\mathfrak{g}$-valued scalar fields. Furthermore, similar to what we did at the presence of a monopole, we can decompose the gauge field into two parts, that satisfies $D_ {\mu}\mathfrak{n}=0$ and that does not. With the help of the following matrix identities:
+For the sake of simplicity we will begin with $SU(2)$. Consider The $\mathfrak{g}$-valued gauge potential, decompose it to the abelian sub-algebra, namely the Cartan subalgebra, and the rest part that is orthogonal to it. Introduce a **right-handed orthonormal frame** $(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ with $\hat{n}^{i}\hat{n}^{i}=1$. Choose the third component to be the so-called abelian direction, denoted it by $\hat{n}:=\hat{n}^{3}$. This notation is a bit confusing I know, but this is used in the original papers. Next, let's put the vectors into Lie algebra $\mathfrak{g}$, via assigning each component $\hat{n}^{i}$ to a basis $T^{a}\in\mathfrak{g}$, $T^{a} = \frac{\sigma^{a}}{2}$ for $SU(2)$. In order to cling to the convention that fraktur letters are used to denote Lie algebra, let's write $\mathfrak{n}$ for the $\mathfrak{g}$-valued unit vector $\hat{n}$, i.e. $\mathfrak{n}:= \hat{n}^{i}T^{i}$. Now we can treat $\mathfrak{n}$ as a static adjoint field, and act the covariant derivative on $\mathfrak{n}$, just as acting covariant derivative on $\mathfrak{g}$-valued scalar fields. Furthermore, similar to what we did at the presence of a monopole, we can decompose the gauge field into two parts, that satisfies $D_ {\mu}\mathfrak{n}=0$ and that does not. With the help of the following matrix identities:
 
 $$
-\mathfrak{n}^{2}=\mathfrak{n}\cdot \mathfrak{n}=\hat{n}^{a}\hat{n}^{b}T^{a}T^{b}=\frac{1}{4},\quad  T:=\frac{1}{2}\sigma
+\mathfrak{n}^{2}=\mathfrak{n}\cdot \mathfrak{n}=\hat{n}^{a}\hat{n}^{b}T^{a}T^{b}=\frac{1}{4}\mathbb{1}_ {2},\quad  T:=\frac{1}{2}\sigma
 $$
 
 and consequently
@@ -454,7 +454,7 @@ The trivial part of the solution that is proportional to $\mathfrak{n}$, call it
 
 $$
 \boxed{ 
-\mathcal{A}_ {\mu} =  a \mathfrak{n},\quad a\in \mathbb{R}.
+\mathcal{A}_ {\mu} =  a_ {\mu} \mathfrak{n},\quad a_ {\mu}\in \mathbb{R}.
 }
 $$
 
@@ -484,7 +484,7 @@ The following identities might be helpful (For $SU(2)$):
 
 $$
 \begin{align*}
-\mathfrak{n} \mathfrak{n} = \hat{n}^{a}\hat{n}^{b}\frac{1}{2}\sigma^{a} \frac{1}{2}\sigma^{b} &= \frac{1}{4}, \\
+\mathfrak{n} \mathfrak{n} = \hat{n}^{a}\hat{n}^{b}\frac{1}{2}\sigma^{a} \frac{1}{2}\sigma^{b} &= \frac{1}{4}\mathbb{1}_ {2}, \\
 [\mathfrak{n} ,[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= \partial_ {\mu}\mathfrak{n}, \\
 [[\mathfrak{n},\partial_ {\nu}\mathfrak{n}  ],[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= - \partial_ {\nu}\mathfrak{n} \partial_ {\mu}\mathfrak{n} .
 \end{align*}
@@ -508,10 +508,74 @@ $$
 
 which in $\mathfrak{g}$ is just $-(\partial_ {\mu}\hat{n})\times(\partial_ {\nu}\hat{n})$. Since $\partial \hat{n}$ is orthogonal to $\hat{n}$, their cross product is aligned with $\hat{n}$. So indeed $\hat{F}$ is aligned with $\mathfrak{n}$. 
 
-$H_ {\mu \nu}\mathfrak{n}$ is in matrix form, if we want to "project out" the components $H_ {\mu \nu}$, we can do that, the result is 
+$H_ {\mu \nu}\mathfrak{n}$ is in matrix form, if we want to "project out" the components $H_ {\mu \nu}$, we can write 
 
 $$
-H_ {\mu \nu} = 
+H_ {\mu \nu} \mathfrak{n}  = \partial_ {\mu} (i\mathfrak{n} \partial_ {\nu} \mathfrak{n}) -(\mu \leftrightarrow \nu),
+$$
+
+This form is similar to $F_ {\mu \nu}=\partial_ {\mu}A_ {\mu}-(\mu\leftrightarrow \nu)$. In fact, in the case of $SU(2)$, we can simplify it further to give an explicit expression for $H_ {\mu \nu}$ (without $\mathfrak{n}$). The final expression will be in terms of $\hat{n}_ {1,2}$. Recall that $\hat{n}_ {1}, \hat{n}_ {2}, \hat{n}$ form a right-handed orthogonal basis, let $\mathfrak{n}_ {1,2}$ be the $\mathfrak{g}$-valued counterparts of $\hat{n}_ {1,2}$. It is easily verified that 
+
+$$
+[\mathfrak{n}_ {1},\mathfrak{n} _ {2}] = i\mathfrak{n} .
+$$
+
+Since $\partial \hat{n}$ is perpendicular to $\hat{n}$ (since $\hat{n}$ has fixed length), $\partial \hat{n}=(\cdots)\hat{n}_ {1}+(\cdots)\hat{n}_ {2}$. In $\mathfrak{g}$-space we have the same. Write 
+
+$$
+\begin{align*}
+\partial_ {\mu}\mathfrak{n}  =& k_ {1}\mathfrak{n} _ {1}+k_ {2}\mathfrak{n} _ {2}, \\
+\partial_ {\nu}\mathfrak{n} =& k'_ {1}\mathfrak{n} _ {1}+k'_ {2}\mathfrak{n} _ {2}, 
+\end{align*}
+$$
+
+then 
+
+$$
+H_ {\mu \nu}\mathfrak{n}  = (k_ {2}k_ {1}'-k_ {1}k_ {2}')\mathfrak{n},
+$$
+
+where $k_ {1}k_ {2}'$ is actually the $\mu \longleftrightarrow\nu$ replaced $k_ {2}k_ {1}'$. What are the $k$'s? Well, we can project them from $\partial \mathfrak{n}$, giving 
+
+$$
+\begin{align*}
+k_ {1} =& \hat{n}_ {1} \cdot (\partial_ {\mu}\hat{n}) = \hat{n}_ {1}\cdot(\partial_ {\mu}\hat{n}_ {1}\times \hat{n}_ {2}), \\
+k_ {2} =& \hat{n}_ {2}\cdot(\partial_ {\mu} \hat{n})   = \hat{n}_ {2}\cdot(\hat{n}_ {1}\times  \partial_ {\mu}\hat{n}_ {2}).
+\end{align*}
+$$
+
+I hope the casual jumping between $\hat{n}$ and $\mathfrak{n}$ will not dissuade you from keep reading the note. The expression for $k'$ is just that of $k$ but with $\mu$ and $\nu$ interchanged. Then,
+
+$$
+\begin{align*}
+k_ {2}k_ {1}' =& \hat{n}_ {2}\cdot( \partial_ {\mu}\hat{n}) \; \hat{n}_ {1}\cdot(\partial_ {\nu}\hat{n})\\
+=& (\partial_ {\mu }\hat{n}_ {2})\cdot \hat{n} \; (\partial_ {\nu}\hat{n}_ {1})\cdot \hat{n},
+\end{align*}
+$$
+
+in the last line we have exploited the fact that $\hat{n}_ {1,2}$ and $\hat{n}$ are orthodox. Since $\hat{n}_ {2}$ has unit length, its derivative is orthodox to itself, 
+
+$$
+\partial_ {\mu}\hat{n}_ {2} = (\cdots) \hat{n}_ {1} + (\cdots)\hat{n}.
+$$
+
+Similarly for $\partial_ {\nu}\hat{n}_ {1}$. Then, since $\hat{n}_ {1}$ is orthodox to $\hat{n}_ {2}$, we have 
+
+$$
+\begin{align*}
+k_ {2}k_ {1}'=& (\partial_ {\mu }\hat{n}_ {2})\cdot \hat{n} \; (\partial_ {\nu}\hat{n}_ {1})\cdot \hat{n}\\
+=& (\partial_ {\mu}\hat{n}_ {2})\cdot(\partial_ {\nu}\hat{n}_ {1}).
+\end{align*}
+$$
+
+As a result, 
+
+$$
+\begin{align*}
+H_ {\mu \nu} &= (\partial_ {\mu}\hat{n}_ {2})\cdot(\partial_ {\nu}\hat{n}_ {1}) - (\mu \leftrightarrow \nu) \\
+&= \partial_ {\mu} (\hat{n}_ {2}\cdot\partial_ {\nu}\hat{n}_ {1}) - (\mu\leftrightarrow \nu)\\
+&=: \partial_ {\mu} C_ {\nu} - \partial_ {\nu} C_ {\mu}.
+\end{align*}
 $$
 
 In summary, we have 
@@ -520,46 +584,36 @@ $$
 \begin{align*}
 \hat{F} &= f_ {\mu \nu}\mathfrak{n} +H_ {\mu \nu}\mathfrak{n} ,\\
 f_ {\mu \nu} &= \partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu},\\
-H_ {\mu \nu} \mathfrak{n}  &=i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ].
+H_ {\mu \nu} \mathfrak{n}  &=i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ],\\
+H_ {\mu \nu} &= \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}, \; C_ {\mu}:= \hat{n}_ {2}\cdot \partial_ {\mu}\hat{n}_ {1}.
 \end{align*}
 $$
-
-If we further define $H_ {\mu \nu}=: \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}$, we have $C_ {\mu}=i\mathfrak{n}\partial_ {\mu}\mathfrak{n}$. You can verify that $C_ {\mu}$ indeed reproduces $H_ {\mu \nu}$. 
 
 - - -
 
 We have talked about the monopole-like background $\mathcal{C}$ and the free, massless $U(1)$ field $\mathcal{A}$. The rest of the total $SU(N)$ gauge field can be symbolically denoted as $X$, thus we can separate the total gauge field $A$ into the following three parts, 
 
 $$
-A = \mathcal{A}+\mathcal{C}+X
+A = \mathcal{A}+\mathcal{C}+X, \quad  [X,\mathfrak{n} ]\neq0
 $$
 
 where 
 
-- $A$ is the entire $SU(N)$ field. This is sometimes denoted $\vec{A}$ in $SU(2)$.
-- $\mathcal{A}$ is the free, massless $U(1)$ gauge field, called neuron by some.
-- $\mathcal{C}$ is the monopole-like background field defined by $\hat{n}$, where $\hat{n}$ for example can be chosen of hedgehog-form, similar to the monopole field configuration. It can not fluctuated and has no dynamics.
-- $X$ is the rest of $A$. I'd like to think of it as the non-abelian fluctuation about the background $\mathcal{C}$.
+- $A$ is the entire $SU(N)$ field. This is sometimes denoted $\vec{A}$ when the gauge group is $SU(2)$.
+- $\mathcal{A}$ is the free, massless $U(1)$ gauge field, so-called neuron.
+- $\mathcal{C}$ is the monopole-like background field defined(fixed) by $\hat{n}$, where $\hat{n}$ for example can be chosen to be of the hedgehog-form, similar to the monopole field configuration. Possible singularity points are allowed. It can not fluctuated and has no dynamics.
+- $X$ is the rest of $A$. I'd like to think of it as the non-abelian fluctuation about the background $\mathcal{C}$, but of course this is only a perturbative perspective.
 
 - - -
 
-**Question**: Let $\hat{n}_ {\infty}$ be the asymptotic field configuration at the spatial boundary $\partial\mathbb{R}^{3}=\mathbb{S}^{2}$. Since $\hat{n}$ takes value in all unit-norm vectors in all directions, the collection of all $\hat{n}$ is homeomorphic to $\mathbb{S}^{2}$, think of it as the set of the end points of all possible $\hat{n}$. Thus,
+We emphasize that $\hat{n}$ may not be globally defined. Let $\hat{n}_ {\infty}$ be the asymptotic field configuration at the spatial boundary $\partial\mathbb{R}^{3}=\mathbb{S}^{2}$. Since $\hat{n}$ takes value in all unit-norm vectors in all directions, the collection of all $\hat{n}$ is homeomorphic to $\mathbb{S}^{2}$, think of it as the set of the end points of all possible $\hat{n}$. Thus,
 
 $$
 \hat{n}_ {\infty}: \mathbb{S}^{2} \to  \mathbb{S}^{2}.
 $$
 
-If the winding number of $\hat{n}_ {\infty}$ is nonzero, then it can not be continuously deformed into a unit map. Then $\hat{n}$ can not be well-defined everywhere, there must be at least one singularity, where the direction of $\hat{n}$ is not defined. If $\hat{n}$ were a scalar field, we usually let it go to zero to avoid this problem, like in vortices. But here we can't let $\hat{n}$ be zero, so how do you solve this problem?
+If the winding number of $\hat{n}_ {\infty}$ is nonzero, then it can not be continuously deformed into a unit map. Then $\hat{n}$ can not be well-defined everywhere, there must be at least one singularity, where the direction of $\hat{n}$ is not defined. If $\hat{n}$ were a scalar field, we usually let it go to zero to avoid this problem, like with vortices. 
 
-- - -
-
-We have the following substitution rules for rescaling the fields:
-
-$$
-\boxed{ 
-S=\frac{1}{g^{2}}\int d^{4}x \, \mathcal{L}(\mathcal{A},\mathcal{C},X) \to S=\frac{1}{g^{2}}\int d^{4}x \, \mathcal{L}\left( \mathcal{A}\to g\mathcal{A},\mathcal{C}\to \frac{{\mathcal{C}}}{g},X\to gX \right) 
-}
-$$
 ## Gauge transform
 
 If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$, where $U(1)$ is the little group of $\mathfrak{n}(x)$, which depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? Then, under gauge transformation $\mathfrak{n}$ will rotate in a $x$-dependent way. 
@@ -664,7 +718,7 @@ $$
 
 How the field transforms tells us what gauge invariant terms we could construct to be included into the Lagrangian. We know that $\left\lvert D_ {\mu}\mathcal{A} \right\rvert^{2}$ and $\left\lvert D_ {\mu}X \right\rvert^{2}$ are gauge invariant, so they should appear in the Lagrangian. Next, let's go to the details.
 
-## Lagrangian of R(estricted)CD and E(xtended)CD
+## Lagrangian of R(Restricted)CD and E(Extended)CD
 
 The `restricted QCD`, `RCD` for short, is the self-energy of restricted gauge field $\hat{A}$, 
 
@@ -787,13 +841,15 @@ $$
 \begin{align*}
 S=\frac{1}{g^{2}}\int d^{d}x \,  \mathcal{L} \longrightarrow & S = \int d^{d}x \,  \mathcal{L}, \\
 A_ {\mu} \longrightarrow & g\vec{A}_ {\mu}, \\
-\mathcal{C}_ {\mu} \longrightarrow &  \frac{1}{g} \mathcal{C}_ {\mu},\\
+\mathcal{C}_ {\mu} \longrightarrow &  \mathcal{C}_ {\mu},\\
 \mathcal{A} \longrightarrow & g\mathcal{A},\\
 a_ {\mu}  \longrightarrow &  g A_ {\mu}
 \end{align*}
 $$
 
-Upon those substitutes, we recover the expressions in the paper. The reason why $\mathcal{C}\to\mathcal{C} /g$ is that, when solving for the restricted field, we write the solution as $\hat{A}=\mathcal{A}+\mathcal{C}$, then going to the paper's notation we get $g\hat{A} = g\mathcal{A}+\mathcal{C}$, which implies $\hat{A}=\mathcal{A}+\mathcal{C} /g$. 
+but if $\mathcal{C}$ appears alone, we have $\mathcal{C}_ {\mu} \longrightarrow \frac{1}{g} \mathcal{C}_ {\mu}$.
+
+Upon those substitutes, we recover the expressions in the paper. The reason why $\mathcal{C}\to\mathcal{C} /g$ is that, when solving for the restricted field, we write the solution as $\hat{A}=\mathcal{A}+\mathcal{C}$, then going to the paper's notation we get $g\hat{A}_ {\text{paper}} = g\mathcal{A}_ {\text{paper}}+\mathcal{C}$, but in the paper the definition reads $\hat{A}_ {\text{paper}}=\mathcal{A}_ {\text{paper}}+\mathcal{C}_ {\text{paper}}$, which implies $\mathcal{C}_ {\text{paper}}=\mathcal{C} /g$. 
 
 - - -
 
