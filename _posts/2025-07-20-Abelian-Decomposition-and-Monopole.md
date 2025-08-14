@@ -636,61 +636,56 @@ The notation $\vec{\alpha}\times \hat{n}{\Large\mid}_ {\mathfrak{g}}$ means that
 
 - - -
 
-The background $\mathcal{C}$ together with $\mathcal{A}$ constitute the so-called restricted gauge field $\hat{A}$ that is bonded to the adjoint field $\mathfrak{n}$, in the sense that $\hat{A}$ is given by the solution of $D\mathfrak{n}=0$. After a gauge transformation, $\mathfrak{n}\to\mathfrak{n}'$ and $\hat{A}\to\hat{A}'$, but we would like the equation to hold independent of the gauge transformation, that is we would like 
+The background $\mathcal{C}$ together with $\mathcal{A}$ constitute the so-called restricted gauge field $\hat{A}$ that is bonded to the adjoint field $\mathfrak{n}$, in the sense that $\hat{A}$ is given by the solution of $D\mathfrak{n}=0$. After a gauge transformation, $\mathfrak{n}\to\mathfrak{n}'$ and $\hat{A}\to\hat{A}'$, but we would like the equation to hold independently of the gauge transformation, that is, after an arbitrary gauge transformation we want
 
 $$
 D'\mathfrak{n} ' := (\partial-i[\hat{A}',-])\,\mathfrak{n}' =\partial \mathfrak{n}' -i[\hat{A}',\mathfrak{n}' ]=0.
 $$
 
-This is guaranteed if we set $\hat{A}$ to transform as a regular gauge field,
+This is guaranteed if we set $\hat{A}$ to transform as a regular gauge field
 
 $$
 \hat{A}\to \hat{A}'=\Omega(\hat{A}+i\partial)\Omega ^{\dagger}.
 $$
 
+while let $\mathfrak{n}$ transform as a adjoint scalar, $$
+\mathfrak{n}  =\to  \mathfrak{n'=\Omega \mathfrak{n} }  \Omega ^{\dagger}.
+$$
 Now, as we wanted, $\hat{A}$ is the solution to $\mathcal{D}_ {\mu}\mathfrak{n}=0$ in a **gauge independent** way: If $\hat{A}$ is a solution, after gauge transform, the transformed field $\hat{A}'$ is still a solution to $D'_ {\mu}\mathfrak{n}'=0$.
 
-The decomposition $\hat{A}=\mathcal{A}\mathfrak{n}+\mathcal{C}$ better be gauge independent as well, that is, after a gauge transformation we would like 
+After a gauge transformation we would like 
 
 $$
-\hat{A}' = \mathcal{A}' \mathfrak{n}' + \mathcal{C}'.
+\hat{A}' = \mathcal{A}'  + \mathcal{C}'.
 $$
 
 Let's focus on $\mathcal{A}$ first. It is the $\mathfrak{n}$-direction projection of $\hat{A}$, that is
 
 $$
-\mathcal{A} = 2\mathrm{Tr}\,(\mathfrak{n} \hat{A}) \equiv \hat{n} \cdot \hat{A},
+\mathcal{A}=a\mathfrak{n} , \quad \mathcal{A} = 2\mathrm{Tr}\,(\mathfrak{n} \hat{A}) \equiv \hat{n} \cdot \hat{A},
 $$
 
-the factor of $2$ is due to the normalization $\mathrm{Tr}\,T^{a}T^{b}=2\delta^{ab}$. **This should be treated as the definition of $\mathcal{A}$, and this definition better be gauge independent**, hence after gauge transformation we want
+the factor of $2$ is due to the normalization $\mathrm{Tr}\,T^{a}T^{b}=2\delta^{ab}$. **This should be treated as the definition of $\mathcal{a}$, and this definition better be gauge independent**, hence after gauge transformation we want
 
 $$
-\mathcal{A}'=2\mathrm{Tr}\,(\mathfrak{n} '\hat{A}').
+\mathcal{a}'=2\mathrm{Tr}\,(\mathfrak{n} '\hat{A}').
 $$
 
 This will fix the gauge transformation for $\mathcal{A}$. Let the gauge transformation be given by $\Omega=e^{ i\alpha }$ where $\alpha=\alpha^{a}T^{a}$, then the infinitesimal form reads
 
 $$
-\mathcal{A}\to \mathcal{A}' = \mathcal{A}+2\mathrm{Tr}\,(\mathfrak{n}\partial \alpha )\equiv \mathcal{A}+\hat{n}\cdot \partial \vec{\alpha}.
+a \to \mathcal{A}' = a+2\mathrm{Tr}\,(\mathfrak{n}\partial \alpha )\equiv a+\hat{n}\cdot \partial \vec{\alpha}.
 $$
 
 Note that it is no longer a total derivative, but the projection of a total derivative in $\hat{n}$ direction. 
 
-Since the restricted field has to transform as
+Note that this is not simply
 
 $$
-\hat{A}=\mathcal{A}+\mathcal{C}\to \Omega(\mathcal{A}+\mathcal{C}+i\partial)\Omega ^{\dagger}
+\mathcal{A}\to \Omega \mathcal{A}\Omega ^{\dagger},\quad \mathcal{C}\to \Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}.
 $$
 
-where the $i\partial$ term in the parenthesis is characteristic to gauge field. **We require that the nontrivial solution $\mathcal{C}$ remains a solution independent of gauge transform,** hence we put $\mathcal{C}$ and $i\partial$ together, so that $\mathcal{C}$ transforms as a gauge field:
-
-$$
-\mathcal{C}\to \Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}.
-$$
-
-which makes sense if you recall that $\mathcal{C}\sim \mathfrak{n}\partial \mathfrak{n}$ is a pure gauge in $SU(2)$, naturally it should transform as a gauge field.
-
-There are two ways to determine the gauge transform of $\mathcal{C}$, one of them is given above, the other one is to start from the definition: 
+To determine the gauge transform of $\mathcal{C}$, start from the definition: 
 
 $$
 \mathcal{C} = i[\mathfrak{n} ,\partial \mathfrak{n} ] = 2i\mathfrak{n}  \partial \mathfrak{n}. 
@@ -702,15 +697,9 @@ $$
 \mathcal{C}\to  \mathcal{C}'=2i \mathfrak{n}' \partial (\mathfrak{n}') = 2i\Omega \mathfrak{n} \Omega ^{\dagger}\partial(\Omega \mathfrak{n}  \Omega ^{\dagger}).
 $$
 
-However the right-hand-side of the above equation is only equal to $\Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}$ when they are both under a trace, otherwise they are not equal to each other. 
+Note that the right-hand-side of the above equation is only equal to $\Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}$ when they are both under a trace, otherwise they are not equal to each other. 
 
-Note that there is only one $i\partial$ term, since it has already be assigned to $\mathcal{C}$, the rest of the $\hat{A}$, namely $\mathcal{A}$, will have to transform like an adjoint scalar field:
-
-$$
-\mathcal{A}\to \Omega \mathcal{A}\Omega ^{\dagger}.
-$$
-
-Similarly to $X$ in $A = \mathcal{A}+\mathcal{C}+X$. $X$ also transforms as a adjoint scalar,
+Regarding $X$ in $A = \mathcal{A}+\mathcal{C}+X$. $X$ also transforms as a adjoint scalar,
 
 $$
 X\to \Omega X \Omega ^{\dagger}.
@@ -718,7 +707,7 @@ $$
 
 How the field transforms tells us what gauge invariant terms we could construct to be included into the Lagrangian. We know that $\left\lvert D_ {\mu}\mathcal{A} \right\rvert^{2}$ and $\left\lvert D_ {\mu}X \right\rvert^{2}$ are gauge invariant, so they should appear in the Lagrangian. Next, let's go to the details.
 
-## Lagrangian of R(Restricted)CD and E(Extended)CD
+## Lagrangian of Restricted and Extended QCD
 
 The `restricted QCD`, `RCD` for short, is the self-energy of restricted gauge field $\hat{A}$, 
 
@@ -742,7 +731,7 @@ $$
 \begin{align*}
 \mathcal{L}_ {\text{RCD}} =& - \frac{1}{4g^{2}}f_ {\mu \nu}^{2} - \frac{1}{2g^{2}}\mathrm{Tr}\,H^{2}-\frac{1}{g^{2}}\mathrm{Tr}\,f_ {\mu \nu}H^{\mu \nu}\\
 =& - \frac{1}{4g^{2}} (\partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu})^{2}\\
-& - \frac{1}{4g^{2}}(\partial_ {\mu}\hat{n}^{a}\partial_ {\nu}\hat{n}^{b}-(a\longleftrightarrow b))^{2}\\
+& - \frac{1}{4g^{2}}(\partial_ {\mu}\hat{n}^{a}\partial_ {\nu}\hat{n}^{b}-(a\leftrightarrow b))^{2}\\
 &+ \frac{1}{2g^{2}} \epsilon^{abc}f_ {\mu \nu}\hat{n}^{a}\partial^{\mu}\hat{n}^{b}\partial^{\nu}\hat{n}^{c}
 \end{align*}.
 $$
@@ -753,9 +742,9 @@ $$
 F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}],
 $$
 
-where we see the anticipated covariant derivative term $\hat{D}X$. $X$ behaves like an adjoint scalar, but has a Lorentz index. 
+where we have anticipated the covariant derivative term $\hat{D}X$.
 
-Take the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho calls Extended QCD, ECD for short. But it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $f_ {\mu \nu}\mathfrak{n}$ is orthogonal to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {ny}=0$ for all $\mu$, then we have 
+Substitute the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho calls Extended QCD, ECD for short. However it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $f_ {\mu \nu}\mathfrak{n}$ is orthogonal to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {ny}=0$ for all $\mu$, then we have 
 
 $$
 \partial \mathrm{Tr}\,\mathfrak{n} X=0=\mathrm{Tr}\,(\partial \mathfrak{n} X+\mathfrak{n} \partial X)\implies \mathrm{Tr}\,\partial \mathfrak{n} X=-\mathrm{Tr}\,\mathfrak{n}\partial X. 
@@ -825,11 +814,6 @@ X\to X+\omega D_ {\mu}\mathfrak{n}.
 $$
 
 But is this a gauge transformation really? 
-
-- - -
-
-
-
 
 
 
