@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://baiyangzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://baiyangzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-14T13:44:16+00:00</updated><id>https://baiyangzhang.github.io/feed.xml</id><title type="html">Baiyang Zhang</title><subtitle>A place dedicated to sharing insights and reflections on mathematics, physics, and social sciences.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://baiyangzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://baiyangzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-16T14:21:09+00:00</updated><id>https://baiyangzhang.github.io/feed.xml</id><title type="html">Baiyang Zhang</title><subtitle>A place dedicated to sharing insights and reflections on mathematics, physics, and social sciences.
 </subtitle><entry><title type="html">Bare Minimum of Abelian Decomposition and Monopole</title><link href="https://baiyangzhang.github.io/blog/2025/Abelian-Decomposition-and-Monopole/" rel="alternate" type="text/html" title="Bare Minimum of Abelian Decomposition and Monopole" /><published>2025-08-08T00:00:00+00:00</published><updated>2025-08-08T00:00:00+00:00</updated><id>https://baiyangzhang.github.io/blog/2025/Abelian-Decomposition-and-Monopole</id><content type="html" xml:base="https://baiyangzhang.github.io/blog/2025/Abelian-Decomposition-and-Monopole/"><![CDATA[<h1 id="convention">Convention</h1>
 
 <p>The gauge Lie group $G$ has Lie algebra $\mathfrak{g}\in T_ {e}G$, where $e$ is the unit element of $G$. The generators $T^{a}$ of $G$ satisfy</p>
@@ -584,11 +584,11 @@ H_ {\mu \nu} \mathfrak{n}  &amp;=i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\
 
 <p>OK, now let’s include final piece, the non-abelian fluctuation $X$. The total field strength $F_ {\mu \nu}$ is</p>
 
-\[F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}],\]
+\[\boxed{ 
+F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}].
+}\]
 
-<p>where we have anticipated the covariant derivative term $\hat{D}X$.</p>
-
-<p>Substitute the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho calls Extended QCD, ECD for short. However it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $f_ {\mu \nu}\mathfrak{n}$ is orthogonal to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {ny}=0$ for all $\mu$, then we have</p>
+<p>Substitute the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho (and probably other people) call Extended QCD, ECD for short. However it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $\mathfrak{n}$ is orthogonal to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {\mu}=0$ for all $\mu$, then we have</p>
 
 \[\partial \mathrm{Tr}\,\mathfrak{n} X=0=\mathrm{Tr}\,(\partial \mathfrak{n} X+\mathfrak{n} \partial X)\implies \mathrm{Tr}\,\partial \mathfrak{n} X=-\mathrm{Tr}\,\mathfrak{n}\partial X.\]
 
@@ -607,15 +607,28 @@ H_ {\mu \nu} \mathfrak{n}  &amp;=i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\
 =&amp;0.
 \end{align*}\]
 
+<p>This holds for not only $\hat{F}$ but really anything that is proportional to $\mathfrak{n}$.</p>
+
 <p>With this great simplification, the extended Lagrangian reads</p>
 
 \[\begin{align*}
 \mathcal{L}_ {\text{ECD}} =&amp; - \frac{1}{2g^{2}}\mathrm{Tr}\,F^{2} \\
-=&amp; - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2iF_ {\mu \nu}[X_ {\mu}X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2} \right. \\
+=&amp; - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2iF_ {\mu \nu}[X_ {\mu},X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2} \right. \\
 &amp;\left. - [X_ {\mu},X_ {\nu}]^{2}-2i(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})[X_ {\mu},X_ {\nu}]   \right\rbrace. 
 \end{align*}\]
 
-<p>We are using the convention in Swartz’s QFT textbook that we do not distinct the upper indices and lower indices when summed.</p>
+<p>In $SU(2)$, the Lie-algebra space is a three dimensional vector space, since $X_ {\mu}$ is orthogonal to $\hat{n}$, $X_ {\mu}\times X_ {\nu}$ is aligned with $\hat{n}$. In terms of matrices, $[X_ {\mu},X_ {\nu}]\propto \mathfrak{n}$. Thus we can separate the $\mathfrak{n}$-factor from the commutator and define $X_ {\mu \nu}$ as</p>
+
+\[X_ {\mu \nu} \mathfrak{n} := -i[X_ {\mu},X_ {\nu}],\]
+
+<p>The Lagrangian reads</p>
+
+\[\begin{align*}
+\mathcal{L}_ {\text{ECD}} =&amp; - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
+=&amp; - \frac{1}{4g^{2}}((f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)\cdot(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)).
+\end{align*}\]
+
+<p>We have used the convention in Schwartz’s QFT textbook that we do not distinct the upper indices and lower indices when summed. In the second line we have got ridden of the trace sign.</p>
 
 <hr />
 
@@ -644,6 +657,57 @@ H_ {\mu \nu} \mathfrak{n}  &amp;=i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\
 \[X\to X+\omega D_ {\mu}\mathfrak{n}.\]
 
 <p>But is this a gauge transformation really?</p>
+
+<h2 id="equation-of-motion">Equation of Motion</h2>
+
+<p>Our starting point is the Lagrangian of ECD,</p>
+
+\[\begin{align*}
+\mathcal{L}_ {\text{ECD}} =&amp; - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
+=&amp; - \frac{1}{4g^{2}}((f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)\cdot(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)).
+\end{align*}\]
+
+<p>The Euler-Lagrange equation for $a_ {\mu}$ reads</p>
+
+\[\frac{ \partial \mathcal{L} }{ \partial a_ {\mu} }  = \partial_ {\nu} \frac{ \partial \mathcal{L} }{ \partial(\partial_ {\nu}a_ {\mu}) } .\]
+
+<p>We have</p>
+
+\[\begin{align*}
+-2g^{2}\frac{ \partial \mathcal{L} }{ \partial a_ {\mu} }  =&amp; -2i \mathrm{Tr}\,\left\lbrace [\mathfrak{n} ,X_ {\nu}](\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}) \right\rbrace \\
+=&amp; \hat{n}\cdot(\vec{X}_ {\nu}\times \hat{D}_ {\mu}\vec{X}_ {\nu}) -\hat{n}\cdot(\vec{X}_ {\nu}\times \hat{D}_ {\nu}\vec{X}_ {\mu}),
+\end{align*}\]
+
+<p>where $\hat{D}_ {\mu}\vec{X}_ {\nu} =(\hat{D}_ {\mu}X_ {\nu})^{a}T^{a}$, $T^{a}$ is the generator (basis) of $\mathfrak{su}(2)$. The right-hand side of the Euler-Lagrange equation reads</p>
+
+\[\begin{align*}
+-2g^{2}\partial_ {\nu}\frac{ \partial \mathcal{L} }{ \partial(\partial_ {\nu}a_ {\mu})  } 
+=&amp; \frac{1}{4} \mathrm{Tr}\,\left\lbrace \frac{ \partial  }{ \partial(\partial_ {\nu}a_ {\mu}) } (f_ {\alpha \beta}+H_ {\alpha \beta}+X_ {\alpha \beta})^{2} \mathbb{1}_ {2\times 2} \right\rbrace    \\
+=&amp; \partial_ {\nu}(f_ {\nu \mu}+H_ {\nu \mu}+X_ {\nu \mu}).
+\end{align*}\]
+
+<p>Putting them together we get the equation of motion for $a_ {\mu}$:</p>
+
+\[\boxed{ 
+\partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}) = \hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\nu}\vec{X}_ {\mu}) -\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\mu}\vec{X}_ {\nu}).
+}\]
+
+<hr />
+
+<p>Next we move on to the equation of motion for $X^{i}_ {\mu}$. To simplify the notation let’s temporarily define</p>
+
+\[\widetilde{F}_ {\mu \nu} := f_ {\mu \nu} + H_ {\mu \nu} + X_ {\mu \nu}, \quad  F = \widetilde{F} \mathfrak{n} .\]
+
+<p>We have</p>
+
+\[\begin{align*}
+-2g^{2} \frac{ \partial \mathcal{L} }{ \partial X^{i}_ {\alpha} }  =&amp; \mathrm{Tr}\,\left\lbrace 2\widetilde{F}_ {\mu \nu}\mathfrak{n}(-i)\frac{ \partial  }{ \partial X_ {\alpha}^{i} } [X_ {\mu},X_ {\nu}]+2\hat{D}_ {\mu}X_ {\nu} (\pi)\frac{ \partial  }{ \partial X^{i}_ {\alpha} } [\hat{A},X_ {\nu}] \right\rbrace  \\
+=&amp; (\widetilde{F}_ {\alpha \nu}X_ {\nu}^{j}-\widetilde{F}_ {\mu \alpha}X_ {\mu}^{i})\epsilon^{ijk}\hat{n}^{k} - \epsilon^{ijk}\hat{A}^{j}(\hat{D}_ {\mu}X_ {\alpha})^{k},
+\end{align*}\]
+
+<p>where since $\hat{A} = \mathcal{A}+\mathcal{C}$ is proportional to $\mathfrak{n}$, we have $\hat{A}^{i} = a \hat{n}^{i}+C\hat{n}^{i}$, where $\mathcal{C} =:C\mathfrak{n}$.</p>
+
+<p>We have</p>
 
 <h1 id="appendix">Appendix</h1>
 
