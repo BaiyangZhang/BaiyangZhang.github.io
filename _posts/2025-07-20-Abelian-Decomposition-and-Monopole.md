@@ -739,12 +739,12 @@ $$
 OK, now let's include final piece, the non-abelian fluctuation $X$. The total field strength $F_ {\mu \nu}$ is 
 
 $$
-F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}],
+\boxed{ 
+F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}].
+}
 $$
 
-where we have anticipated the covariant derivative term $\hat{D}X$.
-
-Substitute the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho calls Extended QCD, ECD for short. However it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $f_ {\mu \nu}\mathfrak{n}$ is orthogonal to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {ny}=0$ for all $\mu$, then we have 
+Substitute the above expression into the total gauge potential $-\frac{1}{2g^{2}}\mathrm{Tr}\,F^{2}$, we get what Cho (and probably other people) call Extended QCD, ECD for short. However it is just the gauge part, and it is just the same QCD Lagrangian, separated into different components. To simplify the extended QCD Lagrangian, recall that $\mathfrak{n}$ is orthogonal to $X$ by construction, namely $\mathrm{Tr}\,\mathfrak{n}X_ {\mu}=0$ for all $\mu$, then we have 
 
 $$
 \partial \mathrm{Tr}\,\mathfrak{n} X=0=\mathrm{Tr}\,(\partial \mathfrak{n} X+\mathfrak{n} \partial X)\implies \mathrm{Tr}\,\partial \mathfrak{n} X=-\mathrm{Tr}\,\mathfrak{n}\partial X. 
@@ -767,17 +767,38 @@ $$
 \end{align*}
 $$
 
+This holds for not only $\hat{F}$ but really anything that is proportional to $\mathfrak{n}$. 
+
+
+
 With this great simplification, the extended Lagrangian reads
 
 $$
 \begin{align*}
 \mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,F^{2} \\
-=& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2iF_ {\mu \nu}[X_ {\mu}X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2} \right. \\
+=& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2iF_ {\mu \nu}[X_ {\mu},X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2} \right. \\
 &\left. - [X_ {\mu},X_ {\nu}]^{2}-2i(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})[X_ {\mu},X_ {\nu}]   \right\rbrace. 
 \end{align*}
 $$
 
-We are using the convention in Swartz's QFT textbook that we do not distinct the upper indices and lower indices when summed.
+In $SU(2)$, the Lie-algebra space is a three dimensional vector space, since $X_ {\mu}$ is orthogonal to $\hat{n}$, $X_ {\mu}\times X_ {\nu}$ is aligned with $\hat{n}$. In terms of matrices, $[X_ {\mu},X_ {\nu}]\propto \mathfrak{n}$. Thus we can separate the $\mathfrak{n}$-factor from the commutator and define $X_ {\mu \nu}$ as 
+
+$$
+X_ {\mu \nu} \mathfrak{n} := -i[X_ {\mu},X_ {\nu}],
+$$
+
+The Lagrangian reads
+
+$$
+\begin{align*}
+\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
+=& - \frac{1}{4g^{2}}((f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)\cdot(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)).
+\end{align*}
+$$
+
+We have used the convention in Schwartz's QFT textbook that we do not distinct the upper indices and lower indices when summed. In the second line we have got ridden of the trace sign.
+
+
 
 - - -
 
@@ -814,6 +835,76 @@ X\to X+\omega D_ {\mu}\mathfrak{n}.
 $$
 
 But is this a gauge transformation really? 
+
+
+## Equation of Motion
+
+Our starting point is the Lagrangian of ECD,
+
+$$
+\begin{align*}
+\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
+=& - \frac{1}{4g^{2}}((f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)\cdot(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)).
+\end{align*}
+$$
+
+The Euler-Lagrange equation for $a_ {\mu}$ reads 
+
+$$
+\frac{ \partial \mathcal{L} }{ \partial a_ {\mu} }  = \partial_ {\nu} \frac{ \partial \mathcal{L} }{ \partial(\partial_ {\nu}a_ {\mu}) } .
+$$
+
+We have 
+
+$$
+\begin{align*}
+-2g^{2}\frac{ \partial \mathcal{L} }{ \partial a_ {\mu} }  =& -2i \mathrm{Tr}\,\left\lbrace [\mathfrak{n} ,X_ {\nu}](\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}) \right\rbrace \\
+=& \hat{n}\cdot(\vec{X}_ {\nu}\times \hat{D}_ {\mu}\vec{X}_ {\nu}) -\hat{n}\cdot(\vec{X}_ {\nu}\times \hat{D}_ {\nu}\vec{X}_ {\mu}),
+\end{align*}
+$$
+
+where $\hat{D}_ {\mu}\vec{X}_ {\nu} =(\hat{D}_ {\mu}X_ {\nu})^{a}T^{a}$, $T^{a}$ is the generator (basis) of $\mathfrak{su}(2)$. The right-hand side of the Euler-Lagrange equation reads
+
+$$
+\begin{align*}
+-2g^{2}\partial_ {\nu}\frac{ \partial \mathcal{L} }{ \partial(\partial_ {\nu}a_ {\mu})  } 
+=& \frac{1}{4} \mathrm{Tr}\,\left\lbrace \frac{ \partial  }{ \partial(\partial_ {\nu}a_ {\mu}) } (f_ {\alpha \beta}+H_ {\alpha \beta}+X_ {\alpha \beta})^{2} \mathbb{1}_ {2\times 2} \right\rbrace    \\
+=& \partial_ {\nu}(f_ {\nu \mu}+H_ {\nu \mu}+X_ {\nu \mu}).
+\end{align*}
+$$
+
+Putting them together we get the equation of motion for $a_ {\mu}$:
+
+$$
+\boxed{ 
+\partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}) = \hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\nu}\vec{X}_ {\mu}) -\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\mu}\vec{X}_ {\nu}).
+}
+$$
+
+- - -
+
+Next we move on to the equation of motion for $X^{i}_ {\mu}$. To simplify the notation let's temporarily define 
+
+$$
+\widetilde{F}_ {\mu \nu} := f_ {\mu \nu} + H_ {\mu \nu} + X_ {\mu \nu}, \quad  F = \widetilde{F} \mathfrak{n} .
+$$
+
+We have 
+
+$$
+\begin{align*}
+-2g^{2} \frac{ \partial \mathcal{L} }{ \partial X^{i}_ {\alpha} }  =& \mathrm{Tr}\,\left\lbrace 2\widetilde{F}_ {\mu \nu}\mathfrak{n}(-i)\frac{ \partial  }{ \partial X_ {\alpha}^{i} } [X_ {\mu},X_ {\nu}]+2\hat{D}_ {\mu}X_ {\nu} (\pi)\frac{ \partial  }{ \partial X^{i}_ {\alpha} } [\hat{A},X_ {\nu}] \right\rbrace  \\
+=& (\widetilde{F}_ {\alpha \nu}X_ {\nu}^{j}-\widetilde{F}_ {\mu \alpha}X_ {\mu}^{i})\epsilon^{ijk}\hat{n}^{k} - \epsilon^{ijk}\hat{A}^{j}(\hat{D}_ {\mu}X_ {\alpha})^{k},
+\end{align*}
+$$
+
+where since $\hat{A} = \mathcal{A}+\mathcal{C}$ is proportional to $\mathfrak{n}$, we have $\hat{A}^{i} = a \hat{n}^{i}+C\hat{n}^{i}$, where $\mathcal{C} =:C\mathfrak{n}$.
+
+We have 
+
+
+
+
 
 
 
