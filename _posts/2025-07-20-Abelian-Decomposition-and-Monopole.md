@@ -837,13 +837,13 @@ $$
 But is this a gauge transformation really? 
 
 
-## Equation of Motion
+## Equations of Motion
 
 Our starting point is the Lagrangian of ECD,
 
 $$
 \begin{align*}
-\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
+\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}_ {\mu \nu}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
 =& - \frac{1}{4g^{2}}((f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)\cdot(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)).
 \end{align*}
 $$
@@ -886,7 +886,7 @@ $$
 Next we move on to the equation of motion for $X^{i}_ {\mu}$. To simplify the notation let's temporarily define 
 
 $$
-\widetilde{F}_ {\mu \nu} := f_ {\mu \nu} + H_ {\mu \nu} + X_ {\mu \nu}, \quad  F = \widetilde{F} \mathfrak{n} .
+\widetilde{F}_ {\mu \nu} := f_ {\mu \nu} + H_ {\mu \nu} + X_ {\mu \nu}, \quad  F = \widetilde{F} \mathfrak{n} +\hat{D}X-\hat{D}X.
 $$
 
 We have 
@@ -894,15 +894,26 @@ We have
 $$
 \begin{align*}
 -2g^{2} \frac{ \partial \mathcal{L} }{ \partial X^{i}_ {\alpha} }  =& \mathrm{Tr}\,\left\lbrace 2\widetilde{F}_ {\mu \nu}\mathfrak{n}(-i)\frac{ \partial  }{ \partial X_ {\alpha}^{i} } [X_ {\mu},X_ {\nu}]+2\hat{D}_ {\mu}X_ {\nu} (\pi)\frac{ \partial  }{ \partial X^{i}_ {\alpha} } [\hat{A},X_ {\nu}] \right\rbrace  \\
-=& (\widetilde{F}_ {\alpha \nu}X_ {\nu}^{j}-\widetilde{F}_ {\mu \alpha}X_ {\mu}^{i})\epsilon^{ijk}\hat{n}^{k} - \epsilon^{ijk}\hat{A}^{j}(\hat{D}_ {\mu}X_ {\alpha})^{k},
+=& (\widetilde{F}_ {\alpha \nu}X_ {\nu}^{j}-\widetilde{F}_ {\mu \alpha}X_ {\mu}^{j})\epsilon^{ijk}\hat{n}^{k} - \epsilon^{ijk}\hat{A}^{j}(\hat{D}_ {\mu}X_ {\alpha})^{k}\\
+=& 2(\widetilde{F}_ {\alpha \mu} X_ {\mu}^{j}\hat{n}^{k}\epsilon^{ijk}) + 2\epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\alpha}X_ {\mu}-\hat{D}_ {\mu}X_ {\alpha})^{k},
 \end{align*}
 $$
 
-where since $\hat{A} = \mathcal{A}+\mathcal{C}$ is proportional to $\mathfrak{n}$, we have $\hat{A}^{i} = a \hat{n}^{i}+C\hat{n}^{i}$, where $\mathcal{C} =:C\mathfrak{n}$.
+where since $\hat{A} = \mathcal{A}+\mathcal{C}$ is proportional to $\mathfrak{n}$, write $\hat{A}^{i} = a \hat{n}^{i}+C\hat{n}^{i}$, where $\mathcal{C} =:C\mathfrak{n}$, namely $C$ is the component in $\mathfrak{n}$ direction of script C.
 
 We have 
 
+$$
+-2g^{2} \partial_ {\beta}\frac{ \partial \mathcal{L} }{ \partial (\partial_ {\beta}X_ {\alpha}^{i})  }  = 2\partial_ {\beta}((\hat{D}_ {\beta}X_ {\alpha})^{i} - (\hat{D}_ {\alpha}X_ {\beta})^{i}).
+$$
 
+Putting everything together, we have 
+
+$$
+\epsilon^{ijk}(f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})X_ {\mu}^{j}\hat{n}^{k} = \partial_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{i} + \epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{k}.
+$$
+
+In a more concise notation we could also write the right hand side as $\hat{D}_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})$. 
 
 
 
