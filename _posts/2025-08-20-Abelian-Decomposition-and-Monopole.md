@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bare Minimum of Abelian Decomposition and Monopole
-date: 2025-08-08
+date: 2025-08-20
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -665,13 +665,19 @@ $$
 \mathcal{A}=a\mathfrak{n} , \quad \mathcal{A} = 2\mathrm{Tr}\,(\mathfrak{n} \hat{A}) \equiv \hat{n} \cdot \hat{A},
 $$
 
-the factor of $2$ is due to the normalization $\mathrm{Tr}\,T^{a}T^{b}=2\delta^{ab}$. **This should be treated as the definition of $\mathcal{a}$, and this definition better be gauge independent**, hence after gauge transformation we want
+the factor of $2$ is due to the normalization $\mathrm{Tr}\,T^{a}T^{b}=\frac{1}{2}\delta^{ab}$. **This should be treated as the definition of $\mathcal{a}$, and this definition better be gauge independent**, hence after gauge transformation we want
 
 $$
 \mathcal{a}'=2\mathrm{Tr}\,(\mathfrak{n} '\hat{A}').
 $$
 
-This will fix the gauge transformation for $\mathcal{A}$. Let the gauge transformation be given by $\Omega=e^{ i\alpha }$ where $\alpha=\alpha^{a}T^{a}$, then the infinitesimal form reads
+This will fix the gauge transformation for $\mathcal{A}$. We have 
+
+$$
+a' = a + 2i\mathrm{Tr}\,\left\lbrace \mathfrak{n} \partial U^{\dagger}U \right\rbrace .
+$$
+
+Let the gauge transformation be given by $\Omega=e^{ i\alpha }$ where $\alpha=\alpha^{a}T^{a}$, then the infinitesimal form reads
 
 $$
 a \to \mathcal{A}' = a+2\mathrm{Tr}\,(\mathfrak{n}\partial \alpha )\equiv a+\hat{n}\cdot \partial \vec{\alpha}.
@@ -706,6 +712,43 @@ X\to \Omega X \Omega ^{\dagger}.
 $$
 
 How the field transforms tells us what gauge invariant terms we could construct to be included into the Lagrangian. We know that $\left\lvert D_ {\mu}\mathcal{A} \right\rvert^{2}$ and $\left\lvert D_ {\mu}X \right\rvert^{2}$ are gauge invariant, so they should appear in the Lagrangian. Next, let's go to the details.
+
+
+- - -
+
+Another possible gauge symmetry reads (in Cho's notation)
+
+$$
+\begin{align*}
+\delta \hat{n} &=0, \quad \delta A_ {\mu} = \frac{1}{g} \hat{n}\cdot D_ {\mu}\vec{\alpha},\\
+\delta \hat{A}_ {\mu} &= \frac{1}{g}(\hat{n}\cdot D_ {\mu}\hat{\alpha})\hat{n},\\
+\delta \vec{X}_ {\mu} &= \frac{1}{g}[D_ {\mu}\vec{\alpha}-(\hat{n}\cdot D_ {\mu} \vec{\alpha})\hat{n}],
+\end{align*}
+$$
+
+where $A_ {\mu}:=\hat{n}\cdot \vec{A}_ {\mu}$. 
+
+ In general,given an arbitrary $\hat{n}$, there exists different decomposition of gauge transformation that preserves the defining equation $D\mathfrak{n}=0$ besides the standard one. In other words, once $\hat{n}$ is given there are various possibles ways to define the gauge transformation of $\hat{A}$ that preserves the defining condition.
+
+- - -
+
+The `generalized Lorentz gauge` condition is defined to be 
+
+$$
+\partial_ {\mu}\hat{A}_ {\mu}=0,
+$$
+
+substitute the definition $\hat{A}=\mathcal{A}+\mathcal{C}$, for $\mathfrak{n}$-direction components and perpendicular to $\mathfrak{n}$ direction we have 
+
+$$
+\begin{align*}
+\partial_ {\mu} a_ {\mu} \mathfrak{n} =& 0 , \\
+a_ {\mu} \partial_ {\mu}\mathfrak{n} +i[\mathfrak{n} ,\partial^{2}\mathfrak{n} ]=&0.
+\end{align*}
+$$
+
+
+
 
 ## Lagrangian of Restricted and Extended QCD
 
@@ -784,69 +827,29 @@ $$
 In $SU(2)$, the Lie-algebra space is a three dimensional vector space, since $X_ {\mu}$ is orthogonal to $\hat{n}$, $X_ {\mu}\times X_ {\nu}$ is aligned with $\hat{n}$. In terms of matrices, $[X_ {\mu},X_ {\nu}]\propto \mathfrak{n}$. Thus we can separate the $\mathfrak{n}$-factor from the commutator and define $X_ {\mu \nu}$ as 
 
 $$
+\boxed{ 
 X_ {\mu \nu} \mathfrak{n} := -i[X_ {\mu},X_ {\nu}],
+}
 $$
 
-The Lagrangian reads
+then the Lagrangian reads
 
 $$
+\boxed{ 
 \begin{align*}
 \mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
-=& - \frac{1}{4g^{2}}((f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)\cdot(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)).
+=& - \frac{1}{4g^{2}}[(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)^{2}]
 \end{align*}
+}
 $$
 
-We have used the convention in Schwartz's QFT textbook that we do not distinct the upper indices and lower indices when summed. In the second line we have got ridden of the trace sign.
-
-
-
-- - -
-
-Another possible gauge symmetry reads (in Cho's notation)
+where we have used the convention in Schwartz's QFT textbook that we do not distinct the upper indices and lower indices when summed. In the second line we have got ridden of the trace sign. Recall that 
 
 $$
-\begin{align*}
-\delta \hat{n} &=0, \quad \delta A_ {\mu} = \frac{1}{g} \hat{n}\cdot D_ {\mu}\vec{\alpha},\\
-\delta \hat{A}_ {\mu} &= \frac{1}{g}(\hat{n}\cdot D_ {\mu}\hat{\alpha})\hat{n},\\
-\delta \vec{X}_ {\mu} &= \frac{1}{g}[D_ {\mu}\vec{\alpha}-(\hat{n}\cdot D_ {\mu} \vec{\alpha})\hat{n}],
-\end{align*}
+(\hat{D}\vec{X})^{i} = \partial X^{i} +\epsilon^{ijk}\hat{A}^{j}X^{k}.
 $$
-
-where $A_ {\mu}:=\hat{n}\cdot \vec{A}_ {\mu}$. 
-
-**This seems to be the gauge symmetry that preserves the monopole-like background field solution $\mathfrak{n}$**, as I will explain in the following. Since in the hedgehog ansatz, the monopole solution for the scalar $\phi_ {\text{m}}$ reads $\phi_ {\text{m}}\propto  \mathfrak{n}$ at the boundary, and $\phi$ gauge transforms as $\phi\to\Omega \phi \Omega ^{\dagger}$, the gauge transformation that leaves $\phi_ {\text{m}}$ invariant is whatever $\Omega$ that commutes with $\phi_ {\text{m}}$, then it has to be proportional to $\mathfrak{n}$ too. Write it $\Omega_ {n}=e^{ i\omega \mathfrak{n} }$. The covariant derivative $D_ {\mu}(\omega \mathfrak{n})$ is not necessarily proportional to $\mathfrak{n}$, to see that, note
-
-$$
-D_ {\mu}(\omega \mathfrak{n} ) = \partial(\omega \mathfrak{n} )-i[A_ {\mu},\omega \mathfrak{n} ]=(\partial_ {\mu} \omega)\mathfrak{n} +\omega \partial_ {\mu}\mathfrak{n}  -i\omega[A_ {\mu},\mathfrak{n} ].
-$$
-
-The first term is proportional to $\mathfrak{n}$, while the second and last is orthogonal to $\mathfrak{n}$ (just think of $\mathfrak{n}$ as a vector and commutator as a cross product). 
-
-The gauge transformation for $U(1)$ component $\mathcal{A}$ is just like a photon (the part proportional to $\mathfrak{n}$)
-
-$$
-\mathcal{A}\to \mathcal{A}+\partial_ {\mu}\omega \mathfrak{n} ,
-$$
-
-while the $X$ transforms as a $SU(N)$ field (the part orthogonal to $\mathfrak{n}$):
-
-$$
-X\to X+\omega D_ {\mu}\mathfrak{n}.
-$$
-
-But is this a gauge transformation really? 
-
 
 ## Equations of Motion
-
-Our starting point is the Lagrangian of ECD,
-
-$$
-\begin{align*}
-\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}_ {\mu \nu}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
-=& - \frac{1}{4g^{2}}((f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)\cdot(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)).
-\end{align*}
-$$
 
 The Euler-Lagrange equation for $a_ {\mu}$ reads 
 
@@ -883,19 +886,19 @@ $$
 
 - - -
 
-Next we move on to the equation of motion for $X^{i}_ {\mu}$. To simplify the notation let's temporarily define 
+Next we move on to the equation of motion for $X^{i}_ {\mu}$. To simplify the notation let's temporarily define part of $F_ {\mu \nu}$ to be $\Gamma_ {\mu \nu}$ (since $\Gamma$ is written as part of $F$ ):
 
 $$
-\widetilde{F}_ {\mu \nu} := f_ {\mu \nu} + H_ {\mu \nu} + X_ {\mu \nu}, \quad  F = \widetilde{F} \mathfrak{n} +\hat{D}X-\hat{D}X.
+\Gamma_ {\mu \nu} := f_ {\mu \nu} + H_ {\mu \nu} + X_ {\mu \nu}, \quad  F = \Gamma \mathfrak{n} +\hat{D}X-\hat{D}X.
 $$
 
 We have 
 
 $$
 \begin{align*}
--2g^{2} \frac{ \partial \mathcal{L} }{ \partial X^{i}_ {\alpha} }  =& \mathrm{Tr}\,\left\lbrace 2\widetilde{F}_ {\mu \nu}\mathfrak{n}(-i)\frac{ \partial  }{ \partial X_ {\alpha}^{i} } [X_ {\mu},X_ {\nu}]+2\hat{D}_ {\mu}X_ {\nu} (\pi)\frac{ \partial  }{ \partial X^{i}_ {\alpha} } [\hat{A},X_ {\nu}] \right\rbrace  \\
-=& (\widetilde{F}_ {\alpha \nu}X_ {\nu}^{j}-\widetilde{F}_ {\mu \alpha}X_ {\mu}^{j})\epsilon^{ijk}\hat{n}^{k} - \epsilon^{ijk}\hat{A}^{j}(\hat{D}_ {\mu}X_ {\alpha})^{k}\\
-=& 2(\widetilde{F}_ {\alpha \mu} X_ {\mu}^{j}\hat{n}^{k}\epsilon^{ijk}) + 2\epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\alpha}X_ {\mu}-\hat{D}_ {\mu}X_ {\alpha})^{k},
+-2g^{2} \frac{ \partial \mathcal{L} }{ \partial X^{i}_ {\alpha} }  =& \mathrm{Tr}\,\left\lbrace 2\Gamma_ {\mu \nu}\mathfrak{n}(-i)\frac{ \partial  }{ \partial X_ {\alpha}^{i} } [X_ {\mu},X_ {\nu}]+2\hat{D}_ {\mu}X_ {\nu} (\pi)\frac{ \partial  }{ \partial X^{i}_ {\alpha} } [\hat{A},X_ {\nu}] \right\rbrace  \\
+=& (\Gamma_ {\alpha \nu}X_ {\nu}^{j}-\Gamma_ {\mu \alpha}X_ {\mu}^{j})\epsilon^{ijk}\hat{n}^{k} - \epsilon^{ijk}\hat{A}^{j}(\hat{D}_ {\mu}X_ {\alpha})^{k}\\
+=& 2(\Gamma_ {\alpha \mu} X_ {\mu}^{j}\hat{n}^{k}\epsilon^{ijk}) + 2\epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\alpha}X_ {\mu}-\hat{D}_ {\mu}X_ {\alpha})^{k},
 \end{align*}
 $$
 
@@ -913,11 +916,44 @@ $$
 \epsilon^{ijk}(f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})X_ {\mu}^{j}\hat{n}^{k} = \partial_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{i} + \epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{k}.
 $$
 
-In a more concise notation we could also write the right hand side as $\hat{D}_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})$. 
+In a more concise notation we could also write the right hand side as the $i$-th component of $\hat{D}_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})$.  Or equivalently
 
+$$
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\alpha}-\hat{D}_ {\alpha}\vec{X}_ {\mu}) = (f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})\vec{X}_ {\mu} \times \hat{n} 
+$$
 
+- - -
 
+Since $X_ {\mu} = A_ {\mu}- \mathcal{A}-\mathcal{C}$ is always perpendicular to $\mathfrak{n}$, it only has $\hat{n}^{1}$ and $\hat{n}^{2}$ components (recall that we have defined that $\hat{n}^{1},\hat{n}^{2},\hat{n}$ to form an orthogonal basis), write 
 
+$$
+X_ {\mu} = X_ {\mu}^{1} \mathfrak{n}_ {1}  + X_ {\mu}^{2}\mathfrak{n}_ {2}, \text{ where }  \mathfrak{n}_ {1,2} := \hat{n}_ {1,2}\cdot \vec{T}.
+$$
+
+The $X$ field looks like a complex scalar since it has only two components. Can we interpret it so? To see it, define
+
+$$
+\chi_ {\mu} :=  \frac{1}{\sqrt{2}}(X_ {\mu}^{1}+iX_ {\mu}^{2}),
+$$
+then 
+
+$$
+X^{1} = \frac{1}{\sqrt{2}} (\chi + \chi ^\ast ),\quad  X^{2} = \frac{1}{i\sqrt{2}}(\chi-\chi ^\ast )
+$$
+
+and
+
+$$
+X_ {\mu \nu} = X_ {\mu}^{1}X_ {\nu}^{2}-X_ {\nu}^{1}X_ {\mu}^{2} = i(\chi_ {\mu}\chi_ {\nu}^\ast-\chi_ {\mu}^\ast \chi_ {\nu}) .
+$$
+
+The Lagrangian for extended QCD now reads (in terms of  $\chi$):
+
+$$
+\begin{align*}
+\mathcal{L}_ {\text{ECD}} =&  
+\end{align*}
+$$
 
 # Appendix
 
