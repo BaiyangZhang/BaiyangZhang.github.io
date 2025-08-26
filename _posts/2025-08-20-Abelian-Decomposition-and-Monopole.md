@@ -742,12 +742,10 @@ substitute the definition $\hat{A}=\mathcal{A}+\mathcal{C}$, for $\mathfrak{n}$-
 
 $$
 \begin{align*}
-\partial_ {\mu} a_ {\mu} \mathfrak{n} =& 0 , \\
+(\partial_ {\mu} a_ {\mu} )\mathfrak{n} =& 0 , \\
 a_ {\mu} \partial_ {\mu}\mathfrak{n} +i[\mathfrak{n} ,\partial^{2}\mathfrak{n} ]=&0.
 \end{align*}
 $$
-
-
 
 
 ## Lagrangian of Restricted and Extended QCD
@@ -930,7 +928,7 @@ $$
 X_ {\mu} = X_ {\mu}^{1} \mathfrak{n}_ {1}  + X_ {\mu}^{2}\mathfrak{n}_ {2}, \text{ where }  \mathfrak{n}_ {1,2} := \hat{n}_ {1,2}\cdot \vec{T}.
 $$
 
-The $X$ field looks like a complex scalar since it has only two components. Can we interpret it so? To see it, define
+The $X$ field looks like two components of a single complex vector. Can we interpret it so? To see it, define
 
 $$
 \chi_ {\mu} :=  \frac{1}{\sqrt{2}}(X_ {\mu}^{1}+iX_ {\mu}^{2}),
@@ -947,11 +945,55 @@ $$
 X_ {\mu \nu} = X_ {\mu}^{1}X_ {\nu}^{2}-X_ {\nu}^{1}X_ {\mu}^{2} = i(\chi_ {\mu}\chi_ {\nu}^\ast-\chi_ {\mu}^\ast \chi_ {\nu}) .
 $$
 
-The Lagrangian for extended QCD now reads (in terms of  $\chi$):
+To rewrite the Lagrangian in terms of $\chi$, we also need to express $\hat{D}_ {\mu}X_ {\nu}-(\mu \leftrightarrow \nu)$ in $\chi$. It is more convenient to adopt the following expression in vector notation,
+
+$$
+\hat{D} \vec{X} = \partial_ {\mu}\vec{X} + \hat{A}\times \vec{X}.
+$$
+
+*If $\hat{n}$ is independent of spacetime,* then without loss of generality we can assume that $\hat{n}$ lies in the $T^{3}$ direction, $\hat{n}_ {1}$ in $T^{1}$  and $\hat{n}_ {2}$ in $T^{2}$ respectively in $\mathfrak{su}(2)$. $X=X^{1}\mathfrak{n}_ {1}+X^{2}\mathfrak{n}_ {2}$ becomes $X=X^{1}T^{1}+X^{2}T^{2}$. $\hat{A}=a_ {\mu}T^{3}$ since $\mathcal{C}$ vanishes, and as a consequence so does $H_ {\mu \nu}$.
+
+We can write down the three components of $\hat{D}_ {\mu}\vec{X}_ {\nu}$ easily:
 
 $$
 \begin{align*}
-\mathcal{L}_ {\text{ECD}} =&  
+\text{1-component=}&  \partial_ {\mu}X_ {\nu}^{1}-\hat{A}_ {\mu}^{3}X_ {\nu}^{2}, \\
+\text{2-component=}& \partial_ {\mu}X_ {\nu}^{2} + \hat{A}_ {\mu}^{3}X_ {\nu}^{1},  \\
+\text{3-component=}& 0.
+\end{align*}
+$$
+
+The last one is zero since $\hat{A}^{1,2}=0$. Thus
+
+$$
+\begin{align*}
+ &(\hat{D}_ {\mu}\vec{X}_ {\nu}-(\mu \leftrightarrow \nu))^{2}\\
+=& \text{1-component}^{2}+\text{2-component}^{2}\\
+=& \text{1-component}^{2}-(i\times \text{2-component})^{2}\\
+=& (\text{1-compnent}+i\times \text{2-compnent})(\text{1-compnent}-i\times \text{2-compnent}) \\
+=& [(\partial_ {\mu}X_ {\nu}^{1}+\partial_ {\mu}iX_ {\nu}^{2}+i\hat{A}_ {\mu}^{3}(X_ {\nu}^{1}+iX_ {\nu}^{2}))-(\mu \leftrightarrow \nu)]\\
+=& 2[\partial_ {\mu}\chi_ {\nu}+i\hat{A}_ {\mu}^{3}\chi_ {\nu}-(\mu \leftrightarrow \nu)] [\partial_ {\mu}\chi ^\ast _ {\nu}-i\hat{A}_ {\mu}^{3}\chi ^\ast _ {\nu}-(\mu \leftrightarrow \nu)]\\
+=& 2[\partial_ {\mu}\chi_ {\nu}+i\hat{A}_ {\mu}^{3}\chi_ {\nu}-(\mu \leftrightarrow \nu)]\times (\text{h.c.})
+\end{align*}
+$$
+
+where $\text{h.c.}$ stands for hermitian conjugation. Recall that $\hat{A}^{3}=a$. Define the hatted covariant derivative for $\chi$ as 
+
+$$
+\hat{D}_ {\mu} \chi_ {\nu} := \partial_ {\mu}\chi_ {\nu} +i a_ {\mu}\chi_ {\nu}
+$$
+
+we have 
+
+$$
+(\hat{D}_ {\mu}\vec{X}_ {\nu}-(\mu \leftrightarrow \nu))^{2} = 2\left\lvert \hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu} \right\rvert ^{2}.
+$$
+Finally, in the special case where $(\hat{n}_ {1},\hat{n}_ {2},\hat{n})=(T^{1},T^{2},T^{3})$, the Lagrangian for extended QCD now reads (in terms of  $\chi$):
+
+$$
+\begin{align*}
+\mathcal{L}_ {\text{ECD}} =& - \frac{1}{4g^{2}}(f_ {\mu \nu}+X_ {\mu \nu})^{2} 
+- \frac{1}{2g^{2}} \left\lvert \hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu} \right\rvert ^{2}
 \end{align*}
 $$
 
