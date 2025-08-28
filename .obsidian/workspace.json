@@ -27,28 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
+                "file": "投简历情况.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-20-Abelian-Decomposition-and-Monopole"
-            }
-          },
-          {
-            "id": "96da7291a9c0498d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "title": "投简历情况"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f8485d28afe14f44",
@@ -224,10 +211,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "96da7291a9c0498d",
+  "active": "0d2b779c32e53cf3",
   "lastOpenFiles": [
-    "Tem.md",
     "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
+    "Tem.md",
     "_drafts/2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "Pasted image 20250821163510.png",
     "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
