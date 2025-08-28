@@ -1,9 +1,8 @@
 {
   "theme": "system",
   "cssTheme": "Shimmering Focus",
-  "baseFontSize": 20,
+  "baseFontSize": 22,
   "accentColor": "#0e00cc",
   "baseFontSizeAction": true,
-  "showRibbon": false,
-  "textFontFamily": "Inter"
+  "showRibbon": false
 }
