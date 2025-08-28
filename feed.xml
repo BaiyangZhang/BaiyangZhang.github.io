@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://baiyangzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://baiyangzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-27T12:26:01+00:00</updated><id>https://baiyangzhang.github.io/feed.xml</id><title type="html">Baiyang Zhang</title><subtitle>A place dedicated to sharing insights and reflections on mathematics, physics, and social sciences.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://baiyangzhang.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://baiyangzhang.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-28T04:36:15+00:00</updated><id>https://baiyangzhang.github.io/feed.xml</id><title type="html">Baiyang Zhang</title><subtitle>A place dedicated to sharing insights and reflections on mathematics, physics, and social sciences.
 </subtitle><entry><title type="html">Bare Minimum of Abelian Decomposition and Monopole</title><link href="https://baiyangzhang.github.io/blog/2025/Abelian-Decomposition-and-Monopole/" rel="alternate" type="text/html" title="Bare Minimum of Abelian Decomposition and Monopole" /><published>2025-08-20T00:00:00+00:00</published><updated>2025-08-20T00:00:00+00:00</updated><id>https://baiyangzhang.github.io/blog/2025/Abelian-Decomposition-and-Monopole</id><content type="html" xml:base="https://baiyangzhang.github.io/blog/2025/Abelian-Decomposition-and-Monopole/"><![CDATA[<h1 id="convention">Convention</h1>
 
 <p>The gauge Lie group $G$ has Lie algebra $\mathfrak{g}\in T_ {e}G$, where $e$ is the unit element of $G$. The generators $T^{a}$ of $G$ satisfy</p>
@@ -586,7 +586,7 @@ Now, as we wanted, $\hat{A}$ is the solution to $\mathcal{D}_ {\mu}\mathfrak{n}=
 <p>substitute the definition $\hat{A}=\mathcal{A}+\mathcal{C}$, for $\mathfrak{n}$-direction components and perpendicular to $\mathfrak{n}$ direction we have</p>
 
 \[\begin{align*}
-\partial_ {\mu} a_ {\mu} \mathfrak{n} =&amp; 0 , \\
+(\partial_ {\mu} a_ {\mu} )\mathfrak{n} =&amp; 0 , \\
 a_ {\mu} \partial_ {\mu}\mathfrak{n} +i[\mathfrak{n} ,\partial^{2}\mathfrak{n} ]=&amp;0.
 \end{align*}\]
 
@@ -728,7 +728,7 @@ X_ {\mu \nu} \mathfrak{n} := -i[X_ {\mu},X_ {\nu}],
 
 \[X_ {\mu} = X_ {\mu}^{1} \mathfrak{n}_ {1}  + X_ {\mu}^{2}\mathfrak{n}_ {2}, \text{ where }  \mathfrak{n}_ {1,2} := \hat{n}_ {1,2}\cdot \vec{T}.\]
 
-<p>The $X$ field looks like a complex scalar since it has only two components. Can we interpret it so? To see it, define</p>
+<p>The $X$ field looks like two components of a single complex vector. Can we interpret it so? To see it, define</p>
 
 <p>\(\chi_ {\mu} :=  \frac{1}{\sqrt{2}}(X_ {\mu}^{1}+iX_ {\mu}^{2}),\)
 then</p>
@@ -739,10 +739,44 @@ then</p>
 
 \[X_ {\mu \nu} = X_ {\mu}^{1}X_ {\nu}^{2}-X_ {\nu}^{1}X_ {\mu}^{2} = i(\chi_ {\mu}\chi_ {\nu}^\ast-\chi_ {\mu}^\ast \chi_ {\nu}) .\]
 
-<p>The Lagrangian for extended QCD now reads (in terms of  $\chi$):</p>
+<p>To rewrite the Lagrangian in terms of $\chi$, we also need to express $\hat{D}_ {\mu}X_ {\nu}-(\mu \leftrightarrow \nu)$ in $\chi$. It is more convenient to adopt the following expression in vector notation,</p>
+
+\[\hat{D} \vec{X} = \partial_ {\mu}\vec{X} + \hat{A}\times \vec{X}.\]
+
+<p><em>If $\hat{n}$ is independent of spacetime,</em> then without loss of generality we can assume that $\hat{n}$ lies in the $T^{3}$ direction, $\hat{n}_ {1}$ in $T^{1}$  and $\hat{n}_ {2}$ in $T^{2}$ respectively in $\mathfrak{su}(2)$. $X=X^{1}\mathfrak{n}_ {1}+X^{2}\mathfrak{n}_ {2}$ becomes $X=X^{1}T^{1}+X^{2}T^{2}$. $\hat{A}=a_ {\mu}T^{3}$ since $\mathcal{C}$ vanishes, and as a consequence so does $H_ {\mu \nu}$.</p>
+
+<p>We can write down the three components of $\hat{D}_ {\mu}\vec{X}_ {\nu}$ easily:</p>
 
 \[\begin{align*}
-\mathcal{L}_ {\text{ECD}} =&amp;  
+\text{1-component=}&amp;  \partial_ {\mu}X_ {\nu}^{1}-\hat{A}_ {\mu}^{3}X_ {\nu}^{2}, \\
+\text{2-component=}&amp; \partial_ {\mu}X_ {\nu}^{2} + \hat{A}_ {\mu}^{3}X_ {\nu}^{1},  \\
+\text{3-component=}&amp; 0.
+\end{align*}\]
+
+<p>The last one is zero since $\hat{A}^{1,2}=0$. Thus</p>
+
+\[\begin{align*}
+ &amp;(\hat{D}_ {\mu}\vec{X}_ {\nu}-(\mu \leftrightarrow \nu))^{2}\\
+=&amp; \text{1-component}^{2}+\text{2-component}^{2}\\
+=&amp; \text{1-component}^{2}-(i\times \text{2-component})^{2}\\
+=&amp; (\text{1-compnent}+i\times \text{2-compnent})(\text{1-compnent}-i\times \text{2-compnent}) \\
+=&amp; [(\partial_ {\mu}X_ {\nu}^{1}+\partial_ {\mu}iX_ {\nu}^{2}+i\hat{A}_ {\mu}^{3}(X_ {\nu}^{1}+iX_ {\nu}^{2}))-(\mu \leftrightarrow \nu)]\\
+=&amp; 2[\partial_ {\mu}\chi_ {\nu}+i\hat{A}_ {\mu}^{3}\chi_ {\nu}-(\mu \leftrightarrow \nu)] [\partial_ {\mu}\chi ^\ast _ {\nu}-i\hat{A}_ {\mu}^{3}\chi ^\ast _ {\nu}-(\mu \leftrightarrow \nu)]\\
+=&amp; 2[\partial_ {\mu}\chi_ {\nu}+i\hat{A}_ {\mu}^{3}\chi_ {\nu}-(\mu \leftrightarrow \nu)]\times (\text{h.c.})
+\end{align*}\]
+
+<p>where $\text{h.c.}$ stands for hermitian conjugation. Recall that $\hat{A}^{3}=a$. Define the hatted covariant derivative for $\chi$ as</p>
+
+\[\hat{D}_ {\mu} \chi_ {\nu} := \partial_ {\mu}\chi_ {\nu} +i a_ {\mu}\chi_ {\nu}\]
+
+<p>we have</p>
+
+<p>\((\hat{D}_ {\mu}\vec{X}_ {\nu}-(\mu \leftrightarrow \nu))^{2} = 2\left\lvert \hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu} \right\rvert ^{2}.\)
+Finally, in the special case where $(\hat{n}_ {1},\hat{n}_ {2},\hat{n})=(T^{1},T^{2},T^{3})$, the Lagrangian for extended QCD now reads (in terms of  $\chi$):</p>
+
+\[\begin{align*}
+\mathcal{L}_ {\text{ECD}} =&amp; - \frac{1}{4g^{2}}(f_ {\mu \nu}+X_ {\mu \nu})^{2} 
+- \frac{1}{2g^{2}} \left\lvert \hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu} \right\rvert ^{2}
 \end{align*}\]
 
 <h1 id="appendix">Appendix</h1>
