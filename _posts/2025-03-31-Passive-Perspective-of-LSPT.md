@@ -725,9 +725,8 @@ This represents the fundamental quantization relation, unaffected by the selecti
 
 Here we summarize the linearized soliton perturbation theory associated with generic solitonic classic solutions $f_ {\text{sol}}$
 
-
-- - -
 # Appendix 
+
 ## Loop expansion, semi-classical expansion and coupling expansion
 
 There are three different but expansions that we usually don't extinguish:

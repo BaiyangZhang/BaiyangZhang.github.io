@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is Kink State?
-date: 2025-05-20
+date: 2025-08-29
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -271,7 +271,11 @@ $$
 S_ {J'} =- \int \frac{d^{d}p}{(2\pi)^{d}} \,  \frac{\left\lvert j_ {p}\right\rvert ^{2}}{\omega _ {p} ^{4}}.
 $$
 
-However, without a cutoff, the integral in the definition of $S_ {j'}$ might be divergent. For example, consider a delta-function source, $J(\vec{x})=\delta(\vec{x})$, then $j_ {p}\sim \sqrt{\omega _ {p}}$ and $S_ {j'}=-\infty$ for $d\geq 3$. In this case, 
+However, without a cutoff, the integral in the definition of $S_ {j'}$ might be divergent. For example, consider a delta-function source, $J(\vec{x})=\delta(\vec{x})$, then $j_ {p}\sim \sqrt{\omega _ {p}}$ and $S_ {j'}=-\infty$ for $d\geq 3$. To be continued.
+
+
+
+
 
 
 # The setups

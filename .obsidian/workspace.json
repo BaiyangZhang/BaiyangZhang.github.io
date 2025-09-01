@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "投简历情况.md",
+                "file": "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "投简历情况"
+              "title": "2025-08-29-Does-Adiabatic-Approach-Work-in-QFT"
             }
           }
         ],
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f8485d28afe14f44",
@@ -213,34 +214,35 @@
   },
   "active": "0d2b779c32e53cf3",
   "lastOpenFiles": [
-    "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
+    "_drafts/2025-08-29-what-is-kink-state.md",
+    "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
+    "_drafts/2025-06-04-Quantization-of-kink-states.md",
+    "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
+    "_posts/2025-03-14-Mass-Renormalization.md",
+    "_drafts/2025-08-06-Note-on-Geometric-Quantization.md",
+    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
     "Tem.md",
+    "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
+    "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2025-01-06-Perturbative-SSB-and-Effective-Action.md",
+    "_posts/2025-02-27-Introduction-to-Resurgence-1.md",
+    "_posts/2025-03-03-Lie-Groups.md",
+    "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
+    "投简历情况.md",
     "_drafts/2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "Pasted image 20250821163510.png",
     "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
     "计量检测认证知识竞赛题库.md",
     "2025-06-03-Schrodinger-Picture-in-QFT.md",
-    "_drafts/2025-08-06-Note-on-Geometric-Quantization.md",
     "backups/2020-09-28-twitter.md",
     "backups/2015-10-20-math.md",
     "backups/2015-07-15-code.md",
     "backups/2015-10-20-disqus-comments.md",
     "backups/2018-12-22-distill.md",
     "backups/2020-09-28-github-metadata.md",
-    "投简历情况.md",
     "backups/2021-07-04-diagrams.md",
-    "backups/2022-02-01-redirect.md",
-    "职业教育外语教学数字化资源库建设研究.md",
-    "Correspondence.md",
-    "README.md",
     "Pasted image 20250714150208.png",
     "Pasted image 20250704230817.png",
-    "中国高校中的异化现象研究.md",
-    "backups/2015-05-15-images.md",
-    "backups/2015-03-15-formatting-and-links.md",
-    "Untitled 1.md",
-    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
-    "_drafts/2025-06-04-Quantization-of-kink-states.md",
     "Pasted image 20250605143417.png",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/BaiyangZhangCV_merged.pdf",

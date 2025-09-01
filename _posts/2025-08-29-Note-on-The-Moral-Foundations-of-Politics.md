@@ -2,9 +2,9 @@
 layout: post
 title: "Note on The Moral\rFoundations\rof Politics by Ian Shapiro"
 subtitle: by Ian Shapiro
-date: 2025-01-02
+date: 2025-08-29
 author: Baiyang Zhang
-header-img: 
+header-img:
 catalog: true
 tags:
   - politics
