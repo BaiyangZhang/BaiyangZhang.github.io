@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "2025-08-29-Does-Adiabatic-Approach-Work-in-QFT"
             }
+          },
+          {
+            "id": "c74b4e80bee7ec5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tem.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Tem"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f8485d28afe14f44",
@@ -212,10 +225,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0d2b779c32e53cf3",
+  "active": "c74b4e80bee7ec5f",
   "lastOpenFiles": [
-    "_drafts/2025-08-29-what-is-kink-state.md",
     "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
+    "_drafts/2025-08-29-what-is-kink-state.md",
     "_drafts/2025-06-04-Quantization-of-kink-states.md",
     "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
     "_posts/2025-03-14-Mass-Renormalization.md",

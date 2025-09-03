@@ -11,10 +11,10 @@ tags:
 Starting with Coleman's model 2,
 
 $$
-H = \int d^{3}x \,  \frac{1}{2}(\partial \phi)^{2}+ \frac{\mu^{2}}{2} \phi^{2} + g\rho(\vec{x})\phi(x)
+H = \int d^{3}x \,  \frac{1}{2}(\pi^{2}+(\partial _ {i}  \phi)^{2})+ \frac{\mu^{2}}{2} \phi^{2} + g\rho(\vec{x})\phi(x)
 $$
 
-where $\rho(\vec{x})$ is a function of space only, independent of time. This means that the interaction doesn't turn off in the far past and far future. The standard lore is to insert an adiabatic switching function $f(t)$, 
+where $\pi$ is the canonical momentum ,and the density funciton $\rho(\vec{x})$ is a function of space only, independent of time. This means that the interaction doesn't turn off in the far past and far future. The standard lore is to insert an adiabatic switching function $f(t)$, 
 
 $$
 H_ {I}(t) = g \int d^{3}x \, \phi(x) \rho(\vec{x})\to  f(t) H_ {I}.
@@ -92,5 +92,8 @@ where we have discarded an $\epsilon$ term.
 
 If $f(t)=1$, then $\widetilde{f}(\omega _ {p})=\delta(\omega _ {p})2\pi$, and $h(\vec{p})\equiv {0}$. Also, if $\rho(\vec{x})=\delta(\vec{x})$, namely for point particles, then $\alpha$ blows up. Physically, $\alpha=\left\langle N \right\rangle$, the expected number of bare mesons.
 
+Next we use a different method to see if the adiabatic assumption really works.
+
 ## Displacement and Squeeze
 
+Let's use a different
