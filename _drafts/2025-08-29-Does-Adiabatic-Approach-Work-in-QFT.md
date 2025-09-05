@@ -47,8 +47,10 @@ The extra phase can be eliminated by a counter term, $H_ {I} \to H_ {I} +a$. The
 The ground state is more interesting than the S-matrix. In the $T\to\infty$ limit, the ground state energy reads
 
 $$
-E_ {0} = - \frac{g^{2}}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{\left\lvert \widetilde{\rho}(\vec{p}) \right\rvert ^{2}}{\left\lvert \vec{p} \right\rvert^{2}+\mu^{2} } .
+E_ {0} = - \frac{g^{2}}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{\left\lvert \widetilde{\rho}(\vec{p}) \right\rvert ^{2}}{\left\lvert \vec{p} \right\rvert^{2}+\mu^{2} } 
 $$
+
+where $\widetilde{\rho}$ is the Fourier transformation of $\rho(\vec{x})$, the specific convention can be found in a different blog of mine.
 
 The minus sign means that, adding the interaction $g\rho \phi$ to the free Hamiltonian will decrease the energy. This is a general result, adding an extra term $V$ that has zero vev to the Hamiltonian $H_ {0}$ will always decrease the energy. That is because, let $\left\lvert E_ {0} \right\rangle$ be the ground state of $H_ {0}$, adding $V$ will make $\left\lvert E_ {0} \right\rangle$ a t rial state, the new ground state will be something else $\left\lvert E_ {0}' \right\rangle$. $E_ {0}'$ must be smaller than $E_ {0}$ otherwise it won't be a ground state.
 
@@ -97,3 +99,22 @@ Next we use a different method to see if the adiabatic assumption really works.
 ## Displacement and Squeeze
 
 Let's use a different
+
+
+
+# Appendix
+
+The canonical momentum in Schrodinger picture:
+
+$$
+\pi(\vec{x}) = -\int \frac{d^{3}p}{(2\pi)^{3}} \, \sqrt{\frac{\omega _ {p} }{2}}(a_ {p}e^{ i\vec{p}\cdot \vec{x} } -a^{\dagger}_ {p} e^{ -i\vec{p}\cdot \vec{x} }) .
+$$
+
+The CCR (canonical commutation relation) reads
+
+$$
+\begin{align*}
+[a_ {k} ,a^{\dagger}_ {p} ] =& (2\pi)^{3} \delta^{3}(\vec{k}-\vec{p}), \\
+[\phi(\vec{x}),\pi(\vec{y},)] =& i\delta^{3}(\vec{x}-\vec{y}).
+\end{align*}
+$$
