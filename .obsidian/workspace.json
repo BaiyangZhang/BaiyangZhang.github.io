@@ -1,70 +1,70 @@
 {
   "main": {
-    "id": "bfc16aea90928448",
+    "id": "3028bc779ec50f3b",
     "type": "split",
     "children": [
       {
-        "id": "c44aebe905779215",
+        "id": "13c2829a8e2ed077",
         "type": "tabs",
         "children": [
           {
-            "id": "8e2cc62634f0c79b",
+            "id": "b59bef98381ecb4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
+                "file": "从此在到具身智能：身体哲学视域下的人工智能伦理重构 English.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-20-Abelian-Decomposition-and-Monopole"
+              "title": "从此在到具身智能：身体哲学视域下的人工智能伦理重构 English"
             }
           },
           {
-            "id": "0d2b779c32e53cf3",
+            "id": "2bc41026e9de4e6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
+                "file": "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-29-Does-Adiabatic-Approach-Work-in-QFT"
+              "title": "2025-09-06-Mathematical-Note-of-Quantum-Physics"
             }
           },
           {
-            "id": "c74b4e80bee7ec5f",
+            "id": "7bc38dc146e94030",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tem.md",
+                "file": "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Tem"
+              "title": "2025-09-06-Mathematical-Note-of-Quantum-Physics"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "bb36b5a1e93fe1e5",
+    "id": "f33e7c5091997b40",
     "type": "split",
     "children": [
       {
-        "id": "55559f846b7cd581",
+        "id": "2406439c7182770e",
         "type": "tabs",
         "children": [
           {
-            "id": "36da8009d9fc09b4",
+            "id": "e64600cc1b1207d7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,7 +77,7 @@
             }
           },
           {
-            "id": "b06e84f7ff83d146",
+            "id": "b33d85d3d86006ef",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -94,7 +94,7 @@
             }
           },
           {
-            "id": "06dc9447370fe053",
+            "id": "8db75d2039a66385",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -107,25 +107,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
-    "id": "f8485d28afe14f44",
+    "id": "862c7c927b43a428",
     "type": "split",
     "children": [
       {
-        "id": "946e885ca121d61f",
+        "id": "e4537cd8a0c8b48c",
         "type": "tabs",
         "children": [
           {
-            "id": "a0fbc9421b4717f6",
+            "id": "711b6f848ba96e7e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "题库.md",
-                "collapseAll": true,
+                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -134,25 +133,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 题库"
+              "title": "Backlinks for 2025-07-20-Abelian-Decomposition-and-Monopole"
             }
           },
           {
-            "id": "c2cb1b6652016c33",
+            "id": "a3f523f4b5fd35be",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2025-03-14-Mass-Renormalization.md",
+                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-03-14-Mass-Renormalization"
+              "title": "Outgoing links from 2025-07-20-Abelian-Decomposition-and-Monopole"
             }
           },
           {
-            "id": "b86235055b6770fc",
+            "id": "6c39ef6e719d04c6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -167,7 +166,7 @@
             }
           },
           {
-            "id": "03ec5fc39e095794",
+            "id": "d6a78bf1f4d64235",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -181,37 +180,25 @@
             }
           },
           {
-            "id": "6adeeb93f8d531f2",
+            "id": "5bfa53ef3eeff881",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2025-03-14-Mass-Renormalization.md",
+                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-03-14-Mass-Renormalization"
-            }
-          },
-          {
-            "id": "df11f73750e4dda4",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for 2025-07-20-Abelian-Decomposition-and-Monopole"
+              "title": "Outline of 2025-07-20-Abelian-Decomposition-and-Monopole"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -226,41 +213,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0d2b779c32e53cf3",
+  "active": "7bc38dc146e94030",
   "lastOpenFiles": [
-    "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
-    "Tem.md",
-    "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
-    "_drafts/2025-08-29-what-is-kink-state.md",
-    "_drafts/2025-06-04-Quantization-of-kink-states.md",
-    "_drafts/2024-09-12-GTM218-Smooth-Manifold.md",
-    "_posts/2025-03-14-Mass-Renormalization.md",
-    "_drafts/2025-08-06-Note-on-Geometric-Quantization.md",
-    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
+    "从此在到具身智能：身体哲学视域下的人工智能伦理重构 English.md",
+    "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2025-01-06-Perturbative-SSB-and-Effective-Action.md",
-    "_posts/2025-02-27-Introduction-to-Resurgence-1.md",
-    "_posts/2025-03-03-Lie-Groups.md",
-    "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
-    "投简历情况.md",
-    "_drafts/2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
-    "Pasted image 20250821163510.png",
-    "2024-11-22-Excerpt-Confinement-on-Narrow-Cylinder-Manifolds.md",
-    "计量检测认证知识竞赛题库.md",
-    "2025-06-03-Schrodinger-Picture-in-QFT.md",
-    "backups/2020-09-28-twitter.md",
-    "backups/2015-10-20-math.md",
-    "backups/2015-07-15-code.md",
-    "backups/2015-10-20-disqus-comments.md",
-    "backups/2018-12-22-distill.md",
-    "backups/2020-09-28-github-metadata.md",
-    "backups/2021-07-04-diagrams.md",
-    "Pasted image 20250714150208.png",
-    "Pasted image 20250704230817.png",
-    "Pasted image 20250605143417.png",
-    "assets/pdf/Baiyang_CV.pdf",
-    "assets/pdf/BaiyangZhangCV_merged.pdf",
-    "assets/pdf/BaiyangZhangCV.pdf",
-    "img/FeynmanRulesModel3.png"
+    "_drafts/2025-08-29-what-is-kink-state.md",
+    "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
+    "Tem.md",
+    "从此在到具身智能：身体哲学视域下的人工智能伦理重构中文2版.md",
+    "从此在到具身智能：身体哲学视域下的人工智能伦理重构.md",
+    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
+    "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md"
   ]
 }
