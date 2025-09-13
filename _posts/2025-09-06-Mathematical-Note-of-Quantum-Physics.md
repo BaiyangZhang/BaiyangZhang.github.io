@@ -68,7 +68,7 @@ The spectral theorem for self-adjoint operators says that, every self-adjoint op
 A bounded operator $T$ is said to be `trace class` (or of `nuclear class`) if
 
 $$
-\left\lvert T \right\rvert _ 1 := \sum_ {n=1}^\infty s_ n(T) < \infty,
+\left\lvert T \right\rvert := \sum_ {n=1}^\infty s_ n(T) < \infty,
 $$
 
 where $s_ n(T)$ are the singular values of $T$, i.e. the eigenvalues of the positive operator
