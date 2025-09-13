@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "从此在到具身智能：身体哲学视域下的人工智能伦理重构.md",
+                "file": "博后三年人事记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "从此在到具身智能：身体哲学视域下的人工智能伦理重构"
+              "title": "博后三年人事记"
             }
           }
         ],
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "862c7c927b43a428",
@@ -224,7 +225,7 @@
     "_drafts/2025-08-29-what-is-kink-state.md",
     "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
     "从此在到具身智能：身体哲学视域下的人工智能伦理重构中文2版.md",
-    "从此在到具身智能：身体哲学视域下的人工智能伦理重构.md",
+    "博后三年人事记.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md"
   ]
