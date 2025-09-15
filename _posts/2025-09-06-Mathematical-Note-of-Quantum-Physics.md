@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mathematical Note of Quantum Physics
-date:
+date: 2025-09-06
 author: Baiyang Zhang
 catalog: true
 tags:
