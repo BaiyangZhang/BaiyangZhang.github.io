@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "职业教育外语教学数字化资源库建设研究.md",
+                "file": "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "职业教育外语教学数字化资源库建设研究"
+              "title": "2025-09-06-Mathematical-Note-of-Quantum-Physics"
             }
           }
         ],
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "862c7c927b43a428",
@@ -215,8 +216,9 @@
   },
   "active": "7bc38dc146e94030",
   "lastOpenFiles": [
+    "_drafts/2025-09-13-About-Flighttickets.md",
+    "职业教育外语教学数字化资源库建设研究.md",
     "投简历情况.md",
-    "2025-09-13-About-Flighttickets.md",
     "中国高校中的异化现象研究.md",
     "博后三年人事记.md",
     "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
