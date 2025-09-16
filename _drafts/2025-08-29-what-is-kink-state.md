@@ -19,7 +19,7 @@ Then the vacuum state and the Fock zero-particle state coincide.
 
 The proof essentially exploits the assumption that the vacuum is the only Euclidean invariant state. This theorem also validates the usage of notation $\left\lvert 0 \right\rangle$ as the free ground state.
 
-Haag's theorem states that a single irreducible Fock representation is incompatible to non-trivial interaction. As a result, unlike in the case of finite degree of freedoms like in quantum mechanics, the total Hamiltonian with non-trivial interaction can not in principal be separated into a free part, which defines the Fock irreducible representation, and a comparatively small interaction, which can be regarded as a perturbation. In fact, as we will see late, at least with the presence of a kink state, indeed there exists an extra set of Hilbert states based on the kink state, and during the construction of such states, the data from interaction will inevitably mix with the free Hamiltonian.
+Haag's theorem states that a single irreducible Fock representation is incompatible to non-trivial interaction. As a result, unlike in the case of finite degree of freedoms like in quantum mechanics, the total Hamiltonian with non-trivial interaction can not in principal be separated into a free part, which defines the Fock irreducible representation, and a comparatively small interaction, which can be regarded as a perturbation. In fact, as we will see late, at least with the presence of a kink solution, indeed there exists an extra subset of Hilbert space based on the kink state, and during the construction of such states, the data from interaction will inevitably mix with the free Hamiltonian.
 
 Consider a classical source term $J(\vec{x})$ added to a (d+1) Dimensional real-scalar theory $\phi(\vec{x})$. We will work in the Schrodinger picture, where the canonical momentum is written as $\pi(\vec{x})$. The Hamiltonian is defined by 
 
@@ -289,8 +289,4 @@ The Parseval's identity with our convention: for a real $L^{2}$ function $f(\vec
 
 $$
 \int d^{d}x \, f(\vec{x})^{2}  = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{2}{\omega _ {p} }\left\lvert f_ {p}  \right\rvert ^{2}. 
-$$
-
-$$
-
 $$

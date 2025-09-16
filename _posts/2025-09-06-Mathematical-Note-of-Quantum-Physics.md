@@ -41,7 +41,7 @@ If $T:\mathcal{H}\to\mathcal{H}$ is compact and self-adjoint, then $T$ at least 
 
 **Spectral theorem.** Let $T: \mathcal{H}\to\mathcal{H}$ be compact and self-adjoint. We have the following:
 1. The spectrum is real.
-2. aa
+2. ...
 
 If $T$ is a bounded operator and $[T,T^\ast]=0$ then $T$ is said to be `normal`.
 

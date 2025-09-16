@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b59bef98381ecb4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "从此在到具身智能：身体哲学视域下的人工智能伦理重构 English.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "从此在到具身智能：身体哲学视域下的人工智能伦理重构 English"
-            }
-          },
-          {
             "id": "2bc41026e9de4e6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
+                "file": "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-06-Mathematical-Note-of-Quantum-Physics"
+              "title": "2025-08-29-Does-Adiabatic-Approach-Work-in-QFT"
             }
           },
           {
@@ -41,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
+                "file": "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-06-Mathematical-Note-of-Quantum-Physics"
+              "title": "2025-08-29-Does-Adiabatic-Approach-Work-in-QFT"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,20 +199,25 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7bc38dc146e94030",
+  "active": "2bc41026e9de4e6c",
   "lastOpenFiles": [
-    "_drafts/2025-09-13-About-Flighttickets.md",
-    "职业教育外语教学数字化资源库建设研究.md",
-    "投简历情况.md",
-    "中国高校中的异化现象研究.md",
-    "博后三年人事记.md",
-    "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
-    "从此在到具身智能：身体哲学视域下的人工智能伦理重构 English.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
     "_drafts/2025-08-29-what-is-kink-state.md",
     "_drafts/2025-08-29-Does-Adiabatic-Approach-Work-in-QFT.md",
+    "_drafts/2025-09-13-About-Flighttickets.md",
+    "_posts/2025-03-14-Mass-Renormalization.md",
+    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
+    "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
+    "tem.md",
+    "投简历情况.md",
+    "README.md",
+    "中国高校中的异化现象研究.md",
     "从此在到具身智能：身体哲学视域下的人工智能伦理重构中文2版.md",
+    "从此在到具身智能：身体哲学视域下的人工智能伦理重构 English.md",
+    "博后三年人事记.md",
+    "计量检测认证知识竞赛题库.md",
+    "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
+    "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
     "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md"
   ]
