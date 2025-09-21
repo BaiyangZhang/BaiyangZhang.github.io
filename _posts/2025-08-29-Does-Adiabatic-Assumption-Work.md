@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Does-Adiabatic-Approach-Work-in-QFT
-date: 2025-08-29
+title: Does Adiabatic Assumption Work?
+date: 2025-09-21
 author: Baiyang Zhang
 catalog: true
 tags:
