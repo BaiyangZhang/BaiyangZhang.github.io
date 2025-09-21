@@ -40,19 +40,19 @@ where $E_ {0}$ is the physical ground energy.
 
 The argument given by Coleman is that, in the far past, when $t < -T / 2-\Delta$, $f(t)=0$ and the ground state is $\left\lvert 0 \right\rangle$, the free ground state or bare ground state. As time goes from $-T / 2-\Delta$ to $-T /2$, we adiabatically turn on the interaction, by the adiabatic theorem, we expect $\left\lvert 0 \right\rangle$ to smoothly go to $\left\lvert 0_ {P} \right\rangle$, perhaps up to some phases. 
 
-The extra phase can be eliminated by a counter term, $H_ {I} \to H_ {I} +a$. The counter term also makes the interacting ground state energy to be zero. Using Wick diagram (by Coleman's definition, Feynman diagram is for computing the S-matrix, Wick diagram is for computing operators), it can be shown that $\left\langle 0 \right\rvert S\left\lvert 0 \right\rangle=0$. The classic source we introduced at the beginning of the note can not produce any on-shell mesons since $\widetilde{\rho}(p)=0$ for on-shell $p^{\mu}$. $\rho(\vec{x})$ can only transfer momentum, not energy.
+The extra phase can be eliminated by a counter term, $H_ {I} \to H_ {I} +a$. The counter term also makes the interacting ground state energy to be zero. Using Wick diagram (by Coleman's definition, Feynman diagram is for computing the S-matrix, Wick diagram is for computing operators), it can be shown that $\left\langle 0 \right\rvert S\left\lvert 0 \right\rangle=0$. The classic source we introduced at the beginning of the note can not produce any on-shell mesons since $\tilde{\rho}(p)=0$ for on-shell $p^{\mu}$. $\rho(\vec{x})$ can only transfer momentum, not energy.
 
 - - -
 
 The ground state is more interesting than the S-matrix. In the $T\to\infty$ limit, the ground state energy reads
 
 $$
-E_ {0} = - \frac{g^{2}}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{\left\lvert \widetilde{\rho}(\vec{p}) \right\rvert ^{2}}{\left\lvert \vec{p} \right\rvert^{2}+\mu^{2} } 
+E_ {0} = - \frac{g^{2}}{2} \int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{\left\lvert \tilde{\rho}(\vec{p}) \right\rvert ^{2}}{\left\lvert \vec{p} \right\rvert^{2}+\mu^{2} } 
 $$
 
-where $\widetilde{\rho}$ is the Fourier transformation of $\rho(\vec{x})$, the specific convention can be found in a different blog of mine.
+where $\tilde{\rho}$ is the Fourier transformation of $\rho(\vec{x})$, the specific convention can be found in a different blog of mine.
 
-The minus sign means that, adding the interaction $g\rho \phi$ to the free Hamiltonian will decrease the energy. This is a general result, adding an extra term $V$ that has zero vev to the Hamiltonian $H_ {0}$ will always decrease the energy. That is because, let $\left\lvert E_ {0} \right\rangle$ be the ground state of $H_ {0}$, adding $V$ will make $\left\lvert E_ {0} \right\rangle$ a t rial state, the new ground state will be something else $\left\lvert E_ {0}' \right\rangle$. $E_ {0}'$ must be smaller than $E_ {0}$ otherwise it won't be a ground state.
+The minus sign means that, adding the interaction $g\rho \phi$ to the free Hamiltonian will decrease the energy. This is a general result, adding an extra term $V$ that has zero vev to the Hamiltonian $H_ {0}$ will always decrease the energy. That is because, let $\left\lvert E_ {0} \right\rangle$ be the ground state of $H_ {0}$, adding $V$ will make $\left\lvert E_ {0} \right\rangle$ a trial state, the new ground state will be something else $\left\lvert E_ {0}' \right\rangle$. $E_ {0}'$ must be smaller than $E_ {0}$ otherwise it won't be a ground state.
 
 Coleman also calculated the ground state wave function, an expansion of the physical vacuum $\left\lvert 0_ {P} \right\rangle$ in terms into the basis states $\left\lvert \vec{p}_ {1},\cdots,\vec{p}_ {n} \right\rangle$, eigenstates of the free Hamiltonian $H_ {0}$. By the asymptotic assumption, 
 
@@ -79,20 +79,20 @@ where
 
 $$
 \begin{align*}
-h(\vec{p}) =& \frac{-ig\widetilde{\rho}(\vec{p})\widetilde{f}(\omega _ {p} )}{(2\pi)^{3/2}\sqrt{2\omega_ {p}}}, \widetilde{f}(\omega _ {p} ) \to  \frac{i}{\omega _ {p} },\\
-\alpha =& \int d^{3}p \, \left\lvert h(\vec{p}) \right\rvert   \to  g^{2} \int \frac{d^{3}p}{(2\pi)^{3}2\omega _ {p} ^{3}} \, \left\lvert \widetilde{\rho}(\vec{p}) \right\rvert ^{2}. 
+h(\vec{p}) =& \frac{-ig\tilde{\rho}(\vec{p})\tilde{f}(\omega _ {p} )}{(2\pi)^{3/2}\sqrt{2\omega_ {p}}}, \tilde{f}(\omega _ {p} ) \to  \frac{i}{\omega _ {p} },\\
+\alpha =& \int d^{3}p \, \left\lvert h(\vec{p}) \right\rvert   \to  g^{2} \int \frac{d^{3}p}{(2\pi)^{3}2\omega _ {p} ^{3}} \, \left\lvert \tilde{\rho}(\vec{p}) \right\rvert ^{2}. 
 \end{align*}
 $$
 
 The Fourier transform for $f(t)$ is that 
 
 $$
-\widetilde{f}(\omega _ {p} ) = \int dt \, e^{ -i\omega _ {p} t }f(t) = \frac{i}{\omega _ {p} } ,
+\tilde{f}(\omega _ {p} ) = \int dt \, e^{ -i\omega _ {p} t }f(t) = \frac{i}{\omega _ {p} } ,
 $$
 
 where we have discarded an $\epsilon$ term.
 
-If $f(t)=1$, then $\widetilde{f}(\omega _ {p})=\delta(\omega _ {p})2\pi$, and $h(\vec{p})\equiv {0}$. Also, if $\rho(\vec{x})=\delta(\vec{x})$, namely for point particles, then $\alpha$ blows up. Physically, $\alpha=\left\langle N \right\rangle$, the expected number of bare mesons.
+If $f(t)=1$, then $\tilde{f}(\omega _ {p})=\delta(\omega _ {p})2\pi$, and $h(\vec{p})\equiv {0}$. Also, if $\rho(\vec{x})=\delta(\vec{x})$, namely for point particles, then $\alpha$ blows up. Physically, $\alpha=\left\langle N \right\rangle$, the expected number of bare mesons.
 
 Next we use a different method to see if the adiabatic assumption really works.
 
@@ -103,10 +103,10 @@ Let's try to diagonalize the Hamiltonian directly.
 Go to the Schrodinger picture where fields are function of $\vec{x}$ only. Introduce the normal ordering, the Hamiltonian is defined by 
 
 $$
-H = \int d^{3}x \,  \mathcal{N}_ {a,m}\left\lbrace \frac{1}{2}\pi^{2}(\vec{x}) + \frac{1}{2}(\nabla \phi(\vec{x}))^{2} + \frac{\mu^{2}}{2} \phi^{2}(\vec{x})  + U(\phi) + g \rho(\vec{x})\phi(\vec{x})\right\rbrace ,
+H = \int d^{3}x \,  \mathcal{N}_ {a,\mu}\left\lbrace \frac{1}{2}\pi^{2}(\vec{x}) + \frac{1}{2}(\nabla \phi(\vec{x}))^{2} + \frac{\mu^{2}}{2} \phi^{2}(\vec{x})  + U(\phi) + g \rho(\vec{x})\phi(\vec{x})\right\rbrace ,
 $$
 
-where $\mathcal{N}_ {a,m}$ is the normal ordering with respect to mass $\mu$ and annihilation operator $a_ {p}$, which expands the field operator in plane waves:
+where $\mathcal{N}_ {a,\mu}$ is the normal ordering with respect to mass $\mu$ and annihilation operator $a_ {p}$, which expands the field operator in plane waves:
 
 $$
 \begin{align*}
@@ -115,15 +115,15 @@ $$
 \end{align*}
 $$
 
-where $d=3$ in our case and $\text{h.c.}$ stands for Hermitian conjugate. 
+in our case $d=3$ and $\text{h.c.}$ stands for Hermitian conjugate. 
 
 Recall that there are two "definitions" for vacuum state, 1) the zero-occupation state $\left\lvert 0 \right\rangle$ in the Fock representation, namely the state that is annihilated by $a_ {p}$ for all $\vec{p}$; 2) the lowest energy state $\left\lvert \Omega \right\rangle$, which is the lowest energy state of the total Hamiltonian. When these two descriptions do not coincide, we say the vacuum is polarized. The energy difference is sometimes called the vacuum polarization energy. 
 
-Ignore the counter terms and potential for now, 
+We have Ignored the counter terms. The free Hamiltonian reads
 
 $$
 H_ {0} = \int d^{d}x \, \mathcal{N}_ {a} \left\lbrace \mathcal{H}_ {0} \right\rbrace ,\quad 
-\mathcal{H}_ {0} = \frac{1}{2}\pi^{2}(\vec{x}) + \frac{1}{2}(\nabla \phi)^{2} + \frac{m^{2}}{2} \phi^{2}.
+\mathcal{H}_ {0} = \frac{1}{2}\pi^{2}(\vec{x}) + \frac{1}{2}(\nabla \phi)^{2} + \frac{\mu^{2}}{2} \phi^{2}.
 $$
 
 Expanding the fields into normal modes, after some manipulation we have 
@@ -134,128 +134,104 @@ $$
 
 In other words, $H_ {0}$ is diagonalized by $a$ and $a^{\dagger}$, so there is no vacuum polarization. 
 
-## Vacuum polarization by a classical source
-
-Introducing the source term we have 
+Include the source term, we have 
 
 $$
-H_ {0}[J] = \int d^{d}x \, \mathcal{N}_ {a} \left\lbrace \mathcal{H}_ {0}[J] \right\rbrace ,\quad 
-\mathcal{H}_ {0}[J] = \frac{1}{2}\pi^{2}(\vec{x}) + \frac{1}{2}(\nabla \phi)^{2} + \frac{m^{2}}{2} \phi^{2}-J\phi.
+H = \int d^{d}x \, \mathcal{N}_ {a} \left\lbrace \mathcal{H} \right\rbrace ,\quad 
+\mathcal{H} = \frac{1}{2}\pi^{2}(\vec{x}) + \frac{1}{2}(\nabla \phi)^{2} + \frac{\mu^{2}}{2} \phi^{2}+g\rho\phi.
 $$
 
-The source $J(\vec{x})$ can be expanded as 
+The source $\rho(\vec{x})$ has Fourier transform 
 
 $$
-J(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\sqrt{2\omega _ {p} }} \,  (j_ {p} e^{ i\vec{p}\cdot \vec{x} }+j_ {p} ^\ast e^{ -i\vec{p}\cdot \vec{x} }),
+\rho(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}} \, \tilde{\rho}(\vec{p}) e^{ i\vec{p}\cdot \vec{x} },\quad  \tilde{\rho}(\vec{p})= (j_ {p} +j^\ast _ {-p}) .
 $$
 
-Note that $j_ {p}$ and $j_ {p}^\ast$ are c-number coefficients. In this decomposition we no-longer require $j_ {p}^\ast=j_ {-p}$, but we could always redefine them so that this relation is satisfied. To see it, notice that the Fourier decomposition of $J$ can be written as 
-
-$$
-J(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}} \,  \left[ \frac{1}{\sqrt{2\omega _ {p} }}(j_ {p} +j^\ast _ {-p}) \right] e^{ i\vec{p}\cdot \vec{x} },
-$$
-
-so what is important is the combined value of $j_ {p}+j^\ast_ {-p}$. Assume they don't satisfy the condition $j^\ast_ {p} = j_ {-p}$, but $j^\ast_ {p}-j_ {-p}=2z_ {p}$ instead, where $z_ {p}\in\mathbb{C}$. We can redefine $j'_ {p}= j_ {p}-z_ {p}$, $j_ {-p}^{'\ast} = j_ {-p}^{\ast}+z_ {p}$ so that $j'_ {p}=j^{'\ast}_ {-p}$. So we will always assume that the above relation is satisfied.
+Note that $j_ {p}$ and $j_ {p}^\ast$ are c-number coefficients, since $\rho$ is assumed to be a classical source. In this decomposition it is not mandatory that $j_ {p}^\ast=j_ {-p}$, but we could always shift them so that this relation is satisfied. To see it, notice that since $\rho$ is real, we have $\tilde{\rho}(\vec{p})=\tilde{\rho}^\ast(-\vec{p})$, which implies that the combined value of $j_ {p}+j^\ast_ {-p}$ satisfy the relation that under $p\leftrightarrow-p$ it requires a complex conjugate. This condition is trivially satisfied no matter if $j_ {p}=j_ {-p}^\ast$ or not. Assume they don't satisfy the condition $j^\ast_ {p} = j_ {-p}$, but $j^\ast_ {p}-j_ {-p}=2z_ {p}$ instead, where $z_ {p}\in\mathbb{C}$. We can redefine $j'_ {p}= j_ {p}-z_ {p}$, $j_ {-p}^{'\ast} = j_ {-p}^{\ast}+z_ {p}$ so that $j'_ {p}=j^{'\ast}_ {-p}$. Without loss of generality, we can always assume that the above relation is satisfied. In the following we will assume that $j_ {p}=j^\ast_ {-p}$.
 
 The source term reads
 
 $$
-\int d^{d}x \,  (-J\phi)= - \int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\omega _ {p} }\,  (a_ {p} ^{\dagger} j_ {p} +a_ {p} j_ {p}^\ast )
+\int d^{d}x \,  (g\rho\phi)=  g\int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\sqrt{2\omega _ {p}}}\, ( a_ {p} \tilde{\rho}(\vec{p})^\ast + a_ {p} ^{\dagger} \tilde{\rho}(\vec{p}) ).
 $$
 
-The Hamiltonian with a source now has extra terms involving $j_ {p}$. However it can be diagonalized by completing the squares, we have 
+The Hamiltonian with a source now has extra terms involving $\tilde{\rho}(\vec{p})$. It can be diagonalized by completing the squares, we get
 
 $$
-H_ {0}[J] = \int \frac{d^{d}p}{(2\pi)^{d}} \,  \left\lbrace \omega _ {p}  \widetilde{a}_ {p} ^{\dagger}\widetilde{a}_ {p} - \frac{1}{\omega _ {p} ^{3}} j_ {p} ^\ast j_ {p}  \right\rbrace 
+H = \int \frac{d^{d}p}{(2\pi)^{d}} \,  \left\lbrace \omega _ {p}  \tilde{a}_ {p} ^{\dagger}\tilde{a}_ {p} - \frac{g^{2}}{2\omega _ {p} ^{2}} \left\lvert \tilde{\rho}(\vec{p}) \right\rvert ^{2}  \right\rbrace 
 $$
 
 where 
 
 $$
-\widetilde{a}_ {p} := a_ {p} - \omega _ {p} ^{-2} j_ {p}
+\tilde{a}_ {p} := a_ {p} + \frac{g}{\omega _ {p} \sqrt{2\omega _ {p} }}\tilde{\rho}(\vec{p}).
 $$
 
-is the original annihilation operator shifted by a c-number. A shift in c-number would not affect the commutation relation, thus $\widetilde{a}$ also satisfies the equal-time canonical commutation relation.
-
-The spectrum is shifted by a constant (vacuum polarization energy, VPE)
+The minus sign of the second term in the above-above equation agrees with the fact the the introduced source term should decrease the energy. $\tilde{a}_ {p}$ is the "free" annihilation operator shifted by a c-number. A shift in c-number would not affect the commutation relation, hence $\tilde{a}$ also satisfies the equal-time canonical commutation relation. The energy of the new ground state with source is
 
 $$
--\int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\omega^{3}_ {p}}\,  \left\lvert j_ {p} \right\rvert ^{2}
+E_ {0}= - \frac{g^{2}}{2} \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\omega _ {p} ^{2}} \left\lvert \tilde{\rho}(\vec{p}) \right\rvert ^{2},
 $$
 
-which is well defined as long as $j_ {p}$ decreases fast enough, otherwise we need to introduce an counterterm to cancel the divergence. The Hilbert space now should be chosen as the Fock representation corresponding to $\widetilde{a}_ {p}$, for example the ground state $\left\lvert 0_ {J} \right\rangle$ at the presence of a source term is no longer that annihilated by $a_ {p}$ for all $p$, but rather $\widetilde{a}_ {p}$ for all $p$:
+Exactly in agreement with Coleman's result, which is well defined as long as the integral over $\tilde{\rho}$ squared is finite, otherwise we need to introduce an counterterm to cancel the divergence. Which is not mentioned by Coleman at all is that, now the Hilbert space should be chosen as the Fock representation corresponding to $\tilde{a}_ {p}$, for example the ground state $\left\lvert 0_ {\rho} \right\rangle$ at the presence of a source term is no longer that annihilated by $a_ {p}$ for all $p$, but rather $\tilde{a}_ {p}$ for all $p$:
 
 $$
-\widetilde{a}_ {p} \left\lvert 0_ {J} \right\rangle =0 \;\forall\;  p.
+\tilde{a}_ {p} \left\lvert 0_ {\rho} \right\rangle =0 \quad \forall\;  p.
 $$
 
 Since 
 
 $$
-\widetilde{a}_ {p} \left\lvert 0_ {J} \right\rangle = 0=\left( a_ {p} -  \frac{j_ {p}}{\omega _ {p} ^{2}} \right) \left\lvert 0_ {J} \right\rangle \implies a_ {p} \left\lvert 0_ {J} \right\rangle = \frac{j_ {p} }{\omega^{2}_ {p} }\left\lvert 0_ {J} \right\rangle,
+\tilde{a}_ {p} \left\lvert 0_ {\rho} \right\rangle = 0=\left( a_ {p} + \frac{g}{\omega _ {p} \sqrt{2\omega _ {p} }}\tilde{\rho}(\vec{p}) \right) \left\lvert 0_ {\rho} \right\rangle \implies 
+\boxed{ a_ {p} \left\lvert 0_ {\rho} \right\rangle =  -\frac{g}{\omega _ {p} \sqrt{2\omega _ {p} }}\tilde{\rho}(\vec{p}) \left\lvert 0_ {\rho} \right\rangle},
 $$
 
-$\left\lvert 0_ {J} \right\rangle$ is a *coherent state* for the $a$'s, sometimes called a Fock coherent state. 
+$\left\lvert 0_ {\rho} \right\rangle$ is a *coherent state* from the perspective of the original annihilation operator $a$'s, it is sometimes called a `Fock coherent state`. 
 
-$\left\lvert 0_ {J} \right\rangle$ can be obtained from $\left\lvert 0 \right\rangle$ via a version of *displacement* operation. To see that, first we need to define the smeared field operator $a(f)$ where $f\in L^{2}(\mathbb{R}^{d})$. Expanding $f(\vec{x})$ similar to the field operator,
+- - -
+
+$\left\lvert 0_ {\rho} \right\rangle$ is constructed from $\left\lvert 0 \right\rangle$ via *displacement* operation. To see that, first we need to define the `smeared ladder operator` $a(f)$ where $f\in L^{2}(\mathcal{D})$ on some measurable domain $\mathcal{D}$. As usual, the Fourier expansion of $f(\vec{x})$ reads
 
 $$
-f(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\sqrt{2\omega _ {p} }}\, (f _ {p} e^{ i\vec{p}\cdot \vec{x} }+f _ {p} ^{\ast }e^{ -i\vec{p}\cdot \vec{x} })
+f(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}}\, \tilde{f}(\vec{p})e^{ i\vec{p}\cdot \vec{x} },
 $$
 
-Then we define the smeared ladder operators as 
+note that in the plane wave expansion of fields there is a factor of $\frac{1}{\sqrt{2\omega _ {p} }}$, however it doesn't make any sense to include that factor in the expansion of $f(\vec{x})$, since $f$ is just a function, why should we introduce a mas parameter $m$ in the first place? Without mass you can't define $\omega _ {p}$. 
+
+Define the smeared ladder operators as (in agreement with `Franco Strocchi`)
 
 $$
 \boxed{ 
 \begin{align*}
-a^{\dagger}(f) :=& \int \frac{d^{d}p}{(2\pi)^{d}} \, f_ {p} a^{\dagger}_ {p}, \\
-a(f) :=& \int \frac{d^{d}p}{(2\pi)^{d}} \, f_ {p}^\ast  a_ {p}.
+a^{\dagger}(f) :=& \int \frac{d^{d}p}{(2\pi)^{d}} \, \tilde{f}(\vec{p}) a^{\dagger}_ {p}, \\
+a(f) :=& \int \frac{d^{d}p}{(2\pi)^{d}} \, \tilde{f}(\vec{p})  a_ {p}.
 \end{align*}
 }
 $$
 
-Note $f_ {p}^\ast$ in the definition of $a(f)$. This definition might seem a bit weird at the beginning, but it has the benefit of notation-wise consistency: $a^{\dagger}(f)$ is indeed the hermitian conjugate of $a(f)$, $a^{\dagger}(f) = (a(f))^{\dagger}$. 
+This smear happens in the momentum space. Caution, $a^{\dagger}(f)$ is **not** the Hermitian conjugate of $a(f)$, $a^{\dagger}(f) \neq (a(f))^{\dagger}$. 
 
 The commutation relation:
 
 $$
-\boxed{
-[a(f),a^{\dagger}(g)] = \int \frac{d^{d}p}{(2\pi)^{d}} \,  f_ {p} ^\ast g_ {p} ,
-} 
+\begin{align*}
+[a(f),a^{\dagger}(g)] =& \int \frac{d^{d}p}{(2\pi)^{d}} \,  \tilde{f}(\vec{p}) \tilde{g}(\vec{p})=\int d^{d}x \,  f(\vec{x})g(\vec{x}), \\
+[a(f),(a(g))^{\dagger}] =& \int \frac{d^{d}p}{(2\pi)^{d}} \,  \tilde{f}(\vec{p}) \tilde{g}(\vec{p})^\ast =\int d^{d}x \,  f(\vec{x})g(\vec{x})^\ast ,
+\end{align*}
 $$
 
 particularly we have 
 
 $$
 \boxed{
-[a(f),a^{\dagger}(f)] = \int \frac{d^{d}p}{(2\pi)^{d}} \, \left\lvert f_ {p}  \right\rvert ^{2}. 
+[a(f),(a(f))^{\dagger}] = \int \frac{d^{d}p}{(2\pi)^{d}} \, \left\lvert \tilde{f}(\vec{p})  \right\rvert ^{2}. 
 } 
 $$
 
-Often times the smeared ladder operator are defined by the Fourier transformation of $f(\vec{x})$: (as adopted in the book by `Franco Strocchi`)
-
-$$
-a(f) := \int \frac{d^{d}p}{(2\pi)^{d}} \,   \widetilde{f}(\vec{p}) a_ {p} ,\quad  \widetilde{f}(\vec{p}) := \int d^{d}x \,  f(\vec{x}) e^{ -i \vec{p}\cdot \vec{x} }
-$$
-
-and similarly define the smeared creation operator $a^{\dagger}(f)$ 
-
-$$
-a^{\dagger}(f) := \int \frac{d^{d}p}{(2\pi)^{d}} \,   \widetilde{f}(\vec{p}) a^{\dagger}_ {p} 
-$$
-
-Then  $a^{\dagger}(f) \neq(a(f))^{\dagger}$. Direct evaluation shows that with the above convention $(a(f))^{\dagger}=a^{\dagger}(f_ {r})$ where $f_ {r}(\vec{x}):=f(-\vec{x})$ is the reflected function of $f$. That's why we won't use this convention here.
-
-Define the smeared canonical operator against $f$ as 
+Define the canonical momentum smeared against $f$ as
 
 $$
 \pi(f) := \int d^{d}x \,  \pi(\vec{x}) f(\vec{x}),
-$$
-
-we have 
-
-$$
--i \pi(f) = a^{\dagger}(f) - a(f).
 $$
 
 - - -
@@ -263,70 +239,105 @@ $$
 By the Baker-Campbell-Hausdorff formula, we have 
 
 $$
-e^{ -a^{\dagger}(f) } a_ {p} e^{ a^{\dagger}(f) } = a_ {p} +f_ {p} ,
+e^{ -a^{\dagger}(f) } a_ {p} e^{ a^{\dagger}(f) } = a_ {p} +\tilde{f}(\vec{p}),
 $$
 
-thus
+thus the state $\exp (a^{\dagger}(f)) \left\lvert 0 \right\rangle$ has a peculiar property:
 
 $$
-a_ {p} e^{ a^{\dagger}(f) }\left\lvert 0 \right\rangle = f_ {p}  e^{ a^{\dagger}(f) }\left\lvert 0 \right\rangle.
+a_ {p} e^{ a^{\dagger}(f) }\left\lvert 0 \right\rangle = \tilde{f}(\vec{p})  e^{ a^{\dagger}(f) }\left\lvert 0 \right\rangle.
 $$
 
-However $e^{ a^{\dagger}(f) }$ is not a unitary operator, which means that when acting on a state it can change the norm of the state. To make it a unitary operator while preserving the desired properties, we can define a new operator:
+However, $e^{ a^{\dagger}(f) }$ is not a unitary operator, which means that when acting on a state it can change the norm of it. To make it a unitary operator while preserving the desired properties, we can define a new operator:
 
 $$
-\mathcal{D}_ {f}:= e^{ -i\pi(f) } = e^{ a^{\dagger}(f) - a(f) }.
+\mathcal{D}_ {f}:= e^{ -i\pi(f) },\quad \pi(f) = \int \frac{d^{3}p}{(2\pi)^{3}} \,  \sqrt{\frac{\omega _ {p} }{2}} (-ia_ {p} \tilde{f}(\vec{p})^\ast +\text{h.c.}).
 $$
 
 $\mathcal{D}_ {f}$ is a unitary operator that satisfies 
 
 $$
-\mathcal{D}_ {f}^{\dagger} a_ {p}  \mathcal{D}_ {f} = a_ {p} + f_ {p}.
+\mathcal{D}_ {f}^{\dagger} a_ {p}  \mathcal{D}_ {f} = a_ {p} -\sqrt{\frac{\omega _ {p} }{2}}\tilde{f}(\vec{p}).
 $$
 
-$\mathcal{D}_ {f}$ can be used to create $\left\lvert 0_ {J} \right\rangle$ from $\left\lvert 0 \right\rangle$: 
+Then maybe $\mathcal{D}_ {f}$ can be used to create $\left\lvert 0_ {\rho} \right\rangle$ from $\left\lvert 0 \right\rangle$: 
 
 $$
- \left\lvert 0_ {J} \right\rangle = \mathcal{D}_ {J'} \left\lvert 0 \right\rangle, 
+ \left\lvert 0_ {\rho} \right\rangle = \mathcal{D}_ {k(\vec{x})} \left\lvert 0 \right\rangle, 
 $$
 
 where 
 
 $$
-J'(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}} \frac{1}{\sqrt{2\omega _ {p} }} \, (j'_ {p} e^{ i\vec{p}\cdot \vec{x} }+\text{h.c.}), \quad  j'_ {p} := \frac{j_ {p} }{\omega _ {p} ^{2}}. 
+\tilde{k}(\vec{p})= - \frac{g}{\omega _ {p} ^{2}}\tilde{\rho}(\vec{p}).
+$$
+
+Looks like we can't just insert the source function with coupling $g\rho$ into the displacement and hope it gives the correct ground state.
+
+- - -
+
+The Euclidean symmetry $E(\vec{a},R)$ is implemented by a unitary operator $U(\vec{a},R)$, where $\vec{a}$ is the translation vector and $R$ the rotation. Euclidean group is a semidirect product of translation $T(\vec{a})$ and rotation $R$, $E=T\rtimes R$. Let's focus on the translation for now. 
+
+Under translation the field operator transforms as $T(\vec{a})\phi(\vec{x})T^{-1}(\vec{a})=\phi(\vec{x}+\vec{a})$, hence the original ladder operator transforms as $T(\vec{a})a_ {p}T^{-1}(\vec{a})=a_ {p} e^{ i\vec{p}\cdot \vec{a} }$, i.e. $a_ {p}$ acquires a phase under translation. Similarly for $\tilde{\rho}(\vec{p})$.
+
+Since the source term explicitly breaks the Euclidean symmetry, a natural question is how does $T(\vec{a})$ affect $\left\lvert 0_ {\rho} \right\rangle$? Does $\left\lvert 0_ {\rho} \right\rangle$ just acquires a phase as well? Direct calculation shows that 
+
+$$
+T(\vec{a}) \left\lvert 0_ {\rho} \right\rangle = e^{ i\vec{p}\cdot \vec{a} }\left\lvert 0_ {\rho} \right\rangle.
 $$
 
 - - -
 
-The Euclidean symmetry $E(\vec{a},R)$ is implemented by a unitary operator $U(\vec{a},R)$, where $\vec{a}$ is the translation vector and $R$ the rotation. Euclidean group is a semidirect product of translation $T(\vec{a})$ and rotation $R$, $E=T\rtimes R$. Let's focus on translation for now. 
-
-Under translation the field operator transforms as $T(\vec{a})\phi(\vec{x})T^{-1}(\vec{a})=\phi(\vec{x}+\vec{a})$, hence the original ladder operator transforms as $T(\vec{a})a_ {p}T^{-1}(\vec{a})=a_ {p} e^{ i\vec{p}\cdot \vec{a} }$, i.e. $a_ {p}$ acquires a phase under translation. Similarly for $j_ {p}$. Since $\widetilde{a}=a-{j}/{\omega^{2}_ {p}}$, we have $T(\vec{a})\,\widetilde{a}_ {p}\,T^{-1}(\vec{a})=\widetilde{a}_ {p}e^{ i\vec{p}\cdot \vec{a} }$.
-
-Since the source term explicitly breaks the Euclidean symmetry, a natural question is how does $T(\vec{a})$ acting on $\left\lvert 0_ {J} \right\rangle$ affects it? Does $\left\lvert 0_ {J} \right\rangle$ just acquires a phase as well? Direct calculation shows that 
-
-$$
-T(\vec{a}) \left\lvert 0_ {J} \right\rangle = e^{ i\vec{p}\cdot \vec{a} }\left\lvert 0_ {J} \right\rangle.
-$$
-
-- - -
-
-An important question is, can the polarized (or displaced) vacuum $\left\lvert 0_ {J} \right\rangle$ be expanded in original Fock states? Starting from the simplest case, let's try to calculate the superposition between vacuum states with and without source:
+An important question is, can the polarized (or displaced) vacuum $\left\lvert 0_ {\rho} \right\rangle$ be expanded in original Fock states? According to the calculation did by Coleman, the answer should be yes, let's try to verify that. Starting from the simplest case, let's try to calculate the superposition between vacuum states with and without source:
 
 $$
 \begin{align*}
-\left\langle 0 \middle\vert 0_ {J} \right\rangle  =& \left\langle 0 \right\rvert\exp \left\lbrace -i\pi(J') \right\rbrace \left\lvert 0 \right\rangle \\
-=& \left\langle 0 \right\rvert \exp \left\lbrace a^{\dagger}(J') - a(J') \right\rbrace \left\lvert 0 \right\rangle\\
-=& \left\langle 0 \right\rvert \sum_ {n\in \mathbb{N}} \frac{1}{n!}(a^{\dagger}(J')-a(J')^{n})\left\lvert 0 \right\rangle,
+\left\langle 0 \middle\vert 0_ {\rho} \right\rangle  
+=& \left\langle 0 \right\rvert\exp \left\lbrace -i\pi(k) \right\rbrace \left\lvert 0 \right\rangle \\
+=& \left\langle 0 \right\rvert \exp \left\lbrace K - K^{\dagger}\right\rbrace \left\lvert 0 \right\rangle
 \end{align*}
 $$
 
-where the $n$-th term can be calculated via Wick's theorem,
+where
+
+$$
+K := g\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega _ {p} \sqrt{2\omega _ {p} }} a_ {p} \tilde{p}(\vec{p})^\ast.
+$$
+
+Using the BCH formula (provided $[X,Y]$ commutes with both $X$ and $Y$)
+
+$$
+e^{ X+Y } = e^{ X }e^{ Y }e^{ -1/2 [X,Y]}
+$$
+
+and 
+
+$$
+[K,K^{\dagger}] =g^{2} \int \frac{d^{3}p}{(2\pi)^{3}}\, \frac{1}{2\omega _ {p} ^{3}}   \left\lvert \tilde{\rho}(\vec{p}) \right\rvert ^{2} =: \beta,
+$$
+
+we have 
+
+$$
+\begin{align*}
+\left\langle 0 \middle\vert 0_ {\rho} \right\rangle  
+=& \left\langle 0 \right\rvert\exp \left\lbrace -i\pi(k) \right\rbrace \left\lvert 0 \right\rangle \\
+=& \left\langle 0 \right\rvert \exp \left\lbrace K - K^{\dagger}\right\rbrace \left\lvert 0 \right\rangle \\
+=& \left\langle 0 \right\rvert \exp \left\lbrace -K^{\dagger}+K\right\rbrace \left\lvert 0 \right\rangle \\
+=& e^{ -\frac{1}{2} \beta }\left\langle 0 \right\rvert e^{ A^{-} } e^{ A^{+} }   \left\lvert 0 \right\rangle \\
+=& e^{ -\frac{1}{2}\beta}.
+\end{align*}
+$$
+
+It means that if $\tilde{\beta}(\vec{p})$ decreases fast enough, then $\beta$ is finite and so is the superposition between the two ground states! Otherwise, the superposition vanishes. **The $g\to 0$ limit is well defined.**
+
+The above result can also be obtained via Wick's theorem,
 
 $$
 \text{string of }a,a^{\dagger} = \mathcal{N}_ {a}\left\lbrace \text{all possible contractions} \right\rbrace.
 $$
 
-The vev is nonzero only for $n$ even, 
+The vev is nonzero only for even $n$, with formula similar to
 
 $$
 \left\langle 0 \right\rvert(a^{\dagger}(f)-a(f))^{n} \left\lvert 0 \right\rangle= [a(f),a(f)^{\dagger}] (n-1)!! = (n-1)!! S_ {f} ^{n}
@@ -335,28 +346,41 @@ $$
 where 
 
 $$
-S_ {f} :=- \int \frac{d^{d}p}{(2\pi)^{d}} \, \left\lvert f_ {p}  \right\rvert ^{2} .
+S_ {f} :=- \int \frac{d^{d}p}{(2\pi)^{d}} \, \left\lvert \tilde{f}(\vec{p})  \right\rvert ^{2} .
 $$
 
-Hence,
+- - -
+
+Next we move on to calculate the wave function $\left\lvert 0_ {\rho} \right\rangle$, starting with $\left\langle \vec{p} \middle\vert0_ {\rho} \right\rangle$. We have
 
 $$
-\left\langle 0 \middle\vert 0_ {J} \right\rangle  = \sum_ {n\in 2\mathbb{N}} \frac{(n-1)!!}{n!} (S_ {J'})^{n} = e^{ S_ {J'}^{2}/2 }.
+\begin{align*}
+\left\langle \vec{p} \middle\vert 0_ {\rho} \right\rangle  =& \left\langle 0 \right\rvert a_ {p} e^{ -i\pi(f) } \left\lvert 0 \right\rangle \\
+=& \left\langle 0 \right\rvert a_ {p}e^{-K^{\dagger}}e^{K} e^{-\beta/2} \left\lvert 0 \right\rangle \\
+=& \left\langle 0 \right\rvert ([a_ {p} ,e^{-K^{\dagger}}]+e^{K^{\dagger}}a_ {p}) e^{K} e^{-\beta/2}\left\lvert 0 \right\rangle\\
+=& \left\langle 0 \right\rvert [a_ {p} ,e^{-K^{\dagger}}] e^{K} e^{-\beta/2}\left\lvert 0 \right\rangle
+\end{align*}
 $$
 
-where 
+We have 
 
 $$
-S_ {J'} =- \int \frac{d^{d}p}{(2\pi)^{d}} \,  \frac{\left\lvert j_ {p}\right\rvert ^{2}}{\omega _ {p} ^{4}}.
+[a_ {p} ,e^{-K^{\dagger}}] = -g \frac{\tilde{\rho}(\vec{p})}{\omega _ {p} \sqrt{2\omega _ {p} }}e^{-K^{\dagger}},
 $$
 
-However, without a cutoff, the integral in the definition of $S_ {j'}$ might be divergent. For example, consider a delta-function source, $J(\vec{x})=\delta(\vec{x})$, then $j_ {p}\sim \sqrt{\omega _ {p}}$ and $S_ {j'}=-\infty$ for $d\geq 3$. To be continued.
+Hence 
 
+$$
+\left\langle \vec{p} \middle\vert 0_ {\rho} \right\rangle  = -ge^{-\beta/2}  \frac{\tilde{\rho}(\vec{p})}{\omega _ {p} \sqrt{2\omega _ {p} }}
+$$
 
+where
 
+$$
+\beta = g^{2} \int \frac{d^{3}p}{(2\pi)^{3}}\, \frac{1}{2\omega _ {p} ^{3}}   \left\lvert \tilde{\rho}(\vec{p}) \right\rvert ^{2}.
+$$
 
-
-
+Which is in pretty good agreement of Coleman's result up to a phase.
 
 
 # Appendix
