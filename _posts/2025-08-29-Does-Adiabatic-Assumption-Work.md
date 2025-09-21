@@ -190,7 +190,7 @@ $\left\lvert 0_ {\rho} \right\rangle$ is a *coherent state* from the perspective
 
 - - -
 
-$\left\lvert 0_ {\rho} \right\rangle$ is constructed from $\left\lvert 0 \right\rangle$ via *displacement* operation. To see that, first we need to define the `smeared ladder operator` $a(f)$ where $f\in L^{2}(\mathcal{D})$ on some measurable domain $\mathcal{D}$. As usual, the Fourier expansion of $f(\vec{x})$ reads
+How can $\left\lvert 0_ {\rho} \right\rangle$ be constructed from $\left\lvert 0 \right\rangle$ via *displacement* operation? First we need to define the `smeared ladder operator` $a(f)$ where $f\in L^{2}(\mathcal{D})$ on some measurable domain $\mathcal{D}$. As usual, the Fourier expansion of $f(\vec{x})$ reads
 
 $$
 f(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}}\, \tilde{f}(\vec{p})e^{ i\vec{p}\cdot \vec{x} },
@@ -257,7 +257,7 @@ $$
 $\mathcal{D}_ {f}$ is a unitary operator that satisfies 
 
 $$
-\mathcal{D}_ {f}^{\dagger} a_ {p}  \mathcal{D}_ {f} = a_ {p} -\sqrt{\frac{\omega _ {p} }{2}}\tilde{f}(\vec{p}).
+\mathcal{D}_ {f}^{\dagger} a_ {p}  \mathcal{D}_ {f} = a_ {p} +\sqrt{\frac{\omega _ {p} }{2}}\tilde{f}(\vec{p}).
 $$
 
 Then maybe $\mathcal{D}_ {f}$ can be used to create $\left\lvert 0_ {\rho} \right\rangle$ from $\left\lvert 0 \right\rangle$: 
@@ -269,7 +269,7 @@ $$
 where 
 
 $$
-\tilde{k}(\vec{p})= - \frac{g}{\omega _ {p} ^{2}}\tilde{\rho}(\vec{p}).
+\tilde{k}(\vec{p})=  \frac{g}{\omega _ {p} ^{2}}\tilde{\rho}(\vec{p}).
 $$
 
 Looks like we can't just insert the source function with coupling $g\rho$ into the displacement and hope it gives the correct ground state.
@@ -301,7 +301,7 @@ $$
 where
 
 $$
-K := g\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega _ {p} \sqrt{2\omega _ {p} }} a_ {p} \tilde{p}(\vec{p})^\ast.
+K :=- g\int \frac{d^{3}p}{(2\pi)^{3}} \, \frac{1}{\omega _ {p} \sqrt{2\omega _ {p} }} a_ {p} \tilde{p}(\vec{p})^\ast.
 $$
 
 Using the BCH formula (provided $[X,Y]$ commutes with both $X$ and $Y$)
@@ -324,7 +324,7 @@ $$
 =& \left\langle 0 \right\rvert\exp \left\lbrace -i\pi(k) \right\rbrace \left\lvert 0 \right\rangle \\
 =& \left\langle 0 \right\rvert \exp \left\lbrace K - K^{\dagger}\right\rbrace \left\lvert 0 \right\rangle \\
 =& \left\langle 0 \right\rvert \exp \left\lbrace -K^{\dagger}+K\right\rbrace \left\lvert 0 \right\rangle \\
-=& e^{ -\frac{1}{2} \beta }\left\langle 0 \right\rvert e^{ A^{-} } e^{ A^{+} }   \left\lvert 0 \right\rangle \\
+=& e^{ -\frac{1}{2} \beta }\left\langle 0 \right\rvert e^{ -K^{\dagger} } e^{ K }   \left\lvert 0 \right\rangle \\
 =& e^{ -\frac{1}{2}\beta}.
 \end{align*}
 $$
@@ -365,13 +365,13 @@ $$
 We have 
 
 $$
-[a_ {p} ,e^{-K^{\dagger}}] = -g \frac{\tilde{\rho}(\vec{p})}{\omega _ {p} \sqrt{2\omega _ {p} }}e^{-K^{\dagger}},
+[a_ {p} ,e^{-K^{\dagger}}] = g \frac{\tilde{\rho}(\vec{p})}{\omega _ {p} \sqrt{2\omega _ {p} }}e^{-K^{\dagger}},
 $$
 
 Hence 
 
 $$
-\left\langle \vec{p} \middle\vert 0_ {\rho} \right\rangle  = -ge^{-\beta/2}  \frac{\tilde{\rho}(\vec{p})}{\omega _ {p} \sqrt{2\omega _ {p} }}
+\left\langle \vec{p} \middle\vert 0_ {\rho} \right\rangle  = ge^{-\beta/2}  \frac{\tilde{\rho}(\vec{p})}{\omega _ {p} \sqrt{2\omega _ {p} }}
 $$
 
 where
@@ -380,7 +380,7 @@ $$
 \beta = g^{2} \int \frac{d^{3}p}{(2\pi)^{3}}\, \frac{1}{2\omega _ {p} ^{3}}   \left\lvert \tilde{\rho}(\vec{p}) \right\rvert ^{2}.
 $$
 
-Which is in pretty good agreement of Coleman's result up to a phase.
+Which is in pretty good agreement of Coleman's result up to a complex conjugation.
 
 
 # Appendix

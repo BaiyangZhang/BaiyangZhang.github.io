@@ -1,19 +1,17 @@
-let $a,a^{\dagger}$ be ladder operators in quantum mechanics, satisfying the commutation relation $[a^{\dagger},a]=1$. The Baker-Campbell-Harsdorf formula says that
+1. I am older than you are. I am the oldest in the class.
+2. I am taller than you are. I am the tallest in the class.
+3. I am lazier than you are. I am the laziest in the class.
+4. I am heavier than you are. I am the heaviest in the class.
+5. I am luckier than you are. I am the luckiest in the class.
+6. I am fatter than you are. I am the fattest in the class.
+7. I am thinner than you are. I am the thinnest in the class.
+8. I am bigger than you are. I am the biggest in the class.
 
-$$
-e^{A+B} = e^{A}e^{B}e^{-1/2 [A,B]}
-$$
+- - -
 
-if $[A,B]$ commutes with both $A$ and $B$. If we apply it to $a^{\dagger},a$, we get 
-
-$$
-e^{a^{\dagger}-a} = e^{a^{\dagger}} e^{a}e^{-1/2 [a^{\dagger},a]} = e^{a^{\dagger}}e^{a}e^{1/2}.
-$$
-
-If we apply it to the ground state $\left\lvert 0 \right\rangle$, then the right hand side is 
-
-$$
-e^{a^{\dagger}}e^{a}e^{1/2}\left\lvert 0 \right\rangle =0
-$$
-
-since $a$ annihilates the vacuum, but the left hand side is $e^{a^{\dagger}-a}\left\lvert 0 \right\rangle\neq 0$. where did I do wrong?
+1. But that street is cleaner. That is the cleanest street I have ever seen.
+2. But that man is older. He is the oldest man I have ever seen.
+3. But that river is longer. That is the longest river I have ever seen.
+4. But that woman is shorter. She is the shortest woman I have ever seen.
+5. But that knife is blunter. That is the bluntest knife I have ever seen.
+6. But that car is cheaper. That is the cheapest car I have ever seen. 
