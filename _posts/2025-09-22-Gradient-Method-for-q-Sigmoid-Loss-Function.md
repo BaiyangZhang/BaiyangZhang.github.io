@@ -131,25 +131,21 @@ where $G$ in $i\in G$ means that the regression is done within a certain group o
 
 # Appendix. Useful Mathematical Formulae
 
-The definition of $q$-logarithm and $q$-exponential, $x>0, q \in\mathbb{R}$:
+The definition of $\eta$-logarithm and $\eta$-exponential, $x>0, \eta \in\mathbb{R}^\ast=\mathbb{R}\backslash\left\lbrace 0 \right\rbrace$:
 
 $$
 \begin{align*}
-\ln_ {q}x &:= \frac{x^{1-q}-1}{1-q}, \\
-e^{ x }_ {q} &:= (1+(1-q)x)^{1/(1-q)},\quad  0 \text{ if } 1+(1-q)x<0.
+\ln_ {\eta}x &:= \frac{x^{\eta}-1}{\eta}, \\
+e^{ x }_ {\eta} &:= (1+\eta x)_ {+}^{1/\eta}.
 \end{align*}
 $$
 
-Note that in the definition of the exponential it is required that $1+(1-q)x>0$, otherwise it is defined to be zero. This is to make sure the the value of $e_ {q}$ is positive definite. It is easily checked that $\log _q$ and $\exp_ {q}$ are indeed inverse to each other. 
-
-many formula for $q$-logarithms reminds us of that for the regular $q$-logarithms. 
+many formula for $\eta$-logarithms reminds us of that for the regular $\eta$-logarithms. 
 
 $$
 \begin{align*}
-\ln_ {q}(xy) &= \ln_ {q}(x)+ \ln_ {q}(y) + (1-q)\ln_ {q}(x)\ln_ {q}(x) , \\
-\ln_ {q}(1+x) &= \sum_ {1}^{\infty} (-1)^{n-1} \frac{(q)_ {n}}{n!} x^{n}, \\
-(q)_ {n} &= \frac{\Gamma(q+k)}{\Gamma(q)} = q(q+1)\cdots(q+k-1), \\
-\ln_ {q}\prod_ {k=1}^{n}x_ {k} &= \sum_ {k=1}^{n} (1-q)^{k-1}\sum_ {i_ {k} >\cdots>i_ {1}=1}^{n} \ln_ {q}x_ {i_ {1}}\cdots\ln_ {q}x_ {i_ {k}}.
+\ln_ {\eta}(xy) &= \ln_ {\eta}(x)+ \ln_ {\eta}(y) + \eta\ln_ {\eta}(x)\ln_ {\eta}(x) , \\
+\ln_ {\eta}(1+x) &= \sum_ {1}^{\infty} (-1)^{n-1} \frac{(1-\eta)_ {n}}{n!} x^{n}.
 \end{align*}
 $$
 
@@ -157,8 +153,8 @@ We also have
 
 $$
 \begin{align*}
-\ln_ {q} x &= x^{1-q}\ln_ {2-q}x , \\
-q \ln_ {1-q}x^{a} &= a \ln_ {1-a} x^{q} .
+\ln_ {\eta} x &= x^{\eta}\ln_ {1+\eta}x , \\
+(1-\eta) \ln_ {\eta}x^{a} &= a \ln_ {1-a} x^{1-\eta} .
 \end{align*}
 $$
 
@@ -166,8 +162,8 @@ Regarding the $q$-exponentials,
 
 $$
 \begin{align*}
-\left( e_ {q}^{f(x)} \right) ^{a} &= e^{ af(x) }_ {1-(1-q)/a},\\
-\frac{d}{dx} e_ {q}^{f(x)}  &= (e_ {q}^{f(x)})^{q} \times f'(x)
+\left( e_ {\eta}^{f(x)} \right) ^{a} &= e^{ af(x) }_ {1-\eta/a},\\
+\frac{d}{dx} e_ {\eta}^{f(x)}  &= (e_ {\eta}^{f(x)})^{1-\eta} \times f'(x)
 \end{align*}
 $$
 
