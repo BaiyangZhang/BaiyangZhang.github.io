@@ -124,7 +124,7 @@ $$
 **The gradient of loss function with respect to the deformation parameter** reads
 
 $$
-\boxed{\frac{ \partial L(y,\sigma_ {q}(z)) }{ \partial \eta }  =\sum_ {i\in G} \gamma(-z_ {i};\eta)  (y_ {i} -\sigma_ {\eta}(z_ {i} )),}
+\boxed{\frac{ \partial L(y,\sigma_ {\eta}(z)) }{ \partial \eta }  =\sum_ {i\in G} \gamma(-z_ {i};\eta)  (y_ {i} -\sigma_ {\eta}(z_ {i} )),}
 $$
 
 where $G$ in $i\in G$ means that the regression is done within a certain group of shared clinical covariates, such as age, sex, etc. Note that the deformation parameter $\eta$ depends on the $G$ chose.
