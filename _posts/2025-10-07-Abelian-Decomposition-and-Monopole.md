@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bare Minimum of Abelian Decomposition and Monopole
-date: 2025-08-20
+date: 2025-10-07
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -119,6 +119,7 @@ We have Bianchi identity
 $$
  d\star F=0.
 $$
+
 # 't Hooft-Polyakov Monopole
 
 Magnetic Monopole solutions in $SU(2)$ Yang-Mills theory with adjoint bosons appears more naturally than that in U(1) theory. Whenever the **non-abelian** gauge group is broken to its **Cartan subgroup** (Cartan subalgebra is spanned by a maximal mutual-commuting basis of Lie algebra) by adjoint Higgs bosons, we have magnetic monopoles. The **adjoint** Higgs fields have non-zero vacuum expectation values (VEV for short, denoted by $\left\langle \bullet \right\rangle$), breaking the gauge symmetry. Those gauge transformations that leave $\left\langle \phi \right\rangle$ invariant are symmetries not broken by the Higgs bosons. Loosely speaking there are two kinds of symmetries:
@@ -402,6 +403,7 @@ After Abelian projection,
 
 
 # Abelian Decomposition in SU(2)
+
 ## Decomposition into $\mathcal{A},\mathcal{C}$ and $X$
 
 The Cho-Duan-Ge decomposition is a covariant separation of the gauge field into abelian and non-abelian components. Roughly speaking, the gauge potential is separated into
@@ -517,7 +519,7 @@ $$
 This form is similar to $F_ {\mu \nu}=\partial_ {\mu}A_ {\mu}-(\mu\leftrightarrow \nu)$. In fact, in the case of $SU(2)$, we can simplify it further to give an explicit expression for $H_ {\mu \nu}$ (without $\mathfrak{n}$). The final expression will be in terms of $\hat{n}_ {1,2}$. Recall that $\hat{n}_ {1}, \hat{n}_ {2}, \hat{n}$ form a right-handed orthogonal basis, let $\mathfrak{n}_ {1,2}$ be the $\mathfrak{g}$-valued counterparts of $\hat{n}_ {1,2}$. It is easily verified that 
 
 $$
-[\mathfrak{n}_ {1},\mathfrak{n} _ {2}] = i\mathfrak{n} .
+[\mathfrak{n}_ {i},\mathfrak{n} _ {j}] = i\epsilon^{ijk}\mathfrak{n}_ {k} .
 $$
 
 Since $\partial \hat{n}$ is perpendicular to $\hat{n}$ (since $\hat{n}$ has fixed length), $\partial \hat{n}=(\cdots)\hat{n}_ {1}+(\cdots)\hat{n}_ {2}$. In $\mathfrak{g}$-space we have the same. Write 
@@ -604,6 +606,18 @@ where
 - $\mathcal{C}$ is the monopole-like background field defined(fixed) by $\hat{n}$, where $\hat{n}$ for example can be chosen to be of the hedgehog-form, similar to the monopole field configuration. Possible singularity points are allowed. It can not fluctuated and has no dynamics.
 - $X$ is the rest of $A$. I'd like to think of it as the non-abelian fluctuation about the background $\mathcal{C}$, but of course this is only a perturbative perspective.
 
+Using the formula
+
+$$
+a\times b\times c=b(a\cdot c) - a(c \cdot b),
+$$
+
+we have 
+
+$$
+\vec{X} = \hat{n} \times  D_ {\mu} \hat{n}, \quad  D = \partial - i[A,-].
+$$
+
 - - -
 
 We emphasize that $\hat{n}$ may not be globally defined. Let $\hat{n}_ {\infty}$ be the asymptotic field configuration at the spatial boundary $\partial\mathbb{R}^{3}=\mathbb{S}^{2}$. Since $\hat{n}$ takes value in all unit-norm vectors in all directions, the collection of all $\hat{n}$ is homeomorphic to $\mathbb{S}^{2}$, think of it as the set of the end points of all possible $\hat{n}$. Thus,
@@ -614,7 +628,7 @@ $$
 
 If the winding number of $\hat{n}_ {\infty}$ is nonzero, then it can not be continuously deformed into a unit map. Then $\hat{n}$ can not be well-defined everywhere, there must be at least one singularity, where the direction of $\hat{n}$ is not defined. If $\hat{n}$ were a scalar field, we usually let it go to zero to avoid this problem, like with vortices. 
 
-## Gauge transform
+## Gauge transformation
 
 If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$, where $U(1)$ is the little group of $\mathfrak{n}(x)$, which depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? Then, under gauge transformation $\mathfrak{n}$ will rotate in a $x$-dependent way. 
 
@@ -797,28 +811,25 @@ Also take into consideration the cyclic property of trace, we can simplify the f
 
 $$
 \begin{align*}
-\mathrm{Tr}\,\left\lbrace \hat{F}_ {\mu \nu} \hat{D}_ {\mu}X_ {\nu} \right\rbrace =& f_ {\mu \nu} \mathrm{Tr}\,\left\lbrace \mathfrak{n}(\partial_ {\mu}X_ {\nu}-i[\hat{A}_ {\mu},X_ {\nu}])  \right\rbrace \\
-=& f_ {\mu \nu} \mathrm{Tr}\,\left\lbrace \mathfrak{n} \partial_ {\mu}X_ {\nu}-\mathfrak{n} i(\hat{A}_ {\mu}X_ {\nu}-X_ {\nu}\hat{A}_ {\mu}) \right\rbrace \\
-=& f_ {\mu \nu}\mathrm{Tr}\,\left\lbrace -\partial_ {\mu}\mathfrak{n}X_ {\nu} -i\mathfrak{n} \hat{A}_ {\mu}X_ {\nu}+i\mathfrak{n} X_ {\nu}\hat{A}_ {\mu} \right\rbrace \\
-=& f_ {\mu \nu}\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} X_ {\nu} -i\hat{A}_ {\mu}\mathfrak{n} X_ {\nu}+i\mathfrak{n} \hat{A}_ {\mu}X_ {\nu})\right\rbrace \\
-=& f_ {\mu \nu}\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} -i(\hat{A}_ {\mu}\mathfrak{n} -\mathfrak{n} \hat{A}_ {\mu})X_ {\nu}) \right\rbrace \\
-=& f_ {\mu \nu}\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} -i[\hat{A}_ {\mu},\mathfrak{n} ])X_ {\nu} \right\rbrace \\
-=&f_ {\mu \nu} \mathrm{Tr}\,\left\lbrace -(\hat{D}_ {\mu}\mathfrak{n} )X_ {\nu} \right\rbrace \\
+\mathrm{Tr}\,\left\lbrace \hat{F}_ {\mu \nu} \hat{D}_ {\mu}X_ {\nu} \right\rbrace =& (f_ {\mu \nu}+H_ {\mu \nu}) \mathrm{Tr}\,\left\lbrace \mathfrak{n}(\partial_ {\mu}X_ {\nu}-i[\hat{A}_ {\mu},X_ {\nu}])  \right\rbrace \\
+=& (f_ {\mu \nu}+H_ {\mu \nu}) \mathrm{Tr}\,\left\lbrace \mathfrak{n} \partial_ {\mu}X_ {\nu}-\mathfrak{n} i(\hat{A}_ {\mu}X_ {\nu}-X_ {\nu}\hat{A}_ {\mu}) \right\rbrace \\
+=& (f_ {\mu \nu}+H_ {\mu \nu})\mathrm{Tr}\,\left\lbrace -\partial_ {\mu}\mathfrak{n}X_ {\nu} -i\mathfrak{n} \hat{A}_ {\mu}X_ {\nu}+i\mathfrak{n} X_ {\nu}\hat{A}_ {\mu} \right\rbrace \\
+=& (f_ {\mu \nu}+H_ {\mu \nu})\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} X_ {\nu} -i\hat{A}_ {\mu}\mathfrak{n} X_ {\nu}+i\mathfrak{n} \hat{A}_ {\mu}X_ {\nu})\right\rbrace \\
+=& (f_ {\mu \nu}+H_ {\mu \nu})\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} -i(\hat{A}_ {\mu}\mathfrak{n} -\mathfrak{n} \hat{A}_ {\mu})X_ {\nu}) \right\rbrace \\
+=& (f_ {\mu \nu}+H_ {\mu \nu})\mathrm{Tr}\,\left\lbrace -(\partial_ {\mu}\mathfrak{n} -i[\hat{A}_ {\mu},\mathfrak{n} ])X_ {\nu} \right\rbrace \\
+=&(f_ {\mu \nu}+H_ {\mu \nu}) \mathrm{Tr}\,\left\lbrace -(\hat{D}_ {\mu}\mathfrak{n} )X_ {\nu} \right\rbrace \\
 =&0.
 \end{align*}
 $$
 
-This holds for not only $\hat{F}$ but really anything that is proportional to $\mathfrak{n}$. 
-
-
+This holds for not only $\hat{F}$ but really anything that is proportional to $\mathfrak{n}$, which certainly includes the term proportional to $\mathrm{Tr}\,\left\lbrace [X_ {\mu},X_ {\nu}]\hat{D}X \right\rbrace$.
 
 With this great simplification, the extended Lagrangian reads
 
 $$
 \begin{align*}
 \mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,F^{2} \\
-=& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2iF_ {\mu \nu}[X_ {\mu},X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2} \right. \\
-&\left. - [X_ {\mu},X_ {\nu}]^{2}-2i(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})[X_ {\mu},X_ {\nu}]   \right\rbrace. 
+=& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2i\hat{F}_ {\mu \nu}[X_ {\mu},X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2}  - [X_ {\mu},X_ {\nu}]^{2}\   \right\rbrace. 
 \end{align*}
 $$
 
@@ -914,7 +925,7 @@ $$
 \epsilon^{ijk}(f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})X_ {\mu}^{j}\hat{n}^{k} = \partial_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{i} + \epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{k}.
 $$
 
-In a more concise notation we could also write the right hand side as the $i$-th component of $\hat{D}_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})$.  Or equivalently
+In a more concise notation we could also write the right hand side as the $i$-th component of $\hat{D}_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})$. Or equivalently
 
 $$
 \hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\alpha}-\hat{D}_ {\alpha}\vec{X}_ {\mu}) = (f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})\vec{X}_ {\mu} \times \hat{n} 
@@ -922,27 +933,37 @@ $$
 
 - - -
 
-Since $X_ {\mu} = A_ {\mu}- \mathcal{A}-\mathcal{C}$ is always perpendicular to $\mathfrak{n}$, it only has $\hat{n}^{1}$ and $\hat{n}^{2}$ components (recall that we have defined that $\hat{n}^{1},\hat{n}^{2},\hat{n}$ to form an orthogonal basis), write 
+## Complex gauge field $\chi$
+
+We will use two different notations for components associated to different basis, use an index in parenthesis with  basis：
 
 $$
-X_ {\mu} = X_ {\mu}^{1} \mathfrak{n}_ {1}  + X_ {\mu}^{2}\mathfrak{n}_ {2}, \text{ where }  \mathfrak{n}_ {1,2} := \hat{n}_ {1,2}\cdot \vec{T}.
+\vec{X} = X^{i} T^{i} = X^{(\alpha)}\hat{n}_ {\alpha},
 $$
 
-The $X$ field looks like two components of a single complex vector. Can we interpret it so? To see it, define
+where the Greek letters take value in only $\left\lbrace 1,2 \right\rbrace$, since in terms of $\hat{n}_ {i}$, $X$ only has $\hat{n}_ {1}$ and $\hat{n}_ {2}$ components. 
+
+Since $X_ {\mu} = A_ {\mu}- \mathcal{A}-\mathcal{C}$ is always perpendicular to $\mathfrak{n}$, it has only $\hat{n}^{1}$ and $\hat{n}^{2}$ components (recall that we have defined that $\hat{n}^{1},\hat{n}^{2},\hat{n}$ to form an orthogonal basis), write 
 
 $$
-\chi_ {\mu} :=  \frac{1}{\sqrt{2}}(X_ {\mu}^{1}+iX_ {\mu}^{2}),
+X_ {\mu} = X_ {\mu}^{(1)} \mathfrak{n}_ {1}  + X_ {\mu}^{(2)}\mathfrak{n}_ {2}, \text{ where }  \mathfrak{n}_ {1,2} := \hat{n}_ {1,2}\cdot \vec{T}.
+$$
+
+Define
+
+$$
+\chi_ {\mu} :=  \frac{1}{\sqrt{2}}(X_ {\mu}^{(1)}+iX_ {\mu}^{(2)}),
 $$
 then 
 
 $$
-X^{1} = \frac{1}{\sqrt{2}} (\chi + \chi ^\ast ),\quad  X^{2} = \frac{1}{i\sqrt{2}}(\chi-\chi ^\ast )
+X^{(1)} = \frac{1}{\sqrt{2}} (\chi + \chi ^\ast ),\quad  X^{(2)} = \frac{1}{i\sqrt{2}}(\chi-\chi ^\ast )
 $$
 
 and
 
 $$
-X_ {\mu \nu} = X_ {\mu}^{1}X_ {\nu}^{2}-X_ {\nu}^{1}X_ {\mu}^{2} = i(\chi_ {\mu}\chi_ {\nu}^\ast-\chi_ {\mu}^\ast \chi_ {\nu}) .
+X_ {\mu \nu} = X_ {\mu}^{(1)}X_ {\nu}^{(2)}-X_ {\nu}^{(1)}X_ {\mu}^{(2)} = i(\chi_ {\mu}\chi_ {\nu}^\ast-\chi_ {\mu}^\ast \chi_ {\nu}) .
 $$
 
 To rewrite the Lagrangian in terms of $\chi$, we also need to express $\hat{D}_ {\mu}X_ {\nu}-(\mu \leftrightarrow \nu)$ in $\chi$. It is more convenient to adopt the following expression in vector notation,
@@ -951,7 +972,72 @@ $$
 \hat{D} \vec{X} = \partial_ {\mu}\vec{X} + \hat{A}\times \vec{X}.
 $$
 
-*If $\hat{n}$ is independent of spacetime,* then without loss of generality we can assume that $\hat{n}$ lies in the $T^{3}$ direction, $\hat{n}_ {1}$ in $T^{1}$  and $\hat{n}_ {2}$ in $T^{2}$ respectively in $\mathfrak{su}(2)$. $X=X^{1}\mathfrak{n}_ {1}+X^{2}\mathfrak{n}_ {2}$ becomes $X=X^{1}T^{1}+X^{2}T^{2}$. $\hat{A}=a_ {\mu}T^{3}$ since $\mathcal{C}$ vanishes, and as a consequence so does $H_ {\mu \nu}$.
+The problem is that, in the definition from previous sections, $\vec{X}$ is defined in the $T$-basis, but now we are dealing with the $\hat{n}$-basis which is curvilinear, namely spacetime dependent. The covariant derivative should be able to reflect this change to curvilinear basis. 
+
+The covariant derivative in terms of $\hat{n}$'s reads
+
+$$
+\begin{align*}
+\hat{D}_ {\mu} \vec{X}_ {\nu} =& \hat{n}_ {\alpha}\partial_ {\mu} X_ {\nu}^{(\alpha)}+(\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + a_ {\mu} \epsilon_ {\alpha\beta}\hat{n}_ {\beta} X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)}\\
+=& \hat{n}_ {\alpha} (\partial_ {\mu} X_ {\nu}^{(\alpha)}-a_ {\mu} \epsilon_ {\alpha \beta} X_ {\nu}^{(\beta)})+(\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)}.
+\end{align*}
+$$
+
+where $\epsilon_ {\alpha \beta}$ is the Levi-Civita symbol, defined as $\epsilon_ {\alpha\beta}=\epsilon^{\alpha\beta}=1$ for even permutation (12) and $-1$ for odd permutation (21). The last two terms in the last line reads
+
+$$
+\begin{align*}
+&(\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)} \\
+=& X_ {\nu}^{(\alpha)}\left\lbrace \hat{n}(\hat{n}\cdot \partial_ {\mu}\hat{n}_ {\alpha}+\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n}) + \hat{n}_ {\beta}\cdot \partial_ {\mu}\hat{n}_ {\alpha} \left\lvert \epsilon_ {\alpha \beta}\right\rvert \hat{n}_ {\beta}  \right\rbrace \\
+=& X_ {\nu}^{(\alpha)}\left\lbrace \hat{n}\partial_ {\mu}(\hat{n}\cdot \hat{n}_ {\alpha}) + \hat{n}_ {\beta}\cdot \partial_ {\mu}\hat{n}_ {\alpha} \left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\beta} \right\rbrace \\
+=& X_ {\nu}^{(\alpha)}\left\lbrace \hat{n}_ {\beta}\cdot \partial_ {\mu}\hat{n}_ {\alpha} \left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\beta} \right\rbrace,
+\end{align*}
+$$
+
+where the role of $\left\lvert \epsilon_ {\alpha \beta} \right\rvert$ is simply to switch between indices $1$ and $2$ without a sign change. Thus we can write 
+
+$$
+\begin{align*}
+\hat{D}_ {\mu} \vec{X}_ {\nu} 
+&= \hat{n}_ {\alpha} (\partial_ {\mu} X_ {\nu}^{(\alpha)}-a_ {\mu} \epsilon_ {\alpha \beta} X_ {\nu}^{(\beta)})
++\hat{n}_ {\beta} \left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\beta}\cdot \partial_ {\mu}\hat{n}_ {\alpha} X_ {\nu}^{(\alpha)} \\
+&=  \hat{n}_ {\alpha}[\partial_ {\mu}X_ {\nu}^{(\alpha)}-(a_ {\mu}\epsilon_ {\alpha \beta}-\left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\alpha} \cdot \partial_ {\mu} \hat{n}_ {\beta})X_ {\nu}^{\beta}].
+\end{align*}
+$$
+
+Notice that there is no $\hat{n}$ component, only $\hat{n}_ {1}$ and $\hat{n}_ {2}$. Substitute $\chi,\chi ^\ast$ for $X^{(1,2)}$, let $\alpha=1$, $\beta=2$ we have
+
+$$
+\partial_ {\mu}X_ {\nu}^{(1)}-(a_ {\mu}\epsilon_ {12}-\left\lvert \epsilon_ {12} \right\rvert \hat{n}_ {1} \cdot \partial_ {\mu} \hat{n}_ {2})X_ {\nu}^{2} = \frac{1}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}+(D_ {\mu}\chi_ {\nu})^\ast)
+$$
+
+where the covariant derivative acting on $\chi$ is defined by 
+
+$$
+D_ {\mu}\chi := \partial_ {\mu} \chi_ {\nu} +i(a_ {\mu}-\hat{n}_ {1}\cdot \partial_ {\mu}\hat{n}_ {2})\chi_ {\nu}.
+$$
+
+Similarly, let $\alpha,\beta=2,1$ we have 
+
+$$
+\partial_ {\mu}X_ {\nu}^{(2)}-(a_ {\mu}\epsilon_ {21}-\left\lvert \epsilon_ {21} \right\rvert \hat{n}_ {2} \cdot \partial_ {\mu} \hat{n}_ {1})X_ {\nu}^{1} = - \frac{i}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}-\text{c.c.}).
+$$
+
+Substitute this to the term in the Lagrangian, we have 
+
+$$
+\begin{align*}
+ &(\hat{D}_ {\mu}\vec{X}_ {\nu}-(\mu \leftrightarrow \nu))^{2}\\
+ &= \sum_ {\alpha=1,2}\left\lbrace [\partial_ {\mu}X_ {\nu}^{(\alpha)}-(a_ {\mu}\epsilon_ {\alpha \beta}-\left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\alpha} \cdot \partial_ {\mu} \hat{n}_ {\beta})X_ {\nu}^{\beta}] -(\mu \leftrightarrow \nu) \right\rbrace ^{2}\\
+ &= 2\left\lvert D_ {\mu}\chi_ {\nu}-D_ {\nu}\chi_ {\mu} \right\rvert ^{2}.
+\end{align*}
+$$
+
+This simplification is quite impressive.
+
+- - -
+
+Next let's consider a special case just to verify our result above. *If $\hat{n}$ is independent of spacetime,* then without loss of generality we can assume that $\hat{n}$ lies in the $T^{3}$ direction, $\hat{n}_ {1}$ in $T^{1}$ and $\hat{n}_ {2}$ in $T^{2}$ respectively in $\mathfrak{su}(2)$. $X=X^{1}\mathfrak{n}_ {1}+X^{2}\mathfrak{n}_ {2}$ becomes $X=X^{1}T^{1}+X^{2}T^{2}$. $\hat{A}=a_ {\mu}T^{3}$ since $\mathcal{C}$ vanishes, and as a consequence so does $H_ {\mu \nu}$.
 
 We can write down the three components of $\hat{D}_ {\mu}\vec{X}_ {\nu}$ easily:
 
@@ -977,7 +1063,7 @@ $$
 \end{align*}
 $$
 
-where $\text{h.c.}$ stands for hermitian conjugation. Recall that $\hat{A}^{3}=a$. Define the hatted covariant derivative for $\chi$ as 
+Recall that $\hat{A}^{3}=a$. Define the hatted covariant derivative for $\chi$ as 
 
 $$
 \hat{D}_ {\mu} \chi_ {\nu} := \partial_ {\mu}\chi_ {\nu} +i a_ {\mu}\chi_ {\nu}
@@ -992,10 +1078,12 @@ Finally, in the special case where $(\hat{n}_ {1},\hat{n}_ {2},\hat{n})=(T^{1},T
 
 $$
 \begin{align*}
-\mathcal{L}_ {\text{ECD}} =& - \frac{1}{4g^{2}}(f_ {\mu \nu}+X_ {\mu \nu})^{2} 
+\mathcal{L}_ {\text{ECD}} =& - \frac{1}{4g^{2}}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2} 
 - \frac{1}{2g^{2}} \left\lvert \hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu} \right\rvert ^{2}
 \end{align*}
 $$
+
+
 
 # Appendix
 
@@ -1016,6 +1104,8 @@ but if $\mathcal{C}$ appears alone, we have $\mathcal{C}_ {\mu} \longrightarrow 
 Upon those substitutes, we recover the expressions in the paper. The reason why $\mathcal{C}\to\mathcal{C} /g$ is that, when solving for the restricted field, we write the solution as $\hat{A}=\mathcal{A}+\mathcal{C}$, then going to the paper's notation we get $g\hat{A}_ {\text{paper}} = g\mathcal{A}_ {\text{paper}}+\mathcal{C}$, but in the paper the definition reads $\hat{A}_ {\text{paper}}=\mathcal{A}_ {\text{paper}}+\mathcal{C}_ {\text{paper}}$, which implies $\mathcal{C}_ {\text{paper}}=\mathcal{C} /g$. 
 
 - - -
+
+Introduce a **right-handed orthonormal frame** $(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ with $\hat{n}^{i}\hat{n}^{i}=1$. Choose the third component to be the so-called abelian direction, denoted it by $\hat{n}:=\hat{n}^{3}$.
 
 The following identities might be helpful (For $SU(2)$):
 
@@ -1043,4 +1133,94 @@ $$
 \begin{align*}
 \mathrm{Tr}\,(T^{a}T^{b}T^{c}) =& \frac{1}{4}(d^{abc}+if^{abc}).
 \end{align*}
+$$
+- - -
+
+the total gauge field $A$ into the following three parts, 
+
+$$
+A = \mathcal{A}+\mathcal{C}+X, \quad  [X,\mathfrak{n} ]\neq0.
+$$
+
+The restricted gauge field $\hat{A}$ is the solution for:
+
+$$
+\hat{D}_ {\mu}\mathfrak{n}  = (\partial_ {\mu}-i[\hat{A}_ {\mu},-])\mathfrak{n} =0.
+$$
+
+$\mathcal{C}_ {\mu}$ is the non-trivial part of the solution for $D_ {\mu}\mathfrak{n} =0$,
+
+$$
+\boxed{ 
+\mathcal{C}_ {\mu} = i[\mathfrak{n},\partial_ {\mu} \mathfrak{n}] .
+}
+$$
+
+This is a $\mathfrak{g}$-valued quantity, in terms of components in basis $T^{a}$ it can be written as 
+
+$$
+\boxed{ 
+\mathcal{C}_ {\mu} = -\hat{n} \times (\partial_ {\mu}\hat{n}) \text{ in }\mathfrak{g} .
+}
+$$
+
+The trivial part of the solution that is proportional to $\mathfrak{n}$, call it $\mathcal{A}$, is given by 
+
+$$
+\boxed{ 
+\mathcal{A}_ {\mu} =  a_ {\mu} \mathfrak{n},\quad a_ {\mu}\in \mathbb{R}.
+}
+$$
+
+We have
+
+$$
+\hat{A}=\mathcal{A}+\mathcal{C}, \quad \mathcal{A}\propto \mathfrak{n}\text{ and }\mathcal{C}=i[\mathfrak{n},\partial \mathfrak{n}].
+$$
+
+Define
+
+$$
+\begin{align*}
+\hat{F}:= & \partial_ {\mu}\hat{A}_ {\nu}-\partial_ {\nu}\hat{A}_ {\mu}-i[\hat{A}_ {\mu},\hat{A}_ {\nu}]\\
+=& (\partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu})\mathfrak{n} +i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ]\\
+=&: f_ {\mu \nu}\mathfrak{n} +H_ {\mu \nu}\mathfrak{n} .
+\end{align*}
+$$
+
+We have 
+
+$$
+\begin{align*}
+f_ {\mu \nu} &= \partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu},\\
+H_ {\mu \nu} \mathfrak{n}  &=i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ],\\
+H_ {\mu \nu} &= \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}, \; C_ {\mu}:= \hat{n}_ {2}\cdot \partial_ {\mu}\hat{n}_ {1}.
+\end{align*}
+$$
+
+The total field strength $F_ {\mu \nu}$ is 
+
+$$
+\boxed{ 
+F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}].
+}
+$$
+Define
+
+$$
+\boxed{ 
+X_ {\mu \nu} \mathfrak{n} := -i[X_ {\mu},X_ {\nu}],
+}
+$$
+
+then the Lagrangian reads
+
+$$
+\boxed{ 
+\begin{align*}
+\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
+=& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2i\hat{F}_ {\mu \nu}[X_ {\mu},X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2}  - [X_ {\mu},X_ {\nu}]^{2}\   \right\rbrace \\
+=& - \frac{1}{4g^{2}}[(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)^{2}]
+\end{align*}
+}
 $$

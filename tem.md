@@ -1,1 +1,0 @@
-Since the two types of $q$-sigmoids are symmetric under reflection about $q=1$, it suffices to adopt only one type of $q$-sigmoids, but with the full range of $q\in\mathbb{R}-1$. From now on the $q$-sigmoid of the first kind is considers, as defined in Eq.{eq:qSig}.

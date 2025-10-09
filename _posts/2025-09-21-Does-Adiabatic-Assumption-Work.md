@@ -11,7 +11,7 @@ tags:
 Starting with Coleman's model 2,
 
 $$
-H = \int d^{3}x \,  \frac{1}{2}(\pi^{2}+(\partial _ {i}  \phi)^{2})+ \frac{\mu^{2}}{2} \phi^{2} + g\rho(\vec{x})\phi(x)
+H = \int d^{3}x \,  \frac{1}{2}(\pi^{2}(\vec{x})+(\partial _ {i}  \phi(\vec{x}))^{2})+ \frac{\mu^{2}}{2} \phi^{2}(\vec{x}) + g\rho(\vec{x})\phi(\vec{x})
 $$
 
 where $\pi$ is the canonical momentum, and the density function $\rho(\vec{x})$ is a function of space only, independent of time. This means that the interaction doesn't turn off in the far past and far future. The standard lore is to insert an adiabatic switching function $f(t)$, 

@@ -4,49 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "13c2829a8e2ed077",
+        "id": "ff41b5f146960d04",
         "type": "tabs",
         "children": [
           {
-            "id": "2bc41026e9de4e6c",
+            "id": "303e26df9308a509",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
+                "file": "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-20-Abelian-Decomposition-and-Monopole"
+              "title": "2025-10-07-Abelian-Decomposition-and-Monopole"
             }
           },
           {
-            "id": "7bc38dc146e94030",
+            "id": "e5fef986b095a2ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function.md",
+                "file": "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function"
-            }
-          },
-          {
-            "id": "c2b76544f84f4120",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function"
+              "title": "2025-10-07-Abelian-Decomposition-and-Monopole"
             }
           }
         ],
@@ -107,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "862c7c927b43a428",
@@ -213,32 +200,33 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7bc38dc146e94030",
+  "active": "e5fef986b095a2ad",
   "lastOpenFiles": [
+    "博后三年记.md",
+    "README.md",
+    "2025-09-22.md",
+    "1759147326958.png",
+    "Untitled.md",
+    "中国高校中的异化现象研究.md",
+    "计量检测认证知识竞赛题库.md",
+    "投简历情况.md",
+    "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
+    "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
+    "_posts/2025-09-21-Does-Adiabatic-Assumption-Work.md",
+    "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function.md",
+    "中国红十字会二十年.md",
+    "_posts/2022-08-04-幼儿园毕业感言.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2025-02-27-Introduction-to-Resurgence-1.md",
     "_posts/2025-03-03-Lie-Groups.md",
     "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
     "_posts/2025-03-14-Mass-Renormalization.md",
     "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
-    "_posts/2025-08-20-Abelian-Decomposition-and-Monopole.md",
-    "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
-    "_posts/2025-09-21-Does-Adiabatic-Assumption-Work.md",
-    "2025-09-22.md",
-    "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function.md",
-    "tem.md",
     "_drafts/2025-08-29-what-is-kink-state.md",
     "_drafts/2025-09-13-About-Flighttickets.md",
-    "投简历情况.md",
-    "README.md",
-    "中国高校中的异化现象研究.md",
     "从此在到具身智能：身体哲学视域下的人工智能伦理重构中文2版.md",
     "从此在到具身智能：身体哲学视域下的人工智能伦理重构 English.md",
-    "博后三年人事记.md",
-    "计量检测认证知识竞赛题库.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_drafts/2023-05-09-Notes-on-(Anti-)-de-Sitter-Space.md",
-    "_posts/2025-07-20-Abelian-Decomposition-and-Monopole.md"
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md"
   ]
 }

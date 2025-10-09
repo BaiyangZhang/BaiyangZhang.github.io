@@ -81,7 +81,7 @@ Note that I have replace $q_ {i}$ with an universal $q$. In contrast to the clas
 
 ## Deformation (hyper)parameter
 
-the expressions are greatly simplified if we define the `deformation hyperparameter` $\eta:=1-q$,  $\eta \in\mathbb{R}^\ast$ where $\mathbb{R}^\ast:=\mathbb{R}\backslash \left\lbrace 0 \right\rbrace$ is the punctured real line. The deformed exponential functions in terms of $\eta$ reads
+The expressions are greatly simplified if we define the `deformation hyperparameter` $\eta:=1-q$,  $\eta \in\mathbb{R}^\ast$ where $\mathbb{R}^\ast:=\mathbb{R}\backslash \left\lbrace 0 \right\rbrace$ is the punctured real line. The deformed exponential functions in terms of $\eta$ reads
 
 $$
 \exp_ {\delta}(x) = (1+\eta x)^{1/\eta}_ {+}.
@@ -128,6 +128,8 @@ $$
 $$
 
 where $G$ in $i\in G$ means that the regression is done within a certain group of shared clinical covariates, such as age, sex, etc. Note that the deformation parameter $\eta$ depends on the $G$ chose.
+
+
 
 # Appendix. Useful Mathematical Formulae
 
