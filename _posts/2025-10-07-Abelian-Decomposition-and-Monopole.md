@@ -983,7 +983,7 @@ $$
 \end{align*}
 $$
 
-where $\epsilon_ {\alpha \beta}$ is the Levi-Civita symbol, defined as $\epsilon_ {\alpha\beta}=\epsilon^{\alpha\beta}=1$ for even permutation (12) and $-1$ for odd permutation (21). The last two terms in the last line reads
+where $\epsilon_ {\alpha \beta}$ is the Levi-Civita symbol, defined as $\epsilon_ {\alpha\beta}=\epsilon^{\alpha\beta}=1$ for even permutation $\alpha, \beta=1,2$ and $-1$ for odd permutation. The last two terms in the last line reads
 
 $$
 \begin{align*}
@@ -1001,14 +1001,14 @@ $$
 \hat{D}_ {\mu} \vec{X}_ {\nu} 
 &= \hat{n}_ {\alpha} (\partial_ {\mu} X_ {\nu}^{(\alpha)}-a_ {\mu} \epsilon_ {\alpha \beta} X_ {\nu}^{(\beta)})
 +\hat{n}_ {\beta} \left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\beta}\cdot \partial_ {\mu}\hat{n}_ {\alpha} X_ {\nu}^{(\alpha)} \\
-&=  \hat{n}_ {\alpha}[\partial_ {\mu}X_ {\nu}^{(\alpha)}-(a_ {\mu}\epsilon_ {\alpha \beta}-\left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\alpha} \cdot \partial_ {\mu} \hat{n}_ {\beta})X_ {\nu}^{\beta}].
+&=  \hat{n}_ {\alpha}[\partial_ {\mu}X_ {\nu}^{(\alpha)}-(a_ {\mu}\epsilon_ {\alpha \beta}-\left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\alpha} \cdot \partial_ {\mu} \hat{n}_ {\beta})X_ {\nu}^{(\beta)}].
 \end{align*}
 $$
 
 Notice that there is no $\hat{n}$ component, only $\hat{n}_ {1}$ and $\hat{n}_ {2}$. Substitute $\chi,\chi ^\ast$ for $X^{(1,2)}$, let $\alpha=1$, $\beta=2$ we have
 
 $$
-\partial_ {\mu}X_ {\nu}^{(1)}-(a_ {\mu}\epsilon_ {12}-\left\lvert \epsilon_ {12} \right\rvert \hat{n}_ {1} \cdot \partial_ {\mu} \hat{n}_ {2})X_ {\nu}^{2} = \frac{1}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}+(D_ {\mu}\chi_ {\nu})^\ast)
+\partial_ {\mu}X_ {\nu}^{(1)}-(a_ {\mu}\epsilon_ {12}-\left\lvert \epsilon_ {12} \right\rvert \hat{n}_ {1} \cdot \partial_ {\mu} \hat{n}_ {2})X_ {\nu}^{(2)} = \frac{1}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}+(D_ {\mu}\chi_ {\nu})^\ast)
 $$
 
 where the covariant derivative acting on $\chi$ is defined by 
@@ -1020,7 +1020,7 @@ $$
 Similarly, let $\alpha,\beta=2,1$ we have 
 
 $$
-\partial_ {\mu}X_ {\nu}^{(2)}-(a_ {\mu}\epsilon_ {21}-\left\lvert \epsilon_ {21} \right\rvert \hat{n}_ {2} \cdot \partial_ {\mu} \hat{n}_ {1})X_ {\nu}^{1} = - \frac{i}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}-\text{c.c.}).
+\partial_ {\mu}X_ {\nu}^{(2)}-(a_ {\mu}\epsilon_ {21}-\left\lvert \epsilon_ {21} \right\rvert \hat{n}_ {2} \cdot \partial_ {\mu} \hat{n}_ {1})X_ {\nu}^{(1)} = - \frac{i}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}-\text{c.c.}).
 $$
 
 Substitute this to the term in the Lagrangian, we have 
@@ -1028,7 +1028,7 @@ Substitute this to the term in the Lagrangian, we have
 $$
 \begin{align*}
  &(\hat{D}_ {\mu}\vec{X}_ {\nu}-(\mu \leftrightarrow \nu))^{2}\\
- &= \sum_ {\alpha=1,2}\left\lbrace [\partial_ {\mu}X_ {\nu}^{(\alpha)}-(a_ {\mu}\epsilon_ {\alpha \beta}-\left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\alpha} \cdot \partial_ {\mu} \hat{n}_ {\beta})X_ {\nu}^{\beta}] -(\mu \leftrightarrow \nu) \right\rbrace ^{2}\\
+ &= \sum_ {\alpha=1,2}\left\lbrace [\partial_ {\mu}X_ {\nu}^{(\alpha)}-(a_ {\mu}\epsilon_ {\alpha \beta}-\left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\alpha} \cdot \partial_ {\mu} \hat{n}_ {\beta})X_ {\nu}^{(\beta)}] -(\mu \leftrightarrow \nu) \right\rbrace ^{2}\\
  &= 2\left\lvert D_ {\mu}\chi_ {\nu}-D_ {\nu}\chi_ {\mu} \right\rvert ^{2}.
 \end{align*}
 $$
