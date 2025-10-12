@@ -416,7 +416,7 @@ In order to make it easier to keep tracks of the number of mesons, let's introdu
 - For a state, we use a superscript in parenthesis to denote how many meson it contains, $\left\lvert \psi \right\rangle^{(m)}$ indicates $\left\lvert \psi \right\rangle$ contains $m$ mesons, hence belongs to the $m$-meson Fock (sub)space. The superscript is sometimes inside the ket notation, sometimes out (as in here), I will in general not pay too much attention to it as long as it is clear what is meant;
 - For an operator, we use the same notation to denote **how many mesons it creates** when acting on a state, for example $\mathcal{O}^{(m)}$ means that $\mathcal{O}^{(m)}\left\lvert \psi(n) \right\rangle$ as a whole has $m+n$ states. 
 
-There is also a nice diagrammatic symbol that Jarah created (Jarah diagram) to indicate different contributions. An explanation of how such diagrams work is given in the figure below. 
+There exists a nice diagrammatic symbol that Jarah created (Jarah diagram) to indicate different contributions. An explanation of how such diagrams work is given in the figure below. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
