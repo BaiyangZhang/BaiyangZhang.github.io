@@ -8,6 +8,10 @@ tags:
   - kink
 ---
 
+## Introduction
+
+We present a 
+
 # Rules for Hamiltonians
 ## Rules for $H_ {3}^{(-)}$
 
