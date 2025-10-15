@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calculating States Using Diagrams
-date: 2025-10-12
+date: 2025-10-15
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -10,7 +10,7 @@ tags:
 
 ## Introduction
 
-We present a 
+We introduce a diagrammatic techniques demonstrate their usefulness with the help of simple examples.
 
 # Rules for Hamiltonians
 ## Rules for $H_ {3}^{(-)}$
@@ -96,7 +96,7 @@ $$
 \end{align*}
 $$
 
-But in order to turn them into diagrammatic rules for corresponding Hilbert states. We need to inverse $(\omega _ {p}-H_ {2})$ to get components of $\left\lvert \vec{p} \right\rangle_ {2}$, eliminate the integral measures and deal with the creation operators. Note that *the 1-meson states will eventually cancel out*. Furthermore, we strip-off the propagators in the diagram since we are regarding them as a vertex as a whole, as shown below.
+But in order to turn them into diagrammatic rules for corresponding Hilbert states, we need to inverse $(\omega _ {p}-H_ {2})$ to get components of $\left\lvert \vec{p} \right\rangle_ {2}$, eliminate the integral measures and deal with the creation operators. Note that *the 1-meson states will eventually cancel out*. Furthermore, we strip-off the propagators in the diagram since we are regarding them as a vertex as a whole, as shown below.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
