@@ -50,6 +50,20 @@
             }
           },
           {
+            "id": "291c74703c6d664b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I"
+            }
+          },
+          {
             "id": "7c07d1bd3e38e172",
             "type": "leaf",
             "state": {
@@ -63,7 +77,8 @@
               "title": "Untitled 1"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -120,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213.5
+    "width": 200
   },
   "right": {
     "id": "862c7c927b43a428",
@@ -226,12 +241,52 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "303e26df9308a509",
+  "floating": {
+    "id": "46317baada7d57be",
+    "type": "floating",
+    "children": [
+      {
+        "id": "e267030fd22e2b5f",
+        "type": "window",
+        "children": [
+          {
+            "id": "2df9d01659858706",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "35068eea0a5a577d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Untitled 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled 1"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 219,
+        "y": 0,
+        "width": 1025,
+        "height": 775,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "35068eea0a5a577d",
   "lastOpenFiles": [
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "Untitled 1.md",
-    "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
-    "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
+    "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
     "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-11-05-Thoughts-on-Entropy.md",
@@ -254,7 +309,6 @@
     "博后三年记.md",
     "README.md",
     "2025-09-22.md",
-    "1759147326958.png",
-    "Untitled.md"
+    "1759147326958.png"
   ]
 }

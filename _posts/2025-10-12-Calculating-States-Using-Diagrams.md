@@ -10,7 +10,7 @@ tags:
 
 ## Introduction
 
-We introduce a diagrammatic techniques demonstrate their usefulness with the help of simple examples.
+We introduce a diagrammatic techniques in calculating the .... The method is illustrated by the domain wall of $\phi^{4}$ theory in $(3+1)$D.
 
 # Rules for Hamiltonians
 ## Rules for $H_ {3}^{(-)}$

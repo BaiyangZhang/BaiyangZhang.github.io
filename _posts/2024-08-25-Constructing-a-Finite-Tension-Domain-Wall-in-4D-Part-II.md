@@ -14,7 +14,7 @@ tags:
 Recall that the original, un-shifted Hamiltonian in terms of bare parameter, without normal ordering reads
 
 $$
-\hat{\mathcal{H}}^{0}(\vec{x}) = \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m_ {0}^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda_ {0}}{4} \phi^{4}(\vec{x}) + A, 
+\hat{\mathcal{H}}^{0}(\vec{x}) = \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m_ {0}^{2}}{4} \phi^{2}(\vec{x}) + \frac{g_ {0}^{2}}{4} \phi^{4}(\vec{x}) + \gamma, 
 $$
 
 It has two classical minima are obtained at $\pm \frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}$. As a result we have two degenerate vacua states $\left\lvert{0^{\pm}}\right\rangle$ satisfying 

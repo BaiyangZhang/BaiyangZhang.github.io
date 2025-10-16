@@ -1,9 +1,19 @@
-The left and middle panel shows the diagrams of $H_ {3}^{-3}=- mg /\sqrt{2}$ and $\left\lvert \Omega \right\rangle_ {1}^{(3)}=mg\left\lvert \Omega \right\rangle_ {0} /\sqrt{2}(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_ {1}+p_ {2}})$ respectively. After connecting the legs, momentum $p_ {3}$ is fixed to $p_ {1}$ by the momentum conservation, similarly $p_ {4}\to p_ {2}$. There is no independent momenta (labels) to cancel the circle at the bottom propagator, making it a singular propagator, with an overall integral factor $\int d^{3}x$. The independent momenta remaining is $p_ {1}$ and $p_ {2}$, hence is to be integrated over. Including the symmetry factor, the final results is $6\int d^{3}x \int \frac{d^{3}p_ {1}}{(2\pi)^{3}}\frac{d^{3}p_ {2}}{(2\pi)^{3}}$$\frac{1}{2\omega_ {p_ {1}}2\omega_ {p_ {2}}2\omega_ {p_ {1}+p_ {2}}}\left( -\frac{m^{2}g^{2}\left\lvert 0 \right\rangle_ {0}}{2(\omega_ {p_ {1}}+\omega_ {p_ {2}}+\omega_ {p_1+p_ {2}})} \right)$.
+The Hamiltonian density in Schrodinger picture reads
 
+$$
+\hat{\mathcal{H}}^{0}(\vec{x}) = \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m_ {0}^{2}}{4} \phi^{2}(\vec{x}) + \frac{g_ {0}^{2}}{4} \phi^{4}(\vec{x}) + A, 
+$$
 
-We employ a diagrammatic method to simplify the calculation of Hamiltonians of different orders acting on perturbative states, where each state and each component in the Hamiltonian (in terms vacuum ladder operators) is represented by a diagram. Once the lower-order wavefunctions are known, higher-order corrections can be obtained recursively through the diagrams. For instance, at leading order there are the vacuum state and two momentum eigenstates, whose diagrammatic representations are shown in Fig.~\ref{fig:LOStates}.
+where the c-number $A$ is a counterterm. The field and canonical momentum are expanded in plane waves,
 
+$$
+\begin{align*}
+\phi(\vec{x})&= \int \frac{d^{3}\vec{p}}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} } \left( A_ {\vec{p}}^{\ddagger}+\frac{A_ {-\vec{p}}}{2\omega_ {\vec{p}}} \right),  \\
+\pi(\vec{x})&= i \int \frac{d^{3}\vec{p}}{(2\pi)^{3}} \,  e^{ -i\vec{p}\cdot \vec{x} } \left( \omega_ {\vec{p}} A_ {\vec{p}}^{\ddagger}-\frac{A_ {-\vec{p}}}{2} \right) .
+\end{align*}
+$$
 
-Hamiltonians are represented as vertices, and each diagram is divided into two sections by dashed boxes. The left box corresponds to higher-order corrections to the wavefunction (final states), while the right box contains the external legs acting on lower-order states. Annihilation operators are shown as circles attached to the endpoints. The arrows indicate the direction of increasing coupling order, which conventionally runs from right to left.
+where $\omega_ {p}= \sqrt{ m^{2}+\vec{p}^{2}}$ and $A, A^{\ddagger}$ satisfy the canonical commutation relation. The renormalized parameters are $m^{2}=m_ {0}^{2} + \delta m^{2}$, $g = g_ 0 + \delta g$, and $A=\sum_ {i=0}^{\infty}A_ {i}$. The physical vacuum $\left\lvert \Psi \right\rangle=\sum_ {i=0}^{\infty}\left\lvert \Psi \right\rangle_ {i}$ is also expanded in $g$, where $\left\lvert \Psi \right\rangle_ {i}\sim \mathcal{O}(g^{i})$. 
 
-Momentum labels are denoted by numbers; for example, (1) stands for $\vec{p}_{1}$. Only independent momenta are labeled, as momentum conservation at each vertex uniquely determines the rest. A divergence, corresponding to a factor of $(2\pi)^{3}\delta^{3}(0)$ (or equivalently $\int d^{3}x$), arises when the Dirac delta functions overconstrain the momenta. This divergence is naturally incorporated in the diagrammatic formulation represented by residual circles.
+- - -
+
