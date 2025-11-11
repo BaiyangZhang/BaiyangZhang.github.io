@@ -113,6 +113,8 @@ $$
 
 # 't Hooft-Polyakov Monopole
 
+In this section we temporarily absorb the coupling $g$ into the gauge field $A$.
+
 Magnetic Monopole solutions in $SU(2)$ Yang-Mills theory with adjoint bosons appears more naturally than that in U(1) theory. Whenever the **non-abelian** gauge group is broken to its **Cartan subgroup** (Cartan subalgebra is spanned by a maximal mutual-commuting basis of Lie algebra) by adjoint Higgs bosons, we have magnetic monopoles. The **adjoint** Higgs fields have non-zero vacuum expectation values (VEV for short, denoted by $\left\langle \bullet \right\rangle$), breaking the gauge symmetry. Those gauge transformations that leave $\left\langle \phi \right\rangle$ invariant are symmetries not broken by the Higgs bosons. 
 
 Loosely speaking there are two kinds of symmetries:
@@ -885,55 +887,56 @@ $$
 
 - - -
 
-Next we move on to the equation of motion for $X^{i}_ {\mu}$. To simplify the notation let's temporarily define part of $F_ {\mu \nu}$ to be $\Gamma_ {\mu \nu}$ (since $\Gamma$ is written as part of $F$ ):
+Next we move on to the equation of motion for $X^{i}_ {\mu}$. To simplify the notation let's temporarily define part of $F_ {\mu \nu}$ to be $\Gamma_ {\mu \nu}$ (since notational-wise $\Gamma$ is written as part of $F$ ):
 
 $$
+\boxed{
 \Gamma_ {\mu \nu} := f_ {\mu \nu} + H_ {\mu \nu} + X_ {\mu \nu}, \quad  F = \Gamma \mathfrak{n} +\hat{D}X-\hat{D}X.
+} 
 $$
 
 We have 
 
 $$
 \begin{align*}
--2g^{2} \frac{ \partial \mathcal{L} }{ \partial X^{i}_ {\alpha} }  =& \mathrm{Tr}\,\left\lbrace 2\Gamma_ {\mu \nu}\mathfrak{n}(-i)\frac{ \partial  }{ \partial X_ {\alpha}^{i} } [X_ {\mu},X_ {\nu}]+2\hat{D}_ {\mu}X_ {\nu} (\pi)\frac{ \partial  }{ \partial X^{i}_ {\alpha} } [\hat{A},X_ {\nu}] \right\rbrace  \\
-=& (\Gamma_ {\alpha \nu}X_ {\nu}^{j}-\Gamma_ {\mu \alpha}X_ {\mu}^{j})\epsilon^{ijk}\hat{n}^{k} - \epsilon^{ijk}\hat{A}^{j}(\hat{D}_ {\mu}X_ {\alpha})^{k}\\
-=& 2(\Gamma_ {\alpha \mu} X_ {\mu}^{j}\hat{n}^{k}\epsilon^{ijk}) + 2\epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\alpha}X_ {\mu}-\hat{D}_ {\mu}X_ {\alpha})^{k},
+-2 \frac{ \partial \mathcal{L} }{ \partial X^{i}_ {\alpha} }  
+=& \mathrm{Tr}\,\left\lbrace 2\Gamma_ {\mu \nu}\mathfrak{n}(-ig)\frac{ \partial  }{ \partial X_ {\alpha}^{i} } [X_ {\mu},X_ {\nu}] + 2g\hat{D}_ {\mu}X_ {\nu} (\pi)\frac{ \partial  }{ \partial X^{i}_ {\alpha} } [\hat{A},X_ {\nu}] \right\rbrace  \\
+=& g(\Gamma_ {\alpha \nu}X_ {\nu}^{j}-\Gamma_ {\mu \alpha}X_ {\mu}^{j})\epsilon^{ijk}\hat{n}^{k} - g\epsilon^{ijk}\hat{A}^{j}(\hat{D}_ {\mu}X_ {\alpha})^{k}\\
+=& 2g(\Gamma_ {\alpha \mu} X_ {\mu}^{j}\hat{n}^{k}\epsilon^{ijk}) + 2g\epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\alpha}X_ {\mu}-\hat{D}_ {\mu}X_ {\alpha})^{k},
 \end{align*}
 $$
 
-where since $\hat{A} = \mathcal{A}+\mathcal{C}$ is proportional to $\mathfrak{n}$, write $\hat{A}^{i} = a \hat{n}^{i}+C\hat{n}^{i}$, where $\mathcal{C} =:C\mathfrak{n}$, namely $C$ is the component in $\mathfrak{n}$ direction of script C.
+where since $\hat{A} = \mathcal{A}+\mathcal{C}$ is proportional to $\mathfrak{n}$, we have $\hat{A}^{i} = a \hat{n}^{i}+C\hat{n}^{i}$, where $\mathcal{C} =:C\mathfrak{n}$, namely $C$ is the component in $\mathfrak{n}$ direction of script C.
 
 We have 
 
 $$
--2g^{2} \partial_ {\beta}\frac{ \partial \mathcal{L} }{ \partial (\partial_ {\beta}X_ {\alpha}^{i})  }  = 2\partial_ {\beta}((\hat{D}_ {\beta}X_ {\alpha})^{i} - (\hat{D}_ {\alpha}X_ {\beta})^{i}).
+-2 \partial_ {\beta}\frac{ \partial \mathcal{L} }{ \partial (\partial_ {\beta}X_ {\alpha}^{i})  }  = 2\partial_ {\beta}((\hat{D}_ {\beta}X_ {\alpha})^{i} - (\hat{D}_ {\alpha}X_ {\beta})^{i}).
 $$
 
-Putting everything together, we have 
+Put everything together, we have 
 
 $$
-\epsilon^{ijk}(f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})X_ {\mu}^{j}\hat{n}^{k} = \partial_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{i} + \epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{k}.
+g\epsilon^{ijk}(f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})X_ {\mu}^{j}\hat{n}^{k} = \partial_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{i} + g\epsilon^{ijk}\hat{A}_ {\mu}^{j}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})^{k}.
 $$
 
 In a more concise notation we could also write the right hand side as the $i$-th component of $\hat{D}_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})$. Or equivalently
 
 $$
-\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\alpha}-\hat{D}_ {\alpha}\vec{X}_ {\mu}) = (f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})\vec{X}_ {\mu} \times \hat{n} 
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\alpha}-\hat{D}_ {\alpha}\vec{X}_ {\mu}) = g (f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})\vec{X}_ {\mu} \times \hat{n} 
 $$
 
 - - -
 
 ## Complex gauge field $\chi$
 
-We will use two different notations for components associated to different basis, use an index in parenthesis with  basis：
+We will use two different notations for indices associated to different basis, to be specific we will adopt Greek indices in parenthesis with basis $\hat{n}$：
 
 $$
 \vec{X} = X^{i} T^{i} = X^{(\alpha)}\hat{n}_ {\alpha},
 $$
 
-where the Greek letters take value in only $\left\lbrace 1,2 \right\rbrace$, since in terms of $\hat{n}_ {i}$, $X$ only has $\hat{n}_ {1}$ and $\hat{n}_ {2}$ components. 
-
-Since $X_ {\mu} = A_ {\mu}- \mathcal{A}-\mathcal{C}$ is always perpendicular to $\mathfrak{n}$, it has only $\hat{n}^{1}$ and $\hat{n}^{2}$ components (recall that we have defined that $\hat{n}^{1},\hat{n}^{2},\hat{n}$ to form an orthogonal basis), write 
+where the Greek letters take value in only $\left\lbrace 1,2 \right\rbrace$, since in terms of $\hat{n}_ {i}$, $X$ only has $\hat{n}_ {1}$ and $\hat{n}_ {2}$ components. Write 
 
 $$
 X_ {\mu} = X_ {\mu}^{(1)} \mathfrak{n}_ {1}  + X_ {\mu}^{(2)}\mathfrak{n}_ {2}, \text{ where }  \mathfrak{n}_ {1,2} := \hat{n}_ {1,2}\cdot \vec{T}.
@@ -960,21 +963,20 @@ $$
 To rewrite the Lagrangian in terms of $\chi$, we also need to express $\hat{D}_ {\mu}X_ {\nu}-(\mu \leftrightarrow \nu)$ in $\chi$. It is more convenient to adopt the following expression in vector notation,
 
 $$
-\hat{D} \vec{X} = \partial_ {\mu}\vec{X} + \hat{A}\times \vec{X}.
+\hat{D} \vec{X} = \partial_ {\mu}\vec{X} + g\hat{A}\times \vec{X}.
 $$
 
-The problem is that, in the definition from previous sections, $\vec{X}$ is defined in the $T$-basis, but now we are dealing with the $\hat{n}$-basis which is curvilinear, namely spacetime dependent. The covariant derivative should be able to reflect this change to curvilinear basis. 
-
-The covariant derivative in terms of $\hat{n}$'s reads
+Regarding the covariance derivative. In general, covariant derivative encodes information about the curvature of the underlying space. If we are dealing with the $\hat{n}$-basis which is curvilinear, that is, spacetime dependent then the covariant derivative should be able to reflect this fact. We find that
 
 $$
 \begin{align*}
-\hat{D}_ {\mu} \vec{X}_ {\nu} =& \hat{n}_ {\alpha}\partial_ {\mu} X_ {\nu}^{(\alpha)}+(\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + a_ {\mu} \epsilon_ {\alpha\beta}\hat{n}_ {\beta} X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)}\\
+\hat{D}_ {\mu} \vec{X}_ {\nu} 
+=& \hat{n}_ {\alpha}\partial_ {\mu} X_ {\nu}^{(\alpha)}+(\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + g a_ {\mu} \epsilon_ {\alpha\beta}\hat{n}_ {\beta} X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)}\\
 =& \hat{n}_ {\alpha} (\partial_ {\mu} X_ {\nu}^{(\alpha)}-a_ {\mu} \epsilon_ {\alpha \beta} X_ {\nu}^{(\beta)})+(\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)}.
 \end{align*}
 $$
 
-where $\epsilon_ {\alpha \beta}$ is the Levi-Civita symbol, defined as $\epsilon_ {\alpha\beta}=\epsilon^{\alpha\beta}=1$ for even permutation $\alpha, \beta=1,2$ and $-1$ for odd permutation. The last two terms in the last line reads
+where $\epsilon_ {\alpha \beta}$ is the Levi-Civita symbol (not tensor), defined as $\epsilon_ {\alpha\beta}=\epsilon^{\alpha\beta}=1$ for even permutation $\alpha, \beta=1,2$ and $-1$ for odd permutation. The last two terms in the last line reads
 
 $$
 \begin{align*}
@@ -985,7 +987,7 @@ $$
 \end{align*}
 $$
 
-where the role of $\left\lvert \epsilon_ {\alpha \beta} \right\rvert$ is simply to switch between indices $1$ and $2$ without a sign change. Thus we can write 
+where the role of $\left\lvert \epsilon_ {\alpha \beta} \right\rvert$ is simply to switch between indices $1$ and $2$ without a sign change, the summation rule is not activated. We can write 
 
 $$
 \begin{align*}
