@@ -445,7 +445,7 @@ This is a $\mathfrak{g}$-valued quantity, in basis $T^{a}$ it can be written as 
 
 $$
 \boxed{ 
-\mathcal{C}_ {\mu} = -\hat{n} \times (\partial_ {\mu}\hat{n}) \text{ in }\mathfrak{g} .
+\mathcal{C}_ {\mu} = - \frac{1}{g} \hat{n} \times (\partial_ {\mu}\hat{n}) \text{ in }\mathfrak{g} .
 }
 $$
 
@@ -881,8 +881,18 @@ Putting them together we get the equation of motion for $a_ {\mu}$:
 
 $$
 \boxed{ 
-\partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}) = g\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\nu}\vec{X}_ {\mu}) - g\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\mu}\vec{X}_ {\nu}).
+\begin{align*}
+\partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}) 
+&= g\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\nu}\vec{X}_ {\mu}) - g\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\mu}\vec{X}_ {\nu})\\
+&= -g\hat{n}\cdot [\vec{X}_ {\mu}\times (\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu})].
+\end{align*}
 }
+$$
+
+When $a_ {\mu}=0$, we have
+
+$$
+
 $$
 
 - - -
@@ -972,7 +982,7 @@ $$
 \begin{align*}
 \hat{D}_ {\mu} \vec{X}_ {\nu} 
 =& \hat{n}_ {\alpha}\partial_ {\mu} X_ {\nu}^{(\alpha)}+(\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + g a_ {\mu} \epsilon_ {\alpha\beta}\hat{n}_ {\beta} X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)}\\
-=& \hat{n}_ {\alpha} (\partial_ {\mu} X_ {\nu}^{(\alpha)}-a_ {\mu} \epsilon_ {\alpha \beta} X_ {\nu}^{(\beta)})+(\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)}.
+=& \hat{n}_ {\alpha} (\partial_ {\mu} X_ {\nu}^{(\alpha)} - g a_ {\mu} \epsilon_ {\alpha \beta} X_ {\nu}^{(\beta)}) + (\partial_ {\mu}\hat{n}_ {\alpha}) X_ {\nu}^{(\alpha)} + \hat{n}(\hat{n}_ {\alpha}\cdot \partial_ {\mu} \hat{n})X_ {\nu}^{(\alpha)}.
 \end{align*}
 $$
 
@@ -992,28 +1002,28 @@ where the role of $\left\lvert \epsilon_ {\alpha \beta} \right\rvert$ is simply 
 $$
 \begin{align*}
 \hat{D}_ {\mu} \vec{X}_ {\nu} 
-&= \hat{n}_ {\alpha} (\partial_ {\mu} X_ {\nu}^{(\alpha)}-a_ {\mu} \epsilon_ {\alpha \beta} X_ {\nu}^{(\beta)})
+&= \hat{n}_ {\alpha} (\partial_ {\mu} X_ {\nu}^{(\alpha)} - g a_ {\mu} \epsilon_ {\alpha \beta} X_ {\nu}^{(\beta)})
 +\hat{n}_ {\beta} \left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\beta}\cdot \partial_ {\mu}\hat{n}_ {\alpha} X_ {\nu}^{(\alpha)} \\
-&=  \hat{n}_ {\alpha}[\partial_ {\mu}X_ {\nu}^{(\alpha)}-(a_ {\mu}\epsilon_ {\alpha \beta}-\left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\alpha} \cdot \partial_ {\mu} \hat{n}_ {\beta})X_ {\nu}^{(\beta)}].
+&=  \hat{n}_ {\alpha}[\partial_ {\mu}X_ {\nu}^{(\alpha)}-(g a_ {\mu}\epsilon_ {\alpha \beta}-\left\lvert \epsilon_ {\alpha \beta} \right\rvert \hat{n}_ {\alpha} \cdot \partial_ {\mu} \hat{n}_ {\beta})X_ {\nu}^{(\beta)}].
 \end{align*}
 $$
 
 Notice that there is no $\hat{n}$ component, only $\hat{n}_ {1}$ and $\hat{n}_ {2}$. Substitute $\chi,\chi ^\ast$ for $X^{(1,2)}$, let $\alpha=1$, $\beta=2$ we have
 
 $$
-\partial_ {\mu}X_ {\nu}^{(1)}-(a_ {\mu}\epsilon_ {12}-\left\lvert \epsilon_ {12} \right\rvert \hat{n}_ {1} \cdot \partial_ {\mu} \hat{n}_ {2})X_ {\nu}^{(2)} = \frac{1}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}+(D_ {\mu}\chi_ {\nu})^\ast)
+\partial_ {\mu}X_ {\nu}^{(1)}-(g a_ {\mu}\epsilon_ {12}-\left\lvert \epsilon_ {12} \right\rvert \hat{n}_ {1} \cdot \partial_ {\mu} \hat{n}_ {2})X_ {\nu}^{(2)} =: \frac{1}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}+(D_ {\mu}\chi_ {\nu})^\ast)
 $$
 
 where the covariant derivative acting on $\chi$ is defined by 
 
 $$
-D_ {\mu}\chi := \partial_ {\mu} \chi_ {\nu} +i(a_ {\mu}-\hat{n}_ {1}\cdot \partial_ {\mu}\hat{n}_ {2})\chi_ {\nu}.
+D_ {\mu}\chi := \partial_ {\mu} \chi_ {\nu} +i(g a_ {\mu}-\hat{n}_ {1}\cdot \partial_ {\mu}\hat{n}_ {2})\chi_ {\nu}.
 $$
 
 Similarly, let $\alpha,\beta=2,1$ we have 
 
 $$
-\partial_ {\mu}X_ {\nu}^{(2)}-(a_ {\mu}\epsilon_ {21}-\left\lvert \epsilon_ {21} \right\rvert \hat{n}_ {2} \cdot \partial_ {\mu} \hat{n}_ {1})X_ {\nu}^{(1)} = - \frac{i}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}-\text{c.c.}).
+\partial_ {\mu}X_ {\nu}^{(2)}-(g a_ {\mu}\epsilon_ {21}-\left\lvert \epsilon_ {21} \right\rvert \hat{n}_ {2} \cdot \partial_ {\mu} \hat{n}_ {1})X_ {\nu}^{(1)} = - \frac{i}{\sqrt{2}}(D_ {\mu}\chi_ {\nu}-\text{c.c.}).
 $$
 
 Substitute this to the term in the Lagrangian, we have 
@@ -1028,6 +1038,18 @@ $$
 
 This simplification is quite impressive.
 
+We can also write 
+
+$$
+D_ {\mu}\chi = \partial_ {\mu} \chi +ig B_ {\mu} \chi
+$$
+
+where $B$ is a new field defined as 
+
+$$
+B_ {\mu} := a_ \mu + C_ {\mu}, \quad  \hat{F}_ {\mu \nu} = \partial_ {\mu}B_ {\nu} - \partial_ {\nu}B_ {\mu}.
+$$
+
 - - -
 
 Next let's consider a special case just to verify our result above. *If $\hat{n}$ is independent of spacetime,* then without loss of generality we can assume that $\hat{n}$ lies in the $T^{3}$ direction, $\hat{n}_ {1}$ in $T^{1}$ and $\hat{n}_ {2}$ in $T^{2}$ respectively in $\mathfrak{su}(2)$. $X=X^{1}\mathfrak{n}_ {1}+X^{2}\mathfrak{n}_ {2}$ becomes $X=X^{1}T^{1}+X^{2}T^{2}$. $\hat{A}=a_ {\mu}T^{3}$ since $\mathcal{C}$ vanishes, and as a consequence so does $H_ {\mu \nu}$.
@@ -1036,8 +1058,8 @@ We can write down the three components of $\hat{D}_ {\mu}\vec{X}_ {\nu}$ easily:
 
 $$
 \begin{align*}
-\text{1-component=}&  \partial_ {\mu}X_ {\nu}^{1}-\hat{A}_ {\mu}^{3}X_ {\nu}^{2}, \\
-\text{2-component=}& \partial_ {\mu}X_ {\nu}^{2} + \hat{A}_ {\mu}^{3}X_ {\nu}^{1},  \\
+\text{1-component=}&  \partial_ {\mu}X_ {\nu}^{1} - g\hat{A}_ {\mu}^{3}X_ {\nu}^{2}, \\
+\text{2-component=}& \partial_ {\mu}X_ {\nu}^{2} + g\hat{A}_ {\mu}^{3}X_ {\nu}^{1},  \\
 \text{3-component=}& 0.
 \end{align*}
 $$
@@ -1050,16 +1072,16 @@ $$
 =& \text{1-component}^{2}+\text{2-component}^{2}\\
 =& \text{1-component}^{2}-(i\times \text{2-component})^{2}\\
 =& (\text{1-compnent}+i\times \text{2-compnent})(\text{1-compnent}-i\times \text{2-compnent}) \\
-=& [(\partial_ {\mu}X_ {\nu}^{1}+\partial_ {\mu}iX_ {\nu}^{2}+i\hat{A}_ {\mu}^{3}(X_ {\nu}^{1}+iX_ {\nu}^{2}))-(\mu \leftrightarrow \nu)]\\
-=& 2[\partial_ {\mu}\chi_ {\nu}+i\hat{A}_ {\mu}^{3}\chi_ {\nu}-(\mu \leftrightarrow \nu)] [\partial_ {\mu}\chi ^\ast _ {\nu}-i\hat{A}_ {\mu}^{3}\chi ^\ast _ {\nu}-(\mu \leftrightarrow \nu)]\\
-=& 2[\partial_ {\mu}\chi_ {\nu}+i\hat{A}_ {\mu}^{3}\chi_ {\nu}-(\mu \leftrightarrow \nu)]\times (\text{h.c.})
+=& [(\partial_ {\mu}X_ {\nu}^{1}+\partial_ {\mu}iX_ {\nu}^{2}+ig\hat{A}_ {\mu}^{3}(X_ {\nu}^{1}+iX_ {\nu}^{2}))-(\mu \leftrightarrow \nu)]\\
+=& 2[\partial_ {\mu}\chi_ {\nu}+ig\hat{A}_ {\mu}^{3}\chi_ {\nu}-(\mu \leftrightarrow \nu)] [\partial_ {\mu}\chi ^\ast _ {\nu}-ig\hat{A}_ {\mu}^{3}\chi ^\ast _ {\nu}-(\mu \leftrightarrow \nu)]\\
+=& 2[\partial_ {\mu}\chi_ {\nu}+ig\hat{A}_ {\mu}^{3}\chi_ {\nu}-(\mu \leftrightarrow \nu)]\times (\text{h.c.})
 \end{align*}
 $$
 
 Recall that $\hat{A}^{3}=a$. Define the hatted covariant derivative for $\chi$ as 
 
 $$
-\hat{D}_ {\mu} \chi_ {\nu} := \partial_ {\mu}\chi_ {\nu} +i a_ {\mu}\chi_ {\nu}
+\hat{D}_ {\mu} \chi_ {\nu} := \partial_ {\mu}\chi_ {\nu} +i g a_ {\mu}\chi_ {\nu}
 $$
 
 we have 
@@ -1072,10 +1094,59 @@ Finally, in the special case where $(\hat{n}_ {1},\hat{n}_ {2},\hat{n})=(T^{1},T
 
 $$
 \begin{align*}
-\mathcal{L}_ {\text{ECD}} =& - \frac{1}{4g^{2}}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2} 
-- \frac{1}{2g^{2}} \left\lvert \hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu} \right\rvert ^{2}
+\mathcal{L}_ {\text{ECD}} =& - \frac{1}{4}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2} 
+- \frac{1}{2} \left\lvert \hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu} \right\rvert ^{2}
 \end{align*}
 $$
+
+- - -
+
+The equations of motion in terms of $\chi$ can be straightforwardly obtained. We can write $\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}$ in terms of $\chi$, explicitly expanded in basis $\hat{n}_ {1}$ and $\hat{n}_ {2}$,
+
+$$
+\begin{align*}
+\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu} &= \hat{n}_ {1} \left[ \frac{1}{\sqrt{2}}(\hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu})+\text{h.c.} \right] \\
+&\quad\;\, + \hat{n}_ {2}\left( -\frac{i}{\sqrt{2}} \right)[(\hat{D}_ {\mu}\chi_ {\nu} - \hat{D}_ {\nu}\chi_ {\mu}) - \text{h.c.}]
+\end{align*}
+$$
+
+We have 
+
+$$
+\boxed{
+\partial_ {\mu}\Gamma_ {\mu \nu} = ig [\chi_ {\mu} ^\ast (\hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu}) - \text{h.c.}], \quad  \Gamma_ {\mu \nu} := f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}.
+} 
+$$
+
+
+Define $K := (\hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu})/\sqrt{2}$ we have
+
+$$
+\begin{align*}
+\hat{D}_ {\mu} (\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}) 
+&= (\partial_ {\mu}+g \hat{A}_ {\mu}\times )(\hat{D}X-\hat{D}X)\\
+&= \hat{n}_ {1}(-i\hat{n}_ {1}\cdot \partial_ {\mu}\hat{n}_ {2} + ig a_ {\mu} + \partial_ {\mu})(K-K^\ast )\\
+& \quad \;\, + \hat{n}_ {2}(-\hat{n}_ {1}\cdot \partial_ {\mu}\hat{n}_ {2} + g a_ {\mu} -i \partial_ {\mu})(K-K^\ast )\\
+&= \hat{n}_ {1}\hat{D}_ {\mu} (K-K^\ast ) + \hat{n}_ {2}(-i) \hat{D}_ {\mu} (K-K^\ast ).
+\end{align*}
+$$
+
+By comparing the components, we have the following EoM:
+
+$$
+\boxed{
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu}) = ig \Gamma_ {\mu \nu} \, \chi_ {\mu}, \quad  \Gamma_ {\mu \nu} := f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}.
+}
+$$
+
+If $X=0$ and $a=0$, then the EoM becomes $\partial_ {\mu}H_ {\mu \nu}=0$, in terms of $\hat{n}$ it reads
+
+$$
+\hat{n}\cdot(\partial^{2}\hat{n}\times \partial_ {\nu}\hat{n}+\partial_ {\mu}\hat{n}\times (\partial_ {\mu}\partial_ {\nu}\hat{n})) = 0.
+$$
+
+This is the constraint for $\hat{n}$ in the absence of other fields.
+
 
 
 
