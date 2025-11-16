@@ -111,6 +111,121 @@ $$
  d\star F=0.
 $$
 
+- - -
+
+Introduce a **right-handed orthonormal frame** $(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ with $\hat{n}^{i}\hat{n}^{i}=1$. Choose the third component to be the so-called abelian direction, denoted it by $\hat{n}:=\hat{n}^{3}$.
+
+The following identities might be helpful (For $SU(2)$):
+
+$$
+\begin{align*}
+\mathfrak{n} \mathfrak{n} = \hat{n}^{a}\hat{n}^{b}\frac{1}{2}\sigma^{a} \frac{1}{2}\sigma^{b} &= \frac{1}{4}, \\
+[\mathfrak{n} ,[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= \partial_ {\mu}\mathfrak{n}, \\
+[[\mathfrak{n},\partial_ {\nu}\mathfrak{n}  ],[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= - \partial_ {\nu}\mathfrak{n} \partial_ {\mu}\mathfrak{n} .
+\end{align*}
+$$
+
+Let $d^{abc}$ be the total symmetric tensor of $SU(N)$ defined by 
+
+$$
+\left\lbrace T^{a},T^{b} \right\rbrace  = \frac{\delta^{ab}}{N} \mathbb{1} + d^{abc}T^{c},
+$$
+
+equivalently 
+
+$$
+d^{abc} = 2\mathrm{Tr}\,(\left\lbrace T^{a},T^{b} \right\rbrace T^{c})
+$$
+
+below are some useful identities about $SU(N)$ group:
+
+$$
+\begin{align*}
+\mathrm{Tr}\,(T^{a}T^{b}T^{c}) =& \frac{1}{4}(d^{abc}+if^{abc}).
+\end{align*}
+$$
+
+- - -
+
+the total gauge field $A$ into the following three parts, 
+
+$$
+A = \mathcal{A}+\mathcal{C}+X, \quad  [X,\mathfrak{n} ]\neq0.
+$$
+
+The restricted gauge field $\hat{A}$ is the solution for:
+
+$$
+\hat{D}_ {\mu}\mathfrak{n}  = (\partial_ {\mu}-ig[\hat{A}_ {\mu},-])\mathfrak{n} =0.
+$$
+
+$\mathcal{C}_ {\mu}$ is the non-trivial part of the solution for $D_ {\mu}\mathfrak{n} =0$,
+
+$$
+\boxed{ 
+\mathcal{C}_ {\mu} = \frac{i}{g}[\mathfrak{n},\partial_ {\mu} \mathfrak{n}] \equiv \frac{2i}{g}\mathfrak{n} \partial_ {\mu}\mathfrak{n}  .
+}
+$$
+
+This is a $\mathfrak{g}$-valued quantity, in terms of components in basis $T^{a}$ it can be written as 
+
+$$
+\boxed{ 
+\mathcal{C}_ {\mu} = - \frac{1}{g} \hat{n} \times (\partial_ {\mu}\hat{n}) \text{ in } \mathfrak{g} .
+}
+$$
+
+The trivial part of the solution that is proportional to $\mathfrak{n}$, call it $\mathcal{A}$, is given by 
+
+$$
+\boxed{ 
+\mathcal{A}_ {\mu} =  a_ {\mu} \mathfrak{n},\quad a_ {\mu}\in \mathbb{R}.
+}
+$$
+
+We have
+
+$$
+\hat{A}=\mathcal{A}+\mathcal{C}, \quad \mathcal{A}\propto \mathfrak{n}\text{ and }\mathcal{C}=\frac{i}{g}[\mathfrak{n},\partial \mathfrak{n}].
+$$
+
+Define
+
+$$
+\begin{align*}
+\hat{F}:= & \partial_ {\mu}\hat{A}_ {\nu}-\partial_ {\nu}\hat{A}_ {\mu} - ig[\hat{A}_ {\mu},\hat{A}_ {\nu}]\\
+=& (\partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu})\mathfrak{n} +\frac{i}{g}[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ]\\
+=&: f_ {\mu \nu}\mathfrak{n} +H_ {\mu \nu}\mathfrak{n} .
+\end{align*}
+$$
+
+We have 
+
+$$
+\begin{align*}
+f_ {\mu \nu} &= \partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu},\\
+H_ {\mu \nu} \mathfrak{n}  &=\frac{i}{g}[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ],\\
+H_ {\mu \nu} &= \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}, \; C_ {\mu}:= \hat{n}_ {2}\cdot \partial_ {\mu}\hat{n}_ {1}.
+\end{align*}
+$$
+
+The total field strength $F_ {\mu \nu}$ is 
+
+$$
+\boxed{ 
+F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-ig[X_ {\mu},X_ {\nu}].
+}
+$$
+
+Define
+
+$$
+\boxed{ 
+X_ {\mu \nu} \mathfrak{n} := -ig[X_ {\mu},X_ {\nu}],
+}
+$$
+
+
 # 't Hooft-Polyakov Monopole
 
 In this section we temporarily absorb the coupling $g$ into the gauge field $A$.
@@ -322,7 +437,7 @@ $$
   \end{cases}.
 $$
 
-We can find corresponding $A_ \mu$ at spacial infinity by solving
+We can find corresponding $A_ \mu$ at spatial infinity by solving
 
 $$
   D_ i \phi = 0 \implies \partial_ i \hat{x}^a + \epsilon_ {abd}A_ \mu^b \hat{x}^c = 0
@@ -653,7 +768,7 @@ $$
 \hat{A}\to \hat{A}'=\Omega\left( \hat{A}+\frac{i}{g}\partial \right)\Omega ^{\dagger}.
 $$
 
-while let $\mathfrak{n}$ transform as a adjoint scalar, $$
+while let $\mathfrak{n}$ transform as an adjoint scalar, $$
 \mathfrak{n}  =\to  \mathfrak{n'=\Omega \mathfrak{n} }  \Omega ^{\dagger}.
 $$
 Now, as we wanted, $\hat{A}$ is the solution to $\mathcal{D}_ {\mu}\mathfrak{n}=0$ in a **gauge independent** way: If $\hat{A}$ is a solution, after gauge transform, the transformed field $\hat{A}'$ still is a solution to $D'_ {\mu}\mathfrak{n}'=0$.
@@ -667,7 +782,7 @@ $$
 Let's focus on $\mathcal{A}$ first. It is the $\mathfrak{n}$-direction projection of $\hat{A}$, that is
 
 $$
-\mathcal{A}=a\mathfrak{n} , \quad A = 2\mathrm{Tr}\,(\mathfrak{n} \hat{A}) \equiv \hat{n} \cdot \hat{A},
+\mathcal{A}=a\mathfrak{n} , \quad a = 2\mathrm{Tr}\,(\mathfrak{n} \hat{A}) \equiv \hat{n} \cdot \hat{A},
 $$
 
 the factor of $2$ is due to the normalization $\mathrm{Tr}\,T^{a}T^{b}=\frac{1}{2}\delta^{ab}$. **This should be treated as the definition of $\mathcal{a}$, and this definition better be gauge independent**, hence after gauge transformation we want
@@ -679,7 +794,7 @@ $$
 This will fix the gauge transformation rule for $\mathcal{A}$. We have 
 
 $$
-a' = a + \frac{2i}{g}\mathrm{Tr}\,\left\lbrace \mathfrak{n} \partial U^{\dagger}U \right\rbrace .
+a' = a + \frac{2i}{g}\mathrm{Tr}\,\left\lbrace \mathfrak{n} \partial \Omega^{\dagger} \Omega \right\rbrace .
 $$
 
 Let the gauge transformation be given by $\Omega=e^{ i\alpha }$ where $\alpha=\alpha^{a}T^{a}$, then the infinitesimal form reads
@@ -688,10 +803,54 @@ $$
 a \to \mathcal{A}' = a+\frac{2}{g}\mathrm{Tr}\,(\mathfrak{n}\partial \alpha )\equiv a + \frac{1}{g}\hat{n}\cdot \partial \vec{\alpha}.
 $$
 
-Note that it is no longer a total derivative, but the projection of a total derivative in $\hat{n}$ direction. It is not simply
+Note that it is no longer a total derivative, but the projection of a total derivative in $\hat{n}$ direction. It is not simply $\mathcal{A}\to \Omega \mathcal{A}\Omega ^{\dagger}$, $\mathcal{C}\to \Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}$.
+
+Another way to write the infinitesimal form of $\delta a$ in terms of $\mathcal{C}$ is as follows. Write the gauge transformation parameter as 
 
 $$
-\mathcal{A}\to \Omega \mathcal{A}\Omega ^{\dagger},\quad \mathcal{C}\to \Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}.
+\alpha = \alpha^{(1)} \mathfrak{n}_ {1} + \alpha^{(2)} \mathfrak{n} _ {2} + \theta \mathfrak{n} .
+$$
+
+Since $\mathcal{C}=-\frac{1}{g}\hat{n}\times \partial \hat{n}$, it is orthodox to $\hat{n}$, write it in components of $\hat{n}_ {1}$ and $\hat{n}_ {2}$:
+
+$$
+\mathcal{C}=: -\mathcal{C}^{(1)}\hat{n}_ {1} +- \mathcal{C}^{(2)} \hat{n}_ {2},
+$$
+
+then
+
+$$
+\mathcal{C}^{(2)} = -\hat{n}_ {2}\cdot \mathcal{C} = \frac{1}{g}\hat{n}_ {2}\cdot(\hat{n}\times \partial \hat{n}) = \frac{1}{g} \hat{n}(\partial \hat{n}\times \hat{n}_ {2})=\frac{1}{g}\hat{n}\cdot(\partial(-\hat{n}_ {1})-\hat{n}\times \partial \hat{n}_ {2}) = -\frac{1}{g}\hat{n}\cdot \partial \hat{n}_ {1},
+$$
+
+and similarly 
+
+$$
+\mathcal{C}^{(1)} = \frac{1}{g} \hat{n}\cdot \partial \hat{n}_ {2}.
+$$
+
+hence we have 
+
+$$
+\delta a = \frac{1}{g} \partial \theta - \alpha^{(1)}  \mathcal{C}^{(2)} + \alpha^{(2)} \mathcal{C}^{(1)}.
+$$
+
+define $C^{\pm}:= \frac{1}{\sqrt{2}}(\mathcal{C}^{(1)}\pm i\mathcal{C}^{(2)})$, we have 
+
+$$
+\delta a = \frac{1}{g} \partial \theta + i C^{+} \frac{1}{\sqrt{2}}(\alpha^{(1)}-i\alpha^{(2)}) - \frac{i}{\sqrt{2}} C^{-}(\alpha^{(1)} + i \alpha^{(2)}).
+$$
+
+define 
+
+$$
+\alpha^{\pm } := \frac{1}{\sqrt{2}}(\alpha^{(1)}\pm i \alpha^{(2)}),
+$$
+
+we have 
+
+$$
+\delta a = \frac{1}{g} \partial \theta + iC^{+}\alpha^{-} - i C^{-}\alpha^{+}.
 $$
 
 - - -
@@ -705,10 +864,59 @@ $$
 Under a gauge transform, $\mathfrak{n}\to \mathfrak{n}'=\Omega \mathfrak{n}\Omega ^{\dagger}$, consequently the transform of $\mathcal{C}$ in terms of $\mathfrak{n}$ should be
 
 $$
-g\mathcal{C} \to g\mathcal{C}'=2i \mathfrak{n}' \partial (\mathfrak{n}') = 2i\Omega \mathfrak{n} \Omega ^{\dagger}\partial(\Omega \mathfrak{n}  \Omega ^{\dagger}).
+\frac{2i}{g} \mathfrak{n} \partial \mathfrak{n}  \to \frac{2i}{g} \mathfrak{n}' \partial \mathfrak{n}' = \frac{2i}{g} \Omega \mathfrak{n} \Omega ^{\dagger}\partial(\Omega \mathfrak{n}  \Omega ^{\dagger})
 $$
 
-Note that the right-hand-side of the above equation is only equal to $\Omega(\mathcal{C}+i\partial)\Omega ^{\dagger}$ when they are both under a trace, otherwise they are not equal to each other. 
+which is 
+
+$$
+\Omega \frac{2i}{g} \mathfrak{n} \partial \mathfrak{n} \Omega ^{\dagger} + \frac{i}{2g} \Omega \partial \Omega ^{\dagger} - \frac{2i}{g} (\Omega \mathfrak{n} \partial \Omega ^{\dagger})(\Omega \mathfrak{n} \Omega ^{\dagger}).
+$$
+
+The question is, is this equivalent to another way to determine the gauge transformation of $\mathcal{C}$:
+
+$$
+\hat{A}'=\mathcal{A}'+\mathcal{C}'\implies \mathcal{C}' = \hat{A}' - \mathcal{A}', \quad  \mathcal{A}'=a'\mathfrak{n}'.
+$$
+
+To answer it, let's consider the simplest gauge transformation, that comprises of the little group of $\mathfrak{n}$, define $U:=\exp ik\mathfrak{n}$, where $k\in\mathbb{R}$. Under this gauge transformation, $\mathfrak{n}\to \mathfrak{n'} = U\mathfrak{n}U^{\dagger}$ remains unchanged, hence $\frac{2i}{g}\mathfrak{n}'\partial \mathfrak{n}'$ also remains unchanged. The infinitesimal form of the gauge transformation shows that
+
+$$
+\hat{A}\to \hat{A}' = \left( a+\frac{1}{g} \partial k \right)\mathfrak{n}  + \frac{2i}{g} \mathfrak{n} \partial \mathfrak{n} 
+$$
+
+showing that indeed the gauge transformed $\mathcal{C}'=\mathcal{C}$. The finite case is more complicated, we have 
+
+$$
+\hat{A}\to  \hat{A}' = U\left( \mathcal{A}+ \mathcal{C} + \frac{i}{g}\partial \right) U ^{\dagger} = a\mathfrak{n} + \frac{2i}{g}\mathfrak{n} U\partial \mathfrak{n} U^{\dagger} + \frac{i}{g} U \partial U^{\dagger}.
+$$
+
+Since $U = \exp ik\mathfrak{n}=\cos \frac{k}{2} \mathbb{1}_ {2}+2i\sin \frac{k}{2}\mathfrak{n}$, we have 
+
+$$
+\begin{align*}
+\frac{2i}{g}\mathfrak{n} U \partial \mathfrak{n} U^{\dagger} &= \frac{2i}{g}\left( \mathfrak{n} \partial \mathfrak{n} \cos k + \frac{i}{2} \partial \mathfrak{n}  \sin k \right),\\
+\frac{i}{g}U \partial U^{\dagger} &= \frac{i}{g}\left( -i\partial k\mathfrak{n} -i\partial \mathfrak{n} \sin k + 4\sin ^{2} \frac{k}{2} \,\mathfrak{n} \partial \mathfrak{n}  \right).
+\end{align*}
+$$
+
+Put everything together we get that 
+
+$$
+\hat{A} \to  \hat{A}' = \left( a+\frac{\partial k}{g} \right)\mathfrak{n} + \mathcal{C},\quad  \mathcal{C}=\frac{2i}{g}\mathfrak{n} \partial \mathfrak{n} .
+$$
+
+
+Also, along the way I found two interesting formula:
+
+$$
+\begin{align*}
+U \partial n U^{\dagger} &= i 2 \mathfrak{n} \partial \mathfrak{n}  \sinh k + \partial \mathfrak{n}  \cosh k ,\\
+\partial U U^{\dagger} &= \int_ {0}^{1} ds U^{1-s}\partial(ikn) (U^{\dagger})^{1-s}.  
+\end{align*}
+$$
+
+- - -
 
 Regarding $X$ in $A = \mathcal{A}+\mathcal{C}+X$. $X$ also transforms as a adjoint scalar,
 
@@ -718,9 +926,26 @@ $$
 
 How the field transforms tells us what gauge invariant terms we could construct to be included into the Lagrangian, for instance, we know that $\left\lvert D_ {\mu}X \right\rvert^{2}$ is gauge invariant, so they could appear in the Lagrangian. 
 
+To fix this gauge condition we may choose the generalized Lorentz condition, 
+
+$$
+\partial_ {\mu}\hat{A}_ {\mu}=0
+$$
+
+which in components proportional and perpendicular to $\mathfrak{n}$ reads
+
+$$
+\begin{align*}
+\partial a_ {\mu} &= 0, \\
+\hat{n}\times \partial^{2}\hat{n} - g a_ {\mu} \partial_ {\mu}\hat{n} &= 0.
+\end{align*}
+$$
+
+This way of defining the gauge transformation is referred to as the `active gauge transformation`, since it actively changes the orientation of $\hat{n}$.
+
 - - -
 
-Another possible gauge symmetry reads
+Another possible gauge symmetry, so-called `passive gauge transformation`, reads
 
 $$
 \begin{align*}
@@ -880,19 +1105,47 @@ $$
 Putting them together we get the equation of motion for $a_ {\mu}$:
 
 $$
-\boxed{ 
 \begin{align*}
 \partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}) 
 &= g\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\nu}\vec{X}_ {\mu}) - g\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\mu}\vec{X}_ {\nu})\\
 &= -g\hat{n}\cdot [\vec{X}_ {\mu}\times (\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu})].
 \end{align*}
-}
 $$
+
+Now let's take a closer look at $\partial_ {\mu}X_ {\mu \nu}$. In vector notation $X_ {\mu \nu} = g\hat{n}\cdot(\vec{X}_ {\mu}\times \vec{X}_ {\nu})$, hence 
+
+$$
+\partial_ {\mu}X_ {\mu \nu} = g[(\partial_ {\mu}\hat{n})\cdot(\vec{X}_ {\mu}\times \vec{X}_ {\nu})+\hat{n}\cdot \partial_ {\mu}(\vec{X}_ {\mu}\times \vec{X}_ {\nu})],
+$$
+
+but $(\partial_ {\mu}\hat{n})\cdot(\vec{X}_ {\mu}\times \vec{X}_ {\nu})$ is the volume expanded by these three vectors, and these three vectors all lie in the same plane since they are all perpendicular to $\hat{n}$, so the volume is zero! Hence we have 
+
+$$
+\partial_ {\mu}X_ {\mu \nu} = g \hat{n} \cdot \partial_ {\mu}(\vec{X}_ {\mu}\times \vec{X}_ {\nu}).
+$$
+
+The same argument goes for $H_ {\mu \nu}=-\frac{1}{g} \hat{n}\cdot(\partial_ {\mu}\hat{n}\times \partial_ {\nu}\hat{n})$.
+
+We can put all the terms proportional to the coupling $g$ to the right of the equation, 
+
+$$
+\boxed{
+\partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu}) = -g\hat{n}\cdot[\vec{X}_ {\mu}\times (\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)+\partial_ {\mu}(\vec{X}_ {\mu}\times \vec{X}_ {\nu})].
+} 
+$$
+
+
 
 When $a_ {\mu}=0$, we have
 
 $$
+\partial_ {\mu}(H_ {\mu \nu}) = -\frac{1}{g}\hat{n}\cdot \partial_ {\mu}(\partial_ {\mu}\hat{n}\times \partial_ {\nu}\hat{n}) = -g\hat{n}\cdot[\vec{X}_ {\mu}\times (\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)+\partial_ {\mu}(\vec{X}_ {\mu}\times \vec{X}_ {\nu})].
+$$
 
+hence
+
+$$
+\hat{n}\cdot \partial_ {\mu}(\partial_ {\mu}\hat{n}\times \partial_ {\nu}\hat{n}) = g^{2}\hat{n}\cdot[\vec{X}_ {\mu}\times (\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)+\partial_ {\mu}(\vec{X}_ {\mu}\times \vec{X}_ {\nu})].
 $$
 
 - - -
@@ -933,7 +1186,7 @@ $$
 In a more concise notation we could also write the right hand side as the $i$-th component of $\hat{D}_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})$. Or equivalently
 
 $$
-\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\alpha}-\hat{D}_ {\alpha}\vec{X}_ {\mu}) = g (f_ {\alpha \mu}+H_ {\alpha \mu}+X_ {\alpha \mu})\vec{X}_ {\mu} \times \hat{n} 
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}) = g (f_ {\nu \mu}+H_ {\nu \mu}+X_ {\nu \mu})\vec{X}_ {\mu} \times \hat{n} 
 $$
 
 - - -
@@ -1152,144 +1405,3 @@ This is the constraint for $\hat{n}$ in the absence of other fields.
 
 # Appendix
 
-Below is a dictionary of notations. The left hand side is the notation used in this note, the right hand side that in the paper.
-
-$$
-\begin{align*}
-S=\frac{1}{g^{2}}\int d^{d}x \,  \mathcal{L} \longrightarrow & S = \int d^{d}x \,  \mathcal{L}, \\
-A_ {\mu} \longrightarrow & g\vec{A}_ {\mu}, \\
-\mathcal{C}_ {\mu} \longrightarrow &  \mathcal{C}_ {\mu},\\
-\mathcal{A} \longrightarrow & g\mathcal{A},\\
-a_ {\mu}  \longrightarrow &  g A_ {\mu}
-\end{align*}
-$$
-
-but if $\mathcal{C}$ appears alone, we have $\mathcal{C}_ {\mu} \longrightarrow \frac{1}{g} \mathcal{C}_ {\mu}$.
-
-Upon those substitutes, we recover the expressions in the paper. The reason why $\mathcal{C}\to\mathcal{C} /g$ is that, when solving for the restricted field, we write the solution as $\hat{A}=\mathcal{A}+\mathcal{C}$, then going to the paper's notation we get $g\hat{A}_ {\text{paper}} = g\mathcal{A}_ {\text{paper}}+\mathcal{C}$, but in the paper the definition reads $\hat{A}_ {\text{paper}}=\mathcal{A}_ {\text{paper}}+\mathcal{C}_ {\text{paper}}$, which implies $\mathcal{C}_ {\text{paper}}=\mathcal{C} /g$. 
-
-- - -
-
-Introduce a **right-handed orthonormal frame** $(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ with $\hat{n}^{i}\hat{n}^{i}=1$. Choose the third component to be the so-called abelian direction, denoted it by $\hat{n}:=\hat{n}^{3}$.
-
-The following identities might be helpful (For $SU(2)$):
-
-$$
-\begin{align*}
-\mathfrak{n} \mathfrak{n} = \hat{n}^{a}\hat{n}^{b}\frac{1}{2}\sigma^{a} \frac{1}{2}\sigma^{b} &= \frac{1}{4}, \\
-[\mathfrak{n} ,[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= \partial_ {\mu}\mathfrak{n}, \\
-[[\mathfrak{n},\partial_ {\nu}\mathfrak{n}  ],[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= - \partial_ {\nu}\mathfrak{n} \partial_ {\mu}\mathfrak{n} .
-\end{align*}
-$$
-
-Let $d^{abc}$ be the total symmetric tensor of $SU(N)$ defined by 
-
-$$
-\left\lbrace T^{a},T^{b} \right\rbrace  = \frac{\delta^{ab}}{N} \mathbb{1} + d^{abc}T^{c},
-$$
-
-equivalently 
-
-$$
-d^{abc} = 2\mathrm{Tr}\,(\left\lbrace T^{a},T^{b} \right\rbrace T^{c})
-$$
-
-below are some useful identities about $SU(N)$ group:
-
-$$
-\begin{align*}
-\mathrm{Tr}\,(T^{a}T^{b}T^{c}) =& \frac{1}{4}(d^{abc}+if^{abc}).
-\end{align*}
-$$
-
-- - -
-
-the total gauge field $A$ into the following three parts, 
-
-$$
-A = \mathcal{A}+\mathcal{C}+X, \quad  [X,\mathfrak{n} ]\neq0.
-$$
-
-The restricted gauge field $\hat{A}$ is the solution for:
-
-$$
-\hat{D}_ {\mu}\mathfrak{n}  = (\partial_ {\mu}-i[\hat{A}_ {\mu},-])\mathfrak{n} =0.
-$$
-
-$\mathcal{C}_ {\mu}$ is the non-trivial part of the solution for $D_ {\mu}\mathfrak{n} =0$,
-
-$$
-\boxed{ 
-\mathcal{C}_ {\mu} = i[\mathfrak{n},\partial_ {\mu} \mathfrak{n}] .
-}
-$$
-
-This is a $\mathfrak{g}$-valued quantity, in terms of components in basis $T^{a}$ it can be written as 
-
-$$
-\boxed{ 
-\mathcal{C}_ {\mu} = -\hat{n} \times (\partial_ {\mu}\hat{n}) \text{ in }\mathfrak{g} .
-}
-$$
-
-The trivial part of the solution that is proportional to $\mathfrak{n}$, call it $\mathcal{A}$, is given by 
-
-$$
-\boxed{ 
-\mathcal{A}_ {\mu} =  a_ {\mu} \mathfrak{n},\quad a_ {\mu}\in \mathbb{R}.
-}
-$$
-
-We have
-
-$$
-\hat{A}=\mathcal{A}+\mathcal{C}, \quad \mathcal{A}\propto \mathfrak{n}\text{ and }\mathcal{C}=i[\mathfrak{n},\partial \mathfrak{n}].
-$$
-
-Define
-
-$$
-\begin{align*}
-\hat{F}:= & \partial_ {\mu}\hat{A}_ {\nu}-\partial_ {\nu}\hat{A}_ {\mu}-i[\hat{A}_ {\mu},\hat{A}_ {\nu}]\\
-=& (\partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu})\mathfrak{n} +i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ]\\
-=&: f_ {\mu \nu}\mathfrak{n} +H_ {\mu \nu}\mathfrak{n} .
-\end{align*}
-$$
-
-We have 
-
-$$
-\begin{align*}
-f_ {\mu \nu} &= \partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu},\\
-H_ {\mu \nu} \mathfrak{n}  &=i[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ],\\
-H_ {\mu \nu} &= \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}, \; C_ {\mu}:= \hat{n}_ {2}\cdot \partial_ {\mu}\hat{n}_ {1}.
-\end{align*}
-$$
-
-The total field strength $F_ {\mu \nu}$ is 
-
-$$
-\boxed{ 
-F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}].
-}
-$$
-
-Define
-
-$$
-\boxed{ 
-X_ {\mu \nu} \mathfrak{n} := -i[X_ {\mu},X_ {\nu}],
-}
-$$
-
-then the Lagrangian reads
-
-$$
-\boxed{ 
-\begin{align*}
-\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
-=& - \frac{1}{2g^{2}}\mathrm{Tr}\,\left\lbrace \hat{F}^{2}-2i\hat{F}_ {\mu \nu}[X_ {\mu},X_ {\nu}]+(\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu})^{2}  - [X_ {\mu},X_ {\nu}]^{2}\   \right\rbrace \\
-=& - \frac{1}{4g^{2}}[(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)^{2}]
-\end{align*}
-}
-$$
