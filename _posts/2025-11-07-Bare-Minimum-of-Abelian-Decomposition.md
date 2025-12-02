@@ -926,6 +926,8 @@ $$
 
 How the field transforms tells us what gauge invariant terms we could construct to be included into the Lagrangian, for instance, we know that $\left\lvert D_ {\mu}X \right\rvert^{2}$ is gauge invariant, so they could appear in the Lagrangian. 
 
+The infinitesimal form of $X$ is similar to that of $\mathfrak{n}$: $X\to X' = -i[\alpha,X]$.
+
 To fix this gauge condition we may choose the generalized Lorentz condition, 
 
 $$
@@ -1301,6 +1303,20 @@ where $B$ is a new field defined as
 
 $$
 B_ {\mu} := a_ \mu + C_ {\mu}, \quad  \hat{F}_ {\mu \nu} = \partial_ {\mu}B_ {\nu} - \partial_ {\nu}B_ {\mu}.
+$$
+
+- - -
+
+The gauge transformation of $\chi$ is particularly simple. Regarding the components $X^{(1,2)}$, we have 
+
+$$
+X^{(1,2)}\to 2\mathrm{Tr}\,\left\lbrace \Omega\mathfrak{n} _ {1,2} \Omega ^{\dagger} \Omega X \Omega ^{\dagger} \right\rbrace =X^{(1,2)},
+$$
+
+hence under gauge transformation
+
+$$
+\chi\to \chi'=\chi.
 $$
 
 - - -
