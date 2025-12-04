@@ -70,7 +70,7 @@ $$
 (\alpha \wedge \beta)(V_ {I}) = \delta^{MN}_ {I} \alpha(V_ {M_ {<}})\beta(V_ {N_ {<}}).
 $$
 
-As an example of the last definition, take $\alpha,\beta$ to be two 1-forms acting on vectors $V_ {1},V_ {2}$, then by the definition
+As an example of the last definition, take $\alpha,\beta$ to be 1-forms acting on vectors $V_ {1},V_ {2}$, then by the definition
 
 $$
 (\alpha \wedge  \beta)(V_ {1}V_ {2}) = \delta^{MN}_ {12} \alpha(V_ {M_ {<}}) \beta(V_ {N_ {<}})
@@ -106,18 +106,20 @@ The contraction of indices also works in a simple way,
 **Lemma.** 
 
 $$
-\sum_ {J_ {<}}\delta^{IJ}_ {M}\delta^{KL}_ {J} = \delta^{IKL}_ {J}.
+\sum_ {J_ {<}}\delta^{IJ}_ {M}\delta^{KL}_ {J} = \delta^{IKL}_ {M}.
 $$
 
 ### 2. A little bit more about differential forms
 
-Although forms can be expanded in any bases, the geometric meaning of differential forms is most obvious in terms of Cartesian coordinates. By Cartesian coordinates we just mean that the metric is that of the Euclidean space $\mathbb{R}^{n}$. In this case, the bases for the tangent vector space is $\partial_ {i}$ and the dual bases are given by $dx^{i}$. We already know that $dx^{i}$ reads off the i-th component of a vector $\mathbf{v}$, 
+Although forms can be expanded in any bases, the geometric meaning of differential forms is most obvious in terms of Cartesian coordinates. In this case, the bases for the tangent vector space is $\partial_ {i}$ and the dual bases are given by $dx^{i}$. We already know that $dx^{i}$ reads off the i-th component of a vector $\mathbf{v}$, 
 
 $$
 \left\langle dx^{i},\mathbf{v} \right\rangle = v^{i}.
 $$
 
-Note that there will be problem if you think of $dx^{i}$ as an infinitesimal quantity, as is the case in the classical real analysis! Because then on the left hand side we have the inner product between an infinitesimal thing and one regular-sized thing, the final product should be infinitesimal of order one, but on the right hand side we clearly have a regular-sized thing, the i-th component of a finite-sized vector. In fact, $dx^{i}$ is a special case of $d\mathbf{v}$ for arbitrary vector $\mathbf{v}$, and $d\mathbf{v}$ should be regarded as a **vector-valued 1-form**! That is, something that takes an vector and spits out an vector. For more details, please refer to Frankel etc.
+Note that there will be problem if you think of $dx^{i}$ as an infinitesimal quantity, as taught in the calculus classes! Because then on the left hand side we have the inner product between an infinitesimal thing and a finite thing, the final product should be infinitesimal of order one, but on the right hand side we clearly have a finite thing, the i-th component of a finite-sized vector. It's better to regard $d$ in $dx^{i}$ as an operator and regard $x^{i}$ as a *function* on $M$.  
+
+In fact, $dx^{i}$ is a special case of $d\mathbf{v}$ for arbitrary vector $\mathbf{v}$, and $d\mathbf{v}$ should be regarded as a **vector-valued 1-form**! That is, something that takes an vector and spits out an vector. For more details, please refer to Frankel etc.
 
 Let's start with the 2-dimensional Euclidean space. Given two vectors $\mathbf{v,w}$ we have 
 
@@ -133,7 +135,7 @@ $$
 We will show that exterior products yield a coordinate-free expression for the determinant! Consider an n-tuple of 1-forms $\tau^{1},\dots,\tau^{n}$, given in terms of bases 
 
 $$
-\tau^{i} = T^{i}_ {j} \sigma^{j}
+\tau^{i} = T^{i}_ {\;\;j} \sigma^{j}
 $$
 
 where $\sigma^{i}$ are the bases. Then
@@ -174,9 +176,9 @@ $$
 \end{align*}
 $$
 
-where we used the convention that the indices are always arrange in increasing order in the first line, and indices are cyclic in the second line. 
+where in the first line we used the convention that the indices are always arrange in increasing order. Note that indices are cyclic in the second line. 
 
-The 3-forms are the simplest for they only have one component,
+The 3-forms are the simplest for there is only have one component,
 
 $$
 \omega = \omega(x^{1},x^{2},x^{3})dx^{1}\wedge dx^{2}\wedge dx^{3}.
@@ -278,7 +280,7 @@ Now consider a manifold $M$, at each point $p$ there is a tangent vector space $
 
 $$\left\{ \partial_ {1},\dots,\partial_ {n} \right\}$$
 
-and we can simply define the orientation by saying that the order $\partial_ {1},\partial_ {2},\dots,\partial_ {n}$ is positive. Then any even permutation of it is still even, and odd permutation would be odd, simple as that.
+and we can simply define the orientation by saying that the order $\partial_ {1},\partial_ {2},\dots,\partial_ {n}$ is positive. Then any even permutation of it is still positive, and odd permutation would be negative, simple.
 
 We shall say that a manifold $M$ is orientable if we can cover $M$ by coordinate patches having positive Jacobians in each overlap. We can then declare the given coordinate bases to be positively oriented, and we then say that we have oriented the manifold. Briefly speaking, if a manifold is orientable it is then possible to pick out, in a continuous fashion, an orientation for each tangent space $T_ {x}M$ of $M$. Conversely, if it is possible to pick out continuously an orientation in each tangent space, we can assume that the coordinate frames in each coordinate patch have the chosen orientation and Mil must be orientable. **An interesting fact is that complex manifolds are always orientable.** 
 
@@ -331,7 +333,7 @@ i_ {v}\alpha = 0 \text{ if } \alpha \text{ is a 0-form},
 $$
 
 $$
-i_ {v}\alpha = \alpha(v) \text{ if }\alpha \text{ is a }1\text{-form},
+i_ {v}\alpha = \alpha(v) \text{ if }\alpha \text{ is a }1\text{-form}, 
 $$
 
 and 
@@ -367,7 +369,7 @@ $$
 where we adopted the convention that in $\left\langle -,- \right\rangle$ the vector appears on the right. The above mentioned associating to a vector a 1-form is just dualization, namely, given the 1-form $\nu$, which acts on any vector as $\left\langle \nu,- \right\rangle$, the associated vector is the unique vector $v$ that acts on any 1-forms as $\left\langle -,v \right\rangle$. We will write 
 
 $$
-\nu = \left\langle -,v \right\rangle .
+\nu(-) = \left\langle -,v \right\rangle .
 $$
 
 For example, 
@@ -389,7 +391,7 @@ $$
 In curvilinear coordinates $(u)$, omitting the orientation $o(u)$, we have 
 
 $$
-i_ {v}\sqrt{ \left\lvert g \right\rvert  }\; du^{1}\wedge du^{2}\wedge du^{3}=\sqrt{ \left\lvert g \right\rvert  }(v^{1} du^{2}\wedge du^{3}+u^{2}du^{3}\wedge du^{1}+v^{3} du^{2}\wedge du^{1}).
+i_ {v}\sqrt{ \left\lvert g \right\rvert  }\; du^{1}\wedge du^{2}\wedge du^{3}=\sqrt{ \left\lvert g \right\rvert  }(v^{1} du^{2}\wedge du^{3}+v^{2}du^{3}\wedge du^{1}+v^{3} du^{2}\wedge du^{1}).
 $$
 
 Conversely, if $\beta$ is a 2-form, we can associate to it a vector $b$ with components 
@@ -558,7 +560,7 @@ $$
 \mathcal{E} = E_ {1} dx^{1}+\dots,\quad  \mathcal{B} = B_ {23} dx^{2}\wedge dx^{3}+\dots
 $$
 
-If we introduce a metric, then we may consider the associated vector field $\mathbf{E}$ and the pseudovector $\mathbf{B}$. The pseudovector B has components $B_ {}1 = B_ {23} / \sqrt{ \left\lvert g \right\rvert }$, and so on.
+If we introduce a metric, then we may consider the associated vector field $\mathbf{E}$ and the pseudovector $\mathbf{B}$. The pseudovector B has components $B_ {1} = B_ {23} / \sqrt{ \left\lvert g \right\rvert }$, and so on.
 
 Given a Riemannian metric, we can use it to raise or lower the indices, and we can define two new types of forms
 

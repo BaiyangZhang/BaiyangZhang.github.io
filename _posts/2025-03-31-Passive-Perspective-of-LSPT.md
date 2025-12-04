@@ -12,6 +12,7 @@ tags:
 # Quantization and Haag Theorem
 
 *This section can be entirely skipped for readers who are not interested in Haag's theorem.*
+
 ## Quantization
 
 Start with a classical theory with Lagrangian $\mathcal{L}$, or equivalently Hamiltonian $H$. There may be some symmetry group $G$ acting on the Lagrangian. The theory can be separated into free part and interacting part. Upon quantization, the interaction will introduce an UV energy scale $\Lambda_ {\text{UV}}$ above which the theory becomes invalid. The symmetry group $G$ might break, if it is solely due to the quantization procedure then we say the symmetry is anomalous. The classical Hamiltonian are functions of canonical variables $q$ and $p$. The canonical variables satisfy certain Poisson brackets, which generates the dynamics of the model. 
