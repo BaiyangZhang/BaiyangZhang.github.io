@@ -17,19 +17,19 @@ tags:
 
 Start with a classical theory with Lagrangian $\mathcal{L}$, or equivalently Hamiltonian $H$. There may be some symmetry group $G$ acting on the Lagrangian. The theory can be separated into free part and interacting part. Upon quantization, the interaction will introduce an UV energy scale $\Lambda_ {\text{UV}}$ above which the theory becomes invalid. The symmetry group $G$ might break, if it is solely due to the quantization procedure then we say the symmetry is anomalous. The classical Hamiltonian are functions of canonical variables $q$ and $p$. The canonical variables satisfy certain Poisson brackets, which generates the dynamics of the model. 
 
-Let's ignore the interaction for now and deal with a free theory only. We will introduce interaction later and see that they cause fundamental difficulties in quantization. But without interaction, things are under control... more or less. To quantize a classical model we need to construct a Hilbert space in a systemic way. The simplest procedure is to generalize the generalized coordinates and canonical momenta to operators, and map the Poisson bracket to the so-called canonical commutation relation (CCR),
+Let's ignore the interaction for now and deal with a free theory only. We will introduce interaction later and see that they cause fundamental difficulties in quantization. But without interaction, things are under control. To quantize a classical model we need to construct a Hilbert space in a self-consistent way. The simplest procedure is to  upgrade the generalized coordinates and canonical momenta to operators, then map the Poisson bracket to the so-called canonical commutation relation (CCR),
 
 $$
 [q,p] = i\hbar.
 $$
 
-The Hilbert space we are looking for would be a representation of CCR. there exist different possible representations, for example $q,p$ could be represented by matrices; or we could let $q=q$ and $p=-i\hbar \frac{ \partial  }{ \partial q }$, the corresponding Hilbert space is the Lebesgue space $L^{2}(\mathbb{R}^{d})$, which is the square-integrable functions quotient functions with measure zero almost everywhere, such as the famous Dirichlet function.
+The Hilbert space we are looking for is a representation of CCR. there exist different possible representations, for example $q,p$ could be represented by matrices; or we could let $q=q$ and $p=-i\hbar \frac{ \partial  }{ \partial q }$, the corresponding Hilbert space is the Lebesgue space $L^{2}(\mathbb{R}^{d})$, which is the square-integrable functions quotient functions with measure zero almost everywhere, such as the famous Dirichlet function.
 
 Classical functions $f(q,p)$ are quantized in a straightforward way, by replacing $q$ and $p$ by their corresponding operators. 
 
-This procedure has a number of problems. For example, it is not consistent in the sense that the quantization of $f(q,p)$ some times is not unique due to possible different orders of $p,q$. Later people proposed better, more sophisticated quantization methods, such as geometry quantization and deformation quantization. So it is safe to say that, given a free classical theory, we can quantize it to obtain a Hilbert space for free quantum theory.
+This procedure has a number of problems. For example, it is not consistent in the sense that the quantization of $f(q,p)$ is usually not unique due to different orders of $p,q$. Later people proposed better, more sophisticated quantization methods, such as geometry quantization and deformation quantization. So it is safe to say that, given a free classical theory, we can quantize it to obtain a Hilbert space for free quantum theory.
 
-Since given a CCR we can find multiple different irreducible representations, then the question is, which is the correct one? In quantum mechanics we deal with finite dimensional CCR and this question is answered by the Stone-von Neumann theorem, which claims that all the representations are equivalent up to a unitary transform. This makes sure that whatever representation we choose, we will get the same prediction for observables. However, it turned out later that if $U(1)$ gauge field is included, this claim is no longer true. I am still not sure about this claim, but it seems to suggest that even in the finite dimensional case, a single irreducible representation, up to unitary transform, is already not enough when there is electro-magnetic field around.
+Given a CCR there exist multiple irreducible representations, so the question is, are they unitarily equivalent to each other, that is, do they give the same physical results? In quantum mechanics we deal with finite dimensional CCR and this question is answered by the Stone-von Neumann theorem, which claims that all the representations are equivalent up to a unitary transform. This makes sure that whatever representation we choose, we will get the same prediction for observables. However, it turned out later that if $U(1)$ gauge field is included, this claim is no longer true. I am still not sure about this claim, but it seems to suggest that even in the finite dimensional case, a single irreducible representation, up to unitary transform, is already not enough when there is electro-magnetic field around.
 
 - - -
 
@@ -90,6 +90,7 @@ HHW theorem does not imply that it's impossible to treat interactions in the sta
 - - -
 
 With the reasons stated above, in our calculation we will adopt Schrodinger's picture instead of standard interaction picture. 
+
 # Vacuum sector of quantum theory
 
 We will work in Schrodinger picture, where operators are dependent on position only. From time to time we will come back to interaction picture as a consistency check. We will only consider real scalar field $\phi$ in $d+1$ dimension. In Schrodinger picture, a generic operator $\mathcal{O}(\phi(\vec{x}),\pi(\vec{x}))$ is given as a function of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate. Note that since it is not the interaction picture, we don't deal with the Lorentz covariant four-vector $x^{\mu}$. 
