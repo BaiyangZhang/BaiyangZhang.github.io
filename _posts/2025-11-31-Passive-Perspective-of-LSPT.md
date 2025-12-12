@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Passive Perspective of Linearized Soliton Perturbation Theory
-date: 2025-03-31
+date:
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -310,6 +310,7 @@ $$
 where $\hat{\mathcal{H}}^{0}$ is normal ordered at $m_ {0}$.
 
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
+
 ## Perturbative Expansion of the Hamiltonian
 
 Since we want to cancel divergences in a perturbative manner, that is, order-by-order in (renormalized) coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
@@ -382,6 +383,7 @@ $$
 $$
 
 We have neglected higher order terms, for example a term $3g\delta g\sim \mathcal{O}(g^{4}) \sim\mathcal{O}(\lambda^{2})$ was dropped from the expression.
+
 # Kink sector
 
 ## Classic kink solution
@@ -423,7 +425,7 @@ $$
 
 The point is that **we can use the unitary $\mathcal{D}_ {f}$ to translate the basis of the Hilbert space.** 
 
-I find it helpful to take $T_ {\vec{x}}$ as an analogy to understand $\mathcal{D}_ {f}$. Let $\left\lvert{\psi}\right\rangle$ be any state, the resulting state of $T_ {\vec{x}}$ acting on $\left\lvert \psi \right\rangle$, namely the state $T_ {\vec{x}}\left\lvert{\psi}\right\rangle$, has two interpretations: the passive view and the active view. In the passive view, the translation is seen as a change to the coordinate system or reference frame, rather than a change to the state itself. The state of the system remains unchanged, but the coordinates used to describe it are shifted. In contrast, in the active view, the translation actively shifts the state, while the coordinate system remains the same. The coordinates stay fixed, but the state (or field configuration) changes.
+Compare $T_ {\vec{x}}$ and $\mathcal{D}_ {f}$. Let $\left\lvert{\psi}\right\rangle$ be any state, the resulting state of $T_ {\vec{x}}$ acting on $\left\lvert \psi \right\rangle$, namely the state $T_ {\vec{x}}\left\lvert{\psi}\right\rangle$, has two interpretations: the passive view and the active view. In the passive view, the translation is seen as a change to the coordinate system or reference frame, rather than a change to the state itself. The state of the system remains unchanged, but the coordinates used to describe it are shifted. In contrast, in the active view, the translation actively shifts the state, while the coordinate system remains the same. The coordinates stay fixed, but the state (or field configuration) changes.
 
 The same applies to the displacement operator $\mathcal{D}_ {f}$, given any state (now we are working in the context of quantum field theory, rather than quantum mechanics) $\left\lvert{\Psi}\right\rangle$, $\mathcal{D}_ {f}\left\lvert{\Psi}\right\rangle$ can be interpreted either as a new state (active perspective), or as the same state but in different basis (passive perspective). 
 
@@ -462,6 +464,7 @@ where $\widetilde{a}$ is the coefficient of the kink solution,
 $$
 f(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}\sqrt{2\omega _ {p} }} \, (\widetilde{a}_ {p}e^{ i\vec{p}\cdot \vec{x} }+\widetilde{a}_ {p}^\ast e^{ -i\vec{p}\cdot \vec{x} }) .
 $$
+
 ## Field operator in the kink sector
 
 In the language of Lagrangian or path integral, perturbation method is relatively straightforward. Consider the scalar $\phi^{4}$ theory with spontaneous symmetry breaking,
@@ -542,7 +545,9 @@ $$
 \left\langle K \right\rvert \phi(\vec{x}) \left\lvert K \right\rangle = f(\vec{x})
 $$
 
-at the leading order. In general $f(\vec{x})$ is inversely proportional to the coupling, for example for $\phi^{4}$ model we have $f\propto 1 / \sqrt{\lambda}$. 
+at the leading order. In general $f(\vec{x})$ is inversely proportional to the coupling, for example for $\phi^{4}$ model we have $f\propto 1 / \sqrt{\lambda}$.
+
+- - -
 
 Denote the perturbative field operator in the kink sector as $\varphi$, it should satisfy
 
@@ -550,22 +555,21 @@ $$
 \left\langle K \right\rvert\varphi \left\lvert K \right\rangle=0.
 $$
 
-You can verify that 
+Since $\left\langle K \right\rvert\phi \left\lvert K \right\rangle=f$, at least at the leading order we should have
 
 $$
 \boxed{ 
-\varphi = \mathcal{D}_ {f}^{\dagger} \phi \mathcal{D}_ {f},
+\varphi = \mathcal{D}_ {f} \phi \mathcal{D}^{\dagger}_ {f},
 }
 $$
 
 we will neglect the subscript $f$ is it is clear from the context. 
 
-As you can easily check, the kinky field operator $\varphi$ satisfies the same commutation relation with $\mathcal{D}$ as $\phi$:
+As you can easily check, the kink field operator $\varphi$ satisfies the same commutation relation with $\mathcal{D}$ as $\phi$:
 
 $$
-[\varphi,\mathcal{D}_ {f}] = f \mathcal{D}_ {f}. 
+[\varphi,\mathcal{D}_ {f}] = f\, \mathcal{D}_ {f}. 
 $$
-## Kink field operator and kink Hamiltonian
 
 If we write the same Hamiltonian (note that it has to be the same Hamiltonian no matter what perturbative basic field we choose to use, otherwise we would be solving a different problem) in terms of $\varphi$, we have 
 
