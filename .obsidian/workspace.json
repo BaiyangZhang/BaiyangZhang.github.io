@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-11-07-Bare-Minimum-of-Abelian-Decomposition.md",
+                "file": "Short Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-07-Bare-Minimum-of-Abelian-Decomposition"
+              "title": "Short Note"
             }
           },
           {
@@ -107,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f8485d28afe14f44",
@@ -216,12 +215,15 @@
   },
   "active": "ffc6087d153b1d6b",
   "lastOpenFiles": [
+    "README.md",
+    "2025-09-22.md",
+    "2024-10-13.md",
+    "Short Note.md",
+    "_posts/2025-11-07-Bare-Minimum-of-Abelian-Decomposition.md",
     "125课.md",
     "_posts/2025-11-31-Passive-Perspective-of-LSPT.md",
     "Untitled 2.md",
-    "_posts/2025-11-07-Bare-Minimum-of-Abelian-Decomposition.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
-    "Short Note.md",
     "类器官第一次会议记录.md",
     "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
     "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
@@ -239,9 +241,6 @@
     "_posts/2023-06-21-Phase-Space-of-Classical-Mechanics.md",
     "_drafts/2025-09-13-About-Flighttickets.md",
     "_drafts/2025-08-29-what-is-kink-state.md",
-    "_drafts/2025-06-04-Quantization-of-kink-states.md",
-    "_drafts/2025-05-13-Note-on-Spectral-method-with-Kinks.md",
-    "_drafts/2024-08-26-Incomplete-Note-on-Carl-Benders-Lecture-on-Asymptotic-Series.md",
     "[M-TEAM]Monty.Python.Holy.Grail.1975.BluRay.1080p.x264.DTS-HD.MA.5.1-MTeam.torrent",
     "img/FeynmanRulesModel3.png"
   ]
