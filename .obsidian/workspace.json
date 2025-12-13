@@ -49,7 +49,8 @@
               "title": "2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,15 +214,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d7926e5c10697678",
+  "active": "ffc6087d153b1d6b",
   "lastOpenFiles": [
+    "125课.md",
+    "_posts/2025-11-31-Passive-Perspective-of-LSPT.md",
     "Untitled 2.md",
     "_posts/2025-11-07-Bare-Minimum-of-Abelian-Decomposition.md",
     "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
-    "_posts/2025-11-31-Passive-Perspective-of-LSPT.md",
     "Short Note.md",
     "类器官第一次会议记录.md",
-    "Untitled 3.md",
     "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
     "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
     "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function.md",
