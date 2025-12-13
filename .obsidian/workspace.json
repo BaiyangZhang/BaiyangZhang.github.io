@@ -49,7 +49,8 @@
               "title": "Short Note"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -213,10 +214,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d7926e5c10697678",
+  "active": "ffc6087d153b1d6b",
   "lastOpenFiles": [
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "Short Note.md",
     "README.md",
     "2025-09-22.md",

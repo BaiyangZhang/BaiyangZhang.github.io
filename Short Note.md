@@ -1,36 +1,52 @@
 
 
-Hi professor Cho, 
-
-I think I have proven that the *active* gauge transformation for $\mathcal{C}=-\frac{1}{g}\hat{n}\times \partial \hat{n}$ that you defined is equivalent to a simpler form:
+With interaction:
 
 $$
-\mathcal{C}\to \mathcal{C'}= - \frac{1}{g}\hat{n}'\times \partial \hat{n}', \quad  \hat{n}':=\Omega \hat{n}\Omega ^{\dagger}
-$$
-where $\Omega=\exp(i\alpha)$ is the finite gauge transformation. The prove has something to do with the uniqueness of the solution for $\hat{D}_ {\mu}\hat{n}=0$ that is orthodox to $\hat{n}$.
-Especially, I am able to show this equivalence both of infinitesimal form and finite form for a special kind of gauge transformation, that keeps $\hat{n}$ invariant:
-$$
-U:= e^{i k \hat{n}}, \quad  \hat{A}\to \hat{A}'=U\left( \hat{A}+\frac{i}{g}\partial \right)U^{\dagger}.
-$$
-In this case we have
-$$
-\hat{A}\to  \hat{A}' = U\left( \mathcal{A}+ \mathcal{C} + \frac{i}{g}\partial \right) U ^{\dagger} = A\mathfrak{n} + \frac{2i}{g}\mathfrak{n} U\partial \mathfrak{n} U^{\dagger} + \frac{i}{g} U \partial U^{\dagger}.
-$$
-where $\mathfrak{n}$ is the $\mathfrak{g}$-version of $\hat{n}$, that is $\mathfrak{n}:=\hat{n}^{i}T^{i}$, and $T^{i}$ is the generator of $SU(2)$.
-
-Since $U = \exp ik\mathfrak{n}=\cos \frac{k}{2} \mathbb{1}_ {2}+2i\sin \frac{k}{2}\mathfrak{n}$, we have 
-
-$$
-\begin{align*}
-\frac{2i}{g}\mathfrak{n} U \partial \mathfrak{n} U^{\dagger} &= \frac{2i}{g}\left( \mathfrak{n} \partial \mathfrak{n} \cos k + \frac{i}{2} \partial \mathfrak{n}  \sin k \right),\\
-\frac{i}{g}U \partial U^{\dagger} &= \frac{i}{g}\left( -i\partial k\mathfrak{n} -i\partial \mathfrak{n} \sin k + 4\sin ^{2} \frac{k}{2} \,\mathfrak{n} \partial \mathfrak{n}  \right).
-\end{align*}
+H \left\lvert \Omega \right\rangle = E_ {0} \left\lvert \Omega \right\rangle.\quad A\left\lvert \Omega \right\rangle_ {0} = 0 \;\forall\; A.
 $$
 
-Put everything together we get that 
+where 
 
 $$
-\hat{A} \to  \hat{A}' = \left( A+\frac{\partial k}{g} \right)\mathfrak{n} + \mathcal{C},\quad  \mathcal{C}=\frac{2i}{g}\mathfrak{n} \partial \mathfrak{n} .
+\left\lvert \Omega \right\rangle = \left\lvert \Omega \right\rangle_ {0} + \left\lvert \Omega \right\rangle_ {1}+\cdots
 $$
 
-in vector form it is just $\hat{A}'=(A+\partial k /g)\hat{n}-\frac{1}{g}\hat{n}\times \partial \hat{n}$.
+$$
+\left\lvert K \right\rangle = \mathcal{D}_ {f} \left\lvert 0 \right\rangle. 
+$$
+
+$$
+\left\lvert 0 \right\rangle \neq \left\lvert \Omega \right\rangle_ {0}?
+$$
+
+
+
+$$
+B_ {k} \left\lvert 0 \right\rangle =\left\lvert 0 \right\rangle.
+$$
+
+Coherent: 1) displacement @ vacuum. $\mathcal{D}\left\lvert \Omega \right\rangle_ {0}$. But $\mathcal{D}\left\lvert 0 \right\rangle$? 
+
+$$
+\left\langle 0 \right\rvert\phi \left\lvert 0 \right\rangle=0 , \text{ just like for } \left\lvert \Omega_ {0} \right\rangle.
+$$
+
+$$
+\left\langle \Omega_ {0} \right\rvert \phi \left\lvert  \Omega_ {0} \right\rangle =0
+$$
+
+$$
+\left\langle K \right\rvert \phi \left\lvert K \right\rangle = f.
+$$
+
+$$
+\left\lvert 0 \right\rangle = \mathcal{D}^{\dagger}_ {f} \left\lvert K \right\rangle.
+$$
+
+$$
+D_ {f} \phi D_ {f}^{\dagger}=\phi-f \implies \left\langle 0 \right\rvert\phi \left\lvert 0 \right\rangle=0.
+$$
+$$
+H \left\lvert 0 \right\rangle = ?  \quad  H \left\lvert \Omega \right\rangle=E_ {0}\left\lvert \Omega \right\rangle.
+$$
