@@ -954,6 +954,7 @@ Define
 $$
 \chi_ {\mu} :=  \frac{1}{\sqrt{2}}(X_ {\mu}^{(1)}+iX_ {\mu}^{(2)}),
 $$
+
 then 
 
 $$
@@ -1074,6 +1075,7 @@ we have
 $$
 (\hat{D}_ {\mu}\vec{X}_ {\nu}-(\mu \leftrightarrow \nu))^{2} = 2\left\lvert \hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu} \right\rvert ^{2}.
 $$
+
 Finally, in the special case where $(\hat{n}_ {1},\hat{n}_ {2},\hat{n})=(T^{1},T^{2},T^{3})$, the Lagrangian for extended QCD now reads (in terms of  $\chi$):
 
 $$
@@ -1122,11 +1124,13 @@ Let $d^{abc}$ be the total symmetric tensor of $SU(N)$ defined by
 $$
 \left\lbrace T^{a},T^{b} \right\rbrace  = \frac{\delta^{ab}}{N} \mathbb{1} + d^{abc}T^{c},
 $$
+
 equivalently 
 
 $$
 d^{abc} = 2\mathrm{Tr}\,(\left\lbrace T^{a},T^{b} \right\rbrace T^{c})
 $$
+
 below are some useful identities about $SU(N)$ group:
 
 $$
@@ -1134,6 +1138,7 @@ $$
 \mathrm{Tr}\,(T^{a}T^{b}T^{c}) =& \frac{1}{4}(d^{abc}+if^{abc}).
 \end{align*}
 $$
+
 - - -
 
 the total gauge field $A$ into the following three parts, 
@@ -1205,6 +1210,7 @@ $$
 F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-i[X_ {\mu},X_ {\nu}].
 }
 $$
+
 Define
 
 $$

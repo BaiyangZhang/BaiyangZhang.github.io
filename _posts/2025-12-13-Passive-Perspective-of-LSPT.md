@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Passive Perspective of Linearized Soliton Perturbation Theory
-date: 2025-03-31
+date: 2025-12-13
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -12,23 +12,24 @@ tags:
 # Quantization and Haag Theorem
 
 *This section can be entirely skipped for readers who are not interested in Haag's theorem.*
+
 ## Quantization
 
 Start with a classical theory with Lagrangian $\mathcal{L}$, or equivalently Hamiltonian $H$. There may be some symmetry group $G$ acting on the Lagrangian. The theory can be separated into free part and interacting part. Upon quantization, the interaction will introduce an UV energy scale $\Lambda_ {\text{UV}}$ above which the theory becomes invalid. The symmetry group $G$ might break, if it is solely due to the quantization procedure then we say the symmetry is anomalous. The classical Hamiltonian are functions of canonical variables $q$ and $p$. The canonical variables satisfy certain Poisson brackets, which generates the dynamics of the model. 
 
-Let's ignore the interaction for now and deal with a free theory only. We will introduce interaction later and see that they cause fundamental difficulties in quantization. But without interaction, things are under control... more or less. To quantize a classical model we need to construct a Hilbert space in a systemic way. The simplest procedure is to generalize the generalized coordinates and canonical momenta to operators, and map the Poisson bracket to the so-called canonical commutation relation (CCR),
+Let's ignore the interaction for now and deal with a free theory only. We will introduce interaction later and see that they cause fundamental difficulties in quantization. But without interaction, things are under control. To quantize a classical model we need to construct a Hilbert space in a self-consistent way. The simplest procedure is to  upgrade the generalized coordinates and canonical momenta to operators, then map the Poisson bracket to the so-called canonical commutation relation (CCR),
 
 $$
 [q,p] = i\hbar.
 $$
 
-The Hilbert space we are looking for would be a representation of CCR. there exist different possible representations, for example $q,p$ could be represented by matrices; or we could let $q=q$ and $p=-i\hbar \frac{ \partial  }{ \partial q }$, the corresponding Hilbert space is the Lebesgue space $L^{2}(\mathbb{R}^{d})$, which is the square-integrable functions quotient functions with measure zero almost everywhere, such as the famous Dirichlet function.
+The Hilbert space we are looking for is a representation of CCR. there exist different possible representations, for example $q,p$ could be represented by matrices; or we could let $q=q$ and $p=-i\hbar \frac{ \partial  }{ \partial q }$, the corresponding Hilbert space is the Lebesgue space $L^{2}(\mathbb{R}^{d})$, which is the square-integrable functions quotient functions with measure zero almost everywhere, such as the famous Dirichlet function.
 
 Classical functions $f(q,p)$ are quantized in a straightforward way, by replacing $q$ and $p$ by their corresponding operators. 
 
-This procedure has a number of problems. For example, it is not consistent in the sense that the quantization of $f(q,p)$ some times is not unique due to possible different orders of $p,q$. Later people proposed better, more sophisticated quantization methods, such as geometry quantization and deformation quantization. So it is safe to say that, given a free classical theory, we can quantize it to obtain a Hilbert space for free quantum theory.
+This procedure has a number of problems. For example, it is not consistent in the sense that the quantization of $f(q,p)$ is usually not unique due to different orders of $p,q$. Later people proposed better, more sophisticated quantization methods, such as geometry quantization and deformation quantization. So it is safe to say that, given a free classical theory, we can quantize it to obtain a Hilbert space for free quantum theory.
 
-Since given a CCR we can find multiple different irreducible representations, then the question is, which is the correct one? In quantum mechanics we deal with finite dimensional CCR and this question is answered by the Stone-von Neumann theorem, which claims that all the representations are equivalent up to a unitary transform. This makes sure that whatever representation we choose, we will get the same prediction for observables. However, it turned out later that if $U(1)$ gauge field is included, this claim is no longer true. I am still not sure about this claim, but it seems to suggest that even in the finite dimensional case, a single irreducible representation, up to unitary transform, is already not enough when there is electro-magnetic field around.
+Given a CCR there exist multiple irreducible representations, so the question is, are they unitarily equivalent to each other, that is, do they give the same physical results? In quantum mechanics we deal with finite dimensional CCR and this question is answered by the Stone-von Neumann theorem, which claims that all the representations are equivalent up to a unitary transform. This makes sure that whatever representation we choose, we will get the same prediction for observables. However, it turned out later that if $U(1)$ gauge field is included, this claim is no longer true. I am still not sure about this claim, but it seems to suggest that even in the finite dimensional case, a single irreducible representation, up to unitary transform, is already not enough when there is electro-magnetic field around.
 
 - - -
 
@@ -89,6 +90,7 @@ HHW theorem does not imply that it's impossible to treat interactions in the sta
 - - -
 
 With the reasons stated above, in our calculation we will adopt Schrodinger's picture instead of standard interaction picture. 
+
 # Vacuum sector of quantum theory
 
 We will work in Schrodinger picture, where operators are dependent on position only. From time to time we will come back to interaction picture as a consistency check. We will only consider real scalar field $\phi$ in $d+1$ dimension. In Schrodinger picture, a generic operator $\mathcal{O}(\phi(\vec{x}),\pi(\vec{x}))$ is given as a function of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate. Note that since it is not the interaction picture, we don't deal with the Lorentz covariant four-vector $x^{\mu}$. 
@@ -308,6 +310,7 @@ $$
 where $\hat{\mathcal{H}}^{0}$ is normal ordered at $m_ {0}$.
 
 [^Polchinski]: J. Polchinski, String Theory. Vol. 1: An Introduction to the Bosonic String. Cambridge Univ. Pr., UK, 1998.
+
 ## Perturbative Expansion of the Hamiltonian
 
 Since we want to cancel divergences in a perturbative manner, that is, order-by-order in (renormalized) coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
@@ -380,6 +383,7 @@ $$
 $$
 
 We have neglected higher order terms, for example a term $3g\delta g\sim \mathcal{O}(g^{4}) \sim\mathcal{O}(\lambda^{2})$ was dropped from the expression.
+
 # Kink sector
 
 ## Classic kink solution
@@ -421,7 +425,7 @@ $$
 
 The point is that **we can use the unitary $\mathcal{D}_ {f}$ to translate the basis of the Hilbert space.** 
 
-I find it helpful to take $T_ {\vec{x}}$ as an analogy to understand $\mathcal{D}_ {f}$. Let $\left\lvert{\psi}\right\rangle$ be any state, the resulting state of $T_ {\vec{x}}$ acting on $\left\lvert \psi \right\rangle$, namely the state $T_ {\vec{x}}\left\lvert{\psi}\right\rangle$, has two interpretations: the passive view and the active view. In the passive view, the translation is seen as a change to the coordinate system or reference frame, rather than a change to the state itself. The state of the system remains unchanged, but the coordinates used to describe it are shifted. In contrast, in the active view, the translation actively shifts the state, while the coordinate system remains the same. The coordinates stay fixed, but the state (or field configuration) changes.
+Compare $T_ {\vec{x}}$ and $\mathcal{D}_ {f}$. Let $\left\lvert{\psi}\right\rangle$ be any state, the resulting state of $T_ {\vec{x}}$ acting on $\left\lvert \psi \right\rangle$, namely the state $T_ {\vec{x}}\left\lvert{\psi}\right\rangle$, has two interpretations: the passive view and the active view. In the passive view, the translation is seen as a change to the coordinate system or reference frame, rather than a change to the state itself. The state of the system remains unchanged, but the coordinates used to describe it are shifted. In contrast, in the active view, the translation actively shifts the state, while the coordinate system remains the same. The coordinates stay fixed, but the state (or field configuration) changes.
 
 The same applies to the displacement operator $\mathcal{D}_ {f}$, given any state (now we are working in the context of quantum field theory, rather than quantum mechanics) $\left\lvert{\Psi}\right\rangle$, $\mathcal{D}_ {f}\left\lvert{\Psi}\right\rangle$ can be interpreted either as a new state (active perspective), or as the same state but in different basis (passive perspective). 
 
@@ -460,6 +464,7 @@ where $\widetilde{a}$ is the coefficient of the kink solution,
 $$
 f(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}\sqrt{2\omega _ {p} }} \, (\widetilde{a}_ {p}e^{ i\vec{p}\cdot \vec{x} }+\widetilde{a}_ {p}^\ast e^{ -i\vec{p}\cdot \vec{x} }) .
 $$
+
 ## Field operator in the kink sector
 
 In the language of Lagrangian or path integral, perturbation method is relatively straightforward. Consider the scalar $\phi^{4}$ theory with spontaneous symmetry breaking,
@@ -540,7 +545,9 @@ $$
 \left\langle K \right\rvert \phi(\vec{x}) \left\lvert K \right\rangle = f(\vec{x})
 $$
 
-at the leading order. In general $f(\vec{x})$ is inversely proportional to the coupling, for example for $\phi^{4}$ model we have $f\propto 1 / \sqrt{\lambda}$. 
+at the leading order. In general $f(\vec{x})$ is inversely proportional to the coupling, for example for $\phi^{4}$ model we have $f\propto 1 / \sqrt{\lambda}$.
+
+- - -
 
 Denote the perturbative field operator in the kink sector as $\varphi$, it should satisfy
 
@@ -548,22 +555,21 @@ $$
 \left\langle K \right\rvert\varphi \left\lvert K \right\rangle=0.
 $$
 
-You can verify that 
+Since $\left\langle K \right\rvert\phi \left\lvert K \right\rangle=f$, at least at the leading order we should have
 
 $$
 \boxed{ 
-\varphi = \mathcal{D}_ {f}^{\dagger} \phi \mathcal{D}_ {f},
+\varphi = \mathcal{D}_ {f} \phi \mathcal{D}^{\dagger}_ {f},
 }
 $$
 
 we will neglect the subscript $f$ is it is clear from the context. 
 
-As you can easily check, the kinky field operator $\varphi$ satisfies the same commutation relation with $\mathcal{D}$ as $\phi$:
+As you can easily check, the kink field operator $\varphi$ satisfies the same commutation relation with $\mathcal{D}$ as $\phi$:
 
 $$
-[\varphi,\mathcal{D}_ {f}] = f \mathcal{D}_ {f}. 
+[\varphi,\mathcal{D}_ {f}] = f\, \mathcal{D}_ {f}. 
 $$
-## Kink field operator and kink Hamiltonian
 
 If we write the same Hamiltonian (note that it has to be the same Hamiltonian no matter what perturbative basic field we choose to use, otherwise we would be solving a different problem) in terms of $\varphi$, we have 
 
