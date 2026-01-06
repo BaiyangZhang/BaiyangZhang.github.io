@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "bfc16aea90928448",
+    "id": "3028bc779ec50f3b",
     "type": "split",
     "children": [
       {
-        "id": "c44aebe905779215",
+        "id": "ff41b5f146960d04",
         "type": "tabs",
         "children": [
           {
-            "id": "d7926e5c10697678",
+            "id": "303e26df9308a509",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,49 +22,48 @@
             }
           },
           {
-            "id": "68b867f702763eb5",
+            "id": "e5fef986b095a2ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms"
-            }
-          },
-          {
-            "id": "ffc6087d153b1d6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "面上基金申请Prompt.md",
+                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "面上基金申请Prompt"
+              "title": "2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II"
+            }
+          },
+          {
+            "id": "291c74703c6d664b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "bb36b5a1e93fe1e5",
+    "id": "f33e7c5091997b40",
     "type": "split",
     "children": [
       {
-        "id": "55559f846b7cd581",
+        "id": "2406439c7182770e",
         "type": "tabs",
         "children": [
           {
-            "id": "36da8009d9fc09b4",
+            "id": "e64600cc1b1207d7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,12 +76,12 @@
             }
           },
           {
-            "id": "b06e84f7ff83d146",
+            "id": "b33d85d3d86006ef",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "diagrammatic rules",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +93,7 @@
             }
           },
           {
-            "id": "06dc9447370fe053",
+            "id": "8db75d2039a66385",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -107,23 +106,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 323.5
   },
   "right": {
-    "id": "f8485d28afe14f44",
+    "id": "862c7c927b43a428",
     "type": "split",
     "children": [
       {
-        "id": "946e885ca121d61f",
+        "id": "e4537cd8a0c8b48c",
         "type": "tabs",
         "children": [
           {
-            "id": "a0fbc9421b4717f6",
+            "id": "711b6f848ba96e7e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/2025-03-14-Mass-Renormalization.md",
+                "file": "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,25 +132,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-03-14-Mass-Renormalization"
+              "title": "Backlinks for 2025-12-13-Passive-Perspective-of-LSPT"
             }
           },
           {
-            "id": "c2cb1b6652016c33",
+            "id": "a3f523f4b5fd35be",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/2025-03-14-Mass-Renormalization.md",
+                "file": "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-03-14-Mass-Renormalization"
+              "title": "Outgoing links from 2025-12-13-Passive-Perspective-of-LSPT"
             }
           },
           {
-            "id": "b86235055b6770fc",
+            "id": "6c39ef6e719d04c6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -166,7 +165,7 @@
             }
           },
           {
-            "id": "03ec5fc39e095794",
+            "id": "d6a78bf1f4d64235",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -180,18 +179,18 @@
             }
           },
           {
-            "id": "6adeeb93f8d531f2",
+            "id": "5bfa53ef3eeff881",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/2025-03-14-Mass-Renormalization.md",
+                "file": "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-03-14-Mass-Renormalization"
+              "title": "Outline of 2025-12-13-Passive-Perspective-of-LSPT"
             }
           }
         ]
@@ -204,44 +203,44 @@
   "left-ribbon": {
     "hiddenItems": {
       "bases:Create new base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "36da8009d9fc09b4",
+  "active": "303e26df9308a509",
   "lastOpenFiles": [
-    "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
     "面上基金申请Prompt.md",
-    "_posts/2023-09-25-Electrodynamics-in-Terms-of-Differential-Forms.md",
-    "README.md",
-    "2025-09-22.md",
-    "2024-10-13.md",
-    "_posts/2025-11-07-Bare-Minimum-of-Abelian-Decomposition.md",
-    "125课.md",
-    "Untitled 2.md",
     "类器官第一次会议记录.md",
-    "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
-    "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
-    "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function.md",
-    "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
-    "_posts/2024-03-10-Note-on-Kink-Mass-Correction-in-3D-Part-I.md",
-    "_posts/2025-03-20-Abelian-Decomposition-and-Monopole.md",
-    "计量检测认证知识竞赛题库.md",
-    "投简历情况.md",
-    "博后三年记.md",
+    "README.md",
+    "Short Note.md",
+    "Untitled 1.md",
     "中国高校中的异化现象研究.md",
-    "_posts/2025-09-21-Does-Adiabatic-Assumption-Work.md",
-    "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
+    "博后三年记.md",
+    "投简历情况.md",
+    "计量检测认证知识竞赛题库.md",
+    "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+    "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
+    "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+    "_posts/2025-11-07-Bare-Minimum-of-Abelian-Decomposition.md",
+    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
+    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/2024-11-05-Thoughts-on-Entropy.md",
+    "_posts/2024-12-31-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
+    "_posts/2025-01-06-Perturbative-SSB-and-Effective-Action.md",
+    "_posts/2025-02-27-Introduction-to-Resurgence-1.md",
+    "_posts/2025-03-03-Lie-Groups.md",
+    "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
+    "_posts/2025-03-14-Mass-Renormalization.md",
+    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
     "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2023-06-21-Phase-Space-of-Classical-Mechanics.md",
-    "_drafts/2025-09-13-About-Flighttickets.md",
-    "_drafts/2025-08-29-what-is-kink-state.md",
-    "[M-TEAM]Monty.Python.Holy.Grail.1975.BluRay.1080p.x264.DTS-HD.MA.5.1-MTeam.torrent",
-    "img/FeynmanRulesModel3.png"
+    "img/kink/hamiltonianOrder3v2.png",
+    "1759147326958.png"
   ]
 }
