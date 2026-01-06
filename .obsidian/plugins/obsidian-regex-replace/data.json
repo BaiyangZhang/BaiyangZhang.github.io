@@ -1,6 +1,6 @@
 {
-  "findText": "_",
-  "replaceText": "_ ",
+  "findText": ")",
+  "replaceText": "$",
   "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,
