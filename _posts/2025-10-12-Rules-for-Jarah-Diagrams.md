@@ -10,7 +10,7 @@ tags:
 
 These rules are currently being used by myself and no one else, it is by no means standard or widely accepted. I find it extremely fun to play with those rules and diagrams.
 
-The numbers denote momenta, for example, (1) represents ($\vec{p}_ {1}$). We only label the independent momenta since momentum conservation at each vertex allows us to determine any unlabeled momentum without ambiguity. One source of divergence, specifically, a factor of $(2\pi)^{3}\delta^{3}(0)$ (or equivalently $\int d^{3}x$) arises because the Dirac delta functions overconstrain the momenta. This divergence is also accounted for in the diagrammatic method.
+The numbers denote momenta, for example, (1) represents ($\vec{p}_ {1}$). We only label the independent momenta since momentum conservation at each vertex allows us to determine any unlabeled momentum without ambiguity. One source of divergence, specifically, a factor of $(2\pi)^{3}\delta^{3}(0)$ (or equivalently $\int d^{3}x$) arises because the Dirac delta functions over-constrain the momenta. This divergence is also accounted for in the diagrammatic method.
 
 In the following rules, some factors (such as a factor of 3) is perhaps better treated as symmetry factors, but for practical purpose I treat them as part of the definition of the the vertices.
 
