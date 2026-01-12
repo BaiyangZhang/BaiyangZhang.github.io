@@ -1,52 +1,38 @@
 {
   "main": {
-    "id": "3028bc779ec50f3b",
+    "id": "6068b8d2de31268e",
     "type": "split",
     "children": [
       {
-        "id": "ff41b5f146960d04",
+        "id": "f40bc70acb070cbb",
         "type": "tabs",
         "children": [
           {
-            "id": "303e26df9308a509",
+            "id": "8ab89216ae881340",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+                "file": "面上基金申请Prompt.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-12-13-Passive-Perspective-of-LSPT"
+              "title": "面上基金申请Prompt"
             }
           },
           {
-            "id": "e5fef986b095a2ad",
+            "id": "6c53a188d6ea2c5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II"
-            }
-          },
-          {
-            "id": "291c74703c6d664b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I"
+              "title": "Untitled"
             }
           }
         ]
@@ -55,15 +41,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f33e7c5091997b40",
+    "id": "5ab6ff9681bd7e96",
     "type": "split",
     "children": [
       {
-        "id": "2406439c7182770e",
+        "id": "40f716a8210b87c7",
         "type": "tabs",
         "children": [
           {
-            "id": "e64600cc1b1207d7",
+            "id": "5e02c1c32b634670",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -76,12 +62,12 @@
             }
           },
           {
-            "id": "b33d85d3d86006ef",
+            "id": "9d9e326c04f549a0",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "diagrammatic rules",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +79,7 @@
             }
           },
           {
-            "id": "8db75d2039a66385",
+            "id": "6d9368e413c75df0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -106,23 +92,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
-    "id": "862c7c927b43a428",
+    "id": "e9005e1ca97f4a0a",
     "type": "split",
     "children": [
       {
-        "id": "e4537cd8a0c8b48c",
+        "id": "172e452f669070fc",
         "type": "tabs",
         "children": [
           {
-            "id": "711b6f848ba96e7e",
+            "id": "f7414e40f705110e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+                "file": "Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,25 +119,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-12-13-Passive-Perspective-of-LSPT"
+              "title": "Backlinks for Untitled 1"
             }
           },
           {
-            "id": "a3f523f4b5fd35be",
+            "id": "d40fff0cf3b28759",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+                "file": "Untitled 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-12-13-Passive-Perspective-of-LSPT"
+              "title": "Outgoing links from Untitled 1"
             }
           },
           {
-            "id": "6c39ef6e719d04c6",
+            "id": "a265b355b7bbe346",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -165,7 +152,7 @@
             }
           },
           {
-            "id": "d6a78bf1f4d64235",
+            "id": "66057100d9e22917",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -179,18 +166,18 @@
             }
           },
           {
-            "id": "5bfa53ef3eeff881",
+            "id": "298d013d51fd8bc0",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+                "file": "Untitled 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-12-13-Passive-Perspective-of-LSPT"
+              "title": "Outline of Untitled 1"
             }
           }
         ]
@@ -202,70 +189,30 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "303e26df9308a509",
+  "active": "8ab89216ae881340",
   "lastOpenFiles": [
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    "Short Note.md",
+    "Pasted image 20260108212014.png",
+    "Untitled.md",
     "面上基金申请Prompt.md",
-    "类器官第一次会议记录.md",
-    "README.md",
-=======
-    "README.md",
-    "Short Note.md",
->>>>>>> Stashed changes
-=======
-    "README.md",
-    "Short Note.md",
->>>>>>> Stashed changes
     "Untitled 1.md",
-    "中国高校中的异化现象研究.md",
+    "Short Note.md",
+    "国自然非官方LaTeX模板.md",
     "博后三年记.md",
-    "投简历情况.md",
-    "计量检测认证知识竞赛题库.md",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-    "类器官第一次会议记录.md",
->>>>>>> Stashed changes
-=======
-    "类器官第一次会议记录.md",
->>>>>>> Stashed changes
+    "中国高校中的异化现象研究.md",
+    "README.md",
     "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
-    "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
-    "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+    "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
     "_posts/2025-11-07-Bare-Minimum-of-Abelian-Decomposition.md",
-    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
-    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
-    "_posts/2024-11-05-Thoughts-on-Entropy.md",
-    "_posts/2024-12-31-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
-    "_posts/2025-01-06-Perturbative-SSB-and-Effective-Action.md",
-    "_posts/2025-02-27-Introduction-to-Resurgence-1.md",
-    "_posts/2025-03-03-Lie-Groups.md",
-    "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
-    "_posts/2025-03-14-Mass-Renormalization.md",
-    "_posts/2025-03-31-Passive-Perspective-of-LSPT.md",
-    "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
-<<<<<<< Updated upstream
-=======
-    "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    "img/kink/hamiltonianOrder3v2.png",
-    "1759147326958.png"
+    "_posts/2025-12-13-Passive-Perspective-of-LSPT.md"
   ]
 }

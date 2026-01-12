@@ -1,44 +1,7 @@
-The Hamiltonian density in Schrodinger picture reads
-
-$$
-\hat{\mathcal{H}}^{0}(\vec{x}) = \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m_ {0}^{2}}{4} \phi^{2}(\vec{x}) + \frac{g_ {0}^{2}}{4} \phi^{4}(\vec{x}) + A, 
-$$
-
-where the c-number $A$ is a counterterm. The field and canonical momentum are expanded in plane waves,
-
-$$
-\begin{align*}
-\phi(\vec{x})&= \int \frac{d^{3}\vec{p}}{(2\pi)^{3}} \, e^{ -i\vec{p}\cdot \vec{x} } \left( A_ {\vec{p}}^{\ddagger}+\frac{A_ {-\vec{p}}}{2\omega_ {\vec{p}}} \right),  \\
-\pi(\vec{x})&= i \int \frac{d^{3}\vec{p}}{(2\pi)^{3}} \,  e^{ -i\vec{p}\cdot \vec{x} } \left( \omega_ {\vec{p}} A_ {\vec{p}}^{\ddagger}-\frac{A_ {-\vec{p}}}{2} \right) .
-\end{align*}
-$$
+真空态的领头阶修正。其中（a）、（b）、（c）分别对应$\left\lvert \Omega \right\rangle_{1}^{(3)}$、$\left\lvert \vec{p} \right\rangle_{1}^{(2)}$ 和 $\left\lvert \vec{p} \right\rangle_{1}^{(4)}$。从图形规则来看，（a）与（c）均贡献因子$\frac{mg}{\sqrt{2},(\omega_{p_{1}}+\omega_{p_{2}}+\omega_{p_{1}+p_{2}})}$，而（b）贡献因子$\frac{3mg}{2\sqrt{2},\omega_{p},(\omega_{p_{1}}+\omega_{p-p_{1}}-\omega_{p})}$。
 
 
-where $\omega_ {p}= \sqrt{ m^{2}+\vec{p}^{2}}$ and $A, A^{\ddagger}$ satisfy the canonical commutation relation. The renormalized parameters are $m^{2}=m_ {0}^{2} + \delta m^{2}$, $g = g_ 0 + \delta g$, and $A=\sum_ {i=0}^{\infty}A_ {i}$. The physical vacuum $\left\lvert \Psi \right\rangle=\sum_ {i=0}^{\infty}\left\lvert \Psi \right\rangle_ {i}$ is also expanded in $g$, where $\left\lvert \Psi \right\rangle_ {i}\sim \mathcal{O}(g^{i})$. 
+顶点（a）与（b）各贡献因子 $g^{2}/4$，而顶点（c）与（d）各贡献因子 $g^{2}$。顶点（e）对称性最高，对应因子为 $-3g^{2}/2$。顶点（f）、（g）与（h）对应抵消项，分别贡献因子 $-\delta m^{2}/2$、$-\delta m^{2}$ 和 $-\delta m^{2}/2$。顶点（i）表示红外发散项，其贡献与d维空间体积成正比，对应因子 $A'_{4}(2\pi)^{d}\delta^{d}(0)$。
 
-- - -
 
-### A. Rewrite 
-1. There are no books on the shelf.
-2. I have got no money.
-3. There is no coffee in thin tin.
-4. I see no cars in the street.
-### B. Answer these questions.
-1. No, I haven't got any milk. I've got no milk. I've got none.
-2. No, I haven't got any envelopes. I've got no envelopes. I've got none.
-3. No, I haven't got any magazines. I've got no magazines. I've got none.
-4. No, I haven't got any bread. I've got no bread. I've got none.
-### C. Write new sentences.
-1. neither am I. I am not hungry, either.
-2. Neither did I. I didn't meet him, either.
-3. Neither was I. I wasn't at church yesterday, either.
-4. Neither do I. I don't like ice cream, either.
-5. Neither can I. I can't swim, either.
-6. Nether am I. I am not a doctor, either.
-### D. Write new sentences.
-1. So am I. I am hungry, too.
-2. So did I. I met him, too.
-3. So was I. I was at the church yesterday, too.
-4. So do I. I like ice cream, too.
-5. So can I. I can swim, too.
-6. So am I. I am a doctor, too.
+由$\mathcal{O}(g^2)$阶哈密顿量定义的所有顶点。顶点（a）与（d）贡献 $-\frac{mg}{\sqrt{2}}$，而顶点（b）与（c）对应因子 $-\frac{3mg}{\sqrt{2}}$。
