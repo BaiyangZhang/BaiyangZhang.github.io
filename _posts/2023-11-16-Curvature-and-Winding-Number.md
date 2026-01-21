@@ -158,7 +158,6 @@ $$
 A = \text{diag}(\lambda_ {1},\dots,\lambda_ {N}).
 $$
 
-
 Take $p=2$ for example, 
 
 $$

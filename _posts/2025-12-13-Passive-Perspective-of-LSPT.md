@@ -313,9 +313,9 @@ where $\hat{\mathcal{H}}^{0}$ is normal ordered at $m_ {0}$.
 
 ## Perturbative Expansion of the Hamiltonian
 
-Since we want to cancel divergences in a perturbative manner, that is, order-by-order in (renormalized) coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
+We want to cancel divergences in a perturbative manner, that is, order-by-order in (renormalized) coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
 
-For the rest of this note, unless explicitly said otherwise, $\lambda$ stants for the *renormalized coupling* and $\lambda_ {0}$ the bare coupling.
+For the rest of this note, unless explicitly said otherwise, $\lambda$ stands for the *renormalized coupling* and $\lambda_ {0}$ the bare coupling.
 
 I copy the Hamiltonian here:
 
@@ -390,7 +390,7 @@ We have neglected higher order terms, for example a term $3g\delta g\sim \mathca
 
 ## Displacement operator
 
-In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we introduce the displacement operator. Given a function $f(\vec{x})$, the associated displacement operator is defined as 
+In order to find the (approximate) Hilbert state with correct vacuum expectation value of $\phi$, we introduce the displacement operator. Given a function $f(\vec{x})$, the associated displacement operator is defined as 
 
 $$
 \mathcal{D}_ {f} := \exp \left\lbrace -i\pi(f) \right\rbrace , \quad \pi(f):=\int d^{3}x \,  f(\vec{x})\pi(\vec{x}).
