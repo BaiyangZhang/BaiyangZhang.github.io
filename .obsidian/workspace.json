@@ -50,15 +50,15 @@
             }
           },
           {
-            "id": "13266471b525ce11",
+            "id": "2526935f9947cefe",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
-                "currentVersion": "1.11.5"
+                "currentVersion": "1.11.7"
               },
               "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
+              "title": "Release Notes 1.11.7"
             }
           }
         ],
@@ -119,7 +119,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e9005e1ca97f4a0a",
@@ -229,6 +230,11 @@
   "lastOpenFiles": [
     "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
+    "面上基金申请Prompt.md",
+    "投简历情况.md",
+    "临床应用本子.md",
+    "关于附件.md",
+    "Pasted image 20260128105100.png",
     "_posts/2023-09-26-Note-of-Nonlinear-quantization.md",
     "_posts/2023-10-23-Noether's-Principal.md",
     "_posts/2024-12-31-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
@@ -238,12 +244,9 @@
     "_posts/2025-11-07-Bare-Minimum-of-Abelian-Decomposition.md",
     "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
     "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid-Loss-Function.md",
-    "面上基金申请Prompt.md",
     "Pasted image 20260112230039.png",
     "Pasted image 20260108212014.png",
     "Short Note.md",
-    "投简历情况.md",
-    "Untitled.md",
     "_posts/2023-11-16-Curvature-and-Winding-Number.md",
     "Untitled 1.md",
     "国自然非官方LaTeX模板.md",
