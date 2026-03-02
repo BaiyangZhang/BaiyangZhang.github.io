@@ -1,9 +1,13 @@
 # 基本信息
 
-标题：线性孤子微扰论及其在扭结相干压缩态中的应用
+标题：线性孤子微扰理论下高维标量场孤子态的压缩相干构造与高阶量子修正
 
 摘要：
-拓扑孤子兼具强非线性与拓扑非平凡性，揭示了量子场论中微扰论框架之外的重要信息，在凝聚态、高能物理与宇宙学等方向均具有基础性意义。然而拓扑孤子的量子化及其量子修正的计算长期以来面临两个理论困难：（1）孤子区与真空区同样存在圈图发散问题，必须经由正规化与重整化处理，然而孤子质量的量子修正取决于孤子区重整化条件的选择，亦即存在孤子-真空区重整化匹配模糊性；（2）传统的孤子相干态构造在d>2维存在圈图之外的能量密度发散问题，无法由常规重整化剪除。传统上克服困难（1）需引入本体理论之外的额外信息，而困难（2）只在低维条件下得到了有限的解决。本项目以标量场理论中的扭结与畴壁为主要研究对象，通过对上述问题的研究，着重发展自洽、完备的拓扑孤子量子化理论及量子修正计算工具，称之为线性孤子微扰理论（LSPT）。该理论通过拓扑位移算符在算符层面建立真空区与孤子区的幺正变换，仅在真空区进行一次初始重整化，并将正规序、抵消项与重整化条件同构地传递至孤子区，从源头消除真空—孤子区重整化的模糊性。在孤子相干态的基础上，本项目引入对应Bogoliubov–Valatin变换的无穷模压缩算符，构造压缩相干态作为孤子量子态，而压缩算符为剪除高维下的能量密度发散提供了新的抵消项。为了实现高效计算，本项目提出并发展了基于哈密顿体系的图形化计算工具，通过定义适用于高阶（>2圈）计算的图形规则体系，归纳式地计算真空区与孤子区的波函数高阶修正，并为研究更一般的拓扑区希尔伯特子空间提供核心理论与算法支撑。本项目为研究拓扑孤子解的量子化提供了独特的研究视角，并为孤子区的微扰计算引入了新的图形化计算工具。
+拓扑孤子兼具强非线性与拓扑非平凡性，揭示了量子场论中微扰论框架之外的重要信息，在凝聚态、高能物理与宇宙学等方向均具有基础性意义。然而拓扑孤子的量子化及其量子修正的计算长期以来面临两个理论困难：1）孤子-真空区重整化匹配模糊性；2）传统的孤子相干态构造存在能量密度发散问题，无法由传统重整化剪除。本项目以标量场理论中的扭结与畴壁为主要研究对象，通过研究并解决上述难题，发展了自洽、完备的拓扑孤子量子化理论及量子修正计算工具，即线性孤子微扰理论（LSPT）。该理论引入拓扑位移算符，将真空区的重整化信息完整地传递至孤子区，从源头消除真空—孤子区重整化失配问题；通过引入对应Bogoliubov–Valatin变换的压缩算符，为剪除高维下的能量密度发散提供了新的抵消项，构造有限能量的孤子压缩相干态；通过提出哈密顿形式下的图式计算工具，实现高维高圈数高效计算，为研究更一般的孤子构型提供了算法支撑。
+
+Abstract:
+
+Topological solitons combine strong nonlinearity with nontrivial topology. They encode essential nonperturbative information beyond the reach of standard perturbation theory and play a fundamental role across condensed matter physics, high-energy physics, and cosmology. Yet, the quantization of topological solitons and the systematic computation of their quantum corrections have long been hindered by two central theoretical obstacles: (i) the vacuum–soliton renormalization matching ambiguity, and (ii) an energy-density divergence inherent in the conventional coherent-state construction of soliton sectors in higher dimensions, which cannot be removed by standard renormalization procedures. Focusing on kinks and domain walls in scalar field theories, this project addresses these obstacles and develops a self-consistent and complete framework—Linearized Solitonic Perturbation Theory (LSPT)—together with practical tools for quantum corrections. LSPT introduces a topological displacement operator that transfers the renormalization structure of the vacuum sector faithfully into the soliton sector, thereby eliminating vacuum–soliton renormalization mismatch at its origin. It further incorporates a squeezing operator implementing the Bogoliubov–Valatin transformation, which supplies the required counterterm structure to cancel the higher-dimensional energy-density divergence and yields finite-energy squeezed coherent soliton states. Finally, the project develops a Hamiltonian-based diagrammatic computational method that enables efficient high-loop calculations in higher dimensions, providing an algorithmic platform for treating more general solitonic configurations.
 
 # 一些要求
 
@@ -340,50 +344,63 @@ The left and middle panels show the diagrams corresponding to $H_{3}^{-3} = -mg/
 
 ## 预期研究计划
 
-预期研究计划如下：
+预期年度研究计划如下：
 
-2027年1月至2027年12月：
+\text{2027年1月至2027年12月：}
 
-（1） 
+（1）利用真空区图式计算工具，计算$\phi^{4}$模型与sine-Gordon模型在$d+1$维时空（$1\leq d\leq3$）中，$\mathcal{O}(g^{2})$至$\mathcal{O}(g^{6})$阶真空区基态与动量本征态波泛函修正，包括其图形表示与解析积分表示。根据紫外圈图与红外发散传播子确定相应的抵消项，结合重整化条件，定义完整的重整化微扰理论。
 
-（2）
+（2）借鉴量子光学等领域有限模压缩算符的构造经验，基于Bogoliubov-Valatin变换建立无穷模压缩算符的显式表示，研究压缩算符与孤子区分立模（特别是零模）的联系；进一步构造压缩-平移复合算符，并由真空区Fock空间的波泛函表示出发，得到孤子区基态与激发态的对应表示。
 
-（3）开展学术交流5人次。
+\textbf{2028年1月至2028年12月：}
 
-2028年1月至2028年12月：
+（1）研究$2+1$维与$3+1$维时空中$\mathcal{O}(g^{2})$至$O(g^{4})$阶的孤子能量密度发散问题，系统考察Bogoliubov-Valatin压缩算符在高阶下对额外发散的抵消机制。检验如下假设：压缩效应与Adler-Bell-Jackiw反常类似，虽然形式上呈现为微扰级数展开，但其物理本质具有非微扰特性。
 
-（1） 
+（2）将图式递推算法推广至孤子区微扰理论。着重解决以下问题：零模在图形计算规则中的处理，以及定义基于简正模升降算符的传播子与顶点法则；并与压缩–位移方法得到的结果进行交叉检验，确保计算的一致性与可靠性。
 
-（2）
+\textbf{2029年1月至2029年12月：}
 
-（3）
+（1）在线性孤子微扰理论框架下，研究畴壁离散模（零模与形状模）与微扰介子的相互作用，计算其Stokes与反Stokes散射过程$\mathcal{O}(g^{4})$阶散射截面；重点分析反Stokes散射中形状模退激发辐射的动力学机制，阐明其与入射波包的体自由度（bulk degrees of freedom）以及碰撞参量之间的依赖关系。
 
-2029年1月至2029年12月：
+（2）将费米子自由度纳入线性孤子微扰理论，考虑狄拉克旋量场与标量场的耦合，研究孤子背景下费米子简正模谱及其二次量子化，重点分析费米子零模激发对孤子量子态与能谱结构的影响；比较研究\textit{等时正则反对易关系}在真空区与孤子区的不同表示，建立联系二者的费米子Bogoliubov–Valatin压缩正则变换。进一步研究高维畴壁背景下Jackiw–Rebbi型电荷分数化现象及其对畴壁—介子散射的修正效应。
 
-（1） 
+\textbf{2030年1月至2030年12月：}
 
-（2）
+（1） 研究高阶孤子量子效应对宇宙学中Nambu–Goto网格以及经典场论数值模拟的修正。通过拓扑位移算符与压缩算符的协同作用，构造宇宙学背景中具有有限能量密度的畴壁量子态。建立畴壁区重整化微扰理论后，进一步计算畴壁-标量散射截面的高阶修正与引力波谱的量子修正。
 
-（3）
-
-2030年1月至2030年12月：
-
-（1） 
-
-（2）
-
-（3）
+（2）结合申请人在柱状流形上关于单极子及其分子态的研究基础，研究单极子及其复合构型（双子）的线性孤子量子化。借助空间转动等对称性约束，高维孤子简正模求解问题可简化为更低维的数值问题。利用已有的较为成熟的数值方法解得单极子背景下的简正模，据此定义数值Bogoliubov–Valatin变换，计算单极子区能谱及其基态能量的单圈修正。
 
 以上计划届时可能根据实际进展与合作情况做适当调整。
 
-合作与交流：安排本项目组成员到BNL参加实验，数据采集和分析，系统掌握 国际前沿的高能核物理实验方法和数据分析技术。 网络远程参加sPHENIX国际合作组每周例会及阶段性会议，展示 工作进展，积极进行相关学术交流讨论。 在本领域国内外高水平学术会议做学术报告2-3次 组织一次针对的中小型专题研讨会。
+\textbf{合作与交流：}
 
-预期研究结果： 
-（1）
-（2）
-（4）发表高水平论文（SCI二区及以上）第一作者或通讯作者论文5-7篇。 
-（5）培养研究生1-2名，为本领域的后续人才储备提供帮助。
+每两年组织一次针对性的中小型专题研讨会，邀请国内相关领域的中青年科研工作者几种讨论科研进展，促进本方向研究的交流、讨论与发展。
+
+安排安排本项目组成员每年至少两次、每次一周左右赴中国科学院近代物理研究所进行交流学习，与近代物理研究所理论物理小组的Jarah Evslin教授及其他合作者探讨与本项目相关的科学问题。非访问期间，通过线上组会的形式，每周与的本项目合作者汇报研究成果并听取反馈。
+
+每年在本领域高水平学术会议做学术报告2-3次，安排学生每年在学术会议报告成果至少2人次每年。
+
+\textbf{预期研究结果：}
+（1）实现之前所述的年度科研目标，稳步推进线性孤子微扰理论的发展，及其在量子场论、宇宙学和凝聚态物理交叉方向的应用；
+（2）组织2-3次线下专题研讨会，与相关领域的国内外专家进行广泛的交 流、讨论。汇报本项目的阶段性成果，并根据反馈优化本项目的研究。
+（4）发表高水平论文（SCI二区及以上）第一作者或通讯作者论文8-10篇。 
+（5）培养研究生2-5名，为本领域的后续人才储备提供帮助。
+
+# 二次润色
+
+当前，我国科研发展和技术变革向“四极”加速推进，向极宏观拓展、向极微观深入、向极端条件迈进、向极综合交叉发力，不断突破人类的知识边界。其中“向极微观深入”意味着进入基本粒子的世界，研究物质在极小尺度，亦即极高能量是的相互作用，这方面已有的最成功的理论为建立在量子场论基础上的标准模型。同时，量子场论以其强大的描述非线性、非微扰物理现象的能力，同时可涵盖诸如凝聚态物理、低温物理和量子光学等一系列物理方向，体现了“向极综合交叉发力”的强大潜能。
+
+
+
+
+
+
+
+
 
 # 最后补充素材
 
 该算法将高阶微扰哈密顿项以顶点表示、将各阶微扰波函数以树图表示，通过给定图形规则计算哈密顿量在态矢上的作用。仅就重整化而言，该方法继承了传统费曼图的优势：紫外发散直接由圈图表示并由对应的抵消项剪除；又具备传统费曼图所不具备的优点：红外发散由奇性传播子表示，与紫外发散类似，由对应的抵消项剪除。图形化算法变与传统的算法操作相比较，除具有透明性与可视性等优势外，更重要的是从拓扑角度分类不同贡献，揭示了额外的理论信息。本项目将建立适用于哈密顿形式、且与传统拉格朗日形式兼容的重整化条件，把抵消项与波函数递推纳入同一套规则体系，同步计算真空区与孤子区的波函数修正。
+
+
+
