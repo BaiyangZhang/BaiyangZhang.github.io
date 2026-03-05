@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
+                "file": "_posts/萨利斯数据metadata.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-16-Tsallis-Statistics-in-Logistic-Regression"
-            }
-          },
-          {
-            "id": "6c53a188d6ea2c5f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "面上基金申请Prompt.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "面上基金申请Prompt"
+              "title": "萨利斯数据metadata"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -59,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -189,23 +174,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6c53a188d6ea2c5f",
+  "active": "5e02c1c32b634670",
   "lastOpenFiles": [
+    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/萨利斯数据metadata.md",
+    "面上基金申请Prompt.md",
     "绿色建筑能源项目思路.md",
     "关于附件.md",
     "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
-    "面上基金申请Prompt.md",
-    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "投简历情况.md",
     "临床应用本子.md",
     "Pasted image 20260128105100.png",
