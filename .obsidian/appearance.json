@@ -1,8 +1,9 @@
 {
   "theme": "system",
   "cssTheme": "Shimmering Focus",
-  "baseFontSize": 24,
+  "baseFontSize": 30,
   "accentColor": "#0e00cc",
   "baseFontSizeAction": true,
-  "showRibbon": false
+  "showRibbon": false,
+  "textFontFamily": "Palatino Linotype"
 }

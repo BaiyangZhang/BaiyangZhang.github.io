@@ -1,13 +1,16 @@
 # 基本信息
 
-标题：线性孤子微扰理论下高维标量场孤子态的压缩相干构造与高阶量子修正
+标题：高维标量孤子量子态的压缩构造及线性孤子微扰计算方法
 
 摘要：
-拓扑孤子兼具强非线性与拓扑非平凡性，揭示了量子场论中微扰论框架之外的重要信息，在凝聚态、高能物理与宇宙学等方向均具有基础性意义。然而拓扑孤子的量子化及其量子修正的计算长期以来面临两个理论困难：1）孤子-真空区重整化匹配模糊性；2）传统的孤子相干态构造存在能量密度发散问题，无法由传统重整化剪除。本项目以标量场理论中的扭结与畴壁为主要研究对象，通过研究并解决上述难题，发展了自洽、完备的拓扑孤子量子化理论及量子修正计算工具，即线性孤子微扰理论（LSPT）。该理论引入拓扑位移算符，将真空区的重整化信息完整地传递至孤子区，从源头消除真空—孤子区重整化失配问题；通过引入对应Bogoliubov–Valatin变换的压缩算符，为剪除高维下的能量密度发散提供了新的抵消项，构造有限能量的孤子压缩相干态；通过提出哈密顿形式下的图式计算工具，实现高维高圈数高效计算，为研究更一般的孤子构型提供了算法支撑。
+
+拓扑孤子具备强非线性与拓扑非平凡特征，揭示了量子场论中微扰框架之外的重要信息，在凝聚态物理、高能物理与宇宙学等领域具有重要意义。拓扑孤子的量子化及其量子修正的计算长期面临两个关键困难：1）孤子区-真空区重整化匹配的模糊性；2）高维情形下，孤子量子态的相干态构造存在能量密度发散问题，无法通过重整化解决。本项目以标量孤子为主要研究对象，拟通过解决上述难题促进线性孤子微扰理论的发展，构建自洽完备的孤子量子化理论，且在哈密顿形式下设计新的图式递归算法以实现高阶量子修正计算的高效化与程序化。本项目利用拓扑位移算符与Bogoliubov-Valatin压缩变换的协同作用，从根本上消除孤子区重整化的模糊性，并通过能量压缩剪除孤子相干态的能量密度发散，从而构造正确的孤子压缩相干态。本项目将深入揭示了孤子量子态的内在结构，发展创新性的微扰计算方法，为更广泛的孤子研究与实际应用奠定重要的理论基础。
+
+
 
 Abstract:
 
-Topological solitons combine strong nonlinearity with nontrivial topology. They encode essential nonperturbative information beyond the reach of standard perturbation theory and play a fundamental role across condensed matter physics, high-energy physics, and cosmology. Yet, the quantization of topological solitons and the systematic computation of their quantum corrections have long been hindered by two central theoretical obstacles: (i) the vacuum–soliton renormalization matching ambiguity, and (ii) an energy-density divergence inherent in the conventional coherent-state construction of soliton sectors in higher dimensions, which cannot be removed by standard renormalization procedures. Focusing on kinks and domain walls in scalar field theories, this project addresses these obstacles and develops a self-consistent and complete framework—Linearized Solitonic Perturbation Theory (LSPT)—together with practical tools for quantum corrections. LSPT introduces a topological displacement operator that transfers the renormalization structure of the vacuum sector faithfully into the soliton sector, thereby eliminating vacuum–soliton renormalization mismatch at its origin. It further incorporates a squeezing operator implementing the Bogoliubov–Valatin transformation, which supplies the required counterterm structure to cancel the higher-dimensional energy-density divergence and yields finite-energy squeezed coherent soliton states. Finally, the project develops a Hamiltonian-based diagrammatic computational method that enables efficient high-loop calculations in higher dimensions, providing an algorithmic platform for treating more general solitonic configurations.
+Topological solitons exhibit strong nonlinearity and topological non-triviality, revealing important information beyond the perturbation framework of quantum field theory, and have significant implications in fields such as condensed matter physics, high-energy physics, and cosmology. The quantization of topological solitons and the calculation of their quantum corrections have long faced two key challenges: 1) the ambiguity in the renormalization matching between the soliton and vacuum sectors; 2) the energy density divergence in the construction of coherent states for soliton quantum states in high dimensions, which cannot be resolved through renormalization. This project focuses on scalar solitons as the primary research object, aiming to advance the development of linear soliton perturbation theory by addressing these issues, and to construct a self-consistent and complete soliton quantization theory. Additionally, a new graphical recursive algorithm will be designed in Hamiltonian form to efficiently compute higher-order quantum corrections and automate the calculations. By the combined effects of the topological displacement operator and the Bogoliubov–Valatin squeeze transformation, this project fundamentally eliminates the ambiguity in the soliton sector’s renormalization and squeezes the energy density divergence of the soliton coherent state, thereby constructing the correct soliton squeezed coherent state. This project will deepen the understanding of the intrinsic structure of soliton quantum states, develop innovative perturbative computation methods, and lay a significant theoretical foundation for future soliton research and practical applications.
 
 # 一些要求
 
@@ -94,7 +97,7 @@ Topological solitons combine strong nonlinearity with nontrivial topology. They 
 
 ### 1.1 立项意义
 
-拓扑孤子是量子场论中最重要、也最具挑战性的非微扰对象之一，在诸如色禁闭等物理现象中扮演了重要角色。在过去的半个多世纪中，人们从拓扑孤子的经典解出发，借助路径积分等二次量子化工具计算了孤子质量等物理量的量子修正，然而对于孤子解的量子化问题，即经典孤子对应于希尔伯特空间中何种物理态的问题，研究较为欠缺。其制约因素主要在于，现有的计算工具（如费曼图、Ward恒等式等）植根于量子场论的拉格朗日形式，而量子化问题基于理论的哈密顿形式，这方面的理论分析工具尚有待发展。特别是在时空维数$d>2$的情况下，孤子的量子化面临重整化之外的发散问题，例如1975年 Sydney Coleman 在讨论高维孤子时曾指出，若将经典孤子对应为量子相干态，即便在可重整化理论中，孤子的能量密度也存在发散问题。部分地为了解答Coleman提出的难题，申请人及其团队聚焦于不同时空维数下 $\phi^{4}$ 模型与 sine-Gordon 模型中的扭结(kink)与畴壁（domain wall）解，提出了线性孤子微扰理论（Linearized Solitonic Perturbation Theory, LSPT）并在此基础上解决了$d>2$维下畴壁的能量密度发散问题，本项目将致力于将LSPT理论的完善与推广，并进一步厘清孤子的量子化理论。
+拓扑孤子是量子场论中最重要、也最具挑战性的非微扰对象之一，zearized Solitonic Perturbation Theory, LSPT）并在此基础上解决了$d>2$维下畴壁的能量密度发散问题，本项目将致力于将LSPT理论的完善与推广，并进一步厘清孤子的量子化理论。
 
 另一个长期困扰扭结量子化的难题是真空区-扭结区重整化匹配问题。用微扰论计算能量的量子修正需要将领头阶哈密顿量对角化，在真空区欧拉-拉格朗日方程的自由解为平面波，故场算符以平面波展开即可实现哈密顿量的对角化；而在孤子区，自由解是由孤子背景决定的简正模，因此孤子背景下的领头阶哈密顿量只能经由孤子简正模对角化。孤子区重整化的实质是利用真空区的零点能消除孤子区的零点能，由此就出现了两个区之间的“匹配”问题：由于束缚态（零模和性状摸）的存在，真空区的平面波自由度对应到孤子区的简正模时具有歧义性（ambiguity），不同的正规化方案给出不同的扭结质量一阶量子修正，且该歧义性无法凭模型自身、由第一性原理消除，往往需要借助模型外因素（例如超对称约束）来消除。换言之，在许多现存方法中，扭结区的重整化缺乏理论应有的完备性。
 
@@ -388,7 +391,6 @@ The left and middle panels show the diagrams corresponding to $H_{3}^{-3} = -mg/
 
 # 二次润色
 
-当前，我国科研发展和技术变革向“四极”加速推进，向极宏观拓展、向极微观深入、向极端条件迈进、向极综合交叉发力，不断突破人类的知识边界。其中“向极微观深入”意味着进入基本粒子的世界，研究物质在极小尺度，亦即极高能量是的相互作用，这方面已有的最成功的理论为建立在量子场论基础上的标准模型。同时，量子场论以其强大的描述非线性、非微扰物理现象的能力，同时可涵盖诸如凝聚态物理、低温物理和量子光学等一系列物理方向，体现了“向极综合交叉发力”的强大潜能。
 
 
 
@@ -403,4 +405,21 @@ The left and middle panels show the diagrams corresponding to $H_{3}^{-3} = -mg/
 该算法将高阶微扰哈密顿项以顶点表示、将各阶微扰波函数以树图表示，通过给定图形规则计算哈密顿量在态矢上的作用。仅就重整化而言，该方法继承了传统费曼图的优势：紫外发散直接由圈图表示并由对应的抵消项剪除；又具备传统费曼图所不具备的优点：红外发散由奇性传播子表示，与紫外发散类似，由对应的抵消项剪除。图形化算法变与传统的算法操作相比较，除具有透明性与可视性等优势外，更重要的是从拓扑角度分类不同贡献，揭示了额外的理论信息。本项目将建立适用于哈密顿形式、且与传统拉格朗日形式兼容的重整化条件，把抵消项与波函数递推纳入同一套规则体系，同步计算真空区与孤子区的波函数修正。
 
 
+- - -
 
+长期困扰孤子量子化的难题之一是真空区-扭结区重整化匹配问题。以最简单的孤子——实标量场中的扭结（kink）为例，从微扰角度出发，扭结区（kink sector）的半经典近似由扭结背景下的量子涨落刻画，领头阶运动方程展现高度非线性，其解构成一组完备简正模，不同于真空区的平面波解。因此扭结区与真空区包含完全不同的Fock空间基矢，因而具有不同的二次量子化形式。为了计算孤子质量等物理量的高阶修正，首先需要得到领头阶哈密顿量的对角化形式，在真空区该对角化可由场算符的平面波展开实现；而在孤子区，鉴于孤子的非微扰与非线性背景，哈密顿量只能由孤子简正模对角化，而以往的研究常常忽视这一点，由此产生了诸如重整化方案模糊性等一些列问题。
+
+一般而言，计算孤子质量修正的步骤为：1）在真空区与扭结区分别进行二次量子化；2）分别引入正规化方案，例如引入动量截断；3）与卡西米尔效应类似，计算扭结区与真空区的零点能之差以消除无穷大，得到孤子的真空极化能量。问题在于，鉴于真空区仅包含散射态（连续谱），而扭结区同时包含散射态与束缚态,这种“区间匹配”的重整化不可避免地引入模糊性。
+作为补救措施，人们或引入超对称等额外的对称性约束，或手动剔除特定简正模，或退而计算质量关于某理论参数的导数。这些处理方法或取决于作者的主观选择，或依赖于初始理论所不具备的额外条件，缺乏理论的完备性与方法论的普适性。
+\textbf{针对这一瓶颈，本项目从第一性原理出发，定义并发展了一套不依赖与人为选择的理论方法：线性孤子微扰理论（Linearized Solitonic Perturbation Theory）。该理论在哈密顿框架中引入拓扑位移算符（topological displacement operator），以之建立从真空区到扭结区的同构映射，继而通过Bogoliubov-Valatin压缩算符实现重整化方案的迁移，以消除重整化方案模糊性。}
+
+孤子量子化的另一项关键难题在于：\textbf{传统上常以量子场论中的相干态描述孤子量子态，但量子场论不同于量子力学，在高维时空（三维及以上）中，量子场论相干态存在能量密度发散问题，且该发散无法通过常规的正规化与重整化程序剪除}。例如，Sydney Coleman在讨论孤子态时指出，若将经典孤子直接对应为量子相干态，即使初始理论本身可重整化，孤子能量密度仍会发散；并且这一困境不能通过对相干态作简单修正而得到根本解决。半个世纪以来，Coleman问题始终未能得到统一而自洽的解答。针对这一现状，\textbf{申请人及其团队聚焦于$\phi^{4}$模型与sine-Gordon模型，系统研究其中的扭结(kink)与畴壁（domain wall）解，基于线性孤子微扰理论在单圈层面成功剪除了高维时空下的能量密度额外发散，对于建立高维拓扑孤子的量子化理论重要意义。}
+
+\textbf{本项目从标量理论的哈密顿形式出发，在薛定谔绘景中对上述两类问题，即相干态构造导致的能量密度发散，以及真空-孤子区之间的模匹配模糊性作统一处理。}首先，在真空区定义正规序与重整化抵消项，结合对称性自发破缺背景，建立可重整化哈密顿微扰理论。其次，引入Bogoliubov–Valatin压缩变换，将真空区的正规序、动量截断等信息在算符层面系统地映射至孤子区，从源头消除孤子区重整化的模糊性。本项目充分发挥了哈密顿体系的优势，显式构造扭结波函数的解析表达，从而深化对拓扑孤子及其真空极化机制的理解。最后，为提升二圈及以上高阶修正的计算效率，本项目提出基于哈密顿体系的图形化计算工具：以树图表达真空与孤子波函数的各阶修正，并从低阶树图出发递推生成高阶贡献。\textbf{该方法适用于不同时空维数，可在同一图形规则下统一处理红外发散与紫外发散，显著提高了高阶计算的透明性与效率。}
+
+
+- - -
+
+Haag 定理的意义在于，它在严格的公理化框架下揭示了相互作用量子场论与自由场论之间不可由简单的幺正变换连接，从而指出教科书中常用的相互作用绘景在数学上并不能以全局、严格的方式成立。更具体地说，在满足洛伦兹协变性、谱条件与场的不可约性等常见假设时，若假定存在将相互作用场与自由场联系起来的幺正算符（并据此在同一希尔伯特空间中实现相互作用绘景），则可推出该“相互作用场”在本质上退化为自由场。由此，非平凡相互作用理论必须在更精细的结构中实现。
+
+该定理的直接启示是：相互作用会改变真空结构与态空间实现方式，使得自由场的Fock空间通常不能作为相互作用理论的全局承载空间；相互作用与自由理论往往对应同一对易代数的不同表示，且这些表示在无限自由度体系中一般并不幺正等价。因此，微扰展开与费曼图技术在实践中需要通过正规化、重整化、有限体积/有限时间的切换过程等手段来获得可控的近似与极限；同时也促使人们强调以局域可观测量代数及其表示来表述量子场论（如代数QFT的思路），以避免将“单一Fock空间上的相互作用绘景”误认为基本结构。
