@@ -8,7 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: |
-    <p>byzhang@henu.edu.cn</p> <p>Jin-Ming campus, Henan University</p> <p>Kaifeng, Henan province 475001</p>
+    <p>byzhang@xauat.edu.cn</p> <p>Bei-Lin District, Yan-Ta Area</p> <p>Xi'An, Shaanxi province</p>
 news: true
 latest_posts: true
 selected_papers: true
