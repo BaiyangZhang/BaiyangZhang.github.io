@@ -159,7 +159,7 @@ $$
 \hat{D}_ {\mu}\mathfrak{n}  = (\partial_ {\mu}-ig[\hat{A}_ {\mu},-])\mathfrak{n} =0.
 $$
 
-$\mathcal{C}_ {\mu}$ is the non-trivial part of the solution for $D_ {\mu}\mathfrak{n} =0$,
+$\mathcal{C}_ {\mu}$ is the *non-trivial part of the solution* for $D_ {\mu}\mathfrak{n} =0$,
 
 $$
 \boxed{ 
@@ -167,7 +167,7 @@ $$
 }
 $$
 
-This is a $\mathfrak{g}$-valued quantity (the commutation of two vectors in $T_ {e}G$ is itself a vector in $T_ {e}G$), in terms of components in basis $T^{a}$ it can be written as 
+This is a $\mathfrak{g}$-valued quantity (the commutation of two vectors in $T_ {e}G$ is itself a vector in $T_ {e}G$), in terms of components in basis $T^{a}$ it can be written as
 
 $$
 \boxed{ 
