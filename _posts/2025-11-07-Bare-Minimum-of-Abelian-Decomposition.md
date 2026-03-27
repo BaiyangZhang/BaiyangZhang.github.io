@@ -147,13 +147,13 @@ $$
 
 - - -
 
-the total gauge field $A$ into the following three parts, 
+Decompose the total gauge field $A$ into the following three parts, 
 
 $$
 A = \mathcal{A}+\mathcal{C}+X, \quad  [X,\mathfrak{n} ]\neq0.
 $$
 
-The restricted gauge field $\hat{A}$ is the solution for:
+The restricted gauge field $\hat{A}$ is the *trivial solution* for:
 
 $$
 \hat{D}_ {\mu}\mathfrak{n}  = (\partial_ {\mu}-ig[\hat{A}_ {\mu},-])\mathfrak{n} =0.
@@ -167,7 +167,7 @@ $$
 }
 $$
 
-This is a $\mathfrak{g}$-valued quantity, in terms of components in basis $T^{a}$ it can be written as 
+This is a $\mathfrak{g}$-valued quantity (the commutation of two vectors in $T_ {e}G$ is itself a vector in $T_ {e}G$), in terms of components in basis $T^{a}$ it can be written as 
 
 $$
 \boxed{ 

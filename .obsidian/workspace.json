@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e9005e1ca97f4a0a",
@@ -186,6 +187,8 @@
   },
   "active": "8ab89216ae881340",
   "lastOpenFiles": [
+    "assets/css/main.scss",
+    "assets/css/main_backup.scss",
     "_sass/_typography.scss",
     "_sass/_typography.scss.crdownload",
     "_drafts/中国高校中的异化现象研究.md",
