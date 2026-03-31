@@ -217,13 +217,7 @@ F_ {\mu \nu} = \hat{F}_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}-
 }
 $$
 
-Define
-
-$$
-\boxed{ 
-X_ {\mu \nu} \mathfrak{n} := -ig[X_ {\mu},X_ {\nu}],
-}
-$$
+where $\hat{D}$ is the covariant derivative w.r.t. $\hat{A}$ field. Define a scalar function $X_ {\mu \nu}$ by $\boxed{X_ {\mu \nu} \mathfrak{n} := -ig[X_ {\mu},X_ {\nu}]}$ for future convenience.
 
 
 # 't Hooft-Polyakov Monopole
