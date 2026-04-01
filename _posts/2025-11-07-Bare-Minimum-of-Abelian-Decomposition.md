@@ -85,7 +85,7 @@ $$
  \delta F_ {\mu\nu} = i [\omega,F_ {\mu \nu}].
 $$
 
-Another useful identity is 
+Another useful identity is
 
 $$
 \boxed{
@@ -224,23 +224,20 @@ where $\hat{D}$ is the covariant derivative w.r.t. $\hat{A}$ field. Define a sca
 
 In this section we temporarily absorb the coupling $g$ into the gauge field $A$.
 
-Magnetic Monopole solutions in $SU(2)$ Yang-Mills theory with adjoint bosons appears more naturally than that in U(1) theory. Whenever the **non-abelian** gauge group is broken to its **Cartan subgroup** (Cartan subalgebra is spanned by a maximal mutual-commuting basis of Lie algebra) by adjoint Higgs bosons, we have magnetic monopoles. The **adjoint** Higgs fields have non-zero vacuum expectation values (VEV for short, denoted by $\left\langle \bullet \right\rangle$), breaking the gauge symmetry. Those gauge transformations that leave $\left\langle \phi \right\rangle$ invariant are symmetries not broken by the Higgs bosons. 
+Magnetic Monopole solutions in $SU(2)$ Yang-Mills theory with adjoint bosons appears more naturally than that in U(1) theory. Whenever the non-abelian gauge group is broken to its *Cartan subgroup* (Cartan subalgebra is spanned by a maximal mutual-commuting basis of Lie algebra) by adjoint Higgs bosons, and when the boundary mapping has nontrivial homotopy class, we have magnetic monopoles. The *adjoint* Higgs fields have non-zero vacuum expectation values (VEV for short, denoted by $\left\langle \bullet \right\rangle$), breaking the gauge symmetry. Those gauge transformation that leave $\left\langle \phi \right\rangle$ invariant is the residual symmetry survives the symmetry breaking.
 
-Loosely speaking there are two kinds of symmetries:
+A few more words about SSB, Spontaneously symmetry breaking. Loosely speaking there are two kinds of symmetries:
 
 - the symmetry of the Lagrangian,
 - the symmetry of the vacuum.
 
-What about gauge symmetry? Gauge symmetry is not really a symmetry, rather it is a redundancy, corresponds to the freedom of a change of basis. 
+Note that gauge symmetry is not really a symmetry, but rather a redundancy, corresponding to the freedom of a change of basis. This is most clear in the language of fiber bundle.
 
-Sometimes, a symmetry is preserved in the Lagrangian but not the vacuum, meaning that the symmetry will change the vacuum, e.g. the double well potential in quantum mechanics, the $x \leftrightarrow -x$ transformation doesn't change the Lagrangian, but it turns one vacuum to the other, thus it is not a symmetry of the vacuum. In this case we say this symmetry is spontaneously broken. Of course, since the spontaneously broken symmetry is still a symmetry of the Hamiltonian, it preserves the energy and only takes one vacuum (minimal energy) to another. In more mathematical terms, let $H$ be the broken symmetry and $\phi_ {0}$ be any vacuum configuration, the orbit of $H$ acting on $\phi_ {0}$ is the vacuum manifold, or at least a connected submanifold of vacuum. 
+Sometimes, a symmetry is preserved in the Lagrangian but not the vacuum, meaning that the symmetry will change the vacuum. For example, consider the double well potential in quantum mechanics, the $x \leftrightarrow -x$ transformation doesn't change the Lagrangian, but it turns one vacuum to the other, thus it is not a symmetry of the vacuum. In this case we say this symmetry is spontaneously broken. Of course, since the original unbroken symmetry is still a symmetry of the Hamiltonian, it preserves the energy and only takes one vacuum (minimal energy) to another. In more mathematical terms, let $H$ be the residual symmetry and $\phi_ {0}$ be any vacuum configuration, the orbit of $H$ acting on $\phi_ {0}$ is the vacuum manifold, or at least a connected submanifold of it. 
 
-Why should we start with $SU(2)$ monopole? because 
+Why should we start with $SU(2)$ monopole? because 1) it is the simplest monopole in Yang-Mills theory, and 2) $SU(2)$ monopole solution is the building block for monopole solutions in larger groups.
 
-- it is the simplest monopole in Yang-Mills theory, and
-- $SU(2)$ monopole solution is the building block for monopole solutions in larger groups.
-
-In $SU(2)$ Yang-Mills theory, the generator is $T^a = \frac{1}{2}\sigma^a$, where $\sigma$'s are the Pauli matrices, with inner product defined by the trace:
+In $SU(2)$ Yang-Mills theory, the generator is $T^a = \frac{1}{2}\sigma^a$, where $\sigma$'s are the Pauli matrices, with inner product defined by trace:
 
 $$
   \left\langle T^{a} \middle\vert T^b \right\rangle  := \text{Tr }{T^a T^b} = \frac{1}{2}\delta^{ab}
@@ -252,12 +249,12 @@ $$
   \phi = \frac{\sigma^a}{2}\phi^a
 $$
 
-with convention $\left\lvert \phi \right\rvert^{2} := \phi^a \phi^a = 2\text{Tr }(\phi^2)$. In our convention, if $\phi$ without absolute value notation is squared, we are simply squaring the matrix field itself, while if $\left\lvert \phi \right\rvert$ is squared, we are doing the module square.
+with convention $\left\lvert \phi \right\rvert^{2} := \phi^a \phi^a = 2\text{Tr }(\phi^2)$. In our convention, if $\phi$ without absolute value notation is squared, we are simply squaring the matrix field itself, and if $\left\lvert \phi \right\rvert$ is squared, we are doing the module square.
 
-The action is
+The action that permits the SU(2) monopole reads
 
 $$
-  S = \int d^4 x \, \left\lbrace   {-\frac{1}{2e^2}\text{Tr }F_ {\mu\nu}F^{\mu\nu}+ \frac{1}{e^2}\mathrm{Tr}\,\left\lvert D_ \mu \phi \right\rvert ^2-V(\phi)}\right\rbrace,
+  S = \int d^4 x \, \left\lbrace   {-\text{Tr }F_ {\mu\nu}F^{\mu\nu}+ \mathrm{Tr}\,\left\lvert D_ \mu \phi \right\rvert ^2-V(\phi)}\right\rbrace,
 $$
 
 where
