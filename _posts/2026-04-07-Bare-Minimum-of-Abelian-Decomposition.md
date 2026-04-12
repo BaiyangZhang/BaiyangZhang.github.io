@@ -761,7 +761,7 @@ $$
 This is guaranteed if we set $\mathfrak{n}$ to transform as a adjoint scalar
 
  $$
-\mathfrak{n}  =\to  \mathfrak{n'=\Omega \mathfrak{n} }  \Omega ^{\dagger}.
+\mathfrak{n}  \to  \mathfrak{n'=\Omega \mathfrak{n} }  \Omega ^{\dagger}.
 $$
 and set $\hat{A}$ to transform as a regular gauge field
 
@@ -1422,12 +1422,101 @@ This is the constraint for $\hat{n}$ in the absence of other fields.
 
 # Topological Solutions of QCD
 
-Let's put the formalism to application. Consider the Hedgehog ansatz, $\hat{n}=\hat{r}$ and $a=X=0$. The resulting $\mathcal{C}$ field reads
+Let's put the formalism to application. Consider the Hedgehog ansatz, $\hat{n}=\hat{r}$ and $a=X=0$. After some calculation, the resulting $\mathcal{C}$ field can be written down.  Recall that $\mathcal{C}=- \frac{1}{g} \hat{n}\times(\partial \hat{n})$, we have
 
 $$
-\mathcal{C} = 
+\mathcal{C}_ {i}^{a} = - \frac{1}{g} \epsilon^{iab} \frac{x^{b}}{r^{2}},
 $$
 
+which agrees with the asymptotic form of SU(2) hedgehog monopole solution.
+
+Recall that $\mathcal{C}$, like the gauge potential $A$, is a $\mathfrak{g}$-valued 1-form. So, the complete form of $\mathcal{C}$ is actually
+
+$$
+\mathcal{C} = -\frac{1}{g} \epsilon^{iab} \frac{x^{b}}{r^{2}} dx^{i} T^{a} = - \frac{1}{gr^{2}} \vec{x}\times (d\vec{x})\cdot \vec{T},
+$$
+
+where $\vec{T}=(T^{1},T^{2},T^{3})$. To make the gauge transformation easier, we can go to the polar coordinates. We have $d\vec{x}=d(\hat{r}r)=rd\hat{r}+\hat{r}dr$, where $dr$ is already the polar basis so we don't need to do anything further with it. In terms of $d\theta$ and  $d\phi$, we have $d\hat{r} = d\theta  \hat{\theta}+\sin \theta d\phi\, \hat{\phi}$, thus
+
+$$
+\mathcal{C} = - \frac{1}{g} (d\theta T_ {\phi}- \sin \theta d\phi T_ {\theta}), \quad  T_ {\theta} := \hat{\theta} \cdot \vec{T}, T_ {\phi} := \hat{\phi} \cdot \vec{T}
+$$
+where
+
+$$
+\begin{align*}
+\hat{r} &= (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta), \\
+\hat{\theta} &= (\cos \theta \cos \phi, \cos \theta \sin \phi, -\sin \theta), \\
+\hat{\phi} &= (-\sin \phi, \cos \phi, 0). 
+\end{align*}
+$$
+
+This form will be useful in the coming calculation.
+
+- - -
+
+From the identity 
+
+$$
+e^{-i \phi T^{3}} = \cos \frac{\phi}{2} \mathbb{1}_ {2} - 2i \sin \frac{\phi}{2} T^{3}
+$$
+
+we know that they realize the rotation of $T^{1},T^{2}$ basis, 
+
+$$
+e^{-i\phi T^{3}} (T^{1},T^{2}) e^{i\phi T^{3} } = (T^{1},T^{2}) \times 
+\begin{pmatrix}
+\cos \phi & -\sin \phi \\
+\sin \phi & \cos \phi 
+\end{pmatrix}
+$$
+
+where $(T^{1},T^{2})$ is a row vector, we have adopted the convention that the vector of basis are always written as a row vector, whereas the vector of coefficients are written as a column vector. 
+
+In a word, the sandwich $e^{-i\phi T^{3}} \bullet e^{i \phi T^{3}}$ realizes the rotation in $T^{3}$ direction by $\phi$. 
+
+We can perform a cyclic permutation $(3\to 2 \to 1 \to 3)$ to above equation, which is a symmetry of the algebra. We get that  the sandwich $e^{-i\theta T^{2}} \bullet e^{i\theta T^{2}}$ realizes the rotation in $T^{2}$ direction by $\theta$:
+
+$$
+e^{-i\theta T^{2}} (T^{3},T^{1}) e^{i\theta T^{2} } = (T^{3},T^{1}) \times 
+\begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta 
+\end{pmatrix}.
+$$
+
+The rotations from $\hat{n}=\hat{r}$ to $\hat{e}=(0,0,1)=T^{3}$ is given by three Euler angles: $(\alpha,\beta,\gamma)=(-\phi,-\theta,0)$, where the last angle is arbitrary. The corresponding rotation matrix is 
+
+$$
+R = e^{i\theta T^{2}} e^{i\phi T^{3}}.
+$$
+
+Let's act it on $\hat{A}$. In the hedgehog ansatz, $\mathcal{A}=0$ thus $\hat{A}=\mathcal{C}$. Under gauge transformation $\hat{A}$ transforms as 
+
+$$
+\hat{A} \to  \hat{A}' = R\left( \hat{A}+\frac{i}{g}\partial \right)R^{\dagger} = R \mathcal{C}R^{\dagger}+ \frac{i}{g} R \partial R^{\dagger},
+$$
+
+where
+
+$$
+R\mathcal{C}R^{\dagger} = -  \frac{1}{g} (d\theta R T_ {\phi} R^{\dagger} - \sin \theta d\phi R T_ {\theta} R^{\dagger})
+= -\frac{1}{g}(d\theta T^{2} - \sin \theta d\phi T^{1})
+$$
+
+and 
+
+$$
+\frac{i}{g} R\partial R^{\dagger} = \frac{1}{g}[d\phi(\cos \theta T^{3} - \sin \theta T^{1}) + d\theta T^{2}].
+$$
+
+Putting Everything together, we get:
+
+$$
+\hat{A}'=\frac{\cos \theta d\phi}{g} \, T^{3},
+$$
+
+which is the standard Dirac monopole potential up to a gauge transformation. Note that if we choose the rotation matrix to be $R= e^{-i\phi T^{3}} e^{i\theta T^{2}} e^{i\phi T^{3}}$, then we can reproduce the exact Dirac monopole $A=\frac{1-\cos \theta}{g}T^{3}d\phi$. The gauge redundancy in Dirac monopole corresponds to the freedom of little group of combed hedgehog.
 
 
 # Appendix
