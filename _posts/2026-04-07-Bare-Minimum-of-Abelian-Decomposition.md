@@ -510,7 +510,7 @@ The Cho-Duan-Ge decomposition is a covariant separation of the gauge field into 
 	- topological part, or Dirac part. Similar to the monopole scalar solution.
 - valance gauge field which describes colored gluons, or `chromons`.
 
-For the sake of simplicity we will begin with $SU(2)$. Take The $\mathfrak{g}$-valued gauge potential, let's decompose it to the abelian sub-algebra, namely the Cartan subalgebra, and the rest of the gauge field that is orthogonal to the Cartan component. Let $(\vec{e}^{1},\vec{e}^{2},\vec{e}^{3})$ be the standard basis of the space. Introduce a *right-handed orthonormal frame* $(\hat{n}^{1},\hat{n}^{2},\hat{n}^{3})$ with $\hat{n}^{1}\hat{n}^{1}=1, etc$. Choose the third component to be the so-called abelian direction, denoted it by $\hat{n}:=\hat{n}^{3}$. This notation is a bit confusing, but it was used in the original papers.
+For the sake of simplicity we will begin with $SU(2)$. Take The $\mathfrak{g}$-valued gauge potential, let's decompose it to the abelian sub-algebra, namely the Cartan subalgebra, and the rest of the gauge field that is orthogonal to the Cartan component. Let $(\vec{e}^{1},\vec{e}^{2},\vec{e}^{3})$ be the standard basis of the space. Introduce a *right-handed orthonormal frame* $(\hat{n}_ {1},\hat{n}_ {2},\hat{n}_ {3})$ with $\hat{n}^{1}\hat{n}^{1}=1, etc$. Choose the third component to be the so-called abelian direction, denoted it by $\hat{n}:=\hat{n}^{3}$. This notation is a bit confusing, but it was used in the original papers.
 
 Next, we embed the vector $\hat{n}$ into Lie algebra space $\mathfrak{g}$, by assigning to each component $\hat{n}^{i}$ a basis $T^{a}\in\mathfrak{g}$, $T^{a} = \frac{\sigma^{a}}{2}$ for $SU(2)$. To follow the convention that fraktur letters denote $\mathfrak{g}$-valued things, we write $\mathfrak{n}$ for the $\mathfrak{g}$-valued unit vector $\hat{n}$, defined by
 
@@ -1517,6 +1517,10 @@ $$
 $$
 
 which is the standard Dirac monopole potential up to a gauge transformation. Note that if we choose the rotation matrix to be $R= e^{-i\phi T^{3}} e^{i\theta T^{2}} e^{i\phi T^{3}}$, then we can reproduce the exact Dirac monopole $A=\frac{1-\cos \theta}{g}T^{3}d\phi$. The gauge redundancy in Dirac monopole corresponds to the freedom of little group of combed hedgehog.
+
+*Another way is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.*
+
+
 
 
 # Appendix
