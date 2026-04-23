@@ -908,7 +908,9 @@ $$
 \hat{A} \to  \hat{A}' = \left( a+\frac{\partial k}{g} \right)\mathfrak{n} + \mathcal{C},\quad  \mathcal{C}=\frac{2i}{g}\mathfrak{n} \partial \mathfrak{n} .
 $$
 
-Again we have $\mathcal{C}=\mathcal{C}'$. Also, along the way I found two interesting formula:
+Again we have $\mathcal{C}=\mathcal{C}'$.
+
+Along the way I found two interesting formula:
 
 $$
 \begin{align*}
@@ -1520,7 +1522,54 @@ which is the standard Dirac monopole potential up to a gauge transformation. Not
 
 *Another way is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.*
 
+- - -
 
+Given  the frame $\hat{n}_ {1,2,3}$ everywhere in the spacetime, the vacuum condition can be written as 
+
+$$
+D_ {\mu} \hat{n}_ {i} = 0 \;\forall\; i\in \left\lbrace 1,2,3 \right\rbrace .
+$$
+
+Note that $D\hat{n}_ {i}$ must hold for all the basis $\hat{n}_ {1},\hat{n}_ {2}$ and $\hat{n}_ {3}$, while in the previous note we have only discussed the condition that holds for the third basis $D\hat{n}_ {3}=0$. In this case, for the field strength we have 
+
+$$
+[D_ {\mu},D_ {\nu}] \hat{n}_ {i} \propto F_ {\mu \nu} \times  \hat{n}_ {i} \;\forall\;  i,
+$$
+
+then $F_ {\mu \nu}$ must be zero.
+
+The gauge field has three components in basis of $\hat{n}_ {1,2,3}$ which exactly matches the number of above equation, thus the solution can be uniquely determined. Use $\hat{\Omega}_ {\mu}$ to denote the solution, we have 
+
+$$
+\begin{align*}
+D_ {\mu}\hat{n}_ {3} &= 0 \implies \hat{\Omega} = \hat{\Omega}_ {\mu}^{(3)} \hat{n}_ {3} + \frac{1}{g} (\hat{n}_ {2} \cdot \partial_ {\mu}\hat{n}_ {3} ) \hat{n}_ {1} + \frac{1}{g} (\hat{n}_ {3}\cdot \partial_ {\mu}\hat{n}_ {1}) \hat{n}_ {2},
+\end{align*}
+$$
+
+where $\hat{\Omega}^{(3)}$ is the $\hat{n}_ {3}$ component of gauge field $\hat{\Omega}$, we have used the convention that indices in parenthesis denote components in $\hat{n}$ frame. 
+
+We have similar equations for $\hat{n}_ {1}$ and $\hat{n}_ {2}$. But instead of doing the labor of calculation, we can do it more cleverly by performing the permutation $(1\to 2 \to 3 \to 1)$, which is a symmetry of the equation. By doing permutation once and twice, we get 
+
+$$
+\begin{align*}
+D_ {\mu}\hat{n}_ {1} &= 0 \implies \hat{\Omega} = \hat{\Omega}_ {\mu}^{(1)} \hat{n}_ {1} + \frac{1}{g} (\hat{n}_ {3} \cdot \partial_ {\mu}\hat{n}_ {1} ) \hat{n}_ {2} + \frac{1}{g} (\hat{n}_ {1}\cdot \partial_ {\mu}\hat{n}_ {2}) \hat{n}_ {3}, \\
+D_ {\mu}\hat{n}_ {2} &= 0 \implies \hat{\Omega} = \hat{\Omega}_ {\mu}^{(2)} \hat{n}_ {2} + \frac{1}{g} (\hat{n}_ {1} \cdot \partial_ {\mu}\hat{n}_ {2} ) \hat{n}_ {3} + \frac{1}{g} (\hat{n}_ {2}\cdot \partial_ {\mu}\hat{n}_ {3}) \hat{n}_ {1}.
+\end{align*}
+$$
+
+Equating all the three equations, the $\hat{n}_ {1}, \hat{n}_ {2}$ and $\hat{n}_ {3}$ components generates respectively:
+
+$$
+\hat{\Omega}_ {\mu}^{(1)} = \frac{1}{g}  \hat{n}_ {2} \cdot \partial_ {\mu}\hat{n}_ {3}, \quad  
+\hat{\Omega}_ {\mu}^{(2)} = \frac{1}{g}  \hat{n}_ {3} \cdot \partial_ {\mu}\hat{n}_ {1}, \quad
+\hat{\Omega}_ {\mu}^{(3)} = \frac{1}{g}  \hat{n}_ {1} \cdot \partial_ {\mu}\hat{n}_ {2}.
+$$
+
+Thus, the vacuum solution corresponding to a given frame $\hat{n}$ is 
+
+$$
+\hat{\Omega}_ {\mu} = \frac{1}{2g} \epsilon^{ijk} \hat{n}_ {j} \cdot \partial_ {\mu}\hat{n}_ {k}.
+$$
 
 
 # Appendix

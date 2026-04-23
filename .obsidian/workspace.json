@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "外国专家申请.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "外国专家申请"
             }
           }
         ]
@@ -201,7 +201,7 @@
   },
   "active": "8ab89216ae881340",
   "lastOpenFiles": [
-    "未命名.md",
+    "外国专家申请.md",
     "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
     "assets/css/main.scss",
     "_sass/_variables.scss",

@@ -1,6 +1,6 @@
 {
-  "findText": ")",
-  "replaceText": "$",
+  "findText": "本人",
+  "replaceText": "Elbistan教授",
   "useRegEx": false,
   "selOnly": true,
   "caseInsensitive": false,
