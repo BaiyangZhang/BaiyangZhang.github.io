@@ -1538,7 +1538,7 @@ $$
 
 then $F_ {\mu \nu}$ must be zero.
 
-The gauge field has three components in basis of $\hat{n}_ {1,2,3}$ which exactly matches the number of above equation, thus the solution can be uniquely determined. Use $\hat{\Omega}_ {\mu}$ to denote the solution, we have 
+The gauge field has three components in basis of $\hat{n}_ {1,2,3}$ which exactly matches the number of above equation, thus the solution can be uniquely determined. Use $\hat{\Omega}_ {\mu}$ to denote the solution, what Cho called *vacuum potential*, we have
 
 $$
 \begin{align*}
@@ -1568,8 +1568,18 @@ $$
 Thus, the vacuum solution corresponding to a given frame $\hat{n}$ is 
 
 $$
-\hat{\Omega}_ {\mu} = \frac{1}{2g} \epsilon^{ijk} \hat{n}_ {j} \cdot \partial_ {\mu}\hat{n}_ {k}.
+\hat{\Omega}_ {\mu} = \frac{\hat{n}_ {i}}{2g} \epsilon^{ijk} \hat{n}_ {j} \cdot \partial_ {\mu}\hat{n}_ {k}.
 $$
+
+The corresponding field strength indeed is zero,
+
+$$
+\hat{\Omega}_ {\mu \nu} = \partial_ {\mu}\hat{\Omega}_ {\nu} - (\mu \leftrightarrow \nu) +g \hat{\Omega}_ {\mu}\times \hat{\Omega}_ {\nu} = 0,
+$$
+
+it suffices to verify the first component. 
+
+
 
 
 # Appendix
