@@ -15,6 +15,6 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>astris.dei@gmail.com</p>
-      <p>School of Mathematics and Statistics</p>
-      <p>Henan University, Henan, China</p>
+      <p>School of Science, Physics Department</p>
+      <p>Xi'An University of Architecture and Technology, ShaanXi, China</p>
 ---
