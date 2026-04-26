@@ -734,7 +734,7 @@ If the winding number of $\hat{n}_ {\infty}$ is nonzero, then it can not be cont
 
 If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$ where $U(1)$ is the little group of $\mathfrak{n}(x)$ and in general depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? Then, under gauge transformation $\mathfrak{n}$ will rotate in a $x$-dependent way. 
 
-To keep our notation in agree with others, let's denote the gauge transformation matrix as $\Omega=e^{ i\alpha }$, where $\alpha=\alpha^{a}T^{a}$ is a $\mathfrak{g}$-valued **infinitesimal** vector. The gauge field $A$ transforms as 
+Denote the gauge transformation matrix as $\Omega=e^{ i\alpha }$, where $\alpha=\alpha^{a}T^{a}$ is a $\mathfrak{g}$-valued **infinitesimal** vector. The total gauge field $A$ transforms as 
 
 $$
 A \to A+ \frac{1}{g} D\alpha,\quad  D_ {\mu}=\partial_ {\mu}-ig[A_ {\mu},-].
@@ -752,24 +752,26 @@ The notation $\vec{\alpha}\times \hat{n}{\Large\mid}_ {\mathfrak{g}}$ means that
 
 - - -
 
-The background $\mathcal{C}$ together with $\mathcal{A}$ constitute the so-called restricted gauge field $\hat{A}$ that is bonded to the field $\mathfrak{n}$, in the sense that $\hat{A}$ is given by the solution of $D\mathfrak{n}=0$. After a gauge transformation, $\mathfrak{n}\to\mathfrak{n}'$ and $\hat{A}\to\hat{A}'$, but we would like the equation to hold independent of the gauge transformation, that is, after an arbitrary gauge transformation we want
+The background gauge field $\mathcal{C}$ together with $\mathcal{A}$ constitute the so-called restricted gauge field $\hat{A}$ that is bonded to the field $\mathfrak{n}$, in the sense that $\hat{A}$ is given by the solution of $D\mathfrak{n}=0$. After a gauge transformation, $\mathfrak{n}\to\mathfrak{n}'$ and $\hat{A}\to\hat{A}'$, but we would like the equation to hold independent of the gauge transformation, that is, after an arbitrary gauge transformation we want
 
 $$
+\boxed{ 
 D'\mathfrak{n} ' := (\partial-ig [\hat{A}',-])\,\mathfrak{n}' =\partial \mathfrak{n}' -ig [\hat{A}',\mathfrak{n}' ]=0.
+}
 $$
 
-This is guaranteed if we set $\mathfrak{n}$ to transform as a adjoint scalar
-
+This is guaranteed if 1) $\mathfrak{n}$ transforms as a adjoint scalar
  $$
 \mathfrak{n}  \to  \mathfrak{n'=\Omega \mathfrak{n} }  \Omega ^{\dagger}.
 $$
-and set $\hat{A}$ to transform as a regular gauge field
+
+and 2) $\hat{A}$ transforms as a regular gauge field
 
 $$
 \hat{A}\to \hat{A}'=\Omega\left( \hat{A}+\frac{i}{g}\partial \right)\Omega ^{\dagger}.
 $$
 
-Now, as we wanted, $\hat{A}$ is the solution to $\mathcal{D}_ {\mu}\mathfrak{n}=0$ in a **gauge independent** way: If $\hat{A}$ is a solution, after gauge transform, the transformed field $\hat{A}'$ still is a solution to $D'_ {\mu}\mathfrak{n}'=0$.
+In this case, $\hat{A}$ is the solution to $\mathcal{D}_ {\mu}\mathfrak{n}=0$ in a **gauge independent** way: If $\hat{A}$ is a solution to $\mathfrak{n}$, then after gauge transform the transformed field $\hat{A}'$ still is a solution to $D'_ {\mu}\mathfrak{n}'=0$.
 
 We also would like the decomposition of $\hat{A}$ to be gauge independent, that is after gauge transformation
 
@@ -783,7 +785,7 @@ $$
 \mathcal{A}=a\mathfrak{n} , \quad a = 2\mathrm{Tr}\,(\mathfrak{n} \hat{A}) \equiv \hat{n} \cdot \hat{A},
 $$
 
-the factor of $2$ is due to the normalization $\mathrm{Tr}\,T^{a}T^{b}=\frac{1}{2}\delta^{ab}$. *This should be treated as the definition of $\mathcal{a}$, and this definition better be gauge independent*, hence after gauge transformation we want
+the factor of $2$ is due to the normalization $\mathrm{Tr}\,T^{a}T^{b}=\frac{1}{2}\delta^{ab}$. If it is treated as the definition of $\mathcal{a}$, and if this definition is gauge independent, then after gauge transformation we want
 
 $$
 \mathcal{a}'=2\mathrm{Tr}\,(\mathfrak{n} '\hat{A}').
@@ -795,7 +797,7 @@ $$
 a' = a + \frac{2i}{g}\mathrm{Tr}\,\left\lbrace \mathfrak{n} \partial \Omega^{\dagger} \Omega \right\rbrace .
 $$
 
-Let the gauge transformation be given by $\Omega=e^{ i\alpha }$ where $\alpha=\alpha^{a}T^{a}$, then the infinitesimal form reads
+Let the gauge transformation be given by $\Omega=e^{ i\alpha }$ where $\alpha=\alpha^{a}T^{a}$, the infinitesimal gauge transformation reads
 
 $$
 a \to \mathcal{A}' = a+\frac{2}{g}\mathrm{Tr}\,(\mathfrak{n}\partial \alpha )\equiv a + \frac{1}{g}\hat{n}\cdot \partial \vec{\alpha}.
@@ -857,6 +859,8 @@ $$
 
 - - -
 
+**The questions is that, is it allowed for $\mathcal{C}$ to obtain contribution that is parallel to $\hat{n}$ after gauge transformation?** The answer seems to be positive.
+
 To determine the gauge transform of $\mathcal{C}$, starting from the definition: 
 
 $$
@@ -881,7 +885,7 @@ $$
 \hat{A}'=\mathcal{A}'+\mathcal{C}'\implies \mathcal{C}' = \hat{A}' - \mathcal{A}', \quad  \mathcal{A}'=a'\mathfrak{n}'.
 $$
 
-To answer it, let's consider the simplest gauge transformation, that comprises of the little group of $\mathfrak{n}$, define $U:=\exp ik\mathfrak{n}$, where $k\in\mathbb{R}$. Under this gauge transformation, $\mathfrak{n}\to \mathfrak{n'} = U\mathfrak{n}U^{\dagger}$ remains unchanged, hence $\frac{2i}{g}\mathfrak{n}'\partial \mathfrak{n}'$ also remains unchanged. The infinitesimal form of the gauge transformation shows that
+To check it, *consider the simplest gauge transformation of the little group of* $\mathfrak{n}$, define $U:=\exp ik\mathfrak{n}$ where $k\in\mathbb{R}$. Under this gauge transformation, $\mathfrak{n}\to \mathfrak{n'} = U\mathfrak{n}U^{\dagger}$ remains unchanged, hence $\frac{2i}{g}\mathfrak{n}'\partial \mathfrak{n}'$ also remains unchanged. The infinitesimal form of the gauge transformation shows that
 
 $$
 \hat{A}\to \hat{A}' = \left( a+\frac{1}{g} \partial k \right)\mathfrak{n}  + \frac{2i}{g} \mathfrak{n} \partial \mathfrak{n} 
@@ -1514,11 +1518,33 @@ $$
 \hat{A}'=\frac{\cos \theta d\phi}{g} \, T^{3},
 $$
 
-which is the standard Dirac monopole potential up to a gauge transformation. Note that if we choose the rotation matrix to be $R= e^{-i\phi T^{3}} e^{i\theta T^{2}} e^{i\phi T^{3}}$, then we can reproduce the exact Dirac monopole $A=\frac{1-\cos \theta}{g}T^{3}d\phi$. The gauge redundancy in Dirac monopole corresponds to the freedom of little group of combed hedgehog.
+which is the standard Dirac monopole potential up to a gauge transformation. Note that in the hedgehog form, if we first rotate in $\hat{n}$ direction by $-\phi$, i.e. choose the rotation matrix to be $R=e^{i\theta T^{2}} e^{i\phi T^{3}} e^{-i\phi \mathfrak{n}}$, then we can reproduce the exact Dirac monopole $A=\frac{1-\cos \theta}{g}T^{3}d\phi$. The gauge redundancy in Dirac monopole corresponds to the freedom of little group of combed hedgehog.
 
-- - -
+*Another way to obtain the same result is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.* The key idea is  that, in the hedgehog form $\mathcal{C}_ {\mu}$ can be written as $\mathcal{C}=C \hat{n}$, where $C$ is a scalar thus un-affected by the gauge rotation, which only changes the direction of $\hat{n}$. Thus after the rotation we must have $\mathcal{C}'= C \hat{z}$. But to calculate the scalar $C$ we can use the formulae $C=- \frac{1}{g} \hat{n}_ {1}\cdot \hat{n}_ {2}$, which greatly simplifies the calculation. 
 
-*Another way to obtain the same result is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.* The key idea is  that, in the hedgehog form $\mathcal{C}_ {\mu}$ can be written as $\mathcal{C}=C \hat{n}$, where $C$ is a scalar thus un-affected by the gauge rotation, which only changes the direction of $\hat{n}$. Thus after the rotation we must have $\mathcal{C}'= C \hat{z}$. But to calculate the scalar $C$ we can use the formulae $C=- \frac{1}{g} \hat{n}_ {1}\cdot \hat{n}_ {2}$. 
+With this method, in order to reproduce the exact Dirac potential $A=\frac{1-\cos \theta}{g}$, we need to first rotate $\hat{\theta},\hat{\phi}$ in the $\hat{n}$ direction by $-\phi$, 
+
+$$
+(\hat{\theta},\hat{\phi})\to(\hat{\theta}',\hat{\phi}')=(\hat{\theta},\hat{\phi})
+\begin{pmatrix}
+\cos \phi & \sin \phi \\
+-\sin \phi & \cos \phi
+\end{pmatrix}
+= (\hat{\theta}\cos \phi-\hat{\phi}\sin \phi,\hat{\theta}\sin \phi+\hat{\phi}\cos \phi).
+$$
+
+Thus
+
+$$
+\hat{\theta}'\cdot \partial_ {\mu}\hat{\phi}'= \partial_ {\mu} \phi+\hat{\theta}\cdot \partial_ {\mu}\hat{\phi} 
+= (1-\cos \theta)\partial_ {\mu}\phi.
+$$
+
+This means that the scalar part of $\mathcal{C}_ {\mu}$ reads
+
+$$
+C_ {\mu} = - \frac{1}{g} \theta'\cdot \partial_ {\mu}\hat{\phi}' = - \frac{1}{g}(1-\cos \theta)\partial_ {\mu}\phi.
+$$
 
 - - -
 
@@ -1576,6 +1602,8 @@ $$
 $$
 
 it suffices to verify the first component. 
+
+- - -
 
 
 
