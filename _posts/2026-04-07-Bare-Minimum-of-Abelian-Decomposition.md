@@ -732,7 +732,7 @@ If the winding number of $\hat{n}_ {\infty}$ is nonzero, then it can not be cont
 
 ## Gauge transformation
 
-If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$, where $U(1)$ is the little group of $\mathfrak{n}(x)$, which depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? Then, under gauge transformation $\mathfrak{n}$ will rotate in a $x$-dependent way. 
+If we fix the $\mathfrak{n}(x)$ field, then gauge group is broken to $SU(2)\to U(1)$ where $U(1)$ is the little group of $\mathfrak{n}(x)$ and in general depends on the position $x$. The unbroken $U(1)$ symmetry corresponds to the massless "photon" that survives at long distance. What if we do not fix $\mathfrak{n}(x)$, and allow it to gauge-transform freely? Then, under gauge transformation $\mathfrak{n}$ will rotate in a $x$-dependent way. 
 
 To keep our notation in agree with others, let's denote the gauge transformation matrix as $\Omega=e^{ i\alpha }$, where $\alpha=\alpha^{a}T^{a}$ is a $\mathfrak{g}$-valued **infinitesimal** vector. The gauge field $A$ transforms as 
 
@@ -1143,8 +1143,6 @@ $$
 } 
 $$
 
-
-
 When $a_ {\mu}=0$, we have
 
 $$
@@ -1420,11 +1418,9 @@ $$
 
 This is the constraint for $\hat{n}$ in the absence of other fields.
 
-
-
 # Topological Solutions of QCD
 
-Let's put the formalism to application. Consider the Hedgehog ansatz, $\hat{n}=\hat{r}$ and $a=X=0$. After some calculation, the resulting $\mathcal{C}$ field can be written down.  Recall that $\mathcal{C}=- \frac{1}{g} \hat{n}\times(\partial \hat{n})$, we have
+Let's put the formalism to application. Consider the Hedgehog ansatz, $\hat{n}=\hat{r}$ and $a=X=0$. Recall that $\mathcal{C}=- \frac{1}{g} \hat{n}\times(\partial \hat{n})$, we have
 
 $$
 \mathcal{C}_ {i}^{a} = - \frac{1}{g} \epsilon^{iab} \frac{x^{b}}{r^{2}},
@@ -1520,7 +1516,9 @@ $$
 
 which is the standard Dirac monopole potential up to a gauge transformation. Note that if we choose the rotation matrix to be $R= e^{-i\phi T^{3}} e^{i\theta T^{2}} e^{i\phi T^{3}}$, then we can reproduce the exact Dirac monopole $A=\frac{1-\cos \theta}{g}T^{3}d\phi$. The gauge redundancy in Dirac monopole corresponds to the freedom of little group of combed hedgehog.
 
-*Another way is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.*
+- - -
+
+*Another way to obtain the same result is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.* The key idea is  that, in the hedgehog form $\mathcal{C}_ {\mu}$ can be written as $\mathcal{C}=C \hat{n}$, where $C$ is a scalar thus un-affected by the gauge rotation, which only changes the direction of $\hat{n}$. Thus after the rotation we must have $\mathcal{C}'= C \hat{z}$. But to calculate the scalar $C$ we can use the formulae $C=- \frac{1}{g} \hat{n}_ {1}\cdot \hat{n}_ {2}$. 
 
 - - -
 

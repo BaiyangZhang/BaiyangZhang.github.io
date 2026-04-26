@@ -2,11 +2,11 @@
   "readableLineLength": false,
   "spellcheck": true,
   "pdfExportSettings": {
-    "includeName": false,
+    "includeName": true,
     "pageSize": "A4",
-    "landscape": true,
+    "landscape": false,
     "margin": "0",
-    "downscalePercent": 90
+    "downscalePercent": 60
   },
   "autoPairMarkdown": true,
   "showLineNumber": true,
