@@ -2,7 +2,7 @@
 layout: post
 title: Electrodynamics in Terms of Differential Forms
 subtitle: A thorough introduction
-date: 2023-09-25
+date: 2026-04-30
 author: Baiyang Zhang
 header-img: img/background13.jpg
 catalog: true

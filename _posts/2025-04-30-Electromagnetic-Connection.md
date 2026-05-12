@@ -1,15 +1,15 @@
 ---
-layout:     post   				    # 使用的布局（不需要改）
-title:     The Electromagnetic Connection			# 标题 
-subtitle:   Wavefunctions are complex line bundles
-date:       2023-07-03 				# 时间
-author:     Baiyang Zhang 						# 作者
-header-img: img/background7.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - Geometry
-    - Curvature
-    - Frankel
+layout: post
+title: The Electromagnetic Connection
+subtitle: Wavefunctions are complex line bundles
+date: 2025-04-30
+author: Baiyang Zhang
+header-img: img/background7.jpg
+catalog: true
+tags:
+  - Geometry
+  - Curvature
+  - Frankel
 ---
 
 *Disclaimer: Nothing in this note is original.*
