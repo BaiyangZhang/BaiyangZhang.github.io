@@ -41,7 +41,7 @@ $$
 \hat{a}(g) = \int d^dx \, g(x) \hat{a}(x) := \int \frac{d^{d}p}{(2\pi)^{d}} \, \tilde{g}(p) a_ {p},
 $$
 
-where $\widetilde{g}(p)$ is the Fourier transform of $g(x)$, and $\hat{a}(x)$ defined by the last integral in momentum space. The eigen equation reads
+where $\widetilde{g}(p)$ is the Fourier transform of $g(x)$, and $\hat{a}(x)$ defined by the last integral in momentum space. The eigenequation reads
 
 $$
 \hat{a}(g) \left\lvert{\alpha}\right\rangle  = \alpha(g) \left\lvert{\alpha}\right\rangle 
@@ -79,11 +79,11 @@ At the end of section 4.3 in Coleman's note on classical and quantum lumps, he s
 
 > I do not believe there are any plausible variational computations using coherent states or simple generalizations of them in more than one spatial dimension. It would be nice to have reasonable variational states in this case. A good place to begin exploring would be a super-renormalizable theory in two spatial dimensions. Here, although all divergences are not removed by normal ordering, it is still possible to sum them up in closed form. Thus we have at least a minimal criterion for a reasonable trial state: the expectation value of the Hamiltonian density should not be infinite. Coherent states do not meet this test.
 
-We will see if this is correct in 3+1 dimension. 
+We will see if this is true in 3+1 dimension. 
 
 # 2. Conventions
 
-we are not interested in the interaction picture but in the Schrodinger picture. It is for a bunch of reasons, one of them is that it is easy to see what the normal-ordering prescription corresponds to in this picture. Schrodinger-picture operators are given as functions of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate, not the Lorentzian spacetime coordinate $x^{\mu}$. We begin with a phi-fourth theory in Schrodinger picture, normal ordered at mass scale $m_ {0}$:
+we are not interested in the interaction picture but in the Schrodinger picture, where operators are given as functions of the field $\phi(\vec{x})$ and the canonical momentum density $\pi(\vec{x})$, where $\vec{x}$ is the spatial coordinate, not the Lorentzian spacetime coordinate $x^{\mu}$. We begin with a phi-fourth theory in Schrodinger picture, normal ordered at mass scale $m_ {0}$:
 
 $$
 \begin{align*}
@@ -92,7 +92,7 @@ $$
 \end{align*}
 $$
 
-The hat denotes that the vacuum of the Hamiltonian is not obtained at $\phi=0$ yet. To be more specific, the Hamiltonian undergoes spontaneous symmetry breaking, as a result the minimum of the Hamiltonian is obtained at $\phi=v_ {0}$ for some $v_ {0}$. Later we will shift the field operator from $\phi$ to $\phi'$, such that the vacuum is indeed obtained at $\phi'=0$, the Hamiltonian in terms of $\phi'$ will be denoted without the hat. Note the factor $-m_ {0}^{2} /4$ in the mass term, and the last $A$ is a c-number to cancel the zero point energy in the vacuum sector. We also define coupling $g_ {0}$ as 
+The hat suggests that the Hamiltonian undergoes spontaneous symmetry breaking, since the minimum of the Hamiltonian is obtained at $\phi=v_ {0}$ for some $v_ {0}$. Later we will shift the field operator from $\phi$ to $\phi'$, such that the vacuum is obtained at $\phi'=0$, the Hamiltonian in terms of $\phi'$ will be denoted $H(\vec{x})$ without the hat. Note the factor $-m_ {0}^{2} /4$ in the mass term, and the last $A$ is a c-number meant to cancel the zero point energy in the vacuum sector. We also define coupling $g_ {0}$ as 
 
 $$
 g_ {0}^{2} := \lambda_ {0}.
@@ -107,7 +107,7 @@ $$
 \end{align*}
 $$
 
-and 
+and
 
 $$
 \begin{align*}
@@ -116,17 +116,19 @@ A_ {p}^{\ddagger} &= \frac{A_ {p}^{\dagger}}{2\omega_ {p}}.
 \end{align*}
 $$
 
-with commutation relation 
+with commutation relation
 
 $$
 [A_ {p_ {1} },A^{\ddagger}_ {p_ {2} }] = (2\pi)^{d}\delta^{d}(p_ {1}-p_ {2}).
 $$
 
-In the decomposition, every thing is defined at mass scale $m$. In the paper the creation and annihilation operators are sometime written as $A_ {\vec{p}}^{(0)}$, with an extra naught, it has to do with the definition of normal ordering we choose. If we are normal ordering at some bare mass $m_ {0}$, then we put the superscript $(0)$ to remind us of that. We will go to details later.
+In the decomposition, every thing is defined at some mass scale $m$. In the paper, the creation and annihilation operators are sometime written as $A_ {\vec{p}}^{(0)}$ with a naught, it has to do with the definition of normal ordering we choose. If we are normal ordering at some bare mass $m_ {0}$, then we put the superscript $(0)$ to remind us of that. 
+
+Next let's go to details later.
 
 - - -
 
-It would be helpful to mention the connection between our convention and that widely adopted in various textbooks. In Schrodinger picture it reads
+In Schrodinger picture the field operator reads
 
 $$
 \phi(\vec{x}) = \int \frac{d^{d}p}{(2\pi)^{d}} \, \frac{1}{\sqrt{2 \omega_ {p} }} (a_ {p} \, e^{ i\vec{p}\cdot \vec{x} } + a^{\dagger}_ {p}\,e^{ -i\vec{p}\cdot \vec{x} }).
@@ -152,13 +154,13 @@ $$
 
 - - -
 
-The renormalized quantities are define as 
+The renormalized quantities are define as
 
 $$
 m^{2}=m_ {0}^{2} + \delta m^{2}, \quad  \sqrt{ \lambda } = \sqrt{ \lambda_ {0} } + \delta \sqrt{ \lambda }. 
 $$
 
-or equivalently 
+or equivalently
 
 $$
 g = g_ {0} + \delta g.
@@ -196,7 +198,7 @@ $$
 \mathcal{L} = \frac{1}{2} (\partial_ {\mu}\phi)^{2} + \frac{\alpha_ {0}}{\beta^{2}}\cos \beta \phi+\gamma_ {0}, 
 $$
 
-where things with a nought are bare (not renormalized), and famously pointed out:
+where things with a naught are bare (not renormalized), and famously pointed out:
 
 1. As for any theory of a **scalar field** with **nonderivative interaction** in **2 dimensional spacetime**, normal ordering the Hamiltonian alone is enough to cancel all the divergences at any loop order;
 2. If the $\beta$-parameter exceeds $8\pi$, the Hamiltonian density is not bounded below. 
@@ -204,8 +206,6 @@ where things with a nought are bare (not renormalized), and famously pointed out
 4. The fermion in the Thirring model is massless if $\beta=4\pi$. 
 
 Turns out there are more details to normal ordering than I thought. In textbooks such that by Peskin&Schroeder, or that by Mark Srednicki, normal ordering is regarded as a simple, even trivial, ad hoc procedure that puts all the creation operators to the left of all the annihilation operators, in order to eliminate the zero point energy of the trivial vacuum. But, as we dig deeper, more details begin to surface. 
-
-- - -
 
 A crucial property of normal ordering is that expectation values of normal-ordered operators vanish in the free theory: 
 
@@ -215,9 +215,9 @@ $$
 
 for any operator $\mathcal{O}$ and free vacuum $\left\lvert{0}\right\rangle$. There are various formulations of this notion [^Polchinski] , such as `creation-annihilation operator normal ordering`, `conformal normal ordering`, `functional integral normal ordering`, etc. In this note we will only talk about familiar creation-annihilation operator normal ordering.
 
-It is less mentioned is that, normal ordering involves a mass scale $m$. In most cases, it is rather obvious what $m$ we should choose, that is the mass of the free particle, let's call it free mass. However, in order to tell what the free mass is, we need to understand what the Hamiltonian is, for example if we can unambiguously separate the Hamiltonian into $\mathcal{H}_ {0}+U(\phi)$, where $\mathcal{H}_ {0}=\pi^{2} / 2+(\partial_ {x}\phi)^{2} /2+m^{2}\phi^{2} /2$, then $m$ is the free mass. Sometimes the situation is not so straightforward, for example sometimes it is more convenient to put $m^{2}\phi^{2} /2$ into the interaction part, such as in the case of sine-Gordon model, as a result the free Hamiltonian only contains the kinetic part, and the free particles appears to be massless. In general, given a quadratic term of form $a \phi^{2}$ where $a$ is some real parameter, we can choose how much of it is to be put into the free Hamiltonian part, and the rest goes to the interaction. If we like we can pick a number such as $m=0.511$ MeV and say that $m^{2}\phi^{2}/2$ goes to the free Hamiltonian, such that the free particle has mass $m$, as a result, $(a-\frac{m^{2}}{2})\phi^{2}$ will go to the interaction. This is just a matter of convenience, the observables should not depend on such arbitrary choices.
+It is less mentioned is that, normal ordering involves a mass scale $m$. In most cases, it is rather obvious what $m$ we should choose, that is the mass of the free particle, let's call it free mass. If we can unambiguously separate the Hamiltonian into $\mathcal{H}_ {0}+U(\phi)$, where $\mathcal{H}_ {0}=\pi^{2} / 2+(\partial_ {x}\phi)^{2} /2+m^{2}\phi^{2} /2$, then $m$ is the free mass. Sometimes the situation is not so straightforward, for example sometimes it is more convenient to put $m^{2}\phi^{2} /2$ into the interaction part, such as in the case of sine-Gordon model, as a result the free Hamiltonian only contains the kinetic part, and the free particles appears to be massless. In general, given a quadratic term of form $a \phi^{2}$ where $a$ is some real parameter, we can choose how much of it is to be put into the free Hamiltonian part, and the rest goes to the interaction. If we like we can pick a number such as $m=0.511$ MeV and say that $m^{2}\phi^{2}/2$ goes to the free Hamiltonian, such that the free particle has mass $m$, as a result, $(a-\frac{m^{2}}{2})\phi^{2}$ will go to the interaction. This is just a matter of convenience, the observables should not depend on such arbitrary choices.
 
-So, how is all of this related to the normal ordering? Normal ordering is a procedure that rearranges creation and annihilation operators. These operators inherently depend on the free mass of the particle. $a^{\dagger}_ {p}$ creates a particle of momentum $\vec{p}$ **with mass $m$**, the energy of the particle is $\sqrt{ \vec{p}^{2}+m^{2} }$. I repeat, **the choice of $m$ depends on what you choose to call the free Hamiltonian, and that choice is somehow arbitrary.** The result of changing $m$ can be absorbed in a redefinition of the theory parameters.
+So, how is all of this related to the normal ordering? Normal ordering is a procedure that rearranges creation and annihilation operators. These operators inherently depend on the free mass of the particle. $a^{\dagger}_ {p}$ creates a particle of momentum $\vec{p}$ **with mass $m$**, the energy of the particle is $\sqrt{ \vec{p}^{2}+m^{2} }$. Again, **the choice of $m$ depends on what you choose to call the free Hamiltonian, and that choice is somewhat arbitrary.** The result of changing $m$ can be absorbed in a redefinition of the theory parameters.
 
 My assumption is, the field operator $\phi(x)$ itself is independent of the aforementioned choice of mass parameter $m$, while the stuff that do depend on $m$ are
 
@@ -406,12 +406,12 @@ We can also rewrite it into normal ordering at $m$:
 
 $$
 \begin{align*}
-  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m_ {0}} &= :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m} + \frac{3}{2}\lambda_ {0} I :\phi^{2}(\vec{x}):_ {m} + \frac{3}{4} \lambda_ {0} I^{2} - \frac{m_ {0}^{2}}{4}I \\
+  :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m} &= :\hat{\mathcal{H}}^{0}(\vec{x}):_ {m} + \frac{3}{2}\lambda_ {0} I :\phi^{2}(\vec{x}):_ {m} + \frac{3}{4} \lambda_ {0} I^{2} - \frac{m_ {0}^{2}}{4}I \\
   &\;\;\;\; + \frac{1}{4} \int \frac{d^{3}p}{(2\pi)^{3}} \,  \left( \frac{2\vec{p}^{2}+m^{2}}{\omega_ {p,m}} - \frac{2\vec{p}^{2}+m_ {0}^{2}}{\omega_ {p,m_ {0}}}  \right) .
 \end{align*} 
 $$
 
-Since, by definition, $:\hat{\mathcal{H}}:_ {m}=:\hat{\mathcal{H}}^{0}:_ {m_ {0}}$, we have 
+If by definition, $:\hat{\mathcal{H}}:_ {m}=:\hat{\mathcal{H}}^{0}:_ {m_ {0}}$, we have 
 
 $$
 \begin{align*}
@@ -427,7 +427,7 @@ $$
 
 Renormalization is the process by which the parameters of a quantum field theory (like the mass and coupling constant) are adjusted to account for the effects of interactions at different energy scales. This involves introducing a cutoff $\Lambda$ to regulate divergences and then taking the limit $\Lambda \to \infty$.
 
-Triviality in this context means that, as you take the ultraviolet (UV) cutoff $\Lambda \to \infty$, the renormalized coupling constant $\lambda$ tends to zero, making the interacting theory effectively a free (non-interacting) theory. This happens despite having a non-zero bare coupling constant $\lambda_ 0$.
+Triviality in this context means that, as you take the ultraviolet (UV) cutoff $\Lambda \to \infty$, the renormalized coupling constant $\lambda$ tends to zero, making the interacting theory effectively a free (trivial) theory. This happens despite having a non-zero bare coupling constant $\lambda_ 0$.
 
 When performing calculations in QFT, the bare field $\phi_ 0$ and the renormalized field $\phi$ are related by a wave function renormalization factor $Z$:
 
@@ -444,6 +444,7 @@ $$
 As $\Lambda \to \infty$, if $Z \to \infty$ (which is the case for $\phi^4$ theory in 4D), the renormalized coupling $\lambda$ must go to zero to keep $\lambda_ 0$ fixed.
 
 In summary, saying that $\phi^4$ theory is "trivial" means that, after accounting for the effects of renormalization, the theory becomes non-interacting as the UV cutoff is taken to infinity. This implies that any interacting $\phi^4$ theory in four dimensions cannot remain interacting at all energy scales and instead becomes a free theory at very high energies. This phenomenon is an important aspect of understanding the limitations and behaviors of quantum field theories in different dimensions.
+
 # 5. Perturbative Expansion of the Hamiltonian
 
 Since we want to cancel divergences in a perturbative manner, that is, order-by-order in (renormalized) coupling $\lambda$. When $\Lambda$ is involved, we should count the order with respect to $\lambda$ first, treating terms such as $\lambda \Lambda,\,\lambda \Lambda^{2}, \cdots\lambda \Lambda^{n}$ all as $\mathcal{O}(\lambda)$, and group things of the same order together. Only then do we take the limit $\Lambda\to\infty$, and cancel the divergences. 
@@ -527,6 +528,7 @@ $$
 $$
 
 We have neglected higher order terms, for example a term $3g\delta g\sim \mathcal{O}(g^{4}) \sim\mathcal{O}(\lambda^{2})$ was dropped from the expression.
+
 # 6. Passive Transformation by $D_ {f}$
 
 In order to find the approximate Hilbert state with correct vacuum expectation value of $\phi$, we introduce the displacement operator. Given a function $f(\vec{x})$, the associated displacement operator is defined as 
@@ -558,7 +560,7 @@ I find it helpful to use $T_ {\vec{x}}$ as an example to understand the properti
 
 Quantum mechanics is defined over the spatial coordinates $\vec{x}$. The position eigenstates $\left\lvert{\vec{x}}\right\rangle$ form a complete basis of the Hilbert space. However, $\left\lvert{\vec{x}}\right\rangle$ is represented by a Dirac $\delta$-function, which does not belong to the Hilbert space of $L^{2}(\mathbb{R}^{d})$, where $d$ is the dimension of the space, as usually. It is a challenge to mathematical rigor of quantum mechanics. 
 
-Recall that the Hilbert space $L^{2}(\mathbb{R}^{d})$ consists of all square-integrable functions defined on $\mathbb{R}^{d}$, with an inner product $\left\langle f,g \right\rangle=\int dx \, f^{\ast}g$. This inner product also defines a norm, and with norm we can talk about Cauchy completeness. The space $L^{2}$ is indeed Cauchy complete, since we do not require functions in it to be smooth. The Cauchy completeness makes it a Hilbert space, not a pre-Hilbert space. 
+Recall that the Hilbert space $L^{2}(\mathbb{R}^{d})$ consists of all square-integrable functions defined on $\mathbb{R}^{d}$, with an inner product $\left\langle f,g \right\rangle=\int dx \, f^{\ast}g$. This inner product also defines a norm, and with norm we can talk about Cauchy completeness. The space $L^{2}$ is indeed *Cauchy complete*, since we do not require functions in it to be smooth. The Cauchy completeness makes it a Hilbert space, not a pre-Hilbert space. 
 
 To deal with mathematical objects such as the Dirac $\delta$-function, quantum mechanics often uses the concept of `rigged Hilbert space`, also known as a `Gelfand triplet`. A rigged Hilbert space involves three components:
 
@@ -593,13 +595,9 @@ $\left\lvert{\vec{x}}\right\rangle$ fails this requirement since $\left\langle{\
 
 - - -
 
-We distinguish two concepts, `states` and `wave function`. In quantum mechanics, they are sometimes used interchangeably, but they have distinct meanings. A quantum state contains all the information about the system. It can be described in different representations, depending on what information we want to know. For example, if we want to know information about the position, we go to the physical space representation expanded by $\left\lvert{\vec{x}}\right\rangle$. Quantum states can be represented as vectors in a Hilbert space, and there exists pure and mixed states. On the other hand, the wave function is a specific representation of a quantum state in the position (or sometimes momentum) basis. It is a complex-valued function that gives the probability amplitude of finding a particle in a particular position in space. The wave function of a state $\left\lvert{\psi}\right\rangle$ is denoted by $\psi(x)$, where $x$ is the position. 
-
-In the passive perspective, a state before and after spatial translation is the same state, they just have different wave functions, because in order to get the wave function we need two things: bases and a state, even though the state is unchanged but the bases are changed now, thus the final expression is also changed.
+We distinguish two concepts, `states` and `wave function`. In quantum mechanics, they are sometimes used interchangeably, but they have distinct meanings. A quantum state contains all the information about the system. It can be described in different representations, depending on what information we want to know. For example, if we want to know information about the position, we go to the physical space representation expanded by $\left\lvert{\vec{x}}\right\rangle$. Quantum states can be represented as vectors in a Hilbert space, including pure and mixed states. On the other hand, the wave function is a specific representation of a quantum state in the position (or sometimes momentum) basis. It is a complex-valued function that gives the probability amplitude of finding a particle in a particular position in space. The wave function of a state $\left\lvert{\psi}\right\rangle$ is denoted by $\psi(x)$, where $x$ is the position. 
 
 - - -
-
-Coming back to the passive perspective regarding the displacement operator $\mathcal{D}_ {f}$ acting on a state, for example the kink state $\left\lvert{K}\right\rangle$. We regard $\mathcal{D}_ {f}\left\lvert{K}\right\rangle$ (or is it $D_ {f}^{\dagger}\left\lvert{K}\right\rangle$? I don't remember, anyways the argument works the same) as the same state as $\left\lvert{K}\right\rangle$, but "shifted". In the case of quantum mechanics, the things that get shifted are wave functions; in quantum field theory, it should be **wave functional**, the quantum field theoretical counterpart of wave functions. Let's dive into the details.
 
 Consider a scalar field theory. The "coordinate" for such a theory would not be $\vec{x},\vec{y}$ but field configurations $\phi(\vec{x})$. Instead of the position of a single particle, we now consider the entire configuration of the field $\phi(x)$ at a particular time. The wave functional $\Psi[\phi]$ describes the quantum state of the entire field configuration $\phi(x)$ at a given time.  Recall how the quantization is done in quantum mechanics: classically a particle occupies a specific position $\vec{x}(t)$ at any given time $t$, after quantization, instead of $\vec{x}(t)$ we have a wave function $\psi$ that maps each $\vec{x}$ to a complex number. This is just to say that the wave function is a function of spacetime. Similarly, in QFT, let $\Psi[\phi]$ be a functional, then by definition it assigns a complex number to each field configuration $\phi(\vec{x})$,
 
@@ -613,7 +611,7 @@ $$
 \hat{\phi}(\vec{x})\left\lvert{\phi}\right\rangle  = \phi(\vec{x})\left\lvert{\phi}\right\rangle ,
 $$
 
-Any wave functional can be given as a superposition of such eigen states. Let $\left\lvert{\Psi}\right\rangle$ be a well-behaved wave functions, it can be formally written as 
+Any wave functional can be given as a superposition of such eigenstates. Let $\left\lvert{\Psi}\right\rangle$ be a well-behaved wave functions, it can be formally written as 
 
 $$
 \left\lvert{\Psi}\right\rangle  = \int D\phi(\vec{x}) \, \Psi[\phi(\bullet)] \left\lvert{\phi(\bullet)}\right\rangle  ,
@@ -643,7 +641,7 @@ $$
 and recall that $\left\lvert \Psi[\varphi] \right\rvert^{2}$ is the probability of finding $\varphi$ in $\Psi$, thus indeed we have 
 
 $$
-\int D\varphi \,  \left\lvert \Psi[\varphi] \right\rvert^{2}  \varphi(\vec{x}) = \left\langle \hat{\phi}(\vec{x}) \right\rangle =: \psi(\vec{x}).
+\int D\varphi \,  \left\lvert \Psi[\varphi] \right\rvert^{2}  \varphi(\vec{x}) = \left\langle \hat{\varphi}(\vec{x}) \right\rangle =: \psi(\vec{x}).
 $$
 
 Time evolution is generated by the Hamiltonian, yielding a functional Schrodinger equation:

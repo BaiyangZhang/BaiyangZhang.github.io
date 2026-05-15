@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
+                "file": "未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-07-Bare-Minimum-of-Abelian-Decomposition"
+              "title": "未命名"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e9005e1ca97f4a0a",
@@ -187,15 +186,30 @@
   },
   "active": "8ab89216ae881340",
   "lastOpenFiles": [
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
+    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
+    "_posts/2025-01-06-Perturbative-SSB-and-Effective-Action.md",
+    "_posts/2025-03-03-Lie-Groups.md",
+    "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
+    "_posts/2025-03-14-Mass-Renormalization.md",
+    "_posts/2025-04-30-Electromagnetic-Connection.md",
+    "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
+    "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
+    "_posts/2025-09-21-Does-Adiabatic-Assumption-Work.md",
+    "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
+    "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
+    "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
+    "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
     "_posts/2026-04-30-Electrodynamics-in-Terms-of-Differential-Forms.md",
+    "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
     "萨利斯数据metadata.md",
     "外国专家申请.md",
     "未命名.md",
-    "_posts/2025-04-30-Electromagnetic-Connection.md",
     "_posts/2024-12-31-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
     "_posts/2024-5-8-Classical-Lumps-and-Their-Quantum-Descendants.md",
     "_posts/2024-02-28-Quantum-Kinks.md",
-    "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/张柏阳中文简历.pdf",
     "assets/pdf/BaiyangZhangCV.pdf",
@@ -208,21 +222,6 @@
     "_sass/_layout.scss",
     "_sass/_distill.scss",
     "_sass/_cv.scss",
-    "_drafts/中国高校中的异化现象研究.md",
-    "_drafts/投简历情况.md",
-    "_drafts/面上基金申请Prompt.md",
-    "_drafts/临床应用本子.md",
-    "_drafts/计量检测认证知识竞赛题库.md",
-    "_drafts/国自然非官方LaTeX模板.md",
-    "_drafts/博后三年记.md",
-    "_drafts/Short Note.md",
-    "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
-    "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
-    "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
-    "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
-    "面上基金申请Prompt.md",
-    "绿色建筑能源项目思路.md",
-    "内容1.md",
     "Pasted image 20260128105100.png",
     "Pasted image 20260112230039.png",
     "Pasted image 20260108212014.png"

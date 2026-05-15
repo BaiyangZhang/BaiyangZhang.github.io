@@ -8,7 +8,7 @@ tags:
 ---
 
 Let $T: \mathcal{H}\to\mathcal{H}'$ be a linear operator. $T$ is said to be `bounded` if $\left\lVert T(\xi)\right\rVert\leq C\left\lVert \xi \right\rVert$ for all $\xi \in\mathcal{H}$ where  $C<\infty$. The smallest of such $C$ is called the `operator norm` of $T$, denoted $\left\lVert T \right\rVert$. $T$ is bounded iff $T$ is continuous. 
-
+[[2025-08-29-Note-on-The-Moral-Foundations-of-Politics]]
 The space of all the **bounded** linear operator that maps $\mathcal{H}$ to itself is denoted $B(\mathcal{H})$. It is a Banach space with operator norm.
 
 The kernel $\text{ker}(T)$ of a bounded operator $T$ is a closed subspace of $\mathcal{H}$.
