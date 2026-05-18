@@ -388,6 +388,8 @@ We have neglected higher order terms, for example a term $3g\delta g\sim \mathca
 
 ## Classic kink solution
 
+
+
 ## Displacement operator
 
 In order to find the (approximate) Hilbert state with correct vacuum expectation value of $\phi$, we introduce the displacement operator. Given a function $f(\vec{x})$, the associated displacement operator is defined as 
@@ -485,7 +487,7 @@ about $\phi'\sim 0$. We say that this partition function is perturbative about $
 
 Above is in Lagrangian formalism, we know there is also Hamiltonian formalism, and anything that can be done with one formalism can equally be done in the other, it is just a matter of convenience. 
 
-The fundamental idea is similar to the perturbative calculation we did in quantum mechanics, but generalized to quantum field theory. The key idea is that to perform the perturbation calculation about a state $\left\lvert \Psi \right\rangle$, we need to find the basic field operator $\phi'$ that has zero vev, $\left\langle \Psi \right\rvert\phi'\left\lvert \Psi \right\rangle=0$. Then and only then can we apply the standard perturbation method to $\phi'$ and $\left\lvert \Psi \right\rangle$. 
+The fundamental idea is similar to the perturbative calculation we did in quantum mechanics, but generalized to quantum field theory. The key idea is that to perform the perturbation calculation about a state $\left\lvert \Psi \right\rangle$, we need to find the basic field operator $\phi'$ that has zero vev, $\left\langle \Psi \right\rvert\phi'\left\lvert \Psi \right\rangle=0$. Only then can we apply the standard perturbation method to $\phi'$ and $\left\lvert \Psi \right\rangle$. 
 
 Turns out, the desired basic field operator $\phi'$ differs from the original field operator just by an unitary transformation, given by the displacement operator. Recall the defining property of displacement operator, $\mathcal{D}_ {f}^{\dagger}\phi \mathcal{D}_ {f}=\phi+f$. 
 
