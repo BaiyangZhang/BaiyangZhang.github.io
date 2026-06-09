@@ -35,7 +35,8 @@
               "title": "未命名"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e9005e1ca97f4a0a",
@@ -198,10 +200,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8ab89216ae881340",
+  "active": "61271f5ee687fa69",
   "lastOpenFiles": [
-    "未命名.md",
     "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+    "未命名.md",
     "外国专家申请.md",
     "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
     "_posts/2026-04-30-Electrodynamics-in-Terms-of-Differential-Forms.md",
