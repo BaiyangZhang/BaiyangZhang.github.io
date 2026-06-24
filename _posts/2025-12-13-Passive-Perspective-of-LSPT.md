@@ -582,7 +582,7 @@ $$
 
 - - -
 
-Assume the kink $f(x)$ as a static, classical background, about which we expand the field operator as fluctuation. Write the fluctuation as $\mathfrak{g}(x,t)$ and assume that we can separate the time ans position coordinates,
+Assume the kink $f(x)$ as a static, classical background, about which we expand the field operator as fluctuation. Write the fluctuation as $\mathfrak{g}(x,t)$ and assume that we can separate the time and position coordinates,
 
 $$
 \phi(x,t) =: f(x) + {\mathfrak g}(x) e^{-i\omega t},

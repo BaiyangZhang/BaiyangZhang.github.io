@@ -24,21 +24,21 @@ $$
 \left\langle{0^{+}}\right\rvert \phi \left\lvert{0^{+}}\right\rangle =+ \frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}
 $$
 
-Now we want to study the quantum physics around one of the vacua, say $\left\langle \phi \right\rangle = \frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}$, and we want to apply perturbation methods, since it is usually the only way we know how to proceed. The question is how to do perturbation theory with Hamiltonian formalism? For the validation of perturbation method, the field fluctuation should be small, meaning $\left\langle \phi \right\rangle$ should be small, but it is clearly not the case here, since $m_ {0} / \sqrt{ 2 } g_ {0}$ is not small by any sense. 
+Now we want to study the quantum physics around one of the vacua, say $\left\langle \phi \right\rangle = \frac{m_ {0}}{\sqrt{ 2\lambda_ {0} }}$, and we want to apply perturbation methods. The question is how to do perturbation theory with Hamiltonian formalism? For the validation of perturbation method, the field fluctuation should be small, meaning $\left\langle \phi \right\rangle$ should be small, but it is clearly not the case here, since $m_ {0} / \sqrt{ 2 } g_ {0}$ is not small by any sense. 
 
 - - -
 
-Another thing we need to keep in mind is the difference between bare and renormalized parameters, eventually we need to write down the observables in terms of not bare, but renormalized parameters. Following the philosophy of *renormalized perturbative method*, we should 1) separate the Hamiltonian into renormalized terms and counter terms, then 2) use the counter terms to cancel the divergence from loops, which are now written in terms of renormalized parameters. We wrote the vev of $\phi$ in terms of bare parameters, but that is only for pedagogical reasons, what we should really do it first write the Hamiltonian into the renormalized perturbation theory form, 
+Another thing we need to keep in mind is the difference between bare and renormalized parameters, eventually we need to write down the observables in terms of not bare, but renormalized parameters. Following the philosophy of *renormalized perturbative method*, we should 1) separate the Hamiltonian into renormalized terms and counter terms, 2) use the counter terms to cancel the divergence from loops, which are now written in terms of renormalized parameters. We have
 
 $$
 \hat{\mathcal{H}} =  \frac{1}{2}\pi^{2}(\vec{x})+\frac{1}{2} (\partial_ {i}\phi)^{2} - \frac{m^{2}}{4} \phi^{2}(\vec{x}) + \frac{\lambda}{4} \phi^{4}(\vec{x}) + A + \text{counter terms,}
 $$
 
-then look for the minimum of the double-well potential, now $\left\langle \phi \right\rangle = m / \sqrt{ 2 }g$, with out naught subscript. 
+then look for the minimum of the double-well potential, now $\left\langle \phi \right\rangle = m / \sqrt{ 2 }g$, without naught subscript. 
 
 - - -
 
-The last but not the least thing we need to worry about is the normal ordering. So far my assumption is that, the Hamiltonian is defined at some intrinsic parameter $m_ {0}$, so the normal ordering should also be defined at $m_ {0}$; however, to make the calculation easier, we shift the normal ordering to another scale: $m$. We have already talked in length about how to perform this shift. The final result should not depend on the shift though.
+The last but not least we need to worry about is the normal ordering. So far my assumption is that, the Hamiltonian is defined at some intrinsic parameter $m_ {0}$, so the normal ordering should also be defined at $m_ {0}$; however, to make the calculation easier, we shift the normal ordering to another scale: $m$. We have already talked in length about how to perform this shift. The final result should not depend on the shift though.
 
 - - -
 
@@ -50,9 +50,9 @@ $$
 
 but only include $\phi'\sim 0$. 
 
-How can we do the same thing but with Hamiltonian formalism? Anything that can be done with one formalism can equally be done in the other, it is just a matter of convenience. 
+How can we do the same thing but with Hamiltonian formalism? Regarding Hamiltonian and Lagrangian formalism, anything that can be done with one formalism can equally be done in the other, it is just a matter of convenience. 
 
-The problem is, in Hamiltonian formalism and working with $\hat{\mathcal{H}}$, perturbation methods are just not applicable, because the expectation value $\left\langle \phi \right\rangle := \left\langle{0^{+}}\right\rvert \phi \left\lvert{0^{+}}\right\rangle$ is by no means a small quantity, in fact $\left\langle \phi \right\rangle$ scales as $1 / \sqrt{ \lambda  }$, it actually blows up as $\lambda \to 0$. Then, similar to the Lagrangian case, we need to find some new field operator $\phi'$ such that $\left\langle \phi' \right\rangle=0$, then we can study the effects of fluctuation of $\left\langle \phi' \right\rangle$ perturbative in $\left\lvert{0^{+}}\right\rangle$ state. Turns out, $\phi'$ is connected to $\phi$ by a unitary transformation, and in the case at hand the unitary operator turns out to be the displacement operator $\mathcal{D}_ {v }$, where $v $ is some parameter to be determined. Note that we have replaced the arbitrary function $f(\vec{x})$ with a constant function $v $. We will explain it in the following.
+The problem is, in Hamiltonian formalism, perturbation methods are just not applicable, because the expectation value $\left\langle \phi \right\rangle := \left\langle{0^{+}}\right\rvert \phi \left\lvert{0^{+}}\right\rangle$ is by no means a small quantity, in fact $\left\langle \phi \right\rangle$ scales as $1 / \sqrt{ \lambda  }$, it actually blows up as $\lambda \to 0$. Then, similar to the Lagrangian case, we need to find some new field operator $\phi'$ such that $\left\langle \phi' \right\rangle=0$, then we can study the effects of fluctuation of $\left\langle \phi' \right\rangle$ perturbative in $\left\lvert{0^{+}}\right\rangle$ state. Turns out, $\phi'$ is connected to $\phi$ by a unitary transformation, and in the case at hand the unitary operator turns out to be the displacement operator $\mathcal{D}_ {v }$, where $v$ is some parameter to be determined. Note that we have replaced the arbitrary function $f(\vec{x})$ with a constant function $v$. We will explain it in the following.
 
 Recall the defining property of displacement operator, $\mathcal{D}_ {f}^{\dagger}\phi \mathcal{D}_ {f}=\phi+f$. Thus if we let 
 

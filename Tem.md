@@ -1,0 +1,1 @@
+Now let's consider the $\phi^{4}$ model with spontanerous symmetry breaking of $\mathbb{Z}_ {2}$ symmetry. Let's say the vev of field operator $\phi$ takes two possible values, $\pm v$. Assume the vacuum is spontaneously broken to $+v$, we can write $\phi\to v+\phi$ and get a new Lagrangian. How does the renormalization theory work in this case? Show me a detailed derivation.
