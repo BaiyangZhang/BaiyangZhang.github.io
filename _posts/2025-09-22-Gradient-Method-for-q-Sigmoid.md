@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gradient Method for q-Sigmoid Loss Function
-date: 2025-09-22
+date: 2026-07-09
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -131,7 +131,7 @@ where $G$ in $i\in G$ means that the regression is done within a certain group o
 
 
 
-# Appendix. Useful Mathematical Formulae
+# Appendix A. Useful Mathematical Formulae
 
 The definition of $\eta$-logarithm and $\eta$-exponential, $x>0, \eta \in\mathbb{R}^\ast=\mathbb{R}\backslash\left\lbrace 0 \right\rbrace$:
 
@@ -170,3 +170,13 @@ $$
 $$
 
 For more details, refer to the textbook by Tsallis himself and [https://doi.org/10.1016/S0378-4371(01)00567-2](https://doi.org/10.1016/S0378-4371(01)00567-2 "Persistent link using digital object identifier").
+
+# Apendix B. Varying q index
+
+In order to account for the complex interaction between the environment and the gene expression, it is reasonable to upgrade the $q$-factor to be a variable dependent of various parameters that quantitatively describe the environment. It was explain more clearly in the paper, the rough idea is that, 1) the environmental parameters, such as age, gender, smoking habbit, etc., and 2) the non-invironmental parameters, mostly the genes. the Tsallis $q$-factor will depend on the former class of parameters. 
+
+Since there are too few data, let's change the way of expliting them. First, take age for example, one may divide the totality of fitting data into two big sets with overlapping: the set of data $S_ {o}$ of oldest 80% and the set of data $S_ {y}$ of the yongest 80%. The superscript $o,y$ denote old and young respectively. Then we take care of these two groups independently, as follows.
+1. Fit the $q$-parameter based on $S_ {0}$, denote the resulting $q$-value $q_ {o}$. Get the average age $a_ {o}$ of $S_ {o}$, match it with $q_ {o}$. This way we will have a pair, $(a_ {0},q_ {0})$.
+2. Do the same to the set $S_ {y}$, get another pair $(a_ {y},q_ {y})$.
+3. These two pairs will determine a straight line, call it $l_ {\text{age}}$. We assume that the $q$-demendence on age is faithfully represented by $l_ {\text{age}}$. 
+
