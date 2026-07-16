@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8ab89216ae881340",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II"
-            }
-          },
-          {
             "id": "61271f5ee687fa69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid.md",
+                "file": "萨利斯数据metadata.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-22-Gradient-Method-for-q-Sigmoid"
+              "title": "萨利斯数据metadata"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5
+    "width": 200
   },
   "right": {
     "id": "e9005e1ca97f4a0a",
@@ -201,8 +186,26 @@
   },
   "active": "61271f5ee687fa69",
   "lastOpenFiles": [
-    "_posts/2025-09-21-Does-Adiabatic-Assumption-Work.md",
+    "外国专家申请.md",
+    "未命名.md",
+    "2026-06-24-Schrodinger-Picture-Formulation-of-a-Scalar-QFT.md",
+    "2025-09-22.md",
+    "萨利斯数据metadata.md",
+    "log.md",
+    "Pasted image 20260713205209.png",
+    "Pasted image 20260610202540.png",
+    "Pasted image 20260610152518.png",
+    "Prompt for AI RA.md",
+    "Tem.md",
+    "README.md",
+    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
+    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
+    "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
+    "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
+    "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
+    "_posts/2024-11-05-Thoughts-on-Entropy.md",
     "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid.md",
+    "_posts/2025-09-21-Does-Adiabatic-Assumption-Work.md",
     "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
     "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
@@ -212,23 +215,6 @@
     "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
     "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
     "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
-    "_posts/2025-04-30-Electromagnetic-Connection.md",
-    "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
-    "2025-09-22.md",
-    "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
-    "Tem.md",
-    "Prompt for AI RA.md",
-    "README.md",
-    "log.md",
-    "Pasted image 20260610152518.png",
-    "外国专家申请.md",
-    "萨利斯数据metadata.md",
-    "2026-06-24-Schrodinger-Picture-Formulation-of-a-Scalar-QFT.md",
-    "未命名.md",
-    "_posts/2024-12-31-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-III.md",
-    "Pasted image 20260610202540.png",
-    "_posts/2026-04-30-Electrodynamics-in-Terms-of-Differential-Forms.md",
-    "_posts/2024-07-15-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-I.md",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/张柏阳中文简历.pdf",
     "assets/pdf/BaiyangZhangCV.pdf",
