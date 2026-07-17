@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "萨利斯数据metadata.md",
+                "file": "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "萨利斯数据metadata"
+              "title": "2026-04-07-Bare-Minimum-of-Abelian-Decomposition"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e9005e1ca97f4a0a",
@@ -186,16 +187,19 @@
   },
   "active": "61271f5ee687fa69",
   "lastOpenFiles": [
+    "Prompt for AI RA.md",
+    "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
+    "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
+    "_posts/2026-04-30-Electrodynamics-in-Terms-of-Differential-Forms.md",
+    "萨利斯数据metadata.md",
     "外国专家申请.md",
     "未命名.md",
     "2026-06-24-Schrodinger-Picture-Formulation-of-a-Scalar-QFT.md",
     "2025-09-22.md",
-    "萨利斯数据metadata.md",
     "log.md",
     "Pasted image 20260713205209.png",
     "Pasted image 20260610202540.png",
     "Pasted image 20260610152518.png",
-    "Prompt for AI RA.md",
     "Tem.md",
     "README.md",
     "_posts/2024-08-25-Constructing-a-Finite-Tension-Domain-Wall-in-4D-Part-II.md",
@@ -211,10 +215,7 @@
     "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
     "_posts/2025-03-03-Lie-Groups.md",
     "_posts/2025-03-14-Mass-Renormalization.md",
-    "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
     "_posts/2025-10-12-Rules-for-Jarah-Diagrams.md",
-    "_posts/2025-10-12-Calculating-States-Using-Diagrams.md",
-    "_posts/2025-10-07-Abelian-Decomposition-and-Monopole.md",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/张柏阳中文简历.pdf",
     "assets/pdf/BaiyangZhangCV.pdf",

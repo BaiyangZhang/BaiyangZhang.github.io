@@ -1443,7 +1443,7 @@ where $\vec{T}=(T^{1},T^{2},T^{3})$. To make the gauge transformation easier, we
 $$
 \mathcal{C} = - \frac{1}{g} (d\theta T_ {\phi}- \sin \theta d\phi T_ {\theta}), \quad  T_ {\theta} := \hat{\theta} \cdot \vec{T}, T_ {\phi} := \hat{\phi} \cdot \vec{T}
 $$
-where
+where in Cartesian coordinates we have
 
 $$
 \begin{align*}
@@ -1463,7 +1463,7 @@ $$
 e^{-i \phi T^{3}} = \cos \frac{\phi}{2} \mathbb{1}_ {2} - 2i \sin \frac{\phi}{2} T^{3}
 $$
 
-we know that they realize the rotation of $T^{1},T^{2}$ basis, 
+we know that they corresponds to rotation in $T^{1},T^{2}$ basis, 
 
 $$
 e^{-i\phi T^{3}} (T^{1},T^{2}) e^{i\phi T^{3} } = (T^{1},T^{2}) \times 
@@ -1475,9 +1475,7 @@ $$
 
 where $(T^{1},T^{2})$ is a row vector, we have adopted the convention that the vector of basis are always written as a row vector, whereas the vector of coefficients are written as a column vector. 
 
-In a word, the sandwich $e^{-i\phi T^{3}} \bullet e^{i \phi T^{3}}$ realizes the rotation in $T^{3}$ direction by $\phi$. 
-
-We can perform a cyclic permutation $(3\to 2 \to 1 \to 3)$ to above equation, which is a symmetry of the algebra. We get that  the sandwich $e^{-i\theta T^{2}} \bullet e^{i\theta T^{2}}$ realizes the rotation in $T^{2}$ direction by $\theta$:
+We can perform a cyclic permutation $(3\to 2 \to 1 \to 3)$ to above equation, which is a symmetry of the algebra. Hence the sandwich $e^{-i\theta T^{2}} \bullet e^{i\theta T^{2}}$ corresponds to rotation in $T^{2}$ direction by $\theta$:
 
 $$
 e^{-i\theta T^{2}} (T^{3},T^{1}) e^{i\theta T^{2} } = (T^{3},T^{1}) \times 
@@ -1487,7 +1485,7 @@ e^{-i\theta T^{2}} (T^{3},T^{1}) e^{i\theta T^{2} } = (T^{3},T^{1}) \times
 \end{pmatrix}.
 $$
 
-The rotations from $\hat{n}=\hat{r}$ to $\hat{e}=(0,0,1)=T^{3}$ is given by three Euler angles: $(\alpha,\beta,\gamma)=(-\phi,-\theta,0)$, where the last angle is arbitrary. The corresponding rotation matrix is 
+The rotations from $\hat{n}=\hat{r}$ to $\hat{e}=(0,0,1)=T^{3}$ is given by three Euler angles (in Z-Y-Z convention): $(\alpha,\beta,\gamma)=(-\phi,-\theta,0)$, where the last angle is arbitrary. The corresponding rotation matrix is 
 
 $$
 R = e^{i\theta T^{2}} e^{i\phi T^{3}}.
@@ -1520,8 +1518,6 @@ $$
 
 which is the standard Dirac monopole potential up to a gauge transformation. Note that in the hedgehog form, if we first rotate in $\hat{n}$ direction by $-\phi$, i.e. choose the rotation matrix to be $R=e^{i\theta T^{2}} e^{i\phi T^{3}} e^{-i\phi \mathfrak{n}}$, then we can reproduce the exact Dirac monopole $A=\frac{1-\cos \theta}{g}T^{3}d\phi$. The gauge redundancy in Dirac monopole corresponds to the freedom of little group of combed hedgehog.
 
-*Another way to obtain the same result is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.* The key idea is  that, in the hedgehog form $\mathcal{C}_ {\mu}$ can be written as $\mathcal{C}=C \hat{n}$, where $C$ is a scalar thus un-affected by the gauge rotation, which only changes the direction of $\hat{n}$. Thus after the rotation we must have $\mathcal{C}'= C \hat{z}$. But to calculate the scalar $C$ we can use the formulae $C=- \frac{1}{g} \hat{n}_ {1}\cdot \hat{n}_ {2}$, which greatly simplifies the calculation. 
-
 With this method, in order to reproduce the exact Dirac potential $A=\frac{1-\cos \theta}{g}$, we need to first rotate $\hat{\theta},\hat{\phi}$ in the $\hat{n}$ direction by $-\phi$, 
 
 $$
@@ -1545,6 +1541,8 @@ This means that the scalar part of $\mathcal{C}_ {\mu}$ reads
 $$
 C_ {\mu} = - \frac{1}{g} \theta'\cdot \partial_ {\mu}\hat{\phi}' = - \frac{1}{g}(1-\cos \theta)\partial_ {\mu}\phi.
 $$
+
+*Another way to obtain the same result is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.* The key idea is  that, in the hedgehog form $\mathcal{C}_ {\mu}$ can be written as $\mathcal{C}=C \hat{n}$, where $C$ is a scalar thus un-affected by the gauge rotation, which only changes the direction of $\hat{n}$. Thus after the rotation we must have $\mathcal{C}'= C \hat{z}$. But to calculate the scalar $C$ we can use the formulae $C=- \frac{1}{g} \hat{n}_ {1}\cdot \hat{n}_ {2}$, which greatly simplifies the calculation. 
 
 - - -
 
