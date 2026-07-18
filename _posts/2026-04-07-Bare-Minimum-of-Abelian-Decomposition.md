@@ -1602,6 +1602,10 @@ $$
 it suffices to verify the first component. 
 
 - - -
+## Some special solutions
+
+Consider a monopole-antimonopole dipole. Place a monopole at $\left( 0,0,\frac{a}{2} \right)$ and an antimonopole at $\left( 0,0,-\frac{a}{2} \right)$. The equation of motion for $\hat{A}$ is linear, hence we can add the separate solutions to obtain the dipole potential. Let $A_ {\mu}^{+}$ be the potential of the monopole and $A _{\mu}^{-}$ be the potential of the antimonopole. We have:
+
 
 
 
