@@ -1690,8 +1690,16 @@ $$
 Similarly, for $H_ {\mu \nu}$ we have 
 
 $$
-d ^{\dagger} H = d ^{\dagger} (- \frac{2n}{g} \sin 2\theta d\theta \wedge d\varphi) = 
+d ^{\dagger} H = d ^{\dagger} \left( - \frac{2n}{g} \sin 2\theta d\theta \wedge d\varphi \right) = - \frac{4n\sin ^{2}\theta}{gr^{2}}d\varphi
 $$
+
+Hence 
+
+$$
+\partial_ {\mu}H^{\mu}_ {\;\;\nu}= \frac{4n\sin ^{2}\theta}{gr^{2}}d\varphi.
+$$
+
+
 
 
 # Appendix
