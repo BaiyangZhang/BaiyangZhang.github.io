@@ -205,7 +205,7 @@ $$
 \begin{align*}
 f_ {\mu \nu} &= \partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu},\\
 H_ {\mu \nu} \mathfrak{n}  &=\frac{i}{g}[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ],\\
-H_ {\mu \nu} &= \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}, \; C_ {\mu}:= \hat{n}_ {2}\cdot \partial_ {\mu}\hat{n}_ {1}.
+H_ {\mu \nu} &= \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}, \; C_ {\mu}:=\frac{1}{g} \hat{n}_ {2}\cdot \partial_ {\mu}\hat{n}_ {1}.
 \end{align*}
 $$
 
@@ -1604,9 +1604,94 @@ it suffices to verify the first component.
 - - -
 ## Some special solutions
 
-Consider a monopole-antimonopole dipole. Place a monopole at $\left( 0,0,\frac{a}{2} \right)$ and an antimonopole at $\left( 0,0,-\frac{a}{2} \right)$. The equation of motion for $\hat{A}$ is linear, hence we can add the separate solutions to obtain the dipole potential. Let $A_ {\mu}^{+}$ be the potential of the monopole and $A _{\mu}^{-}$ be the potential of the antimonopole. We have:
+Consider a monopole-antimonopole dipole. Place a monopole at $\left( 0,0,\frac{a}{2} \right)$ and an antimonopole at $\left( 0,0,-\frac{a}{2} \right)$, denote the polar angle by $\theta_ {\pm}$ respectively. The equation of motion for $\hat{A}$ is linear, hence we can add the separate solutions to obtain the dipole potential. Let $A_ {\mu}^{+}$ be the potential of the monopole and $A _{\mu}^{-}$ be the potential of the antimonopole. Direct calculation shows that $\cos \theta_ {\pm}=\cos \theta \mp \frac{1}{2r}\sin ^{2}\theta$. We have:
 
+$$
+A_ {\mu}^{(\pm )} = \mp \frac{1}{g} \left( 1-\cos \theta \pm \frac{a}{2r} \sin ^{2}\theta \right),
+$$
 
+hence the gauge field of a pair of monopole-antimonopole separated by distance $a$ reads
+
+$$
+\hat{A}_ {\mu} = - \frac{1}{g} \frac{a\sin ^{2}\theta}{r} \partial_ {\mu}\varphi.
+$$
+
+Since the magnetic charge is $\frac{4\pi}{g}$, two monopoles separated by distance $a$ has magnetic moment $\vec{m}=\frac{4\pi a}{g}\hat{z}$. Above expression can be written as 
+
+$$
+\hat{A}_ {\mu} = - \frac{m}{4\pi} \frac{\sin ^{2}\theta}{r}\partial_ {\mu}\varphi \hat{e},
+$$
+
+where $\hat{e}$ shows the $\mathfrak{su}(2)$ direction of $\hat{A}$, since we have assumed that $n=T^{3}$ everywhere.
+
+### Zero winding number solution
+
+Let $f:M\to N$ be a continuous map from mainifold $M$ to manifold $N$. To simplify the discussion we assume that both the manifold have the same volume, for example they could both be unit circles. To calculate the winding number of $f$, given a volume spaned by $\epsilon_ {1}V_ {1}, \epsilon_ {2}V_ {2},\cdots$ on $M$, we want to know how $f$ maps it to another volume in $N$, then integrate the total volume. If the total volume of $M$ is $A$, the projected volume is $nA$ where $n$ is an integer, then the winding number is $n$. In other words, we need to integrate the pushforward of $M$ to $N$. The volume is measured by the volume form, let $dV_ {N}$ be the volume form on $N$, the mapped volume would be $\int_ {N}(f_ {\ast}M) dV_ {N}$. However it is usually easier to calculate it on $M$, hence we instead pullback $dV_ {N}$ to $M$, and calculate $\int_M f^{\ast}dM_ {N}$. This will give the expression of winding number as an integral on physical space. 
+
+Consider the following $\hat{n}$ with zero winding number: $\hat{n}=(\sin(2\theta)\cos(n\varphi),\sin 2\theta \sin n\varphi, \cos2\theta)$. For the field, we take the ansatz $a = A(\theta)d\varphi$. We also have $C=\frac{n}{g}\cos(2\theta)d\varphi$ (note that this is NOT $\mathcal{C}$) as a result of the $\hat{n}$ defined above. Then 
+
+$$
+f=da= d(A(\theta)d\varphi) = dA(\theta)\wedge d\varphi = \frac{dA(\theta)}{d\theta}d\theta \wedge d\varphi.
+$$
+
+and 
+
+$$
+H = - \frac{2n}{g} \sin 2\theta d\theta \wedge d\varphi.
+$$
+
+The difergence of $f_ {\mu \nu}$ is given by the negative of $d ^{\dagger}f$, where $d ^{\dagger}:=(-1)^{n(p+1)+1}\star d\star$ when acting on a $p$-form. That is $\partial^{\mu}f_ {\mu \nu}dx^{\nu} = -d ^{\dagger}f$. Regarding the Hedge star, in the angular coordinate the volume form reads 
+
+$$d\text{Vol}=\sqrt{\left\lvert g \right\rvert}dr\wedge d\theta \wedge d\varphi = r^{2}\sin \theta dr\wedge d\theta \wedge d\varphi.$$
+
+However the basis $dr,d\theta,d\varphi$ are not normalized, their norms can be derived in terms of $dx^{i}$ which we know are orthonorml, the result is $\left\lVert dr \right\rVert=1, \left\lVert d \theta \right\rVert=\frac{1}{r}$ and $\left\lVert d\varphi \right\rVert = \frac{1}{r\sin \theta}$. Since for any form $\omega \wedge\star \omega=\left\lVert \omega \right\rVert^{2} dVol$, particularly we have 
+
+$$
+dr\wedge \star dr=\left\lVert dr \right\rVert^{2}\text{dVol} = r^{2}\sin \theta dr\wedge d\theta \wedge d\varphi
+$$
+
+hence $\star dr=r^{2}\sin \theta d\theta \wedge d\varphi$. Similarly we have 
+
+$$
+\begin{align*}
+\star d\theta &=  \sin \theta d\varphi \wedge dr,\\
+\star d\varphi &= \frac{1}{\sin \theta} dr\wedge d\theta, \\
+\star d\theta \wedge d\varphi &= \frac{1}{r^{2}\sin \theta} dr, \\
+\star(d\theta \wedge dr) &= -\sin \theta d\varphi
+\end{align*}
+$$
+
+Subsitute $f =  A'(\theta) d\theta \wedge d\varphi$ we have 
+
+$$
+\star f=  A'(\theta) \star d\theta \wedge d\varphi = \frac{A'(\theta)}{r^{2}\sin \theta} dr.
+$$
+
+Hence 
+
+$$
+d\star f = d \frac{A'(\theta)}{r^{2}\sin \theta} \wedge dr = \frac{A''\sin \theta-A'\cos \theta}{r^{2}\sin ^{2}\theta} d\theta \wedge dr.
+$$
+
+Apply Hodge star again we get 
+
+$$
+\star d\star f \equiv d ^{\dagger}f 
+= \star \frac{A''\sin \theta-A'\cos \theta}{r^{2}\sin ^{2}\theta} d\theta \wedge dr 
+= \left( \frac{A'\cos \theta - A''\sin \theta}{r^{2}\sin\theta} \right)  d\varphi.
+$$
+
+Thus the divergence of $f_ {\mu \nu}$ is the negative of above expression,
+
+$$
+\partial_ {\mu}f^{\mu}_ {\;\;\nu} = \frac{1}{r^{2}}\left( A''- A'\cot \theta \right)d\varphi.
+$$
+
+Similarly, for $H_ {\mu \nu}$ we have 
+
+$$
+d ^{\dagger} H = d ^{\dagger} (- \frac{2n}{g} \sin 2\theta d\theta \wedge d\varphi) = 
+$$
 
 
 # Appendix
