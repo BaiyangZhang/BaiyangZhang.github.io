@@ -1699,7 +1699,11 @@ $$
 \partial_ {\mu}H^{\mu}_ {\;\;\nu}= \frac{4n\sin ^{2}\theta}{gr^{2}}d\varphi.
 $$
 
+The equation of motion in the absence of $X$ is $d^{^{\dagger}}(f+H)=0$, substitute the above equations we get
 
+$$
+
+$$
 
 
 # Appendix
