@@ -35,7 +35,8 @@
               "title": "Discussion Note"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,10 +200,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "61271f5ee687fa69",
+  "active": "90df3cf74f7e3a03",
   "lastOpenFiles": [
-    "Discussion Note.md",
     "_posts/2026-04-07-Bare-Minimum-of-Abelian-Decomposition.md",
+    "Discussion Note.md",
     "Pasted image 20260805113259.png",
     "青年生活方式与社会认同研究.md",
     "Tem.md",
