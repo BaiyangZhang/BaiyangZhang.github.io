@@ -1463,7 +1463,7 @@ $$
 e^{-i \phi T^{3}} = \cos \frac{\phi}{2} \mathbb{1}_ {2} - 2i \sin \frac{\phi}{2} T^{3}
 $$
 
-we know that they corresponds to rotation in $T^{1},T^{2}$ basis, 
+we know that they corresponds to rotation in the plane formed by $T^{1},T^{2}$ basis, 
 
 $$
 e^{-i\phi T^{3}} (T^{1},T^{2}) e^{i\phi T^{3} } = (T^{1},T^{2}) \times 
@@ -1488,7 +1488,10 @@ $$
 The rotations from $\hat{n}=\hat{r}$ to $\hat{e}=(0,0,1)=T^{3}$ is given by three Euler angles (in Z-Y-Z convention): $(\alpha,\beta,\gamma)=(-\phi,-\theta,0)$, where the last angle is arbitrary. The corresponding rotation matrix is 
 
 $$
-R = e^{i\theta T^{2}} e^{i\phi T^{3}}.
+R = e^{i\theta T^{2}} e^{i\phi T^{3}} = \begin{pmatrix}
+\cos \frac{\theta}{2}e^{i\phi/2}  & \sin \frac{\theta}{2} e^{-i\phi/2} \\
+-\sin \frac{\theta}{2} e^{i\phi/2}  & \cos \frac{\theta}{2} e^{-i\phi/2} 
+\end{pmatrix}.
 $$
 
 Let's act it on $\hat{A}$. In the hedgehog ansatz, $\mathcal{A}=0$ thus $\hat{A}=\mathcal{C}$. Under gauge transformation $\hat{A}$ transforms as 
@@ -1543,6 +1546,15 @@ C_ {\mu} = - \frac{1}{g} \theta'\cdot \partial_ {\mu}\hat{\phi}' = - \frac{1}{g}
 $$
 
 *Another way to obtain the same result is to set $\hat{\theta}\cdot \vec{T}=n_ {1}$, $\hat{\phi}\cdot \vec{T}=n_ {2}$. Then we can obtain the same result with much less effort.* The key idea is  that, in the hedgehog form $\mathcal{C}_ {\mu}$ can be written as $\mathcal{C}=C \hat{n}$, where $C$ is a scalar thus un-affected by the gauge rotation, which only changes the direction of $\hat{n}$. Thus after the rotation we must have $\mathcal{C}'= C \hat{z}$. But to calculate the scalar $C$ we can use the formulae $C=- \frac{1}{g} \hat{n}_ {1}\cdot \hat{n}_ {2}$, which greatly simplifies the calculation. 
+
+Another version of the gauge transform matrix reads
+
+$$
+R=\begin{pmatrix}
+i \cos \left(\frac{\theta }{2}\right) & i e^{-i \phi } \sin \left(\frac{\theta }{2}\right) \\
+ -i e^{i \phi } \sin \left(\frac{\theta }{2}\right) & i \cos \left(\frac{\theta }{2}\right) \\
+\end{pmatrix}
+$$
 
 - - -
 
@@ -1640,7 +1652,11 @@ $$
 H = - \frac{2n}{g} \sin 2\theta d\theta \wedge d\varphi.
 $$
 
-The difergence of $f_ {\mu \nu}$ is given by the negative of $d ^{\dagger}f$, where $d ^{\dagger}:=(-1)^{n(p+1)+1}\star d\star$ when acting on a $p$-form. That is $\partial^{\mu}f_ {\mu \nu}dx^{\nu} = -d ^{\dagger}f$. Regarding the Hedge star, in the angular coordinate the volume form reads 
+The **Divergence** of 2-form f is given by the negative of $d ^{\dagger}f$, where $d ^{\dagger}:=(-1)^{n(p+1)+1}\star d\star$ when acting on a $p$-form. That is, 
+
+$$\boxed{\nabla_ {\mu}f^{\mu}_ {\;\; \nu}dx^{\nu} = -d ^{\dagger}f.} $$
+
+Regarding the Hedge star, in the angular coordinate the volume form reads 
 
 $$d\text{Vol}=\sqrt{\left\lvert g \right\rvert}dr\wedge d\theta \wedge d\varphi = r^{2}\sin \theta dr\wedge d\theta \wedge d\varphi.$$
 
@@ -1702,7 +1718,51 @@ $$
 The equation of motion in the absence of $X$ is $d^{^{\dagger}}(f+H)=0$, substitute the above equations we get
 
 $$
+A''-\cot \theta A'=- \frac{4n}{g} \sin ^{2}\theta.
+$$
 
+It has a special solution $A(\theta)= \frac{2n}{g}\sin ^{2}\theta$.
+
+The $\mathcal{C}$ part reads ${\mathcal{C}}_ \mu = -\frac{1}{g} \hat{n} \times d\hat{n}$, where $d\hat{n}$ can be written in terms of $\theta$ and $\varphi$, $d\hat{n}=\partial_ {\theta}\hat{n}d\theta+\partial_ {\varphi}\hat{n} d\varphi$, there is no $dr$ component since $\mathcal{C}$ is not a function of $r$. Then we just need to calculate things like $\hat{n}\times \partial_ {\theta}\hat{n}$ which we know will be in $\hat{\varphi}$ direction, it is much easier to calculate. In Cartesian coordinates we have $\mathcal{C}_ {\theta}=\frac{1}{g}(2\sin n\varphi,-2\cos n\varphi,0)$ and $\mathcal{C}_ {\varphi}=\frac{1}{g}(-\frac{1}{2} n \sin (4 \theta ) \cos (n \phi ),-\frac{1}{2} n \sin (4 \theta ) \sin (n \phi ),n \sin ^2(2 \theta ))$. In summary we have
+
+$$
+\vec{\mathcal{C}}=-\frac{1}{g}\begin{pmatrix}
+-2 d\theta \sin (n \phi )-\frac{1}{2} d\phi n \sin (4 \theta ) \cos (n \phi ) \\
+2 d\theta \cos (n \phi )-\frac{1}{2} d\phi n \sin (4 \theta ) \sin (n \phi ) \\
+d\phi n \sin ^2(2 \theta )
+\end{pmatrix}
+$$
+
+The total $\hat{A}$ is simply the above $\mathcal{C}$ plus $\mathcal{A}=a\mathfrak{n}=A(\theta)d\varphi \mathfrak{n}= \frac{2n}{g}\sin ^{2}\theta d\varphi \mathfrak{n}$,
+
+$$
+\hat{A}= \frac{2n}{g}\sin ^{2}\theta d\varphi \mathfrak{n} + \vec{\mathcal{C}}\cdot \vec{T}, \quad  \vec{T}=\frac{\vec{\sigma}}{2}.
+$$
+
+The gauge transformation that rotates $\hat{n}$ to $\hat{z}$ reads
+
+$$
+U=\begin{pmatrix}
+  \cos \theta &  \sin \theta e^{-i n \varphi } \\
+ - \sin \theta e^{i n \varphi } &  \cos\theta \\
+\end{pmatrix}
+$$
+
+With this matrix, the restricted gauge field $\hat{A}$ transforms to 
+
+$$
+\hat{A}\to \hat{A}'=U\left( \hat{A}+\frac{i}{g}d \right)U^{\dagger} = U\left( \mathcal{A}+\mathcal{C}+\frac{i}{g}d \right)U^{\dagger}
+$$
+
+where 
+
+$$
+\begin{align*}
+U\mathcal{A}U^{\dagger} &= \frac{2\text{d$\varphi$} n \sin ^2(\theta)}{g} T^{3}\\
+U \mathcal{C} U^{\dagger} &= \left( \frac{2}{g}\sin n\varphi d\theta +\frac{n}{g} \sin_ {2}\theta \cos n\varphi d\varphi \right)T^{1} \\
+&\;\;\;\;\; +\left( \frac{2}{g}\cos n\varphi d\theta - \frac{n}{g} \sin2\theta \sin n\varphi d\varphi \right)T^{2} \\
+U\left( \frac{i}{g}d \right)U^{\dagger} &= 
+\end{align*}
 $$
 
 
