@@ -1723,13 +1723,13 @@ $$
 
 It has a special solution $A(\theta)= \frac{2n}{g}\sin ^{2}\theta$.
 
-The $\mathcal{C}$ part reads ${\mathcal{C}}_ \mu = -\frac{1}{g} \hat{n} \times d\hat{n}$, where $d\hat{n}$ can be written in terms of $\theta$ and $\varphi$, $d\hat{n}=\partial_ {\theta}\hat{n}d\theta+\partial_ {\varphi}\hat{n} d\varphi$, there is no $dr$ component since $\mathcal{C}$ is not a function of $r$. Then we just need to calculate things like $\hat{n}\times \partial_ {\theta}\hat{n}$ which we know will be in $\hat{\varphi}$ direction, it is much easier to calculate. In Cartesian coordinates we have $\mathcal{C}_ {\theta}=\frac{1}{g}(2\sin n\varphi,-2\cos n\varphi,0)$ and $\mathcal{C}_ {\varphi}=\frac{1}{g}(-\frac{1}{2} n \sin (4 \theta ) \cos (n \phi ),-\frac{1}{2} n \sin (4 \theta ) \sin (n \phi ),n \sin ^2(2 \theta ))$. In summary we have
+The $\mathcal{C}$ part reads ${\mathcal{C}}_ \mu = -\frac{1}{g} \hat{n} \times d\hat{n}$, where $d\hat{n}$ can be written in terms of $\theta$ and $\varphi$, $d\hat{n}=\partial_ {\theta}\hat{n}d\theta+\partial_ {\varphi}\hat{n} d\varphi$, there is no $dr$ component since $\mathcal{C}$ is not a function of $r$. Then we just need to calculate things like $\hat{n}\times \partial_ {\theta}\hat{n}$ which we know will be in $\hat{\varphi}$ direction, it is much easier to calculate. In Cartesian coordinates we have $\mathcal{C}_ {\theta}=\frac{1}{g}(2\sin n\varphi,-2\cos n\varphi,0)$ and $\mathcal{C}_ {\varphi}=\frac{1}{g}(\frac{1}{2} n \sin (4 \theta ) \cos (n \phi ),\frac{1}{2} n \sin (4 \theta ) \sin (n \phi ),-n \sin ^2(2 \theta ))$. In summary we have
 
 $$
-\vec{\mathcal{C}}=-\frac{1}{g}\begin{pmatrix}
--2 d\theta \sin (n \phi )-\frac{1}{2} d\phi n \sin (4 \theta ) \cos (n \phi ) \\
-2 d\theta \cos (n \phi )-\frac{1}{2} d\phi n \sin (4 \theta ) \sin (n \phi ) \\
-d\phi n \sin ^2(2 \theta )
+\vec{\mathcal{C}}=\frac{1}{g}\begin{pmatrix}
+2 d\theta \sin (n \phi )+\frac{1}{2} d\phi n \sin (4 \theta ) \cos (n \varphi ) \\
+-2 d\theta \cos (n \phi )+\frac{1}{2} d\phi n \sin (4 \theta ) \sin (n \varphi ) \\
+-n d\varphi \sin ^2(2 \theta )
 \end{pmatrix}
 $$
 
@@ -1759,10 +1759,18 @@ where
 $$
 \begin{align*}
 U\mathcal{A}U^{\dagger} &= \frac{2\text{d$\varphi$} n \sin ^2(\theta)}{g} T^{3}\\
-U \mathcal{C} U^{\dagger} &= \left( \frac{2}{g}\sin n\varphi d\theta +\frac{n}{g} \sin_ {2}\theta \cos n\varphi d\varphi \right)T^{1} \\
-&\;\;\;\;\; +\left( \frac{2}{g}\cos n\varphi d\theta - \frac{n}{g} \sin2\theta \sin n\varphi d\varphi \right)T^{2} \\
-U\left( \frac{i}{g}d \right)U^{\dagger} &= 
+U \mathcal{C} U^{\dagger} &=\frac{1}{g} \left( 2\sin n\varphi d\theta +n \sin2\theta \cos n\varphi d\varphi \right)T^{1} \\
+&\;\;\;\;\; +\frac{1}{g}\left( -2\cos n\varphi d\theta + n \sin2\theta \sin n\varphi d\varphi \right)T^{2} \\
+U\left( \frac{i}{g}d \right)U^{\dagger} &= -\frac{2n}{g}\sin^{2}\theta d\varphi T^{3}\\
+&\;\;\;\;\;+ \frac{1}{g}(-2\sin n\varphi d \theta - n\sin2\theta \cos n\varphi d\varphi)T^{1} \\
+&\;\;\;\;\;+ \frac{1}{g} (2\cos n\varphi d\theta- n \sin2\theta \sin n\varphi d\varphi)T^{2}.
 \end{align*}
+$$
+
+Putting everything together we have that for the winding number equals to zero $\hat{n}$, the combed gauge field reads
+
+$$
+\boxed{ \hat{A}'= 0.}
 $$
 
 
