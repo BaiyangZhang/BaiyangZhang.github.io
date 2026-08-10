@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bare Minimum of abelian Decomposition
-date: 2026-04-07
+date: 2026-08-08
 author: Baiyang Zhang
 catalog: true
 tags:
