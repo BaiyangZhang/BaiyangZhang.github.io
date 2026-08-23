@@ -119,7 +119,7 @@ The following identities might be helpful (For $SU(2)$):
 
 $$
 \begin{align*}
-\mathfrak{n} \mathfrak{n} = \hat{n}^{a}\hat{n}^{b}\frac{1}{2}\sigma^{a} \frac{1}{2}\sigma^{b} &= \frac{1}{4}, \\
+\mathfrak{n} \mathfrak{n} = \hat{n}^{a}\hat{n}^{b}\frac{1}{2}\sigma^{a} \frac{1}{2}\sigma^{b} &= \frac{1}{4}\mathbb{1}_ {2}, \\
 [\mathfrak{n} ,[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= \partial_ {\mu}\mathfrak{n}, \\
 [[\mathfrak{n},\partial_ {\nu}\mathfrak{n}  ],[\mathfrak{n} ,\partial_ {\mu}\mathfrak{n} ]] &= - \partial_ {\nu}\mathfrak{n} \partial_ {\mu}\mathfrak{n} .
 \end{align*}
@@ -163,7 +163,7 @@ $\mathcal{C}_ {\mu}$ is the *non-trivial part of the solution* for $D_ {\mu}\mat
 
 $$
 \boxed{ 
-\mathcal{C}_ {\mu} = \frac{i}{g}[\mathfrak{n},\partial_ {\mu} \mathfrak{n}] \equiv \frac{2i}{g}\mathfrak{n} \partial_ {\mu}\mathfrak{n}  .
+\mathcal{C}_ {\mu} = \frac{i}{g}[\mathfrak{n},\partial_ {\mu} \mathfrak{n}] \equiv \frac{2i}{g}\mathfrak{n} \partial_ {\mu}\mathfrak{n}, \quad  \mathcal{C}=\frac{2i}{g}\mathfrak{n} d\mathfrak{n} .
 }
 $$
 
@@ -193,7 +193,7 @@ Define
 
 $$
 \begin{align*}
-\hat{F}:= & \partial_ {\mu}\hat{A}_ {\nu}-\partial_ {\nu}\hat{A}_ {\mu} - ig[\hat{A}_ {\mu},\hat{A}_ {\nu}]\\
+\hat{F}_ {\mu \nu}:= & \partial_ {\mu}\hat{A}_ {\nu}-\partial_ {\nu}\hat{A}_ {\mu} - ig[\hat{A}_ {\mu},\hat{A}_ {\nu}]\\
 =& (\partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu})\mathfrak{n} +\frac{i}{g}[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ]\\
 =&: f_ {\mu \nu}\mathfrak{n} +H_ {\mu \nu}\mathfrak{n} .
 \end{align*}
@@ -204,7 +204,7 @@ We have
 $$
 \begin{align*}
 f_ {\mu \nu} &= \partial_ {\mu}a_ {\nu}-\partial_ {\nu}a_ {\mu},\\
-H_ {\mu \nu} \mathfrak{n}  &=\frac{i}{g}[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ],\\
+H_ {\mu \nu} \mathfrak{n}  &= \frac{1}{2}(\partial_ {\mu}\mathcal{C}_ {\nu}-\partial_ {\nu}\mathcal{C}_ {\mu}) =\frac{i}{g}[\partial_ {\mu}\mathfrak{n} ,\partial_ {\nu}\mathfrak{n} ],\\
 H_ {\mu \nu} &= \partial_ {\mu}C_ {\nu}-\partial_ {\nu}C_ {\mu}, \; C_ {\mu}:=\frac{1}{g} \hat{n}_ {2}\cdot \partial_ {\mu}\hat{n}_ {1}.
 \end{align*}
 $$
@@ -1677,7 +1677,8 @@ $$
 \star d\theta &=  \sin \theta d\varphi \wedge dr,\\
 \star d\varphi &= \frac{1}{\sin \theta} dr\wedge d\theta, \\
 \star d\theta \wedge d\varphi &= \frac{1}{r^{2}\sin \theta} dr, \\
-\star(d\theta \wedge dr) &= -\sin \theta d\varphi
+\star(d\theta \wedge dr) &= -\sin \theta d\varphi, \\
+\star (d\varphi \wedge dr) &= \frac{1}{\sin \theta} d\theta
 \end{align*}
 $$
 
@@ -1716,7 +1717,7 @@ $$
 Hence 
 
 $$
-\partial_ {\mu}H^{\mu}_ {\;\;\nu}= \frac{4n\sin ^{2}\theta}{gr^{2}}d\varphi.
+\partial_ {\mu}H^{\mu}_ {\;\;\nu}= \frac{4n\sin ^{2}\theta}{gr^{2}}\partial_ {\nu}\varphi.
 $$
 
 The equation of motion in the absence of $X$ is $d^{^{\dagger}}(f+H)=0$, substitute the above equations we get
@@ -1776,6 +1777,197 @@ Putting everything together we have that for the winding number equals to zero $
 $$
 \boxed{ \hat{A}'= 0.}
 $$
+
+
+### Generalized winding number one solution
+
+Generalize the Wu-Yang monopole $\hat{n}$ to the following case
+
+$$
+\hat{n}=\begin{pmatrix}
+\sin \alpha(\theta)\cos \beta(\phi) \\
+\sin \alpha(\theta)\sin \beta(\phi) \\
+\cos \alpha(\theta)
+\end{pmatrix}
+$$
+
+Define a othonormal basis $\left\lbrace \hat{n}_ {\alpha}, \hat{n}_ {\beta}, \hat{n} \right\rbrace$ where 
+
+$$
+\begin{align*}
+\hat{n}_ {\alpha}:= \frac{\partial \hat{n}}{\partial \alpha} &= (\cos \alpha \cos \beta, \cos \alpha \sin \beta, -\sin \alpha)^{T} ,\\
+\hat{n}_ {\beta}:= \frac{1}{\sin \alpha} \frac{\partial \hat{n}}{\partial \alpha} &= (-\sin \beta,\cos \beta,0)^{T}.
+\end{align*}
+$$
+
+Then we have 
+
+$$
+d\hat{n} = \hat{n}_ {\alpha} d\alpha + \sin \alpha \hat{n}_ {\beta} d\beta.
+$$
+
+Since 
+
+$$
+\begin{align*}
+\partial_ \mu \hat{n}_ \alpha &= -(\partial_ \mu \alpha) \hat{n} + (\cos \alpha \partial _\mu \beta) \hat{n}_ \beta, \\
+\partial_ \mu \hat{n}_ \beta &= -(\partial_ \mu \beta) (\cos \alpha \hat{n}_ \alpha + \sin \alpha \hat{n})
+\end{align*}
+$$
+
+Combining all three projections gives the full second derivative:
+
+$$
+\begin{align*}
+\partial_ \mu \partial_ \nu \hat{n} &= \left[ \partial_ \mu \partial_ \nu \alpha - \sin \alpha \cos \alpha (\partial_ \mu \beta)(\partial_ \nu \beta) \right] \hat{n}_ \alpha \\
+&\;\;\;\; + \left[ \sin \alpha (\partial_ \mu \partial_ \nu \beta) + \cos \alpha (\partial_ \mu \alpha \partial_ \nu \beta  
++ \partial_ \nu \alpha \partial_ \mu \beta) \right] \hat{n}_ \beta \\
+&\;\;\;\; - (\partial_ {\mu}\alpha \partial_ {\nu}\alpha + \sin ^{2}\alpha \partial_ {\mu}\beta \partial_ {\nu}\beta) \hat{n}.
+\end{align*}
+$$
+
+Contract $\mu$ and $\nu$ we get
+
+$$
+\begin{align*}
+\partial^{2}\hat{n} &=\left( \partial^{2}\alpha-\frac{1}{2}\sin2\alpha \partial_ {\mu}\beta \partial^{\mu }\beta \right)\hat{n}_ {\alpha}  \\
+&\;\;\;\; + ( \sin \alpha \partial^{2}\beta + 2\cos \alpha(\partial_ {\mu}\alpha \partial^{\mu}\beta) )\hat{n}_ {\beta}\\
+&\;\;\;\; -(\partial_ {\mu}\alpha \partial^{\mu}\alpha+\sin ^{2}\alpha \partial_ {\mu}\beta \partial^{\mu}\beta)\hat{n}.
+\end{align*}
+$$
+
+Recall that $\alpha$ is a function of $\theta$ only and $\beta$ a function of $\varphi$, we have, in  terms of $\alpha'=\frac{d\alpha}{d\theta}$ and $\beta'=\frac{d\beta}{d\varphi}$:
+
+$$
+\begin{align*}
+\partial^{2}\hat{n} &= \hat{n}_ {\alpha}\left( \frac{1}{r^{2}}\left( \cot \theta \alpha'+\alpha''-\frac{\sin \alpha \cos \alpha}{\sin ^{2}\theta} \beta'^{2} \right) \right) \\
+&\;\;\;\; + \hat{n}_ {\beta}\left( \frac{\sin \alpha}{r^{2}\sin ^{2}\theta} \beta'' \right)  \\
+&\;\;\;\; + \hat{n}\left( -\frac{\alpha'^{2}}{r^{2}} + \frac{\sin ^{2}\alpha}{r^{2}\sin ^{2}\theta} \beta'^{2} \right).
+\end{align*}
+$$
+
+In my experience it is usually most convenient to the adopt the inverse metric tensor, since here all the indices are contracted. Recall that the metric components yield $g^{\theta\theta} = \frac{1}{r^2}$, $g^{\varphi\varphi} = \frac{1}{r^2\sin^2\theta}$, and $g^{\theta\varphi} = 0$. For example, it is obvious that $\partial_ {\mu}\alpha \partial^{\mu}\beta=g^{\theta\varphi}\partial_ {\theta}\alpha \partial_ {\varphi}\beta=0$, it is because $\alpha(\theta)$ is a function of $\theta$ only so the only nonzero component is $\partial_ {\theta}\alpha$, similarly for $\beta$. 
+
+- - -
+
+Regarding the equation of motion, recall that for restricted field we have $\hat{F}=\mathcal{A}+H=(da+dC)\mathfrak{n}$, where $a$ is the abelian gauge field and $C=-\frac{1}{g}\hat{n}_ {1}\cdot d\hat{n}_ {2}$. We only require that $\hat{n}_ {1},\hat{n}_ {2}$ and $\hat{n}$ for a right-handed orthonormal basis, so we can choose $\hat{n}_ {1}=\hat{n}_ {\alpha}$ and $\hat{n}_ {2}=\hat{n}_ {\beta}$. As a result,
+
+$$
+C = -\frac{1}{g} \hat{n}_ {\alpha}\cdot d\hat{n}_ {\beta} = \frac{1}{g} \cos \alpha\, d\beta, \implies H = dC = -\frac{1}{g}\sin \alpha d\alpha \wedge d\beta = -\frac{1}{g}\sin \alpha \alpha' \beta' \, d\theta \wedge d\varphi.
+$$
+
+Recall that the equation of motion reads  $d\star (f+H)=0$, if $f=0$  then $d\star H=0$. Hence
+
+$$
+\star H = -\frac{1}{g}\sin \alpha \alpha' \beta' \, \star d\theta \wedge d\varphi = -\frac{1}{g}\sin \alpha \alpha' \beta'\frac{1}{r^{2}\sin \theta}dr = - \frac{1}{gr^{2}} \frac{\sin \alpha \alpha'\beta'}{\sin \theta} dr.
+$$
+
+and 
+
+$$
+d\star H= 0 \implies \partial_ \theta \left( \frac{\sin\alpha \, \alpha' \beta'}{\sin\theta} \right) d\theta \wedge dr + \partial_ \varphi \left( \frac{\sin\alpha \, \alpha' \beta'}{\sin\theta} \right) d\varphi \wedge dr = 0
+$$
+
+where in the last step I've thrown away some irrelavent constats such as $\frac{1}{gr^{2}}$. 
+
+with general solution $\beta''=0, \frac{\sin \alpha \alpha'}{\sin \theta}=\text{const}$. Take into account for the boundary condition, we have 
+
+$$
+\alpha = \theta, \quad  \beta = n\varphi.
+$$
+
+For completeness we also calculate the divergence of $H_ {\mu \nu}$ using differential form, $d ^{\dagger}H=-\nabla_ {\mu}H^{\mu}_ {\;\; \nu}dx^{\nu}$:
+
+$$
+d ^{\dagger}H= 
+\frac{1}{g} \partial_ \theta \left( \frac{\sin\alpha \, \alpha' \beta'}{r^2 \sin\theta} \right) (-\sin \theta d\varphi)
++ \frac{1}{g} \partial_ \varphi \left( \frac{\sin\alpha \, \alpha' \beta'}{r^2 \sin\theta} \right) \frac{d\theta}{\sin \theta}. 
+$$
+
+Expand it, we get (now we chage notation from $d ^{\dagger}$ to $d^\ast$, following Frankel)
+
+$$
+d^\ast H = \frac{\sin \alpha \alpha'\beta''}{gr^{2}\sin ^{2}\theta}d\theta+\frac{\beta'}{gr^{2}}(\sin \alpha \cot \theta \alpha'-\cos \alpha \alpha'^{2}-\sin \alpha \alpha'') d\varphi.
+$$
+
+hence, up to a minus sign, we have
+
+$$
+\begin{align*}
+\partial_ {\mu}{H^{\mu}}_ {\nu} &= \frac{\sin \alpha \alpha'\beta''}{gr^{2}\sin ^{2}\theta}\partial_ {\nu}\theta\\
+&\;\;\;\;\;+\frac{\beta'}{gr^{2}}(\sin \alpha \cot \theta \alpha'-\cos \alpha \alpha'^{2}-\sin \alpha \alpha'') \partial_ {\nu}\varphi
+\end{align*}
+$$
+
+
+### Winding number n, the valance field
+
+Adopt the following ansatz for unit Lie-algebra vector $\hat{r}_ {n}=(\sin \theta \cos n\varphi,\sin \theta \sin n\varphi,\cos \theta)$, for gauge fields, the restricted field reads
+
+$$
+\mathcal{A}_ {\mu} = a_ {\mu} \hat{r}_ {n} - \frac{1}{g} \hat{r}_ {n} \times \partial_ {\mu}\hat{r}_ {n}
+$$
+
+and 
+
+$$
+\boxed{ 
+X_ {\mu} = \frac{f_ {n}(r)}{g} \hat{r}_ {n} \times \partial_ {\mu} \hat{r}_ {n} = -f_ {n}(r)\mathcal{C}_ {\mu}
+}
+$$
+
+where $f_ {n}(r)$ is a function of $r$ only. Take this back to the following equation of motion for gauge fields
+
+$$
+\boxed{
+\partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu}) = -g\hat{n}\cdot[\vec{X}_ {\mu}\times (\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)+\partial_ {\mu}(\vec{X}_ {\mu}\times \vec{X}_ {\nu})].
+} 
+$$
+
+where $\hat{D}_ {\mu}\mathfrak{n}  = (\partial_ {\mu}-ig[\hat{A}_ {\mu},-])\mathfrak{n} =0.$ In the case where $a=0$, we have 
+
+$$
+\hat{D}_ {\mu}X_ {\nu} = \hat{D}_ {\mu}(-f_ {n}(r)\mathcal{C}_ {\nu}) = (\partial_ {\mu}-ig[\mathcal{C}_ {\mu,-}])(-f_ {n}(r)\mathcal{C}_ {\nu}),
+$$
+
+which is true when $\mathcal{A}=a\mathfrak{n}=0$. Now recall that $\partial_ {\mu}\mathcal{C}_ {\nu}-\partial_ {\nu}\mathcal{C}_ {\mu}=2H_ {\mu \nu}\mathfrak{n}$ and $[\mathcal{C}_ {\mu},\mathcal{C}_ {\nu}]=-\frac{i}{g}H_ {\mu \nu}\mathfrak{n}$ (or equivalently $\mathcal{C}_ {\mu}\times \mathcal{C}_ {\nu}=-\frac{1}{g}H_ {\mu \nu}\mathfrak{n}$), we have 
+
+$$
+\hat{D}_ {\mu}X_ {\nu} = -\partial_ {\mu} f_ {n} \mathcal{C}_ {\nu}-f_ {n} \partial_ {\mu}\mathcal{C}_ {\nu}+f_ {n} H_ {\mu \nu}\mathfrak{n} ,
+$$
+
+consiquently 
+
+$$
+\hat{D}_ {\mu}X_ {\nu}-\mu \leftrightarrow \nu = -\partial_ {\mu}f \mathcal{C}_ {\nu} + \partial_ {\nu}f \mathcal{C}_ {\mu}.
+$$
+
+Hence 
+
+$$
+\begin{align*}
+\vec{X}_ {\mu}\times (\hat{D}_ {\mu} \vec{X}_ {\nu}-\nu \leftrightarrow \nu) &= - \frac{1}{g} f_ {n}\partial_ {\mu}f_ {n}H_ {\mu \nu}\hat{n}, \\
+\hat{n}\cdot \vec{X}_ {\mu}\times (\hat{D}_ {\mu} \vec{X}_ {\nu}-\nu \leftrightarrow \nu) &= - \frac{1}{g} f_ {n}\partial_ {\mu}f_ {n}H_ {\mu \nu}.
+\end{align*}
+$$
+
+The last term reads 
+
+$$
+-g\hat{n}\cdot \partial_ {\mu}\left( f_ {n} ^{2}H_ {\mu \nu \hat{n}}\right) = \partial_ {\mu}(f_ {n} ^{2}H_ {\mu \nu}).
+$$
+
+Combine everything together, the RHS reads
+
+$$
+RHS = \frac{3}{2} (\partial_ {\mu}f_ {n} ^{2})H_ {\mu \nu} + f_ {n} ^{2}\partial_ {\mu}H_ {\mu \nu}.
+$$
+Since with our convention $H$ depensd on $\theta$ and $\varphi$ only, it has no $r$-component, while $\partial_ {\mu}f_ {n}$ has $r$-component only, the first term vanishes. The other t erms also vanish becasue of the equation of moiton for $H$, the same goes for the LHS of the equation, so the final result is $0=0$. To find the equation of motion for $f(r)$, we need to look into the other equation of motion:
+
+
+
+
+
 
 
 # Appendix
