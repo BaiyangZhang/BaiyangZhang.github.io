@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -216,10 +216,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "04466adf98a34364",
+  "active": "b2f6c56029619e39",
   "lastOpenFiles": [
-    "_posts/2026-08-08-Bare-Minimum-of-Abelian-Decomposition.md",
     "未命名.md",
+    "_posts/2026-08-08-Bare-Minimum-of-Abelian-Decomposition.md",
+    "Pasted image 20260823160621.png",
     "Tem.md",
     "Discussion Note.md",
     "2026-04-07.md",
@@ -247,7 +248,6 @@
     "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
     "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
     "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
-    "_posts/2025-03-03-Lie-Groups.md",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/张柏阳中文简历.pdf",
     "assets/pdf/BaiyangZhangCV.pdf",

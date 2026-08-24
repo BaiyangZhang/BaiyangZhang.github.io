@@ -453,7 +453,7 @@ The SU(N) gauge symmetry can be maximally broken to $U(1)^{N-1}$ abelian compone
 
 There are already some pretty nice references on SU(3) monopole, for example this one: https://doi.org/10.1103/PhysRevD.14.2016.
 
-# abelian Projection of SU(N) QCD
+# Abelian Projection of SU(N) QCD
 
 In studying nonperturbative effects like quark confinement in SU(N) QCD, it is often useful to extract an effective abelian theory from QCD, which retains essential physics while simplifying computations. This approach is called the abelian projection.
 
@@ -1116,13 +1116,11 @@ $$
 Putting them together we get the equation of motion for $a_ {\mu}$:
 
 $$
-\boxed{ 
 \begin{align*}
 \partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}) 
 &= g\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\nu}\vec{X}_ {\mu}) - g\hat{n}\cdot(\vec{X}_ {\mu}\times \hat{D}_ {\mu}\vec{X}_ {\nu})\\
 &= -g\hat{n}\cdot [\vec{X}_ {\mu}\times (\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu})].
 \end{align*}
-}
 $$
 
 Now let's take a closer look at $\partial_ {\mu}X_ {\mu \nu}$. In vector notation $X_ {\mu \nu} = g\hat{n}\cdot(\vec{X}_ {\mu}\times \vec{X}_ {\nu})$, hence 
@@ -1195,7 +1193,9 @@ $$
 In a more concise notation we could also write the right hand side as the $i$-th component of $\hat{D}_ {\mu}(\hat{D}_ {\mu}X_ {\alpha}-\hat{D}_ {\alpha}X_ {\mu})$. Or equivalently
 
 $$
+\boxed{ 
 \hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}) = g (f_ {\nu \mu}+H_ {\nu \mu}+X_ {\nu \mu})\vec{X}_ {\mu} \times \hat{n} 
+}
 $$
 
 ## Complex gauge field $\chi$
@@ -1916,7 +1916,11 @@ X_ {\mu} = \frac{f_ {n}(r)}{g} \hat{r}_ {n} \times \partial_ {\mu} \hat{r}_ {n} 
 }
 $$
 
-where $f_ {n}(r)$ is a function of $r$ only. Take this back to the following equation of motion for gauge fields
+where $f_ {n}(r)$ is a function of $r$ only. 
+
+- - -
+
+Take the above ansatz to the following equation of motion for gauge fields
 
 $$
 \boxed{
@@ -1930,7 +1934,7 @@ $$
 \hat{D}_ {\mu}X_ {\nu} = \hat{D}_ {\mu}(-f_ {n}(r)\mathcal{C}_ {\nu}) = (\partial_ {\mu}-ig[\mathcal{C}_ {\mu,-}])(-f_ {n}(r)\mathcal{C}_ {\nu}),
 $$
 
-which is true when $\mathcal{A}=a\mathfrak{n}=0$. Now recall that $\partial_ {\mu}\mathcal{C}_ {\nu}-\partial_ {\nu}\mathcal{C}_ {\mu}=2H_ {\mu \nu}\mathfrak{n}$ and $[\mathcal{C}_ {\mu},\mathcal{C}_ {\nu}]=-\frac{i}{g}H_ {\mu \nu}\mathfrak{n}$ (or equivalently $\mathcal{C}_ {\mu}\times \mathcal{C}_ {\nu}=-\frac{1}{g}H_ {\mu \nu}\mathfrak{n}$), we have 
+which is true when $\mathcal{A}=a\mathfrak{n}=0$. Now recall that $\partial_ {\mu}\mathcal{C}_ {\nu}-\partial_ {\nu}\mathcal{C}_ {\mu}=2H_ {\mu \nu}\mathfrak{n}$ and $[\mathcal{C}_ {\mu},\mathcal{C}_ {\nu}]=-\frac{i}{g}H_ {\mu \nu}\mathfrak{n}$ (or equivalently $\mathcal{C}_ {\mu}\times \mathcal{C}_ {\nu}=-\frac{1}{g}H_ {\mu \nu}\hat{n}$), we have 
 
 $$
 \hat{D}_ {\mu}X_ {\nu} = -\partial_ {\mu} f_ {n} \mathcal{C}_ {\nu}-f_ {n} \partial_ {\mu}\mathcal{C}_ {\nu}+f_ {n} H_ {\mu \nu}\mathfrak{n} ,
@@ -1939,7 +1943,7 @@ $$
 consiquently 
 
 $$
-\hat{D}_ {\mu}X_ {\nu}-\mu \leftrightarrow \nu = -\partial_ {\mu}f \mathcal{C}_ {\nu} + \partial_ {\nu}f \mathcal{C}_ {\mu}.
+\hat{D}_ {\mu}X_ {\nu}- (\mu \leftrightarrow \nu) = -\partial_ {\mu}f \mathcal{C}_ {\nu} + \partial_ {\nu}f \mathcal{C}_ {\mu}.
 $$
 
 Hence 
@@ -1954,7 +1958,7 @@ $$
 The last term reads 
 
 $$
--g\hat{n}\cdot \partial_ {\mu}\left( f_ {n} ^{2}H_ {\mu \nu \hat{n}}\right) = \partial_ {\mu}(f_ {n} ^{2}H_ {\mu \nu}).
+-g\hat{n}\cdot \partial_ {\mu}\left( f_ {n} ^{2}H_ {\mu \nu }\right)\hat{n} = \partial_ {\mu}(f_ {n} ^{2}H_ {\mu \nu}).
 $$
 
 Combine everything together, the RHS reads
@@ -1962,12 +1966,157 @@ Combine everything together, the RHS reads
 $$
 RHS = \frac{3}{2} (\partial_ {\mu}f_ {n} ^{2})H_ {\mu \nu} + f_ {n} ^{2}\partial_ {\mu}H_ {\mu \nu}.
 $$
-Since with our convention $H$ depensd on $\theta$ and $\varphi$ only, it has no $r$-component, while $\partial_ {\mu}f_ {n}$ has $r$-component only, the first term vanishes. The other t erms also vanish becasue of the equation of moiton for $H$, the same goes for the LHS of the equation, so the final result is $0=0$. To find the equation of motion for $f(r)$, we need to look into the other equation of motion:
+Since with our convention $H$ depensd on $\theta$ and $\varphi$ only, it has no $r$-component, while $\partial_ {\mu}f_ {n}$ has $r$-component only, the first term vanishes. The other t erms also vanish becasue of the equation of moiton for $H$, the same goes for the LHS of the equation, so the final result is $0=0$. It's pretty good news, one of the equations of motions are trivially satisfied.
+
+- - -
+
+Let's take a look at the other equation of motion:
+
+$$
+\boxed{ 
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}) = g (f_ {\nu \mu}+H_ {\nu \mu}+X_ {\nu \mu})\vec{X}_ {\mu} \times \hat{n} 
+}
+$$
+
+From 
+
+$$
+\boxed{ 
+X_ {\mu \nu} \mathfrak{n} := -ig [X_ {\mu},X_ {\nu}],
+}
+$$
+
+we have 
+
+$$
+\begin{align*}
+X_ {\mu \nu} &= g\hat{n}\cdot(X_ {\mu}\times X_ {\nu}) = gf_ {n} ^{2} \hat{n}\cdot(\mathcal{C}_ {\mu}\times \mathcal{C}_ {\nu})=-f_ {n} ^{2}H_ {\mu \nu},\\
+X_ {\mu}\times \hat{n} &= -\frac{f_ {n} }{g} \partial_ {\mu}\hat{n}.
+\end{align*}
+$$
+
+We also have $f=0$. Hence the right hand side is 
+
+$$
+RHS = -f_ {n} (1-f_ {n} ^{2})H_ {\nu \mu} \partial_ {\mu}\hat{n}.
+$$
+
+Regarding the LHS, we have 
+
+$$
+\hat{D}_ \mu \vec{X}_ \nu - \hat{D}_ \nu \vec{X}_ \mu = -\partial_ \mu f_ n \mathcal{C}_ \nu + \partial_ \nu f_ n \mathcal{C}_ \mu
+$$
+
+The LHS reads (where we have used the fact that $\mathcal{C},H$ doesnot depend on $r$ and $\partial_ {\mu}\mathcal{C}^{\mu}=0$.)
+
+$$
+\begin{align*}
+LHS &= -\partial^{2}f\mathcal{C}_ {\nu}-\partial_ {\mu}f\partial_ {\mu}\mathcal{C}_ {\nu}+\partial_ {\mu}\partial_ {\nu }f\mathcal{C}_ {\mu}+\partial_ {\nu}f\partial_ {\mu}\mathcal{C}_ {\mu} -g\partial_ {\mu}f \mathcal{C}_ {\mu}\times \mathcal{C}_ {\nu} \\
+    &=  - \partial^{2}\mathcal f_ {n}(r)  {C}_ {\nu} + 2 \frac{f_ {n} '}{r}.
+\end{align*}
+$$
+
+In spherical coordinate we have relations such as $\partial_ \mu \partial_ \nu f_ n = (f_ n'' - \frac{f_ n'}{r}) \hat{r}_ \mu \hat{r}_ \nu + \frac{f_ n'}{r} \delta_ {\mu\nu}$, by the end of the day we get
+
+$$
+LHS = -f''_ {n} (r) \mathcal{C}_ {\nu}.
+$$
+
+Note that the $f''$ here is not a direct result of $\partial^{2}f$, for we are working with spherical coordinates. In those coordinates, we have 
+
+$$
+\mathcal{C} = -\frac{1}{g}\hat{r}_ {n}\times \hat{r}_ {n} = -\frac{1}{g}
+\begin{pmatrix}
+-\sin n\varphi d\theta -n\cos \theta \cos n\varphi \sin \theta d\varphi \\
+\cos n\varphi d\theta-n\cos \theta \sin \theta \sin n\varphi d\varphi \\
+n\sin ^{2}\theta d\varphi
+\end{pmatrix}
+$$
+
+from which we can read off the $\theta$ and $\varphi$ components. The resulting field strength is
+
+$$
+H = d\mathcal{C} = - \frac{2n \sin \theta}{g}\hat{r}_ {n}\, d\theta \wedge d\varphi = \frac{1}{2} H_ {\theta\varphi}d\theta \wedge d\varphi
+$$
+
+which implies that the only nonzero component of $H$ is
+
+$$
+H_ {\theta\varphi} = -\frac{n}{g} \sin \theta.
+$$
+
+Thus 
+
+$$
+\text{RHS} = -f_ {n} (1-f_ {n} ^{2})H_ {\nu \mu} \partial^{\mu}\hat{n},
+$$
+
+whose $\theta$ components is 
+
+$$
+-f_ {n} (1-f_ {n} ^{2}) H_ {\theta\varphi}g^{\varphi\varphi}\partial_ {\varphi}\hat{n} = -f_ {n} (1-f_ {n} ^{2}) \frac{n^{2}}{r^{2}}\mathcal{C}_ {\theta},
+$$
+
+where we have used the relation that $\partial_ {\varphi}\hat{r}_ {n} = -gn\sin \theta\, \mathcal{C}_ {\theta}$, which can be shown by direct calculation.
+
+Similarly, the $\varphi$ component reads
+
+$$
+-f_ {n} (1-f_ {n} ^{2}) H_ {\varphi \theta} g^{\theta \theta}\partial_ {\theta}\hat{n} 
+= -f_ {n} (1-f_ {n} ^{2}) \frac{1}{r^{2}}\mathcal{C}_ {\varphi}. 
+$$
+
+where we have used $\mathcal{C}_ {\varphi} = \frac{n\sin \theta}{g}\partial_ {\theta}\hat{r}_ {n}$. 
+
+Equationg the LHS with RHS, for $\theta$ and $\varphi$ components we get two **different equations respectively**:
 
 
+- $\theta$-component:
+$$
+f_n''(r) - \frac{n^2}{r^2} f_n(r)(1-f_n(r)^2)=0.
+$$
 
+- $\varphi$-component:
 
+$$
+f_n''(r) - \frac{1}{r^2} f_n(r)(1-f_n(r)^2) = 0.
+$$
 
+**We have two different EoMs from matching $\theta$ and $\varphi$ components of the equation of motion.**
+
+- - -
+
+In the above calculation, we found that substituting a purely radial ansatz directly into the vector equations of motion yields inconsistent angular components. The rigorous approach is to substitute the ansatz into the ECD action and derive the spherically averaged effective radial equation.
+
+The extended QCD Lagrangian is given by:
+
+$$
+L_ {\text{ECD}} = -\frac{1}{4}F_ {\mu\nu}^2
+$$
+
+Substituting the full field strength $F_{\mu\nu} = (1-f_n^2)H_{\mu\nu}\hat{n} - (\partial_\mu f_n \mathcal{C}_\nu - \partial_\nu f_n \mathcal{C}_\mu)$ yields the squared tensor:
+
+$$F_{\mu\nu}^a F^{\mu\nu a} = (1-f_n^2)^2 H^2 + 2(\partial_\mu f_n)^2 \mathcal{C}^2$$
+
+We calculate the invariant squares for the topological field using your angular ansatz:
+
+$$H^2 = 2H_{\theta\varphi}H^{\theta\varphi} = \frac{2n^2}{g^2 r^4}$$
+
+$$\mathcal{C}^2 = \mathcal{C}_\theta \mathcal{C}^\theta + \mathcal{C}_\varphi \mathcal{C}^\varphi = \frac{1+n^2}{g^2 r^2}$$
+
+Substitute these into the action density and integrate out the angular volume measure. The conformal radial factor $r^2$ from the metric exactly cancels the spatial dependence of the kinetic term, yielding an effective 1D Lagrangian for $f_n(r)$:
+
+$$L_{eff} = -\frac{n^2}{2g^2 r^2} (1-f_n^2)^2 - \frac{1+n^2}{2g^2} (f_n')^2$$
+
+Applying the Euler-Lagrange equation to this effective action yields:
+
+$$\frac{d}{dr}\left( -\frac{1+n^2}{g^2} f_n' \right) = -\frac{2n^2}{g^2 r^2} f_n(1-f_n^2)$$
+
+Simplifying this gives the final equation of motion for $f_n(r)$:
+
+$$f_n'' - \frac{2n^2}{1+n^2} \frac{f_n(f_n^2-1)}{r^2} = 0$$
+
+For a fundamental monopole ($n=1$), this cleanly reduces to the standard Wu-Yang/BPS radial core equation $f'' - f(f^2-1)/r^2 = 0$.
 
 
 # Appendix
