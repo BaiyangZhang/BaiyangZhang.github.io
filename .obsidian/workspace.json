@@ -49,8 +49,7 @@
               "title": "未命名"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,7 +215,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b2f6c56029619e39",
+  "active": "820a145d14e80da2",
   "lastOpenFiles": [
     "未命名.md",
     "_posts/2026-08-08-Bare-Minimum-of-Abelian-Decomposition.md",

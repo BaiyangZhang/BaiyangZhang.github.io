@@ -548,7 +548,7 @@ the non-trivial part of the solution for $A_ {\mu}$, call it $\mathcal{C}_ {\mu}
 
 $$
 \boxed{ 
-\mathcal{C}_ {\mu} = \frac{i}{g} [\mathfrak{n},\partial_ {\mu} \mathfrak{n}] .
+\mathcal{C}_ {\mu} = \frac{i}{g} [\mathfrak{n},\partial_ {\mu} \mathfrak{n}]= \frac{2i}{g} \mathfrak{n}  \partial_ {\mu} \mathfrak{n}.
 }
 $$
 
@@ -1966,6 +1966,7 @@ Combine everything together, the RHS reads
 $$
 RHS = \frac{3}{2} (\partial_ {\mu}f_ {n} ^{2})H_ {\mu \nu} + f_ {n} ^{2}\partial_ {\mu}H_ {\mu \nu}.
 $$
+
 Since with our convention $H$ depensd on $\theta$ and $\varphi$ only, it has no $r$-component, while $\partial_ {\mu}f_ {n}$ has $r$-component only, the first term vanishes. The other t erms also vanish becasue of the equation of moiton for $H$, the same goes for the LHS of the equation, so the final result is $0=0$. It's pretty good news, one of the equations of motions are trivially satisfied.
 
 - - -
@@ -2022,7 +2023,7 @@ $$
 LHS = -f''_ {n} (r) \mathcal{C}_ {\nu}.
 $$
 
-Note that the $f''$ here is not a direct result of $\partial^{2}f$, for we are working with spherical coordinates. In those coordinates, we have 
+Note that the $f''$ here is not simply a rewriting of $\partial^{2}f$, for we are working with spherical coordinates. In those coordinates, we have 
 
 $$
 \mathcal{C} = -\frac{1}{g}\hat{r}_ {n}\times \hat{r}_ {n} = -\frac{1}{g}
@@ -2091,32 +2092,62 @@ In the above calculation, we found that substituting a purely radial ansatz dire
 The extended QCD Lagrangian is given by:
 
 $$
-L_ {\text{ECD}} = -\frac{1}{4}F_ {\mu\nu}^2
+\mathcal{L}_ {\text{ECD}} = -\frac{1}{4}F_ {\mu\nu}^2
 $$
 
-Substituting the full field strength $F_{\mu\nu} = (1-f_n^2)H_{\mu\nu}\hat{n} - (\partial_\mu f_n \mathcal{C}_\nu - \partial_\nu f_n \mathcal{C}_\mu)$ yields the squared tensor:
+Substituting the full field strength
 
-$$F_{\mu\nu}^a F^{\mu\nu a} = (1-f_n^2)^2 H^2 + 2(\partial_\mu f_n)^2 \mathcal{C}^2$$
+$$
+\begin{align*}
+F_ {\mu\nu} &= f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}+\hat{D}_ {\mu}X_ {\nu}-\hat{D}_ {\nu}X_ {\mu}        \\
+&= (1-f_ n^2)H_ {\mu\nu}\hat{r}_ {n} + (-\partial_ \mu f_ n \mathcal{C}_ \nu + \partial_ \nu f_ n \mathcal{C}_ \mu)
+\end{align*}
+$$
 
-We calculate the invariant squares for the topological field using your angular ansatz:
+where again $H_ {\mu \nu} r_ {n}=\partial_ {\mu}\mathcal{C}_ {\nu}-\partial_ {\nu}\mathcal{C}_ {\mu}$ and $\mathcal{C}_ {\mu} = - \frac{1}{g}\hat{r}_ {n}\times \partial_ {\mu}\hat{r}_ {n}$.  It yields the squared tensor
 
-$$H^2 = 2H_{\theta\varphi}H^{\theta\varphi} = \frac{2n^2}{g^2 r^4}$$
+$$
+F_ {\mu\nu}^a F^{\mu\nu a} = (1-f_ n^2)^2 H^2 + 2(\partial_\mu f_ n)^2 \mathcal{C}^2
+$$
 
-$$\mathcal{C}^2 = \mathcal{C}_\theta \mathcal{C}^\theta + \mathcal{C}_\varphi \mathcal{C}^\varphi = \frac{1+n^2}{g^2 r^2}$$
+where we have used the fact that $\mathcal{C}_ {\mu}$ has no $r$-component hence $\partial_ {\mu}r\mathcal{C}^{\mu}=0$. We calculate the invariant squares for the topological field using the angular ansatz:
 
-Substitute these into the action density and integrate out the angular volume measure. The conformal radial factor $r^2$ from the metric exactly cancels the spatial dependence of the kinetic term, yielding an effective 1D Lagrangian for $f_n(r)$:
+$$
+H^2 = 2H_ {\theta\varphi}H^{\theta\varphi} = \frac{2n^2}{g^2 r^4},
+$$
 
-$$L_{eff} = -\frac{n^2}{2g^2 r^2} (1-f_n^2)^2 - \frac{1+n^2}{2g^2} (f_n')^2$$
+$$
+\mathcal{C}^2 = \mathcal{C}_\theta \mathcal{C}^\theta + \mathcal{C}_\varphi \mathcal{C}^\varphi= \frac{1}{g^{2}r^{2}}+ \frac{n^{2}}{g^{2}r^{2}} = \frac{1+n^2}{g^2 r^2}.
+$$
+
+Substitute these into the action density and integrate out the angular volume measure, the action becomes
+
+$$
+S=\int dt \, \int dr \, \left( - \frac{2\pi}{g^{2}} \right)  \left( \frac{n^{2}}{r^{2}}(1-f_ {n} ^{2})^{2} + (1+n^{2})f_ {n} ' ^{2} \right)
+$$
+
+which implies that we get an *effective 1D Lagrangian* for $f_ n(r)$:
+
+$$
+\mathcal{L}_ {\text{eff}} = \left( - \frac{2\pi}{g^{2}} \right)  \left( \frac{n^{2}}{r^{2}}(1-f_ {n} ^{2})^{2} + (1+n^{2})f_ {n} ' ^{2} \right)
+$$
 
 Applying the Euler-Lagrange equation to this effective action yields:
 
-$$\frac{d}{dr}\left( -\frac{1+n^2}{g^2} f_n' \right) = -\frac{2n^2}{g^2 r^2} f_n(1-f_n^2)$$
+$$
+\begin{align*}
+\text{LHS} &= -4 f_ {n} \frac{n^{2}}{r^{2}}(1-f_ {n} ^{2}),\\
+\text{RHS} &= 2(1+n^{2})f_ {n} ''.
+\end{align*}
+$$
 
-Simplifying this gives the final equation of motion for $f_n(r)$:
+Simplifying this gives the final equation of motion for $f_ n(r)$:
 
-$$f_n'' - \frac{2n^2}{1+n^2} \frac{f_n(f_n^2-1)}{r^2} = 0$$
+$$
+f_ n'' + \frac{2n^2}{1+n^2} \frac{1}{r^2} f_ n(f_ n^2-1) = 0.
+$$
 
-For a fundamental monopole ($n=1$), this cleanly reduces to the standard Wu-Yang/BPS radial core equation $f'' - f(f^2-1)/r^2 = 0$.
+For a fundamental monopole ($n=1$), this reduces to $f'' + f(f^2-1)/r^2 = 0$.
 
 
 # Appendix
