@@ -1919,7 +1919,7 @@ X_ {\mu} = \frac{f_ {n}(r)}{g} \hat{r}_ {n} \times \partial_ {\mu} \hat{r}_ {n} 
 }
 $$
 
-where $f_ {n}(r)$ is a function of $r$ only. 
+where $f_ {n}(r)$ is a function of $r$ only.  In the following we will assume that $a_ {\mu}=0$. 
 
 - - -
 
@@ -1977,8 +1977,8 @@ Since with our convention $H$ depensd on $\theta$ and $\varphi$ only, it has no 
 Let's take a look at the other equation of motion:
 
 $$
-\boxed{ 
-\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}) = g (f_ {\nu \mu}+H_ {\nu \mu}+X_ {\nu \mu})\vec{X}_ {\mu} \times \hat{n} 
+\boxed{
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu}) = ig \Gamma_ {\mu \nu} \, \vec{X}_ {\mu} \times \hat{n} , \quad  \Gamma_ {\mu \nu} := f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}.
 }
 $$
 
@@ -1995,14 +1995,14 @@ we have
 $$
 \begin{align*}
 X_ {\mu \nu} &= g\hat{n}\cdot(X_ {\mu}\times X_ {\nu}) = gf_ {n} ^{2} \hat{n}\cdot(\mathcal{C}_ {\mu}\times \mathcal{C}_ {\nu})=-f_ {n} ^{2}H_ {\mu \nu},\\
-X_ {\mu}\times \hat{n} &= -\frac{f_ {n} }{g} \partial_ {\mu}\hat{n}.
+X_ {\mu}\times \hat{n} &= \frac{f_ {n} }{g} \partial_ {\mu}\hat{n}.
 \end{align*}
 $$
 
 We also have $f=0$. Hence the right hand side is 
 
 $$
-RHS = -f_ {n} (1-f_ {n} ^{2})H_ {\nu \mu} \partial_ {\mu}\hat{n}.
+RHS = f_ {n} (1-f_ {n} ^{2})H_ {\nu \mu} \partial_ {\mu}\hat{n}.
 $$
 
 Regarding the LHS, we have 
@@ -2029,12 +2029,27 @@ $$
 Note that the $f''$ here is not simply a rewriting of $\partial^{2}f$, for we are working with spherical coordinates. In those coordinates, we have 
 
 $$
-\mathcal{C} = -\frac{1}{g}\hat{r}_ {n}\times \hat{r}_ {n} = -\frac{1}{g}
+\begin{align*}
+\mathcal{C} &= -\frac{1}{g}\hat{r}_ {n}\times \hat{r}_ {n} = -\frac{1}{g}
 \begin{pmatrix}
 -\sin n\varphi d\theta -n\cos \theta \cos n\varphi \sin \theta d\varphi \\
 \cos n\varphi d\theta-n\cos \theta \sin \theta \sin n\varphi d\varphi \\
 n\sin ^{2}\theta d\varphi
+\end{pmatrix} \\
+&= d\theta
+\begin{pmatrix}
+\sin n\varphi /g\\
+-\cos n\varphi /g \\
+0
 \end{pmatrix}
++d\varphi
+\begin{pmatrix}
+n\cos \theta \cos n\varphi \sin \theta /g \\
+n\cos \theta \sin \theta \sin n\varphi /g \\
+-n\sin ^{2}\theta /g 
+\end{pmatrix} \\
+&= \mathcal{C}_ {\theta}d\theta + \mathcal{C}_ {\varphi}d\varphi,
+\end{align*}
 $$
 
 from which we can read off the $\theta$ and $\varphi$ components. The resulting field strength is
@@ -2052,13 +2067,13 @@ $$
 Thus 
 
 $$
-\text{RHS} = -f_ {n} (1-f_ {n} ^{2})H_ {\nu \mu} \partial^{\mu}\hat{n},
+\text{RHS} = f_ {n} (1-f_ {n} ^{2})H_ {\nu \mu} \partial^{\mu}\hat{n},
 $$
 
 whose $\theta$ components is 
 
 $$
--f_ {n} (1-f_ {n} ^{2}) H_ {\theta\varphi}g^{\varphi\varphi}\partial_ {\varphi}\hat{n} = -f_ {n} (1-f_ {n} ^{2}) \frac{n^{2}}{r^{2}}\mathcal{C}_ {\theta},
+f_ {n} (1-f_ {n} ^{2}) H_ {\theta\varphi}g^{\varphi\varphi}\partial_ {\varphi}\hat{n} = f_ {n} (1-f_ {n} ^{2}) \frac{n^{2}}{r^{2}}\mathcal{C}_ {\theta},
 $$
 
 where we have used the relation that $\partial_ {\varphi}\hat{r}_ {n} = -gn\sin \theta\, \mathcal{C}_ {\theta}$, which can be shown by direct calculation.
@@ -2066,8 +2081,8 @@ where we have used the relation that $\partial_ {\varphi}\hat{r}_ {n} = -gn\sin 
 Similarly, the $\varphi$ component reads
 
 $$
--f_ {n} (1-f_ {n} ^{2}) H_ {\varphi \theta} g^{\theta \theta}\partial_ {\theta}\hat{n} 
-= -f_ {n} (1-f_ {n} ^{2}) \frac{1}{r^{2}}\mathcal{C}_ {\varphi}. 
+f_ {n} (1-f_ {n} ^{2}) H_ {\varphi \theta} g^{\theta \theta}\partial_ {\theta}\hat{n} 
+= f_ {n} (1-f_ {n} ^{2}) \frac{1}{r^{2}}\mathcal{C}_ {\varphi}. 
 $$
 
 where we have used $\mathcal{C}_ {\varphi} = \frac{n\sin \theta}{g}\partial_ {\theta}\hat{r}_ {n}$. 
@@ -2078,13 +2093,13 @@ Equationg the LHS with RHS, for $\theta$ and $\varphi$ components we get two **d
 - $\theta$-component:
 
 $$
-f_n''(r) - \frac{n^2}{r^2} f_n(r)(1-f_n(r)^2)=0.
+f_n''(r) + \frac{n^2}{r^2} f_n(r)(1-f_n(r)^2)=0.
 $$
 
 - $\varphi$-component:
 
 $$
-f_n''(r) - \frac{1}{r^2} f_n(r)(1-f_n(r)^2) = 0.
+f_n''(r) + \frac{1}{r^2} f_n(r)(1-f_n(r)^2) = 0.
 $$
 
 **We have two different EoMs from matching $\theta$ and $\varphi$ components of the equation of motion.**
@@ -2148,7 +2163,7 @@ $$
 Simplifying this gives the final equation of motion for $f_ n(r)$:
 
 $$
-f_ n'' + \frac{2n^2}{1+n^2} \frac{1}{r^2} f_ n(f_ n^2-1) = 0.
+f_ n'' + \frac{2n^2}{1+n^2} \frac{1}{r^2} f_ n(1-f_ n^2) = 0.
 $$
 
 For a fundamental monopole ($n=1$), this reduces to $f'' + f(f^2-1)/r^2 = 0$.
