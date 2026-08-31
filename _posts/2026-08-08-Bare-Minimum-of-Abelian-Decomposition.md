@@ -1853,7 +1853,10 @@ In my experience it is usually most convenient to the adopt the inverse metric t
 Regarding the equation of motion, recall that for restricted field we have $\hat{F}=\mathcal{A}+H=(da+dC)\mathfrak{n}$, where $a$ is the abelian gauge field and $C=-\frac{1}{g}\hat{n}_ {1}\cdot d\hat{n}_ {2}$. We only require that $\hat{n}_ {1},\hat{n}_ {2}$ and $\hat{n}$ for a right-handed orthonormal basis, so we can choose $\hat{n}_ {1}=\hat{n}_ {\alpha}$ and $\hat{n}_ {2}=\hat{n}_ {\beta}$. As a result,
 
 $$
-C = -\frac{1}{g} \hat{n}_ {\alpha}\cdot d\hat{n}_ {\beta} = \frac{1}{g} \cos \alpha\, d\beta, \implies H = dC = -\frac{1}{g}\sin \alpha d\alpha \wedge d\beta = -\frac{1}{g}\sin \alpha \alpha' \beta' \, d\theta \wedge d\varphi.
+\begin{align*}
+&C = -\frac{1}{g} \hat{n}_ {\alpha}\cdot d\hat{n}_ {\beta} = \frac{1}{g} \cos \alpha\, d\beta, \\
+&\implies H = dC = -\frac{1}{g}\sin \alpha d\alpha \wedge d\beta = -\frac{1}{g}\sin \alpha \alpha' \beta' \, d\theta \wedge d\varphi.
+\end{align*}
 $$
 
 Recall that the equation of motion reads  $d\star (f+H)=0$, if $f=0$  then $d\star H=0$. Hence
@@ -2073,6 +2076,7 @@ Equationg the LHS with RHS, for $\theta$ and $\varphi$ components we get two **d
 
 
 - $\theta$-component:
+
 $$
 f_n''(r) - \frac{n^2}{r^2} f_n(r)(1-f_n(r)^2)=0.
 $$
@@ -2110,7 +2114,7 @@ $$
 F_ {\mu\nu}^a F^{\mu\nu a} = (1-f_ n^2)^2 H^2 + 2(\partial_\mu f_ n)^2 \mathcal{C}^2
 $$
 
-where we have used the fact that $\mathcal{C}_ {\mu}$ has no $r$-component hence $\partial_ {\mu}r\mathcal{C}^{\mu}=0$. We calculate the invariant squares for the topological field using the angular ansatz:
+where we have used the fact that $\mathcal{C}_ {\mu}$ has no $r$-component hence $\partial_ {\mu}f(r)\mathcal{C}^{\mu}=0$. We calculate the invariant squares for the topological field using the angular ansatz:
 
 $$
 H^2 = 2H_ {\theta\varphi}H^{\theta\varphi} = \frac{2n^2}{g^2 r^4},
