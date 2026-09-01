@@ -1644,7 +1644,13 @@ $$
 N = \frac{1}{4\pi} \int_ {0}^{2\pi} d\varphi \int_ {0}^{\pi} d\theta \, \hat{n} \cdot (\partial_ \theta \hat{n} \times \partial_ \varphi \hat{n})
 $$
 
-Consider the following $\hat{n}$ with zero winding number: $\hat{n}=(\sin(2\theta)\cos(n\varphi),\sin 2\theta \sin n\varphi, \cos2\theta)$. For the field, we take the ansatz $a = A(\theta)d\varphi$. We also have $C=\frac{n}{g}\cos(2\theta)d\varphi$ (note that this is NOT $\mathcal{C}$) as a result of the $\hat{n}$ defined above. Then 
+Consider the following $\hat{n}$ with zero winding number: 
+
+$$
+\hat{n}=(\sin(2\theta)\cos(n\varphi),\sin 2\theta \sin n\varphi, \cos2\theta).
+$$
+
+For the field, we take the ansatz $a = A(\theta)d\varphi$. We also have $C=\frac{n}{g}\cos(2\theta)d\varphi$ (note that this is NOT $\mathcal{C}$) as a result of the $\hat{n}$ defined above. Then 
 
 $$
 f=da= d(A(\theta)d\varphi) = dA(\theta)\wedge d\varphi = \frac{dA(\theta)}{d\theta}d\theta \wedge d\varphi.
@@ -1741,7 +1747,7 @@ $$
 The total $\hat{A}$ is simply the above $\mathcal{C}$ plus $\mathcal{A}=a\mathfrak{n}=A(\theta)d\varphi \mathfrak{n}= \frac{2n}{g}\sin ^{2}\theta d\varphi \mathfrak{n}$,
 
 $$
-\hat{A}= \frac{2n}{g}\sin ^{2}\theta d\varphi \mathfrak{n} + \vec{\mathcal{C}}\cdot \vec{T}, \quad  \vec{T}=\frac{\vec{\sigma}}{2}.
+\hat{A}= \frac{2n}{g}\sin ^{2}\theta d\varphi \mathfrak{n} + \mathcal{C}
 $$
 
 The gauge transformation that rotates $\hat{n}$ to $\hat{z}$ reads
@@ -1978,7 +1984,7 @@ Let's take a look at the other equation of motion:
 
 $$
 \boxed{
-\hat{D}_ {\mu}(\hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu}) = ig \Gamma_ {\mu \nu} \, \vec{X}_ {\mu} \times \hat{n} , \quad  \Gamma_ {\mu \nu} := f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}.
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu}) = ig (f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}) \, \vec{X}_ {\mu} \times \hat{n}.
 }
 $$
 
@@ -2163,11 +2169,16 @@ $$
 Simplifying this gives the final equation of motion for $f_ n(r)$:
 
 $$
-f_ n'' + \frac{2n^2}{1+n^2} \frac{1}{r^2} f_ n(1-f_ n^2) = 0.
+\boxed{
+f_ n'' + \frac{2n^2}{1+n^2} \frac{f_ n}{r^2} (1-f_ n^2) = 0.
+} 
 $$
 
-For a fundamental monopole ($n=1$), this reduces to $f'' + f(f^2-1)/r^2 = 0$.
+The boundary condition is $f(0)=0$ and $f(\infty)=1$ for all $n$. For a fundamental monopole ($n=1$), this reduces to $f'' + f(f^2-1)/r^2 = 0$.
 
+- - -
+
+Numerical solutions are given below.
 
 # Appendix
 
