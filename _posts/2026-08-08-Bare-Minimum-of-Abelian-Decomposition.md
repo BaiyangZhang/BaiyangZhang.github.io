@@ -2178,7 +2178,49 @@ The boundary condition is $f(0)=0$ and $f(\infty)=1$ for all $n$. For a fundamen
 
 - - -
 
-Numerical solutions are given below.
+To gain some intuitive understanding of the solution, let's study the asymptotic behavior of it near $r=0$. Rewrite the differential equation by multiplying through by $r^2$:
+
+$$
+r^2 f_ n'' +\frac{2n^2}{1+n^2} (f_ n - f_ n^3) = 0
+$$
+
+Substitute the power-law ansatz $f_n(r) = r^k$. The derivatives are $f_ n' = k r^{k-1}$ and $f_ n'' = k(k-1) r^{k-2}$. Substituting these into the linearized equation gives the characteristic equation:
+
+$$
+k^2 - k + \frac{2n^2}{1+n^2} = 0
+$$
+
+Apply the quadratic formula to find the roots for $k$:
+
+$$
+k = \frac{1}{2} \pm \frac{1}{2}\sqrt{\frac{1 - 7n^2}{1+n^2}}.
+$$
+
+Note that for any non-zero integer winding number $n \ge 1$, the discriminant is strictly negative ($1 - 7n^2 < 0$). This results in complex conjugate roots $k = \frac{1}{2} \pm i \omega_ n$, where the frequency factor $\omega_ n$ is defined as:
+
+$$
+\omega_ n = \frac{1}{2}\sqrt{\frac{7n^2 - 1}{1+n^2}}.
+$$
+
+The complex roots produce an oscillatory power-law solution. The general asymptotic solution near the origin is:
+
+$$
+\begin{align*}
+f_n(r) \sim r^{k} &= r^{1/2\pm i\omega _ {n} } =\sqrt{r} \, r^{\pm i\omega _ {n} }   \\
+  &= \sqrt{r} \, \exp(\ln(r^{\pm i\omega _ {n} })) = \sqrt{r} \, \exp(\pm i\omega _ {n} \ln r) \\
+  &\to r^{1/2} \left( A \cos(\omega_n \ln r) + B \sin(\omega_n \ln r) \right) \\
+\end{align*}
+$$
+
+where in the final step we rewrote the exponential as trigonometric functions and restored the constants of integration. In summary, for general $n$,
+
+$$
+\boxed{
+f_ {n} (r) = \to r^{1/2} \left( A \cos(\omega_n \ln r) + B \sin(\omega_n \ln r) \right), \quad  \omega _ {n} = \frac{1}{2}\sqrt{\frac{7n^2 - 1}{1+n^2}}.
+} 
+$$
+
+Evaluate the neglected non-linear term to determine the error bound. The leading order behavior is $f_ n(r) \sim \mathcal{O}(r^{1/2})$. The dropped cubic term scales as $f_ n^3 \sim (r^{1/2})^3 = r^{3/2}$. This acts as a source for the next correction, introducing an error bound of $\mathcal{O}(r^{3/2})$.
 
 # Appendix
 
