@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bare Minimum of abelian Decomposition
-date: 2026-08-08
+date: 2026-09-03
 author: Baiyang Zhang
 catalog: true
 tags:
@@ -2212,7 +2212,9 @@ f_n(r) \sim r^{k} &= r^{1/2\pm i\omega _ {n} } =\sqrt{r} \, r^{\pm i\omega _ {n}
 \end{align*}
 $$
 
-where in the final step we rewrote the exponential as trigonometric functions and restored the constants of integration. In summary, for general $n$,
+where in the final step we rewrote the exponential as trigonometric functions and restored the constants of integration. 
+
+In summary, for general $n$,
 
 $$
 \boxed{
@@ -2221,6 +2223,56 @@ f_ {n} (r) = \to r^{1/2} \left( A \cos(\omega_n \ln r) + B \sin(\omega_n \ln r) 
 $$
 
 Evaluate the neglected non-linear term to determine the error bound. The leading order behavior is $f_ n(r) \sim \mathcal{O}(r^{1/2})$. The dropped cubic term scales as $f_ n^3 \sim (r^{1/2})^3 = r^{3/2}$. This acts as a source for the next correction, introducing an error bound of $\mathcal{O}(r^{3/2})$.
+
+Next let's study the behavior of the equation when $r\to \infty$, agian by linearizing the profile function around the boundary. Recall the boundary condition $f_ n(r) \to 1$ as $r \to \infty$. Let $f_ n(r) = 1 - \delta(r)$, where $\delta(r)$ is a small perturbation that decays to zero at infinity. Substitute it into the differential equation:
+  
+$$
+(1 - \delta)'' + \frac{2n^2}{1+n^2} \frac{1 - \delta}{r^2} (1 - (1 - \delta)^2) = 0
+$$
+
+and expand the cubic polynomial term, drop the $\delta^2$ and $\delta^3$ terms to obtain the linearized equation,  a Cauchy-Euler equation (the power of x  in each term matches the order of the corresponding derivative.):
+
+$$
+r^2 \delta'' - \frac{4n^2}{1+n^2} \delta = 0.
+$$
+
+Again adopt the perturbative ansatz of the form $\delta(r) = C r^k$, thus $\delta'' = C k(k-1) r^{k-2}$. Substitute it into the linearized equation we get the characteristic equation:
+
+$$
+k(k-1) - \frac{4n^2}{1+n^2} = k^2 - k - \frac{4n^2}{1+n^2} = 0,
+$$
+
+with solutions
+
+$$
+k = \frac{1 \pm \sqrt{1 - 4\left(-\frac{4n^2}{1+n^2}\right)}}{2}= \frac{1}{2} \pm \frac{1}{2}\sqrt{\frac{1+17n^2}{1+n^2}}.
+$$
+
+Since we must have $k < 0$ the correct root is 
+
+$$
+k = \frac{1}{2} - \frac{1}{2}\sqrt{\frac{1+17n^2}{1+n^2}}.
+$$
+
+The full asymptotic behavior at spatial infinity is
+
+$$
+f_ n(r) \simeq 1 - C r^{\frac{1}{2} - \frac{1}{2}\sqrt{\frac{1+17n^2}{1+n^2}}}
+$$
+
+When $n=1$, the exponent simplifies to $k = \frac{1}{2} - \frac{1}{2}\sqrt{\frac{18}{2}} =-1$, yielding the  asymptotic form $1 - \frac{C}{r}$. For any generalized winding number $n > 1$, the exponent diverges from $-1$.
+
+- - -
+
+**Numerical results**
+
+The asymptotic numeric behavior at $r\to {0}$ is missing something, perhaps due to the fast oscillation, or the factor of 1/r. In an attempt to cure it, try a change of variable from r to $t:=\ln(r)$, then $f'=\frac{1}{r}\dot{f}(t)$ and $f''=\frac{1}{r^{2}}(\ddot{f}(t)-\dot{f}(t))$, where $\dot{f}:=df /dt$. The equation of motion reads 
+
+$$
+\ddot{f}(t)-\dot{f}(t) + \frac{2n^{2}}{1+n^{2}}f_ {n} (1-f_ {n} ^{2}) = 0.
+$$
+
+
 
 # Appendix
 
