@@ -49,7 +49,8 @@
               "title": "未命名"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -215,10 +216,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "820a145d14e80da2",
+  "active": "04466adf98a34364",
   "lastOpenFiles": [
-    "未命名.md",
     "_posts/2026-09-03-Bare-Minimum-of-Abelian-Decomposition.md",
+    "未命名.md",
     "Pasted image 20260823160621.png",
     "Tem.md",
     "Discussion Note.md",

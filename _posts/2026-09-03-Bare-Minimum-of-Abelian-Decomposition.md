@@ -2218,7 +2218,7 @@ In summary, for general $n$,
 
 $$
 \boxed{
-f_ {n} (r) = \to r^{1/2} \left( A \cos(\omega_n \ln r) + B \sin(\omega_n \ln r) \right), \quad  \omega _ {n} = \frac{1}{2}\sqrt{\frac{7n^2 - 1}{1+n^2}}.
+f_ {n} (r) \to r^{1/2} \left( A \cos(\omega_n \ln r) + B \sin(\omega_n \ln r) \right), \quad  \omega _ {n} = \frac{1}{2}\sqrt{\frac{7n^2 - 1}{1+n^2}}.
 } 
 $$
 
@@ -2257,10 +2257,12 @@ $$
 The full asymptotic behavior at spatial infinity is
 
 $$
-f_ n(r) \simeq 1 - C r^{\frac{1}{2} - \frac{1}{2}\sqrt{\frac{1+17n^2}{1+n^2}}}
+\boxed{
+f_ n(r) \to  1 - C r^{\frac{1}{2} - \frac{1}{2}\sqrt{\frac{1+17n^2}{1+n^2}}}
+} 
 $$
 
-When $n=1$, the exponent simplifies to $k = \frac{1}{2} - \frac{1}{2}\sqrt{\frac{18}{2}} =-1$, yielding the  asymptotic form $1 - \frac{C}{r}$. For any generalized winding number $n > 1$, the exponent diverges from $-1$.
+When $n=1$, the exponent simplifies to $k = \frac{1}{2} - \frac{1}{2}\sqrt{\frac{18}{2}} =-1$, yielding the  asymptotic form $1 - \frac{C}{r}$. For any generalized winding number $n > 1$, the exponent differs from $-1$.
 
 - - -
 
