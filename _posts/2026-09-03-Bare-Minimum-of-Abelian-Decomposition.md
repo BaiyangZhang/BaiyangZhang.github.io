@@ -1852,7 +1852,13 @@ $$
 \end{align*}
 $$
 
-In my experience it is usually most convenient to the adopt the inverse metric tensor, since here all the indices are contracted. Recall that the metric components yield $g^{\theta\theta} = \frac{1}{r^2}$, $g^{\varphi\varphi} = \frac{1}{r^2\sin^2\theta}$, and $g^{\theta\varphi} = 0$. For example, it is obvious that $\partial_ {\mu}\alpha \partial^{\mu}\beta=g^{\theta\varphi}\partial_ {\theta}\alpha \partial_ {\varphi}\beta=0$, it is because $\alpha(\theta)$ is a function of $\theta$ only so the only nonzero component is $\partial_ {\theta}\alpha$, similarly for $\beta$. 
+In my experience it is usually most convenient to the adopt the inverse metric tensor, since here all the indices are contracted. Recall that the metric components are
+
+$$
+g^{\theta\theta} = \frac{1}{r^2},\quad  g^{\varphi\varphi} = \frac{1}{r^2\sin^2\theta},
+$$
+
+and $g^{\theta\varphi} = 0$. For example, it is obvious that $\partial_ {\mu}\alpha \partial^{\mu}\beta=g^{\theta\varphi}\partial_ {\theta}\alpha \partial_ {\varphi}\beta=0$, it is because $\alpha(\theta)$ is a function of $\theta$ only so the only nonzero component is $\partial_ {\theta}\alpha$, similarly for $\beta$. 
 
 - - -
 
@@ -2273,6 +2279,93 @@ The asymptotic numeric behavior at $r\to {0}$ is missing something, perhaps due 
 $$
 \ddot{f}(t)-\dot{f}(t) + \frac{2n^{2}}{1+n^{2}}f_ {n} (1-f_ {n} ^{2}) = 0.
 $$
+
+### Vortex solution
+
+Recall the EoM w.r.t. $a_ {\mu}$:
+
+$$
+\partial_ {\mu}(f_ {\mu \nu}+H_ {\mu \nu} ) = -g \hat{n} \cdot [\vec{X}_ {\mu}\times (\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}) + \partial_ {\mu}(\vec{X}_ {\mu}\times \vec{X}_ {\nu}) ]
+$$
+
+and that w.r.t. $X_ {\mu}$:
+
+$$
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}) = g(f_ {\mu \nu}+H_ {\mu \nu}+ X_ {\mu \nu})\hat{n}\times \vec{X}_ {\mu}.
+$$
+
+Now let us consider a string that connects a monopole-antimonopole pair, the vortex solution. Take the cylindrical coordinate $(t,r,\varphi,z)$ and suppose the string streches in the z direction. Take the time-dependent ansatz for the gauge field:
+
+$$
+f=0, \quad  \hat{A} = -\frac{1}{g} \hat{n}\times d\hat{n}, \quad  \vec{X} = \frac{f(r)}{g} e^{-i(\omega t-kz)} \hat{n}\times d\hat{n}
+$$
+
+where 
+
+$$
+\hat{n}=(\cos n\varphi, \sin n\varphi, 0)^{T}.
+$$
+
+Take this ansatz to the equation of motion should results in an equation of motion for $f(r)$. Now let's dive into it.
+
+From the definition of $\hat{n}$ we have $d\hat{n}=nd\varphi(-\sin n\varphi, \cos n\varphi,0)^{T}$, hence 
+
+$$
+\hat{n}\times d\hat{n} = \hat{z}nd\varphi.
+$$
+
+Note two things, it is in $z$ direction and it only has $d\varphi$ component. As a result, 
+
+$$
+\begin{align*}
+\mathcal{C} &= -\frac{1}{g} n\times d n = -\frac{1}{g} nd\varphi T^{3}, \\
+X &= \frac{nf(r)}{g} e^{-i(\omega t-kz)} d\varphi T^{3}.
+\end{align*}
+$$
+
+Since both $\hat{A}=\mathcal{C}$ and $X$ lie along the same direction, their cross product vanishes, thus $\hat{D}X = \partial X-g\hat{A}\times X = \partial X$. Since $X_ {\mu}$ has only $\varphi$ component, the term $X_ {\mu}\times X_ {\nu}$ also vanishes. Some calculation shows  that the first equation of motion beocmes $LHS=0$ and $RHS=0$, it is satisfired trivially. 
+
+Regarding the second equation of motion, since $\mathcal{C}$ and $X$ both depends on $\varphi$ only, consequently $H_ {\mu \nu}=0$ and $X_ {\mu \nu}=0$. The EoM simplifies to
+
+$$
+\hat{D}_ {\mu}(\partial_ {\mu}\vec{X}_ {\nu}-\partial_ {\nu}\vec{X}_ {\mu}) =0.
+$$
+
+Define $T_ {\mu \nu}=\partial_ {\mu}\vec{X}_ {\nu}-\partial_ {\nu}\vec{X}_ {\mu}$, then the non-zero components are 
+
+$$
+\begin{align*}
+T_ {t\varphi} &= -i\omega\frac{nf}{g} e^{-i(\omega t-kz)}T^{3}, \\
+T_ {r\varphi} &= \frac{nf'}{g} e^{-i(\omega t-kz)}T^{3}, \\
+T_ {z\varphi} &= ik \frac{nf}{g} e^{-i(\omega t-kz)}T^{3}.
+\end{align*}
+$$
+
+Since they are all proportional to $T^{3}$ direction, again $\hat{D}_ {\mu}{T^{\mu}}_ {\nu}$ beocmes $\nabla_ {\mu}{T^{\mu}}_ {\nu}$, where we have written $\partial_ {\mu}$ to the covariant derivative $\nabla_ {\mu}$ since we will be working with polar coordinates. The divergence is $\nabla_ {\mu}T^{\mu \nu}=\frac{1}{\sqrt{\left\lvert g \right\rvert}} \partial_ {\mu}(\sqrt{\left\lvert g \right\rvert}T^{\mu \nu}) + \Gamma_ {\mu \rho}^{\nu}T^{\mu \rho}$, we get 
+
+$$
+\hat{D}_ {\mu}T^{\mu \nu} = \nabla_ {\mu} T^{\mu \nu} = \frac{1}{r} \partial_ r (r T^{r\varphi}) + \partial_ z T^{z\varphi} + \partial_ t T^{t\varphi} = 0,
+$$
+
+where the indices are raised by $g^{\mu \nu} = \left( 1,-1,-\frac{1}{r^{2}} ,-1 \right)$ corresponding to $x=(t,r,\varphi,z)$:
+
+$$
+\begin{align*}
+T^{r\varphi} &= \frac{1}{r^{2}} T_ {r\varphi} =\frac{nf'}{gr^{2}} e^{-i(\omega t-kz)}T^{3}\\
+T^{z\varphi} &= \frac{1}{r^{2}} T_ {z\varphi} = ik \frac{nf}{gr^{2}} e^{-i(\omega t-kz)}T^{3}\\
+T^{t\varphi} &= \frac{1}{r^{2}}  T_ {t\varphi} = i\omega\frac{nf}{gr^{2}} e^{-i(\omega t-kz)}T^{3}
+\end{align*}
+$$
+
+Substitute these expressions back into the divergence equation and multiply by a factor of $r^{2}$, we obtain the equation of motion for $f(r)$:
+
+$$
+\boxed{
+f''- \frac{1}{r} f'+(\omega^{2}-k^{2})f =0.
+} 
+$$
+
+
 
 
 
