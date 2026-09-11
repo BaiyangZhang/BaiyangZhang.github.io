@@ -2365,7 +2365,33 @@ f''- \frac{1}{r} f'+(\omega^{2}-k^{2})f =0.
 } 
 $$
 
+- - -
 
+Define the substitution $f(r) = r g(r)$, the first derivative is $f'(r) = g(r) + r g'(r)$. The second derivative is $f''(r) = 2g'(r) + r g''(r)$. Substituting these into the original equation yields:
+
+$$
+2g'(r) + r g''(r) - \frac{1}{r}[g(r) + r g'(r)] + (\omega^2 - k^2) r g(r) = 0
+$$
+
+which simplifies to
+
+$$
+r^2 g''(r) + r g'(r) + \left(m^{2}r^2 - 1\right) g(r) = 0, \quad  m^{2} := \omega^2 - k^2.
+$$
+
+This is the parametric Bessel equation of the first order. To solve it, define a dimensionless parameter $x=\mathrm{mr}$, then the equation becomes 
+
+$$
+x^2 \frac{d^2g}{dx^2} + x \frac{dg}{dx} + (x^2 - 1) g(x) = 0
+$$
+
+which is the standard Bessel differential equation of order 1. The general analytical solution is a linear combination of the Bessel function of the first kind $J_ 1(x)$ and the Bessel function of the second kind $Y_ 1(x)$:
+
+$$
+g(x) = C_ 1 J_ 1(x) + C_ 2 Y_ 1(x)
+$$
+
+Because the Neumann function $Y_ 1(mr)$ diverges to negative infinity at the origin $r = 0$, physical models require setting $C_ 2 = 0$. The physically viable analytical solution reduces strictly to $g(r) = C_ 1 J_ 1(mr)$. But this will violate the boundary condition at infinity. **The boundary condition is $f(0)=0$ and $f(\infty)=1$.** Note that $f(\infty)=1$ means that infinitely far from the string the energy density goes to zero, since in this case $X=-\mathcal{C}$ hence $A=0$. Hence we shall use the numerical methods. 
 
 
 
