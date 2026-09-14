@@ -1,18 +1,5 @@
-## The Model
-
-The Hamiltonian density in terms of vacuum sector field operator takes the general form 
-$$\mathcal{H}[\phi,\pi]=\frac{1}{2}\pi(\vec{x})^{2}+\frac{1}{2}(\partial_ {i}\phi(\vec{x}))^{2}+V(\phi)$$
-where the potential $V(\phi)$ has degenerate vacua. We now consider the background of a static classical soliton $f(\vec{x})$. To apply perturbative methods, the Hamiltonian should be expressed in terms of the soliton sector field operator $\varphi(\vec{x})$. The corresponding kink sector Hamiltonian density $\mathcal{H}_ {K}$ becomes
+描述强相互作用的SU(3)量子色动力学（QCD）有诸多独特性质，其中最重要的莫过于色禁闭现象与渐进自由。前者偏向宏观（未发现孤立自由的色荷）， 后者侧重微观（耦合强度随距离减小而递减），犹如硬币的两面，对立之中蕴含 着统一。人们对色禁闭的研究已经取得了长足进展，提出了多种或唯象、或数 值的理论模型。如Isgur-Paton流管模型认为色荷之间积累的能量与距离近似呈 正比，由此结合真空涨落可解释色禁闭现象，其预测与格点规范理论（lattice gauge theory）的计算结果在误差范围内吻合。然而格点计算虽能给出数值结果， 但对于理解色禁闭现象背后的物理本质却颇显无力。禁闭现象自发现以来半个 多世纪，一直以各种形式在不同模型中（如二维Schwinger模型、Polyakov模型 等）反复出现，历久弥新，属当下之热点与难点问题。 微扰论在计算散射振幅、反常磁矩等方面成果颇丰，但QCD的β函数为负，因此耦合常数随着能量的减小而增大，在低能下超出微扰论的适用范围。即使 耦合常数足够小，用微扰论也很难研究诸如强子化过程、束缚态能级和分数量 子霍尔效应等现象。为了解决上述困难，发展出了多种非微扰方法，其中最成 功的思路之一是从欧拉-拉格朗日方程出发，寻找其非平凡解并统计性地研究其 在物理过程中的作用。这些解由其拓扑性质（同伦群）分类，统称为孤子（soliton）， 包括单极子、瞬子和扭结等。 孤子效应不仅修正微扰结果，而且可从根本上改变系统的物理性质。以二维希格斯模型为例，其拉氏量为：
 $$
-\mathcal{H}_ {\text{K}}[\varphi,\pi] = \mathcal{D}_ {f}^{\dagger}\mathcal{H}[\phi,\pi]\mathcal{D}_ {f} 
-= \frac{1}{2}\pi^{2}(\vec{x}) + \frac{1}{2}(\partial_ {i}\varphi)^{2}+\sum_ {n=2} \frac{\varphi^{n}}{n!} \frac{\partial^{n}V(f)}{\partial\varphi^{n}} + \rho_ {0},
+\mathcal{L} := \left\lvert D_ {\mu}\phi \right\rvert ^{2}-\frac{\lambda}{4} \left\lvert \phi \right\rvert ^{4} + \frac{\mu^{2}}{2} \left\lvert \phi \right\rvert ^{2}-\frac{1}{4e^{2}}F^{2},
 $$
-where $\rho_ {0}=\frac{1}{2}(\partial_ {i}f)^{2} + V(f)$ is the classical soliton energy. The terms linear in $\varphi$ disappear since $f$ is an extremum of the Hamiltonian. 
-
-The quadratic part of $\mathcal{H}_ {K}$ determines the normal modes in which the soliton field operator are expanded, we have 
-$$
-\mathcal{H}_ {K}^{(2)} = 
-$$
-
-
-
+其中$\phi,F$分别为标量场与规范场强，$\mu^{2}>0$。对称性自发 破缺导致玻色子（光子）获得质量$M=\mu e/\sqrt{\lambda}$，因此从微扰论出发，相互作用当具备Yukawa形式，$V(r)\propto e^{-Mr}$。其指数衰减表明不存在禁闭现象。然而瞬子增殖抵消了 势能的指数衰减，导致了禁闭现象。类似的机制还存在于三维Polyakov模型中。 可见，量子效应常隐藏于诸如孤子贡献、真空拓扑结构等非微扰内容中。

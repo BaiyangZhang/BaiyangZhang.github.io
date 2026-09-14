@@ -2454,5 +2454,32 @@ The asymptotic behavior of $r I_ {1}(\left\lvert m \right\rvert r),r K_ {1}( \le
 
 In summary, it seems that no solution could satisfy the boundary condition $f(0)=0$ and $f(\infty)=1$. However, in the case $\omega^{2}-k^{2}<0$, the solution proportional to $K_ {1}$ could satisfy the opposite boundary condition: $f(0)=1$ and $f(\infty)=0$.
 
+- - -
+
+$\omega^{2}-k^{2}=0$: 
+
+Setting $\omega = 0$ and $k = 0$ reduces the effective mass parameter to zero. The radial differential equation simplifies to:
+
+$$
+f''(r) - \frac{1}{r} f'(r) = 0
+$$
+
+We can solve this exact analytical equation. Let $v(r) = f'(r)$. The equation becomes a first-order separable differential equation:
+
+$$
+v'(r) = \frac{1}{r} v(r)
+$$
+
+Integrating both sides yields $\ln\vert{}v\vert{} = \ln\vert{}r\vert{} + c$, which gives $v(r) = C_ {1} r$. Integrate a second time to find the profile function $f(r)$:
+
+$$
+f(r) = \frac{1}{2} C_ 1 r^2 + C_ 2 ,
+$$
+
+now apply the spatial boundary conditions $f(0) = 0$ requires setting the constant $C_ {2} = 0$. The function becomes $f(r) = A r^2$. On the other hand, the asymptotic boundary condition requires $f(\infty) = 1$. Evaluating our function as $r \to \infty$ gives a second order divergence, it is mathematically impossible to satisfy this condition unless $C_ {1} = 0$, which leaves only the trivial vacuum $f(r) = 0$.
+
+This mathematical contradiction might be due to *the lack of non-linear interactions needed to stabilize the soliton solution*. In the Abelian Higgs theory, gauge singularities manifest as string-like magnetic vortex tubes. Constructing these physical objects requires a complex scalar field undergoing spontaneous symmetry breaking to form the required vacuum manifold.
+
+  
 # Appendix
 
