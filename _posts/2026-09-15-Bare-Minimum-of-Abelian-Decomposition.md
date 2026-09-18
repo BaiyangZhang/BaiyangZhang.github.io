@@ -2412,7 +2412,7 @@ $$
 
 - - -
 
-Define the substitution $f(r) = r g(r)$, the first derivative is $f'(r) = g(r) + r g'(r)$. The second derivative is $f''(r) = 2g'(r) + r g''(r)$. Substituting these into the original equation yields:
+Define the substitution $f(r) = r g(r)$, the first derivative is $f'(r) = g(r) + r g'(r)$. The second derivative is $f''(r) = 2g'(r) + r g''(r)$. Substituting these into the original equation yields: 
 
 $$
 2g'(r) + r g''(r) - \frac{1}{r}[g(r) + r g'(r)] + (\omega^2 - k^2) r g(r) = 0
@@ -2490,7 +2490,14 @@ The asymptotic behavior of $r I_ {1}(\left\lvert m \right\rvert r),r K_ {1}( \le
 
 In summary, it seems that no solution could satisfy the boundary condition $f(0)=0$ and $f(\infty)=1$. However, **in the case $\omega^{2}-k^{2}<0$, the solution proportional to $K_ {1}$ could satisfy the opposite boundary condition: $f(0)=1$ and $f(\infty)=0$.** It seems to be the only plasuble solution with given ansatz. The plot of $K_ {1}$ is given below, by courtesy of Liping:
 
-![[a17735e23943fa78c92e895aa3c90a06.png]]
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="/img/vortexAnsatz1.png" class="img-fluid rounded z-depth-1" style="width: 80%;" %}
+    </div>
+</div>
+<div class="caption">
+    Solution proportional to $K_1$
+</div>
 
 - - -
 
