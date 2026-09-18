@@ -2514,7 +2514,10 @@ $$
 Because the restricted fields and valence fluctuations are orthogonal, the total energy functional $E = \int d^3x \, \mathcal{H}$ is the spatial integral of the squared electric ($E_ i = F_ {0i}$) and magnetic ($B_ i = \frac{1}{2}\epsilon_ {ijk}F_ {jk}$) field components for both sectors:
 
 $$
-E = \int d^3x \left[ \frac{1}{2} (f_ {0i} + H_ {0i} + X_ {0i})^2 + \frac{1}{4} (f_ {ij} + H_ {ij} + X_ {ij})^2 + \frac{1}{2} (\hat{D}_ 0 \vec{X}_ i - \hat{D}_ i \vec{X}_ 0)^2 + \frac{1}{4} (\hat{D}_ i \vec{X}_ j - \hat{D}_ j \vec{X}_ i)^2 \right].
+\begin{align*}
+E &= \int d^3x \left[ \frac{1}{2} (f_ {0i} + H_ {0i} + X_ {0i})^2 + \frac{1}{4} (f_ {ij} + H_ {ij} + X_ {ij})^2 \right. \\
+&\;\;\;\;\,+\left. \frac{1}{2} (\hat{D}_ 0 \vec{X}_ i - \hat{D}_ i \vec{X}_ 0)^2 + \frac{1}{4} (\hat{D}_ i \vec{X}_ j - \hat{D}_ j \vec{X}_ i)^2 \right].
+\end{align*}
 $$
 
 Applying the vortex ansatz simplifies the energy functional. It's most convenient to go to the Lagrangian $\mathcal{L}_ {ECD}$ rather than energy. 
