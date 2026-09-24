@@ -36,34 +36,21 @@
             }
           },
           {
-            "id": "b2f6c56029619e39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-09-15-Bare-Minimum-of-Abelian-Decomposition"
-            }
-          },
-          {
             "id": "04466adf98a34364",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tem.md",
+                "file": "省基金.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Tem"
+              "title": "省基金"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -231,14 +218,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "820a145d14e80da2",
+  "active": "04466adf98a34364",
   "lastOpenFiles": [
+    "_posts/2022-7-17-Conventions-and-Formula.md",
+    "省基金.md",
     "Vortex Note.md",
     "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
     "Tem.md",
     "a17735e23943fa78c92e895aa3c90a06.png",
     "img/vortexAnsatz1.png",
-    "省基金.md",
     "Discussion Note.md",
     "Prompt for AI RA.md",
     "Pasted image 20260823160621.png",
@@ -265,7 +253,6 @@
     "_posts/2025-09-21-Does-Adiabatic-Assumption-Work.md",
     "_posts/2025-09-06-Mathematical-Note-of-Quantum-Physics.md",
     "_posts/2025-08-29-Note-on-The-Moral-Foundations-of-Politics.md",
-    "_posts/2025-03-09-Introduction-to-Resurgence-2.md",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/张柏阳中文简历.pdf",
     "assets/pdf/BaiyangZhangCV.pdf",
