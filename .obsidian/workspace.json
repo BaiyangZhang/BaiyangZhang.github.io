@@ -49,8 +49,7 @@
               "title": "省基金"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "electrodynamics",
+                "query": "[\"aliases\":",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +107,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -218,10 +218,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "04466adf98a34364",
+  "active": "820a145d14e80da2",
   "lastOpenFiles": [
-    "_posts/2022-7-17-Conventions-and-Formula.md",
     "省基金.md",
+    "_posts/2022-7-17-Conventions-and-Formula.md",
     "Vortex Note.md",
     "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
     "Tem.md",
