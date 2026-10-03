@@ -1,0 +1,1 @@
+wing $\gamma_{0\mathfrak{K}}^{01}(k) = 2\pi\delta(k-\mathfrak{K})$, $\mathfrak{k}$
