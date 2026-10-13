@@ -22,21 +22,49 @@
             }
           },
           {
-            "id": "8cc51b6fbd30b86b",
+            "id": "38cae4516a88a460",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tem.md",
+                "file": "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tem"
+              "title": "2026-09-15-Bare-Minimum-of-Abelian-Decomposition"
+            }
+          },
+          {
+            "id": "c180b7865c8ae6c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Discussion Note.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Discussion Note"
+            }
+          },
+          {
+            "id": "e20ba4e1fca8a696",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -204,19 +232,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8cc51b6fbd30b86b",
+  "active": "e20ba4e1fca8a696",
   "lastOpenFiles": [
-    "_posts/2026-09-30-Note-on-Application-of-Tsallis-Entropy.md",
-    "省基金.md",
     "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
+    "未命名.md",
+    "_posts/2026-09-30-Note-on-Application-of-Tsallis-Entropy.md",
+    "Vortex Note.md",
+    "Discussion Note.md",
+    "Pasted image 20261012112255.png",
+    "Tem.md",
+    "省基金.md",
     "_posts/2025-01-06-Perturbative-SSB-and-Effective-Action.md",
     "_posts/2026-04-30-Electrodynamics-in-Terms-of-Differential-Forms.md",
-    "Vortex Note.md",
     "_posts/2022-7-17-Conventions-and-Formula.md",
-    "Tem.md",
     "a17735e23943fa78c92e895aa3c90a06.png",
     "img/vortexAnsatz1.png",
-    "Discussion Note.md",
     "Prompt for AI RA.md",
     "Pasted image 20260823160621.png",
     "Pasted image 20260805113259.png",
@@ -237,8 +267,6 @@
     "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
     "_posts/2024-11-05-Thoughts-on-Entropy.md",
-    "_posts/2025-09-22-Gradient-Method-for-q-Sigmoid.md",
-    "_posts/2025-09-21-Does-Adiabatic-Assumption-Work.md",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/张柏阳中文简历.pdf",
     "assets/pdf/BaiyangZhangCV.pdf",
@@ -250,7 +278,6 @@
     "_sass/_distill.scss",
     "_sass/_cv.scss",
     "Pasted image 20260128105100.png",
-    "Pasted image 20260112230039.png",
-    "Pasted image 20260108212014.png"
+    "Pasted image 20260112230039.png"
   ]
 }

@@ -1072,12 +1072,10 @@ $$
 then the Lagrangian reads
 
 $$
-\boxed{ 
 \begin{align*}
-\mathcal{L}_ {\text{ECD}} =& - \frac{1}{2}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
-=& - \frac{1}{4}[(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)^{2}]
+\mathcal{L}_ {\text{ECD}} &= - \frac{1}{2}\mathrm{Tr}\,\left\lbrace (\hat{F}+X_ {\mu \nu}\mathfrak{n} )^{2}+(\hat{D}_ {\mu}X_ {\nu}- \mu\leftrightarrow \nu)^{2} \right\rbrace \\
+&= - \frac{1}{4}[(f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu})^{2}+(\hat{D}_ {\mu}\vec{X}_ {\nu}-\mu \leftrightarrow \nu)^{2}]
 \end{align*}
-}
 $$
 
 where we have used the convention in Schwartz's QFT textbook that we do not distinct the upper indices and lower indices when summed. In the second line we have got ridden of the trace sign. Recall that 
@@ -1647,7 +1645,7 @@ $$
 Consider the following $\hat{n}$ with zero winding number: 
 
 $$
-\hat{n}=(\sin(2\theta)\cos(n\varphi),\sin 2\theta \sin n\varphi, \cos2\theta).
+\hat{n}=(\sin2\theta\cos n\varphi,\sin 2\theta \sin n\varphi, \cos2\theta).
 $$
 
 For the field, we take the ansatz $a = A(\theta)d\varphi$. We also have $C=\frac{n}{g}\cos(2\theta)d\varphi$ (note that this is NOT $\mathcal{C}$) as a result of the $\hat{n}$ defined above. Then 
@@ -1737,10 +1735,11 @@ It has a special solution $A(\theta)= \frac{2n}{g}\sin ^{2}\theta$.
 The $\mathcal{C}$ part reads ${\mathcal{C}}_ \mu = -\frac{1}{g} \hat{n} \times d\hat{n}$, where $d\hat{n}$ can be written in terms of $\theta$ and $\varphi$, $d\hat{n}=\partial_ {\theta}\hat{n}d\theta+\partial_ {\varphi}\hat{n} d\varphi$, there is no $dr$ component since $\mathcal{C}$ is not a function of $r$. Then we just need to calculate things like $\hat{n}\times \partial_ {\theta}\hat{n}$ which we know will be in $\hat{\varphi}$ direction, it is much easier to calculate. In Cartesian coordinates we have $\mathcal{C}_ {\theta}=\frac{1}{g}(2\sin n\varphi,-2\cos n\varphi,0)$ and $\mathcal{C}_ {\varphi}=\frac{1}{g}(\frac{1}{2} n \sin (4 \theta ) \cos (n \phi ),\frac{1}{2} n \sin (4 \theta ) \sin (n \phi ),-n \sin ^2(2 \theta ))$. In summary we have
 
 $$
-\vec{\mathcal{C}}=\frac{1}{g}\begin{pmatrix}
+\mathcal{C}= (T^{1},T^{2},T^{3})\cdot
+\frac{1}{g}\begin{pmatrix}
 2 d\theta \sin (n \phi )+\frac{1}{2} d\phi n \sin (4 \theta ) \cos (n \varphi ) \\
 -2 d\theta \cos (n \phi )+\frac{1}{2} d\phi n \sin (4 \theta ) \sin (n \varphi ) \\
--n d\varphi \sin ^2(2 \theta )
+-n d\varphi \sin ^2(2 \theta ) 
 \end{pmatrix}
 $$
 
@@ -1935,7 +1934,7 @@ where $f_ {n}(r)$ is a function of $r$ only.  In the following we will assume th
 
 - - -
 
-Take the above ansatz to the following equation of motion for gauge fields
+Take the above ansatz to the following equation of motion for gauge fields (which I copied here)
 
 $$
 \boxed{
@@ -1982,15 +1981,15 @@ $$
 RHS = \frac{3}{2} (\partial_ {\mu}f_ {n} ^{2})H_ {\mu \nu} + f_ {n} ^{2}\partial_ {\mu}H_ {\mu \nu}.
 $$
 
-Since with our convention $H$ depensd on $\theta$ and $\varphi$ only, it has no $r$-component, while $\partial_ {\mu}f_ {n}$ has $r$-component only, the first term vanishes. The other t erms also vanish becasue of the equation of moiton for $H$, the same goes for the LHS of the equation, so the final result is $0=0$. It's pretty good news, one of the equations of motions are trivially satisfied.
+Since with our convention $H$ depensd on $\theta$ and $\varphi$ only, it has no $r$-component, while $\partial_ {\mu}f_ {n}$ has $r$-component only, the first term vanishes. The other terms also vanish becasue of the equation of moiton for $H$, the same goes for the LHS of the equation, so the final result is $0=0$. It's pretty good news, one of the equations of motions are trivially satisfied.
 
 - - -
 
 Let's take a look at the other equation of motion:
 
 $$
-\boxed{
-\hat{D}_ {\mu}(\hat{D}_ {\mu}\chi_ {\nu}-\hat{D}_ {\nu}\chi_ {\mu}) = ig (f_ {\mu \nu}+H_ {\mu \nu}+X_ {\mu \nu}) \, \vec{X}_ {\mu} \times \hat{n}.
+\boxed{ 
+\hat{D}_ {\mu}(\hat{D}_ {\mu}\vec{X}_ {\nu}-\hat{D}_ {\nu}\vec{X}_ {\mu}) = g (f_ {\nu \mu}+H_ {\nu \mu}+X_ {\nu \mu})\vec{X}_ {\mu} \times \hat{n} 
 }
 $$
 
