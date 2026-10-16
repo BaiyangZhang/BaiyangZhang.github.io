@@ -4,39 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "78116fc25a1aa730",
+        "id": "889db198bc99f8c7",
         "type": "tabs",
         "children": [
           {
-            "id": "820a145d14e80da2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-09-15-Bare-Minimum-of-Abelian-Decomposition"
-            }
-          },
-          {
-            "id": "38cae4516a88a460",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-09-15-Bare-Minimum-of-Abelian-Decomposition"
-            }
-          },
-          {
-            "id": "c180b7865c8ae6c3",
+            "id": "27f8b91a950d48ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,23 +20,8 @@
               "icon": "lucide-file",
               "title": "Discussion Note"
             }
-          },
-          {
-            "id": "e20ba4e1fca8a696",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "未命名"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"aliases\":",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,51 +94,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f7414e40f705110e",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Untitled 1.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Untitled 1"
-            }
-          },
-          {
-            "id": "d40fff0cf3b28759",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Untitled 1.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Untitled 1"
-            }
-          },
-          {
             "id": "a265b355b7bbe346",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "标签"
             }
           },
           {
@@ -195,7 +119,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "添加笔记属性"
             }
           },
           {
@@ -204,20 +128,54 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled 1"
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "3e00ef2df4161501",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Discussion Note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "836ddecdba249a21",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Discussion Note.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -232,13 +190,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e20ba4e1fca8a696",
+  "active": "27f8b91a950d48ec",
   "lastOpenFiles": [
+    "SectionVIICho.md",
+    "Discussion Note.md",
+    "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
     "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
-    "未命名.md",
+    "2026-06-24-Schrodinger-Picture-Formulation-of-a-Scalar-QFT.md",
+    "2026-04-07.md",
+    "青年生活方式与社会认同研究.md",
+    "外国专家申请.md",
+    "Prompt for AI RA.md",
     "_posts/2026-09-30-Note-on-Application-of-Tsallis-Entropy.md",
     "Vortex Note.md",
-    "Discussion Note.md",
     "Pasted image 20261012112255.png",
     "Tem.md",
     "省基金.md",
@@ -247,15 +211,10 @@
     "_posts/2022-7-17-Conventions-and-Formula.md",
     "a17735e23943fa78c92e895aa3c90a06.png",
     "img/vortexAnsatz1.png",
-    "Prompt for AI RA.md",
     "Pasted image 20260823160621.png",
     "Pasted image 20260805113259.png",
-    "2026-04-07.md",
-    "青年生活方式与社会认同研究.md",
     "_posts/2025-12-13-Passive-Perspective-of-LSPT.md",
     "萨利斯数据metadata.md",
-    "外国专家申请.md",
-    "2026-06-24-Schrodinger-Picture-Formulation-of-a-Scalar-QFT.md",
     "2025-09-22.md",
     "Pasted image 20260713205209.png",
     "Pasted image 20260610202540.png",
