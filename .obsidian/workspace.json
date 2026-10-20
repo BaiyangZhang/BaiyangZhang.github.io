@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discussion Note.md",
+                "file": "Tem.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Discussion Note"
+              "title": "Tem"
             }
           }
         ]
@@ -192,8 +192,12 @@
   },
   "active": "27f8b91a950d48ec",
   "lastOpenFiles": [
-    "SectionVIICho.md",
+    "Vortex Note.md",
+    "Tem.md",
+    "a17735e23943fa78c92e895aa3c90a06.png",
+    "Pasted image 20261012112255.png",
     "Discussion Note.md",
+    "SectionVIICho.md",
     "_posts/2022-08-23-The-Nullstellensatz and-the-Geometry-of-Spec-A.md",
     "_posts/2026-09-15-Bare-Minimum-of-Abelian-Decomposition.md",
     "2026-06-24-Schrodinger-Picture-Formulation-of-a-Scalar-QFT.md",
@@ -202,14 +206,11 @@
     "外国专家申请.md",
     "Prompt for AI RA.md",
     "_posts/2026-09-30-Note-on-Application-of-Tsallis-Entropy.md",
-    "Vortex Note.md",
-    "Pasted image 20261012112255.png",
     "Tem.md",
     "省基金.md",
     "_posts/2025-01-06-Perturbative-SSB-and-Effective-Action.md",
     "_posts/2026-04-30-Electrodynamics-in-Terms-of-Differential-Forms.md",
     "_posts/2022-7-17-Conventions-and-Formula.md",
-    "a17735e23943fa78c92e895aa3c90a06.png",
     "img/vortexAnsatz1.png",
     "Pasted image 20260823160621.png",
     "Pasted image 20260805113259.png",
@@ -225,7 +226,6 @@
     "_posts/2024-07-24-Hausdorff-Dimension-of-Fractals.md",
     "_posts/2024-08-04-Example-of-Mathematica-Package-Quantum.md",
     "_posts/2024-10-16-Tsallis-Statistics-in-Logistic-Regression.md",
-    "_posts/2024-11-05-Thoughts-on-Entropy.md",
     "assets/pdf/Baiyang_CV.pdf",
     "assets/pdf/张柏阳中文简历.pdf",
     "assets/pdf/BaiyangZhangCV.pdf",
