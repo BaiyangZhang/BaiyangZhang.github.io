@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Passive Perspective on Linearized Solitonic Perturbation Theory
-date:
+date: 2026-11-16
 author: Baiyang Zhang
 catalog: true
 tags:

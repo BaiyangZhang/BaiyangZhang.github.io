@@ -1,7 +1,7 @@
 [
-  "obsidian-latex-suite",
   "obsidian-regex-replace",
   "table-editor-obsidian",
   "obsidian-plugin-toc",
-  "obsidian-title-index"
+  "obsidian-title-index",
+  "obsidian-latex-suite"
 ]
