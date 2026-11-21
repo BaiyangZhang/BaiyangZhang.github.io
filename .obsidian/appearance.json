@@ -1,9 +1,10 @@
 {
   "theme": "system",
-  "cssTheme": "Shimmering Focus",
+  "cssTheme": "GitHub Theme",
   "baseFontSize": 27,
   "accentColor": "#0e00cc",
   "baseFontSizeAction": true,
   "showRibbon": false,
-  "textFontFamily": "Palatino Linotype"
+  "textFontFamily": "Palatino Linotype",
+  "interfaceFontFamily": "Palatino Linotype"
 }

@@ -33,5 +33,14 @@
       ],
       "key": "T"
     }
+  ],
+  "graph:open": [],
+  "app:switch-vault": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "G"
+    }
   ]
 }

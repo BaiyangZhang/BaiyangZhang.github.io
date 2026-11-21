@@ -25,7 +25,7 @@ where $S_ 0$ is the action of the leading non-perturbative saddle point. To extr
 
 $$\mathcal{B}[\langle \mathcal{O} \rangle](t) := \sum_ {n=0}^\infty \frac{c_ n}{n!} t^n$$
 
-Because $c_ n \sim n! \, S_ 0^{-n}$, the Borel transform $\mathcal{B}[\langle \mathcal{O} \rangle](t)$ converges inside the disk $|t| < |S_ 0|$ in the complex Borel $t$-plane, but develops a singularity at $t = S_ 0$ along the positive real axis. To reconstruct the physical observable at $g > 0$, one performs a Laplace integral (Borel resummation) along a ray in the $t$-plane:
+Because $c_ n \sim n! \, S_ 0^{-n}$, the Borel transform $\mathcal{B}[\langle \mathcal{O} \rangle](t)$ converges inside the disk $\vert t\vert  < \vert S_ 0\vert $ in the complex Borel $t$-plane, but develops a singularity at $t = S_ 0$ along the positive real axis. To reconstruct the physical observable at $g > 0$, one performs a Laplace integral (Borel resummation) along a ray in the $t$-plane:
 
 $$\mathcal{S}_ \theta[\langle \mathcal{O} \rangle](g) = \frac{1}{g} \int_ 0^{e^{i\theta}\infty} dt \, e^{-t/g} \mathcal{B}[\langle \mathcal{O} \rangle](t)$$
 
@@ -33,21 +33,21 @@ When the singularity $t = S_ 0$ lies directly on the positive real integration c
 
 $$\left( \mathcal{S}_ {0^+} - \mathcal{S}_ {0^-} \right)[\langle \mathcal{O} \rangle](g) \sim 2\pi i \, \exp\left(-\frac{S_ 0}{g}\right)$$
 
-Perturbation theory around the trivial vacuum is therefore not self-consistent; its Borel resummation generates a non-perturbative imaginary ambiguity of order $e^{-S_ 0/g}$ for a real, Hermitian observable.
+**Perturbation theory around the trivial vacuum is therefore not self-consistent; its Borel resummation generates a non-perturbative imaginary ambiguity of order $e^{-S_ 0/g}$ for a real, Hermitian observable.**
 
-To organize quantum observables beyond formal power series, we formulate the coupling dependence using complex analytic geometry on the complexified coupling space $\mathbb{C}$. Let $U \subset \mathbb{C}$ be an open sectorial domain with its vertex at the origin $g=0$. We define the **structure sheaf of observables** $\widetilde{\mathcal{O}}(U)$ as the ring of genuine holomorphic functions on $U$ that admit a well-defined asymptotic expansion in non-negative powers of $g$ as $g \to 0$ within $U$. 
+To organize quantum observables beyond formal power series, we formulate the coupling dependence using complex analytic geometry on the complexified coupling space $\mathbb{C}$. Let $\mathbb{F} \subset \mathbb{C}$ be an open sectorial domain with its vertex at the origin $g=0$. We define the **structure sheaf of observables** $\widetilde{\mathcal{O}}(\mathbb{F})$ as the ring of genuine holomorphic functions on $\mathbb{F}$ that admit a well-defined asymptotic expansion in non-negative powers of $g$ as $g \to 0$ within $\mathbb{F}$. 
 
 There is a natural ring homomorphism, the asymptotic Taylor map:
 
-$$J: \widetilde{\mathcal{O}}(U) \longrightarrow \mathbb{C}[[g]], \qquad f(g) \longmapsto \sum_ {n=0}^\infty \left( \lim_ {g \to 0 \text{ in } U} \frac{1}{n!}\frac{d^n f}{dg^n} \right) g^n$$
+$$J: \widetilde{\mathcal{O}}(\mathbb{F}) \longrightarrow \mathbb{C}[[g]], \qquad f(g) \longmapsto \sum_ {n=0}^\infty \left( \lim_ {g \to 0 \text{ in } \mathbb{F}} \frac{1}{n!}\frac{d^n f}{dg^n} \right) g^n$$
 
-which sends each holomorphic observable in the sector $U$ to its formal power series expansion. By the Borel–Ritt theorem, the map $J$ is surjective: every formal power series in $\mathbb{C}[[g]]$ is the asymptotic expansion of at least one holomorphic function in $\widetilde{\mathcal{O}}(U)$. 
+which sends each holomorphic observable in the sector $\mathbb{F}$ to its formal power series expansion. By the Borel–Ritt theorem, the map $J$ is surjective: every formal power series in $\mathbb{C}[[g]]$ is the asymptotic expansion of at least one holomorphic function in $\widetilde{\mathcal{O}}(\mathbb{F})$. 
 
-However, $J$ is not injective. Its kernel, $\widetilde{\mathcal{O}}_ 0(U) := \ker(J)$, is the ideal of flat functions—holomorphic functions on $U$ whose derivatives of all orders vanish as $g \to 0$ within the sector. This algebraic structure forms a short exact sequence of sheaves:
+However, $J$ is not injective. Its kernel, $\widetilde{\mathcal{O}}_ 0(\mathbb{F}) := \ker(J)$, is the **prime ideal** $\tilde{\mathcal{O}}_ {0}\in \text{Spec}(\tilde{\mathcal{O}})$of flat functions, namely holomorphic functions on $\mathbb{F}$ whose derivatives of all orders vanish as $g \to 0$ within the sector. This algebraic structure forms a short exact sequence of sheaves:
 
-$$0 \longrightarrow \widetilde{\mathcal{O}}_ 0(U) \longrightarrow \widetilde{\mathcal{O}}(U) \stackrel{J}{\longrightarrow} \mathbb{C}[[g]] \longrightarrow 0$$
+$$0 \longrightarrow \widetilde{\mathcal{O}}_ 0(\mathbb{F}) \longrightarrow \widetilde{\mathcal{O}}(\mathbb{F}) \stackrel{J}{\longrightarrow} \mathbb{C}[[g]] \longrightarrow 0$$
 
-Functions living in the kernel $\widetilde{\mathcal{O}}_ 0(U)$ are characterized by essential non-analyticities of the exponential type:
+Functions living in the kernel $\widetilde{\mathcal{O}}_ 0(\mathbb{F})$ are characterized by essential non-analyticities of the exponential type:
 
 $$f(g) \sim \exp\left(-\frac{A}{g}\right) \quad \text{as } g \to 0^+ \quad (\operatorname{Re}(A) > 0)$$
 
@@ -63,9 +63,8 @@ $$\langle \mathcal{O} \rangle(g) = \sum_ {i=0}^\infty C_ i^{(0)} g^i + e^{-S_ 0/
 
 By Écalle's theory of resurgence, the imaginary ambiguity $\pm i\pi e^{-S_ 0/g}$ arising from the lateral Borel resummation of the vacuum series $\sum C_ i^{(0)} g^i$ is canceled identically by the corresponding ambiguity in the non-perturbative multi-soliton sectors. A quantum field theory with degenerate vacua cannot be defined without explicitly constructing and quantizing its soliton sectors.
 
----
 
-## 2. Kinematics, Superselection Sectors, and Haag’s Theorem
+## 2. Superselection Sectors, and Haag’s Theorem
 
 When transitioning from classical field configurations to quantum states, we immediately confront the structure of the quantum field theory Hilbert space.
 
@@ -77,9 +76,9 @@ $$[\phi(x), \pi(y)] = i \delta^{(d)}(x-y), \qquad [\phi(x), \phi(y)] = [\pi(x), 
 
 admits infinitely many unitarily inequivalent representations. Haag's theorem proves that even the Fock representation of a free scalar field and the Hilbert space representation of an interacting scalar field (or two free fields of different masses) are unitarily inequivalent due to infinite-volume vacuum polarization.
 
-This obstruction is particularly acute when comparing the vacuum sector to the soliton sector. Consider a $(1+1)$-dimensional scalar theory with a spontaneously broken $\mathbb{Z}_ 2$ symmetry and degenerate potential minima at $\phi = \pm v$. The trivial vacuum sector $\mathcal{H}_ 0$ is built by acting with a finite number of plane-wave meson creation operators on a spatially homogeneous ground state $|\Omega\rangle$ satisfying:
+This obstruction is particularly acute when comparing the vacuum sector to the soliton sector. Consider a $(1+1)$-dimensional scalar theory with a spontaneously broken $\mathbb{Z}_ 2$ symmetry and degenerate potential minima at $\phi = \pm v$. The trivial vacuum sector $\mathcal{H}_ 0$ is built by acting with a finite number of plane-wave meson creation operators on a spatially homogeneous ground state $\vert \Omega\rangle$ satisfying:
 
-$$\lim_ {x \to -\infty} \langle \Omega | \phi(x) | \Omega \rangle = \lim_ {x \to +\infty} \langle \Omega | \phi(x) | \Omega \rangle = +v$$
+$$\lim_ {x \to -\infty} \langle \Omega \vert  \phi(x) \vert  \Omega \rangle = \lim_ {x \to +\infty} \langle \Omega \vert  \phi(x) \vert  \Omega \rangle = +v$$
 
 In contrast, a static classical kink solution $f(x)$ interpolates between distinct vacua at spatial infinity:
 
@@ -91,7 +90,7 @@ $$Q_ T = \int_ {-\infty}^{+\infty} dx \, j^0(x) = \frac{1}{2v} \int_ {-\infty}^{
 
 In the vacuum sector, $Q_ T = 0$; in the one-kink sector, $Q_ T = 1$. 
 
-Why does $Q_ T$ induce a superselection rule? Any physical local observable $\mathcal{O}_ {\text{loc}}$ is constructed from fields $\phi(y)$ and $\pi(y)$ smeared against test functions of compact spatial support (or rapid decay at infinity). Because $Q_ T$ depends exclusively on the asymptotic boundary values $\phi(\pm \infty)$, and equal-time commutators vanish outside the support of the test functions, every local operator commutes with the topological charge:
+**Why does $Q_ T$ induce a superselection rule?** Any physical local observable $\mathcal{O}_ {\text{loc}}$ is constructed from fields $\phi(y)$ and $\pi(y)$ smeared against test functions of compact spatial support (or rapid decay at infinity). Because $Q_ T$ depends exclusively on the asymptotic boundary values $\phi(\pm \infty)$, and equal-time commutators vanish outside the support of the test functions, every local operator commutes with the topological charge:
 
 $$[Q_ T, \mathcal{O}_ {\text{loc}}] = \frac{1}{2v} \lim_ {R \to \infty} [\phi(R) - \phi(-R), \mathcal{O}_ {\text{loc}}] = 0$$
 
@@ -99,21 +98,20 @@ Physically, shifting the field value from $-v$ to $+v$ across an infinite spatia
 
 $$\mathcal{H} = \bigoplus_ {Q_ T \in \mathbb{Z}} \mathcal{H}_ {Q_ T}$$
 
-If we attempt to express the quantum kink state $|K\rangle \in \mathcal{H}_ 1$ as a coherent superposition of plane-wave mesons in the vacuum Fock space $\mathcal{H}_ 0$, the overlap is governed by the Fourier transform $\tilde{f}(p)$ of the kink profile:
+If we attempt to express the quantum kink state $\vert K\rangle \in \mathcal{H}_ 1$ as a coherent superposition of plane-wave mesons in the vacuum Fock space $\mathcal{H}_ 0$, the overlap is governed by the Fourier transform $\tilde{f}(p)$ of the kink profile:
 
-$$|\langle \Omega | K \rangle|^2 = \exp\left(-\frac{1}{2}\int_ {-\infty}^{+\infty} \frac{dp}{2\pi} 2\omega_ p |\tilde{f}(p)|^2\right)$$
+$$\vert \langle \Omega \vert  K \rangle\vert ^2 = \exp\left(-\frac{1}{2}\int_ {-\infty}^{+\infty} \frac{dp}{2\pi} 2\omega_ p \vert \tilde{f}(p)\vert ^2\right)$$
 
 Because $f(x)$ approaches different constants at $\pm\infty$, its Fourier transform behaves near zero momentum as $\tilde{f}(p) \sim \frac{2v}{ip}$. The integrand diverges as $1/p^2$ at $p \to 0$, driving the integral to $+\infty$ and yielding:
 
-$$\langle \Omega | K \rangle = 0$$
+$$\langle \Omega \vert  K \rangle = 0$$
 
 Building the kink out of vacuum mesons requires an infinite number of zero-momentum quanta to alter the asymptotic boundary condition, resulting in a state of zero norm in $\mathcal{H}_ 0$. The kink sector $\mathcal{H}_ 1$ and the vacuum sector $\mathcal{H}_ 0$ are unitarily inequivalent Fock representations of the canonical commutation relations.
 
----
 
 ## 3. Active Quantization and the Regularization Mismatch
 
-How do we perform perturbative calculations in an inequivalent Hilbert space sector? The traditional textbook approach—which we call **active quantization**—shifts the classical field *before* quantizing the theory.
+How do we perform perturbative calculations in an inequivalent Hilbert space sector? The traditional textbook approach shifts the classical field *before* quantizing the theory.
 
 In the active prescription, one decomposes the classical field into the static kink background $f(x)$ plus a classical fluctuation field $\eta(x,t)$:
 
@@ -139,11 +137,11 @@ $$\begin{array}{ccc}
 \mathbf{Quant}_ \Lambda(\text{Vac}) & \xrightarrow{\quad ? \quad} & \mathbf{Quant}_ {\Lambda'}(\text{Kink})
 \end{array}$$
 
-For the quantum kink mass—an energy difference between the two sectors—to be unambiguous, this diagram must commute as the regulators are removed. Yet the two regulators act on different functional bases. In the vacuum sector, $\mathcal{Q}_ \Lambda$ enforces a sharp momentum cutoff $|p| \le \Lambda$ via a projection operator $P_ \Lambda$ acting on plane waves $e^{ipx}$:
+For the quantum kink mass—an energy difference between the two sectors—to be unambiguous, this diagram must commute as the regulators are removed. Yet the two regulators act on different functional bases. In the vacuum sector, $\mathcal{Q}_ \Lambda$ enforces a sharp momentum cutoff $\vert p\vert  \le \Lambda$ via a projection operator $P_ \Lambda$ acting on plane waves $e^{ipx}$:
 
-$$P_ \Lambda: \phi(x) \longmapsto \int_ {|p| \le \Lambda} \frac{dp}{2\pi} \tilde{\phi}(p) e^{ipx}$$
+$$P_ \Lambda: \phi(x) \longmapsto \int_ {\vert p\vert  \le \Lambda} \frac{dp}{2\pi} \tilde{\phi}(p) e^{ipx}$$
 
-In the kink sector, $\mathcal{Q}_ {\Lambda'}$ enforces a sharp cutoff $|k| \le \Lambda'$ via a projection operator $P_ {\Lambda'}$ acting on the Sturm–Liouville normal modes $g_ k(x)$ of the kink background. Because a single normal mode $g_ k(x)$ is a non-trivial superposition of plane waves of all momenta $p$, the cutoff projections do not commute with the classical translation:
+In the kink sector, $\mathcal{Q}_ {\Lambda'}$ enforces a sharp cutoff $\vert k\vert  \le \Lambda'$ via a projection operator $P_ {\Lambda'}$ acting on the Sturm–Liouville normal modes $g_ k(x)$ of the kink background. Because a single normal mode $g_ k(x)$ is a non-trivial superposition of plane waves of all momenta $p$, the cutoff projections do not commute with the classical translation:
 
 $$P_ \Lambda \circ T_ f \neq T_ f \circ P_ {\Lambda'}$$
 
@@ -159,11 +157,11 @@ each integral diverges quadratically as $\Lambda^2$ and $(\Lambda')^2$. In the l
 
 Linearized Soliton Perturbation Theory (LSPT) eliminates the regularization mismatch by reversing the order of operations: **we regularize and quantize the theory once, and only then shift the field coordinates via a passive unitary transformation.**
 
-First, let us understand why we must shift the field coordinate at all. In the vacuum ground state $|\Omega\rangle$, the field expectation value vanishes ($\langle \Omega | \phi(x) | \Omega \rangle = 0$ for a minimum at $\phi=0$), so powers of $\phi(x)$ have small matrix elements and standard perturbation theory converges asymptotically. In the kink state $|K\rangle$, however, the field has a large classical expectation value:
+First, let us understand why we must shift the field coordinate at all. In the vacuum ground state $\vert \Omega\rangle$, the field expectation value vanishes ($\langle \Omega \vert  \phi(x) \vert  \Omega \rangle = 0$ for a minimum at $\phi=0$), so powers of $\phi(x)$ have small matrix elements and standard perturbation theory converges asymptotically. In the kink state $\vert K\rangle$, however, the field has a large classical expectation value:
 
-$$\langle K | \phi(x) | K \rangle = f(x) \sim \mathcal{O}\left(\frac{1}{\sqrt{\lambda}}\right)$$
+$$\langle K \vert  \phi(x) \vert  K \rangle = f(x) \sim \mathcal{O}\left(\frac{1}{\sqrt{\lambda}}\right)$$
 
-Expanding the Hamiltonian in powers of $\phi(x)$ around $|K\rangle$ fails because an interaction term $\lambda \phi^4$ scales as $\lambda (\lambda^{-1/2})^4 \sim \lambda^{-1}$, which is of the same order as the classical kinetic energy. Higher powers of $\phi$ are not suppressed by powers of the coupling. To restore a valid perturbative hierarchy in $\sqrt{\lambda}$, we must expand the Hamiltonian in terms of a fluctuation operator whose expectation value in the kink state vanishes.
+Expanding the Hamiltonian in powers of $\phi(x)$ around $\vert K\rangle$ fails because an interaction term $\lambda \phi^4$ scales as $\lambda (\lambda^{-1/2})^4 \sim \lambda^{-1}$, which is of the same order as the classical kinetic energy. Higher powers of $\phi$ are not suppressed by powers of the coupling. To restore a valid perturbative hierarchy in $\sqrt{\lambda}$, we must expand the Hamiltonian in terms of a fluctuation operator whose expectation value in the kink state vanishes.
 
 To achieve this within a single regularized quantum theory, we define the unitary **displacement operator**:
 
@@ -179,19 +177,19 @@ $$\mathcal{D}_ f^\dagger \phi(\vec{x}) \mathcal{D}_ f = \phi(\vec{x}) + f(\vec{x
 
 We interpret $\mathcal{D}_ f$ from a **passive perspective**. Just as a passive coordinate transformation in geometry re-labels the coordinates of a point without moving the physical point itself, we use $\mathcal{D}_ f$ to change our coordinate system (or **frame**) on the Hilbert space without altering the physical quantum states or the physical Hamiltonian operator $\mathbb{H}$.
 
-In the **defining frame**, a state is represented by a ket $|\Psi\rangle_ {\text{def}}$ and evolved by the defining Hamiltonian functional $H[\phi, \pi]$. In the **kink frame**, the exact same physical state is represented by the ket $|\Psi\rangle_ {\text{kink}} := \mathcal{D}_ f^\dagger |\Psi\rangle_ {\text{def}}$ (so that $|\Psi\rangle_ {\text{def}} = \mathcal{D}_ f |\Psi\rangle_ {\text{kink}}$). Equivalently, we define the passive kink fluctuation field operator:
+In the **defining frame**, a state is represented by a ket $\vert \Psi\rangle_ {\text{def}}$ and evolved by the defining Hamiltonian functional $H[\phi, \pi]$. In the **kink frame**, the exact same physical state is represented by the ket $\vert \Psi\rangle_ {\text{kink}} := \mathcal{D}_ f^\dagger \vert \Psi\rangle_ {\text{def}}$ (so that $\vert \Psi\rangle_ {\text{def}} = \mathcal{D}_ f \vert \Psi\rangle_ {\text{kink}}$). Equivalently, we define the passive kink fluctuation field operator:
 
 $$\varphi(\vec{x}) := \mathcal{D}_ f \phi(\vec{x}) \mathcal{D}_ f^\dagger = \phi(\vec{x}) - f(\vec{x})$$
 
-Its expectation value in the physical kink state $|K\rangle_ {\text{def}} = \mathcal{D}_ f |0\rangle_ {\text{kink}}$ vanishes at leading order:
+Its expectation value in the physical kink state $\vert K\rangle_ {\text{def}} = \mathcal{D}_ f \vert 0\rangle_ {\text{kink}}$ vanishes at leading order:
 
-$${}_ {\text{def}}\langle K | \varphi(\vec{x}) | K \rangle_ {\text{def}} = {}_ {\text{def}}\langle K | (\phi(\vec{x}) - f(\vec{x})) | K \rangle_ {\text{def}} = 0$$
+$${}_ {\text{def}}\langle K \vert  \varphi(\vec{x}) \vert  K \rangle_ {\text{def}} = {}_ {\text{def}}\langle K \vert  (\phi(\vec{x}) - f(\vec{x})) \vert  K \rangle_ {\text{def}} = 0$$
 
-There is only one regularized quantum Hamiltonian operator $\mathbb{H}$ acting on the Hilbert space. In the defining frame, $\mathbb{H}$ is expressed as a polynomial $H[\phi, \pi]$ in $\phi$. In the kink frame, matrix elements of $\mathbb{H}$ between kink states $\mathcal{D}_ f |\Psi_ 1\rangle$ and $\mathcal{D}_ f |\Psi_ 2\rangle$ become matrix elements of the transformed functional $H'[\phi, \pi]$ between $|\Psi_ 1\rangle$ and $|\Psi_ 2\rangle$:
+There is only one regularized quantum Hamiltonian operator $\mathbb{H}$ acting on the Hilbert space. In the defining frame, $\mathbb{H}$ is expressed as a polynomial $H[\phi, \pi]$ in $\phi$. In the kink frame, matrix elements of $\mathbb{H}$ between kink states $\mathcal{D}_ f \vert \Psi_ 1\rangle$ and $\mathcal{D}_ f \vert \Psi_ 2\rangle$ become matrix elements of the transformed functional $H'[\phi, \pi]$ between $\vert \Psi_ 1\rangle$ and $\vert \Psi_ 2\rangle$:
 
 $$H'[\phi, \pi] := \mathcal{D}_ f^\dagger H[\phi, \pi] \mathcal{D}_ f = H[\phi + f, \pi]$$
 
-(Note that whether we write the kink Hamiltonian as $H'[\varphi]$ in the defining frame or $H'[\phi] = \mathcal{D}_ f^\dagger H[\phi]\mathcal{D}_ f$ acting on kink-frame kets $|\Psi\rangle$, the algebraic content is identical: the operator argument of $H$ is shifted by $f(\vec{x})$.)
+(Note that whether we write the kink Hamiltonian as $H'[\varphi]$ in the defining frame or $H'[\phi] = \mathcal{D}_ f^\dagger H[\phi]\mathcal{D}_ f$ acting on kink-frame kets $\vert \Psi\rangle$, the algebraic content is identical: the operator argument of $H$ is shifted by $f(\vec{x})$.)
 
 In category-theoretic terms, we apply a single quantization functor $\mathcal{Q}_ \Lambda$ to the classical theory to obtain a unique regulated quantum algebra $\mathbf{Quant}_ \Lambda$ with Hamiltonian $H_ \Lambda$. The shift to the kink sector is then an inner unitary automorphism $\operatorname{Ad}_ {\mathcal{D}_ f^\dagger}$ entirely inside $\mathbf{Quant}_ \Lambda$:
 
@@ -219,76 +217,76 @@ To avoid this ambiguity, LSPT abandons the interaction picture altogether and wo
 
 ## 5. Unsqueezed Coherent States and Coleman’s Divergence
 
-With the displacement operator $\mathcal{D}_ f$ in hand, what is the quantum state of a kink? Let $|0\rangle_ a$ denote the perturbative vacuum annihilated by all plane-wave annihilation operators $A_ {\vec{p}} |0\rangle_ a = 0$. A natural first guess—used extensively in early literature—is to identify the quantum kink with the **unsqueezed coherent state** obtained by displacing $|0\rangle_ a$:
+With the displacement operator $\mathcal{D}_ f$ in hand, what is the quantum state of a kink? Let $\vert 0\rangle_ a$ denote the perturbative vacuum annihilated by all plane-wave annihilation operators $A_ {\vec{p}} \vert 0\rangle_ a = 0$. A natural first guess—used extensively in early literature—is to identify the quantum kink with the **unsqueezed coherent state** obtained by displacing $\vert 0\rangle_ a$:
 
-$$|f\rangle := \mathcal{D}_ f |0\rangle_ a$$
+$$\vert f\rangle := \mathcal{D}_ f \vert 0\rangle_ a$$
 
-In the kink frame, this corresponds to choosing $|0\rangle_ a$ as the trial ground state of $H'$. Let us check its properties. First, its field expectation value reproduces the exact classical kink profile:
+In the kink frame, this corresponds to choosing $\vert 0\rangle_ a$ as the trial ground state of $H'$. Let us check its properties. First, its field expectation value reproduces the exact classical kink profile:
 
-$$\langle f | \phi(\vec{x}) | f \rangle = {}_ a\langle 0 | \mathcal{D}_ f^\dagger \phi(\vec{x}) \mathcal{D}_ f | 0 \rangle_ a = {}_ a\langle 0 | (\phi(\vec{x}) + f(\vec{x})) | 0 \rangle_ a = f(\vec{x})$$
+$$\langle f \vert  \phi(\vec{x}) \vert  f \rangle = {}_ a\langle 0 \vert  \mathcal{D}_ f^\dagger \phi(\vec{x}) \mathcal{D}_ f \vert  0 \rangle_ a = {}_ a\langle 0 \vert  (\phi(\vec{x}) + f(\vec{x})) \vert  0 \rangle_ a = f(\vec{x})$$
 
 In $1+1$ spacetime dimensions, all ultraviolet divergences in a scalar theory with non-derivative interactions arise from tadpole loops starting and ending at the same vertex. Defining the Hamiltonian via plane-wave normal ordering $: H :_ a$ (which places all plane-wave creation operators $A_ p^\dagger$ to the left of all annihilation operators $A_ p$) removes these divergences completely. Since $\mathcal{D}_ f$ acts inside the normal ordering by shifting $\phi(x) \to \phi(x) + f(x)$:
 
 $$\mathcal{D}_ f^\dagger : \phi^n(x) :_ a \mathcal{D}_ f = : (\phi(x) + f(x))^n :_ a$$
 
-and since the expectation value of any non-trivial normal-ordered product of fields vanishes in $|0\rangle_ a$ (${}_ a\langle 0 | : \mathcal{O} :_ a | 0 \rangle_ a = 0$ for any operator with at least one creation or annihilation operator), the energy of the unsqueezed coherent state in $1+1$ dimensions is simply:
+and since the expectation value of any non-trivial normal-ordered product of fields vanishes in $\vert 0\rangle_ a$ (${}_ a\langle 0 \vert  : \mathcal{O} :_ a \vert  0 \rangle_ a = 0$ for any operator with at least one creation or annihilation operator), the energy of the unsqueezed coherent state in $1+1$ dimensions is simply:
 
-$$\langle f | : H[\phi, \pi] :_ a | f \rangle = {}_ a\langle 0 | : H[\phi + f, \pi] :_ a | 0 \rangle_ a = \int_ {-\infty}^{+\infty} dx \left[ \frac{1}{2}(f'(x))^2 + V(f(x)) \right] = Q_ 0$$
+$$\langle f \vert  : H[\phi, \pi] :_ a \vert  f \rangle = {}_ a\langle 0 \vert  : H[\phi + f, \pi] :_ a \vert  0 \rangle_ a = \int_ {-\infty}^{+\infty} dx \left[ \frac{1}{2}(f'(x))^2 + V(f(x)) \right] = Q_ 0$$
 
-In $1+1$ dimensions, the unsqueezed coherent state has a finite energy equal to the classical kink mass $Q_ 0$. However, it is not an eigenstate of $H$. Because the true one-loop quantum kink mass is $Q_ 0 + Q_ 1$ with $Q_ 1 < 0$, the state $|f\rangle$ is an excited packet in the one-kink sector lying above the true ground state by an energy $|Q_ 1| \sim \mathcal{O}(m)$, which will decay over time by radiating mesons toward spatial infinity.
+In $1+1$ dimensions, the unsqueezed coherent state has a finite energy equal to the classical kink mass $Q_ 0$. However, it is not an eigenstate of $H$. Because the true one-loop quantum kink mass is $Q_ 0 + Q_ 1$ with $Q_ 1 < 0$, the state $\vert f\rangle$ is an excited packet in the one-kink sector lying above the true ground state by an energy $\vert Q_ 1\vert  \sim \mathcal{O}(m)$, which will decay over time by radiating mesons toward spatial infinity.
 
-As Sidney Coleman pointed out in his 1975 Erice lectures, the situation is far worse in higher spatial dimensions $d \ge 2$: **the unsqueezed coherent state $|f\rangle$ has an infinite energy density.**
+As Sidney Coleman pointed out in his 1975 Erice lectures, the situation is far worse in higher spatial dimensions $d \ge 2$: **the unsqueezed coherent state $\vert f\rangle$ has an infinite energy density.**
 
-To derive this result explicitly, consider a planar domain wall in $3+1$ dimensions ($d=3$). Let the classical profile $f(z)$ vary along the $z$-axis while remaining translationally invariant along the transverse plane $\vec{x}_ \perp = (x, y)$. In $3+1$ dimensions, normal ordering alone does not renormalize the theory; we must work with the bare regularized Hamiltonian density $\mathcal{H}(\vec{x})$ regularized by a 3-momentum ultraviolet cutoff $|\vec{p}| \le \Lambda$:
+To derive this result explicitly, consider a planar domain wall in $3+1$ dimensions ($d=3$). Let the classical profile $f(z)$ vary along the $z$-axis while remaining translationally invariant along the transverse plane $\vec{x}_ \perp = (x, y)$. In $3+1$ dimensions, normal ordering alone does not renormalize the theory; we must work with the bare regularized Hamiltonian density $\mathcal{H}(\vec{x})$ regularized by a 3-momentum ultraviolet cutoff $\vert \vec{p}\vert  \le \Lambda$:
 
 $$\mathcal{H}(\vec{x}) = \frac{1}{2}\pi^2(\vec{x}) + \frac{1}{2}(\nabla \phi(\vec{x}))^2 + V(\phi(\vec{x})) - \mathcal{E}_ {\text{vac}}(\Lambda)$$
 
-where $\mathcal{E}_ {\text{vac}}(\Lambda)$ is the constant vacuum energy counterterm chosen so that $\langle 0 | \mathcal{H}(\vec{x}) | 0 \rangle = 0$ in the homogeneous bulk vacuum $\phi = \pm v$.
+where $\mathcal{E}_ {\text{vac}}(\Lambda)$ is the constant vacuum energy counterterm chosen so that $\langle 0 \vert  \mathcal{H}(\vec{x}) \vert  0 \rangle = 0$ in the homogeneous bulk vacuum $\phi = \pm v$.
 
-Let us evaluate the expectation value of $\mathcal{H}(\vec{x})$ in the unsqueezed coherent state $|f\rangle = \mathcal{D}_ f |0\rangle$:
+Let us evaluate the expectation value of $\mathcal{H}(\vec{x})$ in the unsqueezed coherent state $\vert f\rangle = \mathcal{D}_ f \vert 0\rangle$:
 
-$$\langle f | \mathcal{H}(\vec{x}) | f \rangle = \langle 0 | \mathcal{H}(\phi(\vec{x}) + f(z), \pi(\vec{x})) | 0 \rangle$$
+$$\langle f \vert  \mathcal{H}(\vec{x}) \vert  f \rangle = \langle 0 \vert  \mathcal{H}(\phi(\vec{x}) + f(z), \pi(\vec{x})) \vert  0 \rangle$$
 
 Taylor expanding the potential $V(\phi(\vec{x}) + f(z))$ in powers of the quantum fluctuation $\phi(\vec{x})$:
 
 $$V(\phi + f(z)) = V(f(z)) + V^{(1)}(f(z))\phi(\vec{x}) + \frac{1}{2}V^{(2)}(f(z))\phi^2(\vec{x}) + \frac{1}{6}V^{(3)}(f(z))\phi^3(\vec{x}) + \frac{1}{24}V^{(4)}(f(z))\phi^4(\vec{x})$$
 
-and taking the expectation value in the plane-wave vacuum $|0\rangle$ (where odd powers of $\phi$ vanish and kinetic terms $\frac{1}{2}\langle 0 | \pi^2 + (\nabla \phi)^2 | 0 \rangle$ are spatially constant and canceled by $\mathcal{E}_ {\text{vac}}(\Lambda)$ along with the bulk mass term $\frac{1}{2}m^2 \langle 0 | \phi^2 | 0 \rangle$), we find at order $\mathcal{O}(\lambda^0)$:
+and taking the expectation value in the plane-wave vacuum $\vert 0\rangle$ (where odd powers of $\phi$ vanish and kinetic terms $\frac{1}{2}\langle 0 \vert  \pi^2 + (\nabla \phi)^2 \vert  0 \rangle$ are spatially constant and canceled by $\mathcal{E}_ {\text{vac}}(\Lambda)$ along with the bulk mass term $\frac{1}{2}m^2 \langle 0 \vert  \phi^2 \vert  0 \rangle$), we find at order $\mathcal{O}(\lambda^0)$:
 
-$$\langle f | \mathcal{H}(\vec{x}) | f \rangle = \mathcal{H}_ {\text{cl}}(f(z)) + \frac{1}{2}\left[ V^{(2)}(f(z)) - m^2 \right] \langle 0 | \phi^2(\vec{x}) | 0 \rangle + \mathcal{O}(\lambda)$$
+$$\langle f \vert  \mathcal{H}(\vec{x}) \vert  f \rangle = \mathcal{H}_ {\text{cl}}(f(z)) + \frac{1}{2}\left[ V^{(2)}(f(z)) - m^2 \right] \langle 0 \vert  \phi^2(\vec{x}) \vert  0 \rangle + \mathcal{O}(\lambda)$$
 
 where $m^2 = V^{(2)}(\pm v)$ is the squared meson mass in the asymptotic vacua.
 
-Now let us compute the two-point coincidence expectation value $\langle 0 | \phi^2(\vec{x}) | 0 \rangle$ in $3+1$ dimensions. Expand the Schrödinger-picture field operator in plane waves up to the momentum cutoff $\Lambda$:
+Now let us compute the two-point coincidence expectation value $\langle 0 \vert  \phi^2(\vec{x}) \vert  0 \rangle$ in $3+1$ dimensions. Expand the Schrödinger-picture field operator in plane waves up to the momentum cutoff $\Lambda$:
 
-$$\phi(\vec{x}) = \int_ {|\vec{p}| \le \Lambda} \frac{d^3 p}{(2\pi)^3} \frac{1}{\sqrt{2\omega_ {\vec{p}}}} \left( a_ {\vec{p}} e^{i\vec{p}\cdot\vec{x}} + a_ {\vec{p}}^\dagger e^{-i\vec{p}\cdot\vec{x}} \right), \qquad \omega_ {\vec{p}} = \sqrt{\vec{p}^2 + m^2}$$
+$$\phi(\vec{x}) = \int_ {\vert \vec{p}\vert  \le \Lambda} \frac{d^3 p}{(2\pi)^3} \frac{1}{\sqrt{2\omega_ {\vec{p}}}} \left( a_ {\vec{p}} e^{i\vec{p}\cdot\vec{x}} + a_ {\vec{p}}^\dagger e^{-i\vec{p}\cdot\vec{x}} \right), \qquad \omega_ {\vec{p}} = \sqrt{\vec{p}^2 + m^2}$$
 
-where the creation and annihilation operators satisfy $[a_ {\vec{p}}, a_ {\vec{q}}^\dagger] = (2\pi)^3 \delta^{(3)}(\vec{p} - \vec{q})$ and $a_ {\vec{p}} |0\rangle = 0$. Squaring $\phi(\vec{x})$ and taking the vacuum expectation value, only the cross term $\langle 0 | a_ {\vec{p}} a_ {\vec{q}}^\dagger | 0 \rangle = (2\pi)^3 \delta^{(3)}(\vec{p} - \vec{q})$ survives:
+where the creation and annihilation operators satisfy $[a_ {\vec{p}}, a_ {\vec{q}}^\dagger] = (2\pi)^3 \delta^{(3)}(\vec{p} - \vec{q})$ and $a_ {\vec{p}} \vert 0\rangle = 0$. Squaring $\phi(\vec{x})$ and taking the vacuum expectation value, only the cross term $\langle 0 \vert  a_ {\vec{p}} a_ {\vec{q}}^\dagger \vert  0 \rangle = (2\pi)^3 \delta^{(3)}(\vec{p} - \vec{q})$ survives:
 
 $$\begin{aligned}
-\langle 0 | \phi^2(\vec{x}) | 0 \rangle &= \int_ {|\vec{p}| \le \Lambda} \frac{d^3 p}{(2\pi)^3} \int_ {|\vec{q}| \le \Lambda} \frac{d^3 q}{(2\pi)^3} \frac{1}{\sqrt{4\omega_ {\vec{p}}\omega_ {\vec{q}}}} e^{i(\vec{p}-\vec{q})\cdot\vec{x}} \langle 0 | a_ {\vec{p}} a_ {\vec{q}}^\dagger | 0 \rangle \\
-&= \int_ {|\vec{p}| \le \Lambda} \frac{d^3 p}{(2\pi)^3} \frac{1}{2\sqrt{\vec{p}^2 + m^2}}
+\langle 0 \vert  \phi^2(\vec{x}) \vert  0 \rangle &= \int_ {\vert \vec{p}\vert  \le \Lambda} \frac{d^3 p}{(2\pi)^3} \int_ {\vert \vec{q}\vert  \le \Lambda} \frac{d^3 q}{(2\pi)^3} \frac{1}{\sqrt{4\omega_ {\vec{p}}\omega_ {\vec{q}}}} e^{i(\vec{p}-\vec{q})\cdot\vec{x}} \langle 0 \vert  a_ {\vec{p}} a_ {\vec{q}}^\dagger \vert  0 \rangle \\
+&= \int_ {\vert \vec{p}\vert  \le \Lambda} \frac{d^3 p}{(2\pi)^3} \frac{1}{2\sqrt{\vec{p}^2 + m^2}}
 \end{aligned}$$
 
 Converting to spherical coordinates $d^3 p = 4\pi p^2 dp$ and evaluating the radial integral explicitly:
 
 $$\begin{aligned}
-\langle 0 | \phi^2(\vec{x}) | 0 \rangle &= \frac{4\pi}{(2\pi)^3} \int_ 0^\Lambda dp \, \frac{p^2}{2\sqrt{p^2 + m^2}} \\
+\langle 0 \vert  \phi^2(\vec{x}) \vert  0 \rangle &= \frac{4\pi}{(2\pi)^3} \int_ 0^\Lambda dp \, \frac{p^2}{2\sqrt{p^2 + m^2}} \\
 &= \frac{1}{4\pi^2} \left[ \frac{1}{2}p\sqrt{p^2+m^2} - \frac{1}{2}m^2 \ln\left( p + \sqrt{p^2+m^2} \right) \right]_ 0^\Lambda \\
 &= \frac{\Lambda^2}{8\pi^2} - \frac{m^2}{8\pi^2}\ln\left(\frac{2\Lambda}{m}\right) + \frac{m^2}{16\pi^2} + \mathcal{O}\left(\frac{m^4}{\Lambda^2}\right)
 \end{aligned}$$
 
 Substituting this back into the local energy density across the domain wall gives:
 
-$$\delta \mathcal{H}_ {\text{local}}(z) = \frac{1}{2}\left[ V^{(2)}(f(z)) - m^2 \right] \langle 0 | \phi^2(\vec{x}) | 0 \rangle = \frac{\Lambda^2}{16\pi^2} \left[ V^{(2)}(f(z)) - m^2 \right] + \mathcal{O}(\ln \Lambda)$$
+$$\delta \mathcal{H}_ {\text{local}}(z) = \frac{1}{2}\left[ V^{(2)}(f(z)) - m^2 \right] \langle 0 \vert  \phi^2(\vec{x}) \vert  0 \rangle = \frac{\Lambda^2}{16\pi^2} \left[ V^{(2)}(f(z)) - m^2 \right] + \mathcal{O}(\ln \Lambda)$$
 
-Far from the wall ($z \to \pm\infty$), $V^{(2)}(f(z)) \to m^2$ and this term vanishes. Inside the core of the domain wall ($|z| \lesssim 1/m$), however, $V^{(2)}(f(z)) \neq m^2$ (for example, in the $\phi^4$ model, $V^{(2)}(f(z)) - m^2 = -\frac{3}{2}m^2 \operatorname{sech}^2(mz/2)$). Integrating over $z$ to find the domain wall tension (energy per unit area) yields a quadratic ultraviolet divergence $\propto m \Lambda^2$. 
+Far from the wall ($z \to \pm\infty$), $V^{(2)}(f(z)) \to m^2$ and this term vanishes. Inside the core of the domain wall ($\vert z\vert  \lesssim 1/m$), however, $V^{(2)}(f(z)) \neq m^2$ (for example, in the $\phi^4$ model, $V^{(2)}(f(z)) - m^2 = -\frac{3}{2}m^2 \operatorname{sech}^2(mz/2)$). Integrating over $z$ to find the domain wall tension (energy per unit area) yields a quadratic ultraviolet divergence $\propto m \Lambda^2$. 
 
-Moreover, in $3+1$ dimensions at one loop, the mass counterterm $\delta m^2$ in the $\phi^4$ potential scales as $\delta m^2 \sim \lambda \Lambda^2$, which shifts the classical tension $Q_ 0 \sim m^3/\lambda$ by a positive quadratic divergence $+\Lambda^2 m$. Yet in the unsqueezed coherent state $|f\rangle$, the quantum fluctuation integral above is negative inside the wall and fails to cancel the counterterm divergence completely (leaving uncancelled quadratic and logarithmic divergences because the kinetic term $\langle 0 | \pi^2 + (\nabla\phi)^2 | 0 \rangle$ in $|f\rangle$ is completely blind to the wall profile $f(z)$!).
+Moreover, in $3+1$ dimensions at one loop, the mass counterterm $\delta m^2$ in the $\phi^4$ potential scales as $\delta m^2 \sim \lambda \Lambda^2$, which shifts the classical tension $Q_ 0 \sim m^3/\lambda$ by a positive quadratic divergence $+\Lambda^2 m$. Yet in the unsqueezed coherent state $\vert f\rangle$, the quantum fluctuation integral above is negative inside the wall and fails to cancel the counterterm divergence completely (leaving uncancelled quadratic and logarithmic divergences because the kinetic term $\langle 0 \vert  \pi^2 + (\nabla\phi)^2 \vert  0 \rangle$ in $\vert f\rangle$ is completely blind to the wall profile $f(z)$!).
 
 Why does the unsqueezed coherent state fail physically? The operator $\mathcal{D}_ f$ only shifts the one-point expectation value $\langle \phi(\vec{x}) \rangle = f(z)$, while leaving the connected two-point correlation function identical to that of the homogeneous trivial vacuum:
 
-$$\langle f | \phi(\vec{x})\phi(\vec{y}) | f \rangle - f(z_ x)f(z_ y) = \langle 0 | \phi(\vec{x})\phi(\vec{y}) | 0 \rangle$$
+$$\langle f \vert  \phi(\vec{x})\phi(\vec{y}) \vert  f \rangle - f(z_ x)f(z_ y) = \langle 0 \vert  \phi(\vec{x})\phi(\vec{y}) \vert  0 \rangle$$
 
 In the true ground state of a spatially inhomogeneous potential $V^{(2)}(f(z))$, short-distance quantum fluctuations must adapt their local wavelength and amplitude to the spatially varying effective mass $V^{(2)}(f(z))$. Forcing unmodified translation-invariant plane-wave correlations onto a localized potential wall creates a mismatch between the ultraviolet kinetic gradient energy and the potential energy. To cure Coleman's divergence, we must **squeeze** the coherent state via a Bogoliubov transformation that places the true Sturm–Liouville normal modes of the kink background into their ground states.
 
@@ -304,7 +302,7 @@ $$H = \int dx : \left[ \frac{1}{2}\pi^2(x) + \frac{1}{2}(\partial_ x \phi(x))^2 
 
 where the potential is shifted so that its degenerate minima lie at $\phi = 0$ and $\phi = \frac{\sqrt{2}m}{\sqrt{\lambda}}$:
 
-$$V(\sqrt{\lambda}\phi) = \frac{\lambda \phi^2}{4}\left( \phi - \frac{\sqrt{2}m}{\sqrt{\lambda}} \right)^2, \qquad m^2 = \left.\frac{d^2 V(\sqrt{\lambda}\phi)}{d\phi^2}\right|_ {\phi=0, \sqrt{2}m/\sqrt{\lambda}}$$
+$$V(\sqrt{\lambda}\phi) = \frac{\lambda \phi^2}{4}\left( \phi - \frac{\sqrt{2}m}{\sqrt{\lambda}} \right)^2, \qquad m^2 = \left.\frac{d^2 V(\sqrt{\lambda}\phi)}{d\phi^2}\right\vert _ {\phi=0, \sqrt{2}m/\sqrt{\lambda}}$$
 
 The static classical equation of motion $f''(x) = \frac{d}{df}V(\sqrt{\lambda}f(x))$ admits the classical kink solution:
 
@@ -376,7 +374,7 @@ $$A_ p^\ddagger = \tilde{g}_ B(p)\left( \frac{\phi_ 0}{2} - \frac{i\pi_ 0}{2\ome
 
 $$\frac{A_ {-p}}{2\omega_ p} = \tilde{g}_ B(p)\left( \frac{\phi_ 0}{2} + \frac{i\pi_ 0}{2\omega_ p} \right) + \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \tilde{g}_ k(p) \left[ \frac{\omega_ p - \omega_ k}{2\omega_ p} B_ k^\ddagger + \frac{\omega_ p + \omega_ k}{4\omega_ p \omega_ k} B_ {-k} \right]$$
 
-Because $\omega_ k \neq \omega_ p$, $A_ p$ is a linear combination of both $B_ k$ and $B_ k^\ddagger$ (as well as $\phi_ 0$ and $\pi_ 0$). By the theorem of Shale and Stinespring, a Bogoliubov transformation is implemented by a unitary **squeezing operator** $\mathcal{S}$ on Fock space ($\mathcal{S}^\dagger A_ p \mathcal{S} \sim u B + v B^\ddagger$) if and only if the off-diagonal Bogoliubov kernel $v(p,k) \propto \tilde{g}_ k(p)\frac{\omega_ p - \omega_ k}{\sqrt{\omega_ p \omega_ k}}$ is Hilbert–Schmidt ($\int dp dk |v(p,k)|^2 < \infty$). For our localized kink potential, $\tilde{g}_ k(p)$ is strongly peaked at $p = \pm k$ and decays rapidly off-shell, so $\mathcal{S}$ is a well-defined, $\mathcal{O}(\lambda^0)$ non-perturbative unitary operator!
+Because $\omega_ k \neq \omega_ p$, $A_ p$ is a linear combination of both $B_ k$ and $B_ k^\ddagger$ (as well as $\phi_ 0$ and $\pi_ 0$). By the theorem of Shale and Stinespring, a Bogoliubov transformation is implemented by a unitary **squeezing operator** $\mathcal{S}$ on Fock space ($\mathcal{S}^\dagger A_ p \mathcal{S} \sim u B + v B^\ddagger$) if and only if the off-diagonal Bogoliubov kernel $v(p,k) \propto \tilde{g}_ k(p)\frac{\omega_ p - \omega_ k}{\sqrt{\omega_ p \omega_ k}}$ is Hilbert–Schmidt ($\int dp dk \vert v(p,k)\vert ^2 < \infty$). For our localized kink potential, $\tilde{g}_ k(p)$ is strongly peaked at $p = \pm k$ and decays rapidly off-shell, so $\mathcal{S}$ is a well-defined, $\mathcal{O}(\lambda^0)$ non-perturbative unitary operator!
 
 Let us now derive the exact diagonalized form of $H'_ 2$ and the one-loop mass correction $Q_ 1$. If we temporarily ignore normal ordering, integrating by parts $\int dx (\partial_ x \phi)^2 = -\int dx \, \phi \partial_ x^2 \phi$ and using the Sturm–Liouville equation $[-\partial_ x^2 + V^{(2)}(\sqrt{\lambda}f)]g_ k(x) = \omega_ k^2 g_ k(x)$ along with orthogonality of the normal modes gives:
 
@@ -384,7 +382,7 @@ $$\int dx \left[ \frac{1}{2}\pi^2 + \frac{1}{2}(\partial_ x \phi)^2 + \frac{1}{2
 
 However, $H'_ 2$ is plane-wave normal-ordered ($: \ :_ a$). To evaluate $H'_ 2$ rigorously, we must express $: \pi^2(x) :_ a$ and $: \phi(x)(-\partial_ x^2 + V^{(2)})\phi(x) :_ a$ in terms of $A_ p^\ddagger$ and $A_ p$, substitute the Bogoliubov transformation, and then commute all $B_ k$ to the right of $B_ k^\ddagger$ and $\pi_ 0$ to the right of $\phi_ 0$ (which defines **normal-mode normal ordering** $: \ :_ b$). 
 
-Specifically, in plane-wave normal ordering, any product $: \mathcal{O}_ 1 \mathcal{O}_ 2 :_ a$ differs from the ordinary operator product $\mathcal{O}_ 1 \mathcal{O}_ 2$ by subtracting the vacuum expectation value ${}_ a\langle 0 | \mathcal{O}_ 1 \mathcal{O}_ 2 | 0 \rangle_ a$. Equivalently, when we substitute the Bogoliubov expansion of $A_ p^\ddagger$ and $A_ {-p}$ into a plane-wave normal-ordered expression where all $A_ p^\ddagger$ stand to the left of all $A_ {-p}$, all terms are already ordered in $B_ k^\ddagger B_ {-k}$ *except* for the cross terms where the $B_ {-k}$ part of $A_ p^\ddagger$ stands to the left of the $B_ k^\ddagger$ part of $A_ {-p}$ (and similarly for $\pi_ 0$ standing to the left of $\phi_ 0$):
+Specifically, in plane-wave normal ordering, any product $: \mathcal{O}_ 1 \mathcal{O}_ 2 :_ a$ differs from the ordinary operator product $\mathcal{O}_ 1 \mathcal{O}_ 2$ by subtracting the vacuum expectation value ${}_ a\langle 0 \vert  \mathcal{O}_ 1 \mathcal{O}_ 2 \vert  0 \rangle_ a$. Equivalently, when we substitute the Bogoliubov expansion of $A_ p^\ddagger$ and $A_ {-p}$ into a plane-wave normal-ordered expression where all $A_ p^\ddagger$ stand to the left of all $A_ {-p}$, all terms are already ordered in $B_ k^\ddagger B_ {-k}$ *except* for the cross terms where the $B_ {-k}$ part of $A_ p^\ddagger$ stands to the left of the $B_ k^\ddagger$ part of $A_ {-p}$ (and similarly for $\pi_ 0$ standing to the left of $\phi_ 0$):
 
 $$\begin{aligned}
 : \phi_ p \phi_ {-p} :_ a &= A_ p^\ddagger A_ {-p}^\ddagger + A_ p^\ddagger \frac{A_ p}{2\omega_ p} + A_ {-p}^\ddagger \frac{A_ {-p}}{2\omega_ p} + \frac{A_ {-p} A_ p}{4\omega_ p^2} \\
@@ -400,12 +398,12 @@ while the $c$-number commutators from reordering $A_ p^\ddagger \frac{A_ p}{2\om
 1.  From the zero mode in $A_ p^\ddagger$ and $\frac{A_ p}{2\omega_ p}$:
     $$\left( \frac{\phi_ 0}{2} - \frac{i\pi_ 0}{2\omega_ p} \right)\left( \frac{\phi_ 0}{2} + \frac{i\pi_ 0}{2\omega_ p} \right) = :\left( \frac{\phi_ 0^2}{4} + \frac{\pi_ 0^2}{4\omega_ p^2} \right):_ b + \frac{i}{4\omega_ p}[\phi_ 0, \pi_ 0] = :\dots:_ b - \frac{1}{4\omega_ p}$$
     Multiplying by the energy factor $2\omega_ p^2$ from the plane-wave decomposition and integrating over $p$ gives the zero-mode contribution to $Q_ 1$:
-    $$Q_ {1,B} = -\frac{1}{4} \int \frac{dp}{2\pi} |\tilde{g}_ B(p)|^2 \omega_ p$$
+    $$Q_ {1,B} = -\frac{1}{4} \int \frac{dp}{2\pi} \vert \tilde{g}_ B(p)\vert ^2 \omega_ p$$
 2.  From the continuum and shape modes in $A_ p^\ddagger$ and $\frac{A_ p}{2\omega_ p}$:
     The term in $A_ p^\ddagger \frac{A_ p}{2\omega_ p}$ where $B_ {-k}$ stands to the left of $B_ {-k}^\ddagger$ has the coefficient:
     $$\left( \frac{\omega_ p - \omega_ k}{4\omega_ p \omega_ k} B_ {-k} \right) \left( \frac{\omega_ p - \omega_ k}{2\omega_ p} B_ {-k}^\ddagger \right) \implies \frac{(\omega_ p - \omega_ k)^2}{8\omega_ p^2 \omega_ k} [B_ {-k}, B_ {-k}^\ddagger]$$
     Multiplying by $2\omega_ p^2 \omega_ k$ and summing/integrating over $p$ and $k$ yields the non-zero-mode contribution to $Q_ 1$:
-    $$Q_ {1,k} = -\frac{1}{4} \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \int \frac{dp}{2\pi} |\tilde{g}_ k(p)|^2 \frac{(\omega_ k - \omega_ p)^2}{\omega_ p}$$
+    $$Q_ {1,k} = -\frac{1}{4} \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \int \frac{dp}{2\pi} \vert \tilde{g}_ k(p)\vert ^2 \frac{(\omega_ k - \omega_ p)^2}{\omega_ p}$$
 
 Combining both pieces, we arrive at the exact diagonalized free kink Hamiltonian:
 
@@ -413,27 +411,27 @@ $$H'_ 2 = Q_ 1 + \frac{1}{2}\pi_ 0^2 + \omega_ S B_ S^\ddagger B_ S + \int \frac
 
 where the one-loop quantum kink mass correction is:
 
-$$Q_ 1 = -\frac{1}{4}\int \frac{dp}{2\pi} |\tilde{g}_ B(p)|^2 \omega_ p - \frac{1}{4}\sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \int \frac{dp}{2\pi} |\tilde{g}_ k(p)|^2 \frac{(\omega_ k - \omega_ p)^2}{\omega_ p}$$
+$$Q_ 1 = -\frac{1}{4}\int \frac{dp}{2\pi} \vert \tilde{g}_ B(p)\vert ^2 \omega_ p - \frac{1}{4}\sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \int \frac{dp}{2\pi} \vert \tilde{g}_ k(p)\vert ^2 \frac{(\omega_ k - \omega_ p)^2}{\omega_ p}$$
 
 Notice two remarkable features of this formula:
-*   **Manifest Negativity:** Every factor in the integrands—$|\tilde{g}_ B(p)|^2$, $|\tilde{g}_ k(p)|^2$, $\omega_ p$, and $(\omega_ k - \omega_ p)^2$—is strictly non-negative, and there is an overall minus sign in front of both integrals. Thus $Q_ 1 < 0$ is guaranteed without invoking any variational bound!
+*   **Manifest Negativity:** Every factor in the integrands—$\vert \tilde{g}_ B(p)\vert ^2$, $\vert \tilde{g}_ k(p)\vert ^2$, $\omega_ p$, and $(\omega_ k - \omega_ p)^2$—is strictly non-negative, and there is an overall minus sign in front of both integrals. Thus $Q_ 1 < 0$ is guaranteed without invoking any variational bound!
 *   **Ultraviolet Convergence:** Because $\tilde{g}_ k(p)$ is localized around $p = \pm k$ where $(\omega_ k - \omega_ p)^2$ vanishes to second order, the $p$- and $k$-integrals converge rapidly in the ultraviolet without needing any ad-hoc phase-shift subtractions or box boundary conditions.
 
-We define the leading-order kink ground state $|0\rangle_ 0$ in the kink frame as the state annihilated by the center-of-mass momentum and all normal-mode annihilation operators:
+We define the leading-order kink ground state $\vert 0\rangle_ 0$ in the kink frame as the state annihilated by the center-of-mass momentum and all normal-mode annihilation operators:
 
-$$\pi_ 0 |0\rangle_ 0 = 0, \qquad B_ S |0\rangle_ 0 = 0, \qquad B_ k |0\rangle_ 0 = 0$$
+$$\pi_ 0 \vert 0\rangle_ 0 = 0, \qquad B_ S \vert 0\rangle_ 0 = 0, \qquad B_ k \vert 0\rangle_ 0 = 0$$
 
-Acting with $H'_ 2$ on $|0\rangle_ 0$ gives $H'_ 2 |0\rangle_ 0 = Q_ 1 |0\rangle_ 0$. In the defining frame, the leading quantum kink ground state is $\mathcal{D}_ f |0\rangle_ 0 = \mathcal{D}_ f \mathcal{S} |0\rangle_ a$, which is a **squeezed coherent state**. Evaluating the Fourier transforms $\tilde{g}_ B(p)$, $\tilde{g}_ S(p)$, and $\tilde{g}_ k(p)$ for the $\phi^4$ kink and performing the integral reproduces the classic Dashen–Hasslacher–Neveu (DHN) one-loop mass shift:
+Acting with $H'_ 2$ on $\vert 0\rangle_ 0$ gives $H'_ 2 \vert 0\rangle_ 0 = Q_ 1 \vert 0\rangle_ 0$. In the defining frame, the leading quantum kink ground state is $\mathcal{D}_ f \vert 0\rangle_ 0 = \mathcal{D}_ f \mathcal{S} \vert 0\rangle_ a$, which is a **squeezed coherent state**. Evaluating the Fourier transforms $\tilde{g}_ B(p)$, $\tilde{g}_ S(p)$, and $\tilde{g}_ k(p)$ for the $\phi^4$ kink and performing the integral reproduces the classic Dashen–Hasslacher–Neveu (DHN) one-loop mass shift:
 
 $$Q_ 1 = m\left( \frac{1}{2\sqrt{3}} - \frac{3}{\pi} \right) \approx -0.666 \, m$$
 
-Squeezing lowers the ground-state energy below the unsqueezed coherent state by $|Q_ 1|$.
+Squeezing lowers the ground-state energy below the unsqueezed coherent state by $\vert Q_ 1\vert $.
 
 ---
 
 ## 7. Linearized Zero Mode, Translation Invariance, and Wavefunction Corrections
 
-To go beyond one loop and compute higher-order mass corrections ($Q_ 2, Q_ 3, \dots$) or scattering amplitudes, we must handle the translation zero mode and construct the perturbative corrections to the kink state $|\Psi\rangle$.
+To go beyond one loop and compute higher-order mass corrections ($Q_ 2, Q_ 3, \dots$) or scattering amplitudes, we must handle the translation zero mode and construct the perturbative corrections to the kink state $\vert \Psi\rangle$.
 
 In the traditional collective coordinate method (Christ–Lee, Gervais–Sakita), one promotes the classical kink center $x_ 0$ to a dynamical quantum mechanical operator $\hat{x}_ 0(t)$ by writing:
 
@@ -461,9 +459,9 @@ In the defining frame, spatial translations are generated by the total momentum 
 
 $$P = -\int_ {-\infty}^{+\infty} dx : \pi(x) \partial_ x \phi(x) :_ a$$
 
-A translation-invariant state $\mathcal{D}_ f |\Psi\rangle$ in the defining frame satisfies $P \mathcal{D}_ f |\Psi\rangle = 0$. Multiplying on the left by $\mathcal{D}_ f^\dagger$, we find that the kink-frame state $|\Psi\rangle$ must be annihilated by the kink-frame momentum operator $P'$:
+A translation-invariant state $\mathcal{D}_ f \vert \Psi\rangle$ in the defining frame satisfies $P \mathcal{D}_ f \vert \Psi\rangle = 0$. Multiplying on the left by $\mathcal{D}_ f^\dagger$, we find that the kink-frame state $\vert \Psi\rangle$ must be annihilated by the kink-frame momentum operator $P'$:
 
-$$P' |\Psi\rangle = 0, \qquad P' := \mathcal{D}_ f^\dagger P \mathcal{D}_ f = -\int dx : \pi(x) \partial_ x (\phi(x) + f(x)) :_ a = P + \sqrt{Q_ 0}\pi_ 0$$
+$$P' \vert \Psi\rangle = 0, \qquad P' := \mathcal{D}_ f^\dagger P \mathcal{D}_ f = -\int dx : \pi(x) \partial_ x (\phi(x) + f(x)) :_ a = P + \sqrt{Q_ 0}\pi_ 0$$
 
 where we used $\int dx \, \pi(x) f'(x) = -\sqrt{Q_ 0}\int dx \, \pi(x) g_ B(x) = -\sqrt{Q_ 0}\pi_ 0$.
 
@@ -478,30 +476,30 @@ P &= \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \Delta_ {kB} \left[ i\phi_ 0 \left( -\
 &\quad + i\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi}\frac{dk_ 2}{2\pi} \Delta_ {k_ 1 k_ 2} \left[ -\omega_ {k_ 1} B_ {k_ 1}^\ddagger B_ {k_ 2}^\ddagger + \frac{B_ {-k_ 1} B_ {-k_ 2}}{4\omega_ {k_ 2}} - \frac{\omega_ {k_ 1} + \omega_ {k_ 2}}{2\omega_ {k_ 2}} B_ {k_ 1}^\ddagger B_ {-k_ 2} \right]
 \end{aligned}$$
 
-Notice that in $P' = P + \sqrt{Q_ 0}\pi_ 0$, the operator $\sqrt{Q_ 0}\pi_ 0$ is of order $\mathcal{O}(\lambda^{-1/2})$, whereas $P$ is of order $\mathcal{O}(\lambda^0)$. Consequently, demanding $P' |\Psi\rangle = 0$ equates terms of different orders in the perturbative expansion of $|\Psi\rangle$!
+Notice that in $P' = P + \sqrt{Q_ 0}\pi_ 0$, the operator $\sqrt{Q_ 0}\pi_ 0$ is of order $\mathcal{O}(\lambda^{-1/2})$, whereas $P$ is of order $\mathcal{O}(\lambda^0)$. Consequently, demanding $P' \vert \Psi\rangle = 0$ equates terms of different orders in the perturbative expansion of $\vert \Psi\rangle$!
 
-Let us expand any translation-invariant kink-sector eigenstate $|\Psi\rangle$ (such as the ground state $|0\rangle$) in powers of $\sqrt{\lambda}$:
+Let us expand any translation-invariant kink-sector eigenstate $\vert \Psi\rangle$ (such as the ground state $\vert 0\rangle$) in powers of $\sqrt{\lambda}$:
 
-$$|\Psi\rangle = \sum_ {i=0}^\infty |\Psi\rangle_ i, \qquad |\Psi\rangle_ i \sim \mathcal{O}(\lambda^{i/2})$$
+$$\vert \Psi\rangle = \sum_ {i=0}^\infty \vert \Psi\rangle_ i, \qquad \vert \Psi\rangle_ i \sim \mathcal{O}(\lambda^{i/2})$$
 
-At each order $i$, we expand $|\Psi\rangle_ i$ in the kink Fock basis as a power series in $\phi_ 0$ acting on multi-meson states $|k_ 1 \dots k_ n\rangle_ 0 := B_ {k_ 1}^\ddagger \dots B_ {k_ n}^\ddagger |0\rangle_ 0$:
+At each order $i$, we expand $\vert \Psi\rangle_ i$ in the kink Fock basis as a power series in $\phi_ 0$ acting on multi-meson states $\vert k_ 1 \dots k_ n\rangle_ 0 := B_ {k_ 1}^\ddagger \dots B_ {k_ n}^\ddagger \vert 0\rangle_ 0$:
 
-$$|\Psi\rangle_ i = \sum_ {m,n=0}^\infty |\Psi\rangle_ i^{mn}, \qquad |\Psi\rangle_ i^{mn} = \frac{Q_ 0^{-m/2}}{n!} \sum\!\!\!\!\!\!\int \frac{d^n k}{(2\pi)^n} \gamma_ i^{mn}(k_ 1 \dots k_ n) \phi_ 0^m |k_ 1 \dots k_ n\rangle_ 0$$
+$$\vert \Psi\rangle_ i = \sum_ {m,n=0}^\infty \vert \Psi\rangle_ i^{mn}, \qquad \vert \Psi\rangle_ i^{mn} = \frac{Q_ 0^{-m/2}}{n!} \sum\!\!\!\!\!\!\int \frac{d^n k}{(2\pi)^n} \gamma_ i^{mn}(k_ 1 \dots k_ n) \phi_ 0^m \vert k_ 1 \dots k_ n\rangle_ 0$$
 
 Following conformal field theory terminology, we call the $m=0$ components (which contain no zero modes $\phi_ 0$) **primary states**, and the $m \ge 1$ components (which contain powers of $\phi_ 0$) **descendant states**.
 
-Because $[\pi_ 0, \phi_ 0^m] = -i m \phi_ 0^{m-1}$ and $\pi_ 0 |0\rangle_ 0 = 0$, the operator $\pi_ 0$ acts on $\phi_ 0^m |k_ 1 \dots k_ n\rangle_ 0$ as a formal derivative with respect to $\phi_ 0$:
+Because $[\pi_ 0, \phi_ 0^m] = -i m \phi_ 0^{m-1}$ and $\pi_ 0 \vert 0\rangle_ 0 = 0$, the operator $\pi_ 0$ acts on $\phi_ 0^m \vert k_ 1 \dots k_ n\rangle_ 0$ as a formal derivative with respect to $\phi_ 0$:
 
-$$\sqrt{Q_ 0} \pi_ 0 |\Psi\rangle_ {i+1}^{m+1, n} = -i (m+1) \frac{Q_ 0^{-m/2}}{n!} \sum\!\!\!\!\!\!\int \frac{d^n k}{(2\pi)^n} \gamma_ {i+1}^{m+1, n}(k_ 1 \dots k_ n) \phi_ 0^m |k_ 1 \dots k_ n\rangle_ 0$$
+$$\sqrt{Q_ 0} \pi_ 0 \vert \Psi\rangle_ {i+1}^{m+1, n} = -i (m+1) \frac{Q_ 0^{-m/2}}{n!} \sum\!\!\!\!\!\!\int \frac{d^n k}{(2\pi)^n} \gamma_ {i+1}^{m+1, n}(k_ 1 \dots k_ n) \phi_ 0^m \vert k_ 1 \dots k_ n\rangle_ 0$$
 
-Therefore, imposing $P' |\Psi\rangle = (P + \sqrt{Q_ 0}\pi_ 0)|\Psi\rangle = 0$ at order $\mathcal{O}(\lambda^{i/2})$ gives:
+Therefore, imposing $P' \vert \Psi\rangle = (P + \sqrt{Q_ 0}\pi_ 0)\vert \Psi\rangle = 0$ at order $\mathcal{O}(\lambda^{i/2})$ gives:
 
-$$\sqrt{Q_ 0}\pi_ 0 |\Psi\rangle_ {i+1} = -P |\Psi\rangle_ i$$
+$$\sqrt{Q_ 0}\pi_ 0 \vert \Psi\rangle_ {i+1} = -P \vert \Psi\rangle_ i$$
 
 Projecting this equation onto the sector with $m$ zero modes and $n$ mesons fixes all **descendant coefficients** $\gamma_ {i+1}^{m, n}$ ($m \ge 1$) algebraically in terms of the lower-order coefficients $\gamma_ i^{m', n'}$ via the exact **recursion relation**:
 
 $$\begin{aligned}
-\gamma_ {i+1}^{m+1, n}(k_ 1 \dots k_ n) &= \left. \Delta_ {k_ n B} \left( \omega_ {k_ n} \gamma_ i^{m, n-1}(k_ 1 \dots k_ {n-1}) + \frac{m+2}{m+1}\gamma_ i^{m+2, n-1}(k_ 1 \dots k_ {n-1}) \right) \right|_ {\text{sym}} \\
+\gamma_ {i+1}^{m+1, n}(k_ 1 \dots k_ n) &= \left. \Delta_ {k_ n B} \left( \omega_ {k_ n} \gamma_ i^{m, n-1}(k_ 1 \dots k_ {n-1}) + \frac{m+2}{m+1}\gamma_ i^{m+2, n-1}(k_ 1 \dots k_ {n-1}) \right) \right\vert _ {\text{sym}} \\
 &\quad + \frac{1}{2(m+1)}\sum\!\!\!\!\!\!\int \frac{dk'}{2\pi} \Delta_ {-k', B} \left( \frac{1}{\omega_ {k'}}\gamma_ i^{m, n+1}(k_ 1 \dots k_ n, k') - (m+2)\gamma_ i^{m+2, n+1}(k_ 1 \dots k_ n, k') \right) \\
 &\quad + \frac{1}{m+1} \left[ n \Delta_ {k_ {n-1} k_ n} \omega_ {k_ n} \gamma_ i^{m+1, n-2}(k_ 1 \dots k_ {n-2}) \right. \\
 &\quad \left. + \sum\!\!\!\!\!\!\int \frac{dk'}{2\pi} \frac{\omega_ {k_ n} + \omega_ {k'}}{2\omega_ {k'}} \Delta_ {k_ n, -k'} \gamma_ i^{m+1, n}(k_ 1 \dots k_ {n-1}, k') \right. \\
@@ -512,31 +510,31 @@ where the subscript $\text{sym}$ denotes symmetrization over the $n$ momenta $k_
 
 This is a major simplification of LSPT: **all descendant states ($m \ge 1$) are completely determined by translation invariance alone, without ever touching the Hamiltonian!** We never have to invert the zero-mode kinetic operator $\frac{1}{2}\pi_ 0^2$, which completely avoids the infrared zero-mode divergences that plague traditional soliton perturbation theory.
 
-Let us illustrate this by computing the leading $\mathcal{O}(\sqrt{\lambda})$ wavefunction correction $|0\rangle_ 1$ to the kink ground state $|0\rangle_ 0$ (for which the only non-zero $i=0$ coefficient is $\gamma_ 0^{00} = 1$).
-1.  **First, fix the descendants ($m \ge 1$) of $|0\rangle_ 1$ using the recursion relation for $i=0$:**
+Let us illustrate this by computing the leading $\mathcal{O}(\sqrt{\lambda})$ wavefunction correction $\vert 0\rangle_ 1$ to the kink ground state $\vert 0\rangle_ 0$ (for which the only non-zero $i=0$ coefficient is $\gamma_ 0^{00} = 1$).
+1.  **First, fix the descendants ($m \ge 1$) of $\vert 0\rangle_ 1$ using the recursion relation for $i=0$:**
     Setting $\gamma_ 0^{mn} = \delta_ {m0}\delta_ {n0}$ in the recursion relation immediately shows that only two descendant terms are non-zero at $i=1$:
     *   For $m+1 = 1, n = 2$ (coming from the $\Delta_ {k_ 1 k_ 2} B_ {k_ 1}^\ddagger B_ {k_ 2}^\ddagger$ term in $P$ together with $\gamma_ 0^{20}=0$ and the $\Delta_ {kB}\phi_ 0 B_ k^\ddagger$ term):
-        Specifically, acting with $-P$ on $|0\rangle_ 0$ (where $B_ k |0\rangle_ 0 = \pi_ 0 |0\rangle_ 0 = 0$) leaves only the creation operators in $P$:
-        $$-P |0\rangle_ 0 = i \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \Delta_ {kB} \omega_ k \phi_ 0 |k\rangle_ 0 + i \sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi}\frac{dk_ 2}{2\pi} \Delta_ {k_ 1 k_ 2} \omega_ {k_ 1} |k_ 1 k_ 2\rangle_ 0$$
-        Wait—since $\sqrt{Q_ 0}\pi_ 0 |0\rangle_ 1 = -P |0\rangle_ 0$, let us match powers of $\phi_ 0$ on both sides! Notice that the second term on the right-hand side has *no* $\phi_ 0$ ($m=0$), whereas $\pi_ 0 |0\rangle_ 1^{1,2}$ also has $m=0$! Thus:
-        *   From $m=0, n=2$ in $\sqrt{Q_ 0}\pi_ 0 |0\rangle_ 1 = -P|0\rangle_ 0$:
+        Specifically, acting with $-P$ on $\vert 0\rangle_ 0$ (where $B_ k \vert 0\rangle_ 0 = \pi_ 0 \vert 0\rangle_ 0 = 0$) leaves only the creation operators in $P$:
+        $$-P \vert 0\rangle_ 0 = i \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \Delta_ {kB} \omega_ k \phi_ 0 \vert k\rangle_ 0 + i \sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi}\frac{dk_ 2}{2\pi} \Delta_ {k_ 1 k_ 2} \omega_ {k_ 1} \vert k_ 1 k_ 2\rangle_ 0$$
+        Wait—since $\sqrt{Q_ 0}\pi_ 0 \vert 0\rangle_ 1 = -P \vert 0\rangle_ 0$, let us match powers of $\phi_ 0$ on both sides! Notice that the second term on the right-hand side has *no* $\phi_ 0$ ($m=0$), whereas $\pi_ 0 \vert 0\rangle_ 1^{1,2}$ also has $m=0$! Thus:
+        *   From $m=0, n=2$ in $\sqrt{Q_ 0}\pi_ 0 \vert 0\rangle_ 1 = -P\vert 0\rangle_ 0$:
             $$\gamma_ 1^{12}(k_ 1, k_ 2) = \frac{\omega_ {k_ 1} - \omega_ {k_ 2}}{2} \Delta_ {k_ 1 k_ 2}$$
-        *   From $m=1, n=1$ in $\sqrt{Q_ 0}\pi_ 0 |0\rangle_ 1 = -P|0\rangle_ 0$:
+        *   From $m=1, n=1$ in $\sqrt{Q_ 0}\pi_ 0 \vert 0\rangle_ 1 = -P\vert 0\rangle_ 0$:
             $$\gamma_ 1^{21}(k_ 1) = \frac{\omega_ {k_ 1}}{2} \Delta_ {k_ 1 B}$$
     All other descendant coefficients $\gamma_ 1^{mn}$ ($m \ge 1$) vanish identically!
-2.  **Second, fix the primary states ($m=0$) of $|0\rangle_ 1$ using the Schrödinger equation $H' |0\rangle = Q |0\rangle$:**
+2.  **Second, fix the primary states ($m=0$) of $\vert 0\rangle_ 1$ using the Schrödinger equation $H' \vert 0\rangle = Q \vert 0\rangle$:**
     At order $\mathcal{O}(\sqrt{\lambda})$, the eigenvalue equation is:
-    $$(H'_ 2 - Q_ 1)|0\rangle_ 1 = -H'_ 3 |0\rangle_ 0$$
-    where $H'_ 3 = \frac{\sqrt{\lambda}}{6}\int dx \, V^{(3)}(\sqrt{\lambda}f(x)) : \phi^3(x) :_ a$. Projecting this equation onto the primary subspace ($m=0$, i.e., setting $\phi_ 0 = 0$), note that inside $H'_ 2 = Q_ 1 + \frac{1}{2}\pi_ 0^2 + \sum\!\!\!\!\!\!\int \frac{dk}{2\pi}\omega_ k B_ k^\ddagger B_ k$, the operator $\frac{1}{2}\pi_ 0^2$ acts on the $m=2$ descendant $|0\rangle_ 1^{21}$ to produce an $m=0, n=1$ state:
-    $$\left.\frac{1}{2}\pi_ 0^2 |0\rangle_ 1^{21}\right|_ {m=0} = -\frac{1}{Q_ 0}\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} \gamma_ 1^{21}(k_ 1) |k_ 1\rangle_ 0 = -\frac{1}{2Q_ 0}\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} \omega_ {k_ 1} \Delta_ {k_ 1 B} |k_ 1\rangle_ 0$$
+    $$(H'_ 2 - Q_ 1)\vert 0\rangle_ 1 = -H'_ 3 \vert 0\rangle_ 0$$
+    where $H'_ 3 = \frac{\sqrt{\lambda}}{6}\int dx \, V^{(3)}(\sqrt{\lambda}f(x)) : \phi^3(x) :_ a$. Projecting this equation onto the primary subspace ($m=0$, i.e., setting $\phi_ 0 = 0$), note that inside $H'_ 2 = Q_ 1 + \frac{1}{2}\pi_ 0^2 + \sum\!\!\!\!\!\!\int \frac{dk}{2\pi}\omega_ k B_ k^\ddagger B_ k$, the operator $\frac{1}{2}\pi_ 0^2$ acts on the $m=2$ descendant $\vert 0\rangle_ 1^{21}$ to produce an $m=0, n=1$ state:
+    $$\left.\frac{1}{2}\pi_ 0^2 \vert 0\rangle_ 1^{21}\right\vert _ {m=0} = -\frac{1}{Q_ 0}\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} \gamma_ 1^{21}(k_ 1) \vert k_ 1\rangle_ 0 = -\frac{1}{2Q_ 0}\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} \omega_ {k_ 1} \Delta_ {k_ 1 B} \vert k_ 1\rangle_ 0$$
     Meanwhile, converting $: \phi^3(x) :_ a$ to normal-mode normal ordering $: \ :_ b$ via Wick's theorem (detailed in the next section):
     $$: \phi^3(x) :_ a = : \phi^3(x) :_ b + 3 I(x) \phi(x)$$
-    and acting with $-H'_ 3$ on $|0\rangle_ 0$ at $m=0$ produces both a one-meson state $|k_ 1\rangle_ 0$ and a three-meson state $|k_ 1 k_ 2 k_ 3\rangle_ 0$:
-    $$\left.-H'_ 3 |0\rangle_ 0\right|_ {m=0} = -\frac{\sqrt{\lambda}}{2}\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} V_ {I k_ 1} |k_ 1\rangle_ 0 - \frac{\sqrt{\lambda}}{6}\sum\!\!\!\!\!\!\int \frac{d^3 k}{(2\pi)^3} V_ {k_ 1 k_ 2 k_ 3} |k_ 1 k_ 2 k_ 3\rangle_ 0$$
-    where $V_ {k_ 1 \dots k_ n} = \int dx \, V^{(n)}(\sqrt{\lambda}f(x)) g_ {k_ 1}(x) \dots g_ {k_ n}(x)$ and $V_ {I k_ 1} = \int dx \, V^{(3)}(\sqrt{\lambda}f(x)) I(x) g_ {k_ 1}(x)$. Since $\sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \omega_ k B_ k^\ddagger B_ k |k_ 1 \dots k_ n\rangle_ 0 = (\omega_ {k_ 1} + \dots + \omega_ {k_ n})|k_ 1 \dots k_ n\rangle_ 0$, dividing by the non-zero meson energies fixes the primary wavefunction coefficients $\gamma_ 1^{01}$ and $\gamma_ 1^{03}$ immediately:
+    and acting with $-H'_ 3$ on $\vert 0\rangle_ 0$ at $m=0$ produces both a one-meson state $\vert k_ 1\rangle_ 0$ and a three-meson state $\vert k_ 1 k_ 2 k_ 3\rangle_ 0$:
+    $$\left.-H'_ 3 \vert 0\rangle_ 0\right\vert _ {m=0} = -\frac{\sqrt{\lambda}}{2}\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} V_ {I k_ 1} \vert k_ 1\rangle_ 0 - \frac{\sqrt{\lambda}}{6}\sum\!\!\!\!\!\!\int \frac{d^3 k}{(2\pi)^3} V_ {k_ 1 k_ 2 k_ 3} \vert k_ 1 k_ 2 k_ 3\rangle_ 0$$
+    where $V_ {k_ 1 \dots k_ n} = \int dx \, V^{(n)}(\sqrt{\lambda}f(x)) g_ {k_ 1}(x) \dots g_ {k_ n}(x)$ and $V_ {I k_ 1} = \int dx \, V^{(3)}(\sqrt{\lambda}f(x)) I(x) g_ {k_ 1}(x)$. Since $\sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \omega_ k B_ k^\ddagger B_ k \vert k_ 1 \dots k_ n\rangle_ 0 = (\omega_ {k_ 1} + \dots + \omega_ {k_ n})\vert k_ 1 \dots k_ n\rangle_ 0$, dividing by the non-zero meson energies fixes the primary wavefunction coefficients $\gamma_ 1^{01}$ and $\gamma_ 1^{03}$ immediately:
     $$\gamma_ 1^{01}(k_ 1) = \frac{\Delta_ {k_ 1 B}}{2\sqrt{Q_ 0}} - \frac{\sqrt{\lambda} V_ {I k_ 1}}{2\omega_ {k_ 1}}, \qquad \gamma_ 1^{03}(k_ 1, k_ 2, k_ 3) = -\frac{\sqrt{\lambda} V_ {k_ 1 k_ 2 k_ 3}}{\omega_ {k_ 1} + \omega_ {k_ 2} + \omega_ {k_ 3}}$$
 
-Together, $\gamma_ 1^{21}, \gamma_ 1^{12}, \gamma_ 1^{01}, \gamma_ 1^{03}$ give the complete, exact one-loop quantum wavefunction correction $|0\rangle_ 1$ to the kink ground state.
+Together, $\gamma_ 1^{21}, \gamma_ 1^{12}, \gamma_ 1^{01}, \gamma_ 1^{03}$ give the complete, exact one-loop quantum wavefunction correction $\vert 0\rangle_ 1$ to the kink ground state.
 
 ---
 
@@ -550,13 +548,13 @@ $$: \phi^j(x) :_ a = \sum_ {m=0}^{\lfloor j/2 \rfloor} \frac{j!}{2^m m! (j-2m)!}
 
 where $I(x)$ is the local **contraction factor** defined as the difference between the two normal orderings of $\phi^2(x)$:
 
-$$I(x) := : \phi^2(x) :_ a - : \phi^2(x) :_ b = \int \frac{dk}{2\pi} \frac{|g_ k(x)|^2 - 1}{2\omega_ k} + \sum_ S \frac{|g_ S(x)|^2}{2\omega_ S}$$
+$$I(x) := : \phi^2(x) :_ a - : \phi^2(x) :_ b = \int \frac{dk}{2\pi} \frac{\vert g_ k(x)\vert ^2 - 1}{2\omega_ k} + \sum_ S \frac{\vert g_ S(x)\vert ^2}{2\omega_ S}$$
 
 For the $(1+1)$-dimensional $\phi^4$ kink, substituting $g_ S(x)$ and $g_ k(x)$ and performing the contour integral yields a closed analytic expression for $I(x)$:
 
 $$I(x) = \frac{1}{4\sqrt{3}}\operatorname{sech}^2\left(\frac{mx}{2}\right)\tanh^2\left(\frac{mx}{2}\right) - \frac{3}{8\pi}\operatorname{sech}^4\left(\frac{mx}{2}\right)$$
 
-Notice that $I(x)$ is ultraviolet finite and exponentially localized around the kink core ($|x| \lesssim 1/m$). In the cubic and quartic interactions, Wick's theorem generates lower-point effective vertices weighted by powers of $I(x)$:
+Notice that $I(x)$ is ultraviolet finite and exponentially localized around the kink core ($\vert x\vert  \lesssim 1/m$). In the cubic and quartic interactions, Wick's theorem generates lower-point effective vertices weighted by powers of $I(x)$:
 
 $$: \phi^3(x) :_ a = : \phi^3(x) :_ b + 3 I(x) \phi(x)$$
 
@@ -570,22 +568,22 @@ any vertex containing a zero mode $g_ B(x)$ can be simplified using integration 
 
 $$V_ {IB} = 0, \qquad V_ {B k_ 1 k_ 2} = \frac{\omega_ {k_ 1}^2 - \omega_ {k_ 2}^2}{\sqrt{Q_ 0}} \Delta_ {k_ 1 k_ 2}$$
 
-Now let us extract the **two-loop kink mass correction $Q_ 2$** (of order $\mathcal{O}(\lambda)$). Write the Schrödinger eigenvalue equation $H' |0\rangle = (Q_ 0 + Q_ 1 + Q_ 2 + \dots)|0\rangle$ at order $\mathcal{O}(\lambda)$ and project onto the bare ground state $|0\rangle_ 0$ (the $m=0, n=0$ sector):
+Now let us extract the **two-loop kink mass correction $Q_ 2$** (of order $\mathcal{O}(\lambda)$). Write the Schrödinger eigenvalue equation $H' \vert 0\rangle = (Q_ 0 + Q_ 1 + Q_ 2 + \dots)\vert 0\rangle$ at order $\mathcal{O}(\lambda)$ and project onto the bare ground state $\vert 0\rangle_ 0$ (the $m=0, n=0$ sector):
 
-$$\left. (H'_ 2 - Q_ 1)|0\rangle_ 2 + H'_ 3 |0\rangle_ 1 + H'_ 4 |0\rangle_ 0 \right|_ {m=0, n=0} = Q_ 2 |0\rangle_ 0$$
+$$\left. (H'_ 2 - Q_ 1)\vert 0\rangle_ 2 + H'_ 3 \vert 0\rangle_ 1 + H'_ 4 \vert 0\rangle_ 0 \right\vert _ {m=0, n=0} = Q_ 2 \vert 0\rangle_ 0$$
 
-Look at the three terms on the left-hand side when projected onto $|0\rangle_ 0$:
-1.  **From $H'_ 4 |0\rangle_ 0$:** Since $: \phi^4(x) :_ a = : \phi^4(x) :_ b + 6 I(x) : \phi^2(x) :_ b + 3 I^2(x)$ and $: \phi^n :_ b$ has no $m=0, n=0$ component when acting on $|0\rangle_ 0$, only the $3 I^2(x)$ term survives:
-    $$\left. H'_ 4 |0\rangle_ 0 \right|_ {m=0, n=0} = \frac{\lambda}{24} \int dx \, V^{(4)}(\sqrt{\lambda}f(x)) \cdot 3 I^2(x) |0\rangle_ 0 = \frac{\lambda V_ {I^2}}{8} |0\rangle_ 0$$
-2.  **From $H'_ 3 |0\rangle_ 1$:** Only the pure annihilation parts of $H'_ 3$ ($B_ {-k_ 1}B_ {-k_ 2}B_ {-k_ 3}$ and $I(x)B_ {-k_ 1}$) acting on the primary components $\gamma_ 1^{03}$ and $\gamma_ 1^{01}$ of $|0\rangle_ 1$ can reach $|0\rangle_ 0$:
-    $$\left. H'_ 3 |0\rangle_ 1 \right|_ {m=0, n=0} = \left[ \frac{\sqrt{\lambda}}{8}\sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \frac{V_ {Ik}}{\omega_ k} \gamma_ 1^{01}(-k) + \frac{\sqrt{\lambda}}{48}\sum\!\!\!\!\!\!\int \frac{d^3 k}{(2\pi)^3} \frac{V_ {k_ 1 k_ 2 k_ 3}}{\omega_ 1 \omega_ 2 \omega_ 3} \gamma_ 1^{03}(-k_ 1, -k_ 2, -k_ 3) \right] |0\rangle_ 0$$
-3.  **From $(H'_ 2 - Q_ 1)|0\rangle_ 2$:** Because $\sum\!\!\!\!\!\!\int \frac{dk}{2\pi}\omega_ k B_ k^\ddagger B_ k$ annihilates $|0\rangle_ 0$, the only contribution comes from $\frac{1}{2}\pi_ 0^2$ acting on the $m=2, n=0$ descendant $|0\rangle_ 2^{20}$:
-    $$\left. (H'_ 2 - Q_ 1)|0\rangle_ 2 \right|_ {m=0, n=0} = \frac{1}{2}\pi_ 0^2 \left( Q_ 0^{-1} \gamma_ 2^{20} \phi_ 0^2 |0\rangle_ 0 \right) = -\frac{\gamma_ 2^{20}}{Q_ 0} |0\rangle_ 0$$
-    where $\gamma_ 2^{20}$ is fixed directly from $|0\rangle_ 1$ via our translation recursion relation!
+Look at the three terms on the left-hand side when projected onto $\vert 0\rangle_ 0$:
+1.  **From $H'_ 4 \vert 0\rangle_ 0$:** Since $: \phi^4(x) :_ a = : \phi^4(x) :_ b + 6 I(x) : \phi^2(x) :_ b + 3 I^2(x)$ and $: \phi^n :_ b$ has no $m=0, n=0$ component when acting on $\vert 0\rangle_ 0$, only the $3 I^2(x)$ term survives:
+    $$\left. H'_ 4 \vert 0\rangle_ 0 \right\vert _ {m=0, n=0} = \frac{\lambda}{24} \int dx \, V^{(4)}(\sqrt{\lambda}f(x)) \cdot 3 I^2(x) \vert 0\rangle_ 0 = \frac{\lambda V_ {I^2}}{8} \vert 0\rangle_ 0$$
+2.  **From $H'_ 3 \vert 0\rangle_ 1$:** Only the pure annihilation parts of $H'_ 3$ ($B_ {-k_ 1}B_ {-k_ 2}B_ {-k_ 3}$ and $I(x)B_ {-k_ 1}$) acting on the primary components $\gamma_ 1^{03}$ and $\gamma_ 1^{01}$ of $\vert 0\rangle_ 1$ can reach $\vert 0\rangle_ 0$:
+    $$\left. H'_ 3 \vert 0\rangle_ 1 \right\vert _ {m=0, n=0} = \left[ \frac{\sqrt{\lambda}}{8}\sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \frac{V_ {Ik}}{\omega_ k} \gamma_ 1^{01}(-k) + \frac{\sqrt{\lambda}}{48}\sum\!\!\!\!\!\!\int \frac{d^3 k}{(2\pi)^3} \frac{V_ {k_ 1 k_ 2 k_ 3}}{\omega_ 1 \omega_ 2 \omega_ 3} \gamma_ 1^{03}(-k_ 1, -k_ 2, -k_ 3) \right] \vert 0\rangle_ 0$$
+3.  **From $(H'_ 2 - Q_ 1)\vert 0\rangle_ 2$:** Because $\sum\!\!\!\!\!\!\int \frac{dk}{2\pi}\omega_ k B_ k^\ddagger B_ k$ annihilates $\vert 0\rangle_ 0$, the only contribution comes from $\frac{1}{2}\pi_ 0^2$ acting on the $m=2, n=0$ descendant $\vert 0\rangle_ 2^{20}$:
+    $$\left. (H'_ 2 - Q_ 1)\vert 0\rangle_ 2 \right\vert _ {m=0, n=0} = \frac{1}{2}\pi_ 0^2 \left( Q_ 0^{-1} \gamma_ 2^{20} \phi_ 0^2 \vert 0\rangle_ 0 \right) = -\frac{\gamma_ 2^{20}}{Q_ 0} \vert 0\rangle_ 0$$
+    where $\gamma_ 2^{20}$ is fixed directly from $\vert 0\rangle_ 1$ via our translation recursion relation!
 
 Substituting $\gamma_ 1^{01}$, $\gamma_ 1^{03}$, and $\gamma_ 2^{20}$ into the sum of these three pieces yields the exact two-loop kink mass $Q_ 2$:
 
-$$Q_ 2 = \frac{\lambda V_ {I^2}}{8} - \lambda \sum\!\!\!\!\!\!\int \frac{d^3 k}{(2\pi)^3} \frac{|V_ {k_ 1 k_ 2 k_ 3}|^2}{48 \omega_ 1 \omega_ 2 \omega_ 3 (\omega_ 1 + \omega_ 2 + \omega_ 3)} - \lambda \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \frac{|V_ {Ik}|^2}{8\omega_ k^2} - \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \frac{|\Delta_ {kB}|^2}{8 Q_ 0} + \sum\!\!\!\!\!\!\int \frac{d^2 k}{(2\pi)^2} \frac{|\Delta_ {k_ 1 k_ 2}|^2 (\omega_ {k_ 2} - \omega_ {k_ 1})^2}{16 Q_ 0 \omega_ {k_ 1} \omega_ {k_ 2}}$$
+$$Q_ 2 = \frac{\lambda V_ {I^2}}{8} - \lambda \sum\!\!\!\!\!\!\int \frac{d^3 k}{(2\pi)^3} \frac{\vert V_ {k_ 1 k_ 2 k_ 3}\vert ^2}{48 \omega_ 1 \omega_ 2 \omega_ 3 (\omega_ 1 + \omega_ 2 + \omega_ 3)} - \lambda \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \frac{\vert V_ {Ik}\vert ^2}{8\omega_ k^2} - \sum\!\!\!\!\!\!\int \frac{dk}{2\pi} \frac{\vert \Delta_ {kB}\vert ^2}{8 Q_ 0} + \sum\!\!\!\!\!\!\int \frac{d^2 k}{(2\pi)^2} \frac{\vert \Delta_ {k_ 1 k_ 2}\vert ^2 (\omega_ {k_ 2} - \omega_ {k_ 1})^2}{16 Q_ 0 \omega_ {k_ 1} \omega_ {k_ 2}}$$
 
 Every integral in $Q_ 2$ is completely free of ultraviolet and infrared divergences.
 
@@ -611,13 +609,13 @@ $$\omega_ {k_ 1, \vec{p}_ \perp} = \sqrt{\omega_ {k_ 1}^2 + \vec{p}_ \perp^2}$$
 
 where $\omega_ B = 0$, $\omega_ S = \frac{\sqrt{3}}{2}m$, and $\omega_ {k_ 1} = \sqrt{k_ 1^2 + m^2}$.
 
-When we construct the squeezed domain wall ground state $\mathcal{D}_ f |0\rangle_ 0$ in $3+1$ dimensions ($d=3$), the one-loop squeezing correction $\rho_ 1$ to the tension is given by the $(3+1)$-dimensional generalization of our $Q_ 1$ formula, integrated over the two transverse momenta $\vec{p}_ \perp = (p_ 2, p_ 3)$:
+When we construct the squeezed domain wall ground state $\mathcal{D}_ f \vert 0\rangle_ 0$ in $3+1$ dimensions ($d=3$), the one-loop squeezing correction $\rho_ 1$ to the tension is given by the $(3+1)$-dimensional generalization of our $Q_ 1$ formula, integrated over the two transverse momenta $\vec{p}_ \perp = (p_ 2, p_ 3)$:
 
-$$\rho_ 1 = -\frac{1}{4} \sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} \int \frac{dp_ 1}{2\pi} \int_ {|\vec{p}| \le \Lambda} \frac{d^2 p_ \perp}{(2\pi)^2} |\tilde{g}_ {k_ 1}(p_ 1)|^2 \frac{\left( \sqrt{\omega_ {k_ 1}^2 + \vec{p}_ \perp^2} - \sqrt{p_ 1^2 + \vec{p}_ \perp^2 + m^2} \right)^2}{\sqrt{p_ 1^2 + \vec{p}_ \perp^2 + m^2}}$$
+$$\rho_ 1 = -\frac{1}{4} \sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} \int \frac{dp_ 1}{2\pi} \int_ {\vert \vec{p}\vert  \le \Lambda} \frac{d^2 p_ \perp}{(2\pi)^2} \vert \tilde{g}_ {k_ 1}(p_ 1)\vert ^2 \frac{\left( \sqrt{\omega_ {k_ 1}^2 + \vec{p}_ \perp^2} - \sqrt{p_ 1^2 + \vec{p}_ \perp^2 + m^2} \right)^2}{\sqrt{p_ 1^2 + \vec{p}_ \perp^2 + m^2}}$$
 
 where the sum-integral over $k_ 1$ includes the zero mode $B$, the shape mode $S$, and the continuum modes $k_ 1 \in \mathbb{R}$. 
 
-Let us examine the ultraviolet behavior of $\rho_ 1$ at large transverse momentum $p_ \perp = |\vec{p}_ \perp| \to \Lambda$. Expanding the numerator for $p_ \perp \gg m, |p_ 1|, \omega_ {k_ 1}$:
+Let us examine the ultraviolet behavior of $\rho_ 1$ at large transverse momentum $p_ \perp = \vert \vec{p}_ \perp\vert  \to \Lambda$. Expanding the numerator for $p_ \perp \gg m, \vert p_ 1\vert , \omega_ {k_ 1}$:
 
 $$\sqrt{\omega_ {k_ 1}^2 + p_ \perp^2} - \sqrt{p_ 1^2 + m^2 + p_ \perp^2} = \frac{\omega_ {k_ 1}^2 - (p_ 1^2 + m^2)}{2 p_ \perp} + \mathcal{O}\left(\frac{1}{p_ \perp^3}\right)$$
 
@@ -625,7 +623,7 @@ Squaring this difference gives a factor of $\frac{1}{4 p_ \perp^2}$. Dividing by
 
 To extract the exact coefficient of $\ln(\Lambda/m)$, use the Sturm–Liouville equation in Fourier space to evaluate the sum over $k_ 1$:
 
-$$\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} \int \frac{dp_ 1}{2\pi} |\tilde{g}_ {k_ 1}(p_ 1)|^2 \left[ \omega_ {k_ 1}^2 - (p_ 1^2 + m^2) \right]^2 = \int_ {-\infty}^{+\infty} dx_ 1 \left[ V^{(2)}(\sqrt{\lambda}f(x_ 1)) - m^2 \right]^2$$
+$$\sum\!\!\!\!\!\!\int \frac{dk_ 1}{2\pi} \int \frac{dp_ 1}{2\pi} \vert \tilde{g}_ {k_ 1}(p_ 1)\vert ^2 \left[ \omega_ {k_ 1}^2 - (p_ 1^2 + m^2) \right]^2 = \int_ {-\infty}^{+\infty} dx_ 1 \left[ V^{(2)}(\sqrt{\lambda}f(x_ 1)) - m^2 \right]^2$$
 
 For the $\phi^4$ domain wall, $V^{(2)}(\sqrt{\lambda}f(x_ 1)) - m^2 = -\frac{3}{2}m^2 \operatorname{sech}^2(mx_ 1/2)$, so:
 
@@ -669,5 +667,5 @@ $$\begin{aligned}
 &= \frac{m^3}{3\lambda} + \rho_ {\text{finite}}^{(1)} + \mathcal{O}(\lambda)
 \end{aligned}$$
 
-The positive logarithmic divergence from vacuum parameter renormalization and the negative logarithmic divergence from the Bogoliubov squeezing of the normal modes cancel identically. By uniting a passive unitary frame transformation $\mathcal{D}_ f$ in the Schrödinger picture with a squeezed coherent ground state $\mathcal{D}_ f |0\rangle_ 0$, Linearized Soliton Perturbation Theory resolves both the regularization mismatch and Coleman's higher-dimensional ultraviolet divergence.
+The positive logarithmic divergence from vacuum parameter renormalization and the negative logarithmic divergence from the Bogoliubov squeezing of the normal modes cancel identically. By uniting a passive unitary frame transformation $\mathcal{D}_ f$ in the Schrödinger picture with a squeezed coherent ground state $\mathcal{D}_ f \vert 0\rangle_ 0$, Linearized Soliton Perturbation Theory resolves both the regularization mismatch and Coleman's higher-dimensional ultraviolet divergence.
 
