@@ -220,274 +220,575 @@ To avoid this ambiguity, **LSPT abandons the interaction picture** altogether an
 
 ## 5. Unsqueezed Coherent States and Coleman’s Divergence
 
-With the displacement operator $D_ f$ in hand, what is the quantum state of a kink? Let $\vert \Omega\rangle_ 0$ denote the tree-level perturbative vacuum in the vacuum sector, annihilated by all plane-wave annihilation operators:
+Consider a real scalar field in $d+1$ spacetime dimensions ($d$ spatial dimensions) governed by a single defining Schrödinger-picture Hamiltonian $H$. Assume the classical potential $V(\phi)$ has degenerate minima of equal curvature $m^2=V^{(2)}(v_ i)>0$, shifted so that one vacuum sits at $\phi=0$. Let $f(z)$ be a static planar kink (domain wall) depending only on $z\equiv x_ 1$ and translationally invariant along the $d-1$ transverse coordinates $\vec{x}_  {\perp}=(x_ 2,\ldots,x_ d)$, with $f(-\infty)=0$.
 
-$$
-A_ {\vec p}\vert \Omega\rangle_ 0=0.
-$$
+### 5.1 Normal Ordering in the Vacuum Sector and the Coherent Trial State
 
-A natural first guess is to identify the quantum kink with the **unsqueezed coherent state** obtained by displacing $\vert \Omega\rangle_ 0$:
+Expand the Schrödinger-picture fields in plane waves of the renormalized meson mass $m$, with $\omega_  {\vec{p}}=\sqrt{\vec{p}^{,2}+m^2}$ and ultraviolet spatial cutoff $\vert\vec{p}\vert\leq\Lambda$:
 
-$$
-\vert K_ {\mathrm{coh}}\rangle := D_ f\vert \Omega\rangle_ 0.
-$$
-
-This corresponds to choosing $\vert \Omega_ {\text{coh}}\rangle_ 0$ as the trial ground state of $H'$. Let us check its properties. First, its field expectation value reproduces the exact classical kink profile:
-
-$$
-\begin{aligned}
-\langle K_ {\mathrm{coh}}\vert \phi(\vec{x})\vert K_ {\mathrm{coh}}\rangle
-&={}_ 0\langle\Omega\vert D_ f^\dagger
-\phi(\vec{x})D_ f\vert \Omega\rangle_ 0\\
-&={}_ 0\langle\Omega\vert 
-(\phi(\vec{x})+f(\vec{x}))
-\vert \Omega\rangle_ 0\\
-&=f(\vec{x}).
-\end{aligned}
+$$  
+\begin{aligned}  
+\phi(\vec{x}) &= \int_ {\vert\vec{p}\vert\leq\Lambda}  
+\frac{d^d p}{(2\pi)^d},  
+e^{-i\vec{p}\cdot\vec{x}}  
+\left(A_  {\vec{p}}^{\ddagger}  
++\frac{A_  {-\vec{p}}}{2\omega_  {\vec{p}}}\right),\  
+\pi(\vec{x}) &= i\int_ {\vert\vec{p}\vert\leq\Lambda}  
+\frac{d^d p}{(2\pi)^d},  
+e^{-i\vec{p}\cdot\vec{x}}  
+\left(\omega_  {\vec{p}}A_  {\vec{p}}^{\ddagger}  
+-\frac{A_  {-\vec{p}}}{2}\right),  
+\end{aligned}  
 $$
 
-In $1+1$ spacetime dimensions, all ultraviolet divergences in a scalar theory with non-derivative interactions arise from tadpole loops starting and ending at the same vertex. Defining the Hamiltonian via plane-wave normal ordering $:H:_ A$ (which places all plane-wave creation operators $A_ {\vec p}^{\ddagger}$ to the left of all annihilation operators $A_ {\vec p}$) removes these divergences completely. Here $A_ {\vec p}^{\ddagger}$ is the weighted adjoint defined by:
+where $A_  {\vec{p}}^{\ddagger}:=A_  {\vec{p}}^{\dagger}/(2\omega_  {\vec{p}})$ is the weighted adjoint and
 
-$$
-A_ {\vec p}^{\ddagger}
-=\frac{A_ {\vec p}^{\dagger}}{2\omega_ {\vec p}}.
-$$
-
-Since $D_ f$ acts inside the normal ordering by shifting $\phi(x)\to\phi(x)+f(x)$,
-
-$$
-D_ f^\dagger :\phi^n(x):_ A D_ f
-=
-:(\phi(x)+f(x))^n:_ A,
+$$  
+[A_  {\vec{p}},A_  {\vec{q}}^{\ddagger}]  
+=(2\pi)^d\delta^{(d)}(\vec{p}-\vec{q}).  
 $$
 
-and since the expectation value of any non-trivial normal-ordered product of fields vanishes in $\vert \Omega\rangle_ 0$,
+Let $\vert\Omega\rangle_ 0$ denote the tree-level vacuum in the vacuum sector, defined by
 
-$$
-{}_ 0\langle\Omega\vert :\mathcal O:_ A
-\vert \Omega\rangle_ 0=0,
-$$
-
-for any operator with at least one creation or annihilation operator, the energy of the unsqueezed coherent state in $1+1$ dimensions is simply
-
-$$
-\begin{aligned}
-\langle K_ {\mathrm{coh}}\vert :H[\phi,\pi]:_ A
-\vert K_ {\mathrm{coh}}\rangle
-&={}_ 0\langle\Omega\vert 
-:H[\phi+f,\pi]:_ A
-\vert \Omega\rangle_ 0\\
-&=\int_ {-\infty}^{+\infty}dx
-\left[
-\frac12(f'(x))^2+V(f(x))
-\right]\\
-&=Q_ 0.
-\end{aligned}
+$$  
+A_  {\vec{p}}\vert\Omega\rangle_ 0=0,  
 $$
 
-In $1+1$ dimensions, the unsqueezed coherent state has a finite energy equal to the classical kink mass $Q_ 0$. However, it is not an eigenstate of $H$. Because the true one-loop quantum kink mass is $Q_ 0+Q_ 1$, with $Q_ 1<0$, the state $\vert K_ {\mathrm{coh}}\rangle$ is an excited packet in the one-kink sector lying above the true ground state by an energy $\vert Q_ 1\vert \sim\mathcal O(m)$, which will decay over time by radiating mesons toward spatial infinity.
+and let $\mathcal{N}_  {a}[\mathcal{O}]:=:\mathcal{O}:_ a$ denote plane-wave normal ordering at mass $m$, which places all $A_  {\vec{p}}^{\ddagger}$ to the left of all $A_  {\vec{p}}$.
 
-As Sidney Coleman pointed out in his 1975 Erice lectures, the situation is far worse in higher spatial dimensions $d\geq 2$: **the unsqueezed coherent state $\vert K_ {\mathrm{coh}}\rangle$ has an infinite energy density.**
+In any dimension $d$, reordering a polynomial potential $V(\phi)$ into plane-wave normal-ordered form via Wick's theorem contracts same-point pairs into the vacuum tadpole loop
 
-To derive this result explicitly, consider a planar domain wall in $3+1$ dimensions ($d=3$). Let the classical profile $f(z)$ vary along the $z$-axis while remaining translationally invariant along the transverse plane $\vec{x}_ \perp=(x,y)$. In $3+1$ dimensions, normal ordering alone does not renormalize the theory; we must work with the bare regularized Hamiltonian density $\mathcal H(\vec{x})$, regularized by a three-momentum ultraviolet cutoff $\vert \vec p\vert \leq\Lambda$:
-
-$$
-\mathcal H[\phi]
-=
-\frac12\pi^2(\vec{x})
-+\frac12(\nabla\phi(\vec{x}))^2
-+V(\phi(\vec{x}))
-+\gamma_ {\Lambda},
-$$
-
-where $\gamma_ {\Lambda}$ is the constant vacuum energy counterterm chosen so that
-
-$$
-{}_ 0\langle\Omega\vert 
-\mathcal H[\phi]
-\vert \Omega\rangle_ 0=0
-$$
-
-in the homogeneous bulk vacuum $\phi=\pm v$.
-
-Let us evaluate the expectation value of $\mathcal H(\vec{x})$ in the unsqueezed coherent state $\vert K_ {\mathrm{coh}}\rangle=D_ f\vert \Omega\rangle_ 0$:
-
-$$
-\langle K_ {\mathrm{coh}}\vert 
-\mathbb{H}
-\vert K_ {\mathrm{coh}}\rangle
-=\langle K_ {\mathrm{coh}}\vert 
-H[\phi,\pi]
-\vert K_ {\mathrm{coh}}\rangle
-={}_ 0\langle\Omega\vert 
-H[\phi(\vec{x})+f(z),\pi]
-\vert \Omega\rangle_ 0.
+$$  
+\begin{aligned}  
+\Delta_  {d}  
+&:={}_ 0\langle\Omega\vert  
+\phi^2(\vec{x})\vert\Omega\rangle_ 0\\
+&=\int_ {\vert\vec{p}\vert\leq\Lambda}  
+\frac{d^d p}{(2\pi)^d}  
+\frac{1}{2\sqrt{\vec{p}^{,2}+m^2}}\\
+&\sim  
+\begin{cases}  
+\dfrac{1}{2\pi}\ln\dfrac{\Lambda}{m}, & d=1,\\
+\dfrac{\Lambda}{4\pi}, & d=2 \\
+\dfrac{\Lambda^2}{8\pi^2}  
+-\dfrac{m^2}{8\pi^2}\ln\dfrac{2\Lambda}{m},  
+& d=3.  
+\end{cases}  
+\end{aligned}  
 $$
 
-Taylor expanding the potential $V(\phi(\vec{x})+f(z))$ in powers of the quantum fluctuation $\phi(\vec{x})$:
+For example, in $\phi^4$ theory,
 
-$$
-\begin{aligned}
-V(\phi+f(z))
-={}&V(f(z))+V^{(1)}(f(z))\phi(\vec{x})\\
-&+\frac12V^{(2)}(f(z))\phi^2(\vec{x})\\
-&+\frac16V^{(3)}(f(z))\phi^3(\vec{x})\\
-&+\frac1{24}V^{(4)}(f(z))\phi^4(\vec{x}).
-\end{aligned}
+$$  
+\phi^4(\vec{x})  
+=:\phi^4(\vec{x}):_ a  
++6\Delta_  {d}:\phi^2(\vec{x}):_ a  
++3\Delta_  {d}^{,2}.  
 $$
 
-Taking the expectation value in the vacuum $\vert \Omega\rangle_ 0$, where odd powers of $\phi$ vanish and the kinetic terms
+Consequently, defining the Hamiltonian in plane-wave normal-ordered form absorbs every same-vertex tadpole loop $\Delta_  {d}$ into the parameters automatically, regardless of $d$. The defining Hamiltonian can therefore be written cleanly in any dimension as
 
-$$
-\frac12{}_ 0\langle\Omega\vert 
-\left[\pi^2+(\nabla\phi)^2\right]
-\vert \Omega\rangle_ 0
-$$
-
-are spatially constant and canceled by $\mathcal E_ {\mathrm{vac}}(\Lambda)$, along with the bulk mass term $\frac12m^2{}_ 0\langle\Omega\vert \phi^2\vert \Omega\rangle_ 0$, we find at order $\mathcal O(\lambda^0)$:
-
-$$
-\begin{aligned}
-\langle K_ {\mathrm{coh}}\vert 
-\mathcal H[\phi]
-\vert K_ {\mathrm{coh}}\rangle
-={}&\mathcal H_ {\mathrm{cl}}(f(z))\\
-&+\frac12
-\left[V^{(2)}(f(z))-m^2\right]
-{}_ 0\langle\Omega\vert \phi^2(\vec{x})\vert \Omega\rangle_ 0\\
-&+\mathcal O(\lambda),
-\end{aligned}
+$$  
+H=\int d^d x,\mathcal{N}_  {a}\left[  
+\frac{1}{2}\pi^2(\vec{x})  
++\frac{1}{2}(\nabla\phi(\vec{x}))^2  
++V(\phi(\vec{x}))  
++\mathcal{H}_  {\mathrm{c.t.}}(\phi,\pi,\nabla\phi)  
+\right],  
 $$
 
-where $m^2=V^{(2)}(\pm v)$ is the squared meson mass in the asymptotic vacua.
+where $\mathcal{H}_  {\mathrm{c.t.}}$ denotes **all counterterms in the Hamiltonian density**, including the mass, coupling, wavefunction and vacuum-energy counterterms. The vacuum-energy counterterm is fixed by requiring the true vacuum to have zero energy.
 
-Now let us compute the two-point coincidence expectation value
+A natural first guess for the quantum domain-wall state is the **unsqueezed coherent state** generated by acting on $\vert\Omega\rangle_ 0$ with the displacement operator
 
+$$  
+D_  {f}:=\exp\left(-i\int d^d x,f(z)\pi(\vec{x})\right):  
 $$
-{}_ 0\langle\Omega\vert \phi^2(\vec{x})\vert \Omega\rangle_ 0
+
+$$  
+\vert K_  {\mathrm{coh}}\rangle  
+:=D_  {f}\vert\Omega\rangle_ 0.  
 $$
 
-in $3+1$ dimensions. The three-dimensional generalization of the plane-wave decomposition is
+In the passive perspective, we keep the single Hamiltonian $H$ fixed and introduce the shifted fluctuation operator
 
+$$  
+\varphi(\vec{x})  
+:=D_  {f}\phi(\vec{x})D_  {f}^{\dagger}  
+=\phi(\vec{x})-f(z),  
 $$
-\begin{aligned}
-\phi(\vec{x})
-&=\int_ {\vert \vec p\vert \leq\Lambda}
-\frac{d^3p}{(2\pi)^3}
-\left(
-A_ {\vec p}^{\ddagger}
-+\frac{A_ {-\vec p}}{2\omega_ {\vec p}}
-\right)e^{-i\vec p\cdot\vec x},\\
-\pi(\vec{x})
-&=i\int_ {\vert \vec p\vert \leq\Lambda}
-\frac{d^3p}{(2\pi)^3}
-\left(
-\omega_ {\vec p}A_ {\vec p}^{\ddagger}
--\frac{A_ {-\vec p}}2
-\right)e^{-i\vec p\cdot\vec x},
-\end{aligned}
+
+together with the shifted plane-wave operators
+
+$$  
+\begin{aligned}  
+\widetilde A_  {\vec{p}}  
+&:=D_  {f}A_  {\vec{p}}D_  {f}^{\dagger}  
+=A_  {\vec{p}}-\omega_  {\vec{p}}\widetilde f(\vec{p}),\  
+\widetilde A_  {\vec{p}}^{\ddagger}  
+&:=D_  {f}A_  {\vec{p}}^{\ddagger}D_  {f}^{\dagger}  
+=A_  {\vec{p}}^{\ddagger}  
+-\frac{1}{2}\widetilde f(-\vec{p}).  
+\end{aligned}  
+$$
+
+Because $\widetilde A_  {\vec{p}}\vert K_  {\mathrm{coh}}\rangle =D_  {f}A_  {\vec{p}}\vert\Omega\rangle_ 0=0$, the trial state reproduces the exact classical profile:
+
+$$  
+\begin{aligned}  
+\langle K_  {\mathrm{coh}}\vert  
+\phi(\vec{x})\vert K_  {\mathrm{coh}}\rangle  
+&=f(z)  
++\langle K_  {\mathrm{coh}}\vert  
+\varphi(\vec{x})\vert K_  {\mathrm{coh}}\rangle\\
+&=f(z).  
+\end{aligned}  
+$$
+
+Because $D_  {f}$ shifts $\phi(\vec{x})$ by a c-number, plane-wave normal ordering commutes with the shift:
+
+$$  
+:\phi^n(\vec{x}):_ a  
+=:(\varphi(\vec{x})+f(z))^n:  
+_ {\widetilde a}.  
+$$
+
+Since every non-trivial normal-ordered monomial in $(\varphi,\pi)$ has zero expectation value in $\vert K_  {\mathrm{coh}}\rangle$, **all quantum fluctuation terms vanish identically in $\vert K_  {\mathrm{coh}}\rangle$ in every dimension $d$**.
+
+Dividing by the transverse wall area $A_  {\perp}=\int d^{d-1}x_  {\perp}$ and subtracting the vacuum energy, the energy per unit transverse area (tension) of $\vert K_  {\mathrm{coh}}\rangle$ is
+
+$$  
+\begin{aligned}  
+\rho_  {\mathrm{coh}}  
+&:=\frac{  
+\langle K_  {\mathrm{coh}}\vert H\vert K_  {\mathrm{coh}}\rangle  
+-{}_ 0\langle\Omega\vert H\vert\Omega\rangle_ 0  
+}{A_  {\perp}}\\  
+&=\underbrace{  
+\int_ {-\infty}^{+\infty}dz  
+\left[\frac{1}{2}(f'(z))^2+V(f(z))\right]  
+}_ {\rho_  {\mathrm{cl}}\text{ (finite)}}\\  
+&\quad+\int_ {-\infty}^{+\infty}dz,  
+\left[  
+\mathcal{H}_  {\mathrm{c.t.}}[f,0]  
+-\mathcal{H}_  {\mathrm{c.t.}}[0,0]  
+\right].  
+\end{aligned}  
+$$
+
+Here $\mathcal{H}_  {\mathrm{c.t.}}[f,0]$ means that the complete counterterm density is evaluated on the background $\phi=f(z)$ and $\pi=0$, with spatial derivatives acting on $f(z)$.
+
+This identity isolates the true mechanism of Coleman's divergence. Because $\vert K_  {\mathrm{coh}}\rangle$ contributes zero loop energy to the normal-ordered Hamiltonian, it exposes any UV-divergent non-tadpole counterterms required by the vacuum sector with nothing to cancel them.
+
+By contrast, dropping normal ordering without keeping the compensating tadpole mass counterterm only manufactures a spurious
+
+$$  
+-\frac{1}{2}[V^{(2)}(f)-m^2]\Delta_  {d}  
+\sim-\Lambda^2  
+$$
+
+artifact in $d=3$, with the wrong sign. By the variational principle, a trial state evaluated in a renormalized, bounded-below Hamiltonian can only diverge to $+\infty$.
+
+---
+
+### 5.2 One-Loop Squeezing Energy and Dimensional Dependence
+
+To determine the one-loop counterterm contribution and see directly why Coleman's divergence depends on the spatial dimension $d$, substitute
+
+$$  
+\phi(\vec{x})=f(z)+\varphi(\vec{x})  
+$$
+
+into the same Hamiltonian $H$. The $\mathcal{O}(\lambda^{-1/2})$ linear term vanishes by the classical equation of motion
+
+$$  
+f''(z)=V^{(1)}(f(z)),  
+$$
+
+leaving the $\mathcal{O}(\lambda^0)$ quadratic Hamiltonian density
+
+$$  
+\mathcal{H}'_ 2  
+=\frac{1}{2}\pi^2  
++\frac{1}{2}(\nabla\varphi)^2  
++\frac{1}{2}V^{(2)}(f(z))\varphi^2.  
+$$
+
+The leading quadratic contribution to the Hamiltonian in the shifted-field representation is therefore
+
+$$  
+H'_ 2=\int d^d x,\mathcal{N}_  {a}[\mathcal{H}'_ 2].  
+$$
+
+The prime here is only a notation for the shifted-field representation of the same Hamiltonian. It does not denote a different physical Hamiltonian. This follows the convention $H'_ 2=A+B+C$ used in the earlier kink-mass note.
+
+For comparison, define the free vacuum Hamiltonian density and its integral by
+
+$$  
+\begin{aligned}  
+\mathcal{H}_ 0  
+&=\frac{1}{2}\pi^2  
++\frac{1}{2}(\nabla\varphi)^2  
++\frac{1}{2}m^2\varphi^2,\\ 
+H_ 0&=\int d^d x,\mathcal{N}_  {a}[\mathcal{H}_ 0].  
+\end{aligned}  
+$$
+
+Then
+
+$$  
+H'_ 2  
+=H_ 0+\frac{1}{2}\int d^d x,  
+U(z)\mathcal{N}_  {a}[\varphi^2],  
 $$
 
 where
 
-$$
-\omega_ {\vec p}=\sqrt{\vec p^{\,2}+m^2}.
-$$
-
-The creation and annihilation operators satisfy
-
-$$
-[A_ {\vec p},A_ {\vec q}^{\ddagger}]
-=(2\pi)^3\delta^{(3)}(\vec p-\vec q),
-\qquad
-A_ {\vec p}\vert \Omega\rangle_ 0=0.
+$$  
+U(z):=V^{(2)}(f(z))-m^2.  
 $$
 
-Squaring $\phi(\vec{x})$ and taking the vacuum expectation value, only the contraction between an annihilation operator and a creation operator survives:
+It is important to distinguish the Hamiltonians from the spatial fluctuation operators. Define the latter as
 
-$$
-{}_ 0\langle\Omega\vert 
-A_ {-\vec p}A_ {\vec q}^{\ddagger}
-\vert \Omega\rangle_ 0
-=(2\pi)^3\delta^{(3)}(\vec p+\vec q).
-$$
-
-Consequently,
-
-$$
-\begin{aligned}
-{}_ 0\langle\Omega\vert \phi^2(\vec{x})\vert \Omega\rangle_ 0
-&=\int_ {\vert \vec p\vert \leq\Lambda}
-\frac{d^3p}{(2\pi)^3}
-\int_ {\vert \vec q\vert \leq\Lambda}
-\frac{d^3q}{(2\pi)^3}
-\frac{e^{-i(\vec p+\vec q)\cdot\vec{x}}}
-{2\omega_ {\vec p}}
-\\
-&\qquad\times
-{}_ 0\langle\Omega\vert 
-A_ {-\vec p}A_ {\vec q}^{\ddagger}
-\vert \Omega\rangle_ 0\\
-&=\int_ {\vert \vec p\vert \leq\Lambda}
-\frac{d^3p}{(2\pi)^3}
-\frac{1}{2\sqrt{\vec p^{\,2}+m^2}}.
-\end{aligned}
+$$  
+\begin{aligned}  
+\mathcal{O}_ 0&:=-\nabla^2+m^2,\\  
+\mathcal{O}_ K&:=-\nabla^2+V^{(2)}(f(z))  
+=\mathcal{O}_ 0+U(z).  
+\end{aligned}  
 $$
 
-Converting to spherical coordinates $d^3p=4\pi p^2dp$ and evaluating the radial integral explicitly:
+Thus $\mathcal{O}_ 0$ is the free vacuum fluctuation operator, whereas $\mathcal{O}_ K$ is the fluctuation operator in the kink background. The kink normal modes satisfy
 
-$$
-\begin{aligned}
-{}_ 0\langle\Omega\vert \phi^2(\vec{x})\vert \Omega\rangle_ 0
-&=\frac{4\pi}{(2\pi)^3}
-\int_ 0^\Lambda dp\,
-\frac{p^2}{2\sqrt{p^2+m^2}}\\
-&=\frac{1}{4\pi^2}
-\left[
-\frac12p\sqrt{p^2+m^2}
--\frac12m^2\ln\left(p+\sqrt{p^2+m^2}\right)
-\right]_ 0^\Lambda\\
-&=\frac{\Lambda^2}{8\pi^2}
--\frac{m^2}{8\pi^2}
-\ln\left(\frac{2\Lambda}{m}\right)
-+\frac{m^2}{16\pi^2}
-+\mathcal O\left(\frac{m^4}{\Lambda^2}\right).
-\end{aligned}
+$$  
+\mathcal{O}_ K\mathfrak{g}_ k  
+=\omega_ k^2\mathfrak{g}_ k.  
 $$
 
-Substituting this back into the local energy density across the domain wall gives:
+Let $\vert K\rangle_ 0$ denote the leading-order **squeezed** coherent state, which places the kink normal modes into their ground state. Equivalently, it is annihilated by the corresponding kink normal-mode annihilation operators $B_ k$.
+
+The normal-ordering subtraction is most conveniently expressed directly in terms of the two spatial fluctuation operators. We have
 
 $$
-\begin{aligned}
-\delta\mathcal H_ {\mathrm{local}}(z)
-&=\frac12
-\left[V^{(2)}(f(z))-m^2\right]
-{}_ 0\langle\Omega\vert \phi^2(\vec{x})\vert \Omega\rangle_ 0\\
-&=\frac{\Lambda^2}{16\pi^2}
-\left[V^{(2)}(f(z))-m^2\right]
-+\mathcal O(\ln\Lambda).
-\end{aligned}
+\frac{1}{2}\operatorname{Tr}  
+\left(\sqrt{\mathcal{O}_ K}-\sqrt{\mathcal{O}_ 0}\right)  
+-\frac{1}{4}\operatorname{Tr}  
+\left(\mathcal{O}_ 0^{-1/2}U\right).  
 $$
 
-Far from the wall ($z\to\pm\infty$), $V^{(2)}(f(z))\to m^2$ and this term vanishes. Inside the core of the domain wall ($\vert z\vert \lesssim 1/m$), however, $V^{(2)}(f(z))\neq m^2$ (for example, in the $\phi^4$ model, $V^{(2)}(f(z))-m^2=-\frac32m^2\operatorname{sech}^2(mz/2)$). **Integrating over $z$ to find the domain wall tension (energy per unit area) yields a quadratic ultraviolet divergence $\propto m\Lambda^2$.**
+The last term is precisely the vacuum normal-ordering subtraction. In particular,
 
-Moreover, in $3+1$ dimensions at one loop, the mass counterterm $\delta m^2$ in the $\phi^4$ potential scales as $\delta m^2\sim\lambda\Lambda^2$, which shifts the classical tension $Q_ 0\sim m^3/\lambda$ by a positive quadratic divergence $+\Lambda^2m$. Yet in the unsqueezed coherent state $\vert K_ {\mathrm{coh}}\rangle$, the quantum fluctuation integral above is negative inside the wall and fails to cancel the counterterm divergence completely (leaving uncancelled quadratic and logarithmic divergences because the kinetic term ${}_ 0\langle\Omega\vert \pi^2+(\nabla\phi)^2\vert \Omega\rangle_ 0$ in $\vert K_ {\mathrm{coh}}\rangle$ is completely blind to the wall profile $f(z)$).
-
-Why does the unsqueezed coherent state fail physically? *The operator $D_ f$ only shifts the one-point expectation value $\langle\phi(\vec{x})\rangle=f(z)$, while leaving the connected two-point correlation function identical to that of the homogeneous trivial vacuum*:
-
-$$
-\begin{aligned}
-&\langle K_ {\mathrm{coh}}\vert 
-\phi(\vec{x})\phi(\vec{y})
-\vert K_ {\mathrm{coh}}\rangle
--f(z_ x)f(z_ y)\\
-&\qquad={}_ 0\langle\Omega\vert 
-\phi(\vec{x})\phi(\vec{y})
-\vert \Omega\rangle_ 0.
-\end{aligned}
+$$  
+\langle K_  {\mathrm{coh}}\vert H'_ 2  
+\vert K_  {\mathrm{coh}}\rangle=0.  
 $$
 
-However, *in the true ground state of a spatially inhomogeneous potential $V^{(2)}(f(z))$, short-distance quantum fluctuations must adapt their local wavelength and amplitude to the spatially varying effective mass $V^{(2)}(f(z))$*. Forcing unmodified translation-invariant plane-wave correlations onto a localized potential wall creates a mismatch between the ultraviolet kinetic gradient energy and the potential energy. To cure Coleman's divergence, we must **squeeze** the coherent state via a Bogoliubov transformation that places the true Sturm–Liouville normal modes of the kink background into their ground states.
+Consequently, the exact one-loop tension shift obtained by squeezing
+
+$$  
+\vert K_  {\mathrm{coh}}\rangle\longrightarrow\vert K\rangle_ 0  
+$$
+
+is
+
+$$
+\frac{1}{2A_  {\perp}}  
+\operatorname{Tr}\left(  
+\sqrt{\mathcal{O}_ K}  
+-\sqrt{\mathcal{O}_ 0}  
+-\frac{1}{2}\mathcal{O}_ 0^{-1/2}U  
+\right).  
+$$
+
+Using the identity
+
+$$
+\frac{1}{2}\int_ {-\infty}^{+\infty}  
+\frac{d\omega}{2\pi}  
+\operatorname{Tr}\ln(1+G_ 0(\omega)U),  
+$$
+
+with
+
+$$  
+G_ 0(\omega)=(\omega^2+\mathcal{O}_ 0)^{-1},  
+$$
+
+and expanding
+
+$$  
+\ln(1+G_ 0U)  
+=G_ 0U-\frac{1}{2}(G_ 0U)^2+\mathcal{O}(U^3),  
+$$
+
+we find:
+
+- The $\mathcal{O}(U^1)$ term evaluates to
+    
+
+$$  
+\frac{1}{2}\int\frac{d\omega}{2\pi}  
+\operatorname{Tr}(G_ 0U)  
+=\frac{1}{4}\operatorname{Tr}  
+(\mathcal{O}_ 0^{-1/2}U),  
+$$
+
+which cancels the normal-ordering subtraction term identically.
+
+- The expansion therefore begins at $\mathcal{O}(U^2)$. Performing the $\omega$ contour integral using
+    
+
+$$  
+\begin{aligned}  
+&\int_ {-\infty}^{+\infty}\frac{d\omega}{2\pi}  
+\frac{1}{(\omega^2+\omega_ 1^2)(\omega^2+\omega_ 2^2)}\  
+&\qquad=  
+\frac{1}{2\omega_ 1\omega_ 2(\omega_ 1+\omega_ 2)}  
+\end{aligned}  
+$$
+
+yields
+
+$$  
+\rho_ 1  
+=-\frac{1}{4}\int_ {-\infty}^{+\infty}  
+\frac{dq_ z}{2\pi},  
+\vert\widetilde U(q_ z)\vert^2J_  {d}(q_ z)  
++\mathcal{O}(U^3),  
+$$
+
+where
+
+$$  
+\widetilde U(q_ z)  
+:=\int_ {-\infty}^{+\infty}dz,  
+e^{-iq_ z z}U(z),  
+$$
+
+$\vec q=(q_ z,\vec 0_  {\perp})$, and $J_  {d}(q_ z)$ is the one-loop spatial bubble integral:
+
+$$
+\int^\Lambda p^{d-4},dp.  
+$$
+
+All $\mathcal{O}(U^n)$ terms with $n\geq3$ scale as
+
+$$  
+\int^\Lambda p^{d-2n},dp,  
+$$
+
+which are ultraviolet convergent for all $d\leq3$.
+
+The power counting $J_  {d}\sim\int^\Lambda p^{d-4},dp$ immediately determines the behavior of $\vert K_  {\mathrm{coh}}\rangle$ across spatial dimensions:
+
+- **$d=1$ ($1+1$ dimensions):** $J_ 1\sim\int^\Lambda p^{-3},dp$ is UV-finite, and in fact every non-tadpole diagram in a scalar theory with non-derivative interactions is UV-finite to all loop orders. Hence there is no non-tadpole counterterm contribution at one loop, and the unsqueezed coherent state has finite energy equal to the classical kink mass:
+    
+
+$$  
+\langle K_  {\mathrm{coh}}\vert H  
+\vert K_  {\mathrm{coh}}\rangle  
+=Q_ 0<\infty.  
+$$
+
+It is not an eigenstate of $H$, however: it sits above the true one-loop ground state by an excess energy $\vert Q_ 1\vert\sim\mathcal{O}(m)$ and relaxes by radiating mesons to spatial infinity.
+
+- **$d=2$ ($2+1$ dimensions):** Normal ordering removes the linearly divergent tadpole ($\Delta_ 2\sim\Lambda$), and the one-loop bubble integral $J_ 2\sim\int^\Lambda p^{-2},dp$ is still UV-finite. Consequently, no Coleman divergence appears at one loop in $2+1$ dimensions: both $\rho_  {\mathrm{coh}}=\rho_  {\mathrm{cl}}$ and $\rho_ 1$ are finite. Coleman's warning in $d=2$ applies starting at **two loops**, where the vacuum sunset diagram forces a logarithmically divergent non-tadpole mass counterterm $\delta m^2_  {(2\text{-loop})}\sim\lambda^2\ln(\Lambda/m)$ into $\mathcal{H}_  {\mathrm{c.t.}}$, causing $\rho_  {\mathrm{coh}}$ to diverge at $\mathcal{O}(\lambda)$.
+    
+- **$d=3$ ($3+1$ dimensions):** $J_ 3\sim\int^\Lambda p^{-1},dp$ is **logarithmically divergent**. Evaluating the large-$p$ tail with $\vert\vec p\vert\leq\Lambda$ gives
+    
+
+$$  
+\begin{aligned}  
+J_ 3(q_ z)  
+&=\frac{4\pi}{(2\pi)^3}  
+\int_ 0^\Lambda  
+\frac{p^2,dp}{4(p^2+m^2)^{3/2}}  
++\text{finite}(q_ z)\  
+&=\frac{1}{8\pi^2}\ln\left(\frac{\Lambda}{m}\right)  
++\text{finite}(q_ z).  
+\end{aligned}  
+$$
+
+Because the coefficient of $\ln(\Lambda/m)$ is independent of $q_ z$, Parseval's identity
+
+$$  
+\int\frac{dq_ z}{2\pi}  
+\vert\widetilde U(q_ z)\vert^2  
+=\int dz,U(z)^2  
+$$
+
+gives the exact one-loop UV divergence of the squeezing energy for any smooth domain wall $f(z)$:
+
+$$  
+\rho_ 1  
+=-\frac{1}{32\pi^2}  
+\ln\left(\frac{\Lambda}{m}\right)  
+\int_ {-\infty}^{+\infty}dz  
+\left[V^{(2)}(f(z))-m^2\right]^2  
++\text{finite}.  
+$$
+
+---
+
+### 5.3 One-Loop Counterterm and Coleman's Divergence in $3+1$ Dimensions
+
+To determine $\mathcal{H}_  {\mathrm{c.t.}}^{(1)}$ in $3+1$ dimensions from the vacuum sector alone, evaluate the one-loop contribution to the effective potential in a spatially constant background $\phi$, with local squared mass
+
+$$  
+M^2(\phi):=V^{(2)}(\phi).  
+$$
+
+The normal-ordering subtraction is explicitly included below. Subtracting the tadpole contribution
+
+$$  
+\frac{1}{2}\Delta_ 3[M^2(\phi)-m^2]  
+$$
+
+from the un-normal-ordered zero-point energy
+
+$$  
+\frac{1}{2}\int_ {\vert\vec p\vert\leq\Lambda}  
+\frac{d^3p}{(2\pi)^3}  
+\left(\sqrt{p^2+M^2}-\sqrt{p^2+m^2}\right)  
+$$
+
+yields
+
+$$  
+\begin{aligned}  
+V_  {1-\mathrm{loop}}(\phi)  
+&=  
+\left[  
+\frac{\Lambda^2}{16\pi^2}(M^2-m^2)  
+-\frac{M^4-m^4}{32\pi^2}  
+\ln\frac{\Lambda}{m}  
+\right]\\
+&\quad-  
+\left[  
+\frac{\Lambda^2}{16\pi^2}(M^2-m^2)  
+-\frac{m^2(M^2-m^2)}{16\pi^2}  
+\ln\frac{\Lambda}{m}  
+\right]  
++\text{finite}\\
+&=  
+-\frac{\left[V^{(2)}(\phi)-m^2\right]^2}{32\pi^2}  
+\ln\left(\frac{\Lambda}{m}\right)  
++\text{finite}.  
+\end{aligned}  
+$$
+
+The quadratic $\Lambda^2$ terms cancel identically, leaving a negative logarithmic divergence. Renormalizing the vacuum sector therefore fixes the field-dependent part of the one-loop counterterm density to be strictly positive:
+
+$$
++\frac{\left[V^{(2)}(\phi)-m^2\right]^2}{32\pi^2}  
+\ln\left(\frac{\Lambda}{m}\right)  
++\text{finite}.  
+$$
+
+The field-independent vacuum-energy counterterm is also included in $\mathcal{H}_  {\mathrm{c.t.}}$ and is fixed by the zero-vacuum-energy condition.
+
+In $\phi^4$ theory, where
+
+$$  
+V(\phi)  
+=\frac{\lambda}{4}\phi^2  
+\left(\phi-\frac{\sqrt{2},m}{\sqrt{\lambda}}\right)^2,  
+$$
+
+this single expression encodes both the one-loop coupling counterterm $\delta\lambda$ and the non-tadpole (bubble) mass counterterm $\delta m^2$.
+
+Evaluating the tension of the unsqueezed coherent state $\vert K_  {\mathrm{coh}}\rangle$ in $3+1$ dimensions now yields a **positive logarithmic ultraviolet divergence**:
+
+$$  
+\begin{aligned}  
+\rho_  {\mathrm{coh}}  
+&=\rho_  {\mathrm{cl}}  
++\frac{1}{32\pi^2}\ln\left(\frac{\Lambda}{m}\right)  
+\int_ {-\infty}^{+\infty}dz  
+\left[V^{(2)}(f(z))-m^2\right]^2\  
+&\quad+\text{finite}  
+\longrightarrow+\infty.  
+\end{aligned}  
+$$
+
+For the $\phi^4$ domain wall,
+
+$$  
+U(z)=V^{(2)}(f(z))-m^2  
+=-\frac{3}{2}m^2\operatorname{sech}^2\left(\frac{mz}{2}\right),  
+$$
+
+so that
+
+$$  
+\int_ {-\infty}^{+\infty}dz,U(z)^2=6m^3  
+$$
+
+and
+
+$$  
+\rho_  {\mathrm{coh}}  
+=\frac{m^3}{3\lambda}  
++\frac{3m^3}{16\pi^2}  
+\ln\left(\frac{\Lambda}{m}\right)  
++\text{finite}.  
+$$
+
+In the squeezed coherent state $\vert K\rangle_ 0$, adding the one-loop squeezing shift $\rho_ 1$ cancels the counterterm divergence identically:
+
+$$  
+\begin{aligned}  
+\rho_  {\mathrm{squeezed}}  
+&=\rho_  {\mathrm{coh}}+\rho_ 1\\
+&=\rho_  {\mathrm{cl}}  
++\left(\frac{1}{32\pi^2}-\frac{1}{32\pi^2}\right)  
+\ln\left(\frac{\Lambda}{m}\right)  
+\int_ {-\infty}^{+\infty}dz  
+\left[V^{(2)}(f(z))-m^2\right]^2\\
+&\quad+\text{finite}<\infty.  
+\end{aligned}  
+$$
+
+---
+
+### 5.4 Physical and Functional-Analytic Interpretation
+
+Why does $\vert K_  {\mathrm{coh}}\rangle$ fail in $3+1$ dimensions? The displacement operator $D_  {f}$ shifts the one-point expectation value $\langle\phi(\vec{x})\rangle=f(z)$ while leaving the connected two-point function identical to that of the homogeneous vacuum:
+
+$$  
+\begin{aligned}  
+&\langle K_  {\mathrm{coh}}\vert  
+\varphi(\vec{x})\varphi(\vec{y})  
+\vert K_  {\mathrm{coh}}\rangle\  
+&\qquad={}_ 0\langle\Omega\vert  
+\phi(\vec{x})\phi(\vec{y})  
+\vert\Omega\rangle_ 0.  
+\end{aligned}  
+$$
+
+In the true ground state of a spatially inhomogeneous curvature $V^{(2)}(f(z))$, short-distance fluctuations must adjust their local amplitude and dispersion to match $V^{(2)}(f(z))$. Because $\vert K_  {\mathrm{coh}}\rangle$ freezes the two-point correlations to the bulk plane-wave vacuum, it cannot generate the negative one-loop fluctuation energy $\rho_ 1$ needed to offset the positive vacuum counterterm.
+
+A subtle functional-analytic point distinguishes $d=3$ from $d\geq4$. At leading order in $U$, the off-diagonal Bogoliubov kernel connecting plane waves to kink normal modes scales as
+
+$$  
+v_  {\vec{k}\vec{p}}  
+\sim  
+\frac{\widetilde U(p_ z-k_ z)}  
+{2\sqrt{\omega_  {\vec{k}}\omega_  {\vec{p}}}  
+(\omega_  {\vec{k}}+\omega_  {\vec{p}})},  
+$$
+
+so the density of squeezed meson pairs per unit wall area scales in the UV as
+
+$$
+\int^\Lambda p^{d-5},dp.  
+$$
+
+In $d=3$, this integral behaves as $\int^\Lambda p^{-2},dp$ and is **UV-convergent**. Thus, on a finite transverse area $A_  {\perp}$, the Bogoliubov squeeze operator satisfies Shale's Hilbert-Schmidt criterion: $\vert K_  {\mathrm{coh}}\rangle$ and $\vert K\rangle_ 0$ actually reside in the _ same_  Fock space.
+
+Yet the Hamiltonian weights each UV meson pair by an extra factor of energy $\omega_  {\vec{p}}\sim p$, pushing the finite pair density $\int^\Lambda p^{-2},dp$ into the logarithmically divergent energy density $\int^\Lambda p^{-1},dp$. In $3+1$ dimensions, $\vert K_  {\mathrm{coh}}\rangle$ lies inside Fock space (at finite $A_  {\perp}$) but **outside the form domain of the renormalized Hamiltonian $H$**.
+
+Squeezing $\vert K_  {\mathrm{coh}}\rangle\to\vert K\rangle_ 0$ via the normal-mode Bogoliubov transformation restores finiteness at one loop. Beyond one loop (and already at two loops in $2+1$ dimensions), perturbative non-Gaussian corrections $\vert K\rangle_ 1,\vert K\rangle_ 2,\ldots$ are likewise required to cancel higher-loop non-tadpole counterterms.
 
 ## 6. The $\phi^4$ Fluctuation Problem, Bogoliubov Squeezing, and the One-Loop Mass
 
@@ -499,9 +800,9 @@ $$
 \mathbb H =  
 \int dx : \left[  
 \frac{1}{2}\pi^2(x)  
-+\frac{1}{2}(\partial_  x\phi(x))^2  
++\frac{1}{2}(\partial_   x\phi(x))^2  
 +V( g\phi(x))  
-\right] :_ A .  
+\right] :_  A .  
 $$
 
 The potential is chosen so that its degenerate minima occur at $\phi=0$ and $\phi=\sqrt{2}m/ g$:
@@ -517,7 +818,7 @@ $$
 m^2 =  
 \left.  
 \frac{d^2 V( g\phi)}{d\phi^2}  
-\right\vert _ {\phi=0,\sqrt{2}m/ g}.  
+\right\vert _  {\phi=0,\sqrt{2}m/ g}.  
 $$
 
 The static classical equation of motion,
@@ -594,7 +895,7 @@ $$
 \left[  
 \frac{1}{2}(f'(x))^2  
 +V( gf(x))  
-\right]\  
+\right]\\
 &=\frac{m^3}{3\lambda}.  
 \end{aligned}  
 $$
@@ -610,7 +911,7 @@ $$
 -f''(x)  
 +\frac{1}{ g}  
 V^{(1)}( gf(x))  
-\right]\varphi(x)\  
+\right]\varphi(x)\\
 &=0.  
 \end{aligned}  
 $$
