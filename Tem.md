@@ -1,0 +1,1 @@
+I am confused about what divergence cancels what. Can you give me the gist of the cancellations, for example what is the Coleman-divergence, what is the squeeze contribuiton, and how they cancel eachother?
